@@ -1,0 +1,1070 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>dmyor reel</title>
+<style>
+html,body{margin:0;padding:0;width:100%;height:100%;background:#000;overflow:hidden}
+#viewport{position:fixed;inset:0;background:#000;display:flex;align-items:center;justify-content:center}
+#stage{position:relative;width:1080px;height:1920px;background:#0A0A0A;overflow:hidden;
+ transform-origin:center center;-webkit-font-smoothing:antialiased;
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+#bookPersp{position:absolute;inset:0;perspective:3200px;perspective-origin:50% 52%}
+#bookWorld{position:absolute;inset:0;transform-style:preserve-3d}
+.edge{position:absolute;width:1px;background:rgba(245,245,240,.28)}
+#spine{position:absolute;width:1px;background:rgba(245,245,240,.45)}
+#diaryPage{position:absolute;border:1px solid rgba(245,245,240,.5);border-radius:3px;overflow:hidden;background:#0A0A0A}
+.rule{position:absolute;height:1px;background:rgba(245,245,240,.09)}
+.written{position:absolute;color:#F5F5F0;font-size:25px;white-space:nowrap}
+.caret{color:#8C8C86;font-weight:300}
+#pulse{position:absolute;z-index:8;width:80px;height:80px;margin:-40px 0 0 -40px;border-radius:50%;
+ border:1px solid rgba(245,245,240,.7);opacity:0;pointer-events:none}
+#flipLayer{position:absolute;inset:0;z-index:3;perspective:2600px;pointer-events:none}
+#cover{position:absolute;transform-origin:left center;transform-style:preserve-3d}
+.face{position:absolute;inset:0;backface-visibility:hidden;border-radius:4px;background:#0A0A0A;
+ border:1px solid rgba(245,245,240,.55);display:flex;align-items:center;justify-content:center}
+.coverInner{transform:rotateY(180deg)}
+.coverShade{position:absolute;inset:0;background:#000;opacity:0;border-radius:4px}
+#coverTitle{text-align:center;color:#F5F5F0;font-size:40px;font-weight:600;line-height:1.3}
+#coverTitle span{display:block;margin-top:18px;font-size:13px;letter-spacing:4px;font-weight:400;
+ text-transform:uppercase;color:#8C8C86}
+.ghostCard{position:absolute;border:1px solid rgba(245,245,240,.16);border-radius:6px}
+#canvasWrap{position:absolute;inset:0;z-index:2;transform-origin:0 0;opacity:0}
+#gridLayer{position:absolute;left:46px;top:46px;width:988px;height:1828px;overflow:hidden}
+#gridInner{position:absolute;left:0;top:0;width:988px;will-change:transform}
+.colWrap{width:268px}.col{display:flex;flex-direction:column;gap:30px}.card{display:block}
+.cardInner{box-sizing:border-box;height:100%;display:flex;flex-direction:column;justify-content:space-between;
+ border:1px solid rgba(245,245,240,.22);border-radius:12px;padding:20px;color:#F5F5F0;opacity:0;transform:scale(.94)}
+.dream{font-size:20px;line-height:1.4;font-weight:500}
+.meta{display:flex;align-items:baseline;justify-content:space-between;margin-top:14px}
+.date{font-size:13px;color:#6B6B6B}
+.standby{font-size:10px;letter-spacing:1.6px;font-variant:small-caps;text-transform:lowercase;color:#6B6B6B}
+.isReal .standby{color:#F5F5F0}
+#borderSvg{position:absolute;inset:0;width:1080px;height:1920px;pointer-events:none}
+#hoverRing{position:absolute;z-index:4;box-sizing:border-box;border-radius:12px;
+ border:1px solid rgba(245,245,240,.85);opacity:0;pointer-events:none}
+#tl{position:absolute;left:0;top:0;width:1080px;height:1920px;pointer-events:none;opacity:0}
+.tlLabel{position:absolute;color:#8C8C86;font-size:22px;letter-spacing:3px;opacity:0;
+ background:#0A0A0A;padding:4px 10px;border-radius:6px}
+#ghostDiary{position:absolute;z-index:8;left:390px;top:700px;width:300px;height:520px;
+ border:1px solid rgba(245,245,240,.45);border-radius:6px;background:#0A0A0A;display:flex;
+ flex-direction:column;align-items:center;justify-content:center;color:#F5F5F0;opacity:0}
+#ghostDiary .gt{font-size:30px;font-weight:600}
+#ghostDiary .gs{margin-top:12px;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#8C8C86}
+#ghostSlash{position:absolute;left:8%;top:50%;width:84%;height:1px;background:#F5F5F0;opacity:.75;
+ transform:scaleX(0);transform-origin:left center}
+#ui{position:absolute;inset:0;z-index:6}
+.tab{position:absolute;box-sizing:border-box;height:64px;border-radius:32px;border:1px solid rgba(245,245,240,.3);
+ background:#0A0A0A;color:#8C8C86;display:flex;align-items:center;justify-content:center;font-size:17px;
+ letter-spacing:3px;text-transform:uppercase;opacity:0}
+.tab.on{border-color:rgba(245,245,240,.85);color:#F5F5F0}
+#panel{position:absolute;box-sizing:border-box;left:150px;width:780px;border:1px solid rgba(245,245,240,.3);
+ border-radius:16px;background:#0A0A0A;padding:38px 36px;color:#F5F5F0;opacity:0}
+#panelNo{font-size:13px;letter-spacing:4px;color:#8C8C86;text-transform:uppercase}
+#panelTitle{margin-top:16px;font-size:36px;font-weight:600}
+#panelBody{margin-top:16px;font-size:22px;line-height:1.5;color:#8C8C86}
+#steps{margin-top:24px}
+.step{display:flex;align-items:baseline;gap:14px;margin-top:14px;font-size:21px;color:#F5F5F0;opacity:0}
+.step i{font-style:normal;color:#8C8C86;font-size:13px;letter-spacing:3px;min-width:26px}
+#compose{position:absolute;box-sizing:border-box;left:150px;width:780px;border:1px solid rgba(245,245,240,.34);
+ border-radius:16px;background:#0A0A0A;padding:34px;color:#F5F5F0;opacity:0;z-index:6}
+#composeLabel{font-size:13px;letter-spacing:4px;color:#8C8C86;text-transform:uppercase}
+#field{margin-top:22px;box-sizing:border-box;height:78px;border-radius:10px;border:1px solid rgba(245,245,240,.25);
+ display:flex;align-items:center;padding:0 20px;font-size:24px;color:#F5F5F0}
+#field.focus{border-color:rgba(245,245,240,.8)}
+#postBtn{margin-top:24px;margin-left:auto;width:190px;height:60px;border-radius:30px;
+ border:1px solid rgba(245,245,240,.4);display:flex;align-items:center;justify-content:center;
+ font-size:16px;letter-spacing:3px;text-transform:uppercase;color:#F5F5F0}
+#postBtn.hot{background:#F5F5F0;color:#0A0A0A;border-color:#F5F5F0}
+#addBtn{position:absolute;box-sizing:border-box;left:340px;width:400px;height:74px;border-radius:37px;
+ border:1px solid rgba(245,245,240,.45);background:#0A0A0A;display:flex;align-items:center;
+ justify-content:center;color:#F5F5F0;font-size:19px;letter-spacing:2px;opacity:0;z-index:6}
+#addBtn.hot{background:#F5F5F0;color:#0A0A0A}
+#flyCard{position:absolute;box-sizing:border-box;z-index:7;border-radius:12px;border:1px solid rgba(245,245,240,.4);
+ background:#0A0A0A;color:#F5F5F0;padding:18px 20px;opacity:0}
+#scan{position:absolute;z-index:5;left:46px;width:988px;height:2px;background:rgba(245,245,240,.55);
+ opacity:0;pointer-events:none}
+#prompt{position:absolute;z-index:6;box-sizing:border-box;left:150px;width:780px;
+ border:1px dashed rgba(245,245,240,.4);border-radius:16px;background:#0A0A0A;padding:34px;
+ color:#8C8C86;font-size:24px;opacity:0}
+#prompt b{color:#F5F5F0;font-weight:400}
+#counter{position:absolute;z-index:9;left:50%;transform:translateX(-50%);top:1740px;background:#0A0A0A;
+ border:1px solid rgba(245,245,240,.28);border-radius:30px;padding:14px 30px;color:#8C8C86;
+ font-size:22px;letter-spacing:1px;opacity:0;white-space:nowrap}
+#counter b{color:#F5F5F0;font-weight:600;font-variant-numeric:tabular-nums}
+#calendar{position:absolute;z-index:9;left:150px;top:560px;width:780px;opacity:0;
+ display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.mcell{position:relative;box-sizing:border-box;height:150px;border:1px solid rgba(245,245,240,.28);
+ border-radius:12px;background:#0A0A0A;display:flex;flex-direction:column;align-items:center;
+ justify-content:center;color:#8C8C86}
+.mcell .mn{font-size:26px;font-weight:600;color:#F5F5F0}
+.mcell .my{margin-top:8px;font-size:12px;letter-spacing:3px}
+.mcell.left{border-color:rgba(245,245,240,.85)}
+.mcell .mstrike{position:absolute;left:14%;top:50%;width:72%;height:1px;background:#F5F5F0;
+ opacity:.6;transform:scaleX(0);transform-origin:left center}
+#calRing{position:absolute;z-index:10;box-sizing:border-box;border-radius:12px;
+ border:1px solid rgba(245,245,240,.9);opacity:0;pointer-events:none}
+#plog{position:absolute;z-index:9;left:150px;top:1400px;width:780px;opacity:0;
+ box-sizing:border-box;background:#0A0A0A;border-radius:14px;padding:22px 24px}
+#plogGrid{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
+.dmark{height:44px;border:1px solid rgba(245,245,240,.22);border-radius:6px;background:#0A0A0A;opacity:.35}
+.dmark.on{background:#F5F5F0;border-color:#F5F5F0;opacity:1}
+#plogLabel{margin-top:22px;text-align:center;color:#8C8C86;font-size:22px;letter-spacing:1px}
+#plogLabel b{color:#F5F5F0;font-weight:600;font-variant-numeric:tabular-nums}
+/* --- a dated ledger accumulating --- */
+#ledger{position:absolute;z-index:9;left:210px;top:700px;width:660px;opacity:0;box-sizing:border-box}
+.lrow{display:flex;align-items:baseline;justify-content:space-between;padding:13px 20px;
+ border:1px solid rgba(245,245,240,.18);border-radius:9px;background:#0A0A0A;margin-top:9px;opacity:0}
+.lrow .ld{font-size:15px;letter-spacing:2px;color:#6B6B6B}
+.lrow .lt{font-size:19px;color:#F5F5F0}
+.lrow.miss .lt{color:#6B6B6B}
+.lrow.miss{border-style:dashed}
+#ledgerTot{margin-top:20px;text-align:center;color:#8C8C86;font-size:21px}
+#ledgerTot b{color:#F5F5F0;font-weight:600;font-variant-numeric:tabular-nums}
+/* --- everyone's records, streaming --- */
+#feed{position:absolute;z-index:8;left:46px;top:46px;width:988px;height:1828px;overflow:hidden;opacity:0}
+.fcol{position:absolute;top:0;width:466px}
+.frow{box-sizing:border-box;border:1px solid rgba(245,245,240,.2);border-radius:11px;
+ background:#0A0A0A;padding:20px 22px;margin-bottom:20px;transition:none}
+.frow .ft{font-size:21px;color:#F5F5F0;line-height:1.35}
+.frow .fm{display:flex;justify-content:space-between;margin-top:12px;font-size:12px;
+ letter-spacing:2px;color:#6B6B6B}
+.frow.real{border-color:rgba(245,245,240,.75)}
+.frow.real .fm{color:#F5F5F0}
+#feedRing{position:absolute;z-index:9;box-sizing:border-box;border-radius:11px;
+ border:1px solid rgba(245,245,240,.9);opacity:0;pointer-events:none}
+.fnote{position:absolute;z-index:10;color:#F5F5F0;font-size:20px;letter-spacing:2px;
+ background:#0A0A0A;border:1px solid rgba(245,245,240,.5);border-radius:20px;
+ padding:8px 18px;opacity:0;white-space:nowrap}
+/* --- two phases, one live --- */
+#phbar{position:absolute;z-index:9;left:190px;top:1180px;width:700px;opacity:0}
+#phTrack{display:flex;gap:16px}
+.phseg{flex:1;height:74px;border-radius:37px;box-sizing:border-box;display:flex;
+ align-items:center;justify-content:center;font-size:17px;letter-spacing:3px;
+ text-transform:uppercase;border:1px solid rgba(245,245,240,.35);color:#8C8C86;position:relative;overflow:hidden}
+.phseg .phfill{position:absolute;left:0;top:0;bottom:0;width:0%;background:#F5F5F0}
+.phseg .phtx{position:relative;z-index:2}
+.phseg.live{color:#0A0A0A;border-color:#F5F5F0}
+.phseg.soon{border-style:dashed}
+#phNote{margin-top:22px;text-align:center;color:#8C8C86;font-size:21px;opacity:0}
+/* --- a record with the fields that were never filled --- */
+#record{position:absolute;z-index:9;left:190px;top:620px;width:700px;opacity:0;box-sizing:border-box;
+ border:1px solid rgba(245,245,240,.4);border-radius:16px;background:#0A0A0A;padding:38px 40px}
+#recTitle{font-size:31px;font-weight:600;color:#F5F5F0}
+#recDate{margin-top:10px;font-size:15px;letter-spacing:2px;color:#6B6B6B}
+.rrow{display:flex;align-items:center;justify-content:space-between;margin-top:26px;
+ padding-top:22px;border-top:1px solid rgba(245,245,240,.12);opacity:0}
+.rrow .rk{font-size:19px;letter-spacing:3px;text-transform:uppercase;color:#8C8C86}
+.rrow .rv{font-size:22px;letter-spacing:6px;color:#6B6B6B}
+/* --- naming the wrong culprits and crossing them off --- */
+#culprits{position:absolute;z-index:9;left:0;top:1380px;width:1080px;opacity:0;
+ display:flex;justify-content:center;gap:36px}
+.culp{position:relative;font-size:40px;color:#8C8C86}
+.culp .cx{position:absolute;left:-4%;top:52%;width:108%;height:2px;background:#F5F5F0;
+ transform:scaleX(0);transform-origin:left center}
+/* --- three things, filling in --- */
+#steps3{position:absolute;z-index:9;left:190px;top:360px;width:700px;opacity:0}
+.s3{display:flex;align-items:baseline;gap:18px;margin-top:18px;opacity:.25}
+.s3.on{opacity:1}
+.s3 i{font-style:normal;color:#8C8C86;font-size:14px;letter-spacing:3px;min-width:30px}
+.s3 span{color:#F5F5F0;font-size:25px}
+/* --- vague resolving into specific --- */
+#sharpen{position:absolute;z-index:9;left:0;top:980px;width:1080px;opacity:0;text-align:center}
+#shOld{font-size:44px;color:#6B6B6B}
+#shNew{margin-top:18px;font-size:48px;font-weight:600;color:#F5F5F0}
+/* --- the whole thing collapsing to one action --- */
+#collapse{position:absolute;z-index:9;left:0;top:960px;width:1080px;opacity:0;text-align:center}
+#clBig{font-size:52px;font-weight:600;color:#F5F5F0}
+#clSmall{margin-top:26px;display:inline-block;border:1px solid rgba(245,245,240,.75);
+ border-radius:30px;padding:16px 32px;font-size:26px;color:#F5F5F0;background:#0A0A0A;opacity:0}
+/* --- ideas orbiting a point they cannot leave --- */
+#orbit{position:absolute;z-index:9;inset:0;opacity:0;pointer-events:none}
+.orb{position:absolute;color:#F5F5F0;font-size:26px;white-space:nowrap;text-align:center;
+ transform:translate(-50%,-50%)}
+.orb .obr{display:block;margin-top:9px;font-size:14px;letter-spacing:6px;color:#6B6B6B;opacity:0}
+#orbitCore{position:absolute;z-index:8;left:50%;top:900px;width:12px;height:12px;margin:-6px 0 0 -6px;
+ border-radius:50%;background:#6B6B6B;opacity:0}
+/* --- what you meant to do, surfacing from a dead month --- */
+#recall{position:absolute;z-index:10;inset:0;opacity:0;pointer-events:none}
+.rgh{position:absolute;color:#F5F5F0;font-size:19px;white-space:nowrap;opacity:0;
+ transform:translate(-50%,0)}
+/* --- thoughts drifting, unanchored, with no date --- */
+#thoughts{position:absolute;z-index:9;inset:0;opacity:0;pointer-events:none}
+.thought{position:absolute;color:#F5F5F0;font-size:27px;white-space:nowrap;opacity:.6;text-align:center}
+.thought .nd{display:block;margin-top:8px;font-size:12px;letter-spacing:4px;color:#6B6B6B}
+/* --- planned vs done --- */
+#tally{position:absolute;z-index:9;left:0;top:760px;width:1080px;opacity:0;display:flex;
+ justify-content:center;gap:120px;color:#8C8C86}
+.tcol{text-align:center}
+.tcol .tn{font-size:132px;font-weight:700;color:#F5F5F0;font-variant-numeric:tabular-nums;line-height:1}
+.tcol.dim .tn{color:#6B6B6B}
+.tcol .tl{margin-top:16px;font-size:20px;letter-spacing:4px;text-transform:uppercase}
+/* --- the record building --- */
+#streak{position:absolute;z-index:9;left:150px;top:1160px;width:780px;opacity:0;
+ box-sizing:border-box;background:#0A0A0A;border-radius:14px;padding:24px}
+#streakBars{display:flex;align-items:flex-end;gap:9px;height:190px}
+.sbar{flex:1;background:#F5F5F0;border-radius:4px;height:0%}
+#streakLabel{margin-top:18px;text-align:center;color:#8C8C86;font-size:21px}
+#streakLabel b{color:#F5F5F0;font-weight:600;font-variant-numeric:tabular-nums}
+/* --- dated / public / permanent --- */
+#stamps{position:absolute;z-index:9;left:0;top:1180px;width:1080px;opacity:0;
+ display:flex;justify-content:center;gap:26px}
+.stamp{box-sizing:border-box;border:1px solid rgba(245,245,240,.85);border-radius:30px;
+ padding:16px 34px;color:#F5F5F0;font-size:24px;letter-spacing:3px;text-transform:uppercase;
+ background:#0A0A0A;opacity:0;transform:scale(.82)}
+/* --- from here to there --- */
+#pathSvg{position:absolute;z-index:9;left:0;top:0;width:1080px;height:1920px;opacity:0;pointer-events:none}
+#cursor{position:absolute;z-index:50;width:30px;height:36px;pointer-events:none}
+#ripple{position:absolute;z-index:49;width:70px;height:70px;margin:-35px 0 0 -35px;border-radius:50%;
+ border:2px solid rgba(245,245,240,.9);opacity:0;pointer-events:none}
+#textLayer{position:absolute;inset:0;z-index:20}
+.beat{position:absolute;left:80px;width:920px;text-align:center;opacity:0;color:#F5F5F0}
+.beat:not(.final){box-sizing:border-box;background:#0A0A0A;padding:24px 26px;border-radius:16px}
+.line1{font-size:46px;line-height:1.3;font-weight:600;letter-spacing:-.5px}
+.line2{margin-top:18px;font-size:26px;line-height:1.45;color:#8C8C86}
+.beat.final .line1{font-size:104px;font-weight:700}
+.beat.final .line2{margin-top:26px;font-size:30px;letter-spacing:1px}
+#playBtn{position:fixed;inset:0;margin:auto;width:200px;height:62px;border-radius:31px;
+ border:1px solid rgba(245,245,240,.4);background:rgba(10,10,10,.92);color:#F5F5F0;font-family:inherit;
+ font-size:18px;letter-spacing:2px;cursor:pointer;z-index:1000}
+</style></head><body>
+<div id="viewport"><div id="stage">
+ <div id="bookPersp"><div id="bookWorld">
+  <div id="bookBase"><div id="spine"></div></div>
+  <div id="diaryPage"></div>
+  <div id="flipLayer"><div id="cover">
+    <div class="face coverOuter"><div id="coverTitle">Dreams<span>a diary</span></div></div>
+    <div class="face coverInner"></div><div class="coverShade" id="coverShade"></div>
+  </div></div>
+ </div></div>
+ <div id="canvasWrap"><div id="gridLayer"><div id="gridInner"></div></div>
+  <svg id="borderSvg" viewBox="0 0 1080 1920"><path d="M46,46 L1034,46 L1034,1874 L46,1874 Z"
+   fill="none" stroke="rgba(245,245,240,0.55)" stroke-width="1.5"/></svg></div>
+ <div id="hoverRing"></div>
+ <svg id="tl" viewBox="0 0 1080 1920">
+  <path id="tlPath" d="M250,1050 L830,1050" fill="none" stroke="rgba(245,245,240,.5)" stroke-width="2"/>
+  <path id="tlA" d="M250,1036 L250,1064" stroke="rgba(245,245,240,.5)" stroke-width="2" opacity="0"/>
+  <path id="tlB" d="M830,1036 L830,1064" stroke="rgba(245,245,240,.5)" stroke-width="2" opacity="0"/></svg>
+ <div class="tlLabel" id="tlLabA" style="left:212px;top:1082px">2026</div>
+ <div class="tlLabel" id="tlLabB" style="left:792px;top:1082px">2031</div>
+ <div id="ghostDiary"><div class="gt">Dreams</div><div class="gs">a diary</div><div id="ghostSlash"></div></div>
+ <div id="ui">
+  <div class="tab" id="tab1" style="left:150px;width:370px;top:560px">Phase 01</div>
+  <div class="tab" id="tab2" style="left:560px;width:370px;top:560px">Phase 02</div>
+  <div id="panel" style="top:680px"><div id="panelNo"></div><div id="panelTitle"></div>
+   <div id="panelBody"></div><div id="steps">
+    <div class="step" id="st0"><i>01</i><span></span></div>
+    <div class="step" id="st1"><i>02</i><span></span></div>
+    <div class="step" id="st2"><i>03</i><span></span></div></div></div></div>
+ <div id="addBtn" style="top:1150px">+ Post a dream</div>
+ <div id="compose" style="top:1120px"><div id="composeLabel">Your dream</div>
+  <div id="field"><span id="fieldText"></span><span class="caret" id="fieldCaret">|</span></div>
+  <div id="postBtn">Post</div></div>
+ <div id="flyCard"></div>
+ <div id="scan"></div>
+ <div id="prompt"><b>your dream here</b><span class="caret" id="promptCaret">|</span></div>
+ <div id="counter"><b id="countNum">0</b> dreams on record</div>
+ <div id="calendar"></div><div id="calRing"></div>
+ <div id="thoughts"></div>
+ <div id="record"><div id="recTitle"></div><div id="recDate"></div>
+  <div class="rrow" id="rr0"><span class="rk"></span><span class="rv">[    ]</span></div>
+  <div class="rrow" id="rr1"><span class="rk"></span><span class="rv">[    ]</span></div>
+  <div class="rrow" id="rr2"><span class="rk"></span><span class="rv">[    ]</span></div></div>
+ <div id="culprits"><div class="culp" id="cu0"><span></span><i class="cx"></i></div><div class="culp" id="cu1"><span></span><i class="cx"></i></div></div>
+ <div id="ledger"><div id="ledgerRows"></div><div id="ledgerTot"><b id="ledgerNum">0</b> entries on record</div></div>
+ <div id="feed"></div><div id="feedRing"></div>
+ <div class="fnote" id="fn0"></div><div class="fnote" id="fn1"></div>
+ <div id="phbar"><div id="phTrack">
+   <div class="phseg" id="ph0"><span class="phfill"></span><span class="phtx">Phase 01</span></div>
+   <div class="phseg soon" id="ph1"><span class="phfill"></span><span class="phtx">Phase 02</span></div></div>
+  <div id="phNote"></div></div>
+ <div id="steps3"><div class="s3" id="s3a"><i>01</i><span></span></div>
+  <div class="s3" id="s3b"><i>02</i><span></span></div>
+  <div class="s3" id="s3c"><i>03</i><span></span></div></div>
+ <div id="sharpen"><div id="shOld"></div><div id="shNew"></div></div>
+ <div id="collapse"><div id="clBig"></div><div><span id="clSmall"></span></div></div>
+ <div id="orbitCore"></div><div id="orbit"></div>
+ <div id="recall"></div>
+ <div id="tally"><div class="tcol"><div class="tn" id="tPlan">0</div><div class="tl">planned</div></div>
+  <div class="tcol dim"><div class="tn" id="tDone">0</div><div class="tl">done</div></div></div>
+ <div id="streak"><div id="streakBars"></div><div id="streakLabel"><b id="streakNum">0</b> days in a row</div></div>
+ <div id="stamps"><div class="stamp" id="stmp0">dated</div><div class="stamp" id="stmp1">public</div><div class="stamp" id="stmp2">permanent</div></div>
+ <svg id="pathSvg" viewBox="0 0 1080 1920">
+  <path id="pArc" d="M230,1120 C430,900 650,900 850,1120" fill="none"
+   stroke="rgba(245,245,240,.75)" stroke-width="2.5" stroke-dasharray="9 11"/>
+  <circle id="pA" cx="230" cy="1120" r="9" fill="#8C8C86"/>
+  <circle id="pB" cx="850" cy="1120" r="11" fill="#F5F5F0" opacity="0"/>
+  <circle id="pDot" cx="230" cy="1120" r="7" fill="#F5F5F0" opacity="0"/></svg>
+ <div id="plog"><div id="plogGrid"></div><div id="plogLabel"><b id="plogNum">0</b> days logged</div></div>
+ <div id="pulse"></div><div id="ripple"></div>
+ <svg id="cursor" viewBox="0 0 28 34"><path d="M3,2 L3,27 L10,20.5 L14.5,31 L19.5,29 L15,18.5 L24,17.5 Z"
+  fill="#F5F5F0" stroke="#0A0A0A" stroke-width="1.6" stroke-linejoin="round"/></svg>
+ <div id="textLayer"></div>
+</div></div>
+<button id="playBtn">PLAY</button>
+<script>
+var TL = {"total": 59.06, "brand": {"mark": "dmyor", "url": "www.dmyor.com"}, "dreams": ["Lose 20 kg this year", "Get back under 80kg", "Walk 10,000 steps daily", "Quit sugar for a year", "Run a sub-20 5k", "Finish a triathlon", "Swim 5k open water", "Sleep 8 hours nightly", "Deadlift twice bodyweight", "Complete an Ironman", "Cycle 100km in a day", "Do 50 unbroken pushups", "Run every day for a year", "Hike the coast path", "Climb Kilimanjaro", "Row a half marathon", "Get to 12 percent body fat", "Stop drinking for a year", "Cook every meal at home", "Walk the Camino", "Run a trail ultra", "Squat 140kg", "Swim the Channel relay", "Ride a century"], "scenes": [{"type": "record.blank", "note": "1.04 no start date | 9.22 no next step | 10.30 no evidence -> refilled at 25.1", "in": 0.4, "out": 27.9, "dream": "Lose 20 kg this year", "sub": "in your head since January", "fields": [{"label": "start date", "at": 1.0, "fillAt": 25.2, "value": "04 Sep 2026"}, {"label": "next step", "at": 9.2, "fillAt": 26.0, "value": "walk 30 minutes"}, {"label": "evidence", "at": 10.3, "fillAt": 26.8, "value": "day 1 logged"}]}, {"type": "strike.words", "note": "4.38 not motivation, not talent", "in": 3.4, "out": 6.4, "at": [4.0, 5.1], "words": ["motivation", "talent"]}, {"type": "steps.three", "note": "12.46 so do three things with it", "in": 12.2, "out": 24.9, "at": [12.5, 21.2, 25.0], "items": ["Specific enough to check today", "The smallest next step", "Write it, then log it"]}, {"type": "sharpen.text", "note": "18.34 not get healthy / 19.82 walk 30 minutes", "in": 14.2, "out": 20.9, "vagueAt": 14.5, "at": 18.3, "vague": "get healthy", "specific": "walk 30 minutes"}, {"type": "collapse.step", "note": "21.36 the next physical step / 23.74 tomorrow morning", "in": 21.1, "out": 24.9, "at": 22.6, "big": "Lose 20 kg this year", "small": "tomorrow: walk 30 minutes"}, {"type": "ledger.rows", "note": "26.56 log every day / 30.02 the record carries you - rows keep landing through the line", "in": 28.3, "out": 33.4, "rowStart": 28.5, "rowStep": 0.62, "perRow": 1, "entries": [{"date": "04 Sep", "text": "walked 35 min"}, {"date": "05 Sep", "text": "gym, 40 min"}, {"date": "06 Sep", "text": "walked 25 min"}, {"date": "07 Sep", "text": "nothing", "missed": true}, {"date": "08 Sep", "text": "swim, 30 min"}, {"date": "09 Sep", "text": "walked 45 min"}, {"date": "10 Sep", "text": "long walk, 70 min"}]}, {"type": "feed.stream", "note": "36.10 an archive that holds what people intend to do | 39.76 in one place", "in": 33.0, "out": 55.4, "speed": 46, "widen": 39.6}, {"type": "feed.highlight", "note": "42.28 dated and public", "at": 42.2, "out": 46.2, "row": 4, "labels": ["dated 04 Sep 2026", "anyone can see it"]}, {"type": "feed.real", "note": "44.36 until it becomes real", "at": 45.0, "row": 4, "year": "2027"}, {"type": "phases.bar", "note": "46.68 phase one is live today | 49.88 phase two starts shortly", "in": 46.4, "out": 55.2, "fill0": 46.8, "fill1": 50.6, "fill1Pct": 26, "noteAt": 53.2, "note2": "phase two: the part that gets you there"}, {"type": "end.card", "note": "55.08 the archive is live at / 56.22 www", "in": 55.0, "urlStart": 56.2, "urlEnd": 58.5}], "captions": [{"s": 0.3, "e": 2.6, "size": 48, "y": 250, "l1": "A dream in your head", "l2": "has no start date"}, {"s": 9.1, "e": 11.9, "size": 42, "y": 250, "l1": "No next step. No evidence you tried."}, {"s": 12.3, "e": 13.9, "size": 46, "y": 250, "l1": "So do three things with it"}, {"s": 18.2, "e": 20.9, "size": 44, "y": 250, "l1": "Specific enough to check today"}, {"s": 21.2, "e": 24.7, "size": 44, "y": 250, "l1": "The smallest next step"}, {"s": 25.1, "e": 33.4, "size": 42, "y": 250, "l1": "Write it. Then log it.", "l2": "the record carries you on the bad days"}, {"s": 36.0, "e": 45.6, "size": 44, "y": 170, "l1": "An archive of what people intend to do", "l2": "dated, public, on the record"}, {"s": 46.6, "e": 54.6, "size": 44, "y": 170, "l1": "Phase one is live today", "l2": "phase two starts shortly"}, {"s": 55.0, "e": 59.06, "size": 104, "y": 900, "l1": "dmyor", "l2": "www.dmyor.com", "final": true}]};
+</script>
+<script>
+/* dmyor reel engine. Everything renders as a pure function of time from TL,
+   so the recorder can seek frame by frame and the output is deterministic.
+   The cursor path is DERIVED from the scenes: each scene says where the pointer
+   must be and when, and the engine inserts arrive-then-hold waypoints. That is
+   what keeps the pointer from snapping or drifting. */
+(function () {
+"use strict";
+var TOTAL = TL.total, W = 1080, H = 1920;
+var stage = document.getElementById("stage"), sc = 1;
+function fit(){ sc = Math.min(innerWidth/W, innerHeight/H); stage.style.transform = "scale("+sc+")"; }
+fit(); addEventListener("resize", fit);
+var cl=function(x){return x<0?0:(x>1?1:x)}, seg=function(t,a,b){return b<=a?(t>=b?1:0):cl((t-a)/(b-a))};
+var eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2}, eo=function(x){return 1-Math.pow(1-x,3)};
+function fade(el,o){ if(el) el.style.opacity=o; }
+function rectOf(el){var s=stage.getBoundingClientRect(),r=el.getBoundingClientRect();
+ return{left:(r.left-s.left)/sc,top:(r.top-s.top)/sc,width:r.width/sc,height:r.height/sc};}
+
+// ---- scene lookup ----
+function S(type){ for(var i=0;i<TL.scenes.length;i++) if(TL.scenes[i].type===type) return TL.scenes[i]; return null; }
+function ALL(type){ return TL.scenes.filter(function(x){return x.type===type;}); }
+function has(type){ return !!S(type); }
+
+// ================= diary geometry =================
+var CS=460/1080, PX=540, PY=960-1920*CS/2, INSET=46*CS, PW=988*CS, PH=1828*CS;
+var PTOP=PY+INSET, FLIP_W=INSET+PW, COVER_W=FLIP_W+12, COVER_H=PH+20, COVER_TOP=PTOP-10, PAGE_L=PX+INSET;
+var diary=document.getElementById("diaryPage");
+diary.style.cssText+=";left:"+PAGE_L+"px;top:"+PTOP+"px;width:"+PW+"px;height:"+PH+"px";
+var spine=document.getElementById("spine");
+spine.style.cssText+=";left:"+PX+"px;top:"+PTOP+"px;height:"+PH+"px";
+var bookBase=document.getElementById("bookBase");
+for(var e=0;e<4;e++){var eg=document.createElement("div");eg.className="edge";
+ eg.style.cssText="left:"+(PAGE_L+PW+2+e*2.5)+"px;top:"+(PTOP+6+e*2)+"px;height:"+(PH-12-e*4)+"px;opacity:"+(1-e*.18);
+ bookBase.appendChild(eg);}
+var cover=document.getElementById("cover");
+cover.style.cssText+=";left:"+PX+"px;top:"+COVER_TOP+"px;width:"+COVER_W+"px;height:"+COVER_H+"px";
+var coverShade=document.getElementById("coverShade"), bookWorld=document.getElementById("bookWorld");
+function ghostGrid(c0,x0,y0,w,h,seed){var GH=[58,70,54,65,76,56,68,61,73,52,64,71,57,67],pad=14,gap=11,cols=3;
+ var cw=(w-pad*2-gap*(cols-1))/cols,stg=[0,25,11];
+ for(var c=0;c<cols;c++){var y=y0+pad+stg[(c+seed)%3];
+  for(var k=0;;k++){var hh=GH[(k+seed*3+c)%GH.length]; if(y+hh>y0+h-pad)break;
+   var g=document.createElement("div");g.className="ghostCard";
+   g.style.cssText="left:"+(x0+pad+c*(cw+gap))+"px;width:"+cw+"px;top:"+y+"px;height:"+hh+"px";
+   c0.appendChild(g);y+=hh+gap;}}}
+ghostGrid(document.querySelector(".coverInner"),INSET-4,10,PW,PH,2);
+
+var writeSc=S("diary.write")||{lines:[]};
+var LINES_TXT=(writeSc.lines||[]).map(function(l){return l.text;});
+var L_TOP=104,L_GAP=74,L_X=34,CHAR_W=12.4;
+for(var i=0;i<8;i++){var r=document.createElement("div");r.className="rule";
+ r.style.cssText="left:"+L_X+"px;width:"+(PW-L_X*2)+"px;top:"+(L_TOP+i*L_GAP+34)+"px";diary.appendChild(r);}
+var dstampEl=null;
+if(writeSc.stamp){ dstampEl=document.createElement("div"); dstampEl.className="written";
+ dstampEl.style.cssText="left:"+L_X+"px;font-size:15px;color:#8C8C86;letter-spacing:2px;opacity:0";
+ diary.appendChild(dstampEl); }
+var lines=LINES_TXT.map(function(txt,i){var d=document.createElement("div");d.className="written";
+ d.style.cssText="left:"+L_X+"px;top:"+(L_TOP+i*L_GAP)+"px";
+ d.innerHTML='<span class="t"></span><span class="caret">|</span>';diary.appendChild(d);
+ return{el:d,txt:d.querySelector(".t"),caret:d.querySelector(".caret"),
+   absY:PTOP+L_TOP+i*L_GAP,absX:PAGE_L+L_X};});
+function capStart(i){return lines[i].absX+6;}
+function capEnd(i){return lines[i].absX+LINES_TXT[i].length*CHAR_W+6;}
+function tapX(){return PAGE_L+L_X+150;}
+
+// ================= archive =================
+var DREAMS=TL.dreams&&TL.dreams.length?TL.dreams:["Write something real"];
+var YRS=["2027","2028","2029","2030","2031","2032","2033","2035"];
+var NC=3,PC=14,COUNT=NC*PC,RH=[136,164,128,152,178,132,158,142,170,126,148,166,134,156],CST=[0,58,26];
+function ci(c,r){return c*PC+r;}
+function block(){var row=document.createElement("div");
+ row.style.cssText="display:flex;justify-content:center;gap:30px;width:988px";var cols=[];
+ for(var c=0;c<NC;c++){var w=document.createElement("div");w.className="colWrap";
+  var col=document.createElement("div");col.className="col";col.style.transform="translateY("+CST[c]+"px)";
+  w.appendChild(col);row.appendChild(w);cols.push(col);}
+ for(var c2=0;c2<NC;c2++)for(var r=0;r<PC;r++){var idx=ci(c2,r);
+  var card=document.createElement("div");card.className="card";card.dataset.idx=idx;
+  card.style.height=RH[r%RH.length]+"px";
+  var inner=document.createElement("div");inner.className="cardInner";
+  inner.innerHTML='<div class="dream">'+DREAMS[idx%DREAMS.length]+'</div><div class="meta"><span class="date">'
+   +YRS[idx%YRS.length]+'</span><span class="standby">standby</span></div>';
+  card.appendChild(inner);cols[c2].appendChild(card);} return row;}
+var gi=document.getElementById("gridInner"),bA=block(),bB=block();
+var ld=document.createElement("div");ld.style.height="34px";
+var gp=document.createElement("div");gp.style.height="30px";
+gi.appendChild(ld);gi.appendChild(bA);gi.appendChild(gp);gi.appendChild(bB);
+var inA={},inB={},slotA={};
+bA.querySelectorAll(".card").forEach(function(c){slotA[c.dataset.idx]=c;inA[c.dataset.idx]=c.querySelector(".cardInner");});
+bB.querySelectorAll(".card").forEach(function(c){inB[c.dataset.idx]=c.querySelector(".cardInner");});
+var loopD=0, canvasWrap=document.getElementById("canvasWrap"), gridLayer=document.getElementById("gridLayer");
+var hoverRing=document.getElementById("hoverRing");
+var FLIPS=ALL("archive.flip").map(function(f){var idx=ci(f.card[0],f.card[1]);
+ return{idx:idx,t:f.at,y:f.year||"2030",a:inA[idx].querySelector(".standby"),b:inB[idx].querySelector(".standby")};});
+
+// ================= calendar + progress log =================
+var MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var calSc=S("calendar.year"), calCells=[];
+var calEl=document.getElementById("calendar"), calRing=document.getElementById("calRing");
+if(calSc){ var yr=calSc.year||"2026";
+ MON.forEach(function(m,i){ var c=document.createElement("div"); c.className="mcell";
+  c.innerHTML='<div class="mn">'+m+'</div><div class="my">'+yr+'</div><div class="mstrike"></div>';
+  calEl.appendChild(c); calCells.push({el:c,strike:c.querySelector(".mstrike")}); }); }
+var plogSc=S("progress.log"), plogMarks=[];
+var plogEl=document.getElementById("plog"), plogGrid=document.getElementById("plogGrid"),
+    plogNum=document.getElementById("plogNum");
+if(plogSc){ var n=plogSc.count||36;
+ for(var pi=0;pi<n;pi++){ var dm=document.createElement("div"); dm.className="dmark";
+  plogGrid.appendChild(dm); plogMarks.push(dm); } }
+
+// ================= a record with fields that were never filled ==============
+var recSc=S("record.blank");
+var recEl=document.getElementById("record"), recRows=[0,1,2].map(function(i){
+  var el=document.getElementById("rr"+i); return {el:el, k:el.querySelector(".rk"), v:el.querySelector(".rv")}; });
+if(recSc){ document.getElementById("recTitle").textContent=recSc.dream||"";
+  document.getElementById("recDate").textContent=recSc.sub||"";
+  (recSc.fields||[]).forEach(function(f,i){ if(recRows[i]) recRows[i].k.textContent=f.label; }); }
+
+// ================= the wrong culprits, crossed off =================
+var cuSc=S("strike.words");
+var culpEl=document.getElementById("culprits"), cuEls=[0,1].map(function(i){
+ var el=document.getElementById("cu"+i); return {el:el, t:el.querySelector("span"), x:el.querySelector(".cx")}; });
+if(cuSc) (cuSc.words||[]).forEach(function(w,i){ if(cuEls[i]) cuEls[i].t.textContent=w; });
+
+// ================= a dated ledger accumulating =================
+var lgSc=S("ledger.rows"), lgEls=[];
+var ledgerEl=document.getElementById("ledger"), ledgerRows=document.getElementById("ledgerRows"),
+    ledgerNum=document.getElementById("ledgerNum");
+if(lgSc){ (lgSc.entries||[]).forEach(function(e,i){
+  var r=document.createElement("div"); r.className="lrow"+(e.missed?" miss":"");
+  r.innerHTML='<span class="lt">'+e.text+'</span><span class="ld">'+e.date+'</span>';
+  ledgerRows.appendChild(r); lgEls.push(r); }); }
+
+// ================= everyone's records, streaming =================
+var fdSc=S("feed.stream"), fdCols=[], fdRows=[];
+var feedEl=document.getElementById("feed"), feedRing=document.getElementById("feedRing");
+var fnEls=[document.getElementById("fn0"),document.getElementById("fn1")];
+if(fdSc){ var NCOL=2, per=9;
+ for(var c=0;c<NCOL;c++){ var col=document.createElement("div"); col.className="fcol";
+  col.style.left=(c*512)+"px"; feedEl.appendChild(col); fdCols.push(col);
+  // two identical sets per column so the stream can loop without ever emptying
+  for(var r2=0;r2<per*3;r2++){ var idx=c*per+(r2%per);
+   var row=document.createElement("div"); row.className="frow";
+   var dr=DREAMS[idx%DREAMS.length], yr=YRS[idx%YRS.length];
+   row.innerHTML='<div class="ft">'+dr+'</div><div class="fm"><span>'+yr+'</span><span class="fs">standby</span></div>';
+   col.appendChild(row); fdRows.push({el:row, st:row.querySelector(".fs"), col:c}); } } }
+var fhSc=S("feed.highlight"), frSc=S("feed.real"), fhPick=null;
+// distance travelled, integrated in fixed steps: pausing must not teleport the stream
+function fdTravel(t,spd,holdNow){
+  if(!fdSc) return 0;
+  var dt=1/30, acc=0;
+  for(var u=fdSc.in; u<t; u+=dt){
+    var h=fhSc?seg(u,fhSc.at-0.5,fhSc.at)*(1-seg(u,fhSc.out,fhSc.out+0.5)):0;
+    acc += spd*(1-0.94*h)*dt;
+  }
+  return acc;
+}
+
+// ================= two phases, one live =================
+var pbSc=S("phases.bar");
+var phbarEl=document.getElementById("phbar"), phNote=document.getElementById("phNote");
+var phSegs=[document.getElementById("ph0"),document.getElementById("ph1")];
+var phFills=phSegs.map(function(e){return e.querySelector(".phfill");});
+
+// ================= three things =================
+var st3Sc=S("steps.three");
+var steps3El=document.getElementById("steps3"),
+    s3Els=["s3a","s3b","s3c"].map(function(id){return document.getElementById(id);});
+if(st3Sc) (st3Sc.items||[]).forEach(function(it,i){ if(s3Els[i]) s3Els[i].querySelector("span").textContent=it; });
+
+// ================= vague -> specific =================
+var shSc=S("sharpen.text");
+var sharpenEl=document.getElementById("sharpen"), shOld=document.getElementById("shOld"),
+    shNew=document.getElementById("shNew");
+if(shSc){ shOld.textContent=shSc.vague||""; }
+
+// ================= everything collapsing to one action =================
+var clSc=S("collapse.step");
+var collapseEl=document.getElementById("collapse"), clBig=document.getElementById("clBig"),
+    clSmall=document.getElementById("clSmall");
+if(clSc){ clBig.textContent=clSc.big||""; clSmall.textContent=clSc.small||""; }
+
+// ================= orbit: ideas circling a point they never leave =================
+var orbSc=S("orbit.trapped"), orbEls=[];
+var orbEl=document.getElementById("orbit"), orbCore=document.getElementById("orbitCore");
+if(orbSc){ (orbSc.items||[]).forEach(function(it,i){
+  var d=document.createElement("div"); d.className="orb";
+  d.innerHTML='<span class="ot">'+it+'</span><span class="obr">[  -  -  ]</span>';
+  orbEl.appendChild(d); orbEls.push({el:d, txt:d.querySelector(".ot"), br:d.querySelector(".obr"), raw:it}); }); }
+
+// ================= recall: what you meant to do, rising out of a spent month ======
+var rcSc=S("calendar.recall"), rcEls=[];
+var rcEl=document.getElementById("recall");
+if(rcSc){ (rcSc.items||[]).forEach(function(it,i){
+  var d=document.createElement("div"); d.className="rgh"; d.textContent=it;
+  rcEl.appendChild(d);
+  // one at a time, clear above the grid: recalling, not annotating
+  rcEls.push({el:d, x:540, y:436 + (i%2)*54}); }); }
+
+// ================= thoughts / tally / streak / stamps / path =================
+var thSc=S("thoughts.float"), thEls=[];
+var thEl=document.getElementById("thoughts");
+if(thSc){ (thSc.items||[]).forEach(function(it,i){
+  var d=document.createElement("div"); d.className="thought";
+  d.innerHTML=it+(thSc.showNoDate?'<span class="nd">no date</span>':'');
+  thEl.appendChild(d);
+  // spread them loosely; each drifts on its own phase so nothing sits still
+  var col=i%2, row=(i/2)|0;
+  thEls.push({el:d, bx:190+col*520, by:640+row*190, ph:i*1.7, dir:(i%2?1:-1)}); }); }
+
+var tlySc=S("tally.compare");
+var tPlan=document.getElementById("tPlan"), tDone=document.getElementById("tDone"),
+    tallyEl=document.getElementById("tally");
+
+var stkSc=S("streak.bars"), stkBars=[];
+var streakEl=document.getElementById("streak"), streakBarsEl=document.getElementById("streakBars"),
+    streakNum=document.getElementById("streakNum");
+if(stkSc){ var H2=[38,52,44,66,58,74,68,86,79,94,88,100,96,100];
+ for(var bi=0;bi<H2.length;bi++){ var bar=document.createElement("div"); bar.className="sbar";
+  streakBarsEl.appendChild(bar); stkBars.push({el:bar,h:H2[bi]}); } }
+
+var stmSc=S("stamp.trio");
+var stampsEl=document.getElementById("stamps"),
+    stmpEls=[0,1,2].map(function(i){return document.getElementById("stmp"+i);});
+if(stmSc&&stmSc.words) stmSc.words.forEach(function(w,i){ if(stmpEls[i]) stmpEls[i].textContent=w; });
+
+var pathSc=S("path.arc");
+var pathSvg=document.getElementById("pathSvg"), pArc=document.getElementById("pArc"),
+    pB=document.getElementById("pB"), pDot=document.getElementById("pDot");
+var pArcLen=pArc.getTotalLength(); pArc.style.strokeDasharray=pArcLen;
+
+// ================= ui refs =================
+var R=function(id){return document.getElementById(id);};
+var tab1=R("tab1"),tab2=R("tab2"),panel=R("panel"),panelNo=R("panelNo"),panelTitle=R("panelTitle"),panelBody=R("panelBody");
+var stepEls=[R("st0"),R("st1"),R("st2")];
+var addBtn=R("addBtn"),compose=R("compose"),field=R("field"),fieldText=R("fieldText"),fieldCaret=R("fieldCaret");
+var postBtn=R("postBtn"),flyCard=R("flyCard"),scanEl=R("scan"),promptEl=R("prompt"),promptCaret=R("promptCaret");
+var counter=R("counter"),countNum=R("countNum"),ghost=R("ghostDiary"),ghostSlash=R("ghostSlash");
+var tlSvg=R("tl"),tlPath=R("tlPath"),tlA=R("tlA"),tlB=R("tlB"),tlLabA=R("tlLabA"),tlLabB=R("tlLabB");
+var cursorEl=R("cursor"),rippleEl=R("ripple"),pulseEl=R("pulse");
+var tlLen=tlPath.getTotalLength(); tlPath.style.strokeDasharray=tlLen;
+var tlSc=S("timeline.draw"); if(tlSc){ tlLabA.textContent=tlSc.from||"2026"; tlLabB.textContent=tlSc.to||"2031"; }
+var tabsSc=S("phase.tabs");
+if(tabsSc&&tabsSc.labels){ tab1.textContent=tabsSc.labels[0]; tab2.textContent=tabsSc.labels[1]; }
+var stepsSc=S("phase.steps");
+if(stepsSc) (stepsSc.steps||[]).forEach(function(s,i){ if(stepEls[i]) stepEls[i].querySelector("span").textContent=s; });
+var composeType=S("compose.type")||{text:""};
+
+// ================= captions =================
+var textLayer=R("textLayer"), showText=false;
+var BEATS=TL.captions||[];
+var beatEls=BEATS.map(function(b){var el=document.createElement("div");
+ el.className="beat"+(b.final?" final":"");
+ var l1=document.createElement("div");l1.className="line1";l1.textContent=b.l1;
+ l1.style.fontSize=(b.size||46)+"px";el.appendChild(l1);
+ if(b.l2){var l2=document.createElement("div");l2.className="line2";l2.textContent=b.l2;el.appendChild(l2);}
+ textLayer.appendChild(el);return el;});
+var endSc=S("end.card");
+var finalIdx=BEATS.map(function(b,i){return b.final?i:-1;}).filter(function(i){return i>=0;})[0];
+var finalL2=(finalIdx!=null&&beatEls[finalIdx])?beatEls[finalIdx].querySelector(".line2"):null;
+var URL_TXT=(TL.brand&&TL.brand.url)||"";
+function placeBeats(){beatEls.forEach(function(el,i){var h=el.getBoundingClientRect().height/sc;
+ el.style.top=((BEATS[i].y||250)-h/2)+"px";});}
+
+// ================= derived cursor path =================
+// Scenes declare where the pointer must be; the engine inserts the travel and the hold.
+var TARGETS=[], CLICKS=[], PULSES=[], TYPEWIN=[];
+function tgt(t,x,y,pin){ if(x!=null&&y!=null&&isFinite(t)) TARGETS.push({t:t,x:x,y:y,pin:!!pin}); }
+// a "park here until something happens" target: dropped if the next beat is close
+function rest(t,x,y){ if(isFinite(t)) TARGETS.push({t:t,x:x,y:y,rest:true}); }
+function clk(t,x,y){ if(x!=null&&y!=null&&isFinite(t)) CLICKS.push({t:t,x:x,y:y}); }
+var REST={x:905,y:1585}, REST2={x:900,y:1520};
+var LATE=null; // filled after layout for measured targets
+
+function buildSchedule(){
+  var s;
+  if((s=S("diary.open"))){ tgt(s.click,556,966); clk(s.click,556,966); rest(s.end+0.5,REST.x,REST.y); }
+  (writeSc.lines||[]).forEach(function(l,i){
+    TYPEWIN.push({s:l.start,e:l.end,line:i});
+    tgt(l.start,capStart(i),lines[i].absY+30,true); tgt(l.end,capEnd(i),lines[i].absY+30,true); });
+  if((s=S("diary.tap"))) (s.at||[]).forEach(function(t,i){
+    var row=(s.rows&&s.rows[i]!=null)?s.rows[i]:i;      // which ruled line, not which written line
+    var y=PTOP+L_TOP+row*L_GAP+16;
+    tgt(t-0.25,tapX(),y); clk(t,tapX(),y); PULSES.push({t:t,x:tapX(),y:y}); });
+  if((s=S("diary.close"))){ tgt(s.click,560,966); clk(s.click,560,966); }
+  if((s=S("calendar.year"))){
+    if(s.point!=null) tgt(s.point, 290, 700);
+    if(s.sweep) { tgt(s.sweep[0], 290, 700); tgt(s.sweep[1], 800, 1180); } }
+  if((s=S("record.blank"))&&s.fields) s.fields.forEach(function(f){ tgt(f.at+0.2, 800, 760+ (s.fields.indexOf(f))*96); });
+  if((s=S("record.blank"))&&s.fields) s.fields.forEach(function(f,i){
+    if(f.fillAt!=null) tgt(f.fillAt-0.15, 700, 760+i*96); });
+  if((s=S("ledger.rows"))) tgt((s.rowStart!=null?s.rowStart:s.in)-0.25, 300, 790);
+  if((s=S("feed.highlight"))) tgt(s.at-0.3, 700, 900);
+  if((s=S("phases.bar"))) tgt((s.fill0!=null?s.fill0:s.in)-0.2, 380, 1230);
+  if((s=S("steps.three"))&&s.at) s.at.forEach(function(a4,i){ tgt(a4-0.15, 250, 430+i*62); });
+  if((s=S("strike.words"))&&s.at) s.at.forEach(function(a6,i){ tgt(a6-0.2, 420+i*260, 1430); });
+  if((s=S("sharpen.text"))){ if(s.vagueAt!=null) tgt(s.vagueAt, 430, 1010); tgt(s.at-0.2, 470, 1070); }
+  if((s=S("collapse.step"))) tgt(s.at+0.9, 560, 1120);
+  if((s=S("orbit.trapped"))){
+    tgt(s.in+0.7, 540, (s.cy||900)-((s.ry||205)+90));
+    if(s.brackets!=null) tgt(s.brackets+0.5, 540+(s.rx||330)*0.72, (s.cy||900)+40);
+    if(s.scramble!=null) tgt(s.scramble+0.6, 540-(s.rx||330)*0.6, (s.cy||900)-60); }
+  if((s=S("calendar.recall"))&&s.at&&s.at.length){
+    tgt(s.at[0]-0.2, 274, 700); tgt(s.at[s.at.length-1], 806, 1040); }
+  if((s=S("tally.compare"))) tgt(s.in+0.9, 700, 900);
+  if((s=S("thoughts.float"))) { tgt(s.in+0.8, 620, 720); tgt(s.dissolve!=null?s.dissolve-0.3:s.out-0.5, 460, 980); }
+  if((s=S("streak.bars"))) tgt(s.growStart!=null?s.growStart-0.3:s.in, 300, 1290);
+  if((s=S("stamp.trio"))) tgt(s.at&&s.at.length?s.at[0]-0.3:s.in, 420, 1245);
+  if((s=S("path.arc"))) { tgt(s.start, 230, 1150); tgt(s.end, 850, 1150); }
+  if((s=S("progress.log"))) tgt(s.fillStart!=null?s.fillStart-0.3:s.in, 300, 1000);
+  if((s=S("archive.zoom"))){ tgt(s.start-0.05,540,960); clk(s.start,540,960); rest(s.end+0.6,REST.x,REST.y); }
+  if((s=S("archive.hover"))) { tgt(s.start,"HOVER","HOVER"); tgt(s.end,"HOVER","HOVER"); }
+  if((s=S("archive.drag"))) { tgt(s.start,880,1190); tgt(s.end,880,790); rest(s.end+0.7,REST2.x,REST2.y); }
+  if((s=S("timeline.draw"))){ tgt(s.start-0.1,250,1050); tgt(s.end,830,1050); }
+  if((s=S("diary.ghost"))){ tgt(s.in+0.6,430,960); tgt(s.strike!=null?s.strike+0.8:s.in+1.7,650,960); }
+  ALL("phase.select").forEach(function(p){ var x=p.index===0?335:745; tgt(p.at-0.05,x,592); clk(p.at,x,592); });
+  if((s=S("compose.open"))){ tgt(s.clickAt-0.1,"ADD","ADD"); clk(s.clickAt,"ADD","ADD"); }
+  if((s=S("compose.type"))){ tgt(s.start-0.4,"FIELD","FIELD"); tgt(s.start,"FIELD","FIELD",true); tgt(s.end,"FIELDEND","FIELDEND",true); }
+  if((s=S("compose.post"))){ tgt(s.clickAt-0.15,"POST","POST"); clk(s.clickAt,"POST","POST"); rest(s.flyEnd+0.6,REST2.x,REST2.y); }
+  if((s=S("archive.scan"))) rest(s.start-0.3,REST2.x,REST2.y);
+  if((s=S("prompt.turn"))){ tgt(s.clickAt!=null?s.clickAt-0.5:s.in+0.6,300,1180);
+    if(s.clickAt!=null) clk(s.clickAt,300,1180); tgt(s.out-0.6,300,1180); }
+  ALL("archive.drag2").forEach(function(d){ tgt(d.start,880,1190); tgt(d.end,880,790); });
+  if(endSc){ tgt(endSc.in+0.4,540,1010); clk(endSc.in+0.5,540,1010); tgt(TOTAL,540,1010); }
+}
+
+var PATH=[];
+function resolveTargets(){
+  var HOVER_RECT=null, FIELD_RECT=null, POST_RECT=null, ADD_RECT=null;
+  var hv=S("archive.hover");
+  var hidx=hv?ci(hv.card[0],hv.card[1]):ci(0,3);
+  inA[hidx].style.opacity=1; HOVER_RECT=rectOf(slotA[hidx]); inA[hidx].style.opacity=0;
+  compose.style.opacity=1; FIELD_RECT=rectOf(field); POST_RECT=rectOf(postBtn); compose.style.opacity=0;
+  addBtn.style.opacity=1; ADD_RECT=rectOf(addBtn); addBtn.style.opacity=0;
+  var fy=FIELD_RECT.top+FIELD_RECT.height/2+16;
+  var M={ HOVER:{x:HOVER_RECT.left+HOVER_RECT.width-46,y:HOVER_RECT.top+HOVER_RECT.height/2},
+    FIELD:{x:FIELD_RECT.left+22,y:fy},
+    FIELDEND:{x:FIELD_RECT.left+22+(composeType.text||"").length*13.2,y:fy},
+    POST:{x:POST_RECT.left+POST_RECT.width/2,y:POST_RECT.top+POST_RECT.height/2+14},
+    ADD:{x:ADD_RECT.left+ADD_RECT.width/2,y:ADD_RECT.top+ADD_RECT.height/2+14} };
+  [TARGETS,CLICKS].forEach(function(L){ L.forEach(function(p){
+    if(typeof p.x==="string"&&M[p.x]){ var m=M[p.x]; p.x=m.x; p.y=m.y; } }); });
+  LATE={HOVER_RECT:HOVER_RECT,FIELD_RECT:FIELD_RECT};
+  TARGETS.sort(function(a,b){return a.t-b.t;});
+  // Two scenes can each want the pointer somewhere within a few frames of each other,
+  // which forces an impossible sprint. When that happens the later target wins: it is
+  // the one with the click on it. This is why hops stay smooth without hand-tuning.
+  var keep=[];
+  for(var q=0;q<TARGETS.length;q++){
+    var a1=TARGETS[q], b1=TARGETS[q+1];
+    if(a1.rest && b1 && b1.t-a1.t < 1.5) continue;   // do not park if the next beat is imminent
+    if(!a1.pin && b1 && !b1.pin && b1.t-a1.t < 0.28 && Math.hypot(b1.x-a1.x,b1.y-a1.y) > 150) continue;
+    if(!a1.pin && b1 && b1.pin && b1.t-a1.t < 0.28 && Math.hypot(b1.x-a1.x,b1.y-a1.y) > 150) continue;
+    keep.push(a1);
+  }
+  TARGETS=keep;
+  // arrive-then-hold: travel scaled by distance, so nothing crawls and nothing whips
+  var cur={x:1010,y:1770}; PATH=[{t:0,x:cur.x,y:cur.y}];
+  TARGETS.forEach(function(g){
+    var d=Math.hypot(g.x-cur.x,g.y-cur.y);
+    if(d<1){ PATH.push({t:g.t,x:g.x,y:g.y}); cur=g; return; }
+    var trav=Math.max(0.42,Math.min(1.05,d/1250));
+    var dep=g.t-trav, last=PATH[PATH.length-1];
+    if(dep>last.t+0.02) PATH.push({t:dep,x:cur.x,y:cur.y});
+    PATH.push({t:g.t,x:g.x,y:g.y}); cur={x:g.x,y:g.y};
+  });
+  PATH.push({t:TOTAL,x:cur.x,y:cur.y});
+  PATH.sort(function(a,b){return a.t-b.t;});
+}
+function pathAt(t){ if(t<=PATH[0].t)return PATH[0];
+ for(var i=0;i<PATH.length-1;i++){var a=PATH[i],b=PATH[i+1];
+  if(t>=a.t&&t<=b.t){ if(b.t-a.t<1e-6) return b; var k=eio((t-a.t)/(b.t-a.t));
+   return{x:a.x+(b.x-a.x)*k,y:a.y+(b.y-a.y)*k};}}
+ return PATH[PATH.length-1];}
+
+// ================= render =================
+function render(t){
+ t=Math.max(0,Math.min(TOTAL,t));
+ var s, capOverGrid=0;
+ for(var i=0;i<BEATS.length;i++){var b=BEATS[i],op=0;
+  if(b.final){ if(t>=b.s) op=cl((t-b.s)/0.7); }
+  else if(t>=b.s&&t<b.e) op=cl(Math.min((t-b.s)/0.7,(b.e-t)/0.5));
+  var vis=(b.final||showText)?op:0; fade(beatEls[i],vis);
+  if(vis&&!b.final&&vis>capOverGrid) capOverGrid=vis;}
+ if(finalL2&&endSc){var us=endSc.urlStart!=null?endSc.urlStart:endSc.in,
+   ue=endSc.urlEnd!=null?endSc.urlEnd:endSc.in+2;
+  var un=Math.floor(cl((t-us)/Math.max(0.1,ue-us))*URL_TXT.length);
+  finalL2.textContent=t<us?"":URL_TXT.slice(0,un);}
+
+ // diary
+ var o=S("diary.open"), c=S("diary.close");
+ var openE=o?eio(seg(t,o.start,o.end)):0, closeE=c?eio(seg(t,c.start,c.end)):0;
+ var ang=-179*openE+179*closeE;
+ cover.style.transform="rotateY("+ang+"deg)";
+ coverShade.style.opacity=Math.sin(Math.abs(ang)*Math.PI/180)*.5;
+ var zoom=S("archive.zoom");
+ var bookVis=o?seg(t,Math.max(0,o.click-0.7),o.click)*(zoom?(1-seg(t,zoom.start,zoom.start+1.5)):1):0;
+ fade(bookWorld,bookVis);
+ bookWorld.style.transform="translateX("+(-(COVER_W/2)*(1-openE+closeE))+"px) rotateX("+(5*openE*(1-closeE))+"deg)";
+ var sv=cl((openE-.45)*3)*(1-cl(closeE*2.2)); fade(bookBase,sv); fade(spine,sv);
+ fade(diary,cl(openE*2.2)*(1-cl((closeE-.55)*3)));
+ var dis=S("diary.dissolve"), gone=dis?seg(t,dis.start,dis.end):0;
+ for(var w=0;w<lines.length;w++){var L=lines[w],tw=(writeSc.lines||[])[w];
+  if(!tw)continue; var full=LINES_TXT[w];
+  var n=Math.floor(cl((t-tw.start)/Math.max(0.1,tw.end-tw.start))*full.length);
+  L.txt.textContent=full.slice(0,n);
+  L.caret.style.opacity=(t>=tw.start&&t<tw.end)?1:0;
+  fade(L.el,(t>=tw.start?1:0)*(1-gone));}
+ if(dstampEl&&writeSc.stamp){ var stp=writeSc.stamp, sAt=stp.at!=null?stp.at:0;
+  var sn=Math.floor(cl((t-sAt)/0.9)*(stp.text||"").length);
+  dstampEl.textContent=(stp.text||"").slice(0,sn);
+  dstampEl.style.top=((writeSc.lines[0]?L_TOP+32:L_TOP+32))+"px";
+  fade(dstampEl, seg(t,sAt,sAt+0.25)*(1-gone)); }
+
+ // the diary returning, struck out
+ if((s=S("diary.ghost"))){ fade(ghost,seg(t,s.in,s.in+0.5)*(1-seg(t,s.out-0.6,s.out)));
+  var stk=s.strike!=null?s.strike:s.in+0.9;
+  ghostSlash.style.transform="scaleX("+eio(seg(t,stk,stk+0.8))+")"; } else fade(ghost,0);
+
+ // timeline rule
+ if(tlSc){ var tv=seg(t,tlSc.in,tlSc.in+0.6)*(1-seg(t,tlSc.out,tlSc.out+0.7));
+  fade(tlSvg,tv); tlPath.style.strokeDashoffset=tlLen*(1-eio(seg(t,tlSc.start,tlSc.end)));
+  tlA.style.opacity=seg(t,tlSc.start,tlSc.start+.3); tlB.style.opacity=seg(t,tlSc.end-.2,tlSc.end+.2);
+  fade(tlLabA,tv*seg(t,tlSc.start+.2,tlSc.start+.8)); fade(tlLabB,tv*seg(t,tlSc.end-.1,tlSc.end+.5)); }
+
+ // archive
+ var zp=zoom?eio(seg(t,zoom.start,zoom.end)):0, s0=COVER_W/1080, ss=s0+(1-s0)*zp;
+ var pb=S("archive.pullback"), pull=pb?eio(seg(t,pb.start,pb.end))*(1-(pb.back!=null?seg(t,pb.back,pb.back+1.5):0)):0;
+ var kk=1-0.085*pull, x0=PX-COVER_W/2, y0=COVER_TOP;
+ canvasWrap.style.transform="translate("+(x0*(1-zp)+(1-kk)*540)+"px,"+(y0*(1-zp)+(1-kk)*960)+"px) scale("+(ss*kk)+")";
+ fade(canvasWrap, zoom?seg(t,zoom.start,zoom.start+0.9):0);
+ var fl=S("archive.fill");
+ for(var idx=0;idx<COUNT;idx++){
+  var rt=fl?(fl.start+(idx/PC|0)*(fl.colDelay||0.42)+(idx%PC)*(fl.rowDelay||0.30)):1e9;
+  var ce=eo(cl((t-rt)/0.45)), tr="scale("+(0.94+0.06*ce)+")";
+  inA[idx].style.opacity=ce; inA[idx].style.transform=tr;
+  inB[idx].style.opacity=ce; inB[idx].style.transform=tr;}
+ FLIPS.forEach(function(F){var on=t>=F.t,txt=on?("real · "+F.y):"standby";
+  F.a.textContent=txt;F.b.textContent=txt;
+  inA[F.idx].classList.toggle("isReal",on);inB[F.idx].classList.toggle("isReal",on);});
+ var dimTo=0.34;
+ var gOp=1-0.5*capOverGrid;
+ var pan=S("phase.tabs"); if(pan) gOp*=1-(1-dimTo)*seg(t,pan.in-0.8,pan.in+0.2);
+ if(tlSc) gOp*=1-(1-0.45)*seg(t,tlSc.in-0.6,tlSc.in+0.4)*(1-seg(t,tlSc.out,tlSc.out+0.6));
+ if(endSc) gOp*=(1-seg(t,endSc.in,endSc.in+1.6));
+ gridLayer.style.opacity=gOp;
+ if((s=S("archive.hover"))&&LATE){var hr=LATE.HOVER_RECT;
+  hoverRing.style.cssText+=";left:"+(hr.left-6)+"px;top:"+(hr.top-6)+"px;width:"+(hr.width+12)+"px;height:"+(hr.height+12)+"px";
+  fade(hoverRing,seg(t,s.start,s.start+.4)*(1-seg(t,s.end,s.end+.4)));}
+ var scr=S("archive.scroll"), off=0;
+ if(scr&&t>=scr.start){ off=(t-scr.start)*(scr.speed||15); if(loopD>0) off=off%loopD; }
+ gi.style.transform="translateY(-"+off+"px)";
+ if((s=S("archive.scan"))){ fade(scanEl,seg(t,s.start,s.start+.3)*(1-seg(t,s.end-.5,s.end)));
+  scanEl.style.top=(60+eio(seg(t,s.start,s.end))*1790)+"px"; } else fade(scanEl,0);
+ if((s=S("archive.counter"))){ var post=S("compose.post");
+  var cN=Math.round((s.from||1200)+eo(seg(t,s.start,s.end))*((s.to||12000)-(s.from||1200))+Math.max(0,t-s.end)*7);
+  if(post&&t>=post.flyEnd) cN+=1;
+  countNum.textContent=cN.toLocaleString("en-US");
+  var cv=seg(t,s.start,s.start+.6)*(1-(tlSc?seg(t,tlSc.in-0.8,tlSc.in-0.2):0));
+  if(post) cv=Math.max(cv, seg(t,post.flyEnd-0.4,post.flyEnd+0.2)*(1-seg(t,post.flyEnd+6,post.flyEnd+7)));
+  fade(counter,cv); } else fade(counter,0);
+
+
+
+
+
+
+ // Big panels breathe. A blinking bracket is too few pixels to read as motion;
+ // drifting the whole card is what stops the frame looking like a photograph.
+ function floaty(el,ph,amp){ if(el) el.style.transform=
+   "translateY("+(Math.sin(t*0.85+ph)*(amp||9))+"px)"; }
+ floaty(recEl,0,10); floaty(steps3El,1.4,8); floaty(sharpenEl,2.6,9);
+ floaty(collapseEl,0.7,9); floaty(culpEl,3.3,7);
+
+
+ // the ledger: one dated line per day, piling up into something with weight
+ if(lgSc){ fade(ledgerEl, seg(t,lgSc.in,lgSc.in+0.4)*(1-seg(t,lgSc.out,lgSc.out+0.5)));
+  var lst=lgSc.rowStart!=null?lgSc.rowStart:lgSc.in, lstep=lgSc.rowStep||0.34;
+  lgEls.forEach(function(r,i){ fade(r, seg(t,lst+i*lstep,lst+i*lstep+0.3)); });
+  var shownN=0; lgEls.forEach(function(r,i){ if(t>=lst+i*lstep) shownN++; });
+  ledgerNum.textContent=Math.round(shownN*(lgSc.perRow||1)); }
+ else fade(ledgerEl,0);
+
+ // the archive as a live feed: everyone's records, always moving
+ if(fdSc){ fade(feedEl, seg(t,fdSc.in,fdSc.in+0.6)*(1-seg(t,fdSc.out,fdSc.out+0.6)));
+  var spd=fdSc.speed||46, sp2=[1,0.74];
+  // the stream settles while an entry is being annotated, so the labels stay with it
+  var hold=fhSc?seg(t,fhSc.at-0.5,fhSc.at)*(1-seg(t,fhSc.out,fhSc.out+0.5)):0;
+  var travelled=fdTravel(t,spd,hold);
+  fdCols.forEach(function(col,ci2){
+   var setH=col.scrollHeight/3 || 950;
+   var off2=(travelled*sp2[ci2])%setH;
+   col.style.transform="translateY("+(-off2)+"px)"; });
+  var widen=fdSc.widen!=null?eio(seg(t,fdSc.widen,fdSc.widen+1.2)):1;
+  feedEl.style.opacity=feedEl.style.opacity; // keep
+  fdCols.forEach(function(col,ci3){ col.style.opacity=ci3===0?1:(0.3+0.7*widen); });
+  // when a phase bar or the end card takes over, the stream drops right back
+  var pbb=S("phases.bar"), edd=S("end.card");
+  var recede = pbb?seg(t,pbb.in-0.5,pbb.in+0.5):0;
+  feedEl.style.opacity = (parseFloat(feedEl.style.opacity)||0) * (1-0.82*recede);
+  // one entry turns real
+  var realIdx = (fhPick!=null?fhPick:(frSc?(frSc.row||4):4));
+  if(frSc) fdRows.forEach(function(r,i){ if(i===realIdx){
+    var on2=t>=frSc.at; r.el.classList.toggle("real",on2);
+    r.st.textContent=on2?("real · "+(frSc.year||"2029")):"standby"; } });
+  // annotations attaching to a highlighted entry
+  if(fhSc){ var hv2=seg(t,fhSc.at,fhSc.at+0.4)*(1-seg(t,fhSc.out,fhSc.out+0.4));
+   var focus=seg(t,fhSc.at-0.3,fhSc.at+0.5)*(1-seg(t,fhSc.out,fhSc.out+0.5));
+   // lock onto whichever entry is nearest the centre when the annotation starts
+   if(fhPick===null && t>=fhSc.at-0.5){
+     var best=1e9;
+     fdRows.forEach(function(rw,ri){ if(rw.col!==0) return;
+       var rc=rectOf(rw.el); if(rc.width<10) return;
+       var d3=Math.abs(rc.top+rc.height/2-880);
+       if(d3<best){ best=d3; fhPick=ri; } });
+   }
+   var tr2=fdRows[fhPick!=null?fhPick:(fhSc.row||4)];
+   fdRows.forEach(function(rw,ri){ rw.el.style.opacity = (ri===fhPick)?1:(1-0.72*focus); });
+   if(tr2){ var rr=rectOf(tr2.el);
+    feedRing.style.cssText+=";left:"+(rr.left-6)+"px;top:"+(rr.top-6)+"px;width:"+(rr.width+12)+"px;height:"+(rr.height+12)+"px";
+    fade(feedRing,hv2);
+    (fhSc.labels||[]).forEach(function(lb,i){ var el=fnEls[i]; if(!el)return;
+     el.textContent=lb;
+     el.style.left=(rr.left+rr.width+22)+"px";
+     el.style.top=(rr.top+rr.height/2-30+i*56)+"px";
+     fade(el, hv2*seg(t,fhSc.at+0.3+i*0.45,fhSc.at+0.7+i*0.45)); }); } }
+  else { fade(feedRing,0); fnEls.forEach(function(e){fade(e,0);});
+    fdRows.forEach(function(rw){ rw.el.style.opacity=1; }); } }
+ else { fade(feedEl,0); fade(feedRing,0); fnEls.forEach(function(e){fade(e,0);}); }
+
+ // two phases: one filling, one still outlined
+ if(pbSc){ fade(phbarEl, seg(t,pbSc.in,pbSc.in+0.4)*(1-seg(t,pbSc.out,pbSc.out+0.5)));
+  phFills[0].style.width=(eio(seg(t,pbSc.fill0||pbSc.in,(pbSc.fill0||pbSc.in)+1.1))*100)+"%";
+  phSegs[0].classList.toggle("live", t>=(pbSc.fill0||pbSc.in)+0.55);
+  if(pbSc.fill1!=null){ phFills[1].style.width=(eio(seg(t,pbSc.fill1,pbSc.fill1+1.4))*(pbSc.fill1Pct||34))+"%"; }
+  phNote.textContent=pbSc.note2||"";
+  fade(phNote, pbSc.noteAt!=null?seg(t,pbSc.noteAt,pbSc.noteAt+0.4):0); }
+ else fade(phbarEl,0);
+
+ // the record whose fields were never filled
+ if(recSc){ fade(recEl, seg(t,recSc.in,recSc.in+0.5)*(1-seg(t,recSc.out-0.4,recSc.out)));
+  (recSc.fields||[]).forEach(function(f,i){ var r=recRows[i]; if(!r)return;
+   fade(r.el, seg(t,f.at,f.at+0.4));
+   // the empty slot keeps blinking: nothing ever goes in it
+   // the slot keeps hunting for a value and never finds one
+   var glyph="-/-\\|"; var gi2=Math.floor(t*9)%glyph.length;
+   if(f.fillAt!=null && t>=f.fillAt){        // the same slot, finally answered
+     var fn3=Math.floor(cl((t-f.fillAt)/0.5)*(f.value||"").length);
+     r.v.textContent=(f.value||"").slice(0,fn3);
+     r.v.style.opacity=1; r.v.style.color="#F5F5F0"; r.v.style.letterSpacing="1px";
+   } else {
+     r.v.textContent = t>=f.at ? ("[  "+glyph[gi2]+"  ]") : "[    ]";
+     r.v.style.opacity = 0.45+0.55*Math.abs(Math.sin((t-f.at)*3.4));
+     r.v.style.color="#6B6B6B"; r.v.style.letterSpacing="6px";
+   }
+  }); } else fade(recEl,0);
+
+
+ // "not motivation, not talent" - name them, cross them off
+ if(cuSc){ fade(culpEl, seg(t,cuSc.in,cuSc.in+0.35)*(1-seg(t,cuSc.out,cuSc.out+0.4)));
+  (cuSc.at||[]).forEach(function(a5,i){ var c=cuEls[i]; if(!c)return;
+   c.el.style.opacity=seg(t,a5-0.35,a5-0.05);
+   c.x.style.transform="scaleX("+eio(seg(t,a5,a5+0.42))+")"; }); }
+ else fade(culpEl,0);
+
+ // three things, filling in one per spoken step
+ if(st3Sc){ fade(steps3El, seg(t,st3Sc.in,st3Sc.in+0.4)*(1-seg(t,st3Sc.out,st3Sc.out+0.5)));
+  (st3Sc.at||[]).forEach(function(a3,i){ if(s3Els[i]) s3Els[i].classList.toggle("on", t>=a3); }); }
+ else fade(steps3El,0);
+
+ // "get healthy" resolving into something you can check
+ if(shSc){ fade(sharpenEl, seg(t,shSc.in,shSc.in+0.35)*(1-seg(t,shSc.out,shSc.out+0.4)));
+  var vt=shSc.vagueAt!=null?shSc.vagueAt:shSc.in;
+  var vn=Math.floor(cl((t-vt)/0.9)*(shSc.vague||"").length);
+  shOld.textContent=(shSc.vague||"").slice(0,vn);
+  var rp2=seg(t,shSc.at,shSc.at+1.1), raw2=shSc.specific||"";
+  var keep2=Math.round(raw2.length*eo(rp2));
+  shNew.textContent=raw2.slice(0,keep2)+raw2.slice(keep2).replace(/\S/g,"\u00b7");
+  shOld.style.opacity=1-rp2; shOld.style.textDecoration=rp2>0.35?"line-through":"none";
+  shNew.style.opacity=rp2>0.02?1:0; }
+ else fade(sharpenEl,0);
+
+ // the whole ambition contracting to one thing you can do tomorrow
+ if(clSc){ fade(collapseEl, seg(t,clSc.in,clSc.in+0.35)*(1-seg(t,clSc.out,clSc.out+0.4)));
+  var cp2=eio(seg(t,clSc.at,clSc.at+1.0));
+  clBig.style.transform="scale("+(1-0.42*cp2)+")";
+  clBig.style.opacity=1-0.55*cp2;
+  clSmall.style.opacity=eo(seg(t,clSc.at+0.55,clSc.at+1.25));
+  clSmall.style.transform="scale("+(0.85+0.15*eo(seg(t,clSc.at+0.55,clSc.at+1.25)))+")"; }
+ else fade(collapseEl,0);
+
+ // orbit: it stayed in your head -> no date will stick -> it decays into a mood
+ if(orbSc){ var oin=seg(t,orbSc.in,orbSc.in+0.5), oout=1-seg(t,orbSc.out-0.3,orbSc.out);
+  fade(orbEl,oin*oout); fade(orbCore,oin*oout*0.9);
+  var brP=orbSc.brackets!=null?seg(t,orbSc.brackets,orbSc.brackets+0.5):0;
+  var scP=orbSc.scramble!=null?seg(t,orbSc.scramble,orbSc.scramble+1.6):0;
+  var stP=orbSc.scatter!=null?eio(seg(t,orbSc.scatter,orbSc.out)):0;
+  var N2=orbEls.length, cx0=540, cy0=orbSc.cy||900;
+  orbEls.forEach(function(o,i){
+   var ang=(t-orbSc.in)*0.42 + i*(Math.PI*2/N2);          // never stops going round
+   var rx=(orbSc.rx||330)*(1+stP*2.4), ry=(orbSc.ry||205)*(1+stP*2.4);
+   o.el.style.left=(cx0+Math.cos(ang)*rx)+"px";
+   o.el.style.top=(cy0+Math.sin(ang)*ry)+"px";
+   // the far side of the orbit sits back, so the ring reads as depth
+   var depth=0.55+0.45*((Math.sin(ang)+1)/2);
+   o.el.style.opacity=depth*(1-stP);
+   // a date bracket that blinks and never fills
+   o.br.style.opacity=brP*(1-scP)*(0.35+0.65*Math.abs(Math.sin(t*3.1+i)));
+   // the words lose their edges: a plan becomes a mood
+   if(scP>0){ var raw=o.raw, keep=Math.max(0,Math.round(raw.length*(1-scP)));
+    o.txt.textContent=raw.slice(0,keep)+raw.slice(keep).replace(/\S/g,"\u00b7"); }
+   else o.txt.textContent=o.raw;
+  }); } else { fade(orbEl,0); fade(orbCore,0); }
+
+ // recall: ghosts of the plans rising out of the months already spent
+ if(rcSc){ fade(rcEl, seg(t,rcSc.in,rcSc.in+0.3)*(1-seg(t,rcSc.out-0.3,rcSc.out)));
+  rcEls.forEach(function(g,i){
+   var gt=(rcSc.at||[])[i]; if(gt==null){ fade(g.el,0); return; }
+   var k4=seg(t,gt,gt+1.1);
+   g.el.style.left=g.x+"px"; g.el.style.top=(g.y-k4*52)+"px";
+   g.el.style.fontSize=(26-4*k4)+"px";
+   fade(g.el, Math.sin(cl(k4)*Math.PI)*0.95); }); }
+ else fade(rcEl,0);
+
+ // thoughts: unanchored, drifting, then scattering into nothing
+ if(thSc){ var dv=thSc.dissolve!=null?eio(seg(t,thSc.dissolve,thSc.out)):0;
+  fade(thEl, seg(t,thSc.in,thSc.in+0.6)*(1-seg(t,thSc.out-0.2,thSc.out)));
+  thEls.forEach(function(o,i){
+   var dx=Math.sin(t*0.55+o.ph)*26, dy=Math.cos(t*0.42+o.ph*1.3)*20;   // never still
+   var sx=dv*o.dir*420, sy=dv*(i%3-1)*260;                              // scatter on dissolve
+   o.el.style.left=(o.bx+dx+sx)+"px"; o.el.style.top=(o.by+dy+sy)+"px";
+   o.el.style.opacity=(0.6-0.6*dv)*(0.75+0.25*Math.sin(t*0.9+o.ph));    // breathing, then gone
+  }); } else fade(thEl,0);
+
+ // planned vs done
+ if(tlySc){ fade(tallyEl, seg(t,tlySc.in,tlySc.in+0.4)*(1-seg(t,tlySc.out,tlySc.out+0.4)));
+  tPlan.textContent=Math.round(eo(seg(t,tlySc.in+0.2,tlySc.in+1.2))*(tlySc.planned||12));
+  tDone.textContent=Math.round(eo(seg(t,tlySc.in+1.1,tlySc.in+2.1))*(tlySc.done||2)); }
+ else fade(tallyEl,0);
+
+ // the record building: bars growing, streak climbing
+ if(stkSc){ fade(streakEl, seg(t,stkSc.in,stkSc.in+0.4)*(1-seg(t,stkSc.out,stkSc.out+0.4)));
+  var gp2=seg(t,stkSc.growStart!=null?stkSc.growStart:stkSc.in,stkSc.growEnd!=null?stkSc.growEnd:stkSc.out);
+  stkBars.forEach(function(b,i){
+   var lead=cl((gp2*stkBars.length-i)/1.0);   // bars rise left to right
+   b.el.style.height=(b.h*eo(lead))+"%"; });
+  streakNum.textContent=Math.round(gp2*(stkSc.days||14)); }
+ else fade(streakEl,0);
+
+ // dated / public / permanent, stamping on one at a time
+ if(stmSc){ fade(stampsEl, seg(t,stmSc.in,stmSc.in+0.3)*(1-seg(t,stmSc.out,stmSc.out+0.4)));
+  (stmSc.at||[]).forEach(function(a2,i){ if(!stmpEls[i])return;
+   var k3=eo(seg(t,a2,a2+0.42));
+   stmpEls[i].style.opacity=k3; stmpEls[i].style.transform="scale("+(0.82+0.18*k3)+")"; }); }
+ else fade(stampsEl,0);
+
+ // from here to there
+ if(pathSc){ fade(pathSvg, seg(t,pathSc.in,pathSc.in+0.3)*(1-seg(t,pathSc.out,pathSc.out+0.4)));
+  var dp=eio(seg(t,pathSc.start,pathSc.end));
+  pArc.style.strokeDashoffset=pArcLen*(1-dp);
+  var pt=pArc.getPointAtLength(pArcLen*dp);
+  pDot.setAttribute("cx",pt.x); pDot.setAttribute("cy",pt.y);
+  pDot.setAttribute("opacity", dp>0.02&&dp<0.995?1:0);
+  pB.setAttribute("opacity", eo(seg(t,pathSc.end-0.25,pathSc.end+0.15))); }
+ else fade(pathSvg,0);
+
+ // calendar: the year burning down
+ if(calSc){ var cvis=seg(t,calSc.in,calSc.in+0.5)*(1-seg(t,calSc.out,calSc.out+0.6));
+  fade(calEl,cvis);
+  var strikes=calSc.strike||[];
+  calCells.forEach(function(c,i){
+   var st2=strikes[i];
+   c.strike.style.transform="scaleX("+(st2==null?0:eio(seg(t,st2,st2+0.32)))+")";
+   var isLeft = calSc.remain!=null && i>=calSc.remain && t>=(calSc.remainAt||1e9);
+   c.el.classList.toggle("left", !!isLeft);
+   // the months still on the clock keep breathing, so the frame never freezes
+   var breathe = isLeft ? (0.86+0.14*Math.sin(t*2.1+i*0.8)) : 1;
+   c.el.style.opacity = ((st2!=null && t>=st2+0.32) ? 0.45 : 1) * breathe;
+   c.el.style.transform = isLeft ? "scale("+(0.99+0.012*Math.sin(t*2.1+i*0.8))+")" : "scale(1)"; });
+  if(calSc.point!=null&&calCells.length){ var pr=rectOf(calCells[0].el);
+   calRing.style.cssText+=";left:"+(pr.left-5)+"px;top:"+(pr.top-5)+"px;width:"+(pr.width+10)+"px;height:"+(pr.height+10)+"px";
+   fade(calRing, cvis*seg(t,calSc.point,calSc.point+0.3)*(1-seg(t,calSc.point+1.6,calSc.point+2.0))); }
+  else fade(calRing,0);
+ } else { fade(calEl,0); fade(calRing,0); }
+
+ // progress log: days becoming visible
+ if(plogSc){ var pvis=seg(t,plogSc.in,plogSc.in+0.5)*(1-seg(t,plogSc.out,plogSc.out+0.6));
+  fade(plogEl,pvis);
+  var fs0=plogSc.fillStart!=null?plogSc.fillStart:plogSc.in, fe0=plogSc.fillEnd!=null?plogSc.fillEnd:plogSc.out;
+  var shown=Math.floor(cl((t-fs0)/Math.max(0.1,fe0-fs0))*plogMarks.length);
+  plogMarks.forEach(function(m,i){ m.classList.toggle("on", i<shown); });
+  plogNum.textContent=shown;
+ } else fade(plogEl,0);
+
+ // phases
+ if(pan){ var tv2=seg(t,pan.in,pan.in+.6)*(1-seg(t,pan.out,pan.out+.5));
+  fade(tab1,tv2); fade(tab2,tv2);
+  var sel=null; ALL("phase.select").forEach(function(p){ if(t>=p.at) sel=p; });
+  tab1.classList.toggle("on",!!sel&&sel.index===0); tab2.classList.toggle("on",!!sel&&sel.index===1);
+  if(sel){ panelNo.textContent=(tabsSc.labels||["Phase 01","Phase 02"])[sel.index];
+   panelTitle.textContent=sel.title||""; panelBody.textContent=sel.body||"";
+   fade(panel,seg(t,sel.at+.15,sel.at+.75)*(1-seg(t,pan.out,pan.out+.5))); } else fade(panel,0);
+ } else { fade(tab1,0);fade(tab2,0);fade(panel,0); }
+ if(stepsSc) (stepsSc.at||[]).forEach(function(st,i){ if(stepEls[i])
+   fade(stepEls[i],seg(t,st,st+0.5)*(pan?(1-seg(t,pan.out,pan.out+.5)):1)); });
+ else stepEls.forEach(function(el){fade(el,0);});
+
+ // compose
+ var op2=S("compose.open"), ty=S("compose.type"), po=S("compose.post");
+ if(op2){ fade(addBtn,seg(t,op2.addAt,op2.addAt+.4)*(1-seg(t,op2.clickAt+0.4,op2.clickAt+0.7)));
+  addBtn.classList.toggle("hot",t>=op2.clickAt-0.1&&t<op2.clickAt+0.25); } else fade(addBtn,0);
+ if(ty){ var cEnd=po?po.flyEnd+1.6:ty.end+2;
+  fade(compose,seg(t,op2?op2.clickAt+0.2:ty.start-0.6,(op2?op2.clickAt+0.2:ty.start-0.6)+0.5)*(1-seg(t,cEnd,cEnd+0.5)));
+  field.classList.toggle("focus",t>=ty.start-0.4&&t<ty.end+0.6);
+  var fn=Math.floor(cl((t-ty.start)/Math.max(0.1,ty.end-ty.start))*(ty.text||"").length);
+  fieldText.textContent=(ty.text||"").slice(0,fn);
+  fieldCaret.style.opacity=(t>=ty.start-0.4&&t<ty.end+0.4)?1:0; } else fade(compose,0);
+ if(po){ postBtn.classList.toggle("hot",t>=po.clickAt-0.1&&t<po.clickAt+0.3);
+  if(t>=po.flyStart&&t<po.flyEnd+0.3&&LATE){var fr=LATE.FIELD_RECT,k2=eio(seg(t,po.flyStart,po.flyEnd));
+   flyCard.style.left=(fr.left+(150-fr.left)*k2)+"px"; flyCard.style.top=(fr.top+(120-fr.top)*k2)+"px";
+   flyCard.style.width=(fr.width+(248-fr.width)*k2)+"px"; flyCard.style.fontSize=(24-4*k2)+"px";
+   flyCard.textContent=(ty&&ty.text)||""; fade(flyCard,1-cl((k2-0.72)/0.28)); } else fade(flyCard,0); }
+ else fade(flyCard,0);
+ if((s=S("prompt.turn"))){ fade(promptEl,seg(t,s.in,s.in+.5)*(1-seg(t,s.out,s.out+.5)));
+  promptCaret.style.opacity=(t>=s.in+0.6&&Math.floor(t*2)%2===0)?1:0.15; } else fade(promptEl,0);
+
+ // cursor: typing windows steer it to the caret
+ var p=pathAt(t), cx=p.x, cy=p.y;
+ TYPEWIN.forEach(function(tw2,q){ if(t>=tw2.s&&t<tw2.e){
+  var nn=cl((t-tw2.s)/(tw2.e-tw2.s))*LINES_TXT[q].length;
+  cx=lines[q].absX+nn*CHAR_W+6; cy=lines[q].absY+30; }});
+ if(ty&&LATE&&t>=ty.start&&t<ty.end){ var fr2=LATE.FIELD_RECT;
+  var fn2=cl((t-ty.start)/(ty.end-ty.start))*(ty.text||"").length;
+  cx=fr2.left+22+fn2*13.2; cy=fr2.top+fr2.height/2+16; }
+ if(tlSc&&t>=tlSc.start&&t<tlSc.end){ cx=250+eio(seg(t,tlSc.start,tlSc.end))*580; cy=1050; }
+ cursorEl.style.left=cx+"px"; cursorEl.style.top=cy+"px";
+ fade(cursorEl, endSc?(1-seg(t,endSc.in+1.8,endSc.in+2.6)):1);
+ var rop=0,rx=0,ry=0;
+ CLICKS.forEach(function(m){var d=t-m.t; if(d>=0&&d<0.5){rop=1-d/0.5;rx=m.x;ry=m.y;
+  rippleEl.style.transform="scale("+(0.35+d*2.2)+")";}});
+ rippleEl.style.left=rx+"px";rippleEl.style.top=ry+"px";fade(rippleEl,rop);
+ var pop=0,px2=0,py2=0;
+ PULSES.forEach(function(n2){var pd=t-n2.t; if(pd>=0&&pd<1.5){pop=(1-pd/1.5)*0.8;px2=n2.x;py2=n2.y;
+  pulseEl.style.transform="scale("+(0.25+pd*2.6)+")";}});
+ pulseEl.style.left=px2+"px";pulseEl.style.top=py2+"px";fade(pulseEl,pop);
+}
+
+// ================= driver =================
+var st0=null,raf=null;
+function frame(now){ if(st0===null)st0=now; var t=(now-st0)/1000;
+ if(t>=TOTAL){render(TOTAL);raf=null;return;} render(t); raf=requestAnimationFrame(frame); }
+function play(){ R("playBtn").style.display="none"; st0=null;
+ if(raf)cancelAnimationFrame(raf); raf=requestAnimationFrame(frame); }
+addEventListener("load",function(){
+ loopD=(bB.getBoundingClientRect().top-bA.getBoundingClientRect().top)/sc;
+ placeBeats(); buildSchedule(); resolveTargets();
+ var q=new URLSearchParams(location.search);
+ if(q.get("text")==="1") showText=true;
+ render(0);
+ window.__seek=function(x){render(x);}; window.__duration=TOTAL;
+ var tp=q.get("t");
+ if(tp!==null&&!isNaN(parseFloat(tp))){R("playBtn").style.display="none";render(parseFloat(tp));return;}
+ if(q.get("autoplay")==="1") play(); else R("playBtn").addEventListener("click",play);
+});
+})();
+
+</script>
+</body></html>

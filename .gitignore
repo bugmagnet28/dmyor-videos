@@ -1,0 +1,18 @@
+node_modules/
+.DS_Store
+# media stays local (large); scripts, timelines, html and data are tracked
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.m4a
+inbox/audio/*
+inbox/processed/*
+inbox/metrics/*.png
+inbox/metrics/*.jpg
+inbox/metrics/*.jpeg
+inbox/metrics/*.heic
+studio/state/*.png
+studio/state/run.lock
+studio/runs/logs/*.log
+studio/PAUSE

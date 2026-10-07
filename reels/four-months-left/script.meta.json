@@ -1,0 +1,19 @@
+{
+ "slug": "four-months-left",
+ "hint": "4 months left in 2026; did you notice how the year went; how many plans did you execute; planning + concrete execution; get it out of your head, one day at a time, logging progress is rewarding; dmyor phase one = write it down; phase two coming",
+ "created": "2026-09-02T22:45:22",
+ "hook_pattern": "Countdown",
+ "target_seconds": 60.0,
+ "status": "recorded",
+ "words": 192,
+ "projected_seconds": 79.3,
+ "brand_spoken": "deemyor",
+ "brand_written": "dmyor",
+ "revision": "v2 - diagnoses the untracked-day trap",
+ "duration": 53.73,
+ "scenes": 19,
+ "active_pct": 93,
+ "recorded_words": 140,
+ "measured_wps": 2.61,
+ "note": "audio recorded from v1 script; the v2 untracked-day diagnosis is unused and still in script.md"
+}

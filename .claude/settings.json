@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rEo \"#[0-9a-fA-F]{3,6}\" /Users/sanyampathak/Documents/Dmyor/millionClient/src/index.css /Users/sanyampathak/Documents/Dmyor/millionClient/src/App.css 2>/dev/null | sort | uniq -c | sort -rn | head -30)",
+      "Read(//Users/sanyampathak/Documents/Dmyor/millionClient/src/**)",
+      "Bash(open -a \"Google Chrome\" \"file://$\\(pwd\\)/dmyor-launch.html?t=20\")",
+      "Bash(perl -0pi -e 's/\\\\{t:36\\\\.4, x:REST_A\\\\.x, y:REST_A\\\\.y\\\\}/{t:35.9, x:REST_A.x, y:REST_A.y}/; *)"
+    ]
+  }
+}

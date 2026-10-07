@@ -1,0 +1,1339 @@
+{
+ "audio": "audio.mp3",
+ "duration": 75.26,
+ "text": "What is the difference between the people who win and the people who do not? Both tried. Both set out to become something one got there, one did not. Is it willpower, consistency, intelligence, or something none of us saw coming? Look at where we are standing. More technology in your hands than any generation has ever had. More ways to change something than you could use in a lifetime. So the answer is duller than you want it to be. You already know you could do it. You just never made a plan. You are comfortable enough where you are that getting out of your own way feels like a bother. That same story runs through all of history and most of the present. The dream stays a dream. We are going to change that. The first step has already started. There is now an intent archive where any of us can put a dream into words the whole world can see. So start by owning what you actually want. Then phase 2 begins. Shortly. Phase 2 is about execution, turning what you wrote into something real. If you want to be part of this, the archive is live at www.demure.com. Go take your first action.",
+ "words": [
+  {
+   "w": "what",
+   "raw": "What",
+   "s": 0.0,
+   "e": 0.28
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 0.28,
+   "e": 0.84
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 0.84,
+   "e": 1.2
+  },
+  {
+   "w": "difference",
+   "raw": "difference",
+   "s": 1.2,
+   "e": 1.56
+  },
+  {
+   "w": "between",
+   "raw": "between",
+   "s": 1.56,
+   "e": 1.92
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 1.92,
+   "e": 2.08
+  },
+  {
+   "w": "people",
+   "raw": "people",
+   "s": 2.08,
+   "e": 2.36
+  },
+  {
+   "w": "who",
+   "raw": "who",
+   "s": 2.36,
+   "e": 2.58
+  },
+  {
+   "w": "win",
+   "raw": "win",
+   "s": 2.58,
+   "e": 2.84
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 2.84,
+   "e": 3.42
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 3.42,
+   "e": 3.54
+  },
+  {
+   "w": "people",
+   "raw": "people",
+   "s": 3.54,
+   "e": 3.86
+  },
+  {
+   "w": "who",
+   "raw": "who",
+   "s": 3.86,
+   "e": 4.08
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 4.08,
+   "e": 4.3
+  },
+  {
+   "w": "not",
+   "raw": "not?",
+   "s": 4.3,
+   "e": 4.6
+  },
+  {
+   "w": "both",
+   "raw": "Both",
+   "s": 5.2,
+   "e": 5.36
+  },
+  {
+   "w": "tried",
+   "raw": "tried.",
+   "s": 5.36,
+   "e": 5.7
+  },
+  {
+   "w": "both",
+   "raw": "Both",
+   "s": 6.18,
+   "e": 6.32
+  },
+  {
+   "w": "set",
+   "raw": "set",
+   "s": 6.32,
+   "e": 6.78
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 6.78,
+   "e": 7.02
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 7.02,
+   "e": 7.2
+  },
+  {
+   "w": "become",
+   "raw": "become",
+   "s": 7.2,
+   "e": 7.56
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 7.56,
+   "e": 8.18
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 8.18,
+   "e": 8.5
+  },
+  {
+   "w": "got",
+   "raw": "got",
+   "s": 8.5,
+   "e": 8.72
+  },
+  {
+   "w": "there",
+   "raw": "there,",
+   "s": 8.72,
+   "e": 8.98
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 9.2,
+   "e": 9.34
+  },
+  {
+   "w": "did",
+   "raw": "did",
+   "s": 9.34,
+   "e": 9.74
+  },
+  {
+   "w": "not",
+   "raw": "not.",
+   "s": 9.74,
+   "e": 10.04
+  },
+  {
+   "w": "is",
+   "raw": "Is",
+   "s": 10.4,
+   "e": 10.52
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 10.52,
+   "e": 10.62
+  },
+  {
+   "w": "willpower",
+   "raw": "willpower,",
+   "s": 10.62,
+   "e": 10.92
+  },
+  {
+   "w": "consistency",
+   "raw": "consistency,",
+   "s": 11.34,
+   "e": 11.76
+  },
+  {
+   "w": "intelligence",
+   "raw": "intelligence,",
+   "s": 12.34,
+   "e": 12.6
+  },
+  {
+   "w": "or",
+   "raw": "or",
+   "s": 12.86,
+   "e": 12.98
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 12.98,
+   "e": 13.3
+  },
+  {
+   "w": "none",
+   "raw": "none",
+   "s": 13.3,
+   "e": 13.48
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 13.48,
+   "e": 13.6
+  },
+  {
+   "w": "us",
+   "raw": "us",
+   "s": 13.6,
+   "e": 13.74
+  },
+  {
+   "w": "saw",
+   "raw": "saw",
+   "s": 13.74,
+   "e": 13.96
+  },
+  {
+   "w": "coming",
+   "raw": "coming?",
+   "s": 13.96,
+   "e": 14.26
+  },
+  {
+   "w": "look",
+   "raw": "Look",
+   "s": 14.74,
+   "e": 14.88
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 14.88,
+   "e": 14.98
+  },
+  {
+   "w": "where",
+   "raw": "where",
+   "s": 14.98,
+   "e": 15.12
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 15.12,
+   "e": 15.24
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 15.24,
+   "e": 15.32
+  },
+  {
+   "w": "standing",
+   "raw": "standing.",
+   "s": 15.32,
+   "e": 15.7
+  },
+  {
+   "w": "more",
+   "raw": "More",
+   "s": 16.3,
+   "e": 16.5
+  },
+  {
+   "w": "technology",
+   "raw": "technology",
+   "s": 16.5,
+   "e": 17.02
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 17.02,
+   "e": 17.32
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 17.32,
+   "e": 17.54
+  },
+  {
+   "w": "hands",
+   "raw": "hands",
+   "s": 17.54,
+   "e": 17.82
+  },
+  {
+   "w": "than",
+   "raw": "than",
+   "s": 17.82,
+   "e": 18.0
+  },
+  {
+   "w": "any",
+   "raw": "any",
+   "s": 18.0,
+   "e": 18.28
+  },
+  {
+   "w": "generation",
+   "raw": "generation",
+   "s": 18.28,
+   "e": 18.72
+  },
+  {
+   "w": "has",
+   "raw": "has",
+   "s": 18.72,
+   "e": 19.06
+  },
+  {
+   "w": "ever",
+   "raw": "ever",
+   "s": 19.06,
+   "e": 19.52
+  },
+  {
+   "w": "had",
+   "raw": "had.",
+   "s": 19.52,
+   "e": 20.04
+  },
+  {
+   "w": "more",
+   "raw": "More",
+   "s": 20.22,
+   "e": 20.74
+  },
+  {
+   "w": "ways",
+   "raw": "ways",
+   "s": 20.74,
+   "e": 20.96
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 20.96,
+   "e": 21.18
+  },
+  {
+   "w": "change",
+   "raw": "change",
+   "s": 21.18,
+   "e": 21.44
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 21.44,
+   "e": 21.8
+  },
+  {
+   "w": "than",
+   "raw": "than",
+   "s": 21.8,
+   "e": 22.02
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 22.02,
+   "e": 22.16
+  },
+  {
+   "w": "could",
+   "raw": "could",
+   "s": 22.16,
+   "e": 22.3
+  },
+  {
+   "w": "use",
+   "raw": "use",
+   "s": 22.3,
+   "e": 22.64
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 22.64,
+   "e": 22.9
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 22.9,
+   "e": 23.04
+  },
+  {
+   "w": "lifetime",
+   "raw": "lifetime.",
+   "s": 23.04,
+   "e": 23.46
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 24.04,
+   "e": 24.26
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 24.26,
+   "e": 24.4
+  },
+  {
+   "w": "answer",
+   "raw": "answer",
+   "s": 24.4,
+   "e": 24.66
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 24.66,
+   "e": 25.32
+  },
+  {
+   "w": "duller",
+   "raw": "duller",
+   "s": 25.32,
+   "e": 25.8
+  },
+  {
+   "w": "than",
+   "raw": "than",
+   "s": 25.8,
+   "e": 26.16
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 26.16,
+   "e": 26.3
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 26.3,
+   "e": 26.5
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 26.5,
+   "e": 26.68
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 26.68,
+   "e": 26.84
+  },
+  {
+   "w": "be",
+   "raw": "be.",
+   "s": 26.84,
+   "e": 27.08
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 27.08,
+   "e": 27.86
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 27.86,
+   "e": 28.2
+  },
+  {
+   "w": "know",
+   "raw": "know",
+   "s": 28.2,
+   "e": 28.6
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 28.6,
+   "e": 28.96
+  },
+  {
+   "w": "could",
+   "raw": "could",
+   "s": 28.96,
+   "e": 29.12
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 29.12,
+   "e": 29.32
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 29.32,
+   "e": 29.58
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 30.0,
+   "e": 30.12
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 30.12,
+   "e": 30.3
+  },
+  {
+   "w": "never",
+   "raw": "never",
+   "s": 30.3,
+   "e": 30.52
+  },
+  {
+   "w": "made",
+   "raw": "made",
+   "s": 30.52,
+   "e": 30.74
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 30.74,
+   "e": 30.92
+  },
+  {
+   "w": "plan",
+   "raw": "plan.",
+   "s": 30.92,
+   "e": 31.16
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 31.8,
+   "e": 31.9
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 31.9,
+   "e": 32.02
+  },
+  {
+   "w": "comfortable",
+   "raw": "comfortable",
+   "s": 32.02,
+   "e": 32.26
+  },
+  {
+   "w": "enough",
+   "raw": "enough",
+   "s": 32.26,
+   "e": 32.62
+  },
+  {
+   "w": "where",
+   "raw": "where",
+   "s": 32.62,
+   "e": 32.86
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 32.86,
+   "e": 33.0
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 33.0,
+   "e": 33.24
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 33.24,
+   "e": 33.38
+  },
+  {
+   "w": "getting",
+   "raw": "getting",
+   "s": 33.38,
+   "e": 33.62
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 33.62,
+   "e": 33.94
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 33.94,
+   "e": 34.1
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 34.1,
+   "e": 34.26
+  },
+  {
+   "w": "own",
+   "raw": "own",
+   "s": 34.26,
+   "e": 34.52
+  },
+  {
+   "w": "way",
+   "raw": "way",
+   "s": 34.52,
+   "e": 34.8
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 34.8,
+   "e": 35.12
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 35.12,
+   "e": 35.52
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 35.52,
+   "e": 35.84
+  },
+  {
+   "w": "bother",
+   "raw": "bother.",
+   "s": 35.84,
+   "e": 36.16
+  },
+  {
+   "w": "that",
+   "raw": "That",
+   "s": 36.92,
+   "e": 37.06
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 37.06,
+   "e": 37.28
+  },
+  {
+   "w": "story",
+   "raw": "story",
+   "s": 37.28,
+   "e": 37.6
+  },
+  {
+   "w": "runs",
+   "raw": "runs",
+   "s": 37.6,
+   "e": 37.92
+  },
+  {
+   "w": "through",
+   "raw": "through",
+   "s": 37.92,
+   "e": 38.2
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 38.2,
+   "e": 38.56
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 38.56,
+   "e": 38.74
+  },
+  {
+   "w": "history",
+   "raw": "history",
+   "s": 38.74,
+   "e": 39.04
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 39.04,
+   "e": 39.32
+  },
+  {
+   "w": "most",
+   "raw": "most",
+   "s": 39.32,
+   "e": 39.56
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 39.56,
+   "e": 39.8
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 39.8,
+   "e": 39.94
+  },
+  {
+   "w": "present",
+   "raw": "present.",
+   "s": 39.94,
+   "e": 40.22
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 41.04,
+   "e": 41.2
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 41.2,
+   "e": 41.5
+  },
+  {
+   "w": "stays",
+   "raw": "stays",
+   "s": 41.5,
+   "e": 42.04
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 42.04,
+   "e": 42.8
+  },
+  {
+   "w": "dream",
+   "raw": "dream.",
+   "s": 42.8,
+   "e": 43.06
+  },
+  {
+   "w": "we",
+   "raw": "We",
+   "s": 43.6,
+   "e": 43.76
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 43.76,
+   "e": 43.84
+  },
+  {
+   "w": "going",
+   "raw": "going",
+   "s": 43.84,
+   "e": 44.02
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 44.02,
+   "e": 44.2
+  },
+  {
+   "w": "change",
+   "raw": "change",
+   "s": 44.2,
+   "e": 44.46
+  },
+  {
+   "w": "that",
+   "raw": "that.",
+   "s": 44.46,
+   "e": 44.82
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 45.54,
+   "e": 45.78
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 45.78,
+   "e": 45.98
+  },
+  {
+   "w": "step",
+   "raw": "step",
+   "s": 45.98,
+   "e": 46.28
+  },
+  {
+   "w": "has",
+   "raw": "has",
+   "s": 46.28,
+   "e": 46.44
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 46.44,
+   "e": 46.7
+  },
+  {
+   "w": "started",
+   "raw": "started.",
+   "s": 46.7,
+   "e": 47.2
+  },
+  {
+   "w": "there",
+   "raw": "There",
+   "s": 47.72,
+   "e": 47.92
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 47.92,
+   "e": 48.02
+  },
+  {
+   "w": "now",
+   "raw": "now",
+   "s": 48.02,
+   "e": 48.28
+  },
+  {
+   "w": "an",
+   "raw": "an",
+   "s": 48.28,
+   "e": 48.52
+  },
+  {
+   "w": "intent",
+   "raw": "intent",
+   "s": 48.52,
+   "e": 48.9
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 48.9,
+   "e": 49.48
+  },
+  {
+   "w": "where",
+   "raw": "where",
+   "s": 49.48,
+   "e": 49.86
+  },
+  {
+   "w": "any",
+   "raw": "any",
+   "s": 49.86,
+   "e": 50.12
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 50.12,
+   "e": 50.3
+  },
+  {
+   "w": "us",
+   "raw": "us",
+   "s": 50.3,
+   "e": 50.46
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 50.46,
+   "e": 50.62
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 50.62,
+   "e": 50.78
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 50.78,
+   "e": 50.92
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 50.92,
+   "e": 51.16
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 51.16,
+   "e": 51.44
+  },
+  {
+   "w": "words",
+   "raw": "words",
+   "s": 51.44,
+   "e": 51.72
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 51.72,
+   "e": 51.96
+  },
+  {
+   "w": "whole",
+   "raw": "whole",
+   "s": 51.96,
+   "e": 52.24
+  },
+  {
+   "w": "world",
+   "raw": "world",
+   "s": 52.24,
+   "e": 52.54
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 52.54,
+   "e": 52.8
+  },
+  {
+   "w": "see",
+   "raw": "see.",
+   "s": 52.8,
+   "e": 53.12
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 53.58,
+   "e": 53.88
+  },
+  {
+   "w": "start",
+   "raw": "start",
+   "s": 53.88,
+   "e": 54.22
+  },
+  {
+   "w": "by",
+   "raw": "by",
+   "s": 54.22,
+   "e": 54.48
+  },
+  {
+   "w": "owning",
+   "raw": "owning",
+   "s": 54.48,
+   "e": 54.76
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 54.76,
+   "e": 55.02
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 55.02,
+   "e": 55.22
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 55.22,
+   "e": 55.68
+  },
+  {
+   "w": "want",
+   "raw": "want.",
+   "s": 55.68,
+   "e": 56.06
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 56.64,
+   "e": 56.98
+  },
+  {
+   "w": "phase",
+   "raw": "phase",
+   "s": 56.98,
+   "e": 57.46
+  },
+  {
+   "w": "2",
+   "raw": "2",
+   "s": 57.46,
+   "e": 57.88
+  },
+  {
+   "w": "begins",
+   "raw": "begins.",
+   "s": 57.88,
+   "e": 58.5
+  },
+  {
+   "w": "shortly",
+   "raw": "Shortly.",
+   "s": 59.54,
+   "e": 59.54
+  },
+  {
+   "w": "phase",
+   "raw": "Phase",
+   "s": 60.52,
+   "e": 60.52
+  },
+  {
+   "w": "2",
+   "raw": "2",
+   "s": 60.52,
+   "e": 60.82
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 60.82,
+   "e": 61.16
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 61.16,
+   "e": 61.46
+  },
+  {
+   "w": "execution",
+   "raw": "execution,",
+   "s": 61.46,
+   "e": 62.26
+  },
+  {
+   "w": "turning",
+   "raw": "turning",
+   "s": 62.94,
+   "e": 63.24
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 63.24,
+   "e": 63.46
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 63.46,
+   "e": 63.6
+  },
+  {
+   "w": "wrote",
+   "raw": "wrote",
+   "s": 63.6,
+   "e": 63.82
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 63.82,
+   "e": 64.14
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 64.14,
+   "e": 64.58
+  },
+  {
+   "w": "real",
+   "raw": "real.",
+   "s": 64.58,
+   "e": 64.92
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 65.62,
+   "e": 65.72
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 65.72,
+   "e": 65.84
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 65.84,
+   "e": 66.02
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 66.02,
+   "e": 66.16
+  },
+  {
+   "w": "be",
+   "raw": "be",
+   "s": 66.16,
+   "e": 66.28
+  },
+  {
+   "w": "part",
+   "raw": "part",
+   "s": 66.28,
+   "e": 66.5
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 66.5,
+   "e": 66.7
+  },
+  {
+   "w": "this",
+   "raw": "this,",
+   "s": 66.7,
+   "e": 66.94
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 67.46,
+   "e": 67.5
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 67.5,
+   "e": 67.88
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 67.88,
+   "e": 68.26
+  },
+  {
+   "w": "live",
+   "raw": "live",
+   "s": 68.26,
+   "e": 68.6
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 68.6,
+   "e": 68.98
+  },
+  {
+   "w": "www",
+   "raw": "www",
+   "s": 68.98,
+   "e": 70.0
+  },
+  {
+   "w": "demure",
+   "raw": ".demure",
+   "s": 70.0,
+   "e": 72.12
+  },
+  {
+   "w": "com",
+   "raw": ".com.",
+   "s": 72.12,
+   "e": 73.08
+  },
+  {
+   "w": "go",
+   "raw": "Go",
+   "s": 73.54,
+   "e": 73.64
+  },
+  {
+   "w": "take",
+   "raw": "take",
+   "s": 73.64,
+   "e": 73.9
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 73.9,
+   "e": 74.16
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 74.16,
+   "e": 74.44
+  },
+  {
+   "w": "action",
+   "raw": "action.",
+   "s": 74.44,
+   "e": 74.88
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 4.6,
+   "text": "What is the difference between the people who win and the people who do not?"
+  },
+  {
+   "s": 5.2,
+   "e": 10.92,
+   "text": "Both tried. Both set out to become something one got there, one did not. Is it willpower,"
+  },
+  {
+   "s": 11.34,
+   "e": 15.7,
+   "text": "consistency, intelligence, or something none of us saw coming? Look at where we are standing."
+  },
+  {
+   "s": 16.3,
+   "e": 20.04,
+   "text": "More technology in your hands than any generation has ever had."
+  },
+  {
+   "s": 20.22,
+   "e": 23.46,
+   "text": "More ways to change something than you could use in a lifetime."
+  },
+  {
+   "s": 24.04,
+   "e": 27.08,
+   "text": "So the answer is duller than you want it to be."
+  },
+  {
+   "s": 27.08,
+   "e": 31.16,
+   "text": "You already know you could do it. You just never made a plan."
+  },
+  {
+   "s": 31.8,
+   "e": 36.16,
+   "text": "You are comfortable enough where you are that getting out of your own way feels like a bother."
+  },
+  {
+   "s": 36.92,
+   "e": 40.22,
+   "text": "That same story runs through all of history and most of the present."
+  },
+  {
+   "s": 41.04,
+   "e": 44.82,
+   "text": "The dream stays a dream. We are going to change that."
+  },
+  {
+   "s": 45.54,
+   "e": 50.62,
+   "text": "The first step has already started. There is now an intent archive where any of us can"
+  },
+  {
+   "s": 50.62,
+   "e": 56.06,
+   "text": "put a dream into words the whole world can see. So start by owning what you actually want."
+  },
+  {
+   "s": 56.7,
+   "e": 59.54,
+   "text": "Then phase 2 begins. Shortly."
+  },
+  {
+   "s": 60.52,
+   "e": 64.92,
+   "text": "Phase 2 is about execution, turning what you wrote into something real."
+  },
+  {
+   "s": 65.62,
+   "e": 74.88,
+   "text": "If you want to be part of this, the archive is live at www.demure.com. Go take your first action."
+  }
+ ],
+ "wps": 2.78
+}

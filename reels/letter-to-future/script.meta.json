@@ -1,0 +1,13 @@
+{
+ "slug": "letter-to-future",
+ "hint": "if you have something to tell your future self, now is the time. you are young and full of dreams. imagine writing them down dated for your future self to check. ends on a comment CTA",
+ "created": "2026-09-09T22:14:31",
+ "hook_pattern": "Impossible object",
+ "target_seconds": 51,
+ "status": "drafting",
+ "brand": "none (deliberate: comment-only CTA, no URL)",
+ "narrated": true,
+ "words": 129,
+ "cta": "comment prompt",
+ "note": "hook C chosen from three drafts; no-brand test continues from four-months-forward"
+}

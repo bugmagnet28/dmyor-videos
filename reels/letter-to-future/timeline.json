@@ -1,0 +1,317 @@
+{
+ "total": 47.46,
+ "engine": "motion",
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "bg": [
+  {
+   "t": 0.0,
+   "c": "#10143A",
+   "dir": "up"
+  },
+  {
+   "t": 4.8,
+   "c": "#132242",
+   "dir": "left"
+  },
+  {
+   "t": 7.3,
+   "c": "#0D2B2F",
+   "dir": "up"
+  },
+  {
+   "t": 13.6,
+   "c": "#2B1426",
+   "dir": "down"
+  },
+  {
+   "t": 20.3,
+   "c": "#0E2340",
+   "dir": "up"
+  },
+  {
+   "t": 25.5,
+   "c": "#0F2C26",
+   "dir": "left"
+  },
+  {
+   "t": 27.6,
+   "c": "#131A44",
+   "dir": "up"
+  },
+  {
+   "t": 30.6,
+   "c": "#0D2B2F",
+   "dir": "right"
+  },
+  {
+   "t": 40.8,
+   "c": "#221548",
+   "dir": "up"
+  },
+  {
+   "t": 43.4,
+   "c": "#132242",
+   "dir": "down"
+  }
+ ],
+ "camera": [
+  {
+   "t": 0,
+   "s": 1.0,
+   "y": 0
+  },
+  {
+   "t": 6,
+   "s": 1.05,
+   "y": 18
+  },
+  {
+   "t": 12,
+   "s": 0.97,
+   "y": -16
+  },
+  {
+   "t": 19,
+   "s": 1.06,
+   "y": 14
+  },
+  {
+   "t": 26,
+   "s": 0.96,
+   "y": -18
+  },
+  {
+   "t": 31,
+   "s": 1.05,
+   "y": 16
+  },
+  {
+   "t": 38,
+   "s": 0.97,
+   "y": -14
+  },
+  {
+   "t": 43,
+   "s": 1.04,
+   "y": 12
+  },
+  {
+   "t": 47.46,
+   "s": 1.0,
+   "y": 0
+  }
+ ],
+ "scenes": [
+  {
+   "type": "axis.travel",
+   "note": "0.00 one message to yourself in five years | 27.66 then in 2031 you get to check",
+   "windows": [
+    [
+     0.1,
+     4.35
+    ],
+    [
+     27.5,
+     30.2
+    ]
+   ],
+   "in": 0.1,
+   "out": 30.2,
+   "y": 540,
+   "color": "cyan",
+   "years": [
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031
+   ],
+   "drawAt": 0.35,
+   "drawEnd": 1.7,
+   "tickAt": 0.75,
+   "tickStep": 0.16,
+   "cardAt": 2.3,
+   "cardTop": -104,
+   "cardDate": "09 SEP 2026",
+   "cardText": "buy my parents a house",
+   "travelAt": 27.95,
+   "travelEnd": 30.05,
+   "fromTick": 0,
+   "toTick": 5
+  },
+  {
+   "type": "collapse.step",
+   "note": "4.82 not advice, just the list",
+   "in": 4.8,
+   "out": 6.8,
+   "y": 700,
+   "at": 5.6,
+   "big": "Advice for your younger self",
+   "small": "just the list"
+  },
+  {
+   "type": "dream.stack",
+   "note": "7.42 the things you actually want | 13.60 that does not last | 17.98 you do not notice the day it goes",
+   "in": 7.3,
+   "out": 19.8,
+   "y": 330,
+   "dimAt": 13.8,
+   "dimEnd": 17.6,
+   "capAt": 18.3,
+   "caption": "nothing marked the day it went",
+   "items": [
+    {
+     "text": "buy my parents a house",
+     "color": "green",
+     "at": 7.6
+    },
+    {
+     "text": "start my own company",
+     "color": "blue",
+     "at": 8.3
+    },
+    {
+     "text": "move to another country",
+     "color": "cyan",
+     "at": 9.8
+    },
+    {
+     "text": "publish my first novel",
+     "color": "violet",
+     "at": 10.8,
+     "outAt": 17.95
+    },
+    {
+     "text": "run a sub three hour marathon",
+     "color": "amber",
+     "at": 11.7
+    },
+    {
+     "text": "learn to fly a plane",
+     "color": "coral",
+     "at": 12.4
+    }
+   ]
+  },
+  {
+   "type": "plan.empty",
+   "note": "20.48 so write them down | 22.52 dated",
+   "in": 20.3,
+   "out": 22.85,
+   "y": 470,
+   "stampAt": 22.55,
+   "title": "buy my parents a house",
+   "stamp": "09 SEP 2026",
+   "stampColor": "green",
+   "color": "cyan",
+   "stampBorder": true
+  },
+  {
+   "type": "cards.dismiss",
+   "note": "23.40 not a diary nobody opens",
+   "in": 23.35,
+   "out": 25.4,
+   "y": 620,
+   "items": [
+    {
+     "text": "a diary nobody opens",
+     "color": "coral",
+     "at": 23.45,
+     "dismiss": 24.4
+    }
+   ]
+  },
+  {
+   "type": "rows.verdict",
+   "note": "25.60 a list with a date on it | 30.94 did I do that one | 34.08 some you will have forgotten | 36.76 one or two you already passed",
+   "windows": [
+    [
+     25.5,
+     27.05
+    ],
+    [
+     30.65,
+     42.9
+    ]
+   ],
+   "in": 25.5,
+   "out": 42.9,
+   "y": 400,
+   "capAt": 40.9,
+   "caption": "that is the fun part",
+   "items": [
+    {
+     "date": "2026",
+     "text": "buy my parents a house",
+     "verdict": "done",
+     "at": 25.7,
+     "verdictAt": 31.1
+    },
+    {
+     "date": "2026",
+     "text": "start my own company",
+     "verdict": "close",
+     "at": 26.05,
+     "verdictAt": 32.75
+    },
+    {
+     "date": "2026",
+     "text": "move to another country",
+     "verdict": "done",
+     "at": 26.4,
+     "verdictAt": 37.3
+    },
+    {
+     "date": "2026",
+     "text": "run a sub three hour marathon",
+     "verdict": "open",
+     "at": 26.75,
+     "verdictAt": 41.4
+    },
+    {
+     "date": "2026",
+     "text": "publish my first novel",
+     "verdict": "open",
+     "at": 34.3,
+     "verdictAt": 39.3
+    }
+   ]
+  },
+  {
+   "type": "kinetic.title",
+   "note": "43.62 so what would you write to your future self?",
+   "in": 43.35,
+   "out": 45.85,
+   "y": 700,
+   "size": 66,
+   "stagger": 0.1,
+   "demi": true,
+   "sfxWords": true,
+   "text": "What would you write to your future self?",
+   "accentWords": [
+    "future",
+    "self"
+   ]
+  },
+  {
+   "type": "kinetic.title",
+   "note": "45.96 put it in the comments",
+   "in": 45.9,
+   "out": 47.46,
+   "y": 740,
+   "size": 78,
+   "stagger": 0.1,
+   "demi": true,
+   "sfxWords": true,
+   "sfxChime": true,
+   "text": "Put it in the comments.",
+   "accentWords": [
+    "comments"
+   ]
+  }
+ ]
+}

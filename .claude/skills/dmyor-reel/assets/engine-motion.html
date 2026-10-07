@@ -1,0 +1,432 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>dmyor reel</title>
+<style>
+:root{
+  --ink:#F7F7FB; --dim:#9BA0B4; --deep:#070812;
+  --blue:#5B8CFF; --cyan:#33D6F5; --green:#34D399;
+  --coral:#FB7185; --amber:#FBBF24; --violet:#A855F7;
+}
+html,body{margin:0;padding:0;width:100%;height:100%;background:#000;overflow:hidden}
+#viewport{position:fixed;inset:0;background:#000;display:flex;align-items:center;justify-content:center}
+/* Slim grotesque at light weights. Big type carries the elegance through the
+   letterforms and the space around them, not through weight. Light (300) rather
+   than Thin (100) so it survives a phone screen at speed. */
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;transform-origin:center center;
+ background:var(--deep);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+ font-family:"Helvetica Neue","Avenir Next",-apple-system,Helvetica,Arial,sans-serif}
+#stage.serif{font-family:"Didot","Iowan Old Style","Palatino",Georgia,serif}
+/* flat colour: hard blocks that wipe, no gradients */
+#bg{position:absolute;inset:0;background:#08080C}
+.bgpane{position:absolute;inset:0;transform:translateY(100%)}
+/* a thin rule that sweeps the frame on a cut */
+#sweep{position:absolute;left:0;width:100%;height:4px;opacity:0}
+#grain{position:absolute;inset:0;opacity:.045;pointer-events:none;
+ background-image:radial-gradient(rgba(255,255,255,.5) 1px,transparent 1px);background-size:3px 3px}
+/* camera holds every scene, so a zoom moves the whole frame */
+#cam{position:absolute;inset:0;transform-origin:50% 50%}
+.layer{position:absolute;inset:0}
+/* kinetic type */
+.kt{position:absolute;left:0;width:1080px;text-align:center;color:var(--ink);
+ font-weight:250;letter-spacing:.2px;line-height:1.22;padding:0 76px;box-sizing:border-box}
+.kt .accent{font-weight:300}
+.kt.demi{font-weight:300;letter-spacing:-.2px}
+.kt.demi .accent{font-weight:400}
+.kt .w{display:inline-block;margin:0 .16em;will-change:transform,opacity}
+.kt .accent{color:var(--blue)}
+.kt.sub{font-weight:300;letter-spacing:1.2px;color:#C7CCDB;line-height:1.4}
+/* big -> small */
+#mcollapse{position:absolute;left:0;width:1080px;opacity:0;text-align:center}
+#mclBig{font-size:64px;font-weight:250;letter-spacing:-.5px;color:var(--ink)}
+#mclSmall{margin-top:30px;display:inline-block;border:2px solid var(--green);border-radius:36px;
+ padding:20px 42px;font-size:40px;font-weight:300;color:var(--ink);opacity:0;background:rgba(52,211,153,.10)}
+/* vague -> checkable */
+#msharp{position:absolute;left:0;width:1080px;opacity:0;text-align:center}
+#msOld{font-size:52px;font-weight:300;color:#C7CCDB}
+#msNew{margin-top:22px;font-size:60px;font-weight:300;color:var(--ink)}
+/* numbered steps */
+#msteps{position:absolute;left:132px;width:816px;opacity:0}
+.mstep{display:flex;align-items:baseline;gap:22px;margin-top:26px;opacity:.32}
+.mstep.on{opacity:1}
+.mstep i{font-style:normal;font-size:30px;font-weight:400;letter-spacing:3px;color:var(--blue);min-width:60px}
+.mstep span{font-size:44px;font-weight:300;letter-spacing:.2px;color:var(--ink)}
+/* odometer digits */
+#roll{position:absolute;left:0;width:1080px;opacity:0;text-align:center}
+.rollg{display:inline-block;overflow:hidden;height:150px;vertical-align:top}
+.rollg .rs{display:block;font-size:126px;font-weight:250;line-height:150px;letter-spacing:-2px;color:var(--ink)}
+#rollTail{margin-top:16px;font-size:42px;font-weight:300;letter-spacing:6px;color:#C7CCDB}
+/* tokens that slam in */
+#tokens{position:absolute;left:0;width:1080px;opacity:0;display:flex;justify-content:center;gap:20px}
+.tok{border:2px solid;border-radius:18px;padding:24px 30px;font-size:42px;font-weight:300;
+ white-space:nowrap;opacity:0;background:rgba(255,255,255,.06);color:var(--ink)}
+/* one big number counting */
+#bignum{position:absolute;left:0;width:1080px;text-align:center;opacity:0}
+#bignumV{font-size:250px;font-weight:200;letter-spacing:-10px;line-height:1;
+ font-variant-numeric:tabular-nums;color:var(--ink)}
+#bignumL{margin-top:8px;font-size:40px;font-weight:300;letter-spacing:8px;color:#C7CCDB}
+/* a wall of day marks */
+.daygrid{position:absolute;left:110px;width:860px;opacity:0;
+ display:grid;grid-template-columns:repeat(15,1fr);gap:9px}
+.dm{aspect-ratio:1;border-radius:5px;background:rgba(255,255,255,.10);transform:scale(.3);opacity:0}
+.dm.on{background:var(--ink)}
+.dm.miss{background:transparent;box-shadow:inset 0 0 0 2px var(--coral)}
+.dm.dead{background:rgba(251,113,133,.25)}
+.dayLabel{position:absolute;left:0;width:1080px;text-align:center;font-size:54px;
+ font-weight:250;letter-spacing:1px;color:#C7CCDB;opacity:0}
+/* threshold ticks */
+#thresh{position:absolute;left:0;width:1080px;opacity:0;display:flex;justify-content:center;gap:56px}
+.th{text-align:center;opacity:0}
+.th .thn{font-size:96px;font-weight:250;letter-spacing:-2px;color:var(--ink)}
+.th .thl{margin-top:12px;font-size:32px;font-weight:300;letter-spacing:.4px;color:#C7CCDB;max-width:300px;line-height:1.28}
+/* the bad-day floor */
+#floor{position:absolute;left:230px;width:620px;opacity:0}
+#floorBar{height:190px;border-radius:16px;border:2px solid var(--blue);position:relative;overflow:hidden}
+#floorFill{position:absolute;left:0;right:0;bottom:0;height:0%;background:rgba(91,140,255,.28)}
+#floorLine{position:absolute;left:0;right:0;bottom:26%;height:3px;background:var(--green);opacity:0}
+#floorTag{position:absolute;right:14px;font-size:30px;font-weight:300;letter-spacing:2px;color:var(--green);opacity:0}
+#floorCap{margin-top:24px;text-align:center;font-size:38px;font-weight:300;color:#C7CCDB}
+/* two paths from one origin */
+#paths{position:absolute;inset:0;opacity:0}
+#pathSvg2{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.plabel{position:absolute;font-size:32px;letter-spacing:2px;text-transform:uppercase;opacity:0}
+/* candidate answers */
+#cands{position:absolute;left:0;top:0;width:1080px;opacity:0}
+.cand{position:absolute;left:50%;transform:translateX(-50%);box-sizing:border-box;
+ border-radius:999px;padding:20px 48px;font-size:37px;font-weight:300;letter-spacing:.3px;white-space:nowrap;
+ border:2px solid;background:rgba(255,255,255,.04);opacity:0}
+.cand .cline{position:absolute;left:8%;top:52%;width:84%;height:3px;border-radius:3px;
+ transform:scaleX(0);transform-origin:left center}
+/* a field of capability */
+#field{position:absolute;inset:0;opacity:0}
+.fdot{position:absolute;border-radius:50%}
+/* an empty plan */
+#plan{position:absolute;left:110px;width:860px;opacity:0;box-sizing:border-box;
+ border:2px solid rgba(255,255,255,.18);border-radius:22px;background:rgba(255,255,255,.03);padding:34px}
+#planTitle{font-size:38px;font-weight:300;letter-spacing:.4px;color:var(--ink)}
+.prow{margin-top:20px;height:22px;border-radius:8px;background:rgba(255,255,255,.06)}
+#planStamp{display:inline-block;margin-top:26px;font-size:31px;letter-spacing:3px;
+ text-transform:uppercase;border:2px solid;border-radius:999px;padding:10px 24px;
+ color:var(--coral);opacity:0}
+/* chips: dreams, then the archive they become */
+#chips{position:absolute;inset:0;opacity:0}
+.chip{position:absolute;box-sizing:border-box;border-radius:14px;padding:15px 20px;
+ font-size:27px;font-weight:300;letter-spacing:.2px;line-height:1.25;border:1px solid;white-space:nowrap;overflow:hidden}
+.chip .cmeta{display:block;margin-top:8px;font-size:19px;letter-spacing:2px}
+/* the empty slot waiting for you */
+#slot{position:absolute;left:100px;width:880px;opacity:0;box-sizing:border-box;
+ border:2px dashed var(--blue);border-radius:22px;padding:34px;background:rgba(91,140,255,.07)}
+#slotLabel{font-size:26px;letter-spacing:4px;text-transform:uppercase;color:var(--blue)}
+#slotText{margin-top:20px;font-size:46px;font-weight:300;letter-spacing:.3px;color:var(--ink)}
+/* two stages */
+#stages{position:absolute;left:90px;width:900px;opacity:0}
+.stg{box-sizing:border-box;border-radius:20px;padding:26px 30px;margin-top:18px;
+ border:2px solid rgba(255,255,255,.16);position:relative;overflow:hidden}
+.stg .sfill{position:absolute;inset:0;width:0%;opacity:.22}
+.stg .sn{position:relative;font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#C7CCDB}
+.stg .st{position:relative;margin-top:12px;font-size:46px;font-weight:300;letter-spacing:.2px;color:var(--ink)}
+.stg .sd{position:relative;margin-top:10px;font-size:32px;font-weight:300;color:#C7CCDB}
+/* diagram: never miss twice */
+#missr{position:absolute;left:0;width:1080px;opacity:0}
+.mrow{display:flex;align-items:center;gap:26px;margin:0 auto 34px;width:900px;opacity:0}
+.mrlab{width:150px;text-align:right;font-size:30px;font-weight:300;letter-spacing:1px;flex:none}
+.mrcells{display:flex;gap:10px}
+.mc{width:52px;height:52px;border-radius:11px;background:rgba(255,255,255,.10);
+ border:2px solid transparent;box-sizing:border-box}
+.mc.on{background:var(--ink)}
+.mc.gap{background:transparent;border-color:var(--coral)}
+.mc.dead{background:rgba(255,255,255,.06)}
+#mrVerdict{margin-top:14px;text-align:center;font-size:44px;font-weight:300;letter-spacing:.5px;opacity:0}
+/* diagram: compounding arc */
+#arcw{position:absolute;left:0;width:1080px;opacity:0}
+#arcSvg{width:1080px;height:700px;display:block}
+#arcMarks{position:relative;height:0}
+.amk{position:absolute;transform:translateX(-50%);text-align:center;opacity:0}
+.amk .amn{font-size:52px;font-weight:300;color:var(--ink);letter-spacing:-1px}
+.amk .aml{margin-top:8px;font-size:27px;font-weight:300;color:#C7CCDB;max-width:270px;line-height:1.28}
+#arcCap{margin-top:26px;text-align:center;font-size:34px;font-weight:300;color:#C7CCDB;opacity:0}
+/* spoken captions, placed in whatever space the frame has */
+#capTrack{pointer-events:none}
+.cap2{position:absolute;left:0;width:1080px;box-sizing:border-box;padding:0 76px;
+ text-align:center;opacity:0;will-change:transform,opacity;
+ font-weight:300;letter-spacing:-.4px;line-height:1.14;color:var(--ink);
+ text-shadow:0 2px 26px rgba(0,0,0,.72), 0 0 2px rgba(0,0,0,.5)}
+.cap2 em{font-style:normal;font-weight:400}
+.cap2 .cw{display:inline-block}
+/* the spine: three labelled fields */
+#fields{position:absolute;left:0;width:1080px;opacity:0}
+#fldCard{width:760px;margin:0 auto;box-sizing:border-box;border:3px solid;border-radius:26px;
+ padding:38px 44px 34px;background:rgba(255,255,255,.045)}
+.fld{display:flex;align-items:baseline;gap:26px;padding:20px 0;
+ border-bottom:2px solid rgba(255,255,255,.10)}
+.fld:last-child{border-bottom:0}
+.fld .flab{flex:none;width:196px;font-size:27px;font-weight:400;letter-spacing:3px;
+ text-transform:uppercase;color:#8E95AB}
+.fld .fval{flex:1;font-size:42px;font-weight:300;color:var(--ink);line-height:1.2}
+#fldStamp{display:inline-block;margin-top:24px;font-size:28px;font-weight:400;letter-spacing:3px;
+ text-transform:uppercase;border:2px solid;border-radius:999px;padding:10px 24px;opacity:0}
+/* the span: today to five years out */
+#span{position:absolute;left:0;width:1080px;opacity:0}
+#spanSvg{position:absolute;left:0;top:0;overflow:visible}
+.spmk{position:absolute;transform:translateX(-50%);text-align:center;font-size:30px;
+ font-weight:400;letter-spacing:2.5px;white-space:nowrap}
+.sprec{position:absolute;transform:translateX(-50%);box-sizing:border-box;width:300px;
+ border:3px solid;border-radius:18px;padding:18px 20px;background:rgba(255,255,255,.05);
+ font-size:30px;font-weight:300;color:var(--ink);line-height:1.22;opacity:0}
+.sprec .spd{display:block;margin-top:10px;font-size:22px;font-weight:400;letter-spacing:2px}
+/* ambient art layer */
+#field2{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+#fRings,#fDots{position:absolute;inset:0}
+.frg{position:absolute;border-radius:50%;border:2px solid;opacity:0;
+ left:50%;top:50%;will-change:transform}
+.fdt{position:absolute;border-radius:50%;opacity:0;will-change:transform}
+.fdt.bar{border-radius:2px}
+#flash{position:absolute;inset:0;opacity:0;pointer-events:none;mix-blend-mode:screen}
+/* one dream card under pressure */
+#press{position:absolute;left:0;width:1080px;opacity:0}
+#prCard{position:absolute;left:50%;width:660px;box-sizing:border-box;
+ border:4px solid;border-radius:26px;padding:42px 44px;background:rgba(255,255,255,.06)}
+#prCracks{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+#prText{position:relative;font-size:58px;font-weight:300;color:var(--ink);line-height:1.18;letter-spacing:-.3px}
+#prDate{position:relative;margin-top:20px;font-size:28px;font-weight:400;letter-spacing:4px;text-transform:uppercase}
+#prWeights{position:absolute;left:0;top:0;width:1080px}
+.prw{position:absolute;left:50%;box-sizing:border-box;border:3px solid;border-radius:999px;
+ padding:16px 34px;font-size:34px;font-weight:400;letter-spacing:2px;white-space:nowrap;
+ background:rgba(0,0,0,.30);opacity:0}
+/* the archive, running past the frame */
+#arch{position:absolute;left:0;width:1080px;opacity:0;overflow:hidden;height:660px;
+ -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 62%,transparent 100%);
+ mask-image:linear-gradient(to bottom,#000 0,#000 62%,transparent 100%)}
+#archRows{position:absolute;left:70px;width:940px}
+.arw{display:flex;align-items:baseline;gap:22px;padding:17px 4px;
+ border-bottom:2px solid rgba(255,255,255,.10)}
+.arw .ard{font-size:25px;font-weight:400;letter-spacing:1.5px;color:#8E95AB;flex:none;
+ width:196px;white-space:nowrap}
+.arw .art{font-size:35px;font-weight:300;color:#C7CCDB;flex:1}
+.arw.mine .art{color:var(--ink)}
+.arw.mine .ard{color:var(--cyan)}
+#archFade{display:none}
+/* two containers: your head vs a written record */
+#holders{position:absolute;left:0;width:1080px;opacity:0}
+.hbox{position:absolute;top:0;width:452px;box-sizing:border-box}
+#hboxL{left:52px} #hboxR{left:576px}
+.hlab{font-size:27px;font-weight:400;letter-spacing:3.5px;text-transform:uppercase;
+ text-align:center;margin-bottom:16px}
+.hfrm{height:452px;border-radius:26px;box-sizing:border-box}
+#hitems{position:absolute;left:0;top:0;width:1080px;height:0}
+.hit{position:absolute;box-sizing:border-box;width:390px;
+ border:3px solid;border-radius:16px;padding:18px 22px;background:rgba(255,255,255,.05);
+ font-size:34px;font-weight:300;color:var(--ink);line-height:1.2;opacity:0}
+.hit .hdate{display:block;margin-top:10px;font-size:23px;font-weight:400;letter-spacing:2.5px;opacity:0}
+/* phase markers */
+#phases{position:absolute;left:0;width:1080px;opacity:0}
+#phRow{display:flex;justify-content:center;gap:28px}
+.phm{width:404px;box-sizing:border-box;border:3px solid;border-radius:22px;
+ padding:26px 24px;text-align:center;opacity:0}
+.phm .phn{font-size:26px;font-weight:400;letter-spacing:4px;text-transform:uppercase}
+.phm .pht{margin-top:12px;font-size:38px;font-weight:300;color:var(--ink);line-height:1.2}
+.phm.off{opacity:.32}
+#phCap{margin-top:30px;text-align:center;font-size:36px;font-weight:300;color:#C7CCDB;opacity:0}
+/* line-drawn staircase */
+#stairs{position:absolute;inset:0;pointer-events:none}
+.stw{position:absolute;inset:0;opacity:0;overflow:hidden}
+.stworld{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.stsvg{position:absolute;left:0;top:0;overflow:visible}
+.stmk{position:absolute;transform:translateY(-132%);white-space:nowrap;
+ font-size:30px;font-weight:400;letter-spacing:2px;opacity:0}
+.stcap{position:absolute;left:0;width:1080px;text-align:center;box-sizing:border-box;
+ padding:0 100px;font-size:48px;font-weight:300;line-height:1.25;color:var(--ink);opacity:0}
+/* a receipt: your year, itemised */
+#receipt{position:absolute;left:0;width:1080px;opacity:0}
+#rcPaper{width:904px;margin:0 auto;box-sizing:border-box;padding:42px 50px 112px;
+ background:#F4F1E8;border-radius:6px;position:relative;
+ font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:#16181C}
+#rcHead{text-align:center;padding-bottom:18px}
+#rcTitle{font-size:86px;font-weight:500;letter-spacing:6px;line-height:1;opacity:0}
+#rcSub{margin-top:14px;font-size:28px;font-weight:400;letter-spacing:5px;color:#5A5F68;opacity:0}
+.rrow{display:flex;align-items:flex-end;gap:0;margin-top:17px;opacity:0}
+.rlab{font-size:34px;font-weight:400;letter-spacing:-.4px;white-space:nowrap;flex:none}
+.rlead{flex:1;margin:0 14px 11px;border-bottom:4px dotted #B6B1A3;
+ transform:scaleX(0);transform-origin:left center}
+.rfig{font-size:38px;font-weight:600;letter-spacing:1px;flex:none;min-width:84px;
+ text-align:right;opacity:0;font-variant-numeric:tabular-nums}
+#rcRule{margin-top:34px;height:4px;background:#16181C;transform:scaleX(0);
+ transform-origin:left center}
+.trow{display:flex;align-items:flex-end;margin-top:20px;opacity:0}
+.tlab{font-size:36px;font-weight:600;letter-spacing:3px;white-space:nowrap;flex:none}
+.tlead{flex:1;margin:0 14px 11px;border-bottom:4px dotted #B6B1A3}
+.tfig{font-size:54px;font-weight:700;letter-spacing:1px;flex:none;min-width:150px;
+ text-align:right;font-variant-numeric:tabular-nums}
+.trow.big .tfig{font-size:84px}
+#rcStamp{position:absolute;left:50%;bottom:24px;font-size:44px;font-weight:700;
+ letter-spacing:4px;padding:14px 26px;border:5px solid;border-radius:10px;
+ white-space:nowrap;transform:translateX(-50%) rotate(-8deg) scale(.6);opacity:0}
+/* diagram: a record travelling a year axis */
+#axisw{position:absolute;left:0;width:1080px;opacity:0}
+#axSvg{position:absolute;left:0;top:150px;width:1080px;height:300px}
+#axTicks{position:absolute;left:0;top:150px;width:1080px;height:300px}
+.axt{position:absolute;transform:translateX(-50%);text-align:center}
+.axt .axd{width:3px;height:26px;margin:0 auto;background:rgba(255,255,255,.30)}
+.axt .axy{margin-top:14px;font-size:32px;font-weight:300;letter-spacing:1.5px;color:#C7CCDB}
+.axt.on .axy{color:var(--ink)}
+#axCard{position:absolute;left:0;top:0;width:430px;box-sizing:border-box;
+ border:3px solid;border-radius:22px;padding:26px 28px;background:rgba(255,255,255,.05);opacity:0}
+#axCardDate{font-size:26px;font-weight:400;letter-spacing:3px;text-transform:uppercase}
+#axCardText{margin-top:14px;font-size:44px;font-weight:300;line-height:1.2;color:var(--ink)}
+/* diagram: the stack of dreams you have right now */
+#stackw{position:absolute;left:0;width:1080px;opacity:0}
+#stackRows{width:900px;margin:0 auto}
+.dch{display:flex;align-items:center;gap:22px;box-sizing:border-box;width:100%;
+ border:3px solid;border-radius:20px;padding:22px 30px;margin-bottom:18px;
+ background:rgba(255,255,255,.05);opacity:0}
+.dch .ddot{width:20px;height:20px;border-radius:50%;flex:none}
+.dch .dtx{font-size:42px;font-weight:300;color:var(--ink);letter-spacing:.2px}
+#stackCap{margin-top:26px;text-align:center;font-size:38px;font-weight:300;color:#C7CCDB;opacity:0}
+/* diagram: dated rows resolving into verdicts */
+#verw{position:absolute;left:0;width:1080px;opacity:0}
+#verRows{width:940px;margin:0 auto}
+.vrow{display:flex;align-items:center;gap:20px;box-sizing:border-box;width:100%;
+ border-bottom:2px solid rgba(255,255,255,.12);padding:22px 8px;opacity:0}
+.vrow .vdate{font-size:27px;font-weight:400;letter-spacing:2px;color:#8E95AB;flex:none;width:132px}
+.vrow .vtx{font-size:40px;font-weight:300;color:var(--ink);flex:1;text-align:left}
+.vrow .vbadge{font-size:26px;font-weight:400;letter-spacing:2.5px;text-transform:uppercase;
+ border:2px solid;border-radius:999px;padding:9px 20px;flex:none;opacity:0}
+#verCap{margin-top:30px;text-align:center;font-size:38px;font-weight:300;color:#C7CCDB;opacity:0}
+/* diagram: a year of days */
+#ygrid{position:absolute;inset:0;opacity:0}
+#ygWorld{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+#ygCells,#ygLabels{position:absolute;left:0;top:0}
+.yc{position:absolute;border-radius:16px;box-sizing:border-box;opacity:0}
+.ylab{position:absolute;font-size:78px;font-weight:400;letter-spacing:6px;
+ color:#7E869E;opacity:0;white-space:nowrap}
+#ygCap{position:absolute;left:0;top:268px;width:1080px;box-sizing:border-box;
+ padding:0 104px;text-align:center;line-height:1.26;
+ font-size:46px;font-weight:300;letter-spacing:.3px;color:var(--ink);opacity:0}
+#ygStat{position:absolute;left:0;top:274px;width:1080px;text-align:center;opacity:0}
+#ygNum{display:block;font-size:150px;font-weight:200;letter-spacing:-5px;color:var(--ink);
+ font-variant-numeric:tabular-nums;line-height:1}
+#ygLab{display:block;margin-top:8px;font-size:38px;font-weight:300;letter-spacing:5px;
+ text-transform:uppercase;color:#C7CCDB}
+/* diagram: method pipeline */
+#flow{position:absolute;left:0;width:1080px;opacity:0}
+#flowRow{display:flex;align-items:stretch;justify-content:center;gap:0}
+.fnode{width:236px;box-sizing:border-box;border:2px solid;border-radius:20px;padding:26px 20px;
+ text-align:center;background:rgba(255,255,255,.04);opacity:0}
+.fnode .fnn{font-size:24px;letter-spacing:3px;font-weight:400}
+.fnode .fnt{margin-top:12px;font-size:36px;font-weight:300;color:var(--ink);line-height:1.2}
+.fconn{align-self:center;width:56px;height:3px;background:var(--dim);transform:scaleX(0);
+ transform-origin:left center;flex:none}
+#flowCap{margin-top:30px;text-align:center;font-size:34px;font-weight:300;color:#C7CCDB;opacity:0}
+/* end */
+#endc{position:absolute;left:0;width:1080px;text-align:center;opacity:0}
+#endMark{font-size:122px;font-weight:250;letter-spacing:-1px;color:var(--ink)}
+#endUrl{margin-top:30px;font-size:46px;letter-spacing:2.4px;font-weight:300;color:var(--blue);
+ font-variant-numeric:tabular-nums}
+#playBtn{position:fixed;inset:0;margin:auto;width:210px;height:64px;border-radius:32px;
+ border:2px solid var(--blue);background:rgba(7,8,18,.92);color:var(--ink);font-family:inherit;
+ font-size:18px;letter-spacing:2px;cursor:pointer;z-index:1000}
+</style></head><body>
+<div id="viewport"><div id="stage">
+ <div id="bg"></div>
+ <div id="cam">
+  <div class="layer" id="paths"><svg id="pathSvg2" viewBox="0 0 1080 1920">
+    <path id="pA1" fill="none" stroke-width="5" stroke-linecap="round"/>
+    <path id="pB1" fill="none" stroke-width="5" stroke-linecap="round"/>
+    <circle id="pOrigin" r="14"/><circle id="pGoal" r="18" fill="none" stroke-width="4"/>
+    <circle id="pDotA" r="11"/><circle id="pDotB" r="11"/></svg>
+   <div class="plabel" id="plA">reached it</div>
+   <div class="plabel" id="plB">stopped</div>
+   <div class="plabel" id="plO">today</div>
+   <div class="plabel" id="plG">january</div></div>
+  <div class="layer" id="field"></div>
+  <div id="roll"><span id="rollDigits"></span><div id="rollTail"></div></div>
+  <div id="mcollapse"><div id="mclBig"></div><div><span id="mclSmall"></span></div></div>
+  <div id="msharp"><div id="msOld"></div><div id="msNew"></div></div>
+  <div id="msteps"></div>
+  <div id="tokens"></div>
+  <div id="bignum"><div id="bignumV">0</div><div id="bignumL"></div></div>
+  <div id="daygrids"></div>
+  <div id="thresh"></div>
+  <div id="floor"><div id="floorBar"><div id="floorFill"></div><div id="floorLine"></div>
+    <div id="floorTag">bad day floor</div></div><div id="floorCap"></div></div>
+  <div class="layer" id="chips"></div>
+  <div id="cands"></div>
+  <div id="plan"><div id="planTitle"></div><div class="prow"></div><div class="prow"></div>
+   <div class="prow"></div><div id="planStamp">no plan</div></div>
+  <div id="slot"><div id="slotLabel">your dream</div><div id="slotText"></div></div>
+  <div id="stages"></div>
+  <div id="endc"><div id="endMark"></div><div id="endUrl"></div></div>
+  <!-- diagram: the streak rule, one gap recovers / two gaps break -->
+  <div id="missr">
+   <div class="mrow" id="mrowA"><div class="mrlab" id="mrlabA"></div><div class="mrcells" id="mcellsA"></div></div>
+   <div class="mrow" id="mrowB"><div class="mrlab" id="mrlabB"></div><div class="mrcells" id="mcellsB"></div></div>
+   <div id="mrVerdict"></div>
+  </div>
+  <!-- diagram: compounding arc crossing labelled thresholds -->
+  <div id="arcw"><svg id="arcSvg" viewBox="0 0 1080 700">
+    <path id="arcAxis" fill="none" stroke-width="2"/>
+    <path id="arcCurve" fill="none" stroke-width="6" stroke-linecap="round"/>
+   </svg><div id="arcMarks"></div><div id="arcCap"></div></div>
+  <!-- the spine: what / by when / why, draining then refilling -->
+  <div id="fields"><div id="fldCard"><div id="fldRows"></div><div id="fldStamp"></div></div></div>
+  <!-- the span: today -> five years out -->
+  <div id="span"><svg id="spanSvg" width="1" height="1"></svg>
+   <div id="spanA"></div><div id="spanB"></div>
+   <div id="spanRecA"></div><div id="spanRecB"></div></div>
+  <!-- ambient art: drifting field + slow rings, behind everything -->
+  <div id="field2" data-decor="1"><div id="fRings"></div><div id="fDots"></div></div>
+  <div id="flash" data-decor="1"></div>
+  <!-- one dream card, under pressure, then back -->
+  <div id="press">
+   <div id="prCard"><svg id="prCracks" viewBox="0 0 660 300" preserveAspectRatio="none"></svg>
+    <div id="prText"></div><div id="prDate"></div></div>
+   <div id="prWeights"></div>
+  </div>
+  <!-- the archive: rows past the frame -->
+  <div id="arch"><div id="archRows"></div><div id="archFade"></div></div>
+  <!-- two containers: what your head holds, and what a record holds -->
+  <div id="holders">
+   <div class="hbox" id="hboxL"><div class="hlab" id="hlabL"></div><div class="hfrm" id="hfrmL"></div></div>
+   <div class="hbox" id="hboxR"><div class="hlab" id="hlabR"></div><div class="hfrm" id="hfrmR"></div></div>
+   <div id="hitems"></div>
+  </div>
+  <!-- phase markers -->
+  <div id="phases"><div id="phRow"></div><div id="phCap"></div></div>
+  <!-- line-drawn staircase, camera does the acting -->
+  <div id="stairs"></div>
+  <!-- a receipt: your year, itemised -->
+  <div id="receipt"><div id="rcPaper">
+   <div id="rcHead"><div id="rcTitle"></div><div id="rcSub"></div></div>
+   <div id="rcRows"></div>
+   <div id="rcRule"></div>
+   <div id="rcTotals"></div>
+   <div id="rcStamp"></div>
+  </div></div>
+  <!-- diagram: a record carried forward along a year axis -->
+  <div id="axisw">
+   <svg id="axSvg" viewBox="0 0 1080 300"><path id="axLine" fill="none" stroke-width="4"/></svg>
+   <div id="axTicks"></div>
+   <div id="axCard"><div id="axCardDate"></div><div id="axCardText"></div></div>
+  </div>
+  <!-- diagram: the dreams you have now, and what happens if you leave them -->
+  <div id="stackw"><div id="stackRows"></div><div id="stackCap"></div></div>
+  <!-- diagram: dated rows resolving into verdicts -->
+  <div id="verw"><div id="verRows"></div><div id="verCap"></div></div>
+  <!-- diagram: a year of days, zooming out scale by scale -->
+  <div id="ygrid">
+   <div id="ygWorld"><div id="ygCells"></div><div id="ygLabels"></div></div>
+   <div id="ygCap"></div>
+   <div id="ygStat"><span id="ygNum"></span><span id="ygLab"></span></div>
+  </div>
+  <!-- diagram: the method as a three-stage pipeline -->
+  <div id="flow"><div id="flowRow"></div><div id="flowCap"></div></div>
+  <div class="layer" id="ktLayer"></div>
+  <div class="layer" id="capTrack"></div>
+ </div>
+ <div id="sweep"></div>
+ <div id="grain" data-decor="1"></div>
+</div></div>
+<button id="playBtn">PLAY</button>
+<script>
+var TL = /*__TIMELINE__*/{"total":10,"brand":{"mark":"dmyor","url":"www.dmyor.com"},"scenes":[]};
+</script>
+<script src="engine-motion.js"></script>
+</body></html>

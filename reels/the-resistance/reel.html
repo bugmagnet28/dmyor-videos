@@ -1,0 +1,387 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>dmyor reel</title>
+<style>
+:root{
+  --ink:#F7F7FB; --dim:#9BA0B4; --deep:#070812;
+  --blue:#5B8CFF; --cyan:#33D6F5; --green:#34D399;
+  --coral:#FB7185; --amber:#FBBF24; --violet:#A855F7;
+}
+html,body{margin:0;padding:0;width:100%;height:100%;background:#000;overflow:hidden}
+#viewport{position:fixed;inset:0;background:#000;display:flex;align-items:center;justify-content:center}
+/* Slim grotesque at light weights. Big type carries the elegance through the
+   letterforms and the space around them, not through weight. Light (300) rather
+   than Thin (100) so it survives a phone screen at speed. */
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;transform-origin:center center;
+ background:var(--deep);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+ font-family:"Helvetica Neue","Avenir Next",-apple-system,Helvetica,Arial,sans-serif}
+#stage.serif{font-family:"Didot","Iowan Old Style","Palatino",Georgia,serif}
+/* the wash behind everything: slow drifting colour */
+#wash{position:absolute;inset:-25%;opacity:0;filter:blur(90px)}
+.blob{position:absolute;border-radius:50%;mix-blend-mode:screen}
+#grain{position:absolute;inset:0;opacity:.05;pointer-events:none;
+ background-image:radial-gradient(rgba(255,255,255,.5) 1px,transparent 1px);background-size:3px 3px}
+/* camera holds every scene, so a zoom moves the whole frame */
+#cam{position:absolute;inset:0;transform-origin:50% 50%}
+.layer{position:absolute;inset:0}
+/* kinetic type */
+.kt{position:absolute;left:0;width:1080px;text-align:center;color:var(--ink);
+ font-weight:250;letter-spacing:.2px;line-height:1.22;padding:0 76px;box-sizing:border-box}
+.kt .accent{font-weight:300}
+.kt.demi{font-weight:300;letter-spacing:-.2px}
+.kt.demi .accent{font-weight:400}
+.kt .w{display:inline-block;margin:0 .16em;will-change:transform,opacity}
+.kt .accent{color:var(--blue)}
+.kt.sub{font-weight:250;letter-spacing:1.4px;color:var(--dim);line-height:1.4}
+/* two paths from one origin */
+#paths{position:absolute;inset:0;opacity:0}
+#pathSvg2{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.plabel{position:absolute;font-size:23px;letter-spacing:2px;text-transform:uppercase;opacity:0}
+/* candidate answers */
+#cands{position:absolute;left:0;top:0;width:1080px;opacity:0}
+.cand{position:absolute;left:50%;transform:translateX(-50%);box-sizing:border-box;
+ border-radius:999px;padding:20px 48px;font-size:37px;font-weight:300;letter-spacing:.3px;white-space:nowrap;
+ border:2px solid;background:rgba(255,255,255,.04);opacity:0}
+.cand .cline{position:absolute;left:8%;top:52%;width:84%;height:3px;border-radius:3px;
+ transform:scaleX(0);transform-origin:left center}
+/* a field of capability */
+#field{position:absolute;inset:0;opacity:0}
+.fdot{position:absolute;border-radius:50%}
+/* an empty plan */
+#plan{position:absolute;left:190px;width:700px;opacity:0;box-sizing:border-box;
+ border:2px solid rgba(255,255,255,.18);border-radius:22px;background:rgba(255,255,255,.03);padding:34px}
+#planTitle{font-size:26px;font-weight:300;letter-spacing:.4px;color:var(--ink)}
+.prow{margin-top:20px;height:22px;border-radius:8px;background:rgba(255,255,255,.06)}
+#planStamp{margin-top:26px;font-size:22px;letter-spacing:3px;text-transform:uppercase;
+ color:var(--coral);opacity:0}
+/* chips: dreams, then the archive they become */
+#chips{position:absolute;inset:0;opacity:0}
+.chip{position:absolute;box-sizing:border-box;border-radius:14px;padding:15px 20px;
+ font-size:19px;font-weight:300;letter-spacing:.2px;line-height:1.25;border:1px solid;white-space:nowrap;overflow:hidden}
+.chip .cmeta{display:block;margin-top:7px;font-size:12px;letter-spacing:2px}
+/* the empty slot waiting for you */
+#slot{position:absolute;left:170px;width:740px;opacity:0;box-sizing:border-box;
+ border:2px dashed var(--blue);border-radius:22px;padding:34px;background:rgba(91,140,255,.07)}
+#slotLabel{font-size:14px;letter-spacing:4px;text-transform:uppercase;color:var(--blue)}
+#slotText{margin-top:20px;font-size:32px;font-weight:300;letter-spacing:.3px;color:var(--ink)}
+/* two stages */
+#stages{position:absolute;left:150px;width:780px;opacity:0}
+.stg{box-sizing:border-box;border-radius:20px;padding:26px 30px;margin-top:18px;
+ border:2px solid rgba(255,255,255,.16);position:relative;overflow:hidden}
+.stg .sfill{position:absolute;inset:0;width:0%;opacity:.22}
+.stg .sn{position:relative;font-size:14px;letter-spacing:4px;text-transform:uppercase;color:var(--dim)}
+.stg .st{position:relative;margin-top:12px;font-size:32px;font-weight:300;letter-spacing:.2px;color:var(--ink)}
+.stg .sd{position:relative;margin-top:10px;font-size:20px;font-weight:300;color:var(--dim)}
+/* end */
+#endc{position:absolute;left:0;width:1080px;text-align:center;opacity:0}
+#endMark{font-size:122px;font-weight:250;letter-spacing:-1px;color:var(--ink)}
+#endUrl{margin-top:30px;font-size:32px;letter-spacing:2.4px;font-weight:300;color:var(--blue);
+ font-variant-numeric:tabular-nums}
+#playBtn{position:fixed;inset:0;margin:auto;width:210px;height:64px;border-radius:32px;
+ border:2px solid var(--blue);background:rgba(7,8,18,.92);color:var(--ink);font-family:inherit;
+ font-size:18px;letter-spacing:2px;cursor:pointer;z-index:1000}
+</style></head><body>
+<div id="viewport"><div id="stage">
+ <div id="wash"></div>
+ <div id="cam">
+  <div class="layer" id="paths"><svg id="pathSvg2" viewBox="0 0 1080 1920">
+    <path id="pA1" fill="none" stroke-width="5" stroke-linecap="round"/>
+    <path id="pB1" fill="none" stroke-width="5" stroke-linecap="round"/>
+    <circle id="pOrigin" r="14"/><circle id="pGoal" r="18" fill="none" stroke-width="4"/>
+    <circle id="pDotA" r="11"/><circle id="pDotB" r="11"/></svg>
+   <div class="plabel" id="plA">reached it</div>
+   <div class="plabel" id="plB">stopped</div></div>
+  <div class="layer" id="field"></div>
+  <div class="layer" id="chips"></div>
+  <div id="cands"></div>
+  <div id="plan"><div id="planTitle"></div><div class="prow"></div><div class="prow"></div>
+   <div class="prow"></div><div id="planStamp">no plan</div></div>
+  <div id="slot"><div id="slotLabel">your dream</div><div id="slotText"></div></div>
+  <div id="stages"></div>
+  <div id="endc"><div id="endMark"></div><div id="endUrl"></div></div>
+  <div class="layer" id="ktLayer"></div>
+ </div>
+ <div id="grain"></div>
+</div></div>
+<button id="playBtn">PLAY</button>
+<script>
+var TL = {"engine": "motion", "total": 75.26, "brand": {"mark": "dmyor", "url": "www.dmyor.com"}, "washOpacity": 0.42, "wash": [{"c": "blue"}, {"c": "violet"}, {"c": "cyan"}], "camera": [{"t": 0, "s": 1.0, "x": 0, "y": 0}, {"t": 4.6, "s": 1.06, "x": 0, "y": 30}, {"t": 5.2, "s": 0.94, "x": 0, "y": -40}, {"t": 10.3, "s": 1.02, "x": 0, "y": 0}, {"t": 11.3, "s": 1.1, "x": 0, "y": 60}, {"t": 14.3, "s": 1.0, "x": 0, "y": 0}, {"t": 16.3, "s": 0.9, "x": 0, "y": 0}, {"t": 23.5, "s": 1.14, "x": 0, "y": 40}, {"t": 27.1, "s": 1.04, "x": 0, "y": 10}, {"t": 31.8, "s": 1.12, "x": 0, "y": 50}, {"t": 36.9, "s": 0.92, "x": 0, "y": -20}, {"t": 43.8, "s": 1.0, "x": 0, "y": 0}, {"t": 45.5, "s": 0.96, "x": 0, "y": 0}, {"t": 52.2, "s": 1.06, "x": 0, "y": 20}, {"t": 56.7, "s": 1.0, "x": 0, "y": 0}, {"t": 65.6, "s": 1.04, "x": 0, "y": 0}, {"t": 75.26, "s": 1.1, "x": 0, "y": 0}], "scenes": [{"type": "kinetic.title", "note": "0.00 what is the difference between win and not", "in": 0.4, "out": 5.0, "y": 760, "size": 88, "stagger": 0.085, "text": "What separates the ones who win?", "accentWords": ["win"], "demi": true}, {"type": "split.paths", "note": "5.20 both tried | 8.18 one got there, one did not", "in": 5.2, "out": 10.2, "start": 5.6, "winEnd": 8.9, "loseEnd": 7.4, "winColor": "green", "loseColor": "coral"}, {"type": "kinetic.title", "note": "5.20 both tried", "in": 5.3, "out": 8.0, "y": 300, "size": 62, "stagger": 0.07, "text": "Both tried.", "sub": false}, {"type": "cards.dismiss", "note": "10.40 willpower | 11.34 consistency | 12.34 intelligence | 13.30 or something else", "in": 10.3, "out": 14.4, "y": 720, "items": [{"text": "Willpower", "color": "amber", "at": 10.4, "dismiss": 11.2}, {"text": "Consistency", "color": "cyan", "at": 11.3, "dismiss": 12.2}, {"text": "Intelligence", "color": "violet", "at": 12.3, "dismiss": 13.2}, {"text": "Something else", "color": "blue", "at": 13.3}]}, {"type": "field.expand", "note": "14.74 look at where we are | 18.00 any generation | 22.64 in a lifetime", "in": 14.7, "out": 27.4, "start": 15.0, "end": 23.4, "count": 110, "collapse": 24.1, "collapseEnd": 26.6}, {"type": "kinetic.title", "note": "16.30 more technology than any generation", "in": 16.3, "out": 23.4, "y": 250, "size": 54, "stagger": 0.05, "text": "More power in your hands than any generation has had", "accentWords": ["power"]}, {"type": "kinetic.title", "note": "24.04 so the answer is duller than you want", "in": 24.1, "out": 27.4, "y": 880, "size": 74, "stagger": 0.08, "text": "The answer is duller than that.", "accentWords": ["duller"], "demi": true}, {"type": "plan.empty", "note": "27.08 you already know you could | 30.30 you just never made a plan", "in": 27.3, "out": 36.6, "y": 760, "title": "Your plan", "stampAt": 30.4}, {"type": "kinetic.title", "note": "31.80 comfortable enough | 34.80 feels like a bother", "in": 32.0, "out": 36.6, "y": 1320, "size": 48, "stagger": 0.05, "sub": true, "text": "comfortable enough that getting out of your own way feels like a bother"}, {"type": "chips.reorder", "note": "36.92 all of history | 41.50 the dream stays a dream | 43.84 we are going to change that | 48.52 intent archive", "in": 36.9, "out": 56.4, "orderAt": 45.5, "liveAt": 48.6, "metaText": "on the record", "items": ["Start the business", "Finish the degree", "Learn to build", "Get out of debt", "Write the book", "Move cities", "Run the company", "Fix my health", "Learn the language", "Buy the workshop", "Teach again", "Go independent"]}, {"type": "kinetic.title", "note": "41.50 the dream stays a dream", "in": 41.5, "out": 44.6, "y": 250, "size": 66, "stagger": 0.08, "text": "The dream stays a dream.", "accentWords": ["dream"], "demi": true}, {"type": "kinetic.title", "note": "43.84 we are going to change that", "in": 44.6, "out": 48.4, "y": 250, "size": 70, "stagger": 0.075, "text": "We are going to change that.", "accentWords": ["change"], "demi": true}, {"type": "kinetic.title", "note": "48.52 an intent archive the world can see", "in": 48.9, "out": 53.4, "y": 250, "size": 52, "stagger": 0.05, "sub": true, "text": "an intent archive the whole world can see"}, {"type": "slot.waiting", "note": "54.48 start by owning what you actually want", "in": 54.2, "out": 60.0, "y": 1180, "typeAt": 54.8, "text": "Start the business I keep talking about"}, {"type": "stage.two", "note": "56.70 phase two begins shortly | 61.16 about execution | 64.14 something real", "in": 56.9, "out": 66.2, "y": 700, "items": [{"no": "Phase 01", "title": "Write it down", "body": "Dated and public the moment you post it.", "color": "blue", "at": 57.1, "fillAt": 57.4, "fillPct": 100}, {"no": "Phase 02", "title": "Make it real", "body": "Execution: turning what you wrote into something real.", "color": "green", "at": 59.4, "fillAt": 61.2, "fillPct": 28}]}, {"type": "kinetic.title", "note": "66.28 if you want to be part of this", "in": 66.2, "out": 69.2, "y": 700, "size": 58, "stagger": 0.06, "text": "Take your first action.", "accentWords": ["first"], "demi": true}, {"type": "end.card", "note": "67.50 the archive is live at | 74.16 first action", "in": 68.6, "y": 800, "urlStart": 69.6, "urlEnd": 73.2}], "font": "sans"};
+</script>
+<script>
+/* dmyor motion engine: colour, kinetic type, camera moves.
+   Same contract as the mono engine - everything is a pure function of time, so
+   record.js can seek frame by frame and verify.js can audit it. */
+(function(){
+"use strict";
+var TOTAL=TL.total, W=1080, H=1920;
+var stage=document.getElementById("stage"), sc=1;
+function fit(){ sc=Math.min(innerWidth/W, innerHeight/H); stage.style.transform="scale("+sc+")"; }
+if(TL.font==="serif") stage.classList.add("serif");
+fit(); addEventListener("resize",fit);
+var cl=function(x){return x<0?0:(x>1?1:x)};
+var seg=function(t,a,b){return b<=a?(t>=b?1:0):cl((t-a)/(b-a))};
+var eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+var eo=function(x){return 1-Math.pow(1-x,3)};
+var eob=function(x){var c=1.7;return 1+ (c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2);}; // slight overshoot
+function fade(e,o){ if(e) e.style.opacity=o; }
+function S(t2){ for(var i=0;i<TL.scenes.length;i++) if(TL.scenes[i].type===t2) return TL.scenes[i]; return null; }
+function ALL(t2){ return TL.scenes.filter(function(x){return x.type===t2;}); }
+var CO={blue:"#5B8CFF",cyan:"#33D6F5",green:"#34D399",coral:"#FB7185",amber:"#FBBF24",violet:"#A855F7",ink:"#F7F7FB",dim:"#9BA0B4"};
+function col(n){ return CO[n]||n||CO.blue; }
+
+// ---------- drifting colour wash ----------
+var wash=document.getElementById("wash"), blobs=[];
+(TL.wash||[{c:"blue"},{c:"violet"},{c:"cyan"}]).forEach(function(b,i){
+  var d=document.createElement("div"); d.className="blob";
+  var sz=760+i*220; d.style.cssText="width:"+sz+"px;height:"+sz+"px;background:"+col(b.c)+";opacity:.5";
+  wash.appendChild(d); blobs.push({el:d,ph:i*2.1,sz:sz});
+});
+
+// ---------- kinetic type ----------
+var ktLayer=document.getElementById("ktLayer");
+var KTS=ALL("kinetic.title").map(function(k){
+  var el=document.createElement("div"); el.className="kt"+(k.sub?" sub":"")+(k.demi?" demi":"");
+  el.style.fontSize=(k.size||86)+"px";
+  el.style.top=((k.y||860))+"px";
+  var words=(k.text||"").split(" ");
+  var spans=words.map(function(w){
+    var s2=document.createElement("span"); s2.className="w"+(k.accentWords&&k.accentWords.indexOf(w.replace(/[^A-Za-z]/g,""))>=0?" accent":"");
+    s2.textContent=w; el.appendChild(s2); return s2; });
+  ktLayer.appendChild(el);
+  return {sc:k, el:el, spans:spans};
+});
+
+// ---------- two paths ----------
+var pSc=S("split.paths");
+var pathsEl=document.getElementById("paths"), pA1=document.getElementById("pA1"), pB1=document.getElementById("pB1");
+var pOrigin=document.getElementById("pOrigin"), pGoal=document.getElementById("pGoal");
+var pDotA=document.getElementById("pDotA"), pDotB=document.getElementById("pDotB");
+var plA=document.getElementById("plA"), plB=document.getElementById("plB");
+var pLenA=0,pLenB=0;
+if(pSc){
+  pA1.setAttribute("d","M170,1500 C420,1440 560,1180 900,700");
+  pB1.setAttribute("d","M170,1500 C430,1430 610,1330 760,1240");
+  pA1.setAttribute("stroke",col(pSc.winColor||"green"));
+  pB1.setAttribute("stroke",col(pSc.loseColor||"coral"));
+  pOrigin.setAttribute("cx",170); pOrigin.setAttribute("cy",1500); pOrigin.setAttribute("fill",CO.dim);
+  pGoal.setAttribute("cx",900); pGoal.setAttribute("cy",700); pGoal.setAttribute("stroke",col(pSc.winColor||"green"));
+  pDotA.setAttribute("fill",col(pSc.winColor||"green")); pDotB.setAttribute("fill",col(pSc.loseColor||"coral"));
+  pLenA=pA1.getTotalLength(); pLenB=pB1.getTotalLength();
+  pA1.style.strokeDasharray=pLenA; pB1.style.strokeDasharray=pLenB;
+  plA.style.color=col(pSc.winColor||"green"); plB.style.color=col(pSc.loseColor||"coral");
+  plA.style.left="820px"; plA.style.top="620px";
+  plB.style.left="700px"; plB.style.top="1290px";
+}
+
+// ---------- candidate answers ----------
+var cSc=S("cards.dismiss"), candEls=[];
+var candsEl=document.getElementById("cands");
+if(cSc){ (cSc.items||[]).forEach(function(it,i){
+  var d=document.createElement("div"); d.className="cand";
+  d.style.top=(i*116)+"px"; d.style.borderColor=col(it.color||"blue"); d.style.color=CO.ink;
+  d.innerHTML=it.text+'<span class="cline" style="background:'+col(it.color||"blue")+'"></span>';
+  candsEl.appendChild(d); candEls.push({el:d, line:d.querySelector(".cline"), sc:it}); });
+  candsEl.style.top=(cSc.y||700)+"px"; }
+
+// ---------- field of capability ----------
+var fSc=S("field.expand"), fDots=[];
+var fieldEl=document.getElementById("field");
+if(fSc){ var N=fSc.count||90;
+ for(var i2=0;i2<N;i2++){
+  var d=document.createElement("div"); d.className="fdot";
+  var cn=["blue","cyan","violet","amber","green"][i2%5];
+  var sz=6+ (i2%4)*4;
+  d.style.cssText="width:"+sz+"px;height:"+sz+"px;background:"+col(cn);
+  fieldEl.appendChild(d);
+  fDots.push({el:d, a:(i2/N)*Math.PI*2*3.2, r:120+(i2%13)*52, ph:i2*0.37}); } }
+
+// ---------- empty plan ----------
+var plSc=S("plan.empty");
+var planEl=document.getElementById("plan"), planStamp=document.getElementById("planStamp");
+if(plSc){ document.getElementById("planTitle").textContent=plSc.title||"";
+  planEl.style.top=(plSc.y||820)+"px"; }
+
+// ---------- chips: dreams -> archive ----------
+var chSc=S("chips.reorder"), chips=[];
+var chipsEl=document.getElementById("chips");
+if(chSc){ (chSc.items||[]).forEach(function(it,i){
+  var d=document.createElement("div"); d.className="chip";
+  var cn=["blue","violet","cyan","amber","green","coral"][i%6];
+  d.style.borderColor="rgba(255,255,255,.16)"; d.style.color=CO.ink;
+  d.style.background="rgba(255,255,255,.03)";
+  d.innerHTML=it+'<span class="cmeta">standby</span>';
+  chipsEl.appendChild(d);
+  var col2=i%3, row=(i/3)|0;
+  chips.push({el:d, meta:d.querySelector(".cmeta"), cn:cn,
+    sx:120+((i*137)%780), sy:520+((i*211)%900),          // scattered
+    gx:96+col2*312, gy:590+row*168 }); }); }              // ordered
+
+// ---------- the slot waiting ----------
+var slSc=S("slot.waiting");
+var slotEl=document.getElementById("slot"), slotText=document.getElementById("slotText");
+if(slSc) slotEl.style.top=(slSc.y||900)+"px";
+
+// ---------- two stages ----------
+var stSc=S("stage.two"), stEls=[];
+var stagesEl=document.getElementById("stages");
+if(stSc){ stagesEl.style.top=(stSc.y||760)+"px";
+ (stSc.items||[]).forEach(function(it,i){
+  var d=document.createElement("div"); d.className="stg";
+  d.innerHTML='<span class="sfill" style="background:'+col(it.color||"blue")+'"></span>'+
+    '<div class="sn">'+it.no+'</div><div class="st">'+it.title+'</div><div class="sd">'+it.body+'</div>';
+  stagesEl.appendChild(d); stEls.push({el:d, fill:d.querySelector(".sfill"), sc:it}); }); }
+
+// ---------- end ----------
+var eSc=S("end.card");
+var endc=document.getElementById("endc"), endMark=document.getElementById("endMark"), endUrl=document.getElementById("endUrl");
+if(eSc){ endc.style.top=(eSc.y||840)+"px"; endMark.textContent=(TL.brand&&TL.brand.mark)||"dmyor"; }
+var URL_TXT=(TL.brand&&TL.brand.url)||"";
+
+// ---------- camera ----------
+var camEl=document.getElementById("cam");
+var CAM=(TL.camera||[]).slice().sort(function(a,b){return a.t-b.t;});
+function camAt(t){
+  if(!CAM.length) return {s:1,x:0,y:0};
+  if(t<=CAM[0].t) return CAM[0];
+  for(var i=0;i<CAM.length-1;i++){ var a=CAM[i],b=CAM[i+1];
+    if(t>=a.t&&t<=b.t){ var k=eio((t-a.t)/Math.max(1e-6,b.t-a.t));
+      return {s:(a.s||1)+((b.s||1)-(a.s||1))*k, x:(a.x||0)+((b.x||0)-(a.x||0))*k,
+              y:(a.y||0)+((b.y||0)-(a.y||0))*k}; } }
+  return CAM[CAM.length-1];
+}
+
+// ================= render =================
+function render(t){
+ t=Math.max(0,Math.min(TOTAL,t));
+
+ // wash: always drifting, so the frame is never dead
+ var wv=TL.washIn!=null?seg(t,TL.washIn,TL.washIn+1.2):1;
+ fade(wash, wv*(TL.washOpacity||0.5));
+ blobs.forEach(function(b,i){
+  var x=540+Math.cos(t*0.16+b.ph)*430 - b.sz/2;
+  var y=900+Math.sin(t*0.13+b.ph*1.4)*640 - b.sz/2;
+  b.el.style.transform="translate("+x+"px,"+y+"px)"; });
+
+ // camera
+ var c=camAt(t);
+ camEl.style.transform="translate("+(-(c.x||0))+"px,"+(-(c.y||0))+"px) scale("+(c.s||1)+")";
+
+ // kinetic type: words arrive one after another, leave together
+ KTS.forEach(function(K){
+  var k=K.sc;
+  var vis=seg(t,k.in,k.in+0.25)*(1-seg(t,k.out-0.35,k.out));
+  fade(K.el,vis);
+  K.spans.forEach(function(sp,i){
+   var st=k.in+i*(k.stagger||0.075);
+   var p=eob(cl((t-st)/0.42));
+   var out=seg(t,k.out-0.35,k.out);
+   sp.style.transform="translateY("+((1-p)*46 - out*30)+"px) scale("+(0.86+0.14*p)+")";
+   sp.style.opacity=cl(p*1.2); }); });
+
+ // two paths from the same origin
+ if(pSc){ fade(pathsEl, seg(t,pSc.in,pSc.in+0.4)*(1-seg(t,pSc.out,pSc.out+0.5)));
+  var kA=eio(seg(t,pSc.start,pSc.winEnd||pSc.end));
+  var kB=eio(seg(t,pSc.start,pSc.loseEnd||(pSc.start+(pSc.end-pSc.start)*0.55)));
+  pA1.style.strokeDashoffset=pLenA*(1-kA);
+  pB1.style.strokeDashoffset=pLenB*(1-kB);
+  var ptA=pA1.getPointAtLength(pLenA*kA), ptB=pB1.getPointAtLength(pLenB*kB);
+  pDotA.setAttribute("cx",ptA.x); pDotA.setAttribute("cy",ptA.y);
+  pDotB.setAttribute("cx",ptB.x); pDotB.setAttribute("cy",ptB.y);
+  pDotA.setAttribute("opacity",kA>0.01&&kA<0.999?1:0);
+  pDotB.setAttribute("opacity",kB>0.01?1:0);
+  pGoal.setAttribute("opacity",eo(seg(t,(pSc.winEnd||pSc.end)-0.3,(pSc.winEnd||pSc.end)+0.3)));
+  pOrigin.setAttribute("opacity",seg(t,pSc.in,pSc.in+0.3));
+  fade(plA, seg(t,(pSc.winEnd||pSc.end),(pSc.winEnd||pSc.end)+0.4));
+  fade(plB, seg(t,(pSc.loseEnd||pSc.start+1)+0.2,(pSc.loseEnd||pSc.start+1)+0.6)); }
+ else fade(pathsEl,0);
+
+ // candidate answers, dismissed one per question
+ if(cSc){ fade(candsEl, seg(t,cSc.in,cSc.in+0.3)*(1-seg(t,cSc.out,cSc.out+0.4)));
+  candEls.forEach(function(C,i){
+   var a=C.sc.at, dz=C.sc.dismiss;
+   var p=eob(cl((t-a)/0.4));
+   C.el.style.opacity=cl(p);
+   C.el.style.transform="translateX(-50%) scale("+(0.8+0.2*p)+")";
+   if(dz!=null){ var dp=eio(seg(t,dz,dz+0.36));
+    C.line.style.transform="scaleX("+dp+")";
+    C.el.style.opacity=cl(p)*(1-0.55*dp); } }); }
+ else fade(candsEl,0);
+
+ // a field of capability, expanding
+ if(fSc){ fade(fieldEl, seg(t,fSc.in,fSc.in+0.5)*(1-seg(t,fSc.out,fSc.out+0.5)));
+  var grow=eio(seg(t,fSc.start||fSc.in,fSc.end||fSc.out));
+  var coll=fSc.collapse!=null?eio(seg(t,fSc.collapse,fSc.collapseEnd||fSc.out)):0;
+  fDots.forEach(function(d,i){
+   var r=d.r*(0.18+0.82*grow)*(1-0.94*coll);
+   var a2=d.a+t*0.09;
+   var x=540+Math.cos(a2)*r*1.02, y=930+Math.sin(a2)*r*0.86;
+   var yy=y+(coll)*( (930-y) );      // collapse toward a single line
+   d.el.style.transform="translate("+x+"px,"+yy+"px)";
+   d.el.style.opacity=(0.35+0.65*grow)*(1-0.7*coll)*(0.6+0.4*Math.sin(t*1.6+d.ph)); }); }
+ else fade(fieldEl,0);
+
+ // an empty plan
+ if(plSc){ fade(planEl, seg(t,plSc.in,plSc.in+0.35)*(1-seg(t,plSc.out,plSc.out+0.4)));
+  planEl.style.transform="translateY("+(Math.sin(t*0.9)*8)+"px)";
+  fade(planStamp, plSc.stampAt!=null?eob(cl((t-plSc.stampAt)/0.4)):0); }
+ else fade(planEl,0);
+
+ // chips: scattered dreams that snap into an ordered archive
+ if(chSc){ fade(chipsEl, seg(t,chSc.in,chSc.in+0.5)*(1-seg(t,chSc.out,chSc.out+0.5)));
+  var ord=chSc.orderAt!=null?eio(seg(t,chSc.orderAt,chSc.orderAt+1.3)):0;
+  chips.forEach(function(ch,i){
+   var wob=Math.sin(t*0.7+i)*9*(1-ord);
+   var x=ch.sx+(ch.gx-ch.sx)*ord, y=ch.sy+(ch.gy-ch.sy)*ord+wob;
+   ch.el.style.transform="translate("+x+"px,"+y+"px)";
+   ch.el.style.opacity=(0.42+0.58*ord);
+   if(chSc.liveAt!=null && t>=chSc.liveAt){
+     ch.el.style.borderColor=col(ch.cn); ch.meta.textContent=chSc.metaText||"on the record";
+     ch.meta.style.color=col(ch.cn); }
+   else { ch.el.style.borderColor="rgba(255,255,255,.16)"; ch.meta.textContent="standby";
+     ch.meta.style.color=CO.dim; } }); }
+ else fade(chipsEl,0);
+
+ // the empty slot waiting for you
+ if(slSc){ fade(slotEl, seg(t,slSc.in,slSc.in+0.35)*(1-seg(t,slSc.out,slSc.out+0.4)));
+  var n2=Math.floor(cl((t-(slSc.typeAt||slSc.in))/1.1)*(slSc.text||"").length);
+  slotText.textContent=(slSc.text||"").slice(0,n2)+((Math.floor(t*2)%2)?"|":"");
+  slotEl.style.transform="scale("+(0.98+0.02*eob(cl((t-slSc.in)/0.5)))+")"; }
+ else fade(slotEl,0);
+
+ // two stages
+ if(stSc){ fade(stagesEl, seg(t,stSc.in,stSc.in+0.4)*(1-seg(t,stSc.out,stSc.out+0.4)));
+  stEls.forEach(function(Sg,i){
+   var a3=Sg.sc.at!=null?Sg.sc.at:stSc.in;
+   var p=eob(cl((t-a3)/0.45));
+   Sg.el.style.transform="translateX("+((1-p)*(i%2?60:-60))+"px)";
+   Sg.el.style.opacity=cl(p);
+   Sg.el.style.borderColor= t>=a3+0.2 ? col(Sg.sc.color||"blue") : "rgba(255,255,255,.16)";
+   Sg.fill.style.width=(eio(seg(t,Sg.sc.fillAt!=null?Sg.sc.fillAt:a3, (Sg.sc.fillAt!=null?Sg.sc.fillAt:a3)+1.1))*(Sg.sc.fillPct!=null?Sg.sc.fillPct:100))+"%"; }); }
+ else fade(stagesEl,0);
+
+ // end card, URL typing with the voice
+ if(eSc){ fade(endc, seg(t,eSc.in,eSc.in+0.5));
+  var ep=eob(cl((t-eSc.in)/0.6));
+  endMark.style.transform="scale("+(0.9+0.1*ep)+")";
+  var us=eSc.urlStart!=null?eSc.urlStart:eSc.in, ue=eSc.urlEnd!=null?eSc.urlEnd:eSc.in+2;
+  var un=Math.floor(cl((t-us)/Math.max(0.1,ue-us))*URL_TXT.length);
+  endUrl.textContent=t<us?"":URL_TXT.slice(0,un); }
+ else fade(endc,0);
+}
+
+// ================= driver =================
+var st0=null,raf=null;
+function frame(now){ if(st0===null)st0=now; var t=(now-st0)/1000;
+ if(t>=TOTAL){render(TOTAL);raf=null;return;} render(t); raf=requestAnimationFrame(frame); }
+function play(){ document.getElementById("playBtn").style.display="none"; st0=null;
+ if(raf)cancelAnimationFrame(raf); raf=requestAnimationFrame(frame); }
+addEventListener("load",function(){
+ render(0);
+ window.__seek=function(x){render(x);}; window.__duration=TOTAL;
+ var q=new URLSearchParams(location.search), tp=q.get("t");
+ if(tp!==null&&!isNaN(parseFloat(tp))){ document.getElementById("playBtn").style.display="none"; render(parseFloat(tp)); return; }
+ if(q.get("autoplay")==="1") play(); else document.getElementById("playBtn").addEventListener("click",play);
+});
+})();
+
+</script>
+</body></html>

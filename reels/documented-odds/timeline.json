@@ -1,0 +1,267 @@
+{
+ "total": 59.06,
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "dreams": [
+  "Lose 20 kg this year",
+  "Get back under 80kg",
+  "Walk 10,000 steps daily",
+  "Quit sugar for a year",
+  "Run a sub-20 5k",
+  "Finish a triathlon",
+  "Swim 5k open water",
+  "Sleep 8 hours nightly",
+  "Deadlift twice bodyweight",
+  "Complete an Ironman",
+  "Cycle 100km in a day",
+  "Do 50 unbroken pushups",
+  "Run every day for a year",
+  "Hike the coast path",
+  "Climb Kilimanjaro",
+  "Row a half marathon",
+  "Get to 12 percent body fat",
+  "Stop drinking for a year",
+  "Cook every meal at home",
+  "Walk the Camino",
+  "Run a trail ultra",
+  "Squat 140kg",
+  "Swim the Channel relay",
+  "Ride a century"
+ ],
+ "scenes": [
+  {
+   "type": "record.blank",
+   "note": "1.04 no start date | 9.22 no next step | 10.30 no evidence -> refilled at 25.1",
+   "in": 0.4,
+   "out": 27.9,
+   "dream": "Lose 20 kg this year",
+   "sub": "in your head since January",
+   "fields": [
+    {
+     "label": "start date",
+     "at": 1.0,
+     "fillAt": 25.2,
+     "value": "04 Sep 2026"
+    },
+    {
+     "label": "next step",
+     "at": 9.2,
+     "fillAt": 26.0,
+     "value": "walk 30 minutes"
+    },
+    {
+     "label": "evidence",
+     "at": 10.3,
+     "fillAt": 26.8,
+     "value": "day 1 logged"
+    }
+   ]
+  },
+  {
+   "type": "strike.words",
+   "note": "4.38 not motivation, not talent",
+   "in": 3.4,
+   "out": 6.4,
+   "at": [
+    4.0,
+    5.1
+   ],
+   "words": [
+    "motivation",
+    "talent"
+   ]
+  },
+  {
+   "type": "steps.three",
+   "note": "12.46 so do three things with it",
+   "in": 12.2,
+   "out": 24.9,
+   "at": [
+    12.5,
+    21.2,
+    25.0
+   ],
+   "items": [
+    "Specific enough to check today",
+    "The smallest next step",
+    "Write it, then log it"
+   ]
+  },
+  {
+   "type": "sharpen.text",
+   "note": "18.34 not get healthy / 19.82 walk 30 minutes",
+   "in": 14.2,
+   "out": 20.9,
+   "vagueAt": 14.5,
+   "at": 18.3,
+   "vague": "get healthy",
+   "specific": "walk 30 minutes"
+  },
+  {
+   "type": "collapse.step",
+   "note": "21.36 the next physical step / 23.74 tomorrow morning",
+   "in": 21.1,
+   "out": 24.9,
+   "at": 22.6,
+   "big": "Lose 20 kg this year",
+   "small": "tomorrow: walk 30 minutes"
+  },
+  {
+   "type": "ledger.rows",
+   "note": "26.56 log every day / 30.02 the record carries you - rows keep landing through the line",
+   "in": 28.3,
+   "out": 33.4,
+   "rowStart": 28.5,
+   "rowStep": 0.62,
+   "perRow": 1,
+   "entries": [
+    {
+     "date": "04 Sep",
+     "text": "walked 35 min"
+    },
+    {
+     "date": "05 Sep",
+     "text": "gym, 40 min"
+    },
+    {
+     "date": "06 Sep",
+     "text": "walked 25 min"
+    },
+    {
+     "date": "07 Sep",
+     "text": "nothing",
+     "missed": true
+    },
+    {
+     "date": "08 Sep",
+     "text": "swim, 30 min"
+    },
+    {
+     "date": "09 Sep",
+     "text": "walked 45 min"
+    },
+    {
+     "date": "10 Sep",
+     "text": "long walk, 70 min"
+    }
+   ]
+  },
+  {
+   "type": "feed.stream",
+   "note": "36.10 an archive that holds what people intend to do | 39.76 in one place",
+   "in": 33.0,
+   "out": 55.4,
+   "speed": 46,
+   "widen": 39.6
+  },
+  {
+   "type": "feed.highlight",
+   "note": "42.28 dated and public",
+   "at": 42.2,
+   "out": 46.2,
+   "row": 4,
+   "labels": [
+    "dated 04 Sep 2026",
+    "anyone can see it"
+   ]
+  },
+  {
+   "type": "feed.real",
+   "note": "44.36 until it becomes real",
+   "at": 45.0,
+   "row": 4,
+   "year": "2027"
+  },
+  {
+   "type": "phases.bar",
+   "note": "46.68 phase one is live today | 49.88 phase two starts shortly",
+   "in": 46.4,
+   "out": 55.2,
+   "fill0": 46.8,
+   "fill1": 50.6,
+   "fill1Pct": 26,
+   "noteAt": 53.2,
+   "note2": "phase two: the part that gets you there"
+  },
+  {
+   "type": "end.card",
+   "note": "55.08 the archive is live at / 56.22 www",
+   "in": 55.0,
+   "urlStart": 56.2,
+   "urlEnd": 58.5
+  }
+ ],
+ "captions": [
+  {
+   "s": 0.3,
+   "e": 2.6,
+   "size": 48,
+   "y": 250,
+   "l1": "A dream in your head",
+   "l2": "has no start date"
+  },
+  {
+   "s": 9.1,
+   "e": 11.9,
+   "size": 42,
+   "y": 250,
+   "l1": "No next step. No evidence you tried."
+  },
+  {
+   "s": 12.3,
+   "e": 13.9,
+   "size": 46,
+   "y": 250,
+   "l1": "So do three things with it"
+  },
+  {
+   "s": 18.2,
+   "e": 20.9,
+   "size": 44,
+   "y": 250,
+   "l1": "Specific enough to check today"
+  },
+  {
+   "s": 21.2,
+   "e": 24.7,
+   "size": 44,
+   "y": 250,
+   "l1": "The smallest next step"
+  },
+  {
+   "s": 25.1,
+   "e": 33.4,
+   "size": 42,
+   "y": 250,
+   "l1": "Write it. Then log it.",
+   "l2": "the record carries you on the bad days"
+  },
+  {
+   "s": 36.0,
+   "e": 45.6,
+   "size": 44,
+   "y": 170,
+   "l1": "An archive of what people intend to do",
+   "l2": "dated, public, on the record"
+  },
+  {
+   "s": 46.6,
+   "e": 54.6,
+   "size": 44,
+   "y": 170,
+   "l1": "Phase one is live today",
+   "l2": "phase two starts shortly"
+  },
+  {
+   "s": 55.0,
+   "e": 59.06,
+   "size": 104,
+   "y": 900,
+   "l1": "dmyor",
+   "l2": "www.dmyor.com",
+   "final": true
+  }
+ ]
+}

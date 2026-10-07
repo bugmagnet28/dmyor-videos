@@ -1,0 +1,10 @@
+{
+  "notify_to": "sanyampathak51@gmail.com",
+  "notify_from": "Dmyor Video Agent <support@dmyor.com>",
+  "ses_region": "ap-south-1",
+  "instagram": "@dmyor_global",
+  "youtube": null,
+  "videos_per_day": 1,
+  "max_emails_per_day": 2,
+  "target_length_seconds": [12, 25]
+}

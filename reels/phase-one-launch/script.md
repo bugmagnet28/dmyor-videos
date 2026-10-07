@@ -1,0 +1,6 @@
+# phase one launch
+
+<!-- hint: phase one launch -->
+<!-- hook: Impossible object -->
+
+If you have a diary where any dream you write would come true, what would you write? Running your own successful business, maybe travelling all across the world, it could be anything, but the problem is we all know there is no magic diary that makes your wishes come true. Instead, there is an archive that holds all your dreams, goals and visions for you and the world to see when you do make them a reality. These records are going to exist in this world forever as history and what you wanted to do. This is an experiment where we all would be making a reality in 5 years where most of our dreams and visions would come true. Instead of the magic diary, we are building a system that would help you make your dreams real yourself. The whole process would be divided into phases. Phase 1 of this plan starts today. This phase is very simple, you just need to think what you really want to make happen and you just write it on demure. This would create an archive of visions and dreams we all see today as a reference for future to witness and verify how many of these writings became real. Phase 2 will start shortly. Till then, think hard about what you want to make happen and post it with us and explore the archive. P.S. The archive is live at www.demure.com

@@ -1,0 +1,7 @@
+{
+ "source": "audio.mp3",
+ "duration": 53.73,
+ "provider": null,
+ "voice": null,
+ "note": "settings not captured - file was dropped in directly. Use reel.py audio next time so voice/stability/speed are logged for the report."
+}

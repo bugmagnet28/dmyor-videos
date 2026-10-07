@@ -1,0 +1,890 @@
+{
+ "audio": "audio.mp3",
+ "duration": 53.73,
+ "text": "There are four months left in 2026. Think back to January. How many of the things you meant to do have you actually done? For most people the honest answer is not many, not because you stopped caring, because it stayed in your head and nothing in your head has a date on it. A plan you never wrote down is not a plan, it is a mood. So get it out, write the thing down, then move on it one day at a time and log what you did, because seeing the record build is what keeps you going. That is what Demure is for. Phase one is live today. Write your dream down, dated, public, permanent. Phase two starts shortly. That is the part that helps you actually get there. The archive is live at www.demure.com",
+ "words": [
+  {
+   "w": "there",
+   "raw": "There",
+   "s": 0.0,
+   "e": 0.26
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 0.26,
+   "e": 0.48
+  },
+  {
+   "w": "four",
+   "raw": "four",
+   "s": 0.48,
+   "e": 0.94
+  },
+  {
+   "w": "months",
+   "raw": "months",
+   "s": 0.94,
+   "e": 1.24
+  },
+  {
+   "w": "left",
+   "raw": "left",
+   "s": 1.24,
+   "e": 1.62
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 1.62,
+   "e": 1.98
+  },
+  {
+   "w": "2026",
+   "raw": "2026.",
+   "s": 1.98,
+   "e": 3.28
+  },
+  {
+   "w": "think",
+   "raw": "Think",
+   "s": 4.34,
+   "e": 4.46
+  },
+  {
+   "w": "back",
+   "raw": "back",
+   "s": 4.46,
+   "e": 4.72
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 4.72,
+   "e": 4.96
+  },
+  {
+   "w": "january",
+   "raw": "January.",
+   "s": 4.96,
+   "e": 5.28
+  },
+  {
+   "w": "how",
+   "raw": "How",
+   "s": 6.1,
+   "e": 6.32
+  },
+  {
+   "w": "many",
+   "raw": "many",
+   "s": 6.32,
+   "e": 6.58
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 6.58,
+   "e": 6.74
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 6.74,
+   "e": 6.88
+  },
+  {
+   "w": "things",
+   "raw": "things",
+   "s": 6.88,
+   "e": 7.08
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 7.08,
+   "e": 7.4
+  },
+  {
+   "w": "meant",
+   "raw": "meant",
+   "s": 7.4,
+   "e": 7.6
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 7.6,
+   "e": 7.78
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 7.78,
+   "e": 8.12
+  },
+  {
+   "w": "have",
+   "raw": "have",
+   "s": 8.12,
+   "e": 8.52
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 8.52,
+   "e": 8.68
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 8.68,
+   "e": 9.12
+  },
+  {
+   "w": "done",
+   "raw": "done?",
+   "s": 9.12,
+   "e": 9.54
+  },
+  {
+   "w": "for",
+   "raw": "For",
+   "s": 10.36,
+   "e": 10.46
+  },
+  {
+   "w": "most",
+   "raw": "most",
+   "s": 10.46,
+   "e": 10.66
+  },
+  {
+   "w": "people",
+   "raw": "people",
+   "s": 10.66,
+   "e": 10.88
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 10.88,
+   "e": 11.04
+  },
+  {
+   "w": "honest",
+   "raw": "honest",
+   "s": 11.04,
+   "e": 11.28
+  },
+  {
+   "w": "answer",
+   "raw": "answer",
+   "s": 11.28,
+   "e": 11.6
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 11.6,
+   "e": 11.92
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 11.92,
+   "e": 12.68
+  },
+  {
+   "w": "many",
+   "raw": "many,",
+   "s": 12.68,
+   "e": 13.04
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 13.26,
+   "e": 13.7
+  },
+  {
+   "w": "because",
+   "raw": "because",
+   "s": 13.7,
+   "e": 13.96
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 13.96,
+   "e": 14.16
+  },
+  {
+   "w": "stopped",
+   "raw": "stopped",
+   "s": 14.16,
+   "e": 14.42
+  },
+  {
+   "w": "caring",
+   "raw": "caring,",
+   "s": 14.42,
+   "e": 14.9
+  },
+  {
+   "w": "because",
+   "raw": "because",
+   "s": 15.06,
+   "e": 15.68
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 15.68,
+   "e": 15.82
+  },
+  {
+   "w": "stayed",
+   "raw": "stayed",
+   "s": 15.82,
+   "e": 16.18
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 16.18,
+   "e": 16.48
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 16.48,
+   "e": 16.66
+  },
+  {
+   "w": "head",
+   "raw": "head",
+   "s": 16.66,
+   "e": 16.96
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 16.96,
+   "e": 17.62
+  },
+  {
+   "w": "nothing",
+   "raw": "nothing",
+   "s": 17.62,
+   "e": 17.92
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 17.92,
+   "e": 18.2
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 18.2,
+   "e": 18.34
+  },
+  {
+   "w": "head",
+   "raw": "head",
+   "s": 18.34,
+   "e": 18.56
+  },
+  {
+   "w": "has",
+   "raw": "has",
+   "s": 18.56,
+   "e": 18.74
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 18.74,
+   "e": 18.98
+  },
+  {
+   "w": "date",
+   "raw": "date",
+   "s": 18.98,
+   "e": 19.2
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 19.2,
+   "e": 19.46
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 19.46,
+   "e": 19.72
+  },
+  {
+   "w": "a",
+   "raw": "A",
+   "s": 19.94,
+   "e": 20.08
+  },
+  {
+   "w": "plan",
+   "raw": "plan",
+   "s": 20.08,
+   "e": 20.34
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 20.34,
+   "e": 20.7
+  },
+  {
+   "w": "never",
+   "raw": "never",
+   "s": 20.7,
+   "e": 20.94
+  },
+  {
+   "w": "wrote",
+   "raw": "wrote",
+   "s": 20.94,
+   "e": 21.24
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 21.24,
+   "e": 21.6
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 21.6,
+   "e": 21.9
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 21.9,
+   "e": 22.14
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 22.14,
+   "e": 22.28
+  },
+  {
+   "w": "plan",
+   "raw": "plan,",
+   "s": 22.28,
+   "e": 22.56
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 22.92,
+   "e": 23.38
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 23.38,
+   "e": 23.52
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 23.52,
+   "e": 23.7
+  },
+  {
+   "w": "mood",
+   "raw": "mood.",
+   "s": 23.7,
+   "e": 24.04
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 24.48,
+   "e": 24.68
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 24.68,
+   "e": 24.88
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 24.88,
+   "e": 25.02
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 25.02,
+   "e": 25.28
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 25.58,
+   "e": 25.86
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 25.86,
+   "e": 26.02
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 26.02,
+   "e": 26.18
+  },
+  {
+   "w": "down",
+   "raw": "down,",
+   "s": 26.18,
+   "e": 26.52
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 26.52,
+   "e": 27.2
+  },
+  {
+   "w": "move",
+   "raw": "move",
+   "s": 27.2,
+   "e": 27.42
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 27.42,
+   "e": 27.62
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 27.62,
+   "e": 27.74
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 27.74,
+   "e": 27.9
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 27.9,
+   "e": 28.08
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 28.08,
+   "e": 28.2
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 28.2,
+   "e": 28.3
+  },
+  {
+   "w": "time",
+   "raw": "time",
+   "s": 28.3,
+   "e": 28.5
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 28.5,
+   "e": 28.8
+  },
+  {
+   "w": "log",
+   "raw": "log",
+   "s": 28.8,
+   "e": 29.06
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 29.06,
+   "e": 29.32
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 29.32,
+   "e": 29.54
+  },
+  {
+   "w": "did",
+   "raw": "did,",
+   "s": 29.54,
+   "e": 29.8
+  },
+  {
+   "w": "because",
+   "raw": "because",
+   "s": 30.04,
+   "e": 30.24
+  },
+  {
+   "w": "seeing",
+   "raw": "seeing",
+   "s": 30.24,
+   "e": 30.56
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 30.56,
+   "e": 30.78
+  },
+  {
+   "w": "record",
+   "raw": "record",
+   "s": 30.78,
+   "e": 31.02
+  },
+  {
+   "w": "build",
+   "raw": "build",
+   "s": 31.02,
+   "e": 31.38
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 31.38,
+   "e": 31.66
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 31.66,
+   "e": 31.88
+  },
+  {
+   "w": "keeps",
+   "raw": "keeps",
+   "s": 31.88,
+   "e": 32.16
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 32.16,
+   "e": 32.46
+  },
+  {
+   "w": "going",
+   "raw": "going.",
+   "s": 32.46,
+   "e": 32.76
+  },
+  {
+   "w": "that",
+   "raw": "That",
+   "s": 33.66,
+   "e": 33.74
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 33.74,
+   "e": 34.12
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 34.12,
+   "e": 34.4
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 34.4,
+   "e": 34.78
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 34.78,
+   "e": 35.24
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 35.24,
+   "e": 35.8
+  },
+  {
+   "w": "phase",
+   "raw": "Phase",
+   "s": 36.78,
+   "e": 36.78
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 36.78,
+   "e": 37.08
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 37.08,
+   "e": 37.36
+  },
+  {
+   "w": "live",
+   "raw": "live",
+   "s": 37.36,
+   "e": 37.56
+  },
+  {
+   "w": "today",
+   "raw": "today.",
+   "s": 37.56,
+   "e": 37.9
+  },
+  {
+   "w": "write",
+   "raw": "Write",
+   "s": 38.64,
+   "e": 38.94
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 38.94,
+   "e": 39.16
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 39.16,
+   "e": 39.36
+  },
+  {
+   "w": "down",
+   "raw": "down,",
+   "s": 39.36,
+   "e": 39.72
+  },
+  {
+   "w": "dated",
+   "raw": "dated,",
+   "s": 40.08,
+   "e": 40.44
+  },
+  {
+   "w": "public",
+   "raw": "public,",
+   "s": 40.9,
+   "e": 41.18
+  },
+  {
+   "w": "permanent",
+   "raw": "permanent.",
+   "s": 41.64,
+   "e": 41.92
+  },
+  {
+   "w": "phase",
+   "raw": "Phase",
+   "s": 42.74,
+   "e": 42.84
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 42.84,
+   "e": 43.2
+  },
+  {
+   "w": "starts",
+   "raw": "starts",
+   "s": 43.2,
+   "e": 43.76
+  },
+  {
+   "w": "shortly",
+   "raw": "shortly.",
+   "s": 43.76,
+   "e": 44.48
+  },
+  {
+   "w": "that",
+   "raw": "That",
+   "s": 45.16,
+   "e": 45.5
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 45.5,
+   "e": 45.74
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 45.74,
+   "e": 45.9
+  },
+  {
+   "w": "part",
+   "raw": "part",
+   "s": 45.9,
+   "e": 46.14
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 46.14,
+   "e": 46.42
+  },
+  {
+   "w": "helps",
+   "raw": "helps",
+   "s": 46.42,
+   "e": 46.68
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 46.68,
+   "e": 47.0
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 47.0,
+   "e": 47.48
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 47.48,
+   "e": 47.76
+  },
+  {
+   "w": "there",
+   "raw": "there.",
+   "s": 47.76,
+   "e": 48.16
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 48.64,
+   "e": 48.88
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 48.88,
+   "e": 49.24
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 49.24,
+   "e": 49.54
+  },
+  {
+   "w": "live",
+   "raw": "live",
+   "s": 49.54,
+   "e": 49.84
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 49.84,
+   "e": 50.2
+  },
+  {
+   "w": "www",
+   "raw": "www",
+   "s": 50.2,
+   "e": 50.82
+  },
+  {
+   "w": "demure",
+   "raw": ".demure",
+   "s": 50.82,
+   "e": 52.58
+  },
+  {
+   "w": "com",
+   "raw": ".com",
+   "s": 52.58,
+   "e": 53.38
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 8.12,
+   "text": "There are four months left in 2026. Think back to January. How many of the things you meant to do"
+  },
+  {
+   "s": 8.12,
+   "e": 14.16,
+   "text": "have you actually done? For most people the honest answer is not many, not because you"
+  },
+  {
+   "s": 14.16,
+   "e": 19.72,
+   "text": "stopped caring, because it stayed in your head and nothing in your head has a date on it."
+  },
+  {
+   "s": 19.94,
+   "e": 26.52,
+   "text": "A plan you never wrote down is not a plan, it is a mood. So get it out, write the thing down,"
+  },
+  {
+   "s": 26.52,
+   "e": 31.88,
+   "text": "then move on it one day at a time and log what you did, because seeing the record build is what"
+  },
+  {
+   "s": 31.88,
+   "e": 39.72,
+   "text": "keeps you going. That is what Demure is for. Phase one is live today. Write your dream down,"
+  },
+  {
+   "s": 40.08,
+   "e": 47.0,
+   "text": "dated, public, permanent. Phase two starts shortly. That is the part that helps you"
+  },
+  {
+   "s": 47.0,
+   "e": 53.38,
+   "text": "actually get there. The archive is live at www.demure.com"
+  }
+ ],
+ "wps": 2.61
+}

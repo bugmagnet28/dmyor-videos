@@ -1,0 +1,20 @@
+{
+ "slug": "year-itemised",
+ "hint": "one year ago today you wanted something. name it. you cannot, because nothing recorded it. write today's one down, dated, and next year you get to answer the question",
+ "created": "2026-09-11T20:34:31",
+ "hook_pattern": "Receipt",
+ "target_seconds": 31,
+ "status": "drafting",
+ "words": 122,
+ "narrated": false,
+ "cta": "comment prompt (brand ending undecided)",
+ "anchor_date": "2026-09-11",
+ "callback_date": "2025-09-11",
+ "payoff_date": "2027-09-11",
+ "note": "no VO, sound design only. Deadpan comic receipt. Real figures only for the totals; the item counts are rhetorical, never presented as dmyor data.",
+ "real_figures": {
+  "days_used": 254,
+  "days_left": 111,
+  "mondays": 36
+ }
+}

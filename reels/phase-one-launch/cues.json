@@ -1,0 +1,1537 @@
+{
+ "audio": "audio.mp3",
+ "duration": 100.15,
+ "text": "If you have a diary where any dream you write would come true, what would you write? Running your own successful business, maybe travelling all across the world, it could be anything, but the problem is we all know there is no magic diary that makes your wishes come true. Instead, there is an archive that holds all your dreams, goals and visions for you and the world to see when you do make them a reality. These records are going to exist in this world forever as history and what you wanted to do. This is an experiment where we all would be making a reality in 5 years where most of our dreams and visions would come true. Instead of the magic diary, we are building a system that would help you make your dreams real yourself. The whole process would be divided into phases. Phase 1 of this plan starts today. This phase is very simple, you just need to think what you really want to make happen and you just write it on demure. This would create an archive of visions and dreams we all see today as a reference for future to witness and verify how many of these writings became real. Phase 2 will start shortly. Till then, think hard about what you want to make happen and post it with us and explore the archive. P.S. The archive is live at www.demure.com",
+ "words": [
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 0.24,
+   "e": 0.62
+  },
+  {
+   "w": "have",
+   "raw": "have",
+   "s": 0.62,
+   "e": 0.78
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 0.78,
+   "e": 1.06
+  },
+  {
+   "w": "diary",
+   "raw": "diary",
+   "s": 1.06,
+   "e": 1.26
+  },
+  {
+   "w": "where",
+   "raw": "where",
+   "s": 1.26,
+   "e": 1.54
+  },
+  {
+   "w": "any",
+   "raw": "any",
+   "s": 1.54,
+   "e": 1.78
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 1.78,
+   "e": 2.06
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 2.06,
+   "e": 2.28
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 2.28,
+   "e": 2.56
+  },
+  {
+   "w": "would",
+   "raw": "would",
+   "s": 2.56,
+   "e": 2.84
+  },
+  {
+   "w": "come",
+   "raw": "come",
+   "s": 2.84,
+   "e": 3.04
+  },
+  {
+   "w": "true",
+   "raw": "true,",
+   "s": 3.04,
+   "e": 3.4
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 4.4,
+   "e": 4.48
+  },
+  {
+   "w": "would",
+   "raw": "would",
+   "s": 4.48,
+   "e": 4.64
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 4.64,
+   "e": 4.76
+  },
+  {
+   "w": "write",
+   "raw": "write?",
+   "s": 4.76,
+   "e": 5.02
+  },
+  {
+   "w": "running",
+   "raw": "Running",
+   "s": 5.72,
+   "e": 5.78
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 5.78,
+   "e": 6.04
+  },
+  {
+   "w": "own",
+   "raw": "own",
+   "s": 6.04,
+   "e": 6.28
+  },
+  {
+   "w": "successful",
+   "raw": "successful",
+   "s": 6.28,
+   "e": 6.82
+  },
+  {
+   "w": "business",
+   "raw": "business,",
+   "s": 6.82,
+   "e": 7.34
+  },
+  {
+   "w": "maybe",
+   "raw": "maybe",
+   "s": 7.56,
+   "e": 7.74
+  },
+  {
+   "w": "travelling",
+   "raw": "travelling",
+   "s": 7.74,
+   "e": 8.12
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 8.12,
+   "e": 8.48
+  },
+  {
+   "w": "across",
+   "raw": "across",
+   "s": 8.48,
+   "e": 8.76
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 8.76,
+   "e": 8.98
+  },
+  {
+   "w": "world",
+   "raw": "world,",
+   "s": 8.98,
+   "e": 9.2
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 9.36,
+   "e": 9.42
+  },
+  {
+   "w": "could",
+   "raw": "could",
+   "s": 9.42,
+   "e": 9.6
+  },
+  {
+   "w": "be",
+   "raw": "be",
+   "s": 9.6,
+   "e": 9.78
+  },
+  {
+   "w": "anything",
+   "raw": "anything,",
+   "s": 9.78,
+   "e": 10.18
+  },
+  {
+   "w": "but",
+   "raw": "but",
+   "s": 10.48,
+   "e": 10.94
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 10.94,
+   "e": 11.08
+  },
+  {
+   "w": "problem",
+   "raw": "problem",
+   "s": 11.08,
+   "e": 11.3
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 11.3,
+   "e": 11.62
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 11.62,
+   "e": 11.88
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 11.88,
+   "e": 12.1
+  },
+  {
+   "w": "know",
+   "raw": "know",
+   "s": 12.1,
+   "e": 12.34
+  },
+  {
+   "w": "there",
+   "raw": "there",
+   "s": 12.34,
+   "e": 12.92
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 12.92,
+   "e": 13.06
+  },
+  {
+   "w": "no",
+   "raw": "no",
+   "s": 13.06,
+   "e": 13.34
+  },
+  {
+   "w": "magic",
+   "raw": "magic",
+   "s": 13.34,
+   "e": 13.84
+  },
+  {
+   "w": "diary",
+   "raw": "diary",
+   "s": 13.84,
+   "e": 14.32
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 14.32,
+   "e": 14.68
+  },
+  {
+   "w": "makes",
+   "raw": "makes",
+   "s": 14.68,
+   "e": 14.9
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 14.9,
+   "e": 15.14
+  },
+  {
+   "w": "wishes",
+   "raw": "wishes",
+   "s": 15.14,
+   "e": 15.44
+  },
+  {
+   "w": "come",
+   "raw": "come",
+   "s": 15.44,
+   "e": 15.9
+  },
+  {
+   "w": "true",
+   "raw": "true.",
+   "s": 15.9,
+   "e": 16.34
+  },
+  {
+   "w": "instead",
+   "raw": "Instead,",
+   "s": 17.24,
+   "e": 17.72
+  },
+  {
+   "w": "there",
+   "raw": "there",
+   "s": 18.16,
+   "e": 18.34
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 18.34,
+   "e": 18.42
+  },
+  {
+   "w": "an",
+   "raw": "an",
+   "s": 18.42,
+   "e": 18.58
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 18.58,
+   "e": 19.0
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 19.0,
+   "e": 19.28
+  },
+  {
+   "w": "holds",
+   "raw": "holds",
+   "s": 19.28,
+   "e": 19.58
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 19.58,
+   "e": 20.04
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 20.04,
+   "e": 20.34
+  },
+  {
+   "w": "dreams",
+   "raw": "dreams,",
+   "s": 20.34,
+   "e": 20.82
+  },
+  {
+   "w": "goals",
+   "raw": "goals",
+   "s": 21.08,
+   "e": 21.24
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 21.24,
+   "e": 21.62
+  },
+  {
+   "w": "visions",
+   "raw": "visions",
+   "s": 21.62,
+   "e": 21.92
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 21.92,
+   "e": 22.28
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 22.28,
+   "e": 22.56
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 22.56,
+   "e": 23.18
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 23.18,
+   "e": 23.34
+  },
+  {
+   "w": "world",
+   "raw": "world",
+   "s": 23.34,
+   "e": 23.64
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 23.64,
+   "e": 23.94
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 23.94,
+   "e": 24.24
+  },
+  {
+   "w": "when",
+   "raw": "when",
+   "s": 24.24,
+   "e": 24.46
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 24.46,
+   "e": 24.66
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 24.66,
+   "e": 24.98
+  },
+  {
+   "w": "make",
+   "raw": "make",
+   "s": 24.98,
+   "e": 25.5
+  },
+  {
+   "w": "them",
+   "raw": "them",
+   "s": 25.5,
+   "e": 25.96
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 25.96,
+   "e": 26.34
+  },
+  {
+   "w": "reality",
+   "raw": "reality.",
+   "s": 26.34,
+   "e": 26.78
+  },
+  {
+   "w": "these",
+   "raw": "These",
+   "s": 27.7,
+   "e": 28.0
+  },
+  {
+   "w": "records",
+   "raw": "records",
+   "s": 28.0,
+   "e": 28.38
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 28.38,
+   "e": 28.64
+  },
+  {
+   "w": "going",
+   "raw": "going",
+   "s": 28.64,
+   "e": 28.84
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 28.84,
+   "e": 29.02
+  },
+  {
+   "w": "exist",
+   "raw": "exist",
+   "s": 29.02,
+   "e": 29.4
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 29.4,
+   "e": 29.8
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 29.8,
+   "e": 30.04
+  },
+  {
+   "w": "world",
+   "raw": "world",
+   "s": 30.04,
+   "e": 30.38
+  },
+  {
+   "w": "forever",
+   "raw": "forever",
+   "s": 30.38,
+   "e": 30.9
+  },
+  {
+   "w": "as",
+   "raw": "as",
+   "s": 30.9,
+   "e": 31.52
+  },
+  {
+   "w": "history",
+   "raw": "history",
+   "s": 31.52,
+   "e": 32.0
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 32.0,
+   "e": 32.36
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 32.36,
+   "e": 32.6
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 32.6,
+   "e": 32.84
+  },
+  {
+   "w": "wanted",
+   "raw": "wanted",
+   "s": 32.84,
+   "e": 33.28
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 33.28,
+   "e": 33.84
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 33.84,
+   "e": 34.32
+  },
+  {
+   "w": "this",
+   "raw": "This",
+   "s": 35.46,
+   "e": 35.94
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 35.94,
+   "e": 36.2
+  },
+  {
+   "w": "an",
+   "raw": "an",
+   "s": 36.2,
+   "e": 36.32
+  },
+  {
+   "w": "experiment",
+   "raw": "experiment",
+   "s": 36.32,
+   "e": 36.78
+  },
+  {
+   "w": "where",
+   "raw": "where",
+   "s": 36.78,
+   "e": 37.32
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 37.32,
+   "e": 37.5
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 37.5,
+   "e": 37.82
+  },
+  {
+   "w": "would",
+   "raw": "would",
+   "s": 37.82,
+   "e": 38.04
+  },
+  {
+   "w": "be",
+   "raw": "be",
+   "s": 38.04,
+   "e": 38.16
+  },
+  {
+   "w": "making",
+   "raw": "making",
+   "s": 38.16,
+   "e": 38.48
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 38.48,
+   "e": 38.7
+  },
+  {
+   "w": "reality",
+   "raw": "reality",
+   "s": 38.7,
+   "e": 39.12
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 39.12,
+   "e": 39.48
+  },
+  {
+   "w": "5",
+   "raw": "5",
+   "s": 39.48,
+   "e": 39.86
+  },
+  {
+   "w": "years",
+   "raw": "years",
+   "s": 39.86,
+   "e": 40.18
+  },
+  {
+   "w": "where",
+   "raw": "where",
+   "s": 40.18,
+   "e": 40.5
+  },
+  {
+   "w": "most",
+   "raw": "most",
+   "s": 40.5,
+   "e": 40.8
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 40.8,
+   "e": 41.04
+  },
+  {
+   "w": "our",
+   "raw": "our",
+   "s": 41.04,
+   "e": 41.22
+  },
+  {
+   "w": "dreams",
+   "raw": "dreams",
+   "s": 41.22,
+   "e": 41.52
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 41.52,
+   "e": 41.82
+  },
+  {
+   "w": "visions",
+   "raw": "visions",
+   "s": 41.82,
+   "e": 42.1
+  },
+  {
+   "w": "would",
+   "raw": "would",
+   "s": 42.1,
+   "e": 42.4
+  },
+  {
+   "w": "come",
+   "raw": "come",
+   "s": 42.4,
+   "e": 42.62
+  },
+  {
+   "w": "true",
+   "raw": "true.",
+   "s": 42.62,
+   "e": 42.98
+  },
+  {
+   "w": "instead",
+   "raw": "Instead",
+   "s": 44.04,
+   "e": 44.4
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 44.4,
+   "e": 44.72
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 44.72,
+   "e": 44.88
+  },
+  {
+   "w": "magic",
+   "raw": "magic",
+   "s": 44.88,
+   "e": 45.2
+  },
+  {
+   "w": "diary",
+   "raw": "diary,",
+   "s": 45.2,
+   "e": 45.72
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 46.18,
+   "e": 46.36
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 46.36,
+   "e": 46.48
+  },
+  {
+   "w": "building",
+   "raw": "building",
+   "s": 46.48,
+   "e": 46.8
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 46.8,
+   "e": 47.08
+  },
+  {
+   "w": "system",
+   "raw": "system",
+   "s": 47.08,
+   "e": 47.4
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 47.4,
+   "e": 47.66
+  },
+  {
+   "w": "would",
+   "raw": "would",
+   "s": 47.66,
+   "e": 47.8
+  },
+  {
+   "w": "help",
+   "raw": "help",
+   "s": 47.8,
+   "e": 48.1
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 48.1,
+   "e": 48.36
+  },
+  {
+   "w": "make",
+   "raw": "make",
+   "s": 48.36,
+   "e": 48.6
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 48.6,
+   "e": 48.88
+  },
+  {
+   "w": "dreams",
+   "raw": "dreams",
+   "s": 48.88,
+   "e": 49.26
+  },
+  {
+   "w": "real",
+   "raw": "real",
+   "s": 49.26,
+   "e": 49.9
+  },
+  {
+   "w": "yourself",
+   "raw": "yourself.",
+   "s": 49.9,
+   "e": 50.86
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 51.6,
+   "e": 51.8
+  },
+  {
+   "w": "whole",
+   "raw": "whole",
+   "s": 51.8,
+   "e": 51.96
+  },
+  {
+   "w": "process",
+   "raw": "process",
+   "s": 51.96,
+   "e": 52.34
+  },
+  {
+   "w": "would",
+   "raw": "would",
+   "s": 52.34,
+   "e": 52.54
+  },
+  {
+   "w": "be",
+   "raw": "be",
+   "s": 52.54,
+   "e": 52.66
+  },
+  {
+   "w": "divided",
+   "raw": "divided",
+   "s": 52.66,
+   "e": 53.12
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 53.12,
+   "e": 53.46
+  },
+  {
+   "w": "phases",
+   "raw": "phases.",
+   "s": 53.46,
+   "e": 54.12
+  },
+  {
+   "w": "phase",
+   "raw": "Phase",
+   "s": 55.28,
+   "e": 55.28
+  },
+  {
+   "w": "1",
+   "raw": "1",
+   "s": 55.28,
+   "e": 55.64
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 55.64,
+   "e": 55.8
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 55.8,
+   "e": 55.98
+  },
+  {
+   "w": "plan",
+   "raw": "plan",
+   "s": 55.98,
+   "e": 56.28
+  },
+  {
+   "w": "starts",
+   "raw": "starts",
+   "s": 56.28,
+   "e": 56.8
+  },
+  {
+   "w": "today",
+   "raw": "today.",
+   "s": 56.8,
+   "e": 57.6
+  },
+  {
+   "w": "this",
+   "raw": "This",
+   "s": 58.98,
+   "e": 59.12
+  },
+  {
+   "w": "phase",
+   "raw": "phase",
+   "s": 59.12,
+   "e": 59.32
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 59.32,
+   "e": 59.54
+  },
+  {
+   "w": "very",
+   "raw": "very",
+   "s": 59.54,
+   "e": 59.76
+  },
+  {
+   "w": "simple",
+   "raw": "simple,",
+   "s": 59.76,
+   "e": 60.18
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 60.52,
+   "e": 60.68
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 60.68,
+   "e": 60.88
+  },
+  {
+   "w": "need",
+   "raw": "need",
+   "s": 60.88,
+   "e": 61.06
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 61.06,
+   "e": 61.28
+  },
+  {
+   "w": "think",
+   "raw": "think",
+   "s": 61.28,
+   "e": 61.5
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 61.5,
+   "e": 61.74
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 61.74,
+   "e": 61.92
+  },
+  {
+   "w": "really",
+   "raw": "really",
+   "s": 61.92,
+   "e": 62.32
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 62.32,
+   "e": 62.68
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 62.68,
+   "e": 62.86
+  },
+  {
+   "w": "make",
+   "raw": "make",
+   "s": 62.86,
+   "e": 63.02
+  },
+  {
+   "w": "happen",
+   "raw": "happen",
+   "s": 63.02,
+   "e": 63.42
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 63.42,
+   "e": 64.06
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 64.06,
+   "e": 64.22
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 64.22,
+   "e": 64.52
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 64.52,
+   "e": 64.88
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 64.88,
+   "e": 65.3
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 65.3,
+   "e": 65.76
+  },
+  {
+   "w": "demure",
+   "raw": "demure.",
+   "s": 65.76,
+   "e": 66.34
+  },
+  {
+   "w": "this",
+   "raw": "This",
+   "s": 66.96,
+   "e": 67.14
+  },
+  {
+   "w": "would",
+   "raw": "would",
+   "s": 67.14,
+   "e": 67.32
+  },
+  {
+   "w": "create",
+   "raw": "create",
+   "s": 67.32,
+   "e": 67.64
+  },
+  {
+   "w": "an",
+   "raw": "an",
+   "s": 67.64,
+   "e": 67.92
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 67.92,
+   "e": 68.46
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 68.46,
+   "e": 68.82
+  },
+  {
+   "w": "visions",
+   "raw": "visions",
+   "s": 68.82,
+   "e": 69.14
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 69.14,
+   "e": 69.4
+  },
+  {
+   "w": "dreams",
+   "raw": "dreams",
+   "s": 69.4,
+   "e": 69.72
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 69.72,
+   "e": 69.98
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 69.98,
+   "e": 70.3
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 70.3,
+   "e": 70.64
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 70.64,
+   "e": 71.0
+  },
+  {
+   "w": "as",
+   "raw": "as",
+   "s": 71.0,
+   "e": 71.48
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 71.48,
+   "e": 71.62
+  },
+  {
+   "w": "reference",
+   "raw": "reference",
+   "s": 71.62,
+   "e": 71.94
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 71.94,
+   "e": 72.26
+  },
+  {
+   "w": "future",
+   "raw": "future",
+   "s": 72.26,
+   "e": 72.54
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 72.54,
+   "e": 72.88
+  },
+  {
+   "w": "witness",
+   "raw": "witness",
+   "s": 72.88,
+   "e": 73.16
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 73.16,
+   "e": 73.58
+  },
+  {
+   "w": "verify",
+   "raw": "verify",
+   "s": 73.58,
+   "e": 74.08
+  },
+  {
+   "w": "how",
+   "raw": "how",
+   "s": 74.08,
+   "e": 74.72
+  },
+  {
+   "w": "many",
+   "raw": "many",
+   "s": 74.72,
+   "e": 74.98
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 74.98,
+   "e": 75.2
+  },
+  {
+   "w": "these",
+   "raw": "these",
+   "s": 75.2,
+   "e": 75.44
+  },
+  {
+   "w": "writings",
+   "raw": "writings",
+   "s": 75.44,
+   "e": 75.92
+  },
+  {
+   "w": "became",
+   "raw": "became",
+   "s": 75.92,
+   "e": 76.84
+  },
+  {
+   "w": "real",
+   "raw": "real.",
+   "s": 76.84,
+   "e": 77.74
+  },
+  {
+   "w": "phase",
+   "raw": "Phase",
+   "s": 78.56,
+   "e": 79.24
+  },
+  {
+   "w": "2",
+   "raw": "2",
+   "s": 79.24,
+   "e": 79.66
+  },
+  {
+   "w": "will",
+   "raw": "will",
+   "s": 79.66,
+   "e": 80.1
+  },
+  {
+   "w": "start",
+   "raw": "start",
+   "s": 80.1,
+   "e": 80.34
+  },
+  {
+   "w": "shortly",
+   "raw": "shortly.",
+   "s": 80.34,
+   "e": 80.8
+  },
+  {
+   "w": "till",
+   "raw": "Till",
+   "s": 81.48,
+   "e": 81.62
+  },
+  {
+   "w": "then",
+   "raw": "then,",
+   "s": 81.62,
+   "e": 82.0
+  },
+  {
+   "w": "think",
+   "raw": "think",
+   "s": 82.5,
+   "e": 82.6
+  },
+  {
+   "w": "hard",
+   "raw": "hard",
+   "s": 82.6,
+   "e": 82.96
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 82.96,
+   "e": 83.28
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 83.28,
+   "e": 83.56
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 83.56,
+   "e": 83.74
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 83.74,
+   "e": 83.94
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 83.94,
+   "e": 84.12
+  },
+  {
+   "w": "make",
+   "raw": "make",
+   "s": 84.12,
+   "e": 84.3
+  },
+  {
+   "w": "happen",
+   "raw": "happen",
+   "s": 84.3,
+   "e": 84.72
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 84.72,
+   "e": 85.3
+  },
+  {
+   "w": "post",
+   "raw": "post",
+   "s": 85.3,
+   "e": 85.6
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 85.6,
+   "e": 85.84
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 85.84,
+   "e": 86.0
+  },
+  {
+   "w": "us",
+   "raw": "us",
+   "s": 86.0,
+   "e": 86.26
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 86.26,
+   "e": 86.52
+  },
+  {
+   "w": "explore",
+   "raw": "explore",
+   "s": 86.52,
+   "e": 87.1
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 87.1,
+   "e": 87.72
+  },
+  {
+   "w": "archive",
+   "raw": "archive.",
+   "s": 87.72,
+   "e": 88.38
+  },
+  {
+   "w": "p",
+   "raw": "P",
+   "s": 89.06,
+   "e": 89.3
+  },
+  {
+   "w": "s",
+   "raw": ".S.",
+   "s": 89.3,
+   "e": 89.62
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 90.26,
+   "e": 90.38
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 90.38,
+   "e": 90.72
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 90.72,
+   "e": 90.9
+  },
+  {
+   "w": "live",
+   "raw": "live",
+   "s": 90.9,
+   "e": 91.18
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 91.18,
+   "e": 91.66
+  },
+  {
+   "w": "www",
+   "raw": "www",
+   "s": 91.66,
+   "e": 92.54
+  },
+  {
+   "w": "demure",
+   "raw": ".demure",
+   "s": 92.54,
+   "e": 98.6
+  },
+  {
+   "w": "com",
+   "raw": ".com",
+   "s": 98.6,
+   "e": 99.78
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 5.02,
+   "text": "If you have a diary where any dream you write would come true, what would you write?"
+  },
+  {
+   "s": 5.72,
+   "e": 9.6,
+   "text": "Running your own successful business, maybe travelling all across the world, it could"
+  },
+  {
+   "s": 9.6,
+   "e": 15.44,
+   "text": "be anything, but the problem is we all know there is no magic diary that makes your wishes"
+  },
+  {
+   "s": 15.44,
+   "e": 22.28,
+   "text": "come true. Instead, there is an archive that holds all your dreams, goals and visions for"
+  },
+  {
+   "s": 22.28,
+   "e": 29.02,
+   "text": "you and the world to see when you do make them a reality. These records are going to"
+  },
+  {
+   "s": 29.02,
+   "e": 34.32,
+   "text": "exist in this world forever as history and what you wanted to do."
+  },
+  {
+   "s": 35.46,
+   "e": 41.04,
+   "text": "This is an experiment where we all would be making a reality in 5 years where most of"
+  },
+  {
+   "s": 41.04,
+   "e": 47.4,
+   "text": "our dreams and visions would come true. Instead of the magic diary, we are building a system"
+  },
+  {
+   "s": 47.4,
+   "e": 53.12,
+   "text": "that would help you make your dreams real yourself. The whole process would be divided"
+  },
+  {
+   "s": 53.12,
+   "e": 60.88,
+   "text": "into phases. Phase 1 of this plan starts today. This phase is very simple, you just"
+  },
+  {
+   "s": 60.88,
+   "e": 67.14,
+   "text": "need to think what you really want to make happen and you just write it on demure. This"
+  },
+  {
+   "s": 67.14,
+   "e": 72.54,
+   "text": "would create an archive of visions and dreams we all see today as a reference for future"
+  },
+  {
+   "s": 72.54,
+   "e": 77.74,
+   "text": "to witness and verify how many of these writings became real."
+  },
+  {
+   "s": 78.56,
+   "e": 85.3,
+   "text": "Phase 2 will start shortly. Till then, think hard about what you want to make happen and"
+  },
+  {
+   "s": 85.3,
+   "e": 99.78,
+   "text": "post it with us and explore the archive. P.S. The archive is live at www.demure.com"
+  }
+ ],
+ "wps": 2.42
+}

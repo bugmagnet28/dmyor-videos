@@ -1,0 +1,306 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>dmyor reel</title>
+<style>
+html,body{margin:0;padding:0;width:100%;height:100%;background:#000;overflow:hidden}
+#viewport{position:fixed;inset:0;background:#000;display:flex;align-items:center;justify-content:center}
+#stage{position:relative;width:1080px;height:1920px;background:#0A0A0A;overflow:hidden;
+ transform-origin:center center;-webkit-font-smoothing:antialiased;
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+#bookPersp{position:absolute;inset:0;perspective:3200px;perspective-origin:50% 52%}
+#bookWorld{position:absolute;inset:0;transform-style:preserve-3d}
+.edge{position:absolute;width:1px;background:rgba(245,245,240,.28)}
+#spine{position:absolute;width:1px;background:rgba(245,245,240,.45)}
+#diaryPage{position:absolute;border:1px solid rgba(245,245,240,.5);border-radius:3px;overflow:hidden;background:#0A0A0A}
+.rule{position:absolute;height:1px;background:rgba(245,245,240,.09)}
+.written{position:absolute;color:#F5F5F0;font-size:25px;white-space:nowrap}
+.caret{color:#8C8C86;font-weight:300}
+#pulse{position:absolute;z-index:8;width:80px;height:80px;margin:-40px 0 0 -40px;border-radius:50%;
+ border:1px solid rgba(245,245,240,.7);opacity:0;pointer-events:none}
+#flipLayer{position:absolute;inset:0;z-index:3;perspective:2600px;pointer-events:none}
+#cover{position:absolute;transform-origin:left center;transform-style:preserve-3d}
+.face{position:absolute;inset:0;backface-visibility:hidden;border-radius:4px;background:#0A0A0A;
+ border:1px solid rgba(245,245,240,.55);display:flex;align-items:center;justify-content:center}
+.coverInner{transform:rotateY(180deg)}
+.coverShade{position:absolute;inset:0;background:#000;opacity:0;border-radius:4px}
+#coverTitle{text-align:center;color:#F5F5F0;font-size:40px;font-weight:600;line-height:1.3}
+#coverTitle span{display:block;margin-top:18px;font-size:13px;letter-spacing:4px;font-weight:400;
+ text-transform:uppercase;color:#8C8C86}
+.ghostCard{position:absolute;border:1px solid rgba(245,245,240,.16);border-radius:6px}
+#canvasWrap{position:absolute;inset:0;z-index:2;transform-origin:0 0;opacity:0}
+#gridLayer{position:absolute;left:46px;top:46px;width:988px;height:1828px;overflow:hidden}
+#gridInner{position:absolute;left:0;top:0;width:988px;will-change:transform}
+.colWrap{width:268px}.col{display:flex;flex-direction:column;gap:30px}.card{display:block}
+.cardInner{box-sizing:border-box;height:100%;display:flex;flex-direction:column;justify-content:space-between;
+ border:1px solid rgba(245,245,240,.22);border-radius:12px;padding:20px;color:#F5F5F0;opacity:0;transform:scale(.94)}
+.dream{font-size:20px;line-height:1.4;font-weight:500}
+.meta{display:flex;align-items:baseline;justify-content:space-between;margin-top:14px}
+.date{font-size:13px;color:#6B6B6B}
+.standby{font-size:10px;letter-spacing:1.6px;font-variant:small-caps;text-transform:lowercase;color:#6B6B6B}
+.isReal .standby{color:#F5F5F0}
+#borderSvg{position:absolute;inset:0;width:1080px;height:1920px;pointer-events:none}
+#hoverRing{position:absolute;z-index:4;box-sizing:border-box;border-radius:12px;
+ border:1px solid rgba(245,245,240,.85);opacity:0;pointer-events:none}
+#tl{position:absolute;left:0;top:0;width:1080px;height:1920px;pointer-events:none;opacity:0}
+.tlLabel{position:absolute;color:#8C8C86;font-size:22px;letter-spacing:3px;opacity:0;
+ background:#0A0A0A;padding:4px 10px;border-radius:6px}
+#ghostDiary{position:absolute;z-index:8;left:390px;top:700px;width:300px;height:520px;
+ border:1px solid rgba(245,245,240,.45);border-radius:6px;background:#0A0A0A;display:flex;
+ flex-direction:column;align-items:center;justify-content:center;color:#F5F5F0;opacity:0}
+#ghostDiary .gt{font-size:30px;font-weight:600}
+#ghostDiary .gs{margin-top:12px;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#8C8C86}
+#ghostSlash{position:absolute;left:8%;top:50%;width:84%;height:1px;background:#F5F5F0;opacity:.75;
+ transform:scaleX(0);transform-origin:left center}
+#ui{position:absolute;inset:0;z-index:6}
+.tab{position:absolute;box-sizing:border-box;height:64px;border-radius:32px;border:1px solid rgba(245,245,240,.3);
+ background:#0A0A0A;color:#8C8C86;display:flex;align-items:center;justify-content:center;font-size:17px;
+ letter-spacing:3px;text-transform:uppercase;opacity:0}
+.tab.on{border-color:rgba(245,245,240,.85);color:#F5F5F0}
+#panel{position:absolute;box-sizing:border-box;left:150px;width:780px;border:1px solid rgba(245,245,240,.3);
+ border-radius:16px;background:#0A0A0A;padding:38px 36px;color:#F5F5F0;opacity:0}
+#panelNo{font-size:13px;letter-spacing:4px;color:#8C8C86;text-transform:uppercase}
+#panelTitle{margin-top:16px;font-size:36px;font-weight:600}
+#panelBody{margin-top:16px;font-size:22px;line-height:1.5;color:#8C8C86}
+#steps{margin-top:24px}
+.step{display:flex;align-items:baseline;gap:14px;margin-top:14px;font-size:21px;color:#F5F5F0;opacity:0}
+.step i{font-style:normal;color:#8C8C86;font-size:13px;letter-spacing:3px;min-width:26px}
+#compose{position:absolute;box-sizing:border-box;left:150px;width:780px;border:1px solid rgba(245,245,240,.34);
+ border-radius:16px;background:#0A0A0A;padding:34px;color:#F5F5F0;opacity:0;z-index:6}
+#composeLabel{font-size:13px;letter-spacing:4px;color:#8C8C86;text-transform:uppercase}
+#field{margin-top:22px;box-sizing:border-box;height:78px;border-radius:10px;border:1px solid rgba(245,245,240,.25);
+ display:flex;align-items:center;padding:0 20px;font-size:24px;color:#F5F5F0}
+#field.focus{border-color:rgba(245,245,240,.8)}
+#postBtn{margin-top:24px;margin-left:auto;width:190px;height:60px;border-radius:30px;
+ border:1px solid rgba(245,245,240,.4);display:flex;align-items:center;justify-content:center;
+ font-size:16px;letter-spacing:3px;text-transform:uppercase;color:#F5F5F0}
+#postBtn.hot{background:#F5F5F0;color:#0A0A0A;border-color:#F5F5F0}
+#addBtn{position:absolute;box-sizing:border-box;left:340px;width:400px;height:74px;border-radius:37px;
+ border:1px solid rgba(245,245,240,.45);background:#0A0A0A;display:flex;align-items:center;
+ justify-content:center;color:#F5F5F0;font-size:19px;letter-spacing:2px;opacity:0;z-index:6}
+#addBtn.hot{background:#F5F5F0;color:#0A0A0A}
+#flyCard{position:absolute;box-sizing:border-box;z-index:7;border-radius:12px;border:1px solid rgba(245,245,240,.4);
+ background:#0A0A0A;color:#F5F5F0;padding:18px 20px;opacity:0}
+#scan{position:absolute;z-index:5;left:46px;width:988px;height:2px;background:rgba(245,245,240,.55);
+ opacity:0;pointer-events:none}
+#prompt{position:absolute;z-index:6;box-sizing:border-box;left:150px;width:780px;
+ border:1px dashed rgba(245,245,240,.4);border-radius:16px;background:#0A0A0A;padding:34px;
+ color:#8C8C86;font-size:24px;opacity:0}
+#prompt b{color:#F5F5F0;font-weight:400}
+#counter{position:absolute;z-index:9;left:50%;transform:translateX(-50%);top:1740px;background:#0A0A0A;
+ border:1px solid rgba(245,245,240,.28);border-radius:30px;padding:14px 30px;color:#8C8C86;
+ font-size:22px;letter-spacing:1px;opacity:0;white-space:nowrap}
+#counter b{color:#F5F5F0;font-weight:600;font-variant-numeric:tabular-nums}
+#calendar{position:absolute;z-index:9;left:150px;top:560px;width:780px;opacity:0;
+ display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.mcell{position:relative;box-sizing:border-box;height:150px;border:1px solid rgba(245,245,240,.28);
+ border-radius:12px;background:#0A0A0A;display:flex;flex-direction:column;align-items:center;
+ justify-content:center;color:#8C8C86}
+.mcell .mn{font-size:26px;font-weight:600;color:#F5F5F0}
+.mcell .my{margin-top:8px;font-size:12px;letter-spacing:3px}
+.mcell.left{border-color:rgba(245,245,240,.85)}
+.mcell .mstrike{position:absolute;left:14%;top:50%;width:72%;height:1px;background:#F5F5F0;
+ opacity:.6;transform:scaleX(0);transform-origin:left center}
+#calRing{position:absolute;z-index:10;box-sizing:border-box;border-radius:12px;
+ border:1px solid rgba(245,245,240,.9);opacity:0;pointer-events:none}
+#plog{position:absolute;z-index:9;left:150px;top:1400px;width:780px;opacity:0;
+ box-sizing:border-box;background:#0A0A0A;border-radius:14px;padding:22px 24px}
+#plogGrid{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
+.dmark{height:44px;border:1px solid rgba(245,245,240,.22);border-radius:6px;background:#0A0A0A;opacity:.35}
+.dmark.on{background:#F5F5F0;border-color:#F5F5F0;opacity:1}
+#plogLabel{margin-top:22px;text-align:center;color:#8C8C86;font-size:22px;letter-spacing:1px}
+#plogLabel b{color:#F5F5F0;font-weight:600;font-variant-numeric:tabular-nums}
+/* --- a dated ledger accumulating --- */
+#ledger{position:absolute;z-index:9;left:210px;top:700px;width:660px;opacity:0;box-sizing:border-box}
+.lrow{display:flex;align-items:baseline;justify-content:space-between;padding:13px 20px;
+ border:1px solid rgba(245,245,240,.18);border-radius:9px;background:#0A0A0A;margin-top:9px;opacity:0}
+.lrow .ld{font-size:15px;letter-spacing:2px;color:#6B6B6B}
+.lrow .lt{font-size:19px;color:#F5F5F0}
+.lrow.miss .lt{color:#6B6B6B}
+.lrow.miss{border-style:dashed}
+#ledgerTot{margin-top:20px;text-align:center;color:#8C8C86;font-size:21px}
+#ledgerTot b{color:#F5F5F0;font-weight:600;font-variant-numeric:tabular-nums}
+/* --- everyone's records, streaming --- */
+#feed{position:absolute;z-index:8;left:46px;top:46px;width:988px;height:1828px;overflow:hidden;opacity:0}
+.fcol{position:absolute;top:0;width:466px}
+.frow{box-sizing:border-box;border:1px solid rgba(245,245,240,.2);border-radius:11px;
+ background:#0A0A0A;padding:20px 22px;margin-bottom:20px;transition:none}
+.frow .ft{font-size:21px;color:#F5F5F0;line-height:1.35}
+.frow .fm{display:flex;justify-content:space-between;margin-top:12px;font-size:12px;
+ letter-spacing:2px;color:#6B6B6B}
+.frow.real{border-color:rgba(245,245,240,.75)}
+.frow.real .fm{color:#F5F5F0}
+#feedRing{position:absolute;z-index:9;box-sizing:border-box;border-radius:11px;
+ border:1px solid rgba(245,245,240,.9);opacity:0;pointer-events:none}
+.fnote{position:absolute;z-index:10;color:#F5F5F0;font-size:20px;letter-spacing:2px;
+ background:#0A0A0A;border:1px solid rgba(245,245,240,.5);border-radius:20px;
+ padding:8px 18px;opacity:0;white-space:nowrap}
+/* --- two phases, one live --- */
+#phbar{position:absolute;z-index:9;left:190px;top:1180px;width:700px;opacity:0}
+#phTrack{display:flex;gap:16px}
+.phseg{flex:1;height:74px;border-radius:37px;box-sizing:border-box;display:flex;
+ align-items:center;justify-content:center;font-size:17px;letter-spacing:3px;
+ text-transform:uppercase;border:1px solid rgba(245,245,240,.35);color:#8C8C86;position:relative;overflow:hidden}
+.phseg .phfill{position:absolute;left:0;top:0;bottom:0;width:0%;background:#F5F5F0}
+.phseg .phtx{position:relative;z-index:2}
+.phseg.live{color:#0A0A0A;border-color:#F5F5F0}
+.phseg.soon{border-style:dashed}
+#phNote{margin-top:22px;text-align:center;color:#8C8C86;font-size:21px;opacity:0}
+/* --- a record with the fields that were never filled --- */
+#record{position:absolute;z-index:9;left:190px;top:620px;width:700px;opacity:0;box-sizing:border-box;
+ border:1px solid rgba(245,245,240,.4);border-radius:16px;background:#0A0A0A;padding:38px 40px}
+#recTitle{font-size:31px;font-weight:600;color:#F5F5F0}
+#recDate{margin-top:10px;font-size:15px;letter-spacing:2px;color:#6B6B6B}
+.rrow{display:flex;align-items:center;justify-content:space-between;margin-top:26px;
+ padding-top:22px;border-top:1px solid rgba(245,245,240,.12);opacity:0}
+.rrow .rk{font-size:19px;letter-spacing:3px;text-transform:uppercase;color:#8C8C86}
+.rrow .rv{font-size:22px;letter-spacing:6px;color:#6B6B6B}
+/* --- naming the wrong culprits and crossing them off --- */
+#culprits{position:absolute;z-index:9;left:0;top:1380px;width:1080px;opacity:0;
+ display:flex;justify-content:center;gap:36px}
+.culp{position:relative;font-size:40px;color:#8C8C86}
+.culp .cx{position:absolute;left:-4%;top:52%;width:108%;height:2px;background:#F5F5F0;
+ transform:scaleX(0);transform-origin:left center}
+/* --- three things, filling in --- */
+#steps3{position:absolute;z-index:9;left:190px;top:360px;width:700px;opacity:0}
+.s3{display:flex;align-items:baseline;gap:18px;margin-top:18px;opacity:.25}
+.s3.on{opacity:1}
+.s3 i{font-style:normal;color:#8C8C86;font-size:14px;letter-spacing:3px;min-width:30px}
+.s3 span{color:#F5F5F0;font-size:25px}
+/* --- vague resolving into specific --- */
+#sharpen{position:absolute;z-index:9;left:0;top:980px;width:1080px;opacity:0;text-align:center}
+#shOld{font-size:44px;color:#6B6B6B}
+#shNew{margin-top:18px;font-size:48px;font-weight:600;color:#F5F5F0}
+/* --- the whole thing collapsing to one action --- */
+#collapse{position:absolute;z-index:9;left:0;top:960px;width:1080px;opacity:0;text-align:center}
+#clBig{font-size:52px;font-weight:600;color:#F5F5F0}
+#clSmall{margin-top:26px;display:inline-block;border:1px solid rgba(245,245,240,.75);
+ border-radius:30px;padding:16px 32px;font-size:26px;color:#F5F5F0;background:#0A0A0A;opacity:0}
+/* --- ideas orbiting a point they cannot leave --- */
+#orbit{position:absolute;z-index:9;inset:0;opacity:0;pointer-events:none}
+.orb{position:absolute;color:#F5F5F0;font-size:26px;white-space:nowrap;text-align:center;
+ transform:translate(-50%,-50%)}
+.orb .obr{display:block;margin-top:9px;font-size:14px;letter-spacing:6px;color:#6B6B6B;opacity:0}
+#orbitCore{position:absolute;z-index:8;left:50%;top:900px;width:12px;height:12px;margin:-6px 0 0 -6px;
+ border-radius:50%;background:#6B6B6B;opacity:0}
+/* --- what you meant to do, surfacing from a dead month --- */
+#recall{position:absolute;z-index:10;inset:0;opacity:0;pointer-events:none}
+.rgh{position:absolute;color:#F5F5F0;font-size:19px;white-space:nowrap;opacity:0;
+ transform:translate(-50%,0)}
+/* --- thoughts drifting, unanchored, with no date --- */
+#thoughts{position:absolute;z-index:9;inset:0;opacity:0;pointer-events:none}
+.thought{position:absolute;color:#F5F5F0;font-size:27px;white-space:nowrap;opacity:.6;text-align:center}
+.thought .nd{display:block;margin-top:8px;font-size:12px;letter-spacing:4px;color:#6B6B6B}
+/* --- planned vs done --- */
+#tally{position:absolute;z-index:9;left:0;top:760px;width:1080px;opacity:0;display:flex;
+ justify-content:center;gap:120px;color:#8C8C86}
+.tcol{text-align:center}
+.tcol .tn{font-size:132px;font-weight:700;color:#F5F5F0;font-variant-numeric:tabular-nums;line-height:1}
+.tcol.dim .tn{color:#6B6B6B}
+.tcol .tl{margin-top:16px;font-size:20px;letter-spacing:4px;text-transform:uppercase}
+/* --- the record building --- */
+#streak{position:absolute;z-index:9;left:150px;top:1160px;width:780px;opacity:0;
+ box-sizing:border-box;background:#0A0A0A;border-radius:14px;padding:24px}
+#streakBars{display:flex;align-items:flex-end;gap:9px;height:190px}
+.sbar{flex:1;background:#F5F5F0;border-radius:4px;height:0%}
+#streakLabel{margin-top:18px;text-align:center;color:#8C8C86;font-size:21px}
+#streakLabel b{color:#F5F5F0;font-weight:600;font-variant-numeric:tabular-nums}
+/* --- dated / public / permanent --- */
+#stamps{position:absolute;z-index:9;left:0;top:1180px;width:1080px;opacity:0;
+ display:flex;justify-content:center;gap:26px}
+.stamp{box-sizing:border-box;border:1px solid rgba(245,245,240,.85);border-radius:30px;
+ padding:16px 34px;color:#F5F5F0;font-size:24px;letter-spacing:3px;text-transform:uppercase;
+ background:#0A0A0A;opacity:0;transform:scale(.82)}
+/* --- from here to there --- */
+#pathSvg{position:absolute;z-index:9;left:0;top:0;width:1080px;height:1920px;opacity:0;pointer-events:none}
+#cursor{position:absolute;z-index:50;width:30px;height:36px;pointer-events:none}
+#ripple{position:absolute;z-index:49;width:70px;height:70px;margin:-35px 0 0 -35px;border-radius:50%;
+ border:2px solid rgba(245,245,240,.9);opacity:0;pointer-events:none}
+#textLayer{position:absolute;inset:0;z-index:20}
+.beat{position:absolute;left:80px;width:920px;text-align:center;opacity:0;color:#F5F5F0}
+.beat:not(.final){box-sizing:border-box;background:#0A0A0A;padding:24px 26px;border-radius:16px}
+.line1{font-size:46px;line-height:1.3;font-weight:600;letter-spacing:-.5px}
+.line2{margin-top:18px;font-size:26px;line-height:1.45;color:#8C8C86}
+.beat.final .line1{font-size:104px;font-weight:700}
+.beat.final .line2{margin-top:26px;font-size:30px;letter-spacing:1px}
+#playBtn{position:fixed;inset:0;margin:auto;width:200px;height:62px;border-radius:31px;
+ border:1px solid rgba(245,245,240,.4);background:rgba(10,10,10,.92);color:#F5F5F0;font-family:inherit;
+ font-size:18px;letter-spacing:2px;cursor:pointer;z-index:1000}
+</style></head><body>
+<div id="viewport"><div id="stage">
+ <div id="bookPersp"><div id="bookWorld">
+  <div id="bookBase"><div id="spine"></div></div>
+  <div id="diaryPage"></div>
+  <div id="flipLayer"><div id="cover">
+    <div class="face coverOuter"><div id="coverTitle">Dreams<span>a diary</span></div></div>
+    <div class="face coverInner"></div><div class="coverShade" id="coverShade"></div>
+  </div></div>
+ </div></div>
+ <div id="canvasWrap"><div id="gridLayer"><div id="gridInner"></div></div>
+  <svg id="borderSvg" viewBox="0 0 1080 1920"><path d="M46,46 L1034,46 L1034,1874 L46,1874 Z"
+   fill="none" stroke="rgba(245,245,240,0.55)" stroke-width="1.5"/></svg></div>
+ <div id="hoverRing"></div>
+ <svg id="tl" viewBox="0 0 1080 1920">
+  <path id="tlPath" d="M250,1050 L830,1050" fill="none" stroke="rgba(245,245,240,.5)" stroke-width="2"/>
+  <path id="tlA" d="M250,1036 L250,1064" stroke="rgba(245,245,240,.5)" stroke-width="2" opacity="0"/>
+  <path id="tlB" d="M830,1036 L830,1064" stroke="rgba(245,245,240,.5)" stroke-width="2" opacity="0"/></svg>
+ <div class="tlLabel" id="tlLabA" style="left:212px;top:1082px">2026</div>
+ <div class="tlLabel" id="tlLabB" style="left:792px;top:1082px">2031</div>
+ <div id="ghostDiary"><div class="gt">Dreams</div><div class="gs">a diary</div><div id="ghostSlash"></div></div>
+ <div id="ui">
+  <div class="tab" id="tab1" style="left:150px;width:370px;top:560px">Phase 01</div>
+  <div class="tab" id="tab2" style="left:560px;width:370px;top:560px">Phase 02</div>
+  <div id="panel" style="top:680px"><div id="panelNo"></div><div id="panelTitle"></div>
+   <div id="panelBody"></div><div id="steps">
+    <div class="step" id="st0"><i>01</i><span></span></div>
+    <div class="step" id="st1"><i>02</i><span></span></div>
+    <div class="step" id="st2"><i>03</i><span></span></div></div></div></div>
+ <div id="addBtn" style="top:1150px">+ Post a dream</div>
+ <div id="compose" style="top:1120px"><div id="composeLabel">Your dream</div>
+  <div id="field"><span id="fieldText"></span><span class="caret" id="fieldCaret">|</span></div>
+  <div id="postBtn">Post</div></div>
+ <div id="flyCard"></div>
+ <div id="scan"></div>
+ <div id="prompt"><b>your dream here</b><span class="caret" id="promptCaret">|</span></div>
+ <div id="counter"><b id="countNum">0</b> dreams on record</div>
+ <div id="calendar"></div><div id="calRing"></div>
+ <div id="thoughts"></div>
+ <div id="record"><div id="recTitle"></div><div id="recDate"></div>
+  <div class="rrow" id="rr0"><span class="rk"></span><span class="rv">[    ]</span></div>
+  <div class="rrow" id="rr1"><span class="rk"></span><span class="rv">[    ]</span></div>
+  <div class="rrow" id="rr2"><span class="rk"></span><span class="rv">[    ]</span></div></div>
+ <div id="culprits"><div class="culp" id="cu0"><span></span><i class="cx"></i></div><div class="culp" id="cu1"><span></span><i class="cx"></i></div></div>
+ <div id="ledger"><div id="ledgerRows"></div><div id="ledgerTot"><b id="ledgerNum">0</b> entries on record</div></div>
+ <div id="feed"></div><div id="feedRing"></div>
+ <div class="fnote" id="fn0"></div><div class="fnote" id="fn1"></div>
+ <div id="phbar"><div id="phTrack">
+   <div class="phseg" id="ph0"><span class="phfill"></span><span class="phtx">Phase 01</span></div>
+   <div class="phseg soon" id="ph1"><span class="phfill"></span><span class="phtx">Phase 02</span></div></div>
+  <div id="phNote"></div></div>
+ <div id="steps3"><div class="s3" id="s3a"><i>01</i><span></span></div>
+  <div class="s3" id="s3b"><i>02</i><span></span></div>
+  <div class="s3" id="s3c"><i>03</i><span></span></div></div>
+ <div id="sharpen"><div id="shOld"></div><div id="shNew"></div></div>
+ <div id="collapse"><div id="clBig"></div><div><span id="clSmall"></span></div></div>
+ <div id="orbitCore"></div><div id="orbit"></div>
+ <div id="recall"></div>
+ <div id="tally"><div class="tcol"><div class="tn" id="tPlan">0</div><div class="tl">planned</div></div>
+  <div class="tcol dim"><div class="tn" id="tDone">0</div><div class="tl">done</div></div></div>
+ <div id="streak"><div id="streakBars"></div><div id="streakLabel"><b id="streakNum">0</b> days in a row</div></div>
+ <div id="stamps"><div class="stamp" id="stmp0">dated</div><div class="stamp" id="stmp1">public</div><div class="stamp" id="stmp2">permanent</div></div>
+ <svg id="pathSvg" viewBox="0 0 1080 1920">
+  <path id="pArc" d="M230,1120 C430,900 650,900 850,1120" fill="none"
+   stroke="rgba(245,245,240,.75)" stroke-width="2.5" stroke-dasharray="9 11"/>
+  <circle id="pA" cx="230" cy="1120" r="9" fill="#8C8C86"/>
+  <circle id="pB" cx="850" cy="1120" r="11" fill="#F5F5F0" opacity="0"/>
+  <circle id="pDot" cx="230" cy="1120" r="7" fill="#F5F5F0" opacity="0"/></svg>
+ <div id="plog"><div id="plogGrid"></div><div id="plogLabel"><b id="plogNum">0</b> days logged</div></div>
+ <div id="pulse"></div><div id="ripple"></div>
+ <svg id="cursor" viewBox="0 0 28 34"><path d="M3,2 L3,27 L10,20.5 L14.5,31 L19.5,29 L15,18.5 L24,17.5 Z"
+  fill="#F5F5F0" stroke="#0A0A0A" stroke-width="1.6" stroke-linejoin="round"/></svg>
+ <div id="textLayer"></div>
+</div></div>
+<button id="playBtn">PLAY</button>
+<script>
+var TL = /*__TIMELINE__*/{"total":10,"brand":{"mark":"dmyor","url":"www.dmyor.com"},"dreams":["Placeholder dream"],"scenes":[],"captions":[]};
+</script>
+<script src="engine.js"></script>
+</body></html>

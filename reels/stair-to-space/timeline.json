@@ -1,0 +1,383 @@
+{
+ "total": 42.0,
+ "engine": "motion",
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "bg": [
+  {
+   "t": 0.0,
+   "c": "#0B1020",
+   "dir": "up"
+  },
+  {
+   "t": 3.4,
+   "c": "#1D1030",
+   "dir": "up"
+  },
+  {
+   "t": 8.6,
+   "c": "#2A1422",
+   "dir": "left"
+  },
+  {
+   "t": 11.2,
+   "c": "#0E1C30",
+   "dir": "down"
+  },
+  {
+   "t": 18.0,
+   "c": "#0D2434",
+   "dir": "up"
+  },
+  {
+   "t": 24.4,
+   "c": "#101A38",
+   "dir": "right"
+  },
+  {
+   "t": 30.2,
+   "c": "#0F2A26",
+   "dir": "up"
+  },
+  {
+   "t": 36.4,
+   "c": "#101731",
+   "dir": "down"
+  }
+ ],
+ "camera": [
+  {
+   "t": 0,
+   "s": 1.0,
+   "y": 0
+  },
+  {
+   "t": 21,
+   "s": 1.0,
+   "y": 0
+  },
+  {
+   "t": 42,
+   "s": 1.0,
+   "y": 0
+  }
+ ],
+ "scenes": [
+  {
+   "type": "stair.build",
+   "note": "0.6 to be in space today | 3.6 each step 394 m | 8.6 obviously not",
+   "in": 0.3,
+   "out": 10.9,
+   "pxPerM": 1.7,
+   "stepRise": 393.7007874015748,
+   "stepRun": 300,
+   "steps": 1,
+   "color": "coral",
+   "weight": 7,
+   "anchorY": 790,
+   "capY": 268,
+   "fitW": 900,
+   "fitH": 620,
+   "maxScale": 3.2,
+   "tower": {
+    "h": 330,
+    "x": -430,
+    "label": "EIFFEL TOWER  330 m",
+    "color": "dim",
+    "at": 3.7
+   },
+   "draw": [
+    {
+     "t": 0.6,
+     "n": 0
+    },
+    {
+     "t": 3.4,
+     "n": 1
+    }
+   ],
+   "markers": [
+    {
+     "h": 393.7007874015748,
+     "label": "394 m",
+     "at": 4.6,
+     "color": "coral"
+    }
+   ],
+   "strikeAt": 8.7,
+   "cam": [
+    {
+     "t": 0.3,
+     "focus": "steps:1",
+     "fit": 0.3,
+     "rot": 0,
+     "tower": false
+    },
+    {
+     "t": 3.3,
+     "focus": "steps:1",
+     "fit": 0.92,
+     "rot": -2.5,
+     "tower": true
+    },
+    {
+     "t": 6.2,
+     "focus": "all",
+     "fit": 0.98,
+     "rot": 1.8,
+     "tower": true
+    },
+    {
+     "t": 8.6,
+     "focus": "all",
+     "fit": 0.86,
+     "rot": 0,
+     "tower": true
+    },
+    {
+     "t": 10.9,
+     "focus": "all",
+     "fit": 0.86,
+     "rot": 0,
+     "tower": true
+    }
+   ],
+   "captions": [
+    {
+     "t": 0.7,
+     "text": "to be standing in space right now",
+     "until": 3.3
+    },
+    {
+     "t": 3.7,
+     "text": "you needed one step a day since January",
+     "until": 6.1
+    },
+    {
+     "t": 6.3,
+     "text": "each one 394 metres tall",
+     "until": 8.5
+    },
+    {
+     "t": 8.8,
+     "text": "obviously not",
+     "until": 10.8
+    }
+   ]
+  },
+  {
+   "type": "stair.build",
+   "note": "11.4 a normal step is 17 cm | 15.0 254 of them | 19.6 43 m | 25.0 62 m by new year | 30.4 five years",
+   "in": 11.2,
+   "out": 36.1,
+   "pxPerM": 6.0,
+   "stepRise": 0.17,
+   "stepRun": 0.28,
+   "steps": 1826,
+   "color": "cyan",
+   "weight": 5,
+   "anchorY": 830,
+   "capY": 268,
+   "fitW": 940,
+   "fitH": 640,
+   "maxScale": 600,
+   "tower": {
+    "h": 330,
+    "x": 700,
+    "label": "",
+    "color": "amber",
+    "at": 29.6
+   },
+   "draw": [
+    {
+     "t": 11.4,
+     "n": 0
+    },
+    {
+     "t": 12.6,
+     "n": 1
+    },
+    {
+     "t": 14.6,
+     "n": 3
+    },
+    {
+     "t": 15.2,
+     "n": 254
+    },
+    {
+     "t": 23.6,
+     "n": 254
+    },
+    {
+     "t": 25.2,
+     "n": 365
+    },
+    {
+     "t": 29.4,
+     "n": 365
+    },
+    {
+     "t": 31.0,
+     "n": 1941
+    },
+    {
+     "t": 36.1,
+     "n": 1941
+    }
+   ],
+   "markers": [
+    {
+     "h": 43.18,
+     "label": "43 m  ·  today",
+     "at": 19.8,
+     "color": "cyan",
+     "labelUntil": 25.2
+    },
+    {
+     "h": 62.050000000000004,
+     "label": "62 m  ·  new year",
+     "at": 25.4,
+     "color": "green",
+     "labelUntil": 31.0
+    },
+    {
+     "h": 330,
+     "label": "330 m  ·  Eiffel Tower",
+     "at": 31.2,
+     "color": "amber"
+    }
+   ],
+   "cam": [
+    {
+     "t": 11.2,
+     "focus": "steps:1",
+     "fit": 0.22,
+     "rot": 0,
+     "tower": false
+    },
+    {
+     "t": 13.4,
+     "focus": "steps:1",
+     "fit": 0.4,
+     "rot": -3.0,
+     "tower": false
+    },
+    {
+     "t": 15.0,
+     "focus": "steps:4",
+     "fit": 0.66,
+     "rot": -1.5,
+     "tower": false
+    },
+    {
+     "t": 19.6,
+     "focus": "steps:254",
+     "fit": 0.9,
+     "rot": 2.2,
+     "tower": false
+    },
+    {
+     "t": 23.8,
+     "focus": "steps:254",
+     "fit": 0.94,
+     "rot": 0.8,
+     "tower": false
+    },
+    {
+     "t": 26.2,
+     "focus": "steps:365",
+     "fit": 0.92,
+     "rot": -1.6,
+     "tower": false
+    },
+    {
+     "t": 31.6,
+     "focus": "steps:1941",
+     "fit": 0.88,
+     "rot": 2.6,
+     "tower": true
+    },
+    {
+     "t": 34.6,
+     "focus": "steps:1941",
+     "fit": 0.8,
+     "rot": 0,
+     "tower": true
+    },
+    {
+     "t": 36.1,
+     "focus": "steps:1941",
+     "fit": 0.8,
+     "rot": 0,
+     "tower": true
+    }
+   ],
+   "captions": [
+    {
+     "t": 11.5,
+     "text": "a normal step is 17 centimetres",
+     "until": 14.6
+    },
+    {
+     "t": 15.3,
+     "text": "254 of them, one a day since January",
+     "until": 18.6
+    },
+    {
+     "t": 19.9,
+     "text": "puts you 43 metres up",
+     "until": 22.2
+    },
+    {
+     "t": 22.4,
+     "text": "fourteen storeys",
+     "until": 24.2
+    },
+    {
+     "t": 25.5,
+     "text": "62 metres by new year",
+     "until": 28.6
+    },
+    {
+     "t": 31.3,
+     "text": "1,941 days and you are level with it",
+     "until": 35.9
+    }
+   ]
+  },
+  {
+   "type": "kinetic.title",
+   "note": "34.6 you are not getting to space",
+   "in": 36.4,
+   "out": 39.2,
+   "y": 700,
+   "size": 66,
+   "stagger": 0.1,
+   "demi": true,
+   "sfxWords": true,
+   "text": "You were never getting to space.",
+   "accentWords": [
+    "space"
+   ]
+  },
+  {
+   "type": "kinetic.title",
+   "note": "the offer",
+   "in": 39.3,
+   "out": 42.0,
+   "y": 690,
+   "size": 58,
+   "stagger": 0.1,
+   "demi": true,
+   "sfxWords": true,
+   "sfxChime": true,
+   "text": "The offer is knowing how high you got. dmyor.com",
+   "accentWords": [
+    "dmyor.com"
+   ]
+  }
+ ]
+}

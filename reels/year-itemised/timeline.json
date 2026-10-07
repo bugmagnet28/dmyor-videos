@@ -1,0 +1,170 @@
+{
+ "total": 31.0,
+ "engine": "motion",
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "bg": [
+  {
+   "t": 0.0,
+   "c": "#141A2E",
+   "dir": "up"
+  },
+  {
+   "t": 4.2,
+   "c": "#16203A",
+   "dir": "left"
+  },
+  {
+   "t": 10.0,
+   "c": "#1A1730",
+   "dir": "up"
+  },
+  {
+   "t": 14.2,
+   "c": "#101C34",
+   "dir": "right"
+  },
+  {
+   "t": 17.4,
+   "c": "#0E2436",
+   "dir": "up"
+  },
+  {
+   "t": 21.4,
+   "c": "#0F2A26",
+   "dir": "up"
+  },
+  {
+   "t": 24.2,
+   "c": "#141A2E",
+   "dir": "down"
+  }
+ ],
+ "camera": [
+  {
+   "t": 0,
+   "s": 1.0,
+   "y": 0
+  },
+  {
+   "t": 6,
+   "s": 1.02,
+   "y": 10
+  },
+  {
+   "t": 13,
+   "s": 0.985,
+   "y": -10
+  },
+  {
+   "t": 18,
+   "s": 1.025,
+   "y": 8
+  },
+  {
+   "t": 22,
+   "s": 0.99,
+   "y": -9
+  },
+  {
+   "t": 26,
+   "s": 1.03,
+   "y": 6
+  },
+  {
+   "t": 31,
+   "s": 1.0,
+   "y": 0
+  }
+ ],
+ "scenes": [
+  {
+   "type": "receipt.print",
+   "note": "no VO: the printer is the soundtrack. figures 254/111/36 are real for 2026-09-11",
+   "in": 0.15,
+   "out": 24.3,
+   "y": 284,
+   "title": "2026",
+   "sub": "YOUR YEAR, ITEMISED",
+   "titleAt": 0.65,
+   "subAt": 1.45,
+   "ruleAt": 14.4,
+   "items": [
+    {
+     "label": "plans announced out loud",
+     "fig": "14",
+     "at": 2.6
+    },
+    {
+     "label": "plans given an actual date",
+     "fig": "0",
+     "at": 4.4,
+     "figColor": "coral",
+     "figSfx": "drop"
+    },
+    {
+     "label": "Mondays that were “the” Monday",
+     "fig": "36",
+     "at": 6.4
+    },
+    {
+     "label": "notes titled “goals”",
+     "fig": "6",
+     "at": 8.4
+    },
+    {
+     "label": "of those, still readable",
+     "fig": "1",
+     "at": 10.2,
+     "figSfx": "mark"
+    },
+    {
+     "label": "times you said “next year”",
+     "fig": "22",
+     "at": 12.2
+    }
+   ],
+   "totals": [
+    {
+     "label": "DAYS USED",
+     "fig": 254,
+     "from": 0,
+     "at": 15.2,
+     "rollFor": 1.5
+    },
+    {
+     "label": "DAYS LEFT",
+     "fig": 111,
+     "from": 365,
+     "at": 17.6,
+     "rollFor": 1.8,
+     "color": "amber",
+     "big": true
+    }
+   ],
+   "stamp": "STILL ENOUGH",
+   "stampColor": "green",
+   "stampAt": 21.6,
+   "slideIn": 34,
+   "slideOut": 58
+  },
+  {
+   "type": "kinetic.title",
+   "note": "the ask",
+   "in": 25.1,
+   "out": 31.0,
+   "y": 760,
+   "size": 72,
+   "stagger": 0.1,
+   "demi": true,
+   "sfxWords": true,
+   "sfxChime": true,
+   "text": "What is on your receipt?",
+   "accentWords": [
+    "receipt"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,654 @@
+{
+ "total": 47.67,
+ "engine": "motion",
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "bg": [
+  {
+   "t": 0.0,
+   "c": "#0E1A32",
+   "dir": "down",
+   "dur": 0.45
+  },
+  {
+   "t": 7.6,
+   "c": "#141428",
+   "dir": "left",
+   "dur": 0.45
+  },
+  {
+   "t": 14.8,
+   "c": "#0E2233",
+   "dir": "down",
+   "dur": 0.45
+  },
+  {
+   "t": 25.0,
+   "c": "#0E2A26",
+   "dir": "down",
+   "dur": 0.45
+  },
+  {
+   "t": 28.7,
+   "c": "#141A2E",
+   "dir": "left",
+   "dur": 0.45
+  },
+  {
+   "t": 35.6,
+   "c": "#0E2233",
+   "dir": "down",
+   "dur": 0.45
+  },
+  {
+   "t": 44.4,
+   "c": "#0E2A26",
+   "dir": "down",
+   "dur": 0.45
+  }
+ ],
+ "camera": [
+  {
+   "t": 0,
+   "s": 1.0,
+   "y": 0
+  },
+  {
+   "t": 9.9,
+   "s": 1.03,
+   "y": 8
+  },
+  {
+   "t": 14.8,
+   "s": 0.98,
+   "y": -8
+  },
+  {
+   "t": 21.5,
+   "s": 1.02,
+   "y": 6
+  },
+  {
+   "t": 28.8,
+   "s": 0.97,
+   "y": -9
+  },
+  {
+   "t": 38.4,
+   "s": 1.03,
+   "y": 7
+  },
+  {
+   "t": 44.5,
+   "s": 1.0,
+   "y": 0
+  },
+  {
+   "t": 47.67,
+   "s": 1.0,
+   "y": 0
+  }
+ ],
+ "scenes": [
+  {
+   "type": "ambient.field",
+   "note": "kept low: an explanation, not a mood piece",
+   "in": 0.0,
+   "out": 47.67,
+   "count": 96,
+   "rings": [
+    {
+     "r": 420
+    },
+    {
+     "r": 740
+    },
+    {
+     "r": 1080
+    }
+   ],
+   "phases": [
+    {
+     "t": 0.0,
+     "c": "blue",
+     "density": 0.42,
+     "amp": 0.55,
+     "drift": 0.45
+    },
+    {
+     "t": 7.6,
+     "c": "dim",
+     "density": 0.24,
+     "amp": 0.4,
+     "drift": 0.35
+    },
+    {
+     "t": 14.8,
+     "c": "cyan",
+     "density": 0.52,
+     "amp": 0.6,
+     "drift": 0.6
+    },
+    {
+     "t": 25.0,
+     "c": "green",
+     "density": 0.62,
+     "amp": 0.7,
+     "drift": 0.7
+    },
+    {
+     "t": 28.7,
+     "c": "dim",
+     "density": 0.3,
+     "amp": 0.45,
+     "drift": 0.4
+    },
+    {
+     "t": 35.6,
+     "c": "cyan",
+     "density": 0.58,
+     "amp": 0.65,
+     "drift": 0.65
+    },
+    {
+     "t": 44.4,
+     "c": "green",
+     "density": 0.72,
+     "amp": 0.8,
+     "drift": 0.75
+    },
+    {
+     "t": 47.67,
+     "c": "green",
+     "density": 0.65,
+     "amp": 0.7,
+     "drift": 0.7
+    }
+   ],
+   "bursts": [
+    {
+     "t": 14.84,
+     "power": 0.32,
+     "dur": 1.1
+    },
+    {
+     "t": 38.34,
+     "power": 0.3,
+     "dur": 1.2
+    }
+   ],
+   "flashes": [
+    {
+     "t": 44.54,
+     "power": 0.16,
+     "dur": 0.55,
+     "c": "green"
+    }
+   ]
+  },
+  {
+   "type": "span.bookend",
+   "note": "0.00 tell your future self | 38.34 in five years there is a dated record you can check",
+   "windows": [
+    [
+     0.15,
+     5.2
+    ],
+    [
+     37.9,
+     44.3
+    ]
+   ],
+   "in": 0.15,
+   "out": 44.3,
+   "y": 360,
+   "color": "blue",
+   "drawAt": 0.45,
+   "leftLabel": "16 SEP 2026",
+   "rightLabel": "16 SEP 2031",
+   "recordLeft": {
+    "text": "run a successful business",
+    "date": "16 SEP 2026",
+    "color": "green",
+    "at": 38.6
+   },
+   "recordRight": {
+    "text": "run a successful business",
+    "date": "16 SEP 2031",
+    "color": "cyan",
+    "at": 41.2
+   }
+  },
+  {
+   "type": "fields.empty",
+   "note": "7.68 not the big ones the specifics | 9.94 what you wanted | 10.72 when you wanted it by | 12.64 why it mattered | 17.30 you write it down | 20.28 today's date",
+   "windows": [
+    [
+     5.7,
+     14.4
+    ],
+    [
+     15.0,
+     21.1
+    ]
+   ],
+   "in": 5.7,
+   "out": 21.1,
+   "y": 430,
+   "color": "cyan",
+   "stamp": "16 SEP 2026",
+   "stampColor": "green",
+   "stampAt": 20.3,
+   "items": [
+    {
+     "label": "what",
+     "value": "run a successful business",
+     "at": 5.9,
+     "emptyAt": 9.94,
+     "fillAt": 17.4
+    },
+    {
+     "label": "by when",
+     "value": "31 December 2028",
+     "at": 6.3,
+     "emptyAt": 10.8,
+     "fillAt": 18.2
+    },
+    {
+     "label": "why",
+     "value": "so it is mine, not theirs",
+     "at": 6.7,
+     "emptyAt": 12.64,
+     "fillAt": 19.0
+    }
+   ]
+  },
+  {
+   "type": "archive.scroll",
+   "note": "21.48 it goes into a public archive | 23.56 it stays there",
+   "in": 21.4,
+   "out": 24.6,
+   "y": 330,
+   "scroll": {
+    "at": 21.7,
+    "end": 24.2,
+    "from": 0,
+    "to": -128
+   },
+   "rows": [
+    {
+     "date": "16 SEP 2026",
+     "text": "run a successful business",
+     "mine": true
+    },
+    {
+     "date": "16 SEP 2026",
+     "text": "finish the degree I walked away from"
+    },
+    {
+     "date": "15 SEP 2026",
+     "text": "get my mother off her feet"
+    },
+    {
+     "date": "15 SEP 2026",
+     "text": "run my own studio"
+    },
+    {
+     "date": "14 SEP 2026",
+     "text": "learn to fly"
+    },
+    {
+     "date": "14 SEP 2026",
+     "text": "publish the book"
+    },
+    {
+     "date": "13 SEP 2026",
+     "text": "move to another country"
+    },
+    {
+     "date": "13 SEP 2026",
+     "text": "buy the land"
+    }
+   ]
+  },
+  {
+   "type": "phase.marks",
+   "note": "25.02 phase one is live | 28.76 will not remind | 30.40 will not track | 32.10 phase two not built",
+   "in": 24.9,
+   "out": 35.3,
+   "y": 520,
+   "caption": "",
+   "items": [
+    {
+     "name": "phase one",
+     "text": "write it down",
+     "live": true,
+     "color": "green",
+     "at": 25.1
+    },
+    {
+     "name": "phase two",
+     "text": "remind, track",
+     "live": false,
+     "at": 28.9
+    }
+   ]
+  },
+  {
+   "type": "kinetic.title",
+   "note": "44.54 dmyor.com | 46.12 write one down today",
+   "in": 44.45,
+   "out": 47.67,
+   "y": 700,
+   "size": 74,
+   "stagger": 0.1,
+   "demi": true,
+   "sfxWords": true,
+   "sfxChime": true,
+   "text": "dmyor.com  ·  write one down today",
+   "accentWords": [
+    "dmyor.com"
+   ]
+  },
+  {
+   "type": "captions.track",
+   "note": "phrase captions, auto-placed into whatever gap the frame has at that moment",
+   "in": 0.0,
+   "out": 47.67,
+   "items": [
+    {
+     "t": 0,
+     "end": 0.96,
+     "text": "Is there a way to tell",
+     "accent": [],
+     "size": 56,
+     "y": 927
+    },
+    {
+     "t": 1,
+     "end": 1.92,
+     "text": "your future self",
+     "accent": [
+      "future"
+     ],
+     "size": 72,
+     "y": 910
+    },
+    {
+     "t": 1.96,
+     "end": 3.86,
+     "text": "what your dreams and plans",
+     "accent": [],
+     "size": 56,
+     "y": 904
+    },
+    {
+     "t": 3.9,
+     "end": 5.38,
+     "text": "actually were?",
+     "accent": [
+      "actually"
+     ],
+     "size": 68,
+     "y": 895
+    },
+    {
+     "t": 5.62,
+     "end": 6.34,
+     "text": "Because most of it",
+     "accent": [],
+     "size": 56,
+     "y": 1051
+    },
+    {
+     "t": 6.38,
+     "end": 7.34,
+     "text": "gets forgotten",
+     "accent": [
+      "forgotten"
+     ],
+     "size": 78,
+     "y": 1041
+    },
+    {
+     "t": 7.68,
+     "end": 8.72,
+     "text": "Not the big ones.",
+     "accent": [],
+     "size": 56,
+     "y": 1059
+    },
+    {
+     "t": 8.8,
+     "end": 9.76,
+     "text": "The specifics.",
+     "accent": [
+      "specifics"
+     ],
+     "size": 76,
+     "y": 1043
+    },
+    {
+     "t": 9.94,
+     "end": 10.680000000000001,
+     "text": "What you wanted",
+     "accent": [
+      "What"
+     ],
+     "size": 64,
+     "y": 1046
+    },
+    {
+     "t": 10.72,
+     "end": 11.96,
+     "text": "when you wanted it by",
+     "accent": [
+      "when"
+     ],
+     "size": 64,
+     "y": 1045
+    },
+    {
+     "t": 12,
+     "end": 13.520000000000001,
+     "text": "and why it mattered",
+     "accent": [
+      "why"
+     ],
+     "size": 64,
+     "y": 1045
+    },
+    {
+     "t": 13.56,
+     "end": 14.54,
+     "text": "at the time.",
+     "accent": [],
+     "size": 56,
+     "y": 1053
+    },
+    {
+     "t": 14.84,
+     "end": 17.08,
+     "text": "That is what dmyor is for.",
+     "accent": [
+      "dmyor"
+     ],
+     "size": 62,
+     "y": 1060
+    },
+    {
+     "t": 17.3,
+     "end": 17.98,
+     "text": "You write down",
+     "accent": [],
+     "size": 58,
+     "y": 1064
+    },
+    {
+     "t": 18.02,
+     "end": 19.78,
+     "text": "what you intend to do.",
+     "accent": [
+      "intend"
+     ],
+     "size": 58,
+     "y": 1056
+    },
+    {
+     "t": 19.82,
+     "end": 21.38,
+     "text": "It gets today's date.",
+     "accent": [
+      "date"
+     ],
+     "size": 64,
+     "y": 1040
+    },
+    {
+     "t": 21.48,
+     "end": 23.52,
+     "text": "It goes into a public archive.",
+     "accent": [
+      "public"
+     ],
+     "size": 54,
+     "y": 1009
+    },
+    {
+     "t": 23.56,
+     "end": 24.68,
+     "text": "It stays there.",
+     "accent": [
+      "stays"
+     ],
+     "size": 72,
+     "y": 979
+    },
+    {
+     "t": 25.02,
+     "end": 26.46,
+     "text": "Phase one is live now.",
+     "accent": [
+      "live"
+     ],
+     "size": 62,
+     "y": 944
+    },
+    {
+     "t": 26.52,
+     "end": 28.58,
+     "text": "That is the writing it down part.",
+     "accent": [],
+     "size": 50,
+     "y": 913
+    },
+    {
+     "t": 28.66,
+     "end": 30.18,
+     "text": "It will not remind you.",
+     "accent": [
+      "not"
+     ],
+     "size": 58,
+     "y": 929
+    },
+    {
+     "t": 30.4,
+     "end": 31.94,
+     "text": "It will not track your progress.",
+     "accent": [
+      "not"
+     ],
+     "size": 54,
+     "y": 900
+    },
+    {
+     "t": 32.1,
+     "end": 33.18,
+     "text": "That is phase two,",
+     "accent": [],
+     "size": 56,
+     "y": 961
+    },
+    {
+     "t": 33.22,
+     "end": 35.28,
+     "text": "and it is not built yet.",
+     "accent": [
+      "not"
+     ],
+     "size": 56,
+     "y": 961
+    },
+    {
+     "t": 35.68,
+     "end": 36.74,
+     "text": "What phase one gives you",
+     "accent": [],
+     "size": 54,
+     "y": 706
+    },
+    {
+     "t": 36.78,
+     "end": 38.080000000000005,
+     "text": "is one thing.",
+     "accent": [
+      "one"
+     ],
+     "size": 70,
+     "y": 899
+    },
+    {
+     "t": 38.34,
+     "end": 38.94,
+     "text": "In five years",
+     "accent": [
+      "five"
+     ],
+     "size": 68,
+     "y": 896
+    },
+    {
+     "t": 38.98,
+     "end": 40.18,
+     "text": "there is a dated record",
+     "accent": [
+      "dated"
+     ],
+     "size": 58,
+     "y": 902
+    },
+    {
+     "t": 40.22,
+     "end": 41.04,
+     "text": "of what you said",
+     "accent": [],
+     "size": 58,
+     "y": 904
+    },
+    {
+     "t": 41.08,
+     "end": 42,
+     "text": "in your own words",
+     "accent": [
+      "own"
+     ],
+     "size": 60,
+     "y": 907
+    },
+    {
+     "t": 42.04,
+     "end": 44.1,
+     "text": "that you can go back and check.",
+     "accent": [
+      "check"
+     ],
+     "size": 52,
+     "y": 836
+    }
+   ]
+  }
+ ]
+}

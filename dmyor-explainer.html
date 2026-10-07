@@ -1,0 +1,846 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dmyor explainer</title>
+<style>
+  html, body { margin:0; padding:0; width:100%; height:100%; background:#000; overflow:hidden; }
+  #viewport { position:fixed; inset:0; background:#000; display:flex; align-items:center; justify-content:center; }
+  #stage {
+    position:relative; width:1080px; height:1920px; background:#0A0A0A; overflow:hidden;
+    transform-origin:center center;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- diary ---------- */
+  #bookPersp { position:absolute; inset:0; perspective:3200px; perspective-origin:50% 52%; }
+  #bookWorld { position:absolute; inset:0; transform-style:preserve-3d; }
+  .edge { position:absolute; width:1px; background:rgba(245,245,240,.28); }
+  #spine { position:absolute; width:1px; background:rgba(245,245,240,.45); }
+  #diaryPage {
+    position:absolute; border:1px solid rgba(245,245,240,.5);
+    border-radius:3px; overflow:hidden; background:#0A0A0A;
+  }
+  .rule { position:absolute; height:1px; background:rgba(245,245,240,.09); }
+  .written { position:absolute; color:#F5F5F0; font-size:25px; white-space:nowrap; }
+  .caret { color:#8C8C86; font-weight:300; }
+  /* the "nothing happens" pulse: a wish going out and dying */
+  #pulse {
+    position:absolute; z-index:8; width:80px; height:80px; margin:-40px 0 0 -40px;
+    border-radius:50%; border:1px solid rgba(245,245,240,.7); opacity:0; pointer-events:none;
+  }
+  #flipLayer { position:absolute; inset:0; z-index:3; perspective:2600px; pointer-events:none; }
+  #cover { position:absolute; transform-origin:left center; transform-style:preserve-3d; }
+  .face {
+    position:absolute; inset:0; backface-visibility:hidden; border-radius:4px;
+    background:#0A0A0A; border:1px solid rgba(245,245,240,.55);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .coverInner { transform:rotateY(180deg); }
+  .coverShade { position:absolute; inset:0; background:#000; opacity:0; border-radius:4px; }
+  #coverTitle { text-align:center; color:#F5F5F0; font-size:40px; font-weight:600; line-height:1.3; }
+  #coverTitle span {
+    display:block; margin-top:18px; font-size:13px; letter-spacing:4px;
+    font-weight:400; text-transform:uppercase; color:#8C8C86;
+  }
+  .ghostCard { position:absolute; border:1px solid rgba(245,245,240,.16); border-radius:6px; }
+
+  /* ---------- archive ---------- */
+  #canvasWrap { position:absolute; inset:0; z-index:2; transform-origin:0 0; opacity:0; }
+  #gridLayer { position:absolute; left:46px; top:46px; width:988px; height:1828px; overflow:hidden; }
+  #gridInner { position:absolute; left:0; top:0; width:988px; will-change:transform; }
+  .colWrap { width:268px; }
+  .col { display:flex; flex-direction:column; gap:30px; }
+  .card { display:block; }
+  .cardInner {
+    box-sizing:border-box; height:100%; display:flex; flex-direction:column;
+    justify-content:space-between; border:1px solid rgba(245,245,240,.22);
+    border-radius:12px; padding:20px; color:#F5F5F0; opacity:0; transform:scale(.94);
+  }
+  .dream { font-size:20px; line-height:1.4; font-weight:500; }
+  .meta { display:flex; align-items:baseline; justify-content:space-between; margin-top:14px; }
+  .date { font-size:13px; color:#6B6B6B; }
+  .standby { font-size:10px; letter-spacing:1.6px; font-variant:small-caps; text-transform:lowercase; color:#6B6B6B; }
+  .isReal .standby { color:#F5F5F0; }
+  #borderSvg { position:absolute; inset:0; width:1080px; height:1920px; pointer-events:none; }
+  #hoverRing {
+    position:absolute; z-index:4; box-sizing:border-box; border-radius:12px;
+    border:1px solid rgba(245,245,240,.85); opacity:0; pointer-events:none;
+  }
+
+  /* ---------- timeline ---------- */
+  #tl { position:absolute; left:0; top:0; width:1080px; height:1920px; pointer-events:none; opacity:0; }
+  .tlLabel {
+    position:absolute; color:#8C8C86; font-size:22px; letter-spacing:3px; opacity:0;
+    background:#0A0A0A; padding:4px 10px; border-radius:6px;
+  }
+
+  /* ---------- tabs + phase panel ---------- */
+  #ui { position:absolute; inset:0; z-index:6; }
+  .tab {
+    position:absolute; box-sizing:border-box; height:64px; border-radius:32px;
+    border:1px solid rgba(245,245,240,.3); background:#0A0A0A; color:#8C8C86;
+    display:flex; align-items:center; justify-content:center;
+    font-size:17px; letter-spacing:3px; text-transform:uppercase; opacity:0;
+  }
+  .tab.on { border-color:rgba(245,245,240,.85); color:#F5F5F0; }
+  #panel {
+    position:absolute; box-sizing:border-box; left:150px; width:780px;
+    border:1px solid rgba(245,245,240,.3); border-radius:16px; background:#0A0A0A;
+    padding:38px 36px; color:#F5F5F0; opacity:0;
+  }
+  #panelNo { font-size:13px; letter-spacing:4px; color:#8C8C86; text-transform:uppercase; }
+  #panelTitle { margin-top:16px; font-size:36px; font-weight:600; }
+  #panelBody { margin-top:16px; font-size:22px; line-height:1.5; color:#8C8C86; }
+
+  /* ---------- compose ---------- */
+  #compose {
+    position:absolute; box-sizing:border-box; left:150px; width:780px;
+    border:1px solid rgba(245,245,240,.34); border-radius:16px; background:#0A0A0A;
+    padding:34px; color:#F5F5F0; opacity:0; z-index:6;
+  }
+  #composeLabel { font-size:13px; letter-spacing:4px; color:#8C8C86; text-transform:uppercase; }
+  #field {
+    margin-top:22px; box-sizing:border-box; height:78px; border-radius:10px;
+    border:1px solid rgba(245,245,240,.25); display:flex; align-items:center;
+    padding:0 20px; font-size:24px; color:#F5F5F0;
+  }
+  #field.focus { border-color:rgba(245,245,240,.8); }
+  #postBtn {
+    margin-top:24px; margin-left:auto; width:190px; height:60px; border-radius:30px;
+    border:1px solid rgba(245,245,240,.4); display:flex; align-items:center; justify-content:center;
+    font-size:16px; letter-spacing:3px; text-transform:uppercase; color:#F5F5F0;
+  }
+  #postBtn.hot { background:#F5F5F0; color:#0A0A0A; border-color:#F5F5F0; }
+  #addBtn {
+    position:absolute; box-sizing:border-box; left:340px; width:400px; height:74px;
+    border-radius:37px; border:1px solid rgba(245,245,240,.45); background:#0A0A0A;
+    display:flex; align-items:center; justify-content:center; color:#F5F5F0;
+    font-size:19px; letter-spacing:2px; opacity:0; z-index:6;
+  }
+  #addBtn.hot { background:#F5F5F0; color:#0A0A0A; }
+  #flyCard {
+    position:absolute; box-sizing:border-box; z-index:7; border-radius:12px;
+    border:1px solid rgba(245,245,240,.4); background:#0A0A0A; color:#F5F5F0;
+    padding:18px 20px; opacity:0;
+  }
+
+  /* ---------- the magic diary, returning as a callback ---------- */
+  #ghostDiary {
+    position:absolute; z-index:8; left:390px; top:700px; width:300px; height:520px;
+    border:1px solid rgba(245,245,240,.45); border-radius:6px; background:#0A0A0A;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    color:#F5F5F0; opacity:0;
+  }
+  #ghostDiary .gt { font-size:30px; font-weight:600; }
+  #ghostDiary .gs { margin-top:12px; font-size:11px; letter-spacing:4px; text-transform:uppercase; color:#8C8C86; }
+  #ghostSlash { position:absolute; left:8%; top:50%; width:84%; height:1px; background:#F5F5F0; opacity:.75; transform:scaleX(0); transform-origin:left center; }
+
+  /* ---------- the three simple steps ---------- */
+  #steps { margin-top:24px; }
+  .step {
+    display:flex; align-items:baseline; gap:14px; margin-top:14px;
+    font-size:21px; color:#F5F5F0; opacity:0;
+  }
+  .step i { font-style:normal; color:#8C8C86; font-size:13px; letter-spacing:3px; min-width:26px; }
+
+  /* ---------- scanning the archive ---------- */
+  #scan {
+    position:absolute; z-index:5; left:46px; width:988px; height:2px;
+    background:rgba(245,245,240,.55); opacity:0; pointer-events:none;
+  }
+
+  /* ---------- your-turn prompt ---------- */
+  #prompt {
+    position:absolute; z-index:6; box-sizing:border-box; left:150px; width:780px; top:1120px;
+    border:1px dashed rgba(245,245,240,.4); border-radius:16px; background:#0A0A0A;
+    padding:34px; color:#8C8C86; font-size:24px; opacity:0;
+  }
+  #prompt b { color:#F5F5F0; font-weight:400; }
+
+  /* ---------- live counter ---------- */
+  #counter {
+    position:absolute; z-index:9; left:50%; transform:translateX(-50%); top:1740px;
+    background:#0A0A0A; border:1px solid rgba(245,245,240,.28); border-radius:30px;
+    padding:14px 30px; color:#8C8C86; font-size:22px; letter-spacing:1px; opacity:0;
+    white-space:nowrap;
+  }
+  #counter b { color:#F5F5F0; font-weight:600; font-variant-numeric:tabular-nums; }
+
+  /* ---------- cursor ---------- */
+  #cursor { position:absolute; z-index:50; width:30px; height:36px; pointer-events:none; }
+  #ripple {
+    position:absolute; z-index:49; width:70px; height:70px; margin:-35px 0 0 -35px;
+    border-radius:50%; border:2px solid rgba(245,245,240,.9); opacity:0; pointer-events:none;
+  }
+
+  /* ---------- captions ---------- */
+  #textLayer { position:absolute; inset:0; z-index:20; }
+  .beat { position:absolute; left:80px; width:920px; text-align:center; opacity:0; color:#F5F5F0; }
+  /* an opaque plate so a caption never fights the archive behind it */
+  .beat:not(.final) {
+    box-sizing:border-box; background:#0A0A0A; padding:24px 26px; border-radius:16px;
+  }
+  .line1 { font-size:46px; line-height:1.3; font-weight:600; letter-spacing:-.5px; }
+  .line2 { margin-top:18px; font-size:26px; line-height:1.45; color:#8C8C86; }
+  .beat.final .line1 { font-size:104px; font-weight:700; }
+  .beat.final .line2 { margin-top:26px; font-size:30px; letter-spacing:1px; }
+
+  #playBtn {
+    position:fixed; inset:0; margin:auto; width:200px; height:62px; border-radius:31px;
+    border:1px solid rgba(245,245,240,.4); background:rgba(10,10,10,.92); color:#F5F5F0;
+    font-family:inherit; font-size:18px; letter-spacing:2px; cursor:pointer; z-index:1000;
+  }
+</style>
+</head>
+<body>
+
+<div id="viewport">
+  <div id="stage">
+
+    <div id="bookPersp"><div id="bookWorld">
+      <div id="bookBase"><div id="spine"></div></div>
+      <div id="diaryPage"></div>
+      <div id="flipLayer">
+        <div id="cover">
+          <div class="face coverOuter"><div id="coverTitle">Dreams<span>a diary</span></div></div>
+          <div class="face coverInner"></div>
+          <div class="coverShade" id="coverShade"></div>
+        </div>
+      </div>
+    </div></div>
+
+    <div id="canvasWrap">
+      <div id="gridLayer"><div id="gridInner"></div></div>
+      <svg id="borderSvg" viewBox="0 0 1080 1920">
+        <path d="M46,46 L1034,46 L1034,1874 L46,1874 Z" fill="none"
+              stroke="rgba(245,245,240,0.55)" stroke-width="1.5"/>
+      </svg>
+    </div>
+    <div id="hoverRing"></div>
+
+    <svg id="tl" viewBox="0 0 1080 1920">
+      <path id="tlPath" d="M250,1050 L830,1050" fill="none" stroke="rgba(245,245,240,.5)" stroke-width="2"/>
+      <path id="tlA" d="M250,1036 L250,1064" stroke="rgba(245,245,240,.5)" stroke-width="2" opacity="0"/>
+      <path id="tlB" d="M830,1036 L830,1064" stroke="rgba(245,245,240,.5)" stroke-width="2" opacity="0"/>
+    </svg>
+    <div class="tlLabel" id="tlLabA" style="left:212px; top:1082px;">2026</div>
+    <div class="tlLabel" id="tlLabB" style="left:792px; top:1082px;">2031</div>
+
+    <div id="ui">
+      <div class="tab" id="tab1" style="left:150px; width:370px; top:560px;">Phase 01</div>
+      <div class="tab" id="tab2" style="left:560px; width:370px; top:560px;">Phase 02</div>
+      <div id="panel" style="top:680px;">
+        <div id="panelNo"></div>
+        <div id="panelTitle"></div>
+        <div id="panelBody"></div>
+        <div id="steps">
+          <div class="step" id="st0"><i>01</i><span>Think what you actually want</span></div>
+          <div class="step" id="st1"><i>02</i><span>Write it on dmyor</span></div>
+          <div class="step" id="st2"><i>03</i><span>It is dated, public, permanent</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="addBtn" style="top:1150px;">+ Post a dream</div>
+    <div id="compose" style="top:1120px;">
+      <div id="composeLabel">Your dream</div>
+      <div id="field"><span id="fieldText"></span><span class="caret" id="fieldCaret">|</span></div>
+      <div id="postBtn">Post</div>
+    </div>
+    <div id="flyCard"></div>
+
+    <div id="ghostDiary"><div class="gt">Dreams</div><div class="gs">a diary</div><div id="ghostSlash"></div></div>
+    <div id="scan"></div>
+    <div id="prompt"><b>your dream here</b><span class="caret" id="promptCaret">|</span></div>
+    <div id="counter"><b id="countNum">0</b> dreams on record</div>
+    <div id="pulse"></div>
+    <div id="ripple"></div>
+    <svg id="cursor" viewBox="0 0 28 34">
+      <path d="M3,2 L3,27 L10,20.5 L14.5,31 L19.5,29 L15,18.5 L24,17.5 Z"
+            fill="#F5F5F0" stroke="#0A0A0A" stroke-width="1.6" stroke-linejoin="round"/>
+    </svg>
+
+    <div id="textLayer"></div>
+  </div>
+</div>
+
+<button id="playBtn">PLAY</button>
+
+<script>
+(function () {
+  "use strict";
+  var TOTAL = 100.2, W = 1080, H = 1920;
+  var stage = document.getElementById("stage"), sc = 1;
+  function fit() { sc = Math.min(innerWidth/W, innerHeight/H); stage.style.transform = "scale("+sc+")"; }
+  fit(); addEventListener("resize", fit);
+
+  var cl = function (x) { return x<0?0:(x>1?1:x); };
+  var seg = function (t,a,b) { return cl((t-a)/(b-a)); };
+  var eio = function (x) { return x<.5 ? 4*x*x*x : 1-Math.pow(-2*x+2,3)/2; };
+  var eo  = function (x) { return 1-Math.pow(1-x,3); };
+  function rectOf(el) {
+    var s = stage.getBoundingClientRect(), r = el.getBoundingClientRect();
+    return { left:(r.left-s.left)/sc, top:(r.top-s.top)/sc, width:r.width/sc, height:r.height/sc };
+  }
+  function fade(el, op) { el.style.opacity = op; }
+
+  // ============ diary geometry ============
+  var CS = 460/1080;
+  var PX = 540, PY = 960 - 1920*CS/2;
+  var INSET = 46*CS, PW = 988*CS, PH = 1828*CS, PTOP = PY + INSET;
+  var FLIP_W = INSET + PW, COVER_W = FLIP_W + 12, COVER_H = PH + 20, COVER_TOP = PTOP - 10;
+  var PAGE_L = PX + INSET;
+
+  var diary = document.getElementById("diaryPage");
+  diary.style.left = PAGE_L+"px"; diary.style.top = PTOP+"px";
+  diary.style.width = PW+"px"; diary.style.height = PH+"px";
+  var spine = document.getElementById("spine");
+  spine.style.left = PX+"px"; spine.style.top = PTOP+"px"; spine.style.height = PH+"px";
+  var bookBase = document.getElementById("bookBase");
+  for (var e=0; e<4; e++) {
+    var eg = document.createElement("div"); eg.className = "edge";
+    eg.style.left = (PAGE_L+PW+2+e*2.5)+"px"; eg.style.top = (PTOP+6+e*2)+"px";
+    eg.style.height = (PH-12-e*4)+"px"; eg.style.opacity = 1-e*.18;
+    bookBase.appendChild(eg);
+  }
+  var cover = document.getElementById("cover");
+  cover.style.left = PX+"px"; cover.style.top = COVER_TOP+"px";
+  cover.style.width = COVER_W+"px"; cover.style.height = COVER_H+"px";
+  var coverShade = document.getElementById("coverShade");
+  var bookWorld = document.getElementById("bookWorld");
+
+  function ghostGrid(c0,x0,y0,w,h,seed) {
+    var GH=[58,70,54,65,76,56,68,61,73,52,64,71,57,67], pad=14, gap=11, cols=3;
+    var cw=(w-pad*2-gap*(cols-1))/cols, st=[0,25,11];
+    for (var c=0;c<cols;c++){ var y=y0+pad+st[(c+seed)%3];
+      for(var k=0;;k++){ var hh=GH[(k+seed*3+c)%GH.length];
+        if (y+hh>y0+h-pad) break;
+        var g=document.createElement("div"); g.className="ghostCard";
+        g.style.left=(x0+pad+c*(cw+gap))+"px"; g.style.width=cw+"px";
+        g.style.top=y+"px"; g.style.height=hh+"px"; c0.appendChild(g); y+=hh+gap; } }
+  }
+  ghostGrid(document.querySelector(".coverInner"), INSET-4, 10, PW, PH, 2);
+
+  // written lines, tick boxes, strikes
+  var WRITTEN = ["Run my own business","Travel the whole world","Buy my parents a house"];
+  var L_TOP = 104, L_GAP = 74, L_X = 34, CHAR_W = 12.4;
+  for (var i=0;i<8;i++){ var r=document.createElement("div"); r.className="rule";
+    r.style.left=L_X+"px"; r.style.width=(PW-L_X*2)+"px"; r.style.top=(L_TOP+i*L_GAP+34)+"px"; diary.appendChild(r); }
+
+  var lines = WRITTEN.map(function (txt,i) {
+    var d=document.createElement("div"); d.className="written";
+    d.style.left=L_X+"px"; d.style.top=(L_TOP+i*L_GAP)+"px";
+    d.innerHTML='<span class="t"></span><span class="caret">|</span>';
+    diary.appendChild(d);
+    return { el:d, txt:d.querySelector(".t"), caret:d.querySelector(".caret"),
+             absY: PTOP + L_TOP + i*L_GAP, absX: PAGE_L + L_X };
+  });
+
+  // ============ archive ============
+  var DREAMS = ["Build a company that outlives me","Buy my parents a house","Publish my first novel",
+  "Run a sub-3 hour marathon","Ship a product to 10,000 users","Reach financial independence by 40",
+  "Get my pilot's license","Open a bakery in my hometown","Speak fluent Japanese","Sail across the Atlantic",
+  "Finish my PhD","Start a school in my village","Climb Kilimanjaro","Direct my first feature film",
+  "Build a cabin with my own hands","Complete an Ironman","Fund a scholarship in my name",
+  "Buy a house by the sea","Run a design studio of my own","Save my first million",
+  "Play piano at a real recital","Cycle across the country","Launch a record label","Design a building that gets built"];
+  var YRS = ["2027","2028","2029","2030","2031","2032","2033","2035"];
+  var NC=3, PC=14, COUNT=NC*PC;
+  var RH=[136,164,128,152,178,132,158,142,170,126,148,166,134,156], CST=[0,58,26];
+  var ci = function (c,r) { return c*PC+r; };
+
+  function block() {
+    var row=document.createElement("div");
+    row.style.cssText="display:flex;justify-content:center;gap:30px;width:988px";
+    var cols=[];
+    for (var c=0;c<NC;c++){ var w=document.createElement("div"); w.className="colWrap";
+      var col=document.createElement("div"); col.className="col";
+      col.style.transform="translateY("+CST[c]+"px)"; w.appendChild(col); row.appendChild(w); cols.push(col); }
+    for (var c2=0;c2<NC;c2++) for (var r=0;r<PC;r++){
+      var idx=ci(c2,r);
+      var card=document.createElement("div"); card.className="card"; card.dataset.idx=idx;
+      card.style.height=RH[r%RH.length]+"px";
+      var inner=document.createElement("div"); inner.className="cardInner";
+      inner.innerHTML='<div class="dream">'+DREAMS[idx%DREAMS.length]+'</div>'+
+        '<div class="meta"><span class="date">'+YRS[idx%YRS.length]+
+        '</span><span class="standby">standby</span></div>';
+      card.appendChild(inner); cols[c2].appendChild(card);
+    }
+    return row;
+  }
+  var gi = document.getElementById("gridInner");
+  var bA = block(), bB = block();
+  var ld = document.createElement("div"); ld.style.height="34px";
+  var gp = document.createElement("div"); gp.style.height="30px";
+  gi.appendChild(ld); gi.appendChild(bA); gi.appendChild(gp); gi.appendChild(bB);
+  var inA={}, inB={}, slotA={};
+  bA.querySelectorAll(".card").forEach(function(c){ slotA[c.dataset.idx]=c; inA[c.dataset.idx]=c.querySelector(".cardInner"); });
+  bB.querySelectorAll(".card").forEach(function(c){ inB[c.dataset.idx]=c.querySelector(".cardInner"); });
+  var loopD=0;
+  var canvasWrap=document.getElementById("canvasWrap"), gridLayer=document.getElementById("gridLayer");
+  var hoverRing=document.getElementById("hoverRing");
+
+  var HOVER_IDX = ci(0,3);
+  // Cards turning real, each pinned to a spoken cue. The cluster at 40-45 lands on
+  // "in 5 years ... most of our dreams and visions would come true".
+  var FLIPS = [
+    { idx: ci(0,3),  t: 26.3, y: "2029" },   // "when you do make them a reality"
+    { idx: ci(2,2),  t: 40.6, y: "2027" },   // the wave under "in 5 years ... would come true"
+    { idx: ci(0,7),  t: 41.3, y: "2028" },
+    { idx: ci(1,9),  t: 42.0, y: "2030" },
+    { idx: ci(2,6),  t: 42.7, y: "2029" },
+    { idx: ci(0,11), t: 43.4, y: "2031" },
+    { idx: ci(1,5),  t: 76.9, y: "2031" }    // "verify how many of these became real"
+  ];
+  FLIPS.forEach(function (f) {
+    f.a = inA[f.idx].querySelector(".standby");
+    f.b = inB[f.idx].querySelector(".standby");
+  });
+
+  // ============ cursor ============
+  var cursorEl=document.getElementById("cursor"), rippleEl=document.getElementById("ripple");
+  var pulseEl=document.getElementById("pulse");
+  // waypoints: the pointer's whole journey
+  // Every move is short and deliberate, then the pointer HOLDS at its destination
+  // until the next action. Long gaps used to interpolate into a slow drift.
+  var REST_A = {x:905, y:1585}, REST_B = {x:900, y:1520};
+  function tapX(i) { return PAGE_L + L_X + 150; }
+  // caret x at the start and end of writing a line, matching the typing override
+  function capStart(i) { return lines[i].absX + 6; }
+  function capEnd(i) { return lines[i].absX + WRITTEN[i].length * CHAR_W + 6; }
+  var PATH = [
+    {t:0.0,  x:1010, y:1770},
+    {t:0.85, x:556,  y:966},                       // 0.00 "If you have a diary"
+    {t:1.00, x:556,  y:966},
+    {t:3.40, x:REST_A.x, y:REST_A.y},              // 4.40 "what would you write?"
+    {t:4.90, x:REST_A.x, y:REST_A.y},
+    {t:5.75, x:capStart(0), y:lines[0].absY+30},   // 5.72 "Running your own..."
+    {t:7.40, x:capEnd(0),   y:lines[0].absY+30},
+    {t:7.80, x:capStart(1), y:lines[1].absY+30},   // 7.74 "travelling all across"
+    {t:9.30, x:capEnd(1),   y:lines[1].absY+30},
+    {t:9.50, x:capStart(2), y:lines[2].absY+30},   // 9.42 "could be anything"
+    {t:10.80,x:capEnd(2),   y:lines[2].absY+30},
+    {t:11.35,x:tapX(0), y:lines[0].absY+16},       // "but the problem is we all know..."
+    {t:11.95,x:tapX(0), y:lines[0].absY+16},
+    {t:12.15,x:tapX(1), y:lines[1].absY+16},
+    {t:12.75,x:tapX(1), y:lines[1].absY+16},
+    {t:12.95,x:tapX(2), y:lines[2].absY+16},       // 13.06 "no magic diary"
+    {t:14.60,x:tapX(2), y:lines[2].absY+16},
+    {t:15.00,x:560,  y:966},                       // 15.44 "come true. Instead,"
+    {t:16.30,x:560,  y:966},
+    {t:16.45,x:540,  y:960},                       // 18.16 "there is an archive"
+    {t:18.90,x:REST_A.x, y:REST_A.y},              // 19.28 "holds all your dreams"
+    {t:20.90,x:REST_A.x, y:REST_A.y},
+    {t:21.90,ref:"hover"},                         // 21.92 "for you and the world to see"
+    {t:26.90,ref:"hover"},                         // 24.98 "make them a reality" -> flips
+    {t:27.60,ref:"dragTop"},                       // 29.02 "exist in this world forever"
+    {t:29.80,ref:"dragBot"},
+    {t:30.50,x:REST_B.x, y:REST_B.y},
+    {t:34.80,x:REST_B.x, y:REST_B.y},
+    {t:35.50,x:250,  y:1050},                      // 35.46 "This is an experiment"
+    {t:40.20,x:830,  y:1050},                      // 39.12 "in 5 years"
+    {t:43.60,x:830,  y:1050},
+    {t:44.70,x:430,  y:960},                       // 44.04 "instead of the magic diary"
+    {t:45.00,x:430,  y:960},
+    {t:45.80,x:650,  y:960},                       // strikes it out
+    {t:47.40,x:650,  y:960},
+    {t:48.30,x:REST_B.x, y:REST_B.y},              // 46.18 "we are building a system"
+    {t:52.10,x:REST_B.x, y:REST_B.y},
+    {t:53.20,x:335,  y:592},                       // 52.66 "divided into phases"
+    {t:60.90,x:335,  y:592},                       // 55.28 "Phase 1 ... starts today"
+    {t:61.60,ref:"add"},                           // 61.50 "what you really want"
+    {t:63.30,ref:"add"},
+    {t:63.90,ref:"fieldStart"},
+    {t:64.55,ref:"fieldStart"},                    // 64.52 "write it on demure"
+    {t:66.30,ref:"fieldEnd"},
+    {t:67.15,ref:"post"},                          // 67.32 "create an archive"
+    {t:67.80,ref:"post"},
+    {t:69.60,x:REST_B.x, y:REST_B.y},
+    {t:77.90,x:REST_B.x, y:REST_B.y},              // 75.92 "became real"
+    {t:78.85,x:745,  y:592},                       // 78.56 "Phase 2 will start"
+    {t:80.20,x:745,  y:592},
+    {t:81.00,x:300,  y:1180},                      // 81.48 "till then think hard about what you want"
+    {t:84.60,x:300,  y:1180},
+    {t:85.40,ref:"dragTop"},                       // 86.52 "explore the archive"
+    {t:88.40,ref:"dragBot"},
+    {t:89.20,x:REST_B.x, y:REST_B.y},
+    {t:89.90,x:540,  y:1010},                      // 90.38 "the archive is live at"
+    {t:100.2,x:540,  y:1010}
+  ];
+  var CLICKS = [
+    {t:1.00, x:556, y:966},
+    {t:11.40,x:tapX(0), y:lines[0].absY+16},
+    {t:12.20,x:tapX(1), y:lines[1].absY+16},
+    {t:13.00,x:tapX(2), y:lines[2].absY+16},
+    {t:15.05,x:560, y:966}, {t:16.50,x:540, y:960},
+    {t:53.25,x:335, y:592},
+    {t:63.40,ref:"add"}, {t:64.25,ref:"fieldStart"},
+    {t:67.30,ref:"post"}, {t:78.90,x:745, y:592},
+    {t:81.60,x:300, y:1180},
+    {t:90.00,x:540, y:1010}
+  ];
+  // a tap on a written dream: a wish goes out, and nothing comes back
+  var PULSES = [
+    {t:11.40,x:tapX(0), y:lines[0].absY+16},
+    {t:12.20,x:tapX(1), y:lines[1].absY+16},
+    {t:13.00,x:tapX(2), y:lines[2].absY+16}
+  ];
+  // typing windows steer the pointer to the caret, like a pen
+  // each dream is written while the narrator names it
+  var TYPE = [
+    { s:5.75, e:7.40, line:0 },   // "Running your own successful business"
+    { s:7.80, e:9.30, line:1 },   // "maybe travelling all across the world"
+    { s:9.50, e:10.80, line:2 }   // "it could be anything"
+  ];
+  var FIELD_TXT = "Build a company that outlives me";
+  var FIELD_S = 64.55, FIELD_E = 66.30;
+
+  function pathAt(t) {
+    if (t <= PATH[0].t) return PATH[0];
+    for (var i=0;i<PATH.length-1;i++) {
+      var a=PATH[i], b=PATH[i+1];
+      if (t>=a.t && t<=b.t) {
+        var k=eio((t-a.t)/(b.t-a.t));
+        return { x:a.x+(b.x-a.x)*k, y:a.y+(b.y-a.y)*k };
+      }
+    }
+    return PATH[PATH.length-1];
+  }
+
+  // ============ ui refs ============
+  var tab1=document.getElementById("tab1"), tab2=document.getElementById("tab2");
+  var panel=document.getElementById("panel"), panelNo=document.getElementById("panelNo"),
+      panelTitle=document.getElementById("panelTitle"), panelBody=document.getElementById("panelBody");
+  var addBtn=document.getElementById("addBtn"), compose=document.getElementById("compose"),
+      field=document.getElementById("field"), fieldText=document.getElementById("fieldText"),
+      fieldCaret=document.getElementById("fieldCaret"), postBtn=document.getElementById("postBtn"),
+      flyCard=document.getElementById("flyCard");
+  var ghost=document.getElementById("ghostDiary"), ghostSlash=document.getElementById("ghostSlash");
+  var scanEl=document.getElementById("scan");
+  var promptEl=document.getElementById("prompt"), promptCaret=document.getElementById("promptCaret");
+  var stepEls=[0,1,2].map(function(i){ return document.getElementById("st"+i); });
+  var counter=document.getElementById("counter"), countNum=document.getElementById("countNum");
+  var tl=document.getElementById("tl"), tlPath=document.getElementById("tlPath"),
+      tlA=document.getElementById("tlA"), tlB=document.getElementById("tlB"),
+      tlLabA=document.getElementById("tlLabA"), tlLabB=document.getElementById("tlLabB");
+  var tlLen = tlPath.getTotalLength();
+  tlPath.style.strokeDasharray = tlLen;
+
+  // ============ timing ============
+  // Cut to the ACTUAL recorded narration (narration.mp3, 100.15s).
+  // Every number below is a whisper word timestamp, not an estimate.
+  //   0.00 "If you have a diary"      4.40 "what would you write?"
+  //   5.72 "Running your own..."      7.74 "travelling all across"   9.42 "could be anything"
+  //  13.06 "no magic diary"          18.16 "there is an archive"    19.28 "holds all your dreams"
+  //  21.92 "for you and the world"   24.98 "make them a reality"    29.02 "exist ... forever"
+  //  35.46 "This is an experiment"   39.12 "in 5 years"             46.48 "building a system"
+  //  52.66 "divided into phases"     55.28 "Phase 1 of this plan"   61.50 "what you really want"
+  //  64.52 "write it on"             67.32 "create an archive"      75.92 "became real"
+  //  78.56 "Phase 2 will start"      86.52 "explore the archive"    90.38 "archive is live"
+  var OPEN_S=1.10, OPEN_E=2.90;
+  var DISSOLVE_S=13.2, DISSOLVE_E=15.0;
+  var CLOSE_S=15.1, CLOSE_E=16.4;
+  var ZOOM_S=16.5, ZOOM_E=18.4;
+  var FILL_S=18.6, CD=0.42, RD=0.30, CF=0.45;
+  var COUNT_S=18.8, COUNT_E=24.5;
+  var HOV_S=21.9, HOV_E=25.4;
+  var SCROLL_S=27.6, SPEED=15;
+  var TL_IN=35.2, TL_S=35.6, TL_E=40.1, TL_OUT=43.9;
+  var PULL_S=29.8, PULL_E=32.8, PULL_BACK=43.5;   // pull back on "exist ... forever"
+  var GH_IN=44.1, GH_OUT=47.4;                    // 44.04 "instead of the magic diary"
+  var STEP_T=[55.4, 59.0, 61.0];                  // "starts today" / "very simple" / "think"
+  var SCAN_S=71.0, SCAN_E=77.5;                   // 71.0 "as a reference for future to witness and verify"
+  var PROMPT_IN=79.6, PROMPT_OUT=85.4;            // 81.48 "till then think hard about what you want"
+  var URL_S=91.66, URL_E=98.6;                    // the URL is spoken slowly; type it
+  var TABS_S=47.0, TABS_E=89.4;
+  var P1=53.25, P2=78.9;
+  var ADD_S=61.3, ADD_E=63.8;
+  var COMP_S=63.6, COMP_E=70.5;
+  var FIELD_FOCUS=64.25;
+  var FLY_S=67.5, FLY_E=69.0;
+  var END_S=89.9;
+
+  var revealAt={};
+  for (var c3=0;c3<NC;c3++) for (var r3=0;r3<PC;r3++) revealAt[ci(c3,r3)] = FILL_S + c3*CD + r3*RD;
+
+  // ============ captions ============
+  var BEATS=[
+    {s:0.3, e:4.2, size:44,y:250,l1:"If you had a diary",l2:"where every dream you wrote came true"},
+    {s:4.4, e:5.5, size:48,y:250,l1:"what would you write?"},
+    {s:12.9,e:15.2,size:44,y:250,l1:"There is no magic diary"},
+    {s:18.1,e:21.5,size:46,y:170,l1:"But there is an archive"},
+    {s:24.9,e:27.0,size:40,y:170,l1:"and when you make it real,",l2:"the record shows it"},
+    {s:28.9,e:34.4,size:42,y:170,l1:"These records outlive us",l2:"history of what we wanted to do"},
+    {s:35.4,e:45.8,size:44,y:250,l1:"Five years",l2:"2026 to 2031"},
+    {s:46.4,e:54.4,size:44,y:250,l1:"Not magic. A system, in phases."},
+    {s:55.2,e:60.6,size:44,y:250,l1:"Phase one starts today"},
+    {s:64.4,e:70.0,size:44,y:250,l1:"Write it. It goes on the record."},
+    {s:72.4,e:77.9,size:40,y:250,l1:"A reference for the future",l2:"to verify how many became real"},
+    {s:78.5,e:88.6,size:42,y:250,l1:"Phase two begins shortly",l2:"till then, post yours and explore"},
+    {s:89.9,e:100.2,size:104,y:900,l1:"dmyor",l2:"www.dmyor.com",final:true}
+  ];
+  // Narration captions are off by default (the pointer carries the explanation);
+  // the closing brand card always shows. Add ?text=1 to bring the captions back.
+  var textLayer=document.getElementById("textLayer"), showText=false;
+  var beatEls=BEATS.map(function(b){
+    var el=document.createElement("div"); el.className="beat"+(b.final?" final":"");
+    var l1=document.createElement("div"); l1.className="line1"; l1.textContent=b.l1;
+    l1.style.fontSize=b.size+"px"; el.appendChild(l1);
+    if (b.l2){ var l2=document.createElement("div"); l2.className="line2"; l2.textContent=b.l2; el.appendChild(l2); }
+    textLayer.appendChild(el); return el;
+  });
+  var finalL2 = beatEls[beatEls.length-1].querySelector(".line2");
+  var URL_TXT = "www.dmyor.com";
+  function placeBeats(){ beatEls.forEach(function(el,i){
+    var h=el.getBoundingClientRect().height/sc; el.style.top=(BEATS[i].y-h/2)+"px"; }); }
+
+  var HOVER_RECT=null, FIELD_RECT=null;
+
+  // ============ render ============
+  function render(t) {
+    t = Math.max(0, Math.min(TOTAL, t));
+
+    // captions
+    var capOverGrid=0;
+    for (var i=0;i<BEATS.length;i++){
+      var b=BEATS[i], op=0;
+      if (b.final){ if (t>=b.s) op=cl((t-b.s)/0.7); }
+      else if (t>=b.s && t<b.e) op=cl(Math.min((t-b.s)/0.7,(b.e-t)/0.5));
+      var vis = (b.final || showText) ? op : 0;
+      fade(beatEls[i], vis);
+      if (vis && b.s>=ZOOM_S && b.s<TABS_S && vis>capOverGrid) capOverGrid=vis;
+    }
+
+    // ---- diary ----
+    var openE=eio(seg(t,OPEN_S,OPEN_E)), closeE=eio(seg(t,CLOSE_S,CLOSE_E));
+    var ang=-179*openE+179*closeE;
+    cover.style.transform="rotateY("+ang+"deg)";
+    coverShade.style.opacity=Math.sin(Math.abs(ang)*Math.PI/180)*.5;
+    var tx=-(COVER_W/2)*(1-openE+closeE);
+    fade(bookWorld, seg(t,0.3,1.2)*(1-seg(t,ZOOM_S,ZOOM_S+1.5)));
+    bookWorld.style.transform="translateX("+tx+"px) rotateX("+(5*openE*(1-closeE))+"deg)";
+    var sv=cl((openE-.45)*3)*(1-cl(closeE*2.2));
+    fade(bookBase,sv); fade(spine,sv);
+    fade(diary, cl(openE*2.2)*(1-cl((closeE-.55)*3)));
+
+    // the writing appears, then simply fades: the wish was never granted
+    var gone = seg(t, DISSOLVE_S, DISSOLVE_E);
+    for (var w=0;w<lines.length;w++){
+      var L=lines[w], tw=TYPE[w], full=WRITTEN[w];
+      var n=Math.floor(cl((t-tw.s)/(tw.e-tw.s))*full.length);
+      L.txt.textContent=full.slice(0,n);
+      var typing = t>=tw.s && t<tw.e;
+      L.caret.style.opacity = typing?1:0;
+      fade(L.el, (t>=tw.s?1:0) * (1-gone));
+    }
+
+    // ---- timeline ----
+    var tlv=seg(t,TL_IN,TL_IN+0.6)*(1-seg(t,TL_OUT,TL_OUT+0.7));
+    fade(tl,tlv);
+    tlPath.style.strokeDashoffset = tlLen*(1-eio(seg(t,TL_S,TL_E)));
+    tlA.style.opacity=seg(t,TL_S,TL_S+.3); tlB.style.opacity=seg(t,TL_E-.2,TL_E+.2);
+    fade(tlLabA, tlv*seg(t,TL_S+.2,TL_S+.8)); fade(tlLabB, tlv*seg(t,TL_E-.1,TL_E+.5));
+
+    // ---- archive ----
+    var zp=eio(seg(t,ZOOM_S,ZOOM_E)), s0=COVER_W/1080, ss=s0+(1-s0)*zp;
+    var x0=PX-COVER_W/2, y0=COVER_TOP;
+    // pull back on "exist in this world forever" so the archive reads as bigger than frame
+    var pull=eio(seg(t,PULL_S,PULL_E))*(1-seg(t,PULL_BACK,PULL_BACK+1.5));
+    var kk=1-0.085*pull, fs2=ss*kk;
+    canvasWrap.style.transform="translate("+(x0*(1-zp)+(1-kk)*540)+"px,"+
+      (y0*(1-zp)+(1-kk)*960)+"px) scale("+fs2+")";
+    fade(canvasWrap, seg(t,ZOOM_S,ZOOM_S+0.9));
+
+    for (var idx=0; idx<COUNT; idx++){
+      var ce=eo(cl((t-revealAt[idx])/CF)), tr="scale("+(0.94+0.06*ce)+")";
+      inA[idx].style.opacity=ce; inA[idx].style.transform=tr;
+      inB[idx].style.opacity=ce; inB[idx].style.transform=tr;
+    }
+    for (var fi=0; fi<FLIPS.length; fi++){
+      var F=FLIPS[fi], on=t>=F.t;
+      var txt = on ? ("real \u00b7 "+F.y) : "standby";
+      F.a.textContent=txt; F.b.textContent=txt;
+      inA[F.idx].classList.toggle("isReal", on);
+      inB[F.idx].classList.toggle("isReal", on);
+    }
+
+    // full strength while the archive is the subject, then back for the rule,
+    // the phase panels and the compose demo, then out for the end card
+    var gOp=1-0.5*capOverGrid;
+    gOp*=1-0.62*seg(t,TL_IN-0.6,TL_IN+0.4);
+    gOp*=(1-seg(t,END_S,END_S+1.6));
+    gridLayer.style.opacity=gOp;
+
+    if (HOVER_RECT) {
+      hoverRing.style.left=(HOVER_RECT.left-6)+"px"; hoverRing.style.top=(HOVER_RECT.top-6)+"px";
+      hoverRing.style.width=(HOVER_RECT.width+12)+"px"; hoverRing.style.height=(HOVER_RECT.height+12)+"px";
+      fade(hoverRing, seg(t,HOV_S,HOV_S+.4)*(1-seg(t,HOV_E,HOV_E+.4)));
+    }
+
+    var off=0;
+    if (t>=SCROLL_S){ off=(t-SCROLL_S)*SPEED; if (loopD>0) off=off%loopD; }
+    gi.style.transform="translateY(-"+off+"px)";
+
+    // ---- live counter: climbs while the archive fills, then drifts on ----
+    var cN = Math.round(1240 + eo(seg(t,COUNT_S,COUNT_E))*11240 + Math.max(0,t-COUNT_E)*7);
+    if (t>=FLY_E) cN += 1;   // the dream just posted lands in the count
+    countNum.textContent = cN.toLocaleString("en-US");
+    // the counter returns for the posting beat so the +1 is visible
+    fade(counter, Math.max(
+      seg(t,COUNT_S,COUNT_S+0.6)*(1-seg(t,TL_IN-0.8,TL_IN-0.2)),
+      seg(t,FLY_E-0.4,FLY_E+0.2)*(1-seg(t,PROMPT_OUT+1.0,PROMPT_OUT+1.6))));
+
+    // ---- "Instead of the magic diary": it comes back, gets struck out, becomes the system
+    var gv=seg(t,GH_IN,GH_IN+0.5)*(1-seg(t,GH_OUT-0.6,GH_OUT));
+    fade(ghost,gv);
+    ghostSlash.style.transform="scaleX("+eio(seg(t,GH_IN+0.9,GH_IN+1.7))+")";
+
+    // ---- the three simple steps, one per spoken line ----
+    for (var si=0; si<stepEls.length; si++){
+      fade(stepEls[si], seg(t,STEP_T[si],STEP_T[si]+0.5)*(1-seg(t,TABS_E,TABS_E+.5)));
+    }
+
+    // ---- a scan sweeping the archive: "for future to witness and verify" ----
+    var scv=seg(t,SCAN_S,SCAN_S+0.3)*(1-seg(t,SCAN_E-0.5,SCAN_E));
+    fade(scanEl,scv);
+    scanEl.style.top=(60+eio(seg(t,SCAN_S,SCAN_E))*1790)+"px";
+
+    // ---- your turn: an empty slot waiting ----
+    var pv2=seg(t,PROMPT_IN,PROMPT_IN+0.5)*(1-seg(t,PROMPT_OUT,PROMPT_OUT+0.5));
+    fade(promptEl,pv2);
+    promptCaret.style.opacity = (t>=PROMPT_IN+0.6 && Math.floor(t*2)%2===0) ? 1 : 0.15;
+
+    // ---- tabs + panel ----
+    // the system stays on screen from "we are building a system" to the end card
+    var tv=seg(t,TABS_S,TABS_S+.6)*(1-seg(t,TABS_E,TABS_E+.5));
+    fade(tab1,tv); fade(tab2,tv);
+    tab1.classList.toggle("on", t>=P1 && t<P2);
+    tab2.classList.toggle("on", t>=P2);
+    fade(panel, seg(t,P1+.15,P1+.75)*(1-seg(t,TABS_E,TABS_E+.5)));
+    if (t>=P2){
+      panelNo.textContent="Phase 02"; panelTitle.textContent="Make it real";
+      panelBody.textContent="Tools to actually get there, and a record of how you did it. Begins shortly.";
+    } else {
+      panelNo.textContent="Phase 01"; panelTitle.textContent="Write it down";
+      panelBody.textContent="Say what you want to make happen. It is dated and public from the moment you post it.";
+    }
+
+    // ---- compose ----
+    fade(addBtn, seg(t,ADD_S,ADD_S+.4)*(1-seg(t,ADD_E,ADD_E+.3)));
+    addBtn.classList.toggle("hot", t>=70.35 && t<70.65);
+    var cv=seg(t,COMP_S,COMP_S+.5)*(1-seg(t,COMP_E,COMP_E+.5));
+    fade(compose,cv);
+    field.classList.toggle("focus", t>=FIELD_FOCUS && t<FIELD_E+0.6);
+    var fn=Math.floor(cl((t-FIELD_S)/(FIELD_E-FIELD_S))*FIELD_TXT.length);
+    fieldText.textContent=FIELD_TXT.slice(0,fn);
+    fieldCaret.style.opacity = (t>=FIELD_FOCUS && t<FIELD_E+0.4) ? 1 : 0;
+    postBtn.classList.toggle("hot", t>=74.95 && t<75.3);
+
+    // the posted card flies into the archive
+    if (t>=FLY_S && t<FLY_E+0.3 && FIELD_RECT) {
+      var k=eio(seg(t,FLY_S,FLY_E));
+      var tx2=FIELD_RECT.left+(150-FIELD_RECT.left)*k;
+      var ty2=FIELD_RECT.top+(120-FIELD_RECT.top)*k;
+      var sw=FIELD_RECT.width+(248-FIELD_RECT.width)*k;
+      flyCard.style.left=tx2+"px"; flyCard.style.top=ty2+"px";
+      flyCard.style.width=sw+"px";
+      flyCard.style.fontSize=(24+(20-24)*k)+"px";
+      flyCard.textContent=FIELD_TXT;
+      fade(flyCard, 1-cl((k-0.72)/0.28));
+    } else fade(flyCard,0);
+
+    // ---- cursor ----
+    var p=pathAt(t);
+    var cx=p.x, cy=p.y;
+    for (var q=0;q<TYPE.length;q++){
+      var tw2=TYPE[q];
+      if (t>=tw2.s && t<tw2.e){
+        var nn=cl((t-tw2.s)/(tw2.e-tw2.s))*WRITTEN[q].length;
+        cx=lines[q].absX+nn*CHAR_W+6; cy=lines[q].absY+30;
+      }
+    }
+    if (t>=FIELD_S && t<FIELD_E && FIELD_RECT){
+      var fn2=cl((t-FIELD_S)/(FIELD_E-FIELD_S))*FIELD_TXT.length;
+      cx=FIELD_RECT.left+22+fn2*13.2; cy=FIELD_RECT.top+FIELD_RECT.height/2+16;
+    }
+    // riding the tip of the timeline as it is dragged out
+    if (t>=TL_S && t<TL_E){
+      cx=250+eio(seg(t,TL_S,TL_E))*580; cy=1050;
+    }
+    cursorEl.style.left=cx+"px"; cursorEl.style.top=cy+"px";
+    fade(cursorEl, (1-seg(t,END_S+2.2,END_S+3.0)));
+
+    var rop=0, rx=0, ry=0;
+    for (var m=0;m<CLICKS.length;m++){
+      var d=t-CLICKS[m].t;
+      if (d>=0 && d<0.5){ rop=1-d/0.5; rx=CLICKS[m].x; ry=CLICKS[m].y;
+        rippleEl.style.transform="scale("+(0.35+d*2.2)+")"; }
+    }
+    rippleEl.style.left=rx+"px"; rippleEl.style.top=ry+"px"; fade(rippleEl,rop);
+
+    // the wish pulse: expands outward, thins, and comes to nothing
+    var pop=0, px2=0, py2=0;
+    for (var n2=0;n2<PULSES.length;n2++){
+      var pd=t-PULSES[n2].t;
+      if (pd>=0 && pd<1.5){
+        pop=(1-pd/1.5)*0.8; px2=PULSES[n2].x; py2=PULSES[n2].y;
+        pulseEl.style.transform="scale("+(0.25+pd*2.6)+")";
+      }
+    }
+    pulseEl.style.left=px2+"px"; pulseEl.style.top=py2+"px"; fade(pulseEl,pop);
+  }
+
+  // ============ driver ============
+  var st0=null, raf=null;
+  function frame(now){ if(st0===null) st0=now; var t=(now-st0)/1000;
+    if (t>=TOTAL){ render(TOTAL); raf=null; return; } render(t); raf=requestAnimationFrame(frame); }
+  function play(){ document.getElementById("playBtn").style.display="none";
+    st0=null; if(raf) cancelAnimationFrame(raf); raf=requestAnimationFrame(frame); }
+
+  addEventListener("load", function(){
+    loopD=(bB.getBoundingClientRect().top-bA.getBoundingClientRect().top)/sc;
+    placeBeats();
+    // measure things the pointer has to travel to
+    inA[HOVER_IDX].style.opacity=1;
+    HOVER_RECT=rectOf(slotA[HOVER_IDX]);
+    inA[HOVER_IDX].style.opacity=0;
+    compose.style.opacity=1; FIELD_RECT=rectOf(field); compose.style.opacity=0;
+
+    // resolve the waypoints that depend on measured layout
+    compose.style.opacity=1;
+    var POST_RECT=rectOf(postBtn); compose.style.opacity=0;
+    addBtn.style.opacity=1; var ADD_RECT=rectOf(addBtn); addBtn.style.opacity=0;
+
+    var fy = FIELD_RECT.top + FIELD_RECT.height/2 + 16;
+    var REFS = {
+      hover:      { x:HOVER_RECT.left+HOVER_RECT.width-46, y:HOVER_RECT.top+HOVER_RECT.height/2 },
+      dragTop:    { x:880, y:1190 },
+      dragBot:    { x:880, y:790 },
+      fieldStart: { x:FIELD_RECT.left+22, y:fy },
+      fieldEnd:   { x:FIELD_RECT.left+22+FIELD_TXT.length*13.2, y:fy },
+      add:        { x:ADD_RECT.left+ADD_RECT.width/2, y:ADD_RECT.top+ADD_RECT.height/2+14 },
+      post:       { x:POST_RECT.left+POST_RECT.width/2, y:POST_RECT.top+POST_RECT.height/2+14 }
+    };
+    [PATH, CLICKS].forEach(function (list) {
+      list.forEach(function (p) {
+        if (p.ref) { p.x = REFS[p.ref].x; p.y = REFS[p.ref].y; }
+      });
+    });
+
+    var q=new URLSearchParams(location.search);
+    if (q.get("text")==="1") showText=true;
+    render(0);
+    window.__seek=function(s){ render(s); }; window.__duration=TOTAL;
+
+    var tp=q.get("t");
+    if (tp!==null && !isNaN(parseFloat(tp))){
+      document.getElementById("playBtn").style.display="none"; render(parseFloat(tp)); return; }
+    if (q.get("autoplay")==="1") play();
+    else document.getElementById("playBtn").addEventListener("click", play);
+  });
+})();
+</script>
+</body>
+</html>

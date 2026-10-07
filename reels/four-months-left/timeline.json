@@ -1,0 +1,333 @@
+{
+ "total": 53.73,
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "dreams": [
+  "Build a company that outlives me",
+  "Buy my parents a house",
+  "Publish my first novel",
+  "Run a sub-3 hour marathon",
+  "Ship a product to 10,000 users",
+  "Reach financial independence by 40",
+  "Get my pilot's license",
+  "Open a bakery in my hometown",
+  "Speak fluent Japanese",
+  "Sail across the Atlantic",
+  "Finish my PhD",
+  "Start a school in my village",
+  "Climb Kilimanjaro",
+  "Direct my first feature film",
+  "Build a cabin with my own hands",
+  "Complete an Ironman",
+  "Fund a scholarship in my name",
+  "Buy a house by the sea",
+  "Run a design studio of my own",
+  "Save my first million",
+  "Play piano at a real recital",
+  "Cycle across the country",
+  "Launch a record label",
+  "Design a building that gets built"
+ ],
+ "scenes": [
+  {
+   "type": "calendar.year",
+   "note": "0.48 four months left / 4.34 think back to January",
+   "in": 0.5,
+   "out": 11.6,
+   "year": "2026",
+   "point": 4.34,
+   "sweep": [
+    5.3,
+    9.2
+   ],
+   "remain": 8,
+   "remainAt": 8.68,
+   "strike": [
+    1.7,
+    2.05,
+    2.4,
+    2.75,
+    3.1,
+    3.45,
+    3.8,
+    4.15,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "type": "calendar.recall",
+   "note": "4.34 think back to January - what you meant to do rises out of each spent month",
+   "in": 4.5,
+   "out": 10.4,
+   "at": [
+    4.9,
+    5.7,
+    6.5,
+    7.3,
+    8.1,
+    8.9
+   ],
+   "items": [
+    "Start the company",
+    "Get properly fit",
+    "Learn to sail",
+    "Write the book",
+    "Save six months",
+    "Move out"
+   ]
+  },
+  {
+   "type": "tally.compare",
+   "note": "11.92 the honest answer is not many",
+   "in": 11.7,
+   "out": 13.9,
+   "planned": 12,
+   "done": 2
+  },
+  {
+   "type": "orbit.trapped",
+   "note": "14.16 it stayed in your head | 18.98 no date will stick | 22.9 it is a mood",
+   "in": 13.7,
+   "out": 24.3,
+   "brackets": 17.3,
+   "scramble": 20.4,
+   "scatter": 22.6,
+   "cy": 950,
+   "rx": 330,
+   "ry": 205,
+   "items": [
+    "Buy my parents a house",
+    "Run a sub-3 hour marathon",
+    "Finish my PhD",
+    "Open a bakery",
+    "Learn to sail"
+   ]
+  },
+  {
+   "type": "diary.open",
+   "note": "24.68 so get it out",
+   "click": 24.3,
+   "start": 24.4,
+   "end": 25.5
+  },
+  {
+   "type": "diary.write",
+   "note": "25.58 write the thing down (the date stamps itself on)",
+   "lines": [
+    {
+     "text": "Buy my parents a house",
+     "start": 25.7,
+     "end": 27.2
+    }
+   ],
+   "stamp": {
+    "text": "dated 02 Sep 2026 \u00b7 standby",
+    "at": 26.3
+   }
+  },
+  {
+   "type": "progress.log",
+   "note": "27.74 one day at a time / 28.8 log what you did",
+   "in": 27.0,
+   "out": 32.4,
+   "count": 24,
+   "fillStart": 28.0,
+   "fillEnd": 31.6
+  },
+  {
+   "type": "streak.bars",
+   "note": "29.8 seeing the record build is what keeps you going",
+   "in": 29.7,
+   "out": 33.2,
+   "growStart": 30.0,
+   "growEnd": 32.9,
+   "days": 14
+  },
+  {
+   "type": "diary.close",
+   "note": "32.9 the page becomes the record",
+   "click": 33.1,
+   "start": 33.2,
+   "end": 34.3
+  },
+  {
+   "type": "archive.zoom",
+   "note": "35.4 that is what dmyor is for",
+   "start": 34.5,
+   "end": 36.4
+  },
+  {
+   "type": "archive.fill",
+   "note": "36.78 phase one is live today",
+   "start": 36.5,
+   "colDelay": 0.28,
+   "rowDelay": 0.2
+  },
+  {
+   "type": "archive.counter",
+   "note": "37.5 the record is bigger than you",
+   "start": 36.9,
+   "end": 40.0,
+   "from": 1240,
+   "to": 12480
+  },
+  {
+   "type": "archive.scroll",
+   "note": "keeps moving from here",
+   "start": 38.4,
+   "speed": 15
+  },
+  {
+   "type": "stamp.trio",
+   "note": "40.08 dated, public, permanent",
+   "in": 39.9,
+   "out": 42.6,
+   "at": [
+    40.1,
+    40.9,
+    41.6
+   ],
+   "words": [
+    "dated",
+    "public",
+    "permanent"
+   ]
+  },
+  {
+   "type": "archive.flip",
+   "note": "41.6 permanent - one turns real",
+   "at": 41.7,
+   "card": [
+    0,
+    3
+   ],
+   "year": "2029"
+  },
+  {
+   "type": "phase.tabs",
+   "note": "42.74 phase two starts shortly",
+   "in": 42.8,
+   "out": 49.4,
+   "labels": [
+    "Phase 01",
+    "Phase 02"
+   ]
+  },
+  {
+   "type": "phase.select",
+   "note": "43.0 phase one, live now",
+   "at": 43.3,
+   "index": 0,
+   "title": "Write it down",
+   "body": "Dated, public, permanent from the moment you post it."
+  },
+  {
+   "type": "phase.select",
+   "note": "44.48 phase two starts shortly",
+   "at": 45.4,
+   "index": 1,
+   "title": "Make it real",
+   "body": "Daily logging and the tools to actually get there. Begins shortly."
+  },
+  {
+   "type": "path.arc",
+   "note": "47.0 the part that helps you actually get there",
+   "in": 46.7,
+   "out": 49.2,
+   "start": 46.9,
+   "end": 48.5
+  },
+  {
+   "type": "end.card",
+   "note": "48.88 the archive is live at / 50.2 www",
+   "in": 48.9,
+   "urlStart": 50.2,
+   "urlEnd": 52.9
+  }
+ ],
+ "captions": [
+  {
+   "s": 0.4,
+   "e": 4.1,
+   "size": 48,
+   "y": 250,
+   "l1": "Four months left in 2026"
+  },
+  {
+   "s": 4.3,
+   "e": 9.4,
+   "size": 42,
+   "y": 250,
+   "l1": "How many of the things you meant to do",
+   "l2": "have you actually done?"
+  },
+  {
+   "s": 11.8,
+   "e": 13.9,
+   "size": 46,
+   "y": 250,
+   "l1": "For most people: not many"
+  },
+  {
+   "s": 14.2,
+   "e": 19.9,
+   "size": 42,
+   "y": 250,
+   "l1": "It stayed in your head",
+   "l2": "and nothing in your head has a date on it"
+  },
+  {
+   "s": 21.0,
+   "e": 24.1,
+   "size": 46,
+   "y": 250,
+   "l1": "A plan you never wrote down",
+   "l2": "is not a plan. It is a mood."
+  },
+  {
+   "s": 24.6,
+   "e": 27.3,
+   "size": 46,
+   "y": 250,
+   "l1": "So get it out. Write it down."
+  },
+  {
+   "s": 27.7,
+   "e": 32.9,
+   "size": 42,
+   "y": 250,
+   "l1": "One day at a time",
+   "l2": "and log what you did"
+  },
+  {
+   "s": 36.7,
+   "e": 42.4,
+   "size": 44,
+   "y": 170,
+   "l1": "Phase one is live today",
+   "l2": "dated, public, permanent"
+  },
+  {
+   "s": 42.8,
+   "e": 48.4,
+   "size": 44,
+   "y": 170,
+   "l1": "Phase two starts shortly",
+   "l2": "the part that helps you get there"
+  },
+  {
+   "s": 48.9,
+   "e": 53.73,
+   "size": 104,
+   "y": 900,
+   "l1": "dmyor",
+   "l2": "www.dmyor.com",
+   "final": true
+  }
+ ]
+}

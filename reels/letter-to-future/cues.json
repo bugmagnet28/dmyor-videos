@@ -1,0 +1,889 @@
+{
+ "audio": "audio.mp3",
+ "duration": 47.46,
+ "text": "If you could send one message to yourself in five years, what would it say? Not advice, just the list. The things you actually want. Because right now, you are full of plans you have not started yet. And that does not last on its own. It fades quietly. You do not notice the day it goes. So write them down. Dated. Not a diary nobody opens. A list with a date on it. Then in 2031, you get to check. Did I do that one? Did I get close? Some you will have forgotten you ever wanted. One or two, you will have already passed without noticing. That is the fun part, the checking. So what would you write to your future self? Put it in the comments.",
+ "words": [
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 0.0,
+   "e": 0.16
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 0.16,
+   "e": 0.28
+  },
+  {
+   "w": "could",
+   "raw": "could",
+   "s": 0.28,
+   "e": 0.42
+  },
+  {
+   "w": "send",
+   "raw": "send",
+   "s": 0.42,
+   "e": 0.6
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 0.6,
+   "e": 0.86
+  },
+  {
+   "w": "message",
+   "raw": "message",
+   "s": 0.86,
+   "e": 1.14
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 1.14,
+   "e": 1.4
+  },
+  {
+   "w": "yourself",
+   "raw": "yourself",
+   "s": 1.4,
+   "e": 1.7
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 1.7,
+   "e": 1.92
+  },
+  {
+   "w": "five",
+   "raw": "five",
+   "s": 1.92,
+   "e": 2.3
+  },
+  {
+   "w": "years",
+   "raw": "years,",
+   "s": 2.3,
+   "e": 2.78
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 3.42,
+   "e": 3.58
+  },
+  {
+   "w": "would",
+   "raw": "would",
+   "s": 3.58,
+   "e": 3.7
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 3.7,
+   "e": 3.84
+  },
+  {
+   "w": "say",
+   "raw": "say?",
+   "s": 3.84,
+   "e": 4.08
+  },
+  {
+   "w": "not",
+   "raw": "Not",
+   "s": 4.82,
+   "e": 4.94
+  },
+  {
+   "w": "advice",
+   "raw": "advice,",
+   "s": 4.94,
+   "e": 5.36
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 5.86,
+   "e": 6.26
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 6.26,
+   "e": 6.44
+  },
+  {
+   "w": "list",
+   "raw": "list.",
+   "s": 6.44,
+   "e": 6.74
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 7.42,
+   "e": 7.56
+  },
+  {
+   "w": "things",
+   "raw": "things",
+   "s": 7.56,
+   "e": 7.76
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 7.76,
+   "e": 7.96
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 7.96,
+   "e": 8.42
+  },
+  {
+   "w": "want",
+   "raw": "want.",
+   "s": 8.42,
+   "e": 8.88
+  },
+  {
+   "w": "because",
+   "raw": "Because",
+   "s": 9.5,
+   "e": 9.82
+  },
+  {
+   "w": "right",
+   "raw": "right",
+   "s": 9.82,
+   "e": 10.04
+  },
+  {
+   "w": "now",
+   "raw": "now,",
+   "s": 10.04,
+   "e": 10.34
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 10.48,
+   "e": 10.64
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 10.64,
+   "e": 10.76
+  },
+  {
+   "w": "full",
+   "raw": "full",
+   "s": 10.76,
+   "e": 11.04
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 11.04,
+   "e": 11.24
+  },
+  {
+   "w": "plans",
+   "raw": "plans",
+   "s": 11.24,
+   "e": 11.58
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 11.58,
+   "e": 11.8
+  },
+  {
+   "w": "have",
+   "raw": "have",
+   "s": 11.8,
+   "e": 11.92
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 11.92,
+   "e": 12.2
+  },
+  {
+   "w": "started",
+   "raw": "started",
+   "s": 12.2,
+   "e": 12.66
+  },
+  {
+   "w": "yet",
+   "raw": "yet.",
+   "s": 12.66,
+   "e": 13.02
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 13.6,
+   "e": 13.84
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 13.84,
+   "e": 14.02
+  },
+  {
+   "w": "does",
+   "raw": "does",
+   "s": 14.02,
+   "e": 14.2
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 14.2,
+   "e": 14.52
+  },
+  {
+   "w": "last",
+   "raw": "last",
+   "s": 14.52,
+   "e": 14.82
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 14.82,
+   "e": 15.04
+  },
+  {
+   "w": "its",
+   "raw": "its",
+   "s": 15.04,
+   "e": 15.2
+  },
+  {
+   "w": "own",
+   "raw": "own.",
+   "s": 15.2,
+   "e": 15.52
+  },
+  {
+   "w": "it",
+   "raw": "It",
+   "s": 16.12,
+   "e": 16.34
+  },
+  {
+   "w": "fades",
+   "raw": "fades",
+   "s": 16.34,
+   "e": 16.74
+  },
+  {
+   "w": "quietly",
+   "raw": "quietly.",
+   "s": 16.74,
+   "e": 17.34
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 17.98,
+   "e": 18.22
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 18.22,
+   "e": 18.34
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 18.34,
+   "e": 18.54
+  },
+  {
+   "w": "notice",
+   "raw": "notice",
+   "s": 18.54,
+   "e": 18.86
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 18.86,
+   "e": 19.1
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 19.1,
+   "e": 19.26
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 19.26,
+   "e": 19.42
+  },
+  {
+   "w": "goes",
+   "raw": "goes.",
+   "s": 19.42,
+   "e": 19.76
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 20.48,
+   "e": 20.78
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 20.78,
+   "e": 21.08
+  },
+  {
+   "w": "them",
+   "raw": "them",
+   "s": 21.08,
+   "e": 21.32
+  },
+  {
+   "w": "down",
+   "raw": "down.",
+   "s": 21.32,
+   "e": 21.72
+  },
+  {
+   "w": "dated",
+   "raw": "Dated.",
+   "s": 22.52,
+   "e": 22.68
+  },
+  {
+   "w": "not",
+   "raw": "Not",
+   "s": 23.4,
+   "e": 23.66
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 23.66,
+   "e": 23.82
+  },
+  {
+   "w": "diary",
+   "raw": "diary",
+   "s": 23.82,
+   "e": 24.14
+  },
+  {
+   "w": "nobody",
+   "raw": "nobody",
+   "s": 24.14,
+   "e": 24.46
+  },
+  {
+   "w": "opens",
+   "raw": "opens.",
+   "s": 24.46,
+   "e": 24.9
+  },
+  {
+   "w": "a",
+   "raw": "A",
+   "s": 25.6,
+   "e": 25.8
+  },
+  {
+   "w": "list",
+   "raw": "list",
+   "s": 25.8,
+   "e": 26.04
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 26.04,
+   "e": 26.32
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 26.32,
+   "e": 26.46
+  },
+  {
+   "w": "date",
+   "raw": "date",
+   "s": 26.46,
+   "e": 26.64
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 26.64,
+   "e": 26.82
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 26.82,
+   "e": 27.08
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 27.66,
+   "e": 28.14
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 28.14,
+   "e": 28.32
+  },
+  {
+   "w": "2031",
+   "raw": "2031,",
+   "s": 28.32,
+   "e": 29.0
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 29.0,
+   "e": 29.34
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 29.34,
+   "e": 29.48
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 29.48,
+   "e": 29.64
+  },
+  {
+   "w": "check",
+   "raw": "check.",
+   "s": 29.64,
+   "e": 29.98
+  },
+  {
+   "w": "did",
+   "raw": "Did",
+   "s": 30.94,
+   "e": 31.0
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 31.0,
+   "e": 31.12
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 31.12,
+   "e": 31.26
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 31.26,
+   "e": 31.5
+  },
+  {
+   "w": "one",
+   "raw": "one?",
+   "s": 31.5,
+   "e": 31.76
+  },
+  {
+   "w": "did",
+   "raw": "Did",
+   "s": 32.46,
+   "e": 32.58
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 32.58,
+   "e": 32.7
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 32.7,
+   "e": 32.84
+  },
+  {
+   "w": "close",
+   "raw": "close?",
+   "s": 32.84,
+   "e": 33.2
+  },
+  {
+   "w": "some",
+   "raw": "Some",
+   "s": 34.08,
+   "e": 34.38
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 34.38,
+   "e": 34.56
+  },
+  {
+   "w": "will",
+   "raw": "will",
+   "s": 34.56,
+   "e": 34.7
+  },
+  {
+   "w": "have",
+   "raw": "have",
+   "s": 34.7,
+   "e": 34.82
+  },
+  {
+   "w": "forgotten",
+   "raw": "forgotten",
+   "s": 34.82,
+   "e": 35.24
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 35.24,
+   "e": 35.5
+  },
+  {
+   "w": "ever",
+   "raw": "ever",
+   "s": 35.5,
+   "e": 35.72
+  },
+  {
+   "w": "wanted",
+   "raw": "wanted.",
+   "s": 35.72,
+   "e": 36.26
+  },
+  {
+   "w": "one",
+   "raw": "One",
+   "s": 36.76,
+   "e": 37.08
+  },
+  {
+   "w": "or",
+   "raw": "or",
+   "s": 37.08,
+   "e": 37.22
+  },
+  {
+   "w": "two",
+   "raw": "two,",
+   "s": 37.22,
+   "e": 37.56
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 37.88,
+   "e": 37.9
+  },
+  {
+   "w": "will",
+   "raw": "will",
+   "s": 37.9,
+   "e": 38.02
+  },
+  {
+   "w": "have",
+   "raw": "have",
+   "s": 38.02,
+   "e": 38.18
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 38.18,
+   "e": 38.6
+  },
+  {
+   "w": "passed",
+   "raw": "passed",
+   "s": 38.6,
+   "e": 39.14
+  },
+  {
+   "w": "without",
+   "raw": "without",
+   "s": 39.14,
+   "e": 39.64
+  },
+  {
+   "w": "noticing",
+   "raw": "noticing.",
+   "s": 39.64,
+   "e": 40.18
+  },
+  {
+   "w": "that",
+   "raw": "That",
+   "s": 40.78,
+   "e": 41.06
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 41.06,
+   "e": 41.22
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 41.22,
+   "e": 41.4
+  },
+  {
+   "w": "fun",
+   "raw": "fun",
+   "s": 41.4,
+   "e": 41.6
+  },
+  {
+   "w": "part",
+   "raw": "part,",
+   "s": 41.6,
+   "e": 41.96
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 42.42,
+   "e": 42.58
+  },
+  {
+   "w": "checking",
+   "raw": "checking.",
+   "s": 42.58,
+   "e": 42.86
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 43.62,
+   "e": 43.7
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 43.7,
+   "e": 43.84
+  },
+  {
+   "w": "would",
+   "raw": "would",
+   "s": 43.84,
+   "e": 43.98
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 43.98,
+   "e": 44.12
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 44.12,
+   "e": 44.32
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 44.32,
+   "e": 44.5
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 44.5,
+   "e": 44.62
+  },
+  {
+   "w": "future",
+   "raw": "future",
+   "s": 44.62,
+   "e": 44.88
+  },
+  {
+   "w": "self",
+   "raw": "self?",
+   "s": 44.88,
+   "e": 45.28
+  },
+  {
+   "w": "put",
+   "raw": "Put",
+   "s": 45.96,
+   "e": 46.14
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 46.14,
+   "e": 46.28
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 46.28,
+   "e": 46.4
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 46.4,
+   "e": 46.54
+  },
+  {
+   "w": "comments",
+   "raw": "comments.",
+   "s": 46.54,
+   "e": 46.92
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 2.78,
+   "text": "If you could send one message to yourself in five years,"
+  },
+  {
+   "s": 3.42,
+   "e": 4.08,
+   "text": "what would it say?"
+  },
+  {
+   "s": 4.82,
+   "e": 6.74,
+   "text": "Not advice, just the list."
+  },
+  {
+   "s": 7.42,
+   "e": 8.88,
+   "text": "The things you actually want."
+  },
+  {
+   "s": 9.5,
+   "e": 11.58,
+   "text": "Because right now, you are full of plans"
+  },
+  {
+   "s": 11.58,
+   "e": 13.02,
+   "text": "you have not started yet."
+  },
+  {
+   "s": 13.6,
+   "e": 15.52,
+   "text": "And that does not last on its own."
+  },
+  {
+   "s": 16.12,
+   "e": 17.34,
+   "text": "It fades quietly."
+  },
+  {
+   "s": 17.98,
+   "e": 19.76,
+   "text": "You do not notice the day it goes."
+  },
+  {
+   "s": 20.48,
+   "e": 21.72,
+   "text": "So write them down."
+  },
+  {
+   "s": 22.52,
+   "e": 22.68,
+   "text": "Dated."
+  },
+  {
+   "s": 23.4,
+   "e": 24.9,
+   "text": "Not a diary nobody opens."
+  },
+  {
+   "s": 25.6,
+   "e": 27.08,
+   "text": "A list with a date on it."
+  },
+  {
+   "s": 27.66,
+   "e": 29.98,
+   "text": "Then in 2031, you get to check."
+  },
+  {
+   "s": 30.94,
+   "e": 31.76,
+   "text": "Did I do that one?"
+  },
+  {
+   "s": 32.46,
+   "e": 33.2,
+   "text": "Did I get close?"
+  },
+  {
+   "s": 34.08,
+   "e": 36.26,
+   "text": "Some you will have forgotten you ever wanted."
+  },
+  {
+   "s": 36.76,
+   "e": 40.18,
+   "text": "One or two, you will have already passed without noticing."
+  },
+  {
+   "s": 40.78,
+   "e": 42.86,
+   "text": "That is the fun part, the checking."
+  },
+  {
+   "s": 43.62,
+   "e": 45.28,
+   "text": "So what would you write to your future self?"
+  },
+  {
+   "s": 45.96,
+   "e": 46.92,
+   "text": "Put it in the comments."
+  }
+ ],
+ "wps": 2.72
+}

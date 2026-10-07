@@ -1,0 +1,8 @@
+{
+ "slug": "days-gone",
+ "hint": "one box becomes a week becomes a month becomes the year, filling as it goes, remaining days left empty. no VO, sound design only",
+ "created": "2026-09-08T21:49:01",
+ "hook_pattern": "Countdown",
+ "target_seconds": null,
+ "status": "drafting"
+}

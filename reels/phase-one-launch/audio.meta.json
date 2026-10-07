@@ -1,0 +1,12 @@
+{
+ "source": "narration.mp3",
+ "duration": 100.15,
+ "provider": "elevenlabs",
+ "voice": "George - Warm, Captivating Storyteller",
+ "model": "eleven_multilingual_v2",
+ "stability": 50.0,
+ "similarity": 75.0,
+ "style": 32.0,
+ "speed": 95.0,
+ "logged": "2026-09-02T22:27:33"
+}

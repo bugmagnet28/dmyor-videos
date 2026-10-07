@@ -1,0 +1,443 @@
+{
+ "total": 61.52,
+ "engine": "motion",
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "bg": [
+  {
+   "t": 0.0,
+   "c": "#101A34",
+   "dir": "down",
+   "dur": 0.45
+  },
+  {
+   "t": 7.2,
+   "c": "#26131F",
+   "dir": "down",
+   "dur": 0.45
+  },
+  {
+   "t": 14.0,
+   "c": "#1A1020",
+   "dir": "down",
+   "dur": 0.45
+  },
+  {
+   "t": 18.3,
+   "c": "#14121C",
+   "dir": "left",
+   "dur": 0.45
+  },
+  {
+   "t": 22.4,
+   "c": "#111A38",
+   "dir": "down",
+   "dur": 0.45
+  },
+  {
+   "t": 30.7,
+   "c": "#0E2A26",
+   "dir": "down",
+   "dur": 0.45
+  },
+  {
+   "t": 39.4,
+   "c": "#0E2338",
+   "dir": "right",
+   "dur": 0.45
+  },
+  {
+   "t": 49.2,
+   "c": "#101C34",
+   "dir": "down",
+   "dur": 0.45
+  },
+  {
+   "t": 54.9,
+   "c": "#0F2A26",
+   "dir": "down",
+   "dur": 0.45
+  }
+ ],
+ "camera": [
+  {
+   "t": 0,
+   "s": 1.03,
+   "y": 6
+  },
+  {
+   "t": 7.0,
+   "s": 1.0,
+   "y": 0
+  },
+  {
+   "t": 17.8,
+   "s": 0.96,
+   "y": -12
+  },
+  {
+   "t": 22.4,
+   "s": 1.0,
+   "y": 0
+  },
+  {
+   "t": 30.8,
+   "s": 1.06,
+   "y": 10
+  },
+  {
+   "t": 34.0,
+   "s": 1.0,
+   "y": 0
+  },
+  {
+   "t": 44.0,
+   "s": 1.03,
+   "y": 8
+  },
+  {
+   "t": 54.0,
+   "s": 0.97,
+   "y": -10
+  },
+  {
+   "t": 61.52,
+   "s": 1.0,
+   "y": 0
+  }
+ ],
+ "scenes": [
+  {
+   "type": "ambient.field",
+   "note": "runs behind everything; density and colour follow the beats",
+   "in": 0.0,
+   "out": 61.52,
+   "count": 150,
+   "rings": [
+    {
+     "r": 380
+    },
+    {
+     "r": 650
+    },
+    {
+     "r": 960
+    },
+    {
+     "r": 1320
+    }
+   ],
+   "phases": [
+    {
+     "t": 0.0,
+     "c": "blue",
+     "density": 0.55,
+     "amp": 0.7,
+     "drift": 0.5
+    },
+    {
+     "t": 7.2,
+     "c": "coral",
+     "density": 0.95,
+     "amp": 1.5,
+     "drift": 1.7
+    },
+    {
+     "t": 14.0,
+     "c": "violet",
+     "density": 0.7,
+     "amp": 1.1,
+     "drift": 1.3
+    },
+    {
+     "t": 18.4,
+     "c": "dim",
+     "density": 0.28,
+     "amp": 0.5,
+     "drift": 0.5
+    },
+    {
+     "t": 22.5,
+     "c": "blue",
+     "density": 0.45,
+     "amp": 0.8,
+     "drift": 0.8
+    },
+    {
+     "t": 30.8,
+     "c": "green",
+     "density": 1.15,
+     "amp": 1.7,
+     "drift": 1.5
+    },
+    {
+     "t": 34.5,
+     "c": "green",
+     "density": 0.7,
+     "amp": 0.9,
+     "drift": 0.9
+    },
+    {
+     "t": 43.6,
+     "c": "cyan",
+     "density": 0.8,
+     "amp": 1.0,
+     "drift": 1.1
+    },
+    {
+     "t": 55.0,
+     "c": "green",
+     "density": 1.05,
+     "amp": 1.3,
+     "drift": 1.4
+    },
+    {
+     "t": 61.52,
+     "c": "green",
+     "density": 0.9,
+     "amp": 1.1,
+     "drift": 1.2
+    }
+   ],
+   "bursts": [
+    {
+     "t": 10.08,
+     "power": 0.35,
+     "dur": 1.0
+    },
+    {
+     "t": 30.8,
+     "power": 1.0,
+     "dur": 1.8
+    },
+    {
+     "t": 55.02,
+     "power": 0.45,
+     "dur": 1.4
+    }
+   ],
+   "flashes": [
+    {
+     "t": 30.8,
+     "power": 0.3,
+     "dur": 0.75,
+     "c": "green"
+    },
+    {
+     "t": 59.5,
+     "power": 0.2,
+     "dur": 0.6,
+     "c": "cyan"
+    }
+   ]
+  },
+  {
+   "type": "card.pressure",
+   "note": "0.00 you remember the moment | 10.08 work | 11.40 money | 11.94 tiredness | 14.16 became a thing you used to talk about | 18.40 they just lose track of them | 30.80 NOT A CHANCE",
+   "in": 0.25,
+   "out": 33.6,
+   "y": 520,
+   "text": "run a successful business",
+   "date": "14 SEP 2026",
+   "color": "green",
+   "weights": [
+    {
+     "label": "work",
+     "at": 10.08,
+     "color": "coral"
+    },
+    {
+     "label": "money",
+     "at": 11.3,
+     "color": "amber"
+    },
+    {
+     "label": "tiredness",
+     "at": 11.94,
+     "color": "violet"
+    }
+   ],
+   "dimAt": 14.16,
+   "dimEnd": 17.84,
+   "dimTo": 0.15,
+   "driftAt": 18.4,
+   "snapAt": 30.8
+  },
+  {
+   "type": "kinetic.title",
+   "note": "22.54 picture yourself ten years from now, looking back at today",
+   "in": 22.5,
+   "out": 27.9,
+   "y": 340,
+   "size": 56,
+   "stagger": 0.1,
+   "demi": true,
+   "sub": true,
+   "text": "2036, looking back at today",
+   "accentWords": [
+    "2036"
+   ]
+  },
+  {
+   "type": "kinetic.title",
+   "note": "28.48 is that person hoping you let it go?",
+   "in": 28.4,
+   "out": 30.6,
+   "y": 340,
+   "size": 54,
+   "stagger": 0.1,
+   "demi": true,
+   "sub": true,
+   "text": "is that person hoping you let it go?",
+   "accentWords": []
+  },
+  {
+   "type": "kinetic.title",
+   "note": "30.80 not a chance",
+   "in": 30.75,
+   "out": 33.6,
+   "y": 340,
+   "size": 82,
+   "stagger": 0.08,
+   "demi": true,
+   "sfxWords": true,
+   "text": "Not a chance.",
+   "accentWords": [
+    "chance"
+   ]
+  },
+  {
+   "type": "plan.empty",
+   "note": "33.92 write it down for them | 37.50 one line with today's date on it",
+   "in": 33.9,
+   "out": 39.3,
+   "y": 470,
+   "stampAt": 37.6,
+   "title": "run a successful business",
+   "stamp": "14 SEP 2026",
+   "stampColor": "green",
+   "stampBorder": true,
+   "color": "cyan"
+  },
+  {
+   "type": "phase.marks",
+   "note": "39.54 that is what deemyor is | 41.76 phase one is live",
+   "in": 39.6,
+   "out": 43.2,
+   "y": 500,
+   "capAt": 41.8,
+   "caption": "dmyor.com",
+   "items": [
+    {
+     "name": "phase one",
+     "text": "write it down",
+     "live": true,
+     "color": "green",
+     "at": 39.9
+    },
+    {
+     "name": "phase two",
+     "text": "the tooling",
+     "live": false,
+     "at": 40.4
+    }
+   ]
+  },
+  {
+   "type": "archive.scroll",
+   "note": "43.70 it stays there dated in public | 49.38 it will not do it for you | 55.02 full of people who kept their word",
+   "in": 43.6,
+   "out": 59.0,
+   "y": 330,
+   "fadeTo": "rgba(10,16,30,.92)",
+   "scroll": {
+    "at": 44.2,
+    "end": 58.8,
+    "from": 0,
+    "to": -560
+   },
+   "rows": [
+    {
+     "date": "14 SEP 2026",
+     "text": "run a successful business",
+     "mine": true
+    },
+    {
+     "date": "14 SEP 2026",
+     "text": "finish the degree I walked away from"
+    },
+    {
+     "date": "13 SEP 2026",
+     "text": "get my mother out of that job"
+    },
+    {
+     "date": "13 SEP 2026",
+     "text": "run my own studio"
+    },
+    {
+     "date": "12 SEP 2026",
+     "text": "learn to fly"
+    },
+    {
+     "date": "12 SEP 2026",
+     "text": "publish the book"
+    },
+    {
+     "date": "11 SEP 2026",
+     "text": "move to another country"
+    },
+    {
+     "date": "11 SEP 2026",
+     "text": "get my mother off her feet"
+    },
+    {
+     "date": "10 SEP 2026",
+     "text": "pay off my parents' debt"
+    },
+    {
+     "date": "10 SEP 2026",
+     "text": "get properly fit, for good"
+    },
+    {
+     "date": "09 SEP 2026",
+     "text": "buy the land"
+    },
+    {
+     "date": "09 SEP 2026",
+     "text": "make something people keep"
+    }
+   ]
+  },
+  {
+   "type": "kinetic.title",
+   "note": "49.38 it will not do it for you | 51.66 never lose the receipt",
+   "in": 49.3,
+   "out": 54.7,
+   "y": 1010,
+   "size": 46,
+   "stagger": 0.09,
+   "demi": true,
+   "sub": true,
+   "text": "it will not do it for you",
+   "accentWords": []
+  },
+  {
+   "type": "kinetic.title",
+   "note": "59.5 put yours in it, today",
+   "in": 59.5,
+   "out": 61.52,
+   "y": 700,
+   "size": 78,
+   "stagger": 0.09,
+   "demi": true,
+   "sfxWords": true,
+   "sfxChime": true,
+   "text": "Put yours in it. dmyor.com",
+   "accentWords": [
+    "dmyor.com"
+   ]
+  }
+ ]
+}

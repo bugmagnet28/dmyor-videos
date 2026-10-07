@@ -1,0 +1,935 @@
+{
+ "audio": "audio.mp3",
+ "duration": 47.67,
+ "text": "Is there a way to tell your future self what your dreams and plans actually were? Because most of it gets forgotten. Not the big ones, the specifics, what you wanted when you wanted it by and why it mattered at the time. That is what Demia is for. You write down what you intend to do. It gets today's date. It goes into a public archive. It stays there. Phase one is live now. That is the writing it down part. It will not remind you. It will not track your progress. That is phase two and it is not built yet. What phase one gives you is one thing. In five years, there is a dated record of what you said in your own words that you can go back and check. Demia.com. Write one down today.",
+ "words": [
+  {
+   "w": "is",
+   "raw": "Is",
+   "s": 0.0,
+   "e": 0.18
+  },
+  {
+   "w": "there",
+   "raw": "there",
+   "s": 0.18,
+   "e": 0.32
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 0.32,
+   "e": 0.48
+  },
+  {
+   "w": "way",
+   "raw": "way",
+   "s": 0.48,
+   "e": 0.6
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 0.6,
+   "e": 0.82
+  },
+  {
+   "w": "tell",
+   "raw": "tell",
+   "s": 0.82,
+   "e": 1.0
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 1.0,
+   "e": 1.2
+  },
+  {
+   "w": "future",
+   "raw": "future",
+   "s": 1.2,
+   "e": 1.54
+  },
+  {
+   "w": "self",
+   "raw": "self",
+   "s": 1.54,
+   "e": 1.96
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 1.96,
+   "e": 2.74
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 2.74,
+   "e": 2.98
+  },
+  {
+   "w": "dreams",
+   "raw": "dreams",
+   "s": 2.98,
+   "e": 3.32
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 3.32,
+   "e": 3.58
+  },
+  {
+   "w": "plans",
+   "raw": "plans",
+   "s": 3.58,
+   "e": 3.9
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 3.9,
+   "e": 4.52
+  },
+  {
+   "w": "were",
+   "raw": "were?",
+   "s": 4.52,
+   "e": 5.04
+  },
+  {
+   "w": "because",
+   "raw": "Because",
+   "s": 5.62,
+   "e": 5.82
+  },
+  {
+   "w": "most",
+   "raw": "most",
+   "s": 5.82,
+   "e": 6.04
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 6.04,
+   "e": 6.24
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 6.24,
+   "e": 6.38
+  },
+  {
+   "w": "gets",
+   "raw": "gets",
+   "s": 6.38,
+   "e": 6.56
+  },
+  {
+   "w": "forgotten",
+   "raw": "forgotten.",
+   "s": 6.56,
+   "e": 7.0
+  },
+  {
+   "w": "not",
+   "raw": "Not",
+   "s": 7.68,
+   "e": 7.86
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 7.86,
+   "e": 8.0
+  },
+  {
+   "w": "big",
+   "raw": "big",
+   "s": 8.0,
+   "e": 8.12
+  },
+  {
+   "w": "ones",
+   "raw": "ones,",
+   "s": 8.12,
+   "e": 8.38
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 8.8,
+   "e": 9.0
+  },
+  {
+   "w": "specifics",
+   "raw": "specifics,",
+   "s": 9.0,
+   "e": 9.42
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 9.94,
+   "e": 10.26
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 10.26,
+   "e": 10.38
+  },
+  {
+   "w": "wanted",
+   "raw": "wanted",
+   "s": 10.38,
+   "e": 10.72
+  },
+  {
+   "w": "when",
+   "raw": "when",
+   "s": 10.72,
+   "e": 11.12
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 11.12,
+   "e": 11.24
+  },
+  {
+   "w": "wanted",
+   "raw": "wanted",
+   "s": 11.24,
+   "e": 11.54
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 11.54,
+   "e": 11.74
+  },
+  {
+   "w": "by",
+   "raw": "by",
+   "s": 11.74,
+   "e": 12.0
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 12.0,
+   "e": 12.64
+  },
+  {
+   "w": "why",
+   "raw": "why",
+   "s": 12.64,
+   "e": 12.96
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 12.96,
+   "e": 13.24
+  },
+  {
+   "w": "mattered",
+   "raw": "mattered",
+   "s": 13.24,
+   "e": 13.56
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 13.56,
+   "e": 13.76
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 13.76,
+   "e": 13.88
+  },
+  {
+   "w": "time",
+   "raw": "time.",
+   "s": 13.88,
+   "e": 14.2
+  },
+  {
+   "w": "that",
+   "raw": "That",
+   "s": 14.84,
+   "e": 15.12
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 15.12,
+   "e": 15.58
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 15.58,
+   "e": 15.82
+  },
+  {
+   "w": "demia",
+   "raw": "Demia",
+   "s": 15.82,
+   "e": 16.24
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 16.24,
+   "e": 16.44
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 16.44,
+   "e": 16.74
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 17.3,
+   "e": 17.52
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 17.52,
+   "e": 17.7
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 17.7,
+   "e": 18.02
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 18.02,
+   "e": 18.48
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 18.48,
+   "e": 18.64
+  },
+  {
+   "w": "intend",
+   "raw": "intend",
+   "s": 18.64,
+   "e": 18.9
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 18.9,
+   "e": 19.12
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 19.12,
+   "e": 19.52
+  },
+  {
+   "w": "it",
+   "raw": "It",
+   "s": 19.82,
+   "e": 20.06
+  },
+  {
+   "w": "gets",
+   "raw": "gets",
+   "s": 20.06,
+   "e": 20.28
+  },
+  {
+   "w": "todays",
+   "raw": "today's",
+   "s": 20.28,
+   "e": 20.76
+  },
+  {
+   "w": "date",
+   "raw": "date.",
+   "s": 20.76,
+   "e": 21.04
+  },
+  {
+   "w": "it",
+   "raw": "It",
+   "s": 21.48,
+   "e": 21.72
+  },
+  {
+   "w": "goes",
+   "raw": "goes",
+   "s": 21.72,
+   "e": 21.96
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 21.96,
+   "e": 22.26
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 22.26,
+   "e": 22.46
+  },
+  {
+   "w": "public",
+   "raw": "public",
+   "s": 22.46,
+   "e": 22.7
+  },
+  {
+   "w": "archive",
+   "raw": "archive.",
+   "s": 22.7,
+   "e": 23.28
+  },
+  {
+   "w": "it",
+   "raw": "It",
+   "s": 23.56,
+   "e": 23.62
+  },
+  {
+   "w": "stays",
+   "raw": "stays",
+   "s": 23.62,
+   "e": 23.88
+  },
+  {
+   "w": "there",
+   "raw": "there.",
+   "s": 23.88,
+   "e": 24.34
+  },
+  {
+   "w": "phase",
+   "raw": "Phase",
+   "s": 25.02,
+   "e": 25.02
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 25.02,
+   "e": 25.26
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 25.26,
+   "e": 25.46
+  },
+  {
+   "w": "live",
+   "raw": "live",
+   "s": 25.46,
+   "e": 25.76
+  },
+  {
+   "w": "now",
+   "raw": "now.",
+   "s": 25.76,
+   "e": 26.12
+  },
+  {
+   "w": "that",
+   "raw": "That",
+   "s": 26.52,
+   "e": 26.78
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 26.78,
+   "e": 27.04
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 27.04,
+   "e": 27.2
+  },
+  {
+   "w": "writing",
+   "raw": "writing",
+   "s": 27.2,
+   "e": 27.48
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 27.48,
+   "e": 27.68
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 27.68,
+   "e": 27.92
+  },
+  {
+   "w": "part",
+   "raw": "part.",
+   "s": 27.92,
+   "e": 28.24
+  },
+  {
+   "w": "it",
+   "raw": "It",
+   "s": 28.66,
+   "e": 28.92
+  },
+  {
+   "w": "will",
+   "raw": "will",
+   "s": 28.92,
+   "e": 29.02
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 29.02,
+   "e": 29.18
+  },
+  {
+   "w": "remind",
+   "raw": "remind",
+   "s": 29.18,
+   "e": 29.48
+  },
+  {
+   "w": "you",
+   "raw": "you.",
+   "s": 29.48,
+   "e": 29.84
+  },
+  {
+   "w": "it",
+   "raw": "It",
+   "s": 30.4,
+   "e": 30.4
+  },
+  {
+   "w": "will",
+   "raw": "will",
+   "s": 30.4,
+   "e": 30.5
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 30.5,
+   "e": 30.68
+  },
+  {
+   "w": "track",
+   "raw": "track",
+   "s": 30.68,
+   "e": 30.94
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 30.94,
+   "e": 31.16
+  },
+  {
+   "w": "progress",
+   "raw": "progress.",
+   "s": 31.16,
+   "e": 31.6
+  },
+  {
+   "w": "that",
+   "raw": "That",
+   "s": 32.1,
+   "e": 32.1
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 32.1,
+   "e": 32.66
+  },
+  {
+   "w": "phase",
+   "raw": "phase",
+   "s": 32.66,
+   "e": 32.86
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 32.86,
+   "e": 33.22
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 33.22,
+   "e": 34.04
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 34.04,
+   "e": 34.14
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 34.14,
+   "e": 34.28
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 34.28,
+   "e": 34.46
+  },
+  {
+   "w": "built",
+   "raw": "built",
+   "s": 34.46,
+   "e": 34.68
+  },
+  {
+   "w": "yet",
+   "raw": "yet.",
+   "s": 34.68,
+   "e": 34.94
+  },
+  {
+   "w": "what",
+   "raw": "What",
+   "s": 35.68,
+   "e": 35.76
+  },
+  {
+   "w": "phase",
+   "raw": "phase",
+   "s": 35.76,
+   "e": 36.04
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 36.04,
+   "e": 36.3
+  },
+  {
+   "w": "gives",
+   "raw": "gives",
+   "s": 36.3,
+   "e": 36.52
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 36.52,
+   "e": 36.78
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 36.78,
+   "e": 36.98
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 36.98,
+   "e": 37.34
+  },
+  {
+   "w": "thing",
+   "raw": "thing.",
+   "s": 37.34,
+   "e": 37.74
+  },
+  {
+   "w": "in",
+   "raw": "In",
+   "s": 38.34,
+   "e": 38.48
+  },
+  {
+   "w": "five",
+   "raw": "five",
+   "s": 38.48,
+   "e": 38.7
+  },
+  {
+   "w": "years",
+   "raw": "years,",
+   "s": 38.7,
+   "e": 38.98
+  },
+  {
+   "w": "there",
+   "raw": "there",
+   "s": 38.98,
+   "e": 39.2
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 39.2,
+   "e": 39.3
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 39.3,
+   "e": 39.46
+  },
+  {
+   "w": "dated",
+   "raw": "dated",
+   "s": 39.46,
+   "e": 39.84
+  },
+  {
+   "w": "record",
+   "raw": "record",
+   "s": 39.84,
+   "e": 40.22
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 40.22,
+   "e": 40.48
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 40.48,
+   "e": 40.66
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 40.66,
+   "e": 40.82
+  },
+  {
+   "w": "said",
+   "raw": "said",
+   "s": 40.82,
+   "e": 41.08
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 41.08,
+   "e": 41.4
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 41.4,
+   "e": 41.54
+  },
+  {
+   "w": "own",
+   "raw": "own",
+   "s": 41.54,
+   "e": 41.72
+  },
+  {
+   "w": "words",
+   "raw": "words",
+   "s": 41.72,
+   "e": 42.04
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 42.04,
+   "e": 42.3
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 42.3,
+   "e": 42.44
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 42.44,
+   "e": 42.6
+  },
+  {
+   "w": "go",
+   "raw": "go",
+   "s": 42.6,
+   "e": 42.8
+  },
+  {
+   "w": "back",
+   "raw": "back",
+   "s": 42.8,
+   "e": 43.06
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 43.06,
+   "e": 43.4
+  },
+  {
+   "w": "check",
+   "raw": "check.",
+   "s": 43.4,
+   "e": 43.76
+  },
+  {
+   "w": "demia",
+   "raw": "Demia",
+   "s": 44.54,
+   "e": 44.76
+  },
+  {
+   "w": "com",
+   "raw": ".com.",
+   "s": 44.76,
+   "e": 45.52
+  },
+  {
+   "w": "write",
+   "raw": "Write",
+   "s": 46.12,
+   "e": 46.2
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 46.2,
+   "e": 46.44
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 46.44,
+   "e": 46.7
+  },
+  {
+   "w": "today",
+   "raw": "today.",
+   "s": 46.7,
+   "e": 47.24
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 5.04,
+   "text": "Is there a way to tell your future self what your dreams and plans actually were?"
+  },
+  {
+   "s": 5.62,
+   "e": 7.0,
+   "text": "Because most of it gets forgotten."
+  },
+  {
+   "s": 7.68,
+   "e": 14.2,
+   "text": "Not the big ones, the specifics, what you wanted when you wanted it by and why it mattered at the time."
+  },
+  {
+   "s": 14.84,
+   "e": 16.74,
+   "text": "That is what Demia is for."
+  },
+  {
+   "s": 17.3,
+   "e": 19.52,
+   "text": "You write down what you intend to do."
+  },
+  {
+   "s": 19.82,
+   "e": 21.04,
+   "text": "It gets today's date."
+  },
+  {
+   "s": 21.48,
+   "e": 23.28,
+   "text": "It goes into a public archive."
+  },
+  {
+   "s": 23.56,
+   "e": 24.34,
+   "text": "It stays there."
+  },
+  {
+   "s": 25.02,
+   "e": 26.12,
+   "text": "Phase one is live now."
+  },
+  {
+   "s": 26.52,
+   "e": 28.24,
+   "text": "That is the writing it down part."
+  },
+  {
+   "s": 28.76,
+   "e": 29.84,
+   "text": "It will not remind you."
+  },
+  {
+   "s": 30.4,
+   "e": 31.6,
+   "text": "It will not track your progress."
+  },
+  {
+   "s": 32.1,
+   "e": 34.94,
+   "text": "That is phase two and it is not built yet."
+  },
+  {
+   "s": 35.68,
+   "e": 37.74,
+   "text": "What phase one gives you is one thing."
+  },
+  {
+   "s": 38.34,
+   "e": 43.76,
+   "text": "In five years, there is a dated record of what you said in your own words that you can go back and check."
+  },
+  {
+   "s": 44.54,
+   "e": 45.52,
+   "text": "Demia.com."
+  },
+  {
+   "s": 46.12,
+   "e": 47.24,
+   "text": "Write one down today."
+  }
+ ],
+ "wps": 2.94
+}

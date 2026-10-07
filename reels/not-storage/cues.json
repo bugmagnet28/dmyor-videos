@@ -1,0 +1,1045 @@
+{
+ "audio": "audio.mp3",
+ "duration": 61.52,
+ "text": "You remember the exact moment you decided, where you were, what it felt like, you were so sure. Then life did what life does, work, money, tiredness you cannot explain. And the thing you were certain about became a thing you used to talk about. Nobody forgets their dreams, they just lose track of them. So picture yourself 10 years from now, looking back at today. Is that person hoping you let it go? Not a chance, they are willing you on. So write it down for them. One line, with today's date on it, that is what Demiore is. Phase one is live. You post what you are going to do, and it stays there, dated in public. It will not do it for you. It just makes sure you never lose the receipt. One day that archive is going to be full of people who kept their word, put yours in it, today.",
+ "words": [
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 0.0,
+   "e": 0.18
+  },
+  {
+   "w": "remember",
+   "raw": "remember",
+   "s": 0.18,
+   "e": 0.5
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 0.5,
+   "e": 0.78
+  },
+  {
+   "w": "exact",
+   "raw": "exact",
+   "s": 0.78,
+   "e": 1.22
+  },
+  {
+   "w": "moment",
+   "raw": "moment",
+   "s": 1.22,
+   "e": 1.62
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 1.62,
+   "e": 1.96
+  },
+  {
+   "w": "decided",
+   "raw": "decided,",
+   "s": 1.96,
+   "e": 2.54
+  },
+  {
+   "w": "where",
+   "raw": "where",
+   "s": 3.0,
+   "e": 3.24
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 3.24,
+   "e": 3.48
+  },
+  {
+   "w": "were",
+   "raw": "were,",
+   "s": 3.48,
+   "e": 3.9
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 4.22,
+   "e": 4.4
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 4.4,
+   "e": 4.54
+  },
+  {
+   "w": "felt",
+   "raw": "felt",
+   "s": 4.54,
+   "e": 4.84
+  },
+  {
+   "w": "like",
+   "raw": "like,",
+   "s": 4.84,
+   "e": 5.2
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 5.48,
+   "e": 5.64
+  },
+  {
+   "w": "were",
+   "raw": "were",
+   "s": 5.64,
+   "e": 5.8
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 5.8,
+   "e": 6.1
+  },
+  {
+   "w": "sure",
+   "raw": "sure.",
+   "s": 6.1,
+   "e": 6.62
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 7.3,
+   "e": 7.48
+  },
+  {
+   "w": "life",
+   "raw": "life",
+   "s": 7.48,
+   "e": 7.86
+  },
+  {
+   "w": "did",
+   "raw": "did",
+   "s": 7.86,
+   "e": 8.46
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 8.46,
+   "e": 8.7
+  },
+  {
+   "w": "life",
+   "raw": "life",
+   "s": 8.7,
+   "e": 9.0
+  },
+  {
+   "w": "does",
+   "raw": "does,",
+   "s": 9.0,
+   "e": 9.5
+  },
+  {
+   "w": "work",
+   "raw": "work,",
+   "s": 10.08,
+   "e": 10.46
+  },
+  {
+   "w": "money",
+   "raw": "money,",
+   "s": 11.4,
+   "e": 11.4
+  },
+  {
+   "w": "tiredness",
+   "raw": "tiredness",
+   "s": 11.94,
+   "e": 12.46
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 12.46,
+   "e": 12.64
+  },
+  {
+   "w": "cannot",
+   "raw": "cannot",
+   "s": 12.64,
+   "e": 12.92
+  },
+  {
+   "w": "explain",
+   "raw": "explain.",
+   "s": 12.92,
+   "e": 13.5
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 14.16,
+   "e": 14.28
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 14.28,
+   "e": 14.44
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 14.44,
+   "e": 14.62
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 14.62,
+   "e": 14.78
+  },
+  {
+   "w": "were",
+   "raw": "were",
+   "s": 14.78,
+   "e": 14.94
+  },
+  {
+   "w": "certain",
+   "raw": "certain",
+   "s": 14.94,
+   "e": 15.34
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 15.34,
+   "e": 15.72
+  },
+  {
+   "w": "became",
+   "raw": "became",
+   "s": 15.72,
+   "e": 16.08
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 16.08,
+   "e": 16.28
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 16.28,
+   "e": 16.48
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 16.48,
+   "e": 16.68
+  },
+  {
+   "w": "used",
+   "raw": "used",
+   "s": 16.68,
+   "e": 16.98
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 16.98,
+   "e": 17.2
+  },
+  {
+   "w": "talk",
+   "raw": "talk",
+   "s": 17.2,
+   "e": 17.44
+  },
+  {
+   "w": "about",
+   "raw": "about.",
+   "s": 17.44,
+   "e": 17.84
+  },
+  {
+   "w": "nobody",
+   "raw": "Nobody",
+   "s": 18.4,
+   "e": 18.74
+  },
+  {
+   "w": "forgets",
+   "raw": "forgets",
+   "s": 18.74,
+   "e": 19.26
+  },
+  {
+   "w": "their",
+   "raw": "their",
+   "s": 19.26,
+   "e": 19.5
+  },
+  {
+   "w": "dreams",
+   "raw": "dreams,",
+   "s": 19.5,
+   "e": 19.92
+  },
+  {
+   "w": "they",
+   "raw": "they",
+   "s": 20.28,
+   "e": 20.54
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 20.54,
+   "e": 20.78
+  },
+  {
+   "w": "lose",
+   "raw": "lose",
+   "s": 20.78,
+   "e": 21.06
+  },
+  {
+   "w": "track",
+   "raw": "track",
+   "s": 21.06,
+   "e": 21.42
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 21.42,
+   "e": 21.66
+  },
+  {
+   "w": "them",
+   "raw": "them.",
+   "s": 21.66,
+   "e": 21.94
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 22.54,
+   "e": 22.62
+  },
+  {
+   "w": "picture",
+   "raw": "picture",
+   "s": 22.62,
+   "e": 23.02
+  },
+  {
+   "w": "yourself",
+   "raw": "yourself",
+   "s": 23.02,
+   "e": 23.68
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 23.68,
+   "e": 24.38
+  },
+  {
+   "w": "years",
+   "raw": "years",
+   "s": 24.38,
+   "e": 24.82
+  },
+  {
+   "w": "from",
+   "raw": "from",
+   "s": 24.82,
+   "e": 25.12
+  },
+  {
+   "w": "now",
+   "raw": "now,",
+   "s": 25.12,
+   "e": 25.58
+  },
+  {
+   "w": "looking",
+   "raw": "looking",
+   "s": 25.84,
+   "e": 26.28
+  },
+  {
+   "w": "back",
+   "raw": "back",
+   "s": 26.28,
+   "e": 26.8
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 26.8,
+   "e": 27.26
+  },
+  {
+   "w": "today",
+   "raw": "today.",
+   "s": 27.26,
+   "e": 27.84
+  },
+  {
+   "w": "is",
+   "raw": "Is",
+   "s": 28.26,
+   "e": 28.58
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 28.58,
+   "e": 28.78
+  },
+  {
+   "w": "person",
+   "raw": "person",
+   "s": 28.78,
+   "e": 29.1
+  },
+  {
+   "w": "hoping",
+   "raw": "hoping",
+   "s": 29.1,
+   "e": 29.4
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 29.4,
+   "e": 29.68
+  },
+  {
+   "w": "let",
+   "raw": "let",
+   "s": 29.68,
+   "e": 29.86
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 29.86,
+   "e": 30.02
+  },
+  {
+   "w": "go",
+   "raw": "go?",
+   "s": 30.02,
+   "e": 30.3
+  },
+  {
+   "w": "not",
+   "raw": "Not",
+   "s": 30.8,
+   "e": 30.98
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 30.98,
+   "e": 31.18
+  },
+  {
+   "w": "chance",
+   "raw": "chance,",
+   "s": 31.18,
+   "e": 31.56
+  },
+  {
+   "w": "they",
+   "raw": "they",
+   "s": 31.94,
+   "e": 32.28
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 32.28,
+   "e": 32.46
+  },
+  {
+   "w": "willing",
+   "raw": "willing",
+   "s": 32.46,
+   "e": 32.8
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 32.8,
+   "e": 33.12
+  },
+  {
+   "w": "on",
+   "raw": "on.",
+   "s": 33.12,
+   "e": 33.48
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 33.92,
+   "e": 34.04
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 34.04,
+   "e": 34.62
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 34.62,
+   "e": 34.86
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 34.86,
+   "e": 35.14
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 35.14,
+   "e": 35.42
+  },
+  {
+   "w": "them",
+   "raw": "them.",
+   "s": 35.42,
+   "e": 35.78
+  },
+  {
+   "w": "one",
+   "raw": "One",
+   "s": 36.18,
+   "e": 36.52
+  },
+  {
+   "w": "line",
+   "raw": "line,",
+   "s": 36.52,
+   "e": 36.88
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 37.36,
+   "e": 37.5
+  },
+  {
+   "w": "todays",
+   "raw": "today's",
+   "s": 37.5,
+   "e": 38.3
+  },
+  {
+   "w": "date",
+   "raw": "date",
+   "s": 38.3,
+   "e": 38.64
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 38.64,
+   "e": 38.92
+  },
+  {
+   "w": "it",
+   "raw": "it,",
+   "s": 38.92,
+   "e": 39.26
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 39.54,
+   "e": 39.78
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 39.78,
+   "e": 40.2
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 40.2,
+   "e": 40.42
+  },
+  {
+   "w": "demiore",
+   "raw": "Demiore",
+   "s": 40.42,
+   "e": 40.98
+  },
+  {
+   "w": "is",
+   "raw": "is.",
+   "s": 40.98,
+   "e": 41.3
+  },
+  {
+   "w": "phase",
+   "raw": "Phase",
+   "s": 41.76,
+   "e": 41.9
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 41.9,
+   "e": 42.32
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 42.32,
+   "e": 42.62
+  },
+  {
+   "w": "live",
+   "raw": "live.",
+   "s": 42.62,
+   "e": 43.06
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 43.7,
+   "e": 43.9
+  },
+  {
+   "w": "post",
+   "raw": "post",
+   "s": 43.9,
+   "e": 44.26
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 44.26,
+   "e": 44.78
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 44.78,
+   "e": 45.0
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 45.0,
+   "e": 45.12
+  },
+  {
+   "w": "going",
+   "raw": "going",
+   "s": 45.12,
+   "e": 45.36
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 45.36,
+   "e": 45.6
+  },
+  {
+   "w": "do",
+   "raw": "do,",
+   "s": 45.6,
+   "e": 45.92
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 46.14,
+   "e": 46.38
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 46.38,
+   "e": 46.54
+  },
+  {
+   "w": "stays",
+   "raw": "stays",
+   "s": 46.54,
+   "e": 46.94
+  },
+  {
+   "w": "there",
+   "raw": "there,",
+   "s": 46.94,
+   "e": 47.4
+  },
+  {
+   "w": "dated",
+   "raw": "dated",
+   "s": 47.74,
+   "e": 48.02
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 48.02,
+   "e": 48.48
+  },
+  {
+   "w": "public",
+   "raw": "public.",
+   "s": 48.48,
+   "e": 48.8
+  },
+  {
+   "w": "it",
+   "raw": "It",
+   "s": 49.38,
+   "e": 49.58
+  },
+  {
+   "w": "will",
+   "raw": "will",
+   "s": 49.58,
+   "e": 49.84
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 49.84,
+   "e": 50.18
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 50.18,
+   "e": 50.5
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 50.5,
+   "e": 50.7
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 50.7,
+   "e": 50.96
+  },
+  {
+   "w": "you",
+   "raw": "you.",
+   "s": 50.96,
+   "e": 51.3
+  },
+  {
+   "w": "it",
+   "raw": "It",
+   "s": 51.66,
+   "e": 51.9
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 51.9,
+   "e": 52.12
+  },
+  {
+   "w": "makes",
+   "raw": "makes",
+   "s": 52.12,
+   "e": 52.38
+  },
+  {
+   "w": "sure",
+   "raw": "sure",
+   "s": 52.38,
+   "e": 52.72
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 52.72,
+   "e": 52.96
+  },
+  {
+   "w": "never",
+   "raw": "never",
+   "s": 52.96,
+   "e": 53.36
+  },
+  {
+   "w": "lose",
+   "raw": "lose",
+   "s": 53.36,
+   "e": 53.82
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 53.82,
+   "e": 54.06
+  },
+  {
+   "w": "receipt",
+   "raw": "receipt.",
+   "s": 54.06,
+   "e": 54.46
+  },
+  {
+   "w": "one",
+   "raw": "One",
+   "s": 55.02,
+   "e": 55.54
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 55.54,
+   "e": 55.8
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 55.8,
+   "e": 56.06
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 56.06,
+   "e": 56.56
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 56.56,
+   "e": 56.82
+  },
+  {
+   "w": "going",
+   "raw": "going",
+   "s": 56.82,
+   "e": 56.98
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 56.98,
+   "e": 57.12
+  },
+  {
+   "w": "be",
+   "raw": "be",
+   "s": 57.12,
+   "e": 57.22
+  },
+  {
+   "w": "full",
+   "raw": "full",
+   "s": 57.22,
+   "e": 57.56
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 57.56,
+   "e": 57.76
+  },
+  {
+   "w": "people",
+   "raw": "people",
+   "s": 57.76,
+   "e": 58.04
+  },
+  {
+   "w": "who",
+   "raw": "who",
+   "s": 58.04,
+   "e": 58.26
+  },
+  {
+   "w": "kept",
+   "raw": "kept",
+   "s": 58.26,
+   "e": 58.52
+  },
+  {
+   "w": "their",
+   "raw": "their",
+   "s": 58.52,
+   "e": 58.76
+  },
+  {
+   "w": "word",
+   "raw": "word,",
+   "s": 58.76,
+   "e": 59.14
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 59.4,
+   "e": 59.6
+  },
+  {
+   "w": "yours",
+   "raw": "yours",
+   "s": 59.6,
+   "e": 59.9
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 59.9,
+   "e": 60.16
+  },
+  {
+   "w": "it",
+   "raw": "it,",
+   "s": 60.16,
+   "e": 60.46
+  },
+  {
+   "w": "today",
+   "raw": "today.",
+   "s": 60.6,
+   "e": 60.94
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 2.54,
+   "text": "You remember the exact moment you decided,"
+  },
+  {
+   "s": 3.0,
+   "e": 6.62,
+   "text": "where you were, what it felt like, you were so sure."
+  },
+  {
+   "s": 7.3,
+   "e": 11.4,
+   "text": "Then life did what life does, work, money,"
+  },
+  {
+   "s": 11.94,
+   "e": 13.5,
+   "text": "tiredness you cannot explain."
+  },
+  {
+   "s": 14.16,
+   "e": 15.72,
+   "text": "And the thing you were certain about"
+  },
+  {
+   "s": 15.72,
+   "e": 17.84,
+   "text": "became a thing you used to talk about."
+  },
+  {
+   "s": 18.4,
+   "e": 21.94,
+   "text": "Nobody forgets their dreams, they just lose track of them."
+  },
+  {
+   "s": 22.54,
+   "e": 25.58,
+   "text": "So picture yourself 10 years from now,"
+  },
+  {
+   "s": 25.84,
+   "e": 27.84,
+   "text": "looking back at today."
+  },
+  {
+   "s": 28.48,
+   "e": 30.3,
+   "text": "Is that person hoping you let it go?"
+  },
+  {
+   "s": 30.8,
+   "e": 33.48,
+   "text": "Not a chance, they are willing you on."
+  },
+  {
+   "s": 33.92,
+   "e": 35.78,
+   "text": "So write it down for them."
+  },
+  {
+   "s": 36.18,
+   "e": 39.26,
+   "text": "One line, with today's date on it,"
+  },
+  {
+   "s": 39.54,
+   "e": 41.3,
+   "text": "that is what Demiore is."
+  },
+  {
+   "s": 41.76,
+   "e": 43.06,
+   "text": "Phase one is live."
+  },
+  {
+   "s": 43.7,
+   "e": 45.92,
+   "text": "You post what you are going to do,"
+  },
+  {
+   "s": 46.14,
+   "e": 48.8,
+   "text": "and it stays there, dated in public."
+  },
+  {
+   "s": 49.38,
+   "e": 51.3,
+   "text": "It will not do it for you."
+  },
+  {
+   "s": 51.66,
+   "e": 54.46,
+   "text": "It just makes sure you never lose the receipt."
+  },
+  {
+   "s": 55.02,
+   "e": 58.04,
+   "text": "One day that archive is going to be full of people"
+  },
+  {
+   "s": 58.04,
+   "e": 60.94,
+   "text": "who kept their word, put yours in it, today."
+  }
+ ],
+ "wps": 2.52
+}

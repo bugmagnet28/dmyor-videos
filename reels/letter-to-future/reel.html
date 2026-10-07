@@ -1,0 +1,1103 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>dmyor reel</title>
+<style>
+:root{
+  --ink:#F7F7FB; --dim:#9BA0B4; --deep:#070812;
+  --blue:#5B8CFF; --cyan:#33D6F5; --green:#34D399;
+  --coral:#FB7185; --amber:#FBBF24; --violet:#A855F7;
+}
+html,body{margin:0;padding:0;width:100%;height:100%;background:#000;overflow:hidden}
+#viewport{position:fixed;inset:0;background:#000;display:flex;align-items:center;justify-content:center}
+/* Slim grotesque at light weights. Big type carries the elegance through the
+   letterforms and the space around them, not through weight. Light (300) rather
+   than Thin (100) so it survives a phone screen at speed. */
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;transform-origin:center center;
+ background:var(--deep);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+ font-family:"Helvetica Neue","Avenir Next",-apple-system,Helvetica,Arial,sans-serif}
+#stage.serif{font-family:"Didot","Iowan Old Style","Palatino",Georgia,serif}
+/* flat colour: hard blocks that wipe, no gradients */
+#bg{position:absolute;inset:0;background:#08080C}
+.bgpane{position:absolute;inset:0;transform:translateY(100%)}
+/* a thin rule that sweeps the frame on a cut */
+#sweep{position:absolute;left:0;width:100%;height:4px;opacity:0}
+#grain{position:absolute;inset:0;opacity:.045;pointer-events:none;
+ background-image:radial-gradient(rgba(255,255,255,.5) 1px,transparent 1px);background-size:3px 3px}
+/* camera holds every scene, so a zoom moves the whole frame */
+#cam{position:absolute;inset:0;transform-origin:50% 50%}
+.layer{position:absolute;inset:0}
+/* kinetic type */
+.kt{position:absolute;left:0;width:1080px;text-align:center;color:var(--ink);
+ font-weight:250;letter-spacing:.2px;line-height:1.22;padding:0 76px;box-sizing:border-box}
+.kt .accent{font-weight:300}
+.kt.demi{font-weight:300;letter-spacing:-.2px}
+.kt.demi .accent{font-weight:400}
+.kt .w{display:inline-block;margin:0 .16em;will-change:transform,opacity}
+.kt .accent{color:var(--blue)}
+.kt.sub{font-weight:300;letter-spacing:1.2px;color:#C7CCDB;line-height:1.4}
+/* big -> small */
+#mcollapse{position:absolute;left:0;width:1080px;opacity:0;text-align:center}
+#mclBig{font-size:64px;font-weight:250;letter-spacing:-.5px;color:var(--ink)}
+#mclSmall{margin-top:30px;display:inline-block;border:2px solid var(--green);border-radius:36px;
+ padding:20px 42px;font-size:40px;font-weight:300;color:var(--ink);opacity:0;background:rgba(52,211,153,.10)}
+/* vague -> checkable */
+#msharp{position:absolute;left:0;width:1080px;opacity:0;text-align:center}
+#msOld{font-size:52px;font-weight:300;color:#C7CCDB}
+#msNew{margin-top:22px;font-size:60px;font-weight:300;color:var(--ink)}
+/* numbered steps */
+#msteps{position:absolute;left:132px;width:816px;opacity:0}
+.mstep{display:flex;align-items:baseline;gap:22px;margin-top:26px;opacity:.32}
+.mstep.on{opacity:1}
+.mstep i{font-style:normal;font-size:30px;font-weight:400;letter-spacing:3px;color:var(--blue);min-width:60px}
+.mstep span{font-size:44px;font-weight:300;letter-spacing:.2px;color:var(--ink)}
+/* odometer digits */
+#roll{position:absolute;left:0;width:1080px;opacity:0;text-align:center}
+.rollg{display:inline-block;overflow:hidden;height:150px;vertical-align:top}
+.rollg .rs{display:block;font-size:126px;font-weight:250;line-height:150px;letter-spacing:-2px;color:var(--ink)}
+#rollTail{margin-top:16px;font-size:42px;font-weight:300;letter-spacing:6px;color:#C7CCDB}
+/* tokens that slam in */
+#tokens{position:absolute;left:0;width:1080px;opacity:0;display:flex;justify-content:center;gap:20px}
+.tok{border:2px solid;border-radius:18px;padding:24px 30px;font-size:42px;font-weight:300;
+ white-space:nowrap;opacity:0;background:rgba(255,255,255,.06);color:var(--ink)}
+/* one big number counting */
+#bignum{position:absolute;left:0;width:1080px;text-align:center;opacity:0}
+#bignumV{font-size:250px;font-weight:200;letter-spacing:-10px;line-height:1;
+ font-variant-numeric:tabular-nums;color:var(--ink)}
+#bignumL{margin-top:8px;font-size:40px;font-weight:300;letter-spacing:8px;color:#C7CCDB}
+/* a wall of day marks */
+.daygrid{position:absolute;left:110px;width:860px;opacity:0;
+ display:grid;grid-template-columns:repeat(15,1fr);gap:9px}
+.dm{aspect-ratio:1;border-radius:5px;background:rgba(255,255,255,.10);transform:scale(.3);opacity:0}
+.dm.on{background:var(--ink)}
+.dm.miss{background:transparent;box-shadow:inset 0 0 0 2px var(--coral)}
+.dm.dead{background:rgba(251,113,133,.25)}
+.dayLabel{position:absolute;left:0;width:1080px;text-align:center;font-size:54px;
+ font-weight:250;letter-spacing:1px;color:#C7CCDB;opacity:0}
+/* threshold ticks */
+#thresh{position:absolute;left:0;width:1080px;opacity:0;display:flex;justify-content:center;gap:56px}
+.th{text-align:center;opacity:0}
+.th .thn{font-size:96px;font-weight:250;letter-spacing:-2px;color:var(--ink)}
+.th .thl{margin-top:12px;font-size:32px;font-weight:300;letter-spacing:.4px;color:#C7CCDB;max-width:300px;line-height:1.28}
+/* the bad-day floor */
+#floor{position:absolute;left:230px;width:620px;opacity:0}
+#floorBar{height:190px;border-radius:16px;border:2px solid var(--blue);position:relative;overflow:hidden}
+#floorFill{position:absolute;left:0;right:0;bottom:0;height:0%;background:rgba(91,140,255,.28)}
+#floorLine{position:absolute;left:0;right:0;bottom:26%;height:3px;background:var(--green);opacity:0}
+#floorTag{position:absolute;right:14px;font-size:30px;font-weight:300;letter-spacing:2px;color:var(--green);opacity:0}
+#floorCap{margin-top:24px;text-align:center;font-size:38px;font-weight:300;color:#C7CCDB}
+/* two paths from one origin */
+#paths{position:absolute;inset:0;opacity:0}
+#pathSvg2{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.plabel{position:absolute;font-size:32px;letter-spacing:2px;text-transform:uppercase;opacity:0}
+/* candidate answers */
+#cands{position:absolute;left:0;top:0;width:1080px;opacity:0}
+.cand{position:absolute;left:50%;transform:translateX(-50%);box-sizing:border-box;
+ border-radius:999px;padding:20px 48px;font-size:37px;font-weight:300;letter-spacing:.3px;white-space:nowrap;
+ border:2px solid;background:rgba(255,255,255,.04);opacity:0}
+.cand .cline{position:absolute;left:8%;top:52%;width:84%;height:3px;border-radius:3px;
+ transform:scaleX(0);transform-origin:left center}
+/* a field of capability */
+#field{position:absolute;inset:0;opacity:0}
+.fdot{position:absolute;border-radius:50%}
+/* an empty plan */
+#plan{position:absolute;left:110px;width:860px;opacity:0;box-sizing:border-box;
+ border:2px solid rgba(255,255,255,.18);border-radius:22px;background:rgba(255,255,255,.03);padding:34px}
+#planTitle{font-size:38px;font-weight:300;letter-spacing:.4px;color:var(--ink)}
+.prow{margin-top:20px;height:22px;border-radius:8px;background:rgba(255,255,255,.06)}
+#planStamp{display:inline-block;margin-top:26px;font-size:31px;letter-spacing:3px;
+ text-transform:uppercase;border:2px solid;border-radius:999px;padding:10px 24px;
+ color:var(--coral);opacity:0}
+/* chips: dreams, then the archive they become */
+#chips{position:absolute;inset:0;opacity:0}
+.chip{position:absolute;box-sizing:border-box;border-radius:14px;padding:15px 20px;
+ font-size:27px;font-weight:300;letter-spacing:.2px;line-height:1.25;border:1px solid;white-space:nowrap;overflow:hidden}
+.chip .cmeta{display:block;margin-top:8px;font-size:19px;letter-spacing:2px}
+/* the empty slot waiting for you */
+#slot{position:absolute;left:100px;width:880px;opacity:0;box-sizing:border-box;
+ border:2px dashed var(--blue);border-radius:22px;padding:34px;background:rgba(91,140,255,.07)}
+#slotLabel{font-size:26px;letter-spacing:4px;text-transform:uppercase;color:var(--blue)}
+#slotText{margin-top:20px;font-size:46px;font-weight:300;letter-spacing:.3px;color:var(--ink)}
+/* two stages */
+#stages{position:absolute;left:90px;width:900px;opacity:0}
+.stg{box-sizing:border-box;border-radius:20px;padding:26px 30px;margin-top:18px;
+ border:2px solid rgba(255,255,255,.16);position:relative;overflow:hidden}
+.stg .sfill{position:absolute;inset:0;width:0%;opacity:.22}
+.stg .sn{position:relative;font-size:26px;letter-spacing:4px;text-transform:uppercase;color:#C7CCDB}
+.stg .st{position:relative;margin-top:12px;font-size:46px;font-weight:300;letter-spacing:.2px;color:var(--ink)}
+.stg .sd{position:relative;margin-top:10px;font-size:32px;font-weight:300;color:#C7CCDB}
+/* diagram: never miss twice */
+#missr{position:absolute;left:0;width:1080px;opacity:0}
+.mrow{display:flex;align-items:center;gap:26px;margin:0 auto 34px;width:900px;opacity:0}
+.mrlab{width:150px;text-align:right;font-size:30px;font-weight:300;letter-spacing:1px;flex:none}
+.mrcells{display:flex;gap:10px}
+.mc{width:52px;height:52px;border-radius:11px;background:rgba(255,255,255,.10);
+ border:2px solid transparent;box-sizing:border-box}
+.mc.on{background:var(--ink)}
+.mc.gap{background:transparent;border-color:var(--coral)}
+.mc.dead{background:rgba(255,255,255,.06)}
+#mrVerdict{margin-top:14px;text-align:center;font-size:44px;font-weight:300;letter-spacing:.5px;opacity:0}
+/* diagram: compounding arc */
+#arcw{position:absolute;left:0;width:1080px;opacity:0}
+#arcSvg{width:1080px;height:700px;display:block}
+#arcMarks{position:relative;height:0}
+.amk{position:absolute;transform:translateX(-50%);text-align:center;opacity:0}
+.amk .amn{font-size:52px;font-weight:300;color:var(--ink);letter-spacing:-1px}
+.amk .aml{margin-top:8px;font-size:27px;font-weight:300;color:#C7CCDB;max-width:270px;line-height:1.28}
+#arcCap{margin-top:26px;text-align:center;font-size:34px;font-weight:300;color:#C7CCDB;opacity:0}
+/* diagram: a record travelling a year axis */
+#axisw{position:absolute;left:0;width:1080px;opacity:0}
+#axSvg{position:absolute;left:0;top:150px;width:1080px;height:300px}
+#axTicks{position:absolute;left:0;top:150px;width:1080px;height:300px}
+.axt{position:absolute;transform:translateX(-50%);text-align:center}
+.axt .axd{width:3px;height:26px;margin:0 auto;background:rgba(255,255,255,.30)}
+.axt .axy{margin-top:14px;font-size:32px;font-weight:300;letter-spacing:1.5px;color:#C7CCDB}
+.axt.on .axy{color:var(--ink)}
+#axCard{position:absolute;left:0;top:0;width:430px;box-sizing:border-box;
+ border:3px solid;border-radius:22px;padding:26px 28px;background:rgba(255,255,255,.05);opacity:0}
+#axCardDate{font-size:26px;font-weight:400;letter-spacing:3px;text-transform:uppercase}
+#axCardText{margin-top:14px;font-size:44px;font-weight:300;line-height:1.2;color:var(--ink)}
+/* diagram: the stack of dreams you have right now */
+#stackw{position:absolute;left:0;width:1080px;opacity:0}
+#stackRows{width:900px;margin:0 auto}
+.dch{display:flex;align-items:center;gap:22px;box-sizing:border-box;width:100%;
+ border:3px solid;border-radius:20px;padding:22px 30px;margin-bottom:18px;
+ background:rgba(255,255,255,.05);opacity:0}
+.dch .ddot{width:20px;height:20px;border-radius:50%;flex:none}
+.dch .dtx{font-size:42px;font-weight:300;color:var(--ink);letter-spacing:.2px}
+#stackCap{margin-top:26px;text-align:center;font-size:38px;font-weight:300;color:#C7CCDB;opacity:0}
+/* diagram: dated rows resolving into verdicts */
+#verw{position:absolute;left:0;width:1080px;opacity:0}
+#verRows{width:940px;margin:0 auto}
+.vrow{display:flex;align-items:center;gap:20px;box-sizing:border-box;width:100%;
+ border-bottom:2px solid rgba(255,255,255,.12);padding:22px 8px;opacity:0}
+.vrow .vdate{font-size:27px;font-weight:400;letter-spacing:2px;color:#8E95AB;flex:none;width:132px}
+.vrow .vtx{font-size:40px;font-weight:300;color:var(--ink);flex:1;text-align:left}
+.vrow .vbadge{font-size:26px;font-weight:400;letter-spacing:2.5px;text-transform:uppercase;
+ border:2px solid;border-radius:999px;padding:9px 20px;flex:none;opacity:0}
+#verCap{margin-top:30px;text-align:center;font-size:38px;font-weight:300;color:#C7CCDB;opacity:0}
+/* diagram: a year of days */
+#ygrid{position:absolute;inset:0;opacity:0}
+#ygWorld{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+#ygCells,#ygLabels{position:absolute;left:0;top:0}
+.yc{position:absolute;border-radius:16px;box-sizing:border-box;opacity:0}
+.ylab{position:absolute;font-size:78px;font-weight:400;letter-spacing:6px;
+ color:#7E869E;opacity:0;white-space:nowrap}
+#ygCap{position:absolute;left:0;top:268px;width:1080px;box-sizing:border-box;
+ padding:0 104px;text-align:center;line-height:1.26;
+ font-size:46px;font-weight:300;letter-spacing:.3px;color:var(--ink);opacity:0}
+#ygStat{position:absolute;left:0;top:274px;width:1080px;text-align:center;opacity:0}
+#ygNum{display:block;font-size:150px;font-weight:200;letter-spacing:-5px;color:var(--ink);
+ font-variant-numeric:tabular-nums;line-height:1}
+#ygLab{display:block;margin-top:8px;font-size:38px;font-weight:300;letter-spacing:5px;
+ text-transform:uppercase;color:#C7CCDB}
+/* diagram: method pipeline */
+#flow{position:absolute;left:0;width:1080px;opacity:0}
+#flowRow{display:flex;align-items:stretch;justify-content:center;gap:0}
+.fnode{width:236px;box-sizing:border-box;border:2px solid;border-radius:20px;padding:26px 20px;
+ text-align:center;background:rgba(255,255,255,.04);opacity:0}
+.fnode .fnn{font-size:24px;letter-spacing:3px;font-weight:400}
+.fnode .fnt{margin-top:12px;font-size:36px;font-weight:300;color:var(--ink);line-height:1.2}
+.fconn{align-self:center;width:56px;height:3px;background:var(--dim);transform:scaleX(0);
+ transform-origin:left center;flex:none}
+#flowCap{margin-top:30px;text-align:center;font-size:34px;font-weight:300;color:#C7CCDB;opacity:0}
+/* end */
+#endc{position:absolute;left:0;width:1080px;text-align:center;opacity:0}
+#endMark{font-size:122px;font-weight:250;letter-spacing:-1px;color:var(--ink)}
+#endUrl{margin-top:30px;font-size:46px;letter-spacing:2.4px;font-weight:300;color:var(--blue);
+ font-variant-numeric:tabular-nums}
+#playBtn{position:fixed;inset:0;margin:auto;width:210px;height:64px;border-radius:32px;
+ border:2px solid var(--blue);background:rgba(7,8,18,.92);color:var(--ink);font-family:inherit;
+ font-size:18px;letter-spacing:2px;cursor:pointer;z-index:1000}
+</style></head><body>
+<div id="viewport"><div id="stage">
+ <div id="bg"></div>
+ <div id="cam">
+  <div class="layer" id="paths"><svg id="pathSvg2" viewBox="0 0 1080 1920">
+    <path id="pA1" fill="none" stroke-width="5" stroke-linecap="round"/>
+    <path id="pB1" fill="none" stroke-width="5" stroke-linecap="round"/>
+    <circle id="pOrigin" r="14"/><circle id="pGoal" r="18" fill="none" stroke-width="4"/>
+    <circle id="pDotA" r="11"/><circle id="pDotB" r="11"/></svg>
+   <div class="plabel" id="plA">reached it</div>
+   <div class="plabel" id="plB">stopped</div>
+   <div class="plabel" id="plO">today</div>
+   <div class="plabel" id="plG">january</div></div>
+  <div class="layer" id="field"></div>
+  <div id="roll"><span id="rollDigits"></span><div id="rollTail"></div></div>
+  <div id="mcollapse"><div id="mclBig"></div><div><span id="mclSmall"></span></div></div>
+  <div id="msharp"><div id="msOld"></div><div id="msNew"></div></div>
+  <div id="msteps"></div>
+  <div id="tokens"></div>
+  <div id="bignum"><div id="bignumV">0</div><div id="bignumL"></div></div>
+  <div id="daygrids"></div>
+  <div id="thresh"></div>
+  <div id="floor"><div id="floorBar"><div id="floorFill"></div><div id="floorLine"></div>
+    <div id="floorTag">bad day floor</div></div><div id="floorCap"></div></div>
+  <div class="layer" id="chips"></div>
+  <div id="cands"></div>
+  <div id="plan"><div id="planTitle"></div><div class="prow"></div><div class="prow"></div>
+   <div class="prow"></div><div id="planStamp">no plan</div></div>
+  <div id="slot"><div id="slotLabel">your dream</div><div id="slotText"></div></div>
+  <div id="stages"></div>
+  <div id="endc"><div id="endMark"></div><div id="endUrl"></div></div>
+  <!-- diagram: the streak rule, one gap recovers / two gaps break -->
+  <div id="missr">
+   <div class="mrow" id="mrowA"><div class="mrlab" id="mrlabA"></div><div class="mrcells" id="mcellsA"></div></div>
+   <div class="mrow" id="mrowB"><div class="mrlab" id="mrlabB"></div><div class="mrcells" id="mcellsB"></div></div>
+   <div id="mrVerdict"></div>
+  </div>
+  <!-- diagram: compounding arc crossing labelled thresholds -->
+  <div id="arcw"><svg id="arcSvg" viewBox="0 0 1080 700">
+    <path id="arcAxis" fill="none" stroke-width="2"/>
+    <path id="arcCurve" fill="none" stroke-width="6" stroke-linecap="round"/>
+   </svg><div id="arcMarks"></div><div id="arcCap"></div></div>
+  <!-- diagram: a record carried forward along a year axis -->
+  <div id="axisw">
+   <svg id="axSvg" viewBox="0 0 1080 300"><path id="axLine" fill="none" stroke-width="4"/></svg>
+   <div id="axTicks"></div>
+   <div id="axCard"><div id="axCardDate"></div><div id="axCardText"></div></div>
+  </div>
+  <!-- diagram: the dreams you have now, and what happens if you leave them -->
+  <div id="stackw"><div id="stackRows"></div><div id="stackCap"></div></div>
+  <!-- diagram: dated rows resolving into verdicts -->
+  <div id="verw"><div id="verRows"></div><div id="verCap"></div></div>
+  <!-- diagram: a year of days, zooming out scale by scale -->
+  <div id="ygrid">
+   <div id="ygWorld"><div id="ygCells"></div><div id="ygLabels"></div></div>
+   <div id="ygCap"></div>
+   <div id="ygStat"><span id="ygNum"></span><span id="ygLab"></span></div>
+  </div>
+  <!-- diagram: the method as a three-stage pipeline -->
+  <div id="flow"><div id="flowRow"></div><div id="flowCap"></div></div>
+  <div class="layer" id="ktLayer"></div>
+ </div>
+ <div id="sweep"></div>
+ <div id="grain"></div>
+</div></div>
+<button id="playBtn">PLAY</button>
+<script>
+var TL = {"total": 47.46, "engine": "motion", "brand": {"mark": "dmyor", "url": "www.dmyor.com"}, "bg": [{"t": 0.0, "c": "#10143A", "dir": "up"}, {"t": 4.8, "c": "#132242", "dir": "left"}, {"t": 7.3, "c": "#0D2B2F", "dir": "up"}, {"t": 13.6, "c": "#2B1426", "dir": "down"}, {"t": 20.3, "c": "#0E2340", "dir": "up"}, {"t": 25.5, "c": "#0F2C26", "dir": "left"}, {"t": 27.6, "c": "#131A44", "dir": "up"}, {"t": 30.6, "c": "#0D2B2F", "dir": "right"}, {"t": 40.8, "c": "#221548", "dir": "up"}, {"t": 43.4, "c": "#132242", "dir": "down"}], "camera": [{"t": 0, "s": 1.0, "y": 0}, {"t": 6, "s": 1.05, "y": 18}, {"t": 12, "s": 0.97, "y": -16}, {"t": 19, "s": 1.06, "y": 14}, {"t": 26, "s": 0.96, "y": -18}, {"t": 31, "s": 1.05, "y": 16}, {"t": 38, "s": 0.97, "y": -14}, {"t": 43, "s": 1.04, "y": 12}, {"t": 47.46, "s": 1.0, "y": 0}], "scenes": [{"type": "axis.travel", "note": "0.00 one message to yourself in five years | 27.66 then in 2031 you get to check", "windows": [[0.1, 4.35], [27.5, 30.2]], "in": 0.1, "out": 30.2, "y": 540, "color": "cyan", "years": [2026, 2027, 2028, 2029, 2030, 2031], "drawAt": 0.35, "drawEnd": 1.7, "tickAt": 0.75, "tickStep": 0.16, "cardAt": 2.3, "cardTop": -104, "cardDate": "09 SEP 2026", "cardText": "buy my parents a house", "travelAt": 27.95, "travelEnd": 30.05, "fromTick": 0, "toTick": 5}, {"type": "collapse.step", "note": "4.82 not advice, just the list", "in": 4.8, "out": 6.8, "y": 700, "at": 5.6, "big": "Advice for your younger self", "small": "just the list"}, {"type": "dream.stack", "note": "7.42 the things you actually want | 13.60 that does not last | 17.98 you do not notice the day it goes", "in": 7.3, "out": 19.8, "y": 330, "dimAt": 13.8, "dimEnd": 17.6, "capAt": 18.3, "caption": "nothing marked the day it went", "items": [{"text": "buy my parents a house", "color": "green", "at": 7.6}, {"text": "start my own company", "color": "blue", "at": 8.3}, {"text": "move to another country", "color": "cyan", "at": 9.8}, {"text": "publish my first novel", "color": "violet", "at": 10.8, "outAt": 17.95}, {"text": "run a sub three hour marathon", "color": "amber", "at": 11.7}, {"text": "learn to fly a plane", "color": "coral", "at": 12.4}]}, {"type": "plan.empty", "note": "20.48 so write them down | 22.52 dated", "in": 20.3, "out": 22.85, "y": 470, "stampAt": 22.55, "title": "buy my parents a house", "stamp": "09 SEP 2026", "stampColor": "green", "color": "cyan", "stampBorder": true}, {"type": "cards.dismiss", "note": "23.40 not a diary nobody opens", "in": 23.35, "out": 25.4, "y": 620, "items": [{"text": "a diary nobody opens", "color": "coral", "at": 23.45, "dismiss": 24.4}]}, {"type": "rows.verdict", "note": "25.60 a list with a date on it | 30.94 did I do that one | 34.08 some you will have forgotten | 36.76 one or two you already passed", "windows": [[25.5, 27.05], [30.65, 42.9]], "in": 25.5, "out": 42.9, "y": 400, "capAt": 40.9, "caption": "that is the fun part", "items": [{"date": "2026", "text": "buy my parents a house", "verdict": "done", "at": 25.7, "verdictAt": 31.1}, {"date": "2026", "text": "start my own company", "verdict": "close", "at": 26.05, "verdictAt": 32.75}, {"date": "2026", "text": "move to another country", "verdict": "done", "at": 26.4, "verdictAt": 37.3}, {"date": "2026", "text": "run a sub three hour marathon", "verdict": "open", "at": 26.75, "verdictAt": 41.4}, {"date": "2026", "text": "publish my first novel", "verdict": "open", "at": 34.3, "verdictAt": 39.3}]}, {"type": "kinetic.title", "note": "43.62 so what would you write to your future self?", "in": 43.35, "out": 45.85, "y": 700, "size": 66, "stagger": 0.1, "demi": true, "sfxWords": true, "text": "What would you write to your future self?", "accentWords": ["future", "self"]}, {"type": "kinetic.title", "note": "45.96 put it in the comments", "in": 45.9, "out": 47.46, "y": 740, "size": 78, "stagger": 0.1, "demi": true, "sfxWords": true, "sfxChime": true, "text": "Put it in the comments.", "accentWords": ["comments"]}]};
+</script>
+<script>
+/* dmyor motion engine: colour, kinetic type, camera moves.
+   Same contract as the mono engine - everything is a pure function of time, so
+   record.js can seek frame by frame and verify.js can audit it. */
+(function(){
+"use strict";
+var TOTAL=TL.total, W=1080, H=1920;
+var stage=document.getElementById("stage"), sc=1;
+function fit(){ sc=Math.min(innerWidth/W, innerHeight/H); stage.style.transform="scale("+sc+")"; }
+if(TL.font==="serif") stage.classList.add("serif");
+fit(); addEventListener("resize",fit);
+var cl=function(x){return x<0?0:(x>1?1:x)};
+var seg=function(t,a,b){return b<=a?(t>=b?1:0):cl((t-a)/(b-a))};
+var eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+var eo=function(x){return 1-Math.pow(1-x,3)};
+var eob=function(x){var c=1.7;return 1+ (c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2);}; // slight overshoot
+function fade(e,o){ if(e) e.style.opacity=o; }
+function S(t2){ for(var i=0;i<TL.scenes.length;i++) if(TL.scenes[i].type===t2) return TL.scenes[i]; return null; }
+function ALL(t2){ return TL.scenes.filter(function(x){return x.type===t2;}); }
+// a scene may show in several windows: [[in,out],[in,out]]. Opacity is their union.
+function winFade(sc,t){ var ws=sc.windows||[[sc.in,sc.out]], o=0;
+ for(var i=0;i<ws.length;i++){ var a=ws[i][0], b=ws[i][1];
+  var v=seg(t,a,a+0.32)*(1-seg(t,b,b+0.42)); if(v>o) o=v; }
+ return o; }
+var CO={blue:"#5B8CFF",cyan:"#33D6F5",green:"#34D399",coral:"#FB7185",amber:"#FBBF24",violet:"#A855F7",ink:"#F7F7FB",dim:"#9BA0B4"};
+function col(n){ return CO[n]||n||CO.blue; }
+
+// ---------- flat colour: panes that wipe up, no gradients ----------
+var bgEl=document.getElementById("bg"), sweepEl=document.getElementById("sweep");
+var BG=(TL.bg||[]);                    // [{t, c, dir}]
+var bgPanes=BG.map(function(b){
+  var d=document.createElement("div"); d.className="bgpane";
+  d.style.background=col(b.c); bgEl.appendChild(d); return d; });
+
+// ---------- kinetic type ----------
+var ktLayer=document.getElementById("ktLayer");
+var KTS=ALL("kinetic.title").map(function(k){
+  var el=document.createElement("div"); el.className="kt"+(k.sub?" sub":"")+(k.demi?" demi":"");
+  el.style.fontSize=(k.size||86)+"px";
+  el.style.top=((k.y||860))+"px";
+  var words=(k.text||"").split(" ");
+  var spans=words.map(function(w){
+    var bare=function(x){return x.replace(/[^A-Za-z]/g,"").toLowerCase();};
+    // strip punctuation from BOTH sides: "today." in accentWords must match the word "today."
+    var acc=k.accentWords&&k.accentWords.map(bare).indexOf(bare(w))>=0;
+    var s2=document.createElement("span"); s2.className="w"+(acc?" accent":"");
+    s2.textContent=w; el.appendChild(s2); return s2; });
+  ktLayer.appendChild(el);
+  return {sc:k, el:el, spans:spans};
+});
+
+// ---------- two paths ----------
+var pSc=S("split.paths");
+var pathsEl=document.getElementById("paths"), pA1=document.getElementById("pA1"), pB1=document.getElementById("pB1");
+var pOrigin=document.getElementById("pOrigin"), pGoal=document.getElementById("pGoal");
+var pDotA=document.getElementById("pDotA"), pDotB=document.getElementById("pDotB");
+var plA=document.getElementById("plA"), plB=document.getElementById("plB");
+var plO=document.getElementById("plO"), plG=document.getElementById("plG");
+var pLenA=0,pLenB=0;
+if(pSc){
+  pA1.setAttribute("d","M170,1500 C420,1440 560,1180 900,700");
+  pB1.setAttribute("d","M170,1500 C430,1430 610,1330 760,1240");
+  pA1.setAttribute("stroke",col(pSc.winColor||"green"));
+  pB1.setAttribute("stroke",col(pSc.loseColor||"coral"));
+  pOrigin.setAttribute("cx",170); pOrigin.setAttribute("cy",1500); pOrigin.setAttribute("fill",CO.dim);
+  pGoal.setAttribute("cx",900); pGoal.setAttribute("cy",700); pGoal.setAttribute("stroke",col(pSc.winColor||"green"));
+  pDotA.setAttribute("fill",col(pSc.winColor||"green")); pDotB.setAttribute("fill",col(pSc.loseColor||"coral"));
+  pLenA=pA1.getTotalLength(); pLenB=pB1.getTotalLength();
+  pA1.style.strokeDasharray=pLenA; pB1.style.strokeDasharray=pLenB;
+  plA.style.color=col(pSc.winColor||"green"); plB.style.color=col(pSc.loseColor||"coral");
+  if(pSc.winLabel) plA.textContent=pSc.winLabel;
+  if(pSc.loseLabel) plB.textContent=pSc.loseLabel;
+  plA.style.left="700px"; plA.style.top="612px";
+  plB.style.left="700px"; plB.style.top="1290px";
+  plO.style.left="120px"; plO.style.top="1540px"; plO.style.color=CO.dim;
+  plG.style.left="700px"; plG.style.top="560px"; plG.style.color=CO.dim;
+  if(pSc.originLabel) plO.textContent=pSc.originLabel;
+  if(pSc.goalLabel) plG.textContent=pSc.goalLabel;
+}
+
+// ---------- candidate answers ----------
+var cSc=S("cards.dismiss"), candEls=[];
+var candsEl=document.getElementById("cands");
+if(cSc){ (cSc.items||[]).forEach(function(it,i){
+  var d=document.createElement("div"); d.className="cand";
+  d.style.top=(i*116)+"px"; d.style.borderColor=col(it.color||"blue"); d.style.color=CO.ink;
+  d.innerHTML=it.text+'<span class="cline" style="background:'+col(it.color||"blue")+'"></span>';
+  candsEl.appendChild(d); candEls.push({el:d, line:d.querySelector(".cline"), sc:it}); });
+  candsEl.style.top=(cSc.y||700)+"px"; }
+
+// ---------- field of capability ----------
+var fSc=S("field.expand"), fDots=[];
+var fieldEl=document.getElementById("field");
+if(fSc){ var N=fSc.count||90;
+ for(var i2=0;i2<N;i2++){
+  var d=document.createElement("div"); d.className="fdot";
+  var cn=["blue","cyan","violet","amber","green"][i2%5];
+  var sz=6+ (i2%4)*4;
+  d.style.cssText="width:"+sz+"px;height:"+sz+"px;background:"+col(cn);
+  fieldEl.appendChild(d);
+  fDots.push({el:d, a:(i2/N)*Math.PI*2*3.2, r:120+(i2%13)*52, ph:i2*0.37}); } }
+
+// ---------- empty plan ----------
+var plSc=S("plan.empty");
+var planEl=document.getElementById("plan"), planStamp=document.getElementById("planStamp");
+if(plSc){ document.getElementById("planTitle").textContent=plSc.title||"";
+  planEl.style.top=(plSc.y||820)+"px";
+  // the stamp was hardcoded "no plan"/coral: let the timeline say what it stamps
+  if(plSc.color){ planEl.style.borderColor=col(plSc.color);
+                  planEl.style.background="rgba(255,255,255,.05)"; }
+  if(plSc.stamp) planStamp.textContent=plSc.stamp;
+  if(plSc.stampColor) planStamp.style.color=col(plSc.stampColor);
+  if(plSc.stampBorder) planStamp.style.borderColor=col(plSc.stampColor||"green"); }
+
+// ---------- chips: dreams -> archive ----------
+var chSc=S("chips.reorder"), chips=[];
+var chipsEl=document.getElementById("chips");
+if(chSc){ (chSc.items||[]).forEach(function(it,i){
+  var d=document.createElement("div"); d.className="chip";
+  var cn=["blue","violet","cyan","amber","green","coral"][i%6];
+  d.style.borderColor="rgba(255,255,255,.16)"; d.style.color=CO.ink;
+  d.style.background="rgba(255,255,255,.03)";
+  d.innerHTML=it+'<span class="cmeta">standby</span>';
+  chipsEl.appendChild(d);
+  var col2=i%3, row=(i/3)|0;
+  chips.push({el:d, meta:d.querySelector(".cmeta"), cn:cn,
+    sx:120+((i*137)%780), sy:520+((i*211)%900),          // scattered
+    gx:96+col2*312, gy:590+row*168 }); }); }              // ordered
+
+// ---------- the slot waiting ----------
+var slSc=S("slot.waiting");
+var slotEl=document.getElementById("slot"), slotText=document.getElementById("slotText");
+if(slSc) slotEl.style.top=(slSc.y||900)+"px";
+
+// ---------- two stages ----------
+var stSc=S("stage.two"), stEls=[];
+var stagesEl=document.getElementById("stages");
+if(stSc){ stagesEl.style.top=(stSc.y||760)+"px";
+ (stSc.items||[]).forEach(function(it,i){
+  var d=document.createElement("div"); d.className="stg";
+  d.innerHTML='<span class="sfill" style="background:'+col(it.color||"blue")+'"></span>'+
+    '<div class="sn">'+it.no+'</div><div class="st">'+it.title+'</div><div class="sd">'+it.body+'</div>';
+  stagesEl.appendChild(d); stEls.push({el:d, fill:d.querySelector(".sfill"), sc:it}); }); }
+
+// ---------- end ----------
+var eSc=S("end.card");
+var endc=document.getElementById("endc"), endMark=document.getElementById("endMark"), endUrl=document.getElementById("endUrl");
+if(eSc){ endc.style.top=(eSc.y||840)+"px"; endMark.textContent=(TL.brand&&TL.brand.mark)||"dmyor"; }
+var URL_TXT=(TL.brand&&TL.brand.url)||"";
+
+// ---------- big -> small ----------
+var clSc=S("collapse.step"), collapseEl=document.getElementById("mcollapse"),
+    clBig=document.getElementById("mclBig"), clSmall=document.getElementById("mclSmall");
+if(clSc){ collapseEl.style.top=(clSc.y||820)+"px"; clBig.textContent=clSc.big||"";
+  clSmall.textContent=clSc.small||""; }
+
+// ---------- vague -> checkable ----------
+var shSc=S("sharpen.text"), sharpenEl=document.getElementById("msharp"),
+    shOld=document.getElementById("msOld"), shNew=document.getElementById("msNew");
+if(shSc) sharpenEl.style.top=(shSc.y||1180)+"px";
+
+// ---------- numbered steps ----------
+var st3Sc=S("steps.three"), steps3El=document.getElementById("msteps"), s3Els=[];
+if(st3Sc){ steps3El.style.top=(st3Sc.y||520)+"px";
+ (st3Sc.items||[]).forEach(function(it,i){
+  var d=document.createElement("div"); d.className="mstep";
+  d.innerHTML='<i>0'+(i+1)+'</i><span>'+it+'</span>';
+  steps3El.appendChild(d); s3Els.push(d); }); }
+
+// ---------- odometer roll ----------
+var rlSc=S("date.roll"), rollEl=document.getElementById("roll"),
+    rollDigits=document.getElementById("rollDigits"), rollTail=document.getElementById("rollTail");
+var rollGlyphs=[];
+if(rlSc){ rollEl.style.top=(rlSc.y||760)+"px"; rollTail.textContent=rlSc.tail||"";
+ (rlSc.to||"").split("").forEach(function(ch,i){
+  var g=document.createElement("span"); g.className="rollg";
+  var st=document.createElement("span"); st.className="rs";
+  g.appendChild(st); rollDigits.appendChild(g);
+  rollGlyphs.push({st:st, from:((rlSc.from||"")[i]||ch), to:ch}); }); }
+
+// ---------- tokens ----------
+var tkSc=S("tokens.land"), tokEls=[], tokensEl=document.getElementById("tokens");
+if(tkSc){ tokensEl.style.top=(tkSc.y||880)+"px";
+ (tkSc.items||[]).forEach(function(it,i){
+  var d=document.createElement("div"); d.className="tok";
+  d.style.borderColor=col(it.color||["blue","cyan","amber"][i%3]);
+  d.textContent=it.text; tokensEl.appendChild(d); tokEls.push({el:d, sc:it}); }); }
+
+// ---------- big counter ----------
+var bnSc=S("count.up"), bignumEl=document.getElementById("bignum"),
+    bignumV=document.getElementById("bignumV"), bignumL=document.getElementById("bignumL");
+if(bnSc){ bignumEl.style.top=(bnSc.y||740)+"px"; bignumL.textContent=bnSc.label||""; }
+
+// ---------- day grids (there can be more than one) ----------
+var DG=ALL("daygrid.fill").map(function(sc){
+  var wrap=document.getElementById("daygrids");
+  var g=document.createElement("div"); g.className="daygrid";
+  g.style.top=(sc.y||700)+"px"; wrap.appendChild(g);
+  var lab=document.createElement("div"); lab.className="dayLabel";
+  lab.style.top=((sc.y||700)+(sc.labelDy||560))+"px"; wrap.appendChild(lab);
+  var cells=[];
+  for(var q=0;q<(sc.count||120);q++){
+    var d=document.createElement("div"); d.className="dm"; g.appendChild(d); cells.push(d); }
+  return {sc:sc, el:g, lab:lab, cells:cells};
+});
+
+// ---------- thresholds ----------
+var thSc=S("thresholds"), thEls=[], threshEl=document.getElementById("thresh");
+if(thSc){ threshEl.style.top=(thSc.y||1300)+"px";
+ (thSc.items||[]).forEach(function(it){
+  var d=document.createElement("div"); d.className="th";
+  d.innerHTML='<div class="thn">'+it.n+'</div><div class="thl">'+it.label+'</div>';
+  threshEl.appendChild(d); thEls.push({el:d, sc:it}); }); }
+
+// ---------- bad-day floor ----------
+var flSc=S("floor.bar"), floorEl=document.getElementById("floor"),
+    floorFill=document.getElementById("floorFill"), floorLine=document.getElementById("floorLine"),
+    floorTag=document.getElementById("floorTag"), floorCap=document.getElementById("floorCap");
+if(flSc){ floorEl.style.top=(flSc.y||820)+"px"; floorCap.textContent=flSc.caption||""; }
+
+// ---------- diagram: never miss twice ----------
+var mrSc=S("miss.rule"), missrEl=document.getElementById("missr");
+var mrRows=[], mrVerd=document.getElementById("mrVerdict");
+if(mrSc){ missrEl.style.top=(mrSc.y||760)+"px";
+ [["A",mrSc.rowA],["B",mrSc.rowB]].forEach(function(pair){
+  var key=pair[0], r=pair[1]||{};
+  var row=document.getElementById("mrow"+key), lab=document.getElementById("mrlab"+key),
+      wrap=document.getElementById("mcells"+key);
+  lab.textContent=r.label||""; lab.style.color=col(r.color||"dim");
+  var cells=(r.pattern||"").split("").map(function(ch){
+   var d=document.createElement("div"); d.className="mc"; wrap.appendChild(d);
+   return {el:d, ch:ch}; });                 // "." = missed day, "#" = marked
+  mrRows.push({row:row, cells:cells, sc:r}); }); }
+
+// ---------- diagram: compounding arc ----------
+var arSc=S("arc.curve"), arcwEl=document.getElementById("arcw");
+var arcCurve=document.getElementById("arcCurve"), arcAxis=document.getElementById("arcAxis");
+var arcMarksEl=document.getElementById("arcMarks"), arcCap=document.getElementById("arcCap");
+var arcLen=0, arcMarks=[];
+if(arSc){ arcwEl.style.top=(arSc.y||620)+"px";
+ arcAxis.setAttribute("d","M90,610 L1000,610");
+ arcAxis.setAttribute("stroke","rgba(255,255,255,.16)");
+ // slow start, steep finish: the point is that it compounds
+ arcCurve.setAttribute("d","M90,600 C420,586 700,470 1000,110");
+ arcCurve.setAttribute("stroke",col(arSc.color||"green"));
+ arcLen=arcCurve.getTotalLength(); arcCurve.style.strokeDasharray=arcLen;
+ arcCap.textContent=arSc.caption||"";
+ var NS="http://www.w3.org/2000/svg";
+ (arSc.items||[]).forEach(function(it){
+  // anchor the mark to the actual point on the curve, not a guessed x
+  var f=(it.at01!=null?it.at01:0.5);
+  var pt=arcCurve.getPointAtLength(arcLen*f);
+  var tick=document.createElementNS(NS,"line");
+  tick.setAttribute("x1",pt.x); tick.setAttribute("y1",pt.y);
+  tick.setAttribute("x2",pt.x); tick.setAttribute("y2",610);
+  tick.setAttribute("stroke",col(arSc.color||"green"));
+  tick.setAttribute("stroke-width",2); tick.setAttribute("stroke-dasharray","6 8");
+  tick.style.opacity=0; arcCurve.parentNode.insertBefore(tick,arcCurve);
+  var dot=document.createElementNS(NS,"circle");
+  dot.setAttribute("cx",pt.x); dot.setAttribute("cy",pt.y); dot.setAttribute("r",10);
+  dot.setAttribute("fill",col(arSc.color||"green")); dot.style.opacity=0;
+  arcCurve.parentNode.appendChild(dot);
+  var d=document.createElement("div"); d.className="amk";
+  d.innerHTML='<div class="amn">'+it.n+'</div><div class="aml">'+it.label+'</div>';
+  d.style.left=pt.x+"px"; d.style.top=(arSc.markTop||30)+"px";
+  arcMarksEl.appendChild(d);
+  arcMarks.push({el:d, sc:it, dot:dot, tick:tick}); }); }
+
+// ---------- diagram: the method as a pipeline ----------
+var fwSc=S("method.flow"), flowEl=document.getElementById("flow");
+var flowRow=document.getElementById("flowRow"), flowCap=document.getElementById("flowCap");
+var fwNodes=[], fwConns=[];
+if(fwSc){ flowEl.style.top=(fwSc.y||780)+"px"; flowCap.textContent=fwSc.caption||"";
+ (fwSc.items||[]).forEach(function(it,i){
+  if(i){ var c2=document.createElement("div"); c2.className="fconn";
+         flowRow.appendChild(c2); fwConns.push(c2); }
+  var d=document.createElement("div"); d.className="fnode";
+  d.style.borderColor=col(it.color||"blue");
+  d.innerHTML='<div class="fnn" style="color:'+col(it.color||"blue")+'">0'+(i+1)+'</div>'+
+              '<div class="fnt">'+it.text+'</div>';
+  flowRow.appendChild(d); fwNodes.push(d); }); }
+
+// ---------- diagram: a record travelling a year axis ----------
+var axSc=S("axis.travel"), axiswEl=document.getElementById("axisw");
+var axLine=document.getElementById("axLine"), axTicksEl=document.getElementById("axTicks"),
+    axCard=document.getElementById("axCard"), axCardDate=document.getElementById("axCardDate"),
+    axCardText=document.getElementById("axCardText");
+var axTicks=[], axLen=0, AXX0=110, AXX1=970, AXY=150;
+if(axSc){
+  axiswEl.style.top=(axSc.y||520)+"px";
+  axLine.setAttribute("d","M"+AXX0+","+AXY+" L"+AXX1+","+AXY);
+  axLine.setAttribute("stroke",col(axSc.color||"blue"));
+  axLen=axLine.getTotalLength(); axLine.style.strokeDasharray=axLen;
+  var yrs=axSc.years||[];
+  yrs.forEach(function(y,i){
+    var px=AXX0+(AXX1-AXX0)*(yrs.length<2?0:i/(yrs.length-1));
+    var d=document.createElement("div"); d.className="axt";
+    d.innerHTML='<div class="axd"></div><div class="axy">'+y+'</div>';
+    d.style.left=px+"px"; d.style.top=(AXY-13)+"px"; d.style.opacity=0;
+    axTicksEl.appendChild(d); axTicks.push({el:d,x:px,y:y}); });
+  axCardDate.textContent=axSc.cardDate||"";
+  axCardDate.style.color=col(axSc.color||"blue");
+  axCardText.textContent=axSc.cardText||"";
+  axCard.style.borderColor=col(axSc.color||"blue");
+}
+function axTickX(i){ return axTicks.length?axTicks[Math.max(0,Math.min(axTicks.length-1,i))].x:540; }
+
+// ---------- diagram: the dreams you have right now ----------
+var dsSc=S("dream.stack"), stackwEl=document.getElementById("stackw");
+var stackRows=document.getElementById("stackRows"), stackCap=document.getElementById("stackCap");
+var dsEls=[];
+if(dsSc){ stackwEl.style.top=(dsSc.y||400)+"px"; stackCap.textContent=dsSc.caption||"";
+ (dsSc.items||[]).forEach(function(it){
+  var d=document.createElement("div"); d.className="dch";
+  d.style.borderColor=col(it.color||"blue");
+  d.innerHTML='<span class="ddot" style="background:'+col(it.color||"blue")+'"></span>'+
+              '<span class="dtx">'+it.text+'</span>';
+  stackRows.appendChild(d); dsEls.push({el:d, sc:it}); }); }
+
+// ---------- diagram: dated rows resolving into verdicts ----------
+var vrSc=S("rows.verdict"), verwEl=document.getElementById("verw");
+var verRows=document.getElementById("verRows"), verCap=document.getElementById("verCap");
+var vrEls=[];
+var VERDICT={done:["done","green"], close:["so close","amber"], open:["not yet","coral"]};
+if(vrSc){ verwEl.style.top=(vrSc.y||380)+"px"; verCap.textContent=vrSc.caption||"";
+ (vrSc.items||[]).forEach(function(it){
+  var v=VERDICT[it.verdict]||VERDICT.open, c2=col(it.color||v[1]);
+  var d=document.createElement("div"); d.className="vrow";
+  d.innerHTML='<span class="vdate">'+(it.date||"")+'</span>'+
+              '<span class="vtx">'+it.text+'</span>'+
+              '<span class="vbadge" style="color:'+c2+';border-color:'+c2+'">'+(it.label||v[0])+'</span>';
+  verRows.appendChild(d);
+  vrEls.push({el:d, badge:d.querySelector(".vbadge"), sc:it}); }); }
+
+// ---------- diagram: a year of days ----------
+var ygSc=S("year.grid"), ygridEl=document.getElementById("ygrid");
+var ygWorld=document.getElementById("ygWorld"), ygCells=document.getElementById("ygCells"),
+    ygLabels=document.getElementById("ygLabels"), ygCap=document.getElementById("ygCap"),
+    ygStat=document.getElementById("ygStat"), ygNum=document.getElementById("ygNum"),
+    ygLab=document.getElementById("ygLab");
+var YG=null;
+if(ygSc){
+  var P=114, CELL=100, MGAP=90, COLS=ygSc.cols||3;      // world units
+  var BW=7*P-(P-CELL), BH=5*P-(P-CELL);                 // one month block
+  var yr=ygSc.year||2026;
+  var leap=(yr%4===0&&yr%100!==0)||yr%400===0;
+  var MD=[31,leap?29:28,31,30,31,30,31,31,30,31,30,31];
+  var MN=["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+  var cells=[], monthStart=[], gi=0;
+  for(var m=0;m<12;m++){
+    monthStart.push(gi);
+    var bx=(m%COLS)*(BW+MGAP), by=Math.floor(m/COLS)*(BH+MGAP);
+    for(var d=0;d<MD[m];d++){
+      var r=Math.floor(d/7), c=d%7;
+      var el=document.createElement("div"); el.className="yc";
+      el.style.width=CELL+"px"; el.style.height=CELL+"px";
+      el.style.left=(bx+c*P)+"px"; el.style.top=(by+r*P)+"px";
+      ygCells.appendChild(el);
+      cells.push({el:el, x:bx+c*P, y:by+r*P, m:m}); gi++; }
+    var lb=document.createElement("div"); lb.className="ylab";
+    lb.textContent=MN[m]; lb.style.left=bx+"px"; lb.style.top=(by-92)+"px";
+    ygLabels.appendChild(lb); }
+  var TOTAL_D=gi;
+  var YROWS=Math.ceil(12/COLS);
+  var yearW=COLS*BW+(COLS-1)*MGAP, yearH=YROWS*BH+(YROWS-1)*MGAP;
+  // named focus targets: no hand-written coordinates anywhere in the timeline
+  function focusBox(name){
+    var mm;
+    if(name==="year") return {x:0,y:-92,w:yearW,h:yearH+92};
+    if((mm=/^cells:(\d+)-(\d+)$/.exec(name))){
+      var a2=+mm[1], b2=Math.min(+mm[2],TOTAL_D-1);
+      var x1=1e9,y1=1e9,x2=-1e9,y2=-1e9;
+      for(var i=a2;i<=b2;i++){ var C=cells[i];
+        x1=Math.min(x1,C.x); y1=Math.min(y1,C.y);
+        x2=Math.max(x2,C.x+CELL); y2=Math.max(y2,C.y+CELL); }
+      return {x:x1,y:y1,w:x2-x1,h:y2-y1}; }
+    if((mm=/^months:(\d+)-(\d+)$/.exec(name))){
+      var f=+mm[1], l=Math.min(+mm[2],11);
+      return focusBox("cells:"+monthStart[f]+"-"+(monthStart[l]+MD[l]-1)); }
+    if((mm=/^month:(\d+)$/.exec(name))){ var q=+mm[1];
+      return focusBox("cells:"+monthStart[q]+"-"+(monthStart[q]+MD[q]-1)); }
+    return {x:0,y:0,w:yearW,h:yearH};
+  }
+  var TW=ygSc.fitW||960, TH=ygSc.fitH||700, MAXS=ygSc.maxScale||3;
+  var ANCHOR=ygSc.anchorY==null?860:ygSc.anchorY;
+  function frameOf(k){
+    var bx2=focusBox(k.focus||"year"), fit=k.fit==null?1:k.fit;
+    var s2=Math.min((TW*fit)/bx2.w,(TH*fit)/bx2.h); if(s2>MAXS) s2=MAXS;
+    // store the translation itself, not the centre: interpolating cx and s separately
+    // lets cx*s overshoot mid-move and briefly throws content off the edge
+    return {s:s2, tx:540-(bx2.x+bx2.w/2)*s2, ty:ANCHOR-(bx2.y+bx2.h/2)*s2}; }
+  var ZK=(ygSc.zoom||[]).map(function(k){ var f=frameOf(k); f.t=k.t; return f; });
+  // reveal / fill fronts, piecewise linear in cell index
+  function frontAt(keys,t2){
+    if(!keys||!keys.length) return 0;
+    if(t2<=keys[0].t) return keys[0].n;
+    for(var i=0;i<keys.length-1;i++){ var a3=keys[i],b3=keys[i+1];
+      if(t2>=a3.t&&t2<=b3.t){ var u=(t2-a3.t)/Math.max(1e-6,b3.t-a3.t);
+        return a3.n+(b3.n-a3.n)*eio(u); } }
+    return keys[keys.length-1].n; }
+  YG={cells:cells, total:TOTAL_D, ZK:ZK, frontAt:frontAt,
+      labels:[].slice.call(ygLabels.children),
+      elapsed:ygSc.elapsed==null?TOTAL_D:ygSc.elapsed};
+}
+
+// ---------- camera ----------
+var camEl=document.getElementById("cam");
+var CAM=(TL.camera||[]).slice().sort(function(a,b){return a.t-b.t;});
+function camAt(t){
+  if(!CAM.length) return {s:1,x:0,y:0};
+  if(t<=CAM[0].t) return CAM[0];
+  for(var i=0;i<CAM.length-1;i++){ var a=CAM[i],b=CAM[i+1];
+    if(t>=a.t&&t<=b.t){ var k=eio((t-a.t)/Math.max(1e-6,b.t-a.t));
+      return {s:(a.s||1)+((b.s||1)-(a.s||1))*k, x:(a.x||0)+((b.x||0)-(a.x||0))*k,
+              y:(a.y||0)+((b.y||0)-(a.y||0))*k}; } }
+  return CAM[CAM.length-1];
+}
+
+// ================= render =================
+function render(t){
+ t=Math.max(0,Math.min(TOTAL,t));
+
+ // flat colour: each pane wipes across and stays until the next one covers it
+ BG.forEach(function(b,i){
+  var k=eio(seg(t,b.t,b.t+(b.dur||0.55)));
+  var dir=b.dir||"up";
+  var off=(1-k)*100;
+  var tf = dir==="down" ? "translateY("+(-off)+"%)"
+        : dir==="left" ? "translateX("+off+"%)"
+        : dir==="right"? "translateX("+(-off)+"%)"
+        : "translateY("+off+"%)";
+  bgPanes[i].style.transform=tf; });
+ // a rule that sweeps the frame on each colour change
+ var swk=0, swy=0;
+ BG.forEach(function(b){ var d=t-b.t;
+  if(d>=0&&d<0.5){ swk=1-d/0.5; swy=eio(d/0.5)*1920; } });
+ sweepEl.style.top=swy+"px"; sweepEl.style.background=CO.ink; fade(sweepEl,swk*0.5);
+
+ // camera. On top of the keyframes there is a permanent slow drift: between two
+ // keyframes the frame would otherwise be perfectly still, and a still frame reads
+ // as a photograph no matter how much colour is in it.
+ var c=camAt(t);
+ // amplitude and rate matter: a 9px drift over a 0.4s window is sub-pixel and
+ // registers as a frozen frame. This moves ~5px per sample without reading as a move.
+ var driftS=1+Math.sin(t*0.75)*0.010;
+ var driftX=Math.sin(t*0.62)*17, driftY=Math.cos(t*0.71)*19;
+ camEl.style.transform="translate("+(-(c.x||0)+driftX)+"px,"+(-(c.y||0)+driftY)+"px) scale("+((c.s||1)*driftS)+")";
+
+ // kinetic type: words arrive one after another, leave together
+ KTS.forEach(function(K){
+  var k=K.sc;
+  var vis=seg(t,k.in,k.in+0.25)*(1-seg(t,k.out-0.35,k.out));
+  fade(K.el,vis);
+  K.spans.forEach(function(sp,i){
+   var st=k.in+i*(k.stagger||0.075);
+   var p=eob(cl((t-st)/0.42));
+   var out=seg(t,k.out-0.35,k.out);
+   sp.style.transform="translateY("+((1-p)*46 - out*30)+"px) scale("+(0.86+0.14*p)+")";
+   sp.style.opacity=cl(p*1.2); }); });
+
+
+
+ // panels breathe: a scene that has finished animating must not sit perfectly still
+ function floaty(el,ph,amp){ if(el && el.style.opacity!=="0")
+   el.style.transform="translateY("+(Math.sin(t*0.95+ph)*(amp||10))+"px)"; }
+ floaty(collapseEl,0.4,11); floaty(sharpenEl,1.7,10); floaty(tokensEl,2.9,9);
+ floaty(floorEl,0.9,10); floaty(threshEl,2.2,9); floaty(steps3El,1.1,8);
+ floaty(missrEl,1.4,9); floaty(arcwEl,2.6,8); floaty(flowEl,0.7,10);
+ floaty(axiswEl,1.9,9); floaty(stackwEl,0.5,10); floaty(verwEl,2.3,8);
+
+
+ // the whole ambition contracting to one unit
+ if(clSc){ fade(collapseEl, seg(t,clSc.in,clSc.in+0.3)*(1-seg(t,clSc.out,clSc.out+0.4)));
+  var cp=eio(seg(t,clSc.at,clSc.at+0.9));
+  clBig.style.transform="scale("+(1-0.44*cp)+")"; clBig.style.opacity=1-0.6*cp;
+  var sp=eob(cl((t-(clSc.at+0.45))/0.6));
+  clSmall.style.opacity=cl(sp); clSmall.style.transform="scale("+(0.8+0.2*cl(sp))+")"; }
+ else fade(collapseEl,0);
+
+ // a vague goal resolving into a checkable one
+ if(shSc){ fade(sharpenEl, seg(t,shSc.in,shSc.in+0.3)*(1-seg(t,shSc.out,shSc.out+0.4)));
+  var vt=shSc.vagueAt!=null?shSc.vagueAt:shSc.in;
+  var vn=Math.floor(cl((t-vt)/0.8)*(shSc.vague||"").length);
+  shOld.textContent=(shSc.vague||"").slice(0,vn);
+  var rp=seg(t,shSc.at,shSc.at+0.9), raw=shSc.specific||"";
+  var keep=Math.round(raw.length*eo(rp));
+  shNew.textContent=raw.slice(0,keep)+raw.slice(keep).replace(/\S/g,"\u00b7");
+  shOld.style.opacity=1-0.75*rp; shOld.style.textDecoration=rp>0.3?"line-through":"none";
+  shNew.style.opacity=rp>0.02?1:0;
+  shNew.style.transform="scale("+(0.94+0.06*rp)+")"; }
+ else fade(sharpenEl,0);
+
+ // the three steps, one per spoken instruction
+ if(st3Sc){ fade(steps3El, seg(t,st3Sc.in,st3Sc.in+0.3)*(1-seg(t,st3Sc.out,st3Sc.out+0.4)));
+  (st3Sc.at||[]).forEach(function(a2,i){ if(!s3Els[i])return;
+   s3Els[i].classList.toggle("on", t>=a2);
+   var k=eob(cl((t-a2)/0.45));
+   s3Els[i].style.transform="translateX("+((1-k)*-46)+"px)"; }); }
+ else fade(steps3El,0);
+
+ // odometer: the date rolls forward
+ if(rlSc){ fade(rollEl, seg(t,rlSc.in,rlSc.in+0.3)*(1-seg(t,rlSc.out,rlSc.out+0.4)));
+  rollGlyphs.forEach(function(g,i){
+   var st=(rlSc.roll||rlSc.in)+i*0.07, k=eio(cl((t-st)/0.75));
+   if(g.from===g.to){ g.st.textContent=g.to; g.st.style.transform="translateY(0)"; return; }
+   // spin through digits, land on the target
+   var spin=Math.floor((1-k)*14);
+   g.st.textContent = k>=1 ? g.to : String((parseInt(g.to,10)||0 + spin)%10);
+   g.st.style.transform="translateY("+((1-k)*-26)+"px)"; }); }
+ else fade(rollEl,0);
+
+ // tokens slam in, one per phrase
+ if(tkSc){ fade(tokensEl, seg(t,tkSc.in,tkSc.in+0.25)*(1-seg(t,tkSc.out,tkSc.out+0.4)));
+  tokEls.forEach(function(T){ var k=eob(cl((t-T.sc.at)/0.34));
+   T.el.style.opacity=cl(k*1.3);
+   T.el.style.transform="translateY("+((1-k)*70)+"px) scale("+(0.7+0.3*k)+")"; }); }
+ else fade(tokensEl,0);
+
+ // one big number counting up
+ if(bnSc){ fade(bignumEl, seg(t,bnSc.in,bnSc.in+0.3)*(1-seg(t,bnSc.out,bnSc.out+0.4)));
+  var bk=eo(seg(t,bnSc.start||bnSc.in,bnSc.end||bnSc.out));
+  bignumV.textContent=Math.round(bk*(bnSc.to||120));
+  bignumV.style.transform="scale("+(0.94+0.06*bk)+")"; }
+ else fade(bignumEl,0);
+
+ // the wall of days
+ DG.forEach(function(G){
+  var sc2=G.sc;
+  var dv=seg(t,sc2.in,sc2.in+0.3)*(1-seg(t,sc2.out,sc2.out+0.4));
+  fade(G.el,dv); fade(G.lab,dv);
+  var fs=sc2.fillStart!=null?sc2.fillStart:sc2.in, fe=sc2.fillEnd!=null?sc2.fillEnd:sc2.out;
+  var shown=Math.floor(cl((t-fs)/Math.max(0.1,fe-fs))*G.cells.length);
+  var miss=sc2.miss||[], dead=sc2.dead||[];
+  G.cells.forEach(function(d,i){
+   var on=i<shown;
+   var age=on?(shown-i):0, lead=on&&age<26?(1-age/26):0;
+   d.style.opacity=on?(0.82+0.18*Math.sin(t*3.1+i*0.7)*lead+0.18*(1-lead)):0.12;
+   d.style.transform="scale("+(on?(1+0.14*lead*Math.abs(Math.sin(t*2.6+i*0.5))):0.3)+")";
+   d.className="dm"+(on?" on":"")+
+     (miss.indexOf(i)>=0&&on?" miss":"")+(dead.indexOf(i)>=0&&on?" dead":"");
+  });
+  G.lab.textContent=(sc2.label||"").replace("{n}",shown);
+ });
+
+ // diagram: a record carried forward along the years
+ if(axSc){ fade(axiswEl, winFade(axSc,t));
+  axLine.style.strokeDashoffset=axLen*(1-eio(seg(t,axSc.drawAt||axSc.in,axSc.drawEnd||(axSc.in+1.2))));
+  axTicks.forEach(function(T,i){
+   var at=(axSc.tickAt||axSc.in)+i*(axSc.tickStep||0.14);
+   var k=eob(cl((t-at)/0.36));
+   T.el.style.opacity=cl(k);
+   T.el.style.transform="translateX(-50%) translateY("+((1-k)*16)+"px)"; });
+  // the card rides from the first year to the last
+  var tk=axSc.travelAt!=null?eio(seg(t,axSc.travelAt,axSc.travelEnd||(axSc.travelAt+1.6))):0;
+  var fromX=axTickX(axSc.fromTick||0), toX=axTickX(axSc.toTick!=null?axSc.toTick:axTicks.length-1);
+  var cx2=fromX+(toX-fromX)*tk;
+  // the card follows the marker but never leaves the frame
+  var half=215, pad=54;
+  var cxc=Math.max(half+pad, Math.min(1080-half-pad, cx2));
+  axCard.style.left=(cxc-half)+"px";
+  axCard.style.top=((axSc.cardTop==null?-96:axSc.cardTop))+"px";
+  fade(axCard, seg(t,axSc.cardAt||axSc.in,(axSc.cardAt||axSc.in)+0.4));
+  // the year it is sitting on lights up
+  axTicks.forEach(function(T){ T.el.className="axt"+(Math.abs(T.x-cx2)<70?" on":""); });
+ } else fade(axiswEl,0);
+
+ // diagram: the stack of dreams, bright then unattended
+ if(dsSc){ fade(stackwEl, seg(t,dsSc.in,dsSc.in+0.3)*(1-seg(t,dsSc.out,dsSc.out+0.45)));
+  var dim=dsSc.dimAt!=null?eio(seg(t,dsSc.dimAt,(dsSc.dimEnd||dsSc.dimAt+1.6))):0;
+  dsEls.forEach(function(D,i){
+   var k=eob(cl((t-(D.sc.at==null?dsSc.in:D.sc.at))/0.42));
+   var base=cl(k);
+   // one of them goes out with nothing marking it
+   var gone=(D.sc.outAt!=null)?eio(cl((t-D.sc.outAt)/0.9)):0;
+   var lvl=base*(1-0.62*dim)*(1-0.92*gone);
+   D.el.style.opacity=lvl;
+   D.el.style.transform="translateY("+((1-k)*26)+"px)";
+   D.el.style.borderColor=col(D.sc.color||"blue");
+   D.el.style.filter=(dim>0||gone>0)?("saturate("+(1-0.75*Math.max(dim,gone))+")"):"none"; });
+  if(dsSc.capAt!=null) fade(stackCap, seg(t,dsSc.capAt,dsSc.capAt+0.4));
+ } else fade(stackwEl,0);
+
+ // diagram: each row gets its verdict
+ if(vrSc){ fade(verwEl, winFade(vrSc,t));
+  vrEls.forEach(function(R){
+   var k=eo(cl((t-(R.sc.at==null?vrSc.in:R.sc.at))/0.4));
+   R.el.style.opacity=cl(k)*(R.sc.faint?0.5:1);
+   R.el.style.transform="translateX("+((1-k)*-24)+"px)";
+   var vk=R.sc.verdictAt!=null?eob(cl((t-R.sc.verdictAt)/0.44)):0;
+   R.badge.style.opacity=cl(vk);
+   R.badge.style.transform="scale("+(0.7+0.3*cl(vk))+")"; });
+  if(vrSc.capAt!=null) fade(verCap, seg(t,vrSc.capAt,vrSc.capAt+0.4));
+ } else fade(verwEl,0);
+
+ // diagram: a year of days, zooming out scale by scale
+ if(ygSc&&YG){
+  fade(ygridEl, seg(t,ygSc.in,ygSc.in+0.4)*(1-seg(t,ygSc.out,ygSc.out+0.5)));
+  // camera: interpolate between the auto-framed zoom keys
+  var Z=YG.ZK, fr;
+  if(!Z.length) fr={s:1,tx:0,ty:0};
+  else if(t<=Z[0].t) fr=Z[0];
+  else { fr=Z[Z.length-1];
+   for(var zi=0;zi<Z.length-1;zi++){ var za=Z[zi], zb=Z[zi+1];
+    if(t>=za.t&&t<=zb.t){ var zu=eio((t-za.t)/Math.max(1e-6,zb.t-za.t));
+     fr={s:za.s+(zb.s-za.s)*zu, tx:za.tx+(zb.tx-za.tx)*zu, ty:za.ty+(zb.ty-za.ty)*zu}; break; } } }
+  // a slow drift so the frame is never dead still
+  var dx=Math.sin(t*0.37)*9, dy=Math.cos(t*0.29)*7;
+  ygWorld.style.transform="translate("+(fr.tx+dx)+"px,"+(fr.ty+dy)+"px) scale("+fr.s+")";
+
+  var rn=YG.frontAt(ygSc.reveal,t), fn=YG.frontAt(ygSc.fill,t), SPREAD=2.5;
+  for(var ci=0;ci<YG.cells.length;ci++){
+   var C=YG.cells[ci], el=C.el;
+   var rk=cl((rn-ci)/SPREAD);
+   if(rk<=0){ el.style.opacity=0; continue; }
+   var past = ci < YG.elapsed;
+   var fk = past ? cl((fn-ci)/SPREAD) : 0;
+   var pop=eob(rk);
+   el.style.opacity = 1;
+   el.style.transform = "scale("+(0.55+0.45*cl(pop))+")";
+   if(fk>0.02){                                   // a day that is gone
+    el.style.background=CO.ink; el.style.border="0";
+    el.style.opacity=0.30+0.70*fk; }
+   else {                                         // a day still ahead of you
+    // borders go sub-pixel once the year is in frame, so carry these on fill alone
+    el.style.background="rgba(255,255,255,.13)"; el.style.border="0";
+    el.style.opacity=0.30+0.70*rk; } }
+
+  // month labels only once the whole year is in frame
+  if(ygSc.labelsAt!=null){ var lk=seg(t,ygSc.labelsAt,ygSc.labelsAt+0.7);
+   for(var li=0;li<YG.labels.length;li++) YG.labels[li].style.opacity=lk*0.9; }
+
+  // captions
+  var capNow=null;
+  (ygSc.captions||[]).forEach(function(c2){ if(t>=c2.t&&t<(c2.until||1e9)) capNow=c2; });
+  if(capNow){ ygCap.textContent=capNow.text;
+   var ck=eo(cl((t-capNow.t)/0.4))*(1-seg(t,(capNow.until||1e9)-0.35,(capNow.until||1e9)));
+   ygCap.style.opacity=ck; ygCap.style.transform="translateY("+((1-ck)*18)+"px)"; }
+  else ygCap.style.opacity=0;
+
+  // the two numbers at the end
+  var stNow=null;
+  (ygSc.stats||[]).forEach(function(c2){ if(t>=c2.t&&t<(c2.until||1e9)) stNow=c2; });
+  if(stNow){ var sk=eob(cl((t-stNow.t)/0.5));
+   ygNum.textContent=stNow.n; ygLab.textContent=stNow.label||"";
+   ygNum.style.color=col(stNow.color||"ink");
+   ygStat.style.opacity=cl(sk)*(1-seg(t,(stNow.until||1e9)-0.35,(stNow.until||1e9)));
+   ygStat.style.transform="translateY("+((1-cl(sk))*24)+"px)"; }
+  else ygStat.style.opacity=0;
+ } else fade(ygridEl,0);
+
+ // diagram: one gap recovers, two gaps break the chain
+ if(mrSc){ fade(missrEl, seg(t,mrSc.in,mrSc.in+0.3)*(1-seg(t,mrSc.out,mrSc.out+0.4)));
+  mrRows.forEach(function(R){
+   var at=R.sc.at||mrSc.in;
+   fade(R.row, seg(t,at,at+0.35));
+   var step=R.sc.step||0.085;               // cells land left to right
+   R.cells.forEach(function(C,i){
+    var k=seg(t,at+0.25+i*step,at+0.25+i*step+0.16);
+    if(k<=0){ C.el.className="mc"; C.el.style.opacity=0; return; }
+    C.el.style.opacity=1;
+    C.el.className="mc"+(C.ch==="#"?" on":" gap");
+   });
+   // once the rule is broken every later cell goes dead
+   if(R.sc.breakAt!=null && t>=R.sc.breakAt){
+    var bk=eio(cl((t-R.sc.breakAt)/0.5));
+    R.cells.forEach(function(C,i){
+     if(i>=(R.sc.breakFrom||0) && C.ch==="#"){
+      C.el.className="mc dead"; C.el.style.opacity=1-0.45*bk; } });
+    R.row.style.opacity=1-0.25*bk; }
+  });
+  if(mrSc.verdictAt!=null){ var vk=eob(cl((t-mrSc.verdictAt)/0.45));
+   mrVerd.textContent=mrSc.verdict||""; mrVerd.style.color=col(mrSc.verdictColor||"ink");
+   mrVerd.style.opacity=cl(vk); mrVerd.style.transform="translateY("+((1-vk)*26)+"px)"; }
+ } else fade(missrEl,0);
+
+ // diagram: the arc that compounds, crossing its thresholds
+ if(arSc){ fade(arcwEl, seg(t,arSc.in,arSc.in+0.35)*(1-seg(t,arSc.out,arSc.out+0.4)));
+  var dk=eio(seg(t,arSc.drawAt||arSc.in,arSc.drawEnd||arSc.out));
+  arcCurve.style.strokeDashoffset=arcLen*(1-dk);
+  arcMarks.forEach(function(M){ var k=eob(cl((t-M.sc.at)/0.42));
+   M.el.style.opacity=cl(k);
+   M.el.style.transform="translateX(-50%) translateY("+((1-k)*30)+"px)";
+   // the dot lands on the curve first, then the tick drops to the label
+   M.dot.style.opacity=cl(eo(cl((t-M.sc.at)/0.3)));
+   M.tick.style.opacity=0.55*cl(eo(cl((t-M.sc.at-0.12)/0.4))); });
+  if(arSc.capAt!=null) fade(arcCap, seg(t,arSc.capAt,arSc.capAt+0.4));
+ } else fade(arcwEl,0);
+
+ // diagram: method pipeline, nodes then connectors
+ if(fwSc){ fade(flowEl, seg(t,fwSc.in,fwSc.in+0.3)*(1-seg(t,fwSc.out,fwSc.out+0.4)));
+  fwNodes.forEach(function(N,i){ var at=(fwSc.items[i]||{}).at||fwSc.in;
+   var k=eob(cl((t-at)/0.42)); N.style.opacity=cl(k);
+   N.style.transform="translateY("+((1-k)*34)+"px)"; });
+  fwConns.forEach(function(C,i){ var at=(fwSc.items[i+1]||{}).at||fwSc.in;
+   C.style.transform="scaleX("+eo(cl((t-(at-0.18))/0.34))+")"; });
+  if(fwSc.capAt!=null) fade(flowCap, seg(t,fwSc.capAt,fwSc.capAt+0.4));
+ } else fade(flowEl,0);
+
+ // thresholds
+ if(thSc){ fade(threshEl, seg(t,thSc.in,thSc.in+0.3)*(1-seg(t,thSc.out,thSc.out+0.4)));
+  thEls.forEach(function(T){ var k=eob(cl((t-T.sc.at)/0.4));
+   T.el.style.opacity=cl(k); T.el.style.transform="translateY("+((1-k)*40)+"px)"; }); }
+ else fade(threshEl,0);
+
+ // the bad-day floor
+ if(flSc){ fade(floorEl, seg(t,flSc.in,flSc.in+0.3)*(1-seg(t,flSc.out,flSc.out+0.4)));
+  floorFill.style.height=(eio(seg(t,flSc.fillAt||flSc.in,(flSc.fillAt||flSc.in)+0.9))*100)+"%";
+  var lk=seg(t,flSc.floorAt||flSc.in,(flSc.floorAt||flSc.in)+0.5);
+  fade(floorLine,lk); fade(floorTag,lk);
+  floorTag.style.bottom=(flSc.floorPct||26)+"%";
+  floorLine.style.bottom=(flSc.floorPct||26)+"%";
+  // on a bad day the fill drops to the floor and stays legal
+  var drop=flSc.dropAt!=null?eio(seg(t,flSc.dropAt,flSc.dropAt+0.7)):0;
+  if(drop>0) floorFill.style.height=(100-(100-(flSc.floorPct||26))*drop)+"%"; }
+ else fade(floorEl,0);
+
+ // two paths from the same origin
+ if(pSc){ fade(pathsEl, seg(t,pSc.in,pSc.in+0.4)*(1-seg(t,pSc.out,pSc.out+0.5)));
+  var kA=eio(seg(t,pSc.start,pSc.winEnd||pSc.end));
+  var kB=eio(seg(t,pSc.start,pSc.loseEnd||(pSc.start+(pSc.end-pSc.start)*0.55)));
+  pA1.style.strokeDashoffset=pLenA*(1-kA);
+  pB1.style.strokeDashoffset=pLenB*(1-kB);
+  var ptA=pA1.getPointAtLength(pLenA*kA), ptB=pB1.getPointAtLength(pLenB*kB);
+  pDotA.setAttribute("cx",ptA.x); pDotA.setAttribute("cy",ptA.y);
+  pDotB.setAttribute("cx",ptB.x); pDotB.setAttribute("cy",ptB.y);
+  pDotA.setAttribute("opacity",kA>0.01&&kA<0.999?1:0);
+  pDotB.setAttribute("opacity",kB>0.01?1:0);
+  pGoal.setAttribute("opacity",eo(seg(t,(pSc.winEnd||pSc.end)-0.3,(pSc.winEnd||pSc.end)+0.3)));
+  pOrigin.setAttribute("opacity",seg(t,pSc.in,pSc.in+0.3));
+  fade(plO, seg(t,pSc.in+0.2,pSc.in+0.6)); fade(plG, seg(t,pSc.in+0.2,pSc.in+0.6));
+  fade(plA, seg(t,(pSc.winEnd||pSc.end),(pSc.winEnd||pSc.end)+0.4));
+  fade(plB, seg(t,(pSc.loseEnd||pSc.start+1)+0.2,(pSc.loseEnd||pSc.start+1)+0.6)); }
+ else fade(pathsEl,0);
+
+ // candidate answers, dismissed one per question
+ if(cSc){ fade(candsEl, seg(t,cSc.in,cSc.in+0.3)*(1-seg(t,cSc.out,cSc.out+0.4)));
+  candEls.forEach(function(C,i){
+   var a=C.sc.at, dz=C.sc.dismiss;
+   var p=eob(cl((t-a)/0.4));
+   C.el.style.opacity=cl(p);
+   C.el.style.transform="translateX(-50%) scale("+(0.8+0.2*p)+")";
+   if(dz!=null){ var dp=eio(seg(t,dz,dz+0.36));
+    C.line.style.transform="scaleX("+dp+")";
+    C.el.style.opacity=cl(p)*(1-0.55*dp); } }); }
+ else fade(candsEl,0);
+
+ // a field of capability, expanding
+ if(fSc){ fade(fieldEl, seg(t,fSc.in,fSc.in+0.5)*(1-seg(t,fSc.out,fSc.out+0.5)));
+  var grow=eio(seg(t,fSc.start||fSc.in,fSc.end||fSc.out));
+  var coll=fSc.collapse!=null?eio(seg(t,fSc.collapse,fSc.collapseEnd||fSc.out)):0;
+  fDots.forEach(function(d,i){
+   var r=d.r*(0.18+0.82*grow)*(1-0.94*coll);
+   var a2=d.a+t*0.09;
+   var x=540+Math.cos(a2)*r*1.02, y=930+Math.sin(a2)*r*0.86;
+   var yy=y+(coll)*( (930-y) );      // collapse toward a single line
+   d.el.style.transform="translate("+x+"px,"+yy+"px)";
+   d.el.style.opacity=(0.35+0.65*grow)*(1-0.7*coll)*(0.6+0.4*Math.sin(t*1.6+d.ph)); }); }
+ else fade(fieldEl,0);
+
+ // an empty plan
+ if(plSc){ fade(planEl, seg(t,plSc.in,plSc.in+0.35)*(1-seg(t,plSc.out,plSc.out+0.4)));
+  planEl.style.transform="translateY("+(Math.sin(t*0.9)*8)+"px)";
+  fade(planStamp, plSc.stampAt!=null?eob(cl((t-plSc.stampAt)/0.4)):0); }
+ else fade(planEl,0);
+
+ // chips: scattered dreams that snap into an ordered archive
+ if(chSc){ fade(chipsEl, seg(t,chSc.in,chSc.in+0.5)*(1-seg(t,chSc.out,chSc.out+0.5)));
+  var ord=chSc.orderAt!=null?eio(seg(t,chSc.orderAt,chSc.orderAt+1.3)):0;
+  chips.forEach(function(ch,i){
+   var wob=Math.sin(t*0.7+i)*9*(1-ord);
+   var x=ch.sx+(ch.gx-ch.sx)*ord, y=ch.sy+(ch.gy-ch.sy)*ord+wob;
+   ch.el.style.transform="translate("+x+"px,"+y+"px)";
+   ch.el.style.opacity=(0.42+0.58*ord);
+   if(chSc.liveAt!=null && t>=chSc.liveAt){
+     ch.el.style.borderColor=col(ch.cn); ch.meta.textContent=chSc.metaText||"on the record";
+     ch.meta.style.color=col(ch.cn); }
+   else { ch.el.style.borderColor="rgba(255,255,255,.16)"; ch.meta.textContent="standby";
+     ch.meta.style.color=CO.dim; } }); }
+ else fade(chipsEl,0);
+
+ // the empty slot waiting for you
+ if(slSc){ fade(slotEl, seg(t,slSc.in,slSc.in+0.35)*(1-seg(t,slSc.out,slSc.out+0.4)));
+  var n2=Math.floor(cl((t-(slSc.typeAt||slSc.in))/1.1)*(slSc.text||"").length);
+  slotText.textContent=(slSc.text||"").slice(0,n2)+((Math.floor(t*2)%2)?"|":"");
+  slotEl.style.transform="scale("+(0.98+0.02*eob(cl((t-slSc.in)/0.5)))+")"; }
+ else fade(slotEl,0);
+
+ // two stages
+ if(stSc){ fade(stagesEl, seg(t,stSc.in,stSc.in+0.4)*(1-seg(t,stSc.out,stSc.out+0.4)));
+  stEls.forEach(function(Sg,i){
+   var a3=Sg.sc.at!=null?Sg.sc.at:stSc.in;
+   var p=eob(cl((t-a3)/0.45));
+   Sg.el.style.transform="translateX("+((1-p)*(i%2?60:-60))+"px)";
+   Sg.el.style.opacity=cl(p);
+   Sg.el.style.borderColor= t>=a3+0.2 ? col(Sg.sc.color||"blue") : "rgba(255,255,255,.16)";
+   Sg.fill.style.width=(eio(seg(t,Sg.sc.fillAt!=null?Sg.sc.fillAt:a3, (Sg.sc.fillAt!=null?Sg.sc.fillAt:a3)+1.1))*(Sg.sc.fillPct!=null?Sg.sc.fillPct:100))+"%"; }); }
+ else fade(stagesEl,0);
+
+ // end card, URL typing with the voice
+ if(eSc){ fade(endc, seg(t,eSc.in,eSc.in+0.5));
+  var ep=eob(cl((t-eSc.in)/0.6));
+  endMark.style.transform="scale("+(0.9+0.1*ep)+")";
+  var us=eSc.urlStart!=null?eSc.urlStart:eSc.in, ue=eSc.urlEnd!=null?eSc.urlEnd:eSc.in+2;
+  var un=Math.floor(cl((t-us)/Math.max(0.1,ue-us))*URL_TXT.length);
+  endUrl.textContent=t<us?"":URL_TXT.slice(0,un); }
+ else fade(endc,0);
+}
+
+// ================= driver =================
+var st0=null,raf=null;
+function frame(now){ if(st0===null)st0=now; var t=(now-st0)/1000;
+ if(t>=TOTAL){render(TOTAL);raf=null;return;} render(t); raf=requestAnimationFrame(frame); }
+function play(){ document.getElementById("playBtn").style.display="none"; st0=null;
+ if(raf)cancelAnimationFrame(raf); raf=requestAnimationFrame(frame); }
+addEventListener("load",function(){
+ render(0);
+ window.__seek=function(x){render(x);}; window.__duration=TOTAL;
+ var q=new URLSearchParams(location.search), tp=q.get("t");
+ if(tp!==null&&!isNaN(parseFloat(tp))){ document.getElementById("playBtn").style.display="none"; render(parseFloat(tp)); return; }
+ if(q.get("autoplay")==="1") play(); else document.getElementById("playBtn").addEventListener("click",play);
+});
+})();
+
+</script>
+</body></html>

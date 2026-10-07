@@ -1,0 +1,925 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dmyor launch</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    overflow: hidden;
+  }
+  #viewport {
+    position: fixed;
+    inset: 0;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #stage {
+    position: relative;
+    width: 1080px;
+    height: 1920px;
+    background: #0A0A0A;
+    overflow: hidden;
+    transform-origin: center center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* everything that becomes "the book" travels together */
+  #bookPersp {
+    position: absolute;
+    inset: 0;
+    perspective: 3200px;
+    perspective-origin: 50% 52%;
+  }
+  #bookWorld { position: absolute; inset: 0; transform-style: preserve-3d; }
+  /* thin page edges, so the closed book has thickness */
+  .edge {
+    position: absolute;
+    width: 1px;
+    background: rgba(245, 245, 240, 0.28);
+  }
+
+  /* ---------- the facing (left) page, revealed on zoom-out ---------- */
+  #bookBase { position: absolute; inset: 0; z-index: 1; opacity: 0; }
+  #leftPage {
+    position: absolute;
+    border: 1px solid rgba(245, 245, 240, 0.5);
+    border-radius: 3px;
+  }
+  #spine {
+    position: absolute;
+    width: 1px;
+    background: rgba(245, 245, 240, 0.45);
+  }
+  .ghostCard {
+    position: absolute;
+    border: 1px solid rgba(245, 245, 240, 0.16);
+    border-radius: 6px;
+  }
+
+  /* ---------- the canvas that becomes the right-hand page ---------- */
+  #canvasWrap {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    transform-origin: 0 0;
+  }
+
+  /* ---------- grid ---------- */
+  #gridLayer {
+    position: absolute;
+    left: 46px;
+    top: 46px;
+    width: 988px;
+    height: 1828px;
+    overflow: hidden;
+  }
+  #gridInner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 988px;
+    will-change: transform;
+  }
+  .colWrap { width: 268px; }
+  .col { display: flex; flex-direction: column; gap: 30px; }
+  .card { display: block; }
+  .cardInner {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(245, 245, 240, 0.22);
+    border-radius: 12px;
+    padding: 20px;
+    color: #F5F5F0;
+    /* opacity and scale are driven from render(t); no CSS transition, so any
+       moment of the video can be reproduced exactly by seeking. */
+    opacity: 0;
+    transform: scale(0.94);
+  }
+
+  .dream { font-size: 20px; line-height: 1.4; font-weight: 500; }
+  .meta {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 14px;
+  }
+  .date { font-size: 13px; color: #6B6B6B; }
+  .standby {
+    font-size: 10px;
+    letter-spacing: 1.6px;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    color: #6B6B6B;
+  }
+
+  /* ---------- turning pages + closing cover ---------- */
+  #flipLayer {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    perspective: 2600px;
+    perspective-origin: 50% 50%;
+    pointer-events: none;
+  }
+  /* A leaf is built from vertical strips hinged end to end. Bending the joints
+     lets the page curve as it swings instead of staying a rigid board. */
+  .page {
+    position: absolute;
+    transform-style: preserve-3d;
+    opacity: 0;
+  }
+  .strip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    transform-origin: left center;
+    background: #0A0A0A;
+    border-top: 1px solid rgba(245, 245, 240, 0.34);
+    border-bottom: 1px solid rgba(245, 245, 240, 0.34);
+    box-sizing: border-box;
+  }
+  .stripFirst { border-left: 1px solid rgba(245, 245, 240, 0.34); }
+  .stripLast  { border-right: 1px solid rgba(245, 245, 240, 0.34); }
+  .stripInner { position: absolute; top: 0; }
+  /* darkens as a leaf swings through the perpendicular, giving it body */
+  .stripShade, .coverShade {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .coverShade { border-radius: 3px; }
+  #cover {
+    position: absolute;
+    transform-origin: left center;
+    transform-style: preserve-3d;
+    opacity: 0;
+  }
+  .face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    border-radius: 4px;
+    background: #0A0A0A;
+    border: 1px solid rgba(245, 245, 240, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .coverInner { transform: rotateY(180deg); }
+  #bookTitle {
+    text-align: center;
+    color: #F5F5F0;
+    font-size: 44px;
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  #bookTitle span {
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #8C8C86;
+  }
+
+  /* ---------- hero card (beat 2) ---------- */
+  #heroCard {
+    position: absolute;
+    z-index: 5;
+    box-sizing: border-box;
+    border: 1px solid rgba(245, 245, 240, 0.32);
+    border-radius: 12px;
+    padding: 26px 28px 22px;
+    color: #F5F5F0;
+    overflow: hidden;
+    display: none;
+  }
+  #heroCard .meta { margin-top: 18px; }
+  #heroCursor { opacity: 0.85; font-weight: 300; }
+
+  #borderSvg {
+    position: absolute;
+    inset: 0;
+    width: 1080px;
+    height: 1920px;
+    pointer-events: none;
+  }
+
+  /* ---------- text ---------- */
+  #textLayer { position: absolute; inset: 0; z-index: 10; }
+  .beat {
+    position: absolute;
+    left: 90px;
+    width: 900px;
+    text-align: center;
+    opacity: 0;
+    color: #F5F5F0;
+  }
+  .line1 {
+    font-size: 52px;
+    line-height: 1.32;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+  }
+  .line2 {
+    margin-top: 26px;
+    font-size: 30px;
+    line-height: 1.45;
+    font-weight: 400;
+    color: #8C8C86;
+  }
+
+  #playBtn {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: 200px;
+    height: 62px;
+    border-radius: 31px;
+    border: 1px solid rgba(245, 245, 240, 0.4);
+    background: rgba(10, 10, 10, 0.92);
+    color: #F5F5F0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  #playBtn:hover { background: rgba(32, 32, 32, 0.92); }
+</style>
+</head>
+<body>
+
+<div id="viewport">
+  <div id="stage">
+
+    <div id="bookPersp">
+    <div id="bookWorld">
+      <div id="bookBase">
+        <div id="leftPage"></div>
+        <div id="spine"></div>
+      </div>
+
+      <div id="canvasWrap">
+        <div id="gridLayer"><div id="gridInner"><div id="gridRow"></div></div></div>
+        <svg id="borderSvg" viewBox="0 0 1080 1920">
+          <path id="borderPath" d="M46,46 L1034,46 L1034,1874 L46,1874 Z"
+                fill="none" stroke="rgba(245,245,240,0.55)" stroke-width="1.5"/>
+        </svg>
+      </div>
+
+      <div id="flipLayer">
+        <div id="pageStack"></div>
+        <div id="cover">
+          <div class="face coverOuter">
+            <div id="bookTitle">Dreams<br>to Reality<span>dmyor</span></div>
+          </div>
+          <div class="face coverInner"></div>
+          <div class="coverShade" id="coverShade"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div id="heroCard">
+      <div class="dream"><span id="heroText"></span><span id="heroCursor">|</span></div>
+      <div class="meta">
+        <span class="date" id="heroDate"></span>
+        <span class="standby">standby</span>
+      </div>
+    </div>
+
+    <div id="textLayer"></div>
+  </div>
+</div>
+
+<button id="playBtn">PLAY</button>
+
+<script>
+(function () {
+  "use strict";
+
+  var STAGE_W = 1080, STAGE_H = 1920;
+  var stage = document.getElementById("stage");
+  var currentScale = 1;
+
+  function fitStage() {
+    currentScale = Math.min(window.innerWidth / STAGE_W, window.innerHeight / STAGE_H);
+    stage.style.transform = "scale(" + currentScale + ")";
+  }
+  fitStage();
+  window.addEventListener("resize", fitStage);
+
+  function easeInOut(x) {
+    return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+  }
+  function clamp01(x) { return x < 0 ? 0 : (x > 1 ? 1 : x); }
+  function seg(t, a, b) { return clamp01((t - a) / (b - a)); }
+
+  function stageRect(el) {
+    var s = stage.getBoundingClientRect();
+    var r = el.getBoundingClientRect();
+    return {
+      left: (r.left - s.left) / currentScale,
+      top: (r.top - s.top) / currentScale,
+      width: r.width / currentScale,
+      height: r.height / currentScale
+    };
+  }
+
+  // ---------- data ----------
+  var DREAMS = [
+    "Build a company that outlives me",
+    "Buy my parents a house",
+    "Publish my first novel",
+    "Run a sub-3 hour marathon",
+    "Ship a product to 10,000 users",
+    "Reach financial independence by 40",
+    "Get my pilot's license",
+    "Open a bakery in my hometown",
+    "Speak fluent Japanese",
+    "Sail across the Atlantic",
+    "Finish my PhD",
+    "Start a school in my village",
+    "Climb Kilimanjaro",
+    "Direct my first feature film",
+    "Build a cabin with my own hands",
+    "Complete an Ironman",
+    "Fund a scholarship in my name",
+    "Buy a house by the sea",
+    "Run a design studio of my own",
+    "Save my first million",
+    "Play piano at a real recital",
+    "Cycle across the country",
+    "Launch a record label",
+    "Design a building that gets built"
+  ];
+  var DATES = ["2027","2028","2029","2030","2031","2032","2033","2035"];
+  function dateFor(i) { return DATES[i % DATES.length]; }
+
+  var N_COLS = 3;
+  var PER_COL = 14;
+  var COUNT = N_COLS * PER_COL;
+
+  var ROW_H = [136, 164, 128, 152, 178, 132, 158, 142, 170, 126, 148, 166, 134, 156];
+  var COL_STAGGER = [0, 58, 26];
+
+  function cardIndex(col, row) { return col * PER_COL + row; }
+
+  function buildRow() {
+    var row = document.createElement("div");
+    row.style.display = "flex";
+    row.style.justifyContent = "center";
+    row.style.gap = "30px";
+    row.style.width = "988px";
+
+    var cols = [];
+    for (var c = 0; c < N_COLS; c++) {
+      var wrap = document.createElement("div");
+      wrap.className = "colWrap";
+      var col = document.createElement("div");
+      col.className = "col";
+      col.style.transform = "translateY(" + COL_STAGGER[c] + "px)";
+      wrap.appendChild(col);
+      row.appendChild(wrap);
+      cols.push(col);
+    }
+
+    for (var c2 = 0; c2 < N_COLS; c2++) {
+      for (var r = 0; r < PER_COL; r++) {
+        var idx = cardIndex(c2, r);
+        var card = document.createElement("div");
+        card.className = "card";
+        card.dataset.idx = idx;
+        card.style.height = ROW_H[r % ROW_H.length] + "px";
+
+        var inner = document.createElement("div");
+        inner.className = "cardInner";
+
+        var dream = document.createElement("div");
+        dream.className = "dream";
+        dream.textContent = DREAMS[idx % DREAMS.length];
+
+        var meta = document.createElement("div");
+        meta.className = "meta";
+        var d = document.createElement("span");
+        d.className = "date";
+        d.textContent = dateFor(idx);
+        var sb = document.createElement("span");
+        sb.className = "standby";
+        sb.textContent = "standby";
+        meta.appendChild(d);
+        meta.appendChild(sb);
+
+        inner.appendChild(dream);
+        inner.appendChild(meta);
+        card.appendChild(inner);
+        cols[c2].appendChild(card);
+      }
+    }
+    return row;
+  }
+
+  var gridInner = document.getElementById("gridInner");
+  var blockA = buildRow();
+  var blockB = buildRow();
+  var lead = document.createElement("div");
+  lead.style.height = "34px";
+  var spacer = document.createElement("div");
+  spacer.style.height = "30px";
+  gridInner.innerHTML = "";
+  gridInner.appendChild(lead);
+  gridInner.appendChild(blockA);
+  gridInner.appendChild(spacer);
+  gridInner.appendChild(blockB);
+
+  var cardsA = blockA.querySelectorAll(".card");
+  var cardsB = blockB.querySelectorAll(".card");
+  var byIdxA = {}, byIdxB = {};
+  var innerA = {}, innerB = {};
+  for (var i = 0; i < cardsA.length; i++) {
+    byIdxA[cardsA[i].dataset.idx] = cardsA[i];
+    innerA[cardsA[i].dataset.idx] = cardsA[i].querySelector(".cardInner");
+  }
+  for (var i2 = 0; i2 < cardsB.length; i2++) {
+    byIdxB[cardsB[i2].dataset.idx] = cardsB[i2];
+    innerB[cardsB[i2].dataset.idx] = cardsB[i2].querySelector(".cardInner");
+  }
+
+  var loopDistance = 0;
+  function measureLoop() {
+    loopDistance = (blockB.getBoundingClientRect().top - blockA.getBoundingClientRect().top) / currentScale;
+  }
+
+  // ---------- book geometry ----------
+  // The canvas shrinks to exactly this box and becomes the right-hand page.
+  var CANVAS_SCALE = 460 / 1080;      // 1080x1920 becomes a 460x818 page
+  var PAGE_X = 540;                   // spine
+  var PAGE_Y = 960 - (1920 * CANVAS_SCALE) / 2;
+  // the canvas's own drawn border, once scaled, is the page's printed edge
+  var INSET = 46 * CANVAS_SCALE;      // 17px
+  var PRINT_W = (1034 - 46) * CANVAS_SCALE; // 366
+  var PRINT_H = (1874 - 46) * CANVAS_SCALE; // 677
+  var PRINT_TOP = PAGE_Y + INSET;     // 621
+
+  var leftPage = document.getElementById("leftPage");
+  leftPage.style.left = (PAGE_X - INSET - PRINT_W) + "px"; // mirrored across the spine
+  leftPage.style.top = PRINT_TOP + "px";
+  leftPage.style.width = PRINT_W + "px";
+  leftPage.style.height = PRINT_H + "px";
+
+  var spineEl = document.getElementById("spine");
+  spineEl.style.left = PAGE_X + "px";
+  spineEl.style.top = PRINT_TOP + "px";
+  spineEl.style.height = PRINT_H + "px";
+
+  // faint card shapes standing in for a page of the archive
+  var GHOST_H = [58, 70, 54, 65, 76, 56, 68, 61, 73, 52, 64, 71, 57, 67];
+  function ghostGrid(container, x0, y0, w, h, seed, coarse) {
+    var pad = 14, gap = coarse ? 16 : 11, cols = 3;
+    var mul = coarse ? 1.7 : 1; // fewer, larger shapes on leaves that only flash by
+    var colW = (w - pad * 2 - gap * (cols - 1)) / cols;
+    var stagger = [0, 25, 11];
+    for (var c = 0; c < cols; c++) {
+      var y = y0 + pad + stagger[(c + seed) % 3];
+      for (var k = 0; ; k++) {
+        var hh = GHOST_H[(k + seed * 3 + c) % GHOST_H.length] * mul;
+        if (y + hh > y0 + h - pad) break;
+        var g = document.createElement("div");
+        g.className = "ghostCard";
+        g.style.left = (x0 + pad + c * (colW + gap)) + "px";
+        g.style.width = colW + "px";
+        g.style.top = y + "px";
+        g.style.height = hh + "px";
+        container.appendChild(g);
+        y += hh + gap;
+      }
+    }
+  }
+  ghostGrid(document.getElementById("bookBase"),
+            PAGE_X - INSET - PRINT_W, PRINT_TOP, PRINT_W, PRINT_H, 0);
+
+  // turning pages hinge on the spine and land on the facing page
+  var FLIP_W = PAGE_X - (PAGE_X - INSET - PRINT_W);
+  var N_PAGES = 8;
+  var N_STRIPS = 5;
+  var STRIP_W = FLIP_W / N_STRIPS;
+  var pageEls = [], pageStrips = [];
+  var pageStack = document.getElementById("pageStack");
+
+  for (var p = 0; p < N_PAGES; p++) {
+    var pg = document.createElement("div");
+    pg.className = "page";
+    pg.style.left = PAGE_X + "px";
+    pg.style.top = PRINT_TOP + "px";
+    pg.style.width = FLIP_W + "px";
+    pg.style.height = PRINT_H + "px";
+
+    // one page of the archive, built once then clipped into each strip
+    var tpl = document.createElement("div");
+    ghostGrid(tpl, INSET, 0, PRINT_W, PRINT_H, p + 1, true);
+
+    var strips = [];
+    for (var s = 0; s < N_STRIPS; s++) {
+      var st = document.createElement("div");
+      st.className = "strip" + (s === 0 ? " stripFirst" : "") +
+                     (s === N_STRIPS - 1 ? " stripLast" : "");
+      st.style.width = STRIP_W + "px";
+
+      var inner = document.createElement("div");
+      inner.className = "stripInner";
+      inner.style.left = (-s * STRIP_W) + "px";
+      inner.style.width = FLIP_W + "px";
+      inner.style.height = PRINT_H + "px";
+      inner.appendChild(tpl.cloneNode(true));
+      st.appendChild(inner);
+
+      var ssh = document.createElement("div");
+      ssh.className = "stripShade";
+      st.appendChild(ssh);
+
+      pg.appendChild(st);
+      strips.push({ el: st, shade: ssh });
+    }
+
+    pageStack.appendChild(pg);
+    pageEls.push(pg);
+    pageStrips.push(strips);
+  }
+
+  // page-edge thickness on both outer edges of the spread
+  (function buildEdges() {
+    var base = document.getElementById("bookBase");
+    var rightEdge = PAGE_X + INSET + PRINT_W;
+    var leftEdge = PAGE_X - INSET - PRINT_W;
+    for (var e = 0; e < 4; e++) {
+      var a = document.createElement("div");
+      a.className = "edge";
+      a.style.left = (rightEdge + 2 + e * 2.5) + "px";
+      a.style.top = (PRINT_TOP + 6 + e * 2) + "px";
+      a.style.height = (PRINT_H - 12 - e * 4) + "px";
+      a.style.opacity = 1 - e * 0.18;
+      base.appendChild(a);
+
+      var b = document.createElement("div");
+      b.className = "edge";
+      b.style.left = (leftEdge - 2 - e * 2.5) + "px";
+      b.style.top = (PRINT_TOP + 6 + e * 2) + "px";
+      b.style.height = (PRINT_H - 12 - e * 4) + "px";
+      b.style.opacity = 1 - e * 0.18;
+      base.appendChild(b);
+    }
+  })();
+
+  var canvasWrap = document.getElementById("canvasWrap");
+  var bookBase = document.getElementById("bookBase");
+  var bookWorld = document.getElementById("bookWorld");
+  var coverShade = document.getElementById("coverShade");
+
+  var COVER_W = FLIP_W + 12, COVER_H = PRINT_H + 20;
+  var coverEl = document.getElementById("cover");
+  coverEl.style.left = PAGE_X + "px";
+  coverEl.style.top = (PRINT_TOP - 10) + "px";
+  coverEl.style.width = COVER_W + "px";
+  coverEl.style.height = COVER_H + "px";
+
+  // The inside of the front cover carries a page too. While the book is open this
+  // face is what lies over the left-hand side, so it has to match what it replaces.
+  ghostGrid(document.querySelector(".coverInner"), INSET - 4, 10, PRINT_W, PRINT_H, 2);
+
+  // thickness for the shut book, revealed only as the cover actually lands
+  var closedEdges = [];
+  (function buildClosedEdges() {
+    for (var e = 0; e < 4; e++) {
+      var el = document.createElement("div");
+      el.className = "edge";
+      el.style.left = (PAGE_X + COVER_W + 2 + e * 2.5) + "px";
+      el.style.top = (PRINT_TOP - 10 + 6 + e * 2) + "px";
+      el.style.height = (COVER_H - 12 - e * 4) + "px";
+      el.style.opacity = 0;
+      bookWorld.appendChild(el);
+      closedEdges.push(el);
+    }
+  })();
+
+  // ---------- timeline ----------
+  var TOTAL = 45.0;
+  var FADE_IN = 0.8;
+  var FADE_OUT = 0.6;
+
+  var BORDER_START = 0.35, BORDER_DUR = 2.9;
+  var BEAT2_START = 4.5;
+  var FILL_START = 9.0;
+  var SCROLL_START = 16.0;
+  var SCROLL_SPEED = 15;
+
+  var ZOOM_START = 24.5, ZOOM_END = 27.5;   // canvas pulls back into a page
+  // unhurried, overlapping turns: each leaf has time to bend and settle
+  var PAGE_START = 27.7, PAGE_DUR = 0.85, PAGE_STAGGER = 0.6;
+  var BEND = 30; // degrees of curl distributed across a leaf mid-swing
+  var COVER_START = 33.1, COVER_END = 35.5; // front cover swings shut
+  var RECENTER_START = 35.5, RECENTER_END = 36.8;
+  var BOOK_FADE_START = 41.0, BOOK_FADE_END = 42.2;
+  var TILT = 5; // degrees, so the book reads as an object rather than a diagram
+
+  // Narration captions removed; only the closing brand card remains.
+  var BEATS = [
+    { start: 41.0, end: 45.0, size: 104, y: 960,  l1: "dmyor", l2: "Post your dream. Be part of the archive.", final: true }
+  ];
+
+  var textLayer = document.getElementById("textLayer");
+  var beatEls = BEATS.map(function (b) {
+    var el = document.createElement("div");
+    el.className = "beat";
+    var l1 = document.createElement("div");
+    l1.className = "line1";
+    l1.textContent = b.l1;
+    l1.style.fontSize = b.size + "px";
+    if (b.final) l1.style.fontWeight = "700";
+    el.appendChild(l1);
+    if (b.l2) {
+      var l2 = document.createElement("div");
+      l2.className = "line2";
+      l2.textContent = b.l2;
+      el.appendChild(l2);
+    }
+    textLayer.appendChild(el);
+    return el;
+  });
+
+  function placeBeats() {
+    beatEls.forEach(function (el, i) {
+      var h = el.getBoundingClientRect().height / currentScale;
+      el.style.top = (BEATS[i].y - h / 2) + "px";
+    });
+  }
+
+  var borderPath = document.getElementById("borderPath");
+  var borderLen = borderPath.getTotalLength();
+  borderPath.style.strokeDasharray = borderLen;
+
+  // ---------- hero card ----------
+  var HERO_IDX = cardIndex(2, 0);
+  var HERO_TEXT = DREAMS[HERO_IDX % DREAMS.length];
+  var HERO_POP = 0.4;
+  var HERO_TYPE_SPEED = 0.05;
+  var HERO_TYPE_END = HERO_POP + HERO_TEXT.length * HERO_TYPE_SPEED;
+  var HERO_HOLD_END = HERO_TYPE_END + 0.5;
+  var HERO_MOVE_DUR = 1.1;
+  var HERO_LAND_ABS = BEAT2_START + HERO_HOLD_END + HERO_MOVE_DUR;
+
+  var BIG = { left: 230, top: 850, width: 620, height: 152 };
+  var HERO_TARGET = null;
+
+  var heroEl = document.getElementById("heroCard");
+  var heroTextEl = document.getElementById("heroText");
+  var heroCursorEl = document.getElementById("heroCursor");
+  document.getElementById("heroDate").textContent = dateFor(HERO_IDX);
+  var heroDreamEl = heroEl.querySelector(".dream");
+  var heroDateEl = heroEl.querySelector(".date");
+  var heroSbEl = heroEl.querySelector(".standby");
+
+  var GRID_OPACITY = 1.0;
+
+  function renderHero(t) {
+    var rt = t - BEAT2_START;
+    if (rt < 0 || t >= HERO_LAND_ABS || !HERO_TARGET) {
+      heroEl.style.display = "none";
+      return;
+    }
+    heroEl.style.display = "block";
+
+    var box, op, chars, cursor, fs;
+
+    if (rt < HERO_POP) {
+      var p = clamp01(rt / HERO_POP);
+      var s = 0.94 + 0.06 * easeInOut(p);
+      box = {
+        width: BIG.width * s,
+        height: BIG.height * s,
+        left: BIG.left + BIG.width * (1 - s) / 2,
+        top: BIG.top + BIG.height * (1 - s) / 2
+      };
+      op = p; chars = 0; cursor = false; fs = 1;
+    } else if (rt < HERO_TYPE_END) {
+      box = BIG; op = 1; fs = 1;
+      chars = Math.min(HERO_TEXT.length, Math.floor((rt - HERO_POP) / HERO_TYPE_SPEED) + 1);
+      cursor = true;
+    } else if (rt < HERO_HOLD_END) {
+      box = BIG; op = 1; fs = 1;
+      chars = HERO_TEXT.length; cursor = false;
+    } else {
+      var mp = easeInOut(clamp01((rt - HERO_HOLD_END) / HERO_MOVE_DUR));
+      box = {
+        left:   BIG.left   + (HERO_TARGET.left   - BIG.left)   * mp,
+        top:    BIG.top    + (HERO_TARGET.top    - BIG.top)    * mp,
+        width:  BIG.width  + (HERO_TARGET.width  - BIG.width)  * mp,
+        height: BIG.height + (HERO_TARGET.height - BIG.height) * mp
+      };
+      op = 1; fs = 1 + (0.66 - 1) * mp;
+      chars = HERO_TEXT.length; cursor = false;
+    }
+
+    heroEl.style.left = box.left + "px";
+    heroEl.style.top = box.top + "px";
+    heroEl.style.width = box.width + "px";
+    heroEl.style.height = box.height + "px";
+    heroEl.style.opacity = op;
+    heroEl.style.padding = (26 * fs) + "px " + (28 * fs) + "px " + (22 * fs) + "px";
+    heroDreamEl.style.fontSize = (30 * fs) + "px";
+    heroDateEl.style.fontSize = (16 * fs) + "px";
+    heroSbEl.style.fontSize = (12 * fs) + "px";
+    heroTextEl.textContent = HERO_TEXT.slice(0, chars);
+    heroCursorEl.style.display = cursor ? "inline" : "none";
+  }
+
+  // ---------- card reveal: left to right ----------
+  var COL_DELAY = 0.5, CARD_DELAY = 0.42, CARD_FADE = 0.52;
+  var revealAt = {};
+  for (var c3 = 0; c3 < N_COLS; c3++) {
+    for (var r3 = 0; r3 < PER_COL; r3++) {
+      revealAt[cardIndex(c3, r3)] = FILL_START + c3 * COL_DELAY + r3 * CARD_DELAY;
+    }
+  }
+  revealAt[HERO_IDX] = HERO_LAND_ABS;
+
+  var gridLayer = document.getElementById("gridLayer");
+
+  // ---------- render ----------
+  function render(t) {
+    if (t < 0) t = 0;
+    if (t > TOTAL) t = TOTAL;
+
+    for (var i = 0; i < BEATS.length; i++) {
+      var b = BEATS[i], op = 0;
+      if (b.final) {
+        if (t >= b.start) op = clamp01((t - b.start) / FADE_IN);
+      } else if (t >= b.start && t < b.end) {
+        op = clamp01(Math.min((t - b.start) / FADE_IN, (b.end - t) / FADE_OUT));
+      }
+      beatEls[i].style.opacity = op;
+    }
+
+    borderPath.style.strokeDashoffset =
+      borderLen * (1 - easeInOut(seg(t, BORDER_START, BORDER_START + BORDER_DUR)));
+
+    for (var idx = 0; idx < COUNT; idx++) {
+      var cp2 = clamp01((t - revealAt[idx]) / CARD_FADE);
+      var ce = 1 - Math.pow(1 - cp2, 3); // ease out
+      var csc = "scale(" + (0.94 + 0.06 * ce) + ")";
+      innerA[idx].style.opacity = ce;
+      innerA[idx].style.transform = csc;
+      innerB[idx].style.opacity = ce;
+      innerB[idx].style.transform = csc;
+    }
+
+    renderHero(t);
+
+    // nothing overlays the grid any more, so it stays at full strength throughout
+    gridLayer.style.opacity = GRID_OPACITY;
+
+    var offset = 0;
+    if (t >= SCROLL_START) {
+      offset = (t - SCROLL_START) * SCROLL_SPEED;
+      if (loopDistance > 0) offset = offset % loopDistance;
+    }
+    gridInner.style.transform = "translateY(-" + offset + "px)";
+
+    // ----- zoom out: the canvas becomes the right-hand page -----
+    var zp = easeInOut(seg(t, ZOOM_START, ZOOM_END));
+    var sc = 1 + (CANVAS_SCALE - 1) * zp;
+    canvasWrap.style.transform =
+      "translate(" + (PAGE_X * zp) + "px," + (PAGE_Y * zp) + "px) scale(" + sc + ")";
+
+    // The cover begins lying open across the left-hand page, so the instant it
+    // appears it has already taken that side with it. The spread is cut away
+    // underneath the cover (invisible, since the cover is opaque and on top)
+    // rather than lingering as an outline through the whole swing.
+    var cp = easeInOut(seg(t, COVER_START, COVER_END));
+    var handoff = 1 - seg(t, COVER_START, COVER_START + 0.25);
+    var spreadVis = seg(t, ZOOM_START + 0.5, ZOOM_END) * handoff;
+    bookBase.style.opacity = spreadVis;
+
+    // ----- pages turn -----
+    for (var pi = 0; pi < N_PAGES; pi++) {
+      var ps = PAGE_START + pi * PAGE_STAGGER;
+      var pe = easeInOut(seg(t, ps, ps + PAGE_DUR));
+      var a0 = -179 * pe;
+      // The free edge lags on the way up and overshoots on the way down, and the
+      // leaf is flat at both ends of the swing. Splitting that across the strips
+      // bends the page instead of flipping a board.
+      var da = (BEND * Math.sin(2 * Math.PI * pe)) / N_STRIPS;
+
+      pageEls[pi].style.transform = "translateZ(" + (pi * 0.7) + "px)";
+      // A leaf lying flat on the right stack IS the page you can already see, so it
+      // stays invisible there and comes in as it lifts. Popping it on at full
+      // strength was what made the cards blink out at the start of every turn.
+      var lift = clamp01(Math.abs(a0) / 14);
+      // turned leaves go with the cover at handoff, same as the facing page
+      pageEls[pi].style.opacity = zp > 0.99 ? spreadVis * lift : 0;
+
+      var strips = pageStrips[pi];
+      var x = 0, z = 0, a = a0;
+      for (var si = 0; si < N_STRIPS; si++) {
+        strips[si].el.style.transform =
+          "translate3d(" + x + "px,0," + z + "px) rotateY(" + a + "deg)";
+        // darkest where the surface faces edge-on, so the curve reads as shading
+        strips[si].shade.style.opacity =
+          Math.sin(Math.abs(a) * Math.PI / 180) * 0.62;
+        var ar = a * Math.PI / 180;
+        x += STRIP_W * Math.cos(ar);
+        z -= STRIP_W * Math.sin(ar);
+        a += da;
+      }
+    }
+
+    // ----- cover swings shut, title facing us -----
+    var coverAng = -179 + 179 * cp;
+    coverEl.style.opacity = t >= COVER_START ? 1 : 0;
+    coverEl.style.transform = "rotateY(" + coverAng + "deg)";
+    coverShade.style.opacity = Math.sin(Math.abs(coverAng) * Math.PI / 180) * 0.55;
+
+    // the right-hand page is only hidden once the cover is actually over it
+    canvasWrap.style.opacity = 1 - clamp01((cp - 0.55) / 0.35);
+
+    // the shut book gains its thickness as the cover lands
+    var edgeOp = clamp01((cp - 0.75) / 0.25);
+    for (var ei = 0; ei < closedEdges.length; ei++) {
+      closedEdges[ei].style.opacity = edgeOp * (1 - ei * 0.18);
+    }
+
+    // ----- closed book settles to centre -----
+    var rp = easeInOut(seg(t, RECENTER_START, RECENTER_END));
+    var dx = -(COVER_W / 2) * rp;
+    var fade = 1 - seg(t, BOOK_FADE_START, BOOK_FADE_END);
+    // the tilt eases in with the pull-back and relaxes once the book is shut
+    var tilt = TILT * zp * (1 - 0.55 * rp);
+    bookWorld.style.transform =
+      "translateX(" + dx + "px) rotateX(" + tilt + "deg)";
+    bookWorld.style.opacity = fade;
+  }
+
+  // ---------- driver ----------
+  var startTime = null, rafId = null;
+
+  function frame(now) {
+    if (startTime === null) startTime = now;
+    var t = (now - startTime) / 1000;
+    if (t >= TOTAL) { render(TOTAL); rafId = null; return; }
+    render(t);
+    rafId = requestAnimationFrame(frame);
+  }
+
+  function play() {
+    document.getElementById("playBtn").style.display = "none";
+    startTime = null;
+    if (rafId) cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(frame);
+  }
+
+  function init() {
+    measureLoop();
+    placeBeats();
+    // the layout slot is the card's box, so it can be measured without revealing it
+    HERO_TARGET = stageRect(byIdxA[HERO_IDX]);
+    render(0);
+
+    // deterministic seek hook, used by the frame-by-frame recorder
+    window.__seek = function (sec) { render(sec); };
+    window.__duration = TOTAL;
+
+    var params = new URLSearchParams(window.location.search);
+    var tParam = params.get("t");
+
+    if (tParam !== null && !isNaN(parseFloat(tParam))) {
+      document.getElementById("playBtn").style.display = "none";
+      render(parseFloat(tParam));
+      return;
+    }
+    if (params.get("autoplay") === "1") play();
+    else document.getElementById("playBtn").addEventListener("click", play);
+  }
+
+  window.addEventListener("load", init);
+})();
+</script>
+
+</body>
+</html>
