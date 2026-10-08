@@ -18,11 +18,15 @@ def main():
             tl['total'] = dur
 
     eng = tl.get('engine', 'mono')          # "mono" = monochrome, "motion" = colour + camera
-    hf, jf = ('engine.html','engine.js') if eng=='mono' else ('engine-motion.html','engine-motion.js')
+    # "punch" = bold bright kinetic type for muted autoplay (2026-10-08)
+    hf, jf = {'mono': ('engine.html','engine.js'),
+              'punch': ('engine-punch.html','engine-punch.js')}.get(eng, ('engine-motion.html','engine-motion.js'))
     html = open(os.path.join(assets, hf)).read()
     js   = open(os.path.join(assets, jf)).read()
     html = re.sub(r'var TL = /\*__TIMELINE__\*/.*?;',
-                  'var TL = ' + json.dumps(tl, ensure_ascii=False) + ';', html, count=1, flags=re.S)
+                  # lambda: a plain replacement string would turn "\\n" in the JSON into a raw
+                  # newline and break the page (found 2026-10-08)
+                  lambda m: 'var TL = ' + json.dumps(tl, ensure_ascii=False) + ';', html, count=1, flags=re.S)
     html = html.replace('<script src="%s"></script>' % jf, '<script>\n' + js + '\n</script>')
     out = os.path.join(d, 'reel.html')
     open(out, 'w').write(html)

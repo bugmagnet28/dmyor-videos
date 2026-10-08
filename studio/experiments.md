@@ -7,45 +7,45 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 ---
 
 ## V-EXP-01: Frame 0 = full-screen bold statement readable at 0.0s
-- Status: open (from diagnosis 2026-10-08)
+- Status: running (from diagnosis 2026-10-08)
 - Change: Frame 0 = full-screen bold statement readable at 0.0s
-- Reels testing it:
+- Reels testing it: twelve-weeks-one-thing (2026-10-08, bundled in V-EXP-09)
 - Metric + target: 3-second hold rate, avg watch %; hold rate above old reels' (once known)
 - Result:
 - Verdict + why:
 - Next:
 
 ## V-EXP-02: Length 12 to 25s
-- Status: open (from diagnosis 2026-10-08)
+- Status: running (from diagnosis 2026-10-08)
 - Change: Length 12 to 25s
-- Reels testing it:
+- Reels testing it: twelve-weeks-one-thing (2026-10-08, bundled in V-EXP-09)
 - Metric + target: avg % watched, completion; over 50% watched
 - Result:
 - Verdict + why:
 - Next:
 
 ## V-EXP-03: Large burned-in text always on
-- Status: open (from diagnosis 2026-10-08)
+- Status: running (from diagnosis 2026-10-08)
 - Change: Large burned-in text always on
-- Reels testing it:
+- Reels testing it: twelve-weeks-one-thing (2026-10-08, bundled in V-EXP-09)
 - Metric + target: avg watch, views; better than captions-off reels
 - Result:
 - Verdict + why:
 - Next:
 
 ## V-EXP-04: Viewer-first topic, product only in last 2 to 3s
-- Status: open (from diagnosis 2026-10-08)
+- Status: running (from diagnosis 2026-10-08)
 - Change: Viewer-first topic, product only in last 2 to 3s
-- Reels testing it:
+- Reels testing it: twelve-weeks-one-thing (2026-10-08, bundled in V-EXP-09)
 - Metric + target: shares + saves per view; above 1%
 - Result:
 - Verdict + why:
 - Next:
 
 ## V-EXP-05: New visual every 1 to 1.5s
-- Status: open (from diagnosis 2026-10-08)
+- Status: running (from diagnosis 2026-10-08)
 - Change: New visual every 1 to 1.5s
-- Reels testing it:
+- Reels testing it: twelve-weeks-one-thing (2026-10-08, bundled in V-EXP-09)
 - Metric + target: avg % watched; up vs slower reels
 - Result:
 - Verdict + why:
@@ -61,19 +61,30 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Next:
 
 ## V-EXP-07: Saveable format (list/checklist) + 'save this'
-- Status: open (from diagnosis 2026-10-08)
+- Status: running (from diagnosis 2026-10-08)
 - Change: Saveable format (list/checklist) + 'save this'
-- Reels testing it:
+- Reels testing it: twelve-weeks-one-thing (2026-10-08, bundled in V-EXP-09)
 - Metric + target: saves per view; highest saves of the week
 - Result:
 - Verdict + why:
 - Next:
 
 ## V-EXP-08: Brighter, fuller-frame palette vs dark navy
-- Status: open (from diagnosis 2026-10-08)
+- Status: running (from diagnosis 2026-10-08)
 - Change: Brighter, fuller-frame palette vs dark navy
-- Reels testing it:
+- Reels testing it: twelve-weeks-one-thing (2026-10-08, bundled in V-EXP-09)
 - Metric + target: 3-second hold; up
 - Result:
 - Verdict + why:
 - Next:
+
+## V-EXP-09: New-format bundle vs the old 12 reels (baseline reset)
+- Status: running (opened 2026-10-08)
+- Change: everything the diagnosis asked for, at once, in a new "punch" engine: frame 0 = full-screen 200px+ statement readable at 0.0s (01), 22.5s (02), all text burned in, no VO (03), viewer-first topic, brand only in last 2.5s (04), a change every ~1-1.5s (05), saveable 12-week checklist + "send this to" line (07), bright flat amber/white/blue panes, heavy black type (08).
+- Why bundled: 0 followers and no data. First prove the new format beats the old one at all; then vary ONE thing per reel to learn which part matters. Bundling means a win cannot be credited to any single change. Said out loud so nobody over-learns.
+- Reels testing it: twelve-weeks-one-thing (2026-10-08)
+- Metric + target (at 48h): avg watch >= 60% of length (>= 13.5s), 3s hold >= 60% if shown, (shares+saves)/reach >= 1%, >= 1 follow. Old reels have no numbers, so the comparison is vs these absolute targets.
+- Expectation: reach 100-400 (cold account), avg watch ~10-14s, saves 1-4, shares 0-2, follows 0-2. Confidence low.
+- Result:
+- Verdict + why:
+- Next: if avg watch >= 60%, keep the format and start single-variable tests (hook wording, length 12s vs 22s, palette). If < 40%, the hook or the list is too slow: cut the list to 3 rows.

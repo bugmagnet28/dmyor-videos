@@ -1,0 +1,50 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>dmyor reel (punch)</title>
+<style>
+/* punch engine: bold, bright, full-frame kinetic type built for muted autoplay.
+   Frame 0 is always a finished, readable statement (no entrance at t<=0).
+   Heavy weights, flat bright panes, high contrast. Content lives inside y 240..1250. */
+:root{
+  --ink:#0B0B0F; --paper:#FFFFFF; --amber:#FFC530; --blue:#2F5BFF; --coral:#FF4D5E;
+  --green:#18C77A; --black:#0B0B0F; --cream:#FFF6E5; --dim:#5A5A66;
+}
+html,body{margin:0;padding:0;width:100%;height:100%;background:#000;overflow:hidden}
+#viewport{position:fixed;inset:0;background:#000;display:flex;align-items:center;justify-content:center}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;transform-origin:center center;
+ background:var(--black);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+ font-family:"Avenir Next","Helvetica Neue",-apple-system,Helvetica,Arial,sans-serif}
+#bg{position:absolute;inset:0;background:var(--black)}
+.bgpane{position:absolute;inset:0;transform:translateY(100%)}
+#cam{position:absolute;inset:0;transform-origin:50% 38%}
+.scene{position:absolute;left:0;width:1080px;box-sizing:border-box;padding:0 70px;opacity:0}
+.ln{display:block;font-weight:800;letter-spacing:-1.5px;line-height:1.02;will-change:transform,opacity;
+ transform-origin:50% 60%;position:relative}
+.ln .tx{position:relative;display:inline-block}
+.ln .strike{position:absolute;left:-2%;top:52%;height:.11em;width:0;border-radius:.06em}
+.pill{white-space:nowrap;display:inline-block;border-radius:999px;padding:.12em .55em .16em}
+/* plan list */
+.ptitle{font-weight:800;font-size:76px;letter-spacing:-1px;line-height:1.05;margin-bottom:34px}
+.prow{display:flex;align-items:flex-start;margin:0 0 30px 0;will-change:transform,opacity}
+.pchk{flex:0 0 66px;height:66px;border-radius:50%;box-sizing:border-box;border:6px solid;margin:6px 28px 0 0;
+ position:relative}
+.pchk i{position:absolute;inset:6px;border-radius:50%;transform:scale(0)}
+.pbody{flex:1}
+.plab{font-weight:800;font-size:48px;letter-spacing:2px;line-height:1.05}
+.ptxt{font-weight:700;font-size:60px;letter-spacing:-.8px;line-height:1.08;margin-top:4px}
+/* brand */
+.bmark{font-weight:800;font-size:230px;letter-spacing:-8px;line-height:1}
+.bline{white-space:pre-line;font-weight:700;font-size:62px;letter-spacing:-.5px;line-height:1.12;margin-top:26px}
+.bhandle{font-weight:800;font-size:64px;margin-top:44px;display:inline-block;border-radius:999px;padding:14px 44px}
+#playBtn{position:fixed;inset:0;margin:auto;width:210px;height:64px;border-radius:32px;border:0;
+ font:700 22px -apple-system,Helvetica,Arial;cursor:pointer}
+</style></head><body>
+<div id="viewport"><div id="stage">
+ <div id="bg"></div>
+ <div id="cam"></div>
+</div></div>
+<button id="playBtn">PLAY</button>
+<script>
+var TL = /*__TIMELINE__*/{"total":10,"engine":"punch","scenes":[]};
+</script>
+<script src="engine-punch.js"></script>
+</body></html>

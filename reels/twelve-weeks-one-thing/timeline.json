@@ -1,0 +1,307 @@
+{
+ "total": 24.0,
+ "engine": "punch",
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "bg": [
+  {
+   "t": 0.0,
+   "c": "amber"
+  },
+  {
+   "t": 2.35,
+   "c": "black",
+   "dir": "up"
+  },
+  {
+   "t": 4.55,
+   "c": "paper",
+   "dir": "left"
+  },
+  {
+   "t": 6.55,
+   "c": "blue",
+   "dir": "up"
+  },
+  {
+   "t": 7.95,
+   "c": "cream",
+   "dir": "right"
+  },
+  {
+   "t": 18.35,
+   "c": "amber",
+   "dir": "up"
+  },
+  {
+   "t": 21.35,
+   "c": "black",
+   "dir": "down"
+  }
+ ],
+ "camera": [
+  {
+   "t": 0,
+   "s": 1.0
+  },
+  {
+   "t": 2.3,
+   "s": 1.04
+  },
+  {
+   "t": 2.6,
+   "s": 1.0
+  },
+  {
+   "t": 5.6,
+   "s": 1.0
+  },
+  {
+   "t": 6.1,
+   "s": 1.08
+  },
+  {
+   "t": 6.7,
+   "s": 1.0
+  },
+  {
+   "t": 18.0,
+   "s": 1.02
+  },
+  {
+   "t": 18.5,
+   "s": 1.0
+  },
+  {
+   "t": 24,
+   "s": 1.0
+  }
+ ],
+ "scenes": [
+  {
+   "type": "stack",
+   "note": "FRAME 0 hook, fully drawn at 0.0s. Oct 9 to Dec 31 = 84 days = exactly 12 weeks",
+   "in": 0,
+   "out": 2.4,
+   "y": 300,
+   "lines": [
+    {
+     "text": "2026 has",
+     "size": 140,
+     "at": 0
+    },
+    {
+     "text": "12",
+     "size": 380,
+     "at": 0,
+     "pulseAt": [
+      0.9
+     ],
+     "gap": -20
+    },
+    {
+     "text": "WEEKS",
+     "size": 230,
+     "at": 0,
+     "gap": -30
+    },
+    {
+     "text": "left.",
+     "size": 140,
+     "at": 0,
+     "pulseAt": [
+      1.6
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "the reframe: enough for one",
+   "in": 2.4,
+   "out": 4.6,
+   "y": 420,
+   "lines": [
+    {
+     "text": "That's enough",
+     "size": 120,
+     "color": "paper",
+     "at": 2.45
+    },
+    {
+     "text": "for ONE",
+     "size": 190,
+     "color": "amber",
+     "at": 3.05
+    },
+    {
+     "text": "real thing.",
+     "size": 160,
+     "color": "amber",
+     "at": 3.6
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "not ten: strike, then One",
+   "in": 4.6,
+   "out": 6.6,
+   "y": 430,
+   "lines": [
+    {
+     "text": "Not ten goals.",
+     "size": 130,
+     "at": 4.65,
+     "strikeAt": 5.2,
+     "strikeColor": "coral"
+    },
+    {
+     "text": "One.",
+     "size": 340,
+     "color": "coral",
+     "at": 5.65,
+     "sfx": "thud",
+     "sfxGain": 0.7
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "the save prompt, before the list",
+   "in": 6.6,
+   "out": 8.0,
+   "y": 540,
+   "lines": [
+    {
+     "text": "Here's the plan.",
+     "size": 124,
+     "color": "paper",
+     "at": 6.65
+    },
+    {
+     "text": "SAVE IT",
+     "size": 110,
+     "color": "ink",
+     "pill": "amber",
+     "at": 7.2,
+     "gap": 40
+    }
+   ]
+  },
+  {
+   "type": "plan",
+   "note": "the saveable checklist, one row every 1.8s, each row gets checked 0.9s later",
+   "in": 8.0,
+   "out": 18.4,
+   "y": 270,
+   "align": "left",
+   "title": "12 weeks. 1 goal.",
+   "titleAt": 8.05,
+   "titleColor": "ink",
+   "labelColor": "blue",
+   "textColor": "ink",
+   "chkColor": "green",
+   "items": [
+    {
+     "label": "WEEK 1",
+     "text": "Pick ONE goal. Write it.",
+     "at": 8.6,
+     "checkAt": 9.5
+    },
+    {
+     "label": "WEEK 2",
+     "text": "Do the smallest first step.",
+     "at": 10.4,
+     "checkAt": 11.3
+    },
+    {
+     "label": "WEEKS 3-10",
+     "text": "3 small actions a week.",
+     "at": 12.2,
+     "checkAt": 13.1
+    },
+    {
+     "label": "WEEK 11",
+     "text": "Check what moved.",
+     "at": 14.0,
+     "checkAt": 14.9
+    },
+    {
+     "label": "WEEK 12",
+     "text": "Finish. Then plan 2027.",
+     "at": 15.8,
+     "checkAt": 16.7,
+     "labelColor": "coral"
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "the share line",
+   "in": 18.4,
+   "out": 21.4,
+   "y": 400,
+   "lines": [
+    {
+     "text": "Send this to",
+     "size": 116,
+     "at": 18.45
+    },
+    {
+     "text": "the friend who",
+     "size": 116,
+     "at": 18.9
+    },
+    {
+     "text": "always says",
+     "size": 116,
+     "at": 19.35
+    },
+    {
+     "text": "“next year.”",
+     "size": 112,
+     "color": "paper",
+     "pill": "ink",
+     "at": 19.85,
+     "gap": 30,
+     "sfx": "thud",
+     "sfxGain": 0.6
+    }
+   ]
+  },
+  {
+   "type": "brand",
+   "note": "brand card, last 2.6s",
+   "in": 21.4,
+   "y": 560,
+   "mark": "dmyor",
+   "line": "Turn a big goal\ninto a daily plan.",
+   "handle": "@dmyor_global"
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.0,
+   "v": "thud",
+   "g": 0.8
+  },
+  {
+   "t": 0.0,
+   "v": "sub",
+   "g": 0.4
+  },
+  {
+   "t": 0.9,
+   "v": "pop",
+   "g": 0.5
+  },
+  {
+   "t": 1.6,
+   "v": "pop",
+   "g": 0.45
+  }
+ ]
+}

@@ -322,6 +322,23 @@ def cues_from(tl):
             us, ue = s.get("urlStart"), s.get("urlEnd")
             if us is not None:
                 add(us, "mark", 0.4)                   # the URL begins to appear
+        # ---- punch-engine scenes (bold kinetic type, no VO) ----
+        elif ty == "stack":
+            for L in s.get("lines", []) or []:
+                at = L.get("at", s.get("in"))
+                if at is not None and at > 0.05: add(at, L.get("sfx", "pop"), L.get("sfxGain", 0.5))
+                if L.get("strikeAt") is not None: add(L["strikeAt"], "swish", 0.5)
+                if L.get("swapAt") is not None: add(L["swapAt"], "thud", 0.6)
+        elif ty == "plan":
+            ta = s.get("titleAt", s.get("in"))
+            if ta is not None and ta > 0.05: add(ta, "whoosh", 0.5)
+            for it in s.get("items", []) or []:
+                add(it.get("at"), "clack", 0.55)
+                if it.get("checkAt") is not None: add(it["checkAt"], "tick", 0.5)
+        elif ty == "brand":
+            add(s.get("in") - 1.0, "swell", 0.5)
+            add(s.get("in"), "chime", 0.55)
+            add(s.get("in"), "sub", 0.45)
         # ---- mono-engine scenes ----
         elif ty in ("diary.open", "diary.close"):
             add(s.get("click"), "whoosh", 0.6)
@@ -345,6 +362,8 @@ def cues_from(tl):
             add(s.get("flyEnd"), "chime", 0.45)
     for b in tl.get("bg", []) or []:
         if b.get("t", 0) > 0.2: add(b["t"], "swish", 0.34)
+    for x in tl.get("sfx", []) or []:            # hand-placed extras
+        add(x.get("t"), x.get("v", "pop"), x.get("g", 0.5))
     for c in tl.get("camera", []) or []:
         if (c.get("s") or 1) >= 1.10: add(c.get("t"), "swish", 0.28)
     C = [c for c in C if c[0] is not None and c[0] >= 0]

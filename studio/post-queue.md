@@ -4,7 +4,7 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 ## Ready to post
 
-(none yet)
+- [ ] posted · **2026-10-08 twelve-weeks-one-thing** (24s, no VO) · post Thu Oct 9, 19:00-20:00 IST (by Oct 11 latest: "12 weeks left" is date-bound) · `ready-to-post/2026-10-08-twelve-weeks-one-thing/` (video.mp4 + post.md) · tests V-EXP-09
 
 ## Posted
 

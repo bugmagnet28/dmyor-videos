@@ -24,5 +24,10 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 2. Rotate pillars 1 to 4 so we learn which topic pulls.
 3. Get real numbers in: ask Sanyam for screenshots 48h after each post.
 
+## Week 1 log (2026-10-08 to 2026-10-14)
+- 2026-10-08: twelve-weeks-one-thing (pillar 3 + 2: countdown hook + saveable plan), punch engine, 24s, no VO. V-EXP-09 baseline.
+- Plan for next days (rotate pillars, keep the punch format until numbers say otherwise): pillar 1 hard truth (one sharp line, 12-15s, tests length), pillar 2 tool (3 questions to ask before picking a goal, save prompt), pillar 4 show the real app (needs a screen recording or screenshots from Sanyam: see asks).
+- Voiceover reels are NOT part of week 1: most viewers watch muted and we have no VO data. Revisit at the first weekly review, so no VO script is kept in asks for now.
+
 ## Weekly reviews
-(none yet)
+(none yet; first due 2026-10-15)

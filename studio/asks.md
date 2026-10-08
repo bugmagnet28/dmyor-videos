@@ -3,10 +3,24 @@
 Edit this file (or tell Claude), set `Status: done`. The agent checks it every run.
 
 ## VASK-001: Metrics for the old reels
-- Status: open
+- Status: open (still nothing in inbox as of 2026-10-08; phase-one-launch has a post date 2026-09-02 but no numbers)
 - Why: we only have a craft diagnosis; real numbers will show which fixes matter most.
 - Steps: for any of the 12 old reels you posted, screenshot Instagram insights (views, watch time, shares, saves, follows) and drop the images into `~/Documents/dmyor-videos/inbox/metrics/`. Or type numbers into `inbox/metrics/video-performance.md`.
 
 ## VASK-002: Post one video a day
 - Status: ongoing
 - Steps: open `studio/post-queue.md` (or `ready-to-post/`), post the top video with its caption from `post.md`, tick `[x] posted`. Screenshot its insights after ~48 hours into `inbox/metrics/`.
+
+## VASK-003: Post twelve-weeks-one-thing by Oct 11, insights 48h after
+- Status: open (2026-10-08)
+- Why: the hook says "12 weeks left in 2026", only true until about Oct 11. It is the first new-format reel, so its numbers decide the next week.
+- Steps: 1) post `ready-to-post/2026-10-08-twelve-weeks-one-thing/video.mp4` with the caption in `post.md`, ideally Thu Oct 9 19:00-20:00 IST. 2) tick `[x] posted` in `studio/post-queue.md` and add the time. 3) ~48h later, open the reel > View insights, screenshot every screen (views, watch time, retention graph, shares, saves, follows) into `inbox/metrics/`. 4) again at 7 days.
+
+## VASK-004: Follower count now and then
+- Status: open
+- Steps: once a week (or whenever you send insights), screenshot the @dmyor_global profile header into `inbox/metrics/`, or type the number into `inbox/notes.md`.
+
+## VASK-005 (optional): app screen recording for a "show the real app" reel
+- Status: open, not urgent
+- Why: V-EXP-06 tests whether showing the real dmyor canvas gets more follows than abstract type. I cannot screen-record the app myself.
+- Steps: record 20-40s of your phone or desktop screen building one goal in dmyor (vision, milestones, daily actions), no voice needed. Drop it in `inbox/` as `app-recording.mov`.

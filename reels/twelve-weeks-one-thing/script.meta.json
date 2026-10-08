@@ -1,0 +1,27 @@
+{
+ "slug": "twelve-weeks-one-thing",
+ "hint": "12 weeks left in 2026: enough for one real thing. Saveable week-by-week plan. No VO, bright kinetic type.",
+ "created": "2026-10-08T15:17:22",
+ "hook_pattern": "Countdown (frame-0 statement)",
+ "target_seconds": 24,
+ "status": "rendered",
+ "narrated": false,
+ "engine": "punch",
+ "words": 62,
+ "cta": "save + send-to-a-friend, brand card last 2.6s",
+ "experiments": [
+  "V-EXP-09",
+  "V-EXP-01",
+  "V-EXP-02",
+  "V-EXP-03",
+  "V-EXP-04",
+  "V-EXP-05",
+  "V-EXP-07",
+  "V-EXP-08"
+ ],
+ "note": "First reel of the new format. Deliberately breaks old skill conventions: new 'punch' engine (heavy 800 weight type, flat bright amber/white/blue/cream panes, not light-weight on dark navy), all text burned in (no captions-off), no VO, 24s not 45-100s, frame 0 fully drawn at 0.0s. Why: diagnosis 2026-10-08. Everything bundled as V-EXP-09 (baseline reset), so a result cannot be credited to one change.",
+ "real_figures": {
+  "days_left_from_2026_10_09": 84,
+  "weeks": 12
+ }
+}
