@@ -8,3 +8,4 @@ Rules learned from evidence. Each cites its source. Revise when data disagrees.
 - Use the `punch` engine (`"engine":"punch"`) for no-VO reels: heavy type on flat bright panes, frame 0 drawn finished. Put the full hook at `at: 0`. Source: diagnosis 2026-10-08 + frame check of twelve-weeks-one-thing. Revisit once V-EXP-09 has numbers.
 - Put hand-placed sound on frame 0 (`"sfx":[{"t":0,"v":"thud"}]`), otherwise the first second is silent: the timeline rules only fire on entrances after 0. Source: twelve-weeks-one-thing dry run.
 - Date-bound hooks ("12 weeks left") must state their valid posting window in post.md and post-queue. Source: twelve-weeks-one-thing.
+- Fill the safe band: body/answer text 124px+ (never 60px list rows), blocks start y 300-360 and end near y 1150-1250. Source: Sanyam's 2026-10-08 review note + next-step-not-motivation frame check.

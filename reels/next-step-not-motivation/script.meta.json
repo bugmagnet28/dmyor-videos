@@ -1,0 +1,21 @@
+{
+ "slug": "next-step-not-motivation",
+ "hint": "Hard truth: you don't need more motivation, you need a next step. 3 vague goals struck and swapped for a step you can do today. 15s, no VO, punch engine.",
+ "created": "2026-10-09T11:37:58",
+ "hook_pattern": "Hard truth (frame-0 statement)",
+ "target_seconds": 16.4,
+ "status": "rendered",
+ "narrated": false,
+ "engine": "punch",
+ "words": 49,
+ "cta": "send-to-someone line + comment prompt in caption, brand card last 2.4s",
+ "experiments": [
+  "V-EXP-10",
+  "V-EXP-01",
+  "V-EXP-03",
+  "V-EXP-04",
+  "V-EXP-05",
+  "V-EXP-08"
+ ],
+ "note": "Breaks old conventions on purpose (punch engine, bright panes, burned-in text, no VO, 16s). Applies 2026-10-08 review note: answer text enlarged to 124-175px and blocks pushed to fill the safe band. Tests V-EXP-10 (short hard-truth vs list)."
+}

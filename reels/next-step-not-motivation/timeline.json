@@ -1,0 +1,364 @@
+{
+ "total": 16.4,
+ "engine": "punch",
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "bg": [
+  {
+   "t": 0.0,
+   "c": "amber"
+  },
+  {
+   "t": 1.75,
+   "c": "black",
+   "dir": "up"
+  },
+  {
+   "t": 3.35,
+   "c": "paper",
+   "dir": "left"
+  },
+  {
+   "t": 5.55,
+   "c": "blue",
+   "dir": "up"
+  },
+  {
+   "t": 7.75,
+   "c": "cream",
+   "dir": "right"
+  },
+  {
+   "t": 9.95,
+   "c": "amber",
+   "dir": "up"
+  },
+  {
+   "t": 11.55,
+   "c": "black",
+   "dir": "down"
+  },
+  {
+   "t": 13.95,
+   "c": "blue",
+   "dir": "up"
+  }
+ ],
+ "camera": [
+  {
+   "t": 0,
+   "s": 1.0
+  },
+  {
+   "t": 1.6,
+   "s": 1.04
+  },
+  {
+   "t": 1.95,
+   "s": 1.0
+  },
+  {
+   "t": 2.7,
+   "s": 1.0
+  },
+  {
+   "t": 3.0,
+   "s": 1.05
+  },
+  {
+   "t": 3.4,
+   "s": 1.0
+  },
+  {
+   "t": 9.8,
+   "s": 1.0
+  },
+  {
+   "t": 10.4,
+   "s": 1.03
+  },
+  {
+   "t": 10.8,
+   "s": 1.0
+  },
+  {
+   "t": 16.4,
+   "s": 1.0
+  }
+ ],
+ "scenes": [
+  {
+   "type": "stack",
+   "note": "FRAME 0 hook, fully drawn at 0.0s",
+   "in": 0,
+   "out": 1.8,
+   "y": 330,
+   "lines": [
+    {
+     "text": "You don't need",
+     "size": 124,
+     "at": 0
+    },
+    {
+     "text": "more",
+     "size": 320,
+     "at": 0,
+     "pulseAt": [
+      0.8
+     ],
+     "gap": -10
+    },
+    {
+     "text": "motivation.",
+     "size": 150,
+     "at": 0,
+     "pulseAt": [
+      1.35
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "the turn",
+   "in": 1.8,
+   "out": 3.4,
+   "y": 330,
+   "lines": [
+    {
+     "text": "You need a",
+     "size": 130,
+     "color": "paper",
+     "at": 1.85
+    },
+    {
+     "text": "NEXT",
+     "size": 300,
+     "color": "amber",
+     "at": 2.3,
+     "gap": -10
+    },
+    {
+     "text": "STEP.",
+     "size": 300,
+     "color": "amber",
+     "at": 2.7,
+     "gap": -40,
+     "sfx": "thud",
+     "sfxGain": 0.6
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "swap 1: get fit -> shoes by the door",
+   "in": 3.4,
+   "out": 5.6,
+   "y": 360,
+   "lines": [
+    {
+     "text": "Get fit.",
+     "size": 200,
+     "at": 3.45,
+     "strikeAt": 3.95,
+     "strikeColor": "coral"
+    },
+    {
+     "text": "Shoes by",
+     "size": 175,
+     "color": "blue",
+     "at": 4.45,
+     "gap": 40
+    },
+    {
+     "text": "the door",
+     "size": 175,
+     "color": "blue",
+     "at": 4.6
+    },
+    {
+     "text": "tonight.",
+     "size": 175,
+     "color": "blue",
+     "at": 4.75
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "swap 2: start a business -> text 1 person",
+   "in": 5.6,
+   "out": 7.8,
+   "y": 300,
+   "lines": [
+    {
+     "text": "Start a",
+     "size": 170,
+     "color": "paper",
+     "at": 5.65,
+     "strikeAt": 6.15,
+     "strikeColor": "amber"
+    },
+    {
+     "text": "business.",
+     "size": 170,
+     "color": "paper",
+     "at": 5.65,
+     "strikeAt": 6.2,
+     "strikeColor": "amber"
+    },
+    {
+     "text": "Text",
+     "size": 150,
+     "color": "amber",
+     "at": 6.65,
+     "gap": 50
+    },
+    {
+     "text": "1 person",
+     "size": 150,
+     "color": "amber",
+     "at": 6.75
+    },
+    {
+     "text": "who'd buy it.",
+     "size": 124,
+     "color": "amber",
+     "at": 6.9
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "swap 3: write a book -> 200 words",
+   "in": 7.8,
+   "out": 10.0,
+   "y": 300,
+   "lines": [
+    {
+     "text": "Write a",
+     "size": 170,
+     "at": 7.85,
+     "strikeAt": 8.35,
+     "strikeColor": "coral"
+    },
+    {
+     "text": "book.",
+     "size": 220,
+     "at": 7.85,
+     "strikeAt": 8.4,
+     "strikeColor": "coral"
+    },
+    {
+     "text": "200 words",
+     "size": 165,
+     "color": "blue",
+     "at": 8.85,
+     "gap": 50
+    },
+    {
+     "text": "before lunch.",
+     "size": 124,
+     "color": "blue",
+     "at": 9.05
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "the rule to keep",
+   "in": 10.0,
+   "out": 11.6,
+   "y": 380,
+   "lines": [
+    {
+     "text": "Small enough",
+     "size": 140,
+     "at": 10.05
+    },
+    {
+     "text": "to do",
+     "size": 140,
+     "at": 10.35
+    },
+    {
+     "text": "TODAY.",
+     "size": 240,
+     "at": 10.75,
+     "pulseAt": [
+      11.2
+     ],
+     "sfx": "thud",
+     "sfxGain": 0.6
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "share line",
+   "in": 11.6,
+   "out": 14.0,
+   "y": 360,
+   "lines": [
+    {
+     "text": "Send this to",
+     "size": 124,
+     "color": "paper",
+     "at": 11.65
+    },
+    {
+     "text": "someone who's",
+     "size": 124,
+     "color": "paper",
+     "at": 12.0
+    },
+    {
+     "text": "“waiting to",
+     "size": 124,
+     "color": "amber",
+     "at": 12.45,
+     "gap": 20
+    },
+    {
+     "text": "feel ready.”",
+     "size": 124,
+     "color": "amber",
+     "at": 12.6
+    }
+   ]
+  },
+  {
+   "type": "brand",
+   "note": "brand card, last 2.4s",
+   "in": 14.0,
+   "y": 540,
+   "mark": "dmyor",
+   "line": "Turn a big goal\ninto a daily plan.",
+   "handle": "@dmyor_global"
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.0,
+   "v": "thud",
+   "g": 0.8
+  },
+  {
+   "t": 0.0,
+   "v": "sub",
+   "g": 0.4
+  },
+  {
+   "t": 0.8,
+   "v": "pop",
+   "g": 0.5
+  },
+  {
+   "t": 1.35,
+   "v": "pop",
+   "g": 0.45
+  }
+ ]
+}

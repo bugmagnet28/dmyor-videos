@@ -88,3 +88,13 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if avg watch >= 60%, keep the format and start single-variable tests (hook wording, length 12s vs 22s, palette). If < 40%, the hook or the list is too slow: cut the list to 3 rows.
+
+## V-EXP-10: Short hard-truth (15s, no list) vs 24s saveable list
+- Status: running (opened 2026-10-09)
+- Change vs twelve-weeks-one-thing: same punch engine, palette, frame-0 rule, no VO, brand last 2.4s. Different: length 15.5s (vs 24s), pillar 1 "hard truth" with 3 vague->concrete swaps instead of a 5-row checklist, a change every ~0.7s (enter, strike, answer). Two things change (length + content type) because they come together in this format; credited jointly.
+- Reels testing it: next-step-not-motivation (2026-10-09)
+- Metric + target (48h): avg watch >= 70% of length (>= 10.9s) and higher % watched than twelve-weeks-one-thing; shares/reach >= 0.5% (relatable line to send); saves expected LOWER than the list reel.
+- Expectation: higher % watched and more shares than the list reel, fewer saves. Reach 100-400. Confidence low (cold account, n=1 per arm).
+- Result:
+- Verdict + why:
+- Next: if % watched clearly higher and shares >= list reel, short hard-truth becomes the default and next test is length 10s vs 15s. If lower, the list (save value) is what holds people.
