@@ -1,0 +1,22 @@
+{
+ "slug": "three-questions-before-a-goal",
+ "hint": "Tool: 3 questions to answer before you set a goal, one per screen with a get-fit example, save CTA. 17s, no VO, punch engine.",
+ "created": "2026-10-10T11:00:57",
+ "hook_pattern": "Tool promise + big number (frame-0 statement)",
+ "target_seconds": 17.6,
+ "status": "rendered",
+ "narrated": false,
+ "engine": "punch",
+ "words": 46,
+ "cta": "SAVE this / answer them tonight + brand card last 2.4s",
+ "experiments": [
+  "V-EXP-11",
+  "V-EXP-01",
+  "V-EXP-03",
+  "V-EXP-04",
+  "V-EXP-05",
+  "V-EXP-07",
+  "V-EXP-08"
+ ],
+ "note": "Breaks old conventions on purpose (punch engine, bright panes, burned-in text, no VO, 17.6s). One question per full screen at 124px+ per the 2026-10-08 review note. Tests V-EXP-11 (saveable tool + explicit save CTA)."
+}

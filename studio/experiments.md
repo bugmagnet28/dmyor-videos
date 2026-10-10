@@ -98,3 +98,13 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if % watched clearly higher and shares >= list reel, short hard-truth becomes the default and next test is length 10s vs 15s. If lower, the list (save value) is what holds people.
+
+## V-EXP-11: Saveable "3 questions" tool (pillar 2), one item per screen, explicit "save this"
+- Status: running (opened 2026-10-10)
+- Change vs the two earlier new-format reels: same punch engine, palette, frame-0 rule, no VO, brand last 2.4s, ~17s. Different: content is a reusable tool (3 questions to answer before setting a goal, each with one worked example from a single "get fit" thread), ONE question per full screen at 124px+ (applies the 2026-10-08 review: list text too small in twelve-weeks-one-thing), and the CTA is "Save this" instead of "send this to".
+- Reels testing it: three-questions-before-a-goal (2026-10-10)
+- Metric + target (48h): saves/reach >= 1% and the highest saves/reach of the three new-format reels; avg watch >= 60% of length (>= 10s).
+- Expectation: most saves of the three, shares below next-step-not-motivation, % watched between the two (more reading per screen than the 16s reel). Reach 100-400. Confidence low (n=1, cold account, posting order confounds reach).
+- Result:
+- Verdict + why:
+- Next: if saves clearly lead, make "tool + save" a weekly pillar and test 3 vs 5 items. If saves no better than the share reel, the save CTA isn't what drives saves; test topic instead.
