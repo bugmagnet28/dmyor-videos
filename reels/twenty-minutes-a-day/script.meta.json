@@ -1,0 +1,22 @@
+{
+ "slug": "twenty-minutes-a-day",
+ "hint": "Evergreen number reveal: 20 min a day is not nothing = 121 hours a year = 3 work weeks. Share CTA. ~14.6s, no VO, punch engine.",
+ "created": "2026-10-11T11:35:13",
+ "hook_pattern": "Belief struck out + math reveal (frame-0 statement)",
+ "target_seconds": 14.6,
+ "status": "rendered",
+ "narrated": false,
+ "engine": "punch",
+ "words": 34,
+ "cta": "Send this to someone who 'has no time' + brand card last 2.2s",
+ "experiments": [
+  "V-EXP-12",
+  "V-EXP-01",
+  "V-EXP-02",
+  "V-EXP-03",
+  "V-EXP-04",
+  "V-EXP-05",
+  "V-EXP-08"
+ ],
+ "note": "Breaks old conventions on purpose (punch engine, bright panes, burned-in text, no VO, 14.6s). Evergreen on purpose: queue is stalled (0 of 3 posted), so no date-bound hook. Math: 20x365=7300 min=121.7 h=3.04 forty-hour weeks; no other claims."
+}

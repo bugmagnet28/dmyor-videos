@@ -1,0 +1,308 @@
+{
+ "total": 14.6,
+ "engine": "punch",
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "bg": [
+  {
+   "t": 0,
+   "c": "amber"
+  },
+  {
+   "t": 2.35,
+   "c": "black",
+   "dir": "up"
+  },
+  {
+   "t": 3.95,
+   "c": "blue",
+   "dir": "left"
+  },
+  {
+   "t": 5.55,
+   "c": "cream",
+   "dir": "up"
+  },
+  {
+   "t": 7.55,
+   "c": "black",
+   "dir": "right"
+  },
+  {
+   "t": 10.35,
+   "c": "amber",
+   "dir": "up"
+  },
+  {
+   "t": 12.35,
+   "c": "blue",
+   "dir": "down"
+  }
+ ],
+ "camera": [
+  {
+   "t": 0,
+   "s": 1.0
+  },
+  {
+   "t": 1.4,
+   "s": 1.0
+  },
+  {
+   "t": 1.7,
+   "s": 1.04
+  },
+  {
+   "t": 2.1,
+   "s": 1.0
+  },
+  {
+   "t": 4.2,
+   "s": 1.0
+  },
+  {
+   "t": 4.5,
+   "s": 1.06
+  },
+  {
+   "t": 5.0,
+   "s": 1.0
+  },
+  {
+   "t": 9.0,
+   "s": 1.0
+  },
+  {
+   "t": 9.3,
+   "s": 1.04
+  },
+  {
+   "t": 9.7,
+   "s": 1.0
+  },
+  {
+   "t": 14.6,
+   "s": 1.0
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0,
+   "v": "thud",
+   "g": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "type": "stack",
+   "note": "FRAME 0 hook, fully drawn at 0.0s",
+   "in": 0,
+   "out": 2.4,
+   "y": 330,
+   "lines": [
+    {
+     "text": "20 MIN",
+     "size": 250,
+     "at": 0,
+     "pulseAt": [
+      0.7
+     ]
+    },
+    {
+     "text": "a day is",
+     "size": 160,
+     "at": 0,
+     "gap": -10
+    },
+    {
+     "text": "nothing.",
+     "size": 190,
+     "at": 0,
+     "strikeAt": 1.5,
+     "strikeColor": "coral"
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "the sum",
+   "in": 2.4,
+   "out": 4.0,
+   "y": 480,
+   "lines": [
+    {
+     "text": "20 x 365",
+     "size": 220,
+     "at": 2.45,
+     "color": "paper",
+     "swapAt": 3.2,
+     "swapText": "7,300",
+     "swapColor": "amber"
+    },
+    {
+     "text": "minutes a year",
+     "size": 110,
+     "at": 2.6,
+     "color": "paper",
+     "gap": 20
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "121 hours reveal",
+   "in": 4.0,
+   "out": 5.6,
+   "y": 330,
+   "lines": [
+    {
+     "text": "=",
+     "size": 160,
+     "at": 4.05,
+     "color": "paper"
+    },
+    {
+     "text": "121",
+     "size": 400,
+     "at": 4.15,
+     "color": "paper",
+     "gap": -5,
+     "pulseAt": [
+      5.0
+     ],
+     "sfx": "thud",
+     "sfxGain": 0.7
+    },
+    {
+     "text": "hours.",
+     "size": 200,
+     "at": 4.35,
+     "color": "paper",
+     "gap": -30
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "3 work weeks",
+   "in": 5.6,
+   "out": 7.6,
+   "y": 330,
+   "lines": [
+    {
+     "text": "That's",
+     "size": 150,
+     "at": 5.65
+    },
+    {
+     "text": "3 full",
+     "size": 240,
+     "at": 5.85,
+     "color": "blue",
+     "pulseAt": [
+      6.9
+     ]
+    },
+    {
+     "text": "work weeks",
+     "size": 130,
+     "at": 6.05,
+     "gap": -10
+    },
+    {
+     "text": "a year.",
+     "size": 130,
+     "at": 6.25
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "same 20 min: scrolling or one goal",
+   "in": 7.6,
+   "out": 10.4,
+   "y": 330,
+   "lines": [
+    {
+     "text": "Same 20 min:",
+     "size": 130,
+     "at": 7.65,
+     "color": "paper"
+    },
+    {
+     "text": "scrolling",
+     "size": 180,
+     "at": 7.95,
+     "color": "paper",
+     "gap": 30,
+     "strikeAt": 8.7,
+     "strikeColor": "coral"
+    },
+    {
+     "text": "or",
+     "size": 130,
+     "at": 9.05,
+     "color": "paper",
+     "gap": 10
+    },
+    {
+     "text": "one goal.",
+     "size": 170,
+     "at": 9.2,
+     "color": "amber",
+     "pulseAt": [
+      9.9
+     ],
+     "sfx": "pop",
+     "sfxGain": 0.6
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "share CTA",
+   "in": 10.4,
+   "out": 12.4,
+   "y": 360,
+   "lines": [
+    {
+     "text": "Send this to",
+     "size": 130,
+     "at": 10.45
+    },
+    {
+     "text": "someone who",
+     "size": 130,
+     "at": 10.6
+    },
+    {
+     "text": "\"has no",
+     "size": 200,
+     "at": 10.85,
+     "gap": 20,
+     "sfx": "thud",
+     "sfxGain": 0.6
+    },
+    {
+     "text": "time.\"",
+     "size": 200,
+     "at": 11.0,
+     "pulseAt": [
+      11.8
+     ]
+    }
+   ]
+  },
+  {
+   "type": "brand",
+   "note": "brand card, last 2.2s",
+   "in": 12.4,
+   "y": 540,
+   "mark": "dmyor",
+   "line": "Turn a big goal\ninto a daily plan.",
+   "handle": "@dmyor_global"
+  }
+ ]
+}

@@ -108,3 +108,14 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if saves clearly lead, make "tool + save" a weekly pillar and test 3 vs 5 items. If saves no better than the share reel, the save CTA isn't what drives saves; test topic instead.
+
+## V-EXP-12: Evergreen number reveal (math the viewer can check), 14.6s, share CTA
+- Status: running (opened 2026-10-11)
+- Change vs the three earlier new-format reels: same punch engine, palette, frame-0 rule, no VO, brand last ~2.2s. Different: pillar 3 "number that stings" but evergreen (not date-bound), built as a curiosity gap: frame 0 claims "20 min a day is nothing", strikes it, then the math rolls (20 x 365 -> 7,300 min -> 121 hours -> 3 work weeks). Shortest yet (14.6s vs 16.4-24s). CTA = share ("send this to someone who 'has no time'").
+- Why: the posting queue is stalled (0 of 3 posted), so date-bound hooks are a risk (twelve-weeks-one-thing may expire unposted). Evergreen numbers can wait in the queue without going stale.
+- Reels testing it: twenty-minutes-a-day (2026-10-11)
+- Metric + target (48h): avg watch >= 75% of length (>= 11s), highest % watched of the 4 new-format reels; shares/reach >= 0.5%.
+- Expectation: best % watched (short + "wait for the answer"), shares similar to or above next-step-not-motivation, saves lowest. Reach 100-400. Confidence low (n=1, cold account, posting order confounds reach).
+- Result:
+- Verdict + why:
+- Next: if % watched clearly leads, the math-reveal mechanic becomes a recurring format (other evergreen sums: 10 pages a day, 1% a week). If not, length below 16s does not help on its own.

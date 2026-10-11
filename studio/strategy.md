@@ -28,6 +28,7 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 - 2026-10-08: twelve-weeks-one-thing (pillar 3 + 2: countdown hook + saveable plan), punch engine, 24s, no VO. V-EXP-09 baseline.
 - 2026-10-09: next-step-not-motivation (pillar 1 hard truth, 16.4s, 3 vague->concrete swaps). V-EXP-10.
 - 2026-10-10: three-questions-before-a-goal (pillar 2 tool, 17.6s, one question per screen, SAVE CTA). V-EXP-11.
+- 2026-10-11: twenty-minutes-a-day (pillar 3 numbers but evergreen, 14.6s, belief struck out + math reveal, share CTA). V-EXP-12. Queue: 4 ready, 0 posted.
 - Plan for next days (rotate pillars, keep the punch format until numbers say otherwise): pillar 1 hard truth (one sharp line, 12-15s, tests length), pillar 2 tool (3 questions to ask before picking a goal, save prompt), pillar 4 show the real app (needs a screen recording or screenshots from Sanyam: see asks).
 - Voiceover reels are NOT part of week 1: most viewers watch muted and we have no VO data. Revisit at the first weekly review, so no VO script is kept in asks for now.
 
