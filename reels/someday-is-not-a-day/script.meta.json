@@ -1,0 +1,22 @@
+{
+ "slug": "someday-is-not-a-day",
+ "hint": "Pillar 1 hard truth: SOMEDAY is not a day. Week Mon-Sun has no someday. Pick a real day. Share CTA to your someday friend. 12.8s no VO punch engine.",
+ "created": "2026-10-12T14:30:38",
+ "hook_pattern": "Hard truth, frame-0 statement, proven by listing the week",
+ "target_seconds": 12.8,
+ "status": "rendered",
+ "narrated": false,
+ "engine": "punch",
+ "words": 27,
+ "cta": "Send this to your 'someday' friend + brand card last 2.2s",
+ "experiments": [
+  "V-EXP-13",
+  "V-EXP-01",
+  "V-EXP-02",
+  "V-EXP-03",
+  "V-EXP-04",
+  "V-EXP-05",
+  "V-EXP-08"
+ ],
+ "note": "Breaks old conventions on purpose (punch engine, bright panes, burned-in text, no VO, 12.8s). Evergreen because the queue is stalled. No factual claims."
+}

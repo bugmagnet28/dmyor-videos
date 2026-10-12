@@ -82,7 +82,7 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Status: running (opened 2026-10-08)
 - Change: everything the diagnosis asked for, at once, in a new "punch" engine: frame 0 = full-screen 200px+ statement readable at 0.0s (01), 22.5s (02), all text burned in, no VO (03), viewer-first topic, brand only in last 2.5s (04), a change every ~1-1.5s (05), saveable 12-week checklist + "send this to" line (07), bright flat amber/white/blue panes, heavy black type (08).
 - Why bundled: 0 followers and no data. First prove the new format beats the old one at all; then vary ONE thing per reel to learn which part matters. Bundling means a win cannot be credited to any single change. Said out loud so nobody over-learns.
-- Reels testing it: twelve-weeks-one-thing (2026-10-08)
+- Reels testing it: twelve-weeks-one-thing (2026-10-08; SKIPPED 2026-10-12, never posted). The bundle test passes to the first posted new-format reel (next-step-not-motivation), judged on the same absolute targets.
 - Metric + target (at 48h): avg watch >= 60% of length (>= 13.5s), 3s hold >= 60% if shown, (shares+saves)/reach >= 1%, >= 1 follow. Old reels have no numbers, so the comparison is vs these absolute targets.
 - Expectation: reach 100-400 (cold account), avg watch ~10-14s, saves 1-4, shares 0-2, follows 0-2. Confidence low.
 - Result:
@@ -119,3 +119,14 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if % watched clearly leads, the math-reveal mechanic becomes a recurring format (other evergreen sums: 10 pages a day, 1% a week). If not, length below 16s does not help on its own.
+
+## V-EXP-13: Shortest hard truth (12.8s), identity line + "send to your someday friend"
+- Status: running (opened 2026-10-12)
+- Change vs next-step-not-motivation (16.4s, pillar 1): same punch engine, palette, frame-0 rule, no VO, brand last ~2.2s. Different: 12.8s (shortest yet, -22%), ONE idea only ("SOMEDAY is not a day"), proven visually by listing the week (Mon..Sun, no "someday"), then a single action ("pick a real day"). CTA names a person type the viewer can tag ("send this to your 'someday' friend").
+- Why: tests the length floor (does < 13s lift % watched / rewatch?) and whether a named-friend share CTA beats a generic one. Two changes credited jointly (n=1).
+- Reels testing it: someday-is-not-a-day (2026-10-12)
+- Metric + target (48h): avg watch >= 80% of length (>= 10.2s), shares/reach >= 0.7% (highest of the new-format reels).
+- Expectation: best % watched and most shares of the 5 new-format reels; saves low. Reach 100-400. Confidence low (cold account, nothing posted yet, posting order confounds).
+- Result:
+- Verdict + why:
+- Next: if % watched and shares both lead, 12-13s single-idea + named-friend CTA becomes the default for pillar 1. If not, length under 15s is not the lever; test hook wording instead.

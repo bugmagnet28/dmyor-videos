@@ -11,3 +11,4 @@ Rules learned from evidence. Each cites its source. Revise when data disagrees.
 - Fill the safe band: body/answer text 124px+ (never 60px list rows), blocks start y 300-360 and end near y 1150-1250. Source: Sanyam's 2026-10-08 review note + next-step-not-motivation frame check.
 - Run probe.js on any block that safearea flags: a silent wrap (two lines' cy ~200px apart instead of ~145) is the usual cause; reword to <= 10 chars per line at 140-150px rather than shrinking below 124px. Source: three-questions-before-a-goal build (2026-10-10), next-step-not-motivation (2026-10-09).
 - Make evergreen (not date-bound) reels while more than 2 videos sit unposted in the queue. Source: twelve-weeks-one-thing reached its last valid day unposted (2026-10-11).
+- All-caps and quoted words in the punch engine: budget ~7 caps chars at 165px; run overflow.js after any caps line. Source: someday-is-not-a-day build (2026-10-12), overflow at 190px.
