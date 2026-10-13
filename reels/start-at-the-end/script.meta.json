@@ -1,0 +1,23 @@
+{
+ "slug": "start-at-the-end",
+ "hint": "Pillar 2 tool: plan backwards. Start at the END. Goal run a 10k in 3 months > month 2 run 5k > week 1 three short runs > today shoes by the door. Stop when the step fits in today. Save this. Loop ending back to frame 0. 14.6s no VO punch engine.",
+ "created": "2026-10-13T12:24:28",
+ "hook_pattern": "Frame-0 instruction that is also the answer; loop ending rebuilds it",
+ "target_seconds": 14.6,
+ "status": "rendered",
+ "narrated": false,
+ "engine": "punch",
+ "words": 38,
+ "cta": "Save this. Try it on your goal. + brand card 2.0s + 0.6s loop back to frame 0",
+ "experiments": [
+  "V-EXP-14",
+  "V-EXP-01",
+  "V-EXP-02",
+  "V-EXP-03",
+  "V-EXP-04",
+  "V-EXP-05",
+  "V-EXP-07",
+  "V-EXP-08"
+ ],
+ "note": "Breaks old conventions on purpose (punch engine, bright panes, burned-in text, no VO, 14.6s). New: brand card ends at 14.0s, then the hook pane wipes back and the frame-0 text re-forms so the last frame matches frame 0 (loop test). Brand still shown in the last 2.6s. Worked example only, no claims."
+}

@@ -20,3 +20,5 @@
 {"ts": "2026-10-12T14:32:21", "channel": "instagram", "action": "render", "exp": "V-EXP-13", "summary": "Rendered someday-is-not-a-day 12.8s, audits clean, frames checked", "ref": "ready-to-post/2026-10-12-someday-is-not-a-day", "status": "done", "cost_usd": 0.0}
 {"ts": "2026-10-12T14:32:37", "channel": "instagram", "action": "ask", "exp": "", "summary": "VASK-009 one post + one screenshot; VASK-003 closed (skipped)", "ref": "", "status": "waiting_on_human", "cost_usd": 0.0}
 {"ts": "2026-10-12T14:33:07", "channel": "email", "action": "notify", "exp": "", "summary": "Daily email: someday-is-not-a-day ready + VASK-009", "ref": "", "status": "done", "cost_usd": 0.0}
+{"ts": "2026-10-13T15:36:55", "channel": "instagram", "action": "plan", "exp": "V-EXP-14", "summary": "Opened V-EXP-14 (loop ending) before building start-at-the-end", "ref": "", "status": "done", "cost_usd": 0.0}
+{"ts": "2026-10-13T15:36:55", "channel": "instagram", "action": "ingest", "exp": "", "summary": "No new metrics, no notes, no audio; 0 of 5 queued reels posted", "ref": "", "status": "skipped", "cost_usd": 0.0}

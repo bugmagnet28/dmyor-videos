@@ -130,3 +130,14 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if % watched and shares both lead, 12-13s single-idea + named-friend CTA becomes the default for pillar 1. If not, length under 15s is not the lever; test hook wording instead.
+
+## V-EXP-14: Loop ending (last 0.6s rebuilds frame 0) on a pillar-2 tool reel
+- Status: running (opened 2026-10-13)
+- Change vs three-questions-before-a-goal (the other pillar-2 tool reel, 17.6s, no loop): same punch engine, palette, frame-0 rule, no VO, save CTA, brand card ~2s. Different: after the brand card the hook pane wipes back in and the frame-0 text re-forms, so the final frame equals frame 0 and Instagram's auto-replay looks continuous (the hook "Start at the END." also reads as the answer to the video). 14.6s (vs 17.6s). Tool = plan backwards, one step per full screen (GOAL > MONTH 2 > WEEK 1 > TODAY).
+- Why: rewatches add to watch time (avg watch can exceed 100% of length) and are a strong distribution signal for a cold account. A loop costs 0.6s and is the cheapest rewatch lever we have not tried.
+- Reels testing it: start-at-the-end (2026-10-13)
+- Metric + target (48h): avg watch >= 90% of length (>= 13s; > 100% means rewatches) and the highest % watched of the pillar-2 reels; saves/reach >= 1%.
+- Expectation: % watched clearly above three-questions-before-a-goal, saves similar. Reach 100-400. Confidence low (n=1, cold account, posting order confounds, length also shorter so a win is credited jointly to loop + length).
+- Result:
+- Verdict + why:
+- Next: if avg watch > 100% (rewatch visible), add the loop ending to every reel and test it alone on a pillar-1 reel. If not above the non-loop reels, drop it (it eats brand time).
