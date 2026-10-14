@@ -40,6 +40,6 @@ Edit this file (or tell Claude), set `Status: done`. The agent checks it every r
 - Steps: 1) post `ready-to-post/2026-10-11-twenty-minutes-a-day/video.mp4` with caption from `post.md`, 19:00-20:00 IST (evergreen, no deadline). 2) tick `[x] posted` in `studio/post-queue.md` with the time. 3) insights screenshots at ~48h and 7 days into `inbox/metrics/` (watch time / retention and shares matter most for this one).
 
 ## VASK-009: Just one post + one screenshot unblocks everything
-- Status: open (2026-10-12; still open 2026-10-13: now 6 waiting, 0 posted)
+- Status: open (2026-10-12; still open 2026-10-14: now 7 waiting, 0 posted)
 - Note: 5 evergreen videos are waiting, 0 posted, 5 days with no data. One video was lost because its date passed. I keep building 1 a day, but nothing gets learned until something is live.
 - Steps: 1) tonight 19:00-20:00 IST post `ready-to-post/2026-10-09-next-step-not-motivation/video.mp4` with the caption in its `post.md`. 2) tick `[x] posted` in `studio/post-queue.md`. 3) Wed Oct 14 evening: open the reel > View insights, screenshot all screens into `inbox/metrics/`. 4) if daily posting does not fit your week, write your real cadence in `inbox/notes.md` (e.g. "Mon/Wed/Fri") and I will build to it.

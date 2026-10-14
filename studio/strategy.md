@@ -30,6 +30,8 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 - 2026-10-10: three-questions-before-a-goal (pillar 2 tool, 17.6s, one question per screen, SAVE CTA). V-EXP-11.
 - 2026-10-11: twenty-minutes-a-day (pillar 3 numbers but evergreen, 14.6s, belief struck out + math reveal, share CTA). V-EXP-12. Queue: 4 ready, 0 posted.
 - 2026-10-12: twelve-weeks-one-thing skipped (expired unposted). someday-is-not-a-day (pillar 1, 12.8s, week list proves the line, named-friend share CTA). V-EXP-13. Queue: 5 ready, 0 posted.
+- 2026-10-13: start-at-the-end (pillar 2 tool, 14.6s, loop ending). V-EXP-14. Record failed at run end; recovered and packaged 2026-10-14.
+- 2026-10-14: plan-the-bad-day (pillar 1+2, 14.2s, 'you' observation hook + GOOD/BAD DAY pairs, share CTA). V-EXP-15. Queue: 7 ready, 0 posted.
 - Plan for next days (rotate pillars, keep the punch format until numbers say otherwise): pillar 1 hard truth (one sharp line, 12-15s, tests length), pillar 2 tool (3 questions to ask before picking a goal, save prompt), pillar 4 show the real app (needs a screen recording or screenshots from Sanyam: see asks).
 - Voiceover reels are NOT part of week 1: most viewers watch muted and we have no VO data. Revisit at the first weekly review, so no VO script is kept in asks for now.
 

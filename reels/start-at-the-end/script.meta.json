@@ -19,5 +19,5 @@
   "V-EXP-07",
   "V-EXP-08"
  ],
- "note": "Breaks old conventions on purpose (punch engine, bright panes, burned-in text, no VO, 14.6s). New: brand card ends at 14.0s, then the hook pane wipes back and the frame-0 text re-forms so the last frame matches frame 0 (loop test). Brand still shown in the last 2.6s. Worked example only, no claims."
+ "note": "Breaks old conventions on purpose (punch engine, bright panes, burned-in text, no VO, 14.6s). New: brand card ends at 14.0s, then the hook pane wipes back and the frame-0 text re-forms so the last frame matches frame 0 (loop test). Brand still shown in the last 2.6s. Worked example only, no claims. 2026-10-14: first record (10-13) was killed mid-run and left a 48-byte mp4 (kept as reel.broken-2026-10-13.mp4); re-recorded and packaged 10-14."
 }

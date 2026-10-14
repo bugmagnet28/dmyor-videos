@@ -6,6 +6,8 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 **Post order: bottom one first (oldest).** All queued reels are evergreen. Newest is listed on top.
 
+- [ ] posted · **2026-10-14 plan-the-bad-day** (14s, no VO) · evergreen, post after start-at-the-end, 19:00-20:00 IST · `ready-to-post/2026-10-14-plan-the-bad-day/` (video.mp4 + post.md) · tests V-EXP-15
+- [ ] posted · **2026-10-13 start-at-the-end** (15s, no VO, loop ending) · evergreen, post after someday-is-not-a-day, 19:00-20:00 IST · `ready-to-post/2026-10-13-start-at-the-end/` (video.mp4 + post.md) · tests V-EXP-14 (render fixed 2026-10-14)
 - [ ] posted · **2026-10-12 someday-is-not-a-day** (13s, no VO) · evergreen, post after twenty-minutes-a-day, 19:00-20:00 IST · `ready-to-post/2026-10-12-someday-is-not-a-day/` (video.mp4 + post.md) · tests V-EXP-13
 - [ ] posted · **2026-10-11 twenty-minutes-a-day** (15s, no VO) · evergreen, post after three-questions-before-a-goal, 19:00-20:00 IST · `ready-to-post/2026-10-11-twenty-minutes-a-day/` (video.mp4 + post.md) · tests V-EXP-12
 - [ ] posted · **2026-10-10 three-questions-before-a-goal** (18s, no VO) · post after next-step-not-motivation, 19:00-20:00 IST (not date-bound) · `ready-to-post/2026-10-10-three-questions-before-a-goal/` (video.mp4 + post.md) · tests V-EXP-11

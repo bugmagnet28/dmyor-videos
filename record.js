@@ -31,6 +31,7 @@ const W = 1080, H = 1920;
 
   const browser = await puppeteer.launch({
     headless: "new",
+    protocolTimeout: 900000,           // machine stalls killed records at the 180s default (2026-10-14)
     args: [
       "--no-sandbox",
       "--force-device-scale-factor=1",

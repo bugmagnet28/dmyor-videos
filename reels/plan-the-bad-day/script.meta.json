@@ -1,0 +1,21 @@
+{
+ "slug": "plan-the-bad-day",
+ "hint": "Pillar 1+2: Your plan only works on good days. Make a bad-day version. Run 5k / 1 lap; write a page / 1 line; study 2h / open the book. Bad days still count. Send to a friend who quits on day 3. 14.2s no VO punch.",
+ "created": "2026-10-14T11:58:40",
+ "hook_pattern": "Second-person observation ('Your plan only works on good days.')",
+ "target_seconds": 14.2,
+ "status": "rendered",
+ "narrated": false,
+ "engine": "punch",
+ "cta": "Send this to a friend who quits on day 3 + brand card 2.0s",
+ "experiments": [
+  "V-EXP-15",
+  "V-EXP-01",
+  "V-EXP-02",
+  "V-EXP-03",
+  "V-EXP-04",
+  "V-EXP-05",
+  "V-EXP-08"
+ ],
+ "note": "Breaks old conventions on purpose (punch engine, bright panes, burned-in text, no VO, 14.2s). New: 'you' observation hook and GOOD DAY/BAD DAY pill pairs. No loop ending, to keep V-EXP-14 isolated. Worked examples only, no claims."
+}

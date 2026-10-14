@@ -1,0 +1,73 @@
+{
+ "total": 14.2,
+ "engine": "punch",
+ "brand": {"mark": "dmyor", "url": "www.dmyor.com"},
+ "bg": [
+  {"t": 0, "c": "amber"},
+  {"t": 1.85, "c": "black", "dir": "up"},
+  {"t": 3.35, "c": "cream", "dir": "left"},
+  {"t": 5.05, "c": "blue", "dir": "up"},
+  {"t": 6.75, "c": "cream", "dir": "right"},
+  {"t": 8.45, "c": "amber", "dir": "up"},
+  {"t": 10.15, "c": "black", "dir": "left"},
+  {"t": 12.15, "c": "black", "dir": "up"}
+ ],
+ "camera": [
+  {"t": 0, "s": 1.0}, {"t": 1.0, "s": 1.0}, {"t": 1.3, "s": 1.04}, {"t": 1.7, "s": 1.0},
+  {"t": 8.9, "s": 1.0}, {"t": 9.2, "s": 1.05}, {"t": 9.6, "s": 1.0},
+  {"t": 14.2, "s": 1.0}
+ ],
+ "sfx": [{"t": 0, "v": "thud", "g": 0.6}],
+ "scenes": [
+  {"type": "stack", "note": "FRAME 0 hook, fully drawn at 0.0s", "in": 0, "out": 1.9, "y": 340,
+   "lines": [
+    {"text": "Your plan", "size": 160, "at": 0},
+    {"text": "only works", "size": 150, "at": 0, "gap": -10},
+    {"text": "on good", "size": 190, "at": 0, "gap": -10},
+    {"text": "days.", "size": 230, "at": 0, "gap": -30, "pulseAt": [0.8, 1.4]}
+   ]},
+  {"type": "stack", "note": "the fix", "in": 1.9, "out": 3.4, "y": 380,
+   "lines": [
+    {"text": "Make a", "size": 170, "at": 1.95, "color": "paper"},
+    {"text": "bad-day", "size": 210, "at": 2.2, "color": "coral", "gap": -10, "pulseAt": [2.8], "sfx": "thud", "sfxGain": 0.6},
+    {"text": "version.", "size": 170, "at": 2.45, "color": "paper", "gap": -10}
+   ]},
+  {"type": "stack", "note": "pair 1: run", "in": 3.4, "out": 5.1, "y": 360,
+   "lines": [
+    {"text": "GOOD DAY", "size": 100, "at": 3.45, "pill": "green", "color": "ink"},
+    {"text": "Run 5k.", "size": 170, "at": 3.65, "gap": 10},
+    {"text": "BAD DAY", "size": 100, "at": 4.1, "pill": "coral", "color": "paper", "gap": 50},
+    {"text": "Run 1 lap.", "size": 160, "at": 4.3, "gap": 10, "pulseAt": [4.7]}
+   ]},
+  {"type": "stack", "note": "pair 2: write", "in": 5.1, "out": 6.8, "y": 360,
+   "lines": [
+    {"text": "GOOD DAY", "size": 100, "at": 5.15, "pill": "green", "color": "ink"},
+    {"text": "1 page.", "size": 170, "at": 5.35, "color": "paper", "gap": 10},
+    {"text": "BAD DAY", "size": 100, "at": 5.8, "pill": "coral", "color": "paper", "gap": 50},
+    {"text": "1 line.", "size": 170, "at": 6.0, "color": "paper", "gap": 10, "pulseAt": [6.4]}
+   ]},
+  {"type": "stack", "note": "pair 3: study", "in": 6.8, "out": 8.5, "y": 360,
+   "lines": [
+    {"text": "GOOD DAY", "size": 100, "at": 6.85, "pill": "green", "color": "ink"},
+    {"text": "Study 2h.", "size": 160, "at": 7.05, "gap": 10},
+    {"text": "BAD DAY", "size": 100, "at": 7.5, "pill": "coral", "color": "paper", "gap": 50},
+    {"text": "Open the", "size": 160, "at": 7.7, "gap": 10},
+    {"text": "book.", "size": 160, "at": 7.85, "gap": 5, "pulseAt": [8.2]}
+   ]},
+  {"type": "stack", "note": "the payoff", "in": 8.5, "out": 10.2, "y": 400,
+   "lines": [
+    {"text": "Bad days", "size": 190, "at": 8.55},
+    {"text": "still", "size": 190, "at": 8.8, "gap": -20},
+    {"text": "count.", "size": 230, "at": 9.05, "gap": -30, "pulseAt": [9.6], "sfx": "thud", "sfxGain": 0.7}
+   ]},
+  {"type": "stack", "note": "share CTA", "in": 10.2, "out": 12.2, "y": 360,
+   "lines": [
+    {"text": "Send this", "size": 170, "at": 10.25, "color": "amber"},
+    {"text": "to a friend", "size": 130, "at": 10.5, "color": "paper", "gap": 10},
+    {"text": "who quits", "size": 150, "at": 10.75, "color": "paper", "gap": 0},
+    {"text": "on day 3.", "size": 170, "at": 11.0, "color": "coral", "gap": 0, "pulseAt": [11.5]}
+   ]},
+  {"type": "brand", "note": "brand card, 2.0s", "in": 12.2, "out": 14.2, "y": 540, "mark": "dmyor",
+   "line": "Turn a big goal\ninto a daily plan.", "handle": "@dmyor_global"}
+ ]
+}

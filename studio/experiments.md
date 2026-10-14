@@ -141,3 +141,14 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if avg watch > 100% (rewatch visible), add the loop ending to every reel and test it alone on a pillar-1 reel. If not above the non-loop reels, drop it (it eats brand time).
+
+## V-EXP-15: Second-person "you" observation hook + good-day/bad-day pairs (pillar 1+2)
+- Status: running (opened 2026-10-14)
+- Change vs earlier new-format reels: same punch engine, palette, no VO, ~14s, brand card last 2s, no loop (keeps V-EXP-14 isolated). Different: frame 0 is a second-person observation about the viewer's own plan ("Your plan only works on good days.") instead of a claim/instruction ("SOMEDAY is not a day", "Start at the END."). Body = 3 side-by-side pairs (GOOD DAY vs BAD DAY version of the same habit), a contrast mechanic not used yet. CTA = named-friend share ("who quits on day 3").
+- Why: all 5 earlier hooks are claims or instructions. A "you" observation may hold better because it describes the viewer before telling them anything. Pairs give a save reason too.
+- Reels testing it: plan-the-bad-day (2026-10-14)
+- Metric + target (48h): 3s hold / avg watch >= 70% of length (>= 10s); shares+saves/reach >= 1%.
+- Expectation: hold similar to or above someday-is-not-a-day; shares above the tool reels. Reach 100-400. Confidence low (n=1, nothing posted yet, posting order confounds).
+- Result:
+- Verdict + why:
+- Next: if hold leads the claim-hook reels, test "you" hooks on 2 more pillars before making it default.
