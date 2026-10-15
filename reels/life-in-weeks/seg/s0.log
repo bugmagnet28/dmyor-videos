@@ -1,0 +1,80 @@
+Recording 90 frames @ 30fps -> s0.mp4
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+  0.0s / 3.0s
+Input #0, image2pipe, from 'fd:':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 1080x1920, 30 fps, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+[libx264 @ 0x103704080] using cpu capabilities: ARMv8 NEON DotProd I8MM
+[libx264 @ 0x103704080] profile High, level 5.0, 4:2:0, 8-bit
+[libx264 @ 0x103704080] 264 - core 165 r3222 b35605a - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=50 rc=crf mbtree=1 crf=17.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/Users/sanyampathak/Documents/dmyor-videos/reels/life-in-weeks/seg/s0.mp4':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.64    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:01.29    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:01.91    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:02.56    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:03.20    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:03.77    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:04.40    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:05.02    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:05.61    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:06.25    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:06.83    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:07.51    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:08.15    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:08.66    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:09.31    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:09.81    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:10.46    frame=    1 fps=0.1 q=23.0 size=       0KiB time=-00:00:00.03 bitrate=N/A speed=N/A elapsed=0:00:11.11    frame=    4 fps=0.3 q=23.0 size=       0KiB time=00:00:00.06 bitrate=   5.8kbits/s speed=0.00568x elapsed=0:00:11.73    frame=    5 fps=0.4 q=23.0 size=       0KiB time=00:00:00.10 bitrate=   3.8kbits/s speed=0.00814x elapsed=0:00:12.29    frame=    7 fps=0.5 q=23.0 size=       0KiB time=00:00:00.16 bitrate=   2.3kbits/s speed=0.0129x elapsed=0:00:12.90    frame=    9 fps=0.7 q=23.0 size=       0KiB time=00:00:00.23 bitrate=   1.6kbits/s speed=0.0172x elapsed=0:00:13.54    frame=   11 fps=0.0 q=23.0 size=       0KiB time=00:00:00.30 bitrate=   1.3kbits/s speed=0.000306x elapsed=0:16:20.87    frame=   12 fps=0.0 q=23.0 size=       0KiB time=00:00:00.33 bitrate=   1.2kbits/s speed=0.00034x elapsed=0:16:21.49    TargetCloseError: Protocol error (Page.captureScreenshot): Target closed
+    at CallbackRegistry.clear (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/common/CallbackRegistry.js:88:36)
+    at CdpCDPSession.onClosed (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/cdp/CdpSession.js:121:25)
+    at #onClose (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/cdp/Connection.js:217:21)
+    at WebSocket.<anonymous> (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/node/NodeWebSocketTransport.js:45:30)
+    at callListener (/Users/sanyampathak/Documents/dmyor-videos/node_modules/ws/lib/event-target.js:290:14)
+    at WebSocket.onClose (/Users/sanyampathak/Documents/dmyor-videos/node_modules/ws/lib/event-target.js:220:9)
+    at WebSocket.emit (node:events:508:20)
+    at WebSocket.emitClose (/Users/sanyampathak/Documents/dmyor-videos/node_modules/ws/lib/websocket.js:279:10)
+    at Socket.socketOnClose (/Users/sanyampathak/Documents/dmyor-videos/node_modules/ws/lib/websocket.js:1360:15)
+    at Socket.emit (node:events:508:20) {
+  cause: ProtocolError
+      at <instance_members_initializer> (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/common/CallbackRegistry.js:108:14)
+      at new Callback (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/common/CallbackRegistry.js:112:16)
+      at CallbackRegistry.create (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/common/CallbackRegistry.js:27:26)
+      at Connection._rawSend (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/cdp/Connection.js:125:26)
+      at CdpCDPSession.send (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/cdp/CdpSession.js:72:14)
+      at CdpPage._screenshot (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/cdp/Page.js:880:62)
+      at CdpPage.screenshot (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:1096:41)
+      at async CdpPage.<anonymous> (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/util/decorators.js:164:24)
+      at async /Users/sanyampathak/Documents/dmyor-videos/record.js:88:18
+}
+[vost#0:0/libx264 @ 0x100e04760] Error submitting a packet to the muxer: Immediate exit requested
+    Last message repeated 1 times
+[out#0/mp4 @ 0x600000bac000] Error muxing a packet
+[out#0/mp4 @ 0x600000bac000] Task finished with error code: -1414092869 (Immediate exit requested)
+[out#0/mp4 @ 0x600000bac000] Terminating thread with return code -1414092869 (Immediate exit requested)
+[mp4 @ 0x100e04080] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0x600000bac000] Error writing trailer: Immediate exit requested
+[out#0/mp4 @ 0x600000bac000] Error closing file: Immediate exit requested
+[out#0/mp4 @ 0x600000bac000] video:264KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=   38 fps=0.0 q=-1.0 Lsize=       0KiB time=00:00:01.20 bitrate=   0.3kbits/s speed=0.00122x elapsed=0:16:22.46    
+[libx264 @ 0x103704080] frame I:2     Avg QP: 4.29  size: 26268
+[libx264 @ 0x103704080] frame P:26    Avg QP:14.54  size: 13232
+[libx264 @ 0x103704080] frame B:58    Avg QP:20.45  size:  3006
+[libx264 @ 0x103704080] consecutive B-frames:  8.1%  4.7%  3.5% 83.7%
+[libx264 @ 0x103704080] mb I  I16..4: 93.9%  0.1%  6.0%
+[libx264 @ 0x103704080] mb P  I16..4:  5.6%  1.1%  1.4%  P16..4:  6.7%  2.9%  1.4%  0.0%  0.0%    skip:81.1%
+[libx264 @ 0x103704080] mb B  I16..4:  0.6%  0.1%  0.0%  B16..8:  7.5%  1.6%  0.2%  direct: 0.8%  skip:89.2%  L0:48.9% L1:32.0% BI:19.1%
+[libx264 @ 0x103704080] 8x8 transform intra:7.2% inter:32.0%
+[libx264 @ 0x103704080] direct mvs  spatial:89.7% temporal:10.3%
+[libx264 @ 0x103704080] coded y,uvDC,uvAC intra: 8.9% 13.8% 9.3% inter: 1.9% 2.6% 1.8%
+[libx264 @ 0x103704080] i16 v,h,dc,p: 89% 10%  1%  0%
+[libx264 @ 0x103704080] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 38%  5% 55%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0x103704080] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 40% 30% 21%  1%  1%  2%  1%  1%  1%
+[libx264 @ 0x103704080] i8c dc,h,v,p: 71% 16% 13%  0%
+[libx264 @ 0x103704080] Weighted P-Frames: Y:7.7% UV:7.7%
+[libx264 @ 0x103704080] ref P L0: 52.4%  2.6% 18.2% 16.9%  9.7%  0.1%
+[libx264 @ 0x103704080] ref B L0: 59.1% 25.7% 12.1%  3.1%
+[libx264 @ 0x103704080] ref B L1: 85.4% 14.6%
+[libx264 @ 0x103704080] kb/s:1593.29
+Exiting normally, received signal 15.

@@ -335,6 +335,11 @@ def cues_from(tl):
             for it in s.get("items", []) or []:
                 add(it.get("at"), "clack", 0.55)
                 if it.get("checkAt") is not None: add(it["checkAt"], "tick", 0.5)
+        elif ty == "grid":                       # punch: boxes sweeping in, then one box singled out
+            for f in s.get("fills", []) or []:
+                if f.get("at", 0) > 0.05: add(f["at"], "riser", 0.38)
+            fo = s.get("focus") or {}
+            if fo.get("at") is not None: add(fo["at"], "chime", 0.5)
         elif ty == "brand":
             add(s.get("in") - 1.0, "swell", 0.5)
             add(s.get("in"), "chime", 0.55)

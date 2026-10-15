@@ -14,7 +14,10 @@
             strikeAt,strikeColor, swapAt,swapText,swapColor, pulseAt:[t]}]},
        {type:"plan",  in,out,y,title,titleColor,labelColor,textColor,chkColor,
             items:[{label,text,at,checkAt}]},
-       {type:"brand", in,out,y,mark,line,handle,color,lineColor,handleBg,handleColor}
+       {type:"brand", in,out,y,mark,line,handle,color,lineColor,handleBg,handleColor},
+       {type:"grid",  in,out,y,cols,rows,cell,box,     a canvas of boxes (e.g. life in weeks), column-major
+            fills:[{from,to,color,at,dur}],          boxes from..to-1 take color, sweeping in over dur
+            focus:{at,index,color,size,dim}}         all boxes dim, box[index] grows to size px
      ],
      "sfx":[{t,v,g}]                         optional extra hand-placed cues (sfx.py)
    } */
@@ -79,6 +82,11 @@ var SC=(TL.scenes||[]).map(function(s,si){
     h.textContent=s.handle||"@dmyor_global"; h.style.background=col(s.handleBg||"amber"); h.style.color=col(s.handleColor||"ink");
     o.parts=[m,l,h];
   }
+  else if(s.type==="grid"){
+    var cv=document.createElement("canvas"), cols=s.cols||80, rows=s.rows||52, pitch=s.cell||11;
+    cv.width=cols*pitch; cv.height=rows*pitch; cv.style.display="block"; cv.style.margin="0 auto";
+    el.appendChild(cv); o.cv=cv; o.cx=cv.getContext("2d"); o.cols=cols; o.rows=rows; o.pitch=pitch;
+  }
   return o; });
 
 // ---------- camera ----------
@@ -125,6 +133,25 @@ function render(t){
         P.row.style.opacity=cl(p*1.6); P.row.style.transform="translateX("+((1-p)*90)+"px)";
         var ck=P.it.checkAt==null?0:(t<P.it.checkAt?0:eob(cl((t-P.it.checkAt)/0.25)));
         P.dot.style.transform="scale("+ck+")"; });
+    } else if(s.type==="grid"){
+      var cx=O.cx, P=O.pitch, bx=s.box||(P-2), N=O.cols*O.rows, cells=new Array(N);
+      (s.fills||[]).forEach(function(f){ var k=f.at<=0?1:eio(seg(t,f.at,f.at+(f.dur||1)));
+        var n=Math.floor((f.to-f.from)*k+1e-6);
+        for(var i=f.from;i<f.from+n&&i<N;i++) cells[i]=col(f.color); });
+      var F=s.focus, fk=F?eio(seg(t,F.at,F.at+0.5)):0;
+      cx.clearRect(0,0,O.cv.width,O.cv.height);
+      for(var i=0;i<N;i++){ if(!cells[i]) continue;
+        var c=Math.floor(i/O.rows), r=i%O.rows;
+        cx.globalAlpha=(F&&i!==F.index)?1-(1-(F.dim||0.2))*fk:1;
+        cx.fillStyle=cells[i]; cx.fillRect(c*P+(P-bx)/2, r*P+(P-bx)/2, bx, bx); }
+      cx.globalAlpha=1;
+      if(F&&fk>0){ var fc=Math.floor(F.index/O.rows), fr=F.index%O.rows;
+        var sz=bx+((F.size||160)-bx)*eob(cl((t-F.at)/0.5)), h=sz/2;
+        var mx=Math.max(h,Math.min(O.cv.width-h,fc*P+P/2)), my=Math.max(h,Math.min(O.cv.height-h,fr*P+P/2));
+        // anchor glides from the box's spot to a clamped spot so the big square stays inside the canvas
+        var ax=fc*P+P/2+(mx-(fc*P+P/2))*fk, ay=fr*P+P/2+(my-(fr*P+P/2))*fk;
+        sz=sz*(1+bump(t,F.pulseAt,0.4)*0.12); h=sz/2;
+        cx.fillStyle=col(F.color||"blue"); cx.fillRect(ax-h,ay-h,sz,sz); }
     } else if(s.type==="brand"){
       var p0=prog(t,s.in,0.4), p1=prog(t,s.in+0.35,0.3), p2=prog(t,s.in+0.7,0.3);
       O.parts[0].style.transform="scale("+(1.12-0.12*p0)+")"; O.parts[0].style.opacity=cl(p0*1.4);

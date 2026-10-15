@@ -152,3 +152,15 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if hold leads the claim-hook reels, test "you" hooks on 2 more pillars before making it default.
+
+## V-EXP-16: Data visual body (a "life in weeks" grid you can see fill) vs pure kinetic type
+- Status: running (opened 2026-10-15, before building)
+- Change vs all 6 earlier new-format reels: same punch engine, palette, frame-0 rule (big type, "A long life is about 4,000 weeks."), no VO, ~15s, brand card last ~2.2s, no loop. Different: the body is a picture, not words. An 80 x 52 grid (one box = one week of an 80-year life, 4,160 boxes) draws in, the first 25 columns turn coral ("By age 25: 1,300 gone"), the rest turn green ("Still left: 2,860"), then every box dims except one that grows ("You can plan this one"). New `grid` scene added to the punch engine for this. Pillar 3 (a number that stings), evergreen. CTA = named-person share ("send this to someone waiting for next year").
+- Why: every earlier reel is type only. A visual the viewer maps onto their own age is the classic share/save trigger for this topic, and it gives the eye something to scan (rewatch reason: "where am I on this grid?").
+- Honesty: 80 x 52 = 4,160 (real 80 x 52.18 = 4,174), shown as "about 4,000". 25 x 52 = 1,300. 4,160 - 1,300 = 2,860. Caption states the math and the "if you live to 80" assumption.
+- Reels testing it: life-in-weeks (2026-10-15)
+- Metric + target (48h): shares/reach >= 1% (highest of the new-format reels) and avg watch >= 75% of length (>= 11.4s).
+- Expectation: most shares and saves of the 7 queued reels; % watched similar to the other ~15s reels. Reach 100-400. Confidence low (n=1, nothing posted yet, posting order confounds reach).
+- Result:
+- Verdict + why:
+- Next: if shares lead, make one data-visual reel a week (calendar of a year, a 12-week bar, a 30-day streak grid). If no better than type-only reels, visuals are not the lever on a cold account; keep type and test hooks.

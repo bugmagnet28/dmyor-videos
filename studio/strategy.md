@@ -2,7 +2,10 @@
 
 Owned by the video agent. Rewritten in each weekly review. Started 2026-10-08 as hypotheses.
 
-## Where we are (2026-10-08)
+## Where we are (2026-10-15)
+- Week 1 done: 8 new-format reels built, 0 posted, 0 metrics, 0 followers. See weekly review below.
+
+## Where we were (2026-10-08)
 - Instagram @dmyor_global: **0 followers**. YouTube: not set up.
 - 12 earlier reels (31 to 100s, dark, slow, product-centric) did not work. No metrics logged. Diagnosis: `analysis/2026-10-08-why-reels-underperform.md`.
 - Cadence: 1 new video per day, Sanyam posts 1 per day.
@@ -24,6 +27,9 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 2. Rotate pillars 1 to 4 so we learn which topic pulls.
 3. Get real numbers in: ask Sanyam for screenshots 48h after each post.
 
+## Week 2 log (2026-10-15 to 2026-10-21)
+- 2026-10-15: life-in-weeks (pillar 3, 15.2s, data-visual grid body, named-person share CTA). V-EXP-16. Queue: 7 ready, 0 posted.
+
 ## Week 1 log (2026-10-08 to 2026-10-14)
 - 2026-10-08: twelve-weeks-one-thing (pillar 3 + 2: countdown hook + saveable plan), punch engine, 24s, no VO. V-EXP-09 baseline.
 - 2026-10-09: next-step-not-motivation (pillar 1 hard truth, 16.4s, 3 vague->concrete swaps). V-EXP-10.
@@ -36,4 +42,28 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 - Voiceover reels are NOT part of week 1: most viewers watch muted and we have no VO data. Revisit at the first weekly review, so no VO script is kept in asks for now.
 
 ## Weekly reviews
-(none yet; first due 2026-10-15)
+
+## Weekly review 2026-10-15 (week 1: Oct 8-14)
+
+**What happened.** 8 new-format reels built (twelve-weeks-one-thing, next-step-not-motivation, three-questions-before-a-goal, twenty-minutes-a-day, someday-is-not-a-day, start-at-the-end, plan-the-bad-day, + life-in-weeks today). All 12.8-24s, punch engine, frame 0 readable, bright panes, no VO. **0 posted, 0 metrics, followers 0 (last reading Oct 8).** One reel expired unposted (date-bound hook). Production worked (every reel passed all audits and a frame check); the loop is blocked at posting.
+
+**Side by side (craft only, no audience data):**
+| Reel | Len | Pillar | Hook type | Body mechanic | CTA |
+|---|---|---|---|---|---|
+| next-step-not-motivation | 16.4s | 1 truth | claim | vague->concrete swaps | share |
+| three-questions-before-a-goal | 17.6s | 2 tool | instruction | 1 question per screen | save |
+| twenty-minutes-a-day | 14.6s | 3 number | claim + strike | math roll | share |
+| someday-is-not-a-day | 12.8s | 1 truth | claim | week list | named-friend share |
+| start-at-the-end | 14.6s | 2 tool | instruction | backwards ladder + loop | save |
+| plan-the-bad-day | 14.2s | 1+2 | "you" observation | good/bad pairs | named-friend share |
+| life-in-weeks | 15.2s | 3 number | number fact | data-visual grid | named-person share |
+
+**Double down / kill:** nothing can be killed or crowned without numbers. Keep the punch format (it is the bundle under test, V-EXP-09). Variety across the queue is good: once posted, the 7 reels cover 3 pillars, 4 hook types, 6 body mechanics, 2 CTA types, which is what the first data needs.
+
+**Decisions for week 2 (Oct 15-21):**
+1. The bottleneck is posting. Ask Sanyam to schedule the whole queue in one sitting with Instagram's scheduler (VASK-010), instead of a daily manual post. One 15-minute session = a week of data.
+2. Keep building 1/day, evergreen only, each with a new single variable, so the queue keeps covering distinct bets: (a) loop ending on a pillar-1 reel (isolates V-EXP-14), (b) ultra-short 9-10s single line (length floor), (c) "comment your one goal" prompt reel (comments as a signal), (d) a second data-visual (a year as 365 dots, or a 12-week bar) if V-EXP-16 needs a pair, (e) pillar 4 real app if VASK-005 arrives.
+3. Voiceover stays OFF in week 2: no watch-time baseline yet to compare a VO reel against, and asking for recordings while nothing is being posted adds load on the one blocked step. Revisit when 3+ reels have 48h insights.
+4. The day 48h insights arrive for 3+ reels: run the first real comparison (hook type x % watched, CTA type x shares/saves) and rewrite this plan from data.
+5. If still 0 posted by the next weekly review (Oct 22), cut new builds to what Sanyam can post and spend spare runs on format R&D (engine scenes, templates) rather than growing an unwatched queue.
+

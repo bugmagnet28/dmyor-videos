@@ -28,3 +28,6 @@
 {"ts": "2026-10-14T15:38:33", "channel": "instagram", "action": "ingest", "exp": "", "summary": "No new metrics, notes or audio; 0 of 6 queued reels posted", "ref": "", "status": "skipped", "cost_usd": 0.0}
 {"ts": "2026-10-14T15:38:33", "channel": "instagram", "action": "ask", "exp": "", "summary": "VASK-009 still open: 7 waiting, 0 posted", "ref": "", "status": "waiting_on_human", "cost_usd": 0.0}
 {"ts": "2026-10-14T15:38:34", "channel": "email", "action": "notify", "exp": "", "summary": "Daily email: plan-the-bad-day ready, start-at-the-end recovered, VASK-009", "ref": "", "status": "done", "cost_usd": 0.0}
+{"ts": "2026-10-15T15:27:56", "channel": "instagram", "action": "ingest", "exp": "", "summary": "No new metrics, notes or audio; 0 of 6 queued reels posted (day 8)", "ref": "", "status": "skipped", "cost_usd": 0.0}
+{"ts": "2026-10-15T15:29:47", "channel": "instagram", "action": "ask", "exp": "", "summary": "VASK-010: schedule all 7 queued reels in one sitting; VASK-009 still open", "ref": "", "status": "waiting_on_human", "cost_usd": 0.0}
+{"ts": "2026-10-15T15:29:47", "channel": "instagram", "action": "review", "exp": "", "summary": "Weekly review 1: 8 built, 0 posted; keep punch bundle, schedule queue, VO stays off week 2", "ref": "", "status": "done", "cost_usd": 0.0}

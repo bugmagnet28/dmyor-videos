@@ -40,6 +40,15 @@ Edit this file (or tell Claude), set `Status: done`. The agent checks it every r
 - Steps: 1) post `ready-to-post/2026-10-11-twenty-minutes-a-day/video.mp4` with caption from `post.md`, 19:00-20:00 IST (evergreen, no deadline). 2) tick `[x] posted` in `studio/post-queue.md` with the time. 3) insights screenshots at ~48h and 7 days into `inbox/metrics/` (watch time / retention and shares matter most for this one).
 
 ## VASK-009: Just one post + one screenshot unblocks everything
-- Status: open (2026-10-12; still open 2026-10-14: now 7 waiting, 0 posted)
+- Status: open (2026-10-12; still open 2026-10-15: now 7 waiting, 0 posted, 8 days no data). See VASK-010 for a faster way.
 - Note: 5 evergreen videos are waiting, 0 posted, 5 days with no data. One video was lost because its date passed. I keep building 1 a day, but nothing gets learned until something is live.
 - Steps: 1) tonight 19:00-20:00 IST post `ready-to-post/2026-10-09-next-step-not-motivation/video.mp4` with the caption in its `post.md`. 2) tick `[x] posted` in `studio/post-queue.md`. 3) Wed Oct 14 evening: open the reel > View insights, screenshot all screens into `inbox/metrics/`. 4) if daily posting does not fit your week, write your real cadence in `inbox/notes.md` (e.g. "Mon/Wed/Fri") and I will build to it.
+
+## VASK-010: Schedule the whole queue in one sitting (about 15 minutes, once)
+- Status: open (2026-10-15, from the weekly review)
+- Why: 8 days, 7 videos ready, 0 posted, so no experiment has learned anything. Scheduling all of them at once turns one short session into a week of data, with no daily step to remember.
+- Steps:
+  1. Copy the 7 `video.mp4` files from `~/Documents/dmyor-videos/ready-to-post/` (skip `2026-10-08-twelve-weeks-one-thing`, it expired) to your phone, or use Meta Business Suite on the desktop.
+  2. Oldest first: for each one, start a new Reel in Instagram, paste the caption + hashtags from its `post.md`, then open **Advanced settings / More options > Schedule** and pick 19:30 IST, one per day starting today (Oct 15: next-step-not-motivation, Oct 16: three-questions-before-a-goal, Oct 17: twenty-minutes-a-day, Oct 18: someday-is-not-a-day, Oct 19: start-at-the-end, Oct 20: plan-the-bad-day, Oct 21: life-in-weeks). If your app has no Schedule option, Meta Business Suite > Planner does the same.
+  3. Tick `[x] posted` in `studio/post-queue.md` and add the scheduled date, or just write "scheduled all" in `inbox/notes.md`.
+  4. Two days after the first one goes live (Oct 17 evening), screenshot its insights (views, watch time, shares, saves, follows) into `inbox/metrics/`.

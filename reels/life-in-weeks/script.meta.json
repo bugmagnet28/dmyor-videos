@@ -1,0 +1,21 @@
+{
+ "slug": "life-in-weeks",
+ "hint": "Pillar 3 data visual: A long life is about 4,000 weeks. 80x52 grid fills; by 25, 1,300 gone; 2,860 left; you can't plan 2,860 weeks, you can plan this one. Pick one goal, give it this week. Send to someone waiting for next year. 15.2s no VO punch + new grid scene.",
+ "created": "2026-10-15T15:27:56",
+ "hook_pattern": "Number fact ('A long life is about 4,000 weeks.')",
+ "target_seconds": 15.2,
+ "status": "rendering",
+ "narrated": false,
+ "engine": "punch",
+ "cta": "Send this to someone waiting for next year + brand card 2.2s",
+ "experiments": [
+  "V-EXP-16",
+  "V-EXP-01",
+  "V-EXP-02",
+  "V-EXP-03",
+  "V-EXP-04",
+  "V-EXP-05",
+  "V-EXP-08"
+ ],
+ "note": "Breaks old conventions on purpose (punch engine, bright panes, burned-in text, no VO, 15.2s). New: a data-visual body (80x52 life-in-weeks grid, new `grid` scene added to engine-punch.js + sfx.py rule) instead of type only. No loop (keeps V-EXP-14 isolated). Assumes an 80-year life, stated in caption."
+}
