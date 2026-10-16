@@ -29,29 +29,34 @@ const W = 1080, H = 1920;
     process.exit(1);
   }
 
-  const browser = await puppeteer.launch({
-    headless: "new",
-    protocolTimeout: 900000,           // machine stalls killed records at the 180s default (2026-10-14)
-    args: [
-      "--no-sandbox",
-      "--force-device-scale-factor=1",
-      "--hide-scrollbars",
-      "--disable-lcd-text",              // greyscale AA, avoids colour fringing in video
-      "--font-render-hinting=none",
-      "--disable-features=DefaultPassthroughCommandDecoder"
-    ]
-  });
-
-  const page = await browser.newPage();
-  await page.setViewport({ width: W, height: H, deviceScaleFactor: SCALE });
-  await page.goto("file://" + PAGE, { waitUntil: "load" });
-
-  // The stage scales itself to the viewport; at 1080x1920 that is exactly 1:1.
-  await page.waitForFunction("typeof window.__seek === 'function'");
-  await page.evaluate(() => {
-    const btn = document.getElementById("playBtn");
-    if (btn) btn.style.display = "none";
-  });
+  // Chrome can crash under heavy machine load ("Target closed", 2026-10-15/16).
+  // open() (re)launches it; the frame loop relaunches and resumes the same frame.
+  let browser, page;
+  async function open() {
+    try { if (browser) await browser.close(); } catch (e) {}
+    browser = await puppeteer.launch({
+      headless: "new",
+      protocolTimeout: 900000,           // machine stalls killed records at the 180s default (2026-10-14)
+      args: [
+        "--no-sandbox",
+        "--force-device-scale-factor=1",
+        "--hide-scrollbars",
+        "--disable-lcd-text",              // greyscale AA, avoids colour fringing in video
+        "--font-render-hinting=none",
+        "--disable-features=DefaultPassthroughCommandDecoder"
+      ]
+    });
+    page = await browser.newPage();
+    await page.setViewport({ width: W, height: H, deviceScaleFactor: SCALE });
+    await page.goto("file://" + PAGE, { waitUntil: "load" });
+    // The stage scales itself to the viewport; at 1080x1920 that is exactly 1:1.
+    await page.waitForFunction("typeof window.__seek === 'function'");
+    await page.evaluate(() => {
+      const btn = document.getElementById("playBtn");
+      if (btn) btn.style.display = "none";
+    });
+  }
+  await open();
 
   const duration = Number(arg("end", await page.evaluate(() => window.__duration)));
   const startAt = Number(arg("start", 0));
@@ -84,8 +89,19 @@ const W = 1080, H = 1920;
   console.log(`Recording ${total} frames @ ${FPS}fps -> ${path.basename(OUT)}`);
   for (let f = 0; f < total; f++) {
     const t = startAt + f / FPS;
-    await page.evaluate((sec) => window.__seek(sec), t);
-    const shot = await page.screenshot({ type: "png", optimizeForSpeed: true });
+    let shot = null;
+    for (let tries = 0; ; tries++) {
+      try {
+        await page.evaluate((sec) => window.__seek(sec), t);
+        shot = await page.screenshot({ type: "png", optimizeForSpeed: true });
+        break;
+      } catch (e) {
+        if (tries >= 8) throw e;
+        console.error(`frame ${f} (${t.toFixed(2)}s) failed: ${e.message.split("\n")[0]}; relaunching (${tries + 1}/8)`);
+        await new Promise((r) => setTimeout(r, 5000));
+        try { await open(); } catch (e2) { console.error("relaunch failed: " + e2.message.split("\n")[0]); }
+      }
+    }
     await write(shot);
     if (f % (FPS * 5) === 0) {
       process.stdout.write(`  ${(t).toFixed(1)}s / ${duration.toFixed(1)}s\n`);
@@ -94,7 +110,7 @@ const W = 1080, H = 1920;
 
   ff.stdin.end();
   await ffDone;
-  await browser.close();
+  try { await browser.close(); } catch (e) {}
 
   if (AUDIO && fs.existsSync(AUDIO)) {
     // capture is silent; mux the narration on afterwards so video stays frame-exact

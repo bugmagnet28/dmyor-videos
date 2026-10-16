@@ -164,3 +164,14 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if shares lead, make one data-visual reel a week (calendar of a year, a 12-week bar, a 30-day streak grid). If no better than type-only reels, visuals are not the lever on a cold account; keep type and test hooks.
+
+## V-EXP-17: Ultra-short (~9.5s) single hard truth vs 13-18s reels (length floor)
+- Status: running (opened 2026-10-16, before building)
+- Change vs someday-is-not-a-day (12.8s, pillar 1, closest sibling): same punch engine, palette, frame-0 rule, no VO, no loop, named-friend share CTA, brand card ~2s. Different: total ~9.5s with 4 beats only (hook, strike, the fix, CTA) instead of 6. Hook is a "you" observation ("You've been 'about to start' for months."), so it also leans on V-EXP-15's hook type; credited jointly to length + hook if it wins.
+- Why: shorter reels finish more often and auto-replay sooner; completion and rewatch are the cheapest distribution signals for a cold account. We have no floor yet: the shortest queued reel is 12.8s.
+- Reels testing it: about-to-start (2026-10-16)
+- Metric + target (48h): avg watch >= 90% of length (>= 8.5s; > 100% = rewatches), highest % watched of the queue; shares/reach >= 0.7%.
+- Expectation: highest % watched of all queued reels, absolute avg watch seconds lower than the 15s reels, saves lowest (nothing to save). Reach 100-400. Confidence low (n=1, nothing posted yet, posting order confounds).
+- Result:
+- Verdict + why:
+- Next: if % watched clearly leads with similar shares, make pillar-1 reels 9-10s by default and keep 15s for tools/lists. If not, length under 13s is not the lever.

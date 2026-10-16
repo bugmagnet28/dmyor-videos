@@ -1,0 +1,22 @@
+{
+ "slug": "about-to-start",
+ "hint": "Pillar 1 hard truth, ultra-short 9.5s: You've been 'about to start' for months. Strike 'about to'. Start badly, today. Send to your 'about to start' friend. No VO punch engine. V-EXP-17.",
+ "created": "2026-10-16T14:07:38",
+ "hook_pattern": "'You' observation, frame-0 statement, hook word struck out",
+ "target_seconds": 9.6,
+ "status": "rendered",
+ "narrated": false,
+ "engine": "punch",
+ "words": 26,
+ "cta": "Send this to your 'about to start' friend + brand card last 2.2s",
+ "experiments": [
+  "V-EXP-17",
+  "V-EXP-15",
+  "V-EXP-01",
+  "V-EXP-03",
+  "V-EXP-04",
+  "V-EXP-05",
+  "V-EXP-08"
+ ],
+ "note": "Breaks the 12-25s default on purpose: V-EXP-17 tests a 9.6s length floor. Punch engine, bright panes, burned-in text, no VO, no loop (keeps V-EXP-14 isolated). Evergreen because the queue is stalled. No factual claims."
+}
