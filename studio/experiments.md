@@ -175,3 +175,14 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if % watched clearly leads with similar shares, make pillar-1 reels 9-10s by default and keep 15s for tools/lists. If not, length under 13s is not the lever.
+
+## V-EXP-18: Fill-in-the-blank hook + "comment yours" CTA (first comment ask)
+- Status: running (opened 2026-10-17, before building)
+- Change vs all 9 earlier new-format reels: same punch engine, palette, frame-0 rule, no VO, ~14s, brand card last ~2.2s, no loop. Different: (1) frame 0 is an unfinished sentence with a visible blank ("Finish this: By next year I will ____."), so the viewer answers it in their head before reading anything else; the blank then cycles like a slot machine (4 example goals, ~0.6s each) and lands on one. (2) Body shrinks that same goal down a ladder (next year > this week > today), each with its own blank filling in. (3) CTA asks for a COMMENT ("Your turn. Type your TODAY line in the comments.") instead of share/save. Two changes credited jointly (hook type + CTA), n=1.
+- Why: every queued reel asks for a share or a save; none asks for comments. Comments are a distribution signal and the cheapest one to give (one line). A blank the viewer already filled in their head makes the comment nearly free. Also a new visual mechanic (multi-swap slot text, added to the engine today).
+- Reels testing it: fill-the-blank (2026-10-17)
+- Metric + target (48h): comments/reach >= 0.5% and the most comments of any queued reel; avg watch >= 75% of length (>= 10.5s).
+- Expectation: most comments of the queue (even 2-3 would lead, since the others don't ask), shares/saves below the tool reels, % watched similar to the 14-15s reels. Reach 100-400. Confidence low (n=1, nothing posted yet, posting order confounds).
+- Result:
+- Verdict + why:
+- Next: if comments clearly lead, add a one-line comment prompt to 1 in 3 reels and test it alone (same reel structure, share vs comment CTA). If ~0 comments, a cold account's viewers don't comment; stay with share/save CTAs.

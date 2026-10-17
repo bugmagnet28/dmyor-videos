@@ -11,7 +11,8 @@
      "camera":[{t,s,x,y}],                   keyframed push/pull, plus a permanent drift
      "scenes":[
        {type:"stack", in,out,y,align, lines:[{text,size,color,at,pill,weight,
-            strikeAt,strikeColor, swapAt,swapText,swapColor, pulseAt:[t]}]},
+            strikeAt,strikeColor, swapAt,swapText,swapColor, pulseAt:[t],
+            swaps:[{at,text,color}]}]},      swaps = text cycles through several values (slot-machine blank)
        {type:"plan",  in,out,y,title,titleColor,labelColor,textColor,chkColor,
             items:[{label,text,at,checkAt}]},
        {type:"brand", in,out,y,mark,line,handle,color,lineColor,handleBg,handleColor},
@@ -62,7 +63,7 @@ var SC=(TL.scenes||[]).map(function(s,si){
       ln.appendChild(tx);
       var st=null; if(L.strikeAt!=null){ st=document.createElement("span"); st.className="strike";
         st.style.background=col(L.strikeColor||"coral"); tx.appendChild(st); }
-      el.appendChild(ln); o.parts.push({L:L, ln:ln, tx:tx, st:st, swapped:false}); });
+      el.appendChild(ln); o.parts.push({L:L, ln:ln, tx:tx, st:st, swapped:false, swi:-1}); });
   } else if(s.type==="plan"){
     var ti=document.createElement("div"); ti.className="ptitle"; ti.textContent=s.title||"";
     ti.style.color=col(s.titleColor); el.appendChild(ti); o.title=ti;
@@ -123,6 +124,12 @@ function render(t){
           if(sw!==P.swapped){ P.tx.firstChild.nodeValue=sw?L.swapText:L.text;
             P.tx.style.color=col(sw&&L.swapColor?L.swapColor:L.color); P.swapped=sw; }
           pu=Math.max(pu,bump(t,[L.swapAt],0.3)*0.09); }
+        if(L.swaps&&L.swaps.length){ var cur=-1;
+          L.swaps.forEach(function(w,wi){ if(t>=w.at) cur=wi; });
+          if(cur!==P.swi){ var w2=cur<0?null:L.swaps[cur];
+            P.tx.firstChild.nodeValue=w2?w2.text:L.text;
+            P.tx.style.color=col(w2&&w2.color?w2.color:L.color); P.swi=cur; }
+          pu=Math.max(pu,bump(t,L.swaps.map(function(w){return w.at;}),0.24)*0.07); }
         P.ln.style.transform="translateY("+((1-p)*70)+"px) scale("+(0.9+0.1*p+pu)+")";
         P.ln.style.opacity=cl(p*1.6);
         if(P.st) P.st.style.width=(eio(seg(t,L.strikeAt,L.strikeAt+0.28))*104)+"%"; });

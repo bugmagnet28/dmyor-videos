@@ -329,6 +329,7 @@ def cues_from(tl):
                 if at is not None and at > 0.05: add(at, L.get("sfx", "pop"), L.get("sfxGain", 0.5))
                 if L.get("strikeAt") is not None: add(L["strikeAt"], "swish", 0.5)
                 if L.get("swapAt") is not None: add(L["swapAt"], "thud", 0.6)
+                for w in (L.get("swaps") or []): add(w.get("at"), w.get("sfx", "tick"), w.get("g", 0.45))
         elif ty == "plan":
             ta = s.get("titleAt", s.get("in"))
             if ta is not None and ta > 0.05: add(ta, "whoosh", 0.5)

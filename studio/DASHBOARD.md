@@ -1,16 +1,16 @@
 # Video dashboard (@dmyor_global)
 
-_Last updated: 2026-10-16 (run 9)_
+_Last updated: 2026-10-17 (run 10)_
 
 | | |
 |---|---|
 | Instagram followers | 0 (last reading 2026-10-08) |
-| Videos ready to post | 8 (all evergreen) |
+| Videos ready to post | 9 (all evergreen) |
 | New-format videos posted (tracked) | 0 |
-| Reels with metrics | 0 of 21 |
+| Reels with metrics | 0 of 22 |
 | Skipped (expired unposted) | 1 (twelve-weeks-one-thing) |
 
-**Blocker: nothing posted in 9 days.** Fastest fix: VASK-010 (schedule all 8 in one ~15-min sitting).
+**Blocker: nothing posted in 10 days.** Fastest fix: VASK-010 (schedule all 9 in one ~15-min sitting).
 
 ## Post next (in this order, one per day, 19:00-20:00 IST)
 1. **next-step-not-motivation** (16s): "You don't need more motivation." `ready-to-post/2026-10-09-next-step-not-motivation/`
@@ -19,19 +19,20 @@ _Last updated: 2026-10-16 (run 9)_
 4. **someday-is-not-a-day** (13s): "SOMEDAY is not a day." `ready-to-post/2026-10-12-someday-is-not-a-day/`
 5. **start-at-the-end** (15s, loop ending): plan a goal backwards to today. `ready-to-post/2026-10-13-start-at-the-end/`
 6. **plan-the-bad-day** (14s): GOOD DAY / BAD DAY versions. `ready-to-post/2026-10-14-plan-the-bad-day/`
-7. **life-in-weeks** (15s): 80x52 grid of a life in weeks. `ready-to-post/2026-10-15-life-in-weeks/` (video recovered today)
-8. **about-to-start** (10s, NEW): "You've been 'about to start' for months." `ready-to-post/2026-10-16-about-to-start/`
+7. **life-in-weeks** (15s): 80x52 grid of a life in weeks. `ready-to-post/2026-10-15-life-in-weeks/` 
+8. **about-to-start** (10s): "You've been 'about to start' for months." `ready-to-post/2026-10-16-about-to-start/`
+9. **fill-the-blank** (14s, NEW): "Finish this: By next year I will ____." + comment CTA. `ready-to-post/2026-10-17-fill-the-blank/`
 
 ## Last 7 reels
 | Date | Reel | Length | Views | Avg watch | Shares | Saves | Follows |
 |---|---|---|---|---|---|---|---|
+| 2026-10-17 | fill-the-blank | 14.0s | not posted | | | | |
 | 2026-10-16 | about-to-start | 9.6s | not posted | | | | |
 | 2026-10-15 | life-in-weeks | 15.2s | not posted | | | | |
 | 2026-10-14 | plan-the-bad-day | 14.2s | not posted | | | | |
 | 2026-10-13 | start-at-the-end | 14.6s | not posted | | | | |
 | 2026-10-12 | someday-is-not-a-day | 12.8s | not posted | | | | |
 | 2026-10-11 | twenty-minutes-a-day | 14.6s | not posted | | | | |
-| 2026-10-10 | three-questions-before-a-goal | 17.6s | not posted | | | | |
 
 Best / worst: no data yet.
 
@@ -42,9 +43,10 @@ Best / worst: no data yet.
 - **V-EXP-15** "you" observation hook + good/bad-day pairs. Expect hold >= 70%.
 - **V-EXP-16** data-visual grid body (life-in-weeks). Expect top shares.
 - **V-EXP-17** ultra-short 9.6s length floor (about-to-start). Expect top % watched.
+- **V-EXP-18** fill-in-the-blank hook + first comment CTA (fill-the-blank). Expect most comments of the queue.
 - V-EXP-01..05, 07, 08 inside the bundle. V-EXP-06 (real app) needs a screen recording (VASK-005).
 
 ## Asks open
-- VASK-010 schedule the 8 queued reels in one sitting (main blocker).
+- VASK-010 schedule the 9 queued reels in one sitting (main blocker).
 - VASK-004 follower count screenshot now and then. VASK-005 (optional) app screen recording.
 - VASK-011 info: Mac overloaded during runs (old claude sessions at 100% CPU); renders now survive Chrome crashes.

@@ -1,0 +1,21 @@
+{
+ "slug": "fill-the-blank",
+ "hint": "Pillar 1+2, no VO punch, ~14s: Finish this: By next year I will ____ (slot cycles goals, lands on run a 5k). Too big, shrink it: this week ____ (run 1 km), today ____ (lace up). Your turn: type your today line in the comments. V-EXP-18.",
+ "created": "2026-10-17T11:23:26",
+ "hook_pattern": "Fill-in-the-blank sentence on frame 0, blank cycles like a slot machine",
+ "target_seconds": 14.0,
+ "status": "rendered",
+ "narrated": false,
+ "engine": "punch",
+ "words": 45,
+ "cta": "Comment CTA: type your TODAY line below + brand card last 2.2s",
+ "experiments": [
+  "V-EXP-18",
+  "V-EXP-01",
+  "V-EXP-03",
+  "V-EXP-04",
+  "V-EXP-05",
+  "V-EXP-08"
+ ],
+ "note": "No VO, captions = all burned-in text (skill default is captions off; experiment wins). Punch engine, bright panes. New engine feature today: stack line `swaps` (multi-value slot text). First reel with a comment CTA (V-EXP-18). Evergreen. No factual claims."
+}

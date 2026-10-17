@@ -36,3 +36,7 @@
 {"ts": "2026-10-16T14:10:26", "channel": "instagram", "action": "ingest", "exp": "", "summary": "No new metrics, notes or audio; 0 of 8 queued reels posted (day 9)", "ref": "", "status": "skipped", "cost_usd": 0.0}
 {"ts": "2026-10-16T14:10:26", "channel": "instagram", "action": "ask", "exp": "", "summary": "VASK-010 dates shifted (8 reels); VASK-011 machine load info", "ref": "", "status": "waiting_on_human", "cost_usd": 0.0}
 {"ts": "2026-10-16T14:10:45", "channel": "email", "action": "notify", "exp": "", "summary": "Daily email: about-to-start ready, life-in-weeks recovered, VASK-010/011", "ref": "", "status": "done", "cost_usd": 0.0}
+{"ts": "2026-10-17T11:27:08", "channel": "instagram", "action": "ingest", "exp": "", "summary": "No new metrics, notes or audio; 0 of 9 queued reels posted (day 10)", "ref": "", "status": "skipped", "cost_usd": 0.0}
+{"ts": "2026-10-17T11:27:08", "channel": "instagram", "action": "build", "exp": "V-EXP-18", "summary": "fill-the-blank 14s no-VO punch reel, comment CTA; engine swaps feature", "ref": "ready-to-post/2026-10-17-fill-the-blank", "status": "done", "cost_usd": 0.0}
+{"ts": "2026-10-17T11:27:08", "channel": "instagram", "action": "ask", "exp": "", "summary": "VASK-010 updated: 9 reels, schedule Oct 17-25", "ref": "", "status": "waiting_on_human", "cost_usd": 0.0}
+{"ts": "2026-10-17T11:27:15", "channel": "email", "action": "notify", "exp": "", "summary": "Daily email: fill-the-blank ready, VASK-010", "ref": "", "status": "done", "cost_usd": 0.0}
