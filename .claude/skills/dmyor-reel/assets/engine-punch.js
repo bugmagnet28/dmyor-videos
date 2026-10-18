@@ -18,7 +18,8 @@
        {type:"brand", in,out,y,mark,line,handle,color,lineColor,handleBg,handleColor},
        {type:"grid",  in,out,y,cols,rows,cell,box,     a canvas of boxes (e.g. life in weeks), column-major
             fills:[{from,to,color,at,dur}],          boxes from..to-1 take color, sweeping in over dur
-            focus:{at,index,color,size,dim}}         all boxes dim, box[index] grows to size px
+            focus:{at,index,color,size,dim},         all boxes dim, box[index] grows to size px
+            order:"row"}                             optional: fill left-to-right like a calendar (default column-major)
      ],
      "sfx":[{t,v,g}]                         optional extra hand-placed cues (sfx.py)
    } */
@@ -148,11 +149,11 @@ function render(t){
       var F=s.focus, fk=F?eio(seg(t,F.at,F.at+0.5)):0;
       cx.clearRect(0,0,O.cv.width,O.cv.height);
       for(var i=0;i<N;i++){ if(!cells[i]) continue;
-        var c=Math.floor(i/O.rows), r=i%O.rows;
+        var c=s.order==="row"?i%O.cols:Math.floor(i/O.rows), r=s.order==="row"?Math.floor(i/O.cols):i%O.rows;
         cx.globalAlpha=(F&&i!==F.index)?1-(1-(F.dim||0.2))*fk:1;
         cx.fillStyle=cells[i]; cx.fillRect(c*P+(P-bx)/2, r*P+(P-bx)/2, bx, bx); }
       cx.globalAlpha=1;
-      if(F&&fk>0){ var fc=Math.floor(F.index/O.rows), fr=F.index%O.rows;
+      if(F&&fk>0){ var fc=s.order==="row"?F.index%O.cols:Math.floor(F.index/O.rows), fr=s.order==="row"?Math.floor(F.index/O.cols):F.index%O.rows;
         var sz=bx+((F.size||160)-bx)*eob(cl((t-F.at)/0.5)), h=sz/2;
         var mx=Math.max(h,Math.min(O.cv.width-h,fc*P+P/2)), my=Math.max(h,Math.min(O.cv.height-h,fr*P+P/2));
         // anchor glides from the box's spot to a clamped spot so the big square stays inside the canvas

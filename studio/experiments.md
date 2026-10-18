@@ -186,3 +186,15 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if comments clearly lead, add a one-line comment prompt to 1 in 3 reels and test it alone (same reel structure, share vs comment CTA). If ~0 comments, a cold account's viewers don't comment; stay with share/save CTAs.
+
+## V-EXP-19: Streak-calendar visual + rule ("never miss twice") + save CTA (2nd data visual)
+- Status: running (opened 2026-10-18, before building)
+- Change vs all 10 earlier new-format reels: same punch engine, palette, frame-0 rule, no VO, ~16s, brand card last ~2.2s, no loop. Different: (1) hook is a reassurance that flips ("Miss 1 day? You're fine." then "Miss 2 in a row?" lands at 1.5s): permission first, then the catch, a hook shape not used yet. (2) body = a 30-day calendar grid (row-major, 6x5, big cells) shown twice: one miss then green continues ("Habit lives."), two misses then the whole streak greys out ("Habit dies."). (3) one rule to keep ("Never miss twice.") + SAVE CTA aimed at a future moment ("Save this for your next missed day.").
+- Why: pairs with V-EXP-16 (life-in-weeks) so the "data visual vs type-only" question has n=2, and with V-EXP-11/14 (save CTA reels) so saves have n=3. A rule the viewer will need again later is the strongest save reason we have written.
+- Honesty: no numbers or studies. "Never miss twice" is a popular habit rule (James Clear, Atomic Habits); credited in the caption, not presented as research.
+- Reels testing it: never-miss-twice (2026-10-18)
+- Metric + target (48h): saves/reach >= 1.5% (highest of the queue); avg watch >= 70% of length (>= 11s).
+- Expectation: most saves of the queue, shares mid, % watched similar to life-in-weeks. Reach 100-400. Confidence low (n=1, nothing posted yet, posting order confounds reach).
+- Result:
+- Verdict + why:
+- Next: if saves lead and life-in-weeks also beats the type-only reels on shares, make "rule + calendar visual" a weekly format. If saves are no better than three-questions-before-a-goal, the visual is not what earns saves.

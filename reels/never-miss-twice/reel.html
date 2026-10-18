@@ -1,0 +1,236 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>dmyor reel (punch)</title>
+<style>
+/* punch engine: bold, bright, full-frame kinetic type built for muted autoplay.
+   Frame 0 is always a finished, readable statement (no entrance at t<=0).
+   Heavy weights, flat bright panes, high contrast. Content lives inside y 240..1250. */
+:root{
+  --ink:#0B0B0F; --paper:#FFFFFF; --amber:#FFC530; --blue:#2F5BFF; --coral:#FF4D5E;
+  --green:#18C77A; --black:#0B0B0F; --cream:#FFF6E5; --dim:#5A5A66;
+}
+html,body{margin:0;padding:0;width:100%;height:100%;background:#000;overflow:hidden}
+#viewport{position:fixed;inset:0;background:#000;display:flex;align-items:center;justify-content:center}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;transform-origin:center center;
+ background:var(--black);color:var(--ink);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+ font-family:"Avenir Next","Helvetica Neue",-apple-system,Helvetica,Arial,sans-serif}
+#bg{position:absolute;inset:0;background:var(--black)}
+.bgpane{position:absolute;inset:0;transform:translateY(100%)}
+#cam{position:absolute;inset:0;transform-origin:50% 38%}
+.scene{position:absolute;left:0;width:1080px;box-sizing:border-box;padding:0 70px;opacity:0}
+.ln{display:block;font-weight:800;letter-spacing:-1.5px;line-height:1.02;will-change:transform,opacity;
+ transform-origin:50% 60%;position:relative}
+.ln .tx{position:relative;display:inline-block}
+.ln .strike{position:absolute;left:-2%;top:52%;height:.11em;width:0;border-radius:.06em}
+.pill{white-space:nowrap;display:inline-block;border-radius:999px;padding:.12em .55em .16em}
+/* plan list */
+.ptitle{font-weight:800;font-size:76px;letter-spacing:-1px;line-height:1.05;margin-bottom:34px}
+.prow{display:flex;align-items:flex-start;margin:0 0 30px 0;will-change:transform,opacity}
+.pchk{flex:0 0 66px;height:66px;border-radius:50%;box-sizing:border-box;border:6px solid;margin:6px 28px 0 0;
+ position:relative}
+.pchk i{position:absolute;inset:6px;border-radius:50%;transform:scale(0)}
+.pbody{flex:1}
+.plab{font-weight:800;font-size:48px;letter-spacing:2px;line-height:1.05}
+.ptxt{font-weight:700;font-size:60px;letter-spacing:-.8px;line-height:1.08;margin-top:4px}
+/* brand */
+.bmark{font-weight:800;font-size:230px;letter-spacing:-8px;line-height:1}
+.bline{white-space:pre-line;font-weight:700;font-size:62px;letter-spacing:-.5px;line-height:1.12;margin-top:26px}
+.bhandle{font-weight:800;font-size:64px;margin-top:44px;display:inline-block;border-radius:999px;padding:14px 44px}
+#playBtn{position:fixed;inset:0;margin:auto;width:210px;height:64px;border-radius:32px;border:0;
+ font:700 22px -apple-system,Helvetica,Arial;cursor:pointer}
+</style></head><body>
+<div id="viewport"><div id="stage">
+ <div id="bg"></div>
+ <div id="cam"></div>
+</div></div>
+<button id="playBtn">PLAY</button>
+<script>
+var TL = {"total": 16.0, "engine": "punch", "brand": {"mark": "dmyor", "url": "www.dmyor.com"}, "bg": [{"t": 0, "c": "amber"}, {"t": 3.0, "c": "cream", "dir": "up"}, {"t": 6.6, "c": "black", "dir": "left"}, {"t": 10.2, "c": "blue", "dir": "up"}, {"t": 12.1, "c": "cream", "dir": "right"}, {"t": 13.8, "c": "black", "dir": "up"}], "camera": [{"t": 0, "s": 1.0}, {"t": 1.45, "s": 1.0}, {"t": 1.7, "s": 1.05}, {"t": 2.1, "s": 1.0}, {"t": 4.3, "s": 1.0}, {"t": 4.5, "s": 1.04}, {"t": 4.85, "s": 1.0}, {"t": 7.95, "s": 1.0}, {"t": 8.15, "s": 1.05}, {"t": 8.5, "s": 1.0}, {"t": 10.85, "s": 1.0}, {"t": 11.05, "s": 1.05}, {"t": 11.4, "s": 1.0}, {"t": 16.0, "s": 1.0}], "sfx": [{"t": 0, "v": "thud", "g": 0.6}], "scenes": [{"type": "stack", "note": "FRAME 0 hook, fully drawn at 0.0s; the catch lands at 1.5s", "in": 0, "out": 3.05, "y": 420, "lines": [{"text": "Miss 1 day?", "size": 145, "at": 0, "color": "ink"}, {"text": "You're fine.", "size": 140, "at": 0, "color": "ink", "gap": 0}, {"text": "Miss 2", "size": 210, "at": 1.5, "color": "blue", "gap": 70, "sfx": "thud", "sfxGain": 0.65}, {"text": "in a row?", "size": 160, "at": 1.85, "color": "blue", "gap": -10}]}, {"type": "stack", "note": "calendar 1 title: one miss", "in": 3.0, "out": 6.65, "y": 330, "lines": [{"text": "30 days.", "size": 140, "at": 3.05, "color": "ink", "swaps": [{"at": 4.35, "text": "Miss once.", "color": "coral"}, {"at": 4.85, "text": "Back on it.", "color": "blue"}, {"at": 5.85, "text": "Habit lives.", "color": "blue", "sfx": "thud", "g": 0.55}]}]}, {"type": "grid", "note": "30-day calendar, one miss then the streak continues", "in": 3.0, "out": 6.65, "y": 560, "cols": 6, "rows": 5, "cell": 120, "box": 100, "order": "row", "fills": [{"from": 0, "to": 30, "color": "#E6DCC6", "at": 3.05, "dur": 0.05, "sfx": null}, {"from": 0, "to": 12, "color": "green", "at": 3.2, "dur": 1.0}, {"from": 12, "to": 13, "color": "coral", "at": 4.35, "dur": 0.05, "sfx": null}, {"from": 13, "to": 30, "color": "green", "at": 4.85, "dur": 1.0}]}, {"type": "stack", "note": "calendar 2 title: two misses", "in": 6.6, "out": 10.25, "y": 330, "lines": [{"text": "30 days.", "size": 140, "at": 6.65, "color": "paper", "swaps": [{"at": 7.5, "text": "Miss once.", "color": "coral"}, {"at": 8.0, "text": "Miss twice.", "color": "coral", "sfx": "thud", "g": 0.6}, {"at": 8.8, "text": "Habit dies.", "color": "paper"}]}]}, {"type": "grid", "note": "30-day calendar, two misses in a row, the streak greys out", "in": 6.6, "out": 10.25, "y": 560, "cols": 6, "rows": 5, "cell": 120, "box": 100, "order": "row", "fills": [{"from": 0, "to": 30, "color": "#2A2A33", "at": 6.65, "dur": 0.05, "sfx": null}, {"from": 0, "to": 12, "color": "green", "at": 6.75, "dur": 0.7}, {"from": 12, "to": 13, "color": "coral", "at": 7.5, "dur": 0.05, "sfx": null}, {"from": 13, "to": 14, "color": "coral", "at": 8.0, "dur": 0.05, "sfx": null}, {"from": 0, "to": 12, "color": "#4A4A55", "at": 8.8, "dur": 0.9, "sfx": "drop", "g": 0.5}]}, {"type": "stack", "note": "the rule", "in": 10.2, "out": 12.15, "y": 430, "lines": [{"text": "The rule:", "size": 120, "at": 10.25, "color": "paper"}, {"text": "Never miss", "size": 155, "at": 10.55, "color": "paper", "gap": 30}, {"text": "twice.", "size": 250, "at": 10.9, "color": "amber", "gap": -10, "sfx": "thud", "sfxGain": 0.7}]}, {"type": "stack", "note": "save CTA", "in": 12.1, "out": 13.85, "y": 440, "lines": [{"text": "Save this", "size": 190, "at": 12.15, "color": "ink"}, {"text": "for your", "size": 150, "at": 12.45, "color": "ink", "gap": 20}, {"text": "next miss.", "size": 150, "at": 12.7, "color": "coral", "gap": 0, "pulseAt": [13.3]}]}, {"type": "brand", "note": "brand card, last 2.2s", "in": 13.8, "y": 540, "mark": "dmyor", "line": "Turn a big goal\ninto a daily plan.", "handle": "@dmyor_global"}]};
+</script>
+<script>
+/* dmyor punch engine: bold kinetic type on flat bright panes, for muted autoplay.
+   Same contract as the other engines: render(t) is a pure function of time,
+   window.__seek / window.__duration for record.js and the audits.
+
+   Rule baked in: anything whose time is <= 0 is drawn FINISHED at t=0, so frame 0
+   (the scroll-stopper and the grid cover) is never empty or mid-entrance.
+
+   timeline.json
+   { "engine":"punch", "total":22.5,
+     "bg":[{t,c,dir}],                       flat panes that wipe in; t<=0 is already on
+     "camera":[{t,s,x,y}],                   keyframed push/pull, plus a permanent drift
+     "scenes":[
+       {type:"stack", in,out,y,align, lines:[{text,size,color,at,pill,weight,
+            strikeAt,strikeColor, swapAt,swapText,swapColor, pulseAt:[t],
+            swaps:[{at,text,color}]}]},      swaps = text cycles through several values (slot-machine blank)
+       {type:"plan",  in,out,y,title,titleColor,labelColor,textColor,chkColor,
+            items:[{label,text,at,checkAt}]},
+       {type:"brand", in,out,y,mark,line,handle,color,lineColor,handleBg,handleColor},
+       {type:"grid",  in,out,y,cols,rows,cell,box,     a canvas of boxes (e.g. life in weeks), column-major
+            fills:[{from,to,color,at,dur}],          boxes from..to-1 take color, sweeping in over dur
+            focus:{at,index,color,size,dim},         all boxes dim, box[index] grows to size px
+            order:"row"}                             optional: fill left-to-right like a calendar (default column-major)
+     ],
+     "sfx":[{t,v,g}]                         optional extra hand-placed cues (sfx.py)
+   } */
+(function(){
+"use strict";
+var TOTAL=TL.total, W=1080, H=1920;
+var stage=document.getElementById("stage");
+function fit(){ var s=Math.min(innerWidth/W, innerHeight/H); stage.style.transform="scale("+s+")"; }
+fit(); addEventListener("resize",fit);
+var cl=function(x){return x<0?0:(x>1?1:x)};
+var seg=function(t,a,b){return b<=a?(t>=b?1:0):cl((t-a)/(b-a))};
+var eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+var eob=function(x){var c=1.6;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2);};
+var CO={ink:"#0B0B0F",black:"#0B0B0F",paper:"#FFFFFF",white:"#FFFFFF",amber:"#FFC530",blue:"#2F5BFF",
+        coral:"#FF4D5E",green:"#18C77A",cream:"#FFF6E5",dim:"#5A5A66"};
+function col(n,d){ return CO[n]||n||d||CO.ink; }
+// entrance progress: finished at t=0 if the cue is at or before 0
+function prog(t,at,dur){ if(at==null||at<=0) return 1; return t<at?0:eob(cl((t-at)/(dur||0.3))); }
+function bump(t,list,dur){ var b=0; (list||[]).forEach(function(a){ var u=(t-a)/(dur||0.36);
+  if(u>=0&&u<=1) b=Math.max(b,Math.sin(Math.PI*u)); }); return b; }
+
+// ---------- background panes ----------
+var bgEl=document.getElementById("bg");
+var BG=(TL.bg||[]).map(function(b){ var d=document.createElement("div"); d.className="bgpane";
+  d.style.background=col(b.c); bgEl.appendChild(d); return {sc:b, el:d}; });
+
+// ---------- scenes ----------
+var cam=document.getElementById("cam");
+var SC=(TL.scenes||[]).map(function(s,si){
+  var el=document.createElement("div"); el.className="scene"; el.id="sc"+si+"_"+s.type.replace(/\W/g,"");
+  el.style.top=(s.y||400)+"px"; el.style.textAlign=s.align||"center";
+  cam.appendChild(el);
+  var o={sc:s, el:el, parts:[]};
+  if(s.type==="stack"){
+    (s.lines||[]).forEach(function(L){
+      var ln=document.createElement("div"); ln.className="ln";
+      ln.style.fontSize=(L.size||110)+"px"; if(L.weight) ln.style.fontWeight=L.weight;
+      if(L.gap!=null) ln.style.marginTop=L.gap+"px";
+      var tx=document.createElement("span"); tx.className="tx"+(L.pill?" pill":"");
+      tx.textContent=L.text; tx.style.color=col(L.color);
+      if(L.pill) tx.style.background=col(L.pill);
+      ln.appendChild(tx);
+      var st=null; if(L.strikeAt!=null){ st=document.createElement("span"); st.className="strike";
+        st.style.background=col(L.strikeColor||"coral"); tx.appendChild(st); }
+      el.appendChild(ln); o.parts.push({L:L, ln:ln, tx:tx, st:st, swapped:false, swi:-1}); });
+  } else if(s.type==="plan"){
+    var ti=document.createElement("div"); ti.className="ptitle"; ti.textContent=s.title||"";
+    ti.style.color=col(s.titleColor); el.appendChild(ti); o.title=ti;
+    (s.items||[]).forEach(function(it){
+      var r=document.createElement("div"); r.className="prow";
+      r.innerHTML='<div class="pchk"><i></i></div><div class="pbody"><div class="plab"></div><div class="ptxt"></div></div>';
+      var chk=r.querySelector(".pchk"); chk.style.borderColor=col(s.chkColor||"green");
+      chk.querySelector("i").style.background=col(s.chkColor||"green");
+      var lab=r.querySelector(".plab"); lab.textContent=it.label; lab.style.color=col(it.labelColor||s.labelColor||"blue");
+      var txt=r.querySelector(".ptxt"); txt.textContent=it.text; txt.style.color=col(s.textColor);
+      el.appendChild(r); o.parts.push({it:it, row:r, dot:chk.querySelector("i")}); });
+  } else if(s.type==="brand"){
+    el.innerHTML='<div class="bmark"></div><div class="bline"></div><div class="bhandle"></div>';
+    var m=el.querySelector(".bmark"), l=el.querySelector(".bline"), h=el.querySelector(".bhandle");
+    m.textContent=s.mark||"dmyor"; m.style.color=col(s.color||"paper");
+    l.textContent=s.line||""; l.style.color=col(s.lineColor||s.color||"paper");
+    h.textContent=s.handle||"@dmyor_global"; h.style.background=col(s.handleBg||"amber"); h.style.color=col(s.handleColor||"ink");
+    o.parts=[m,l,h];
+  }
+  else if(s.type==="grid"){
+    var cv=document.createElement("canvas"), cols=s.cols||80, rows=s.rows||52, pitch=s.cell||11;
+    cv.width=cols*pitch; cv.height=rows*pitch; cv.style.display="block"; cv.style.margin="0 auto";
+    el.appendChild(cv); o.cv=cv; o.cx=cv.getContext("2d"); o.cols=cols; o.rows=rows; o.pitch=pitch;
+  }
+  return o; });
+
+// ---------- camera ----------
+var CAM=(TL.camera||[]).slice().sort(function(a,b){return a.t-b.t;});
+function camAt(t){
+  if(!CAM.length) return {s:1,x:0,y:0};
+  if(t<=CAM[0].t) return CAM[0];
+  for(var i=0;i<CAM.length-1;i++){ var a=CAM[i],b=CAM[i+1];
+    if(t>=a.t&&t<=b.t){ var k=eio((t-a.t)/Math.max(1e-6,b.t-a.t));
+      return {s:(a.s||1)+((b.s||1)-(a.s||1))*k, x:(a.x||0)+((b.x||0)-(a.x||0))*k, y:(a.y||0)+((b.y||0)-(a.y||0))*k}; } }
+  return CAM[CAM.length-1]; }
+
+function render(t){
+  t=Math.max(0,Math.min(TOTAL,t));
+  BG.forEach(function(B){ var b=B.sc;
+    var k=b.t<=0?1:eio(seg(t,b.t,b.t+(b.dur||0.32))), off=(1-k)*100, dir=b.dir||"up";
+    B.el.style.transform= dir==="down"?"translateY("+(-off)+"%)": dir==="left"?"translateX("+off+"%)":
+                          dir==="right"?"translateX("+(-off)+"%)":"translateY("+off+"%)"; });
+  // permanent drift: large flat panes give the frame-diff nothing to see, so the type itself moves
+  var c=camAt(t);
+  var ds=1+Math.sin(t*0.9)*0.014, dx=Math.sin(t*0.73)*12, dy=Math.cos(t*0.81)*14;
+  cam.style.transform="translate("+(-(c.x||0)+dx)+"px,"+(-(c.y||0)+dy)+"px) scale("+((c.s||1)*ds)+")";
+
+  SC.forEach(function(O){ var s=O.sc;
+    var vin= s.in<=0?1:seg(t,s.in,s.in+0.12);
+    var vout= s.out==null?0:seg(t,s.out-0.15,s.out);
+    O.el.style.opacity=vin*(1-vout);
+    if(s.type==="stack"){
+      O.parts.forEach(function(P,i){ var L=P.L;
+        var at=L.at!=null?L.at:s.in;
+        var p=prog(t,at,0.3);
+        var pu=bump(t,L.pulseAt,0.36)*0.07;
+        if(L.swapAt!=null){ var sw=t>=L.swapAt;
+          if(sw!==P.swapped){ P.tx.firstChild.nodeValue=sw?L.swapText:L.text;
+            P.tx.style.color=col(sw&&L.swapColor?L.swapColor:L.color); P.swapped=sw; }
+          pu=Math.max(pu,bump(t,[L.swapAt],0.3)*0.09); }
+        if(L.swaps&&L.swaps.length){ var cur=-1;
+          L.swaps.forEach(function(w,wi){ if(t>=w.at) cur=wi; });
+          if(cur!==P.swi){ var w2=cur<0?null:L.swaps[cur];
+            P.tx.firstChild.nodeValue=w2?w2.text:L.text;
+            P.tx.style.color=col(w2&&w2.color?w2.color:L.color); P.swi=cur; }
+          pu=Math.max(pu,bump(t,L.swaps.map(function(w){return w.at;}),0.24)*0.07); }
+        P.ln.style.transform="translateY("+((1-p)*70)+"px) scale("+(0.9+0.1*p+pu)+")";
+        P.ln.style.opacity=cl(p*1.6);
+        if(P.st) P.st.style.width=(eio(seg(t,L.strikeAt,L.strikeAt+0.28))*104)+"%"; });
+    } else if(s.type==="plan"){
+      var tp=prog(t,s.titleAt!=null?s.titleAt:s.in,0.3);
+      O.title.style.opacity=cl(tp*1.6); O.title.style.transform="translateY("+((1-tp)*50)+"px)";
+      O.parts.forEach(function(P){ var p=prog(t,P.it.at,0.32);
+        P.row.style.opacity=cl(p*1.6); P.row.style.transform="translateX("+((1-p)*90)+"px)";
+        var ck=P.it.checkAt==null?0:(t<P.it.checkAt?0:eob(cl((t-P.it.checkAt)/0.25)));
+        P.dot.style.transform="scale("+ck+")"; });
+    } else if(s.type==="grid"){
+      var cx=O.cx, P=O.pitch, bx=s.box||(P-2), N=O.cols*O.rows, cells=new Array(N);
+      (s.fills||[]).forEach(function(f){ var k=f.at<=0?1:eio(seg(t,f.at,f.at+(f.dur||1)));
+        var n=Math.floor((f.to-f.from)*k+1e-6);
+        for(var i=f.from;i<f.from+n&&i<N;i++) cells[i]=col(f.color); });
+      var F=s.focus, fk=F?eio(seg(t,F.at,F.at+0.5)):0;
+      cx.clearRect(0,0,O.cv.width,O.cv.height);
+      for(var i=0;i<N;i++){ if(!cells[i]) continue;
+        var c=s.order==="row"?i%O.cols:Math.floor(i/O.rows), r=s.order==="row"?Math.floor(i/O.cols):i%O.rows;
+        cx.globalAlpha=(F&&i!==F.index)?1-(1-(F.dim||0.2))*fk:1;
+        cx.fillStyle=cells[i]; cx.fillRect(c*P+(P-bx)/2, r*P+(P-bx)/2, bx, bx); }
+      cx.globalAlpha=1;
+      if(F&&fk>0){ var fc=s.order==="row"?F.index%O.cols:Math.floor(F.index/O.rows), fr=s.order==="row"?Math.floor(F.index/O.cols):F.index%O.rows;
+        var sz=bx+((F.size||160)-bx)*eob(cl((t-F.at)/0.5)), h=sz/2;
+        var mx=Math.max(h,Math.min(O.cv.width-h,fc*P+P/2)), my=Math.max(h,Math.min(O.cv.height-h,fr*P+P/2));
+        // anchor glides from the box's spot to a clamped spot so the big square stays inside the canvas
+        var ax=fc*P+P/2+(mx-(fc*P+P/2))*fk, ay=fr*P+P/2+(my-(fr*P+P/2))*fk;
+        sz=sz*(1+bump(t,F.pulseAt,0.4)*0.12); h=sz/2;
+        cx.fillStyle=col(F.color||"blue"); cx.fillRect(ax-h,ay-h,sz,sz); }
+    } else if(s.type==="brand"){
+      var p0=prog(t,s.in,0.4), p1=prog(t,s.in+0.35,0.3), p2=prog(t,s.in+0.7,0.3);
+      O.parts[0].style.transform="scale("+(1.12-0.12*p0)+")"; O.parts[0].style.opacity=cl(p0*1.4);
+      O.parts[1].style.transform="translateY("+((1-p1)*40)+"px)"; O.parts[1].style.opacity=cl(p1*1.6);
+      O.parts[2].style.transform="translateY("+((1-p2)*40)+"px) scale("+(1+bump(t,[s.in+1.4],0.4)*0.06)+")";
+      O.parts[2].style.opacity=cl(p2*1.6);
+    } });
+}
+
+var st0=null,raf=null;
+function frame(now){ if(st0===null)st0=now; var t=(now-st0)/1000;
+  if(t>=TOTAL){render(TOTAL);raf=null;return;} render(t); raf=requestAnimationFrame(frame); }
+function play(){ document.getElementById("playBtn").style.display="none"; st0=null;
+  if(raf)cancelAnimationFrame(raf); raf=requestAnimationFrame(frame); }
+addEventListener("load",function(){
+  render(0);
+  window.__seek=function(x){render(x);}; window.__duration=TOTAL;
+  var q=new URLSearchParams(location.search), tp=q.get("t");
+  if(tp!==null&&!isNaN(parseFloat(tp))){ document.getElementById("playBtn").style.display="none"; render(parseFloat(tp)); return; }
+  if(q.get("autoplay")==="1") play(); else document.getElementById("playBtn").addEventListener("click",play);
+});
+})();
+
+</script>
+</body></html>

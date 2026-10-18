@@ -1,0 +1,382 @@
+{
+ "total": 16.0,
+ "engine": "punch",
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "bg": [
+  {
+   "t": 0,
+   "c": "amber"
+  },
+  {
+   "t": 3.0,
+   "c": "cream",
+   "dir": "up"
+  },
+  {
+   "t": 6.6,
+   "c": "black",
+   "dir": "left"
+  },
+  {
+   "t": 10.2,
+   "c": "blue",
+   "dir": "up"
+  },
+  {
+   "t": 12.1,
+   "c": "cream",
+   "dir": "right"
+  },
+  {
+   "t": 13.8,
+   "c": "black",
+   "dir": "up"
+  }
+ ],
+ "camera": [
+  {
+   "t": 0,
+   "s": 1.0
+  },
+  {
+   "t": 1.45,
+   "s": 1.0
+  },
+  {
+   "t": 1.7,
+   "s": 1.05
+  },
+  {
+   "t": 2.1,
+   "s": 1.0
+  },
+  {
+   "t": 4.3,
+   "s": 1.0
+  },
+  {
+   "t": 4.5,
+   "s": 1.04
+  },
+  {
+   "t": 4.85,
+   "s": 1.0
+  },
+  {
+   "t": 7.95,
+   "s": 1.0
+  },
+  {
+   "t": 8.15,
+   "s": 1.05
+  },
+  {
+   "t": 8.5,
+   "s": 1.0
+  },
+  {
+   "t": 10.85,
+   "s": 1.0
+  },
+  {
+   "t": 11.05,
+   "s": 1.05
+  },
+  {
+   "t": 11.4,
+   "s": 1.0
+  },
+  {
+   "t": 16.0,
+   "s": 1.0
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0,
+   "v": "thud",
+   "g": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "type": "stack",
+   "note": "FRAME 0 hook, fully drawn at 0.0s; the catch lands at 1.5s",
+   "in": 0,
+   "out": 3.05,
+   "y": 420,
+   "lines": [
+    {
+     "text": "Miss 1 day?",
+     "size": 145,
+     "at": 0,
+     "color": "ink"
+    },
+    {
+     "text": "You're fine.",
+     "size": 140,
+     "at": 0,
+     "color": "ink",
+     "gap": 0
+    },
+    {
+     "text": "Miss 2",
+     "size": 210,
+     "at": 1.5,
+     "color": "blue",
+     "gap": 70,
+     "sfx": "thud",
+     "sfxGain": 0.65
+    },
+    {
+     "text": "in a row?",
+     "size": 160,
+     "at": 1.85,
+     "color": "blue",
+     "gap": -10
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "calendar 1 title: one miss",
+   "in": 3.0,
+   "out": 6.65,
+   "y": 330,
+   "lines": [
+    {
+     "text": "30 days.",
+     "size": 140,
+     "at": 3.05,
+     "color": "ink",
+     "swaps": [
+      {
+       "at": 4.35,
+       "text": "Miss once.",
+       "color": "coral"
+      },
+      {
+       "at": 4.85,
+       "text": "Back on it.",
+       "color": "blue"
+      },
+      {
+       "at": 5.85,
+       "text": "Habit lives.",
+       "color": "blue",
+       "sfx": "thud",
+       "g": 0.55
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "grid",
+   "note": "30-day calendar, one miss then the streak continues",
+   "in": 3.0,
+   "out": 6.65,
+   "y": 560,
+   "cols": 6,
+   "rows": 5,
+   "cell": 120,
+   "box": 100,
+   "order": "row",
+   "fills": [
+    {
+     "from": 0,
+     "to": 30,
+     "color": "#E6DCC6",
+     "at": 3.05,
+     "dur": 0.05,
+     "sfx": null
+    },
+    {
+     "from": 0,
+     "to": 12,
+     "color": "green",
+     "at": 3.2,
+     "dur": 1.0
+    },
+    {
+     "from": 12,
+     "to": 13,
+     "color": "coral",
+     "at": 4.35,
+     "dur": 0.05,
+     "sfx": null
+    },
+    {
+     "from": 13,
+     "to": 30,
+     "color": "green",
+     "at": 4.85,
+     "dur": 1.0
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "calendar 2 title: two misses",
+   "in": 6.6,
+   "out": 10.25,
+   "y": 330,
+   "lines": [
+    {
+     "text": "30 days.",
+     "size": 140,
+     "at": 6.65,
+     "color": "paper",
+     "swaps": [
+      {
+       "at": 7.5,
+       "text": "Miss once.",
+       "color": "coral"
+      },
+      {
+       "at": 8.0,
+       "text": "Miss twice.",
+       "color": "coral",
+       "sfx": "thud",
+       "g": 0.6
+      },
+      {
+       "at": 8.8,
+       "text": "Habit dies.",
+       "color": "paper"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "grid",
+   "note": "30-day calendar, two misses in a row, the streak greys out",
+   "in": 6.6,
+   "out": 10.25,
+   "y": 560,
+   "cols": 6,
+   "rows": 5,
+   "cell": 120,
+   "box": 100,
+   "order": "row",
+   "fills": [
+    {
+     "from": 0,
+     "to": 30,
+     "color": "#2A2A33",
+     "at": 6.65,
+     "dur": 0.05,
+     "sfx": null
+    },
+    {
+     "from": 0,
+     "to": 12,
+     "color": "green",
+     "at": 6.75,
+     "dur": 0.7
+    },
+    {
+     "from": 12,
+     "to": 13,
+     "color": "coral",
+     "at": 7.5,
+     "dur": 0.05,
+     "sfx": null
+    },
+    {
+     "from": 13,
+     "to": 14,
+     "color": "coral",
+     "at": 8.0,
+     "dur": 0.05,
+     "sfx": null
+    },
+    {
+     "from": 0,
+     "to": 12,
+     "color": "#4A4A55",
+     "at": 8.8,
+     "dur": 0.9,
+     "sfx": "drop",
+     "g": 0.5
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "the rule",
+   "in": 10.2,
+   "out": 12.15,
+   "y": 430,
+   "lines": [
+    {
+     "text": "The rule:",
+     "size": 120,
+     "at": 10.25,
+     "color": "paper"
+    },
+    {
+     "text": "Never miss",
+     "size": 155,
+     "at": 10.55,
+     "color": "paper",
+     "gap": 30
+    },
+    {
+     "text": "twice.",
+     "size": 250,
+     "at": 10.9,
+     "color": "amber",
+     "gap": -10,
+     "sfx": "thud",
+     "sfxGain": 0.7
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "save CTA",
+   "in": 12.1,
+   "out": 13.85,
+   "y": 440,
+   "lines": [
+    {
+     "text": "Save this",
+     "size": 190,
+     "at": 12.15,
+     "color": "ink"
+    },
+    {
+     "text": "for your",
+     "size": 150,
+     "at": 12.45,
+     "color": "ink",
+     "gap": 20
+    },
+    {
+     "text": "next miss.",
+     "size": 150,
+     "at": 12.7,
+     "color": "coral",
+     "gap": 0,
+     "pulseAt": [
+      13.3
+     ]
+    }
+   ]
+  },
+  {
+   "type": "brand",
+   "note": "brand card, last 2.2s",
+   "in": 13.8,
+   "y": 540,
+   "mark": "dmyor",
+   "line": "Turn a big goal\ninto a daily plan.",
+   "handle": "@dmyor_global"
+  }
+ ]
+}

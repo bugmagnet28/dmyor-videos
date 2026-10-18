@@ -1,0 +1,23 @@
+{
+ "slug": "never-miss-twice",
+ "hint": "Pillar 2 tool + data visual, no VO punch, ~16s: Miss 1 day? You're fine. Miss 2 in a row? 30-day grid: one miss, habit lives; two misses, streak greys out, habit dies. Rule: never miss twice. Save this for your next missed day. V-EXP-19.",
+ "created": "2026-10-18T11:01:57",
+ "hook_pattern": "Reassurance that flips (permission first, catch at 1.5s)",
+ "target_seconds": 16.0,
+ "status": "rendered",
+ "narrated": false,
+ "engine": "punch",
+ "words": 40,
+ "cta": "SAVE CTA aimed at a future moment (save this for your next missed day) + brand card last 2.2s",
+ "experiments": [
+  "V-EXP-19",
+  "V-EXP-16",
+  "V-EXP-01",
+  "V-EXP-03",
+  "V-EXP-04",
+  "V-EXP-05",
+  "V-EXP-07",
+  "V-EXP-08"
+ ],
+ "note": "No VO, captions = all burned-in text (skill default is captions off; experiment wins). Punch engine, bright panes. Engine change today: grid `order:\"row\"` (calendar fill) + sfx.py per-fill `sfx` override (null silences the base fill). Second data-visual reel (pairs with life-in-weeks). Evergreen. No stats; 'never miss twice' credited to James Clear in the caption."
+}
