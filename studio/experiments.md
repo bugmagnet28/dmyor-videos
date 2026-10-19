@@ -198,3 +198,14 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if saves lead and life-in-weeks also beats the type-only reels on shares, make "rule + calendar visual" a weekly format. If saves are no better than three-questions-before-a-goal, the visual is not what earns saves.
+
+## V-EXP-20: Sentence loop (ending line reads into the frame-0 hook) + effort-blocks visual (pillar 1)
+- Status: running (opened 2026-10-19, before building)
+- Change vs earlier reels: same punch engine, palette, no VO, 16s, brand card ~2s. Different: (1) **sentence loop**: after the brand card the last 1.4s shows "Or keep..." and then rebuilds the exact frame-0 hook ("5 goals. 0 done."), so on replay the end reads into the start as one sentence. start-at-the-end (V-EXP-14) only rebuilt the visual; this one makes the loop a line of meaning, the version that is said to drive rewatches. (2) topic not used yet: too many goals / focus. (3) body = a 10x5 block grid where the same 10 blocks are split 2 per goal (nothing moves) vs all 10 on one goal (a full row): the viewer can count it, no stat needed. (4) rule "Pick 1. Park 4." + share CTA to "someone with 5 goals".
+- Honesty: "10 hours a week" is a worked example, not a claim about the viewer; the math (10 = 5 x 2) is checkable on screen.
+- Reels testing it: too-many-goals (2026-10-19)
+- Metric + target (48h): avg watch time >= 100% of length (>= 16s, i.e. replays) or the highest avg-watch/length ratio in the queue; shares/reach >= 1%.
+- Expectation: higher watch ratio than start-at-the-end (visual loop) and than non-loop reels of similar length; shares mid-high (named-person CTA). Confidence low (n=1, nothing posted yet, posting order confounds reach).
+- Result:
+- Verdict + why:
+- Next: if the watch ratio beats every non-loop reel, add a sentence loop to every reel for a week (V-EXP-14 + 20 together = loop works). If it ties start-at-the-end, loops help but the sentence adds nothing. If below, loops are not the lever.

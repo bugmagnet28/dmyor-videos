@@ -32,6 +32,7 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 - 2026-10-16: about-to-start (pillar 1, 9.6s ultra-short, 'you' hook + struck hook word, named-friend share). V-EXP-17 (length floor). Queue: 8 ready, 0 posted.
 - 2026-10-17: fill-the-blank (pillar 1+2, 14s, fill-in-the-blank hook with slot-machine blank, first COMMENT CTA). V-EXP-18. Queue: 9 ready, 0 posted.
 - 2026-10-18: never-miss-twice (pillar 2 rule + 2nd data visual: 6x5 calendar, one miss vs two misses, 16s, SAVE CTA aimed at a future moment). V-EXP-19. Queue: 10 ready, 0 posted.
+- 2026-10-19: too-many-goals (pillar 1 focus truth, 16s, 10x5 effort-block grid, first SENTENCE loop ending, named-person share CTA). V-EXP-20. Queue: 11 ready, 0 posted.
 
 ## Week 1 log (2026-10-08 to 2026-10-14)
 - 2026-10-08: twelve-weeks-one-thing (pillar 3 + 2: countdown hook + saveable plan), punch engine, 24s, no VO. V-EXP-09 baseline.

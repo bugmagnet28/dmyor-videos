@@ -42,3 +42,5 @@
 {"ts": "2026-10-17T11:27:15", "channel": "email", "action": "notify", "exp": "", "summary": "Daily email: fill-the-blank ready, VASK-010", "ref": "", "status": "done", "cost_usd": 0.0}
 {"ts": "2026-10-18T11:05:44", "channel": "instagram", "action": "build", "exp": "V-EXP-19", "summary": "never-miss-twice 16.0s no-VO punch reel, calendar grid + save CTA; packaged", "ref": "ready-to-post/2026-10-18-never-miss-twice", "status": "done", "cost_usd": 0.0}
 {"ts": "2026-10-18T11:06:24", "channel": "email", "action": "notify", "exp": "", "summary": "daily email: never-miss-twice ready, VASK-010 reminder", "ref": "", "status": "done", "cost_usd": 0.0}
+{"ts": "2026-10-19T11:37:36", "channel": "video", "action": "build", "exp": "V-EXP-20", "summary": "too-many-goals rendered (16.0s, no VO, sentence loop) and packaged", "ref": "ready-to-post/2026-10-19-too-many-goals", "status": "done", "cost_usd": 0.0}
+{"ts": "2026-10-19T11:38:03", "channel": "video", "action": "notify", "exp": "", "summary": "daily email: too-many-goals ready, VASK-010 reminder", "ref": "", "status": "done", "cost_usd": 0.0}

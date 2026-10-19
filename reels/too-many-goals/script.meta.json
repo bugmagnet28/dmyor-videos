@@ -1,0 +1,22 @@
+{
+ "slug": "too-many-goals",
+ "hint": "Pillar 1 hard truth: 5 goals, 0 done. Same 10 hours split 5 ways vs on 1 goal (10x5 block grid). Pick 1. Park 4. Send to someone with 5 goals. Sentence loop ending 'Or keep... 5 goals. 0 done.' 16s no VO punch engine.",
+ "created": "2026-10-19T11:32:59",
+ "hook_pattern": "Frame-0 number contrast ('5 goals. 0 done.') that is also the end of the loop sentence",
+ "target_seconds": 16.0,
+ "status": "rendered",
+ "narrated": false,
+ "engine": "punch",
+ "words": 33,
+ "cta": "Send this to someone with 5 goals. + brand card 2.0s + 1.4s sentence loop ('Or keep...' -> frame 0)",
+ "experiments": [
+  "V-EXP-20",
+  "V-EXP-14",
+  "V-EXP-01",
+  "V-EXP-02",
+  "V-EXP-04",
+  "V-EXP-05",
+  "V-EXP-08"
+ ],
+ "note": "Breaks old conventions on purpose (punch engine, bright panes, burned-in text, no VO, 16s). New: sentence loop, the last 1.4s reads 'Or keep...' then rebuilds the exact frame-0 hook so replay continues the sentence. Body is a 10x5 block grid (worked example: 10 hours a week, 2 per goal vs 10 on one), no stats. v1 render kept as reel.v1.mp4 (titles nearly touched grid; grid moved to y 660, cell 92)."
+}

@@ -6,6 +6,7 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 **Post order: bottom one first (oldest).** All queued reels are evergreen. Newest is listed on top.
 
+- [ ] posted · **2026-10-19 too-many-goals** (16s, no VO, block-grid visual, sentence loop, share CTA) · evergreen, post after never-miss-twice, 19:00-20:00 IST · `ready-to-post/2026-10-19-too-many-goals/` (video.mp4 + post.md) · tests V-EXP-20
 - [ ] posted · **2026-10-18 never-miss-twice** (16s, no VO, 30-day calendar visual, save CTA) · evergreen, post after fill-the-blank, 19:00-20:00 IST · `ready-to-post/2026-10-18-never-miss-twice/` (video.mp4 + post.md) · tests V-EXP-19
 - [ ] posted · **2026-10-17 fill-the-blank** (14s, no VO, comment CTA) · evergreen, post after about-to-start, 19:00-20:00 IST · `ready-to-post/2026-10-17-fill-the-blank/` (video.mp4 + post.md) · tests V-EXP-18
 - [ ] posted · **2026-10-16 about-to-start** (10s, no VO) · evergreen, post after life-in-weeks, 19:00-20:00 IST · `ready-to-post/2026-10-16-about-to-start/` (video.mp4 + post.md) · tests V-EXP-17

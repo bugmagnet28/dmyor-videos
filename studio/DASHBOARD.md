@@ -1,16 +1,16 @@
 # Video dashboard (@dmyor_global)
 
-_Last updated: 2026-10-18 (run 11)_
+_Last updated: 2026-10-19 (run 12)_
 
 | | |
 |---|---|
 | Instagram followers | 0 (last reading 2026-10-08) |
-| Videos ready to post | 10 (all evergreen) |
+| Videos ready to post | 11 (all evergreen) |
 | New-format videos posted (tracked) | 0 |
 | Reels with metrics | 0 of 22 |
 | Skipped (expired unposted) | 1 (twelve-weeks-one-thing) |
 
-**Blocker: nothing posted in 11 days.** Fastest fix: VASK-010 (schedule all 10 in one ~15-min sitting, Oct 18-27).
+**Blocker: nothing posted in 12 days.** Fastest fix: VASK-010 (schedule all 11 in one ~15-min sitting, Oct 19-29).
 
 ## Post next (in this order, one per day, 19:00-20:00 IST)
 1. **next-step-not-motivation** (16s): "You don't need more motivation." `ready-to-post/2026-10-09-next-step-not-motivation/`
@@ -22,18 +22,19 @@ _Last updated: 2026-10-18 (run 11)_
 7. **life-in-weeks** (15s): 80x52 grid of a life in weeks. `ready-to-post/2026-10-15-life-in-weeks/` 
 8. **about-to-start** (10s): "You've been 'about to start' for months." `ready-to-post/2026-10-16-about-to-start/`
 9. **fill-the-blank** (14s): "Finish this: By next year I will ____." + comment CTA. `ready-to-post/2026-10-17-fill-the-blank/`
-10. **never-miss-twice** (16s, NEW): "Miss 1 day? You're fine." 30-day calendar, one miss vs two, rule + SAVE. `ready-to-post/2026-10-18-never-miss-twice/`
+10. **never-miss-twice** (16s): "Miss 1 day? You're fine." 30-day calendar, one miss vs two, rule + SAVE. `ready-to-post/2026-10-18-never-miss-twice/`
+11. **too-many-goals** (16s, NEW, loops): "5 goals. 0 done." 10 hours split 5 ways vs on 1 goal, Pick 1. Park 4., ends 'Or keep...' into frame 0. `ready-to-post/2026-10-19-too-many-goals/`
 
 ## Last 7 reels
 | Date | Reel | Length | Views | Avg watch | Shares | Saves | Follows |
 |---|---|---|---|---|---|---|---|
+| 2026-10-19 | too-many-goals | 16.0s | not posted | | | | |
 | 2026-10-18 | never-miss-twice | 16.0s | not posted | | | | |
 | 2026-10-17 | fill-the-blank | 14.0s | not posted | | | | |
 | 2026-10-16 | about-to-start | 9.6s | not posted | | | | |
 | 2026-10-15 | life-in-weeks | 15.2s | not posted | | | | |
 | 2026-10-14 | plan-the-bad-day | 14.2s | not posted | | | | |
 | 2026-10-13 | start-at-the-end | 14.6s | not posted | | | | |
-| 2026-10-12 | someday-is-not-a-day | 12.8s | not posted | | | | |
 
 Best / worst: no data yet.
 
@@ -46,9 +47,10 @@ Best / worst: no data yet.
 - **V-EXP-17** ultra-short 9.6s length floor (about-to-start). Expect top % watched.
 - **V-EXP-18** fill-in-the-blank hook + first comment CTA (fill-the-blank). Expect most comments of the queue.
 - **V-EXP-19** calendar visual + "never miss twice" rule + save CTA (never-miss-twice). Expect most saves of the queue.
+- **V-EXP-20** sentence loop + effort-block grid (too-many-goals). Expect best watch/length ratio (replays).
 - V-EXP-01..05, 07, 08 inside the bundle. V-EXP-06 (real app) needs a screen recording (VASK-005).
 
 ## Asks open
-- VASK-010 schedule the 10 queued reels in one sitting (main blocker).
+- VASK-010 schedule the 11 queued reels in one sitting (main blocker).
 - VASK-004 follower count screenshot now and then. VASK-005 (optional) app screen recording.
 - VASK-011 info: Mac overloaded during runs (old claude sessions at 100% CPU); renders now survive Chrome crashes.
