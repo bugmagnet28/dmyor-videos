@@ -20,7 +20,7 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 4. **Show the app**: a real dmyor canvas turning a dream into steps, fast.
 
 ## Format defaults (from the diagnosis; experiments may change them)
-12 to 25s, frame 0 = big bold statement, change every 1 to 1.5s, burned-in text, viewer-first, brand card last 2 to 3s, a reason to save or share.
+12 to 25s, frame 0 = one clear statement in calm, small type (style changed 2026-10-20, see playbook), change every 1 to 1.5s, burned-in text, viewer-first, brand card last 2 to 3s, a reason to save or share.
 
 ## Current bets (first 7 days)
 1. Test frame-0 hook + short length on every video (V-EXP-01, V-EXP-02).

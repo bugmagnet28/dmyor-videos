@@ -35,6 +35,12 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:#000;overflow:hid
 .bmark{font-weight:800;font-size:230px;letter-spacing:-8px;line-height:1}
 .bline{white-space:pre-line;font-weight:700;font-size:62px;letter-spacing:-.5px;line-height:1.12;margin-top:26px}
 .bhandle{font-weight:800;font-size:64px;margin-top:44px;display:inline-block;border-radius:999px;padding:14px 44px}
+/* calm style: lighter, airier type (the whole #cam layer is also scaled by TS in the engine) */
+#stage.calm{font-family:"Avenir Next","Helvetica Neue",-apple-system,Helvetica,Arial,sans-serif}
+#stage.calm .ln{font-weight:600;letter-spacing:-.4px;line-height:1.12}
+#stage.calm .ptitle,#stage.calm .plab,#stage.calm .bhandle{font-weight:600}
+#stage.calm .ptxt,#stage.calm .bline{font-weight:500}
+#stage.calm .bmark{font-weight:600;letter-spacing:-4px}
 #playBtn{position:fixed;inset:0;margin:auto;width:210px;height:64px;border-radius:32px;border:0;
  font:700 22px -apple-system,Helvetica,Arial;cursor:pointer}
 </style></head><body>
@@ -47,7 +53,7 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:#000;overflow:hid
 var TL = {"total": 16.0, "engine": "punch", "brand": {"mark": "dmyor", "url": "www.dmyor.com"}, "bg": [{"t": 0, "c": "amber"}, {"t": 3.0, "c": "cream", "dir": "up"}, {"t": 6.6, "c": "black", "dir": "left"}, {"t": 10.2, "c": "blue", "dir": "up"}, {"t": 12.1, "c": "cream", "dir": "right"}, {"t": 13.8, "c": "black", "dir": "up"}], "camera": [{"t": 0, "s": 1.0}, {"t": 1.45, "s": 1.0}, {"t": 1.7, "s": 1.05}, {"t": 2.1, "s": 1.0}, {"t": 4.3, "s": 1.0}, {"t": 4.5, "s": 1.04}, {"t": 4.85, "s": 1.0}, {"t": 7.95, "s": 1.0}, {"t": 8.15, "s": 1.05}, {"t": 8.5, "s": 1.0}, {"t": 10.85, "s": 1.0}, {"t": 11.05, "s": 1.05}, {"t": 11.4, "s": 1.0}, {"t": 16.0, "s": 1.0}], "sfx": [{"t": 0, "v": "thud", "g": 0.6}], "scenes": [{"type": "stack", "note": "FRAME 0 hook, fully drawn at 0.0s; the catch lands at 1.5s", "in": 0, "out": 3.05, "y": 420, "lines": [{"text": "Miss 1 day?", "size": 145, "at": 0, "color": "ink"}, {"text": "You're fine.", "size": 140, "at": 0, "color": "ink", "gap": 0}, {"text": "Miss 2", "size": 210, "at": 1.5, "color": "blue", "gap": 70, "sfx": "thud", "sfxGain": 0.65}, {"text": "in a row?", "size": 160, "at": 1.85, "color": "blue", "gap": -10}]}, {"type": "stack", "note": "calendar 1 title: one miss", "in": 3.0, "out": 6.65, "y": 330, "lines": [{"text": "30 days.", "size": 140, "at": 3.05, "color": "ink", "swaps": [{"at": 4.35, "text": "Miss once.", "color": "coral"}, {"at": 4.85, "text": "Back on it.", "color": "blue"}, {"at": 5.85, "text": "Habit lives.", "color": "blue", "sfx": "thud", "g": 0.55}]}]}, {"type": "grid", "note": "30-day calendar, one miss then the streak continues", "in": 3.0, "out": 6.65, "y": 560, "cols": 6, "rows": 5, "cell": 120, "box": 100, "order": "row", "fills": [{"from": 0, "to": 30, "color": "#E6DCC6", "at": 3.05, "dur": 0.05, "sfx": null}, {"from": 0, "to": 12, "color": "green", "at": 3.2, "dur": 1.0}, {"from": 12, "to": 13, "color": "coral", "at": 4.35, "dur": 0.05, "sfx": null}, {"from": 13, "to": 30, "color": "green", "at": 4.85, "dur": 1.0}]}, {"type": "stack", "note": "calendar 2 title: two misses", "in": 6.6, "out": 10.25, "y": 330, "lines": [{"text": "30 days.", "size": 140, "at": 6.65, "color": "paper", "swaps": [{"at": 7.5, "text": "Miss once.", "color": "coral"}, {"at": 8.0, "text": "Miss twice.", "color": "coral", "sfx": "thud", "g": 0.6}, {"at": 8.8, "text": "Habit dies.", "color": "paper"}]}]}, {"type": "grid", "note": "30-day calendar, two misses in a row, the streak greys out", "in": 6.6, "out": 10.25, "y": 560, "cols": 6, "rows": 5, "cell": 120, "box": 100, "order": "row", "fills": [{"from": 0, "to": 30, "color": "#2A2A33", "at": 6.65, "dur": 0.05, "sfx": null}, {"from": 0, "to": 12, "color": "green", "at": 6.75, "dur": 0.7}, {"from": 12, "to": 13, "color": "coral", "at": 7.5, "dur": 0.05, "sfx": null}, {"from": 13, "to": 14, "color": "coral", "at": 8.0, "dur": 0.05, "sfx": null}, {"from": 0, "to": 12, "color": "#4A4A55", "at": 8.8, "dur": 0.9, "sfx": "drop", "g": 0.5}]}, {"type": "stack", "note": "the rule", "in": 10.2, "out": 12.15, "y": 430, "lines": [{"text": "The rule:", "size": 120, "at": 10.25, "color": "paper"}, {"text": "Never miss", "size": 155, "at": 10.55, "color": "paper", "gap": 30}, {"text": "twice.", "size": 250, "at": 10.9, "color": "amber", "gap": -10, "sfx": "thud", "sfxGain": 0.7}]}, {"type": "stack", "note": "save CTA", "in": 12.1, "out": 13.85, "y": 440, "lines": [{"text": "Save this", "size": 190, "at": 12.15, "color": "ink"}, {"text": "for your", "size": 150, "at": 12.45, "color": "ink", "gap": 20}, {"text": "next miss.", "size": 150, "at": 12.7, "color": "coral", "gap": 0, "pulseAt": [13.3]}]}, {"type": "brand", "note": "brand card, last 2.2s", "in": 13.8, "y": 540, "mark": "dmyor", "line": "Turn a big goal\ninto a daily plan.", "handle": "@dmyor_global"}]};
 </script>
 <script>
-/* dmyor punch engine: bold kinetic type on flat bright panes, for muted autoplay.
+/* dmyor punch engine: kinetic type on flat panes, for muted autoplay. Default style "calm" (small, airy); "loud" = original heavy look.
    Same contract as the other engines: render(t) is a pure function of time,
    window.__seek / window.__duration for record.js and the audits.
 
@@ -60,8 +66,8 @@ var TL = {"total": 16.0, "engine": "punch", "brand": {"mark": "dmyor", "url": "w
      "camera":[{t,s,x,y}],                   keyframed push/pull, plus a permanent drift
      "scenes":[
        {type:"stack", in,out,y,align, lines:[{text,size,color,at,pill,weight,
-            strikeAt,strikeColor, swapAt,swapText,swapColor, pulseAt:[t],
-            swaps:[{at,text,color}]}]},      swaps = text cycles through several values (slot-machine blank)
+            strikeAt,strikeColor, dimAt, swapAt,swapText,swapColor, pulseAt:[t],
+            swaps:[{at,text,color,size}]}]},  swaps = text cycles through several values (slot-machine blank)
        {type:"plan",  in,out,y,title,titleColor,labelColor,textColor,chkColor,
             items:[{label,text,at,checkAt}]},
        {type:"brand", in,out,y,mark,line,handle,color,lineColor,handleBg,handleColor},
@@ -84,6 +90,14 @@ var eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
 var eob=function(x){var c=1.6;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2);};
 var CO={ink:"#0B0B0F",black:"#0B0B0F",paper:"#FFFFFF",white:"#FFFFFF",amber:"#FFC530",blue:"#2F5BFF",
         coral:"#FF4D5E",green:"#18C77A",cream:"#FFF6E5",dim:"#5A5A66"};
+// style "calm" (default since 2026-10-20): smaller type, softer weights and palette, more air.
+// "loud" restores the original full-frame heavy look. typeScale overrides the shrink factor.
+var CALM=TL.style!=="loud";
+var TS=TL.typeScale!=null?TL.typeScale:(CALM?0.62:1);
+var SHIFT=CALM?120:0;   // scaled content sits high; nudge it toward the visual centre (above the Reels caption)
+if(CALM){ CO={ink:"#1F1E1B",black:"#171614",paper:"#FBF9F5",white:"#FBF9F5",amber:"#EBC46E",blue:"#3E5DA6",
+        coral:"#DD6B57",green:"#3F8C68",cream:"#F4EEE3",dim:"#8C887F"};
+  stage.classList.add("calm"); }
 function col(n,d){ return CO[n]||n||d||CO.ink; }
 // entrance progress: finished at t=0 if the cue is at or before 0
 function prog(t,at,dur){ if(at==null||at<=0) return 1; return t<at?0:eob(cl((t-at)/(dur||0.3))); }
@@ -159,7 +173,7 @@ function render(t){
   // permanent drift: large flat panes give the frame-diff nothing to see, so the type itself moves
   var c=camAt(t);
   var ds=1+Math.sin(t*0.9)*0.014, dx=Math.sin(t*0.73)*12, dy=Math.cos(t*0.81)*14;
-  cam.style.transform="translate("+(-(c.x||0)+dx)+"px,"+(-(c.y||0)+dy)+"px) scale("+((c.s||1)*ds)+")";
+  cam.style.transform="translate("+(-(c.x||0)+dx)+"px,"+(-(c.y||0)+dy+SHIFT)+"px) scale("+((c.s||1)*ds*TS)+")";
 
   SC.forEach(function(O){ var s=O.sc;
     var vin= s.in<=0?1:seg(t,s.in,s.in+0.12);
@@ -178,10 +192,11 @@ function render(t){
           L.swaps.forEach(function(w,wi){ if(t>=w.at) cur=wi; });
           if(cur!==P.swi){ var w2=cur<0?null:L.swaps[cur];
             P.tx.firstChild.nodeValue=w2?w2.text:L.text;
-            P.tx.style.color=col(w2&&w2.color?w2.color:L.color); P.swi=cur; }
+            P.tx.style.color=col(w2&&w2.color?w2.color:L.color);
+            P.ln.style.fontSize=((w2&&w2.size)||L.size||110)+"px"; P.swi=cur; }
           pu=Math.max(pu,bump(t,L.swaps.map(function(w){return w.at;}),0.24)*0.07); }
         P.ln.style.transform="translateY("+((1-p)*70)+"px) scale("+(0.9+0.1*p+pu)+")";
-        P.ln.style.opacity=cl(p*1.6);
+        P.ln.style.opacity=cl(p*1.6)*(L.dimAt!=null?1-0.72*eio(seg(t,L.dimAt,L.dimAt+0.3)):1);
         if(P.st) P.st.style.width=(eio(seg(t,L.strikeAt,L.strikeAt+0.28))*104)+"%"; });
     } else if(s.type==="plan"){
       var tp=prog(t,s.titleAt!=null?s.titleAt:s.in,0.3);

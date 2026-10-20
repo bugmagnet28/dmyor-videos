@@ -2,7 +2,8 @@
 
 Rules learned from evidence. Each cites its source. Revise when data disagrees.
 
-- (starter) Frame 0 must be readable and bold. Source: diagnosis 2026-10-08 (3 of 4 old reels opened on an empty frame).
+- **Visual style (owner decision, 2026-10-20): calm, small, aesthetic type.** Sanyam found the full-frame heavy text too big. The punch engine now defaults to `style: "calm"`: the whole text layer renders at 0.62x, semibold weights, softer palette, content nudged toward the visual centre. Write timeline sizes as before (the px rules below are design units before the 0.62 shrink). Never set `"style":"loud"` or a `typeScale` above 0.7 unless Sanyam asks. Keep one idea per screen with lots of empty space; fewer words per beat beats bigger words. Source: Sanyam's 2026-10-20 review.
+- (starter) Frame 0 must be readable (calm style: readable, not loud). Source: diagnosis 2026-10-08 (3 of 4 old reels opened on an empty frame).
 - (starter) Watch your own frames before packaging. Source: setup.
 - (starter) Every video tests a named experiment with a written expectation. Source: setup.
 - Use the `punch` engine (`"engine":"punch"`) for no-VO reels: heavy type on flat bright panes, frame 0 drawn finished. Put the full hook at `at: 0`. Source: diagnosis 2026-10-08 + frame check of twelve-weeks-one-thing. Revisit once V-EXP-09 has numbers.

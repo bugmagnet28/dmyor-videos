@@ -1,4 +1,4 @@
-/* dmyor punch engine: bold kinetic type on flat bright panes, for muted autoplay.
+/* dmyor punch engine: kinetic type on flat panes, for muted autoplay. Default style "calm" (small, airy); "loud" = original heavy look.
    Same contract as the other engines: render(t) is a pure function of time,
    window.__seek / window.__duration for record.js and the audits.
 
@@ -35,6 +35,14 @@ var eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
 var eob=function(x){var c=1.6;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2);};
 var CO={ink:"#0B0B0F",black:"#0B0B0F",paper:"#FFFFFF",white:"#FFFFFF",amber:"#FFC530",blue:"#2F5BFF",
         coral:"#FF4D5E",green:"#18C77A",cream:"#FFF6E5",dim:"#5A5A66"};
+// style "calm" (default since 2026-10-20): smaller type, softer weights and palette, more air.
+// "loud" restores the original full-frame heavy look. typeScale overrides the shrink factor.
+var CALM=TL.style!=="loud";
+var TS=TL.typeScale!=null?TL.typeScale:(CALM?0.62:1);
+var SHIFT=CALM?120:0;   // scaled content sits high; nudge it toward the visual centre (above the Reels caption)
+if(CALM){ CO={ink:"#1F1E1B",black:"#171614",paper:"#FBF9F5",white:"#FBF9F5",amber:"#EBC46E",blue:"#3E5DA6",
+        coral:"#DD6B57",green:"#3F8C68",cream:"#F4EEE3",dim:"#8C887F"};
+  stage.classList.add("calm"); }
 function col(n,d){ return CO[n]||n||d||CO.ink; }
 // entrance progress: finished at t=0 if the cue is at or before 0
 function prog(t,at,dur){ if(at==null||at<=0) return 1; return t<at?0:eob(cl((t-at)/(dur||0.3))); }
@@ -110,7 +118,7 @@ function render(t){
   // permanent drift: large flat panes give the frame-diff nothing to see, so the type itself moves
   var c=camAt(t);
   var ds=1+Math.sin(t*0.9)*0.014, dx=Math.sin(t*0.73)*12, dy=Math.cos(t*0.81)*14;
-  cam.style.transform="translate("+(-(c.x||0)+dx)+"px,"+(-(c.y||0)+dy)+"px) scale("+((c.s||1)*ds)+")";
+  cam.style.transform="translate("+(-(c.x||0)+dx)+"px,"+(-(c.y||0)+dy+SHIFT)+"px) scale("+((c.s||1)*ds*TS)+")";
 
   SC.forEach(function(O){ var s=O.sc;
     var vin= s.in<=0?1:seg(t,s.in,s.in+0.12);

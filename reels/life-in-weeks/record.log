@@ -1,0 +1,55 @@
+Recording 456 frames @ 30fps -> reel.mp4
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+  0.0s / 15.2s
+Input #0, image2pipe, from 'fd:':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 1080x1920, 30 fps, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+[libx264 @ 0x12d617cb0] using cpu capabilities: ARMv8 NEON DotProd I8MM
+[libx264 @ 0x12d617cb0] profile High, level 5.0, 4:2:0, 8-bit
+[libx264 @ 0x12d617cb0] 264 - core 165 r3222 b35605a - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=50 rc=crf mbtree=1 crf=17.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/Users/sanyampathak/Documents/dmyor-videos/reels/life-in-weeks/reel.mp4':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.50    frame=    5 fps=4.9 q=23.0 size=       0KiB time=00:00:00.10 bitrate=   3.8kbits/s speed=0.099x elapsed=0:00:01.01    frame=   16 fps= 11 q=23.0 size=       0KiB time=00:00:00.46 bitrate=   0.8kbits/s speed=0.308x elapsed=0:00:01.51    frame=   27 fps= 13 q=23.0 size=       0KiB time=00:00:00.83 bitrate=   0.5kbits/s speed=0.413x elapsed=0:00:02.01    frame=   37 fps= 15 q=23.0 size=       0KiB time=00:00:01.16 bitrate=   0.3kbits/s speed=0.463x elapsed=0:00:02.51    frame=   49 fps= 16 q=23.0 size=       0KiB time=00:00:01.56 bitrate=   0.2kbits/s speed=0.518x elapsed=0:00:03.02    frame=   61 fps= 17 q=23.0 size=       0KiB time=00:00:01.96 bitrate=   0.2kbits/s speed=0.558x elapsed=0:00:03.52    frame=   71 fps= 18 q=23.0 size=       0KiB time=00:00:02.30 bitrate=   0.2kbits/s speed=0.57x elapsed=0:00:04.03      5.0s / 15.2s
+frame=   84 fps= 19 q=23.0 size=     256KiB time=00:00:02.73 bitrate= 767.4kbits/s speed=0.603x elapsed=0:00:04.53    frame=   95 fps= 19 q=23.0 size=     256KiB time=00:00:03.10 bitrate= 676.6kbits/s speed=0.615x elapsed=0:00:05.04    frame=  107 fps= 19 q=23.0 size=     256KiB time=00:00:03.50 bitrate= 599.3kbits/s speed=0.632x elapsed=0:00:05.54    frame=  119 fps= 20 q=23.0 size=     512KiB time=00:00:03.90 bitrate=1075.6kbits/s speed=0.645x elapsed=0:00:06.04    frame=  131 fps= 20 q=23.0 size=     512KiB time=00:00:04.30 bitrate= 975.5kbits/s speed=0.656x elapsed=0:00:06.55    frame=  143 fps= 20 q=23.0 size=     768KiB time=00:00:04.70 bitrate=1338.7kbits/s speed=0.666x elapsed=0:00:07.05    frame=  154 fps= 20 q=23.0 size=    1024KiB time=00:00:05.06 bitrate=1655.7kbits/s speed=0.67x elapsed=0:00:07.55    frame=  166 fps= 21 q=23.0 size=    1024KiB time=00:00:05.46 bitrate=1534.6kbits/s speed=0.678x elapsed=0:00:08.06    frame=  178 fps= 21 q=23.0 size=    1280KiB time=00:00:05.86 bitrate=1787.4kbits/s speed=0.685x elapsed=0:00:08.56    frame=  190 fps= 21 q=23.0 size=    1536KiB time=00:00:06.26 bitrate=2008.0kbits/s speed=0.691x elapsed=0:00:09.07    frame=  202 fps= 21 q=23.0 size=    1792KiB time=00:00:06.66 bitrate=2202.1kbits/s speed=0.696x elapsed=0:00:09.57    frame=  214 fps= 21 q=23.0 size=    2048KiB time=00:00:07.06 bitrate=2374.2kbits/s speed=0.701x elapsed=0:00:10.08      10.0s / 15.2s
+frame=  227 fps= 21 q=23.0 size=    2304KiB time=00:00:07.50 bitrate=2516.6kbits/s speed=0.708x elapsed=0:00:10.58    frame=  239 fps= 22 q=23.0 size=    2560KiB time=00:00:07.90 bitrate=2654.7kbits/s speed=0.712x elapsed=0:00:11.09    frame=  251 fps= 22 q=23.0 size=    2816KiB time=00:00:08.30 bitrate=2779.4kbits/s speed=0.716x elapsed=0:00:11.59    frame=  263 fps= 22 q=23.0 size=    3072KiB time=00:00:08.70 bitrate=2892.7kbits/s speed=0.719x elapsed=0:00:12.09    frame=  275 fps= 22 q=23.0 size=    3072KiB time=00:00:09.10 bitrate=2765.5kbits/s speed=0.722x elapsed=0:00:12.59    frame=  287 fps= 22 q=23.0 size=    3072KiB time=00:00:09.50 bitrate=2649.1kbits/s speed=0.725x elapsed=0:00:13.10    frame=  299 fps= 22 q=23.0 size=    3328KiB time=00:00:09.90 bitrate=2753.9kbits/s speed=0.728x elapsed=0:00:13.60    frame=  311 fps= 22 q=23.0 size=    3328KiB time=00:00:10.30 bitrate=2646.9kbits/s speed=0.73x elapsed=0:00:14.10    frame=  323 fps= 22 q=23.0 size=    3328KiB time=00:00:10.70 bitrate=2548.0kbits/s speed=0.732x elapsed=0:00:14.61    frame=  335 fps= 22 q=23.0 size=    3328KiB time=00:00:11.10 bitrate=2456.2kbits/s speed=0.734x elapsed=0:00:15.11    frame=  347 fps= 22 q=23.0 size=    3328KiB time=00:00:11.50 bitrate=2370.7kbits/s speed=0.736x elapsed=0:00:15.62    frame=  359 fps= 22 q=23.0 size=    3328KiB time=00:00:11.90 bitrate=2291.0kbits/s speed=0.738x elapsed=0:00:16.12    frame=  371 fps= 22 q=23.0 size=    3328KiB time=00:00:12.30 bitrate=2216.5kbits/s speed=0.739x elapsed=0:00:16.63      15.0s / 15.2s
+frame=  417 fps= 24 q=23.0 size=    3584KiB time=00:00:13.83 bitrate=2122.4kbits/s speed=0.807x elapsed=0:00:17.13    [mp4 @ 0x12d6147b0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0x12d6150d0] video:3696KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.164857%
+frame=  456 fps= 26 q=-1.0 Lsize=    3702KiB time=00:00:15.13 bitrate=2004.2kbits/s speed=0.879x elapsed=0:00:17.21    
+[libx264 @ 0x12d617cb0] frame I:4     Avg QP: 2.37  size: 11066
+[libx264 @ 0x12d617cb0] frame P:128   Avg QP:12.78  size: 15664
+[libx264 @ 0x12d617cb0] frame B:324   Avg QP:18.80  size:  5356
+[libx264 @ 0x12d617cb0] consecutive B-frames:  4.2%  1.8%  4.6% 89.5%
+[libx264 @ 0x12d617cb0] mb I  I16..4: 92.3%  5.4%  2.3%
+[libx264 @ 0x12d617cb0] mb P  I16..4:  3.9%  0.8%  0.4%  P16..4:  4.0%  2.1%  1.1%  0.0%  0.0%    skip:87.7%
+[libx264 @ 0x12d617cb0] mb B  I16..4:  0.2%  0.0%  0.1%  B16..8:  2.9%  1.4%  0.5%  direct: 2.1%  skip:92.9%  L0:53.6% L1:23.8% BI:22.6%
+[libx264 @ 0x12d617cb0] 8x8 transform intra:11.5% inter:45.7%
+[libx264 @ 0x12d617cb0] direct mvs  spatial:98.1% temporal:1.9%
+[libx264 @ 0x12d617cb0] coded y,uvDC,uvAC intra: 6.3% 8.5% 6.9% inter: 3.7% 2.4% 1.5%
+[libx264 @ 0x12d617cb0] i16 v,h,dc,p: 93%  6%  1%  0%
+[libx264 @ 0x12d617cb0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 12% 57%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0x12d617cb0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 43% 18% 24%  3%  2%  3%  2%  2%  3%
+[libx264 @ 0x12d617cb0] i8c dc,h,v,p: 85%  6%  9%  0%
+[libx264 @ 0x12d617cb0] Weighted P-Frames: Y:12.5% UV:8.6%
+[libx264 @ 0x12d617cb0] ref P L0: 45.2%  4.1% 17.1% 20.1% 13.0%  0.5%  0.0%
+[libx264 @ 0x12d617cb0] ref B L0: 43.2% 35.1% 15.8%  6.0%
+[libx264 @ 0x12d617cb0] ref B L1: 81.5% 18.5%
+[libx264 @ 0x12d617cb0] kb/s:1991.80
+muxed audio: audio_mixed.mp3
+Done: /Users/sanyampathak/Documents/dmyor-videos/reels/life-in-weeks/reel.mp4

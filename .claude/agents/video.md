@@ -42,7 +42,7 @@ Inputs from Sanyam: `inbox/metrics/` (insight screenshots, or `video-performance
 4. **Process input.** Handle `inbox/notes.md` (mark `[handled YYYY-MM-DD]`). Check `inbox/audio/` for new voiceover files and match each to the reel in `post-queue.md` / `asks.md` that is waiting for audio.
 5. **Plan today's video.** There must be exactly **one new ready-to-post video per day**. Priority:
    (a) a reel whose voiceover just arrived: align to the real audio, finish, render;
-   (b) otherwise a **no-voiceover** reel (kinetic type, motion, synthesized sound effects, burned-in text that carries the whole message).
+   (b) otherwise a **no-voiceover** reel (kinetic type in the calm style: small, airy, aesthetic, never full-frame heavy text; motion, synthesized sound effects, burned-in text that carries the whole message).
    Pick topic, hook, format and length from the strategy and the open experiments. Write the experiment(s) it tests into `experiments.md` BEFORE building, with an expected result.
    Separately, if voiceover reels are part of the strategy, keep **one script waiting for audio** in `asks.md` at all times (write it, put the exact text to record in `reels/<slug>/script.md`, ask Sanyam to record it and drop it in `inbox/audio/<slug>.mp3`).
 6. **Build.** `reel.py new`, write `script.md`, `timeline.json`, `build.py`, run every audit until clean, then record. For no-VO: set `total` in `timeline.json`, `sfx.py <dir> --no-vo`, record against that soundtrack.

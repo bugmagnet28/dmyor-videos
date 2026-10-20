@@ -35,6 +35,12 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:#000;overflow:hid
 .bmark{font-weight:800;font-size:230px;letter-spacing:-8px;line-height:1}
 .bline{white-space:pre-line;font-weight:700;font-size:62px;letter-spacing:-.5px;line-height:1.12;margin-top:26px}
 .bhandle{font-weight:800;font-size:64px;margin-top:44px;display:inline-block;border-radius:999px;padding:14px 44px}
+/* calm style: lighter, airier type (the whole #cam layer is also scaled by TS in the engine) */
+#stage.calm{font-family:"Avenir Next","Helvetica Neue",-apple-system,Helvetica,Arial,sans-serif}
+#stage.calm .ln{font-weight:600;letter-spacing:-.4px;line-height:1.12}
+#stage.calm .ptitle,#stage.calm .plab,#stage.calm .bhandle{font-weight:600}
+#stage.calm .ptxt,#stage.calm .bline{font-weight:500}
+#stage.calm .bmark{font-weight:600;letter-spacing:-4px}
 #playBtn{position:fixed;inset:0;margin:auto;width:210px;height:64px;border-radius:32px;border:0;
  font:700 22px -apple-system,Helvetica,Arial;cursor:pointer}
 </style></head><body>
@@ -47,7 +53,7 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:#000;overflow:hid
 var TL = {"total": 14.6, "engine": "punch", "brand": {"mark": "dmyor", "url": "www.dmyor.com"}, "bg": [{"t": 0, "c": "amber"}, {"t": 1.95, "c": "black", "dir": "up"}, {"t": 3.95, "c": "blue", "dir": "left"}, {"t": 5.45, "c": "cream", "dir": "up"}, {"t": 6.95, "c": "amber", "dir": "right"}, {"t": 8.75, "c": "black", "dir": "up"}, {"t": 10.55, "c": "cream", "dir": "left"}, {"t": 11.95, "c": "black", "dir": "up"}, {"t": 13.95, "c": "amber", "dir": "up"}], "camera": [{"t": 0, "s": 1.0}, {"t": 1.1, "s": 1.0}, {"t": 1.4, "s": 1.04}, {"t": 1.8, "s": 1.0}, {"t": 7.6, "s": 1.0}, {"t": 7.9, "s": 1.05}, {"t": 8.3, "s": 1.0}, {"t": 9.6, "s": 1.0}, {"t": 9.9, "s": 1.04}, {"t": 10.3, "s": 1.0}, {"t": 14.6, "s": 1.0}], "sfx": [{"t": 0, "v": "thud", "g": 0.6}], "scenes": [{"type": "stack", "note": "FRAME 0 hook, fully drawn at 0.0s", "in": 0, "out": 2.0, "y": 380, "lines": [{"text": "Start at", "size": 170, "at": 0}, {"text": "the", "size": 170, "at": 0, "gap": -10}, {"text": "END.", "size": 330, "at": 0, "gap": -30, "pulseAt": [0.7, 1.4]}]}, {"type": "stack", "note": "step 1: the goal", "in": 2.0, "out": 4.0, "y": 380, "lines": [{"text": "GOAL", "size": 110, "at": 2.05, "pill": "amber", "color": "ink"}, {"text": "Run a 10k", "size": 170, "at": 2.3, "color": "paper", "gap": 40}, {"text": "in 3 months.", "size": 130, "at": 2.6, "color": "paper", "gap": 0, "pulseAt": [3.3]}]}, {"type": "stack", "note": "step back: month 2", "in": 4.0, "out": 5.5, "y": 380, "lines": [{"text": "MONTH 2", "size": 110, "at": 4.05, "pill": "amber", "color": "ink"}, {"text": "Run 5k", "size": 200, "at": 4.3, "color": "paper", "gap": 40}, {"text": "nonstop.", "size": 150, "at": 4.55, "color": "paper", "gap": 0}]}, {"type": "stack", "note": "step back: week 1", "in": 5.5, "out": 7.0, "y": 380, "lines": [{"text": "WEEK 1", "size": 110, "at": 5.55, "pill": "blue", "color": "paper"}, {"text": "3 short", "size": 200, "at": 5.8, "gap": 40}, {"text": "runs.", "size": 200, "at": 6.05, "gap": -20}]}, {"type": "stack", "note": "step back: today", "in": 7.0, "out": 8.8, "y": 380, "lines": [{"text": "TODAY", "size": 110, "at": 7.05, "pill": "ink", "color": "paper"}, {"text": "Shoes by", "size": 180, "at": 7.3, "gap": 40}, {"text": "the door.", "size": 180, "at": 7.55, "gap": -20, "pulseAt": [8.0], "sfx": "pop", "sfxGain": 0.6}]}, {"type": "stack", "note": "the rule", "in": 8.8, "out": 10.6, "y": 380, "lines": [{"text": "Stop when", "size": 150, "at": 8.85, "color": "paper"}, {"text": "the step fits", "size": 130, "at": 9.05, "color": "paper", "gap": 0}, {"text": "in TODAY.", "size": 170, "at": 9.3, "color": "amber", "gap": 20, "pulseAt": [9.9], "sfx": "thud", "sfxGain": 0.7}]}, {"type": "stack", "note": "save CTA", "in": 10.6, "out": 12.0, "y": 380, "lines": [{"text": "Save this.", "size": 190, "at": 10.65, "color": "blue"}, {"text": "Try it on", "size": 140, "at": 10.9, "gap": 30}, {"text": "your goal.", "size": 140, "at": 11.1, "gap": -10}]}, {"type": "brand", "note": "brand card, 2.0s", "in": 12.0, "out": 14.0, "y": 540, "mark": "dmyor", "line": "Turn a big goal\ninto a daily plan.", "handle": "@dmyor_global"}, {"type": "stack", "note": "LOOP: rebuild frame 0 so the replay is seamless", "in": 14.0, "y": 380, "lines": [{"text": "Start at", "size": 170, "at": 14.02}, {"text": "the", "size": 170, "at": 14.08, "gap": -10}, {"text": "END.", "size": 330, "at": 14.14, "gap": -30}]}]};
 </script>
 <script>
-/* dmyor punch engine: bold kinetic type on flat bright panes, for muted autoplay.
+/* dmyor punch engine: kinetic type on flat panes, for muted autoplay. Default style "calm" (small, airy); "loud" = original heavy look.
    Same contract as the other engines: render(t) is a pure function of time,
    window.__seek / window.__duration for record.js and the audits.
 
@@ -60,10 +66,15 @@ var TL = {"total": 14.6, "engine": "punch", "brand": {"mark": "dmyor", "url": "w
      "camera":[{t,s,x,y}],                   keyframed push/pull, plus a permanent drift
      "scenes":[
        {type:"stack", in,out,y,align, lines:[{text,size,color,at,pill,weight,
-            strikeAt,strikeColor, swapAt,swapText,swapColor, pulseAt:[t]}]},
+            strikeAt,strikeColor, dimAt, swapAt,swapText,swapColor, pulseAt:[t],
+            swaps:[{at,text,color,size}]}]},  swaps = text cycles through several values (slot-machine blank)
        {type:"plan",  in,out,y,title,titleColor,labelColor,textColor,chkColor,
             items:[{label,text,at,checkAt}]},
-       {type:"brand", in,out,y,mark,line,handle,color,lineColor,handleBg,handleColor}
+       {type:"brand", in,out,y,mark,line,handle,color,lineColor,handleBg,handleColor},
+       {type:"grid",  in,out,y,cols,rows,cell,box,     a canvas of boxes (e.g. life in weeks), column-major
+            fills:[{from,to,color,at,dur}],          boxes from..to-1 take color, sweeping in over dur
+            focus:{at,index,color,size,dim},         all boxes dim, box[index] grows to size px
+            order:"row"}                             optional: fill left-to-right like a calendar (default column-major)
      ],
      "sfx":[{t,v,g}]                         optional extra hand-placed cues (sfx.py)
    } */
@@ -79,6 +90,14 @@ var eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
 var eob=function(x){var c=1.6;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2);};
 var CO={ink:"#0B0B0F",black:"#0B0B0F",paper:"#FFFFFF",white:"#FFFFFF",amber:"#FFC530",blue:"#2F5BFF",
         coral:"#FF4D5E",green:"#18C77A",cream:"#FFF6E5",dim:"#5A5A66"};
+// style "calm" (default since 2026-10-20): smaller type, softer weights and palette, more air.
+// "loud" restores the original full-frame heavy look. typeScale overrides the shrink factor.
+var CALM=TL.style!=="loud";
+var TS=TL.typeScale!=null?TL.typeScale:(CALM?0.62:1);
+var SHIFT=CALM?120:0;   // scaled content sits high; nudge it toward the visual centre (above the Reels caption)
+if(CALM){ CO={ink:"#1F1E1B",black:"#171614",paper:"#FBF9F5",white:"#FBF9F5",amber:"#EBC46E",blue:"#3E5DA6",
+        coral:"#DD6B57",green:"#3F8C68",cream:"#F4EEE3",dim:"#8C887F"};
+  stage.classList.add("calm"); }
 function col(n,d){ return CO[n]||n||d||CO.ink; }
 // entrance progress: finished at t=0 if the cue is at or before 0
 function prog(t,at,dur){ if(at==null||at<=0) return 1; return t<at?0:eob(cl((t-at)/(dur||0.3))); }
@@ -108,7 +127,7 @@ var SC=(TL.scenes||[]).map(function(s,si){
       ln.appendChild(tx);
       var st=null; if(L.strikeAt!=null){ st=document.createElement("span"); st.className="strike";
         st.style.background=col(L.strikeColor||"coral"); tx.appendChild(st); }
-      el.appendChild(ln); o.parts.push({L:L, ln:ln, tx:tx, st:st, swapped:false}); });
+      el.appendChild(ln); o.parts.push({L:L, ln:ln, tx:tx, st:st, swapped:false, swi:-1}); });
   } else if(s.type==="plan"){
     var ti=document.createElement("div"); ti.className="ptitle"; ti.textContent=s.title||"";
     ti.style.color=col(s.titleColor); el.appendChild(ti); o.title=ti;
@@ -127,6 +146,11 @@ var SC=(TL.scenes||[]).map(function(s,si){
     l.textContent=s.line||""; l.style.color=col(s.lineColor||s.color||"paper");
     h.textContent=s.handle||"@dmyor_global"; h.style.background=col(s.handleBg||"amber"); h.style.color=col(s.handleColor||"ink");
     o.parts=[m,l,h];
+  }
+  else if(s.type==="grid"){
+    var cv=document.createElement("canvas"), cols=s.cols||80, rows=s.rows||52, pitch=s.cell||11;
+    cv.width=cols*pitch; cv.height=rows*pitch; cv.style.display="block"; cv.style.margin="0 auto";
+    el.appendChild(cv); o.cv=cv; o.cx=cv.getContext("2d"); o.cols=cols; o.rows=rows; o.pitch=pitch;
   }
   return o; });
 
@@ -149,7 +173,7 @@ function render(t){
   // permanent drift: large flat panes give the frame-diff nothing to see, so the type itself moves
   var c=camAt(t);
   var ds=1+Math.sin(t*0.9)*0.014, dx=Math.sin(t*0.73)*12, dy=Math.cos(t*0.81)*14;
-  cam.style.transform="translate("+(-(c.x||0)+dx)+"px,"+(-(c.y||0)+dy)+"px) scale("+((c.s||1)*ds)+")";
+  cam.style.transform="translate("+(-(c.x||0)+dx)+"px,"+(-(c.y||0)+dy+SHIFT)+"px) scale("+((c.s||1)*ds*TS)+")";
 
   SC.forEach(function(O){ var s=O.sc;
     var vin= s.in<=0?1:seg(t,s.in,s.in+0.12);
@@ -164,8 +188,15 @@ function render(t){
           if(sw!==P.swapped){ P.tx.firstChild.nodeValue=sw?L.swapText:L.text;
             P.tx.style.color=col(sw&&L.swapColor?L.swapColor:L.color); P.swapped=sw; }
           pu=Math.max(pu,bump(t,[L.swapAt],0.3)*0.09); }
+        if(L.swaps&&L.swaps.length){ var cur=-1;
+          L.swaps.forEach(function(w,wi){ if(t>=w.at) cur=wi; });
+          if(cur!==P.swi){ var w2=cur<0?null:L.swaps[cur];
+            P.tx.firstChild.nodeValue=w2?w2.text:L.text;
+            P.tx.style.color=col(w2&&w2.color?w2.color:L.color);
+            P.ln.style.fontSize=((w2&&w2.size)||L.size||110)+"px"; P.swi=cur; }
+          pu=Math.max(pu,bump(t,L.swaps.map(function(w){return w.at;}),0.24)*0.07); }
         P.ln.style.transform="translateY("+((1-p)*70)+"px) scale("+(0.9+0.1*p+pu)+")";
-        P.ln.style.opacity=cl(p*1.6);
+        P.ln.style.opacity=cl(p*1.6)*(L.dimAt!=null?1-0.72*eio(seg(t,L.dimAt,L.dimAt+0.3)):1);
         if(P.st) P.st.style.width=(eio(seg(t,L.strikeAt,L.strikeAt+0.28))*104)+"%"; });
     } else if(s.type==="plan"){
       var tp=prog(t,s.titleAt!=null?s.titleAt:s.in,0.3);
@@ -174,6 +205,25 @@ function render(t){
         P.row.style.opacity=cl(p*1.6); P.row.style.transform="translateX("+((1-p)*90)+"px)";
         var ck=P.it.checkAt==null?0:(t<P.it.checkAt?0:eob(cl((t-P.it.checkAt)/0.25)));
         P.dot.style.transform="scale("+ck+")"; });
+    } else if(s.type==="grid"){
+      var cx=O.cx, P=O.pitch, bx=s.box||(P-2), N=O.cols*O.rows, cells=new Array(N);
+      (s.fills||[]).forEach(function(f){ var k=f.at<=0?1:eio(seg(t,f.at,f.at+(f.dur||1)));
+        var n=Math.floor((f.to-f.from)*k+1e-6);
+        for(var i=f.from;i<f.from+n&&i<N;i++) cells[i]=col(f.color); });
+      var F=s.focus, fk=F?eio(seg(t,F.at,F.at+0.5)):0;
+      cx.clearRect(0,0,O.cv.width,O.cv.height);
+      for(var i=0;i<N;i++){ if(!cells[i]) continue;
+        var c=s.order==="row"?i%O.cols:Math.floor(i/O.rows), r=s.order==="row"?Math.floor(i/O.cols):i%O.rows;
+        cx.globalAlpha=(F&&i!==F.index)?1-(1-(F.dim||0.2))*fk:1;
+        cx.fillStyle=cells[i]; cx.fillRect(c*P+(P-bx)/2, r*P+(P-bx)/2, bx, bx); }
+      cx.globalAlpha=1;
+      if(F&&fk>0){ var fc=s.order==="row"?F.index%O.cols:Math.floor(F.index/O.rows), fr=s.order==="row"?Math.floor(F.index/O.cols):F.index%O.rows;
+        var sz=bx+((F.size||160)-bx)*eob(cl((t-F.at)/0.5)), h=sz/2;
+        var mx=Math.max(h,Math.min(O.cv.width-h,fc*P+P/2)), my=Math.max(h,Math.min(O.cv.height-h,fr*P+P/2));
+        // anchor glides from the box's spot to a clamped spot so the big square stays inside the canvas
+        var ax=fc*P+P/2+(mx-(fc*P+P/2))*fk, ay=fr*P+P/2+(my-(fr*P+P/2))*fk;
+        sz=sz*(1+bump(t,F.pulseAt,0.4)*0.12); h=sz/2;
+        cx.fillStyle=col(F.color||"blue"); cx.fillRect(ax-h,ay-h,sz,sz); }
     } else if(s.type==="brand"){
       var p0=prog(t,s.in,0.4), p1=prog(t,s.in+0.35,0.3), p2=prog(t,s.in+0.7,0.3);
       O.parts[0].style.transform="scale("+(1.12-0.12*p0)+")"; O.parts[0].style.opacity=cl(p0*1.4);
