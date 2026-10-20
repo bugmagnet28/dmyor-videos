@@ -209,3 +209,15 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if the watch ratio beats every non-loop reel, add a sentence loop to every reel for a week (V-EXP-14 + 20 together = loop works). If it ties start-at-the-end, loops help but the sentence adds nothing. If below, loops are not the lever.
+
+## V-EXP-21: Guess-the-answer quiz (options + 3-2-1 countdown, answer withheld ~3.5s) (pillar 2)
+- Status: running (opened 2026-10-20, before building)
+- Change vs earlier reels: same punch engine, palette, frame-0 rule, no VO, ~15s, brand card ~2s, no loop, save CTA. Different: the body is a **quiz**. Frame 0 = "3 goals. / Only 1 / is a plan."; the three goals appear ("Get fit." / "Read more." / "Walk 20 min after dinner."), a "Which one? 3-2-1" countdown holds the answer back, then two options strike and dim and the specific one turns green. Then the why ("a when / a number / a tick box"), "Yours needs all 3.", "Save this. Rewrite yours tonight." No reel so far withholds an answer the viewer is invited to guess.
+- Why: a guess the viewer commits to is a reason to stay to the reveal (hold through 3-6s) and a cheap reason to comment ("got it"); it is also a new hook shape for the queue. Topic overlaps next-step-not-motivation (vague vs concrete) on purpose, so the mechanic (quiz vs swaps) is the main difference between the two (n=1 each).
+- Honesty: no numbers or studies. "Is a plan" is a framing about specificity, checkable on screen.
+- Reels testing it: which-one-is-a-plan (2026-10-20)
+- Metric + target (48h): avg watch >= 75% of length (>= 11.4s) and a higher avg-watch ratio than next-step-not-motivation; saves/reach >= 1%; comments > 0 without being asked.
+- Expectation: best hold to ~6s of the queue's 14-16s reels, watch ratio above next-step-not-motivation, saves mid. Confidence low (n=1, nothing posted yet, posting order confounds reach).
+- Result:
+- Verdict + why:
+- Next: if the watch ratio beats next-step-not-motivation, make quiz/reveal a weekly format (other quizzes: "which week plan works", "spot the real deadline"). If not, the withheld answer isn't the lever; topic is.

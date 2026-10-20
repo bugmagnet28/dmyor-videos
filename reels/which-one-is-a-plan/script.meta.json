@@ -1,0 +1,22 @@
+{
+ "slug": "which-one-is-a-plan",
+ "hint": "Pillar 2 quiz: 3 goals, only 1 is a plan. Get fit / Read more / Walk 20 min after dinner. Countdown 3-2-1, reveal, why (a when, a number, a tick box), Yours needs all 3. Save CTA. 15.2s no VO punch engine.",
+ "created": "2026-10-20T11:48:40",
+ "hook_pattern": "Frame-0 quiz setup ('3 goals. Only 1 is a plan.') + answer withheld behind a 3-2-1 countdown",
+ "target_seconds": 15.2,
+ "status": "rendered",
+ "narrated": false,
+ "engine": "punch",
+ "words": 40,
+ "cta": "Save this. Rewrite yours tonight. + brand card 2.5s",
+ "experiments": [
+  "V-EXP-21",
+  "V-EXP-07",
+  "V-EXP-01",
+  "V-EXP-02",
+  "V-EXP-04",
+  "V-EXP-05",
+  "V-EXP-08"
+ ],
+ "note": "Breaks old conventions on purpose (punch engine, bright panes, burned-in text, no VO, 15s). New: quiz mechanic (3 options, countdown, strike+dim reveal). Engine: added per-line dimAt (backup studio/state/engine-punch.js.bak-2026-10-20). v1 render kept as reel.v1.mp4 (countdown digits 130px read tiny); v2: swaps take a per-swap size, digits 180px, title y 285, options y 535."
+}

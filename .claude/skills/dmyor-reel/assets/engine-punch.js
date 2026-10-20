@@ -11,8 +11,8 @@
      "camera":[{t,s,x,y}],                   keyframed push/pull, plus a permanent drift
      "scenes":[
        {type:"stack", in,out,y,align, lines:[{text,size,color,at,pill,weight,
-            strikeAt,strikeColor, swapAt,swapText,swapColor, pulseAt:[t],
-            swaps:[{at,text,color}]}]},      swaps = text cycles through several values (slot-machine blank)
+            strikeAt,strikeColor, dimAt, swapAt,swapText,swapColor, pulseAt:[t],
+            swaps:[{at,text,color,size}]}]},  swaps = text cycles through several values (slot-machine blank)
        {type:"plan",  in,out,y,title,titleColor,labelColor,textColor,chkColor,
             items:[{label,text,at,checkAt}]},
        {type:"brand", in,out,y,mark,line,handle,color,lineColor,handleBg,handleColor},
@@ -129,10 +129,11 @@ function render(t){
           L.swaps.forEach(function(w,wi){ if(t>=w.at) cur=wi; });
           if(cur!==P.swi){ var w2=cur<0?null:L.swaps[cur];
             P.tx.firstChild.nodeValue=w2?w2.text:L.text;
-            P.tx.style.color=col(w2&&w2.color?w2.color:L.color); P.swi=cur; }
+            P.tx.style.color=col(w2&&w2.color?w2.color:L.color);
+            P.ln.style.fontSize=((w2&&w2.size)||L.size||110)+"px"; P.swi=cur; }
           pu=Math.max(pu,bump(t,L.swaps.map(function(w){return w.at;}),0.24)*0.07); }
         P.ln.style.transform="translateY("+((1-p)*70)+"px) scale("+(0.9+0.1*p+pu)+")";
-        P.ln.style.opacity=cl(p*1.6);
+        P.ln.style.opacity=cl(p*1.6)*(L.dimAt!=null?1-0.72*eio(seg(t,L.dimAt,L.dimAt+0.3)):1);
         if(P.st) P.st.style.width=(eio(seg(t,L.strikeAt,L.strikeAt+0.28))*104)+"%"; });
     } else if(s.type==="plan"){
       var tp=prog(t,s.titleAt!=null?s.titleAt:s.in,0.3);
