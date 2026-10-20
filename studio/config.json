@@ -6,5 +6,10 @@
   "youtube": null,
   "videos_per_day": 1,
   "max_emails_per_day": 2,
-  "target_length_seconds": [12, 25]
+  "target_length_seconds": [
+    12,
+    25
+  ],
+  "instagram_posting_account": "@becauseidmyor",
+  "instagram_card_handle": "@dmyor_global"
 }

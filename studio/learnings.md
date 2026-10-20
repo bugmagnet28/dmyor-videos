@@ -46,3 +46,6 @@ Newest at the bottom. `- YYYY-MM-DD [topic] lesson. Evidence: ... Confidence: lo
 
 ## 2026-10-20: style change (owner review)
 Sanyam: text in the reels is too big; wants smaller, aesthetic type. Punch engine now defaults to style "calm" (0.62x text layer, semibold, softer palette, content centred). All 12 queued reels re-rendered; old renders kept as reels/<slug>/reel.loud.mp4. Effect on watch time unknown: compare the first calm reels with nothing (none of the loud ones were ever posted), so this is the baseline.
+
+## 2026-10-21: first reel posted
+next-step-not-motivation posted on @becauseidmyor 00:54 IST (by Claude via browser, Sanyam approved). Posting account is @becauseidmyor (21 followers, 21 posts already); end card keeps @dmyor_global per Sanyam. Note: posted at ~1am IST, not the 19:00-20:00 slot, so early reach may read low.

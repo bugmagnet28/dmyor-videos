@@ -1,4 +1,4 @@
-# Post queue (@dmyor_global)
+# Post queue (posting account: @becauseidmyor)
 
 Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] posted` (add the time if you like).
 
@@ -17,9 +17,10 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 - [ ] posted · **2026-10-12 someday-is-not-a-day** (13s, no VO) · evergreen, post after twenty-minutes-a-day, 19:00-20:00 IST · `ready-to-post/2026-10-12-someday-is-not-a-day/` (video.mp4 + post.md) · tests V-EXP-13
 - [ ] posted · **2026-10-11 twenty-minutes-a-day** (15s, no VO) · evergreen, post after three-questions-before-a-goal, 19:00-20:00 IST · `ready-to-post/2026-10-11-twenty-minutes-a-day/` (video.mp4 + post.md) · tests V-EXP-12
 - [ ] posted · **2026-10-10 three-questions-before-a-goal** (18s, no VO) · post after next-step-not-motivation, 19:00-20:00 IST (not date-bound) · `ready-to-post/2026-10-10-three-questions-before-a-goal/` (video.mp4 + post.md) · tests V-EXP-11
-- [ ] posted · **2026-10-09 next-step-not-motivation** (16s, no VO) · **post this one first**, 19:00-20:00 IST (not date-bound) · `ready-to-post/2026-10-09-next-step-not-motivation/` (video.mp4 + post.md) · tests V-EXP-10
 
 ## Posted
+
+- [x] posted 2026-10-21 00:54 IST on **@becauseidmyor** by Claude (browser) · **2026-10-09 next-step-not-motivation** · https://www.instagram.com/becauseidmyor/reel/DeulBhStyuO/ · tests V-EXP-10
 
 ## Skipped
 
