@@ -1,0 +1,346 @@
+{
+ "total": 15.2,
+ "engine": "punch",
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "bg": [
+  {
+   "t": 0,
+   "c": "amber"
+  },
+  {
+   "t": 1.7,
+   "c": "cream",
+   "dir": "up"
+  },
+  {
+   "t": 9.95,
+   "c": "blue",
+   "dir": "up"
+  },
+  {
+   "t": 11.5,
+   "c": "black",
+   "dir": "left"
+  },
+  {
+   "t": 13.0,
+   "c": "ink",
+   "dir": "up"
+  }
+ ],
+ "camera": [
+  {
+   "t": 0,
+   "s": 1.0
+  },
+  {
+   "t": 0.8,
+   "s": 1.0
+  },
+  {
+   "t": 1.1,
+   "s": 1.04
+  },
+  {
+   "t": 1.6,
+   "s": 1.0
+  },
+  {
+   "t": 15.2,
+   "s": 1.0
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0,
+   "v": "thud",
+   "g": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "type": "stack",
+   "note": "FRAME 0 hook, fully drawn at 0.0s",
+   "in": 0,
+   "out": 1.75,
+   "y": 330,
+   "lines": [
+    {
+     "text": "A long life",
+     "size": 150,
+     "at": 0
+    },
+    {
+     "text": "is about",
+     "size": 150,
+     "at": 0,
+     "gap": -10
+    },
+    {
+     "text": "4,000",
+     "size": 290,
+     "at": 0,
+     "gap": -40,
+     "pulseAt": [
+      0.9
+     ]
+    },
+    {
+     "text": "weeks.",
+     "size": 210,
+     "at": 0,
+     "gap": -40
+    }
+   ]
+  },
+  {
+   "type": "grid",
+   "note": "80 cols (years) x 52 rows (weeks) = 4,160 boxes",
+   "in": 1.75,
+   "out": 9.95,
+   "y": 650,
+   "cols": 80,
+   "rows": 52,
+   "cell": 11,
+   "box": 9,
+   "fills": [
+    {
+     "from": 0,
+     "to": 4160,
+     "color": "#CFC5B2",
+     "at": 1.85,
+     "dur": 1.1
+    },
+    {
+     "from": 0,
+     "to": 1300,
+     "color": "coral",
+     "at": 3.4,
+     "dur": 1.0
+    },
+    {
+     "from": 1300,
+     "to": 4160,
+     "color": "green",
+     "at": 5.1,
+     "dur": 0.9
+    }
+   ],
+   "focus": {
+    "at": 8.25,
+    "index": 1300,
+    "color": "blue",
+    "size": 170,
+    "dim": 0.18,
+    "pulseAt": [
+     9.2
+    ]
+   }
+  },
+  {
+   "type": "stack",
+   "note": "legend",
+   "in": 1.75,
+   "out": 3.3,
+   "y": 300,
+   "lines": [
+    {
+     "text": "80 years.",
+     "size": 140,
+     "at": 1.8
+    },
+    {
+     "text": "1 box = 1 week.",
+     "size": 100,
+     "at": 2.2,
+     "color": "dim",
+     "gap": 10
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "used",
+   "in": 3.3,
+   "out": 5.0,
+   "y": 300,
+   "lines": [
+    {
+     "text": "By age 25:",
+     "size": 120,
+     "at": 3.35
+    },
+    {
+     "text": "1,300 gone.",
+     "size": 130,
+     "at": 3.65,
+     "color": "coral",
+     "gap": 0,
+     "pulseAt": [
+      4.5
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "left",
+   "in": 5.0,
+   "out": 6.6,
+   "y": 300,
+   "lines": [
+    {
+     "text": "Still left:",
+     "size": 120,
+     "at": 5.05
+    },
+    {
+     "text": "2,860.",
+     "size": 170,
+     "at": 5.3,
+     "color": "green",
+     "gap": -10,
+     "pulseAt": [
+      6.05
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "turn",
+   "in": 6.6,
+   "out": 8.2,
+   "y": 300,
+   "lines": [
+    {
+     "text": "You can't plan",
+     "size": 120,
+     "at": 6.65
+    },
+    {
+     "text": "2,860 weeks.",
+     "size": 130,
+     "at": 6.9,
+     "gap": 0,
+     "strikeAt": 7.6
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "payoff + one box grows",
+   "in": 8.2,
+   "out": 9.95,
+   "y": 300,
+   "lines": [
+    {
+     "text": "You can plan",
+     "size": 120,
+     "at": 8.25
+    },
+    {
+     "text": "this one.",
+     "size": 170,
+     "at": 8.5,
+     "color": "blue",
+     "gap": -10,
+     "pulseAt": [
+      9.2
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "action",
+   "in": 9.95,
+   "out": 11.5,
+   "y": 380,
+   "lines": [
+    {
+     "text": "Pick one",
+     "size": 190,
+     "at": 10.0,
+     "color": "paper"
+    },
+    {
+     "text": "goal.",
+     "size": 230,
+     "at": 10.2,
+     "color": "paper",
+     "gap": -30
+    },
+    {
+     "text": "Give it",
+     "size": 150,
+     "at": 10.55,
+     "color": "amber",
+     "gap": 0
+    },
+    {
+     "text": "this week.",
+     "size": 170,
+     "at": 10.75,
+     "color": "amber",
+     "gap": -10,
+     "pulseAt": [
+      11.1
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "share CTA",
+   "in": 11.5,
+   "out": 13.0,
+   "y": 360,
+   "lines": [
+    {
+     "text": "Send this",
+     "size": 170,
+     "at": 11.55,
+     "color": "amber"
+    },
+    {
+     "text": "to someone",
+     "size": 140,
+     "at": 11.8,
+     "color": "paper",
+     "gap": 10
+    },
+    {
+     "text": "waiting for",
+     "size": 140,
+     "at": 12.05,
+     "color": "paper",
+     "gap": 0
+    },
+    {
+     "text": "next year.",
+     "size": 170,
+     "at": 12.3,
+     "color": "coral",
+     "gap": 0,
+     "pulseAt": [
+      12.65
+     ]
+    }
+   ]
+  },
+  {
+   "type": "brand",
+   "note": "brand card, 2.2s",
+   "in": 13.0,
+   "out": 15.2,
+   "y": 540,
+   "mark": "dmyor",
+   "line": "Turn a big goal\ninto a daily plan.",
+   "handle": "@becauseidmyor"
+  }
+ ]
+}

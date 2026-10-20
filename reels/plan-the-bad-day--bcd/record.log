@@ -1,0 +1,54 @@
+Recording 426 frames @ 30fps -> reel.mp4
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+  0.0s / 14.2s
+Input #0, image2pipe, from 'fd:':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 1080x1920, 30 fps, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+[libx264 @ 0x149f06a60] using cpu capabilities: ARMv8 NEON DotProd I8MM
+[libx264 @ 0x149f06a60] profile High, level 5.0, 4:2:0, 8-bit
+[libx264 @ 0x149f06a60] 264 - core 165 r3222 b35605a - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=50 rc=crf mbtree=1 crf=17.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/Users/sanyampathak/Documents/dmyor-videos/reels/plan-the-bad-day--bcd/reel.mp4':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.50    frame=    2 fps=2.0 q=23.0 size=       0KiB time=00:00:00.00 bitrate=N/A speed=   0x elapsed=0:00:01.01    frame=   13 fps=8.6 q=23.0 size=       0KiB time=00:00:00.36 bitrate=   1.0kbits/s speed=0.242x elapsed=0:00:01.51    frame=   26 fps= 13 q=23.0 size=       0KiB time=00:00:00.80 bitrate=   0.5kbits/s speed=0.397x elapsed=0:00:02.01    frame=   38 fps= 15 q=23.0 size=       0KiB time=00:00:01.20 bitrate=   0.3kbits/s speed=0.476x elapsed=0:00:02.51    frame=   48 fps= 16 q=23.0 size=       0KiB time=00:00:01.53 bitrate=   0.3kbits/s speed=0.507x elapsed=0:00:03.02    frame=   59 fps= 17 q=23.0 size=       0KiB time=00:00:01.90 bitrate=   0.2kbits/s speed=0.539x elapsed=0:00:03.52    frame=   70 fps= 17 q=23.0 size=       0KiB time=00:00:02.26 bitrate=   0.2kbits/s speed=0.562x elapsed=0:00:04.03      5.0s / 14.2s
+frame=   82 fps= 18 q=23.0 size=       0KiB time=00:00:02.66 bitrate=   0.1kbits/s speed=0.588x elapsed=0:00:04.53    frame=   93 fps= 18 q=23.0 size=     256KiB time=00:00:03.03 bitrate= 691.5kbits/s speed=0.602x elapsed=0:00:05.03    frame=  105 fps= 19 q=23.0 size=     256KiB time=00:00:03.43 bitrate= 610.9kbits/s speed=0.619x elapsed=0:00:05.54    frame=  117 fps= 19 q=23.0 size=     256KiB time=00:00:03.83 bitrate= 547.2kbits/s speed=0.634x elapsed=0:00:06.04    frame=  129 fps= 20 q=23.0 size=     256KiB time=00:00:04.23 bitrate= 495.5kbits/s speed=0.646x elapsed=0:00:06.55    frame=  141 fps= 20 q=23.0 size=     256KiB time=00:00:04.63 bitrate= 452.7kbits/s speed=0.656x elapsed=0:00:07.05    frame=  152 fps= 20 q=23.0 size=     256KiB time=00:00:05.00 bitrate= 419.5kbits/s speed=0.661x elapsed=0:00:07.55    frame=  165 fps= 20 q=23.0 size=     256KiB time=00:00:05.43 bitrate= 386.0kbits/s speed=0.674x elapsed=0:00:08.06    frame=  176 fps= 21 q=23.0 size=     256KiB time=00:00:05.80 bitrate= 361.6kbits/s speed=0.677x elapsed=0:00:08.56    frame=  188 fps= 21 q=23.0 size=     256KiB time=00:00:06.20 bitrate= 338.3kbits/s speed=0.684x elapsed=0:00:09.07    frame=  200 fps= 21 q=23.0 size=     256KiB time=00:00:06.60 bitrate= 317.8kbits/s speed=0.689x elapsed=0:00:09.57    frame=  213 fps= 21 q=23.0 size=     256KiB time=00:00:07.03 bitrate= 298.2kbits/s speed=0.698x elapsed=0:00:10.07    frame=  225 fps= 21 q=23.0 size=     512KiB time=00:00:07.43 bitrate= 564.3kbits/s speed=0.702x elapsed=0:00:10.58      10.0s / 14.2s
+frame=  236 fps= 21 q=23.0 size=     512KiB time=00:00:07.80 bitrate= 537.8kbits/s speed=0.704x elapsed=0:00:11.08    frame=  248 fps= 21 q=20.0 size=     512KiB time=00:00:08.20 bitrate= 511.5kbits/s speed=0.707x elapsed=0:00:11.59    frame=  261 fps= 22 q=23.0 size=     512KiB time=00:00:08.63 bitrate= 485.9kbits/s speed=0.714x elapsed=0:00:12.09    frame=  273 fps= 22 q=23.0 size=     512KiB time=00:00:09.03 bitrate= 464.4kbits/s speed=0.717x elapsed=0:00:12.59    frame=  285 fps= 22 q=23.0 size=     512KiB time=00:00:09.43 bitrate= 444.7kbits/s speed=0.72x elapsed=0:00:13.10    frame=  297 fps= 22 q=23.0 size=     512KiB time=00:00:09.83 bitrate= 426.6kbits/s speed=0.723x elapsed=0:00:13.60    frame=  309 fps= 22 q=23.0 size=     512KiB time=00:00:10.23 bitrate= 409.9kbits/s speed=0.725x elapsed=0:00:14.11    frame=  321 fps= 22 q=23.0 size=     512KiB time=00:00:10.63 bitrate= 394.5kbits/s speed=0.728x elapsed=0:00:14.61    frame=  333 fps= 22 q=23.0 size=     768KiB time=00:00:11.03 bitrate= 570.3kbits/s speed=0.73x elapsed=0:00:15.12    frame=  345 fps= 22 q=23.0 size=     768KiB time=00:00:11.43 bitrate= 550.3kbits/s speed=0.732x elapsed=0:00:15.62    [mp4 @ 0x149f04a90] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0x149f04670] video:989KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.574294%
+frame=  426 fps= 27 q=-1.0 Lsize=     995KiB time=00:00:14.13 bitrate= 576.5kbits/s speed=0.883x elapsed=0:00:16.00    
+[libx264 @ 0x149f06a60] frame I:6     Avg QP: 2.45  size:  7762
+[libx264 @ 0x149f06a60] frame P:129   Avg QP:12.43  size:  4607
+[libx264 @ 0x149f06a60] frame B:291   Avg QP:18.93  size:  1275
+[libx264 @ 0x149f06a60] consecutive B-frames:  5.4%  8.0%  7.7% 78.9%
+[libx264 @ 0x149f06a60] mb I  I16..4: 98.2%  0.0%  1.8%
+[libx264 @ 0x149f06a60] mb P  I16..4:  3.7%  0.9%  0.5%  P16..4:  2.0%  1.0%  0.6%  0.0%  0.0%    skip:91.3%
+[libx264 @ 0x149f06a60] mb B  I16..4:  0.3%  0.0%  0.0%  B16..8:  2.0%  0.8%  0.2%  direct: 0.4%  skip:96.3%  L0:52.1% L1:33.6% BI:14.2%
+[libx264 @ 0x149f06a60] 8x8 transform intra:9.2% inter:10.7%
+[libx264 @ 0x149f06a60] direct mvs  spatial:97.9% temporal:2.1%
+[libx264 @ 0x149f06a60] coded y,uvDC,uvAC intra: 3.5% 6.1% 4.9% inter: 0.6% 0.5% 0.4%
+[libx264 @ 0x149f06a60] i16 v,h,dc,p: 92%  7%  1%  0%
+[libx264 @ 0x149f06a60] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu:  2% 31% 66%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0x149f06a60] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 43% 16% 25%  3%  2%  3%  2%  3%  3%
+[libx264 @ 0x149f06a60] i8c dc,h,v,p: 81%  9% 10%  0%
+[libx264 @ 0x149f06a60] Weighted P-Frames: Y:9.3% UV:8.5%
+[libx264 @ 0x149f06a60] ref P L0: 60.9%  1.9% 14.6% 13.6%  8.7%  0.3%
+[libx264 @ 0x149f06a60] ref B L0: 55.7% 27.4% 12.5%  4.4%
+[libx264 @ 0x149f06a60] ref B L1: 85.3% 14.7%
+[libx264 @ 0x149f06a60] kb/s:570.16
+muxed audio: audio_mixed.mp3
+Done: /Users/sanyampathak/Documents/dmyor-videos/reels/plan-the-bad-day--bcd/reel.mp4

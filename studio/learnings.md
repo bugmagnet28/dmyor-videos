@@ -49,3 +49,7 @@ Sanyam: text in the reels is too big; wants smaller, aesthetic type. Punch engin
 
 ## 2026-10-21: first reel posted
 next-step-not-motivation posted on @becauseidmyor 00:54 IST (by Claude via browser, Sanyam approved). Posting account is @becauseidmyor (21 followers, 21 posts already); end card keeps @dmyor_global per Sanyam. Note: posted at ~1am IST, not the 19:00-20:00 slot, so early reach may read low.
+
+## 2026-10-21: 11 reels scheduled in one day (owner decision)
+Sanyam chose to post all remaining reels on 2026-10-21 at different times to test regions (US East 05:30 IST ... Central Europe 23:30 IST; full list in post-queue.md). New caption style he asked for: crisp bullets, about what Dmyor does and how it breaks the failure loop, "Link in bio". End card on these: @becauseidmyor. Analyse on 2026-10-22: views, non-follower %, avg watch time, per region slot. Caveat: 11 reels in a day compete for the same test audience, so per-reel numbers may be lower than spaced posting; region effect is confounded with reel content (one reel per slot).
+Account check 2026-10-21: Instagram Account Status shows no reach limits; non-followers can be recommended. Old reels 7-185 views on 21 followers: test batch not won, not a shadowban.

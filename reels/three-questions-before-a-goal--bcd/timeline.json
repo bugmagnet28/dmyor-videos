@@ -1,0 +1,389 @@
+{
+ "total": 17.6,
+ "engine": "punch",
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "bg": [
+  {
+   "t": 0,
+   "c": "amber"
+  },
+  {
+   "t": 2.15,
+   "c": "black",
+   "dir": "up"
+  },
+  {
+   "t": 3.55,
+   "c": "blue",
+   "dir": "left"
+  },
+  {
+   "t": 6.75,
+   "c": "cream",
+   "dir": "up"
+  },
+  {
+   "t": 9.95,
+   "c": "black",
+   "dir": "right"
+  },
+  {
+   "t": 13.15,
+   "c": "amber",
+   "dir": "up"
+  },
+  {
+   "t": 15.15,
+   "c": "blue",
+   "dir": "down"
+  }
+ ],
+ "camera": [
+  {
+   "t": 0,
+   "s": 1.0
+  },
+  {
+   "t": 2.0,
+   "s": 1.04
+  },
+  {
+   "t": 2.3,
+   "s": 1.0
+  },
+  {
+   "t": 2.6,
+   "s": 1.0
+  },
+  {
+   "t": 2.85,
+   "s": 1.05
+  },
+  {
+   "t": 3.3,
+   "s": 1.0
+  },
+  {
+   "t": 12.0,
+   "s": 1.0
+  },
+  {
+   "t": 12.4,
+   "s": 1.04
+  },
+  {
+   "t": 12.8,
+   "s": 1.0
+  },
+  {
+   "t": 13.2,
+   "s": 1.0
+  },
+  {
+   "t": 13.5,
+   "s": 1.05
+  },
+  {
+   "t": 13.9,
+   "s": 1.0
+  },
+  {
+   "t": 17.6,
+   "s": 1.0
+  }
+ ],
+ "scenes": [
+  {
+   "type": "stack",
+   "note": "FRAME 0 hook, fully drawn at 0.0s",
+   "in": 0,
+   "out": 2.2,
+   "y": 300,
+   "lines": [
+    {
+     "text": "Answer these",
+     "size": 124,
+     "at": 0
+    },
+    {
+     "text": "3",
+     "size": 380,
+     "at": 0,
+     "pulseAt": [
+      0.8
+     ],
+     "gap": -20
+    },
+    {
+     "text": "before you",
+     "size": 140,
+     "at": 0,
+     "gap": -20
+    },
+    {
+     "text": "set a goal.",
+     "size": 140,
+     "at": 0,
+     "pulseAt": [
+      1.5
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "example thread",
+   "in": 2.2,
+   "out": 3.6,
+   "y": 420,
+   "lines": [
+    {
+     "text": "Example goal:",
+     "size": 124,
+     "at": 2.25,
+     "color": "paper"
+    },
+    {
+     "text": "GET FIT.",
+     "size": 240,
+     "at": 2.6,
+     "color": "amber",
+     "gap": 10,
+     "sfx": "thud",
+     "sfxGain": 0.6
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "question 1",
+   "in": 3.6,
+   "out": 6.8,
+   "y": 300,
+   "lines": [
+    {
+     "text": "1 of 3",
+     "size": 96,
+     "at": 3.65,
+     "pill": "amber",
+     "color": "ink"
+    },
+    {
+     "text": "What does it",
+     "size": 140,
+     "at": 3.8,
+     "color": "paper",
+     "gap": 10
+    },
+    {
+     "text": "look like on",
+     "size": 140,
+     "at": 3.95,
+     "color": "paper"
+    },
+    {
+     "text": "a Tuesday?",
+     "size": 160,
+     "at": 4.1,
+     "color": "paper",
+     "pulseAt": [
+      5.9
+     ]
+    },
+    {
+     "text": "Run 20 min",
+     "size": 124,
+     "at": 5.05,
+     "color": "amber",
+     "gap": 20,
+     "sfx": "pop",
+     "sfxGain": 0.5
+    },
+    {
+     "text": "before work.",
+     "size": 124,
+     "at": 5.2,
+     "color": "amber"
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "question 2",
+   "in": 6.8,
+   "out": 10.0,
+   "y": 300,
+   "lines": [
+    {
+     "text": "2 of 3",
+     "size": 96,
+     "at": 6.85,
+     "pill": "blue",
+     "color": "paper"
+    },
+    {
+     "text": "What will",
+     "size": 150,
+     "at": 7.0,
+     "color": "ink",
+     "gap": 10
+    },
+    {
+     "text": "you stop",
+     "size": 150,
+     "at": 7.15,
+     "color": "ink"
+    },
+    {
+     "text": "doing?",
+     "size": 180,
+     "at": 7.3,
+     "color": "ink",
+     "pulseAt": [
+      9.1
+     ]
+    },
+    {
+     "text": "No scrolling",
+     "size": 124,
+     "at": 8.25,
+     "color": "blue",
+     "gap": 20,
+     "sfx": "pop",
+     "sfxGain": 0.5
+    },
+    {
+     "text": "after 11pm.",
+     "size": 124,
+     "at": 8.4,
+     "color": "blue"
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "question 3",
+   "in": 10.0,
+   "out": 13.2,
+   "y": 300,
+   "lines": [
+    {
+     "text": "3 of 3",
+     "size": 96,
+     "at": 10.05,
+     "pill": "amber",
+     "color": "ink"
+    },
+    {
+     "text": "How do you",
+     "size": 140,
+     "at": 10.2,
+     "color": "paper",
+     "gap": 10
+    },
+    {
+     "text": "know it's",
+     "size": 140,
+     "at": 10.35,
+     "color": "paper"
+    },
+    {
+     "text": "DONE?",
+     "size": 220,
+     "at": 10.5,
+     "color": "paper",
+     "pulseAt": [
+      12.3
+     ]
+    },
+    {
+     "text": "5 km in",
+     "size": 124,
+     "at": 11.45,
+     "color": "amber",
+     "gap": 20,
+     "sfx": "pop",
+     "sfxGain": 0.5
+    },
+    {
+     "text": "under 30 min.",
+     "size": 124,
+     "at": 11.6,
+     "color": "amber"
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "save CTA",
+   "in": 13.2,
+   "out": 15.2,
+   "y": 360,
+   "lines": [
+    {
+     "text": "SAVE",
+     "size": 300,
+     "at": 13.25,
+     "sfx": "thud",
+     "sfxGain": 0.6
+    },
+    {
+     "text": "this.",
+     "size": 200,
+     "at": 13.4,
+     "gap": -30
+    },
+    {
+     "text": "Answer them",
+     "size": 124,
+     "at": 14.0,
+     "color": "blue",
+     "gap": 40
+    },
+    {
+     "text": "tonight.",
+     "size": 160,
+     "at": 14.15,
+     "color": "blue",
+     "pulseAt": [
+      14.8
+     ]
+    }
+   ]
+  },
+  {
+   "type": "brand",
+   "note": "brand card, last 2.4s",
+   "in": 15.2,
+   "y": 540,
+   "mark": "dmyor",
+   "line": "Turn a big goal\ninto a daily plan.",
+   "handle": "@becauseidmyor"
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0.0,
+   "v": "thud",
+   "g": 0.8
+  },
+  {
+   "t": 0.0,
+   "v": "sub",
+   "g": 0.4
+  },
+  {
+   "t": 0.8,
+   "v": "pop",
+   "g": 0.5
+  },
+  {
+   "t": 1.5,
+   "v": "pop",
+   "g": 0.45
+  }
+ ]
+}

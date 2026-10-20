@@ -1,0 +1,278 @@
+{
+ "total": 12.8,
+ "engine": "punch",
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "bg": [
+  {
+   "t": 0,
+   "c": "amber"
+  },
+  {
+   "t": 2.15,
+   "c": "black",
+   "dir": "up"
+  },
+  {
+   "t": 4.75,
+   "c": "blue",
+   "dir": "left"
+  },
+  {
+   "t": 6.35,
+   "c": "cream",
+   "dir": "up"
+  },
+  {
+   "t": 8.55,
+   "c": "amber",
+   "dir": "right"
+  },
+  {
+   "t": 10.55,
+   "c": "black",
+   "dir": "up"
+  }
+ ],
+ "camera": [
+  {
+   "t": 0,
+   "s": 1.0
+  },
+  {
+   "t": 1.2,
+   "s": 1.0
+  },
+  {
+   "t": 1.5,
+   "s": 1.04
+  },
+  {
+   "t": 1.9,
+   "s": 1.0
+  },
+  {
+   "t": 4.1,
+   "s": 1.0
+  },
+  {
+   "t": 4.4,
+   "s": 1.05
+  },
+  {
+   "t": 4.8,
+   "s": 1.0
+  },
+  {
+   "t": 7.3,
+   "s": 1.0
+  },
+  {
+   "t": 7.6,
+   "s": 1.04
+  },
+  {
+   "t": 8.0,
+   "s": 1.0
+  },
+  {
+   "t": 12.8,
+   "s": 1.0
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0,
+   "v": "thud",
+   "g": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "type": "stack",
+   "note": "FRAME 0 hook, fully drawn at 0.0s",
+   "in": 0,
+   "out": 2.2,
+   "y": 360,
+   "lines": [
+    {
+     "text": "SOMEDAY",
+     "size": 165,
+     "at": 0,
+     "pulseAt": [
+      0.7
+     ]
+    },
+    {
+     "text": "is not a",
+     "size": 150,
+     "at": 0,
+     "gap": 0
+    },
+    {
+     "text": "day.",
+     "size": 300,
+     "at": 0,
+     "gap": -20,
+     "pulseAt": [
+      1.5
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "the week, no someday in it",
+   "in": 2.2,
+   "out": 4.8,
+   "y": 300,
+   "lines": [
+    {
+     "text": "Mon  Tue",
+     "size": 150,
+     "at": 2.25,
+     "color": "paper"
+    },
+    {
+     "text": "Wed  Thu",
+     "size": 150,
+     "at": 2.5,
+     "color": "paper",
+     "gap": -10
+    },
+    {
+     "text": "Fri  Sat",
+     "size": 150,
+     "at": 2.75,
+     "color": "paper",
+     "gap": -10
+    },
+    {
+     "text": "Sun",
+     "size": 150,
+     "at": 3.0,
+     "color": "paper",
+     "gap": -10
+    },
+    {
+     "text": "someday?",
+     "size": 150,
+     "at": 3.4,
+     "color": "amber",
+     "gap": 10,
+     "strikeAt": 4.0,
+     "strikeColor": "coral"
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "it never comes",
+   "in": 4.8,
+   "out": 6.4,
+   "y": 400,
+   "lines": [
+    {
+     "text": "It never",
+     "size": 170,
+     "at": 4.85,
+     "color": "paper"
+    },
+    {
+     "text": "comes.",
+     "size": 260,
+     "at": 5.1,
+     "color": "paper",
+     "gap": -10,
+     "pulseAt": [
+      5.8
+     ],
+     "sfx": "thud",
+     "sfxGain": 0.7
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "the action",
+   "in": 6.4,
+   "out": 8.6,
+   "y": 330,
+   "lines": [
+    {
+     "text": "Pick a",
+     "size": 160,
+     "at": 6.45
+    },
+    {
+     "text": "real day.",
+     "size": 190,
+     "at": 6.65,
+     "color": "blue",
+     "pulseAt": [
+      7.4
+     ]
+    },
+    {
+     "text": "Write the",
+     "size": 130,
+     "at": 7.2,
+     "gap": 30
+    },
+    {
+     "text": "goal on it.",
+     "size": 130,
+     "at": 7.4,
+     "sfx": "pop",
+     "sfxGain": 0.6
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "share CTA",
+   "in": 8.6,
+   "out": 10.6,
+   "y": 360,
+   "lines": [
+    {
+     "text": "Send this to",
+     "size": 130,
+     "at": 8.65
+    },
+    {
+     "text": "your",
+     "size": 130,
+     "at": 8.8
+    },
+    {
+     "text": "\"someday\"",
+     "size": 150,
+     "at": 9.0,
+     "gap": 10,
+     "sfx": "thud",
+     "sfxGain": 0.6
+    },
+    {
+     "text": "friend.",
+     "size": 200,
+     "at": 9.2,
+     "pulseAt": [
+      10.0
+     ]
+    }
+   ]
+  },
+  {
+   "type": "brand",
+   "note": "brand card, last 2.2s",
+   "in": 10.6,
+   "y": 540,
+   "mark": "dmyor",
+   "line": "Turn a big goal\ninto a daily plan.",
+   "handle": "@becauseidmyor"
+  }
+ ]
+}

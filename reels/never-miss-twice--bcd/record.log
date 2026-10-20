@@ -1,0 +1,55 @@
+Recording 480 frames @ 30fps -> reel.mp4
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+  built with Apple clang version 17.0.0 (clang-1700.6.3.2)
+  configuration: --prefix=/opt/homebrew/Cellar/ffmpeg/8.0.1_2 --enable-shared --enable-pthreads --enable-version3 --cc=clang --host-cflags= --host-ldflags= --enable-ffplay --enable-gpl --enable-libsvtav1 --enable-libopus --enable-libx264 --enable-libmp3lame --enable-libdav1d --enable-libvpx --enable-libx265 --enable-videotoolbox --enable-audiotoolbox --enable-neon
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+  0.0s / 16.0s
+Input #0, image2pipe, from 'fd:':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: png, rgb24(pc, gbr/unknown/unknown), 1080x1920, 30 fps, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+[libx264 @ 0x15ae15cf0] using cpu capabilities: ARMv8 NEON DotProd I8MM
+[libx264 @ 0x15ae15cf0] profile High, level 5.0, 4:2:0, 8-bit
+[libx264 @ 0x15ae15cf0] 264 - core 165 r3222 b35605a - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=12 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=50 rc=crf mbtree=1 crf=17.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/Users/sanyampathak/Documents/dmyor-videos/reels/never-miss-twice--bcd/reel.mp4':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    6 fps=0.0 q=23.0 size=       0KiB time=00:00:00.13 bitrate=   2.9kbits/s speed=0.264x elapsed=0:00:00.50    frame=   18 fps= 18 q=23.0 size=       0KiB time=00:00:00.53 bitrate=   0.7kbits/s speed=0.53x elapsed=0:00:01.00    frame=   29 fps= 19 q=23.0 size=       0KiB time=00:00:00.90 bitrate=   0.4kbits/s speed=0.596x elapsed=0:00:01.50    frame=   41 fps= 20 q=23.0 size=       0KiB time=00:00:01.30 bitrate=   0.3kbits/s speed=0.645x elapsed=0:00:02.01    frame=   53 fps= 21 q=23.0 size=       0KiB time=00:00:01.70 bitrate=   0.2kbits/s speed=0.676x elapsed=0:00:02.51    frame=   65 fps= 22 q=23.0 size=       0KiB time=00:00:02.10 bitrate=   0.2kbits/s speed=0.696x elapsed=0:00:03.01      5.0s / 16.0s
+frame=   77 fps= 22 q=23.0 size=       0KiB time=00:00:02.50 bitrate=   0.2kbits/s speed=0.71x elapsed=0:00:03.52    frame=   89 fps= 22 q=23.0 size=       0KiB time=00:00:02.90 bitrate=   0.1kbits/s speed=0.72x elapsed=0:00:04.02    frame=  100 fps= 22 q=23.0 size=     256KiB time=00:00:03.26 bitrate= 642.1kbits/s speed=0.721x elapsed=0:00:04.53    frame=  112 fps= 22 q=23.0 size=     256KiB time=00:00:03.66 bitrate= 572.1kbits/s speed=0.728x elapsed=0:00:05.03    frame=  124 fps= 22 q=23.0 size=     256KiB time=00:00:04.06 bitrate= 515.8kbits/s speed=0.734x elapsed=0:00:05.53    frame=  136 fps= 23 q=23.0 size=     256KiB time=00:00:04.46 bitrate= 469.6kbits/s speed=0.74x elapsed=0:00:06.03    frame=  147 fps= 22 q=23.0 size=     256KiB time=00:00:04.83 bitrate= 434.0kbits/s speed=0.739x elapsed=0:00:06.54    frame=  159 fps= 23 q=23.0 size=     256KiB time=00:00:05.23 bitrate= 400.8kbits/s speed=0.742x elapsed=0:00:07.04    frame=  172 fps= 23 q=23.0 size=     256KiB time=00:00:05.66 bitrate= 370.2kbits/s speed=0.75x elapsed=0:00:07.55    frame=  184 fps= 23 q=23.0 size=     256KiB time=00:00:06.06 bitrate= 345.7kbits/s speed=0.753x elapsed=0:00:08.05    frame=  196 fps= 23 q=23.0 size=     256KiB time=00:00:06.46 bitrate= 324.4kbits/s speed=0.756x elapsed=0:00:08.55    frame=  208 fps= 23 q=23.0 size=     256KiB time=00:00:06.86 bitrate= 305.5kbits/s speed=0.758x elapsed=0:00:09.06    frame=  220 fps= 23 q=23.0 size=     256KiB time=00:00:07.26 bitrate= 288.7kbits/s speed=0.759x elapsed=0:00:09.56      10.0s / 16.0s
+frame=  232 fps= 23 q=23.0 size=     256KiB time=00:00:07.66 bitrate= 273.6kbits/s speed=0.761x elapsed=0:00:10.07    frame=  244 fps= 23 q=23.0 size=     512KiB time=00:00:08.06 bitrate= 520.0kbits/s speed=0.763x elapsed=0:00:10.57    frame=  256 fps= 23 q=23.0 size=     512KiB time=00:00:08.46 bitrate= 495.4kbits/s speed=0.764x elapsed=0:00:11.08    frame=  268 fps= 23 q=23.0 size=     512KiB time=00:00:08.86 bitrate= 473.1kbits/s speed=0.765x elapsed=0:00:11.58    frame=  280 fps= 23 q=23.0 size=     512KiB time=00:00:09.26 bitrate= 452.7kbits/s speed=0.766x elapsed=0:00:12.09    frame=  292 fps= 23 q=23.0 size=     512KiB time=00:00:09.66 bitrate= 433.9kbits/s speed=0.768x elapsed=0:00:12.59    frame=  304 fps= 23 q=23.0 size=     512KiB time=00:00:10.06 bitrate= 416.7kbits/s speed=0.768x elapsed=0:00:13.09    frame=  316 fps= 23 q=23.0 size=     512KiB time=00:00:10.46 bitrate= 400.8kbits/s speed=0.77x elapsed=0:00:13.59    frame=  328 fps= 23 q=23.0 size=     512KiB time=00:00:10.86 bitrate= 386.0kbits/s speed=0.77x elapsed=0:00:14.10    frame=  340 fps= 23 q=23.0 size=     512KiB time=00:00:11.26 bitrate= 372.3kbits/s speed=0.771x elapsed=0:00:14.60    frame=  352 fps= 23 q=23.0 size=     512KiB time=00:00:11.66 bitrate= 359.5kbits/s speed=0.772x elapsed=0:00:15.10    frame=  364 fps= 23 q=23.0 size=     512KiB time=00:00:12.06 bitrate= 347.6kbits/s speed=0.773x elapsed=0:00:15.61      15.0s / 16.0s
+frame=  376 fps= 23 q=23.0 size=     512KiB time=00:00:12.46 bitrate= 336.5kbits/s speed=0.774x elapsed=0:00:16.11    frame=  388 fps= 23 q=23.0 size=     768KiB time=00:00:12.86 bitrate= 489.0kbits/s speed=0.774x elapsed=0:00:16.61    frame=  400 fps= 23 q=23.0 size=     768KiB time=00:00:13.26 bitrate= 474.3kbits/s speed=0.775x elapsed=0:00:17.12    [mp4 @ 0x15ae14df0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0x15ae14b00] video:958KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.660335%
+frame=  480 fps= 27 q=-1.0 Lsize=     964KiB time=00:00:15.93 bitrate= 495.7kbits/s speed=0.912x elapsed=0:00:17.47    
+[libx264 @ 0x15ae15cf0] frame I:5     Avg QP: 4.66  size:  6167
+[libx264 @ 0x15ae15cf0] frame P:142   Avg QP:12.53  size:  4199
+[libx264 @ 0x15ae15cf0] frame B:333   Avg QP:17.28  size:  1060
+[libx264 @ 0x15ae15cf0] consecutive B-frames:  4.8%  6.2%  5.6% 83.3%
+[libx264 @ 0x15ae15cf0] mb I  I16..4: 89.8%  8.5%  1.6%
+[libx264 @ 0x15ae15cf0] mb P  I16..4:  3.5%  0.9%  0.5%  P16..4:  2.0%  0.9%  0.5%  0.0%  0.0%    skip:91.7%
+[libx264 @ 0x15ae15cf0] mb B  I16..4:  0.4%  0.0%  0.0%  B16..8:  2.3%  0.7%  0.2%  direct: 0.3%  skip:96.1%  L0:54.3% L1:35.8% BI: 9.8%
+[libx264 @ 0x15ae15cf0] 8x8 transform intra:12.8% inter:11.7%
+[libx264 @ 0x15ae15cf0] direct mvs  spatial:98.2% temporal:1.8%
+[libx264 @ 0x15ae15cf0] coded y,uvDC,uvAC intra: 3.3% 8.7% 6.9% inter: 0.5% 0.5% 0.4%
+[libx264 @ 0x15ae15cf0] i16 v,h,dc,p: 84% 15%  1%  0%
+[libx264 @ 0x15ae15cf0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 37%  6% 56%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0x15ae15cf0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 45% 20% 24%  2%  2%  2%  2%  2%  2%
+[libx264 @ 0x15ae15cf0] i8c dc,h,v,p: 70% 15% 15%  0%
+[libx264 @ 0x15ae15cf0] Weighted P-Frames: Y:4.9% UV:4.2%
+[libx264 @ 0x15ae15cf0] ref P L0: 60.7%  1.5% 15.9% 12.8%  9.1%  0.1%  0.0%
+[libx264 @ 0x15ae15cf0] ref B L0: 54.7% 27.5% 13.5%  4.2%
+[libx264 @ 0x15ae15cf0] ref B L1: 85.4% 14.6%
+[libx264 @ 0x15ae15cf0] kb/s:490.01
+muxed audio: audio_mixed.mp3
+Done: /Users/sanyampathak/Documents/dmyor-videos/reels/never-miss-twice--bcd/reel.mp4

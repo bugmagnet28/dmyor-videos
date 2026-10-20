@@ -1,0 +1,319 @@
+{
+ "total": 14.0,
+ "engine": "punch",
+ "brand": {
+  "mark": "dmyor",
+  "url": "www.dmyor.com"
+ },
+ "bg": [
+  {
+   "t": 0,
+   "c": "amber"
+  },
+  {
+   "t": 3.35,
+   "c": "black",
+   "dir": "up"
+  },
+  {
+   "t": 5.35,
+   "c": "blue",
+   "dir": "left"
+  },
+  {
+   "t": 7.35,
+   "c": "cream",
+   "dir": "up"
+  },
+  {
+   "t": 9.35,
+   "c": "black",
+   "dir": "right"
+  }
+ ],
+ "camera": [
+  {
+   "t": 0,
+   "s": 1.0
+  },
+  {
+   "t": 2.7,
+   "s": 1.0
+  },
+  {
+   "t": 2.95,
+   "s": 1.05
+  },
+  {
+   "t": 3.3,
+   "s": 1.0
+  },
+  {
+   "t": 4.3,
+   "s": 1.0
+  },
+  {
+   "t": 4.55,
+   "s": 1.05
+  },
+  {
+   "t": 4.9,
+   "s": 1.0
+  },
+  {
+   "t": 6.2,
+   "s": 1.0
+  },
+  {
+   "t": 6.45,
+   "s": 1.04
+  },
+  {
+   "t": 6.8,
+   "s": 1.0
+  },
+  {
+   "t": 8.2,
+   "s": 1.0
+  },
+  {
+   "t": 8.45,
+   "s": 1.04
+  },
+  {
+   "t": 8.8,
+   "s": 1.0
+  },
+  {
+   "t": 14.0,
+   "s": 1.0
+  }
+ ],
+ "sfx": [
+  {
+   "t": 0,
+   "v": "thud",
+   "g": 0.6
+  }
+ ],
+ "scenes": [
+  {
+   "type": "stack",
+   "note": "FRAME 0 hook, fully drawn at 0.0s; blank cycles then lands",
+   "in": 0,
+   "out": 3.4,
+   "y": 390,
+   "lines": [
+    {
+     "text": "Finish this:",
+     "size": 130,
+     "at": 0,
+     "color": "ink"
+    },
+    {
+     "text": "By next year",
+     "size": 140,
+     "at": 0,
+     "gap": 30
+    },
+    {
+     "text": "I will",
+     "size": 140,
+     "at": 0,
+     "gap": 0
+    },
+    {
+     "text": "______.",
+     "size": 170,
+     "at": 0,
+     "gap": 20,
+     "color": "blue",
+     "swaps": [
+      {
+       "at": 1.0,
+       "text": "run a 5k?",
+       "color": "ink"
+      },
+      {
+       "at": 1.5,
+       "text": "move out?",
+       "color": "ink"
+      },
+      {
+       "at": 2.0,
+       "text": "get fit?",
+       "color": "ink"
+      },
+      {
+       "at": 2.5,
+       "text": "launch it?",
+       "color": "ink"
+      },
+      {
+       "at": 2.95,
+       "text": "run a 5k.",
+       "color": "blue",
+       "sfx": "thud",
+       "g": 0.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "too big -> shrink it",
+   "in": 3.4,
+   "out": 5.4,
+   "y": 450,
+   "lines": [
+    {
+     "text": "Too big",
+     "size": 200,
+     "at": 3.45,
+     "color": "paper"
+    },
+    {
+     "text": "for today.",
+     "size": 150,
+     "at": 3.65,
+     "color": "paper",
+     "gap": 0
+    },
+    {
+     "text": "Shrink it.",
+     "size": 190,
+     "at": 4.3,
+     "color": "amber",
+     "gap": 50,
+     "sfx": "thud",
+     "sfxGain": 0.65
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "this week blank",
+   "in": 5.4,
+   "out": 7.4,
+   "y": 430,
+   "lines": [
+    {
+     "text": "This week",
+     "size": 180,
+     "at": 5.45,
+     "color": "paper"
+    },
+    {
+     "text": "I will",
+     "size": 140,
+     "at": 5.65,
+     "color": "paper",
+     "gap": 0
+    },
+    {
+     "text": "____.",
+     "size": 190,
+     "at": 5.8,
+     "color": "amber",
+     "gap": 20,
+     "swaps": [
+      {
+       "at": 6.3,
+       "text": "run 1 km.",
+       "color": "amber",
+       "sfx": "thud",
+       "g": 0.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "today blank",
+   "in": 7.4,
+   "out": 9.4,
+   "y": 430,
+   "lines": [
+    {
+     "text": "Today",
+     "size": 220,
+     "at": 7.45,
+     "color": "ink"
+    },
+    {
+     "text": "I will",
+     "size": 140,
+     "at": 7.65,
+     "color": "ink",
+     "gap": 0
+    },
+    {
+     "text": "____.",
+     "size": 200,
+     "at": 7.8,
+     "color": "coral",
+     "gap": 20,
+     "swaps": [
+      {
+       "at": 8.3,
+       "text": "lace up.",
+       "color": "coral",
+       "sfx": "thud",
+       "g": 0.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "type": "stack",
+   "note": "comment CTA",
+   "in": 9.4,
+   "out": 11.8,
+   "y": 410,
+   "lines": [
+    {
+     "text": "Your turn.",
+     "size": 180,
+     "at": 9.45,
+     "color": "amber"
+    },
+    {
+     "text": "Type your",
+     "size": 140,
+     "at": 9.9,
+     "color": "paper",
+     "gap": 40
+    },
+    {
+     "text": "TODAY line",
+     "size": 150,
+     "at": 10.1,
+     "color": "paper",
+     "gap": 0,
+     "pulseAt": [
+      10.9
+     ]
+    },
+    {
+     "text": "below.",
+     "size": 150,
+     "at": 10.3,
+     "color": "paper",
+     "gap": 0
+    }
+   ]
+  },
+  {
+   "type": "brand",
+   "note": "brand card, last 2.2s",
+   "in": 11.8,
+   "y": 540,
+   "mark": "dmyor",
+   "line": "Turn a big goal\ninto a daily plan.",
+   "handle": "@becauseidmyor"
+  }
+ ]
+}

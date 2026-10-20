@@ -6,17 +6,22 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 **Post order: bottom one first (oldest).** All queued reels are evergreen. Newest is listed on top.
 
-- [ ] posted · **2026-10-20 which-one-is-a-plan** (15s, no VO, quiz + 3-2-1 countdown reveal, save CTA) · evergreen, post after too-many-goals, 19:00-20:00 IST · `ready-to-post/2026-10-20-which-one-is-a-plan/` (video.mp4 + post.md) · tests V-EXP-21
-- [ ] posted · **2026-10-19 too-many-goals** (16s, no VO, block-grid visual, sentence loop, share CTA) · evergreen, post after never-miss-twice, 19:00-20:00 IST · `ready-to-post/2026-10-19-too-many-goals/` (video.mp4 + post.md) · tests V-EXP-20
-- [ ] posted · **2026-10-18 never-miss-twice** (16s, no VO, 30-day calendar visual, save CTA) · evergreen, post after fill-the-blank, 19:00-20:00 IST · `ready-to-post/2026-10-18-never-miss-twice/` (video.mp4 + post.md) · tests V-EXP-19
-- [ ] posted · **2026-10-17 fill-the-blank** (14s, no VO, comment CTA) · evergreen, post after about-to-start, 19:00-20:00 IST · `ready-to-post/2026-10-17-fill-the-blank/` (video.mp4 + post.md) · tests V-EXP-18
-- [ ] posted · **2026-10-16 about-to-start** (10s, no VO) · evergreen, post after life-in-weeks, 19:00-20:00 IST · `ready-to-post/2026-10-16-about-to-start/` (video.mp4 + post.md) · tests V-EXP-17
-- [ ] posted · **2026-10-15 life-in-weeks** (15s, no VO, grid visual) · evergreen, post after plan-the-bad-day, 19:00-20:00 IST · `ready-to-post/2026-10-15-life-in-weeks/` (video.mp4 + post.md) · tests V-EXP-16 (render recovered 2026-10-16)
-- [ ] posted · **2026-10-14 plan-the-bad-day** (14s, no VO) · evergreen, post after start-at-the-end, 19:00-20:00 IST · `ready-to-post/2026-10-14-plan-the-bad-day/` (video.mp4 + post.md) · tests V-EXP-15
-- [ ] posted · **2026-10-13 start-at-the-end** (15s, no VO, loop ending) · evergreen, post after someday-is-not-a-day, 19:00-20:00 IST · `ready-to-post/2026-10-13-start-at-the-end/` (video.mp4 + post.md) · tests V-EXP-14 (render fixed 2026-10-14)
-- [ ] posted · **2026-10-12 someday-is-not-a-day** (13s, no VO) · evergreen, post after twenty-minutes-a-day, 19:00-20:00 IST · `ready-to-post/2026-10-12-someday-is-not-a-day/` (video.mp4 + post.md) · tests V-EXP-13
-- [ ] posted · **2026-10-11 twenty-minutes-a-day** (15s, no VO) · evergreen, post after three-questions-before-a-goal, 19:00-20:00 IST · `ready-to-post/2026-10-11-twenty-minutes-a-day/` (video.mp4 + post.md) · tests V-EXP-12
-- [ ] posted · **2026-10-10 three-questions-before-a-goal** (18s, no VO) · post after next-step-not-motivation, 19:00-20:00 IST (not date-bound) · `ready-to-post/2026-10-10-three-questions-before-a-goal/` (video.mp4 + post.md) · tests V-EXP-11
+
+## Scheduled on @becauseidmyor for 2026-10-21 (IST), by Claude via Instagram web, Sanyam approved
+
+Region test: each slot is ~8 PM local in the target region. @becauseidmyor end-card versions (`video-becauseidmyor.mp4`). Short Dmyor-focused captions (Sanyam's request 2026-10-21), not the post.md captions.
+
+- [x] scheduled 05:30 IST · US East/Canada · **three-questions-before-a-goal**
+- [x] scheduled 08:30 IST · US West · **twenty-minutes-a-day**
+- [x] scheduled 09:30 IST · India morning · **someday-is-not-a-day**
+- [x] scheduled 12:30 IST · New Zealand · **start-at-the-end**
+- [x] scheduled 14:30 IST · Australia East · **plan-the-bad-day**
+- [x] scheduled 16:30 IST · Japan/Korea · **life-in-weeks**
+- [x] scheduled 17:30 IST · SE Asia · **about-to-start**
+- [x] scheduled 19:30 IST · India evening · **fill-the-blank**
+- [x] scheduled 21:30 IST · UAE/Gulf · **never-miss-twice**
+- [x] scheduled 22:30 IST · Turkey/E.Africa/Moscow · **too-many-goals**
+- [x] scheduled 23:30 IST · Central Europe · **which-one-is-a-plan**
 
 ## Posted
 
