@@ -9,6 +9,12 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 - [ ] **2026-10-21 hours-in-a-week** (16.4s, no VO) · `ready-to-post/2026-10-21-hours-in-a-week/` · caption in post.md · tests V-EXP-22 · end card @dmyor_global
 
 
+## Scheduled on @becauseidmyor for 2026-10-22 (IST), tree series, by Claude via Instagram web, Sanyam approved
+
+- [x] scheduled 05:30 IST · US East · **tree-freelance** · `ready-to-post/2026-10-21-tree-freelance/`
+- [x] scheduled 19:30 IST · India · **tree-study-abroad** · `ready-to-post/2026-10-21-tree-study-abroad/`
+- [x] scheduled 23:30 IST · Central Europe · **tree-novel** · `ready-to-post/2026-10-21-tree-novel/`
+
 ## Scheduled on @becauseidmyor for 2026-10-21 (IST), by Claude via Instagram web, Sanyam approved
 
 Region test: each slot is ~8 PM local in the target region. @becauseidmyor end-card versions (`video-becauseidmyor.mp4`). Short Dmyor-focused captions (Sanyam's request 2026-10-21), not the post.md captions.
