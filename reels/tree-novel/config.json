@@ -1,0 +1,148 @@
+{
+ "bpm": 100,
+ "total": 16.2,
+ "handle": "@becauseidmyor",
+ "tagline": "Turn your dream into\na tree you can climb.",
+ "titles": [
+  "Break it into milestones.",
+  "Then into small actions.",
+  "Do just this one. Today.",
+  "Watch it grow."
+ ],
+ "actionParent": 1,
+ "layout": {
+  "vision": {
+   "y": 1330
+  },
+  "trunkTop": 1060,
+  "milestones": [
+   {
+    "x": 210,
+    "y": 900
+   },
+   {
+    "x": 540,
+    "y": 830
+   },
+   {
+    "x": 870,
+    "y": 900
+   }
+  ],
+  "actions": [
+   {
+    "x": 240,
+    "y": 600
+   },
+   {
+    "x": 540,
+    "y": 520
+   },
+   {
+    "x": 840,
+    "y": 600
+   }
+  ],
+  "focusY": 760
+ },
+ "events": {
+  "hookOut": 4,
+  "vision": 4.5,
+  "trunk": 5.5,
+  "titleM": 6,
+  "milestones": [
+   7,
+   8,
+   9
+  ],
+  "titleA": 10.5,
+  "actions": [
+   11,
+   12,
+   13
+  ],
+  "focus": 15,
+  "done": 17.5,
+  "grow": 20,
+  "brand": 23
+ },
+ "seed": 37,
+ "hook": [
+  "Someday novel.",
+  "Still on page one?"
+ ],
+ "vision": "Publish my first novel by 2027",
+ "milestones": [
+  "Outline the story",
+  "Finish draft one",
+  "Find 10 beta readers"
+ ],
+ "actions": [
+  "Write 500 words",
+  "Name the villain",
+  "Plan chapter 2"
+ ],
+ "todayIdx": 0,
+ "hand": "just 500 words",
+ "music": {
+  "root": 52,
+  "progression": [
+   [
+    0,
+    3,
+    7
+   ],
+   [
+    -4,
+    0,
+    3
+   ],
+   [
+    3,
+    7,
+    10
+   ],
+   [
+    -2,
+    2,
+    5
+   ]
+  ]
+ },
+ "palette": {
+  "cVision": "#f17501",
+  "cMilestone": "#7b4dff",
+  "cAction": "#00a884",
+  "cDone": "#18c77a",
+  "sky": [
+   "#070b2a",
+   "#1b1f5e",
+   "#3c2a7a",
+   "#6b3fa0"
+  ],
+  "sun": "#fff4c2",
+  "sunX": 810,
+  "sunY": 420,
+  "cloud": "#3a3580",
+  "hills": [
+   "#23205a",
+   "#17153f",
+   "#0d0b26"
+  ],
+  "wood": "#2a2140",
+  "woodHi": "#5b4a80",
+  "leaves": [
+   "#ffd166",
+   "#f4a261",
+   "#e9c46a",
+   "#ffe8a3"
+  ],
+  "bloom": [
+   "#ffffff",
+   "#a0e7ff",
+   "#ffd166"
+  ],
+  "accent": "#ffd166",
+  "brandBg": "#070b2a"
+ }
+}

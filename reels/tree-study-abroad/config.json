@@ -1,0 +1,148 @@
+{
+ "bpm": 100,
+ "total": 16.2,
+ "handle": "@becauseidmyor",
+ "tagline": "Turn your dream into\na tree you can climb.",
+ "titles": [
+  "Break it into milestones.",
+  "Then into small actions.",
+  "Do just this one. Today.",
+  "Watch it grow."
+ ],
+ "actionParent": 1,
+ "layout": {
+  "vision": {
+   "y": 1330
+  },
+  "trunkTop": 1060,
+  "milestones": [
+   {
+    "x": 210,
+    "y": 900
+   },
+   {
+    "x": 540,
+    "y": 830
+   },
+   {
+    "x": 870,
+    "y": 900
+   }
+  ],
+  "actions": [
+   {
+    "x": 240,
+    "y": 600
+   },
+   {
+    "x": 540,
+    "y": 520
+   },
+   {
+    "x": 840,
+    "y": 600
+   }
+  ],
+  "focusY": 760
+ },
+ "events": {
+  "hookOut": 4,
+  "vision": 4.5,
+  "trunk": 5.5,
+  "titleM": 6,
+  "milestones": [
+   7,
+   8,
+   9
+  ],
+  "titleA": 10.5,
+  "actions": [
+   11,
+   12,
+   13
+  ],
+  "focus": 15,
+  "done": 17.5,
+  "grow": 20,
+  "brand": 23
+ },
+ "seed": 23,
+ "hook": [
+  "Study abroad.",
+  "Feels too big to even start?"
+ ],
+ "vision": "Start my Master's in Germany by 2027",
+ "milestones": [
+  "Apply to 6 unis",
+  "Score 7.5 on IELTS",
+  "Visa + housing"
+ ],
+ "actions": [
+  "Book the test date",
+  "1 mock test a week",
+  "30 min vocab"
+ ],
+ "todayIdx": 2,
+ "hand": "just 30 minutes",
+ "music": {
+  "root": 57,
+  "progression": [
+   [
+    9,
+    12,
+    16
+   ],
+   [
+    5,
+    9,
+    12
+   ],
+   [
+    0,
+    4,
+    7
+   ],
+   [
+    7,
+    11,
+    14
+   ]
+  ]
+ },
+ "palette": {
+  "cVision": "#f17501",
+  "cMilestone": "#7b4dff",
+  "cAction": "#00a884",
+  "cDone": "#18c77a",
+  "sky": [
+   "#0f3b57",
+   "#1f7a8c",
+   "#7fd1c7",
+   "#ffd6c9"
+  ],
+  "sun": "#fff1d6",
+  "sunX": 250,
+  "sunY": 1470,
+  "cloud": "#ffffff",
+  "hills": [
+   "#2a6f73",
+   "#1d5459",
+   "#123c40"
+  ],
+  "wood": "#3b2f2a",
+  "woodHi": "#7a6050",
+  "leaves": [
+   "#ff8fab",
+   "#ffb3c6",
+   "#fb6f92",
+   "#ffc2d1"
+  ],
+  "bloom": [
+   "#ffffff",
+   "#ffd166",
+   "#ff8fab"
+  ],
+  "accent": "#ffd166",
+  "brandBg": "#0d2b3e"
+ }
+}
