@@ -34,6 +34,7 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 - 2026-10-18: never-miss-twice (pillar 2 rule + 2nd data visual: 6x5 calendar, one miss vs two misses, 16s, SAVE CTA aimed at a future moment). V-EXP-19. Queue: 10 ready, 0 posted.
 - 2026-10-19: too-many-goals (pillar 1 focus truth, 16s, 10x5 effort-block grid, first SENTENCE loop ending, named-person share CTA). V-EXP-20. Queue: 11 ready, 0 posted.
 - 2026-10-20: which-one-is-a-plan (pillar 2, 15.2s, quiz: 3 options + 3-2-1 countdown + strike/dim reveal, SAVE CTA). V-EXP-21. Queue: 12 ready, 0 posted.
+- 2026-10-21: whole queue went live on @becauseidmyor (1 posted 00:54 + 11 scheduled across region slots, Sanyam's call). New build: hours-in-a-week (pillar 3, 16.4s, 168-hour grid, comment-your-number + SAVE). V-EXP-22. Queue: 1 ready. First 48h insights due Oct 23 (VASK-012); weekly review due Oct 22 rewrites the plan around posting being unblocked.
 
 ## Week 1 log (2026-10-08 to 2026-10-14)
 - 2026-10-08: twelve-weeks-one-thing (pillar 3 + 2: countdown hook + saveable plan), punch engine, 24s, no VO. V-EXP-09 baseline.

@@ -1,0 +1,10 @@
+{
+ "slug": "hours-in-a-week",
+ "hint": "168 hours in a week; sleep, work, chores leave 46; give 5 to one goal",
+ "created": "2026-10-21T15:41:03",
+ "hook_pattern": "number fact + question",
+ "target_seconds": 16.4,
+ "status": "ready",
+ "experiment": "V-EXP-22",
+ "note": "Calm punch style, no VO. Grid 14x12 = 168 hour cells (row order). All numbers are arithmetic on assumptions stated in the caption. End card @dmyor_global per Sanyam 2026-10-21."
+}

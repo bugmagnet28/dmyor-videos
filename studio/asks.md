@@ -8,7 +8,7 @@ Edit this file (or tell Claude), set `Status: done`. The agent checks it every r
 - Steps: for any of the 12 old reels you posted, screenshot Instagram insights (views, watch time, shares, saves, follows) and drop the images into `~/Documents/dmyor-videos/inbox/metrics/`. Or type numbers into `inbox/metrics/video-performance.md`.
 
 ## VASK-002: Post one video a day
-- Status: ongoing
+- Status: ongoing (2026-10-21: queue fully posted/scheduled. New: hours-in-a-week, any day from Oct 22, ideally the region slot that wins the test)
 - Steps: open `studio/post-queue.md` (or `ready-to-post/`), post the top video with its caption from `post.md`, tick `[x] posted`. Screenshot its insights after ~48 hours into `inbox/metrics/`.
 
 ## VASK-003: Post twelve-weeks-one-thing by Oct 11, insights 48h after
@@ -18,7 +18,7 @@ Edit this file (or tell Claude), set `Status: done`. The agent checks it every r
 
 ## VASK-004: Follower count now and then
 - Status: open
-- Steps: once a week (or whenever you send insights), screenshot the @dmyor_global profile header into `inbox/metrics/`, or type the number into `inbox/notes.md`.
+- Steps: once a week (or whenever you send insights), screenshot the @becauseidmyor profile header (the posting account) into `inbox/metrics/`, or type the number into `inbox/notes.md`.
 
 ## VASK-005 (optional): app screen recording for a "show the real app" reel
 - Status: open, not urgent
@@ -26,26 +26,26 @@ Edit this file (or tell Claude), set `Status: done`. The agent checks it every r
 - Steps: record 20-40s of your phone or desktop screen building one goal in dmyor (vision, milestones, daily actions), no voice needed. Drop it in `inbox/` as `app-recording.mov`.
 
 ## VASK-006: Post next-step-not-motivation (now first in line)
-- Status: open (2026-10-09; 2026-10-12: twelve-weeks-one-thing skipped, so this is the first post)
+- Status: closed 2026-10-21 (next-step-not-motivation posted 00:54 IST; the other 11 scheduled for 2026-10-21 on @becauseidmyor)
 - Steps: 1) post `ready-to-post/2026-10-09-next-step-not-motivation/video.mp4` with caption from `post.md`, 19:00-20:00 IST. 2) tick `[x] posted` in `studio/post-queue.md` with the time. 3) insights screenshots at ~48h and 7 days into `inbox/metrics/`. Most useful screen: watch time / retention, then shares and saves.
 
 ## VASK-007: Post three-questions-before-a-goal after next-step-not-motivation
-- Status: open (2026-10-10)
+- Status: closed 2026-10-21 (next-step-not-motivation posted 00:54 IST; the other 11 scheduled for 2026-10-21 on @becauseidmyor)
 - Note: 3 videos are now waiting and none is posted, so no experiment can learn anything yet. Even one post plus one insights screenshot unblocks the whole loop.
 - Steps: 1) post `ready-to-post/2026-10-10-three-questions-before-a-goal/video.mp4` with caption from `post.md`, 19:00-20:00 IST, the day after next-step-not-motivation. 2) tick `[x] posted` in `studio/post-queue.md` with the time. 3) insights screenshots at ~48h and 7 days into `inbox/metrics/` (saves matter most for this one).
 
 ## VASK-008: Post twenty-minutes-a-day after three-questions-before-a-goal
-- Status: open (2026-10-11)
+- Status: closed 2026-10-21 (next-step-not-motivation posted 00:54 IST; the other 11 scheduled for 2026-10-21 on @becauseidmyor)
 - Note: 4 videos now waiting, 0 posted, 0 metrics. Every experiment is blocked on the first post + one insights screenshot. If daily posting is hard, tell me in `inbox/notes.md` (e.g. "post 3 a week") and I will plan around your real cadence instead of piling up the queue.
 - Steps: 1) post `ready-to-post/2026-10-11-twenty-minutes-a-day/video.mp4` with caption from `post.md`, 19:00-20:00 IST (evergreen, no deadline). 2) tick `[x] posted` in `studio/post-queue.md` with the time. 3) insights screenshots at ~48h and 7 days into `inbox/metrics/` (watch time / retention and shares matter most for this one).
 
 ## VASK-009: Just one post + one screenshot unblocks everything
-- Status: open (2026-10-12; still open 2026-10-15: now 7 waiting, 0 posted, 8 days no data). See VASK-010 for a faster way.
+- Status: closed 2026-10-21 (next-step-not-motivation posted 00:54 IST; the other 11 scheduled for 2026-10-21 on @becauseidmyor)
 - Note: 5 evergreen videos are waiting, 0 posted, 5 days with no data. One video was lost because its date passed. I keep building 1 a day, but nothing gets learned until something is live.
 - Steps: 1) tonight 19:00-20:00 IST post `ready-to-post/2026-10-09-next-step-not-motivation/video.mp4` with the caption in its `post.md`. 2) tick `[x] posted` in `studio/post-queue.md`. 3) Wed Oct 14 evening: open the reel > View insights, screenshot all screens into `inbox/metrics/`. 4) if daily posting does not fit your week, write your real cadence in `inbox/notes.md` (e.g. "Mon/Wed/Fri") and I will build to it.
 
 ## VASK-010: Schedule the whole queue in one sitting (about 15 minutes, once)
-- Status: open (2026-10-15, from the weekly review; updated 2026-10-20: now 12 videos, dates shifted to start today)
+- Status: closed 2026-10-21 (next-step-not-motivation posted 00:54 IST; the other 11 scheduled for 2026-10-21 on @becauseidmyor)
 - Why: 13 days, 12 videos ready, 0 posted, so no experiment has learned anything. Scheduling all of them at once turns one short session into twelve days of data, with no daily step to remember.
 - Steps:
   1. Copy the 12 `video.mp4` files from `~/Documents/dmyor-videos/ready-to-post/` (skip `2026-10-08-twelve-weeks-one-thing`, it expired) to your phone, or use Meta Business Suite on the desktop.
@@ -59,3 +59,12 @@ Edit this file (or tell Claude), set `Status: done`. The agent checks it every r
 - What I saw: load average 55-65 at 13:45-14:10 IST. Biggest users were not mine: two `claude` processes running for ~126 days at ~100% CPU each, `softwareupdated` at ~87%, and a `react-scripts build` in millionClient. Chrome crashed mid-render on Oct 15 and again today, so life-in-weeks was missing its video.mp4 yesterday.
 - What I did: record.js now relaunches Chrome and resumes from the same frame, so a crash no longer loses the render. Renders still take longer under load.
 - Optional: if those two old `claude` sessions are stale, closing them (or restarting the Mac) would make runs faster. I will not touch processes outside my own renders.
+
+## VASK-012: Insights for the 12 reels live on @becauseidmyor (one sitting, ~10 min)
+- Status: open (2026-10-21)
+- Why: this is the first real data. 12 reels went live on Oct 21 in different region slots; their numbers decide which hook, length and slot we keep, and close V-EXP-09..21.
+- Steps:
+  1. **Thu Oct 23 evening (48h):** on @becauseidmyor open each reel > View insights. Screenshot the overview (views, reach, avg watch time, watch time, likes, comments, shares, saves, follows) and the "accounts reached / non-followers %" part. Drop all images into `~/Documents/dmyor-videos/inbox/metrics/`. File names don't matter; I match by thumbnail.
+  2. Also screenshot the profile header (follower count).
+  3. If screenshots are too many, the fastest alternative: Professional dashboard > Content you shared > Reels, sorted by views, one screenshot per sort (views, watch time, shares, saves).
+  4. **Wed Oct 28 (7 days):** same again.

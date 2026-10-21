@@ -1,58 +1,40 @@
-# Video dashboard (@dmyor_global)
+# Video dashboard (posting on @becauseidmyor, end card @dmyor_global)
 
-_Last updated: 2026-10-20 (run 13)_
+_Last updated: 2026-10-21 (run 14)_
 
 | | |
 |---|---|
-| Instagram followers | 0 (last reading 2026-10-08) |
-| Videos ready to post | 12 (all evergreen) |
-| New-format videos posted (tracked) | 0 |
-| Reels with metrics | 0 of 23 |
-| Skipped (expired unposted) | 1 (twelve-weeks-one-thing) |
+| Instagram followers (@becauseidmyor) | 21 (2026-10-21) |
+| New-format reels live | 1 posted (Oct 21 00:54) + 11 scheduled through Oct 21 (region test) |
+| Reels with metrics | 0 (first 48h insights due Thu Oct 23, VASK-012) |
+| Ready to post (not yet scheduled) | 1: hours-in-a-week |
+| Skipped (expired) | 1 (twelve-weeks-one-thing) |
 
-**Blocker: nothing posted in 13 days.** Fastest fix: VASK-010 (schedule all 12 in one ~15-min sitting, Oct 20-31). Even ONE post tonight + one insights screenshot on Thursday unblocks learning.
+**Blocker cleared.** Everything built so far is live or scheduled. Next bottleneck: insights screenshots (VASK-012).
 
-## Post next (in this order, one per day, 19:00-20:00 IST)
-1. **next-step-not-motivation** (16s): "You don't need more motivation." `ready-to-post/2026-10-09-next-step-not-motivation/`
-2. **three-questions-before-a-goal** (18s): 3 questions + SAVE. `ready-to-post/2026-10-10-three-questions-before-a-goal/`
-3. **twenty-minutes-a-day** (15s): 20 min x 365 = 3 work weeks. `ready-to-post/2026-10-11-twenty-minutes-a-day/`
-4. **someday-is-not-a-day** (13s): "SOMEDAY is not a day." `ready-to-post/2026-10-12-someday-is-not-a-day/`
-5. **start-at-the-end** (15s, loop ending): plan a goal backwards to today. `ready-to-post/2026-10-13-start-at-the-end/`
-6. **plan-the-bad-day** (14s): GOOD DAY / BAD DAY versions. `ready-to-post/2026-10-14-plan-the-bad-day/`
-7. **life-in-weeks** (15s): 80x52 grid of a life in weeks. `ready-to-post/2026-10-15-life-in-weeks/` 
-8. **about-to-start** (10s): "You've been 'about to start' for months." `ready-to-post/2026-10-16-about-to-start/`
-9. **fill-the-blank** (14s): "Finish this: By next year I will ____." + comment CTA. `ready-to-post/2026-10-17-fill-the-blank/`
-10. **never-miss-twice** (16s): "Miss 1 day? You're fine." 30-day calendar, one miss vs two, rule + SAVE. `ready-to-post/2026-10-18-never-miss-twice/`
-11. **too-many-goals** (16s, NEW, loops): "5 goals. 0 done." 10 hours split 5 ways vs on 1 goal, Pick 1. Park 4., ends 'Or keep...' into frame 0. `ready-to-post/2026-10-19-too-many-goals/`
-12. **which-one-is-a-plan** (15s, NEW, quiz): "3 goals. Only 1 is a plan." guess, 3-2-1 countdown, reveal, why, SAVE. `ready-to-post/2026-10-20-which-one-is-a-plan/`
+## Ready to post
+1. **hours-in-a-week** (16.4s, NEW): "168 hours in your week." 14x12 hour grid: sleep 56, work 45, chores 21, 46 left; "No time?" struck; "Give 5 to one goal." Count yours + SAVE. Comment-your-number caption. `ready-to-post/2026-10-21-hours-in-a-week/` · V-EXP-22
+
+## Live on @becauseidmyor, 2026-10-21 (IST slot · region · reel)
+00:54 next-step-not-motivation · 05:30 US East three-questions-before-a-goal · 08:30 US West twenty-minutes-a-day · 09:30 India AM someday-is-not-a-day · 12:30 NZ start-at-the-end · 14:30 AU plan-the-bad-day · 16:30 JP/KR life-in-weeks · 17:30 SEA about-to-start · 19:30 India PM fill-the-blank · 21:30 Gulf never-miss-twice · 22:30 TR/EA too-many-goals · 23:30 CE which-one-is-a-plan
 
 ## Last 7 reels
 | Date | Reel | Length | Views | Avg watch | Shares | Saves | Follows |
 |---|---|---|---|---|---|---|---|
-| 2026-10-20 | which-one-is-a-plan | 15.2s | not posted | | | | |
-| 2026-10-19 | too-many-goals | 16.0s | not posted | | | | |
-| 2026-10-18 | never-miss-twice | 16.0s | not posted | | | | |
-| 2026-10-17 | fill-the-blank | 14.0s | not posted | | | | |
-| 2026-10-16 | about-to-start | 9.6s | not posted | | | | |
-| 2026-10-15 | life-in-weeks | 15.2s | not posted | | | | |
-| 2026-10-14 | plan-the-bad-day | 14.2s | not posted | | | | |
+| 10-21 | hours-in-a-week | 16.4s | not posted | | | | |
+| 10-21 | which-one-is-a-plan | 15.2s | n/a yet | | | | |
+| 10-21 | too-many-goals | 16.0s | n/a yet | | | | |
+| 10-21 | never-miss-twice | 16.0s | n/a yet | | | | |
+| 10-21 | fill-the-blank | 14.0s | n/a yet | | | | |
+| 10-21 | about-to-start | 9.6s | n/a yet | | | | |
+| 10-21 | life-in-weeks | 15.2s | n/a yet | | | | |
 
 Best / worst: no data yet.
 
 ## Open experiments
-- **V-EXP-09** new-format bundle, judged on first posted reel. Target avg watch >= 60%, (shares+saves)/reach >= 1%, >= 1 follow.
-- **V-EXP-10..13**: short hard truth, save tool, math reveal, 12.8s + named-friend CTA.
-- **V-EXP-14** loop ending (start-at-the-end). Expect avg watch near/above 100%.
-- **V-EXP-15** "you" observation hook + good/bad-day pairs. Expect hold >= 70%.
-- **V-EXP-16** data-visual grid body (life-in-weeks). Expect top shares.
-- **V-EXP-17** ultra-short 9.6s length floor (about-to-start). Expect top % watched.
-- **V-EXP-18** fill-in-the-blank hook + first comment CTA (fill-the-blank). Expect most comments of the queue.
-- **V-EXP-19** calendar visual + "never miss twice" rule + save CTA (never-miss-twice). Expect most saves of the queue.
-- **V-EXP-20** sentence loop + effort-block grid (too-many-goals). Expect best watch/length ratio (replays).
-- **V-EXP-21** guess-the-answer quiz with 3-2-1 countdown (which-one-is-a-plan). Expect best hold to ~6s, watch ratio above next-step-not-motivation.
-- V-EXP-01..05, 07, 08 inside the bundle. V-EXP-06 (real app) needs a screen recording (VASK-005).
+V-EXP-01..08 (diagnosis bundle), V-EXP-09 (new format vs old), V-EXP-10..21 (one per live reel), V-EXP-22 (hours-in-a-week: self-audit math + comment your number). Caveat: all 12 went live the same day, so per-reel numbers compete and region is confounded with content.
 
-## Asks open
-- VASK-010 schedule the 12 queued reels in one sitting (main blocker).
-- VASK-004 follower count screenshot now and then. VASK-005 (optional) app screen recording.
-- VASK-011 info: Mac overloaded during runs (old claude sessions at 100% CPU); renders now survive Chrome crashes.
+## Asks
+- **VASK-012** Thu Oct 23: insights screenshots for all 12 live reels + profile header into `inbox/metrics/`. Again Wed Oct 28.
+- VASK-002 post hours-in-a-week any day from Oct 22.
+- VASK-005 (optional) app screen recording for a "real app" reel.

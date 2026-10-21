@@ -6,6 +6,8 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 **Post order: bottom one first (oldest).** All queued reels are evergreen. Newest is listed on top.
 
+- [ ] **2026-10-21 hours-in-a-week** (16.4s, no VO) · `ready-to-post/2026-10-21-hours-in-a-week/` · caption in post.md · tests V-EXP-22 · end card @dmyor_global
+
 
 ## Scheduled on @becauseidmyor for 2026-10-21 (IST), by Claude via Instagram web, Sanyam approved
 

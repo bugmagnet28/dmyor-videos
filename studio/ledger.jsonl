@@ -46,3 +46,5 @@
 {"ts": "2026-10-19T11:38:03", "channel": "video", "action": "notify", "exp": "", "summary": "daily email: too-many-goals ready, VASK-010 reminder", "ref": "", "status": "done", "cost_usd": 0.0}
 {"ts": "2026-10-20T11:53:56", "channel": "video", "action": "build", "exp": "V-EXP-21", "summary": "which-one-is-a-plan rendered (15.2s, no VO, quiz + countdown) and packaged; engine: dimAt + per-swap size", "ref": "ready-to-post/2026-10-20-which-one-is-a-plan", "status": "done", "cost_usd": 0.0}
 {"ts": "2026-10-20T11:54:14", "channel": "video", "action": "notify", "exp": "", "summary": "daily email: which-one-is-a-plan ready, VASK-010 reminder", "ref": "", "status": "done", "cost_usd": 0.0}
+{"ts": "2026-10-21T19:53:56", "channel": "video", "action": "build", "exp": "V-EXP-22", "summary": "hours-in-a-week rendered (16.4s, no VO, 168-hour grid, comment-your-number + save) and packaged", "ref": "ready-to-post/2026-10-21-hours-in-a-week", "status": "done", "cost_usd": 0.0}
+{"ts": "2026-10-21T19:53:58", "channel": "email", "action": "notify", "exp": "", "summary": "daily email: hours-in-a-week ready, VASK-012 insights ask", "ref": "", "status": "done", "cost_usd": 0.0}

@@ -221,3 +221,13 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if the watch ratio beats next-step-not-motivation, make quiz/reveal a weekly format (other quizzes: "which week plan works", "spot the real deadline"). If not, the withheld answer isn't the lever; topic is.
+
+## V-EXP-22: Self-audit math ("168 hours in your week", viewer counts their own) + comment-your-number CTA (pillar 3)
+- Status: running (opened 2026-10-21, before building)
+- Change: first reel built after the posting account (@becauseidmyor) went live. Number hook ("168 hours") + 14x12 grid that fills with stated assumptions (sleep 56, work 45, eat/chores 21) leaving 46 green hours, then "No time?" struck, "Give 5 to one goal." CTA asks the viewer to count their own and save. Caption invites "comment your number". Every number is arithmetic on stated assumptions (7x24; 8h x7; 9h x5; 3h x7), caption says so.
+- Reels testing it: hours-in-a-week (2026-10-21, 16.4s, no VO)
+- Expected: watch ratio similar to life-in-weeks (same family: number + grid), but more comments than any other reel because the viewer has their own number to give; saves/reach >= 1%.
+- Metric + target: avg watch >= 10s (60%); comments >= 2 per 500 views; saves/reach >= 1%. Compare against life-in-weeks (V-EXP-16) and fill-the-blank (V-EXP-18, the other comment ask).
+- Result:
+- Verdict + why:
+- Next:
