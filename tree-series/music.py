@@ -3,7 +3,8 @@ nothing to license). Reads the reel's config.json so musical accents land on the
 same beats as the visuals: a bell on every card that appears, a lift when the
 tree blooms, a resolved chord under the brand card.
 
-    python3 tree-series/music.py reels/<slug>      -> reels/<slug>/audio.mp3
+    python3 tree-series/music.py reels/<slug>              -> reels/<slug>/audio.mp3
+    python3 tree-series/music.py reels/<slug> music.mp3    -> bed for a narrated reel (mix with narrate.py)
 """
 import json, os, subprocess, sys, wave
 import numpy as np
@@ -100,7 +101,7 @@ def add(buf, sig, t, g):
     buf[i:j] += sig[: j - i] * g
 
 
-def main(reel):
+def main(reel, outname="audio.mp3"):
     cfg = json.load(open(os.path.join(reel, "config.json")))
     np.random.seed(cfg.get("seed", 7))
     bpm = cfg["bpm"]
@@ -189,7 +190,7 @@ def main(reel):
     wav_path = os.path.join(reel, "audio.wav")
     with wave.open(wav_path, "wb") as w:
         w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes(pcm.tobytes())
-    mp3 = os.path.join(reel, "audio.mp3")
+    mp3 = os.path.join(reel, outname)
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", wav_path, "-af", "loudnorm=I=-14:TP=-1.5:LRA=9",
                     "-ar", "44100", "-b:a", "192k", mp3], check=True)
     os.remove(wav_path)
@@ -197,4 +198,4 @@ def main(reel):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else "audio.mp3")

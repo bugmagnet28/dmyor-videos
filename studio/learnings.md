@@ -74,3 +74,6 @@ Sanyam asked for feature-led reels showing dmyor's goal -> milestones -> actions
 
 ## 2026-10-22: first real numbers (13 reels, 14 to 42h)
 Reach 2 to 65 per reel, ~100% non-followers, 0 shares, 0 comments, 0 follows, followers 21 -> 21. Best: someday-is-not-a-day (65 reached, 09:30 IST) = short contrarian statement + visual week list. Worst: quiz and instructional hooks (2 to 6). 12 posts in one day split a tiny test audience; later slots did worst, so the region test is unreadable (confounded with post order and content). Own-account saves (1 per reel) must be ignored. Full analysis: analysis/2026-10-22-first-batch-results.md. Web insights lack watch time: need app screenshots for retention.
+
+## 2026-10-22: narration pipeline (free, local)
+Kokoro TTS (kokoro-onnx v1.0, Apache-2.0) installed in tts/ (venv + models, gitignored). `tree-series/narrate.py reels/<slug>` = narration.json -> voice (tts/say.py) -> whisper word timings (align.py) -> tree events placed on spoken words, live subtitles, quiet music bed (-16 dB) -> audio_mixed.mp3 -> record.js. Brand is pronounced "Dee-myor" (TTS text substitution); whisper hears it as "Demire", subtitles map it back to "Dmyor". First two: tree-howto-vo (af_heart, 22s), tree-someday-vo (am_michael, 27s). Voice samples in tts/samples/.

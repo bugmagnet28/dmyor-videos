@@ -130,6 +130,9 @@ function place(c,x,y,s,o){c.style.transform="translate("+(x-c.offsetWidth/2)+"px
 // ---------- text ----------
 var hook=div("title",stage,'<div style="font-size:170px;line-height:1">'+C.hook[0]+'</div><div class="sub" style="font-size:60px;margin-top:22px">'+C.hook[1]+'</div>');
 hook.style.top="560px";
+// narrated reels: live subtitles (spoken phrases, seconds) replace the section titles
+var subs=(C.subs||[]).map(function(sb){var d=div("title",stage,sb.text);d.style.top="215px";d.style.fontSize="80px";d.style.lineHeight="1.04";d.style.opacity=0;return {sb:sb,d:d};});
+if(C.subs) C.titles=[];
 var titles=C.titles.map(function(tx){var d=div("title",stage,tx);d.style.top="270px";d.style.fontSize="92px";d.style.lineHeight="1.02";d.style.opacity=0;return d;});
 var todayChip=div("chip",world,"TODAY"); todayChip.style.background=P.accent;
 var hand=div("hand",world,C.hand||"just this one"); hand.style.opacity=0;
@@ -203,6 +206,8 @@ function render(t){
   var tt=[[E.titleM,E.titleA],[E.titleA,E.focus],[E.focus,E.grow],[E.grow,E.brand]];
   titles.forEach(function(d,i){var a=at(tt[i][0]),b=at(tt[i][1]); var o=seg(t,a,a+.35)*(1-seg(t,b-.3,b));
     d.style.opacity=o; d.style.transform="translateY("+(24*(1-eout(seg(t,a,a+.35))))+"px)";});
+  subs.forEach(function(o){var a=o.sb.t0,b=o.sb.t1;var v=seg(t,a,a+.18)*(1-seg(t,b-.12,b));
+    o.d.style.opacity=v; o.d.style.transform="translateY("+(14*(1-eout(seg(t,a,a+.25))))+"px)";});
   // brand
   var pb=eio(seg(t,at(E.brand),at(E.brand)+.6));
   brandBg.setAttribute("opacity",.88*pb); brand.style.opacity=pb; brand.style.transform="scale("+(.94+.06*pb)+")";

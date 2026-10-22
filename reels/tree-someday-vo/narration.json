@@ -1,0 +1,35 @@
+{
+ "base": "tree-novel",
+ "voice": "am_michael",
+ "speed": 1.0,
+ "tail": 2.0,
+ "override": {
+  "hook": [
+   "Someday",
+   "isn't a day."
+  ],
+  "hand": "just this one",
+  "seed": 37,
+  "tagline": "Turn your someday\ninto a plan."
+ },
+ "script": "Someday isn't a day. It's not on your calendar, and it never will be. So give your dream a real date. Publish my first novel, by 2027. Break it into milestones. Outline the story. Finish draft one. Find ten beta readers. Then pick one small action for today. Write five hundred words. That's it. Not someday. Today. Dmyor turns your someday into a plan.",
+ "anchors": {
+  "hookOut": "It's not on your calendar",
+  "vision": "So give your dream",
+  "trunk": "Publish my first novel",
+  "milestones": [
+   "Outline the story",
+   "Finish draft one",
+   "Find ten beta readers"
+  ],
+  "actions": [
+   "Then pick one",
+   "small action",
+   "for today"
+  ],
+  "focus": "Write",
+  "done": "That's it",
+  "grow": "Not someday",
+  "brand": "turns your someday"
+ }
+}

@@ -16,3 +16,5 @@ studio/state/*.png
 studio/state/run.lock
 studio/runs/logs/*.log
 studio/PAUSE
+tts/.venv/
+tts/models/

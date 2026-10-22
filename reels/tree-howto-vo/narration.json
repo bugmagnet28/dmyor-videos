@@ -1,0 +1,17 @@
+{
+ "base": "tree-freelance",
+ "voice": "af_heart", "speed": 1.0, "tail": 2.0,
+ "override": {"hook": ["Too big?", "Your dream feels too big to start."], "seed": 11},
+ "script": "Your dream feels too big to start. So shrink it. Write the vision, with a date. Then three milestones that prove you're getting there. Then turn one milestone into small actions. Send five proposals. Post one project. Follow up. Now you don't need motivation. Just this one action. Today. Watch it grow. That's Dmyor.",
+ "anchors": {
+  "hookOut": "So shrink it",
+  "vision": "Write the vision",
+  "trunk": "with a date",
+  "milestones": ["three milestones", "that prove", "getting there"],
+  "actions": ["Send", "Post one project", "Follow up"],
+  "focus": "Just this one action",
+  "done": "Today",
+  "grow": "Watch it grow",
+  "brand": "That's"
+ }
+}

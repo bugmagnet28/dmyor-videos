@@ -1,0 +1,389 @@
+{
+ "audio": "audio.mp3",
+ "duration": 20.42,
+ "text": "Your dream feels too big to start, so shrink it. Write the vision with a date. Then three milestones that prove you're getting there. Then turn one milestone into small actions. Send five proposals. Post one project. Follow up. Now you don't need motivation. Just this one action. Today, watch it grow. That's Demire.",
+ "words": [
+  {
+   "w": "your",
+   "raw": "Your",
+   "s": 0.0,
+   "e": 0.14
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 0.14,
+   "e": 0.38
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 0.38,
+   "e": 0.72
+  },
+  {
+   "w": "too",
+   "raw": "too",
+   "s": 0.72,
+   "e": 0.98
+  },
+  {
+   "w": "big",
+   "raw": "big",
+   "s": 0.98,
+   "e": 1.18
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 1.18,
+   "e": 1.36
+  },
+  {
+   "w": "start",
+   "raw": "start,",
+   "s": 1.36,
+   "e": 1.66
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 1.92,
+   "e": 2.14
+  },
+  {
+   "w": "shrink",
+   "raw": "shrink",
+   "s": 2.14,
+   "e": 2.36
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 2.36,
+   "e": 2.64
+  },
+  {
+   "w": "write",
+   "raw": "Write",
+   "s": 3.06,
+   "e": 3.2
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 3.2,
+   "e": 3.34
+  },
+  {
+   "w": "vision",
+   "raw": "vision",
+   "s": 3.34,
+   "e": 3.62
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 3.62,
+   "e": 3.86
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 3.86,
+   "e": 3.98
+  },
+  {
+   "w": "date",
+   "raw": "date.",
+   "s": 3.98,
+   "e": 4.24
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 4.68,
+   "e": 4.9
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 4.9,
+   "e": 5.22
+  },
+  {
+   "w": "milestones",
+   "raw": "milestones",
+   "s": 5.22,
+   "e": 5.78
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 5.78,
+   "e": 6.14
+  },
+  {
+   "w": "prove",
+   "raw": "prove",
+   "s": 6.14,
+   "e": 6.34
+  },
+  {
+   "w": "youre",
+   "raw": "you're",
+   "s": 6.34,
+   "e": 6.56
+  },
+  {
+   "w": "getting",
+   "raw": "getting",
+   "s": 6.56,
+   "e": 6.7
+  },
+  {
+   "w": "there",
+   "raw": "there.",
+   "s": 6.7,
+   "e": 7.04
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 7.46,
+   "e": 7.7
+  },
+  {
+   "w": "turn",
+   "raw": "turn",
+   "s": 7.7,
+   "e": 7.96
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 7.96,
+   "e": 8.24
+  },
+  {
+   "w": "milestone",
+   "raw": "milestone",
+   "s": 8.24,
+   "e": 8.72
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 8.72,
+   "e": 9.02
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 9.02,
+   "e": 9.32
+  },
+  {
+   "w": "actions",
+   "raw": "actions.",
+   "s": 9.32,
+   "e": 9.8
+  },
+  {
+   "w": "send",
+   "raw": "Send",
+   "s": 10.44,
+   "e": 10.64
+  },
+  {
+   "w": "five",
+   "raw": "five",
+   "s": 10.64,
+   "e": 10.98
+  },
+  {
+   "w": "proposals",
+   "raw": "proposals.",
+   "s": 10.98,
+   "e": 11.56
+  },
+  {
+   "w": "post",
+   "raw": "Post",
+   "s": 12.14,
+   "e": 12.28
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 12.28,
+   "e": 12.58
+  },
+  {
+   "w": "project",
+   "raw": "project.",
+   "s": 12.58,
+   "e": 13.08
+  },
+  {
+   "w": "follow",
+   "raw": "Follow",
+   "s": 13.46,
+   "e": 13.58
+  },
+  {
+   "w": "up",
+   "raw": "up.",
+   "s": 13.58,
+   "e": 13.88
+  },
+  {
+   "w": "now",
+   "raw": "Now",
+   "s": 14.38,
+   "e": 14.56
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 14.56,
+   "e": 14.7
+  },
+  {
+   "w": "dont",
+   "raw": "don't",
+   "s": 14.7,
+   "e": 14.84
+  },
+  {
+   "w": "need",
+   "raw": "need",
+   "s": 14.84,
+   "e": 15.02
+  },
+  {
+   "w": "motivation",
+   "raw": "motivation.",
+   "s": 15.02,
+   "e": 15.56
+  },
+  {
+   "w": "just",
+   "raw": "Just",
+   "s": 16.1,
+   "e": 16.32
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 16.32,
+   "e": 16.54
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 16.54,
+   "e": 16.74
+  },
+  {
+   "w": "action",
+   "raw": "action.",
+   "s": 16.74,
+   "e": 17.12
+  },
+  {
+   "w": "today",
+   "raw": "Today,",
+   "s": 17.66,
+   "e": 17.94
+  },
+  {
+   "w": "watch",
+   "raw": "watch",
+   "s": 18.38,
+   "e": 18.48
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 18.48,
+   "e": 18.66
+  },
+  {
+   "w": "grow",
+   "raw": "grow.",
+   "s": 18.66,
+   "e": 18.92
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 19.5,
+   "e": 19.82
+  },
+  {
+   "w": "demire",
+   "raw": "Demire.",
+   "s": 19.82,
+   "e": 20.16
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 2.64,
+   "text": "Your dream feels too big to start, so shrink it."
+  },
+  {
+   "s": 3.06,
+   "e": 4.24,
+   "text": "Write the vision with a date."
+  },
+  {
+   "s": 4.68,
+   "e": 7.04,
+   "text": "Then three milestones that prove you're getting there."
+  },
+  {
+   "s": 7.46,
+   "e": 9.8,
+   "text": "Then turn one milestone into small actions."
+  },
+  {
+   "s": 10.44,
+   "e": 11.56,
+   "text": "Send five proposals."
+  },
+  {
+   "s": 12.14,
+   "e": 13.08,
+   "text": "Post one project."
+  },
+  {
+   "s": 13.46,
+   "e": 13.88,
+   "text": "Follow up."
+  },
+  {
+   "s": 14.38,
+   "e": 15.56,
+   "text": "Now you don't need motivation."
+  },
+  {
+   "s": 16.1,
+   "e": 17.12,
+   "text": "Just this one action."
+  },
+  {
+   "s": 17.66,
+   "e": 18.92,
+   "text": "Today, watch it grow."
+  },
+  {
+   "s": 19.5,
+   "e": 20.16,
+   "text": "That's Demire."
+  }
+ ],
+ "wps": 2.64
+}
