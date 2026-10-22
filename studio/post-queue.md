@@ -14,7 +14,7 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 - [x] scheduled 09:30 IST · **diagram-howto-vo** · `ready-to-post/2026-10-22-diagram-howto-vo/` · V-EXP-23
 - [x] scheduled 19:30 IST · **diagram-someday-vo** · `ready-to-post/2026-10-22-diagram-someday-vo/` · V-EXP-23
-- YouTube: blocked (daily upload limit; needs phone verification). X: Sanyam said leave for now. Post kits in each folder's x-and-youtube.md.
+- X: scheduled at the same times (09:30, 19:30 IST). YouTube: blocked (daily upload limit; needs phone verification). Post kits in each folder's x-and-youtube.md.
 
 ## Scheduled on @becauseidmyor for 2026-10-22 (IST), tree series, by Claude via Instagram web, Sanyam approved
 
