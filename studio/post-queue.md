@@ -4,8 +4,9 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 ## Ready to post
 
-**Post order: bottom one first (oldest).** All queued reels are evergreen. Newest is listed on top.
+**Post order: bottom one first (oldest). From Oct 24: one reel per day, best slot from the Oct 23 insights (VASK-014).** All queued reels are evergreen. Newest is listed on top.
 
+- [ ] **2026-10-22 tree-first-5k** (16.2s, tree series, music, no VO) · `ready-to-post/2026-10-22-tree-first-5k/` · caption in post.md · tests V-EXP-24 (+V-EXP-23) · end card @dmyor_global · post on a day with no other reel
 - [ ] **2026-10-21 hours-in-a-week** (16.4s, no VO) · `ready-to-post/2026-10-21-hours-in-a-week/` · caption in post.md · tests V-EXP-22 · end card @dmyor_global
 
 

@@ -231,3 +231,24 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next:
+
+## V-EXP-23: Tree series (illustrated product tree + synthesized music) vs calm kinetic type
+- Status: running (registered 2026-10-22; reels built 2026-10-21 in Sanyam's interactive session; their post.md says "V-EXP-22", a numbering clash with hours-in-a-week, so the tree format is V-EXP-23 from now on)
+- Change: illustrated scene (sky, hills, sun), a dream becomes the dmyor plan tree (vision card, 3 milestones, 3 actions, TODAY focus + check, bloom), original synthesized music with bells on each card instead of sfx hits, end card @becauseidmyor. Shows the product structure directly (closest we have to V-EXP-06 "show the real app"). 16.2s.
+- Reels testing it: tree-freelance, tree-study-abroad, tree-novel (scheduled 2026-10-22 05:30 / 19:30 / 23:30 IST), tree-first-5k (2026-10-22 build).
+- Metric + target (48h): median avg-watch ratio of tree reels > median of the 12 calm kinetic reels; follows per 1,000 reach higher (product shown = reason to follow); saves/reach >= 1%.
+- Expectation: higher watch ratio (visual payoff at bloom) and more follows/profile visits; shares lower than the relatable hard-truth reels. Confidence low (posting slot and day confound; n=3-4 vs 12).
+- Result:
+- Verdict + why:
+- Next: if trees win on watch ratio AND follows, make tree the main format (2 of 3 days) and vary goal/hook. If they lose, keep as the 1-in-4 product reel.
+
+## V-EXP-24: Reframe-claim hook vs "<goal>. <pain question>" hook, inside the tree format
+- Status: running (opened 2026-10-22, before building)
+- Change vs the 3 tree reels: same template, length (16.2s), timing, music engine, titles, end card. Different: (1) frame 0 is a viewer-first reframe claim ("Your goal isn't too big. / It's just not broken down yet.") instead of naming a niche goal + a pain question ("Study abroad. / Feels too big to even start?"); (2) goal = first 5K run (broad fitness audience, not a niche); (3) bright daytime palette (blue sky, green hills, orange leaves) vs the 3 darker sunset/dawn/night skies. Three changes credited jointly (n=1); hook is the main one.
+- Why: the claim hook speaks to every viewer with any goal, not only freelancers/students/writers, and the tree body then proves the claim. Broad + bright should widen the non-follower audience.
+- Reels testing it: tree-first-5k (2026-10-22)
+- Metric + target (48h): 3s hold / avg watch ratio above the median tree reel; reach above the median tree reel (posted in a comparable slot).
+- Expectation: better hold than tree-novel/tree-freelance, similar saves. Confidence low (n=1, slot confounds).
+- Result:
+- Verdict + why:
+- Next: if hold and reach lead, use the reframe-claim hook on the next tree reels; else niche-goal hooks stay.

@@ -1,0 +1,219 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>dmyor tree reel</title>
+<style>
+/* Tree series: an illustrated dream grows into the dmyor plan tree
+   (vision -> milestones -> actions). Pure function of time: window.__seek(t). */
+@font-face{font-family:"Serif";src:url(../../tree-series/fonts/InstrumentSerif-normal-400.woff2)}
+@font-face{font-family:"Serif";font-style:italic;src:url(../../tree-series/fonts/InstrumentSerif-italic-400.woff2)}
+@font-face{font-family:"Tight";font-weight:500;src:url(../../tree-series/fonts/InterTight-normal-500.woff2)}
+@font-face{font-family:"Tight";font-weight:600;src:url(../../tree-series/fonts/InterTight-normal-600.woff2)}
+@font-face{font-family:"Tight";font-weight:700;src:url(../../tree-series/fonts/InterTight-normal-700.woff2)}
+@font-face{font-family:"Tight";font-weight:800;src:url(../../tree-series/fonts/InterTight-normal-800.woff2)}
+@font-face{font-family:"Hand";font-weight:700;src:url(../../tree-series/fonts/Caveat-normal-700.woff2)}
+html,body{margin:0;padding:0;background:#000;overflow:hidden;width:100%;height:100%}
+#viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;transform-origin:center;
+  -webkit-font-smoothing:antialiased;font-family:"Tight",sans-serif}
+#art{position:absolute;inset:0}
+#world{position:absolute;inset:0;transform-origin:540px 900px}
+.card{position:absolute;left:0;top:0;background:#fff;border-radius:26px;box-sizing:border-box;
+  box-shadow:0 22px 50px rgba(15,8,35,.30),0 2px 0 rgba(255,255,255,.6) inset;color:#17151c;
+  will-change:transform,opacity}
+.card .lab{font-weight:700;font-size:19px;letter-spacing:3.5px;display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.card .dot{width:14px;height:14px;border-radius:50%}
+.card .txt{font-weight:600;letter-spacing:-.4px;line-height:1.14}
+.card .bar{height:9px;border-radius:9px;background:#eee;margin-top:14px;overflow:hidden}
+.card .bar i{display:block;height:100%;width:0;border-radius:9px}
+.card .chk{position:absolute;right:20px;top:50%;width:40px;height:40px;margin-top:-20px;border-radius:50%;
+  box-sizing:border-box;border:4px solid #d9d6e0}
+.card .chk svg{position:absolute;inset:4px}
+.title{position:absolute;left:60px;right:60px;text-align:center;color:#fff;font-family:"Serif";font-style:italic;
+  text-shadow:0 6px 30px rgba(10,5,30,.45);will-change:transform,opacity}
+.sub{font-family:"Tight";font-style:normal;font-weight:600;letter-spacing:-.5px}
+.hand{position:absolute;font-family:"Hand";font-weight:700;color:#fff;font-size:58px;text-shadow:0 4px 18px rgba(0,0,0,.35)}
+.chip{position:absolute;font-weight:800;font-size:24px;letter-spacing:4px;padding:10px 22px;border-radius:999px;color:#17151c}
+#brand{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;color:#fff;opacity:0;padding-bottom:260px;box-sizing:border-box}
+#brand .mark{font-weight:800;font-size:170px;letter-spacing:-6px;line-height:1}
+#brand .tag{white-space:pre-line;font-family:"Serif";font-style:italic;font-size:68px;line-height:1.1;margin-top:26px;padding:0 90px}
+#brand .handle{margin-top:46px;font-weight:700;font-size:44px;padding:16px 40px;border-radius:999px;color:#17151c}
+#playBtn{position:fixed;inset:0;margin:auto;width:210px;height:64px;border-radius:32px;border:0;font:700 22px sans-serif;cursor:pointer}
+</style></head><body>
+<div id="viewport"><div id="stage">
+  <svg id="art" width="1080" height="1920" viewBox="0 0 1080 1920"></svg>
+  <div id="world"></div>
+  <div id="brand"><div class="mark">dmyor</div><div class="tag"></div><div class="handle"></div></div>
+</div></div>
+<button id="playBtn">PLAY</button>
+<script>
+var CFG = {"bpm": 100, "total": 16.2, "handle": "@dmyor_global", "tagline": "Turn your dream into\na tree you can climb.", "titles": ["Break it into milestones.", "Then into small actions.", "Do just this one. Today.", "Watch it grow."], "actionParent": 1, "layout": {"vision": {"y": 1165}, "trunkTop": 1060, "milestones": [{"x": 210, "y": 900}, {"x": 540, "y": 830}, {"x": 870, "y": 900}], "actions": [{"x": 240, "y": 600}, {"x": 540, "y": 520}, {"x": 840, "y": 600}], "focusY": 760}, "events": {"hookOut": 4, "vision": 4.5, "trunk": 5.5, "titleM": 6, "milestones": [7, 8, 9], "titleA": 10.5, "actions": [11, 12, 13], "focus": 15, "done": 17.5, "grow": 20, "brand": 23}, "seed": 53, "hook": ["Your goal isn't too big.", "It's just not broken down yet."], "vision": "Run my first 5K", "milestones": ["Run 1 km nonstop", "Run 3 km", "Race day: 5K"], "actions": ["Walk-run 20 min", "Pick 3 run days", "Shoes out tonight"], "todayIdx": 0, "hand": "just this one", "music": {"root": 55, "progression": [[0, 4, 7], [9, 12, 16], [5, 9, 12], [7, 11, 14]]}, "palette": {"cVision": "#f17501", "cMilestone": "#7b4dff", "cAction": "#00a884", "cDone": "#18c77a", "sky": ["#1d6fd1", "#4fa3ec", "#9fd3f7", "#e6f6ff"], "sun": "#fff6cf", "sunX": 860, "sunY": 1360, "cloud": "#ffffff", "hills": ["#5fb860", "#3f9a4f", "#2a7a42"], "wood": "#5a3b2a", "woodHi": "#9a6b4a", "leaves": ["#ff9f43", "#ff7a3d", "#ffc857", "#f25c54"], "bloom": ["#ffffff", "#ffd166", "#ff6b6b"], "accent": "#ffd166", "brandBg": "#0f3f7a"}};
+</script>
+<script>
+(function(){
+"use strict";
+var W=1080,H=1920, C=CFG, P=C.palette, B=60/C.bpm, T=C.total;
+var NS="http://www.w3.org/2000/svg";
+var stage=document.getElementById("stage"), svg=document.getElementById("art"), world=document.getElementById("world");
+function fit(){var s=Math.min(innerWidth/W,innerHeight/H);stage.style.transform="scale("+s+")";}
+fit(); addEventListener("resize",fit);
+var cl=function(x){return x<0?0:x>1?1:x}, seg=function(t,a,b){return cl((t-a)/(b-a))};
+var eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+var eout=function(x){return 1-Math.pow(1-x,3)};
+var eob=function(x){var c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+function el(tag,attrs,parent){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);(parent||svg).appendChild(e);return e;}
+function div(cls,parent,html){var d=document.createElement("div");d.className=cls;if(html!=null)d.innerHTML=html;(parent||world).appendChild(d);return d;}
+var seed=C.seed||7; function rnd(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646;}
+// beat grid -> seconds
+var at=function(b){return b*B;};
+var E=C.events; // all in beats
+// ---------- sky ----------
+var defs=el("defs",{});
+var sky=el("linearGradient",{id:"sky",x1:0,y1:0,x2:0,y2:1},defs);
+P.sky.forEach(function(c,i){el("stop",{offset:(i/(P.sky.length-1)),"stop-color":c},sky);});
+var glow=el("radialGradient",{id:"glow"},defs);
+el("stop",{offset:0,"stop-color":P.sun,"stop-opacity":.95},glow);el("stop",{offset:.35,"stop-color":P.sun,"stop-opacity":.35},glow);el("stop",{offset:1,"stop-color":P.sun,"stop-opacity":0},glow);
+var seedG=el("radialGradient",{id:"seedg"},defs);
+el("stop",{offset:0,"stop-color":"#fff","stop-opacity":1},seedG);el("stop",{offset:.3,"stop-color":P.accent,"stop-opacity":.9},seedG);el("stop",{offset:1,"stop-color":P.accent,"stop-opacity":0},seedG);
+el("rect",{x:0,y:0,width:W,height:H,fill:"url(#sky)"});
+var sunHalo=el("circle",{cx:P.sunX||800,cy:P.sunY||560,r:420,fill:"url(#glow)"});
+var sun=el("circle",{cx:P.sunX||800,cy:P.sunY||560,r:120,fill:P.sun,opacity:.92});
+// stars / fireflies
+var motes=[]; for(var i=0;i<70;i++){motes.push({x:rnd()*W,y:rnd()*1500,r:1.5+rnd()*3.5,ph:rnd()*6.28,sp:8+rnd()*22,
+  e:el("circle",{r:0,fill:"#fff"})});}
+// clouds
+var clouds=[]; for(var i=0;i<4;i++){var g=el("g",{opacity:.55}); var cx=rnd()*W, cy=380+rnd()*700, s=.7+rnd()*.8;
+  [[0,0,70],[60,-24,58],[120,0,66],[60,18,64]].forEach(function(p){el("circle",{cx:p[0],cy:p[1],r:p[2],fill:P.cloud},g);});
+  clouds.push({g:g,x:cx,y:cy,s:s,sp:6+rnd()*10});}
+// hills (back to front)
+function hill(y,amp,col,ph){var d="M0 "+H+" L0 "+y; for(var x=0;x<=W;x+=40){d+=" L"+x+" "+(y+Math.sin(x/180+ph)*amp+Math.sin(x/67+ph*2)*amp*.25);} d+=" L"+W+" "+H+" Z"; return el("path",{d:d,fill:col});}
+hill(1480,40,P.hills[0],1.1); hill(1560,34,P.hills[1],2.3); hill(1640,26,P.hills[2],0.4);
+// ---------- tree ----------
+var treeG=el("g",{});
+var L=C.layout;
+function curve(x1,y1,x2,y2,bend){var my=(y1+y2)/2;return "M"+x1+" "+y1+" C"+(x1+(bend||0))+" "+(my)+" "+x2+" "+(my+40)+" "+x2+" "+y2;}
+var trunkPath=el("path",{d:"M540 "+(L.vision.y-70)+" C 520 "+(L.vision.y-170)+" 560 "+(L.trunkTop+80)+" 540 "+L.trunkTop,
+  stroke:P.wood,"stroke-width":46,"stroke-linecap":"round",fill:"none"},treeG);
+var trunkHi=el("path",{d:trunkPath.getAttribute("d"),stroke:P.woodHi,"stroke-width":14,"stroke-linecap":"round",fill:"none",opacity:.6,transform:"translate(-9,0)"},treeG);
+var branches=L.milestones.map(function(m,i){var d=curve(540,L.trunkTop,m.x,m.y+62,(m.x-540)*.15);
+  return el("path",{d:d,stroke:P.wood,"stroke-width":26,"stroke-linecap":"round",fill:"none"},treeG);});
+var mid=L.milestones[C.actionParent];
+var twigs=L.actions.map(function(a){return el("path",{d:curve(mid.x,mid.y-62,a.x,a.y+52,(a.x-mid.x)*.1),stroke:P.wood,"stroke-width":14,"stroke-linecap":"round",fill:"none"},treeG);});
+[trunkPath,trunkHi].concat(branches,twigs).forEach(function(p){var l=p.getTotalLength();p.__len=l;p.setAttribute("stroke-dasharray",l);p.setAttribute("stroke-dashoffset",l);});
+// leaves around branch ends
+var leaves=[]; var leafAnchors=L.milestones.concat(L.actions);
+leafAnchors.forEach(function(a,ai){var n=ai<3?9:6; for(var k=0;k<n;k++){var ang=rnd()*6.28, dist=(ai<3?150:110)+rnd()*70;
+  var x=a.x+Math.cos(ang)*dist*1.15, y=a.y+Math.sin(ang)*dist*.75;
+  var e=el("ellipse",{rx:0,ry:0,fill:P.leaves[Math.floor(rnd()*P.leaves.length)],opacity:.95},treeG);
+  leaves.push({e:e,x:x,y:y,rot:rnd()*180,size:16+rnd()*20,group:ai<3?"m":"a",k:k,ph:rnd()*6});}});
+// blossoms (appear in the growth finale)
+var blossoms=[]; for(var i=0;i<22;i++){var a=leafAnchors[Math.floor(rnd()*leafAnchors.length)], ang=rnd()*6.28, dist=90+rnd()*150;
+  blossoms.push({x:a.x+Math.cos(ang)*dist,y:a.y+Math.sin(ang)*dist*.7,r:9+rnd()*9,c:P.bloom[i%P.bloom.length],d:i*.035,
+    e:el("circle",{r:0,fill:"",opacity:.95},treeG)});}
+// seed (the dream before it is planted)
+var seedHalo=el("circle",{cx:540,cy:L.vision.y,r:230,fill:"url(#seedg)"});
+var seedCore=el("circle",{cx:540,cy:L.vision.y,r:22,fill:"#fff"});
+// sparkles burst on "done"
+var sparks=[]; for(var i=0;i<18;i++){sparks.push({a:i/18*6.28+rnd()*.3,d:140+rnd()*120,e:el("circle",{r:0,fill:i%2?P.accent:"#fff"})});}
+// dim layer sits above tree, below cards (cards are HTML)
+var dim=el("rect",{x:0,y:0,width:W,height:H,fill:"#0b0820",opacity:0});
+// ---------- cards ----------
+function makeCard(kind,text,w,fs,color){var c=div("card");c.style.width=w+"px";c.style.padding=(kind==="VISION"?"26px 32px":"20px 24px");
+  c.innerHTML='<div class="lab" style="color:'+color+'"><span class="dot" style="background:'+color+'"></span>'+kind+'</div><div class="txt" style="font-size:'+fs+'px">'+text+'</div>'
+   +(kind==="MILESTONE"?'<div class="bar"><i style="background:'+color+'"></i></div>':'')
+   +(kind==="ACTION"?'<div class="chk"><svg viewBox="0 0 32 32"><path d="M7 17 L13 23 L25 9" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="30" stroke-dashoffset="30"/></svg></div>':'');
+  if(kind==="ACTION"){c.style.paddingRight="74px";}
+  return c;}
+var vCard=makeCard("VISION",C.vision,700,42,P.cVision);
+var mCards=C.milestones.map(function(t,i){return makeCard("MILESTONE",t,300,30,P.cMilestone);});
+var aCards=C.actions.map(function(t,i){return makeCard("ACTION",t,300,28,P.cAction);});
+function place(c,x,y,s,o){c.style.transform="translate("+(x-c.offsetWidth/2)+"px,"+(y-c.offsetHeight/2)+"px) scale("+s+")";c.style.opacity=o;}
+// ---------- text ----------
+var hook=div("title",stage,'<div style="font-size:170px;line-height:1">'+C.hook[0]+'</div><div class="sub" style="font-size:60px;margin-top:22px">'+C.hook[1]+'</div>');
+hook.style.top="560px";
+var titles=C.titles.map(function(tx){var d=div("title",stage,tx);d.style.top="270px";d.style.fontSize="92px";d.style.lineHeight="1.02";d.style.opacity=0;return d;});
+var todayChip=div("chip",world,"TODAY"); todayChip.style.background=P.accent;
+var hand=div("hand",world,C.hand||"just this one"); hand.style.opacity=0;
+var brand=document.getElementById("brand"); brand.querySelector(".tag").textContent=C.tagline; var hd=brand.querySelector(".handle"); hd.textContent=C.handle; hd.style.background=P.accent;
+var brandBg=el("rect",{x:0,y:0,width:W,height:H,fill:P.brandBg,opacity:0});
+svg.appendChild(brandBg);
+// ---------- render ----------
+function render(t){
+  t=Math.max(0,Math.min(T,t));
+  // ambient
+  motes.forEach(function(m){var y=((m.y-t*m.sp)%1500+1500)%1500; m.e.setAttribute("cx",m.x+Math.sin(t*.8+m.ph)*10);m.e.setAttribute("cy",y);
+    m.e.setAttribute("r",Math.max(0,m.r*(.6+.4*Math.sin(t*2+m.ph))));m.e.setAttribute("opacity",.35+.35*Math.sin(t*1.6+m.ph));});
+  clouds.forEach(function(c){c.g.setAttribute("transform","translate("+(((c.x+t*c.sp)%(W+300))-150)+","+c.y+") scale("+c.s+")");});
+  var pulse=1+.04*Math.sin(t*2*Math.PI/B/2);
+  sun.setAttribute("r",120*pulse); sunHalo.setAttribute("r",420+20*Math.sin(t*1.3));
+  // camera: slow push, focus push
+  var foc=seg(t,at(E.focus),at(E.focus)+.6)*(1-seg(t,at(E.grow),at(E.grow)+.6));
+  var cam=1+.03*eio(seg(t,0,T))+.05*eio(foc);
+  var cy=-60*eio(foc);
+  var tf="translate(0,"+cy+") scale("+cam+")";
+  treeG.setAttribute("transform","translate(540,900) "+tf+" translate(-540,-900)");
+  world.style.transform="translate(0px,"+cy+"px) scale("+cam+")";
+  // hook (frame 0 drawn) -> out
+  var ho=1-eio(seg(t,at(E.hookOut),at(E.hookOut)+.45));
+  hook.style.opacity=ho; hook.style.transform="translateY("+(-60*(1-ho))+"px)";
+  // seed glow -> becomes vision
+  var sp=1-seg(t,at(E.vision),at(E.vision)+.5);
+  seedHalo.setAttribute("opacity",sp*(.8+.2*Math.sin(t*5))); seedHalo.setAttribute("r",230+40*Math.sin(t*3));
+  seedCore.setAttribute("opacity",sp); seedCore.setAttribute("r",34+8*Math.sin(t*5));
+  // vision card
+  var pv=seg(t,at(E.vision),at(E.vision)+.45);
+  var back=1-.7*eio(foc);
+  place(vCard,540,L.vision.y+30*(1-eout(pv)),.7+.3*eob(pv),Math.min(1,pv*2)*back);
+  // trunk + branches
+  [trunkPath,trunkHi].forEach(function(p){p.setAttribute("stroke-dashoffset",p.__len*(1-eio(seg(t,at(E.trunk),at(E.trunk)+B*1.6))));});
+  branches.forEach(function(p,i){var b=at(E.milestones[i])-B*.9;p.setAttribute("stroke-dashoffset",p.__len*(1-eio(seg(t,b,b+B*.9))));});
+  twigs.forEach(function(p,i){var b=at(E.actions[i])-B*.8;p.setAttribute("stroke-dashoffset",p.__len*(1-eio(seg(t,b,b+B*.8))));});
+  // milestone cards
+  mCards.forEach(function(c,i){var p=seg(t,at(E.milestones[i]),at(E.milestones[i])+.4), m=L.milestones[i];
+    var dimmed=(i!==C.actionParent)?.0:0;
+    place(c,m.x,m.y+24*(1-eout(p)),.6+.4*eob(p),Math.min(1,p*2)*back);
+    var fill=(i===C.actionParent)?eio(seg(t,at(E.grow)+.3,at(E.grow)+1.3))*.34:(i===0?eio(seg(t,at(E.grow)+.5,at(E.grow)+1.5)):0);
+    c.querySelector(".bar i").style.width=(fill*100)+"%";});
+  // action cards (+ focus on today)
+  var ti=C.todayIdx;
+  aCards.forEach(function(c,i){var p=seg(t,at(E.actions[i]),at(E.actions[i])+.4), a=L.actions[i];
+    var x=a.x,y=a.y+20*(1-eout(p)),s=.6+.4*eob(p),o=Math.min(1,p*2);
+    if(i===ti){var f=eio(foc); x=a.x+(540-a.x)*f; y=y+(L.focusY-a.y)*f; s=s*(1+.42*f);
+      c.style.zIndex=5;}
+    place(c,x,y,s,i===ti?o:o*back);
+    if(i===ti){var tk=eio(seg(t,at(E.done),at(E.done)+.35)); var chk=c.querySelector(".chk");
+      chk.style.background=tk>0?P.cDone:"transparent"; chk.style.borderColor=tk>0?P.cDone:"#d9d6e0";
+      chk.querySelector("path").setAttribute("stroke-dashoffset",30*(1-tk));
+      todayChip.style.opacity=foc; todayChip.style.transform="translate("+(x-todayChip.offsetWidth/2)+"px,"+(y-c.offsetHeight*s/2-70)+"px)";
+      hand.style.opacity=foc*seg(t,at(E.focus)+.5,at(E.focus)+.9); hand.style.transform="translate("+Math.max(50,x-240)+"px,"+(y+c.offsetHeight*s/2+30)+"px) rotate(-4deg)";
+      // sparks
+      var sb=seg(t,at(E.done),at(E.done)+.9);
+      sparks.forEach(function(k){var r=eout(sb)*k.d; k.e.setAttribute("cx",x+Math.cos(k.a)*r*1.2); k.e.setAttribute("cy",y+cy+Math.sin(k.a)*r);
+        k.e.setAttribute("r",sb>0&&sb<1?9*(1-sb):0);});
+    }});
+  dim.setAttribute("opacity",.55*eio(foc));
+  // leaves
+  leaves.forEach(function(lf){var b=lf.group==="m"?at(E.milestones[Math.min(2,Math.floor(lf.k/3))])+.1:at(E.actions[lf.k%3])+.1;
+    var g=eob(seg(t,b+lf.k*.04,b+lf.k*.04+.5)); var g2=seg(t,at(E.grow),at(E.grow)+.8);
+    var s=lf.size*(g*(.75+.25*g2));
+    s=Math.max(0,s); lf.e.setAttribute("rx",s); lf.e.setAttribute("ry",s*.55);
+    lf.e.setAttribute("transform","translate("+lf.x+","+lf.y+") rotate("+(lf.rot+Math.sin(t*1.4+lf.ph)*8)+")");});
+  blossoms.forEach(function(bl){var g=eob(seg(t,at(E.grow)+bl.d,at(E.grow)+bl.d+.45)); bl.e.setAttribute("cx",bl.x);bl.e.setAttribute("cy",bl.y);
+    bl.e.setAttribute("r",Math.max(0,bl.r*g*(1+.1*Math.sin(t*3+bl.d*20)))); bl.e.setAttribute("fill",bl.c);});
+  // section titles
+  var tt=[[E.titleM,E.titleA],[E.titleA,E.focus],[E.focus,E.grow],[E.grow,E.brand]];
+  titles.forEach(function(d,i){var a=at(tt[i][0]),b=at(tt[i][1]); var o=seg(t,a,a+.35)*(1-seg(t,b-.3,b));
+    d.style.opacity=o; d.style.transform="translateY("+(24*(1-eout(seg(t,a,a+.35))))+"px)";});
+  // brand
+  var pb=eio(seg(t,at(E.brand),at(E.brand)+.6));
+  brandBg.setAttribute("opacity",.88*pb); brand.style.opacity=pb; brand.style.transform="scale("+(.94+.06*pb)+")";
+  world.style.opacity=1-pb; treeG.setAttribute("opacity",1-pb*.85);
+}
+window.__duration=T;
+window.__seek=function(t){render(t);};
+render(0);
+var playing=false,t0=0;
+document.getElementById("playBtn").onclick=function(){this.style.display="none";t0=performance.now();playing=true;
+  var a=new Audio("audio.mp3");a.play().catch(function(){});(function loop(){if(!playing)return;var t=(performance.now()-t0)/1000;render(t);if(t<T)requestAnimationFrame(loop);})();};
+})();
+</script>
+</body></html>

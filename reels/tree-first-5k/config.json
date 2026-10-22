@@ -1,0 +1,148 @@
+{
+ "bpm": 100,
+ "total": 16.2,
+ "handle": "@dmyor_global",
+ "tagline": "Turn your dream into\na tree you can climb.",
+ "titles": [
+  "Break it into milestones.",
+  "Then into small actions.",
+  "Do just this one. Today.",
+  "Watch it grow."
+ ],
+ "actionParent": 1,
+ "layout": {
+  "vision": {
+   "y": 1165
+  },
+  "trunkTop": 1060,
+  "milestones": [
+   {
+    "x": 210,
+    "y": 900
+   },
+   {
+    "x": 540,
+    "y": 830
+   },
+   {
+    "x": 870,
+    "y": 900
+   }
+  ],
+  "actions": [
+   {
+    "x": 240,
+    "y": 600
+   },
+   {
+    "x": 540,
+    "y": 520
+   },
+   {
+    "x": 840,
+    "y": 600
+   }
+  ],
+  "focusY": 760
+ },
+ "events": {
+  "hookOut": 4,
+  "vision": 4.5,
+  "trunk": 5.5,
+  "titleM": 6,
+  "milestones": [
+   7,
+   8,
+   9
+  ],
+  "titleA": 10.5,
+  "actions": [
+   11,
+   12,
+   13
+  ],
+  "focus": 15,
+  "done": 17.5,
+  "grow": 20,
+  "brand": 23
+ },
+ "seed": 53,
+ "hook": [
+  "Your goal isn't too big.",
+  "It's just not broken down yet."
+ ],
+ "vision": "Run my first 5K",
+ "milestones": [
+  "Run 1 km nonstop",
+  "Run 3 km",
+  "Race day: 5K"
+ ],
+ "actions": [
+  "Walk-run 20 min",
+  "Pick 3 run days",
+  "Shoes out tonight"
+ ],
+ "todayIdx": 0,
+ "hand": "just this one",
+ "music": {
+  "root": 55,
+  "progression": [
+   [
+    0,
+    4,
+    7
+   ],
+   [
+    9,
+    12,
+    16
+   ],
+   [
+    5,
+    9,
+    12
+   ],
+   [
+    7,
+    11,
+    14
+   ]
+  ]
+ },
+ "palette": {
+  "cVision": "#f17501",
+  "cMilestone": "#7b4dff",
+  "cAction": "#00a884",
+  "cDone": "#18c77a",
+  "sky": [
+   "#1d6fd1",
+   "#4fa3ec",
+   "#9fd3f7",
+   "#e6f6ff"
+  ],
+  "sun": "#fff6cf",
+  "sunX": 860,
+  "sunY": 1360,
+  "cloud": "#ffffff",
+  "hills": [
+   "#5fb860",
+   "#3f9a4f",
+   "#2a7a42"
+  ],
+  "wood": "#5a3b2a",
+  "woodHi": "#9a6b4a",
+  "leaves": [
+   "#ff9f43",
+   "#ff7a3d",
+   "#ffc857",
+   "#f25c54"
+  ],
+  "bloom": [
+   "#ffffff",
+   "#ffd166",
+   "#ff6b6b"
+  ],
+  "accent": "#ffd166",
+  "brandBg": "#0f3f7a"
+ }
+}

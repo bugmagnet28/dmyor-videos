@@ -1,40 +1,40 @@
 # Video dashboard (posting on @becauseidmyor, end card @dmyor_global)
 
-_Last updated: 2026-10-21 (run 14)_
+_Last updated: 2026-10-22 (run 15, weekly review done)_
 
 | | |
 |---|---|
-| Instagram followers (@becauseidmyor) | 21 (2026-10-21) |
-| New-format reels live | 1 posted (Oct 21 00:54) + 11 scheduled through Oct 21 (region test) |
+| Instagram followers (@becauseidmyor) | 21 (2026-10-21; no newer reading) |
+| Reels live / scheduled | 12 kinetic (Oct 21) + 3 tree (Oct 22: 05:30, 19:30, 23:30 IST) |
 | Reels with metrics | 0 (first 48h insights due Thu Oct 23, VASK-012) |
-| Ready to post (not yet scheduled) | 1: hours-in-a-week |
+| Ready to post | 2: tree-first-5k (NEW), hours-in-a-week |
 | Skipped (expired) | 1 (twelve-weeks-one-thing) |
 
-**Blocker cleared.** Everything built so far is live or scheduled. Next bottleneck: insights screenshots (VASK-012).
-
 ## Ready to post
-1. **hours-in-a-week** (16.4s, NEW): "168 hours in your week." 14x12 hour grid: sleep 56, work 45, chores 21, 46 left; "No time?" struck; "Give 5 to one goal." Count yours + SAVE. Comment-your-number caption. `ready-to-post/2026-10-21-hours-in-a-week/` · V-EXP-22
-
-## Live on @becauseidmyor, 2026-10-21 (IST slot · region · reel)
-00:54 next-step-not-motivation · 05:30 US East three-questions-before-a-goal · 08:30 US West twenty-minutes-a-day · 09:30 India AM someday-is-not-a-day · 12:30 NZ start-at-the-end · 14:30 AU plan-the-bad-day · 16:30 JP/KR life-in-weeks · 17:30 SEA about-to-start · 19:30 India PM fill-the-blank · 21:30 Gulf never-miss-twice · 22:30 TR/EA too-many-goals · 23:30 CE which-one-is-a-plan
+1. **tree-first-5k** (16.2s, NEW, tree series + music): "Your goal isn't too big. It's just not broken down yet." Seed → Run my first 5K → 3 milestones → 3 actions → TODAY: walk-run 20 min → bloom → dmyor @dmyor_global. Bright day palette. `ready-to-post/2026-10-22-tree-first-5k/` · V-EXP-24
+2. **hours-in-a-week** (16.4s, kinetic): 168-hour grid, 46 left, give 5 to one goal. `ready-to-post/2026-10-21-hours-in-a-week/` · V-EXP-22
 
 ## Last 7 reels
-| Date | Reel | Length | Views | Avg watch | Shares | Saves | Follows |
-|---|---|---|---|---|---|---|---|
-| 10-21 | hours-in-a-week | 16.4s | not posted | | | | |
-| 10-21 | which-one-is-a-plan | 15.2s | n/a yet | | | | |
-| 10-21 | too-many-goals | 16.0s | n/a yet | | | | |
-| 10-21 | never-miss-twice | 16.0s | n/a yet | | | | |
-| 10-21 | fill-the-blank | 14.0s | n/a yet | | | | |
-| 10-21 | about-to-start | 9.6s | n/a yet | | | | |
-| 10-21 | life-in-weeks | 15.2s | n/a yet | | | | |
+| Date | Reel | Format | Length | Views | Avg watch | Shares | Saves | Follows |
+|---|---|---|---|---|---|---|---|---|
+| 10-22 | tree-first-5k | tree | 16.2s | not posted | | | | |
+| 10-22 | tree-novel | tree | 16.2s | sched 23:30 | | | | |
+| 10-22 | tree-study-abroad | tree | 16.2s | sched 19:30 | | | | |
+| 10-22 | tree-freelance | tree | 16.2s | n/a yet | | | | |
+| 10-21 | hours-in-a-week | kinetic | 16.4s | not posted | | | | |
+| 10-21 | which-one-is-a-plan | kinetic | 15.2s | n/a yet | | | | |
+| 10-21 | too-many-goals | kinetic | 16.0s | n/a yet | | | | |
 
 Best / worst: no data yet.
 
+## Weekly review (Oct 22) in one line
+Nothing to crown or kill without numbers. Biggest question is format: kinetic type vs tree (V-EXP-23). Alternate formats until Oct 23 data, then 2 of 3 builds go to the winner. Post 1/day from Oct 24.
+
 ## Open experiments
-V-EXP-01..08 (diagnosis bundle), V-EXP-09 (new format vs old), V-EXP-10..21 (one per live reel), V-EXP-22 (hours-in-a-week: self-audit math + comment your number). Caveat: all 12 went live the same day, so per-reel numbers compete and region is confounded with content.
+V-EXP-09..22 (one per kinetic reel), V-EXP-23 (tree format vs kinetic), V-EXP-24 (reframe-claim hook in tree format). Caveat: 11 reels went live the same day, region slot = content.
 
 ## Asks
-- **VASK-012** Thu Oct 23: insights screenshots for all 12 live reels + profile header into `inbox/metrics/`. Again Wed Oct 28.
-- VASK-002 post hours-in-a-week any day from Oct 22.
-- VASK-005 (optional) app screen recording for a "real app" reel.
+- **VASK-012** Thu Oct 23: insights screenshots for all live reels + profile header into `inbox/metrics/` (tree reels' 48h point is Oct 24). Again Oct 28.
+- **VASK-014** from Oct 24 post one reel per day in the best slot.
+- VASK-013 (info) machine overload (contactsd ~108% CPU) killed a render; restart helps.
+- VASK-005 (optional) app screen recording.

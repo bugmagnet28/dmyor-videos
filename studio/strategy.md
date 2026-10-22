@@ -2,7 +2,11 @@
 
 Owned by the video agent. Rewritten in each weekly review. Started 2026-10-08 as hypotheses.
 
-## Where we are (2026-10-15)
+## Where we are (2026-10-22)
+- Posting unblocked: 1 posted Oct 21 00:54 + 11 scheduled Oct 21 (region test) + 3 tree reels scheduled Oct 22 on @becauseidmyor. 21 followers (Oct 21). 0 reels with metrics yet; first 48h insights Oct 23 (VASK-012).
+- Two formats now live: calm kinetic type (12 reels) and the tree series (illustrated product tree + synthesized music, Sanyam's brief, 3 reels + tree-first-5k ready).
+
+## Where we were (2026-10-15)
 - Week 1 done: 8 new-format reels built, 0 posted, 0 metrics, 0 followers. See weekly review below.
 
 ## Where we were (2026-10-08)
@@ -34,6 +38,7 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 - 2026-10-18: never-miss-twice (pillar 2 rule + 2nd data visual: 6x5 calendar, one miss vs two misses, 16s, SAVE CTA aimed at a future moment). V-EXP-19. Queue: 10 ready, 0 posted.
 - 2026-10-19: too-many-goals (pillar 1 focus truth, 16s, 10x5 effort-block grid, first SENTENCE loop ending, named-person share CTA). V-EXP-20. Queue: 11 ready, 0 posted.
 - 2026-10-20: which-one-is-a-plan (pillar 2, 15.2s, quiz: 3 options + 3-2-1 countdown + strike/dim reveal, SAVE CTA). V-EXP-21. Queue: 12 ready, 0 posted.
+- 2026-10-21 (evening, Sanyam session): tree series built (tree-freelance, tree-study-abroad, tree-novel), scheduled Oct 22.
 - 2026-10-21: whole queue went live on @becauseidmyor (1 posted 00:54 + 11 scheduled across region slots, Sanyam's call). New build: hours-in-a-week (pillar 3, 16.4s, 168-hour grid, comment-your-number + SAVE). V-EXP-22. Queue: 1 ready. First 48h insights due Oct 23 (VASK-012); weekly review due Oct 22 rewrites the plan around posting being unblocked.
 
 ## Week 1 log (2026-10-08 to 2026-10-14)
@@ -73,3 +78,20 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 4. The day 48h insights arrive for 3+ reels: run the first real comparison (hook type x % watched, CTA type x shares/saves) and rewrite this plan from data.
 5. If still 0 posted by the next weekly review (Oct 22), cut new builds to what Sanyam can post and spend spare runs on format R&D (engine scenes, templates) rather than growing an unwatched queue.
 
+
+
+## Weekly review 2026-10-22 (week 2: Oct 15-21)
+
+**What happened.** Built 7 calm kinetic reels (life-in-weeks .. hours-in-a-week) + Sanyam's session added 3 tree reels. Style switched to calm (Oct 20, owner). Posting went from 0 to 15 live/scheduled in 2 days (11 on Oct 21 alone, region test). Still **0 metrics**: nothing can be crowned or killed from data yet.
+
+**Side by side (craft, no audience data).** Kinetic reels cover 3 pillars, 5 hook types (claim, instruction, "you" observation, fill-the-blank, quiz, number), 9 body mechanics, 3 CTA types. Tree reels: one hook shape ("<goal>. <pain question>"), product shown, music. Biggest open question is format, not detail: **kinetic type vs tree**.
+
+**Caveats for reading the coming data.** 11 reels in one day compete for the same small audience; region slot = content (one reel per slot), so neither can be separated with n=1. Read results as format- and hook-level medians, not per reel.
+
+**Decisions for week 3 (Oct 22-28):**
+1. Oct 23 (48h insights): first real comparison. Rank all live reels by avg-watch ratio, reach, (shares+saves)/reach, follows. Close V-EXP-09..22 with honest low-confidence verdicts. Group by format (V-EXP-23), hook type, length, slot.
+2. Until then, alternate formats 1:1 so both have a pipeline: Oct 22 tree (tree-first-5k, reframe-claim hook, V-EXP-24); Oct 23 kinetic or tree per the first numbers.
+3. After the data: put 2 of every 3 builds into the winning format; the loser keeps 1 in 3 until n >= 5 per arm.
+4. Ask Sanyam to space posts (1 per day, best slot from the region test) from now on: daily data is only clean when reels don't compete.
+5. Voiceover: still off. Revisit when the first ratios are in (a VO reel needs a watch baseline to compare to).
+6. Template fix carried forward: tree.html titles moved to y 270 (were 22px above the safe band) and the "just this one" note clamped inside the frame; vision card y <= 1165. Applies to new tree reels only.

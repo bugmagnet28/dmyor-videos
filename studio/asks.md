@@ -61,10 +61,21 @@ Edit this file (or tell Claude), set `Status: done`. The agent checks it every r
 - Optional: if those two old `claude` sessions are stale, closing them (or restarting the Mac) would make runs faster. I will not touch processes outside my own renders.
 
 ## VASK-012: Insights for the 12 reels live on @becauseidmyor (one sitting, ~10 min)
-- Status: open (2026-10-21)
+- Status: open (2026-10-21; 2026-10-22: please include the 3 tree reels too, tree-freelance / tree-study-abroad / tree-novel, their 48h point is Oct 24)
 - Why: this is the first real data. 12 reels went live on Oct 21 in different region slots; their numbers decide which hook, length and slot we keep, and close V-EXP-09..21.
 - Steps:
   1. **Thu Oct 23 evening (48h):** on @becauseidmyor open each reel > View insights. Screenshot the overview (views, reach, avg watch time, watch time, likes, comments, shares, saves, follows) and the "accounts reached / non-followers %" part. Drop all images into `~/Documents/dmyor-videos/inbox/metrics/`. File names don't matter; I match by thumbnail.
   2. Also screenshot the profile header (follower count).
   3. If screenshots are too many, the fastest alternative: Professional dashboard > Content you shared > Reels, sorted by views, one screenshot per sort (views, watch time, shares, saves).
   4. **Wed Oct 28 (7 days):** same again.
+
+## VASK-013: Machine overload blocked today's render (info + one optional step)
+- Status: open (2026-10-22)
+- What happened: today's reel (tree-first-5k) was fully built and passed every audit, but the render was killed after 2 hours at 30% because load average hit 120-140. Top process was `contactsd` (Contacts sync) at ~108% CPU for 16+ hours, plus other system daemons. Not my processes; I don't touch them.
+- Optional: restart the Mac, or check Contacts/iCloud sync (System Settings > Apple ID > iCloud > Contacts), so tomorrow's run can render two reels.
+- Update: load eased by 16:40 and I re-rendered it in 3 parallel segments; tree-first-5k is ready. Restart/sync check still helps future runs.
+
+## VASK-014: Space posts to 1 a day from now (decision, reply in inbox/notes.md if you disagree)
+- Status: open (2026-10-22)
+- Why: 11 reels on Oct 21 + 3 on Oct 22 compete for the same small audience, so we can't tell which reel or slot won. From Oct 24, one reel per day in the best slot (picked from the Oct 23 insights) gives clean numbers.
+- Next to post: hours-in-a-week (ready since Oct 21), then tree-first-5k once rendered.
