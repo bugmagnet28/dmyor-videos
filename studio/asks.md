@@ -79,3 +79,8 @@ Edit this file (or tell Claude), set `Status: done`. The agent checks it every r
 - Status: open (2026-10-22)
 - Why: 11 reels on Oct 21 + 3 on Oct 22 compete for the same small audience, so we can't tell which reel or slot won. From Oct 24, one reel per day in the best slot (picked from the Oct 23 insights) gives clean numbers.
 - Next to post: hours-in-a-week (ready since Oct 21), then tree-first-5k once rendered.
+
+## ASK-V (2026-10-22): retention screenshots from the Instagram app (5 min)
+Web insights don't show watch time. In the Instagram app, open each of these reels → View insights → scroll to "Watch time" / "Average watch time" and "Skip rate" (or "% of views past 3 seconds"). Screenshot and drop in `inbox/metrics/`:
+1. someday-is-not-a-day (best)  2. plan-the-bad-day  3. start-at-the-end (worst)  4. which-one-is-a-plan  5. tree-freelance (after 10-24)
+Why: tells us whether people leave in the first second (hook problem) or mid-way (pacing problem).
