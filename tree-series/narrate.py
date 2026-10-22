@@ -49,7 +49,7 @@ def main(d):
     spoken = re.sub(r"\bDmyor\b", "Deem-yor", n["script"])  # owner: said "DEEM-yor" (2026-10-22)
     run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(ROOT, "tts/say.py"), spoken,
         os.path.join(d, "audio.mp3"), "--voice", n["voice"], "--speed", str(n.get("speed", 0.9)),
-        "--gap", str(n.get("gap", 0.42)), "--beat", str(n.get("beat", 0.8)))
+        "--gap-min", str(n.get("gap_min", 0.30)), "--gap-max", str(n.get("gap_max", 0.55)))
     # 2. word timings
     run("python3", os.path.join(ROOT, ".claude/skills/dmyor-reel/scripts/align.py"), d)
     cues = json.load(open(os.path.join(d, "cues.json")))
@@ -73,12 +73,26 @@ def main(d):
     last = cues["words"][-1]["e"]
     cfg["total"] = round(last + n.get("tail", 1.8), 2)
 
-    # 4. subtitles: phrases end at punctuation; long ones split near the middle; shown hook-out -> brand
+    # 4. subtitles: the SCRIPT's own words and punctuation, timed by matching them to whisper's words
+    import difflib
+    def nz(w):
+        w = re.sub(r"[^a-z0-9]", "", w.lower())
+        return NUM.get(w, w)
     W = cues["words"]
+    sw = [w for w in n["script"].replace("||", " ").split() if w.strip()]
+    a_, b_ = [nz(w) for w in sw], [nz(w["raw"]) for w in W]
+    tm = [None] * len(sw)
+    for blk in difflib.SequenceMatcher(None, a_, b_, autojunk=False).get_matching_blocks():
+        for j in range(blk.size):
+            tm[blk.a + j] = (W[blk.b + j]["s"], W[blk.b + j]["e"])
+    for i in range(len(sw)):  # unmatched words take the nearest known timing
+        if tm[i] is None:
+            prev = next((tm[j] for j in range(i - 1, -1, -1) if tm[j]), (0.0, 0.0))
+            tm[i] = (prev[1], prev[1] + 0.2)
     phrases, cur = [], []
-    for i, w in enumerate(W):
+    for i, w in enumerate(sw):
         cur.append(i)
-        if re.search(r"[.,!?;:]$", w["raw"]) or i == len(W) - 1:
+        if re.search(r"[.,!?;:]$", w) or i == len(sw) - 1:
             phrases.append(cur); cur = []
     chunks = []
     for ph in phrases:
@@ -88,12 +102,11 @@ def main(d):
         chunks.append(ph)
     subs = []
     for ci, ch in enumerate(chunks):
-        t0 = W[ch[0]]["s"]
-        t1 = W[chunks[ci + 1][0]]["s"] if ci + 1 < len(chunks) else W[ch[-1]]["e"] + 0.4
+        t0 = tm[ch[0]][0]
+        t1 = tm[chunks[ci + 1][0]][0] if ci + 1 < len(chunks) else tm[ch[-1]][1] + 0.4
         if ev_s["hookOut"] - 0.05 <= t0 < ev_s["brand"] - 0.05:
-            txt = " ".join(W[j]["raw"] for j in ch).strip()
-            txt = re.sub(r"\bD(?:ee|e|i)?-?\s?m(?:y|i)(?:o|e)?re?\b|\bDeem[- ]?yo(?:u)?re?\b|\bD-?[Mm]ure\b|\bdemure\b", "Dmyor", txt, flags=re.I)
-            subs.append({"t0": round(t0, 2), "t1": round(min(t1, ev_s["brand"]), 2), "text": (txt[:1].upper() + txt[1:]).rstrip(",;")})
+            txt = " ".join(sw[j] for j in ch).strip().rstrip(",;")
+            subs.append({"t0": round(t0, 2), "t1": round(min(t1, ev_s["brand"]), 2), "text": txt[:1].upper() + txt[1:]})
     cfg["subs"] = subs
     cfg["narration"] = {"voice": n["voice"], "provider": "kokoro-onnx v1.0", "script": n["script"]}
     json.dump(cfg, open(os.path.join(d, "config.json"), "w"), indent=1)

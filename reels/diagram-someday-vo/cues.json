@@ -1,36 +1,36 @@
 {
  "audio": "audio.mp3",
- "duration": 26.82,
- "text": "Someday isn't a day. It's not on your calendar and it never will be. So give your dream a real date. Publish my first novel by 2027. Break it into milestones. Outline the story. Finish draft one. Find 10 beta readers. Then pick one small action for today. Write 500 words. That's it. Not someday. Today. Demure turns your someday into a plan.",
+ "duration": 25.01,
+ "text": "Someday isn't a day. It's not on your calendar and honestly it never will be. So give your dream a real date. Something like, publish my first novel by 2027. Then break it into milestones, outline the story, finish the first draft, find 10 beta readers. And pick one small thing you can do today. Write 500 words, that's it. Not someday today. Demure turns your someday into a plan.",
  "words": [
   {
    "w": "someday",
    "raw": "Someday",
    "s": 0.0,
-   "e": 0.58
+   "e": 0.62
   },
   {
    "w": "isnt",
    "raw": "isn't",
-   "s": 0.58,
-   "e": 0.88
+   "s": 0.62,
+   "e": 0.92
   },
   {
    "w": "a",
    "raw": "a",
-   "s": 0.88,
-   "e": 1.02
+   "s": 0.92,
+   "e": 1.06
   },
   {
    "w": "day",
    "raw": "day.",
-   "s": 1.02,
+   "s": 1.06,
    "e": 1.28
   },
   {
    "w": "its",
    "raw": "It's",
-   "s": 1.78,
+   "s": 1.9,
    "e": 2.06
   },
   {
@@ -61,358 +61,395 @@
    "w": "and",
    "raw": "and",
    "s": 2.8,
-   "e": 3.16
+   "e": 3.18
+  },
+  {
+   "w": "honestly",
+   "raw": "honestly",
+   "s": 3.18,
+   "e": 3.54
   },
   {
    "w": "it",
    "raw": "it",
-   "s": 3.16,
-   "e": 3.28
+   "s": 3.54,
+   "e": 3.82
   },
   {
    "w": "never",
    "raw": "never",
-   "s": 3.28,
-   "e": 3.46
+   "s": 3.82,
+   "e": 4.02
   },
   {
    "w": "will",
    "raw": "will",
-   "s": 3.46,
-   "e": 3.7
+   "s": 4.02,
+   "e": 4.26
   },
   {
    "w": "be",
    "raw": "be.",
-   "s": 3.7,
-   "e": 4.0
+   "s": 4.26,
+   "e": 4.52
   },
   {
    "w": "so",
    "raw": "So",
-   "s": 4.64,
-   "e": 4.72
+   "s": 5.06,
+   "e": 5.16
   },
   {
    "w": "give",
    "raw": "give",
-   "s": 4.72,
-   "e": 4.9
+   "s": 5.16,
+   "e": 5.3
   },
   {
    "w": "your",
    "raw": "your",
-   "s": 4.9,
-   "e": 5.1
+   "s": 5.3,
+   "e": 5.48
   },
   {
    "w": "dream",
    "raw": "dream",
-   "s": 5.1,
-   "e": 5.36
+   "s": 5.48,
+   "e": 5.72
   },
   {
    "w": "a",
    "raw": "a",
-   "s": 5.36,
-   "e": 5.56
+   "s": 5.72,
+   "e": 5.9
   },
   {
    "w": "real",
    "raw": "real",
-   "s": 5.56,
-   "e": 5.78
+   "s": 5.9,
+   "e": 6.12
   },
   {
    "w": "date",
    "raw": "date.",
-   "s": 5.78,
-   "e": 6.18
+   "s": 6.12,
+   "e": 6.46
+  },
+  {
+   "w": "something",
+   "raw": "Something",
+   "s": 6.96,
+   "e": 7.12
+  },
+  {
+   "w": "like",
+   "raw": "like,",
+   "s": 7.12,
+   "e": 7.46
   },
   {
    "w": "publish",
-   "raw": "Publish",
-   "s": 6.68,
-   "e": 6.86
+   "raw": "publish",
+   "s": 7.56,
+   "e": 7.8
   },
   {
    "w": "my",
    "raw": "my",
-   "s": 6.86,
-   "e": 7.06
+   "s": 7.8,
+   "e": 8.06
   },
   {
    "w": "first",
    "raw": "first",
-   "s": 7.06,
-   "e": 7.38
+   "s": 8.06,
+   "e": 8.36
   },
   {
    "w": "novel",
    "raw": "novel",
-   "s": 7.38,
-   "e": 7.76
+   "s": 8.36,
+   "e": 8.72
   },
   {
    "w": "by",
    "raw": "by",
-   "s": 7.76,
-   "e": 8.02
+   "s": 8.72,
+   "e": 8.98
   },
   {
    "w": "2027",
    "raw": "2027.",
-   "s": 8.02,
-   "e": 9.28
-  },
-  {
-   "w": "break",
-   "raw": "Break",
-   "s": 9.84,
-   "e": 10.1
-  },
-  {
-   "w": "it",
-   "raw": "it",
-   "s": 10.1,
-   "e": 10.28
-  },
-  {
-   "w": "into",
-   "raw": "into",
-   "s": 10.28,
-   "e": 10.46
-  },
-  {
-   "w": "milestones",
-   "raw": "milestones.",
-   "s": 10.46,
-   "e": 11.02
-  },
-  {
-   "w": "outline",
-   "raw": "Outline",
-   "s": 11.72,
-   "e": 12.1
-  },
-  {
-   "w": "the",
-   "raw": "the",
-   "s": 12.1,
-   "e": 12.28
-  },
-  {
-   "w": "story",
-   "raw": "story.",
-   "s": 12.28,
-   "e": 12.64
-  },
-  {
-   "w": "finish",
-   "raw": "Finish",
-   "s": 13.14,
-   "e": 13.42
-  },
-  {
-   "w": "draft",
-   "raw": "draft",
-   "s": 13.42,
-   "e": 13.68
-  },
-  {
-   "w": "one",
-   "raw": "one.",
-   "s": 13.68,
-   "e": 14.08
-  },
-  {
-   "w": "find",
-   "raw": "Find",
-   "s": 14.6,
-   "e": 14.82
-  },
-  {
-   "w": "10",
-   "raw": "10",
-   "s": 14.82,
-   "e": 15.12
-  },
-  {
-   "w": "beta",
-   "raw": "beta",
-   "s": 15.12,
-   "e": 15.34
-  },
-  {
-   "w": "readers",
-   "raw": "readers.",
-   "s": 15.34,
-   "e": 15.74
+   "s": 8.98,
+   "e": 10.14
   },
   {
    "w": "then",
    "raw": "Then",
-   "s": 16.5,
-   "e": 16.64
+   "s": 10.84,
+   "e": 11.0
   },
   {
-   "w": "pick",
-   "raw": "pick",
-   "s": 16.64,
-   "e": 16.86
-  },
-  {
-   "w": "one",
-   "raw": "one",
-   "s": 16.86,
-   "e": 17.14
-  },
-  {
-   "w": "small",
-   "raw": "small",
-   "s": 17.14,
-   "e": 17.48
-  },
-  {
-   "w": "action",
-   "raw": "action",
-   "s": 17.48,
-   "e": 17.88
-  },
-  {
-   "w": "for",
-   "raw": "for",
-   "s": 17.88,
-   "e": 18.12
-  },
-  {
-   "w": "today",
-   "raw": "today.",
-   "s": 18.12,
-   "e": 18.46
-  },
-  {
-   "w": "write",
-   "raw": "Write",
-   "s": 18.92,
-   "e": 19.16
-  },
-  {
-   "w": "500",
-   "raw": "500",
-   "s": 19.16,
-   "e": 19.66
-  },
-  {
-   "w": "words",
-   "raw": "words.",
-   "s": 19.66,
-   "e": 20.2
-  },
-  {
-   "w": "thats",
-   "raw": "That's",
-   "s": 20.92,
-   "e": 21.28
+   "w": "break",
+   "raw": "break",
+   "s": 11.0,
+   "e": 11.2
   },
   {
    "w": "it",
-   "raw": "it.",
-   "s": 21.28,
-   "e": 21.46
-  },
-  {
-   "w": "not",
-   "raw": "Not",
-   "s": 22.02,
-   "e": 22.28
-  },
-  {
-   "w": "someday",
-   "raw": "someday.",
-   "s": 22.28,
-   "e": 22.7
-  },
-  {
-   "w": "today",
-   "raw": "Today.",
-   "s": 23.28,
-   "e": 23.64
-  },
-  {
-   "w": "demure",
-   "raw": "Demure",
-   "s": 23.64,
-   "e": 24.74
-  },
-  {
-   "w": "turns",
-   "raw": "turns",
-   "s": 24.74,
-   "e": 25.06
-  },
-  {
-   "w": "your",
-   "raw": "your",
-   "s": 25.06,
-   "e": 25.26
-  },
-  {
-   "w": "someday",
-   "raw": "someday",
-   "s": 25.26,
-   "e": 25.58
+   "raw": "it",
+   "s": 11.2,
+   "e": 11.36
   },
   {
    "w": "into",
    "raw": "into",
-   "s": 25.58,
-   "e": 25.88
+   "s": 11.36,
+   "e": 11.54
+  },
+  {
+   "w": "milestones",
+   "raw": "milestones,",
+   "s": 11.54,
+   "e": 12.08
+  },
+  {
+   "w": "outline",
+   "raw": "outline",
+   "s": 12.72,
+   "e": 12.98
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 12.98,
+   "e": 13.22
+  },
+  {
+   "w": "story",
+   "raw": "story,",
+   "s": 13.22,
+   "e": 13.52
+  },
+  {
+   "w": "finish",
+   "raw": "finish",
+   "s": 13.72,
+   "e": 13.8
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 13.8,
+   "e": 14.06
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 14.06,
+   "e": 14.26
+  },
+  {
+   "w": "draft",
+   "raw": "draft,",
+   "s": 14.26,
+   "e": 14.6
+  },
+  {
+   "w": "find",
+   "raw": "find",
+   "s": 14.8,
+   "e": 14.94
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 14.94,
+   "e": 15.24
+  },
+  {
+   "w": "beta",
+   "raw": "beta",
+   "s": 15.24,
+   "e": 15.4
+  },
+  {
+   "w": "readers",
+   "raw": "readers.",
+   "s": 15.4,
+   "e": 15.8
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 16.4,
+   "e": 16.52
+  },
+  {
+   "w": "pick",
+   "raw": "pick",
+   "s": 16.52,
+   "e": 16.68
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 16.68,
+   "e": 16.92
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 16.92,
+   "e": 17.2
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 17.2,
+   "e": 17.42
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 17.42,
+   "e": 17.56
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 17.56,
+   "e": 17.68
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 17.68,
+   "e": 17.86
+  },
+  {
+   "w": "today",
+   "raw": "today.",
+   "s": 17.86,
+   "e": 18.14
+  },
+  {
+   "w": "write",
+   "raw": "Write",
+   "s": 18.56,
+   "e": 18.68
+  },
+  {
+   "w": "500",
+   "raw": "500",
+   "s": 18.68,
+   "e": 19.1
+  },
+  {
+   "w": "words",
+   "raw": "words,",
+   "s": 19.1,
+   "e": 19.54
+  },
+  {
+   "w": "thats",
+   "raw": "that's",
+   "s": 19.74,
+   "e": 19.96
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 19.96,
+   "e": 20.14
+  },
+  {
+   "w": "not",
+   "raw": "Not",
+   "s": 20.7,
+   "e": 20.88
+  },
+  {
+   "w": "someday",
+   "raw": "someday",
+   "s": 20.88,
+   "e": 21.28
+  },
+  {
+   "w": "today",
+   "raw": "today.",
+   "s": 21.28,
+   "e": 21.68
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 22.48,
+   "e": 22.86
+  },
+  {
+   "w": "turns",
+   "raw": "turns",
+   "s": 22.86,
+   "e": 23.2
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 23.2,
+   "e": 23.42
+  },
+  {
+   "w": "someday",
+   "raw": "someday",
+   "s": 23.42,
+   "e": 23.72
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 23.72,
+   "e": 24.0
   },
   {
    "w": "a",
    "raw": "a",
-   "s": 25.88,
-   "e": 26.02
+   "s": 24.0,
+   "e": 24.16
   },
   {
    "w": "plan",
    "raw": "plan.",
-   "s": 26.02,
-   "e": 26.28
+   "s": 24.16,
+   "e": 24.42
   }
  ],
  "sentences": [
   {
    "s": 0.0,
-   "e": 4.0,
-   "text": "Someday isn't a day. It's not on your calendar and it never will be."
+   "e": 4.52,
+   "text": "Someday isn't a day. It's not on your calendar and honestly it never will be."
   },
   {
-   "s": 4.64,
-   "e": 9.28,
-   "text": "So give your dream a real date. Publish my first novel by 2027."
+   "s": 5.06,
+   "e": 10.14,
+   "text": "So give your dream a real date. Something like, publish my first novel by 2027."
   },
   {
-   "s": 9.84,
-   "e": 12.64,
-   "text": "Break it into milestones. Outline the story."
+   "s": 10.84,
+   "e": 15.8,
+   "text": "Then break it into milestones, outline the story, finish the first draft, find 10 beta readers."
   },
   {
-   "s": 13.14,
-   "e": 18.46,
-   "text": "Finish draft one. Find 10 beta readers. Then pick one small action for today."
+   "s": 16.4,
+   "e": 20.14,
+   "text": "And pick one small thing you can do today. Write 500 words, that's it."
   },
   {
-   "s": 18.92,
-   "e": 23.64,
-   "text": "Write 500 words. That's it. Not someday. Today."
-  },
-  {
-   "s": 23.64,
-   "e": 26.28,
-   "text": "Demure turns your someday into a plan."
+   "s": 20.7,
+   "e": 24.42,
+   "text": "Not someday today. Demure turns your someday into a plan."
   }
  ],
- "wps": 2.35
+ "wps": 2.8
 }

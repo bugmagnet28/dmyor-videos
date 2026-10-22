@@ -1,6 +1,6 @@
 {
  "bpm": 100,
- "total": 28.28,
+ "total": 26.42,
  "handle": "@becauseidmyor",
  "tagline": "Turn your someday\ninto a plan.",
  "titles": [
@@ -46,25 +46,25 @@
   "focusY": 760
  },
  "events": {
-  "hookOut": 2.967,
-  "vision": 7.733,
-  "trunk": 11.133,
+  "hookOut": 3.167,
+  "vision": 8.6,
+  "trunk": 12.6,
   "milestones": [
-   19.533,
-   21.9,
-   24.333
+   21.2,
+   22.867,
+   24.667
   ],
   "actions": [
-   27.5,
-   28.567,
-   29.8
+   27.333,
+   28.2,
+   29.033
   ],
-  "focus": 31.533,
-  "done": 34.867,
-  "grow": 36.7,
-  "brand": 41.233,
-  "titleM": 19.533,
-  "titleA": 27.5
+  "focus": 30.933,
+  "done": 32.9,
+  "grow": 34.5,
+  "brand": 38.1,
+  "titleM": 21.2,
+  "titleA": 27.333
  },
  "seed": 37,
  "hook": [
@@ -148,79 +148,94 @@
  "template": "diagram.html",
  "subs": [
   {
-   "t0": 1.78,
+   "t0": 1.9,
    "t1": 2.8,
    "text": "It's not on your calendar"
   },
   {
    "t0": 2.8,
-   "t1": 4.64,
-   "text": "And it never will be."
+   "t1": 3.54,
+   "text": "And honestly"
   },
   {
-   "t0": 4.64,
-   "t1": 6.68,
+   "t0": 3.54,
+   "t1": 5.06,
+   "text": "It never will be."
+  },
+  {
+   "t0": 5.06,
+   "t1": 6.96,
    "text": "So give your dream a real date."
   },
   {
-   "t0": 6.68,
-   "t1": 9.84,
+   "t0": 6.96,
+   "t1": 7.56,
+   "text": "Something like"
+  },
+  {
+   "t0": 7.56,
+   "t1": 10.84,
    "text": "Publish my first novel by 2027."
   },
   {
-   "t0": 9.84,
-   "t1": 11.72,
-   "text": "Break it into milestones."
+   "t0": 10.84,
+   "t1": 12.72,
+   "text": "Then break it into milestones."
   },
   {
-   "t0": 11.72,
-   "t1": 13.14,
-   "text": "Outline the story."
+   "t0": 12.72,
+   "t1": 13.72,
+   "text": "Outline the story"
   },
   {
-   "t0": 13.14,
-   "t1": 14.6,
-   "text": "Finish draft one."
+   "t0": 13.72,
+   "t1": 14.8,
+   "text": "Finish the first draft"
   },
   {
-   "t0": 14.6,
-   "t1": 16.5,
-   "text": "Find 10 beta readers."
+   "t0": 14.8,
+   "t1": 16.4,
+   "text": "Find ten beta readers."
   },
   {
-   "t0": 16.5,
-   "t1": 18.92,
-   "text": "Then pick one small action for today."
+   "t0": 16.4,
+   "t1": 17.2,
+   "text": "And pick one small"
   },
   {
-   "t0": 18.92,
-   "t1": 20.92,
-   "text": "Write 500 words."
+   "t0": 17.2,
+   "t1": 18.56,
+   "text": "Thing you can do today."
   },
   {
-   "t0": 20.92,
-   "t1": 22.02,
+   "t0": 18.56,
+   "t1": 19.74,
+   "text": "Write five hundred words."
+  },
+  {
+   "t0": 19.74,
+   "t1": 20.7,
    "text": "That's it."
   },
   {
-   "t0": 22.02,
-   "t1": 23.28,
+   "t0": 20.7,
+   "t1": 21.28,
    "text": "Not someday."
   },
   {
-   "t0": 23.28,
-   "t1": 23.64,
+   "t0": 21.28,
+   "t1": 21.68,
    "text": "Today."
   },
   {
-   "t0": 23.64,
-   "t1": 24.74,
+   "t0": 21.68,
+   "t1": 22.86,
    "text": "Dmyor turns your someday into a plan."
   }
  ],
  "narration": {
   "voice": "am_eric",
   "provider": "kokoro-onnx v1.0",
-  "script": "Someday isn't a day. || It's not on your calendar, and it never will be. || So give your dream a real date. Publish my first novel, by 2027. || Break it into milestones. Outline the story. Finish draft one. Find ten beta readers. || Then pick one small action for today. Write five hundred words. || That's it. || Not someday. Today. || Dmyor turns your someday into a plan."
+  "script": "Someday isn't a day. || It's not on your calendar, and honestly, it never will be. || So give your dream a real date. Something like, publish my first novel by 2027. || Then break it into milestones. Outline the story, finish the first draft, find ten beta readers. || And pick one small thing you can do today. Write five hundred words. That's it. || Not someday. Today. || Dmyor turns your someday into a plan."
  }
 }

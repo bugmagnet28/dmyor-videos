@@ -12,27 +12,27 @@
   "template": "diagram.html",
   "tagline": "Turn your dream into\na plan you can see."
  },
- "script": "Your dream feels too big to start. || So shrink it. || Write the vision, with a date. Then three milestones that prove you're getting there. || Then turn one into small actions. Send five proposals. Post one project. Follow up. || Now you don't need motivation. || Just this one action. Today. || Watch it grow. || That's Dmyor.",
+ "script": "Your dream feels too big to start, right? || So shrink it. Write down the vision, and give it a date. || Then add three milestones that show you're getting there. || Now take one of them, and break it into small actions. Like sending five proposals, posting one project, following up. || You don't need motivation for that. You just need one thing, done today. || And then you watch it grow. || That's Dmyor.",
  "anchors": {
   "hookOut": "So shrink it",
-  "vision": "Write the vision",
-  "trunk": "with a date",
+  "vision": "the vision",
+  "trunk": "give it a date",
   "milestones": [
    "three milestones",
-   "that prove",
+   "that show",
    "getting there"
   ],
   "actions": [
-   "Send",
-   "Post one project",
-   "Follow up"
+   "sending five proposals",
+   "posting one project",
+   "following up"
   ],
-  "focus": "Just this one action",
-  "done": "Today",
-  "grow": "Watch it grow",
+  "focus": "one thing",
+  "done": "today",
+  "grow": "watch it grow",
   "brand": "That's"
  },
  "music": false,
- "gap": 0.24,
- "beat": 0.42
+ "gap_min": 0.3,
+ "gap_max": 0.55
 }
