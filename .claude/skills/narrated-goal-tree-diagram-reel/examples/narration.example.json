@@ -1,0 +1,56 @@
+{
+ "_comment": "Input for narrated-goal-tree-diagram-reel. Copy to reels/<slug>/narration.json and edit. See SKILL.md.",
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.3,
+ "gap_max": 0.55,
+ "tail": 1.2,
+ "content": {
+  "hook": [
+   "Too big?",
+   "Your dream feels too big to start."
+  ],
+  "vision": "Earn $2,000 a month freelancing",
+  "milestones": [
+   "Build a portfolio",
+   "Land 3 clients",
+   "Hit a $2K month"
+  ],
+  "actions": [
+   "Send 5 proposals",
+   "Post 1 project",
+   "Follow up leads"
+  ],
+  "actionParent": 1,
+  "todayIdx": 0,
+  "tagline": "Turn your dream into\na plan you can see.",
+  "handle": "@becauseidmyor"
+ },
+ "script": "Your dream feels too big to start, right? || So shrink it. Write down the vision, and give it a date. || Then add three milestones that show you're getting there. || Now take one of them, and break it into small actions. Like sending five proposals, posting one project, following up. || You don't need motivation for that. You just need one thing, done today. || And then you watch it grow. || That's Dmyor. || Link's in the bio.",
+ "anchors": {
+  "hookOut": "So shrink it",
+  "vision": "the vision",
+  "trunk": "give it a date",
+  "milestones": [
+   "three milestones",
+   "that show",
+   "getting there"
+  ],
+  "actions": [
+   "sending five proposals",
+   "posting one project",
+   "following up"
+  ],
+  "focus": "one thing",
+  "done": "today",
+  "grow": "watch it grow",
+  "brand": "That's"
+ },
+ "caption": {
+  "instagram": "Too big to start? Shrink it.\n• Vision with a date\n• 3 milestones\n• Small actions\n• Just one, today\nThat's how Dmyor turns a dream into a plan. Link in bio.",
+  "hashtags": "#goals #goalsetting #productivity #selfimprovement",
+  "x": "Too big to start? Shrink it.\n\nVision with a date → 3 milestones → small actions → just one, today.\n\nThat's how Dmyor turns a dream into a plan: https://www.dmyor.com",
+  "youtube_title": "Too big to start? Shrink it #Shorts"
+ },
+ "experiment": "V-EXP-23: narrated diagram reel vs text-only. Compare avg watch time, saves, shares at 48h."
+}
