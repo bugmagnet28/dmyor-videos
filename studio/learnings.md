@@ -77,3 +77,6 @@ Reach 2 to 65 per reel, ~100% non-followers, 0 shares, 0 comments, 0 follows, fo
 
 ## 2026-10-22: narration pipeline (free, local)
 Kokoro TTS (kokoro-onnx v1.0, Apache-2.0) installed in tts/ (venv + models, gitignored). `tree-series/narrate.py reels/<slug>` = narration.json -> voice (tts/say.py) -> whisper word timings (align.py) -> tree events placed on spoken words, live subtitles, quiet music bed (-16 dB) -> audio_mixed.mp3 -> record.js. Brand is pronounced "Dee-myor" (TTS text substitution); whisper hears it as "Demire", subtitles map it back to "Dmyor". First two: tree-howto-vo (af_heart, 22s), tree-someday-vo (am_michael, 27s). Voice samples in tts/samples/.
+
+## 2026-10-22: diagram style + am_eric (owner review)
+Sanyam rejected the scenery/illustrated look ("modern, crisp, clarity, not fairy tale") and chose voice am_eric ("kinda retro"). New template tree-series/diagram.html (same events/config contract). Built diagram-howto-vo (18.2s) and diagram-someday-vo (20.5s). tree-*-vo superseded, do not post. Pronunciation fixed to DEEM-yor; whisper hears it as "deem your"/"demure", subtitles map back to Dmyor.

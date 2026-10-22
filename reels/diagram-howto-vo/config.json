@@ -1,0 +1,211 @@
+{
+ "bpm": 100,
+ "total": 18.16,
+ "handle": "@becauseidmyor",
+ "tagline": "Turn your dream into\na plan you can see.",
+ "titles": [
+  "Break it into milestones.",
+  "Then into small actions.",
+  "Do just this one. Today.",
+  "Watch it grow."
+ ],
+ "actionParent": 1,
+ "layout": {
+  "vision": {
+   "y": 1330
+  },
+  "trunkTop": 1060,
+  "milestones": [
+   {
+    "x": 210,
+    "y": 900
+   },
+   {
+    "x": 540,
+    "y": 830
+   },
+   {
+    "x": 870,
+    "y": 900
+   }
+  ],
+  "actions": [
+   {
+    "x": 240,
+    "y": 600
+   },
+   {
+    "x": 540,
+    "y": 520
+   },
+   {
+    "x": 840,
+    "y": 600
+   }
+  ],
+  "focusY": 760
+ },
+ "events": {
+  "hookOut": 3.167,
+  "vision": 4.633,
+  "trunk": 5.467,
+  "milestones": [
+   6.933,
+   8.2,
+   9.433
+  ],
+  "actions": [
+   14.133,
+   15.8,
+   17.9
+  ],
+  "focus": 21.9,
+  "done": 23.533,
+  "grow": 24.667,
+  "brand": 25.9,
+  "titleM": 6.933,
+  "titleA": 14.133
+ },
+ "seed": 11,
+ "hook": [
+  "Too big?",
+  "Your dream feels too big to start."
+ ],
+ "vision": "Earn $2,000 a month freelancing",
+ "milestones": [
+  "Build a portfolio",
+  "Land 3 clients",
+  "Hit a $2K month"
+ ],
+ "actions": [
+  "Send 5 proposals",
+  "Post 1 project",
+  "Follow up leads"
+ ],
+ "todayIdx": 0,
+ "hand": "just this one",
+ "music": {
+  "root": 50,
+  "progression": [
+   [
+    0,
+    4,
+    7
+   ],
+   [
+    7,
+    11,
+    14
+   ],
+   [
+    9,
+    12,
+    16
+   ],
+   [
+    5,
+    9,
+    12
+   ]
+  ]
+ },
+ "palette": {
+  "cVision": "#f17501",
+  "cMilestone": "#7b4dff",
+  "cAction": "#00a884",
+  "cDone": "#18c77a",
+  "sky": [
+   "#2b1055",
+   "#7a2f8f",
+   "#e0567a",
+   "#ffb36b"
+  ],
+  "sun": "#ffd27a",
+  "sunX": 820,
+  "sunY": 1470,
+  "cloud": "#ffd9e0",
+  "hills": [
+   "#5a2a6e",
+   "#3d1e57",
+   "#24133d"
+  ],
+  "wood": "#4a2c3a",
+  "woodHi": "#8a5a6a",
+  "leaves": [
+   "#39d98a",
+   "#2fbf71",
+   "#9be15d",
+   "#00c2a8"
+  ],
+  "bloom": [
+   "#ff6fa3",
+   "#ffd166",
+   "#ff9f6b"
+  ],
+  "accent": "#ffd166",
+  "brandBg": "#1a0d33"
+ },
+ "template": "diagram.html",
+ "subs": [
+  {
+   "t0": 1.9,
+   "t1": 2.78,
+   "text": "So shrink it."
+  },
+  {
+   "t0": 2.78,
+   "t1": 4.02,
+   "text": "Write the vision with a date"
+  },
+  {
+   "t0": 4.02,
+   "t1": 5.26,
+   "text": "Then three milestones that"
+  },
+  {
+   "t0": 5.26,
+   "t1": 6.22,
+   "text": "Prove you're getting there"
+  },
+  {
+   "t0": 6.22,
+   "t1": 8.48,
+   "text": "Then turn one milestone into small actions"
+  },
+  {
+   "t0": 8.48,
+   "t1": 9.48,
+   "text": "Send five proposals"
+  },
+  {
+   "t0": 9.48,
+   "t1": 10.74,
+   "text": "Post one project"
+  },
+  {
+   "t0": 10.74,
+   "t1": 11.78,
+   "text": "Follow up."
+  },
+  {
+   "t0": 11.78,
+   "t1": 13.14,
+   "text": "Now you don't need motivation"
+  },
+  {
+   "t0": 13.14,
+   "t1": 14.8,
+   "text": "Just this one action today"
+  },
+  {
+   "t0": 14.8,
+   "t1": 15.54,
+   "text": "Watch it grow"
+  }
+ ],
+ "narration": {
+  "voice": "am_eric",
+  "provider": "kokoro-onnx v1.0",
+  "script": "Your dream feels too big to start. So shrink it. Write the vision, with a date. Then three milestones that prove you're getting there. Then turn one milestone into small actions. Send five proposals. Post one project. Follow up. Now you don't need motivation. Just this one action. Today. Watch it grow. That's Dmyor."
+ }
+}

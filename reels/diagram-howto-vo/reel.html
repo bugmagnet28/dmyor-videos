@@ -1,0 +1,142 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>dmyor diagram reel</title>
+<style>
+/* Diagram style (2026-10-22, owner brief: modern, crisp, clarity, no scenery).
+   Vision -> milestones -> actions as a clean org-chart tree with orthogonal connectors.
+   Same config/events contract as tree.html, so narrate.py and music.py work unchanged. */
+@font-face{font-family:"Tight";font-weight:500;src:url(../../tree-series/fonts/InterTight-normal-500.woff2)}
+@font-face{font-family:"Tight";font-weight:600;src:url(../../tree-series/fonts/InterTight-normal-600.woff2)}
+@font-face{font-family:"Tight";font-weight:700;src:url(../../tree-series/fonts/InterTight-normal-700.woff2)}
+@font-face{font-family:"Tight";font-weight:800;src:url(../../tree-series/fonts/InterTight-normal-800.woff2)}
+:root{--bg:#0B0C10;--panel:#14161B;--line:#2B2F38;--ink:#F3F4F6;--mute:#8B909A;--accent:#FF7A1A;--done:#3DDC97}
+html,body{margin:0;padding:0;background:#000;overflow:hidden;width:100%;height:100%}
+#viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;transform-origin:center;background:var(--bg);
+  -webkit-font-smoothing:antialiased;font-family:"Tight",sans-serif;color:var(--ink)}
+#grid,#wires{position:absolute;inset:0}
+#cam{position:absolute;inset:0;transform-origin:540px 990px}
+.node{position:absolute;left:0;top:0;box-sizing:border-box;background:var(--panel);border:2px solid var(--line);
+  border-radius:16px;padding:20px 24px;will-change:transform,opacity}
+.node .lab{font-weight:700;font-size:19px;letter-spacing:3.5px;color:var(--mute);display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.node .sq{width:12px;height:12px;border-radius:3px;background:var(--mute)}
+.node .txt{font-weight:600;letter-spacing:-.4px;line-height:1.15;color:var(--ink)}
+.node .bar{height:5px;border-radius:5px;background:#23262E;margin-top:16px;overflow:hidden}
+.node .bar i{display:block;height:100%;width:0;background:var(--accent);border-radius:5px}
+.node .chk{position:absolute;left:22px;top:50%;width:30px;height:30px;margin-top:-15px;border-radius:8px;border:2px solid #3A3F49;box-sizing:border-box}
+.node .chk svg{position:absolute;inset:3px}
+.node.action{padding-left:66px}
+.tag{position:absolute;left:0;top:0;font-weight:800;font-size:20px;letter-spacing:4px;padding:8px 16px;border-radius:8px;background:var(--accent);color:#120A03}
+.sub{position:absolute;left:70px;right:70px;top:200px;text-align:center;font-weight:700;font-size:62px;line-height:1.1;letter-spacing:-1.2px;will-change:opacity,transform}
+.sub b{color:var(--accent);font-weight:800}
+#hook{position:absolute;left:70px;right:70px;top:640px;text-align:center}
+#hook .h1{font-weight:800;font-size:132px;letter-spacing:-4px;line-height:1}
+#hook .h2{font-weight:600;font-size:54px;color:var(--mute);margin-top:30px;letter-spacing:-.8px;line-height:1.15}
+#corner{position:absolute;left:64px;top:96px;font-weight:700;font-size:20px;letter-spacing:4px;color:#4A4F59}
+#brand{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0;padding-bottom:220px;box-sizing:border-box}
+#brand .mark{font-weight:800;font-size:160px;letter-spacing:-6px;line-height:1}
+#brand .tag2{white-space:pre-line;font-weight:600;font-size:52px;color:var(--mute);margin-top:26px;line-height:1.2;letter-spacing:-.6px}
+#brand .handle{margin-top:48px;font-weight:700;font-size:40px;padding:14px 36px;border-radius:999px;background:var(--accent);color:#120A03}
+#playBtn{position:fixed;inset:0;margin:auto;width:210px;height:64px;border-radius:32px;border:0;font:700 22px sans-serif;cursor:pointer}
+</style></head><body>
+<div id="viewport"><div id="stage">
+  <svg id="grid" width="1080" height="1920"><defs><pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#fff" fill-opacity=".07"/></pattern></defs><rect id="gridrect" x="0" y="-40" width="1080" height="2000" fill="url(#dots)"/></svg>
+  <div id="cam"><svg id="wires" width="1080" height="1920"></svg></div>
+  <div id="corner">DMYOR · PLAN</div>
+  <div id="hook"><div class="h1"></div><div class="h2"></div></div>
+  <div id="brand"><div class="mark">dmyor</div><div class="tag2"></div><div class="handle"></div></div>
+</div></div>
+<button id="playBtn">PLAY</button>
+<script>
+var CFG = {"bpm": 100, "total": 18.16, "handle": "@becauseidmyor", "tagline": "Turn your dream into\na plan you can see.", "titles": ["Break it into milestones.", "Then into small actions.", "Do just this one. Today.", "Watch it grow."], "actionParent": 1, "layout": {"vision": {"y": 1330}, "trunkTop": 1060, "milestones": [{"x": 210, "y": 900}, {"x": 540, "y": 830}, {"x": 870, "y": 900}], "actions": [{"x": 240, "y": 600}, {"x": 540, "y": 520}, {"x": 840, "y": 600}], "focusY": 760}, "events": {"hookOut": 3.167, "vision": 4.633, "trunk": 5.467, "milestones": [6.933, 8.2, 9.433], "actions": [14.133, 15.8, 17.9], "focus": 21.9, "done": 23.533, "grow": 24.667, "brand": 25.9, "titleM": 6.933, "titleA": 14.133}, "seed": 11, "hook": ["Too big?", "Your dream feels too big to start."], "vision": "Earn $2,000 a month freelancing", "milestones": ["Build a portfolio", "Land 3 clients", "Hit a $2K month"], "actions": ["Send 5 proposals", "Post 1 project", "Follow up leads"], "todayIdx": 0, "hand": "just this one", "music": {"root": 50, "progression": [[0, 4, 7], [7, 11, 14], [9, 12, 16], [5, 9, 12]]}, "palette": {"cVision": "#f17501", "cMilestone": "#7b4dff", "cAction": "#00a884", "cDone": "#18c77a", "sky": ["#2b1055", "#7a2f8f", "#e0567a", "#ffb36b"], "sun": "#ffd27a", "sunX": 820, "sunY": 1470, "cloud": "#ffd9e0", "hills": ["#5a2a6e", "#3d1e57", "#24133d"], "wood": "#4a2c3a", "woodHi": "#8a5a6a", "leaves": ["#39d98a", "#2fbf71", "#9be15d", "#00c2a8"], "bloom": ["#ff6fa3", "#ffd166", "#ff9f6b"], "accent": "#ffd166", "brandBg": "#1a0d33"}, "template": "diagram.html", "subs": [{"t0": 1.9, "t1": 2.78, "text": "So shrink it."}, {"t0": 2.78, "t1": 4.02, "text": "Write the vision with a date"}, {"t0": 4.02, "t1": 5.26, "text": "Then three milestones that"}, {"t0": 5.26, "t1": 6.22, "text": "Prove you're getting there"}, {"t0": 6.22, "t1": 8.48, "text": "Then turn one milestone into small actions"}, {"t0": 8.48, "t1": 9.48, "text": "Send five proposals"}, {"t0": 9.48, "t1": 10.74, "text": "Post one project"}, {"t0": 10.74, "t1": 11.78, "text": "Follow up."}, {"t0": 11.78, "t1": 13.14, "text": "Now you don't need motivation"}, {"t0": 13.14, "t1": 14.8, "text": "Just this one action today"}, {"t0": 14.8, "t1": 15.54, "text": "Watch it grow"}], "narration": {"voice": "am_eric", "provider": "kokoro-onnx v1.0", "script": "Your dream feels too big to start. So shrink it. Write the vision, with a date. Then three milestones that prove you're getting there. Then turn one milestone into small actions. Send five proposals. Post one project. Follow up. Now you don't need motivation. Just this one action. Today. Watch it grow. That's Dmyor."}};
+</script>
+<script>
+(function(){
+"use strict";
+var W=1080,H=1920,C=CFG,B=60/C.bpm,T=C.total,E=C.events,NS="http://www.w3.org/2000/svg";
+var stage=document.getElementById("stage"),cam=document.getElementById("cam"),wires=document.getElementById("wires");
+function fit(){var s=Math.min(innerWidth/W,innerHeight/H);stage.style.transform="scale("+s+")";}
+fit();addEventListener("resize",fit);
+var cl=function(x){return x<0?0:x>1?1:x},seg=function(t,a,b){return cl((t-a)/(b-a))};
+var eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2},eout=function(x){return 1-Math.pow(1-x,3)};
+var eob=function(x){var c=1.4;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+var at=function(b){return b*B};
+var ACC="#FF7A1A",DONE="#3DDC97",LINE="#5A606C";
+function el(tag,a,p){var e=document.createElementNS(NS,tag);for(var k in a)e.setAttribute(k,a[k]);(p||wires).appendChild(e);return e;}
+function div(cls,html,p){var d=document.createElement("div");d.className=cls;if(html!=null)d.innerHTML=html;(p||cam).appendChild(d);return d;}
+// ---------- layout ----------
+var VX=540,VY=610,MY=990,AY=1370,MX=[205,540,875],AX=[205,540,875];
+var vN=div("node vision",'<div class="lab" style="color:'+ACC+'"><span class="sq" style="background:'+ACC+'"></span>VISION</div><div class="txt" style="font-size:44px">'+C.vision+'</div><div class="bar"><i></i></div>');
+vN.style.width="720px";vN.style.borderColor="rgba(255,122,26,.55)";
+var mN=C.milestones.map(function(t){var n=div("node",'<div class="lab"><span class="sq"></span>MILESTONE</div><div class="txt" style="font-size:31px">'+t+'</div><div class="bar"><i></i></div>');n.style.width="300px";return n;});
+var aN=C.actions.map(function(t){var n=div("node action",'<div class="chk"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17.5 L19 7" fill="none" stroke="#0B0C10" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="22" stroke-dashoffset="22"/></svg></div><div class="lab"><span class="sq"></span>ACTION</div><div class="txt" style="font-size:29px">'+t+'</div>');n.style.width="300px";return n;});
+var tag=div("tag","TODAY");
+function box(n){return {w:n.offsetWidth,h:n.offsetHeight};}
+function place(n,x,y,s,o){var b=box(n);n.style.transform="translate("+(x-b.w/2)+"px,"+(y-b.h/2)+"px) scale("+s+")";n.style.opacity=o;}
+// connectors (orthogonal), drawn after nodes exist so heights are known
+var vb=box(vN),mb=box(mN[0]),ab=box(aN[0]);
+var vBot=VY+vb.h/2,mTop=MY-mb.h/2,mBot=MY+mb.h/2,aTop=AY-ab.h/2;
+var bus1=(vBot+mTop)/2,bus2=(mBot+aTop)/2,P=C.actionParent;
+function wire(d,col,w){var p=el("path",{d:d,fill:"none",stroke:col,"stroke-width":w,"stroke-linecap":"square","stroke-linejoin":"miter"});var L=p.getTotalLength();p.__L=L;p.setAttribute("stroke-dasharray",L);p.setAttribute("stroke-dashoffset",L);return p;}
+var stem=wire("M"+VX+" "+vBot+" V"+bus1,LINE,3.5);
+var mW=MX.map(function(x){return wire("M"+VX+" "+bus1+" H"+x+" V"+mTop,LINE,3);});
+var stem2=wire("M"+MX[P]+" "+mBot+" V"+bus2,LINE,3);
+var aW=AX.map(function(x){return wire("M"+MX[P]+" "+bus2+" H"+x+" V"+aTop,LINE,3);});
+var ti=C.todayIdx;
+// progress path lights up from today's action back to the vision
+var glowA=wire("M"+AX[ti]+" "+aTop+" V"+bus2+" H"+MX[P]+" V"+mBot,ACC,4);
+var glowM=wire("M"+MX[P]+" "+mTop+" V"+bus1+" H"+VX+" V"+vBot,ACC,4);
+var dots=[[VX,bus1],[MX[P],bus2]].map(function(p){return el("circle",{cx:p[0],cy:p[1],r:0,fill:LINE});});
+// ---------- text ----------
+var hook=document.getElementById("hook");hook.querySelector(".h1").textContent=C.hook[0];hook.querySelector(".h2").textContent=C.hook[1];
+var subs=(C.subs||[]).map(function(sb){var d=div("sub",null,stage);d.textContent=sb.text;d.style.opacity=0;return {sb:sb,d:d};});
+var brand=document.getElementById("brand");brand.querySelector(".tag2").textContent=C.tagline;brand.querySelector(".handle").textContent=C.handle;
+var gridrect=document.getElementById("gridrect");
+// ---------- render ----------
+function grow(p,t,a,dur){p.setAttribute("stroke-dashoffset",p.__L*(1-eio(seg(t,a,a+dur))));}
+function render(t){
+  t=Math.max(0,Math.min(T,t));
+  gridrect.setAttribute("y",-40+(t*10)%40);
+  var foc=seg(t,at(E.focus),at(E.focus)+.4)*(1-seg(t,at(E.grow),at(E.grow)+.5));
+  var s=1+.012*seg(t,0,T)+.05*eio(foc);
+  var fy=(AY-990)*eio(foc)*.35;
+  cam.style.transform="translate(0px,"+(-fy)+"px) scale("+s+")";
+  // hook (frame 0 finished)
+  var ho=1-eio(seg(t,at(E.hookOut),at(E.hookOut)+.35));hook.style.opacity=ho;hook.style.transform="translateY("+(-40*(1-ho))+"px)";
+  // nodes
+  var back=1-.72*eio(foc);
+  var pv=seg(t,at(E.vision),at(E.vision)+.35);place(vN,VX,VY+16*(1-eout(pv)),.92+.08*eob(pv),Math.min(1,pv*2.2)*back);
+  grow(stem,t,at(E.trunk),.4);
+  mN.forEach(function(n,i){var a=at(E.milestones[i]);grow(mW[i],t,a-.45,.45);var p=seg(t,a,a+.3);
+    place(n,MX[i],MY+14*(1-eout(p)),.92+.08*eob(p),Math.min(1,p*2.2)*(i===P?Math.max(back,.28+.72*(1-eio(foc))):back));
+    n.querySelector(".bar i").style.width=(i===P?34*eio(seg(t,at(E.grow)+.5,at(E.grow)+1.1)):0)+"%";
+    if(i===P) n.style.borderColor=t>=at(E.grow)+.45?"rgba(255,122,26,.55)":"#2B2F38";});
+  grow(stem2,t,at(E.actions[0])-.75,.3);
+  aN.forEach(function(n,i){var a=at(E.actions[i]);grow(aW[i],t,a-.45,.45);var p=seg(t,a,a+.3);
+    var isT=i===ti, sc=.92+.08*eob(p)+(isT?.12*eio(foc):0);
+    place(n,AX[i],AY+14*(1-eout(p)),sc,Math.min(1,p*2.2)*(isT?1:back));
+    if(isT){var dn=eio(seg(t,at(E.done),at(E.done)+.25));var chk=n.querySelector(".chk");
+      chk.style.background=dn>0?DONE:"transparent";chk.style.borderColor=dn>0?DONE:"#3A3F49";
+      chk.querySelector("path").setAttribute("stroke-dashoffset",22*(1-dn));
+      n.style.borderColor=foc>.05||t>=at(E.done)?"rgba(255,122,26,"+(0.4+.5*Math.max(foc,dn>0?1:0))+")":"#2B2F38";
+      n.querySelector(".txt").style.opacity=1;
+      var b=box(n);tag.style.opacity=eio(foc);tag.style.transform="translate("+(AX[i]-tag.offsetWidth/2)+"px,"+(AY-b.h*sc/2-54)+"px)";}
+  });
+  [stem,stem2].concat(mW,aW).forEach(function(p){p.setAttribute("opacity",back);});
+  dots[0].setAttribute("r",t>at(E.milestones[0])-.45?6:0);dots[1].setAttribute("r",t>at(E.actions[0])-.45?6:0);
+  dots.forEach(function(d){d.setAttribute("opacity",back);});
+  // progress flows up the tree
+  grow(glowA,t,at(E.grow),.45);grow(glowM,t,at(E.grow)+.45,.45);
+  vN.querySelector(".bar i").style.width=(12*eio(seg(t,at(E.grow)+.9,at(E.grow)+1.5)))+"%";
+  // subtitles
+  subs.forEach(function(o){var a=o.sb.t0,b=o.sb.t1;var v=seg(t,a,a+.15)*(1-seg(t,b-.1,b));o.d.style.opacity=v;o.d.style.transform="translateY("+(10*(1-eout(seg(t,a,a+.22))))+"px)";});
+  // brand
+  var pb=eio(seg(t,at(E.brand),at(E.brand)+.45));brand.style.opacity=pb;brand.style.transform="scale("+(.96+.04*pb)+")";
+  cam.style.opacity=1-pb;document.getElementById("corner").style.opacity=1-pb;
+}
+window.__duration=T;window.__seek=function(t){render(t);};render(0);
+var playing=false,t0=0;
+document.getElementById("playBtn").onclick=function(){this.style.display="none";t0=performance.now();playing=true;
+  var a=new Audio("audio_mixed.mp3");a.play().catch(function(){});(function loop(){if(!playing)return;var t=(performance.now()-t0)/1000;render(t);if(t<T)requestAnimationFrame(loop);})();};
+})();
+</script>
+</body></html>

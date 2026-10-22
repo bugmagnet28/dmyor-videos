@@ -46,7 +46,7 @@ def main(d):
     cfg.update(n.get("override", {}))
 
     # 1. voice
-    spoken = re.sub(r"\bDmyor\b", "Dee-myor", n["script"])  # owner's pronunciation (2026-10-22)
+    spoken = re.sub(r"\bDmyor\b", "Deem-yor", n["script"])  # owner: said "DEEM-yor" (2026-10-22)
     run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(ROOT, "tts/say.py"), spoken,
         os.path.join(d, "audio.mp3"), "--voice", n["voice"], "--speed", str(n.get("speed", 1.0)))
     # 2. word timings
@@ -91,8 +91,8 @@ def main(d):
         t1 = W[chunks[ci + 1][0]]["s"] if ci + 1 < len(chunks) else W[ch[-1]]["e"] + 0.4
         if ev_s["hookOut"] - 0.05 <= t0 < ev_s["brand"] - 0.05:
             txt = " ".join(W[j]["raw"] for j in ch).strip()
-            txt = re.sub(r"\bD(?:ee|e|i)?-?\s?m(?:y|i)(?:o|e)?re?\b", "Dmyor", txt, flags=re.I)
-            subs.append({"t0": round(t0, 2), "t1": round(min(t1, ev_s["brand"]), 2), "text": txt[:1].upper() + txt[1:]})
+            txt = re.sub(r"\bD(?:ee|e|i)?-?\s?m(?:y|i)(?:o|e)?re?\b|\bDeem[- ]?yo(?:u)?re?\b|\bdemure\b", "Dmyor", txt, flags=re.I)
+            subs.append({"t0": round(t0, 2), "t1": round(min(t1, ev_s["brand"]), 2), "text": (txt[:1].upper() + txt[1:]).rstrip(",;")})
     cfg["subs"] = subs
     cfg["narration"] = {"voice": n["voice"], "provider": "kokoro-onnx v1.0", "script": n["script"]}
     json.dump(cfg, open(os.path.join(d, "config.json"), "w"), indent=1)

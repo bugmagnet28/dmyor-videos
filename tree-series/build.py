@@ -3,7 +3,7 @@ import json, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 reel = sys.argv[1]
 cfg = json.load(open(os.path.join(reel, "config.json")))
-html = open(os.path.join(HERE, "tree.html")).read()
+html = open(os.path.join(HERE, cfg.get("template", "tree.html"))).read()
 html = html.replace("/*__CONFIG__*/{}", json.dumps(cfg))
 rel = os.path.relpath(os.path.join(HERE, "fonts"), reel)
 html = html.replace("url(fonts/", "url(" + rel + "/")

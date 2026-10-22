@@ -2,6 +2,7 @@
 
 Rules learned from evidence. Each cites its source. Revise when data disagrees.
 
+- **Default format for feature/explainer reels (owner decision, 2026-10-22): narrated "diagram" style.** Template `tree-series/diagram.html` via `tree-series/narrate.py` (set `"template":"diagram.html"` in narration.json override). Dark canvas, faint dot grid, crisp node cards, orthogonal connector lines like a planning diagram; no scenery, no fairy-tale illustration. Voice: Kokoro `am_eric` at speed 0.82 (~3.3 words/sec; at 1.0+ it runs too fast and swallows short phrases). Brand is spoken "DEEM-yor" (TTS text "Deem-yor"). Keep sentences short; whisper must find every anchor phrase. Source: Sanyam's review of the first narrated reels, 2026-10-22.
 - **Visual style (owner decision, 2026-10-20): calm, small, aesthetic type.** Sanyam found the full-frame heavy text too big. The punch engine now defaults to `style: "calm"`: the whole text layer renders at 0.62x, semibold weights, softer palette, content nudged toward the visual centre. Write timeline sizes as before (the px rules below are design units before the 0.62 shrink). Never set `"style":"loud"` or a `typeScale` above 0.7 unless Sanyam asks. Keep one idea per screen with lots of empty space; fewer words per beat beats bigger words. Source: Sanyam's 2026-10-20 review.
 - (starter) Frame 0 must be readable (calm style: readable, not loud). Source: diagnosis 2026-10-08 (3 of 4 old reels opened on an empty frame).
 - (starter) Watch your own frames before packaging. Source: setup.
