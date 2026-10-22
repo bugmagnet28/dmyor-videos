@@ -2,7 +2,7 @@
  "base": "tree-freelance",
  "voice": "am_eric",
  "speed": 1.0,
- "tail": 2.0,
+ "tail": 1.2,
  "override": {
   "hook": [
    "Too big?",
@@ -12,7 +12,7 @@
   "template": "diagram.html",
   "tagline": "Turn your dream into\na plan you can see."
  },
- "script": "Your dream feels too big to start, right? || So shrink it. Write down the vision, and give it a date. || Then add three milestones that show you're getting there. || Now take one of them, and break it into small actions. Like sending five proposals, posting one project, following up. || You don't need motivation for that. You just need one thing, done today. || And then you watch it grow. || That's Dmyor.",
+ "script": "Your dream feels too big to start, right? || So shrink it. Write down the vision, and give it a date. || Then add three milestones that show you're getting there. || Now take one of them, and break it into small actions. Like sending five proposals, posting one project, following up. || You don't need motivation for that. You just need one thing, done today. || And then you watch it grow. || That's Dmyor. || Link's in the bio.",
  "anchors": {
   "hookOut": "So shrink it",
   "vision": "the vision",

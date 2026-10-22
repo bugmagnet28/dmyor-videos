@@ -2,7 +2,7 @@
  "base": "tree-novel",
  "voice": "am_eric",
  "speed": 1.0,
- "tail": 2.0,
+ "tail": 1.2,
  "override": {
   "hook": [
    "Someday",
@@ -13,7 +13,7 @@
   "tagline": "Turn your someday\ninto a plan.",
   "template": "diagram.html"
  },
- "script": "Someday isn't a day. || It's not on your calendar, and honestly, it never will be. || So give your dream a real date. Something like, publish my first novel by 2027. || Then break it into milestones. Outline the story, finish the first draft, find ten beta readers. || And pick one small thing you can do today. Write five hundred words. That's it. || Not someday. Today. || Dmyor turns your someday into a plan.",
+ "script": "Someday isn't a day. || It's not on your calendar, and honestly, it never will be. || So give your dream a real date. Something like, publish my first novel by 2027. || Then break it into milestones. Outline the story, finish the first draft, find ten beta readers. || And pick one small thing you can do today. Write five hundred words. That's it. || Not someday. Today. || Dmyor turns your someday into a plan. || Link's in the bio.",
  "anchors": {
   "hookOut": "It's not on your calendar",
   "vision": "give your dream",

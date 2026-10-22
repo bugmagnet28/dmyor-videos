@@ -1,7 +1,7 @@
 {
  "audio": "audio.mp3",
- "duration": 25.01,
- "text": "Someday isn't a day. It's not on your calendar and honestly it never will be. So give your dream a real date. Something like, publish my first novel by 2027. Then break it into milestones, outline the story, finish the first draft, find 10 beta readers. And pick one small thing you can do today. Write 500 words, that's it. Not someday today. Demure turns your someday into a plan.",
+ "duration": 26.55,
+ "text": "Someday isn't a day. It's not on your calendar and honestly it never will be. So give your dream a real date. Something like, publish my first novel by 2027. Then break it into milestones, outline the story, finish the first draft, find 10 beta readers. And pick one small thing you can do today. Write 500 words, that's it. Not someday today. Demure turns your someday into a plan. Link's in the bio.",
  "words": [
   {
    "w": "someday",
@@ -234,7 +234,7 @@
   {
    "w": "finish",
    "raw": "finish",
-   "s": 13.72,
+   "s": 13.7,
    "e": 13.8
   },
   {
@@ -355,18 +355,18 @@
    "w": "thats",
    "raw": "that's",
    "s": 19.74,
-   "e": 19.96
+   "e": 19.94
   },
   {
    "w": "it",
    "raw": "it.",
-   "s": 19.96,
+   "s": 19.94,
    "e": 20.14
   },
   {
    "w": "not",
    "raw": "Not",
-   "s": 20.7,
+   "s": 20.68,
    "e": 20.88
   },
   {
@@ -379,24 +379,24 @@
    "w": "today",
    "raw": "today.",
    "s": 21.28,
-   "e": 21.68
+   "e": 21.7
   },
   {
    "w": "demure",
    "raw": "Demure",
-   "s": 22.48,
-   "e": 22.86
+   "s": 21.7,
+   "e": 22.88
   },
   {
    "w": "turns",
    "raw": "turns",
-   "s": 22.86,
-   "e": 23.2
+   "s": 22.88,
+   "e": 23.18
   },
   {
    "w": "your",
    "raw": "your",
-   "s": 23.2,
+   "s": 23.18,
    "e": 23.42
   },
   {
@@ -421,7 +421,31 @@
    "w": "plan",
    "raw": "plan.",
    "s": 24.16,
-   "e": 24.42
+   "e": 24.5
+  },
+  {
+   "w": "links",
+   "raw": "Link's",
+   "s": 25.12,
+   "e": 25.38
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 25.38,
+   "e": 25.48
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 25.48,
+   "e": 25.58
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 25.58,
+   "e": 25.88
   }
  ],
  "sentences": [
@@ -446,10 +470,15 @@
    "text": "And pick one small thing you can do today. Write 500 words, that's it."
   },
   {
-   "s": 20.7,
-   "e": 24.42,
-   "text": "Not someday today. Demure turns your someday into a plan."
+   "s": 20.68,
+   "e": 21.7,
+   "text": "Not someday today."
+  },
+  {
+   "s": 21.7,
+   "e": 25.88,
+   "text": "Demure turns your someday into a plan. Link's in the bio."
   }
  ],
- "wps": 2.8
+ "wps": 2.79
 }

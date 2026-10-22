@@ -1,6 +1,6 @@
 {
  "bpm": 100,
- "total": 26.42,
+ "total": 27.08,
  "handle": "@becauseidmyor",
  "tagline": "Turn your someday\ninto a plan.",
  "titles": [
@@ -51,7 +51,7 @@
   "trunk": 12.6,
   "milestones": [
    21.2,
-   22.867,
+   22.833,
    24.667
   ],
   "actions": [
@@ -61,8 +61,8 @@
   ],
   "focus": 30.933,
   "done": 32.9,
-  "grow": 34.5,
-  "brand": 38.1,
+  "grow": 34.467,
+  "brand": 38.133,
   "titleM": 21.2,
   "titleA": 27.333
  },
@@ -184,11 +184,11 @@
   },
   {
    "t0": 12.72,
-   "t1": 13.72,
+   "t1": 13.7,
    "text": "Outline the story"
   },
   {
-   "t0": 13.72,
+   "t0": 13.7,
    "t1": 14.8,
    "text": "Finish the first draft"
   },
@@ -214,28 +214,28 @@
   },
   {
    "t0": 19.74,
-   "t1": 20.7,
+   "t1": 20.68,
    "text": "That's it."
   },
   {
-   "t0": 20.7,
+   "t0": 20.68,
    "t1": 21.28,
    "text": "Not someday."
   },
   {
    "t0": 21.28,
-   "t1": 21.68,
+   "t1": 21.7,
    "text": "Today."
   },
   {
-   "t0": 21.68,
-   "t1": 22.86,
+   "t0": 21.7,
+   "t1": 22.88,
    "text": "Dmyor turns your someday into a plan."
   }
  ],
  "narration": {
   "voice": "am_eric",
   "provider": "kokoro-onnx v1.0",
-  "script": "Someday isn't a day. || It's not on your calendar, and honestly, it never will be. || So give your dream a real date. Something like, publish my first novel by 2027. || Then break it into milestones. Outline the story, finish the first draft, find ten beta readers. || And pick one small thing you can do today. Write five hundred words. That's it. || Not someday. Today. || Dmyor turns your someday into a plan."
+  "script": "Someday isn't a day. || It's not on your calendar, and honestly, it never will be. || So give your dream a real date. Something like, publish my first novel by 2027. || Then break it into milestones. Outline the story, finish the first draft, find ten beta readers. || And pick one small thing you can do today. Write five hundred words. That's it. || Not someday. Today. || Dmyor turns your someday into a plan. || Link's in the bio."
  }
 }

@@ -84,3 +84,6 @@ Edit this file (or tell Claude), set `Status: done`. The agent checks it every r
 Web insights don't show watch time. In the Instagram app, open each of these reels → View insights → scroll to "Watch time" / "Average watch time" and "Skip rate" (or "% of views past 3 seconds"). Screenshot and drop in `inbox/metrics/`:
 1. someday-is-not-a-day (best)  2. plan-the-bad-day  3. start-at-the-end (worst)  4. which-one-is-a-plan  5. tree-freelance (after 10-24)
 Why: tells us whether people leave in the first second (hook problem) or mid-way (pacing problem).
+
+## ASK-LOCK (2026-10-22, URGENT): recover @becauseidmyor
+Instagram locked the account ("we locked your account to protect you from a possible hack"). On your phone app or instagram.com: follow "Get code via email" (i*****1@gmail.com), set a new password if asked, review "Login activity" and confirm the Mac/Chrome sessions were you. Then tell Claude. Until then nothing is posted or scheduled on Instagram. Still scheduled on IG before the lock: tree-study-abroad (10-22 19:30, probably already live) and tree-novel (10-22 23:30) may or may not go out while locked.

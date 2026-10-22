@@ -1,6 +1,6 @@
 {
  "bpm": 100,
- "total": 24.02,
+ "total": 24.62,
  "handle": "@becauseidmyor",
  "tagline": "Turn your dream into\na plan you can see.",
  "titles": [
@@ -55,16 +55,16 @@
    12.733
   ],
   "actions": [
-   19.767,
+   19.8,
    21.7,
    23.833
   ],
   "focus": 29.5,
   "done": 30.767,
-  "grow": 33.167,
-  "brand": 35.4,
+  "grow": 33.133,
+  "brand": 35.7,
   "titleM": 10.133,
-  "titleA": 19.767
+  "titleA": 19.8
  },
  "seed": 11,
  "hook": [
@@ -209,18 +209,18 @@
   },
   {
    "t0": 18.24,
-   "t1": 19.42,
+   "t1": 18.86,
    "text": "Done today."
   },
   {
-   "t0": 19.42,
-   "t1": 21.24,
+   "t0": 18.86,
+   "t1": 21.42,
    "text": "And then you watch it grow."
   }
  ],
  "narration": {
   "voice": "am_eric",
   "provider": "kokoro-onnx v1.0",
-  "script": "Your dream feels too big to start, right? || So shrink it. Write down the vision, and give it a date. || Then add three milestones that show you're getting there. || Now take one of them, and break it into small actions. Like sending five proposals, posting one project, following up. || You don't need motivation for that. You just need one thing, done today. || And then you watch it grow. || That's Dmyor."
+  "script": "Your dream feels too big to start, right? || So shrink it. Write down the vision, and give it a date. || Then add three milestones that show you're getting there. || Now take one of them, and break it into small actions. Like sending five proposals, posting one project, following up. || You don't need motivation for that. You just need one thing, done today. || And then you watch it grow. || That's Dmyor. || Link's in the bio."
  }
 }

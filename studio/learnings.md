@@ -80,3 +80,6 @@ Kokoro TTS (kokoro-onnx v1.0, Apache-2.0) installed in tts/ (venv + models, giti
 
 ## 2026-10-22: diagram style + am_eric (owner review)
 Sanyam rejected the scenery/illustrated look ("modern, crisp, clarity, not fairy tale") and chose voice am_eric ("kinda retro"). New template tree-series/diagram.html (same events/config contract). Built diagram-howto-vo (18.2s) and diagram-someday-vo (20.5s). tree-*-vo superseded, do not post. Pronunciation fixed to DEEM-yor; whisper hears it as "deem your"/"demure", subtitles map back to Dmyor.
+
+## 2026-10-22 22:20 IST: Instagram LOCKED @becauseidmyor ("possible hack" challenge)
+While scheduling diagram-howto-vo from the web (browser automation), two "Your post could not be shared" errors, then the account was locked behind a recovery challenge (email code). Likely trigger: heavy automated web activity in ~48h from one browser session (1 post + 14 scheduled uploads, ~15 insights page loads, repeated create/discard flows). Sanyam must recover it himself. Rules from now: no browser automation on Instagram until he says so; after recovery, at most 1 post/schedule action per session, no bulk insights scraping (ask for screenshots instead), and let him post from the phone app when possible.

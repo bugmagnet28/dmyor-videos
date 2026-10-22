@@ -1,7 +1,7 @@
 {
  "audio": "audio.mp3",
- "duration": 22.57,
- "text": "Your dream feels too big to start right, so shrink it right down the vision and give it a date. Then add three milestones that show you're getting there. Now take one of them and break it into small actions, like sending five proposals posting one project following up. You don't need motivation for that, you just need one thing done today. And then you watch it grow. That's demure.",
+ "duration": 24.11,
+ "text": "Your dream feels too big to start right, so shrink it right down the vision and give it a date. Then add three milestones that show you're getting there. Now take one of them and break it into small actions, like sending five proposals posting one project following up. You don't need motivation for that, you just need one thing done today. And then you watch it grow. That's Demure. Link's in the bio.",
  "words": [
   {
    "w": "your",
@@ -19,12 +19,12 @@
    "w": "feels",
    "raw": "feels",
    "s": 0.6,
-   "e": 0.88
+   "e": 0.86
   },
   {
    "w": "too",
    "raw": "too",
-   "s": 0.88,
+   "s": 0.86,
    "e": 1.14
   },
   {
@@ -199,12 +199,12 @@
    "w": "of",
    "raw": "of",
    "s": 9.44,
-   "e": 9.54
+   "e": 9.56
   },
   {
    "w": "them",
    "raw": "them",
-   "s": 9.54,
+   "s": 9.56,
    "e": 9.68
   },
   {
@@ -247,12 +247,12 @@
    "w": "like",
    "raw": "like",
    "s": 11.7,
-   "e": 11.86
+   "e": 11.88
   },
   {
    "w": "sending",
    "raw": "sending",
-   "s": 11.86,
+   "s": 11.88,
    "e": 12.14
   },
   {
@@ -295,7 +295,7 @@
    "w": "up",
    "raw": "up.",
    "s": 14.7,
-   "e": 15.04
+   "e": 15.02
   },
   {
    "w": "you",
@@ -319,12 +319,12 @@
    "w": "motivation",
    "raw": "motivation",
    "s": 15.84,
-   "e": 16.3
+   "e": 16.28
   },
   {
    "w": "for",
    "raw": "for",
-   "s": 16.3,
+   "s": 16.28,
    "e": 16.62
   },
   {
@@ -373,30 +373,30 @@
    "w": "today",
    "raw": "today.",
    "s": 18.46,
-   "e": 18.84
+   "e": 18.86
   },
   {
    "w": "and",
    "raw": "And",
-   "s": 19.42,
-   "e": 19.62
+   "s": 18.86,
+   "e": 19.6
   },
   {
    "w": "then",
    "raw": "then",
-   "s": 19.62,
+   "s": 19.6,
    "e": 19.74
   },
   {
    "w": "you",
    "raw": "you",
    "s": 19.74,
-   "e": 19.9
+   "e": 19.88
   },
   {
    "w": "watch",
    "raw": "watch",
-   "s": 19.9,
+   "s": 19.88,
    "e": 20.1
   },
   {
@@ -409,19 +409,43 @@
    "w": "grow",
    "raw": "grow.",
    "s": 20.3,
-   "e": 20.56
+   "e": 20.58
   },
   {
    "w": "thats",
    "raw": "That's",
-   "s": 21.24,
-   "e": 21.6
+   "s": 21.42,
+   "e": 21.58
   },
   {
    "w": "demure",
-   "raw": "demure.",
-   "s": 21.6,
-   "e": 22.02
+   "raw": "Demure.",
+   "s": 21.58,
+   "e": 22.08
+  },
+  {
+   "w": "links",
+   "raw": "Link's",
+   "s": 22.7,
+   "e": 22.94
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 22.94,
+   "e": 23.04
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 23.04,
+   "e": 23.14
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 23.14,
+   "e": 23.42
   }
  ],
  "sentences": [
@@ -437,19 +461,19 @@
   },
   {
    "s": 10.04,
-   "e": 15.04,
+   "e": 15.02,
    "text": "it into small actions, like sending five proposals posting one project following up."
   },
   {
    "s": 15.36,
-   "e": 18.84,
+   "e": 18.86,
    "text": "You don't need motivation for that, you just need one thing done today."
   },
   {
-   "s": 19.42,
-   "e": 22.02,
-   "text": "And then you watch it grow. That's demure."
+   "s": 18.86,
+   "e": 23.42,
+   "text": "And then you watch it grow. That's Demure. Link's in the bio."
   }
  ],
- "wps": 3.1
+ "wps": 3.07
 }
