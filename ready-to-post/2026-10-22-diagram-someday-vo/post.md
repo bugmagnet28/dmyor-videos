@@ -14,4 +14,4 @@ Dmyor turns your someday into a plan. Link in bio.
 V-EXP-23 (narration + diagram style): narrated crisp diagram reel vs text-only. Compare avg watch time, saves, shares at 48h.
 
 ## Status
-Not approved yet: waiting for Sanyam to watch.
+Approved; scheduled on Instagram for 2026-10-23 (19:30 IST).

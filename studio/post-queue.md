@@ -10,6 +10,12 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 - [ ] **2026-10-21 hours-in-a-week** (16.4s, no VO) · `ready-to-post/2026-10-21-hours-in-a-week/` · caption in post.md · tests V-EXP-22 · end card @dmyor_global
 
 
+## Scheduled on @becauseidmyor for 2026-10-23 (IST), narrated diagram reels (voice am_eric), Sanyam approved
+
+- [x] scheduled 09:30 IST · **diagram-howto-vo** · `ready-to-post/2026-10-22-diagram-howto-vo/` · V-EXP-23
+- [x] scheduled 19:30 IST · **diagram-someday-vo** · `ready-to-post/2026-10-22-diagram-someday-vo/` · V-EXP-23
+- YouTube: blocked (daily upload limit; needs phone verification). X: Sanyam said leave for now. Post kits in each folder's x-and-youtube.md.
+
 ## Scheduled on @becauseidmyor for 2026-10-22 (IST), tree series, by Claude via Instagram web, Sanyam approved
 
 - [x] scheduled 05:30 IST · US East · **tree-freelance** · `ready-to-post/2026-10-21-tree-freelance/`

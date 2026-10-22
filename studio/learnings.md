@@ -83,3 +83,4 @@ Sanyam rejected the scenery/illustrated look ("modern, crisp, clarity, not fairy
 
 ## 2026-10-22 22:20 IST: Instagram LOCKED @becauseidmyor ("possible hack" challenge)
 While scheduling diagram-howto-vo from the web (browser automation), two "Your post could not be shared" errors, then the account was locked behind a recovery challenge (email code). Likely trigger: heavy automated web activity in ~48h from one browser session (1 post + 14 scheduled uploads, ~15 insights page loads, repeated create/discard flows). Sanyam must recover it himself. Rules from now: no browser automation on Instagram until he says so; after recovery, at most 1 post/schedule action per session, no bulk insights scraping (ask for screenshots instead), and let him post from the phone app when possible.
+2026-10-22 22:50: account recovered by Sanyam; 2 narrated reels scheduled for 10-23 (09:30, 19:30) with only those two flows, no other page loads. Worked fine.
