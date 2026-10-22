@@ -1,4 +1,4 @@
-# diagram-howto-vo (narrated, diagram style, voice am_eric 0.82x)
+# diagram-howto-vo (narrated, diagram style, voice am_eric 1.0x, sentence-by-sentence with pauses, no music)
 
 ## Caption
 Too big to start? Shrink it.

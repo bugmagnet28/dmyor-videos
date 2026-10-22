@@ -1,4 +1,4 @@
-# diagram-someday-vo (narrated, diagram style, voice am_eric 0.82x)
+# diagram-someday-vo (narrated, diagram style, voice am_eric 1.0x, sentence-by-sentence with pauses, no music)
 
 ## Caption
 Someday isn't a day. It's not on your calendar.

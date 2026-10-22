@@ -48,7 +48,8 @@ def main(d):
     # 1. voice
     spoken = re.sub(r"\bDmyor\b", "Deem-yor", n["script"])  # owner: said "DEEM-yor" (2026-10-22)
     run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(ROOT, "tts/say.py"), spoken,
-        os.path.join(d, "audio.mp3"), "--voice", n["voice"], "--speed", str(n.get("speed", 1.0)))
+        os.path.join(d, "audio.mp3"), "--voice", n["voice"], "--speed", str(n.get("speed", 0.9)),
+        "--gap", str(n.get("gap", 0.42)), "--beat", str(n.get("beat", 0.8)))
     # 2. word timings
     run("python3", os.path.join(ROOT, ".claude/skills/dmyor-reel/scripts/align.py"), d)
     cues = json.load(open(os.path.join(d, "cues.json")))
@@ -91,17 +92,22 @@ def main(d):
         t1 = W[chunks[ci + 1][0]]["s"] if ci + 1 < len(chunks) else W[ch[-1]]["e"] + 0.4
         if ev_s["hookOut"] - 0.05 <= t0 < ev_s["brand"] - 0.05:
             txt = " ".join(W[j]["raw"] for j in ch).strip()
-            txt = re.sub(r"\bD(?:ee|e|i)?-?\s?m(?:y|i)(?:o|e)?re?\b|\bDeem[- ]?yo(?:u)?re?\b|\bdemure\b", "Dmyor", txt, flags=re.I)
+            txt = re.sub(r"\bD(?:ee|e|i)?-?\s?m(?:y|i)(?:o|e)?re?\b|\bDeem[- ]?yo(?:u)?re?\b|\bD-?[Mm]ure\b|\bdemure\b", "Dmyor", txt, flags=re.I)
             subs.append({"t0": round(t0, 2), "t1": round(min(t1, ev_s["brand"]), 2), "text": (txt[:1].upper() + txt[1:]).rstrip(",;")})
     cfg["subs"] = subs
     cfg["narration"] = {"voice": n["voice"], "provider": "kokoro-onnx v1.0", "script": n["script"]}
     json.dump(cfg, open(os.path.join(d, "config.json"), "w"), indent=1)
 
-    # 5. visuals, music bed, mix (bed ~ -20 dB under the voice, fades with the brand card)
+    # 5. visuals, then the voice track (optional music bed)
     run("python3", os.path.join(HERE, "build.py"), d)
-    run("python3", os.path.join(HERE, "music.py"), d, "music.mp3")
-    run("ffmpeg", "-loglevel", "error", "-y", "-i", os.path.join(d, "audio.mp3"), "-i", os.path.join(d, "music.mp3"),
-        "-filter_complex", "[0:a]apad,atrim=0:%s[v];[1:a]volume=0.16[m];[v][m]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.5[o]" % cfg["total"],
+    if n.get("music"):  # off by default (owner, 2026-10-22: no background music under narration)
+        run("python3", os.path.join(HERE, "music.py"), d, "music.mp3")
+        mix = "[0:a]apad,atrim=0:%s[v];[1:a]volume=0.16[m];[v][m]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.5[o]" % cfg["total"]
+        ins = ["-i", os.path.join(d, "audio.mp3"), "-i", os.path.join(d, "music.mp3")]
+    else:
+        mix = "[0:a]apad,atrim=0:%s,loudnorm=I=-14:TP=-1.5[o]" % cfg["total"]
+        ins = ["-i", os.path.join(d, "audio.mp3")]
+    run("ffmpeg", "-loglevel", "error", "-y", *ins, "-filter_complex", mix,
         "-map", "[o]", "-ar", "44100", "-b:a", "192k", os.path.join(d, "audio_mixed.mp3"))
     print(f"ready: {d}  total {cfg['total']}s, {len(subs)} subtitle phrases, events(s) {json.dumps({k: v for k, v in ev_s.items()})}")
 
