@@ -1,0 +1,36 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.3,
+ "gap_max": 0.55,
+ "tail": 1.2,
+ "content": {
+  "hook": ["Not lazy.", "You just don't know the next step."],
+  "vision": "Speak Spanish by next June",
+  "milestones": ["Learn 500 words", "Hold a real chat", "Watch a show, no subs"],
+  "actions": ["Learn 10 phrases", "Book a tutor call", "Record yourself"],
+  "actionParent": 1,
+  "todayIdx": 0,
+  "tagline": "Know your next step.\nEvery day.",
+  "handle": "@dmyor_global"
+ },
+ "script": "You're not lazy. You just don't know what the next step is. || So write the goal down with a date. Like, speak Spanish by next June. || Then three milestones. Five hundred words, a real conversation, a show without subtitles. || Now break the middle one into small actions, like learning ten phrases, booking a tutor call, recording yourself. || You don't need discipline for that. Just one, done today. || And watch the whole plan start to move. || That's Dmyor. || Link's in the bio.",
+ "anchors": {
+  "hookOut": "So write",
+  "vision": "speak Spanish",
+  "trunk": "next June",
+  "milestones": ["five hundred", "real conversation", "without subtitles"],
+  "actions": ["ten phrases", "tutor call", "recording yourself"],
+  "focus": "Just one",
+  "done": "today",
+  "grow": "whole plan",
+  "brand": "That's"
+ },
+ "caption": {
+  "instagram": "You're not lazy. You just don't know the next step.\n\n• Goal with a date\n• 3 milestones\n• Break one into small actions\n• Do just one, today\n\nSend this to the friend who calls themselves lazy.\nDmyor turns a big goal into your next step. Link in bio.",
+  "hashtags": "#goalsetting #productivity #learnspanish #selfimprovement #planning",
+  "x": "You're not lazy. You just don't know the next step.\n\nGoal with a date -> 3 milestones -> small actions -> one done today.\n\nThat's Dmyor: https://www.dmyor.com",
+  "youtube_title": "You're not lazy, you just don't know the next step"
+ },
+ "experiment": "V-EXP-26 (identity-relief hook 'Not lazy.') + V-EXP-25 (narrated diagram format)"
+}

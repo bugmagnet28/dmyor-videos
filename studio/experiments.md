@@ -252,3 +252,23 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if hold and reach lead, use the reframe-claim hook on the next tree reels; else niche-goal hooks stay.
+
+## V-EXP-25: Narrated diagram format (am_eric voice + subtitles, no music) vs no-VO calm kinetic and the illustrated tree
+- Status: running (registered 2026-10-23; the two first diagram reels were labelled "V-EXP-23" in post-queue during Sanyam's 10-22 session, a clash with the tree-format test, so the narrated diagram format is V-EXP-25 from now on)
+- Change: dark crisp planning diagram (vision -> 3 milestones -> 3 actions -> TODAY tick -> progress to vision), free local voice (Kokoro am_eric), script-text subtitles, 20-28s. Owner default for explainer reels (2026-10-22).
+- Reels testing it: diagram-howto-vo (live 10-23 09:30), diagram-someday-vo (10-23 19:30), not-lazy-next-step (2026-10-23 build).
+- Metric + target (48h): avg-watch ratio >= the kinetic median; reach per reel above the kinetic median (19 views) in a spaced slot; >= 1 follow or profile visit across the three.
+- Expectation: voice + subtitles hold viewers longer in absolute seconds (longer reels) but watch ratio similar; follows slightly better because the product structure is explained. Confidence low (n=3, slots differ, 2 posted the same day).
+- Result:
+- Verdict + why:
+- Next: if diagram beats kinetic on reach and watch ratio, make it 2 of 3 builds; vary hook + goal domain.
+
+## V-EXP-26: Identity-relief hook ("You're not lazy.") on the narrated diagram
+- Status: running (opened 2026-10-23, before building)
+- Change vs diagram-howto-vo ("Too big?") and diagram-someday-vo ("Someday isn't a day."): frame 0 is an identity relief line that contradicts a belief the viewer holds about themselves ("You're not lazy." / "You just don't know the next step."), the someday-style "short contrarian statement about the viewer" that won the first batch (someday-is-not-a-day, 65 reached = 2x the rest). New goal domain: learning a language (Spanish), broad. Everything else = diagram template defaults.
+- Reels testing it: not-lazy-next-step (2026-10-23)
+- Metric + target (48h): reach and 3s hold above both earlier diagram reels when posted alone in the 09:30 IST slot; >= 1 share (relief lines are sent to friends).
+- Expectation: best diagram reel on reach; shares 0-1 (audience tiny). Confidence low (n=1).
+- Result:
+- Verdict + why:
+- Next: if it leads, keep "relief/contrarian about the viewer" as the default diagram hook family.

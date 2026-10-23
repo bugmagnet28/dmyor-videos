@@ -61,7 +61,7 @@ Edit this file (or tell Claude), set `Status: done`. The agent checks it every r
 - Optional: if those two old `claude` sessions are stale, closing them (or restarting the Mac) would make runs faster. I will not touch processes outside my own renders.
 
 ## VASK-012: Insights for the 12 reels live on @becauseidmyor (one sitting, ~10 min)
-- Status: open (2026-10-21; 2026-10-22: please include the 3 tree reels too, tree-freelance / tree-study-abroad / tree-novel, their 48h point is Oct 24)
+- Status: open (2026-10-23: due tonight for the Oct-21 batch. Please use the Instagram phone app and screenshots only, no web automation after the lock. Also include diagram-howto-vo/diagram-someday-vo at their 48h, Oct 25. 2026-10-22: please include the 3 tree reels too, tree-freelance / tree-study-abroad / tree-novel, their 48h point is Oct 24)
 - Why: this is the first real data. 12 reels went live on Oct 21 in different region slots; their numbers decide which hook, length and slot we keep, and close V-EXP-09..21.
 - Steps:
   1. **Thu Oct 23 evening (48h):** on @becauseidmyor open each reel > View insights. Screenshot the overview (views, reach, avg watch time, watch time, likes, comments, shares, saves, follows) and the "accounts reached / non-followers %" part. Drop all images into `~/Documents/dmyor-videos/inbox/metrics/`. File names don't matter; I match by thumbnail.
@@ -87,3 +87,9 @@ Why: tells us whether people leave in the first second (hook problem) or mid-way
 
 ## ASK-LOCK (2026-10-22, URGENT): recover @becauseidmyor
 Instagram locked the account ("we locked your account to protect you from a possible hack"). On your phone app or instagram.com: follow "Get code via email" (i*****1@gmail.com), set a new password if asked, review "Login activity" and confirm the Mac/Chrome sessions were you. Then tell Claude. Until then nothing is posted or scheduled on Instagram. Still scheduled on IG before the lock: tree-study-abroad (10-22 19:30, probably already live) and tree-novel (10-22 23:30) may or may not go out while locked.
+
+## VASK-015: Listen to not-lazy-next-step, then post it alone at 09:30 IST (2026-10-23)
+- Status: open
+- What: new narrated diagram reel (27.2s, voice am_eric, subtitles). Hook "Not lazy. / You just don't know the next step." on a Spanish-by-next-June plan. Tests V-EXP-26 (identity-relief hook, the "someday" style that won the first batch).
+- Steps: 1) watch with sound: `ready-to-post/2026-10-23-not-lazy-next-step/video.mp4`. 2) if OK, post from the phone app (not web automation) at 09:30 IST on a day with no other reel; suggested order: Oct 24 not-lazy-next-step, Oct 25 tree-first-5k, Oct 26 hours-in-a-week. 3) caption + hashtags from its post.md, cover = frame 0. 4) tick `[x] posted` in studio/post-queue.md. 5) insights screenshots 48h later.
+- If you dislike it, one line in inbox/notes.md on what to change is enough.

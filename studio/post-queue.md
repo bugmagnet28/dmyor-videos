@@ -6,14 +6,15 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 **Post order: bottom one first (oldest). From Oct 24: one reel per day, best slot from the Oct 23 insights (VASK-014).** All queued reels are evergreen. Newest is listed on top.
 
+- [ ] **2026-10-23 not-lazy-next-step** (27.2s, narrated diagram, voice am_eric, subtitles) · `ready-to-post/2026-10-23-not-lazy-next-step/` · caption in post.md · tests V-EXP-26 + V-EXP-25 · end card @dmyor_global · listen first; post 09:30 IST alone
 - [ ] **2026-10-22 tree-first-5k** (16.2s, tree series, music, no VO) · `ready-to-post/2026-10-22-tree-first-5k/` · caption in post.md · tests V-EXP-24 (+V-EXP-23) · end card @dmyor_global · post on a day with no other reel
 - [ ] **2026-10-21 hours-in-a-week** (16.4s, no VO) · `ready-to-post/2026-10-21-hours-in-a-week/` · caption in post.md · tests V-EXP-22 · end card @dmyor_global
 
 
 ## Scheduled on @becauseidmyor for 2026-10-23 (IST), narrated diagram reels (voice am_eric), Sanyam approved
 
-- [x] scheduled 09:30 IST · **diagram-howto-vo** · `ready-to-post/2026-10-22-diagram-howto-vo/` · V-EXP-23
-- [x] scheduled 19:30 IST · **diagram-someday-vo** · `ready-to-post/2026-10-22-diagram-someday-vo/` · V-EXP-23
+- [x] scheduled 09:30 IST · **diagram-howto-vo** · `ready-to-post/2026-10-22-diagram-howto-vo/` · V-EXP-25 (was labelled V-EXP-23)
+- [x] scheduled 19:30 IST · **diagram-someday-vo** · `ready-to-post/2026-10-22-diagram-someday-vo/` · V-EXP-25 (was labelled V-EXP-23)
 - X: scheduled at the same times (09:30, 19:30 IST). YouTube: blocked (daily upload limit; needs phone verification). Post kits in each folder's x-and-youtube.md.
 
 ## Scheduled on @becauseidmyor for 2026-10-22 (IST), tree series, by Claude via Instagram web, Sanyam approved

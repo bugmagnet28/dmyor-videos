@@ -31,6 +31,9 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 2. Rotate pillars 1 to 4 so we learn which topic pulls.
 3. Get real numbers in: ask Sanyam for screenshots 48h after each post.
 
+## Week 3 log (2026-10-22 to 2026-10-28)
+- 2026-10-23: not-lazy-next-step (narrated diagram, am_eric, 27.2s, identity-relief hook 'Not lazy.', Spanish goal). V-EXP-26 + V-EXP-25 (diagram format id). Queue: 3 ready. No new metrics.
+
 ## Week 2 log (2026-10-15 to 2026-10-21)
 - 2026-10-15: life-in-weeks (pillar 3, 15.2s, data-visual grid body, named-person share CTA). V-EXP-16. Queue: 7 ready, 0 posted. (Render died in that run; recovered 2026-10-16.)
 - 2026-10-16: about-to-start (pillar 1, 9.6s ultra-short, 'you' hook + struck hook word, named-friend share). V-EXP-17 (length floor). Queue: 8 ready, 0 posted.

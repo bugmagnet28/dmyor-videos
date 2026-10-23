@@ -1,0 +1,142 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>dmyor diagram reel</title>
+<style>
+/* Diagram style (2026-10-22, owner brief: modern, crisp, clarity, no scenery).
+   Vision -> milestones -> actions as a clean org-chart tree with orthogonal connectors.
+   Same config/events contract as tree.html, so narrate.py and music.py work unchanged. */
+@font-face{font-family:"Tight";font-weight:500;src:url(../../.claude/skills/narrated-goal-tree-diagram-reel/assets/fonts/InterTight-normal-500.woff2)}
+@font-face{font-family:"Tight";font-weight:600;src:url(../../.claude/skills/narrated-goal-tree-diagram-reel/assets/fonts/InterTight-normal-600.woff2)}
+@font-face{font-family:"Tight";font-weight:700;src:url(../../.claude/skills/narrated-goal-tree-diagram-reel/assets/fonts/InterTight-normal-700.woff2)}
+@font-face{font-family:"Tight";font-weight:800;src:url(../../.claude/skills/narrated-goal-tree-diagram-reel/assets/fonts/InterTight-normal-800.woff2)}
+:root{--bg:#0B0C10;--panel:#14161B;--line:#2B2F38;--ink:#F3F4F6;--mute:#8B909A;--accent:#FF7A1A;--done:#3DDC97}
+html,body{margin:0;padding:0;background:#000;overflow:hidden;width:100%;height:100%}
+#viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;transform-origin:center;background:var(--bg);
+  -webkit-font-smoothing:antialiased;font-family:"Tight",sans-serif;color:var(--ink)}
+#grid,#wires{position:absolute;inset:0}
+#cam{position:absolute;inset:0;transform-origin:540px 990px}
+.node{position:absolute;left:0;top:0;box-sizing:border-box;background:var(--panel);border:2px solid var(--line);
+  border-radius:16px;padding:20px 24px;will-change:transform,opacity}
+.node .lab{font-weight:700;font-size:19px;letter-spacing:3.5px;color:var(--mute);display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.node .sq{width:12px;height:12px;border-radius:3px;background:var(--mute)}
+.node .txt{font-weight:600;letter-spacing:-.4px;line-height:1.15;color:var(--ink)}
+.node .bar{height:5px;border-radius:5px;background:#23262E;margin-top:16px;overflow:hidden}
+.node .bar i{display:block;height:100%;width:0;background:var(--accent);border-radius:5px}
+.node .chk{position:absolute;left:22px;top:50%;width:30px;height:30px;margin-top:-15px;border-radius:8px;border:2px solid #3A3F49;box-sizing:border-box}
+.node .chk svg{position:absolute;inset:3px}
+.node.action{padding-left:66px}
+.tag{position:absolute;left:0;top:0;font-weight:800;font-size:20px;letter-spacing:4px;padding:8px 16px;border-radius:8px;background:var(--accent);color:#120A03}
+.sub{position:absolute;left:70px;right:70px;top:200px;text-align:center;font-weight:700;font-size:62px;line-height:1.1;letter-spacing:-1.2px;will-change:opacity,transform}
+.sub b{color:var(--accent);font-weight:800}
+#hook{position:absolute;left:70px;right:70px;top:640px;text-align:center}
+#hook .h1{font-weight:800;font-size:132px;letter-spacing:-4px;line-height:1}
+#hook .h2{font-weight:600;font-size:54px;color:var(--mute);margin-top:30px;letter-spacing:-.8px;line-height:1.15}
+#corner{position:absolute;left:64px;top:96px;font-weight:700;font-size:20px;letter-spacing:4px;color:#4A4F59}
+#brand{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0;padding-bottom:220px;box-sizing:border-box}
+#brand .mark{font-weight:800;font-size:160px;letter-spacing:-6px;line-height:1}
+#brand .tag2{white-space:pre-line;font-weight:600;font-size:52px;color:var(--mute);margin-top:26px;line-height:1.2;letter-spacing:-.6px}
+#brand .handle{margin-top:48px;font-weight:700;font-size:40px;padding:14px 36px;border-radius:999px;background:var(--accent);color:#120A03}
+#playBtn{position:fixed;inset:0;margin:auto;width:210px;height:64px;border-radius:32px;border:0;font:700 22px sans-serif;cursor:pointer}
+</style></head><body>
+<div id="viewport"><div id="stage">
+  <svg id="grid" width="1080" height="1920"><defs><pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#fff" fill-opacity=".07"/></pattern></defs><rect id="gridrect" x="0" y="-40" width="1080" height="2000" fill="url(#dots)"/></svg>
+  <div id="cam"><svg id="wires" width="1080" height="1920"></svg></div>
+  <div id="corner">DMYOR · PLAN</div>
+  <div id="hook"><div class="h1"></div><div class="h2"></div></div>
+  <div id="brand"><div class="mark">dmyor</div><div class="tag2"></div><div class="handle"></div></div>
+</div></div>
+<button id="playBtn">PLAY</button>
+<script>
+var CFG = {"handle": "@dmyor_global", "tagline": "Know your next step.\nEvery day.", "actionParent": 1, "todayIdx": 0, "hook": ["Not lazy.", "You just don't know the next step."], "vision": "Speak Spanish by next June", "milestones": ["Learn 500 words", "Hold a real chat", "Watch a show, no subs"], "actions": ["Learn 10 phrases", "Book a tutor call", "Record yourself"], "bpm": 100, "events": {"hookOut": 5.233, "vision": 8.267, "trunk": 9.767, "milestones": [14.1, 15.7, 17.833], "actions": [25.0, 27.133, 28.033], "focus": 32.833, "done": 33.767, "grow": 36.533, "brand": 39.733}, "total": 27.18, "subs": [{"t0": 3.14, "t1": 3.82, "text": "So write the goal"}, {"t0": 3.82, "t1": 4.8, "text": "Down with a date."}, {"t0": 4.8, "t1": 4.96, "text": "Like"}, {"t0": 4.96, "t1": 7.0, "text": "Speak Spanish by next June."}, {"t0": 7.0, "t1": 7.88, "text": "Then three milestones."}, {"t0": 7.88, "t1": 9.18, "text": "Five hundred words"}, {"t0": 9.18, "t1": 10.16, "text": "A real conversation"}, {"t0": 10.16, "t1": 12.34, "text": "A show without subtitles."}, {"t0": 12.34, "t1": 13.02, "text": "Now break the middle"}, {"t0": 13.02, "t1": 14.52, "text": "One into small actions"}, {"t0": 14.52, "t1": 15.72, "text": "Like learning ten phrases"}, {"t0": 15.72, "t1": 16.82, "text": "Booking a tutor call"}, {"t0": 16.82, "t1": 18.16, "text": "Recording yourself."}, {"t0": 18.16, "t1": 19.7, "text": "You don't need discipline for that."}, {"t0": 19.7, "t1": 20.08, "text": "Just one"}, {"t0": 20.08, "t1": 20.62, "text": "Done today."}, {"t0": 20.62, "t1": 22.14, "text": "And watch the whole"}, {"t0": 22.14, "t1": 23.84, "text": "Plan start to move."}], "narration": {"voice": "am_eric", "provider": "kokoro-onnx v1.0", "script": "You're not lazy. You just don't know what the next step is. || So write the goal down with a date. Like, speak Spanish by next June. || Then three milestones. Five hundred words, a real conversation, a show without subtitles. || Now break the middle one into small actions, like learning ten phrases, booking a tutor call, recording yourself. || You don't need discipline for that. Just one, done today. || And watch the whole plan start to move. || That's Dmyor. || Link's in the bio."}};
+</script>
+<script>
+(function(){
+"use strict";
+var W=1080,H=1920,C=CFG,B=60/C.bpm,T=C.total,E=C.events,NS="http://www.w3.org/2000/svg";
+var stage=document.getElementById("stage"),cam=document.getElementById("cam"),wires=document.getElementById("wires");
+function fit(){var s=Math.min(innerWidth/W,innerHeight/H);stage.style.transform="scale("+s+")";}
+fit();addEventListener("resize",fit);
+var cl=function(x){return x<0?0:x>1?1:x},seg=function(t,a,b){return cl((t-a)/(b-a))};
+var eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2},eout=function(x){return 1-Math.pow(1-x,3)};
+var eob=function(x){var c=1.4;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+var at=function(b){return b*B};
+var ACC="#FF7A1A",DONE="#3DDC97",LINE="#5A606C";
+function el(tag,a,p){var e=document.createElementNS(NS,tag);for(var k in a)e.setAttribute(k,a[k]);(p||wires).appendChild(e);return e;}
+function div(cls,html,p){var d=document.createElement("div");d.className=cls;if(html!=null)d.innerHTML=html;(p||cam).appendChild(d);return d;}
+// ---------- layout ----------
+var VX=540,VY=610,MY=990,AY=1370,MX=[205,540,875],AX=[205,540,875];
+var vN=div("node vision",'<div class="lab" style="color:'+ACC+'"><span class="sq" style="background:'+ACC+'"></span>VISION</div><div class="txt" style="font-size:44px">'+C.vision+'</div><div class="bar"><i></i></div>');
+vN.style.width="720px";vN.style.borderColor="rgba(255,122,26,.55)";
+var mN=C.milestones.map(function(t){var n=div("node",'<div class="lab"><span class="sq"></span>MILESTONE</div><div class="txt" style="font-size:31px">'+t+'</div><div class="bar"><i></i></div>');n.style.width="300px";return n;});
+var aN=C.actions.map(function(t){var n=div("node action",'<div class="chk"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17.5 L19 7" fill="none" stroke="#0B0C10" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="22" stroke-dashoffset="22"/></svg></div><div class="lab"><span class="sq"></span>ACTION</div><div class="txt" style="font-size:29px">'+t+'</div>');n.style.width="300px";return n;});
+var tag=div("tag","TODAY");
+function box(n){return {w:n.offsetWidth,h:n.offsetHeight};}
+function place(n,x,y,s,o){var b=box(n);n.style.transform="translate("+(x-b.w/2)+"px,"+(y-b.h/2)+"px) scale("+s+")";n.style.opacity=o;}
+// connectors (orthogonal), drawn after nodes exist so heights are known
+var vb=box(vN),mb=box(mN[0]),ab=box(aN[0]);
+var vBot=VY+vb.h/2,mTop=MY-mb.h/2,mBot=MY+mb.h/2,aTop=AY-ab.h/2;
+var bus1=(vBot+mTop)/2,bus2=(mBot+aTop)/2,P=C.actionParent;
+function wire(d,col,w){var p=el("path",{d:d,fill:"none",stroke:col,"stroke-width":w,"stroke-linecap":"square","stroke-linejoin":"miter"});var L=p.getTotalLength();p.__L=L;p.setAttribute("stroke-dasharray",L);p.setAttribute("stroke-dashoffset",L);return p;}
+var stem=wire("M"+VX+" "+vBot+" V"+bus1,LINE,3.5);
+var mW=MX.map(function(x){return wire("M"+VX+" "+bus1+" H"+x+" V"+mTop,LINE,3);});
+var stem2=wire("M"+MX[P]+" "+mBot+" V"+bus2,LINE,3);
+var aW=AX.map(function(x){return wire("M"+MX[P]+" "+bus2+" H"+x+" V"+aTop,LINE,3);});
+var ti=C.todayIdx;
+// progress path lights up from today's action back to the vision
+var glowA=wire("M"+AX[ti]+" "+aTop+" V"+bus2+" H"+MX[P]+" V"+mBot,ACC,4);
+var glowM=wire("M"+MX[P]+" "+mTop+" V"+bus1+" H"+VX+" V"+vBot,ACC,4);
+var dots=[[VX,bus1],[MX[P],bus2]].map(function(p){return el("circle",{cx:p[0],cy:p[1],r:0,fill:LINE});});
+// ---------- text ----------
+var hook=document.getElementById("hook");hook.querySelector(".h1").textContent=C.hook[0];hook.querySelector(".h2").textContent=C.hook[1];
+var subs=(C.subs||[]).map(function(sb){var d=div("sub",null,stage);d.textContent=sb.text;d.style.opacity=0;return {sb:sb,d:d};});
+var brand=document.getElementById("brand");brand.querySelector(".tag2").textContent=C.tagline;brand.querySelector(".handle").textContent=C.handle;
+var gridrect=document.getElementById("gridrect");
+// ---------- render ----------
+function grow(p,t,a,dur){p.setAttribute("stroke-dashoffset",p.__L*(1-eio(seg(t,a,a+dur))));}
+function render(t){
+  t=Math.max(0,Math.min(T,t));
+  gridrect.setAttribute("y",-40+(t*10)%40);
+  var foc=seg(t,at(E.focus),at(E.focus)+.4)*(1-seg(t,at(E.grow),at(E.grow)+.5));
+  var s=1+.012*seg(t,0,T)+.05*eio(foc);
+  var fy=(AY-990)*eio(foc)*.35;
+  cam.style.transform="translate(0px,"+(-fy)+"px) scale("+s+")";
+  // hook (frame 0 finished)
+  var ho=1-eio(seg(t,at(E.hookOut),at(E.hookOut)+.35));hook.style.opacity=ho;hook.style.transform="translateY("+(-40*(1-ho))+"px)";
+  // nodes
+  var back=1-.72*eio(foc);
+  var pv=seg(t,at(E.vision),at(E.vision)+.35);place(vN,VX,VY+16*(1-eout(pv)),.92+.08*eob(pv),Math.min(1,pv*2.2)*back);
+  grow(stem,t,at(E.trunk),.4);
+  mN.forEach(function(n,i){var a=at(E.milestones[i]);grow(mW[i],t,a-.45,.45);var p=seg(t,a,a+.3);
+    place(n,MX[i],MY+14*(1-eout(p)),.92+.08*eob(p),Math.min(1,p*2.2)*(i===P?Math.max(back,.28+.72*(1-eio(foc))):back));
+    n.querySelector(".bar i").style.width=(i===P?34*eio(seg(t,at(E.grow)+.5,at(E.grow)+1.1)):0)+"%";
+    if(i===P) n.style.borderColor=t>=at(E.grow)+.45?"rgba(255,122,26,.55)":"#2B2F38";});
+  grow(stem2,t,at(E.actions[0])-.75,.3);
+  aN.forEach(function(n,i){var a=at(E.actions[i]);grow(aW[i],t,a-.45,.45);var p=seg(t,a,a+.3);
+    var isT=i===ti, sc=.92+.08*eob(p)+(isT?.12*eio(foc):0);
+    place(n,AX[i],AY+14*(1-eout(p)),sc,Math.min(1,p*2.2)*(isT?1:back));
+    if(isT){var dn=eio(seg(t,at(E.done),at(E.done)+.25));var chk=n.querySelector(".chk");
+      chk.style.background=dn>0?DONE:"transparent";chk.style.borderColor=dn>0?DONE:"#3A3F49";
+      chk.querySelector("path").setAttribute("stroke-dashoffset",22*(1-dn));
+      n.style.borderColor=foc>.05||t>=at(E.done)?"rgba(255,122,26,"+(0.4+.5*Math.max(foc,dn>0?1:0))+")":"#2B2F38";
+      n.querySelector(".txt").style.opacity=1;
+      var b=box(n);tag.style.opacity=eio(foc);tag.style.transform="translate("+(AX[i]-tag.offsetWidth/2)+"px,"+(AY-b.h*sc/2-54)+"px)";}
+  });
+  [stem,stem2].concat(mW,aW).forEach(function(p){p.setAttribute("opacity",back);});
+  dots[0].setAttribute("r",t>at(E.milestones[0])-.45?6:0);dots[1].setAttribute("r",t>at(E.actions[0])-.45?6:0);
+  dots.forEach(function(d){d.setAttribute("opacity",back);});
+  // progress flows up the tree
+  grow(glowA,t,at(E.grow),.45);grow(glowM,t,at(E.grow)+.45,.45);
+  vN.querySelector(".bar i").style.width=(12*eio(seg(t,at(E.grow)+.9,at(E.grow)+1.5)))+"%";
+  // subtitles
+  subs.forEach(function(o){var a=o.sb.t0,b=o.sb.t1;var v=seg(t,a,a+.15)*(1-seg(t,b-.1,b));o.d.style.opacity=v;o.d.style.transform="translateY("+(10*(1-eout(seg(t,a,a+.22))))+"px)";});
+  // brand
+  var pb=eio(seg(t,at(E.brand),at(E.brand)+.45));brand.style.opacity=pb;brand.style.transform="scale("+(.96+.04*pb)+")";
+  cam.style.opacity=1-pb;document.getElementById("corner").style.opacity=1-pb;
+}
+window.__duration=T;window.__seek=function(t){render(t);};render(0);
+var playing=false,t0=0;
+document.getElementById("playBtn").onclick=function(){this.style.display="none";t0=performance.now();playing=true;
+  var a=new Audio("audio_mixed.mp3");a.play().catch(function(){});(function loop(){if(!playing)return;var t=(performance.now()-t0)/1000;render(t);if(t<T)requestAnimationFrame(loop);})();};
+})();
+</script>
+</body></html>
