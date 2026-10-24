@@ -1,6 +1,6 @@
 # Content performance: overall
 
-_Last rebuilt 2026-10-24 11:00 IST from 3 snapshot day(s) and 27 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
+_Last rebuilt 2026-10-24 15:44 IST from 3 snapshot day(s) and 27 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
 
 ## Headline
 
@@ -90,7 +90,7 @@ _Last rebuilt 2026-10-24 11:00 IST from 3 snapshot day(s) and 27 tracked post(s)
 ## Data gaps
 
 - 16 post(s) have no retention (watch time) data: Instagram web insights do not show it; get app screenshots.
-- In catalog but never measured: x:diagram-howto-vo, x:diagram-someday-vo.
+- In catalog but never measured: x:diagram-howto-vo, x:diagram-someday-vo, instagram:ill-size-problem, x:ill-size-problem, youtube:ill-size-problem, instagram:ill-bad-day-version, x:ill-bad-day-version, youtube:ill-bad-day-version, instagram:ill-language-plan, x:ill-language-plan, youtube:ill-language-plan, instagram:ill-monday-wont-fix-it, x:ill-monday-wont-fix-it, youtube:ill-monday-wont-fix-it.
 
 See [WHAT_WORKED.md](WHAT_WORKED.md) for trait-by-trait comparisons and [latest_by_post.csv](latest_by_post.csv) for every number in one table.
 
