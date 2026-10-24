@@ -12,7 +12,7 @@ Owned by the video agent. Rewritten in each weekly review. Started 2026-10-08 as
 ## Where we were (2026-10-08)
 - Instagram @dmyor_global: **0 followers**. YouTube: not set up.
 - 12 earlier reels (31 to 100s, dark, slow, product-centric) did not work. No metrics logged. Diagnosis: `analysis/2026-10-08-why-reels-underperform.md`.
-- Cadence: 1 new video per day, Sanyam posts 1 per day.
+- Cadence (owner, 2026-10-24): **3-5 reels per day**, spaced ≥ 2-3 h apart; exact times don't matter. Quality first: every reel passes `quality-bar.md` (useful: the viewer can do one specific thing today).
 
 ## Audience (hypothesis)
 People 18 to 32 with big goals and no structure: students, new grads, career switchers, self-improvement viewers. They scroll for motivation but save what is useful.
@@ -96,6 +96,6 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 1. Oct 23 (48h insights): first real comparison. Rank all live reels by avg-watch ratio, reach, (shares+saves)/reach, follows. Close V-EXP-09..22 with honest low-confidence verdicts. Group by format (V-EXP-23), hook type, length, slot.
 2. Until then, alternate formats 1:1 so both have a pipeline: Oct 22 tree (tree-first-5k, reframe-claim hook, V-EXP-24); Oct 23 kinetic or tree per the first numbers.
 3. After the data: put 2 of every 3 builds into the winning format; the loser keeps 1 in 3 until n >= 5 per arm.
-4. Ask Sanyam to space posts (1 per day, best slot from the region test) from now on: daily data is only clean when reels don't compete.
+4. (superseded 2026-10-24) Cadence is now 3-5/day spaced through the day; compare reels by 48h traction in analytics.
 5. Voiceover: still off. Revisit when the first ratios are in (a VO reel needs a watch baseline to compare to).
 6. Template fix carried forward: tree.html titles moved to y 270 (were 22px above the safe band) and the "just this one" note clamped inside the frame; vision card y <= 1165. Applies to new tree reels only.
