@@ -1,0 +1,52 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "tail": 1.2,
+ "brand_from": 6,
+ "spoken": "[hook] You don't have a motivation problem. || You have a size problem. Your first step is just too big. || Like, write a book. Nobody can start that on a Tuesday night. || [turn] So shrink it. Write three sentences of chapter one, tonight. That's it. || Same with get fit. Don't plan the whole program, just put your shoes by the door. || [land] Here's the rule. If the first step takes more than ten minutes, shrink it again. || [outro] That's the idea Dmyor is built around. || [outro] And if you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "battery-full-stuck",
+   "params": {
+    "label": "MOTIVATION"
+   },
+   "head": "You don't have a<br><b>motivation</b> problem."
+  },
+  {
+   "type": "giant-goal",
+   "params": {
+    "label": "Write a book"
+   },
+   "head": "You have a <b>size</b> problem."
+  },
+  {
+   "type": "book-vs-day",
+   "params": {
+    "pages": "300 pages",
+    "day": "TUE"
+   },
+   "head": "Too big for a <b>Tuesday</b>."
+  },
+  {
+   "type": "notepad-lines",
+   "params": {},
+   "head": "Write <b>3 sentences</b> tonight."
+  },
+  {
+   "type": "door-shoes",
+   "params": {},
+   "head": "Get fit? <b>Shoes</b> by the door."
+  },
+  {
+   "type": "timer-split",
+   "params": {
+    "after": "Shrink it again"
+   },
+   "head": "More than <b>10 min</b>?"
+  },
+  null,
+  null
+ ],
+ "tagline": "Shrink the first step.\nThen take it.",
+ "handle": "@becauseidmyor"
+}

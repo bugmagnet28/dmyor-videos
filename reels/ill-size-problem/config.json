@@ -1,0 +1,59 @@
+{
+ "total": 29.0,
+ "brandT": 21.9,
+ "scenes": [
+  {
+   "type": "battery-full-stuck",
+   "params": {
+    "label": "MOTIVATION"
+   },
+   "head": "You don't have a<br><b>motivation</b> problem.",
+   "t0": 0.0,
+   "t1": 2.37
+  },
+  {
+   "type": "giant-goal",
+   "params": {
+    "label": "Write a book"
+   },
+   "head": "You have a <b>size</b> problem.",
+   "t0": 2.37,
+   "t1": 5.51
+  },
+  {
+   "type": "book-vs-day",
+   "params": {
+    "pages": "300 pages",
+    "day": "TUE"
+   },
+   "head": "Too big for a <b>Tuesday</b>.",
+   "t0": 5.51,
+   "t1": 9.01
+  },
+  {
+   "type": "notepad-lines",
+   "params": {},
+   "head": "Write <b>3 sentences</b> tonight.",
+   "t0": 9.01,
+   "t1": 13.01
+  },
+  {
+   "type": "door-shoes",
+   "params": {},
+   "head": "Get fit? <b>Shoes</b> by the door.",
+   "t0": 13.01,
+   "t1": 17.47
+  },
+  {
+   "type": "timer-split",
+   "params": {
+    "after": "Shrink it again"
+   },
+   "head": "More than <b>10 min</b>?",
+   "t0": 17.47,
+   "t1": 21.9
+  }
+ ],
+ "tagline": "Shrink the first step.\nThen take it.",
+ "handle": "@becauseidmyor"
+}
