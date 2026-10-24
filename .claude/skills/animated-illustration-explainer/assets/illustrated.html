@@ -106,6 +106,21 @@ var SCENES={
     var dur=g(G);card(dur,260,96,P.what||"30 min walk",{stroke:LINE,size:32});
     return function(k,t){cells.forEach(function(c,i){tr(c.C,150+i*130,1160,1,0,eout(seg(t,i*.08,.4+i*.08)));if(c.ck)drawTo(c.ck,seg(t,.8+on.indexOf(i)*.5,1.2+on.indexOf(i)*.5));});
       drawTo(path,seg(t,.3,1.2));var w=seg(t,.6,4.5);tr(me,lerp(200,860,w),1600,1,0,eout(seg(t,.4,.8)));tr(dur,540,1330,1,0,eout(seg(t,1.2,1.7)));};},
+  "fit-breakdown":function(p,P){var G=g(p);var goal=P.goal||"Get fit",prog=P.program||"Gym program, 6 days a week";
+    var days=P.days||[["MON","Chest"],["TUE","Back"],["WED","Legs"],["THU","Shoulders"],["FRI","Arms"],["SAT","Cardio"]];var ex=P.today||["Bench press  3 x 8","Incline dumbbell  3 x 10","Push-ups  2 x 15"];
+    var L1=g(G);card(L1,360,100,goal,{size:40,stroke:LINE});var L2=g(G);card(L2,620,100,prog,{size:32,stroke:LINE});
+    var c12=draw(el("line",{x1:540,y1:880,x2:540,y2:970,stroke:LINE,"stroke-width":3},G));
+    var c23=days.map(function(_,i){var x=145+i*158;return draw(el("path",{d:"M540 1080 C540 1120, "+x+" 1110, "+x+" 1150",stroke:LINE,"stroke-width":3,fill:"none"},G));});
+    var chips=days.map(function(d,i){var R=g(G);var bx=el("rect",{x:-68,y:-60,width:136,height:120,rx:16,fill:PANEL,stroke:LINE,"stroke-width":3},R);
+      txt(R,d[0],0,-14,22,MUTE,800);var nm=txt(R,d[1],0,26,d[1].length>7?22:27,INK,700);return {R:R,bx:bx,nm:nm};});
+    var tag=g(G);txt(tag,"TODAY",0,0,24,ACC,800);
+    var rows=ex.map(function(e,i){var R=g(G);el("line",{x1:-300,x2:300,y1:40,y2:40,stroke:LINE,"stroke-width":2},R);txt(R,e,-300,12,32,INK,700,"start");var c=check(R);tr(c,280,0);return {R:R,c:c};});
+    return function(k,t){tr(L1,540,830,1,0,eout(seg(t,0,.5)));drawTo(c12,seg(t,2.6,3.1));tr(L2,540,1030,1,0,eout(seg(t,3.0,3.6)));
+      c23.forEach(function(c,i){drawTo(c,seg(t,4.6+i*.08,5.1+i*.08));});
+      var focus=eio(seg(t,7.4,8));chips.forEach(function(o,i){var pp=eout(seg(t,4.9+i*.12,5.4+i*.12));tr(o.R,145+i*158,1210,1,0,pp*(i===0?1:1-.6*focus));
+        if(i===0){o.bx.setAttribute("stroke",focus>.5?ACC:LINE);o.nm.setAttribute("fill",focus>.5?ACC:INK);}});
+      tr(tag,145,1310,1,0,focus);
+      rows.forEach(function(r,i){var a=8.9+i*.45,pp=eout(seg(t,a,a+.5));tr(r.R,540,1420+i*90,1,0,pp);drawTo(r.c,seg(t,a+.7,a+1.1));});};},
   "fifteen-test":function(p,P){var G=g(p);var lim=P.minutes||15;
     var tm=g(G);el("circle",{r:150,fill:"none",stroke:LINE,"stroke-width":9},tm);var arc=el("path",{d:"",fill:"none",stroke:ACC,"stroke-width":9,"stroke-linecap":"round"},tm);
     var mk=el("line",{x1:0,y1:-165,x2:0,y2:-135,stroke:INK,"stroke-width":5},tm);var mins=txt(tm,"0 min",0,20,56,INK,800);var verdict=txt(tm,"",0,215,32,MUTE,700);

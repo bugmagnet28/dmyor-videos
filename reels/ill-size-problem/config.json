@@ -1,6 +1,6 @@
 {
- "total": 51.62,
- "brandT": 47.84,
+ "total": 56.74,
+ "brandT": 52.98,
  "scenes": [
   {
    "type": "gauge-vs-goal",
@@ -29,7 +29,7 @@
    },
    "head": "300 pages on a<br><b>Tuesday</b> night?",
    "t0": 9.05,
-   "t1": 14.79
+   "t1": 14.77
   },
   {
    "type": "book-breakdown",
@@ -44,22 +44,18 @@
     "unit": "words / day"
    },
    "head": "Shrink it until step one<br>is <b>obvious</b>.",
-   "t0": 14.79,
+   "t0": 14.77,
    "t1": 21.23
   },
   {
-   "type": "week-tracker",
+   "type": "fit-breakdown",
    "params": {
-    "on": [
-     0,
-     2,
-     4
-    ],
-    "what": "30 min walk"
+    "goal": "Get fit",
+    "program": "Gym program, 6 days a week"
    },
-   "head": "Get fit: <b>walk 30 min</b>,<br>3 days this week.",
+   "head": "Get fit, one day<br>at a time: <b>chest day</b>.",
    "t0": 21.23,
-   "t1": 27.13
+   "t1": 32.71
   },
   {
    "type": "fifteen-test",
@@ -75,8 +71,8 @@
     "small": 10
    },
    "head": "The <b>15-minute</b> test.",
-   "t0": 27.13,
-   "t1": 33.51
+   "t0": 32.71,
+   "t1": 38.65
   },
   {
    "type": "proof-to-motivation",
@@ -85,8 +81,8 @@
     "b": "motivation"
    },
    "head": "Small steps are <b>proof</b>.",
-   "t0": 33.51,
-   "t1": 40.47
+   "t0": 38.65,
+   "t1": 45.55
   },
   {
    "type": "dream-to-steps",
@@ -101,8 +97,8 @@
     ]
    },
    "head": "Archive the dream.<br>Break it into <b>steps</b>.",
-   "t0": 40.47,
-   "t1": 47.84
+   "t0": 45.55,
+   "t1": 52.98
   }
  ],
  "tagline": "Archive your dream today.\nBreak it into steps you can do.",

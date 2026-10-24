@@ -38,6 +38,7 @@ From `~/Documents/dmyor-videos` (voice setup once: `bash .claude/skills/animated
 | `book-vs-evening` | 300-page stack counts up next to a clock on a weeknight | `pages`, `when` |
 | `book-breakdown` | big item shrinks aside, sub-steps tick off, a daily-amount counter | `book`, `items[3]`, `per`, `unit` |
 | `week-tracker` | 7-day grid, chosen days ticked, a person walks the line | `on` (day indexes), `what` |
+| `fit-breakdown` | goal → program → 6 day chips → today (Chest) highlighted → today's exercises tick off | `goal`, `program`, `days[[day,name]]`, `today[3]` |
 | `fifteen-test` | timer runs past the limit (red, "too big"), the step splits into 3, timer resets green ("start now") | `minutes`, `over`, `small`, `step`, `parts[3]` |
 | `proof-to-motivation` | ticked tiles stack up a rising curve, label turns proof into motivation | `a`, `b` |
 | `dream-to-steps` | "ARCHIVED TODAY" dream card branching into three ticked steps (use for the value close) | `tag`, `dream`, `date`, `steps[3]` |
@@ -46,8 +47,8 @@ Each scene is `function(group, params) -> render(k, t)` (`t` = seconds since the
 
 ## Script rules
 - Hook, explain why, worked example, the method, a second example from another life area, a test or rule they can apply, land the point, value close, link line.
-- Every example must pass the logic check (would a sceptical adult agree this helps?).
+- Every example must pass the logic check (would a sceptical adult agree this helps?). The big plan is never the villain: show it as a level of the breakdown (get fit → 6-day gym program → today: chest day).
 - Headlines: max ~8 words, no em dashes.
 
 ## Files
-`assets/illustrated.html` (engine + scenes), `assets/fonts/`, `scripts/make_reel.py`, `scripts/say.py`, `scripts/setup_tts.sh`, `examples/narration.example.json` ("You don't have a motivation problem", 51.6 s).
+`assets/illustrated.html` (engine + scenes), `assets/fonts/`, `scripts/make_reel.py`, `scripts/say.py`, `scripts/setup_tts.sh`, `examples/narration.example.json` ("You don't have a motivation problem", 56.7 s).

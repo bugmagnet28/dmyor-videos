@@ -5,7 +5,7 @@
  "gap_max": 0.32,
  "tail": 1.2,
  "brand_from": 8,
- "spoken": "[hook] You don't have a motivation problem. You have a size problem. || When a goal is too big, your brain can't see where to start. So it does the easiest thing, it waits for tomorrow. || Take writing a book. That's three hundred pages. Nobody can start three hundred pages on a Tuesday night. || [turn] So shrink it until the first step is obvious. Outline the first chapter this week. Then write three hundred words a day. || Same with getting fit. Don't start with a six day gym program. Walk thirty minutes after dinner, three days this week. || Here's a simple test. If you can't start the first step in under fifteen minutes, it's still too big. Break it down again. || [land] Every small step you finish gives you a little proof that you can do it. And that proof is what motivation actually feels like. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "spoken": "[hook] You don't have a motivation problem. You have a size problem. || When a goal is too big, your brain can't see where to start. So it does the easiest thing, it waits for tomorrow. || Take writing a book. That's three hundred pages. Nobody can start three hundred pages on a Tuesday night. || [turn] So shrink it until the first step is obvious. Outline the first chapter this week. Then write three hundred words a day. || Same with getting fit. That's the big goal, so break it down. Start going to the gym and set up a program, say six days a week. Then take that program one day at a time. Today is just chest day, and that's all you need to think about. || Here's a simple test. If you can't start the first step in under fifteen minutes, it's still too big. Break it down again. || [land] Every small step you finish gives you a little proof that you can do it. And that proof is what motivation actually feels like. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
  "scenes": [
   {
    "type": "gauge-vs-goal",
@@ -45,16 +45,12 @@
    "head": "Shrink it until step one<br>is <b>obvious</b>."
   },
   {
-   "type": "week-tracker",
+   "type": "fit-breakdown",
    "params": {
-    "on": [
-     0,
-     2,
-     4
-    ],
-    "what": "30 min walk"
+    "goal": "Get fit",
+    "program": "Gym program, 6 days a week"
    },
-   "head": "Get fit: <b>walk 30 min</b>,<br>3 days this week."
+   "head": "Get fit, one day<br>at a time: <b>chest day</b>."
   },
   {
    "type": "fifteen-test",
@@ -100,7 +96,7 @@
  "caption": {
   "instagram": "Not a motivation problem. A size problem.\n\nShrink the goal until the first step takes under 15 minutes. Then do it.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
   "hashtags": "#goals #productivity #habits #selfimprovement #planning",
-  "x": "You don't have a motivation problem. You have a size problem.\n\nTest: if you can't start the first step in under 15 minutes, it's still too big. Break it down again.",
+  "x": "You don't have a motivation problem. You have a size problem.\n\nGet fit \u2192 a 6-day gym program \u2192 today is just chest day.\n\nTest: if you can't start the first step in under 15 minutes, it's still too big.",
   "youtube_title": "You don't have a motivation problem #Shorts"
  }
 }
