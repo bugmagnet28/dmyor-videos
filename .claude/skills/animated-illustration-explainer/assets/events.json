@@ -1,0 +1,11 @@
+{
+ "_doc": "Sound moments per scene type: [seconds after the scene starts, sound, optional duration]. Times match the animation in illustrated.html; update both together. Sounds: tick tap swish ratchet tone chord.",
+ "postpone-calendar": [[0.88, "tap"], [1.78, "tap"], [2.68, "tap"], [3.58, "tap"]],
+ "book-vs-evening": [[0.3, "ratchet", 1.5], [0.7, "tap"]],
+ "book-breakdown": [[1.2, "tick"], [1.65, "tick"], [2.1, "tick"], [2.45, "tap"], [2.6, "ratchet", 1.0]],
+ "fit-breakdown": [[0.05, "tap"], [3.0, "tap"], [4.95, "tap"], [7.45, "tap"], [9.6, "tick"], [10.05, "tick"], [10.5, "tick"]],
+ "week-tracker": [[0.85, "tick"], [1.35, "tick"], [1.85, "tick"]],
+ "fifteen-test": [[0.3, "ratchet", 1.9], [2.65, "tap"], [3.4, "ratchet", 1.2], [4.75, "tick"], [5.05, "tick"], [5.35, "tick"]],
+ "proof-to-motivation": [[0.5, "tick"], [0.94, "tick"], [1.38, "tick"], [1.82, "tick"], [3.05, "tap"]],
+ "dream-to-steps": [[0.0, "tone"], [3.05, "tick"], [3.55, "tick"], [4.05, "tick"]]
+}

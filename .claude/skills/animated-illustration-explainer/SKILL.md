@@ -30,6 +30,9 @@ From `~/Documents/dmyor-videos` (voice setup once: `bash .claude/skills/animated
 | `tagline`, `handle`, `caption` | brand card and `--package` captions |
 | `palette` (optional) | override any of `bg ink mute acc acc2 warn ok panel line onAcc` |
 
+## Sound design (`scripts/sfx.py`, `assets/events.json`)
+Synthesized in code (no samples, no licensing, no music): `tick` (check marks), `tap` (a card or chip lands), `swish` (scene change), `ratchet` (numbers counting, timers), `tone` (warm swell under the value close), `chord` (brand card). `events.json` lists each scene type's sound moments in seconds after the scene starts; they mirror the animation timings in `illustrated.html`, so **when you change a scene's timing, change its events too**. The hook scene is silent (already finished on frame 0). Sounds closer than 0.28 s are dropped. Each sound has its own peak level; the voice ducks them lightly (sidechain). `narration.json` `"sfx"`: `"subtle"` (default), `"present"` (+6 dB) or `"off"`. `make_reel.py` writes `audio_voice.mp3`, `audio_fx.wav` (effects alone, for checking) and `audio_mixed.mp3`.
+
 ## Scene library (`assets/illustrated.html`, `SCENES`)
 | type | shows | params |
 |---|---|---|
@@ -51,4 +54,4 @@ Each scene is `function(group, params) -> render(k, t)` (`t` = seconds since the
 - Headlines: max ~8 words, no em dashes.
 
 ## Files
-`assets/illustrated.html` (engine + scenes), `assets/fonts/`, `scripts/make_reel.py`, `scripts/say.py`, `scripts/setup_tts.sh`, `examples/narration.example.json` ("You don't have a motivation problem", 56.7 s).
+`assets/illustrated.html` (engine + scenes), `assets/fonts/`, `scripts/make_reel.py`, `scripts/say.py`, `scripts/sfx.py`, `assets/events.json`, `scripts/setup_tts.sh`, `examples/narration.example.json` ("You don't have a motivation problem", 56.7 s).
