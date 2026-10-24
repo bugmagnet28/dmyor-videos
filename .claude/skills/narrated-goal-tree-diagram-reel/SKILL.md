@@ -114,4 +114,4 @@ Rules:
 - `examples/narration.example.json` - the 2026-10-23 "Too big? Shrink it." reel.
 
 ## Results so far
-Track in `studio/` like every reel (`reel.py publish/perf`). First two of this type were scheduled 2026-10-23 (diagram-howto-vo 09:30, diagram-someday-vo 19:30 IST) as V-EXP-23. Update this section with what the numbers say.
+After scheduling, register each platform post in `analytics/` (`record.py content --style diagram-motion-graphics --narrated yes --voice am_eric ...`) and measure at 24h/48h/7d (see `analytics/README.md`). First two of this type were scheduled 2026-10-23 (diagram-howto-vo 09:30, diagram-someday-vo 19:30 IST) as V-EXP-23. Update this section with what the numbers say.
