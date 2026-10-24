@@ -27,6 +27,7 @@ if not os.path.exists(os.path.join(ROOT, "record.js")):
 sys.path.insert(0, os.path.join(ROOT, ".claude/skills/dmyor-reel/scripts"))
 from align import find  # noqa: E402
 NUM = {"1": "one", "2": "two", "3": "three", "5": "five", "10": "ten", "100": "one hundred", "2000": "two thousand"}
+STAGE_TAG = r"\[(?:hook|body|turn|land|outro)\]\s*"  # delivery tags for say.py --stages, never shown or matched
 BRAND_HEARD = r"\bD(?:ee|e|i)?-?\s?m(?:y|i)(?:o|e)?re?\b|\bDeem[- ]?yo(?:u)?re?\b|\bD-?[Mm]ure\b|\bdemure\b"
 
 
@@ -49,9 +50,11 @@ def main():
     n = json.load(open(os.path.join(d, "narration.json")))
     clean = re.sub(r"\*([^*]+)\*", r"\1", n["script"])
     spoken = re.sub(r"\bDmyor\b", "Deem-yor", clean)
+    clean = re.sub(STAGE_TAG, "", clean)
     run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(SKILL, "scripts/say.py"), spoken, os.path.join(d, "audio.mp3"),
         "--voice", n.get("voice", "am_eric"), "--speed", str(n.get("speed", 1.0)),
-        "--gap-min", str(n.get("gap_min", 0.30)), "--gap-max", str(n.get("gap_max", 0.55)))
+        "--gap-min", str(n.get("gap_min", 0.30)), "--gap-max", str(n.get("gap_max", 0.55)),
+        *(["--stages"] if n.get("stages", True) else []))
     run("python3", os.path.join(ROOT, ".claude/skills/dmyor-reel/scripts/align.py"), d)
     cues = json.load(open(os.path.join(d, "cues.json"))); W = cues["words"]
 
@@ -83,7 +86,7 @@ def main():
     for i, w in enumerate(sw):
         if tm[i] < hook_end - 0.05:
             first.append(i)
-    raw_marked = n["script"].replace("||", " ").split()
+    raw_marked = re.sub(STAGE_TAG, "", n["script"]).replace("||", " ").split()
     if not hook_words:
         hook_words = marks(" ".join(raw_marked[i] for i in first))
     for i, w in enumerate(hook_words):

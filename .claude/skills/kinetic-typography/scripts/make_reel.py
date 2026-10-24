@@ -52,57 +52,75 @@ def main():
     o = ap.parse_args()
     d = o.reel.rstrip("/"); slug = os.path.basename(d)
     n = json.load(open(os.path.join(d, "narration.json")))
-    cards = parse(n["script"])
+    cards = parse(n["script"])                       # what is SHOWN (short, punchy, with markup)
     flat = [w for c in cards for w in c]
     brand_anchor = n.get("brand_anchor", "That's Dmyor")
     voice = n.get("voice", "am_eric")
+    TAG = r"\[(?:hook|body|turn|land|outro)\]\s*"
+    # what is SAID: "spoken" (fuller, conversational, one thought per card, optional [stage] tags); default = shown text
+    spoken_src = n.get("spoken") or plain(cards)
+    thoughts = [t.strip() for t in spoken_src.split("||") if t.strip()]
+    if len(thoughts) != len(cards):
+        sys.exit(f"'spoken' has {len(thoughts)} thoughts but 'script' has {len(cards)} cards: they must pair up 1:1")
+    nz = lambda s: NUM.get(re.sub(r"[^a-z0-9]", "", s.lower()), re.sub(r"[^a-z0-9]", "", s.lower()))
 
     if voice:
-        # markup is per-word; a multi-word ~a b~ leaves stray marks that TTS reads aloud ("tilda")
-        spoken = re.sub(r"[*~{}]", "", re.sub(r"\bDmyor\b", "Deem-yor", plain(cards)))
-        run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(SKILL, "scripts/say.py"), spoken,
+        say_text = re.sub(r"[*~{}]", "", re.sub(r"\bDmyor\b", "Deem-yor", " || ".join(thoughts)))
+        run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(SKILL, "scripts/say.py"), say_text,
             os.path.join(d, "audio.mp3"), "--voice", voice, "--speed", str(n.get("speed", 1.0)),
-            "--gap-min", str(n.get("gap_min", 0.30)), "--gap-max", str(n.get("gap_max", 0.55)))
+            "--gap-min", str(n.get("gap_min", 0.30)), "--gap-max", str(n.get("gap_max", 0.55)),
+            *(["--stages"] if n.get("stages", True) else []))
         run("python3", os.path.join(ROOT, ".claude/skills/dmyor-reel/scripts/align.py"), d)
         cues = json.load(open(os.path.join(d, "cues.json")))
         W = cues["words"]
-        nz = lambda s: NUM.get(re.sub(r"[^a-z0-9]", "", s.lower()), re.sub(r"[^a-z0-9]", "", s.lower()))
-        a, b = [nz(w["text"]) for w in flat], [nz(w["raw"]) for w in W]
-        times = [None] * len(flat)
-        for blk in difflib.SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks():
+        sp_words, sp_thought = [], []
+        for ti, th in enumerate(thoughts):
+            for tok in re.sub(r"[*~{}]", "", re.sub(TAG, "", th)).split():
+                sp_words.append(tok); sp_thought.append(ti)
+        st = [None] * len(sp_words)
+        for blk in difflib.SequenceMatcher(None, [nz(x) for x in sp_words], [nz(w["raw"]) for w in W], autojunk=False).get_matching_blocks():
             for j in range(blk.size):
-                times[blk.a + j] = W[blk.b + j]["s"]
-        for i in range(len(times)):  # unmatched words: interpolate between neighbours
-            if times[i] is None:
-                prev = next((times[j] for j in range(i - 1, -1, -1) if times[j] is not None), 0.0)
-                nxt = next((times[j] for j in range(i + 1, len(times)) if times[j] is not None), prev + 0.4)
-                times[i] = prev + (nxt - prev) / 2
+                st[blk.a + j] = W[blk.b + j]["s"]
+        for i in range(len(st)):
+            if st[i] is None:
+                st[i] = next((st[j] for j in range(i - 1, -1, -1) if st[j] is not None), 0.0) + 0.15
+        th_t0 = [min(st[i] for i in range(len(st)) if sp_thought[i] == ti) for ti in range(len(thoughts))]
+        th_t1 = th_t0[1:] + [W[-1]["e"]]
+        # each shown word takes the time of the same word inside its own spoken thought
+        for ci, c in enumerate(cards):
+            idx = [i for i in range(len(sp_words)) if sp_thought[i] == ci]
+            m = difflib.SequenceMatcher(None, [nz(w["text"]) for w in c], [nz(sp_words[i]) for i in idx], autojunk=False)
+            got = [None] * len(c)
+            for blk in m.get_matching_blocks():
+                for j in range(blk.size):
+                    got[blk.a + j] = st[idx[blk.b + j]]
+            for wi in range(len(c)):
+                if got[wi] is None:  # not spoken verbatim: spread through the thought
+                    prev = next((got[j] for j in range(wi - 1, -1, -1) if got[j] is not None), th_t0[ci])
+                    got[wi] = min(prev + 0.25, th_t1[ci] - 0.2)
+                c[wi]["t"] = round(got[wi], 3)
         end = W[-1]["e"]
         heard = cues["text"]; wps = cues["wps"]
     else:  # silent: reading pace 0.32 s/word, 0.7 s between cards, hook held 1.6 s
-        times, t = [], 0.0
+        t = 0.0; th_t0 = []
         for ci, c in enumerate(cards):
+            th_t0.append(t if ci else 0.0)
             for w in c:
-                times.append(t if ci else 0.0); t += 0.32 if ci else 0.0
+                w["t"] = round(t if ci else 0.0, 3); t += 0.32 if ci else 0.0
             t += 1.6 if ci == 0 else 0.7
         end = t; heard = "(silent)"; wps = None
-
-    k = 0
-    for c in cards:
-        for w in c:
-            w["t"] = round(times[k], 3); k += 1
-    # brand: first card containing the anchor's first word sequence
+    # brand: first card containing the anchor text
     bi = next((i for i, c in enumerate(cards) if brand_anchor.lower().replace("'", "") in " ".join(w["text"] for w in c).lower().replace("'", "")), len(cards))
-    brandT = cards[bi][0]["t"] if bi < len(cards) else end + 0.2
+    brandT = th_t0[bi] if bi < len(cards) else end + 0.2
     shown = cards[:bi]
     out = []
     for i, c in enumerate(shown):
-        t0 = 0.0 if i == 0 else c[0]["t"] - 0.05
-        t1 = shown[i + 1][0]["t"] - 0.05 if i + 1 < len(shown) else brandT
+        t0 = 0.0 if i == 0 else th_t0[i] - 0.05
+        t1 = th_t0[i + 1] - 0.05 if i + 1 < len(shown) else brandT
         out.append({"t0": round(t0, 3), "t1": round(t1, 3), "words": c, "max": n.get("max_font", 150)})
     total = round(end + n.get("tail", 1.2), 2)
     cfg = {"total": total, "cards": out, "brandT": round(brandT, 3), "tagline": n.get("tagline", "Turn your dream into\na plan you can see."),
-           "handle": n.get("handle", "@becauseidmyor"), "voice": voice, "script": n["script"]}
+           "handle": n.get("handle", "@becauseidmyor"), "voice": voice, "script": n["script"], "spoken": spoken_src}
     json.dump(cfg, open(os.path.join(d, "config.json"), "w"), indent=1)
     html = open(os.path.join(SKILL, "assets/kinetic.html")).read().replace("/*__CONFIG__*/{}", json.dumps(cfg))
     html = html.replace("url(fonts/", "url(" + os.path.relpath(os.path.join(SKILL, "assets/fonts"), d) + "/")

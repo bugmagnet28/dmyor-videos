@@ -57,6 +57,15 @@ python3 .claude/skills/diagram-motion-graphics/scripts/make_reel.py reels/<slug>
 | `anchors` | where each visual beat lands (rules below). |
 | `caption` | `instagram`, `hashtags`, `x` (<= 280 chars, link counts 23), `youtube_title` for `--package`. |
 
+## Write for the ear (owner rule, 2026-10-24)
+
+The narration is FULLER than the on-screen text. Spoken language needs more words than written language to sound complete and human; screens need fewer.
+- **Say it like a person talking to one friend**: lead-ins and asides ("Seriously,", "So here's what I'd do.", "And honestly,"), connectors ("and then", "so"), contractions, first person ("I'd", "I've put"), a spoken question now and then ("And someday? It's not on there.").
+- **Never end on a clipped fragment.** Not "Link in bio." but "And if you want to try it out, I've put the link in the bio." Not "Today." alone at the very end; land the point, then close warmly ("That's exactly what Dmyor is built for.").
+- **Stages**: open with a short hook, explain, turn to the advice, land the point, close. Tag thoughts when needed: `[hook]`, `[turn]`, `[land]`, `[outro]` (untagged: first = hook, last two = outro, the one before = land). The voice (`say.py --stages`, on by default) changes pace, pitch and pauses per stage and ends with a natural fade.
+- **Screen stays short.** On-screen text/cards/subtitles keep the punchy version; the extra spoken words are not all shown.
+- Length: fuller narration runs ~20-30 s for a 6-8 thought script. Keep each thought one breath.
+
 ## Writing the script (this is what makes it sound human)
 
 The voice is generated per THOUGHT, so how you write is how it sounds.

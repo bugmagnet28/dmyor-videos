@@ -1,12 +1,12 @@
 {
- "_comment": "Input for kinetic-typography. Copy to reels/<slug>/narration.json. Markup: || new card, *emphasis*, ~strike~, {muted}. voice null = silent.",
+ "_comment": "Input for kinetic-typography. 'script' = what is SHOWN (short, markup: || card, *emphasis*, ~strike~, {muted}). 'spoken' = what is SAID: fuller, conversational, same number of || thoughts, optional [hook]/[turn]/[land]/[outro] tags. voice null = silent.",
  "voice": "am_eric",
  "speed": 1.0,
  "gap_min": 0.3,
  "gap_max": 0.55,
  "tail": 1.2,
  "max_font": 150,
- "script": "*Someday* isn't a day. || Look at your week. Monday, Tuesday, Wednesday, all the way to Sunday. || ~Someday~ isn't on it. And it never will be. || So pick a *real* day. Put your dream on it. || Then do one small thing. *Today.* || That's Dmyor. || Link's in the bio.",
+ "script": "*Someday* isn't a day. || Look at your week. Monday, Tuesday, Wednesday, all the way to Sunday. || ~Someday~ isn't on it. || Pick a *real* day. || One small thing. *Today.* || That's Dmyor. || Link's in the bio.",
  "brand_anchor": "That's Dmyor",
  "tagline": "Turn your someday\ninto a plan.",
  "handle": "@becauseidmyor",
@@ -16,5 +16,6 @@
   "x": "Someday isn't a day. It's not on your calendar.\n\nPick a real day. Put your dream on it. Do one small thing today.\n\nhttps://www.dmyor.com",
   "youtube_title": "Someday isn't a day #Shorts"
  },
- "experiment": "kinetic-typography narrated vs silent text reels; hook = best performer (someday)"
+ "experiment": "kinetic-typography narrated vs silent text reels; hook = best performer (someday)",
+ "spoken": "[hook] Someday isn't a day. || Seriously, look at your week. You've got Monday, Tuesday, Wednesday, all the way through to Sunday. || And someday? It's not on there. And honestly, it never will be. || [turn] So here's what I'd do. Pick a real day, an actual date, and put your dream on it. || [land] And then, just do one small thing towards it. Today. || [outro] That's exactly what Dmyor is built for. || [outro] And if you want to try it out, I've put the link in the bio."
 }

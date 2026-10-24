@@ -30,7 +30,7 @@ A skill = HOW a video is made (animation / production type). The topic and hook 
 
 **Picking a style**: explain a process → diagram; one punchy line → kinetic typography; numbers/progress → data viz (when built); show the real product → hybrid-graphics-plus-demo; feelings/POV → footage (when built). Mixing is fine (a kinetic hook card leading into a diagram) once both are proven.
 **If no skill fits**: make the video with a custom approach from your own knowledge (same dark crisp brand, same voice rules, same checks). If Sanyam approves it, package it as a new style skill named after the production type, add it to this table, and use `analytics` `style` = that name.
-Shared rules for every style: voice am_eric via thought-level TTS with pauses, no background music, "Dmyor" spoken DEEM-yor, frame 0 finished and readable, brand card + "Link's in the bio", Sanyam approves before scheduling, register every post in `analytics/`.
+Shared rules for every style: **write for the ear** (narration fuller and conversational than the on-screen text, staged hook/turn/land/outro, warm complete ending like "if you want to try it out, I've put the link in the bio"; see any style SKILL.md), voice am_eric via thought-level TTS with stage-aware delivery (`--stages`), no background music, "Dmyor" spoken DEEM-yor, frame 0 finished and readable, brand card + "Link's in the bio", Sanyam approves before scheduling, register every post in `analytics/`.
 
 **The first 12 reels did not work.** Read `studio/analysis/2026-10-08-why-reels-underperform.md` before planning anything. Your job is to do better, measurably, and keep getting better.
 

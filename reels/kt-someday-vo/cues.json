@@ -1,7 +1,7 @@
 {
  "audio": "audio.mp3",
- "duration": 15.59,
- "text": "Someday isn't a day. Look at your week, Monday, Tuesday, Wednesday, all the way to Sunday. Someday isn't on it and it never will be. So pick a real day, put your dream on it. Then do one small thing today. That's Demure. Link's in the bio.",
+ "duration": 25.36,
+ "text": "Someday isn't a day, seriously look at your week, you've got Monday, Tuesday, Wednesday all the way through to Sunday. And someday it's not on there and honestly it never will be. So here's what I'd do, pick a real day and actual date and put your dream on it. And then just do one small thing towards it, today. That's exactly what Demure is built for. And if you want to try it out, I've put the link in the bio.",
  "words": [
   {
    "w": "someday",
@@ -13,315 +13,525 @@
    "w": "isnt",
    "raw": "isn't",
    "s": 0.62,
-   "e": 0.92
+   "e": 0.9
   },
   {
    "w": "a",
    "raw": "a",
-   "s": 0.92,
+   "s": 0.9,
    "e": 1.04
   },
   {
    "w": "day",
-   "raw": "day.",
+   "raw": "day,",
    "s": 1.04,
    "e": 1.3
   },
   {
+   "w": "seriously",
+   "raw": "seriously",
+   "s": 2.06,
+   "e": 2.3
+  },
+  {
    "w": "look",
-   "raw": "Look",
-   "s": 1.96,
-   "e": 2.04
+   "raw": "look",
+   "s": 2.3,
+   "e": 2.74
   },
   {
    "w": "at",
    "raw": "at",
-   "s": 2.04,
-   "e": 2.14
+   "s": 2.74,
+   "e": 2.86
   },
   {
    "w": "your",
    "raw": "your",
-   "s": 2.14,
-   "e": 2.26
+   "s": 2.86,
+   "e": 2.96
   },
   {
    "w": "week",
    "raw": "week,",
-   "s": 2.26,
-   "e": 2.48
+   "s": 2.96,
+   "e": 3.2
+  },
+  {
+   "w": "youve",
+   "raw": "you've",
+   "s": 3.6,
+   "e": 3.72
+  },
+  {
+   "w": "got",
+   "raw": "got",
+   "s": 3.72,
+   "e": 3.88
   },
   {
    "w": "monday",
    "raw": "Monday,",
-   "s": 2.72,
-   "e": 2.82
+   "s": 3.88,
+   "e": 4.12
   },
   {
    "w": "tuesday",
    "raw": "Tuesday,",
-   "s": 3.1,
-   "e": 3.28
+   "s": 4.36,
+   "e": 4.56
   },
   {
    "w": "wednesday",
-   "raw": "Wednesday,",
-   "s": 3.5,
-   "e": 3.74
+   "raw": "Wednesday",
+   "s": 4.76,
+   "e": 5.02
   },
   {
    "w": "all",
    "raw": "all",
-   "s": 4.02,
-   "e": 4.12
+   "s": 5.02,
+   "e": 5.38
   },
   {
    "w": "the",
    "raw": "the",
-   "s": 4.12,
-   "e": 4.22
+   "s": 5.38,
+   "e": 5.5
   },
   {
    "w": "way",
    "raw": "way",
-   "s": 4.22,
-   "e": 4.34
+   "s": 5.5,
+   "e": 5.62
+  },
+  {
+   "w": "through",
+   "raw": "through",
+   "s": 5.62,
+   "e": 5.84
   },
   {
    "w": "to",
    "raw": "to",
-   "s": 4.34,
-   "e": 4.48
+   "s": 5.84,
+   "e": 6.0
   },
   {
    "w": "sunday",
    "raw": "Sunday.",
-   "s": 4.48,
-   "e": 4.76
+   "s": 6.0,
+   "e": 6.28
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 6.92,
+   "e": 7.02
   },
   {
    "w": "someday",
-   "raw": "Someday",
-   "s": 5.52,
-   "e": 5.74
+   "raw": "someday",
+   "s": 7.02,
+   "e": 7.34
   },
   {
-   "w": "isnt",
-   "raw": "isn't",
-   "s": 5.74,
-   "e": 5.98
+   "w": "its",
+   "raw": "it's",
+   "s": 7.34,
+   "e": 7.68
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 7.68,
+   "e": 7.82
   },
   {
    "w": "on",
    "raw": "on",
-   "s": 5.98,
-   "e": 6.16
+   "s": 7.82,
+   "e": 7.98
   },
   {
-   "w": "it",
-   "raw": "it",
-   "s": 6.16,
-   "e": 6.32
+   "w": "there",
+   "raw": "there",
+   "s": 7.98,
+   "e": 8.22
   },
   {
    "w": "and",
    "raw": "and",
-   "s": 6.32,
-   "e": 6.5
+   "s": 8.22,
+   "e": 8.46
+  },
+  {
+   "w": "honestly",
+   "raw": "honestly",
+   "s": 8.46,
+   "e": 8.74
   },
   {
    "w": "it",
    "raw": "it",
-   "s": 6.5,
-   "e": 6.62
+   "s": 8.74,
+   "e": 9.0
   },
   {
    "w": "never",
    "raw": "never",
-   "s": 6.62,
-   "e": 6.8
+   "s": 9.0,
+   "e": 9.18
   },
   {
    "w": "will",
    "raw": "will",
-   "s": 6.8,
-   "e": 7.04
+   "s": 9.18,
+   "e": 9.4
   },
   {
    "w": "be",
    "raw": "be.",
-   "s": 7.04,
-   "e": 7.28
+   "s": 9.4,
+   "e": 9.64
   },
   {
    "w": "so",
    "raw": "So",
-   "s": 7.94,
-   "e": 8.14
+   "s": 10.3,
+   "e": 10.52
+  },
+  {
+   "w": "heres",
+   "raw": "here's",
+   "s": 10.52,
+   "e": 10.86
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 10.86,
+   "e": 11.02
+  },
+  {
+   "w": "id",
+   "raw": "I'd",
+   "s": 11.02,
+   "e": 11.24
+  },
+  {
+   "w": "do",
+   "raw": "do,",
+   "s": 11.24,
+   "e": 11.46
   },
   {
    "w": "pick",
    "raw": "pick",
-   "s": 8.14,
-   "e": 8.3
+   "s": 11.7,
+   "e": 11.8
   },
   {
    "w": "a",
    "raw": "a",
-   "s": 8.3,
-   "e": 8.46
+   "s": 11.8,
+   "e": 11.94
   },
   {
    "w": "real",
    "raw": "real",
-   "s": 8.46,
-   "e": 8.64
+   "s": 11.94,
+   "e": 12.1
   },
   {
    "w": "day",
-   "raw": "day,",
-   "s": 8.64,
-   "e": 8.96
+   "raw": "day",
+   "s": 12.1,
+   "e": 12.34
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 12.34,
+   "e": 12.5
+  },
+  {
+   "w": "actual",
+   "raw": "actual",
+   "s": 12.5,
+   "e": 12.82
+  },
+  {
+   "w": "date",
+   "raw": "date",
+   "s": 12.82,
+   "e": 13.08
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 13.08,
+   "e": 13.24
   },
   {
    "w": "put",
    "raw": "put",
-   "s": 9.08,
-   "e": 9.16
+   "s": 13.24,
+   "e": 13.36
   },
   {
    "w": "your",
    "raw": "your",
-   "s": 9.16,
-   "e": 9.32
+   "s": 13.36,
+   "e": 13.52
   },
   {
    "w": "dream",
    "raw": "dream",
-   "s": 9.32,
-   "e": 9.52
+   "s": 13.52,
+   "e": 13.74
   },
   {
    "w": "on",
    "raw": "on",
-   "s": 9.52,
-   "e": 9.76
+   "s": 13.74,
+   "e": 13.96
   },
   {
    "w": "it",
    "raw": "it.",
-   "s": 9.76,
-   "e": 10.12
+   "s": 13.96,
+   "e": 14.24
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 14.94,
+   "e": 15.1
   },
   {
    "w": "then",
-   "raw": "Then",
-   "s": 10.4,
-   "e": 10.52
+   "raw": "then",
+   "s": 15.1,
+   "e": 15.24
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 15.24,
+   "e": 15.46
   },
   {
    "w": "do",
    "raw": "do",
-   "s": 10.52,
-   "e": 10.66
+   "s": 15.46,
+   "e": 15.66
   },
   {
    "w": "one",
    "raw": "one",
-   "s": 10.66,
-   "e": 10.88
+   "s": 15.66,
+   "e": 15.88
   },
   {
    "w": "small",
    "raw": "small",
-   "s": 10.88,
-   "e": 11.18
+   "s": 15.88,
+   "e": 16.18
   },
   {
    "w": "thing",
    "raw": "thing",
-   "s": 11.18,
-   "e": 11.52
+   "s": 16.18,
+   "e": 16.42
+  },
+  {
+   "w": "towards",
+   "raw": "towards",
+   "s": 16.42,
+   "e": 16.74
+  },
+  {
+   "w": "it",
+   "raw": "it,",
+   "s": 16.74,
+   "e": 17.06
   },
   {
    "w": "today",
    "raw": "today.",
-   "s": 11.52,
-   "e": 11.88
+   "s": 17.12,
+   "e": 17.42
   },
   {
    "w": "thats",
    "raw": "That's",
-   "s": 12.64,
-   "e": 13.0
+   "s": 18.46,
+   "e": 18.88
+  },
+  {
+   "w": "exactly",
+   "raw": "exactly",
+   "s": 18.88,
+   "e": 19.24
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 19.24,
+   "e": 19.6
   },
   {
    "w": "demure",
-   "raw": "Demure.",
-   "s": 13.0,
-   "e": 13.46
+   "raw": "Demure",
+   "s": 19.6,
+   "e": 20.02
   },
   {
-   "w": "links",
-   "raw": "Link's",
-   "s": 14.04,
-   "e": 14.4
+   "w": "is",
+   "raw": "is",
+   "s": 20.02,
+   "e": 20.26
   },
   {
-   "w": "in",
-   "raw": "in",
-   "s": 14.4,
-   "e": 14.52
+   "w": "built",
+   "raw": "built",
+   "s": 20.26,
+   "e": 20.44
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 20.44,
+   "e": 20.8
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 21.46,
+   "e": 21.66
+  },
+  {
+   "w": "if",
+   "raw": "if",
+   "s": 21.66,
+   "e": 21.76
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 21.76,
+   "e": 21.88
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 21.88,
+   "e": 22.04
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 22.04,
+   "e": 22.18
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 22.18,
+   "e": 22.4
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 22.4,
+   "e": 22.58
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 22.58,
+   "e": 22.82
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 23.0,
+   "e": 23.14
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 23.14,
+   "e": 23.28
   },
   {
    "w": "the",
    "raw": "the",
-   "s": 14.52,
-   "e": 14.62
+   "s": 23.28,
+   "e": 23.46
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 23.46,
+   "e": 23.62
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 23.62,
+   "e": 23.8
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 23.8,
+   "e": 23.9
   },
   {
    "w": "bio",
    "raw": "bio.",
-   "s": 14.62,
-   "e": 14.9
+   "s": 23.9,
+   "e": 24.14
   }
  ],
  "sentences": [
   {
    "s": 0.0,
-   "e": 1.3,
-   "text": "Someday isn't a day."
+   "e": 5.02,
+   "text": "Someday isn't a day, seriously look at your week, you've got Monday, Tuesday, Wednesday"
   },
   {
-   "s": 1.96,
-   "e": 4.76,
-   "text": "Look at your week, Monday, Tuesday, Wednesday, all the way to Sunday."
+   "s": 5.02,
+   "e": 6.28,
+   "text": "all the way through to Sunday."
   },
   {
-   "s": 5.52,
-   "e": 7.28,
-   "text": "Someday isn't on it and it never will be."
+   "s": 6.92,
+   "e": 9.64,
+   "text": "And someday it's not on there and honestly it never will be."
   },
   {
-   "s": 7.94,
-   "e": 10.12,
-   "text": "So pick a real day, put your dream on it."
+   "s": 10.3,
+   "e": 14.24,
+   "text": "So here's what I'd do, pick a real day and actual date and put your dream on it."
   },
   {
-   "s": 10.4,
-   "e": 11.88,
-   "text": "Then do one small thing today."
+   "s": 14.94,
+   "e": 17.42,
+   "text": "And then just do one small thing towards it, today."
   },
   {
-   "s": 12.64,
-   "e": 13.46,
-   "text": "That's Demure."
+   "s": 18.46,
+   "e": 20.8,
+   "text": "That's exactly what Demure is built for."
   },
   {
-   "s": 14.04,
-   "e": 14.9,
-   "text": "Link's in the bio."
+   "s": 21.46,
+   "e": 24.14,
+   "text": "And if you want to try it out, I've put the link in the bio."
   }
  ],
- "wps": 3.01
+ "wps": 3.23
 }

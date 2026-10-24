@@ -24,6 +24,15 @@ Frames land in `app-capture/raw/<name>_frames/` with `frames.json` (timestamps).
 
 Capture timeline of `create-vision` (useful for beats): 0-2.8 s step 1 (3 years picked ~1.4 s), 2.8-8.6 s step 2 (typing ~4.7-7.2 s), 8.6-13 s step 3 (Career tag ~10.6 s, Create Vision button at screen x 0.5, y 0.815).
 
+## Write for the ear (owner rule, 2026-10-24)
+
+The narration is FULLER than the on-screen text. Spoken language needs more words than written language to sound complete and human; screens need fewer.
+- **Say it like a person talking to one friend**: lead-ins and asides ("Seriously,", "So here's what I'd do.", "And honestly,"), connectors ("and then", "so"), contractions, first person ("I'd", "I've put"), a spoken question now and then ("And someday? It's not on there.").
+- **Never end on a clipped fragment.** Not "Link in bio." but "And if you want to try it out, I've put the link in the bio." Not "Today." alone at the very end; land the point, then close warmly ("That's exactly what Dmyor is built for.").
+- **Stages**: open with a short hook, explain, turn to the advice, land the point, close. Tag thoughts when needed: `[hook]`, `[turn]`, `[land]`, `[outro]` (untagged: first = hook, last two = outro, the one before = land). The voice (`say.py --stages`, on by default) changes pace, pitch and pauses per stage and ends with a natural fade.
+- **Screen stays short.** On-screen text/cards/subtitles keep the punchy version; the extra spoken words are not all shown.
+- Length: fuller narration runs ~20-30 s for a 6-8 thought script. Keep each thought one breath.
+
 ## Make a reel
 1. `mkdir reels/<slug>`; copy `examples/narration.example.json` to `reels/<slug>/narration.json`; edit script and beats.
 2. `python3 .claude/skills/hybrid-graphics-plus-demo/scripts/make_reel.py reels/<slug> --record` (`--package YYYY-MM-DD` for ready-to-post).

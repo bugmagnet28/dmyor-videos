@@ -20,6 +20,15 @@ From the project root (`~/Documents/dmyor-videos`). One-time voice setup: `bash 
 2. `python3 .claude/skills/kinetic-typography/scripts/make_reel.py reels/<slug> --record` (add `--package YYYY-MM-DD` to create `ready-to-post/<date>-<slug>/`).
 3. Check, show Sanyam, schedule only after his OK, then register the post in `analytics/` (`record.py content --style kinetic-typography ...`).
 
+## Write for the ear (owner rule, 2026-10-24)
+
+The narration is FULLER than the on-screen text. Spoken language needs more words than written language to sound complete and human; screens need fewer.
+- **Say it like a person talking to one friend**: lead-ins and asides ("Seriously,", "So here's what I'd do.", "And honestly,"), connectors ("and then", "so"), contractions, first person ("I'd", "I've put"), a spoken question now and then ("And someday? It's not on there.").
+- **Never end on a clipped fragment.** Not "Link in bio." but "And if you want to try it out, I've put the link in the bio." Not "Today." alone at the very end; land the point, then close warmly ("That's exactly what Dmyor is built for.").
+- **Stages**: open with a short hook, explain, turn to the advice, land the point, close. Tag thoughts when needed: `[hook]`, `[turn]`, `[land]`, `[outro]` (untagged: first = hook, last two = outro, the one before = land). The voice (`say.py --stages`, on by default) changes pace, pitch and pauses per stage and ends with a natural fade.
+- **Screen stays short.** On-screen text/cards/subtitles keep the punchy version; the extra spoken words are not all shown.
+- Length: fuller narration runs ~20-30 s for a 6-8 thought script. Keep each thought one breath.
+
 ## Script rules
 - 4-6 cards (`||`), 30-55 words total → 10-18 s. One idea per card, max ~12 words on a card.
 - Card 1 is the hook and is read on frame 0: 2-6 words, a hard truth or sharp question. Best so far: "Someday isn't a day." (hard truths beat quizzes and step lists on our account).
@@ -32,7 +41,8 @@ From the project root (`~/Documents/dmyor-videos`). One-time voice setup: `bash 
 | field | meaning |
 |---|---|
 | `voice` / `speed` / `gap_min` / `gap_max` | `am_eric`, 1.0, 0.30-0.55 s pauses between cards (same voice rules as the diagram skill) |
-| `script` | marked-up text (above). Write "Dmyor"; it is spoken "Deem-yor". |
+| `script` | what is SHOWN: short card text with markup (above), one card per `||`. |
+| `spoken` | what is SAID: the fuller conversational version, **same number of `||` thoughts** as cards, optional `[stage]` tags. Each shown word pops when its matching spoken word is said. Write "Dmyor"; it is spoken "Deem-yor". Omit to speak the card text as-is. |
 | `brand_anchor` | text of the card where the brand card takes over |
 | `tagline`, `handle` | brand card |
 | `max_font` | cap for the auto-fit size (150) |

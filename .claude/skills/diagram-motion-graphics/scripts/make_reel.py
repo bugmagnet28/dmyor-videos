@@ -23,7 +23,9 @@ if not os.path.exists(os.path.join(ROOT, "record.js")):
 sys.path.insert(0, os.path.join(ROOT, ".claude/skills/dmyor-reel/scripts"))
 from align import find  # noqa: E402  (whisper-based phrase finder from the dmyor-reel skill)
 
-BPM = 100  # the template counts time in beats; 100 bpm -> 0.6 s per beat
+BPM = 100
+STAGE_TAG = r"\[(?:hook|body|turn|land|outro)\]\s*"  # delivery tags for say.py --stages, never shown or matched
+  # the template counts time in beats; 100 bpm -> 0.6 s per beat
 NUM = {"0": "zero", "1": "one", "2": "two", "3": "three", "4": "four", "5": "five",
        "10": "ten", "100": "one hundred", "500": "five hundred"}
 BRAND_SPOKEN = "Deem-yor"  # owner: "Dmyor" is pronounced DEEM-yor (2026-10-22)
@@ -101,7 +103,8 @@ def main():
     spoken = re.sub(r"\bDmyor\b", BRAND_SPOKEN, n["script"])
     run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(SKILL, "scripts/say.py"), spoken,
         os.path.join(d, "audio.mp3"), "--voice", n.get("voice", "am_eric"), "--speed", str(n.get("speed", 1.0)),
-        "--gap-min", str(n.get("gap_min", 0.30)), "--gap-max", str(n.get("gap_max", 0.55)))
+        "--gap-min", str(n.get("gap_min", 0.30)), "--gap-max", str(n.get("gap_max", 0.55)),
+        *(["--stages"] if n.get("stages", True) else []))
     # 2. timings
     run("python3", os.path.join(ROOT, ".claude/skills/dmyor-reel/scripts/align.py"), d)
     cues = json.load(open(os.path.join(d, "cues.json")))
@@ -118,7 +121,7 @@ def main():
     cfg["events"] = {k: ([round(x / B, 3) for x in v] if isinstance(v, list) else round(v / B, 3)) for k, v in ev.items()}
     cfg["total"] = round(cues["words"][-1]["e"] + n.get("tail", 1.2), 2)
     # 4. subtitles
-    cfg["subs"] = subtitles(n["script"], cues["words"], ev["hookOut"], ev["brand"])
+    cfg["subs"] = subtitles(re.sub(STAGE_TAG, "", n["script"]), cues["words"], ev["hookOut"], ev["brand"])
     cfg["narration"] = {"voice": n.get("voice", "am_eric"), "provider": "kokoro-onnx v1.0", "script": n["script"]}
     json.dump(cfg, open(os.path.join(d, "config.json"), "w"), indent=1)
     # 5. html

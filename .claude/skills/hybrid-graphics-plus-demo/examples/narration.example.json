@@ -5,9 +5,9 @@
  "gap_min": 0.3,
  "gap_max": 0.55,
  "tail": 1.2,
- "script": "Everyone has a dream they mean to act on someday. || Here's how you make it real. || First, give yourself a horizon. Three years. || Then write the one thing you're committing to. || Tag it, and create your vision. || Your vision now lives in the Intent Archive. || Because a hundred years from now, you won't be here. But the dreams you chased should still exist. || Full features are releasing soon. Milestones, actions, habits, and your journal. Your vision will be waiting. || So write yours today. || That's Dmyor. || Link's in the bio.",
- "hook_text": "Everyone has a dream they mean to act on *someday*.",
- "hook_until": "Here's how",
+ "script": "[hook] You know that dream you keep saying you'll start someday? || Let me show you how to make it real. || First, you give yourself a horizon. I picked three years. || Then you write down the one thing you're actually committing to. || Tag it, and create your vision. That's it, it's done. || And now your vision lives in the Intent Archive. || [turn] Because a hundred years from now, you won't be here. But the dreams you chased? They should still exist. || Full features are releasing soon. Milestones, actions, habits, and your own journal. And your vision will be waiting for you. || [land] So go ahead, and write yours today. || [outro] That's what Dmyor is all about. || [outro] And if you want to try it out, I've put the link in the bio.",
+ "hook_text": "That dream you'll start *someday*?",
+ "hook_until": "Let me show you",
  "clips": [
   {
    "name": "create-vision",
@@ -21,11 +21,15 @@
      0.6
     ],
     [
-     "Then write",
+     "three years",
+     1.5
+    ],
+    [
+     "write down the one thing",
      2.9
     ],
     [
-     "committing to",
+     "actually committing",
      4.6
     ],
     [
@@ -42,11 +46,11 @@
    "name": "intent-archive",
    "beats": [
     [
-     "Your vision now lives",
+     "now your vision lives",
      0.4
     ],
     [
-     "Because a hundred years",
+     "years from now",
      1.6
     ]
    ],
@@ -64,13 +68,13 @@
  "callouts": [
   {
    "anchor": "give yourself a horizon",
-   "until": "Then write",
+   "until": "write down",
    "text": "1 to 5 years",
    "side": "right",
    "y": 0.62
   },
   {
-   "anchor": "Then write",
+   "anchor": "write down the one thing",
    "until": "Tag it",
    "text": "Your vision, your words",
    "side": "left",
@@ -78,14 +82,14 @@
   },
   {
    "anchor": "Tag it",
-   "until": "Your vision now lives",
+   "until": "now your vision lives",
    "text": "Tag it · Create Vision",
    "side": "right",
    "y": 0.25
   },
   {
-   "anchor": "Your vision now lives",
-   "until": "Phase two",
+   "anchor": "now your vision lives",
+   "until": "Full features",
    "text": "The Intent Archive",
    "side": "left",
    "y": 0.12
@@ -99,13 +103,13 @@
    "y": 0.5
   },
   {
-   "anchor": "Then write",
+   "anchor": "write down",
    "s": 1,
    "x": 0.5,
    "y": 0.5
   },
   {
-   "anchor": "committing to",
+   "anchor": "actually committing",
    "s": 1.3,
    "x": 0.5,
    "y": 0.32
@@ -120,7 +124,8 @@
  "phase2": {
   "from": "Full features",
   "unlock": "releasing soon",
-  "until": "So write",
+  "until": "So go ahead",
+  "title": "Full features releasing soon",
   "items": [
    {
     "k": "PLAN",
@@ -138,14 +143,13 @@
     "k": "JOURNAL",
     "t": "Your story"
    }
-  ],
-  "title": "Full features releasing soon"
+  ]
  },
  "cta": {
-  "from": "So write",
-  "text": "So write *yours* today."
+  "from": "So go ahead",
+  "text": "Write *yours* today."
  },
- "brand_anchor": "That's",
+ "brand_anchor": "That's what",
  "tagline": "The world's\nintent archive.",
  "handle": "@becauseidmyor",
  "caption": {
