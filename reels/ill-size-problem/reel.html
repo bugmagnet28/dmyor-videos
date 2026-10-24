@@ -97,8 +97,8 @@ var SCENES={
       var ln=draw(el("path",{d:"M-270 0 L-330 0",stroke:LINE,"stroke-width":3},R));return {R:R,ck:ck,ln:ln};});
     var ctr=g(G);card(ctr,520,150,"",{stroke:ACC,sw:3});var num=txt(ctr,"0",-150,22,64,ACC,800);txt(ctr,P.unit||"words / day",70,20,34,INK,700);
     return function(k,t){var sh=eio(seg(t,.2,.9));tr(bk,lerp(540,250,sh),1180,lerp(1,.62,sh),0,1);
-      rows.forEach(function(r,i){var a=.8+i*.45,pp=eout(seg(t,a,a+.5));tr(r.R,lerp(780,700,pp),980+i*130,1,0,pp);drawTo(r.ck,seg(t,a+.4,a+.8));});
-      var c=eout(seg(t,2.4,2.9));tr(ctr,620,1470,1,0,c);num.textContent=Math.round((P.per||300)*eio(seg(t,2.6,3.6)));};},
+      rows.forEach(function(r,i){var a=.8+i*.45,pp=eout(seg(t,a,a+.5));tr(r.R,lerp(780,700,pp),980+i*130,1,0,pp);drawTo(r.ck,seg(t,1.95+i*.3,2.25+i*.3));});
+      var c=eout(seg(t,3.0,3.5));tr(ctr,620,1470,1,0,c);num.textContent=Math.round((P.per||300)*eio(seg(t,3.2,4.2)));};},
   "week-tracker":function(p,P){var G=g(p);var D=["M","T","W","T","F","S","S"],on=P.on||[0,2,4];
     var cells=D.map(function(d,i){var C2=g(G);el("rect",{x:-56,y:-56,width:112,height:112,rx:20,fill:on.indexOf(i)>=0?PANEL:"none",stroke:on.indexOf(i)>=0?ACC:MUTE,"stroke-opacity":on.indexOf(i)>=0?1:.45,"stroke-width":3},C2);
       txt(C2,d,0,-80,30,MUTE,700);var ck=on.indexOf(i)>=0?check(C2):null;return {C:C2,ck:ck};});
@@ -120,7 +120,7 @@ var SCENES={
       var focus=eio(seg(t,7.4,8));chips.forEach(function(o,i){var pp=eout(seg(t,4.9+i*.12,5.4+i*.12));tr(o.R,145+i*158,1210,1,0,pp*(i===0?1:1-.6*focus));
         if(i===0){o.bx.setAttribute("stroke",focus>.5?ACC:LINE);o.nm.setAttribute("fill",focus>.5?ACC:INK);}});
       tr(tag,145,1310,1,0,focus);
-      rows.forEach(function(r,i){var a=8.9+i*.45,pp=eout(seg(t,a,a+.5));tr(r.R,540,1420+i*90,1,0,pp);drawTo(r.c,seg(t,a+.7,a+1.1));});};},
+      rows.forEach(function(r,i){var a=8.9+i*.45,pp=eout(seg(t,a,a+.5));tr(r.R,540,1420+i*90,1,0,pp);drawTo(r.c,seg(t,10.2+i*.3,10.5+i*.3));});};},
   "fifteen-test":function(p,P){var G=g(p);var lim=P.minutes||15;
     var tm=g(G);el("circle",{r:150,fill:"none",stroke:LINE,"stroke-width":9},tm);var arc=el("path",{d:"",fill:"none",stroke:ACC,"stroke-width":9,"stroke-linecap":"round"},tm);
     var mk=el("line",{x1:0,y1:-165,x2:0,y2:-135,stroke:INK,"stroke-width":5},tm);var mins=txt(tm,"0 min",0,20,56,INK,800);var verdict=txt(tm,"",0,215,32,MUTE,700);

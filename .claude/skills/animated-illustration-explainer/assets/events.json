@@ -1,5 +1,5 @@
 {
- "_doc": "Sound moments per scene type: [seconds after the scene starts, sound, optional duration or \"end\" (= until the scene fades)]. Times mirror the animation in illustrated.html; change both together. Object sounds first: each thing should sound like itself (clock ticks, pencil crosses out, pages flip, footsteps walk). Kit: see scripts/sfx.py.",
+ "_doc": "Sound moments per scene type: [seconds after the scene starts, sound, optional duration or \"end\" (= until the scene fades)]. Times mirror the animation in illustrated.html; change both together. Object sounds first: each thing should sound like itself (clock ticks, pencil crosses out, pages flip, footsteps walk); checks = \"right\" chime (rises along a run), things appearing = \"pop\". Kit: see scripts/sfx.py.",
  "postpone-calendar": [
   [0.515, "pencil", 0.28],
   [0.875, "page"],
@@ -13,53 +13,64 @@
   [5.015, "pencil", 0.28]
  ],
  "book-vs-evening": [
-  [0.0, "tap"],
+  [0.0, "pop"],
   [0.3, "riffle", 1.5],
   [0.6, "clock", "end"]
  ],
  "book-breakdown": [
-  [1.2, "pen_check"],
-  [1.65, "pen_check"],
-  [2.1, "pen_check"],
-  [2.6, "pencil", 1.0]
+  [0.8, "pop"],
+  [1.25, "pop"],
+  [1.7, "pop"],
+  [2.15, "right"],
+  [2.45, "right"],
+  [2.75, "right"],
+  [3.0, "pop"],
+  [3.2, "pencil", 1.0]
  ],
  "fit-breakdown": [
-  [0.05, "tap"],
-  [3.0, "tap"],
-  [4.95, "tap"],
+  [0.05, "pop"],
+  [3.05, "pop"],
+  [4.95, "pop"],
+  [5.19, "pop"],
+  [5.43, "pop"],
   [7.45, "plate"],
-  [9.6, "pen_check"],
-  [10.05, "pen_check"],
-  [10.5, "pen_check"]
+  [8.95, "pop"],
+  [9.4, "pop"],
+  [9.85, "pop"],
+  [10.35, "right"],
+  [10.65, "right"],
+  [10.95, "right"]
  ],
  "week-tracker": [
   [0.6, "footsteps", 3.9],
-  [0.85, "pen_check"],
-  [1.35, "pen_check"],
-  [1.85, "pen_check"]
+  [0.85, "right"],
+  [1.35, "right"],
+  [1.85, "right"]
  ],
  "fifteen-test": [
   [0.3, "timer", 1.9],
   [1.15, "beep2"],
-  [2.65, "tap"],
+  [2.65, "pop"],
   [3.4, "timer", 1.2],
-  [4.75, "pen_check"],
-  [5.05, "pen_check"],
-  [5.35, "pen_check"]
+  [4.75, "right"],
+  [5.05, "right"],
+  [5.35, "right"]
  ],
  "proof-to-motivation": [
-  [0.5, "pen_check"],
-  [0.94, "pen_check"],
-  [1.38, "pen_check"],
-  [1.82, "pen_check"],
-  [3.05, "tap"]
+  [0.5, "right"],
+  [0.94, "right"],
+  [1.38, "right"],
+  [1.82, "right"],
+  [3.05, "pop"]
  ],
  "dream-to-steps": [
   [0.0, "tone"],
   [0.15, "stamp"],
-  [1.2, "pencil", 0.8],
-  [3.05, "pen_check"],
-  [3.55, "pen_check"],
-  [4.05, "pen_check"]
+  [1.75, "pop"],
+  [2.0, "pop"],
+  [2.25, "pop"],
+  [3.05, "right"],
+  [3.55, "right"],
+  [4.05, "right"]
  ]
 }

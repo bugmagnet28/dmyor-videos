@@ -175,12 +175,33 @@ def beep2():
     return np.concatenate([b, np.zeros(int(.07 * SR)), b])
 
 
+def right(i=0):
+    """"correct" chime: two quick soft mallet notes rising a fifth; i = position in a run of checks (each one a step higher)"""
+    f = 659.3 * 2 ** ([0, 4, 7, 12, 14, 16, 19, 24][min(i, 7)] / 12)
+    def note(fr, d=.45):
+        n = int(d * SR); t = np.arange(n) / SR
+        return (np.sin(2 * np.pi * fr * t) + .18 * np.sin(2 * np.pi * 3.98 * fr * t) * np.exp(-t / .04)) * env(n, .002, .16)
+    a, b = note(f), note(f * 1.5); gap = int(.075 * SR); out = np.zeros(gap + len(b))
+    out[:len(a)] += a * .75; out[gap:] += b
+    return out
+
+
+def pop(i=0):
+    """bubble pop for something appearing: quick upward pitch sweep, tight decay; pitch varies a little per item"""
+    n = int(.1 * SR); t = np.arange(n) / SR; base = 380 * 2 ** (([0, 3, 5, 7, 10, 12][i % 6] + rng.uniform(-.4, .4)) / 12)
+    fr = base * (1 + 1.6 * (1 - np.exp(-t / .012)))
+    ph = 2 * np.pi * np.cumsum(fr) / SR
+    body = np.sin(ph) * env(n, .0015, .022)
+    click = hp(noise(n), 3000) * env(n, .0003, .002) * .25
+    return body + click
+
+
 KIT = {"tick": tick, "tap": tap, "swish": swish, "ratchet": ratchet, "tone": tone, "chord": chord,
        "clock": clock, "timer": timer, "pencil": pencil, "pen_check": pen_check, "page": page, "riffle": riffle,
-       "footsteps": footsteps, "plate": plate, "stamp": stamp, "beep2": beep2}
+       "footsteps": footsteps, "plate": plate, "stamp": stamp, "beep2": beep2, "right": right, "pop": pop}
 PEAK = {"tick": -16, "tap": -16, "swish": -21, "ratchet": -19, "tone": -21, "chord": -16,   # dBFS peak at "present" (voice peaks ~-1.5)
         "clock": -18, "timer": -20, "pencil": -15, "pen_check": -15, "page": -15, "riffle": -18,
-        "footsteps": -15, "plate": -15, "stamp": -14, "beep2": -21}
+        "footsteps": -15, "plate": -15, "stamp": -14, "beep2": -21, "right": -15, "pop": -14}
 LEVEL = {"present": 0, "subtle": -6}
 BEDS = {"clock", "timer", "footsteps", "riffle"}   # continuous sounds: may overlap one-shots
 
@@ -193,13 +214,16 @@ def events(cfg, table, min_gap=.28):
             ev.append((sc["t0"], "swish", None))
         if i == 0:
             continue   # the hook scene is already finished on frame 0
+        run = {}
         for e in own:
             at = sc["t0"] + e[0]
+            if e[1] in ("right", "pop"):
+                run[e[1]] = run.get(e[1], -1) + 1
             if at < sc["t1"]:
                 dur = e[2] if len(e) > 2 else None
                 if dur == "end":
                     dur = max(.3, sc["t1"] + .3 - at)   # beds run until the scene has faded out
-                ev.append((at, e[1], dur))
+                ev.append((at, e[1], run[e[1]] if e[1] in ("right", "pop") else dur))
     ev.append((cfg["brandT"], "chord", None))
     ev.sort(); kept = []
     for e in ev:
@@ -223,7 +247,7 @@ def main():
     table = json.load(open(os.path.join(HERE, "assets/events.json")))
     ev = events(cfg, table); n = int((cfg["total"] + 3) * SR); trk = np.zeros(n)
     for at, kind, dur in ev:
-        s = KIT[kind](dur) if dur else KIT[kind](); s = s / np.abs(s).max() * 10 ** ((PEAK[kind] + LEVEL[o.level]) / 20); i = int(at * SR)
+        s = KIT[kind](dur) if dur is not None else KIT[kind](); s = s / np.abs(s).max() * 10 ** ((PEAK[kind] + LEVEL[o.level]) / 20); i = int(at * SR)
         trk[i:i + len(s)] += s[: n - i]
     trk = trk[: int(cfg["total"] * SR)]
     tmp = tempfile.mktemp(suffix=".wav")
