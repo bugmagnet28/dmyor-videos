@@ -21,3 +21,4 @@ tts/models/
 analytics/.venv/
 app-capture/profile/
 app-capture/raw/
+tts/gemini_usage.jsonl

@@ -1,6 +1,6 @@
 ---
 name: hybrid-graphics-plus-demo
-description: Hybrid production style - motion graphics plus REAL dmyor screen footage. Kinetic-type hook card, then the live dmyor.com app recorded in a phone frame (guest flow, no account) with callouts, tap rings and zooms placed on spoken words, then a motion-graphics feature panel (e.g. "Phase 2 unlocks the full planner"), a kinetic CTA card and the dmyor brand card. Human-paced narration (free local Kokoro voice am_eric), subtitles, no music. 25-35s, 1080x1920. Use when a reel should SHOW the real product: how a vision is created, the Intent Archive, any screen a visitor can reach.
+description: Hybrid production style - motion graphics plus REAL dmyor screen footage. Kinetic-type hook card, then the live dmyor.com app recorded in a phone frame (guest flow, no account) with callouts, tap rings and zooms placed on spoken words, then a motion-graphics feature panel (e.g. "Full features releasing soon"), a kinetic CTA card and the dmyor brand card. Human-paced narration (free local Kokoro voice am_eric), subtitles, no music. 25-35s, 1080x1920. Use when a reel should SHOW the real product: how a vision is created, the Intent Archive, any screen a visitor can reach.
 ---
 
 # Hybrid: motion graphics + real app demo
@@ -9,10 +9,10 @@ description: Hybrid production style - motion graphics plus REAL dmyor screen fo
 1. Hook card on frame 0 (kinetic type, e.g. "Everyone has a dream they mean to act on *someday*.").
 2. A phone frame rises in; inside it the REAL dmyor.com screens play, timed to the narration (each footage moment is pinned to a spoken anchor). Orange callout labels overlap the phone edge ("1 to 5 years", "Your vision, your words"), a tap ring marks the button being pressed, the screen zooms into the field being typed in. Subtitles of the narration sit at the top.
 3. A second clip (e.g. the Intent Archive page scrolling).
-4. Phone exits; a motion-graphics feature panel: headline ("Unlocks the full planner"), PHASE 2 pill, a lock that opens on "unlocks", and feature chips (Milestones · Actions · Daily reps · Your story) that light up.
+4. Phone exits; a motion-graphics feature panel: headline ("Full features releasing soon"), a pill, a lock that opens on "releasing soon", and feature chips (Milestones · Actions · Daily reps · Your story) that light up.
 5. CTA card ("So write *yours* today."), then the brand card (`dmyor`, tagline, `@becauseidmyor`) while the voice says "That's Dmyor. Link's in the bio."
 
-**Phase 2 messaging (owner, 2026-10-24)**: new visions open a "Phase 2 · coming soon" screen; the planner features are locked until Phase 2. Show only what a visitor can do today (create a vision, the Intent Archive) as real footage; show features as motion graphics and say plainly that Phase 2 unlocks them ("Your vision will be waiting"). Never imply the planner works today.
+**Feature messaging (owner, 2026-10-24)**: new visions open a "coming soon" screen; the other features are locked for now. Never call it "the planner". Say **"Full features are releasing soon"** ("Your vision will be waiting"). Show only what a visitor can do today (create a vision, the Intent Archive) as real footage; show the coming features (milestones, actions, habits, journal) only as motion graphics, and never imply they work today.
 
 ## Footage (real app, no account)
 Record from the project root; a Chrome window appears briefly (visible mode gives 2x frames, 780x1688 at ~31 fps):

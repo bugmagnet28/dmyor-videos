@@ -25,7 +25,7 @@ A skill = HOW a video is made (animation / production type). The topic and hook 
 | `kinetic-typography` | motion graphics: words are the animation, synced to voice | one sentence: a hard truth, reframe, hook (10-20 s) |
 | `diagram-motion-graphics` | motion graphics: crisp nodes + connectors drawn on spoken cues (layout now: goal tree) | a structure or process: how a goal becomes a plan (20-28 s) |
 | `dmyor-reel` | base pipeline (align, record, legacy punch text reels) | infrastructure; not a style to pick |
-| `hybrid-graphics-plus-demo` | motion graphics + REAL dmyor screens (guest-flow footage) in a phone, feature panels as graphics | showing the real product: creating a vision, the Intent Archive (25-35 s). Phase 2 features only as graphics, said honestly |
+| `hybrid-graphics-plus-demo` | motion graphics + REAL dmyor screens (guest-flow footage) in a phone, feature panels as graphics | showing the real product: creating a vision, the Intent Archive (25-35 s). locked features only as graphics: "Full features are releasing soon" (never "planner") |
 | planned: `app-screen-demo`, `data-viz-animation`, `ui-mockup-animation`, `stock-footage-captions`, `talking-head-captions` | | built one at a time after Sanyam approves a first reel |
 
 **Picking a style**: explain a process → diagram; one punchy line → kinetic typography; numbers/progress → data viz (when built); show the real product → hybrid-graphics-plus-demo; feelings/POV → footage (when built). Mixing is fine (a kinetic hook card leading into a diagram) once both are proven.

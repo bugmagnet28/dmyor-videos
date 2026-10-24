@@ -5,7 +5,7 @@
  "gap_min": 0.3,
  "gap_max": 0.55,
  "tail": 1.2,
- "script": "Everyone has a dream they mean to act on someday. || Here's how you make it real. || First, give yourself a horizon. Three years. || Then write the one thing you're committing to. || Tag it, and create your vision. || Your vision now lives in the Intent Archive. || Because a hundred years from now, you won't be here. But the dreams you chased should still exist. || Phase two unlocks the full planner. Milestones, actions, habits, and your journal. Your vision will be waiting. || So write yours today. || That's Dmyor. || Link's in the bio.",
+ "script": "Everyone has a dream they mean to act on someday. || Here's how you make it real. || First, give yourself a horizon. Three years. || Then write the one thing you're committing to. || Tag it, and create your vision. || Your vision now lives in the Intent Archive. || Because a hundred years from now, you won't be here. But the dreams you chased should still exist. || Full features are releasing soon. Milestones, actions, habits, and your journal. Your vision will be waiting. || So write yours today. || That's Dmyor. || Link's in the bio.",
  "hook_text": "Everyone has a dream they mean to act on *someday*.",
  "hook_until": "Here's how",
  "clips": [
@@ -53,7 +53,7 @@
    "speed_after": 1.3
   }
  ],
- "phone_out": "Phase two",
+ "phone_out": "Full features",
  "taps": [
   {
    "anchor": "create your vision",
@@ -118,8 +118,8 @@
   }
  ],
  "phase2": {
-  "from": "Phase two",
-  "unlock": "unlocks",
+  "from": "Full features",
+  "unlock": "releasing soon",
   "until": "So write",
   "items": [
    {
@@ -139,7 +139,7 @@
     "t": "Your story"
    }
   ],
-  "title": "Unlocks the full planner"
+  "title": "Full features releasing soon"
  },
  "cta": {
   "from": "So write",
@@ -149,9 +149,9 @@
  "tagline": "The world's\nintent archive.",
  "handle": "@becauseidmyor",
  "caption": {
-  "instagram": "How a dream becomes a vision on Dmyor:\n• Pick a horizon (1-5 years)\n• Write the one thing you're committing to\n• Tag it, create it\nIt joins the Intent Archive. Phase 2 unlocks the full planner. Link in bio.",
+  "instagram": "How a dream becomes a vision on Dmyor:\n• Pick a horizon (1-5 years)\n• Write the one thing you're committing to\n• Tag it, create it\nIt joins the Intent Archive. Full features are releasing soon. Link in bio.",
   "hashtags": "#goals #visionboard #goalsetting #selfimprovement",
-  "x": "Everyone has a dream they mean to act on someday.\n\nWrite it down on Dmyor: horizon → vision → tag. It joins the Intent Archive, and Phase 2 unlocks the full planner.\n\nhttps://www.dmyor.com",
+  "x": "Everyone has a dream they mean to act on someday.\n\nWrite it down on Dmyor: horizon → vision → tag. It joins the Intent Archive, and full features are releasing soon.\n\nhttps://www.dmyor.com",
   "youtube_title": "Turn a someday dream into a vision #Shorts"
  }
 }
