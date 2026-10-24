@@ -25,4 +25,4 @@ On a bad day, don't skip. Switch.
 Title: Your plan only works on good days #Shorts
 
 ## Status
-Not approved yet.
+Approved by Sanyam 2026-10-24. Scheduled for 2026-10-25 on Instagram, X and YouTube.

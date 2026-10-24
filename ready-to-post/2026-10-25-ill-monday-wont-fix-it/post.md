@@ -23,4 +23,4 @@ Start tonight with one 15-minute step. By Monday you're a few steps in.
 Title: Monday won't fix it #Shorts
 
 ## Status
-Not approved yet.
+Approved by Sanyam 2026-10-24. Scheduled for 2026-10-25 on Instagram, X and YouTube.

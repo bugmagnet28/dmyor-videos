@@ -6,11 +6,19 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 **Post order: bottom one first (oldest). From Oct 24: one reel per day, best slot from the Oct 23 insights (VASK-014).** All queued reels are evergreen. Newest is listed on top.
 
-- [ ] **2026-10-24 monday-wont-fix-it** (15.8s, narrated kinetic typography, voice am_eric) · `ready-to-post/2026-10-24-monday-wont-fix-it/` · caption in post.md · tests V-EXP-27 · end card @dmyor_global · listen first; best Sunday 19:30 IST (Oct 25 or Nov 1), alone
+- [~] superseded by ill-monday-wont-fix-it (old style, moved to ready-to-post/_superseded/) · **2026-10-24 monday-wont-fix-it** (15.8s, narrated kinetic typography, voice am_eric) · `ready-to-post/2026-10-24-monday-wont-fix-it/` · caption in post.md · tests V-EXP-27 · end card @dmyor_global · listen first; best Sunday 19:30 IST (Oct 25 or Nov 1), alone
 - [ ] **2026-10-23 not-lazy-next-step** (27.2s, narrated diagram, voice am_eric, subtitles) · `ready-to-post/2026-10-23-not-lazy-next-step/` · caption in post.md · tests V-EXP-26 + V-EXP-25 · end card @dmyor_global · listen first; post 09:30 IST alone
 - [ ] **2026-10-22 tree-first-5k** (16.2s, tree series, music, no VO) · `ready-to-post/2026-10-22-tree-first-5k/` · caption in post.md · tests V-EXP-24 (+V-EXP-23) · end card @dmyor_global · post on a day with no other reel
 - [ ] **2026-10-21 hours-in-a-week** (16.4s, no VO) · `ready-to-post/2026-10-21-hours-in-a-week/` · caption in post.md · tests V-EXP-22 · end card @dmyor_global
 
+
+## Scheduled on @becauseidmyor for 2026-10-25 (IST), animated illustration explainer batch (Graphite & Sage, object sound effects), Sanyam approved
+
+- [x] scheduled 09:30 IST · **ill-size-problem** (56.7s) · `ready-to-post/2026-10-25-ill-size-problem/`
+- [x] scheduled 13:00 IST · **ill-bad-day-version** (51.4s) · `ready-to-post/2026-10-25-ill-bad-day-version/`
+- [x] scheduled 16:30 IST · **ill-language-plan** (51.1s) · `ready-to-post/2026-10-25-ill-language-plan/`
+- [x] scheduled 19:30 IST · **ill-monday-wont-fix-it** (43.3s) · `ready-to-post/2026-10-25-ill-monday-wont-fix-it/`
+- Same times on Instagram, X and YouTube Shorts (YouTube upload limit lifted; description links stay unclickable until the channel's one-time phone verification).
 
 ## Scheduled on @becauseidmyor for 2026-10-23 (IST), narrated diagram reels (voice am_eric), Sanyam approved
 

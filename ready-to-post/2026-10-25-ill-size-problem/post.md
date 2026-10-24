@@ -21,4 +21,4 @@ Test: if you can't start the first step in under 15 minutes, it's still too big.
 Title: You don't have a motivation problem #Shorts
 
 ## Status
-Not approved yet.
+Approved by Sanyam 2026-10-24. Scheduled for 2026-10-25 on Instagram, X and YouTube.

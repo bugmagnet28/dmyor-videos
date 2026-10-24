@@ -24,4 +24,4 @@ Today isn't "learn Spanish". Today is 20 flashcards.
 Title: Learn a language this year: the whole plan #Shorts
 
 ## Status
-Not approved yet.
+Approved by Sanyam 2026-10-24. Scheduled for 2026-10-25 on Instagram, X and YouTube.
