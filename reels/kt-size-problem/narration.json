@@ -1,0 +1,20 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.3,
+ "gap_max": 0.55,
+ "tail": 1.2,
+ "max_font": 150,
+ "brand_anchor": "That's Dmyor",
+ "handle": "@becauseidmyor",
+ "script": "You don't have a *motivation* problem. || You have a *size* problem. || \"Write a book\" is too big for a Tuesday. || Write 3 *sentences* tonight. || \"Get fit\"? Put your *shoes* by the door. || More than *10* minutes? Shrink it again. || That's Dmyor. || Link's in the bio.",
+ "spoken": "[hook] You don't have a motivation problem. || You have a size problem. Your first step is just too big. || Like, write a book. Nobody can start that on a Tuesday night. || [turn] So shrink it. Write three sentences of chapter one, tonight. That's it. || Same with get fit. Don't plan the whole program, just put your shoes by the door. || [land] Here's the rule. If the first step takes more than ten minutes, shrink it again. || [outro] That's the idea Dmyor is built around. || [outro] And if you want to try it out, I've put the link in the bio.",
+ "tagline": "Shrink the first step.\nThen take it.",
+ "caption": {
+  "instagram": "You don't have a motivation problem. You have a size problem.\n• \"Write a book\" → 3 sentences tonight\n• \"Get fit\" → shoes by the door\n• Rule: if the first step takes >10 min, shrink it again\nSave this for the next goal you set. Link in bio.",
+  "hashtags": "#goals #procrastination #productivity #selfimprovement",
+  "x": "You don't have a motivation problem. You have a size problem.\n\n\"Write a book\" → write 3 sentences tonight.\n\"Get fit\" → shoes by the door.\n\nIf the first step takes more than 10 minutes, shrink it again.\n\nhttps://www.dmyor.com",
+  "youtube_title": "You don't have a motivation problem #Shorts"
+ },
+ "experiment": "batch 2026-10-24; idea #1"
+}

@@ -1,7 +1,7 @@
 {
  "audio": "audio.mp3",
- "duration": 39.6,
- "text": "You know that dream you keep saying you'll start someday. Let me show you how to make it real. First you give yourself a horizon, I picked three years. Then you write down the one thing you're actually committing to. Tag it and create your vision, that's it it's done. And now your vision lives in the intent archive. Because a hundred years from now you won't be here but the dreams you chased, they should still exist. Full features are releasing soon, milestones, actions, habits in your own journal and your vision will be waiting for you. So go ahead and write yours today. That's what deem your is all about. And if you want to try it out I've put the link in the bio.",
+ "duration": 32.91,
+ "text": "You know that dream you keep saying you'll start someday. Let me show you how to make it real. First you give yourself a horizon I picked three years. Then you write down the one thing you're actually committing to. Tag it and create your vision. And now it lives in the intent archive. Because a hundred years from now you won't be here but your dream should still exist. Full features are releasing soon and your vision will be waiting. So go ahead and write yours today. And if you want to try it out I've put the link in the bio.",
  "words": [
   {
    "w": "you",
@@ -66,7 +66,7 @@
   {
    "w": "let",
    "raw": "Let",
-   "s": 3.22,
+   "s": 3.24,
    "e": 3.38
   },
   {
@@ -79,12 +79,12 @@
    "w": "show",
    "raw": "show",
    "s": 3.52,
-   "e": 3.72
+   "e": 3.74
   },
   {
    "w": "you",
    "raw": "you",
-   "s": 3.72,
+   "s": 3.74,
    "e": 3.94
   },
   {
@@ -103,18 +103,18 @@
    "w": "make",
    "raw": "make",
    "s": 4.28,
-   "e": 4.4
+   "e": 4.42
   },
   {
    "w": "it",
    "raw": "it",
-   "s": 4.4,
-   "e": 4.58
+   "s": 4.42,
+   "e": 4.56
   },
   {
    "w": "real",
    "raw": "real.",
-   "s": 4.58,
+   "s": 4.56,
    "e": 4.8
   },
   {
@@ -149,14 +149,14 @@
   },
   {
    "w": "horizon",
-   "raw": "horizon,",
+   "raw": "horizon",
    "s": 6.48,
    "e": 6.92
   },
   {
    "w": "i",
    "raw": "I",
-   "s": 7.2,
+   "s": 6.92,
    "e": 7.28
   },
   {
@@ -175,12 +175,12 @@
    "w": "years",
    "raw": "years.",
    "s": 7.72,
-   "e": 8.04
+   "e": 8.06
   },
   {
    "w": "then",
    "raw": "Then",
-   "s": 8.62,
+   "s": 8.6,
    "e": 8.78
   },
   {
@@ -241,529 +241,385 @@
    "w": "to",
    "raw": "to.",
    "s": 10.92,
-   "e": 11.38
+   "e": 11.52
   },
   {
    "w": "tag",
    "raw": "Tag",
    "s": 12.16,
-   "e": 12.16
+   "e": 12.18
   },
   {
    "w": "it",
    "raw": "it",
-   "s": 12.16,
-   "e": 12.36
+   "s": 12.18,
+   "e": 12.4
   },
   {
    "w": "and",
    "raw": "and",
-   "s": 12.36,
-   "e": 12.52
+   "s": 12.4,
+   "e": 12.54
   },
   {
    "w": "create",
    "raw": "create",
-   "s": 12.52,
-   "e": 12.72
+   "s": 12.54,
+   "e": 12.8
   },
   {
    "w": "your",
    "raw": "your",
-   "s": 12.72,
-   "e": 12.92
+   "s": 12.8,
+   "e": 13.02
   },
   {
    "w": "vision",
-   "raw": "vision,",
-   "s": 12.92,
-   "e": 13.2
-  },
-  {
-   "w": "thats",
-   "raw": "that's",
-   "s": 13.36,
-   "e": 13.64
-  },
-  {
-   "w": "it",
-   "raw": "it",
-   "s": 13.64,
-   "e": 13.76
-  },
-  {
-   "w": "its",
-   "raw": "it's",
-   "s": 13.76,
-   "e": 14.0
-  },
-  {
-   "w": "done",
-   "raw": "done.",
-   "s": 14.0,
-   "e": 14.2
+   "raw": "vision.",
+   "s": 13.02,
+   "e": 13.32
   },
   {
    "w": "and",
    "raw": "And",
-   "s": 14.88,
-   "e": 14.98
+   "s": 14.02,
+   "e": 14.14
   },
   {
    "w": "now",
    "raw": "now",
-   "s": 14.98,
-   "e": 15.2
+   "s": 14.14,
+   "e": 14.36
   },
   {
-   "w": "your",
-   "raw": "your",
-   "s": 15.2,
-   "e": 15.38
-  },
-  {
-   "w": "vision",
-   "raw": "vision",
-   "s": 15.38,
-   "e": 15.66
+   "w": "it",
+   "raw": "it",
+   "s": 14.36,
+   "e": 14.54
   },
   {
    "w": "lives",
    "raw": "lives",
-   "s": 15.66,
-   "e": 16.06
+   "s": 14.54,
+   "e": 14.76
   },
   {
    "w": "in",
    "raw": "in",
-   "s": 16.06,
-   "e": 16.36
+   "s": 14.76,
+   "e": 15.0
   },
   {
    "w": "the",
    "raw": "the",
-   "s": 16.36,
-   "e": 16.5
+   "s": 15.0,
+   "e": 15.14
   },
   {
    "w": "intent",
    "raw": "intent",
-   "s": 16.5,
-   "e": 16.78
+   "s": 15.14,
+   "e": 15.44
   },
   {
    "w": "archive",
    "raw": "archive.",
-   "s": 16.78,
-   "e": 17.3
+   "s": 15.44,
+   "e": 15.96
   },
   {
    "w": "because",
    "raw": "Because",
-   "s": 17.9,
-   "e": 18.18
+   "s": 16.6,
+   "e": 16.88
   },
   {
    "w": "a",
    "raw": "a",
-   "s": 18.18,
-   "e": 18.32
+   "s": 16.88,
+   "e": 17.02
   },
   {
    "w": "hundred",
    "raw": "hundred",
-   "s": 18.32,
-   "e": 18.56
+   "s": 17.02,
+   "e": 17.28
   },
   {
    "w": "years",
    "raw": "years",
-   "s": 18.56,
-   "e": 18.86
+   "s": 17.28,
+   "e": 17.56
   },
   {
    "w": "from",
    "raw": "from",
-   "s": 18.86,
-   "e": 19.08
+   "s": 17.56,
+   "e": 17.78
   },
   {
    "w": "now",
    "raw": "now",
-   "s": 19.08,
-   "e": 19.34
+   "s": 17.78,
+   "e": 18.06
   },
   {
    "w": "you",
    "raw": "you",
-   "s": 19.34,
-   "e": 19.52
+   "s": 18.06,
+   "e": 18.28
   },
   {
    "w": "wont",
    "raw": "won't",
-   "s": 19.52,
-   "e": 19.76
+   "s": 18.28,
+   "e": 18.5
   },
   {
    "w": "be",
    "raw": "be",
-   "s": 19.76,
-   "e": 19.88
+   "s": 18.5,
+   "e": 18.64
   },
   {
    "w": "here",
    "raw": "here",
-   "s": 19.88,
-   "e": 20.12
+   "s": 18.64,
+   "e": 18.92
   },
   {
    "w": "but",
    "raw": "but",
-   "s": 20.12,
-   "e": 20.28
+   "s": 18.92,
+   "e": 19.1
   },
   {
-   "w": "the",
-   "raw": "the",
-   "s": 20.28,
-   "e": 20.42
+   "w": "your",
+   "raw": "your",
+   "s": 19.1,
+   "e": 19.3
   },
   {
-   "w": "dreams",
-   "raw": "dreams",
-   "s": 20.42,
-   "e": 20.7
-  },
-  {
-   "w": "you",
-   "raw": "you",
-   "s": 20.7,
-   "e": 20.9
-  },
-  {
-   "w": "chased",
-   "raw": "chased,",
-   "s": 20.9,
-   "e": 21.24
-  },
-  {
-   "w": "they",
-   "raw": "they",
-   "s": 21.46,
-   "e": 21.58
+   "w": "dream",
+   "raw": "dream",
+   "s": 19.3,
+   "e": 19.6
   },
   {
    "w": "should",
    "raw": "should",
-   "s": 21.58,
-   "e": 21.72
+   "s": 19.6,
+   "e": 19.86
   },
   {
    "w": "still",
    "raw": "still",
-   "s": 21.72,
-   "e": 22.0
+   "s": 19.86,
+   "e": 20.14
   },
   {
    "w": "exist",
    "raw": "exist.",
-   "s": 22.0,
-   "e": 22.4
+   "s": 20.14,
+   "e": 20.6
   },
   {
    "w": "full",
    "raw": "Full",
-   "s": 23.16,
-   "e": 23.38
+   "s": 21.58,
+   "e": 21.86
   },
   {
    "w": "features",
    "raw": "features",
-   "s": 23.38,
-   "e": 23.68
+   "s": 21.86,
+   "e": 22.26
   },
   {
    "w": "are",
    "raw": "are",
-   "s": 23.68,
-   "e": 23.92
+   "s": 22.26,
+   "e": 22.52
   },
   {
    "w": "releasing",
    "raw": "releasing",
-   "s": 23.92,
-   "e": 24.26
+   "s": 22.52,
+   "e": 22.86
   },
   {
    "w": "soon",
-   "raw": "soon,",
-   "s": 24.26,
-   "e": 24.72
-  },
-  {
-   "w": "milestones",
-   "raw": "milestones,",
-   "s": 25.2,
-   "e": 25.54
-  },
-  {
-   "w": "actions",
-   "raw": "actions,",
-   "s": 25.94,
-   "e": 26.26
-  },
-  {
-   "w": "habits",
-   "raw": "habits",
-   "s": 26.36,
-   "e": 26.66
-  },
-  {
-   "w": "in",
-   "raw": "in",
-   "s": 26.66,
-   "e": 26.88
-  },
-  {
-   "w": "your",
-   "raw": "your",
-   "s": 26.88,
-   "e": 27.0
-  },
-  {
-   "w": "own",
-   "raw": "own",
-   "s": 27.0,
-   "e": 27.2
-  },
-  {
-   "w": "journal",
-   "raw": "journal",
-   "s": 27.2,
-   "e": 27.54
+   "raw": "soon",
+   "s": 22.86,
+   "e": 23.34
   },
   {
    "w": "and",
    "raw": "and",
-   "s": 27.54,
-   "e": 27.88
+   "s": 23.34,
+   "e": 23.62
   },
   {
    "w": "your",
    "raw": "your",
-   "s": 27.88,
-   "e": 28.02
+   "s": 23.62,
+   "e": 23.78
   },
   {
    "w": "vision",
    "raw": "vision",
-   "s": 28.02,
-   "e": 28.24
+   "s": 23.78,
+   "e": 24.08
   },
   {
    "w": "will",
    "raw": "will",
-   "s": 28.24,
-   "e": 28.38
+   "s": 24.08,
+   "e": 24.28
   },
   {
    "w": "be",
    "raw": "be",
-   "s": 28.38,
-   "e": 28.5
+   "s": 24.28,
+   "e": 24.44
   },
   {
    "w": "waiting",
-   "raw": "waiting",
-   "s": 28.5,
-   "e": 28.74
-  },
-  {
-   "w": "for",
-   "raw": "for",
-   "s": 28.74,
-   "e": 29.0
-  },
-  {
-   "w": "you",
-   "raw": "you.",
-   "s": 29.0,
-   "e": 29.24
+   "raw": "waiting.",
+   "s": 24.44,
+   "e": 24.76
   },
   {
    "w": "so",
    "raw": "So",
-   "s": 29.88,
-   "e": 30.12
+   "s": 25.58,
+   "e": 26.0
   },
   {
    "w": "go",
    "raw": "go",
-   "s": 30.12,
-   "e": 30.32
+   "s": 26.0,
+   "e": 26.2
   },
   {
    "w": "ahead",
    "raw": "ahead",
-   "s": 30.32,
-   "e": 30.66
+   "s": 26.2,
+   "e": 26.54
   },
   {
    "w": "and",
    "raw": "and",
-   "s": 30.66,
-   "e": 30.96
+   "s": 26.54,
+   "e": 26.84
   },
   {
    "w": "write",
    "raw": "write",
-   "s": 30.96,
-   "e": 31.2
+   "s": 26.84,
+   "e": 27.08
   },
   {
    "w": "yours",
    "raw": "yours",
-   "s": 31.2,
-   "e": 31.46
+   "s": 27.08,
+   "e": 27.34
   },
   {
    "w": "today",
    "raw": "today.",
-   "s": 31.46,
-   "e": 31.94
-  },
-  {
-   "w": "thats",
-   "raw": "That's",
-   "s": 33.12,
-   "e": 33.5
-  },
-  {
-   "w": "what",
-   "raw": "what",
-   "s": 33.5,
-   "e": 33.64
-  },
-  {
-   "w": "deem",
-   "raw": "deem",
-   "s": 33.64,
-   "e": 33.92
-  },
-  {
-   "w": "your",
-   "raw": "your",
-   "s": 33.92,
-   "e": 34.16
-  },
-  {
-   "w": "is",
-   "raw": "is",
-   "s": 34.16,
-   "e": 34.36
-  },
-  {
-   "w": "all",
-   "raw": "all",
-   "s": 34.36,
-   "e": 34.54
-  },
-  {
-   "w": "about",
-   "raw": "about.",
-   "s": 34.54,
-   "e": 34.88
+   "s": 27.34,
+   "e": 27.84
   },
   {
    "w": "and",
    "raw": "And",
-   "s": 35.82,
-   "e": 35.9
+   "s": 29.08,
+   "e": 29.2
   },
   {
    "w": "if",
    "raw": "if",
-   "s": 35.9,
-   "e": 36.0
+   "s": 29.2,
+   "e": 29.32
   },
   {
    "w": "you",
    "raw": "you",
-   "s": 36.0,
-   "e": 36.12
+   "s": 29.32,
+   "e": 29.44
   },
   {
    "w": "want",
    "raw": "want",
-   "s": 36.12,
-   "e": 36.28
+   "s": 29.44,
+   "e": 29.6
   },
   {
    "w": "to",
    "raw": "to",
-   "s": 36.28,
-   "e": 36.42
+   "s": 29.6,
+   "e": 29.72
   },
   {
    "w": "try",
    "raw": "try",
-   "s": 36.42,
-   "e": 36.64
+   "s": 29.72,
+   "e": 29.94
   },
   {
    "w": "it",
    "raw": "it",
-   "s": 36.64,
-   "e": 36.82
+   "s": 29.94,
+   "e": 30.12
   },
   {
    "w": "out",
    "raw": "out",
-   "s": 36.82,
-   "e": 37.06
+   "s": 30.12,
+   "e": 30.38
   },
   {
    "w": "ive",
    "raw": "I've",
-   "s": 37.06,
-   "e": 37.4
+   "s": 30.38,
+   "e": 30.7
   },
   {
    "w": "put",
    "raw": "put",
-   "s": 37.4,
-   "e": 37.52
+   "s": 30.7,
+   "e": 30.84
   },
   {
    "w": "the",
    "raw": "the",
-   "s": 37.52,
-   "e": 37.68
+   "s": 30.84,
+   "e": 30.98
   },
   {
    "w": "link",
    "raw": "link",
-   "s": 37.68,
-   "e": 37.86
+   "s": 30.98,
+   "e": 31.18
   },
   {
    "w": "in",
    "raw": "in",
-   "s": 37.86,
-   "e": 38.02
+   "s": 31.18,
+   "e": 31.34
   },
   {
    "w": "the",
    "raw": "the",
-   "s": 38.02,
-   "e": 38.14
+   "s": 31.34,
+   "e": 31.44
   },
   {
    "w": "bio",
    "raw": "bio.",
-   "s": 38.14,
-   "e": 38.42
+   "s": 31.44,
+   "e": 31.7
   }
  ],
  "sentences": [
@@ -774,39 +630,29 @@
   },
   {
    "s": 5.5,
-   "e": 9.92,
-   "text": "First you give yourself a horizon, I picked three years. Then you write down the one thing"
+   "e": 10.18,
+   "text": "First you give yourself a horizon I picked three years. Then you write down the one thing you're"
   },
   {
-   "s": 9.92,
-   "e": 14.2,
-   "text": "you're actually committing to. Tag it and create your vision, that's it it's done."
+   "s": 10.18,
+   "e": 15.96,
+   "text": "actually committing to. Tag it and create your vision. And now it lives in the intent archive."
   },
   {
-   "s": 14.88,
-   "e": 19.88,
-   "text": "And now your vision lives in the intent archive. Because a hundred years from now you won't be"
+   "s": 16.6,
+   "e": 20.6,
+   "text": "Because a hundred years from now you won't be here but your dream should still exist."
   },
   {
-   "s": 19.88,
-   "e": 24.72,
-   "text": "here but the dreams you chased, they should still exist. Full features are releasing soon,"
+   "s": 21.58,
+   "e": 24.76,
+   "text": "Full features are releasing soon and your vision will be waiting."
   },
   {
-   "s": 25.2,
-   "e": 29.24,
-   "text": "milestones, actions, habits in your own journal and your vision will be waiting for you."
-  },
-  {
-   "s": 29.88,
-   "e": 34.88,
-   "text": "So go ahead and write yours today. That's what deem your is all about."
-  },
-  {
-   "s": 35.82,
-   "e": 38.42,
-   "text": "And if you want to try it out I've put the link in the bio."
+   "s": 25.58,
+   "e": 31.7,
+   "text": "So go ahead and write yours today. And if you want to try it out I've put the link in the bio."
   }
  ],
- "wps": 3.21
+ "wps": 3.13
 }

@@ -1,0 +1,326 @@
+{
+ "total": 29.0,
+ "cards": [
+  {
+   "t0": 0.0,
+   "t1": 2.37,
+   "words": [
+    {
+     "text": "You",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 0.0
+    },
+    {
+     "text": "don't",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 0.26
+    },
+    {
+     "text": "have",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 0.44
+    },
+    {
+     "text": "a",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 0.6
+    },
+    {
+     "text": "motivation",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 0.74
+    },
+    {
+     "text": "problem.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 1.2
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 2.37,
+   "t1": 5.51,
+   "words": [
+    {
+     "text": "You",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 2.42
+    },
+    {
+     "text": "have",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 2.56
+    },
+    {
+     "text": "a",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 2.7
+    },
+    {
+     "text": "size",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 2.8
+    },
+    {
+     "text": "problem.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 3.06
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 5.51,
+   "t1": 9.01,
+   "words": [
+    {
+     "text": "\"Write",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 5.72
+    },
+    {
+     "text": "a",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 5.94
+    },
+    {
+     "text": "book\"",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 6.08
+    },
+    {
+     "text": "is",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 6.33
+    },
+    {
+     "text": "too",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 6.58
+    },
+    {
+     "text": "big",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 6.83
+    },
+    {
+     "text": "for",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 7.08
+    },
+    {
+     "text": "a",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 7.56
+    },
+    {
+     "text": "Tuesday.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 7.7
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 9.01,
+   "t1": 13.01,
+   "words": [
+    {
+     "text": "Write",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 9.21
+    },
+    {
+     "text": "3",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 9.33
+    },
+    {
+     "text": "sentences",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 9.55
+    },
+    {
+     "text": "tonight.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 10.79
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 13.01,
+   "t1": 17.47,
+   "words": [
+    {
+     "text": "\"Get",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 13.4
+    },
+    {
+     "text": "fit\"?",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 13.56
+    },
+    {
+     "text": "Put",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 15.5
+    },
+    {
+     "text": "your",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 15.64
+    },
+    {
+     "text": "shoes",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 15.82
+    },
+    {
+     "text": "by",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 16.02
+    },
+    {
+     "text": "the",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 16.28
+    },
+    {
+     "text": "door.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 16.4
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 17.47,
+   "t1": 21.9,
+   "words": [
+    {
+     "text": "More",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 17.67
+    },
+    {
+     "text": "than",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 17.93
+    },
+    {
+     "text": "10",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 18.13
+    },
+    {
+     "text": "minutes?",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 18.37
+    },
+    {
+     "text": "Shrink",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 18.91
+    },
+    {
+     "text": "it",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 18.97
+    },
+    {
+     "text": "again.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 19.13
+    }
+   ],
+   "max": 150
+  }
+ ],
+ "brandT": 21.9,
+ "tagline": "Shrink the first step.\nThen take it.",
+ "handle": "@becauseidmyor",
+ "voice": "am_eric",
+ "script": "You don't have a *motivation* problem. || You have a *size* problem. || \"Write a book\" is too big for a Tuesday. || Write 3 *sentences* tonight. || \"Get fit\"? Put your *shoes* by the door. || More than *10* minutes? Shrink it again. || That's Dmyor. || Link's in the bio.",
+ "spoken": "[hook] You don't have a motivation problem. || You have a size problem. Your first step is just too big. || Like, write a book. Nobody can start that on a Tuesday night. || [turn] So shrink it. Write three sentences of chapter one, tonight. That's it. || Same with get fit. Don't plan the whole program, just put your shoes by the door. || [land] Here's the rule. If the first step takes more than ten minutes, shrink it again. || [outro] That's the idea Dmyor is built around. || [outro] And if you want to try it out, I've put the link in the bio."
+}

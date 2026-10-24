@@ -1,0 +1,20 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.3,
+ "gap_max": 0.55,
+ "tail": 1.2,
+ "max_font": 150,
+ "brand_anchor": "That's Dmyor",
+ "handle": "@becauseidmyor",
+ "script": "Your plan only works on *good* days. || One bad day, and it *breaks*. || Give every habit a *bad-day* version. || Run 5K → run *1* lap. || Study 2 hours → open the *book*. || The chain doesn't *break*. || That's Dmyor. || Link's in the bio.",
+ "spoken": "[hook] Your plan only works on good days. || And the moment you have a bad day, the whole thing falls apart. We've all been there. || [turn] So give every habit a bad-day version. A tiny one. || If you planned a five K run, the bad-day version is one lap around the block. || Planned two hours of study? On a bad day, you just open the book. || [land] It sounds small, but it keeps the chain going. And honestly, that's the whole game. || [outro] That's the kind of plan Dmyor is built around. || [outro] And if you want to try it out, I've put the link in the bio.",
+ "tagline": "Plan for the bad days too.",
+ "caption": {
+  "instagram": "Your plan only works on good days. Give every habit a bad-day version:\n• Run 5K → 1 lap\n• Study 2 hours → open the book\n• Write a page → write 1 line\nThe chain never breaks. What's yours? 👇 Link in bio.",
+  "hashtags": "#habits #discipline #consistency #selfimprovement",
+  "x": "Your plan only works on good days.\n\nGive every habit a bad-day version:\nRun 5K → 1 lap\nStudy 2h → open the book\nWrite a page → 1 line\n\nThe chain never breaks.\n\nhttps://www.dmyor.com",
+  "youtube_title": "Give your plan a bad-day version #Shorts"
+ },
+ "experiment": "batch 2026-10-24; idea #7 (remake of a text reel that reached 29)"
+}

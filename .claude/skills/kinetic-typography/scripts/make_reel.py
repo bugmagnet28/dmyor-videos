@@ -99,6 +99,12 @@ def main():
                     prev = next((got[j] for j in range(wi - 1, -1, -1) if got[j] is not None), th_t0[ci])
                     got[wi] = min(prev + 0.25, th_t1[ci] - 0.2)
                 c[wi]["t"] = round(got[wi], 3)
+            # never leave a card empty while the voice says lead-in words that are not shown:
+            # if the first shown word is late, pull the card's words forward (keeping their rhythm)
+            lead = c[0]["t"] - (th_t0[ci] + 0.15)
+            if ci > 0 and lead > 0.45:
+                for wd in c:
+                    wd["t"] = round(max(th_t0[ci] + 0.15, wd["t"] - lead), 3)
         end = W[-1]["e"]
         heard = cues["text"]; wps = cues["wps"]
     else:  # silent: reading pace 0.32 s/word, 0.7 s between cards, hook held 1.6 s

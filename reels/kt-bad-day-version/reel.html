@@ -1,0 +1,91 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>dmyor kinetic typography</title>
+<style>
+/* Kinetic typography: the words ARE the animation. One "card" per spoken thought; every word pops in
+   on its spoken time; *emphasis* turns orange and punches; ~strike~ draws a line through; the hook card
+   is fully drawn on frame 0. Pure function of time: window.__seek(t). */
+@font-face{font-family:"Tight";font-weight:600;src:url(../../.claude/skills/kinetic-typography/assets/fonts/InterTight-normal-600.woff2)}
+@font-face{font-family:"Tight";font-weight:700;src:url(../../.claude/skills/kinetic-typography/assets/fonts/InterTight-normal-700.woff2)}
+@font-face{font-family:"Tight";font-weight:800;src:url(../../.claude/skills/kinetic-typography/assets/fonts/InterTight-normal-800.woff2)}
+@font-face{font-family:"Tight";font-weight:900;src:url(../../.claude/skills/kinetic-typography/assets/fonts/InterTight-normal-900.woff2)}
+:root{--bg:#0B0C10;--ink:#F3F4F6;--mute:#6E737D;--accent:#FF7A1A;--strike:#FF4D5E}
+html,body{margin:0;padding:0;background:#000;overflow:hidden;width:100%;height:100%}
+#viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--bg);font-family:"Tight",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;transform-origin:center}
+#grid{position:absolute;inset:0}
+.card{position:absolute;left:90px;right:90px;top:0;height:1920px;display:flex;align-items:center;justify-content:center;text-align:center;will-change:transform,opacity}
+.card .in{font-weight:800;letter-spacing:-0.035em;line-height:1.06;padding-bottom:200px}
+.w{display:inline-block;position:relative;white-space:pre;will-change:transform,opacity}
+.w.e{color:var(--accent)}
+.w .s{position:absolute;left:-3%;top:54%;height:.09em;width:0;background:var(--strike);border-radius:.05em}
+.w.m{color:var(--mute)}
+#corner{position:absolute;left:64px;top:96px;font-weight:700;font-size:20px;letter-spacing:4px;color:#4A4F59}
+#bar{position:absolute;left:0;bottom:0;height:6px;background:var(--accent);width:0}
+#brand{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0;padding-bottom:220px;box-sizing:border-box}
+#brand .mark{font-weight:900;font-size:160px;letter-spacing:-6px;line-height:1}
+#brand .tag2{white-space:pre-line;font-weight:600;font-size:52px;color:#8B909A;margin-top:26px;line-height:1.2}
+#brand .handle{margin-top:48px;font-weight:700;font-size:40px;padding:14px 36px;border-radius:999px;background:var(--accent);color:#120A03}
+#playBtn{position:fixed;inset:0;margin:auto;width:210px;height:64px;border-radius:32px;border:0;font:700 22px sans-serif;cursor:pointer}
+</style></head><body>
+<div id="viewport"><div id="stage">
+  <svg id="grid" width="1080" height="1920"><defs><pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#fff" fill-opacity=".06"/></pattern></defs><rect id="gridrect" x="0" y="-40" width="1080" height="2000" fill="url(#dots)"/></svg>
+  <div id="cards"></div>
+  <div id="corner">DMYOR</div>
+  <div id="bar"></div>
+  <div id="brand"><div class="mark">dmyor</div><div class="tag2"></div><div class="handle"></div></div>
+</div></div>
+<button id="playBtn">PLAY</button>
+<script>
+var CFG = {"total": 30.76, "cards": [{"t0": 0.0, "t1": 2.67, "words": [{"text": "Your", "e": false, "s": false, "m": false, "t": 0.0}, {"text": "plan", "e": false, "s": false, "m": false, "t": 0.32}, {"text": "only", "e": false, "s": false, "m": false, "t": 0.64}, {"text": "works", "e": false, "s": false, "m": false, "t": 0.98}, {"text": "on", "e": false, "s": false, "m": false, "t": 1.3}, {"text": "good", "e": true, "s": false, "m": false, "t": 1.5}, {"text": "days.", "e": false, "s": false, "m": false, "t": 1.68}], "max": 150}, {"t0": 2.67, "t1": 6.89, "words": [{"text": "One", "e": false, "s": false, "m": false, "t": 2.97}, {"text": "bad", "e": false, "s": false, "m": false, "t": 3.66}, {"text": "day,", "e": false, "s": false, "m": false, "t": 3.84}, {"text": "and", "e": false, "s": false, "m": false, "t": 4.09}, {"text": "it", "e": false, "s": false, "m": false, "t": 4.34}, {"text": "breaks.", "e": true, "s": false, "m": false, "t": 4.59}], "max": 150}, {"t0": 6.89, "t1": 10.13, "words": [{"text": "Give", "e": false, "s": false, "m": false, "t": 7.18}, {"text": "every", "e": false, "s": false, "m": false, "t": 7.34}, {"text": "habit", "e": false, "s": false, "m": false, "t": 7.7}, {"text": "a", "e": false, "s": false, "m": false, "t": 7.92}, {"text": "bad-day", "e": true, "s": false, "m": false, "t": 8.07}, {"text": "version.", "e": false, "s": false, "m": false, "t": 8.52}], "max": 150}, {"t0": 10.13, "t1": 13.92, "words": [{"text": "Run", "e": false, "s": false, "m": false, "t": 10.33}, {"text": "5K", "e": false, "s": false, "m": false, "t": 10.58}, {"text": "\u2192", "e": false, "s": false, "m": false, "t": 10.83}, {"text": "run", "e": false, "s": false, "m": false, "t": 11.08}, {"text": "1", "e": true, "s": false, "m": false, "t": 11.87}, {"text": "lap.", "e": false, "s": false, "m": false, "t": 12.15}], "max": 150}, {"t0": 13.92, "t1": 18.43, "words": [{"text": "Study", "e": false, "s": false, "m": false, "t": 14.22}, {"text": "2", "e": false, "s": false, "m": false, "t": 14.92}, {"text": "hours", "e": false, "s": false, "m": false, "t": 15.18}, {"text": "\u2192", "e": false, "s": false, "m": false, "t": 15.43}, {"text": "open", "e": false, "s": false, "m": false, "t": 17.14}, {"text": "the", "e": false, "s": false, "m": false, "t": 17.44}, {"text": "book.", "e": true, "s": false, "m": false, "t": 17.58}], "max": 150}, {"t0": 18.43, "t1": 23.42, "words": [{"text": "The", "e": false, "s": false, "m": false, "t": 18.63}, {"text": "chain", "e": false, "s": false, "m": false, "t": 18.85}, {"text": "doesn't", "e": false, "s": false, "m": false, "t": 19.1}, {"text": "break.", "e": true, "s": false, "m": false, "t": 19.35}], "max": 150}], "brandT": 23.42, "tagline": "Plan for the bad days too.", "handle": "@becauseidmyor", "voice": "am_eric", "script": "Your plan only works on *good* days. || One bad day, and it *breaks*. || Give every habit a *bad-day* version. || Run 5K \u2192 run *1* lap. || Study 2 hours \u2192 open the *book*. || The chain doesn't *break*. || That's Dmyor. || Link's in the bio.", "spoken": "[hook] Your plan only works on good days. || And the moment you have a bad day, the whole thing falls apart. We've all been there. || [turn] So give every habit a bad-day version. A tiny one. || If you planned a five K run, the bad-day version is one lap around the block. || Planned two hours of study? On a bad day, you just open the book. || [land] It sounds small, but it keeps the chain going. And honestly, that's the whole game. || [outro] That's the kind of plan Dmyor is built around. || [outro] And if you want to try it out, I've put the link in the bio."};
+</script>
+<script>
+(function(){
+"use strict";
+var W=1080,H=1920,C=CFG,T=C.total;
+var stage=document.getElementById("stage"),cardsEl=document.getElementById("cards");
+function fit(){var s=Math.min(innerWidth/W,innerHeight/H);stage.style.transform="scale("+s+")";}
+fit();addEventListener("resize",fit);
+var cl=function(x){return x<0?0:x>1?1:x},seg=function(t,a,b){return cl((t-a)/(b-a))};
+var eout=function(x){return 1-Math.pow(1-x,3)},eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+var eob=function(x){var c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+// build cards; auto-fit the biggest font size that keeps the text inside 900 x 900 px
+var CARDS=C.cards.map(function(cd,ci){
+  var el=document.createElement("div");el.className="card";var inner=document.createElement("div");inner.className="in";el.appendChild(inner);cardsEl.appendChild(el);
+  var ws=cd.words.map(function(w,wi){var s=document.createElement("span");s.className="w"+(w.e?" e":"")+(w.m?" m":"");
+    s.textContent=w.text+(wi<cd.words.length-1?" ":"");if(w.s){var k=document.createElement("i");k.className="s";s.appendChild(k);}
+    inner.appendChild(s);return {w:w,el:s,strike:s.querySelector(".s")};});
+  var lo=56,hi=cd.max||150;inner.style.fontSize=hi+"px";
+  while(hi-lo>2){var mid=(lo+hi)/2;inner.style.fontSize=mid+"px";if(inner.scrollWidth<=900&&inner.offsetHeight<=1100)lo=mid;else hi=mid;}
+  inner.style.fontSize=lo+"px";
+  return {cd:cd,el:el,ws:ws};});
+var brand=document.getElementById("brand");brand.querySelector(".tag2").textContent=C.tagline;brand.querySelector(".handle").textContent=C.handle;
+var gridrect=document.getElementById("gridrect"),bar=document.getElementById("bar");
+function render(t){
+  t=Math.max(0,Math.min(T,t));
+  gridrect.setAttribute("y",-40+(t*10)%40);
+  CARDS.forEach(function(o,ci){var cd=o.cd;
+    var vin= ci===0?1:eout(seg(t,cd.t0-.08,cd.t0+.22));
+    var vout= 1-eio(seg(t,cd.t1-.12,cd.t1+.18));
+    var on=t>=cd.t0-.1&&t<cd.t1+.2;
+    o.el.style.display=on?"flex":"none";if(!on)return;
+    o.el.style.opacity=vin*vout;
+    o.el.style.transform="translateY("+(40*(1-vin)-60*(1-vout))+"px) scale("+(1+.012*seg(t,cd.t0,cd.t1))+")";
+    o.ws.forEach(function(x){var w=x.w;var a=w.t-.04;
+      var p=ci===0?1:seg(t,a,a+.16);  // the hook card is fully drawn on frame 0
+      x.el.style.opacity=p;
+      var pop=w.e?(1+.18*Math.sin(Math.PI*seg(t,a+.05,a+.4))):1;
+      x.el.style.transform="translateY("+(18*(1-eout(p)))+"px) scale("+((.92+.08*eob(p))*pop)+")";
+      if(x.strike){var sp=eio(seg(t,(w.st||w.t+.35),(w.st||w.t+.35)+.3));x.strike.style.width=(106*sp)+"%";x.el.style.opacity=p*(1-.45*sp);}
+    });
+  });
+  bar.style.width=(100*t/T)+"%";
+  var pb=eio(seg(t,C.brandT,C.brandT+.4));brand.style.opacity=pb;brand.style.transform="scale("+(.96+.04*pb)+")";
+  cardsEl.style.opacity=1-pb;
+}
+window.__duration=T;window.__seek=function(t){render(t);};render(0);
+var playing=false,t0=0;
+document.getElementById("playBtn").onclick=function(){this.style.display="none";t0=performance.now();playing=true;
+  var a=new Audio("audio_mixed.mp3");a.play().catch(function(){});(function loop(){if(!playing)return;var t=(performance.now()-t0)/1000;render(t);if(t<T)requestAnimationFrame(loop);})();};
+})();
+</script>
+</body></html>

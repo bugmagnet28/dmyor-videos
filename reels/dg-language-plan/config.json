@@ -1,0 +1,149 @@
+{
+ "handle": "@becauseidmyor",
+ "tagline": "Turn your dream into\na plan you can see.",
+ "actionParent": 1,
+ "todayIdx": 0,
+ "hook": [
+  "New language?",
+  "Here's the whole plan, start to finish."
+ ],
+ "vision": "Speak Spanish for 10 minutes by June",
+ "milestones": [
+  "Learn 500 core words",
+  "Finish the A1 course",
+  "First 10-min chat"
+ ],
+ "actions": [
+  "15-min lesson daily",
+  "Shadow 1 podcast",
+  "Book a tutor call"
+ ],
+ "bpm": 100,
+ "events": {
+  "hookOut": 4.867,
+  "vision": 9.1,
+  "trunk": 13.867,
+  "milestones": [
+   18.133,
+   20.7,
+   23.567
+  ],
+  "actions": [
+   32.7,
+   34.7,
+   37.433
+  ],
+  "focus": 43.967,
+  "done": 45.2,
+  "grow": 49.5,
+  "brand": 53.833
+ },
+ "total": 39.28,
+ "subs": [
+  {
+   "t0": 2.92,
+   "t1": 3.84,
+   "text": "Here's the whole plan"
+  },
+  {
+   "t0": 3.84,
+   "t1": 5.24,
+   "text": "Start to finish."
+  },
+  {
+   "t0": 5.24,
+   "t1": 5.46,
+   "text": "First"
+  },
+  {
+   "t0": 5.46,
+   "t1": 5.92,
+   "text": "The vision."
+  },
+  {
+   "t0": 5.92,
+   "t1": 8.06,
+   "text": "Speak Spanish for ten minutes by June."
+  },
+  {
+   "t0": 8.06,
+   "t1": 9.42,
+   "text": "That's your finish line."
+  },
+  {
+   "t0": 9.42,
+   "t1": 10.88,
+   "text": "Then three milestones."
+  },
+  {
+   "t0": 10.88,
+   "t1": 12.42,
+   "text": "Learn your first five hundred words."
+  },
+  {
+   "t0": 12.42,
+   "t1": 13.76,
+   "text": "Finish the A1 course."
+  },
+  {
+   "t0": 13.76,
+   "t1": 16.04,
+   "text": "And have your first real conversation."
+  },
+  {
+   "t0": 16.04,
+   "t1": 17.12,
+   "text": "Now take the middle one"
+  },
+  {
+   "t0": 17.12,
+   "t1": 19.24,
+   "text": "And break it into small actions."
+  },
+  {
+   "t0": 19.24,
+   "t1": 20.82,
+   "text": "A short lesson every day"
+  },
+  {
+   "t0": 20.82,
+   "t1": 22.2,
+   "text": "Shadow one podcast episode"
+  },
+  {
+   "t0": 22.2,
+   "t1": 24.02,
+   "text": "And book a call with a tutor."
+  },
+  {
+   "t0": 24.02,
+   "t1": 25.86,
+   "text": "You don't need a whole study system."
+  },
+  {
+   "t0": 25.86,
+   "t1": 26.92,
+   "text": "You just need one thing"
+  },
+  {
+   "t0": 26.92,
+   "t1": 28.06,
+   "text": "Done today."
+  },
+  {
+   "t0": 28.06,
+   "t1": 29.28,
+   "text": "Do today's lesson"
+  },
+  {
+   "t0": 29.28,
+   "t1": 32.3,
+   "text": "And then watch the whole plan move."
+  }
+ ],
+ "narration": {
+  "voice": "am_eric",
+  "provider": "kokoro-onnx v1.0",
+  "script": "[hook] Want to actually learn a language this year? || Here's the whole plan, start to finish. || First, the vision. Speak Spanish for ten minutes by June. That's your finish line. || Then three milestones. Learn your first five hundred words. Finish the A1 course. And have your first real conversation. || [turn] Now take the middle one, and break it into small actions. A short lesson every day, shadow one podcast episode, and book a call with a tutor. || You don't need a whole study system. You just need one thing, done today. || [land] Do today's lesson, and then watch the whole plan move. || [outro] That's the kind of plan Dmyor is built around. || [outro] And if you want to try it out, I've put the link in the bio."
+ }
+}

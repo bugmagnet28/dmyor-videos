@@ -1,0 +1,55 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.3,
+ "gap_max": 0.55,
+ "tail": 1.2,
+ "content": {
+  "hook": [
+   "New language?",
+   "Here's the whole plan, start to finish."
+  ],
+  "vision": "Speak Spanish for 10 minutes by June",
+  "milestones": [
+   "Learn 500 core words",
+   "Finish the A1 course",
+   "First 10-min chat"
+  ],
+  "actions": [
+   "15-min lesson daily",
+   "Shadow 1 podcast",
+   "Book a tutor call"
+  ],
+  "actionParent": 1,
+  "todayIdx": 0,
+  "tagline": "Turn your dream into\na plan you can see.",
+  "handle": "@becauseidmyor"
+ },
+ "script": "[hook] Want to actually learn a language this year? || Here's the whole plan, start to finish. || First, the vision. Speak Spanish for ten minutes by June. That's your finish line. || Then three milestones. Learn your first five hundred words. Finish the A1 course. And have your first real conversation. || [turn] Now take the middle one, and break it into small actions. A short lesson every day, shadow one podcast episode, and book a call with a tutor. || You don't need a whole study system. You just need one thing, done today. || [land] Do today's lesson, and then watch the whole plan move. || [outro] That's the kind of plan Dmyor is built around. || [outro] And if you want to try it out, I've put the link in the bio.",
+ "anchors": {
+  "hookOut": "Here's the whole plan",
+  "vision": "the vision",
+  "trunk": "finish line",
+  "milestones": [
+   "Learn your first",
+   "Finish the",
+   "first real conversation"
+  ],
+  "actions": [
+   "lesson every day",
+   "shadow one podcast",
+   "book a call"
+  ],
+  "focus": "one thing",
+  "done": "today",
+  "grow": "watch the whole plan",
+  "brand": "That's the kind"
+ },
+ "caption": {
+  "instagram": "Learning a language this year? The whole plan:\n• Vision: speak Spanish 10 min by June\n• Milestones: 500 words → A1 course → first real chat\n• Today: one short lesson\nSave it and swap in your language. Link in bio.",
+  "hashtags": "#languagelearning #learnspanish #goals #studyhabits",
+  "x": "Learning a language this year? Whole plan:\n\nVision: speak Spanish 10 min by June\nMilestones: 500 words → A1 → first real chat\nToday: one short lesson\n\nhttps://www.dmyor.com",
+  "youtube_title": "How to plan learning a language #Shorts"
+ },
+ "experiment": "batch 2026-10-24; idea #13"
+}

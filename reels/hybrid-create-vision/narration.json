@@ -5,7 +5,7 @@
  "gap_min": 0.3,
  "gap_max": 0.55,
  "tail": 1.2,
- "script": "[hook] You know that dream you keep saying you'll start someday? || Let me show you how to make it real. || First, you give yourself a horizon. I picked three years. || Then you write down the one thing you're actually committing to. || Tag it, and create your vision. That's it, it's done. || And now your vision lives in the Intent Archive. || [turn] Because a hundred years from now, you won't be here. But the dreams you chased? They should still exist. || Full features are releasing soon. Milestones, actions, habits, and your own journal. And your vision will be waiting for you. || [land] So go ahead, and write yours today. || [outro] That's what Dmyor is all about. || [outro] And if you want to try it out, I've put the link in the bio.",
+ "script": "[hook] You know that dream you keep saying you'll start someday? || Let me show you how to make it real. || First, you give yourself a horizon. I picked three years. || Then you write down the one thing you're actually committing to. || Tag it, and create your vision. || And now it lives in the Intent Archive. || [turn] Because a hundred years from now, you won't be here, but your dreams should still exist. || Full features are releasing soon, and your vision will be waiting. || [land] So go ahead, and write yours today. || [outro] And if you want to try it out, I've put the link in the bio.",
  "hook_text": "That dream you'll start *someday*?",
  "hook_until": "Let me show you",
  "clips": [
@@ -46,7 +46,7 @@
    "name": "intent-archive",
    "beats": [
     [
-     "now your vision lives",
+     "now it lives",
      0.4
     ],
     [
@@ -82,13 +82,13 @@
   },
   {
    "anchor": "Tag it",
-   "until": "now your vision lives",
+   "until": "now it lives",
    "text": "Tag it · Create Vision",
    "side": "right",
    "y": 0.25
   },
   {
-   "anchor": "now your vision lives",
+   "anchor": "now it lives",
    "until": "Full features",
    "text": "The Intent Archive",
    "side": "left",
@@ -149,7 +149,7 @@
   "from": "So go ahead",
   "text": "Write *yours* today."
  },
- "brand_anchor": "That's what",
+ "brand_anchor": "if you want",
  "tagline": "The world's\nintent archive.",
  "handle": "@becauseidmyor",
  "caption": {
