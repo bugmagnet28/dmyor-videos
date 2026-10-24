@@ -1,0 +1,327 @@
+{
+ "audio": "audio.mp3",
+ "duration": 15.59,
+ "text": "Someday isn't a day. Look at your week, Monday, Tuesday, Wednesday, all the way to Sunday. Someday isn't on it and it never will be. So pick a real day, put your dream on it. Then do one small thing today. That's Demure. Link's in the bio.",
+ "words": [
+  {
+   "w": "someday",
+   "raw": "Someday",
+   "s": 0.0,
+   "e": 0.62
+  },
+  {
+   "w": "isnt",
+   "raw": "isn't",
+   "s": 0.62,
+   "e": 0.92
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 0.92,
+   "e": 1.04
+  },
+  {
+   "w": "day",
+   "raw": "day.",
+   "s": 1.04,
+   "e": 1.3
+  },
+  {
+   "w": "look",
+   "raw": "Look",
+   "s": 1.96,
+   "e": 2.04
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 2.04,
+   "e": 2.14
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 2.14,
+   "e": 2.26
+  },
+  {
+   "w": "week",
+   "raw": "week,",
+   "s": 2.26,
+   "e": 2.48
+  },
+  {
+   "w": "monday",
+   "raw": "Monday,",
+   "s": 2.72,
+   "e": 2.82
+  },
+  {
+   "w": "tuesday",
+   "raw": "Tuesday,",
+   "s": 3.1,
+   "e": 3.28
+  },
+  {
+   "w": "wednesday",
+   "raw": "Wednesday,",
+   "s": 3.5,
+   "e": 3.74
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 4.02,
+   "e": 4.12
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 4.12,
+   "e": 4.22
+  },
+  {
+   "w": "way",
+   "raw": "way",
+   "s": 4.22,
+   "e": 4.34
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 4.34,
+   "e": 4.48
+  },
+  {
+   "w": "sunday",
+   "raw": "Sunday.",
+   "s": 4.48,
+   "e": 4.76
+  },
+  {
+   "w": "someday",
+   "raw": "Someday",
+   "s": 5.52,
+   "e": 5.74
+  },
+  {
+   "w": "isnt",
+   "raw": "isn't",
+   "s": 5.74,
+   "e": 5.98
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 5.98,
+   "e": 6.16
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 6.16,
+   "e": 6.32
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 6.32,
+   "e": 6.5
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 6.5,
+   "e": 6.62
+  },
+  {
+   "w": "never",
+   "raw": "never",
+   "s": 6.62,
+   "e": 6.8
+  },
+  {
+   "w": "will",
+   "raw": "will",
+   "s": 6.8,
+   "e": 7.04
+  },
+  {
+   "w": "be",
+   "raw": "be.",
+   "s": 7.04,
+   "e": 7.28
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 7.94,
+   "e": 8.14
+  },
+  {
+   "w": "pick",
+   "raw": "pick",
+   "s": 8.14,
+   "e": 8.3
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 8.3,
+   "e": 8.46
+  },
+  {
+   "w": "real",
+   "raw": "real",
+   "s": 8.46,
+   "e": 8.64
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 8.64,
+   "e": 8.96
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 9.08,
+   "e": 9.16
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 9.16,
+   "e": 9.32
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 9.32,
+   "e": 9.52
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 9.52,
+   "e": 9.76
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 9.76,
+   "e": 10.12
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 10.4,
+   "e": 10.52
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 10.52,
+   "e": 10.66
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 10.66,
+   "e": 10.88
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 10.88,
+   "e": 11.18
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 11.18,
+   "e": 11.52
+  },
+  {
+   "w": "today",
+   "raw": "today.",
+   "s": 11.52,
+   "e": 11.88
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 12.64,
+   "e": 13.0
+  },
+  {
+   "w": "demure",
+   "raw": "Demure.",
+   "s": 13.0,
+   "e": 13.46
+  },
+  {
+   "w": "links",
+   "raw": "Link's",
+   "s": 14.04,
+   "e": 14.4
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 14.4,
+   "e": 14.52
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 14.52,
+   "e": 14.62
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 14.62,
+   "e": 14.9
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 1.3,
+   "text": "Someday isn't a day."
+  },
+  {
+   "s": 1.96,
+   "e": 4.76,
+   "text": "Look at your week, Monday, Tuesday, Wednesday, all the way to Sunday."
+  },
+  {
+   "s": 5.52,
+   "e": 7.28,
+   "text": "Someday isn't on it and it never will be."
+  },
+  {
+   "s": 7.94,
+   "e": 10.12,
+   "text": "So pick a real day, put your dream on it."
+  },
+  {
+   "s": 10.4,
+   "e": 11.88,
+   "text": "Then do one small thing today."
+  },
+  {
+   "s": 12.64,
+   "e": 13.46,
+   "text": "That's Demure."
+  },
+  {
+   "s": 14.04,
+   "e": 14.9,
+   "text": "Link's in the bio."
+  }
+ ],
+ "wps": 3.01
+}

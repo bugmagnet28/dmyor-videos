@@ -1,6 +1,6 @@
 """Build a narrated goal-tree diagram reel end to end.
 
-    python3 .claude/skills/narrated-goal-tree-diagram-reel/scripts/make_reel.py reels/<slug> [--record] [--package YYYY-MM-DD]
+    python3 .claude/skills/diagram-motion-graphics/scripts/make_reel.py reels/<slug> [--record] [--package YYYY-MM-DD]
 
 Input: reels/<slug>/narration.json (see examples/narration.example.json).
 Steps:

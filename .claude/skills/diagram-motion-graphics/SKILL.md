@@ -1,11 +1,11 @@
 ---
-name: narrated-goal-tree-diagram-reel
-description: Makes a 20-28s vertical (1080x1920) narrated reel that explains how a big goal becomes a plan in dmyor, drawn as a crisp dark-mode tree diagram (vision -> 3 milestones -> 3 actions -> one TODAY action ticked -> progress lights back up to the vision). Human-paced voiceover from a free local voice (Kokoro, am_eric), synced subtitles, no music, dmyor brand card with "link in bio". Use when asked for a narrated explainer reel / feature reel / "goal tree" or "diagram" video about breaking goals into milestones and actions, or for a narrated version of any hook that lands on dmyor's plan tree.
+name: diagram-motion-graphics
+description: Motion-graphics style. Crisp dark-mode diagram animation (nodes, straight right-angle connectors, progress lighting up) drawn in sync with a human-paced narration (free local Kokoro voice am_eric), subtitles, no music, dmyor brand card. Current layout - the goal tree (vision -> 3 milestones -> 3 actions -> one TODAY action ticked -> progress back to the vision); 20-28s, 1080x1920. Use for any reel that explains a structure or process (how a goal becomes a plan, how the pieces of dmyor fit). New layouts (timeline, flow, before/after map) are added here, not as new skills.
 ---
 
-# Narrated goal-tree diagram reel
+# Diagram motion graphics (layout: goal tree)
 
-One video type, end to end: script -> voice -> word timings -> diagram animation on spoken cues -> subtitles -> MP4 -> ready-to-post folder.
+A production style, end to end: script -> voice -> word timings -> diagram animation on spoken cues -> subtitles -> MP4 -> ready-to-post folder.
 
 **What the viewer sees (in order)**
 1. Frame 0: a bold hook on a near-black canvas with a faint dot grid (finished on frame 0, never mid-animation).
@@ -24,7 +24,7 @@ Spoken phrases appear as subtitles at the top (the script's exact words), becaus
 
 From the project root (`~/Documents/dmyor-videos`, the folder with `record.js`):
 ```bash
-bash .claude/skills/narrated-goal-tree-diagram-reel/scripts/setup_tts.sh   # Kokoro venv + models (~340 MB) in ./tts
+bash .claude/skills/diagram-motion-graphics/scripts/setup_tts.sh   # Kokoro venv + models (~340 MB) in ./tts
 ```
 Also needed and already present on this Mac: `ffmpeg`, the `whisper` CLI (word timestamps), node + puppeteer (`record.js`), and the `dmyor-reel` skill (its `align.py` is reused for timings).
 
@@ -34,9 +34,9 @@ Also needed and already present on this Mac: `ffmpeg`, the `whisper` CLI (word t
 2. Write the content, script and anchors (rules below). Show Sanyam the script before rendering if it is a new angle.
 3. Build and record:
 ```bash
-python3 .claude/skills/narrated-goal-tree-diagram-reel/scripts/make_reel.py reels/<slug> --record
+python3 .claude/skills/diagram-motion-graphics/scripts/make_reel.py reels/<slug> --record
 # or also package to ready-to-post/<date>-<slug>/ with post.md:
-python3 .claude/skills/narrated-goal-tree-diagram-reel/scripts/make_reel.py reels/<slug> --package 2026-10-23
+python3 .claude/skills/diagram-motion-graphics/scripts/make_reel.py reels/<slug> --package 2026-10-23
 ```
 4. Check (below), then let Sanyam watch/listen. Never schedule without his OK.
 

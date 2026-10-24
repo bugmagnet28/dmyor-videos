@@ -1,0 +1,332 @@
+{
+ "total": 16.1,
+ "cards": [
+  {
+   "t0": 0.0,
+   "t1": 1.91,
+   "words": [
+    {
+     "text": "Someday",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 0.0
+    },
+    {
+     "text": "isn't",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 0.62
+    },
+    {
+     "text": "a",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 0.92
+    },
+    {
+     "text": "day.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 1.04
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 1.91,
+   "t1": 5.47,
+   "words": [
+    {
+     "text": "Look",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 1.96
+    },
+    {
+     "text": "at",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 2.04
+    },
+    {
+     "text": "your",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 2.14
+    },
+    {
+     "text": "week.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 2.26
+    },
+    {
+     "text": "Monday,",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 2.72
+    },
+    {
+     "text": "Tuesday,",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 3.1
+    },
+    {
+     "text": "Wednesday,",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 3.5
+    },
+    {
+     "text": "all",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 4.02
+    },
+    {
+     "text": "the",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 4.12
+    },
+    {
+     "text": "way",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 4.22
+    },
+    {
+     "text": "to",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 4.34
+    },
+    {
+     "text": "Sunday.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 4.48
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 5.47,
+   "t1": 7.89,
+   "words": [
+    {
+     "text": "Someday",
+     "e": false,
+     "s": true,
+     "m": false,
+     "t": 5.52
+    },
+    {
+     "text": "isn't",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 5.74
+    },
+    {
+     "text": "on",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 5.98
+    },
+    {
+     "text": "it.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 6.16
+    },
+    {
+     "text": "And",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 6.32
+    },
+    {
+     "text": "it",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 6.5
+    },
+    {
+     "text": "never",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 6.62
+    },
+    {
+     "text": "will",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 6.8
+    },
+    {
+     "text": "be.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 7.04
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 7.89,
+   "t1": 10.35,
+   "words": [
+    {
+     "text": "So",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 7.94
+    },
+    {
+     "text": "pick",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 8.14
+    },
+    {
+     "text": "a",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 8.3
+    },
+    {
+     "text": "real",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 8.46
+    },
+    {
+     "text": "day.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 8.64
+    },
+    {
+     "text": "Put",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 9.08
+    },
+    {
+     "text": "your",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 9.16
+    },
+    {
+     "text": "dream",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 9.32
+    },
+    {
+     "text": "on",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 9.52
+    },
+    {
+     "text": "it.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 9.76
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 10.35,
+   "t1": 12.64,
+   "words": [
+    {
+     "text": "Then",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 10.4
+    },
+    {
+     "text": "do",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 10.52
+    },
+    {
+     "text": "one",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 10.66
+    },
+    {
+     "text": "small",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 10.88
+    },
+    {
+     "text": "thing.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 11.18
+    },
+    {
+     "text": "Today.",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 11.52
+    }
+   ],
+   "max": 150
+  }
+ ],
+ "brandT": 12.64,
+ "tagline": "Turn your someday\ninto a plan.",
+ "handle": "@becauseidmyor",
+ "voice": "am_eric",
+ "script": "*Someday* isn't a day. || Look at your week. Monday, Tuesday, Wednesday, all the way to Sunday. || ~Someday~ isn't on it. And it never will be. || So pick a *real* day. Put your dream on it. || Then do one small thing. *Today.* || That's Dmyor. || Link's in the bio."
+}

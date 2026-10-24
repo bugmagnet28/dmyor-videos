@@ -1,0 +1,20 @@
+{
+ "_comment": "Input for kinetic-typography. Copy to reels/<slug>/narration.json. Markup: || new card, *emphasis*, ~strike~, {muted}. voice null = silent.",
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.3,
+ "gap_max": 0.55,
+ "tail": 1.2,
+ "max_font": 150,
+ "script": "*Someday* isn't a day. || Look at your week. Monday, Tuesday, Wednesday, all the way to Sunday. || ~Someday~ isn't on it. And it never will be. || So pick a *real* day. Put your dream on it. || Then do one small thing. *Today.* || That's Dmyor. || Link's in the bio.",
+ "brand_anchor": "That's Dmyor",
+ "tagline": "Turn your someday\ninto a plan.",
+ "handle": "@becauseidmyor",
+ "caption": {
+  "instagram": "Someday isn't a day.\n• Pick a real date\n• Put your dream on it\n• Do one small thing today\nDmyor turns your someday into a plan. Link in bio.",
+  "hashtags": "#procrastination #goals #motivation #selfimprovement",
+  "x": "Someday isn't a day. It's not on your calendar.\n\nPick a real day. Put your dream on it. Do one small thing today.\n\nhttps://www.dmyor.com",
+  "youtube_title": "Someday isn't a day #Shorts"
+ },
+ "experiment": "kinetic-typography narrated vs silent text reels; hook = best performer (someday)"
+}

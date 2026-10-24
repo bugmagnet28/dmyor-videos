@@ -16,14 +16,20 @@ All performance data lives in `analytics/` (read `analytics/README.md` and `anal
 4. Learn from `analytics/reports/OVERALL.md` ("are we improving?", leaderboard) and `analytics/reports/WHAT_WORKED.md` (signals vs hints). Base decisions on signals; treat hints as experiments to run next. Link both reports from `studio/DASHBOARD.md`.
 Instagram safety: never bulk-open insight pages from the browser (account locked 2026-10-22). One Reels-grid read per day for views; ask Sanyam for app screenshots for watch time and skip rate.
 
-## Video types (one skill per type)
+## Video styles (one skill per production style)
 
-Each kind of video has its own skill in `.claude/skills/`, named after what it produces. Pick the skill that matches the plan, read its SKILL.md, follow it exactly. When a new kind of video is approved by Sanyam, package it as a new skill the same way.
+A skill = HOW a video is made (animation / production type). The topic and hook are separate: any message can be made in any style. Read the chosen skill's SKILL.md and follow it exactly.
 
-| Skill | Produces |
-|---|---|
-| `narrated-goal-tree-diagram-reel` | 20-28s narrated explainer: crisp dark diagram, vision -> milestones -> actions -> TODAY tick -> progress to vision. Voice am_eric (Kokoro, free), subtitles, no music. Default for feature/explainer reels (owner, 2026-10-22). |
-| `dmyor-reel` | the base pipeline (scripts, align, record, perf tracking) and the no-voice "punch" text reels (calm style). |
+| Skill | Production type | Use when the message is... |
+|---|---|---|
+| `kinetic-typography` | motion graphics: words are the animation, synced to voice | one sentence: a hard truth, reframe, hook (10-20 s) |
+| `diagram-motion-graphics` | motion graphics: crisp nodes + connectors drawn on spoken cues (layout now: goal tree) | a structure or process: how a goal becomes a plan (20-28 s) |
+| `dmyor-reel` | base pipeline (align, record, legacy punch text reels) | infrastructure; not a style to pick |
+| planned: `hybrid-graphics-plus-demo`, `app-screen-demo`, `data-viz-animation`, `ui-mockup-animation`, `stock-footage-captions`, `talking-head-captions` | | built one at a time after Sanyam approves a first reel |
+
+**Picking a style**: explain a process → diagram; one punchy line → kinetic typography; numbers/progress → data viz (when built); show the real product → app demo / hybrid (when built); feelings/POV → footage (when built). Mixing is fine (a kinetic hook card leading into a diagram) once both are proven.
+**If no skill fits**: make the video with a custom approach from your own knowledge (same dark crisp brand, same voice rules, same checks). If Sanyam approves it, package it as a new style skill named after the production type, add it to this table, and use `analytics` `style` = that name.
+Shared rules for every style: voice am_eric via thought-level TTS with pauses, no background music, "Dmyor" spoken DEEM-yor, frame 0 finished and readable, brand card + "Link's in the bio", Sanyam approves before scheduling, register every post in `analytics/`.
 
 **The first 12 reels did not work.** Read `studio/analysis/2026-10-08-why-reels-underperform.md` before planning anything. Your job is to do better, measurably, and keep getting better.
 

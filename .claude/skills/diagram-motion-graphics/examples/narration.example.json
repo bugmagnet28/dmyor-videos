@@ -1,5 +1,5 @@
 {
- "_comment": "Input for narrated-goal-tree-diagram-reel. Copy to reels/<slug>/narration.json and edit. See SKILL.md.",
+ "_comment": "Input for diagram-motion-graphics. Copy to reels/<slug>/narration.json and edit. See SKILL.md.",
  "voice": "am_eric",
  "speed": 1.0,
  "gap_min": 0.3,
