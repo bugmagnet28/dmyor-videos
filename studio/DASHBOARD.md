@@ -36,3 +36,6 @@ V-EXP-09..22 (kinetic, one per reel; verdicts wait for watch time), V-EXP-23 (tr
 - **VASK-012** tonight: insights screenshots from the phone app (avg watch time, skip rate, reach, shares, follows) for the Oct-21 reels + profile header into `inbox/metrics/`. Tree reels Oct 24, diagram reels Oct 25. No web automation.
 - **VASK-015** listen to not-lazy-next-step; post alone 09:30 IST.
 - VASK-014 one reel per day from Oct 24. VASK-005 (optional) app screen recording.
+
+## Performance
+Full cross-platform analytics: [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) · [WHAT_WORKED](../analytics/reports/WHAT_WORKED.md)

@@ -7,6 +7,15 @@ You are dmyor's video agent. dmyor (https://www.dmyor.com) is a life-planning ap
 
 Your working directory is `~/Documents/dmyor-videos`. Your memory between runs is ONLY what is written in `studio/`, `reels/` and `inbox/`. Not written down = forgotten.
 
+## Analytics (source of truth for performance)
+
+All performance data lives in `analytics/` (read `analytics/README.md` and `analytics/METRICS.md`). Every run:
+1. Register every newly posted or scheduled piece: `python3 analytics/scripts/record.py content ...` (style = the video skill used, hook_type, topic, narrated, voice, length).
+2. Record metrics for posts that are ~24h, ~48h or ~7d old with `record.py metrics ...` (one folder per day: `analytics/daily/YYYY-MM-DD/<platform>.csv`), and follower counts with `record.py account ...`. Screenshots from Sanyam go in `analytics/daily/<date>/raw/`.
+3. Rebuild: `analytics/.venv/bin/python analytics/scripts/build.py`.
+4. Learn from `analytics/reports/OVERALL.md` ("are we improving?", leaderboard) and `analytics/reports/WHAT_WORKED.md` (signals vs hints). Base decisions on signals; treat hints as experiments to run next. Link both reports from `studio/DASHBOARD.md`.
+Instagram safety: never bulk-open insight pages from the browser (account locked 2026-10-22). One Reels-grid read per day for views; ask Sanyam for app screenshots for watch time and skip rate.
+
 ## Video types (one skill per type)
 
 Each kind of video has its own skill in `.claude/skills/`, named after what it produces. Pick the skill that matches the plan, read its SKILL.md, follow it exactly. When a new kind of video is approved by Sanyam, package it as a new skill the same way.
@@ -46,7 +55,7 @@ Inputs from Sanyam: `inbox/metrics/` (insight screenshots, or `video-performance
 
 0. **Safety.** If `studio/PAUSE` exists, note it in today's journal and stop.
 1. **Load memory.** strategy, playbook, latest 30 learnings, open experiments, asks, post-queue, `inbox/notes.md`, last 2 run journals, the analysis files.
-2. **Ingest metrics.** For each new file in `inbox/metrics/`: read it (screenshots are images; read the numbers off them carefully and only log what is clearly visible), match it to a reel (filename, caption, post date, thumbnail), log with `reel.py perf <slug> --platform instagram ...`, then move the file to `inbox/processed/`. Read `inbox/metrics/video-performance.md` for hand-typed rows not yet logged. Follower counts go to `followers.jsonl` as `{"ts":..., "platform":"instagram", "followers":N, "source":"screenshot|typed"}`.
+2. **Ingest metrics** (into `analytics/`, see Analytics section; `reel.py perf` is optional legacy). For each new file in `inbox/metrics/`: read it (screenshots are images; read the numbers off them carefully and only log what is clearly visible), match it to a reel (filename, caption, post date, thumbnail), log with `reel.py perf <slug> --platform instagram ...`, then move the file to `inbox/processed/`. Read `inbox/metrics/video-performance.md` for hand-typed rows not yet logged. Follower counts go to `followers.jsonl` as `{"ts":..., "platform":"instagram", "followers":N, "source":"screenshot|typed"}`.
 3. **Learn.** Run `reel.py report`. For each reel with data, compare against your expectation and the experiment it belonged to. Watch-time / hold rate, shares and saves per view, and follows per view matter most; likes matter least. Write lessons to `learnings.md`; promote solid ones to `playbook.md`; close experiments with a verdict. Small numbers are noisy: say so, look for repeated signals, never over-learn from one video. When a reel clearly over- or under-performs, write a short `analysis/<date>-<slug>.md` explaining why you think so.
 4. **Process input.** Handle `inbox/notes.md` (mark `[handled YYYY-MM-DD]`). Check `inbox/audio/` for new voiceover files and match each to the reel in `post-queue.md` / `asks.md` that is waiting for audio.
 5. **Plan today's video.** There must be exactly **one new ready-to-post video per day**. Priority:

@@ -18,3 +18,4 @@ studio/runs/logs/*.log
 studio/PAUSE
 tts/.venv/
 tts/models/
+analytics/.venv/
