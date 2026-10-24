@@ -93,3 +93,10 @@ Instagram locked the account ("we locked your account to protect you from a poss
 - What: new narrated diagram reel (27.2s, voice am_eric, subtitles). Hook "Not lazy. / You just don't know the next step." on a Spanish-by-next-June plan. Tests V-EXP-26 (identity-relief hook, the "someday" style that won the first batch).
 - Steps: 1) watch with sound: `ready-to-post/2026-10-23-not-lazy-next-step/video.mp4`. 2) if OK, post from the phone app (not web automation) at 09:30 IST on a day with no other reel; suggested order: Oct 24 not-lazy-next-step, Oct 25 tree-first-5k, Oct 26 hours-in-a-week. 3) caption + hashtags from its post.md, cover = frame 0. 4) tick `[x] posted` in studio/post-queue.md. 5) insights screenshots 48h later.
 - If you dislike it, one line in inbox/notes.md on what to change is enough.
+
+## VASK-016: Listen to monday-wont-fix-it; post order for the 4 waiting reels (2026-10-24)
+- Status: open
+- What: new 15.8s narrated kinetic-typography reel (voice am_eric). Hook "Monday won't fix it." Tests V-EXP-27: same winning hook family (hard truths, 2.1x views on the first batch) in the short kinetic style.
+- Data note: the 09:40 grid read today shows hard-truth hooks lead (someday 74, plan-the-bad-day 34) and "planning"/"goal-setting" topics trail. Still 0 follows from 17 reels, so we need watch time to know why: ASK-V screenshots (app, ~5 min) are the most useful thing you can send.
+- Suggested order, one per day, alone, 09:30 or 19:30 IST: Sat Oct 24 not-lazy-next-step · Sun Oct 25 19:30 monday-wont-fix-it (Sunday night = "Monday is tomorrow") · Mon Oct 26 hours-in-a-week · Tue Oct 27 tree-first-5k.
+- Steps: 1) watch with sound `ready-to-post/2026-10-24-monday-wont-fix-it/video.mp4`. 2) post from the phone app with the caption + hashtags in post.md, cover = frame 0. 3) tick `[x] posted` in studio/post-queue.md (time is enough). 4) if you dislike it, one line in inbox/notes.md.

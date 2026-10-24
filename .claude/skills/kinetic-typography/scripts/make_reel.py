@@ -58,7 +58,8 @@ def main():
     voice = n.get("voice", "am_eric")
 
     if voice:
-        spoken = re.sub(r"\bDmyor\b", "Deem-yor", plain(cards))
+        # markup is per-word; a multi-word ~a b~ leaves stray marks that TTS reads aloud ("tilda")
+        spoken = re.sub(r"[*~{}]", "", re.sub(r"\bDmyor\b", "Deem-yor", plain(cards)))
         run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(SKILL, "scripts/say.py"), spoken,
             os.path.join(d, "audio.mp3"), "--voice", voice, "--speed", str(n.get("speed", 1.0)),
             "--gap-min", str(n.get("gap_min", 0.30)), "--gap-max", str(n.get("gap_max", 0.55)))

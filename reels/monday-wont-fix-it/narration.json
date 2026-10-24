@@ -1,0 +1,19 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.3,
+ "gap_max": 0.55,
+ "tail": 1.2,
+ "max_font": 150,
+ "script": "*Monday* won't fix it. || You'll wait for Monday. Then the first. Then *January*. || ~Later~ never comes. You start *today*. || One small step, before you sleep. || Send this to someone still waiting for *Monday*. || That's Dmyor. || Link's in the bio.",
+ "brand_anchor": "That's Dmyor",
+ "tagline": "Turn a big goal\ninto today's step.",
+ "handle": "@dmyor_global",
+ "caption": {
+  "instagram": "Monday won't fix it.\n\nFirst it's Monday. Then the 1st. Then January.\nThe fresh start you're waiting for keeps moving.\n\n• Pick one small step\n• Do it before you sleep\n• Tomorrow, do the next one\n\nSend this to someone still waiting for Monday.\nDmyor turns a big goal into today's step. Link in bio.",
+  "hashtags": "#procrastination #motivation #selfimprovement #habits #goals",
+  "x": "Monday won't fix it.\n\nFirst Monday. Then the 1st. Then January.\n\nThe only start you get is today. One small step before you sleep.\n\nhttps://www.dmyor.com",
+  "youtube_title": "Monday won't fix it #Shorts"
+ },
+ "experiment": "V-EXP-27: narrated kinetic typography, hard-truth behaviour hook, <15s"
+}

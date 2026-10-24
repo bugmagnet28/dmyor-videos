@@ -23,7 +23,7 @@ From the project root (`~/Documents/dmyor-videos`). One-time voice setup: `bash 
 ## Script rules
 - 4-6 cards (`||`), 30-55 words total → 10-18 s. One idea per card, max ~12 words on a card.
 - Card 1 is the hook and is read on frame 0: 2-6 words, a hard truth or sharp question. Best so far: "Someday isn't a day." (hard truths beat quizzes and step lists on our account).
-- Mark 1 word per card at most with `*...*`; use `~...~` for the belief being killed ("~Someday~ isn't on it").
+- Mark 1 word per card at most with `*...*`; use `~...~` for the belief being killed ("~Someday~ isn't on it"). Markup is per WORD: `~a fresh start~` does not work (stray marks were spoken as "tilda" before 2026-10-24; now stripped from the voice, but the strike still fails). Strike one word.
 - Write it to be said: contractions, natural phrasing; the voice speaks each card as one thought, so a card should be one breath.
 - End with `|| That's Dmyor. || Link's in the bio.` (`brand_anchor` = "That's Dmyor"; everything from that card on becomes the brand card).
 - Silent version: set `"voice": null` → reading-pace timing (hook held 1.6 s, 0.32 s per word, 0.7 s between cards).

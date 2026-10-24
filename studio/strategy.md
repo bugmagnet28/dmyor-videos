@@ -32,6 +32,7 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 3. Get real numbers in: ask Sanyam for screenshots 48h after each post.
 
 ## Week 3 log (2026-10-22 to 2026-10-28)
+- 2026-10-24: monday-wont-fix-it (narrated kinetic typography, am_eric, 15.8s, hard-truth procrastination hook "Monday won't fix it."). V-EXP-27. First data read: hard-truth hooks 2.1x (signal), planning/goal-setting topics trail. Queue: 4 ready.
 - 2026-10-23: not-lazy-next-step (narrated diagram, am_eric, 27.2s, identity-relief hook 'Not lazy.', Spanish goal). V-EXP-26 + V-EXP-25 (diagram format id). Queue: 3 ready. No new metrics.
 
 ## Week 2 log (2026-10-15 to 2026-10-21)

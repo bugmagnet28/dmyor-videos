@@ -1,0 +1,276 @@
+{
+ "total": 15.78,
+ "cards": [
+  {
+   "t0": 0.0,
+   "t1": 1.83,
+   "words": [
+    {
+     "text": "Monday",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 0.0
+    },
+    {
+     "text": "won't",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 0.52
+    },
+    {
+     "text": "fix",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 0.88
+    },
+    {
+     "text": "it.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 1.0
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 1.83,
+   "t1": 4.91,
+   "words": [
+    {
+     "text": "You'll",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 1.88
+    },
+    {
+     "text": "wait",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 2.02
+    },
+    {
+     "text": "for",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 2.14
+    },
+    {
+     "text": "Monday.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 2.34
+    },
+    {
+     "text": "Then",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 2.64
+    },
+    {
+     "text": "the",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 2.88
+    },
+    {
+     "text": "first.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 3.0
+    },
+    {
+     "text": "Then",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 3.64
+    },
+    {
+     "text": "January.",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 3.78
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 4.91,
+   "t1": 7.25,
+   "words": [
+    {
+     "text": "Later",
+     "e": false,
+     "s": true,
+     "m": false,
+     "t": 4.96
+    },
+    {
+     "text": "never",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 5.1
+    },
+    {
+     "text": "comes.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 5.32
+    },
+    {
+     "text": "You",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 5.72
+    },
+    {
+     "text": "start",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 5.94
+    },
+    {
+     "text": "today.",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 6.2
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 7.25,
+   "t1": 9.57,
+   "words": [
+    {
+     "text": "One",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 7.3
+    },
+    {
+     "text": "small",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 7.52
+    },
+    {
+     "text": "step,",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 7.86
+    },
+    {
+     "text": "before",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 8.18
+    },
+    {
+     "text": "you",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 8.5
+    },
+    {
+     "text": "sleep.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 8.68
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 9.57,
+   "t1": 12.32,
+   "words": [
+    {
+     "text": "Send",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 9.62
+    },
+    {
+     "text": "this",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 9.72
+    },
+    {
+     "text": "to",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 9.92
+    },
+    {
+     "text": "someone",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 10.1
+    },
+    {
+     "text": "still",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 10.4
+    },
+    {
+     "text": "waiting",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 10.7
+    },
+    {
+     "text": "for",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 11.02
+    },
+    {
+     "text": "Monday.",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 11.32
+    }
+   ],
+   "max": 150
+  }
+ ],
+ "brandT": 12.32,
+ "tagline": "Turn a big goal\ninto today's step.",
+ "handle": "@dmyor_global",
+ "voice": "am_eric",
+ "script": "*Monday* won't fix it. || You'll wait for Monday. Then the first. Then *January*. || ~Later~ never comes. You start *today*. || One small step, before you sleep. || Send this to someone still waiting for *Monday*. || That's Dmyor. || Link's in the bio."
+}

@@ -272,3 +272,14 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if it leads, keep "relief/contrarian about the viewer" as the default diagram hook family.
+
+## V-EXP-27: Narrated kinetic typography, hard-truth hook on a behaviour topic ("Monday won't fix it.")
+- Status: running (opened 2026-10-24, before building)
+- Change: first narrated reel in the kinetic-typography style (am_eric, thought-level TTS, word-synced cards, dark canvas). Hook = hard truth about the viewer's own behaviour (waiting for a fresh start: Monday / the 1st / January), the hook family + topic family that lead on views (hard-truth 2.1x n=4; procrastination 2.9x n=2). Short: target 12-15s (<15s bucket 1.3x). End card @dmyor_global.
+- Why: isolates style (kinetic vs diagram) while holding the winning hook family and the narration constant, against diagram-someday-vo / not-lazy-next-step (narrated diagram, hard-truth, 27s). Also the first narrated reel under 15s.
+- Reels testing it: monday-wont-fix-it (2026-10-24)
+- Metric + target (48h, posted alone at 09:30 or 19:30 IST): views >= 30 (top-quartile of the batch, ~2x median 16); watched % >= 60% when app screenshots arrive; >= 1 share or follow.
+- Expectation: views in the 20-40 band, above the narrated diagram median, below someday (74). Watch % higher than the 27s diagram reels because it is half the length. Confidence low (n=1).
+- Result:
+- Verdict + why:
+- Next: if views >= 30 and watch % beats the diagram reels, narrated kinetic hard-truths become 2 of 3 builds, diagram the 1 in 3 for product structure.

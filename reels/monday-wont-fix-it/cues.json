@@ -1,0 +1,279 @@
+{
+ "audio": "audio.mp3",
+ "duration": 15.27,
+ "text": "Monday won't fix it. You'll wait for Monday then the first, then January. Later never comes you start today. One small step before you sleep. Send this to someone still waiting for Monday. That's Demure. Links in the bio.",
+ "words": [
+  {
+   "w": "monday",
+   "raw": "Monday",
+   "s": 0.0,
+   "e": 0.52
+  },
+  {
+   "w": "wont",
+   "raw": "won't",
+   "s": 0.52,
+   "e": 0.88
+  },
+  {
+   "w": "fix",
+   "raw": "fix",
+   "s": 0.88,
+   "e": 1.0
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 1.0,
+   "e": 1.32
+  },
+  {
+   "w": "youll",
+   "raw": "You'll",
+   "s": 1.88,
+   "e": 2.02
+  },
+  {
+   "w": "wait",
+   "raw": "wait",
+   "s": 2.02,
+   "e": 2.14
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 2.14,
+   "e": 2.34
+  },
+  {
+   "w": "monday",
+   "raw": "Monday",
+   "s": 2.34,
+   "e": 2.64
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 2.64,
+   "e": 2.88
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 2.88,
+   "e": 3.0
+  },
+  {
+   "w": "first",
+   "raw": "first,",
+   "s": 3.0,
+   "e": 3.32
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 3.64,
+   "e": 3.78
+  },
+  {
+   "w": "january",
+   "raw": "January.",
+   "s": 3.78,
+   "e": 4.28
+  },
+  {
+   "w": "later",
+   "raw": "Later",
+   "s": 4.96,
+   "e": 5.1
+  },
+  {
+   "w": "never",
+   "raw": "never",
+   "s": 5.1,
+   "e": 5.32
+  },
+  {
+   "w": "comes",
+   "raw": "comes",
+   "s": 5.32,
+   "e": 5.72
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 5.72,
+   "e": 5.94
+  },
+  {
+   "w": "start",
+   "raw": "start",
+   "s": 5.94,
+   "e": 6.2
+  },
+  {
+   "w": "today",
+   "raw": "today.",
+   "s": 6.2,
+   "e": 6.58
+  },
+  {
+   "w": "one",
+   "raw": "One",
+   "s": 7.3,
+   "e": 7.52
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 7.52,
+   "e": 7.86
+  },
+  {
+   "w": "step",
+   "raw": "step",
+   "s": 7.86,
+   "e": 8.18
+  },
+  {
+   "w": "before",
+   "raw": "before",
+   "s": 8.18,
+   "e": 8.5
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 8.5,
+   "e": 8.68
+  },
+  {
+   "w": "sleep",
+   "raw": "sleep.",
+   "s": 8.68,
+   "e": 8.98
+  },
+  {
+   "w": "send",
+   "raw": "Send",
+   "s": 9.62,
+   "e": 9.72
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 9.72,
+   "e": 9.92
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 9.92,
+   "e": 10.1
+  },
+  {
+   "w": "someone",
+   "raw": "someone",
+   "s": 10.1,
+   "e": 10.4
+  },
+  {
+   "w": "still",
+   "raw": "still",
+   "s": 10.4,
+   "e": 10.7
+  },
+  {
+   "w": "waiting",
+   "raw": "waiting",
+   "s": 10.7,
+   "e": 11.02
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 11.02,
+   "e": 11.32
+  },
+  {
+   "w": "monday",
+   "raw": "Monday.",
+   "s": 11.32,
+   "e": 11.64
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 12.32,
+   "e": 12.68
+  },
+  {
+   "w": "demure",
+   "raw": "Demure.",
+   "s": 12.68,
+   "e": 13.14
+  },
+  {
+   "w": "links",
+   "raw": "Links",
+   "s": 13.74,
+   "e": 13.94
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 13.94,
+   "e": 14.2
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 14.2,
+   "e": 14.3
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 14.3,
+   "e": 14.58
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 1.32,
+   "text": "Monday won't fix it."
+  },
+  {
+   "s": 1.88,
+   "e": 4.28,
+   "text": "You'll wait for Monday then the first, then January."
+  },
+  {
+   "s": 4.96,
+   "e": 6.58,
+   "text": "Later never comes you start today."
+  },
+  {
+   "s": 7.3,
+   "e": 8.98,
+   "text": "One small step before you sleep."
+  },
+  {
+   "s": 9.62,
+   "e": 11.64,
+   "text": "Send this to someone still waiting for Monday."
+  },
+  {
+   "s": 12.32,
+   "e": 13.14,
+   "text": "That's Demure."
+  },
+  {
+   "s": 13.74,
+   "e": 14.58,
+   "text": "Links in the bio."
+  }
+ ],
+ "wps": 2.55
+}
