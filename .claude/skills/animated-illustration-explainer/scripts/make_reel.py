@@ -5,6 +5,8 @@
 narration.json:
   spoken    the narration, thoughts split by "||", optional [hook]/[turn]/[land]/[outro] tags (write for the ear)
   scenes    one entry per thought, in order: {"type": <scene name>, "params": {...}, "head": "short <b>headline</b>"}
+            params.cue = [word, ...]: the spoken word that triggers each animation beat (null = default timing);
+            resolved to params.at (seconds after the scene starts), which both the scene and its sounds use
             or null to keep the previous scene on screen through that thought
   brand_from  index of the first thought that belongs to the brand card (usually the outro)
   sfx       "present" (default), "subtle" or "off": synthesized sound design under the voice (scripts/sfx.py, assets/events.json)
@@ -60,8 +62,28 @@ def main():
         if scenes[k] is None:
             if out:
                 out[-1]["t1"] = t0[k + 1] if k + 1 < bf else brandT
+                out[-1]["_ks"].append(k)
             continue
-        out.append({**scenes[k], "t0": 0.0 if k == 0 else round(t0[k] - 0.05, 3), "t1": round(t0[k + 1] - 0.05 if k + 1 < bf else brandT, 3)})
+        out.append({**scenes[k], "t0": 0.0 if k == 0 else round(t0[k] - 0.05, 3), "t1": round(t0[k + 1] - 0.05 if k + 1 < bf else brandT, 3), "_ks": [k]})
+    for sc in out:   # params.cue: one spoken word per animation beat -> params.at (seconds after the scene starts)
+        P = dict(sc.get("params") or {}); ks = sc.pop("_ks")
+        if "cue" not in P:
+            continue
+        toks = [i for i in range(len(words)) if owner[i] in ks]; at, ptr = [], 0
+        for c in P["cue"]:
+            hit = None
+            if c:
+                for j in list(range(ptr, len(toks))) + list(range(0, ptr)):
+                    if nz(words[toks[j]]) == nz(c):
+                        hit = j; break
+                if hit is None:
+                    print(f"  cue not found in {sc['type']}: {c!r}")
+            if hit is not None:
+                v = st[toks[hit]] - sc["t0"]; ptr = hit + 1
+            else:
+                v = at[-1] + 0.6 if at else 0.2
+            at.append(round(max(0.0, v), 3))
+        P["at"] = at; sc["params"] = P
     total = round(W[-1]["e"] + n.get("tail", 1.2), 2)
     cfg = {"total": total, "brandT": round(brandT, 3), "scenes": out, "tagline": n.get("tagline", "Turn your dream into\na plan you can see."),
            "handle": n.get("handle", "@becauseidmyor")}
@@ -73,7 +95,7 @@ def main():
         "-ar", "44100", "-b:a", "192k", os.path.join(d, "audio_voice.mp3"))
     run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(SKILL, "scripts/sfx.py"), d, "--level", n.get("sfx", "present"))
     print(f"built {d}: {total}s, {len(out)} scenes, brand {brandT:.2f}s, {cues['wps']} words/sec")
-    print("scenes:", [(s["type"], s["t0"], s["t1"]) for s in out])
+    print("scenes:", [(s["type"], s["t0"], s["t1"], (s.get("params") or {}).get("at")) for s in out])
     if o.record or o.package:
         mp4 = os.path.join(d, "reel.mp4")
         with open(os.path.join(d, "record.log"), "w") as log:

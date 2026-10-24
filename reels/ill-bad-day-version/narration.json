@@ -1,0 +1,111 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 8,
+ "spoken": "[hook] Your plan only works on good days. || Most plans assume you'll have energy, time and a good mood every single day. Then one bad day comes, you skip, and the whole thing quietly falls apart. || [turn] So plan the bad day in advance. Give every habit two versions, the full one, and a smaller one for the days that go wrong. || Training for a five K? The full version is your thirty minute run. The bad day version is an easy fifteen minute walk. || Studying for an exam? The full version is two hours of practice questions. The bad day version is fifteen minutes reviewing your notes. || The rule is simple. On a bad day, you don't skip, you switch. || [land] Because a streak isn't about doing everything every day. It's about never letting one bad day turn into a bad week. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "weather-week",
+   "params": {},
+   "head": "Your plan only works<br>on <b>good days</b>."
+  },
+  {
+   "type": "energy-dip",
+   "params": {
+    "cue": [
+     "plans",
+     "bad",
+     "falls"
+    ]
+   },
+   "head": "One bad day,<br>and it <b>falls apart</b>."
+  },
+  {
+   "type": "habit-split",
+   "params": {
+    "cue": [
+     "habit",
+     "full",
+     "smaller"
+    ]
+   },
+   "head": "Plan the <b>bad day</b><br>in advance."
+  },
+  {
+   "type": "two-versions",
+   "params": {
+    "title": "Training for a 5K",
+    "full": "30 min run",
+    "small": "15 min easy walk",
+    "cue": [
+     "training",
+     "full",
+     "bad",
+     "walk"
+    ]
+   },
+   "head": "Training for a <b>5K</b>?"
+  },
+  {
+   "type": "two-versions",
+   "params": {
+    "title": "Studying for an exam",
+    "full": "2 hours of practice questions",
+    "small": "15 min reviewing notes",
+    "cue": [
+     "studying",
+     "full",
+     "bad",
+     "notes"
+    ]
+   },
+   "head": "Studying for an <b>exam</b>?"
+  },
+  {
+   "type": "chain-switch",
+   "params": {
+    "cue": [
+     "skip",
+     "switch"
+    ]
+   },
+   "head": "Don't skip. <b>Switch</b>."
+  },
+  {
+   "type": "skip-vs-switch",
+   "params": {
+    "cue": [
+     "streak",
+     "never"
+    ]
+   },
+   "head": "Don't let a bad day<br>become a <b>bad week</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Run my first 5K",
+    "date": "Open it again: Mar 2027",
+    "steps": [
+     "Run 3 times a week",
+     "Bad day: 15 min walk",
+     "Race day in March"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  null
+ ],
+ "caption": {
+  "instagram": "Your plan only works on good days.\n\nGive every habit a bad-day version:\n• 30 min run → 15 min walk\n• 2h of practice questions → 15 min of notes\n\nOn a bad day, don't skip. Switch.\n\nDmyor: archive your dream, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#habits #consistency #productivity #selfimprovement #goals",
+  "x": "Your plan only works on good days.\n\nGive every habit a bad-day version. 30 min run → 15 min walk.\n\nOn a bad day, don't skip. Switch.",
+  "youtube_title": "Your plan only works on good days #Shorts"
+ }
+}

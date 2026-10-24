@@ -1,0 +1,101 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 7,
+ "spoken": "[hook] Monday won't fix it. || We love a fresh start. Next Monday, then the first of the month, then January. And every time, the start date moves again. || Here's the thing. Monday doesn't change anything. You'll have the same goal, the same doubts, just less time. || [turn] So start today, but start small. Pick the first step of your goal that fits in fifteen minutes. Want to change jobs? Update one section of your CV tonight. || Then tomorrow, do the next step, and the next. By the time Monday comes, you're not starting from zero. You're already a few steps in. || [land] A fresh start isn't a date. It's the first step you actually take. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "date-chase",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "<b>Monday</b> won't fix it."
+  },
+  {
+   "type": "date-chase",
+   "params": {
+    "stage": "chase",
+    "cue": [
+     "monday",
+     "first",
+     "january",
+     "moves"
+    ]
+   },
+   "head": "The start date<br>keeps <b>moving</b>."
+  },
+  {
+   "type": "same-you",
+   "params": {
+    "cue": [
+     null,
+     "goal",
+     "doubts",
+     "less"
+    ]
+   },
+   "head": "Same you,<br>just <b>less time</b>."
+  },
+  {
+   "type": "cv-step",
+   "params": {
+    "cue": [
+     "fifteen",
+     "change",
+     "update",
+     "section"
+    ]
+   },
+   "head": "Start <b>small</b>, start today."
+  },
+  {
+   "type": "day-streak",
+   "params": {
+    "cue": [
+     "tomorrow",
+     "monday",
+     "few"
+    ]
+   },
+   "head": "By Monday, you're<br><b>a few steps in</b>."
+  },
+  {
+   "type": "date-vs-step",
+   "params": {
+    "cue": [
+     null,
+     "date",
+     "first",
+     "take"
+    ]
+   },
+   "head": "A fresh start is<br>a <b>step</b>, not a date."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Change jobs by spring",
+    "date": "Open it again: Apr 2027",
+    "steps": [
+     "Update my CV",
+     "Apply to 10 jobs",
+     "Prep 3 interviews"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  null
+ ],
+ "caption": {
+  "instagram": "Monday won't fix it.\n\nSame goal, same doubts, just less time.\n\nStart tonight with a 15-minute step. Changing jobs? Update one section of your CV. By Monday you're a few steps in.\n\nDmyor: archive your dream, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#procrastination #motivation #careerchange #habits #goals",
+  "x": "Monday won't fix it.\n\nSame goal, same doubts, just less time.\n\nStart tonight with one 15-minute step. By Monday you're a few steps in.",
+  "youtube_title": "Monday won't fix it #Shorts"
+ }
+}

@@ -1,0 +1,146 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 8,
+ "spoken": "[hook] Want to actually learn a language this year? Here's the whole plan, start to finish. || Start with the vision. Something you can picture, like holding a ten minute conversation in Spanish by June. || Then break it into three milestones. Your first five hundred words. Finishing the A1 course. And your first real conversation with a tutor. || [turn] Now take the first milestone and make it daily. Five hundred words is twenty new words a day, for twenty five days. || So today isn't, learn Spanish. Today is twenty flashcards, about fifteen minutes. || Do that, and every day you can see the plan move. Words learned, the milestone filling up, and the vision getting closer. || [land] Big goals don't need more motivation. They need a path that ends with something you can do today. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "goal-tree",
+   "params": {
+    "stage": "all",
+    "tag": "VISION, BY JUNE",
+    "vision": "10-minute conversation in Spanish",
+    "milestones": [
+     "First 500 words",
+     "Finish the A1 course",
+     "First real conversation"
+    ],
+    "actions": [
+     "20 flashcards a day",
+     "Review yesterday's words",
+     "Say them out loud"
+    ]
+   },
+   "head": "Learn a language<br>this year: <b>the whole plan</b>."
+  },
+  {
+   "type": "goal-tree",
+   "params": {
+    "stage": "vision",
+    "tag": "VISION, BY JUNE",
+    "vision": "10-minute conversation in Spanish",
+    "cue": [
+     "vision",
+     "conversation"
+    ]
+   },
+   "head": "Start with the <b>vision</b>."
+  },
+  {
+   "type": "goal-tree",
+   "params": {
+    "stage": "milestones",
+    "tag": "VISION, BY JUNE",
+    "vision": "10-minute conversation in Spanish",
+    "milestones": [
+     "First 500 words",
+     "Finish the A1 course",
+     "First real conversation"
+    ],
+    "cue": [
+     "first",
+     "finishing",
+     "conversation"
+    ]
+   },
+   "head": "Then three <b>milestones</b>."
+  },
+  {
+   "type": "math-split",
+   "params": {
+    "total": 500,
+    "per": 20,
+    "unit": "words",
+    "milestone": "Milestone: first 500 words",
+    "cue": [
+     "five",
+     "twenty",
+     "new",
+     "days"
+    ]
+   },
+   "head": "Make it <b>daily</b>."
+  },
+  {
+   "type": "flashcards",
+   "params": {
+    "cue": [
+     "today",
+     "spanish",
+     "twenty",
+     "minutes"
+    ]
+   },
+   "head": "Today: <b>20 flashcards</b>."
+  },
+  {
+   "type": "progress-bars",
+   "params": {
+    "cue": [
+     "words",
+     "milestone",
+     "vision"
+    ]
+   },
+   "head": "Watch the plan <b>move</b>."
+  },
+  {
+   "type": "goal-tree",
+   "params": {
+    "stage": "path",
+    "tag": "VISION, BY JUNE",
+    "vision": "10-minute conversation in Spanish",
+    "milestones": [
+     "First 500 words",
+     "Finish the A1 course",
+     "First real conversation"
+    ],
+    "actions": [
+     "20 flashcards a day",
+     "Review yesterday's words",
+     "Say them out loud"
+    ],
+    "cue": [
+     "path"
+    ]
+   },
+   "head": "A path that ends<br>in <b>today</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Speak Spanish by June",
+    "date": "Open it again: June 2027",
+    "steps": [
+     "First 500 words",
+     "Finish A1",
+     "First conversation"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  null
+ ],
+ "caption": {
+  "instagram": "Learning a language this year? Here's the whole plan.\n\nVision: a 10-minute conversation in Spanish by June\nMilestone 1: your first 500 words\n500 words = 20 a day for 25 days\nToday: 20 flashcards, about 15 minutes.\n\nDmyor: archive your dream, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#languagelearning #learnspanish #goals #studytips #productivity",
+  "x": "Learning a language this year?\n\nVision → 3 milestones → 500 words = 20 a day for 25 days.\n\nToday isn't \"learn Spanish\". Today is 20 flashcards.",
+  "youtube_title": "Learn a language this year: the whole plan #Shorts"
+ }
+}

@@ -7,7 +7,7 @@ scene type), renders an effects track and mixes it under <reel_dir>/audio_voice.
 into <reel_dir>/audio_mixed.mp3. Scene changes get a soft swish, except the first scene (already on screen at frame 0)
 and scenes that open with their own sound; the brand card gets a soft chord.
 """
-import argparse, json, os, subprocess, tempfile
+import argparse, json, os, re, subprocess, tempfile
 import numpy as np
 
 SR = 44100
@@ -196,36 +196,60 @@ def pop(i=0):
     return body + click
 
 
+def miss(i=0):
+    """soft "wrong": two muted notes falling"""
+    def note(f, d=.24):
+        n = int(d * SR); t = np.arange(n) / SR
+        return lowpass(np.sin(2 * np.pi * f * t) + .3 * np.sin(2 * np.pi * 2 * f * t), 1400) * env(n, .004, .08)
+    a, b = note(330), note(247); gap = int(.1 * SR); out = np.zeros(gap + len(b)); out[:len(a)] += a; out[gap:] += b
+    return out
+
+
 KIT = {"tick": tick, "tap": tap, "swish": swish, "ratchet": ratchet, "tone": tone, "chord": chord,
        "clock": clock, "timer": timer, "pencil": pencil, "pen_check": pen_check, "page": page, "riffle": riffle,
-       "footsteps": footsteps, "plate": plate, "stamp": stamp, "beep2": beep2, "right": right, "pop": pop}
+       "footsteps": footsteps, "plate": plate, "stamp": stamp, "beep2": beep2, "right": right, "pop": pop, "miss": miss}
 PEAK = {"tick": -16, "tap": -16, "swish": -21, "ratchet": -19, "tone": -21, "chord": -16,   # dBFS peak at "present" (voice peaks ~-1.5)
         "clock": -18, "timer": -20, "pencil": -15, "pen_check": -15, "page": -15, "riffle": -18,
-        "footsteps": -15, "plate": -15, "stamp": -14, "beep2": -21, "right": -15, "pop": -14}
+        "footsteps": -15, "plate": -15, "stamp": -14, "beep2": -21, "right": -15, "pop": -14, "miss": -16}
 LEVEL = {"present": 0, "subtle": -6}
 BEDS = {"clock", "timer", "footsteps", "riffle"}   # continuous sounds: may overlap one-shots
+
+
+def beat(x, at):
+    """a time: seconds, or "@i" / "@i+0.3" = animation beat i of the scene (params.at, resolved from spoken cues)"""
+    if isinstance(x, (int, float)):
+        return float(x)
+    m = re.match(r"@(\d+)([+-][\d.]+)?$", str(x))
+    return at[int(m.group(1))] + (float(m.group(2)) if m.group(2) else 0.0)
 
 
 def events(cfg, table, min_gap=.28):
     ev = []
     for i, sc in enumerate(cfg["scenes"]):
-        own = table.get(sc["type"], [])
-        if i > 0 and not (own and own[0][0] < .1):
+        P = sc.get("params") or {}
+        own = table.get(sc["type"] + ":" + str(P.get("stage", "")), table.get(sc["type"], []))
+        at_ = P.get("at", [])
+        if i > 0 and not (own and isinstance(own[0][0], (int, float)) and own[0][0] < .1):
             ev.append((sc["t0"], "swish", None))
         if i == 0:
             continue   # the hook scene is already finished on frame 0
         run = {}
         for e in own:
-            at = sc["t0"] + e[0]
+            try:
+                at = sc["t0"] + beat(e[0], at_)
+            except (IndexError, AttributeError):
+                print(f"  skip {e}: scene {sc['type']} has no beat for it"); continue
             if e[1] in ("right", "pop"):
                 run[e[1]] = run.get(e[1], -1) + 1
             if at < sc["t1"]:
                 dur = e[2] if len(e) > 2 else None
                 if dur == "end":
                     dur = max(.3, sc["t1"] + .3 - at)   # beds run until the scene has faded out
+                elif isinstance(dur, str):
+                    dur = max(.3, sc["t0"] + beat(dur, at_) - at)   # "@3" = until beat 3
                 ev.append((at, e[1], run[e[1]] if e[1] in ("right", "pop") else dur))
     ev.append((cfg["brandT"], "chord", None))
-    ev.sort(); kept = []
+    ev.sort(key=lambda e: e[0]); kept = []
     for e in ev:
         last = [k for k in kept if k[1] not in BEDS]
         if e[1] in BEDS or e[1] in ("tone", "chord", "stamp") or not last or e[0] - last[-1][0] >= min_gap:

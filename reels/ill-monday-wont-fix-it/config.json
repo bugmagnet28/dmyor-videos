@@ -1,0 +1,131 @@
+{
+ "total": 43.34,
+ "brandT": 39.62,
+ "scenes": [
+  {
+   "type": "date-chase",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "<b>Monday</b> won't fix it.",
+   "t0": 0.0,
+   "t1": 1.69
+  },
+  {
+   "type": "date-chase",
+   "params": {
+    "stage": "chase",
+    "cue": [
+     "monday",
+     "first",
+     "january",
+     "moves"
+    ],
+    "at": [
+     1.49,
+     2.09,
+     3.07,
+     5.53
+    ]
+   },
+   "head": "The start date<br>keeps <b>moving</b>.",
+   "t0": 1.69,
+   "t1": 8.29
+  },
+  {
+   "type": "same-you",
+   "params": {
+    "cue": [
+     null,
+     "goal",
+     "doubts",
+     "less"
+    ],
+    "at": [
+     0.2,
+     2.95,
+     3.69,
+     4.29
+    ]
+   },
+   "head": "Same you,<br>just <b>less time</b>.",
+   "t0": 8.29,
+   "t1": 13.59
+  },
+  {
+   "type": "cv-step",
+   "params": {
+    "cue": [
+     "fifteen",
+     "change",
+     "update",
+     "section"
+    ],
+    "at": [
+     3.78,
+     5.15,
+     6.13,
+     6.67
+    ]
+   },
+   "head": "Start <b>small</b>, start today.",
+   "t0": 13.59,
+   "t1": 21.85
+  },
+  {
+   "type": "day-streak",
+   "params": {
+    "cue": [
+     "tomorrow",
+     "monday",
+     "few"
+    ],
+    "at": [
+     0.21,
+     3.03,
+     5.69
+    ]
+   },
+   "head": "By Monday, you're<br><b>a few steps in</b>.",
+   "t0": 21.85,
+   "t1": 28.17
+  },
+  {
+   "type": "date-vs-step",
+   "params": {
+    "cue": [
+     null,
+     "date",
+     "first",
+     "take"
+    ],
+    "at": [
+     0.2,
+     1.57,
+     2.25,
+     3.21
+    ]
+   },
+   "head": "A fresh start is<br>a <b>step</b>, not a date.",
+   "t0": 28.17,
+   "t1": 32.23
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Change jobs by spring",
+    "date": "Open it again: Apr 2027",
+    "steps": [
+     "Update my CV",
+     "Apply to 10 jobs",
+     "Prep 3 interviews"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 32.23,
+   "t1": 39.62
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}

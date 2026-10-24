@@ -48,8 +48,25 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `week-tracker` | 7-day grid, chosen days ticked, a person walks the line | `on` (day indexes), `what` |
 | `fit-breakdown` | goal → program → 6 day chips → today (Chest) highlighted → today's exercises tick off | `goal`, `program`, `days[[day,name]]`, `today[3]` |
 | `fifteen-test` | timer runs past the limit (red, "too big"), the step splits into 3, timer resets green ("start now") | `minutes`, `over`, `small`, `step`, `parts[3]` |
+| `weather-week` | week of sunny days ticked, one cloudy day crossed, the rest fade (hook) | `bad`, `days` |
+| `energy-dip` | energy line dips; checks stop at the bad day, the rest of the week fades | cue: plans / bad / falls apart |
+| `habit-split` | one habit branches into "Full version" (sun) and "Bad-day version" (cloud) | `habit`, `full`, `small`; cue x3 |
+| `two-versions` | title, FULL card vs BAD DAY card, bad-day card gets the check | `title`, `full`, `small`; cue x4 |
+| `chain-switch` | "Skip" chain breaks, "Switch" chain holds with one thin link | cue: skip / switch |
+| `skip-vs-switch` | two weeks: switch (small check, week survives) vs skip (bad week) | cue x2 |
+| `goal-tree` | vision → 3 milestones → 3 actions + TODAY; `stage`: all (hook), vision (+ two people talking), milestones, actions, path (today lit up to the vision) | `vision`, `tag`, `milestones`, `actions`, `m`, `today`, `say1/2` |
+| `math-split` | total counts up, "÷ per day", grid of days fills, "= N days" | `total`, `per`, `unit`, `milestone`; cue x4 |
+| `flashcards` | big vague goal struck through, flashcard stack flips through N cards, "about 15 min" | `big`, `n`, `words`, `time`; cue x4 |
+| `progress-bars` | three labelled bars fill (count, milestone %, vision %) | `rows`; cue x3 |
+| `date-chase` | START note jumps Monday → 1st → January, each date crossed out; `stage`: hook / chase | `dates`, `note`; cue x4 |
+| `same-you` | Today vs Monday: same goal, same doubts, Monday's time bar shorter | `a`, `b`; cue x4 |
+| `cv-step` | 15-min timer, goal card, a document with one section highlighted and written in | `goal`, `doc`, `sections`, `hi`, `minutes`; cue x4 |
+| `day-streak` | tonight / day 2-4 steps ticked, Monday card "Not day one" | `days`, `label`; cue x3 |
+| `date-vs-step` | calendar date fades, "First step: done, today" card gets the check | `day`, `num`, `step`, `when`; cue x4 |
 | `proof-to-motivation` | ticked tiles stack up a rising curve, label turns proof into motivation | `a`, `b` |
 | `dream-to-steps` | "ARCHIVED TODAY" dream card branching into three ticked steps (use for the value close) | `tag`, `dream`, `date`, `steps[3]` |
+
+**Cues**: `params.cue` lists the spoken word that triggers each animation beat (null = default); `make_reel.py` resolves them to `params.at`, and `events.json` can time sounds as `"@i"` / `"@i+0.3"`, so picture and sound land on the voice. Prefer cues over fixed times for any new scene.
 
 Each scene is `function(group, params) -> render(k, t)` (`t` = seconds since the scene started). New scenes follow the same rules: thin strokes (3-6 px), panels `PANEL`/`LINE`, accent `ACC` only for the point, `RED` (warm clay) only for "wrong/too big", `eio`/`eout` easing only, and keep something resolving for the whole thought (no scene that finishes in 2 s and then sits empty for 4).
 

@@ -1,0 +1,178 @@
+{
+ "total": 51.12,
+ "brandT": 46.98,
+ "scenes": [
+  {
+   "type": "goal-tree",
+   "params": {
+    "stage": "all",
+    "tag": "VISION, BY JUNE",
+    "vision": "10-minute conversation in Spanish",
+    "milestones": [
+     "First 500 words",
+     "Finish the A1 course",
+     "First real conversation"
+    ],
+    "actions": [
+     "20 flashcards a day",
+     "Review yesterday's words",
+     "Say them out loud"
+    ]
+   },
+   "head": "Learn a language<br>this year: <b>the whole plan</b>.",
+   "t0": 0.0,
+   "t1": 4.25
+  },
+  {
+   "type": "goal-tree",
+   "params": {
+    "stage": "vision",
+    "tag": "VISION, BY JUNE",
+    "vision": "10-minute conversation in Spanish",
+    "cue": [
+     "vision",
+     "conversation"
+    ],
+    "at": [
+     0.61,
+     3.35
+    ]
+   },
+   "head": "Start with the <b>vision</b>.",
+   "t0": 4.25,
+   "t1": 9.77
+  },
+  {
+   "type": "goal-tree",
+   "params": {
+    "stage": "milestones",
+    "tag": "VISION, BY JUNE",
+    "vision": "10-minute conversation in Spanish",
+    "milestones": [
+     "First 500 words",
+     "Finish the A1 course",
+     "First real conversation"
+    ],
+    "cue": [
+     "first",
+     "finishing",
+     "conversation"
+    ],
+    "at": [
+     2.15,
+     3.29,
+     5.71
+    ]
+   },
+   "head": "Then three <b>milestones</b>.",
+   "t0": 9.77,
+   "t1": 17.17
+  },
+  {
+   "type": "math-split",
+   "params": {
+    "total": 500,
+    "per": 20,
+    "unit": "words",
+    "milestone": "Milestone: first 500 words",
+    "cue": [
+     "five",
+     "twenty",
+     "new",
+     "days"
+    ],
+    "at": [
+     2.1,
+     3.7,
+     3.99,
+     5.51
+    ]
+   },
+   "head": "Make it <b>daily</b>.",
+   "t0": 17.17,
+   "t1": 23.51
+  },
+  {
+   "type": "flashcards",
+   "params": {
+    "cue": [
+     "today",
+     "spanish",
+     "twenty",
+     "minutes"
+    ],
+    "at": [
+     0.25,
+     1.13,
+     2.44,
+     4.05
+    ]
+   },
+   "head": "Today: <b>20 flashcards</b>.",
+   "t0": 23.51,
+   "t1": 28.29
+  },
+  {
+   "type": "progress-bars",
+   "params": {
+    "cue": [
+     "words",
+     "milestone",
+     "vision"
+    ],
+    "at": [
+     2.67,
+     3.41,
+     4.79
+    ]
+   },
+   "head": "Watch the plan <b>move</b>.",
+   "t0": 28.29,
+   "t1": 34.57
+  },
+  {
+   "type": "goal-tree",
+   "params": {
+    "stage": "path",
+    "tag": "VISION, BY JUNE",
+    "vision": "10-minute conversation in Spanish",
+    "milestones": [
+     "First 500 words",
+     "Finish the A1 course",
+     "First real conversation"
+    ],
+    "actions": [
+     "20 flashcards a day",
+     "Review yesterday's words",
+     "Say them out loud"
+    ],
+    "cue": [
+     "path"
+    ],
+    "at": [
+     2.75
+    ]
+   },
+   "head": "A path that ends<br>in <b>today</b>.",
+   "t0": 34.57,
+   "t1": 39.91
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Speak Spanish by June",
+    "date": "Open it again: June 2027",
+    "steps": [
+     "First 500 words",
+     "Finish A1",
+     "First conversation"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 39.91,
+   "t1": 46.98
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}

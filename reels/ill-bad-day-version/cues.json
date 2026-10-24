@@ -1,0 +1,1140 @@
+{
+ "audio": "audio.mp3",
+ "duration": 51.5,
+ "text": "Your plan only works on good days. Most plans assume you'll have energy, time, and a good mood every single day. Then when bad day comes, you skip, and the whole thing quietly falls apart. So plan the bad day in advance. Give every habit two versions the full one and a smaller one for the days that go wrong. Training for a 5K, the full version is your 30-minute run. The bad day version is an easy 15-minute walk. Studying for an exam, the full version is two hours of practice questions. The bad day version is 15 minutes reviewing your notes. The rule is simple, on a bad day you don't skip, you switch. Because a streak isn't about doing everything every day, it's about never letting one bad day turn into a bad week. That's what Demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. If you want to try it out, I've put the link in the bio.",
+ "words": [
+  {
+   "w": "your",
+   "raw": "Your",
+   "s": 0.0,
+   "e": 0.3
+  },
+  {
+   "w": "plan",
+   "raw": "plan",
+   "s": 0.3,
+   "e": 0.64
+  },
+  {
+   "w": "only",
+   "raw": "only",
+   "s": 0.64,
+   "e": 0.98
+  },
+  {
+   "w": "works",
+   "raw": "works",
+   "s": 0.98,
+   "e": 1.28
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 1.28,
+   "e": 1.5
+  },
+  {
+   "w": "good",
+   "raw": "good",
+   "s": 1.5,
+   "e": 1.68
+  },
+  {
+   "w": "days",
+   "raw": "days.",
+   "s": 1.68,
+   "e": 2.0
+  },
+  {
+   "w": "most",
+   "raw": "Most",
+   "s": 2.6,
+   "e": 2.72
+  },
+  {
+   "w": "plans",
+   "raw": "plans",
+   "s": 2.72,
+   "e": 3.0
+  },
+  {
+   "w": "assume",
+   "raw": "assume",
+   "s": 3.0,
+   "e": 3.3
+  },
+  {
+   "w": "youll",
+   "raw": "you'll",
+   "s": 3.3,
+   "e": 3.5
+  },
+  {
+   "w": "have",
+   "raw": "have",
+   "s": 3.5,
+   "e": 3.62
+  },
+  {
+   "w": "energy",
+   "raw": "energy,",
+   "s": 3.62,
+   "e": 4.0
+  },
+  {
+   "w": "time",
+   "raw": "time,",
+   "s": 4.16,
+   "e": 4.4
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 4.54,
+   "e": 4.64
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 4.64,
+   "e": 4.74
+  },
+  {
+   "w": "good",
+   "raw": "good",
+   "s": 4.74,
+   "e": 4.88
+  },
+  {
+   "w": "mood",
+   "raw": "mood",
+   "s": 4.88,
+   "e": 5.12
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 5.12,
+   "e": 5.46
+  },
+  {
+   "w": "single",
+   "raw": "single",
+   "s": 5.46,
+   "e": 5.8
+  },
+  {
+   "w": "day",
+   "raw": "day.",
+   "s": 5.8,
+   "e": 6.1
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 6.6,
+   "e": 6.82
+  },
+  {
+   "w": "when",
+   "raw": "when",
+   "s": 6.82,
+   "e": 6.98
+  },
+  {
+   "w": "bad",
+   "raw": "bad",
+   "s": 6.98,
+   "e": 7.24
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 7.24,
+   "e": 7.42
+  },
+  {
+   "w": "comes",
+   "raw": "comes,",
+   "s": 7.42,
+   "e": 7.74
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 7.82,
+   "e": 7.98
+  },
+  {
+   "w": "skip",
+   "raw": "skip,",
+   "s": 7.98,
+   "e": 8.18
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 8.42,
+   "e": 8.56
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 8.56,
+   "e": 8.64
+  },
+  {
+   "w": "whole",
+   "raw": "whole",
+   "s": 8.64,
+   "e": 8.82
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 8.82,
+   "e": 9.02
+  },
+  {
+   "w": "quietly",
+   "raw": "quietly",
+   "s": 9.02,
+   "e": 9.42
+  },
+  {
+   "w": "falls",
+   "raw": "falls",
+   "s": 9.42,
+   "e": 9.74
+  },
+  {
+   "w": "apart",
+   "raw": "apart.",
+   "s": 9.74,
+   "e": 10.16
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 10.6,
+   "e": 10.76
+  },
+  {
+   "w": "plan",
+   "raw": "plan",
+   "s": 10.76,
+   "e": 11.02
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 11.02,
+   "e": 11.18
+  },
+  {
+   "w": "bad",
+   "raw": "bad",
+   "s": 11.18,
+   "e": 11.4
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 11.4,
+   "e": 11.6
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 11.6,
+   "e": 11.72
+  },
+  {
+   "w": "advance",
+   "raw": "advance.",
+   "s": 11.72,
+   "e": 12.1
+  },
+  {
+   "w": "give",
+   "raw": "Give",
+   "s": 12.7,
+   "e": 12.82
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 12.82,
+   "e": 13.12
+  },
+  {
+   "w": "habit",
+   "raw": "habit",
+   "s": 13.12,
+   "e": 13.38
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 13.38,
+   "e": 13.68
+  },
+  {
+   "w": "versions",
+   "raw": "versions",
+   "s": 13.68,
+   "e": 14.06
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 14.06,
+   "e": 14.32
+  },
+  {
+   "w": "full",
+   "raw": "full",
+   "s": 14.32,
+   "e": 14.52
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 14.52,
+   "e": 14.72
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 14.72,
+   "e": 14.88
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 14.88,
+   "e": 14.98
+  },
+  {
+   "w": "smaller",
+   "raw": "smaller",
+   "s": 14.98,
+   "e": 15.28
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 15.28,
+   "e": 15.46
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 15.46,
+   "e": 15.62
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 15.62,
+   "e": 15.74
+  },
+  {
+   "w": "days",
+   "raw": "days",
+   "s": 15.74,
+   "e": 15.96
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 15.96,
+   "e": 16.22
+  },
+  {
+   "w": "go",
+   "raw": "go",
+   "s": 16.22,
+   "e": 16.4
+  },
+  {
+   "w": "wrong",
+   "raw": "wrong.",
+   "s": 16.4,
+   "e": 16.7
+  },
+  {
+   "w": "training",
+   "raw": "Training",
+   "s": 17.08,
+   "e": 17.38
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 17.38,
+   "e": 17.64
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 17.64,
+   "e": 17.76
+  },
+  {
+   "w": "5k",
+   "raw": "5K,",
+   "s": 17.76,
+   "e": 18.22
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 18.4,
+   "e": 18.52
+  },
+  {
+   "w": "full",
+   "raw": "full",
+   "s": 18.52,
+   "e": 18.72
+  },
+  {
+   "w": "version",
+   "raw": "version",
+   "s": 18.72,
+   "e": 19.04
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 19.04,
+   "e": 19.22
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 19.22,
+   "e": 19.4
+  },
+  {
+   "w": "30",
+   "raw": "30",
+   "s": 19.4,
+   "e": 19.68
+  },
+  {
+   "w": "minute",
+   "raw": "-minute",
+   "s": 19.68,
+   "e": 19.86
+  },
+  {
+   "w": "run",
+   "raw": "run.",
+   "s": 19.86,
+   "e": 20.16
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 20.52,
+   "e": 20.64
+  },
+  {
+   "w": "bad",
+   "raw": "bad",
+   "s": 20.64,
+   "e": 20.86
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 20.86,
+   "e": 21.06
+  },
+  {
+   "w": "version",
+   "raw": "version",
+   "s": 21.06,
+   "e": 21.4
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 21.4,
+   "e": 21.62
+  },
+  {
+   "w": "an",
+   "raw": "an",
+   "s": 21.62,
+   "e": 21.74
+  },
+  {
+   "w": "easy",
+   "raw": "easy",
+   "s": 21.74,
+   "e": 22.02
+  },
+  {
+   "w": "15",
+   "raw": "15",
+   "s": 22.02,
+   "e": 22.38
+  },
+  {
+   "w": "minute",
+   "raw": "-minute",
+   "s": 22.38,
+   "e": 22.56
+  },
+  {
+   "w": "walk",
+   "raw": "walk.",
+   "s": 22.56,
+   "e": 22.9
+  },
+  {
+   "w": "studying",
+   "raw": "Studying",
+   "s": 23.42,
+   "e": 23.7
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 23.7,
+   "e": 23.92
+  },
+  {
+   "w": "an",
+   "raw": "an",
+   "s": 23.92,
+   "e": 24.04
+  },
+  {
+   "w": "exam",
+   "raw": "exam,",
+   "s": 24.04,
+   "e": 24.36
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 24.54,
+   "e": 24.66
+  },
+  {
+   "w": "full",
+   "raw": "full",
+   "s": 24.66,
+   "e": 24.88
+  },
+  {
+   "w": "version",
+   "raw": "version",
+   "s": 24.88,
+   "e": 25.2
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 25.2,
+   "e": 25.4
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 25.4,
+   "e": 25.64
+  },
+  {
+   "w": "hours",
+   "raw": "hours",
+   "s": 25.64,
+   "e": 25.96
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 25.96,
+   "e": 26.18
+  },
+  {
+   "w": "practice",
+   "raw": "practice",
+   "s": 26.18,
+   "e": 26.5
+  },
+  {
+   "w": "questions",
+   "raw": "questions.",
+   "s": 26.5,
+   "e": 27.02
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 27.6,
+   "e": 27.68
+  },
+  {
+   "w": "bad",
+   "raw": "bad",
+   "s": 27.68,
+   "e": 27.88
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 27.88,
+   "e": 28.08
+  },
+  {
+   "w": "version",
+   "raw": "version",
+   "s": 28.08,
+   "e": 28.34
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 28.34,
+   "e": 28.64
+  },
+  {
+   "w": "15",
+   "raw": "15",
+   "s": 28.64,
+   "e": 28.96
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 28.96,
+   "e": 29.2
+  },
+  {
+   "w": "reviewing",
+   "raw": "reviewing",
+   "s": 29.2,
+   "e": 29.6
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 29.6,
+   "e": 29.84
+  },
+  {
+   "w": "notes",
+   "raw": "notes.",
+   "s": 29.84,
+   "e": 30.1
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 30.66,
+   "e": 30.68
+  },
+  {
+   "w": "rule",
+   "raw": "rule",
+   "s": 30.68,
+   "e": 30.86
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 30.86,
+   "e": 31.08
+  },
+  {
+   "w": "simple",
+   "raw": "simple,",
+   "s": 31.08,
+   "e": 31.38
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 31.58,
+   "e": 31.66
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 31.66,
+   "e": 31.78
+  },
+  {
+   "w": "bad",
+   "raw": "bad",
+   "s": 31.78,
+   "e": 31.96
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 31.96,
+   "e": 32.14
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 32.14,
+   "e": 32.3
+  },
+  {
+   "w": "dont",
+   "raw": "don't",
+   "s": 32.3,
+   "e": 32.5
+  },
+  {
+   "w": "skip",
+   "raw": "skip,",
+   "s": 32.5,
+   "e": 32.68
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 32.86,
+   "e": 32.9
+  },
+  {
+   "w": "switch",
+   "raw": "switch.",
+   "s": 32.9,
+   "e": 33.18
+  },
+  {
+   "w": "because",
+   "raw": "Because",
+   "s": 33.8,
+   "e": 34.02
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 34.02,
+   "e": 34.16
+  },
+  {
+   "w": "streak",
+   "raw": "streak",
+   "s": 34.16,
+   "e": 34.46
+  },
+  {
+   "w": "isnt",
+   "raw": "isn't",
+   "s": 34.46,
+   "e": 34.82
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 34.82,
+   "e": 35.06
+  },
+  {
+   "w": "doing",
+   "raw": "doing",
+   "s": 35.06,
+   "e": 35.28
+  },
+  {
+   "w": "everything",
+   "raw": "everything",
+   "s": 35.28,
+   "e": 35.84
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 35.84,
+   "e": 36.18
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 36.18,
+   "e": 36.48
+  },
+  {
+   "w": "its",
+   "raw": "it's",
+   "s": 36.96,
+   "e": 37.16
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 37.16,
+   "e": 37.34
+  },
+  {
+   "w": "never",
+   "raw": "never",
+   "s": 37.34,
+   "e": 37.58
+  },
+  {
+   "w": "letting",
+   "raw": "letting",
+   "s": 37.58,
+   "e": 37.84
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 37.84,
+   "e": 38.14
+  },
+  {
+   "w": "bad",
+   "raw": "bad",
+   "s": 38.14,
+   "e": 38.42
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 38.42,
+   "e": 38.66
+  },
+  {
+   "w": "turn",
+   "raw": "turn",
+   "s": 38.66,
+   "e": 38.94
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 38.94,
+   "e": 39.18
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 39.18,
+   "e": 39.32
+  },
+  {
+   "w": "bad",
+   "raw": "bad",
+   "s": 39.32,
+   "e": 39.5
+  },
+  {
+   "w": "week",
+   "raw": "week.",
+   "s": 39.5,
+   "e": 39.8
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 40.34,
+   "e": 40.68
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 40.68,
+   "e": 40.84
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 40.84,
+   "e": 41.2
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 41.2,
+   "e": 41.38
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 41.38,
+   "e": 41.64
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 42.02,
+   "e": 42.16
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 42.16,
+   "e": 42.54
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 42.54,
+   "e": 42.76
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 42.76,
+   "e": 42.98
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 42.98,
+   "e": 43.32
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 43.32,
+   "e": 43.56
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 43.56,
+   "e": 43.7
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 43.7,
+   "e": 43.88
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 43.88,
+   "e": 44.08
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 44.08,
+   "e": 44.22
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 44.22,
+   "e": 44.52
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 44.52,
+   "e": 44.96
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 44.96,
+   "e": 45.14
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 45.14,
+   "e": 45.28
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 45.28,
+   "e": 45.48
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 45.48,
+   "e": 45.7
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 45.7,
+   "e": 46.02
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 46.02,
+   "e": 46.32
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 46.32,
+   "e": 46.54
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 46.54,
+   "e": 46.68
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 46.68,
+   "e": 47.0
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 47.0,
+   "e": 47.28
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 47.68,
+   "e": 47.84
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 47.84,
+   "e": 47.96
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 47.96,
+   "e": 48.12
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 48.12,
+   "e": 48.24
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 48.24,
+   "e": 48.48
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 48.48,
+   "e": 48.66
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 48.66,
+   "e": 48.92
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 49.14,
+   "e": 49.24
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 49.24,
+   "e": 49.38
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 49.38,
+   "e": 49.52
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 49.52,
+   "e": 49.7
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 49.7,
+   "e": 49.86
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 49.86,
+   "e": 49.96
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 49.96,
+   "e": 50.24
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 5.12,
+   "text": "Your plan only works on good days. Most plans assume you'll have energy, time, and a good mood"
+  },
+  {
+   "s": 5.12,
+   "e": 10.16,
+   "text": "every single day. Then when bad day comes, you skip, and the whole thing quietly falls apart."
+  },
+  {
+   "s": 10.6,
+   "e": 15.62,
+   "text": "So plan the bad day in advance. Give every habit two versions the full one and a smaller one for"
+  },
+  {
+   "s": 15.62,
+   "e": 21.06,
+   "text": "the days that go wrong. Training for a 5K, the full version is your 30-minute run. The bad day"
+  },
+  {
+   "s": 21.06,
+   "e": 26.5,
+   "text": "version is an easy 15-minute walk. Studying for an exam, the full version is two hours of practice"
+  },
+  {
+   "s": 26.5,
+   "e": 31.38,
+   "text": "questions. The bad day version is 15 minutes reviewing your notes. The rule is simple,"
+  },
+  {
+   "s": 31.58,
+   "e": 36.48,
+   "text": "on a bad day you don't skip, you switch. Because a streak isn't about doing everything every day,"
+  },
+  {
+   "s": 36.96,
+   "e": 42.54,
+   "text": "it's about never letting one bad day turn into a bad week. That's what Demure is for. You archive"
+  },
+  {
+   "s": 42.54,
+   "e": 47.0,
+   "text": "your dream today so you can see it tomorrow and break it down into small steps you can actually"
+  },
+  {
+   "s": 47.0,
+   "e": 50.24,
+   "text": "do. If you want to try it out, I've put the link in the bio."
+  }
+ ],
+ "wps": 3.5
+}

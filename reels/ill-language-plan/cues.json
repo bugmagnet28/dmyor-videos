@@ -1,0 +1,1068 @@
+{
+ "audio": "audio.mp3",
+ "duration": 51.15,
+ "text": "Want to actually learn a language this year? Here's the whole plan start to finish. Start with a vision, something you can picture, like holding a 10-minute conversation in Spanish by June. Then break it into three milestones, your first 500 words finishing the A1 course and your first real conversation with a tutor. Now take the first milestone and make it daily, 500 words is 20 new words a day for 25 days. So today isn't learn Spanish, today is 20 flashcards about 15 minutes. Do that and every day you can see the plan move, words learned the milestone filling up and the vision getting closer. Big goals don't need more motivation, they need a path that ends with something you can do today. That's what demure is for, you archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. If you want to try it out I've put the link in the bio.",
+ "words": [
+  {
+   "w": "want",
+   "raw": "Want",
+   "s": 0.0,
+   "e": 0.3
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 0.3,
+   "e": 0.44
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 0.44,
+   "e": 0.78
+  },
+  {
+   "w": "learn",
+   "raw": "learn",
+   "s": 0.78,
+   "e": 1.0
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 1.0,
+   "e": 1.14
+  },
+  {
+   "w": "language",
+   "raw": "language",
+   "s": 1.14,
+   "e": 1.32
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 1.32,
+   "e": 1.64
+  },
+  {
+   "w": "year",
+   "raw": "year?",
+   "s": 1.64,
+   "e": 1.92
+  },
+  {
+   "w": "heres",
+   "raw": "Here's",
+   "s": 2.22,
+   "e": 2.4
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 2.4,
+   "e": 2.52
+  },
+  {
+   "w": "whole",
+   "raw": "whole",
+   "s": 2.52,
+   "e": 2.7
+  },
+  {
+   "w": "plan",
+   "raw": "plan",
+   "s": 2.7,
+   "e": 3.08
+  },
+  {
+   "w": "start",
+   "raw": "start",
+   "s": 3.08,
+   "e": 3.38
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 3.38,
+   "e": 3.56
+  },
+  {
+   "w": "finish",
+   "raw": "finish.",
+   "s": 3.56,
+   "e": 3.88
+  },
+  {
+   "w": "start",
+   "raw": "Start",
+   "s": 4.3,
+   "e": 4.56
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 4.56,
+   "e": 4.72
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 4.72,
+   "e": 4.86
+  },
+  {
+   "w": "vision",
+   "raw": "vision,",
+   "s": 4.86,
+   "e": 5.12
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 5.48,
+   "e": 5.64
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 5.64,
+   "e": 5.92
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 5.92,
+   "e": 6.1
+  },
+  {
+   "w": "picture",
+   "raw": "picture,",
+   "s": 6.1,
+   "e": 6.46
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 6.7,
+   "e": 6.82
+  },
+  {
+   "w": "holding",
+   "raw": "holding",
+   "s": 6.82,
+   "e": 7.06
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 7.06,
+   "e": 7.28
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 7.28,
+   "e": 7.46
+  },
+  {
+   "w": "minute",
+   "raw": "-minute",
+   "s": 7.46,
+   "e": 7.6
+  },
+  {
+   "w": "conversation",
+   "raw": "conversation",
+   "s": 7.6,
+   "e": 8.12
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 8.12,
+   "e": 8.48
+  },
+  {
+   "w": "spanish",
+   "raw": "Spanish",
+   "s": 8.48,
+   "e": 8.8
+  },
+  {
+   "w": "by",
+   "raw": "by",
+   "s": 8.8,
+   "e": 9.1
+  },
+  {
+   "w": "june",
+   "raw": "June.",
+   "s": 9.1,
+   "e": 9.42
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 9.82,
+   "e": 10.0
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 10.0,
+   "e": 10.2
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 10.2,
+   "e": 10.34
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 10.34,
+   "e": 10.52
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 10.52,
+   "e": 10.78
+  },
+  {
+   "w": "milestones",
+   "raw": "milestones,",
+   "s": 10.78,
+   "e": 11.3
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 11.82,
+   "e": 11.92
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 11.92,
+   "e": 12.18
+  },
+  {
+   "w": "500",
+   "raw": "500",
+   "s": 12.18,
+   "e": 12.62
+  },
+  {
+   "w": "words",
+   "raw": "words",
+   "s": 12.62,
+   "e": 13.06
+  },
+  {
+   "w": "finishing",
+   "raw": "finishing",
+   "s": 13.06,
+   "e": 13.46
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 13.46,
+   "e": 13.72
+  },
+  {
+   "w": "a1",
+   "raw": "A1",
+   "s": 13.72,
+   "e": 14.1
+  },
+  {
+   "w": "course",
+   "raw": "course",
+   "s": 14.1,
+   "e": 14.42
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 14.42,
+   "e": 14.82
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 14.82,
+   "e": 14.94
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 14.94,
+   "e": 15.22
+  },
+  {
+   "w": "real",
+   "raw": "real",
+   "s": 15.22,
+   "e": 15.48
+  },
+  {
+   "w": "conversation",
+   "raw": "conversation",
+   "s": 15.48,
+   "e": 16.06
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 16.06,
+   "e": 16.36
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 16.36,
+   "e": 16.54
+  },
+  {
+   "w": "tutor",
+   "raw": "tutor.",
+   "s": 16.54,
+   "e": 16.72
+  },
+  {
+   "w": "now",
+   "raw": "Now",
+   "s": 17.22,
+   "e": 17.42
+  },
+  {
+   "w": "take",
+   "raw": "take",
+   "s": 17.42,
+   "e": 17.62
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 17.62,
+   "e": 17.8
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 17.8,
+   "e": 18.04
+  },
+  {
+   "w": "milestone",
+   "raw": "milestone",
+   "s": 18.04,
+   "e": 18.56
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 18.56,
+   "e": 18.82
+  },
+  {
+   "w": "make",
+   "raw": "make",
+   "s": 18.82,
+   "e": 18.98
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 18.98,
+   "e": 19.12
+  },
+  {
+   "w": "daily",
+   "raw": "daily,",
+   "s": 19.12,
+   "e": 19.38
+  },
+  {
+   "w": "500",
+   "raw": "500",
+   "s": 20.02,
+   "e": 20.36
+  },
+  {
+   "w": "words",
+   "raw": "words",
+   "s": 20.36,
+   "e": 20.72
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 20.72,
+   "e": 20.92
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "s": 20.92,
+   "e": 21.16
+  },
+  {
+   "w": "new",
+   "raw": "new",
+   "s": 21.16,
+   "e": 21.38
+  },
+  {
+   "w": "words",
+   "raw": "words",
+   "s": 21.38,
+   "e": 21.6
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 21.6,
+   "e": 21.78
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 21.78,
+   "e": 21.96
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 21.96,
+   "e": 22.18
+  },
+  {
+   "w": "25",
+   "raw": "25",
+   "s": 22.18,
+   "e": 22.68
+  },
+  {
+   "w": "days",
+   "raw": "days.",
+   "s": 22.68,
+   "e": 23.08
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 23.56,
+   "e": 23.76
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 23.76,
+   "e": 24.02
+  },
+  {
+   "w": "isnt",
+   "raw": "isn't",
+   "s": 24.02,
+   "e": 24.4
+  },
+  {
+   "w": "learn",
+   "raw": "learn",
+   "s": 24.4,
+   "e": 24.64
+  },
+  {
+   "w": "spanish",
+   "raw": "Spanish,",
+   "s": 24.64,
+   "e": 25.18
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 25.66,
+   "e": 25.8
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 25.8,
+   "e": 26.02
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "s": 26.02,
+   "e": 26.34
+  },
+  {
+   "w": "flashcards",
+   "raw": "flashcards",
+   "s": 26.34,
+   "e": 26.94
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 26.94,
+   "e": 27.22
+  },
+  {
+   "w": "15",
+   "raw": "15",
+   "s": 27.22,
+   "e": 27.56
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes.",
+   "s": 27.56,
+   "e": 27.9
+  },
+  {
+   "w": "do",
+   "raw": "Do",
+   "s": 28.34,
+   "e": 28.44
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 28.44,
+   "e": 28.64
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 28.64,
+   "e": 28.8
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 28.8,
+   "e": 29.1
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 29.1,
+   "e": 29.28
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 29.28,
+   "e": 29.42
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 29.42,
+   "e": 29.54
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 29.54,
+   "e": 29.7
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 29.7,
+   "e": 29.82
+  },
+  {
+   "w": "plan",
+   "raw": "plan",
+   "s": 29.82,
+   "e": 30.04
+  },
+  {
+   "w": "move",
+   "raw": "move,",
+   "s": 30.04,
+   "e": 30.34
+  },
+  {
+   "w": "words",
+   "raw": "words",
+   "s": 30.96,
+   "e": 31.12
+  },
+  {
+   "w": "learned",
+   "raw": "learned",
+   "s": 31.12,
+   "e": 31.5
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 31.5,
+   "e": 31.7
+  },
+  {
+   "w": "milestone",
+   "raw": "milestone",
+   "s": 31.7,
+   "e": 32.14
+  },
+  {
+   "w": "filling",
+   "raw": "filling",
+   "s": 32.14,
+   "e": 32.5
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 32.5,
+   "e": 32.8
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 32.8,
+   "e": 32.98
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 32.98,
+   "e": 33.08
+  },
+  {
+   "w": "vision",
+   "raw": "vision",
+   "s": 33.08,
+   "e": 33.3
+  },
+  {
+   "w": "getting",
+   "raw": "getting",
+   "s": 33.3,
+   "e": 33.54
+  },
+  {
+   "w": "closer",
+   "raw": "closer.",
+   "s": 33.54,
+   "e": 34.0
+  },
+  {
+   "w": "big",
+   "raw": "Big",
+   "s": 34.62,
+   "e": 34.72
+  },
+  {
+   "w": "goals",
+   "raw": "goals",
+   "s": 34.72,
+   "e": 35.04
+  },
+  {
+   "w": "dont",
+   "raw": "don't",
+   "s": 35.04,
+   "e": 35.36
+  },
+  {
+   "w": "need",
+   "raw": "need",
+   "s": 35.36,
+   "e": 35.56
+  },
+  {
+   "w": "more",
+   "raw": "more",
+   "s": 35.56,
+   "e": 35.84
+  },
+  {
+   "w": "motivation",
+   "raw": "motivation,",
+   "s": 35.84,
+   "e": 36.44
+  },
+  {
+   "w": "they",
+   "raw": "they",
+   "s": 36.92,
+   "e": 37.02
+  },
+  {
+   "w": "need",
+   "raw": "need",
+   "s": 37.02,
+   "e": 37.18
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 37.18,
+   "e": 37.32
+  },
+  {
+   "w": "path",
+   "raw": "path",
+   "s": 37.32,
+   "e": 37.58
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 37.58,
+   "e": 37.82
+  },
+  {
+   "w": "ends",
+   "raw": "ends",
+   "s": 37.82,
+   "e": 38.1
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 38.1,
+   "e": 38.34
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 38.34,
+   "e": 38.54
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 38.54,
+   "e": 38.8
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 38.8,
+   "e": 38.96
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 38.96,
+   "e": 39.12
+  },
+  {
+   "w": "today",
+   "raw": "today.",
+   "s": 39.12,
+   "e": 39.44
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 39.96,
+   "e": 40.34
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 40.34,
+   "e": 40.5
+  },
+  {
+   "w": "demure",
+   "raw": "demure",
+   "s": 40.5,
+   "e": 40.86
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 40.86,
+   "e": 41.04
+  },
+  {
+   "w": "for",
+   "raw": "for,",
+   "s": 41.04,
+   "e": 41.32
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 41.64,
+   "e": 41.82
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 41.82,
+   "e": 42.18
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 42.18,
+   "e": 42.42
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 42.42,
+   "e": 42.64
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 42.64,
+   "e": 42.98
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 42.98,
+   "e": 43.22
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 43.22,
+   "e": 43.36
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 43.36,
+   "e": 43.52
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 43.52,
+   "e": 43.74
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 43.74,
+   "e": 43.86
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 43.86,
+   "e": 44.16
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 44.16,
+   "e": 44.62
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 44.62,
+   "e": 44.78
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 44.78,
+   "e": 44.94
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 44.94,
+   "e": 45.16
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 45.16,
+   "e": 45.36
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 45.36,
+   "e": 45.68
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 45.68,
+   "e": 45.98
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 45.98,
+   "e": 46.2
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 46.2,
+   "e": 46.32
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 46.32,
+   "e": 46.64
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 46.64,
+   "e": 46.98
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 46.98,
+   "e": 47.48
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 47.48,
+   "e": 47.6
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 47.6,
+   "e": 47.78
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 47.78,
+   "e": 47.9
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 47.9,
+   "e": 48.12
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 48.12,
+   "e": 48.3
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 48.3,
+   "e": 48.58
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 48.58,
+   "e": 48.9
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 48.9,
+   "e": 49.02
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 49.02,
+   "e": 49.18
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 49.18,
+   "e": 49.34
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 49.34,
+   "e": 49.52
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 49.52,
+   "e": 49.62
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 49.62,
+   "e": 49.92
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 3.88,
+   "text": "Want to actually learn a language this year? Here's the whole plan start to finish."
+  },
+  {
+   "s": 4.3,
+   "e": 8.8,
+   "text": "Start with a vision, something you can picture, like holding a 10-minute conversation in Spanish"
+  },
+  {
+   "s": 8.8,
+   "e": 14.42,
+   "text": "by June. Then break it into three milestones, your first 500 words finishing the A1 course"
+  },
+  {
+   "s": 14.42,
+   "e": 19.38,
+   "text": "and your first real conversation with a tutor. Now take the first milestone and make it daily,"
+  },
+  {
+   "s": 20.02,
+   "e": 26.94,
+   "text": "500 words is 20 new words a day for 25 days. So today isn't learn Spanish, today is 20 flashcards"
+  },
+  {
+   "s": 26.94,
+   "e": 32.14,
+   "text": "about 15 minutes. Do that and every day you can see the plan move, words learned the milestone"
+  },
+  {
+   "s": 32.14,
+   "e": 37.32,
+   "text": "filling up and the vision getting closer. Big goals don't need more motivation, they need a"
+  },
+  {
+   "s": 37.32,
+   "e": 42.64,
+   "text": "path that ends with something you can do today. That's what demure is for, you archive your dream"
+  },
+  {
+   "s": 42.64,
+   "e": 46.98,
+   "text": "today so you can see it tomorrow and break it down into small steps you can actually do."
+  },
+  {
+   "s": 46.98,
+   "e": 49.92,
+   "text": "If you want to try it out I've put the link in the bio."
+  }
+ ],
+ "wps": 3.28
+}

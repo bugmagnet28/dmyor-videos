@@ -1,0 +1,144 @@
+{
+ "total": 51.44,
+ "brandT": 47.68,
+ "scenes": [
+  {
+   "type": "weather-week",
+   "params": {},
+   "head": "Your plan only works<br>on <b>good days</b>.",
+   "t0": 0.0,
+   "t1": 2.55
+  },
+  {
+   "type": "energy-dip",
+   "params": {
+    "cue": [
+     "plans",
+     "bad",
+     "falls"
+    ],
+    "at": [
+     0.17,
+     4.43,
+     6.87
+    ]
+   },
+   "head": "One bad day,<br>and it <b>falls apart</b>.",
+   "t0": 2.55,
+   "t1": 10.55
+  },
+  {
+   "type": "habit-split",
+   "params": {
+    "cue": [
+     "habit",
+     "full",
+     "smaller"
+    ],
+    "at": [
+     2.57,
+     3.77,
+     4.43
+    ]
+   },
+   "head": "Plan the <b>bad day</b><br>in advance.",
+   "t0": 10.55,
+   "t1": 17.03
+  },
+  {
+   "type": "two-versions",
+   "params": {
+    "title": "Training for a 5K",
+    "full": "30 min run",
+    "small": "15 min easy walk",
+    "cue": [
+     "training",
+     "full",
+     "bad",
+     "walk"
+    ],
+    "at": [
+     0.05,
+     1.49,
+     3.61,
+     5.53
+    ]
+   },
+   "head": "Training for a <b>5K</b>?",
+   "t0": 17.03,
+   "t1": 23.37
+  },
+  {
+   "type": "two-versions",
+   "params": {
+    "title": "Studying for an exam",
+    "full": "2 hours of practice questions",
+    "small": "15 min reviewing notes",
+    "cue": [
+     "studying",
+     "full",
+     "bad",
+     "notes"
+    ],
+    "at": [
+     0.05,
+     1.29,
+     4.31,
+     6.47
+    ]
+   },
+   "head": "Studying for an <b>exam</b>?",
+   "t0": 23.37,
+   "t1": 30.61
+  },
+  {
+   "type": "chain-switch",
+   "params": {
+    "cue": [
+     "skip",
+     "switch"
+    ],
+    "at": [
+     1.89,
+     2.29
+    ]
+   },
+   "head": "Don't skip. <b>Switch</b>.",
+   "t0": 30.61,
+   "t1": 33.75
+  },
+  {
+   "type": "skip-vs-switch",
+   "params": {
+    "cue": [
+     "streak",
+     "never"
+    ],
+    "at": [
+     0.41,
+     3.59
+    ]
+   },
+   "head": "Don't let a bad day<br>become a <b>bad week</b>.",
+   "t0": 33.75,
+   "t1": 40.29
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Run my first 5K",
+    "date": "Open it again: Mar 2027",
+    "steps": [
+     "Run 3 times a week",
+     "Bad day: 15 min walk",
+     "Race day in March"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 40.29,
+   "t1": 47.68
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}
