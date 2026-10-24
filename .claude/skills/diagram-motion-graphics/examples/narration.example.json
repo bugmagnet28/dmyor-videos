@@ -2,8 +2,8 @@
  "_comment": "Input for diagram-motion-graphics. Copy to reels/<slug>/narration.json and edit. See SKILL.md.",
  "voice": "am_eric",
  "speed": 1.0,
- "gap_min": 0.3,
- "gap_max": 0.55,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
  "tail": 1.2,
  "content": {
   "hook": [

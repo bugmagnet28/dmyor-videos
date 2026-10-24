@@ -37,7 +37,7 @@ def main():
     say_text = re.sub(r"\bDmyor\b", "Deem-yor", " || ".join(thoughts))
     run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(SKILL, "scripts/say.py"), say_text, os.path.join(d, "audio.mp3"),
         "--voice", n.get("voice", "am_eric"), "--speed", str(n.get("speed", 1.0)),
-        "--gap-min", str(n.get("gap_min", 0.30)), "--gap-max", str(n.get("gap_max", 0.55)), *(["--stages"] if n.get("stages", True) else []))
+        "--gap-min", str(n.get("gap_min", 0.18)), "--gap-max", str(n.get("gap_max", 0.32)), *(["--stages"] if n.get("stages", True) else []))
     run("python3", os.path.join(ROOT, ".claude/skills/dmyor-reel/scripts/align.py"), d)
     cues = json.load(open(os.path.join(d, "cues.json"))); W = cues["words"]
     words, owner = [], []

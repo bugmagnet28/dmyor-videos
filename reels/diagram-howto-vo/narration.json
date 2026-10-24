@@ -33,6 +33,6 @@
   "brand": "That's"
  },
  "music": false,
- "gap_min": 0.3,
- "gap_max": 0.55
+ "gap_min": 0.18,
+ "gap_max": 0.32
 }

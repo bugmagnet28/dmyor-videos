@@ -1,7 +1,9 @@
 ---
 name: diagram-motion-graphics
-description: Motion-graphics style. Crisp dark-mode diagram animation (nodes, straight right-angle connectors, progress lighting up) drawn in sync with a human-paced narration (free local Kokoro voice am_eric), subtitles, no music, dmyor brand card. Current layout - the goal tree (vision -> 3 milestones -> 3 actions -> one TODAY action ticked -> progress back to the vision); 20-28s, 1080x1920. Use for any reel that explains a structure or process (how a goal becomes a plan, how the pieces of dmyor fit). New layouts (timeline, flow, before/after map) are added here, not as new skills.
+description: Motion-graphics style. Crisp dark-mode diagram animation (nodes, straight right-angle connectors, progress lighting up) drawn in sync with a human-paced narration (free local Kokoro voice am_eric), subtitles, no music, dmyor brand card. Current layout - the goal tree (vision -> 3 milestones -> 3 actions -> one TODAY action ticked -> progress back to the vision); 1080x1920, no duration cap. Use for any reel that explains a structure or process (how a goal becomes a plan, how the pieces of dmyor fit). New layouts (timeline, flow, before/after map) are added here, not as new skills.
 ---
+
+> **Owner rules 2026-10-24 override anything below:** no duration cap (explain completely, typically 35-55 s), logical credible examples, brand close with the value sentence, classy motion (no bounce/pop), Graphite & Sage palette (accent sage `#9DB8A3`, no orange), short gaps. Full text: `studio/quality-bar.md`.
 
 # Diagram motion graphics (layout: goal tree)
 
@@ -9,16 +11,16 @@ A production style, end to end: script -> voice -> word timings -> diagram anima
 
 **What the viewer sees (in order)**
 1. Frame 0: a bold hook on a near-black canvas with a faint dot grid (finished on frame 0, never mid-animation).
-2. VISION node (orange outline) appears on the word that names it.
+2. VISION node (sage outline) appears on the word that names it.
 3. A connector drops from the vision; three MILESTONE nodes appear one by one, each on its spoken phrase, joined by straight right-angle lines (org-chart / planning-diagram style).
 4. From the centre milestone, three ACTION nodes (with checkboxes) appear on their phrases.
-5. Focus: everything dims except one action, which grows slightly and gets an orange TODAY tag.
+5. Focus: everything dims except one action, which grows slightly and gets an sage TODAY tag.
 6. On "today"/"that's it" the checkbox ticks green.
-7. An orange line runs from that action up through its milestone to the vision; the milestone and vision progress bars fill (one small action moves the whole plan).
+7. A sage line runs from that action up through its milestone to the vision; the milestone and vision progress bars fill (one small action moves the whole plan).
 8. Brand card: `dmyor` wordmark, tagline, `@becauseidmyor` pill; narration ends "... Link's in the bio."
 Spoken phrases appear as subtitles at the top (the script's exact words), because most people watch muted.
 
-**Look (owner decisions, 2026-10-22)**: modern, crisp, "clarity". No scenery, no illustration, no fairy tale. Dark `#0B0C10` canvas, Inter Tight, white text, one accent orange `#FF7A1A`, green `#3DDC97` only for "done". Do not add music: the owner removed it.
+**Look (owner decisions, 2026-10-22)**: modern, crisp, "clarity". No scenery, no illustration, no fairy tale. Graphite & Sage: `#151719` canvas, Inter Tight, ink `#E9E7E2`, accent sage `#9DB8A3` (also "done"). Do not add music: the owner removed it.
 
 ## Requirements (one time)
 
@@ -64,7 +66,7 @@ The narration is FULLER than the on-screen text. Spoken language needs more word
 - **Never end on a clipped fragment.** Not "Link in bio." but "And if you want to try it out, I've put the link in the bio." Not "Today." alone at the very end; land the point, then close warmly ("That's exactly what Dmyor is built for.").
 - **Stages**: open with a short hook, explain, turn to the advice, land the point, close. Tag thoughts when needed: `[hook]`, `[turn]`, `[land]`, `[outro]` (untagged: first = hook, last two = outro, the one before = land). The voice (`say.py --stages`, on by default) changes pace, pitch and pauses per stage and ends with a natural fade.
 - **Screen stays short.** On-screen text/cards/subtitles keep the punchy version; the extra spoken words are not all shown.
-- Length: fuller narration runs ~20-30 s for a 6-8 thought script. Keep each thought one breath.
+- Length: as long as the explanation needs (typically 35-55 s), never padded. Keep each thought one breath.
 
 ## Writing the script (this is what makes it sound human)
 
@@ -72,8 +74,8 @@ The voice is generated per THOUGHT, so how you write is how it sounds.
 - Split the script into 6-8 thoughts with `||`. Each thought is spoken in one breath with natural intonation; pauses happen only between thoughts.
 - Write like talking: contractions, connectors ("so", "then", "now", "and then"), flowing lists ("like sending five proposals, posting one project, following up").
 - Avoid strings of one- or two-word sentences ("Post one project. Follow up. Today.") as separate thoughts: each restarts the intonation and sounds choppy. Keep short punches for the hook, the "today" beat and the ending.
-- 60-80 words -> 22-27 s. Over ~80 words the reel drags.
-- Always end with `|| That's Dmyor. || Link's in the bio.` (or `|| Dmyor turns your someday into a plan. || Link's in the bio.`).
+- No word cap: explain completely, no padding.
+- Always end with the value close (`studio/quality-bar.md` rule 3).
 - Never invent product features. The tree, milestones, actions, today list, habits/streaks and progress are real dmyor features.
 
 Template that works:
@@ -105,8 +107,8 @@ Rules:
 - If the build stops with "anchor not found", read the printed "whisper heard:" line and pick words from it.
 
 ## Check before showing Sanyam
-- Build output: 2.5-3.2 words/sec overall, 22-28 s total, every anchor found.
-- `whisper heard:` line ends with the brand + "Link's in the bio".
+- Build output: 2.5-3.2 words/sec overall, every anchor found.
+- `whisper heard:` line ends with the value close + "link in the bio".
 - Frames: `node shots.js reels/<slug>/reel.html /tmp/f 0 <milestones> <actions> <focus> <brand>` then look at them: frame 0 readable, nodes not clipped, subtitles 1-2 lines, TODAY tag on the right node.
 - Pauses: `ffmpeg -i reels/<slug>/audio.mp3 -af silencedetect=noise=-45dB:d=0.2 -f null - 2>&1 | grep silence_duration` -> one pause per `||`, varied 0.25-0.6 s.
 - He listens. Things he has rejected: background music, continuous run-on voice, a pause after every couple of words, fairy-tale scenery, "Dee-MY-er" pronunciation.

@@ -1,8 +1,8 @@
 {
  "voice": "am_eric",
  "speed": 1.0,
- "gap_min": 0.3,
- "gap_max": 0.55,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
  "tail": 1.2,
  "max_font": 150,
  "script": "*Monday* won't fix it. || You'll wait for Monday. Then the first. Then *January*. || ~Later~ never comes. You start *today*. || One small step, before you sleep. || Send this to someone still waiting for *Monday*. || That's Dmyor. || Link's in the bio.",

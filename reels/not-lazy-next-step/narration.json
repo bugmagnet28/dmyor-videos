@@ -1,14 +1,25 @@
 {
  "voice": "am_eric",
  "speed": 1.0,
- "gap_min": 0.3,
- "gap_max": 0.55,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
  "tail": 1.2,
  "content": {
-  "hook": ["Not lazy.", "You just don't know the next step."],
+  "hook": [
+   "Not lazy.",
+   "You just don't know the next step."
+  ],
   "vision": "Speak Spanish by next June",
-  "milestones": ["Learn 500 words", "Hold a real chat", "Watch a show, no subs"],
-  "actions": ["Learn 10 phrases", "Book a tutor call", "Record yourself"],
+  "milestones": [
+   "Learn 500 words",
+   "Hold a real chat",
+   "Watch a show, no subs"
+  ],
+  "actions": [
+   "Learn 10 phrases",
+   "Book a tutor call",
+   "Record yourself"
+  ],
   "actionParent": 1,
   "todayIdx": 0,
   "tagline": "Know your next step.\nEvery day.",
@@ -19,8 +30,16 @@
   "hookOut": "So write",
   "vision": "speak Spanish",
   "trunk": "next June",
-  "milestones": ["five hundred", "real conversation", "without subtitles"],
-  "actions": ["ten phrases", "tutor call", "recording yourself"],
+  "milestones": [
+   "five hundred",
+   "real conversation",
+   "without subtitles"
+  ],
+  "actions": [
+   "ten phrases",
+   "tutor call",
+   "recording yourself"
+  ],
   "focus": "Just one",
   "done": "today",
   "grow": "whole plan",

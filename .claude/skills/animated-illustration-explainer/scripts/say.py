@@ -27,7 +27,7 @@ from kokoro_onnx import Kokoro
 ap = argparse.ArgumentParser()
 ap.add_argument("text"); ap.add_argument("out")
 ap.add_argument("--voice", default="am_eric"); ap.add_argument("--speed", type=float, default=1.0)
-ap.add_argument("--gap-min", type=float, default=0.30); ap.add_argument("--gap-max", type=float, default=0.55)
+ap.add_argument("--gap-min", type=float, default=0.18); ap.add_argument("--gap-max", type=float, default=0.32)
 ap.add_argument("--clause-pause", type=float, default=0.10); ap.add_argument("--sentence-pause", type=float, default=0.25)
 ap.add_argument("--blend"); ap.add_argument("--vary", type=float, default=0.0); ap.add_argument("--land", type=float, default=1.0)
 ap.add_argument("--fx", action="store_true"); ap.add_argument("--breaths", action="store_true")
@@ -83,8 +83,8 @@ def breath(sr):
 # Stage-aware delivery: a thought can start with [hook] [body] [turn] [land] [outro]; untagged thoughts are
 # assigned automatically (first = hook, last two = outro, the one before = land, the rest = body).
 # speed multiplier, pitch shift (fraction), extra pause before, extra pause after
-STAGE = {"hook": (1.03, 0.015, 0.0, 0.10), "body": (1.0, 0.0, 0.0, 0.0), "turn": (0.97, -0.01, 0.15, 0.0),
-         "land": (0.93, -0.02, 0.25, 0.25), "outro": (0.94, -0.03, 0.20, 0.0)}
+STAGE = {"hook": (1.03, 0.015, 0.0, 0.04), "body": (1.0, 0.0, 0.0, 0.0), "turn": (0.98, -0.01, 0.06, 0.0),
+         "land": (0.95, -0.015, 0.10, 0.06), "outro": (0.96, -0.025, 0.06, 0.0)}   # owner 2026-10-24: fewer/shorter gaps
 
 
 def pitch(samples, sr, shift):

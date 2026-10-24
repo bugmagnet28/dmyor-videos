@@ -3,6 +3,8 @@ name: hybrid-graphics-plus-demo
 description: Hybrid production style - motion graphics plus REAL dmyor screen footage. Kinetic-type hook card, then the live dmyor.com app recorded in a phone frame (guest flow, no account) with callouts, tap rings and zooms placed on spoken words, then a motion-graphics feature panel (e.g. "Full features releasing soon"), a kinetic CTA card and the dmyor brand card. Human-paced narration (free local Kokoro voice am_eric), subtitles, no music. 25-35s, 1080x1920. Use when a reel should SHOW the real product: how a vision is created, the Intent Archive, any screen a visitor can reach.
 ---
 
+> **Owner rules 2026-10-24 override anything below:** no duration cap (explain completely, typically 35-55 s), logical credible examples, brand close with the value sentence, classy motion (no bounce/pop), Graphite & Sage palette (accent sage `#9DB8A3`, no orange), short gaps. Full text: `studio/quality-bar.md`.
+
 # Hybrid: motion graphics + real app demo
 
 **What the viewer sees**
@@ -10,7 +12,7 @@ description: Hybrid production style - motion graphics plus REAL dmyor screen fo
 2. A phone frame rises in; inside it the REAL dmyor.com screens play, timed to the narration (each footage moment is pinned to a spoken anchor). Orange callout labels overlap the phone edge ("1 to 5 years", "Your vision, your words"), a tap ring marks the button being pressed, the screen zooms into the field being typed in. Subtitles of the narration sit at the top.
 3. A second clip (e.g. the Intent Archive page scrolling).
 4. Phone exits; a motion-graphics feature panel: headline ("Full features releasing soon"), a pill, a lock that opens on "releasing soon", and feature chips (Milestones · Actions · Daily reps · Your story) that light up.
-5. CTA card ("So write *yours* today."), then the brand card (`dmyor`, tagline, `@becauseidmyor`) while the voice says "That's Dmyor. Link's in the bio."
+5. CTA card ("So write *yours* today."), then the brand card (`dmyor`, tagline, `@becauseidmyor`) while the voice gives the value close (`studio/quality-bar.md` rule 3)
 
 **Feature messaging (owner, 2026-10-24)**: new visions open a "coming soon" screen; the other features are locked for now. Never call it "the planner". Say **"Full features are releasing soon"** ("Your vision will be waiting"). Show only what a visitor can do today (create a vision, the Intent Archive) as real footage; show the coming features (milestones, actions, habits, journal) only as motion graphics, and never imply they work today.
 
@@ -31,7 +33,7 @@ The narration is FULLER than the on-screen text. Spoken language needs more word
 - **Never end on a clipped fragment.** Not "Link in bio." but "And if you want to try it out, I've put the link in the bio." Not "Today." alone at the very end; land the point, then close warmly ("That's exactly what Dmyor is built for.").
 - **Stages**: open with a short hook, explain, turn to the advice, land the point, close. Tag thoughts when needed: `[hook]`, `[turn]`, `[land]`, `[outro]` (untagged: first = hook, last two = outro, the one before = land). The voice (`say.py --stages`, on by default) changes pace, pitch and pauses per stage and ends with a natural fade.
 - **Screen stays short.** On-screen text/cards/subtitles keep the punchy version; the extra spoken words are not all shown.
-- Length: fuller narration runs ~20-30 s for a 6-8 thought script. Keep each thought one breath.
+- Length: as long as the explanation needs (typically 35-55 s), never padded. Keep each thought one breath.
 
 ## Make a reel
 1. `mkdir reels/<slug>`; copy `examples/narration.example.json` to `reels/<slug>/narration.json`; edit script and beats.
@@ -42,7 +44,7 @@ The narration is FULLER than the on-screen text. Spoken language needs more word
 ## narration.json
 | field | meaning |
 |---|---|
-| `script` | narration, thoughts split by `||` (same voice rules as other styles: conversational, 6-10 thoughts, ends with "That's Dmyor. || Link's in the bio.") |
+| `script` | narration, thoughts split by `||` (same voice rules as other styles: conversational, 6-10 thoughts, ends with the value close) |
 | `hook_text`, `hook_until` | hook card text (with `*emphasis*`) and the spoken anchor where the phone takes over |
 | `clips` | `[{name, beats: [[anchor, footage_seconds], ...], speed_after}]`. `"@start"` = phone entry. Footage between beats is time-stretched; after the last beat it plays at `speed_after` and holds its last frame. |
 | `phone_out` | anchor where the phone leaves |

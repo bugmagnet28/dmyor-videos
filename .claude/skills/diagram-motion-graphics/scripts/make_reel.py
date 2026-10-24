@@ -103,7 +103,7 @@ def main():
     spoken = re.sub(r"\bDmyor\b", BRAND_SPOKEN, n["script"])
     run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(SKILL, "scripts/say.py"), spoken,
         os.path.join(d, "audio.mp3"), "--voice", n.get("voice", "am_eric"), "--speed", str(n.get("speed", 1.0)),
-        "--gap-min", str(n.get("gap_min", 0.30)), "--gap-max", str(n.get("gap_max", 0.55)),
+        "--gap-min", str(n.get("gap_min", 0.18)), "--gap-max", str(n.get("gap_max", 0.32)),
         *(["--stages"] if n.get("stages", True) else []))
     # 2. timings
     run("python3", os.path.join(ROOT, ".claude/skills/dmyor-reel/scripts/align.py"), d)

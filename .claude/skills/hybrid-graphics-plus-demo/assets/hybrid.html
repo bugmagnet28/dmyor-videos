@@ -8,7 +8,7 @@
 @font-face{font-family:"Tight";font-weight:700;src:url(fonts/InterTight-normal-700.woff2)}
 @font-face{font-family:"Tight";font-weight:800;src:url(fonts/InterTight-normal-800.woff2)}
 @font-face{font-family:"Tight";font-weight:900;src:url(fonts/InterTight-normal-900.woff2)}
-:root{--bg:#0B0C10;--ink:#F3F4F6;--mute:#8B909A;--accent:#FF7A1A;--done:#3DDC97;--panel:#14161B;--line:#2B2F38}
+:root{--bg:#151719;--ink:#E9E7E2;--mute:#8C8F8A;--accent:#9DB8A3;--done:#9DB8A3;--panel:#1D2023;--line:#33373B}
 html,body{margin:0;padding:0;background:#000;overflow:hidden;width:100%;height:100%}
 #viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
 #stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--bg);font-family:"Tight",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;transform-origin:center}
@@ -22,21 +22,21 @@ html,body{margin:0;padding:0;background:#000;overflow:hidden;width:100%;height:1
 #screen img{position:absolute;left:0;top:0;width:100%;height:100%;transform-origin:50% 50%}
 #notch{position:absolute;left:50%;top:18px;width:150px;height:40px;margin-left:-75px;border-radius:24px;background:#050506;z-index:3}
 .tap{position:absolute;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;border:6px solid var(--accent);opacity:0;z-index:4}
-.callout{position:absolute;padding:14px 22px;border-radius:14px;background:var(--accent);color:#120A03;font-weight:800;font-size:30px;letter-spacing:-.4px;white-space:nowrap;opacity:0;z-index:5;box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.callout{position:absolute;padding:14px 22px;border-radius:14px;background:var(--accent);color:#151719;font-weight:800;font-size:30px;letter-spacing:-.4px;white-space:nowrap;opacity:0;z-index:5;box-shadow:0 12px 30px rgba(0,0,0,.4)}
 .sub{position:absolute;left:70px;right:70px;top:150px;text-align:center;font-weight:700;font-size:56px;line-height:1.1;letter-spacing:-1px;opacity:0}
 #p2{position:absolute;left:0;right:0;top:0;height:1920px;opacity:0}
 #p2 .ttl{position:absolute;left:80px;right:80px;top:400px;text-align:center;font-weight:800;font-size:76px;letter-spacing:-2px;line-height:1.05}
-#p2 .pill{position:absolute;left:50%;top:600px;transform:translateX(-50%);font-weight:800;font-size:28px;letter-spacing:5px;padding:12px 26px;border-radius:12px;background:var(--accent);color:#120A03}
+#p2 .pill{position:absolute;left:50%;top:600px;transform:translateX(-50%);font-weight:800;font-size:28px;letter-spacing:5px;padding:12px 26px;border-radius:12px;background:var(--accent);color:#151719}
 #p2 .lock{position:absolute;left:50%;top:680px;margin-left:-70px;width:140px;height:170px}
 #p2 .chips{position:absolute;left:120px;right:120px;top:930px;display:grid;grid-template-columns:1fr 1fr;gap:26px}
 #p2 .chip{background:var(--panel);border:2px solid var(--line);border-radius:18px;padding:26px 26px;font-weight:700;font-size:38px;letter-spacing:-.5px;opacity:0}
 #p2 .chip small{display:block;font-size:18px;letter-spacing:3.5px;color:var(--mute);margin-bottom:8px;font-weight:700}
-#corner{position:absolute;left:64px;top:96px;font-weight:700;font-size:20px;letter-spacing:4px;color:#4A4F59}
+#corner{position:absolute;left:64px;top:96px;font-weight:700;font-size:20px;letter-spacing:4px;color:#5C605B}
 #bar{position:absolute;left:0;bottom:0;height:6px;background:var(--accent);width:0}
 #brand{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0;padding-bottom:220px;box-sizing:border-box}
 #brand .mark{font-weight:900;font-size:160px;letter-spacing:-6px;line-height:1}
 #brand .tag2{white-space:pre-line;font-weight:600;font-size:52px;color:var(--mute);margin-top:26px;line-height:1.2}
-#brand .handle{margin-top:48px;font-weight:700;font-size:40px;padding:14px 36px;border-radius:999px;background:var(--accent);color:#120A03}
+#brand .handle{margin-top:48px;font-weight:700;font-size:40px;padding:14px 36px;border-radius:999px;background:var(--accent);color:#151719}
 #playBtn{position:fixed;inset:0;margin:auto;width:210px;height:64px;border-radius:32px;border:0;font:700 22px sans-serif;cursor:pointer}
 </style></head><body>
 <div id="viewport"><div id="stage">
@@ -44,7 +44,7 @@ html,body{margin:0;padding:0;background:#000;overflow:hidden;width:100%;height:1
   <div id="cards"></div>
   <div id="phone"><div id="notch"></div><div id="screen"><img id="shot" alt=""></div></div>
   <div id="p2"><div class="ttl"></div><div class="pill">COMING SOON</div>
-    <svg class="lock" viewBox="0 0 140 170"><path id="shackle" d="M35 80 V50 a35 35 0 0 1 70 0 V80" fill="none" stroke="#F3F4F6" stroke-width="12" stroke-linecap="round"/><rect x="18" y="78" width="104" height="84" rx="16" fill="#FF7A1A"/><circle cx="70" cy="116" r="11" fill="#120A03"/><rect x="65" y="118" width="10" height="24" rx="4" fill="#120A03"/></svg>
+    <svg class="lock" viewBox="0 0 140 170"><path id="shackle" d="M35 80 V50 a35 35 0 0 1 70 0 V80" fill="none" stroke="#E9E7E2" stroke-width="12" stroke-linecap="round"/><rect x="18" y="78" width="104" height="84" rx="16" fill="#9DB8A3"/><circle cx="70" cy="116" r="11" fill="#151719"/><rect x="65" y="118" width="10" height="24" rx="4" fill="#151719"/></svg>
     <div class="chips"></div></div>
   <div id="corner">DMYOR</div>
   <div id="bar"></div>
@@ -119,7 +119,7 @@ function render(t){
   if(P2){var v=eout(seg(t,P2.t0,P2.t0+.4))*(1-eio(seg(t,P2.t1-.2,P2.t1+.2)));p2.style.opacity=v;
     var u=eio(seg(t,P2.unlockT,P2.unlockT+.45));shackle.setAttribute("transform","translate("+(105*0)+",0) rotate("+(-38*u)+" 105 80) translate(0,"+(-14*u)+")");
     chips.forEach(function(d,i){var a=P2.t0+.35+i*.22;var p=seg(t,a,a+.3);d.style.opacity=p*(.35+.65*u);
-      d.style.borderColor=u>.5?"rgba(255,122,26,.6)":"#2B2F38";d.style.transform="translateY("+(20*(1-eout(p)))+"px)";});}
+      d.style.borderColor=u>.5?"rgba(157,184,163,.6)":"#33373B";d.style.transform="translateY("+(20*(1-eout(p)))+"px)";});}
   subs.forEach(function(o){var a=o.sb.t0,b=o.sb.t1,v=seg(t,a,a+.15)*(1-seg(t,b-.1,b));o.d.style.opacity=v;});
   bar.style.width=(100*t/T)+"%";
   var pb=eio(seg(t,C.brandT,C.brandT+.4));brand.style.opacity=pb;brand.style.transform="scale("+(.96+.04*pb)+")";

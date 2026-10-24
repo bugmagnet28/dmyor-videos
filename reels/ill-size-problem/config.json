@@ -1,59 +1,110 @@
 {
- "total": 29.0,
- "brandT": 21.9,
+ "total": 51.62,
+ "brandT": 47.84,
  "scenes": [
   {
-   "type": "battery-full-stuck",
+   "type": "gauge-vs-goal",
    "params": {
-    "label": "MOTIVATION"
+    "left": "Motivation",
+    "right": "The goal"
    },
-   "head": "You don't have a<br><b>motivation</b> problem.",
+   "head": "Not motivation.<br>A <b>size</b> problem.",
    "t0": 0.0,
-   "t1": 2.37
+   "t1": 3.29
   },
   {
-   "type": "giant-goal",
+   "type": "postpone-calendar",
    "params": {
-    "label": "Write a book"
+    "note": "start tomorrow"
    },
-   "head": "You have a <b>size</b> problem.",
-   "t0": 2.37,
-   "t1": 5.51
+   "head": "Too big to start,<br>so it <b>waits</b>.",
+   "t0": 3.29,
+   "t1": 9.05
   },
   {
-   "type": "book-vs-day",
+   "type": "book-vs-evening",
    "params": {
-    "pages": "300 pages",
-    "day": "TUE"
+    "pages": 300,
+    "when": "Tuesday, 9 PM"
    },
-   "head": "Too big for a <b>Tuesday</b>.",
-   "t0": 5.51,
-   "t1": 9.01
+   "head": "300 pages on a<br><b>Tuesday</b> night?",
+   "t0": 9.05,
+   "t1": 14.79
   },
   {
-   "type": "notepad-lines",
-   "params": {},
-   "head": "Write <b>3 sentences</b> tonight.",
-   "t0": 9.01,
-   "t1": 13.01
-  },
-  {
-   "type": "door-shoes",
-   "params": {},
-   "head": "Get fit? <b>Shoes</b> by the door.",
-   "t0": 13.01,
-   "t1": 17.47
-  },
-  {
-   "type": "timer-split",
+   "type": "book-breakdown",
    "params": {
-    "after": "Shrink it again"
+    "book": "The book",
+    "items": [
+     "Outline chapter 1",
+     "Pick 5 key scenes",
+     "Draft the opening"
+    ],
+    "per": 300,
+    "unit": "words / day"
    },
-   "head": "More than <b>10 min</b>?",
-   "t0": 17.47,
-   "t1": 21.9
+   "head": "Shrink it until step one<br>is <b>obvious</b>.",
+   "t0": 14.79,
+   "t1": 21.23
+  },
+  {
+   "type": "week-tracker",
+   "params": {
+    "on": [
+     0,
+     2,
+     4
+    ],
+    "what": "30 min walk"
+   },
+   "head": "Get fit: <b>walk 30 min</b>,<br>3 days this week.",
+   "t0": 21.23,
+   "t1": 27.13
+  },
+  {
+   "type": "fifteen-test",
+   "params": {
+    "minutes": 15,
+    "over": 40,
+    "step": "Write the book",
+    "parts": [
+     "Outline",
+     "Scene list",
+     "Opening"
+    ],
+    "small": 10
+   },
+   "head": "The <b>15-minute</b> test.",
+   "t0": 27.13,
+   "t1": 33.51
+  },
+  {
+   "type": "proof-to-motivation",
+   "params": {
+    "a": "proof",
+    "b": "motivation"
+   },
+   "head": "Small steps are <b>proof</b>.",
+   "t0": 33.51,
+   "t1": 40.47
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "tag": "ARCHIVED TODAY",
+    "dream": "Write my first book",
+    "date": "Open it again: Oct 2027",
+    "steps": [
+     "Outline chapter 1",
+     "300 words a day",
+     "Finish chapter 1"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 40.47,
+   "t1": 47.84
   }
  ],
- "tagline": "Shrink the first step.\nThen take it.",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
  "handle": "@becauseidmyor"
 }

@@ -1,8 +1,8 @@
 {
  "voice": "am_eric",
  "speed": 1.0,
- "gap_min": 0.3,
- "gap_max": 0.55,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
  "tail": 1.2,
  "content": {
   "hook": [
