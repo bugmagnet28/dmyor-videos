@@ -19,3 +19,5 @@ studio/PAUSE
 tts/.venv/
 tts/models/
 analytics/.venv/
+app-capture/profile/
+app-capture/raw/

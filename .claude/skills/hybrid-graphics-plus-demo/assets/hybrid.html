@@ -1,0 +1,135 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>dmyor hybrid reel</title>
+<style>
+/* Hybrid: motion-graphics hook/feature panels + REAL dmyor screens recorded in a phone frame, synced to
+   narration. Same dark crisp system as the other styles. window.__seek(t) returns a Promise that resolves
+   once the right footage frame is decoded, so record.js captures exact frames. */
+@font-face{font-family:"Tight";font-weight:600;src:url(fonts/InterTight-normal-600.woff2)}
+@font-face{font-family:"Tight";font-weight:700;src:url(fonts/InterTight-normal-700.woff2)}
+@font-face{font-family:"Tight";font-weight:800;src:url(fonts/InterTight-normal-800.woff2)}
+@font-face{font-family:"Tight";font-weight:900;src:url(fonts/InterTight-normal-900.woff2)}
+:root{--bg:#0B0C10;--ink:#F3F4F6;--mute:#8B909A;--accent:#FF7A1A;--done:#3DDC97;--panel:#14161B;--line:#2B2F38}
+html,body{margin:0;padding:0;background:#000;overflow:hidden;width:100%;height:100%}
+#viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--bg);font-family:"Tight",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;transform-origin:center}
+#grid{position:absolute;inset:0}
+.card{position:absolute;left:90px;right:90px;top:0;height:1920px;display:flex;align-items:center;justify-content:center;text-align:center}
+.card .in{font-weight:800;letter-spacing:-0.035em;line-height:1.06;padding-bottom:200px}
+.w{display:inline-block;white-space:pre}.w.e{color:var(--accent)}
+#phone{position:absolute;left:50%;top:0;width:560px;height:1212px;margin-left:-280px;border-radius:72px;background:#050506;
+  box-shadow:0 0 0 2px #2A2D35,0 0 0 14px #111216,0 0 0 16px #2A2D35,0 60px 120px rgba(0,0,0,.6);overflow:hidden;opacity:0}
+#screen{position:absolute;inset:0;overflow:hidden;border-radius:72px}
+#screen img{position:absolute;left:0;top:0;width:100%;height:100%;transform-origin:50% 50%}
+#notch{position:absolute;left:50%;top:18px;width:150px;height:40px;margin-left:-75px;border-radius:24px;background:#050506;z-index:3}
+.tap{position:absolute;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;border:6px solid var(--accent);opacity:0;z-index:4}
+.callout{position:absolute;padding:14px 22px;border-radius:14px;background:var(--accent);color:#120A03;font-weight:800;font-size:30px;letter-spacing:-.4px;white-space:nowrap;opacity:0;z-index:5;box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.sub{position:absolute;left:70px;right:70px;top:150px;text-align:center;font-weight:700;font-size:56px;line-height:1.1;letter-spacing:-1px;opacity:0}
+#p2{position:absolute;left:0;right:0;top:0;height:1920px;opacity:0}
+#p2 .ttl{position:absolute;left:80px;right:80px;top:400px;text-align:center;font-weight:800;font-size:76px;letter-spacing:-2px;line-height:1.05}
+#p2 .pill{position:absolute;left:50%;top:600px;transform:translateX(-50%);font-weight:800;font-size:28px;letter-spacing:5px;padding:12px 26px;border-radius:12px;background:var(--accent);color:#120A03}
+#p2 .lock{position:absolute;left:50%;top:680px;margin-left:-70px;width:140px;height:170px}
+#p2 .chips{position:absolute;left:120px;right:120px;top:930px;display:grid;grid-template-columns:1fr 1fr;gap:26px}
+#p2 .chip{background:var(--panel);border:2px solid var(--line);border-radius:18px;padding:26px 26px;font-weight:700;font-size:38px;letter-spacing:-.5px;opacity:0}
+#p2 .chip small{display:block;font-size:18px;letter-spacing:3.5px;color:var(--mute);margin-bottom:8px;font-weight:700}
+#corner{position:absolute;left:64px;top:96px;font-weight:700;font-size:20px;letter-spacing:4px;color:#4A4F59}
+#bar{position:absolute;left:0;bottom:0;height:6px;background:var(--accent);width:0}
+#brand{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0;padding-bottom:220px;box-sizing:border-box}
+#brand .mark{font-weight:900;font-size:160px;letter-spacing:-6px;line-height:1}
+#brand .tag2{white-space:pre-line;font-weight:600;font-size:52px;color:var(--mute);margin-top:26px;line-height:1.2}
+#brand .handle{margin-top:48px;font-weight:700;font-size:40px;padding:14px 36px;border-radius:999px;background:var(--accent);color:#120A03}
+#playBtn{position:fixed;inset:0;margin:auto;width:210px;height:64px;border-radius:32px;border:0;font:700 22px sans-serif;cursor:pointer}
+</style></head><body>
+<div id="viewport"><div id="stage">
+  <svg id="grid" width="1080" height="1920"><defs><pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#fff" fill-opacity=".06"/></pattern></defs><rect id="gridrect" x="0" y="-40" width="1080" height="2000" fill="url(#dots)"/></svg>
+  <div id="cards"></div>
+  <div id="phone"><div id="notch"></div><div id="screen"><img id="shot" alt=""></div></div>
+  <div id="p2"><div class="ttl"></div><div class="pill">PHASE 2</div>
+    <svg class="lock" viewBox="0 0 140 170"><path id="shackle" d="M35 80 V50 a35 35 0 0 1 70 0 V80" fill="none" stroke="#F3F4F6" stroke-width="12" stroke-linecap="round"/><rect x="18" y="78" width="104" height="84" rx="16" fill="#FF7A1A"/><circle cx="70" cy="116" r="11" fill="#120A03"/><rect x="65" y="118" width="10" height="24" rx="4" fill="#120A03"/></svg>
+    <div class="chips"></div></div>
+  <div id="corner">DMYOR</div>
+  <div id="bar"></div>
+  <div id="brand"><div class="mark">dmyor</div><div class="tag2"></div><div class="handle"></div></div>
+</div></div>
+<button id="playBtn">PLAY</button>
+<script>
+var CFG = /*__CONFIG__*/{};
+</script>
+<script>
+(function(){
+"use strict";
+var W=1080,H=1920,C=CFG,T=C.total,PH=C.phone;
+var stage=document.getElementById("stage");
+function fit(){var s=Math.min(innerWidth/W,innerHeight/H);stage.style.transform="scale("+s+")";}
+fit();addEventListener("resize",fit);
+var cl=function(x){return x<0?0:x>1?1:x},seg=function(t,a,b){return cl((t-a)/(b-a))};
+var eout=function(x){return 1-Math.pow(1-x,3)},eio=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+var eob=function(x){var c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+// ---------- kinetic cards (hook, CTA ...) ----------
+var cardsEl=document.getElementById("cards");
+var CARDS=C.cards.map(function(cd,ci){var el=document.createElement("div");el.className="card";var inner=document.createElement("div");inner.className="in";el.appendChild(inner);cardsEl.appendChild(el);
+  var ws=cd.words.map(function(w,wi){var s=document.createElement("span");s.className="w"+(w.e?" e":"");s.textContent=w.text+(wi<cd.words.length-1?" ":"");inner.appendChild(s);return {w:w,el:s};});
+  var lo=56,hi=cd.max||140;while(hi-lo>2){var mid=(lo+hi)/2;inner.style.fontSize=mid+"px";if(inner.scrollWidth<=900&&inner.offsetHeight<=1000)lo=mid;else hi=mid;}inner.style.fontSize=lo+"px";
+  return {cd:cd,el:el,ws:ws,first:ci===0};});
+// ---------- subtitles ----------
+var subs=(C.subs||[]).map(function(sb){var d=document.createElement("div");d.className="sub";d.textContent=sb.text;stage.appendChild(d);return {sb:sb,d:d};});
+// ---------- phone + footage ----------
+var phone=document.getElementById("phone"),shot=document.getElementById("shot"),screen=document.getElementById("screen");
+var PY=PH.y||1060;phone.style.top=(PY-606)+"px";
+var taps=(PH.taps||[]).map(function(tp){var d=document.createElement("div");d.className="tap";screen.appendChild(d);d.style.left=(tp.x*100)+"%";d.style.top=(tp.y*100)+"%";return {tp:tp,d:d};});
+var callouts=(PH.callouts||[]).map(function(co){var d=document.createElement("div");d.className="callout";d.textContent=co.text;stage.appendChild(d);return {co:co,d:d};});
+function footFrame(t){ // which clip + footage time for reel time t
+  for(var i=0;i<PH.clips.length;i++){var c=PH.clips[i];if(t>=c.t0&&t<c.t1){var m=c.map,ft=m[m.length-1][1];
+      for(var j=0;j<m.length-1;j++){if(t>=m[j][0]&&t<m[j+1][0]){ft=m[j][1]+(m[j+1][1]-m[j][1])*(t-m[j][0])/(m[j+1][0]-m[j][0]);break;}}
+      if(t<m[0][0])ft=m[0][1];
+      var fr=c.frames,lo=0,hi=fr.length-1;while(lo<hi){var mid=(lo+hi+1)>>1;if(fr[mid][0]<=ft)lo=mid;else hi=mid-1;}
+      return c.dir+"/"+fr[lo][1];}}
+  var last=PH.clips[PH.clips.length-1];return last.dir+"/"+last.frames[last.frames.length-1][1];}
+function zoomAt(t){var Z=PH.zooms||[];if(!Z.length)return {s:1,x:.5,y:.5};if(t<=Z[0].t)return Z[0];
+  for(var i=0;i<Z.length-1;i++){var a=Z[i],b=Z[i+1];if(t>=a.t&&t<=b.t){var k=eio((t-a.t)/Math.max(.001,b.t-a.t));return {s:a.s+(b.s-a.s)*k,x:a.x+(b.x-a.x)*k,y:a.y+(b.y-a.y)*k};}}
+  return Z[Z.length-1];}
+// ---------- phase 2 panel ----------
+var p2=document.getElementById("p2"),P2=C.phase2,chipsEl=p2.querySelector(".chips"),shackle=document.getElementById("shackle");
+if(P2&&P2.title)p2.querySelector(".ttl").textContent=P2.title;
+var chips=(P2?P2.items:[]).map(function(it){var d=document.createElement("div");d.className="chip";d.innerHTML="<small>"+(it.k||"")+"</small>"+it.t;chipsEl.appendChild(d);return d;});
+var brand=document.getElementById("brand");brand.querySelector(".tag2").textContent=C.tagline;brand.querySelector(".handle").textContent=C.handle;
+var gridrect=document.getElementById("gridrect"),bar=document.getElementById("bar");
+var lastSrc=null;
+function render(t){
+  t=Math.max(0,Math.min(T,t));
+  gridrect.setAttribute("y",-40+(t*10)%40);
+  CARDS.forEach(function(o){var cd=o.cd;var vin=o.first?1:eout(seg(t,cd.t0-.08,cd.t0+.22)),vout=1-eio(seg(t,cd.t1-.12,cd.t1+.18));
+    var on=t>=cd.t0-.1&&t<cd.t1+.2;o.el.style.display=on?"flex":"none";if(!on)return;
+    o.el.style.opacity=vin*vout;o.el.style.transform="translateY("+(40*(1-vin)-60*(1-vout))+"px)";
+    o.ws.forEach(function(x){var a=x.w.t-.04,p=o.first?1:seg(t,a,a+.16);var pop=x.w.e?(1+.16*Math.sin(Math.PI*seg(t,a+.05,a+.4))):1;
+      x.el.style.opacity=p;x.el.style.transform="translateY("+(18*(1-eout(p)))+"px) scale("+((.92+.08*eob(p))*pop)+")";});});
+  // phone
+  var pin=eout(seg(t,PH.in,PH.in+.5)),pout=eio(seg(t,PH.out-.3,PH.out+.2));
+  phone.style.opacity=pin*(1-pout);
+  phone.style.transform="translateY("+(120*(1-pin)+80*pout)+"px) scale("+(.92+.08*pin-.06*pout)+")";
+  var pr=null;
+  if(t>=PH.in-.1&&t<PH.out+.3){var src=footFrame(t);var z=zoomAt(t);
+    shot.style.transformOrigin=(z.x*100)+"% "+(z.y*100)+"%";shot.style.transform="scale("+z.s+")";
+    if(src!==lastSrc){lastSrc=src;shot.src=src;pr=shot.decode().catch(function(){});}}
+  taps.forEach(function(o){var a=o.tp.t,p=seg(t,a,a+.6);o.d.style.opacity=p>0&&p<1?(1-p):0;o.d.style.transform="scale("+(.4+1.2*eout(p))+")";});
+  callouts.forEach(function(o){var c=o.co,v=eout(seg(t,c.t0,c.t0+.3))*(1-seg(t,c.t1-.2,c.t1));o.d.style.opacity=v;
+    var x=c.side==="left"?(540-280+170):(540+280-170),y=PY-606+c.y*1212;  // overlaps the phone edge
+    o.d.style.left=(c.side==="left"?x-o.d.offsetWidth:x)+"px";o.d.style.top=(y-30)+"px";
+    o.d.style.transform="translateX("+((c.side==="left"?-1:1)*30*(1-v))+"px)";});
+  // phase 2
+  if(P2){var v=eout(seg(t,P2.t0,P2.t0+.4))*(1-eio(seg(t,P2.t1-.2,P2.t1+.2)));p2.style.opacity=v;
+    var u=eio(seg(t,P2.unlockT,P2.unlockT+.45));shackle.setAttribute("transform","translate("+(105*0)+",0) rotate("+(-38*u)+" 105 80) translate(0,"+(-14*u)+")");
+    chips.forEach(function(d,i){var a=P2.t0+.35+i*.22;var p=seg(t,a,a+.3);d.style.opacity=p*(.35+.65*u);
+      d.style.borderColor=u>.5?"rgba(255,122,26,.6)":"#2B2F38";d.style.transform="translateY("+(20*(1-eout(p)))+"px)";});}
+  subs.forEach(function(o){var a=o.sb.t0,b=o.sb.t1,v=seg(t,a,a+.15)*(1-seg(t,b-.1,b));o.d.style.opacity=v;});
+  bar.style.width=(100*t/T)+"%";
+  var pb=eio(seg(t,C.brandT,C.brandT+.4));brand.style.opacity=pb;brand.style.transform="scale("+(.96+.04*pb)+")";
+  cardsEl.style.opacity=1-pb;
+  return pr||Promise.resolve();
+}
+window.__duration=T;window.__seek=function(t){return render(t);};render(0);
+var playing=false,t0=0;
+document.getElementById("playBtn").onclick=function(){this.style.display="none";t0=performance.now();playing=true;
+  var a=new Audio("audio_mixed.mp3");a.play().catch(function(){});(function loop(){if(!playing)return;var t=(performance.now()-t0)/1000;render(t);if(t<T)requestAnimationFrame(loop);})();};
+})();
+</script>
+</body></html>

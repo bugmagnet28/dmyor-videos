@@ -1,0 +1,580 @@
+{
+ "audio": "audio.mp3",
+ "duration": 31.38,
+ "text": "Everyone has a dream they mean to act on someday. Here's how you make it real. First give yourself a horizon three years. Then write the one thing you're committing to. Tag it and create your vision. Your vision now lives in the intent archive. Because a hundred years from now you won't be here, but the dreams you chased should still exist. Phase two unlocks the full planner. Milestones, actions, habits in your journal your vision will be waiting. So write yours today. That's Demure. Links in the bio.",
+ "words": [
+  {
+   "w": "everyone",
+   "raw": "Everyone",
+   "s": 0.0,
+   "e": 0.48
+  },
+  {
+   "w": "has",
+   "raw": "has",
+   "s": 0.48,
+   "e": 0.8
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 0.8,
+   "e": 0.98
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 0.98,
+   "e": 1.24
+  },
+  {
+   "w": "they",
+   "raw": "they",
+   "s": 1.24,
+   "e": 1.5
+  },
+  {
+   "w": "mean",
+   "raw": "mean",
+   "s": 1.5,
+   "e": 1.68
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 1.68,
+   "e": 1.82
+  },
+  {
+   "w": "act",
+   "raw": "act",
+   "s": 1.82,
+   "e": 2.04
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 2.04,
+   "e": 2.28
+  },
+  {
+   "w": "someday",
+   "raw": "someday.",
+   "s": 2.28,
+   "e": 2.68
+  },
+  {
+   "w": "heres",
+   "raw": "Here's",
+   "s": 3.3,
+   "e": 3.56
+  },
+  {
+   "w": "how",
+   "raw": "how",
+   "s": 3.56,
+   "e": 3.74
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 3.74,
+   "e": 3.9
+  },
+  {
+   "w": "make",
+   "raw": "make",
+   "s": 3.9,
+   "e": 4.08
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 4.08,
+   "e": 4.24
+  },
+  {
+   "w": "real",
+   "raw": "real.",
+   "s": 4.24,
+   "e": 4.5
+  },
+  {
+   "w": "first",
+   "raw": "First",
+   "s": 5.26,
+   "e": 5.4
+  },
+  {
+   "w": "give",
+   "raw": "give",
+   "s": 5.4,
+   "e": 5.64
+  },
+  {
+   "w": "yourself",
+   "raw": "yourself",
+   "s": 5.64,
+   "e": 5.96
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 5.96,
+   "e": 6.14
+  },
+  {
+   "w": "horizon",
+   "raw": "horizon",
+   "s": 6.14,
+   "e": 6.58
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 6.58,
+   "e": 6.98
+  },
+  {
+   "w": "years",
+   "raw": "years.",
+   "s": 6.98,
+   "e": 7.44
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 8.0,
+   "e": 8.3
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 8.3,
+   "e": 8.54
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 8.54,
+   "e": 8.76
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 8.76,
+   "e": 8.96
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 8.96,
+   "e": 9.18
+  },
+  {
+   "w": "youre",
+   "raw": "you're",
+   "s": 9.18,
+   "e": 9.4
+  },
+  {
+   "w": "committing",
+   "raw": "committing",
+   "s": 9.4,
+   "e": 9.66
+  },
+  {
+   "w": "to",
+   "raw": "to.",
+   "s": 9.66,
+   "e": 10.14
+  },
+  {
+   "w": "tag",
+   "raw": "Tag",
+   "s": 10.82,
+   "e": 10.84
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 10.84,
+   "e": 11.06
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 11.06,
+   "e": 11.22
+  },
+  {
+   "w": "create",
+   "raw": "create",
+   "s": 11.22,
+   "e": 11.46
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 11.46,
+   "e": 11.68
+  },
+  {
+   "w": "vision",
+   "raw": "vision.",
+   "s": 11.68,
+   "e": 11.98
+  },
+  {
+   "w": "your",
+   "raw": "Your",
+   "s": 12.68,
+   "e": 12.82
+  },
+  {
+   "w": "vision",
+   "raw": "vision",
+   "s": 12.82,
+   "e": 13.12
+  },
+  {
+   "w": "now",
+   "raw": "now",
+   "s": 13.12,
+   "e": 13.42
+  },
+  {
+   "w": "lives",
+   "raw": "lives",
+   "s": 13.42,
+   "e": 13.72
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 13.72,
+   "e": 13.94
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 13.94,
+   "e": 14.08
+  },
+  {
+   "w": "intent",
+   "raw": "intent",
+   "s": 14.08,
+   "e": 14.4
+  },
+  {
+   "w": "archive",
+   "raw": "archive.",
+   "s": 14.4,
+   "e": 14.92
+  },
+  {
+   "w": "because",
+   "raw": "Because",
+   "s": 15.42,
+   "e": 15.74
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 15.74,
+   "e": 15.88
+  },
+  {
+   "w": "hundred",
+   "raw": "hundred",
+   "s": 15.88,
+   "e": 16.14
+  },
+  {
+   "w": "years",
+   "raw": "years",
+   "s": 16.14,
+   "e": 16.46
+  },
+  {
+   "w": "from",
+   "raw": "from",
+   "s": 16.46,
+   "e": 16.68
+  },
+  {
+   "w": "now",
+   "raw": "now",
+   "s": 16.68,
+   "e": 16.94
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 16.94,
+   "e": 17.12
+  },
+  {
+   "w": "wont",
+   "raw": "won't",
+   "s": 17.12,
+   "e": 17.36
+  },
+  {
+   "w": "be",
+   "raw": "be",
+   "s": 17.36,
+   "e": 17.5
+  },
+  {
+   "w": "here",
+   "raw": "here,",
+   "s": 17.5,
+   "e": 17.8
+  },
+  {
+   "w": "but",
+   "raw": "but",
+   "s": 17.98,
+   "e": 18.24
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 18.24,
+   "e": 18.38
+  },
+  {
+   "w": "dreams",
+   "raw": "dreams",
+   "s": 18.38,
+   "e": 18.66
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 18.66,
+   "e": 18.86
+  },
+  {
+   "w": "chased",
+   "raw": "chased",
+   "s": 18.86,
+   "e": 19.1
+  },
+  {
+   "w": "should",
+   "raw": "should",
+   "s": 19.1,
+   "e": 19.34
+  },
+  {
+   "w": "still",
+   "raw": "still",
+   "s": 19.34,
+   "e": 19.62
+  },
+  {
+   "w": "exist",
+   "raw": "exist.",
+   "s": 19.62,
+   "e": 20.08
+  },
+  {
+   "w": "phase",
+   "raw": "Phase",
+   "s": 20.72,
+   "e": 20.82
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 20.82,
+   "e": 21.14
+  },
+  {
+   "w": "unlocks",
+   "raw": "unlocks",
+   "s": 21.14,
+   "e": 21.58
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 21.58,
+   "e": 21.76
+  },
+  {
+   "w": "full",
+   "raw": "full",
+   "s": 21.76,
+   "e": 21.96
+  },
+  {
+   "w": "planner",
+   "raw": "planner.",
+   "s": 21.96,
+   "e": 22.32
+  },
+  {
+   "w": "milestones",
+   "raw": "Milestones,",
+   "s": 22.94,
+   "e": 23.34
+  },
+  {
+   "w": "actions",
+   "raw": "actions,",
+   "s": 23.64,
+   "e": 23.9
+  },
+  {
+   "w": "habits",
+   "raw": "habits",
+   "s": 24.02,
+   "e": 24.34
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 24.34,
+   "e": 24.56
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 24.56,
+   "e": 24.7
+  },
+  {
+   "w": "journal",
+   "raw": "journal",
+   "s": 24.7,
+   "e": 25.04
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 25.04,
+   "e": 25.26
+  },
+  {
+   "w": "vision",
+   "raw": "vision",
+   "s": 25.26,
+   "e": 25.52
+  },
+  {
+   "w": "will",
+   "raw": "will",
+   "s": 25.52,
+   "e": 25.66
+  },
+  {
+   "w": "be",
+   "raw": "be",
+   "s": 25.66,
+   "e": 25.78
+  },
+  {
+   "w": "waiting",
+   "raw": "waiting.",
+   "s": 25.78,
+   "e": 26.08
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 26.6,
+   "e": 26.84
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 26.84,
+   "e": 27.1
+  },
+  {
+   "w": "yours",
+   "raw": "yours",
+   "s": 27.1,
+   "e": 27.36
+  },
+  {
+   "w": "today",
+   "raw": "today.",
+   "s": 27.36,
+   "e": 27.82
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 27.82,
+   "e": 28.76
+  },
+  {
+   "w": "demure",
+   "raw": "Demure.",
+   "s": 28.76,
+   "e": 29.28
+  },
+  {
+   "w": "links",
+   "raw": "Links",
+   "s": 29.82,
+   "e": 30.08
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 30.08,
+   "e": 30.3
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 30.3,
+   "e": 30.4
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 30.4,
+   "e": 30.68
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 5.96,
+   "text": "Everyone has a dream they mean to act on someday. Here's how you make it real. First give yourself"
+  },
+  {
+   "s": 5.96,
+   "e": 11.68,
+   "text": "a horizon three years. Then write the one thing you're committing to. Tag it and create your"
+  },
+  {
+   "s": 11.68,
+   "e": 17.12,
+   "text": "vision. Your vision now lives in the intent archive. Because a hundred years from now you"
+  },
+  {
+   "s": 17.12,
+   "e": 22.32,
+   "text": "won't be here, but the dreams you chased should still exist. Phase two unlocks the full planner."
+  },
+  {
+   "s": 22.94,
+   "e": 27.82,
+   "text": "Milestones, actions, habits in your journal your vision will be waiting. So write yours today."
+  },
+  {
+   "s": 27.82,
+   "e": 30.68,
+   "text": "That's Demure. Links in the bio."
+  }
+ ],
+ "wps": 2.87
+}
