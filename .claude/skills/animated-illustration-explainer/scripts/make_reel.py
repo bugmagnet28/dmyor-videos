@@ -7,7 +7,7 @@ narration.json:
   scenes    one entry per thought, in order: {"type": <scene name>, "params": {...}, "head": "short <b>headline</b>"}
             or null to keep the previous scene on screen through that thought
   brand_from  index of the first thought that belongs to the brand card (usually the outro)
-  sfx       "subtle" (default), "present" or "off": synthesized sound design under the voice (scripts/sfx.py, assets/events.json)
+  sfx       "present" (default), "subtle" or "off": synthesized sound design under the voice (scripts/sfx.py, assets/events.json)
   tagline, handle, caption
 Scene names: see SKILL.md (scene catalogue) / SCENES in assets/illustrated.html.
 Run from the project root.
@@ -71,7 +71,7 @@ def main():
     open(os.path.join(d, "reel.html"), "w").write(html)
     run("ffmpeg", "-loglevel", "error", "-y", "-i", os.path.join(d, "audio.mp3"), "-af", "apad,atrim=0:%s,loudnorm=I=-14:TP=-1.5" % total,
         "-ar", "44100", "-b:a", "192k", os.path.join(d, "audio_voice.mp3"))
-    run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(SKILL, "scripts/sfx.py"), d, "--level", n.get("sfx", "subtle"))
+    run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(SKILL, "scripts/sfx.py"), d, "--level", n.get("sfx", "present"))
     print(f"built {d}: {total}s, {len(out)} scenes, brand {brandT:.2f}s, {cues['wps']} words/sec")
     print("scenes:", [(s["type"], s["t0"], s["t1"]) for s in out])
     if o.record or o.package:

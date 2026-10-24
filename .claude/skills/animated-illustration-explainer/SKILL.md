@@ -31,7 +31,11 @@ From `~/Documents/dmyor-videos` (voice setup once: `bash .claude/skills/animated
 | `palette` (optional) | override any of `bg ink mute acc acc2 warn ok panel line onAcc` |
 
 ## Sound design (`scripts/sfx.py`, `assets/events.json`)
-Synthesized in code (no samples, no licensing, no music): `tick` (check marks), `tap` (a card or chip lands), `swish` (scene change), `ratchet` (numbers counting, timers), `tone` (warm swell under the value close), `chord` (brand card). `events.json` lists each scene type's sound moments in seconds after the scene starts; they mirror the animation timings in `illustrated.html`, so **when you change a scene's timing, change its events too**. The hook scene is silent (already finished on frame 0). Sounds closer than 0.28 s are dropped. Each sound has its own peak level; the voice ducks them lightly (sidechain). `narration.json` `"sfx"`: `"subtle"` (default), `"present"` (+6 dB) or `"off"`. `make_reel.py` writes `audio_voice.mp3`, `audio_fx.wav` (effects alone, for checking) and `audio_mixed.mp3`.
+Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible level (default `"present"`). Synthesized in code, no samples, no music.
+- Object sounds: `clock` (tick-tock while a clock is on screen), `timer` (fast ticking while a timer runs), `beep2` (timer passes the limit), `pencil` (crossing out, writing; give a duration), `pen_check` (a hand-written check mark), `page` (calendar or page flip), `riffle` (pages counting up), `footsteps` (a person walking), `plate` (gym weight clink), `stamp` (archiving).
+- Interface sounds, only where no object fits: `tap` (a card lands), `swish` (scene change), `ratchet` (abstract counter), `tone` (warm swell under the value close), `chord` (brand card).
+- `events.json`: per scene type, `[seconds after scene start, sound, duration or "end"]`, mirroring the animation timings in `illustrated.html`: **change both together**, and give every new scene its object sounds.
+- Hook scene is silent (finished on frame 0). One-shots closer than 0.28 s are dropped; beds (clock, timer, footsteps, riffle) may overlap. The voice ducks effects lightly. `"sfx"`: `"present"` (default), `"subtle"` (-6 dB), `"off"`. Outputs `audio_voice.mp3`, `audio_fx.wav` (effects alone, for checking), `audio_mixed.mp3`.
 
 ## Scene library (`assets/illustrated.html`, `SCENES`)
 | type | shows | params |

@@ -71,9 +71,118 @@ def chord(d=3.0):
     return lowpass(s, 2600) * .22
 
 
-KIT = {"tick": tick, "tap": tap, "swish": swish, "ratchet": ratchet, "tone": tone, "chord": chord}
-PEAK = {"tick": -19, "tap": -19, "swish": -25, "ratchet": -23, "tone": -24, "chord": -19}   # dBFS peak per sound at "present" (voice peaks ~-1.5)
+def reson(x, f, q=12):
+    """2-pole resonator (band-pass) at f Hz"""
+    w = 2 * np.pi * f / SR; r = 1 - w / (2 * q); c1, c2 = 2 * r * np.cos(w), -r * r; y = np.zeros_like(x); y1 = y2 = 0.0
+    for i in range(len(x)):
+        y0 = x[i] + c1 * y1 + c2 * y2; y[i] = y0; y2, y1 = y1, y0
+    return y
+
+
+def noise(n):
+    return rng.standard_normal(n)
+
+
+def hp(x, fc):
+    return x - lowpass(x, fc)
+
+
+# ---- object sounds (diegetic: each thing sounds like itself) ----
+def clock_click(hi=True):
+    n = int(.05 * SR); x = noise(n) * env(n, .0003, .003)
+    return reson(x, 3400 if hi else 2700, 18) + reson(x, 1250 if hi else 1050, 10) * .5
+
+
+def clock(d=4.0):
+    """mechanical tick-tock, two per second, for as long as the clock is on screen"""
+    n = int(d * SR); out = np.zeros(n + SR)
+    for i in range(int(d / .5) + 1):
+        c = clock_click(i % 2 == 0); at = int(i * .5 * SR); out[at:at + len(c)] += c
+    return out[:n]
+
+
+def timer(d=2.0):
+    """faster, lighter ticking of a running timer"""
+    n = int(d * SR); out = np.zeros(n + SR)
+    for i in range(int(d / .16) + 1):
+        c = clock_click(True)[: int(.03 * SR)] * .7; at = int(i * .16 * SR); out[at:at + len(c)] += c
+    return out[:n]
+
+
+def pencil(d=.3):
+    """graphite on paper: grainy high noise, a little pressure swell"""
+    n = int(d * SR); t = np.arange(n) / SR
+    grain = np.repeat(rng.uniform(.3, 1, int(n / 90) + 1), 90)[:n]
+    x = hp(lowpass(noise(n), 7000), 1800) * grain
+    shape = np.sin(np.pi * np.clip(t / d, 0, 1)) ** .6
+    return x * shape
+
+
+def pen_check():
+    """a check mark written by hand: short down-stroke, longer up-stroke"""
+    a, b = pencil(.06), pencil(.15)
+    return np.concatenate([a, np.zeros(int(.02 * SR)), b * 1.1])
+
+
+def page(d=.32):
+    """single paper page flip"""
+    n = int(d * SR); t = np.arange(n) / SR; ph = t / d
+    flutter = 1 + .6 * np.sin(2 * np.pi * (18 + 30 * ph) * t)
+    x = hp(lowpass(noise(n), 5200), 700) * flutter * np.sin(np.pi * ph) ** 1.5
+    snap = hp(noise(n), 2000) * env(n, .0005, .008) * .8
+    return x + np.roll(snap, int(.7 * n))
+
+
+def riffle(d=1.5):
+    """a stack of pages riffling (pages counting up)"""
+    n = int(d * SR); out = np.zeros(n + SR); k = int(d / .06)
+    for i in range(k):
+        u = (i / k) ** 1.4; p_ = page(.09) * (.5 + .5 * rng.random()); at = int(u * d * SR); out[at:at + len(p_)] += p_
+    return out[:n]
+
+
+def step():
+    n = int(.16 * SR); t = np.arange(n) / SR
+    thud = np.sin(2 * np.pi * (85 + 40 * np.exp(-t / .015)) * t) * env(n, .003, .035)
+    scuff = hp(lowpass(noise(n), 2500), 400) * env(n, .01, .03) * .35
+    return thud + scuff
+
+
+def footsteps(d=3.5):
+    n = int(d * SR); out = np.zeros(n + SR)
+    for i in range(int(d / .52) + 1):
+        s_ = step() * (.85 if i % 2 else 1); at = int(i * .52 * SR); out[at:at + len(s_)] += s_
+    return out[:n]
+
+
+def plate():
+    """weight plate clink: inharmonic metal partials over a low thump"""
+    n = int(1.2 * SR); t = np.arange(n) / SR
+    m = sum(w * np.sin(2 * np.pi * f * t) * np.exp(-t / dd) for f, w, dd in [(523, .5, .5), (1318, .35, .3), (2467, .2, .18), (3950, .12, .1)])
+    thump = np.sin(2 * np.pi * 70 * t) * env(n, .002, .06) * .6
+    return (m * env(n, .001, 10) + thump)
+
+
+def stamp():
+    """rubber stamp on paper"""
+    n = int(.25 * SR); t = np.arange(n) / SR
+    return np.sin(2 * np.pi * (95 + 50 * np.exp(-t / .01)) * t) * env(n, .002, .05) + hp(lowpass(noise(n), 3000), 300) * env(n, .001, .015) * .7
+
+
+def beep2():
+    """soft double beep: the timer is over"""
+    n = int(.11 * SR); t = np.arange(n) / SR; b = np.sin(2 * np.pi * 880 * t) * np.sin(np.pi * t / .11) ** 2
+    return np.concatenate([b, np.zeros(int(.07 * SR)), b])
+
+
+KIT = {"tick": tick, "tap": tap, "swish": swish, "ratchet": ratchet, "tone": tone, "chord": chord,
+       "clock": clock, "timer": timer, "pencil": pencil, "pen_check": pen_check, "page": page, "riffle": riffle,
+       "footsteps": footsteps, "plate": plate, "stamp": stamp, "beep2": beep2}
+PEAK = {"tick": -16, "tap": -16, "swish": -21, "ratchet": -19, "tone": -21, "chord": -16,   # dBFS peak at "present" (voice peaks ~-1.5)
+        "clock": -18, "timer": -20, "pencil": -15, "pen_check": -15, "page": -15, "riffle": -18,
+        "footsteps": -15, "plate": -15, "stamp": -14, "beep2": -21}
 LEVEL = {"present": 0, "subtle": -6}
+BEDS = {"clock", "timer", "footsteps", "riffle"}   # continuous sounds: may overlap one-shots
 
 
 def events(cfg, table, min_gap=.28):
@@ -87,17 +196,21 @@ def events(cfg, table, min_gap=.28):
         for e in own:
             at = sc["t0"] + e[0]
             if at < sc["t1"]:
-                ev.append((at, e[1], e[2] if len(e) > 2 else None))
+                dur = e[2] if len(e) > 2 else None
+                if dur == "end":
+                    dur = max(.3, sc["t1"] + .3 - at)   # beds run until the scene has faded out
+                ev.append((at, e[1], dur))
     ev.append((cfg["brandT"], "chord", None))
     ev.sort(); kept = []
     for e in ev:
-        if not kept or e[0] - kept[-1][0] >= min_gap or e[1] in ("tone", "chord"):
+        last = [k for k in kept if k[1] not in BEDS]
+        if e[1] in BEDS or e[1] in ("tone", "chord", "stamp") or not last or e[0] - last[-1][0] >= min_gap:
             kept.append(e)
     return kept
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("reel"); ap.add_argument("--level", default="subtle", choices=["subtle", "present", "off"])
+    ap = argparse.ArgumentParser(); ap.add_argument("reel"); ap.add_argument("--level", default="present", choices=["subtle", "present", "off"])
     ap.add_argument("--kit-out"); o = ap.parse_args(); d = o.reel.rstrip("/")
     if o.kit_out:
         import soundfile as sf
