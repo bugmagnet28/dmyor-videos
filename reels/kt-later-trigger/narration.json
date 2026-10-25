@@ -1,0 +1,20 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "max_font": 150,
+ "brand_anchor": "link in the bio",
+ "handle": "@becauseidmyor",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "script": "*Later* isn't a time. || Nothing in your day says *later*. || So it *never* comes. || Give it a *trigger*. || After I ___, I *will* ___. || After my morning *coffee*: 10 Spanish flashcards. || After I close my *laptop*: a 20-minute walk. || After *dinner*: read 10 pages. || Pick *one* habit you keep skipping. || Write the sentence *tonight*. || Archive your dream *today*. || Break it into *small* steps. || I've put the link in the bio.",
+ "spoken": "[hook] Later isn't a time. || When you say you'll do it later, there's nothing in your day that actually says later. || So it just never comes. || [turn] So give the habit a trigger instead, something you already do every single day. || And use this sentence. After I do this, I will do that. || Like, after I pour my morning coffee, I'll go through ten Spanish flashcards. || After I close my laptop for the day, I'll go for a twenty minute walk. || After I finish dinner, I'll read ten pages of my book. || [land] So pick the one habit you keep putting off, and attach it to something you already do. || [land] Then write that sentence down tonight. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, || [outro] and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "caption": {
+  "instagram": "\"Later\" isn't a time. Give the habit a trigger instead.\n\nAfter I ___, I will ___.\n\u2022 After my morning coffee \u2192 10 Spanish flashcards\n\u2022 After I close my laptop \u2192 a 20-minute walk\n\u2022 After dinner \u2192 read 10 pages\n\nWrite yours below \ud83d\udc47 and save this for tonight.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#habits #habitstacking #productivity #selfimprovement #procrastination",
+  "x": "\"Later\" isn't a time. Nothing in your day says later.\n\nGive the habit a trigger:\nAfter I ___, I will ___.\n\nAfter my morning coffee \u2192 10 flashcards\nAfter I close my laptop \u2192 20-min walk\nAfter dinner \u2192 10 pages",
+  "youtube_title": "\"Later\" isn't a time #Shorts"
+ },
+ "experiment": "V-EXP-28: batch 2026-10-26, kinetic vs illustrated on hard-truth behaviour hooks"
+}

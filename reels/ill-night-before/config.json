@@ -1,0 +1,201 @@
+{
+ "total": 52.36,
+ "brandT": 48.62,
+ "scenes": [
+  {
+   "type": "night-list",
+   "params": {
+    "stage": "hook",
+    "items": [
+     "Call the bank",
+     "Gym, 6 PM",
+     "Portfolio: 1 hour"
+    ],
+    "first": 2,
+    "when": "7:00 to 8:00 AM"
+   },
+   "head": "Your morning is decided<br>the <b>night before</b>.",
+   "t0": 0.0,
+   "t1": 2.69
+  },
+  {
+   "type": "morning-drift",
+   "params": {
+    "goal": "Portfolio: 1 hour",
+    "tiles": [
+     "Emails",
+     "Phone",
+     "Messages"
+    ],
+    "cue": [
+     "emails",
+     "phone",
+     "important"
+    ],
+    "at": [
+     3.37,
+     4.11,
+     5.17
+    ]
+   },
+   "head": "Decide in the morning,<br>lose your <b>best hour</b>.",
+   "t0": 2.69,
+   "t1": 9.69
+  },
+  {
+   "type": "night-list",
+   "params": {
+    "stage": "write",
+    "items": [
+     "Call the bank",
+     "Gym, 6 PM",
+     "Portfolio: 1 hour"
+    ],
+    "timer": "2 min",
+    "cue": [
+     "bed",
+     "three"
+    ],
+    "at": [
+     0.53,
+     2.65
+    ]
+   },
+   "head": "Before bed: write<br>tomorrow's <b>3 things</b>.",
+   "t0": 9.69,
+   "t1": 13.95
+  },
+  {
+   "type": "night-list",
+   "params": {
+    "stage": "first",
+    "items": [
+     "Call the bank",
+     "Gym, 6 PM",
+     "Portfolio: 1 hour"
+    ],
+    "first": 2,
+    "when": "7:00 to 8:00 AM, before messages",
+    "cue": [
+     "top",
+     "hour"
+    ],
+    "at": [
+     2.33,
+     5.87
+    ]
+   },
+   "head": "The goal goes <b>first</b>.",
+   "t0": 13.95,
+   "t1": 22.79
+  },
+  {
+   "type": "ready-desk",
+   "params": {
+    "doc": "Case study #2",
+    "time": "7:00",
+    "note": "start here",
+    "cue": [
+     "start",
+     "file",
+     "laptop"
+    ],
+    "at": [
+     0.63,
+     2.07,
+     3.05
+    ]
+   },
+   "head": "Set up the <b>start</b><br>tonight.",
+   "t0": 22.79,
+   "t1": 29.51
+  },
+  {
+   "type": "night-list",
+   "params": {
+    "stage": "all",
+    "title": "TOMORROW",
+    "items": [
+     "Laundry",
+     "Reply to Sam",
+     "Ch. 4 practice Qs"
+    ],
+    "first": 2,
+    "when": "7:00 AM, book open on page 112",
+    "cue": [
+     "tonight",
+     "first",
+     "book"
+    ],
+    "at": [
+     2.23,
+     4.41,
+     5.81
+    ]
+   },
+   "head": "Exam? <b>Chapter 4</b> first.",
+   "t0": 29.51,
+   "t1": 36.95
+  },
+  {
+   "type": "day-done",
+   "params": {
+    "rows": [
+     [
+      "7:00",
+      "Portfolio, 1 hour"
+     ],
+     [
+      "9:00",
+      "Work"
+     ],
+     [
+      "12:30",
+      "Lunch"
+     ],
+     [
+      "2:00",
+      "Meetings"
+     ],
+     [
+      "6:00",
+      "Gym"
+     ],
+     [
+      "8:00",
+      "Errands"
+     ]
+    ],
+    "label": "done before the day gets busy",
+    "cue": [
+     "busy",
+     "done"
+    ],
+    "at": [
+     1.27,
+     3.47
+    ]
+   },
+   "head": "Busy day? The big thing<br>is <b>already done</b>.",
+   "t0": 36.95,
+   "t1": 41.23
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Switch to UX design",
+    "date": "Open it again: Oct 2027",
+    "steps": [
+     "Case study #2",
+     "Portfolio site",
+     "Apply to 10 roles"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 41.23,
+   "t1": 48.62
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}

@@ -1,0 +1,24 @@
+{
+ "voice": "am_eric", "speed": 1.0, "gap_min": 0.18, "gap_max": 0.32, "tail": 1.2, "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 8,
+ "spoken": "[hook] Your morning gets decided the night before. || If you wake up and only then decide what to do, your best hour goes to emails and your phone, and the important thing slides to later. || [turn] So before bed, take two minutes and write down tomorrow's three things. Just three. || Then move the one that actually moves your goal to the top. Say you're switching careers. First thing tomorrow, one hour on your portfolio, before you open any messages. || And set up the start tonight. Leave the file open and the laptop on the desk, so in the morning you just sit down and keep going. || Studying for an exam? Same thing. Tonight you write, chapter four practice questions, first thing at seven, and you leave the book open on that page. || [land] So by the time the day gets busy, the most important thing is already done. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {"type":"night-list","params":{"stage":"hook","items":["Call the bank","Gym, 6 PM","Portfolio: 1 hour"],"first":2,"when":"7:00 to 8:00 AM"},"head":"Your morning is decided<br>the <b>night before</b>."},
+  {"type":"morning-drift","params":{"goal":"Portfolio: 1 hour","tiles":["Emails","Phone","Messages"],"cue":["emails","phone","important"]},"head":"Decide in the morning,<br>lose your <b>best hour</b>."},
+  {"type":"night-list","params":{"stage":"write","items":["Call the bank","Gym, 6 PM","Portfolio: 1 hour"],"timer":"2 min","cue":["bed","three"]},"head":"Before bed: write<br>tomorrow's <b>3 things</b>."},
+  {"type":"night-list","params":{"stage":"first","items":["Call the bank","Gym, 6 PM","Portfolio: 1 hour"],"first":2,"when":"7:00 to 8:00 AM, before messages","cue":["top","hour"]},"head":"The goal goes <b>first</b>."},
+  {"type":"ready-desk","params":{"doc":"Case study #2","time":"7:00","note":"start here","cue":["start","file","laptop"]},"head":"Set up the <b>start</b><br>tonight."},
+  {"type":"night-list","params":{"stage":"all","title":"TOMORROW","items":["Laundry","Reply to Sam","Ch. 4 practice Qs"],"first":2,"when":"7:00 AM, book open on page 112","cue":["tonight","first","book"]},"head":"Exam? <b>Chapter 4</b> first."},
+  {"type":"day-done","params":{"rows":[["7:00","Portfolio, 1 hour"],["9:00","Work"],["12:30","Lunch"],["2:00","Meetings"],["6:00","Gym"],["8:00","Errands"]],"label":"done before the day gets busy","cue":["busy","done"]},"head":"Busy day? The big thing<br>is <b>already done</b>."},
+  {"type":"dream-to-steps","params":{"dream":"Switch to UX design","date":"Open it again: Oct 2027","steps":["Case study #2","Portfolio site","Apply to 10 roles"]},"head":"Archive the dream.<br>Break it into <b>steps</b>."},
+  null
+ ],
+ "caption": {
+  "instagram": "Your morning is decided the night before.\n\nBefore bed (2 minutes):\n1. Write tomorrow's 3 things\n2. Move the one that moves your goal to the top\n3. Set up the start: file open, book open on the page\n\nSave this for tonight.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#productivity #morningroutine #habits #selfimprovement #goals",
+  "x": "Your morning is decided the night before.\n\nBefore bed, 2 minutes:\n1. Write tomorrow's 3 things\n2. Put the one that moves your goal first\n3. Set up the start (file open, book open on the page)",
+  "youtube_title": "Your morning is decided the night before #Shorts"
+ }
+}

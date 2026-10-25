@@ -64,6 +64,13 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `day-streak` | tonight / day 2-4 steps ticked, Monday card "Not day one" | `days`, `label`; cue x3 |
 | `date-vs-step` | calendar date fades, "First step: done, today" card gets the check | `day`, `num`, `step`, `when`; cue x4 |
 | `proof-to-motivation` | ticked tiles stack up a rising curve, label turns proof into motivation | `a`, `b` |
+| `night-list` | "TOMORROW" note card (moon), 3 items written on with a pencil reveal, the goal item moves to the top with a FIRST tag and a time; `stage`: hook (finished) / write (+ optional `timer` chip) / first (pre-written, reorders) / all | `items[3]`, `first`, `when`, `title`, `timer`; cue: write x2 / first x2 / all x3 |
+| `morning-drift` | 7-10 AM rows; distraction tiles (Emails, Phone, Messages) take the slots and push the goal card down to "later..." | `goal`, `tiles[3]`, `hours`; cue x3 |
+| `ready-desk` | laptop draws on, a document opens with a blinking cursor, sticky note "7:00 start here" | `doc`, `time`, `note`; cue x3 |
+| `day-done` | day schedule cards; the first (goal) block is ticked, busy blocks pile in and dim, label "done before the day gets busy" | `rows[[time,label]]`, `label`; cue x2 |
+| `outcome-line` | "morning weigh-in" display + a jagged 14-day line the dot follows, digits change; red "nothing's working" cross; `stage`: hook (finished) | `values`, `unit`, `label`, `days`, `quit`; cue x3 |
+| `outcome-vs-input` | OUTCOME card (can't control, dims) vs INPUT card (you control, sage + check) | `outcome[2]`, `input[2]`; cue x3 |
+| `input-week` | M-S grid rows of input ticks with live counters ("5 / 5") | `rows[[label,[day idx]]]`; cue per row |
 | `dream-to-steps` | "ARCHIVED TODAY" dream card branching into three ticked steps (use for the value close) | `tag`, `dream`, `date`, `steps[3]` |
 
 **Cues**: `params.cue` lists the spoken word that triggers each animation beat (null = default); `make_reel.py` resolves them to `params.at`, and `events.json` can time sounds as `"@i"` / `"@i+0.3"`, so picture and sound land on the voice. Prefer cues over fixed times for any new scene.

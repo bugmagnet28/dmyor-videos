@@ -1,0 +1,12 @@
+reels/ill-track-inputs/audio.mp3  44.38s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body land outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/4438 [00:00<?, ?frames/s] 56%|█████▌    | 2480/4438 [00:25<00:20, 95.41frames/s] 56%|█████▌    | 2480/4438 [00:40<00:20, 95.41frames/s]100%|██████████| 4438/4438 [00:51<00:00, 85.28frames/s]100%|██████████| 4438/4438 [00:51<00:00, 86.82frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+158 words, 44.38s, 3.56 words/sec
+-> reels/ill-track-inputs/cues.json
+  skip ['@2', 'ratchet', 1.2]: scene progress-bars has no beat for it
+  skip ['@2+1.25', 'right']: scene progress-bars has no beat for it
+sfx present: 32 sounds -> reels/ill-track-inputs/audio_mixed.mp3 swish@2.3 pop@3.3 pencil@3.6 pencil@9.7 swish@10.2 pop@11.0 right@13.7 swish@14.5 ratchet@16.0 ratchet@17.3 swish@19.1 right@23.8 right@24.1 right@24.4 right@24.7 right@25.0 right@25.5 right@25.8 swish@26.8 right@27.3 right@27.8 right@28.2 right@28.6 pop@29.9 tone@33.1 stamp@33.3 pop@34.9 pop@35.4 right@36.2 right@36.7 right@37.2 chord@40.5
+built reels/ill-track-inputs: 44.32s, 7 scenes, brand 40.54s, 3.56 words/sec
+scenes: [('outcome-line', 0.0, 2.33, None), ('outcome-line', 2.33, 10.25, [1.01, 4.77, 7.39]), ('outcome-vs-input', 10.25, 14.47, [0.25, 0.71, 3.25]), ('progress-bars', 14.47, 19.15, [1.55, 2.83]), ('input-week', 19.15, 26.81, [4.51, 5.65]), ('proof-to-motivation', 26.81, 33.15, None), ('dream-to-steps', 33.15, 40.54, None)]

@@ -1,0 +1,1186 @@
+{
+ "audio": "audio.mp3",
+ "duration": 52.43,
+ "text": "Your morning gets decided the night before. If you wake up and only then decide what to do, your best hour goes to emails and your phone, and the important thing slides to later. So before bed, take two minutes and write down tomorrow's three things, just three. Then move the one that actually moves your goal to the top. Say you're switching careers, first thing tomorrow, one hour on your portfolio before you open any messages. And set up the start tonight. Leave the file open and the laptop on the desk so in the morning you just sit down and keep going. Studying for an exam, same thing. Tonight you write chapter four practice questions, first thing at seven, and you leave the book open on that page. So by the time the day gets busy, the most important thing is already done. That's what Demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. If you want to try it out, I've put the link in the bio.",
+ "words": [
+  {
+   "w": "your",
+   "raw": "Your",
+   "s": 0.0,
+   "e": 0.28
+  },
+  {
+   "w": "morning",
+   "raw": "morning",
+   "s": 0.28,
+   "e": 0.58
+  },
+  {
+   "w": "gets",
+   "raw": "gets",
+   "s": 0.58,
+   "e": 0.84
+  },
+  {
+   "w": "decided",
+   "raw": "decided",
+   "s": 0.84,
+   "e": 1.4
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 1.4,
+   "e": 1.6
+  },
+  {
+   "w": "night",
+   "raw": "night",
+   "s": 1.6,
+   "e": 1.78
+  },
+  {
+   "w": "before",
+   "raw": "before.",
+   "s": 1.78,
+   "e": 2.26
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 2.74,
+   "e": 2.82
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 2.82,
+   "e": 2.94
+  },
+  {
+   "w": "wake",
+   "raw": "wake",
+   "s": 2.94,
+   "e": 3.12
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 3.12,
+   "e": 3.3
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 3.3,
+   "e": 3.42
+  },
+  {
+   "w": "only",
+   "raw": "only",
+   "s": 3.42,
+   "e": 3.64
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 3.64,
+   "e": 3.86
+  },
+  {
+   "w": "decide",
+   "raw": "decide",
+   "s": 3.86,
+   "e": 4.16
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 4.16,
+   "e": 4.36
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 4.36,
+   "e": 4.52
+  },
+  {
+   "w": "do",
+   "raw": "do,",
+   "s": 4.52,
+   "e": 4.78
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 4.96,
+   "e": 5.06
+  },
+  {
+   "w": "best",
+   "raw": "best",
+   "s": 5.06,
+   "e": 5.28
+  },
+  {
+   "w": "hour",
+   "raw": "hour",
+   "s": 5.28,
+   "e": 5.56
+  },
+  {
+   "w": "goes",
+   "raw": "goes",
+   "s": 5.56,
+   "e": 5.8
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 5.8,
+   "e": 6.06
+  },
+  {
+   "w": "emails",
+   "raw": "emails",
+   "s": 6.06,
+   "e": 6.36
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 6.36,
+   "e": 6.66
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 6.66,
+   "e": 6.8
+  },
+  {
+   "w": "phone",
+   "raw": "phone,",
+   "s": 6.8,
+   "e": 7.1
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 7.62,
+   "e": 7.76
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 7.76,
+   "e": 7.86
+  },
+  {
+   "w": "important",
+   "raw": "important",
+   "s": 7.86,
+   "e": 8.16
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 8.16,
+   "e": 8.42
+  },
+  {
+   "w": "slides",
+   "raw": "slides",
+   "s": 8.42,
+   "e": 8.78
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 8.78,
+   "e": 9.06
+  },
+  {
+   "w": "later",
+   "raw": "later.",
+   "s": 9.06,
+   "e": 9.32
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 9.74,
+   "e": 9.96
+  },
+  {
+   "w": "before",
+   "raw": "before",
+   "s": 9.96,
+   "e": 10.22
+  },
+  {
+   "w": "bed",
+   "raw": "bed,",
+   "s": 10.22,
+   "e": 10.46
+  },
+  {
+   "w": "take",
+   "raw": "take",
+   "s": 10.58,
+   "e": 10.68
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 10.68,
+   "e": 10.9
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 10.9,
+   "e": 11.12
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 11.12,
+   "e": 11.34
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 11.34,
+   "e": 11.54
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 11.54,
+   "e": 11.84
+  },
+  {
+   "w": "tomorrows",
+   "raw": "tomorrow's",
+   "s": 11.84,
+   "e": 12.34
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 12.34,
+   "e": 12.52
+  },
+  {
+   "w": "things",
+   "raw": "things,",
+   "s": 12.52,
+   "e": 12.92
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 13.18,
+   "e": 13.34
+  },
+  {
+   "w": "three",
+   "raw": "three.",
+   "s": 13.34,
+   "e": 13.68
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 14.0,
+   "e": 14.24
+  },
+  {
+   "w": "move",
+   "raw": "move",
+   "s": 14.24,
+   "e": 14.42
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 14.42,
+   "e": 14.6
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 14.6,
+   "e": 14.72
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 14.72,
+   "e": 14.9
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 14.9,
+   "e": 15.3
+  },
+  {
+   "w": "moves",
+   "raw": "moves",
+   "s": 15.3,
+   "e": 15.64
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 15.64,
+   "e": 15.8
+  },
+  {
+   "w": "goal",
+   "raw": "goal",
+   "s": 15.8,
+   "e": 15.98
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 15.98,
+   "e": 16.16
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 16.16,
+   "e": 16.28
+  },
+  {
+   "w": "top",
+   "raw": "top.",
+   "s": 16.28,
+   "e": 16.54
+  },
+  {
+   "w": "say",
+   "raw": "Say",
+   "s": 17.0,
+   "e": 17.18
+  },
+  {
+   "w": "youre",
+   "raw": "you're",
+   "s": 17.18,
+   "e": 17.38
+  },
+  {
+   "w": "switching",
+   "raw": "switching",
+   "s": 17.38,
+   "e": 17.66
+  },
+  {
+   "w": "careers",
+   "raw": "careers,",
+   "s": 17.66,
+   "e": 18.1
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 18.6,
+   "e": 18.8
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 18.8,
+   "e": 19.02
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow,",
+   "s": 19.02,
+   "e": 19.42
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 19.7,
+   "e": 19.82
+  },
+  {
+   "w": "hour",
+   "raw": "hour",
+   "s": 19.82,
+   "e": 20.02
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 20.02,
+   "e": 20.2
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 20.2,
+   "e": 20.34
+  },
+  {
+   "w": "portfolio",
+   "raw": "portfolio",
+   "s": 20.34,
+   "e": 20.78
+  },
+  {
+   "w": "before",
+   "raw": "before",
+   "s": 20.78,
+   "e": 21.28
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 21.28,
+   "e": 21.46
+  },
+  {
+   "w": "open",
+   "raw": "open",
+   "s": 21.46,
+   "e": 21.7
+  },
+  {
+   "w": "any",
+   "raw": "any",
+   "s": 21.7,
+   "e": 21.9
+  },
+  {
+   "w": "messages",
+   "raw": "messages.",
+   "s": 21.9,
+   "e": 22.32
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 22.84,
+   "e": 23.0
+  },
+  {
+   "w": "set",
+   "raw": "set",
+   "s": 23.0,
+   "e": 23.16
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 23.16,
+   "e": 23.28
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 23.28,
+   "e": 23.42
+  },
+  {
+   "w": "start",
+   "raw": "start",
+   "s": 23.42,
+   "e": 23.64
+  },
+  {
+   "w": "tonight",
+   "raw": "tonight.",
+   "s": 23.64,
+   "e": 23.98
+  },
+  {
+   "w": "leave",
+   "raw": "Leave",
+   "s": 24.56,
+   "e": 24.68
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 24.68,
+   "e": 24.86
+  },
+  {
+   "w": "file",
+   "raw": "file",
+   "s": 24.86,
+   "e": 25.14
+  },
+  {
+   "w": "open",
+   "raw": "open",
+   "s": 25.14,
+   "e": 25.52
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 25.52,
+   "e": 25.72
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 25.72,
+   "e": 25.84
+  },
+  {
+   "w": "laptop",
+   "raw": "laptop",
+   "s": 25.84,
+   "e": 26.1
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 26.1,
+   "e": 26.44
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 26.44,
+   "e": 26.58
+  },
+  {
+   "w": "desk",
+   "raw": "desk",
+   "s": 26.58,
+   "e": 26.84
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 26.84,
+   "e": 27.14
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 27.14,
+   "e": 27.24
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 27.24,
+   "e": 27.32
+  },
+  {
+   "w": "morning",
+   "raw": "morning",
+   "s": 27.32,
+   "e": 27.54
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 27.54,
+   "e": 27.74
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 27.74,
+   "e": 27.9
+  },
+  {
+   "w": "sit",
+   "raw": "sit",
+   "s": 27.9,
+   "e": 28.08
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 28.08,
+   "e": 28.32
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 28.32,
+   "e": 28.52
+  },
+  {
+   "w": "keep",
+   "raw": "keep",
+   "s": 28.52,
+   "e": 28.62
+  },
+  {
+   "w": "going",
+   "raw": "going.",
+   "s": 28.62,
+   "e": 29.0
+  },
+  {
+   "w": "studying",
+   "raw": "Studying",
+   "s": 29.56,
+   "e": 29.74
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 29.74,
+   "e": 29.94
+  },
+  {
+   "w": "an",
+   "raw": "an",
+   "s": 29.94,
+   "e": 30.08
+  },
+  {
+   "w": "exam",
+   "raw": "exam,",
+   "s": 30.08,
+   "e": 30.46
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 30.64,
+   "e": 30.76
+  },
+  {
+   "w": "thing",
+   "raw": "thing.",
+   "s": 30.76,
+   "e": 31.06
+  },
+  {
+   "w": "tonight",
+   "raw": "Tonight",
+   "s": 31.74,
+   "e": 31.74
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 31.74,
+   "e": 31.92
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 31.92,
+   "e": 32.18
+  },
+  {
+   "w": "chapter",
+   "raw": "chapter",
+   "s": 32.18,
+   "e": 32.5
+  },
+  {
+   "w": "four",
+   "raw": "four",
+   "s": 32.5,
+   "e": 32.82
+  },
+  {
+   "w": "practice",
+   "raw": "practice",
+   "s": 32.82,
+   "e": 33.22
+  },
+  {
+   "w": "questions",
+   "raw": "questions,",
+   "s": 33.22,
+   "e": 33.74
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 33.92,
+   "e": 34.06
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 34.06,
+   "e": 34.26
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 34.26,
+   "e": 34.4
+  },
+  {
+   "w": "seven",
+   "raw": "seven,",
+   "s": 34.4,
+   "e": 34.7
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 34.86,
+   "e": 34.92
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 34.92,
+   "e": 35.04
+  },
+  {
+   "w": "leave",
+   "raw": "leave",
+   "s": 35.04,
+   "e": 35.2
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 35.2,
+   "e": 35.32
+  },
+  {
+   "w": "book",
+   "raw": "book",
+   "s": 35.32,
+   "e": 35.48
+  },
+  {
+   "w": "open",
+   "raw": "open",
+   "s": 35.48,
+   "e": 35.82
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 35.82,
+   "e": 35.98
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 35.98,
+   "e": 36.12
+  },
+  {
+   "w": "page",
+   "raw": "page.",
+   "s": 36.12,
+   "e": 36.44
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 37.0,
+   "e": 37.16
+  },
+  {
+   "w": "by",
+   "raw": "by",
+   "s": 37.16,
+   "e": 37.32
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 37.32,
+   "e": 37.46
+  },
+  {
+   "w": "time",
+   "raw": "time",
+   "s": 37.46,
+   "e": 37.66
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 37.66,
+   "e": 37.82
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 37.82,
+   "e": 38.0
+  },
+  {
+   "w": "gets",
+   "raw": "gets",
+   "s": 38.0,
+   "e": 38.22
+  },
+  {
+   "w": "busy",
+   "raw": "busy,",
+   "s": 38.22,
+   "e": 38.66
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 38.94,
+   "e": 39.04
+  },
+  {
+   "w": "most",
+   "raw": "most",
+   "s": 39.04,
+   "e": 39.24
+  },
+  {
+   "w": "important",
+   "raw": "important",
+   "s": 39.24,
+   "e": 39.66
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 39.66,
+   "e": 39.92
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 39.92,
+   "e": 40.12
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 40.12,
+   "e": 40.42
+  },
+  {
+   "w": "done",
+   "raw": "done.",
+   "s": 40.42,
+   "e": 40.76
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 41.28,
+   "e": 41.62
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 41.62,
+   "e": 41.76
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 41.76,
+   "e": 42.14
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 42.14,
+   "e": 42.3
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 42.3,
+   "e": 42.58
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 42.98,
+   "e": 43.1
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 43.1,
+   "e": 43.48
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 43.48,
+   "e": 43.68
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 43.68,
+   "e": 43.92
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 43.92,
+   "e": 44.26
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 44.26,
+   "e": 44.5
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 44.5,
+   "e": 44.64
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 44.64,
+   "e": 44.78
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 44.78,
+   "e": 45.02
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 45.02,
+   "e": 45.14
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 45.14,
+   "e": 45.44
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 45.44,
+   "e": 45.88
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 45.88,
+   "e": 46.06
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 46.06,
+   "e": 46.2
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 46.2,
+   "e": 46.42
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 46.42,
+   "e": 46.64
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 46.64,
+   "e": 46.96
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 46.96,
+   "e": 47.28
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 47.28,
+   "e": 47.46
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 47.46,
+   "e": 47.6
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 47.6,
+   "e": 47.92
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 47.92,
+   "e": 48.24
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 48.62,
+   "e": 48.76
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 48.76,
+   "e": 48.9
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 48.9,
+   "e": 49.04
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 49.04,
+   "e": 49.16
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 49.16,
+   "e": 49.4
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 49.4,
+   "e": 49.58
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 49.58,
+   "e": 49.84
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 50.02,
+   "e": 50.18
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 50.18,
+   "e": 50.3
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 50.3,
+   "e": 50.46
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 50.46,
+   "e": 50.62
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 50.62,
+   "e": 50.8
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 50.8,
+   "e": 50.9
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 50.9,
+   "e": 51.16
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 4.78,
+   "text": "Your morning gets decided the night before. If you wake up and only then decide what to do,"
+  },
+  {
+   "s": 4.96,
+   "e": 9.32,
+   "text": "your best hour goes to emails and your phone, and the important thing slides to later."
+  },
+  {
+   "s": 9.74,
+   "e": 13.68,
+   "text": "So before bed, take two minutes and write down tomorrow's three things, just three."
+  },
+  {
+   "s": 14.0,
+   "e": 18.1,
+   "text": "Then move the one that actually moves your goal to the top. Say you're switching careers,"
+  },
+  {
+   "s": 18.6,
+   "e": 22.32,
+   "text": "first thing tomorrow, one hour on your portfolio before you open any messages."
+  },
+  {
+   "s": 22.84,
+   "e": 27.74,
+   "text": "And set up the start tonight. Leave the file open and the laptop on the desk so in the morning you"
+  },
+  {
+   "s": 27.74,
+   "e": 32.82,
+   "text": "just sit down and keep going. Studying for an exam, same thing. Tonight you write chapter four"
+  },
+  {
+   "s": 32.82,
+   "e": 36.44,
+   "text": "practice questions, first thing at seven, and you leave the book open on that page."
+  },
+  {
+   "s": 37.0,
+   "e": 40.76,
+   "text": "So by the time the day gets busy, the most important thing is already done."
+  },
+  {
+   "s": 41.28,
+   "e": 45.44,
+   "text": "That's what Demure is for. You archive your dream today so you can see it tomorrow"
+  },
+  {
+   "s": 45.44,
+   "e": 48.24,
+   "text": "and break it down into small steps you can actually do."
+  },
+  {
+   "s": 48.62,
+   "e": 51.16,
+   "text": "If you want to try it out, I've put the link in the bio."
+  }
+ ],
+ "wps": 3.55
+}

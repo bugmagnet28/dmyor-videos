@@ -1,0 +1,9 @@
+reels/kt-later-trigger/audio.mp3  44.78s  voice=am_eric preset=plain fx=False breaths=False stages=hook body body turn body body body body land land outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/4478 [00:00<?, ?frames/s] 57%|█████▋    | 2558/4478 [00:27<00:20, 92.03frames/s] 57%|█████▋    | 2558/4478 [00:40<00:20, 92.03frames/s]100%|██████████| 4478/4478 [00:53<00:00, 82.59frames/s]100%|██████████| 4478/4478 [00:53<00:00, 84.07frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+153 words, 44.78s, 3.42 words/sec
+-> reels/kt-later-trigger/cues.json
+built reels/kt-later-trigger: 44.7s, 12 cards, brand at 40.94s, 3.42 words/sec
+whisper heard: Later isn't a time. When you say you'll do it later, there's nothing in your day that actually says later. So it just never comes. So give the habit a trigger instead, something you already do every single day. And use this sentence, after I do this I will do that. Like after I pour my morning coffee, I'll go through 10 Spanish flashcards. After I close my laptop for the day, I'll go for 20 minute walk. After I finish dinner, I'll read 10 pages of my book. So pick the one habit you keep putting off, and attach it to something you already do. Then write that sentence down tonight. That's what Demure is for, you archive your dream today so you can see it tomorrow. And break it down into small steps you can actually do. If you want to try it out, I've put the link in the bio.

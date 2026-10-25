@@ -1,0 +1,23 @@
+{
+ "voice": "am_eric", "speed": 1.0, "gap_min": 0.18, "gap_max": 0.32, "tail": 1.2, "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 7,
+ "spoken": "[hook] You're probably tracking the wrong number. || Most people track the result, like their weight or how many clients they have. But that number jumps around from day to day, and when it doesn't move, they quit. || [turn] So track the input instead. The thing you actually do, and fully control. || Trying to lose weight? Track three gym sessions this week, and dinner cooked at home five nights. || Growing a freelance business? You can't make a client say yes. But you can send five proposals a week, and follow up on every single one. || [land] Hit your inputs for a few weeks, and the result usually follows. And on the days it doesn't, you still know you did your part. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {"type":"outcome-line","params":{"stage":"hook"},"head":"You're tracking the<br><b>wrong number</b>."},
+  {"type":"outcome-line","params":{"cue":["result","jumps","quit"]},"head":"The result <b>jumps around</b>."},
+  {"type":"outcome-vs-input","params":{"outcome":["Your weight","New clients"],"input":["Gym sessions","Proposals sent"],"cue":["track","input","control"]},"head":"Track the <b>input</b>."},
+  {"type":"progress-bars","params":{"rows":[["Gym sessions this week",3,3,""],["Dinners cooked at home",5,5,""]],"cue":["gym","dinner"]},"head":"Losing weight? Track<br><b>what you do</b>."},
+  {"type":"input-week","params":{"rows":[["Proposals sent",[0,1,2,3,4]],["Follow-ups",[1,2,3,4]]],"cue":["proposals","follow"]},"head":"Freelancing? <b>5 proposals</b><br>a week."},
+  {"type":"proof-to-motivation","params":{"a":"inputs","b":"results"},"head":"Inputs first.<br><b>Results</b> follow."},
+  {"type":"dream-to-steps","params":{"dream":"Full-time freelance","date":"Open it again: Oct 2027","steps":["5 proposals a week","Follow up on each","3 steady clients"]},"head":"Archive the dream.<br>Break it into <b>steps</b>."},
+  null
+ ],
+ "caption": {
+  "instagram": "You're probably tracking the wrong number.\n\nThe result (weight, clients) jumps around and you can't control it. Track the input:\n• Losing weight → 3 gym sessions + 5 home-cooked dinners a week\n• Freelancing → 5 proposals a week + follow up on each\n\nWhat's your input? 👇\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#consistency #habits #productivity #selfimprovement #goals",
+  "x": "You're probably tracking the wrong number.\n\nResults jump around. Track inputs you control:\nLosing weight → 3 gym sessions + 5 home dinners a week\nFreelancing → 5 proposals a week, follow up on each",
+  "youtube_title": "You're tracking the wrong number #Shorts"
+ }
+}

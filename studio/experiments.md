@@ -283,3 +283,12 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if views >= 30 and watch % beats the diagram reels, narrated kinetic hard-truths become 2 of 3 builds, diagram the 1 in 3 for product structure.
+
+## V-EXP-28: Same-day style split on hard-truth behaviour hooks: narrated kinetic typography vs animated illustration (owner-rule era, 40-57s)
+- Status: running (opened 2026-10-25, before building)
+- Change: batch of 4 for one day, all hard-truth hooks on behaviour topics (the two current signals: hard-truth 2.1x n=4; planning/goal-setting topics 0.4-0.6x). Two styles, two reels each: kinetic-typography (kt-later-trigger: habits / habit stacking; kt-five-goals: focus / one goal for 12 weeks) and animated-illustration-explainer (ill-night-before: procrastination / plan tomorrow tonight; ill-track-inputs: consistency / track inputs not outcomes). All narrated am_eric, value close, Graphite & Sage, @becauseidmyor. Baseline: the 4 illustrated reels live 2026-10-25 (ill-size-problem etc.).
+- Metric + target (48h per reel): views, avg watch time / watched %, shares+saves per 1k reach, follows. Target: at least one reel of the batch earns >= 1 follow (still 0 follows from 17 reels) and the median batch reach >= 20 (account median 16).
+- Expectation: illustrated beats kinetic on watched % (something moves every 1-3 s vs text-only cards); kinetic hooks equal or better on 3s hold (big type on frame 0). Saves highest on ill-night-before (a routine to do tonight). Confidence low (n=2 per arm, same day).
+- Result:
+- Verdict + why:
+- Next: if illustrated wins watch % by a clear margin on both pairs, illustrated becomes 3 of 4 daily builds and kinetic is kept for one-sentence reels only.

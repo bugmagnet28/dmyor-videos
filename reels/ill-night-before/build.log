@@ -1,0 +1,10 @@
+reels/ill-night-before/audio.mp3  52.43s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body land outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/5242 [00:00<?, ?frames/s] 53%|█████▎    | 2774/5242 [00:23<00:21, 116.28frames/s] 53%|█████▎    | 2774/5242 [00:40<00:21, 116.28frames/s]100%|██████████| 5242/5242 [00:47<00:00, 108.99frames/s]100%|██████████| 5242/5242 [00:47<00:00, 110.08frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+186 words, 52.43s, 3.55 words/sec
+-> reels/ill-night-before/cues.json
+sfx present: 35 sounds -> reels/ill-night-before/audio_mixed.mp3 swish@2.7 pop@6.1 pop@6.8 pop@7.4 swish@7.9 pop@9.7 pencil@10.5 swish@13.9 pop@16.3 right@16.8 pop@19.8 swish@22.8 pop@23.4 pop@24.9 pop@25.8 pop@29.6 pencil@31.7 right@34.4 pop@35.3 swish@37.0 right@37.5 pop@38.2 pop@38.5 pop@38.8 pop@39.1 pop@39.4 right@40.6 tone@41.2 stamp@41.4 pop@43.0 pop@43.5 right@44.3 right@44.8 right@45.3 chord@48.6
+built reels/ill-night-before: 52.36s, 8 scenes, brand 48.62s, 3.55 words/sec
+scenes: [('night-list', 0.0, 2.69, None), ('morning-drift', 2.69, 9.69, [3.37, 4.11, 5.17]), ('night-list', 9.69, 13.95, [0.53, 2.65]), ('night-list', 13.95, 22.79, [2.33, 5.87]), ('ready-desk', 22.79, 29.51, [0.63, 2.07, 3.05]), ('night-list', 29.51, 36.95, [2.23, 4.41, 5.81]), ('day-done', 36.95, 41.23, [1.27, 3.47]), ('dream-to-steps', 41.23, 48.62, None)]

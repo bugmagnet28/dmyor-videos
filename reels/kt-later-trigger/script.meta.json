@@ -1,0 +1,16 @@
+{
+ "style": "kinetic-typography",
+ "experiment": "V-EXP-28",
+ "quality": {
+  "hook": 4,
+  "usefulness": 5,
+  "specificity": 4,
+  "clarity": 5,
+  "retention": 3,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 33
+ },
+ "note": "Habit stacking ('After I ___, I will ___') with 3 credible examples. Long thoughts split into extra cards so no card holds > 5.4s. Retention 3: text-only. Words-per-second 3.4 (above the 2.6-3.2 guide; short owner-rule gaps)."
+}

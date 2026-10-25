@@ -100,3 +100,13 @@ Instagram locked the account ("we locked your account to protect you from a poss
 - Data note: the 09:40 grid read today shows hard-truth hooks lead (someday 74, plan-the-bad-day 34) and "planning"/"goal-setting" topics trail. Still 0 follows from 17 reels, so we need watch time to know why: ASK-V screenshots (app, ~5 min) are the most useful thing you can send.
 - Suggested order, one per day, alone, 09:30 or 19:30 IST: Sat Oct 24 not-lazy-next-step · Sun Oct 25 19:30 monday-wont-fix-it (Sunday night = "Monday is tomorrow") · Mon Oct 26 hours-in-a-week · Tue Oct 27 tree-first-5k.
 - Steps: 1) watch with sound `ready-to-post/2026-10-24-monday-wont-fix-it/video.mp4`. 2) post from the phone app with the caption + hashtags in post.md, cover = frame 0. 3) tick `[x] posted` in studio/post-queue.md (time is enough). 4) if you dislike it, one line in inbox/notes.md.
+
+## VASK-017: Approve the Mon Oct 26 batch (4 reels), one reply (2026-10-25)
+- Status: open
+- What: 4 new reels, all hard-truth hooks on behaviour topics (the one signal we have), 2 styles (V-EXP-28). All in `ready-to-post/2026-10-26-*/` with video.mp4 + post.md (caption, hashtags, X text, YouTube title, quality score, full spoken script).
+  1. 09:30 IST · **ill-night-before** (illustrated, 52.4s) · "Your morning is decided the night before." Plan tomorrow tonight: 3 things, goal first, set up the start. 34/40
+  2. 13:00 IST · **kt-later-trigger** (kinetic, 44.7s) · "Later isn't a time." Habit stacking: After I ___, I will ___ (coffee → 10 flashcards; close laptop → 20-min walk; dinner → 10 pages). 33/40
+  3. 16:30 IST · **ill-track-inputs** (illustrated, 44.3s) · "You're tracking the wrong number." Track inputs, not results (3 gym sessions + 5 home dinners; 5 proposals + follow-ups). 33/40
+  4. 19:30 IST · **kt-five-goals** (kinetic, 56.9s) · "Five goals. Zero progress." One main goal for 12 weeks, others on minimum, the rest parked with a date. 31/40
+- Steps: 1) watch with sound. 2) reply OK (or "drop N" / one line of changes) in inbox/notes.md or to Claude. 3) after OK, schedule at the times above (Instagram ≤ 5 scheduling flows per session, no insights in the same session; same times on X and YouTube). 4) tick them in studio/post-queue.md.
+- Old queue: not-lazy-next-step, tree-first-5k, hours-in-a-week are pre-owner-rules (orange palette, @dmyor_global, no value close). I suggest retiring them unless you want them; say "retire old queue" and I will move them to _superseded.

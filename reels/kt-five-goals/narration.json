@@ -1,0 +1,20 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "max_font": 150,
+ "brand_anchor": "link in the bio",
+ "handle": "@becauseidmyor",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "script": "Five goals. *Zero* progress. || 5 or 6 *free* hours a week. || Split 5 ways: one *hour* each. || Pick *one* for 12 weeks. || Side business: your *5* best hours. || Not your ~leftover~ time. || The rest go on *minimum*. || Running: 2 *easy* runs a week. || Fitness *kept*. No race plan. || The rest wait for a *date*. || One goal *moving* beats five stuck. || Archive your dream *today*. || Break it into *small* steps. || I've put the link in the bio.",
+ "spoken": "[hook] Five goals at once usually means zero progress. || Think about it. With work and everything else, you've got maybe five or six free hours a week. || Split that five ways, and each goal gets about an hour. That's not enough to move any of them. || [turn] So pick one main goal for the next twelve weeks. Just one. || Say it's launching a side business. That goal gets your five best hours every week. || Not whatever leftover time you have at the end of the day. || The other goals don't disappear. They go on the minimum, just enough to keep them alive. || So if you're a runner, that's two easy runs a week. || You keep your fitness, you're just not training for a race right now. || And anything you can't even do the minimum for, park it on a list with a date, like January first, when you'll look at it again. || [land] Because one goal that's actually moving beats five goals that are all stuck. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, || [outro] and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "caption": {
+  "instagram": "Five goals at once = zero progress.\n\n\u2022 Pick ONE main goal for 12 weeks. It gets your best hours.\n\u2022 The others go on minimum (runner \u2192 2 easy runs a week)\n\u2022 Anything else: park it with a date to look again\n\nWhich one is your one? \ud83d\udc47\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#focus #goals #productivity #selfimprovement #prioritize",
+  "x": "Five goals at once = zero progress. Each gets about an hour a week.\n\nPick ONE for 12 weeks. It gets your 5 best hours.\nThe rest go on minimum (runner: 2 easy runs a week).\nAnything else waits for a date.",
+  "youtube_title": "Five goals at once = zero progress #Shorts"
+ },
+ "experiment": "V-EXP-28: batch 2026-10-26, kinetic vs illustrated on hard-truth behaviour hooks"
+}

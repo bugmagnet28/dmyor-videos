@@ -1,0 +1,585 @@
+{
+ "total": 56.88,
+ "cards": [
+  {
+   "t0": 0.0,
+   "t1": 3.29,
+   "words": [
+    {
+     "text": "Five",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 0.0
+    },
+    {
+     "text": "goals.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 0.4
+    },
+    {
+     "text": "Zero",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 1.92
+    },
+    {
+     "text": "progress.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 2.3
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 3.29,
+   "t1": 8.03,
+   "words": [
+    {
+     "text": "5",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 3.49
+    },
+    {
+     "text": "or",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 3.81
+    },
+    {
+     "text": "6",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 4.06
+    },
+    {
+     "text": "free",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 4.17
+    },
+    {
+     "text": "hours",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 4.45
+    },
+    {
+     "text": "a",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 4.75
+    },
+    {
+     "text": "week.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 4.95
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 8.03,
+   "t1": 13.19,
+   "words": [
+    {
+     "text": "Split",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 8.08
+    },
+    {
+     "text": "5",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 8.46
+    },
+    {
+     "text": "ways:",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 8.72
+    },
+    {
+     "text": "one",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 8.97
+    },
+    {
+     "text": "hour",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 10.42
+    },
+    {
+     "text": "each.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 10.67
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 13.19,
+   "t1": 16.49,
+   "words": [
+    {
+     "text": "Pick",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 13.36
+    },
+    {
+     "text": "one",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 13.54
+    },
+    {
+     "text": "for",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 14.3
+    },
+    {
+     "text": "12",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 14.55
+    },
+    {
+     "text": "weeks.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 15.12
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 16.49,
+   "t1": 21.23,
+   "words": [
+    {
+     "text": "Side",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 16.69
+    },
+    {
+     "text": "business:",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 16.93
+    },
+    {
+     "text": "your",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 18.37
+    },
+    {
+     "text": "5",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 18.57
+    },
+    {
+     "text": "best",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 18.85
+    },
+    {
+     "text": "hours.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 19.13
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 21.23,
+   "t1": 24.15,
+   "words": [
+    {
+     "text": "Not",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 21.28
+    },
+    {
+     "text": "your",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 21.53
+    },
+    {
+     "text": "leftover",
+     "e": false,
+     "s": true,
+     "m": false,
+     "t": 21.84
+    },
+    {
+     "text": "time.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 22.16
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 24.15,
+   "t1": 28.91,
+   "words": [
+    {
+     "text": "The",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 24.2
+    },
+    {
+     "text": "rest",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 24.45
+    },
+    {
+     "text": "go",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 26.06
+    },
+    {
+     "text": "on",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 26.24
+    },
+    {
+     "text": "minimum.",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 26.5
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 28.91,
+   "t1": 31.59,
+   "words": [
+    {
+     "text": "Running:",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 29.21
+    },
+    {
+     "text": "2",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 29.99
+    },
+    {
+     "text": "easy",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 30.26
+    },
+    {
+     "text": "runs",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 30.6
+    },
+    {
+     "text": "a",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 30.9
+    },
+    {
+     "text": "week.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 31.06
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 31.59,
+   "t1": 35.07,
+   "words": [
+    {
+     "text": "Fitness",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 32.2
+    },
+    {
+     "text": "kept.",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 32.45
+    },
+    {
+     "text": "No",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 32.7
+    },
+    {
+     "text": "race",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 33.88
+    },
+    {
+     "text": "plan.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 34.13
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 35.07,
+   "t1": 41.09,
+   "words": [
+    {
+     "text": "The",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 35.27
+    },
+    {
+     "text": "rest",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 35.52
+    },
+    {
+     "text": "wait",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 35.77
+    },
+    {
+     "text": "for",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 35.61
+    },
+    {
+     "text": "a",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 36.91
+    },
+    {
+     "text": "date.",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 37.03
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 41.09,
+   "t1": 45.33,
+   "words": [
+    {
+     "text": "One",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 41.46
+    },
+    {
+     "text": "goal",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 41.76
+    },
+    {
+     "text": "moving",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 42.74
+    },
+    {
+     "text": "beats",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 43.06
+    },
+    {
+     "text": "five",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 43.4
+    },
+    {
+     "text": "stuck.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 44.68
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 45.33,
+   "t1": 49.79,
+   "words": [
+    {
+     "text": "Archive",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 45.53
+    },
+    {
+     "text": "your",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 45.87
+    },
+    {
+     "text": "dream",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 46.07
+    },
+    {
+     "text": "today.",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 46.29
+    }
+   ],
+   "max": 150
+  },
+  {
+   "t0": 49.79,
+   "t1": 53.06,
+   "words": [
+    {
+     "text": "Break",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 50.08
+    },
+    {
+     "text": "it",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 50.26
+    },
+    {
+     "text": "into",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 50.64
+    },
+    {
+     "text": "small",
+     "e": true,
+     "s": false,
+     "m": false,
+     "t": 50.88
+    },
+    {
+     "text": "steps.",
+     "e": false,
+     "s": false,
+     "m": false,
+     "t": 51.24
+    }
+   ],
+   "max": 150
+  }
+ ],
+ "brandT": 53.06,
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "voice": "am_eric",
+ "script": "Five goals. *Zero* progress. || 5 or 6 *free* hours a week. || Split 5 ways: one *hour* each. || Pick *one* for 12 weeks. || Side business: your *5* best hours. || Not your ~leftover~ time. || The rest go on *minimum*. || Running: 2 *easy* runs a week. || Fitness *kept*. No race plan. || The rest wait for a *date*. || One goal *moving* beats five stuck. || Archive your dream *today*. || Break it into *small* steps. || I've put the link in the bio.",
+ "spoken": "[hook] Five goals at once usually means zero progress. || Think about it. With work and everything else, you've got maybe five or six free hours a week. || Split that five ways, and each goal gets about an hour. That's not enough to move any of them. || [turn] So pick one main goal for the next twelve weeks. Just one. || Say it's launching a side business. That goal gets your five best hours every week. || Not whatever leftover time you have at the end of the day. || The other goals don't disappear. They go on the minimum, just enough to keep them alive. || So if you're a runner, that's two easy runs a week. || You keep your fitness, you're just not training for a race right now. || And anything you can't even do the minimum for, park it on a list with a date, like January first, when you'll look at it again. || [land] Because one goal that's actually moving beats five goals that are all stuck. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, || [outro] and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio."
+}
