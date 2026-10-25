@@ -1,3 +1,5 @@
+> **Owner decisions live in `studio/OWNER-RULES.md` and override this playbook.** Older entries below (e.g. small calm type from 2026-10-20) are kept for history; where they conflict, OWNER-RULES wins.
+
 # Playbook (video)
 
 Rules learned from evidence. Each cites its source. Revise when data disagrees.
@@ -22,4 +24,4 @@ Rules learned from evidence. Each cites its source. Revise when data disagrees.
 - A beat that is the moment of tension (countdown digit, the number of a reveal) must be the biggest thing on screen at that moment (180px+); use per-swap `size` rather than keeping the title size. Source: which-one-is-a-plan v1 frame check (2026-10-20).
 - Calm style moves stacks down (content centring): start a 4-5 line frame-0 stack at y ~300-320 and keep gaps <= 40px, or the last line drops under y 1250. Source: hours-in-a-week safearea flag (2026-10-21).
 - Render on this machine in 3 parallel `record.js --start/--end` segments, then ffmpeg concat + mux audio; check each segment's frame count and the seams on the contact sheet. A single-pass record can hang for hours under load. Source: tree-first-5k (2026-10-22): single pass killed at 2h on frame 146/486; segments took ~90s each.
-- Tree series: set `handle: "@dmyor_global"` explicitly; keep titles (y 270) off the sun (put the sun low, y >= 1300, or away from the title band); vision card y <= 1165. Source: tree-first-5k audits + frame check (2026-10-22).
+- Tree series: set `handle: "@becauseidmyor"` explicitly (was @dmyor_global before 2026-10-21); keep titles (y 270) off the sun (put the sun low, y >= 1300, or away from the title band); vision card y <= 1165. Source: tree-first-5k audits + frame check (2026-10-22).

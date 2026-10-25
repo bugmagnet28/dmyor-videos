@@ -89,7 +89,7 @@ var SC=(TL.scenes||[]).map(function(s,si){
     var m=el.querySelector(".bmark"), l=el.querySelector(".bline"), h=el.querySelector(".bhandle");
     m.textContent=s.mark||"dmyor"; m.style.color=col(s.color||"paper");
     l.textContent=s.line||""; l.style.color=col(s.lineColor||s.color||"paper");
-    h.textContent=s.handle||"@dmyor_global"; h.style.background=col(s.handleBg||"amber"); h.style.color=col(s.handleColor||"ink");
+    h.textContent=s.handle||"@becauseidmyor"; h.style.background=col(s.handleBg||"amber"); h.style.color=col(s.handleColor||"ink");
     o.parts=[m,l,h];
   }
   else if(s.type==="grid"){
