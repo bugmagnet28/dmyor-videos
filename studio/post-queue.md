@@ -27,6 +27,7 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 - [x] scheduled 13:00 IST · **ill-later-trigger** (43.5s, rebuilt from the text-only kt version) · `ready-to-post/2026-10-26-ill-later-trigger/`
 - [x] scheduled 16:30 IST · **ill-track-inputs** (44.3s) · `ready-to-post/2026-10-26-ill-track-inputs/`
 - [x] scheduled 19:30 IST · **ill-five-goals** (55.5s, rebuilt from the text-only kt version) · `ready-to-post/2026-10-26-ill-five-goals/`
+- [x] scheduled 22:00 IST · **brand-one-place** (41.1s, cinematic motion brand film, Sanyam approved 2026-10-25) · `ready-to-post/2026-10-26-brand-one-place/`
 - Same times on Instagram, X and YouTube Shorts. kt-five-goals and kt-later-trigger moved to ready-to-post/_superseded/ (text-only, against owner rule).
 
 ## Scheduled on @becauseidmyor for 2026-10-25 (IST), animated illustration explainer batch (Graphite & Sage, object sound effects), Sanyam approved
