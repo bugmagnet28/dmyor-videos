@@ -20,7 +20,17 @@ From `~/Documents/dmyor-videos`:
    - `film.mp4`.
 3. Check frames with `node shots.js reels/<slug>/film.html <dir> <t...>` before recording (recording is about 6 min).
 
-## Photos
+## Backgrounds (owner 2026-10-25, latest: designed canvases, not photos)
+For this film the owner prefers our own designed canvas over photos:
+- drifting nebula clouds (`NEBP`, rotating in two layers);
+- orbit rings;
+- aurora ribbons;
+- a planet horizon;
+- twinkling stars.
+
+All of it is in `cosmos.html` `space()`. Keep render cost down: pre-blur any backdrop once (`NEBB`), never apply `filter` to full-frame draws per frame (a full-frame blur stalled the recorder at 17.7 s on 2026-10-25).
+
+## Photos (reference only)
 Owner OK'd free-licensed photos (2026-10-25). Use **CC0 / public domain only** (no attribution or share-alike strings attached). Get them from **Wikimedia Commons**: search via Openverse (`api.openverse.org`, `source=wikimedia`, `license=cc0,pdm`), then download through the Commons API thumbnail URL (`iiurlwidth=2160`).
 - Send a project User-Agent and never the owner's email.
 - Unsplash and StockSnap put bot checks or blocks on automated access: don't use them from scripts.
@@ -28,11 +38,10 @@ Owner OK'd free-licensed photos (2026-10-25). Use **CC0 / public domain only** (
 - The page grades photos toward Graphite & Sage (desaturate, sage soft-light), adds a slow Ken Burns zoom and pan, faint cloud wisps and small bokeh, and puts a light veil behind any text.
 - Current photos (owner 2026-10-25: mystic / galactic, no flowers): `nebula-pillars.jpg` (glass card), `milkyway-cygnus.jpg` (tree of light), `milkyway-lake.jpg` (closing lines), `nebula-orion.jpg` (wordmark). NASA/Hubble images marked public domain are fine; skip ESA/ESO images (CC BY).
 
-## Pace (owner 2026-10-25: "fast paced, a different thing each click, a happening reel")
-- The camera follows a shot list (`kf()` in `cosmos.html`): a new framing on every beat, with punch-ins, whips to close-ups, slight rotation and quick pull-backs, plus a small flash on each cut.
-- `make_film.py` puts a whoosh and hit on the same cut times, and the score carries a soft kick and hat pulse from the turn onward.
-- Keep cuts about 0.5-1.5 s apart. Nothing is ever static.
-- Page for this look: `assets/cosmos.html`. `one-place.html` is the earlier calm, light version.
+## Camera and pace (owner 2026-10-25)
+- Fast, but **not** a zoom on every beat. The owner liked "zoom in once, then swipe across parts of the screen": `kf()` in `cosmos.html` does one zoom into the card, then swipes (text, then seal, then date) and back out; then one zoom on the tree base, swipes through the milestones and out.
+- No punch-ins, rotations or flashes on cuts, and no sound on every cut: only a soft whoosh per swipe.
+- The score's soft pulse keeps the energy.
 
 ## How it is built
 - **Beats come from spoken words** (`BEATS` in `make_film.py`: hook, notes, head, fade, turn, one, write, keeps, years, started, breakdown, milestones, steps, week, step1, grow, close, archive, tomorrow, breakit, link). Picture, score and sound effects all read the same beat times, so a new script with the same shape re-times itself. A different story needs a new page plus its own `BEATS`.

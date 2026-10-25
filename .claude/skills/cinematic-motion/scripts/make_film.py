@@ -177,12 +177,8 @@ def sfx(T, total, kit):
     add(buf, k("right", 2), T["week"], .4)
     for i, at in enumerate(np.linspace(T["step1"] + .2, T["grow"] + .9, 9)): add(buf, k("pop", i % 6), at, .22)   # blossoms
     add(buf, whoosh(1.4, 250, 2500), T["close"] - .2, .4)                   # camera tilts up
-    w = max(T["write"], T["light"] + .15)
-    cuts = [T["notes"], T["head"], T["fade"], T["turn"], w + .05, T["keeps"] - .05, T["years"] - .05, T["started"] - .1, T["breakdown"] + .5, T["breakdown"] + 1.3,
-            T["milestones"] - .1, T["milestones"] + .45, T["milestones"] + .9, T["milestones"] + 1.45, T["steps"] - .05, T["steps"] + .5, T["steps"] + 1.05,
-            T["week"] - .1, T["step1"] - .1, T["grow"], T["archive"] - .1, T["tomorrow"] - .1, T["breakit"] - .1, T["link"] + 1.0]
-    for c in cuts:
-        add(buf, whoosh(.28, 900, 7000), c - .12, .22); add(buf, impact(.25)[: int(.4 * SR)], c, .18)
+    for c in [T["keeps"] - .1, T["years"] - .1, T["milestones"] - .15, T["milestones"] + .5, T["milestones"] + 1.0]:   # camera swipes only (mirrors kf() in cosmos.html)
+        add(buf, whoosh(.45, 500, 5000), c, .14)
     for i in range(5): add(buf, k("tick")[: int(.03 * SR)], T["link"] + .35 + i * .09, .3)   # letters land
     return buf[:int(total * SR)]
 
