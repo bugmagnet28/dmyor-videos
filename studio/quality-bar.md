@@ -27,7 +27,8 @@ If the answer is "they'd feel motivated", it fails. Motivation is a by-product; 
 3. **Brand close always explains the value**, never just "That's Dmyor": "That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do." then "If you want to try it out, I've put the link in the bio." Show a visual during the value sentence (e.g. the illustrated `dream-to-steps` scene); the brand card only holds the final line.
 4. **Mature, classy motion.** Ease-in-out and ease-out only (no bounce, no overshoot, no wobble), small movements (under 40 px), thin consistent strokes, no cartoon effects (sparkles, bobbing "?", shaking). Calm crossfades between scenes.
 5. **Palette: Graphite & Sage.** bg `#151719`, ink `#E9E7E2`, mute `#8C8F8A`, accent sage `#9DB8A3`, secondary `#D8CBA8`, warning `#C98B7B`, panel `#1D2023`, line `#33373B`. No orange.
-6. **Few, short gaps.** Pauses between thoughts 0.18-0.32 s (say.py defaults); no dead air on screen either: every scene keeps something moving or resolving until the next thought.
+6. **Never a frozen screen** (owner 2026-10-25). Something is always moving: camera drift, particles, light sweeps, clouds, typing. Static frames lose the viewer. Show visions being written (typewriter) rather than floating.
+7. **Few, short gaps.** Pauses between thoughts 0.18-0.32 s (say.py defaults); no dead air on screen either: every scene keeps something moving or resolving until the next thought.
 
 ## Useful formats (rotate; each must still pass the test)
 1. **Method in 3 steps, with a worked example** (goal → milestones → today's action, on a real goal).
