@@ -39,9 +39,9 @@ function rr(X,Y,w,h,r){x.beginPath();x.roundRect(X,Y,w,h,r);}
 function glow(X,Y,r,col,a){x.save();x.globalCompositeOperation="lighter";var g=x.createRadialGradient(X,Y,0,X,Y,r);g.addColorStop(0,hexA(col,a));g.addColorStop(.25,hexA(col,a*.45));g.addColorStop(1,hexA(col,0));x.fillStyle=g;x.fillRect(X-r,Y-r,2*r,2*r);x.restore();}
 // ---------- precomputed plates ----------
 function plate(fn){var c=document.createElement("canvas");c.width=W;c.height=H;fn(c.getContext("2d"));return c;}
-var SKY=plate(function(g){var gr=g.createLinearGradient(0,0,0,H);gr.addColorStop(0,P.sky1);gr.addColorStop(.55,P.sky2);gr.addColorStop(1,P.sky3);g.fillStyle=gr;g.fillRect(0,0,W,H);
-  g.filter="blur(38px)";for(var i=0;i<9;i++){g.fillStyle="rgba(255,255,255,"+(.35+rnd()*.3)+")";g.beginPath();g.ellipse(rnd()*W,150+rnd()*900,180+rnd()*260,50+rnd()*60,0,0,7);g.fill();}
-  g.filter="none";});
+var SKY=plate(function(g){var gr=g.createLinearGradient(0,0,0,H);gr.addColorStop(0,P.sky1);gr.addColorStop(.55,P.sky2);gr.addColorStop(1,P.sky3);g.fillStyle=gr;g.fillRect(0,0,W,H);});
+var CLOUDS=plate(function(g){g.filter="blur(38px)";for(var i=0;i<10;i++){var cx=rnd()*W,cy=150+rnd()*900,rx=180+rnd()*260,ry=50+rnd()*60,a=.35+rnd()*.3;g.fillStyle="rgba(255,255,255,"+a+")";
+  [-W,0,W].forEach(function(o){g.beginPath();g.ellipse(cx+o,cy,rx,ry,0,0,7);g.fill();});}g.filter="none";});   // tiles horizontally, no seams
 var MEADOW=plate(function(g){for(var i=0;i<520;i++){var X=rnd()*W,base=H-rnd()*170,h=60+rnd()*200;g.strokeStyle=hexA("#7E9583",.35+rnd()*.4);g.lineWidth=1.5+rnd()*1.5;
   g.beginPath();g.moveTo(X,H+10);g.quadraticCurveTo(X+(rnd()-.5)*40,base-h/2,X+(rnd()-.5)*30,base-h);g.stroke();if(rnd()<.45){var fx=X+(rnd()-.5)*30,fy=base-h;g.fillStyle=rnd()<.6?"#FFFFFF":P.pink;
   for(var k=0;k<5;k++){var a=k*1.2566;g.beginPath();g.ellipse(fx+Math.cos(a)*6,fy+Math.sin(a)*6,6,4,a,0,7);g.fill();}g.fillStyle=P.gold;g.beginPath();g.arc(fx,fy,3,0,7);g.fill();}}});
@@ -50,37 +50,56 @@ var PAPER=plate(function(g){g.fillStyle=P.paper;g.fillRect(0,0,W,H);var id=g.get
 // ---------- scene A: dreams floating at depth ----------
 var DREAMS=["Learn Spanish","Open my own studio","Run a marathon","See Japan in spring","Write a book","Buy mom a house","Learn to paint","Move to the mountains",
   "Launch my app","Play the guitar","Open a cafe","Travel solo","Finish my degree","Start a podcast","Learn to swim","Build a cabin"];
-var CARDS=DREAMS.map(function(s,i){var z=.45+rnd()*1.3;return {s:s,x:120+rnd()*840,y:260+rnd()*1400,z:z,ph:rnd()*6.28,keep:[1,4,9,12].indexOf(i)>=0,fo:rnd()};});
-CARDS.sort(function(a,b){return b.z-a.z;});
+// camera flies forward through dream cards; each card is typed while it approaches, then passes the camera; new ones keep arriving
+var NF=14,FR=1.5,FS=.32,FLY=[];for(var i=0;i<NF;i++)FLY.push({x:(rnd()-.5)*1250,y:(rnd()-.5)*1900,off:i/NF*FR,j:Math.floor(rnd()*16)});
+function fly(c,i,t){var cyc=t*FS+c.off,k=Math.floor(cyc/FR),pos=cyc-k*FR;return {d:1.85-pos,age:pos/FS,born:t-pos/FS,s:DREAMS[(c.j+k*5)%16],x:c.x*(k%2?-1:1),y:c.y+((k*53+i*17)%7-3)*45,i:i};}
+function proj(st){var s=1/st.d;return {X:W/2+st.x*s*.95,Y:H*.46+st.y*s*.7,s:s};}
+var KEEP=null;function keep(){if(KEEP)return KEEP;var c=[];FLY.forEach(function(f,i){var st=fly(f,i,T.turn);if(st.born<T.fade&&st.d>.75&&st.d<1.6)c.push({i:i,q:Math.abs(st.d-1.1)});});
+  c.sort(function(a,b){return a.q-b.q;});KEEP=c.slice(0,4).map(function(o){return o.i;});return KEEP;}
+var DUST=[];for(i=0;i<70;i++)DUST.push({a:rnd()*6.283,r:.15+rnd(),o:rnd()});
+function card(st,p,al,bl,chars,caret){if(al<=.01)return;var sc=Math.min(2.2,p.s*.8);x.save();x.globalAlpha=al;if(bl>.3)x.filter="blur("+bl.toFixed(1)+"px)";font(32*sc,600);
+  var full=st.s,w=x.measureText(full).width+60*sc,h=78*sc,sh=full.slice(0,chars);x.translate(p.X,p.Y);rr(-w/2,-h/2,w,h,20*sc);x.fillStyle=hexA("#22262A",.92);x.fill();
+  x.strokeStyle=hexA(P.ink,.16);x.lineWidth=2;x.stroke();x.fillStyle=P.ink;x.textAlign="left";var tx=-x.measureText(full).width/2;x.fillText(sh,tx,11*sc);
+  if(caret){x.fillStyle=P.acc;x.fillRect(tx+x.measureText(sh).width+3*sc,-16*sc,3*sc,34*sc);}x.restore();}
+var HEROES=C.heroes||["Someday I'll learn Spanish","Open my own studio by 30","Run my first marathon","Take mom to Japan","Write the book I keep talking about"];
+function hero(t,conv){var HD=1.6,tt=t+1.0,k=Math.floor(tt/HD),age=tt-k*HD;if(t>=T.turn+.3)return;var str=HEROES[k%HEROES.length];
+  var frozen=t>=T.fade;if(frozen){k=Math.floor((T.fade+1.0)/HD);age=Math.min(.95,(T.fade+1.0)-k*HD);str=HEROES[k%HEROES.length];}
+  var typed=Math.round(str.length*seg(age,0,.85));if(frozen)typed=Math.round(typed*(1-eio(seg(t,T.fade+.1,T.fade+.9))));
+  var pass=frozen?0:eio(seg(age,1.05,HD));var sc=lerp(1,3.2,ein(pass)),al=(1-pass)*eout(seg(age,0,.15))*(1-conv)*(frozen?1-seg(t,T.fade+.9,T.fade+1.2):1),bl=pass*14;
+  if(al<=.01)return;x.save();x.globalAlpha=al;if(bl>.5)x.filter="blur("+bl.toFixed(1)+"px)";x.translate(W/2,1180+pass*120);x.scale(sc,sc);
+  font(46,700);var w=Math.max(560,x.measureText(str).width+90),h=120;rr(-w/2,-h/2,w,h,28);x.fillStyle=hexA("#262B2F",.96);x.fill();x.strokeStyle=hexA(P.acc,.55);x.lineWidth=2.5;x.stroke();
+  font(20,800);x.fillStyle=P.acc;x.textAlign="left";x.fillText("NEW DREAM",-w/2+40,-h/2-18);
+  font(46,700);x.fillStyle=P.ink;var sh=str.slice(0,typed),tx=-x.measureText(str).width/2;x.fillText(sh,tx,16);
+  if(Math.floor(t*4)%2===0){x.fillStyle=P.acc;x.fillRect(tx+x.measureText(sh).width+4,-22,4,48);}x.restore();x.filter="none";}
 function sceneA(t){x.fillStyle=P.bg;x.fillRect(0,0,W,H);
-  var v=x.createRadialGradient(W/2,H*.45,100,W/2,H*.45,1200);v.addColorStop(0,"#1E2225");v.addColorStop(1,"#0F1012");x.fillStyle=v;x.fillRect(0,0,W,H);
-  // hairline crosshair grid (like a design canvas)
-  x.save();x.strokeStyle=hexA(P.ink,.07);x.lineWidth=1;for(var i=1;i<6;i++){x.beginPath();x.moveTo(i*W/6,0);x.lineTo(i*W/6,H);x.stroke();}for(i=1;i<10;i++){x.beginPath();x.moveTo(0,i*H/10);x.lineTo(W,i*H/10);x.stroke();}x.restore();
-  var conv=eio(seg(t,T.turn,T.one-.15)), cam=1+.015*t;
-  CARDS.forEach(function(c){var dx=Math.sin(t*.25+c.ph)*24*c.z,dy=Math.cos(t*.2+c.ph)*18*c.z-t*6*c.z;
-    var X=W/2+(c.x-W/2+dx)*cam*(.7+.3*c.z),Y=H/2+(c.y-H/2+dy)*cam*(.7+.3*c.z);
-    var fade=c.keep?0:eio(seg(t,T.fade+c.fo*.9,T.fade+.6+c.fo*.9));       // most dreams quietly fade
-    var band=(1-seg(t,T.turn-.3,T.turn))*Math.max(0,1-Math.abs(Y-575)/190);var al=(c.z>1.2?.55:c.z<.7?.45:.95)*(1-fade)*(1-conv)*(1-.85*band), bl=Math.abs(c.z-1)*9+fade*14+band*8;
-    if(al>.01){x.save();x.globalAlpha=al;x.filter="blur("+bl.toFixed(1)+"px)";var s=.62+.5*c.z;font(30*s,600);var w=x.measureText(c.s).width+56*s,h=72*s;
-      x.translate(X,Y+fade*40);rr(-w/2,-h/2,w,h,18*s);x.fillStyle=hexA("#24282B",.9);x.fill();x.strokeStyle=hexA(P.ink,.14);x.lineWidth=2;x.stroke();
-      x.fillStyle=P.ink;x.textAlign="center";x.fillText(c.s,0,11*s);x.restore();}
-    // the dreams that remain become points of light that converge
-    if(c.keep&&conv>0){var px=lerp(X,W/2,ein(conv)),py=lerp(Y,H*.46,ein(conv));glow(px,py,90,P.acc,.55*Math.min(1,conv*3));
-      x.save();x.strokeStyle=hexA(P.acc,.35*conv);x.lineWidth=2;x.beginPath();x.moveTo(lerp(X,px,.6),lerp(Y,py,.6));x.lineTo(px,py);x.stroke();x.restore();}});
-  x.filter="none";
-  // hook line (finished on frame 0), then "notes app" / "your head" asides, then "one place"
-  var sc=1-seg(t,T.turn,T.turn+.4);if(sc>0){var sg=x.createRadialGradient(W/2,570,40,W/2,570,560);sg.addColorStop(0,'rgba(15,16,18,'+(.88*sc)+')');sg.addColorStop(1,'rgba(15,16,18,0)');x.fillStyle=sg;x.fillRect(0,0,W,1200);}
+  var v=x.createRadialGradient(W/2,H*.45,100,W/2,H*.45,1200);v.addColorStop(0,"#1F2326");v.addColorStop(1,"#0E0F11");x.fillStyle=v;x.fillRect(0,0,W,H);
+  // grid that slides toward the camera (constant motion), a slow diagonal light sweep, dust streaming outward
+  x.save();x.strokeStyle=hexA(P.ink,.06);x.lineWidth=1;var gy=(t*60)%(H/10);for(var r=-1;r<11;r++){x.beginPath();x.moveTo(0,r*H/10+gy);x.lineTo(W,r*H/10+gy);x.stroke();}
+  for(r=1;r<6;r++){x.beginPath();x.moveTo(r*W/6,0);x.lineTo(r*W/6,H);x.stroke();}x.restore();
+  var sw=((t*.22)%1.4)-.2;x.save();x.globalCompositeOperation="lighter";var lg=x.createLinearGradient(sw*W-400,0,sw*W+400,H*.6);lg.addColorStop(0,"rgba(157,184,163,0)");lg.addColorStop(.5,"rgba(157,184,163,.07)");lg.addColorStop(1,"rgba(157,184,163,0)");x.fillStyle=lg;x.fillRect(0,0,W,H);x.restore();
+  var conv=eio(seg(t,T.turn,T.one-.15));
+  DUST.forEach(function(d){var z=((d.o+t*.18)%1),rr2=Math.pow(z,2.2)*1100*d.r,X=W/2+Math.cos(d.a)*rr2,Y=H*.46+Math.sin(d.a)*rr2*1.3;x.fillStyle=hexA(P.ink,.5*z*(1-conv));x.beginPath();x.arc(X,Y,1+z*3,0,7);x.fill();});
+  var K=keep();
+  FLY.map(function(f,i){return fly(f,i,t);}).sort(function(a,b){return b.d-a.d;}).forEach(function(st){var p=proj(st),isK=K.indexOf(st.i)>=0;
+    var ain=eout(seg(st.age,0,.35)),aout=seg(st.d,.42,.62),spawnOK=st.born<T.fade+.2?1:0;
+    var gone=isK?0:eio(seg(t,T.fade+(st.i%5)*.12,T.fade+.55+(st.i%5)*.12));          // most dreams quietly fade: text backspaces, card dissolves
+    var n=st.s.length,typed=Math.round(n*seg(st.age,.1,.1+n*.045)),del=Math.round(typed*(1-gone));
+    var band=(1-seg(t,T.turn-.3,T.turn))*Math.max(0,1-Math.abs(p.Y-575)/200);
+    var al=ain*aout*spawnOK*(1-conv)*(1-gone*.95)*(1-.8*band),bl=Math.min(14,Math.abs(st.d-1.05)*10)+gone*10+band*6;
+    card(st,p,al,bl,del,typed<n&&Math.floor(t*4)%2===0);
+    if(isK&&conv>0){var px=lerp(p.X,W/2,ein(conv)),py=lerp(p.Y,H*.46,ein(conv));glow(px,py,90,P.acc,.55*Math.min(1,conv*3));
+      x.save();x.strokeStyle=hexA(P.acc,.35*conv);x.lineWidth=2;x.beginPath();x.moveTo(lerp(p.X,px,.5),lerp(p.Y,py,.5));x.lineTo(px,py);x.stroke();x.restore();}});
+  x.filter="none";hero(t,conv);
+  var sc=1-seg(t,T.turn,T.turn+.4);if(sc>0){var sg=x.createRadialGradient(W/2,570,40,W/2,570,560);sg.addColorStop(0,"rgba(14,15,17,"+(.9*sc)+")");sg.addColorStop(1,"rgba(14,15,17,0)");x.fillStyle=sg;x.fillRect(0,0,W,1200);}
   var hk=1-eio(seg(t,T.notes-.5,T.notes-.1));
   if(hk>0){rich([["You have more ",P.ink],["dreams",P.acc]],W/2,520,74,700,hk);text("than you can hold.",W/2,610,74,700,P.ink,hk);}
   var a1=eout(seg(t,T.notes-.1,T.notes+.3))*(1-eio(seg(t,T.fade-.2,T.fade+.3)));if(a1>0)text("in your notes app",W/2,560,44,600,P.mute,a1);
   var a2=eout(seg(t,T.head-.1,T.head+.3))*(1-eio(seg(t,T.fade-.2,T.fade+.3)));if(a2>0)text("in your head",W/2,630,44,600,P.mute,a2);
   var a3=eout(seg(t,T.fade,T.fade+.4))*(1-eio(seg(t,T.turn-.2,T.turn+.2)));if(a3>0)rich([["most of them ",P.ink],["fade",P.mute]],W/2,600,64,700,a3*.9);
-  // the single point of light, then "one place"
   var pt=seg(t,T.one-.5,T.one);if(pt>0){var fl=Math.exp(-Math.max(0,t-T.one)*3);glow(W/2,H*.46,260+600*fl,P.acc,.6+.4*fl);glow(W/2,H*.46,60,"#FFFFFF",.9);}
   var a4=eout(seg(t,T.one,T.one+.35));if(a4>0)rich([["one ",P.acc],["place",P.ink]],W/2,H*.46+190,84,700,a4*(1-seg(t,T.ring,T.ring+.3)));
-  // fibres spiral out from the point and close into a ring, then the ring becomes a tunnel into light
-  var fb=seg(t,T.one+.15,T.ring);if(fb>0){x.save();x.globalCompositeOperation="lighter";x.lineWidth=2.5;for(var f=0;f<12;f++){var th=f/12*6.283;x.strokeStyle=hexA(f%3?P.ink:P.acc,.75);x.beginPath();
-    var n=40,R=250;for(var k=0;k<=n*eout(fb);k++){var s=k/n,r=R*s,an=th+1.6*(1-s)*(1-s);var X2=W/2+Math.cos(an)*r,Y2=H*.46+Math.sin(an)*r;k?x.lineTo(X2,Y2):x.moveTo(X2,Y2);}x.stroke();}x.restore();}}
+  var fb=seg(t,T.one+.15,T.ring);if(fb>0){x.save();x.globalCompositeOperation="lighter";x.lineWidth=2.5;for(var f=0;f<12;f++){var th=f/12*6.283+t*.6;x.strokeStyle=hexA(f%3?P.ink:P.acc,.75);x.beginPath();
+    var nn=40,R=250;for(var k=0;k<=nn*eout(fb);k++){var s2=k/nn,r3=R*s2,an=th+1.6*(1-s2)*(1-s2);var X2=W/2+Math.cos(an)*r3,Y2=H*.46+Math.sin(an)*r3;k?x.lineTo(X2,Y2):x.moveTo(X2,Y2);}x.stroke();}x.restore();}}
 function tunnel(t){var k=seg(t,T.ring,T.light);var z=Math.pow(9,eio(k));var bgk=eio(seg(t,T.ring+.55,T.light));
   x.fillStyle=mix("#101113",P.sky2,bgk);x.fillRect(0,0,W,H);if(bgk>.6){x.globalAlpha=(bgk-.6)/.4;x.drawImage(SKY,0,0);x.globalAlpha=1;}
   x.save();x.translate(W/2,H*.46);for(var i=6;i>=0;i--){var r=250*Math.pow(1.55,i)*z/Math.pow(1.55,0)*(.35+.65);if(r>2600)continue;x.lineWidth=60*z*Math.pow(1.3,i)/4+3;
@@ -89,14 +108,16 @@ function tunnel(t){var k=seg(t,T.ring,T.light);var z=Math.pow(9,eio(k));var bgk=
 var DREAM_TXT=C.dream||"Open my own design studio by 2028.";
 function glassCard(X,Y,w,h,r,al){x.save();x.globalAlpha=al;x.shadowColor="rgba(40,50,45,.18)";x.shadowBlur=60;x.shadowOffsetY=24;rr(X,Y,w,h,r);x.fillStyle="rgba(255,255,255,.2)";x.fill();x.restore();
   x.save();x.globalAlpha=al;rr(X,Y,w,h,r);x.clip();x.filter="blur(26px)";x.drawImage(SKY,0,0);x.filter="none";x.fillStyle="rgba(255,255,255,.42)";x.fillRect(X,Y,w,h);x.restore();
-  x.save();x.globalAlpha=al;rr(X+1,Y+1,w-2,h-2,r);x.strokeStyle="rgba(255,255,255,.85)";x.lineWidth=2;x.stroke();x.restore();}
-function sky(t,shift){x.drawImage(SKY,0,0);
-  x.drawImage(MEADOW,0,(shift||0)+Math.sin(t*.8)*3);}
+  x.save();x.globalAlpha=al;rr(X+1,Y+1,w-2,h-2,r);x.strokeStyle="rgba(255,255,255,.85)";x.lineWidth=2;x.stroke();x.restore();
+  var sh=((NOW*.45)%1.8)-.4;x.save();x.globalAlpha=al;rr(X,Y,w,h,r);x.clip();var sg=x.createLinearGradient(X+sh*w-160,Y,X+sh*w+160,Y+h);sg.addColorStop(0,"rgba(255,255,255,0)");sg.addColorStop(.5,"rgba(255,255,255,.35)");sg.addColorStop(1,"rgba(255,255,255,0)");x.fillStyle=sg;x.fillRect(X,Y,w,h);x.restore();}
+function sky(t,shift){x.drawImage(SKY,0,0);var o=(t*22)%W;x.drawImage(CLOUDS,-o,0);x.drawImage(CLOUDS,W-o,0);
+  bokeh(t);x.save();x.translate(W/2,H);x.transform(1,0,Math.sin(t*.9)*.02,1,0,0);x.drawImage(MEADOW,-W/2,(shift||0)-H);x.restore();}
+function bokeh(t){x.save();x.globalCompositeOperation="lighter";for(var i=0;i<16;i++){var px=(i*211+Math.sin(t*.4+i)*40)%W,py=H-((t*(30+i*4)+i*190)%(H+200));var g2=x.createRadialGradient(px,py,0,px,py,26+i%4*10);g2.addColorStop(0,"rgba(255,255,255,.35)");g2.addColorStop(1,"rgba(255,255,255,0)");x.fillStyle=g2;x.fillRect(px-70,py-70,140,140);}x.restore();}
 function sceneB(t){var push=1+.03*seg(t,T.light,T.breakdown);x.save();x.translate(W/2,H/2);x.scale(push,push);x.translate(-W/2,-H/2);sky(t);x.restore();
   var out=eio(seg(t,T.breakdown-.1,T.breakdown+.7));             // the card shrinks into a seed
   var ca=eout(seg(t,T.light-.25,T.light+.35));
   text("What's your dream?",W/2,700,66,700,P.graph,ca*(1-out));
-  var cw=lerp(880,60,ein(out)),ch=lerp(380,60,ein(out)),cx=W/2-cw/2,cy=lerp(800,1640,ein(out));
+  var cw=lerp(880,60,ein(out)),ch=lerp(380,60,ein(out)),cx=W/2-cw/2,cy=lerp(800+Math.sin(t*1.4)*8,1640,ein(out));
   glassCard(cx,cy,cw,ch,lerp(40,30,out),ca);
   if(out<.35){var ia=1-out/.35;x.save();x.globalAlpha=ca*ia;text("YOUR DREAM",cx+56,cy+82,24,800,P.mute,1,"left");
     var n=Math.round(DREAM_TXT.length*seg(t,Math.max(T.write,T.light+.15),Math.max(T.write,T.light+.15)+1.3)),s=DREAM_TXT.slice(0,n),words=s.split(" "),l1="",l2="";
@@ -140,7 +161,7 @@ function sceneC(t,fromB){var gk=eout(seg(t,T.breakdown+.5,T.steps+.9)),front=TRE
   MPICK.forEach(function(p,i){label(p.x,p.y,MIL[i],34,eout(seg(front,p.d-20,p.d+80))*eout(seg(t,T.milestones-.3,T.milestones+.2)));});
   SPICK.forEach(function(p,i){label(p.x,p.y,STEPS[i],26,eout(seg(front,p.d-20,p.d+60))*eout(seg(t,T.steps-.4,T.steps+.1)),P.acc2,i===HI&&t>T.week);});
   text(C.dreamShort||"Open my own design studio",540,1800,34,800,P.graph,eout(seg(t,T.breakdown+.6,T.breakdown+1.2)));
-  x.restore();
+  x.restore();pollen(t);
   var h1=eout(seg(t,T.breakdown+.6,T.breakdown+1.1))*(1-eio(seg(t,T.step1-.4,T.step1)));if(h1>0)rich([["Break it ",P.graph],["down.",P.acc]],W/2,560,72,700,h1);
   var h2=eout(seg(t,T.step1,T.step1+.5));if(h2>0)rich([["Watch it ",P.graph],["grow.",P.acc]],W/2,560,72,700,h2);
   if(fromB<1){x.save();x.globalAlpha=1-fromB;sky(t);x.restore();}}
@@ -150,7 +171,8 @@ function sceneD(t){var k=eio(seg(t,T.close-.2,T.close+1.4));x.save();x.translate
   var L=[[[["Archive your dream ",P.graph],["today.",P.acc]],T.archive],[[["See it ",P.graph],["tomorrow.",P.acc]],T.tomorrow],[[["Break it into ",P.graph],["small steps.",P.acc]],T.breakit]];
   var outk=eio(seg(t,T.link-.4,T.link+.2));L.forEach(function(l,i){var a=eout(seg(t,l[1]-.15,l[1]+.35));if(a>0)rich(l[0],W/2,700+i*110+(1-a)*20,62,700,a*(1-outk));});}
 // ---------- scene E: wordmark built on a grid ----------
-function sceneE(t){var k=seg(t,T.link-.3,T.link+.5);x.drawImage(PAPER,0,0);x.save();x.globalAlpha=1-eio(k);sceneD(t);x.restore();
+function pollen(t){for(var i=0;i<22;i++){var px=(i*157+Math.sin(t*.7+i)*60)%W,py=H-((t*(25+i*3)+i*97)%H);x.fillStyle=hexA(i%3?P.gold:P.acc,.45);x.beginPath();x.arc(px,py,2.5+i%3,0,7);x.fill();}}
+function sceneE(t){var k=seg(t,T.link-.3,T.link+.5);var pz=1+.04*seg(t,T.link,TOTAL);x.save();x.translate(W/2,H/2);x.scale(pz,pz);x.translate(-W/2,-H/2);x.drawImage(PAPER,0,0);pollen(t);x.save();x.globalAlpha=1-eio(k);sceneD(t);x.restore();
   var g=eout(seg(t,T.link,T.link+1));x.save();x.strokeStyle=hexA(P.graph,.12*g);x.lineWidth=1.5;for(var i=-3;i<=3;i++){x.beginPath();x.moveTo(W/2+i*110,700);x.lineTo(W/2+i*110,1180);x.stroke();}
   x.beginPath();x.moveTo(140,860);x.lineTo(940,860);x.moveTo(140,1010);x.lineTo(940,1010);x.stroke();
   [[-220,935],[0,935],[220,935]].forEach(function(c,j){x.beginPath();x.arc(W/2+c[0],c[1],95*eout(seg(t,T.link+.1+j*.12,T.link+.7+j*.12)),0,7);x.stroke();});x.restore();
@@ -159,9 +181,9 @@ function sceneE(t){var k=seg(t,T.link-.3,T.link+.5);x.drawImage(PAPER,0,0);x.sav
     x.save();x.globalAlpha=a;x.fillStyle=P.graph;x.fillText(ch,cx,1000+(1-a)*40);x.restore();cx+=w;}
   text("One place for your dreams.",W/2,1120,46,600,P.mute,eout(seg(t,T.link+1.1,T.link+1.6)));
   var h=eout(seg(t,T.link+1.5,T.link+2));if(h>0){x.save();x.globalAlpha=h;font(40,700);var hw=x.measureText(C.handle||"@becauseidmyor").width+64;rr(W/2-hw/2,1190,hw,72,36);x.fillStyle=P.acc;x.fill();
-    text(C.handle||"@becauseidmyor",W/2,1238,40,700,P.graph);x.restore();}}
+    text(C.handle||"@becauseidmyor",W/2,1238,40,700,P.graph);x.restore();}x.restore();}
 // ---------- the one continuous timeline ----------
-function render(t){t=Math.max(0,Math.min(TOTAL,t));x.setTransform(1,0,0,1,0,0);x.globalAlpha=1;x.filter="none";
+var NOW=0;function render(t){t=Math.max(0,Math.min(TOTAL,t));NOW=t;x.setTransform(1,0,0,1,0,0);x.globalAlpha=1;x.filter="none";
   if(t<T.ring)sceneA(t);
   else if(t<T.light){tunnel(t);}
   else if(t<T.breakdown+.75){var o=sceneB(t);}

@@ -151,6 +151,11 @@ def sfx(T, total, kit):
     add(buf, whoosh(1.4, 200, 1800), T["fade"], .25)
     add(buf, whoosh(.8, 800, 6000), T["one"] + .15, .3)                  # fibres spiral out
     add(buf, whoosh(1.2, 150, 4000), T["ring"], .5)                      # tunnel
+    for hi in range(int((T["fade"] + 1.0) / 1.6) + 1):                     # opening hero cards: typing, then a whoosh as each flies past
+        st = hi * 1.6 - 1.0
+        for at in np.arange(max(0, st), st + .85, .06):
+            if at < T["fade"] and rng.random() < .75: add(buf, k("tick")[: int(.02 * SR)], at, .16)
+        if st + 1.05 < T["fade"]: add(buf, whoosh(.6, 500, 4000), max(0, st + 1.0), .18)
     for i, at in enumerate(np.arange(max(T["write"], T["light"] + .15), max(T["write"], T["light"] + .15) + 1.3, .055)):
         if rng.random() < .8: add(buf, k("tick")[: int(.02 * SR)], at + rng.random() * .02, .25)   # typing
     add(buf, k("stamp"), T["keeps"], .5); add(buf, k("right", 1), T["keeps"] + .12, .35)
