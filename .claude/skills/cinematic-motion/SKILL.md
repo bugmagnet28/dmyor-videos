@@ -20,6 +20,14 @@ From `~/Documents/dmyor-videos`:
    - `film.mp4`.
 3. Check frames with `node shots.js reels/<slug>/film.html <dir> <t...>` before recording (recording is about 6 min).
 
+## Photos
+Owner OK'd free-licensed photos (2026-10-25). Use **CC0 / public domain only** (no attribution or share-alike strings attached). Get them from **Wikimedia Commons**: search via Openverse (`api.openverse.org`, `source=wikimedia`, `license=cc0,pdm`), then download through the Commons API thumbnail URL (`iiurlwidth=2160`).
+- Send a project User-Agent and never the owner's email.
+- Unsplash and StockSnap put bot checks or blocks on automated access: don't use them from scripts.
+- Every photo goes into `assets/photos/` with a line in `assets/photos/CREDITS.md`.
+- The page grades photos toward Graphite & Sage (desaturate, sage soft-light), adds a slow Ken Burns zoom and pan, faint cloud wisps and small bokeh, and puts a light veil behind any text.
+- Current photos: `lake-sky.jpg` (glass-card scene), `tulip-field.jpg` (closing lines).
+
 ## How it is built
 - **Beats come from spoken words** (`BEATS` in `make_film.py`: hook, notes, head, fade, turn, one, write, keeps, years, started, breakdown, milestones, steps, week, step1, grow, close, archive, tomorrow, breakit, link). Picture, score and sound effects all read the same beat times, so a new script with the same shape re-times itself. A different story needs a new page plus its own `BEATS`.
 - **Page** (`assets/one-place.html`, canvas 2D):

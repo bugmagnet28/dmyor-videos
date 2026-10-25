@@ -190,6 +190,7 @@ def main():
     json.dump(cfg, open(os.path.join(d, "config.json"), "w"), indent=1)
     html = open(os.path.join(SKILL, "assets", n.get("page", "one-place.html"))).read().replace("/*__CONFIG__*/{}", json.dumps(cfg))
     html = html.replace("url(fonts/", "url(" + os.path.relpath(os.path.join(SKILL, "assets/fonts"), d) + "/")
+    html = html.replace('"photos/', '"' + os.path.relpath(os.path.join(SKILL, "assets/photos"), d) + "/")
     open(os.path.join(d, "film.html"), "w").write(html)
     # audio: score + sfx + voice (voice ducks the score)
     spec = importlib.util.spec_from_file_location("kit", os.path.join(ROOT, ".claude/skills/animated-illustration-explainer/scripts/sfx.py"))
