@@ -58,4 +58,4 @@ Your morning gets decided the night before.
  If you want to try it out, I've put the link in the bio.
 
 ## Status
-Waiting for Sanyam's approval (batch message 2026-10-25). Not scheduled.
+Scheduled 2026-10-25 by Claude (Sanyam delegated approval) for 2026-10-26 on Instagram, X and YouTube.

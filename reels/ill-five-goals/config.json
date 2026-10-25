@@ -1,0 +1,214 @@
+{
+ "total": 55.48,
+ "brandT": 51.68,
+ "scenes": [
+  {
+   "type": "five-goals",
+   "params": {
+    "stage": "hook",
+    "goals": [
+     "Side business",
+     "Run a half marathon",
+     "Learn Spanish",
+     "Write a book",
+     "Save $5,000"
+    ]
+   },
+   "head": "Five goals.<br><b>Zero</b> progress.",
+   "t0": 0.0,
+   "t1": 3.29
+  },
+  {
+   "type": "hour-split",
+   "params": {
+    "cue": [
+     "five",
+     "split",
+     "enough"
+    ],
+    "at": [
+     2.39,
+     4.41,
+     7.81
+    ]
+   },
+   "head": "5 or 6 free hours,<br>split <b>5 ways</b>.",
+   "t0": 3.29,
+   "t1": 12.55
+  },
+  {
+   "type": "five-goals",
+   "params": {
+    "stage": "pick",
+    "goals": [
+     "Side business",
+     "Run a half marathon",
+     "Learn Spanish",
+     "Write a book",
+     "Save $5,000"
+    ],
+    "cue": [
+     "one",
+     "twelve"
+    ],
+    "at": [
+     0.33,
+     1.56
+    ]
+   },
+   "head": "Pick <b>one</b> for 12 weeks.",
+   "t0": 12.55,
+   "t1": 15.85
+  },
+  {
+   "type": "best-hours",
+   "params": {
+    "cue": [
+     "side",
+     "five",
+     "leftover"
+    ],
+    "at": [
+     0.91,
+     2.89,
+     5.37
+    ]
+   },
+   "head": "It gets your<br><b>best hours</b>.",
+   "t0": 15.85,
+   "t1": 23.51
+  },
+  {
+   "type": "progress-bars",
+   "params": {
+    "rows": [
+     [
+      "Side business: main goal",
+      5,
+      6,
+      " h/week"
+     ],
+     [
+      "Running: minimum",
+      1,
+      6,
+      " h/week"
+     ],
+     [
+      "Spanish: minimum",
+      1,
+      6,
+      " h/week"
+     ]
+    ],
+    "cue": [
+     "disappear",
+     "minimum",
+     "just"
+    ],
+    "at": [
+     1.03,
+     2.33,
+     2.81
+    ]
+   },
+   "head": "The rest go on<br><b>minimum</b>.",
+   "t0": 23.51,
+   "t1": 28.01
+  },
+  {
+   "type": "two-versions",
+   "params": {
+    "title": "If you're a runner",
+    "tagA": "RACE PLAN",
+    "tagB": "MINIMUM",
+    "noIcon": true,
+    "full": "5 runs + a long run",
+    "small": "2 easy runs a week",
+    "cue": [
+     "runner",
+     "race",
+     "two",
+     "fitness"
+    ],
+    "at": [
+     0.71,
+     1.99,
+     3.45,
+     5.15
+    ]
+   },
+   "head": "Runner? <b>2 easy runs</b><br>a week.",
+   "t0": 28.01,
+   "t1": 33.91
+  },
+  {
+   "type": "parked-list",
+   "params": {
+    "items": [
+     "Write a book",
+     "Save $5,000"
+    ],
+    "date": "Look again: Jan 1",
+    "cue": [
+     "park",
+     "january"
+    ],
+    "at": [
+     2.03,
+     3.35
+    ]
+   },
+   "head": "Everything else waits<br>for a <b>date</b>.",
+   "t0": 33.91,
+   "t1": 40.01
+  },
+  {
+   "type": "progress-bars",
+   "params": {
+    "rows": [
+     [
+      "One goal, 12 weeks",
+      60,
+      100,
+      "%"
+     ],
+     [
+      "Five goals, 12 weeks",
+      8,
+      100,
+      "%"
+     ]
+    ],
+    "cue": [
+     "one",
+     "five"
+    ],
+    "at": [
+     0.29,
+     2.23
+    ]
+   },
+   "head": "One goal moving<br>beats <b>five stuck</b>.",
+   "t0": 40.01,
+   "t1": 44.21
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Launch my side business",
+    "date": "Open it again: Jan 2027",
+    "steps": [
+     "5 best hours a week",
+     "First paying customer",
+     "Launch in 12 weeks"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 44.21,
+   "t1": 51.68
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}

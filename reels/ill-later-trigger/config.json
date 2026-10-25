@@ -1,0 +1,160 @@
+{
+ "total": 43.54,
+ "brandT": 39.8,
+ "scenes": [
+  {
+   "type": "day-timeline",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "<b>Later</b> isn't a time.",
+   "t0": 0.0,
+   "t1": 1.73
+  },
+  {
+   "type": "day-timeline",
+   "params": {
+    "stage": "search",
+    "cue": [
+     "nothing",
+     "never"
+    ],
+    "at": [
+     1.49,
+     4.37
+    ]
+   },
+   "head": "Nothing in your day<br>says <b>later</b>.",
+   "t0": 1.73,
+   "t1": 7.19
+  },
+  {
+   "type": "trigger-link",
+   "params": {
+    "cue": [
+     "habit",
+     "already"
+    ],
+    "at": [
+     0.49,
+     2.33
+    ]
+   },
+   "head": "Give it a <b>trigger</b>.",
+   "t0": 7.19,
+   "t1": 11.41
+  },
+  {
+   "type": "sentence-template",
+   "params": {
+    "cue": [
+     "after",
+     "will"
+    ],
+    "at": [
+     1.31,
+     2.17
+    ]
+   },
+   "head": "Use this <b>sentence</b>.",
+   "t0": 11.41,
+   "t1": 14.45
+  },
+  {
+   "type": "trigger-pair",
+   "params": {
+    "a": "pour my morning coffee",
+    "b": "10 Spanish flashcards",
+    "when": "7:30 AM, every day",
+    "cue": [
+     "coffee",
+     "flashcards"
+    ],
+    "at": [
+     1.27,
+     3.15
+    ]
+   },
+   "head": "After <b>coffee</b>:<br>10 flashcards.",
+   "t0": 14.45,
+   "t1": 18.73
+  },
+  {
+   "type": "trigger-pair",
+   "params": {
+    "a": "close my laptop",
+    "b": "a 20-minute walk",
+    "when": "6 PM, after work",
+    "cue": [
+     "laptop",
+     "walk"
+    ],
+    "at": [
+     0.93,
+     2.97
+    ]
+   },
+   "head": "After the <b>laptop</b> closes:<br>a 20-minute walk.",
+   "t0": 18.73,
+   "t1": 22.45
+  },
+  {
+   "type": "trigger-pair",
+   "params": {
+    "a": "finish dinner",
+    "b": "read 10 pages",
+    "when": "8:30 PM",
+    "cue": [
+     "dinner",
+     "read"
+    ],
+    "at": [
+     0.65,
+     1.35
+    ]
+   },
+   "head": "After <b>dinner</b>:<br>10 pages.",
+   "t0": 22.45,
+   "t1": 25.73
+  },
+  {
+   "type": "sentence-template",
+   "params": {
+    "a": "pour my coffee",
+    "b": "do 10 flashcards",
+    "cue": [
+     null,
+     null,
+     "write",
+     "sentence"
+    ],
+    "at": [
+     0.2,
+     0.8,
+     4.63,
+     5.11
+    ]
+   },
+   "head": "Write yours <b>tonight</b>.",
+   "t0": 25.73,
+   "t1": 32.37
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Speak Spanish by next summer",
+    "date": "Open it again: Jul 2027",
+    "steps": [
+     "10 flashcards after coffee",
+     "1 lesson a week",
+     "First conversation"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 32.37,
+   "t1": 39.8
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}

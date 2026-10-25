@@ -1,0 +1,125 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 9,
+ "caption": {
+  "instagram": "\"Later\" isn't a time. Give the habit a trigger instead.\n\nAfter I ___, I will ___.\n• After my morning coffee → 10 Spanish flashcards\n• After I close my laptop → a 20-minute walk\n• After dinner → read 10 pages\n\nWrite yours below 👇 and save this for tonight.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#habits #habitstacking #productivity #selfimprovement #procrastination",
+  "x": "\"Later\" isn't a time. Nothing in your day says later.\n\nGive the habit a trigger:\nAfter I ___, I will ___.\n\nAfter my morning coffee → 10 flashcards\nAfter I close my laptop → 20-min walk\nAfter dinner → 10 pages",
+  "youtube_title": "\"Later\" isn't a time #Shorts"
+ },
+ "spoken": "[hook] Later isn't a time. || When you say you'll do it later, there's nothing in your day that actually says later. So it just never comes. || [turn] So give the habit a trigger instead, something you already do every single day. || And use this sentence. After I do this, I will do that. || Like, after I pour my morning coffee, I'll go through ten Spanish flashcards. || After I close my laptop for the day, I'll go for a twenty minute walk. || After I finish dinner, I'll read ten pages of my book. || [land] So pick the one habit you keep putting off, and attach it to something you already do. Then write that sentence down tonight. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "day-timeline",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "<b>Later</b> isn't a time."
+  },
+  {
+   "type": "day-timeline",
+   "params": {
+    "stage": "search",
+    "cue": [
+     "nothing",
+     "never"
+    ]
+   },
+   "head": "Nothing in your day<br>says <b>later</b>."
+  },
+  {
+   "type": "trigger-link",
+   "params": {
+    "cue": [
+     "habit",
+     "already"
+    ]
+   },
+   "head": "Give it a <b>trigger</b>."
+  },
+  {
+   "type": "sentence-template",
+   "params": {
+    "cue": [
+     "after",
+     "will"
+    ]
+   },
+   "head": "Use this <b>sentence</b>."
+  },
+  {
+   "type": "trigger-pair",
+   "params": {
+    "a": "pour my morning coffee",
+    "b": "10 Spanish flashcards",
+    "when": "7:30 AM, every day",
+    "cue": [
+     "coffee",
+     "flashcards"
+    ]
+   },
+   "head": "After <b>coffee</b>:<br>10 flashcards."
+  },
+  {
+   "type": "trigger-pair",
+   "params": {
+    "a": "close my laptop",
+    "b": "a 20-minute walk",
+    "when": "6 PM, after work",
+    "cue": [
+     "laptop",
+     "walk"
+    ]
+   },
+   "head": "After the <b>laptop</b> closes:<br>a 20-minute walk."
+  },
+  {
+   "type": "trigger-pair",
+   "params": {
+    "a": "finish dinner",
+    "b": "read 10 pages",
+    "when": "8:30 PM",
+    "cue": [
+     "dinner",
+     "read"
+    ]
+   },
+   "head": "After <b>dinner</b>:<br>10 pages."
+  },
+  {
+   "type": "sentence-template",
+   "params": {
+    "a": "pour my coffee",
+    "b": "do 10 flashcards",
+    "cue": [
+     null,
+     null,
+     "write",
+     "sentence"
+    ]
+   },
+   "head": "Write yours <b>tonight</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Speak Spanish by next summer",
+    "date": "Open it again: Jul 2027",
+    "steps": [
+     "10 flashcards after coffee",
+     "1 lesson a week",
+     "First conversation"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  null
+ ]
+}

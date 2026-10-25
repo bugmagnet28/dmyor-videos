@@ -1,0 +1,973 @@
+{
+ "audio": "audio.mp3",
+ "duration": 43.62,
+ "text": "Later isn't a time. When you say you'll do it later, there's nothing in your day that actually says later, so it just never comes. So give the habit a trigger instead, something you already do every single day. And use this sentence, after I do this I will do that. Like after I pour my morning coffee, I'll go through 10 Spanish flashcards. After I close my laptop for the day, I'll go for 20 minute walk. After I finish dinner, I'll read 10 pages of my book. So pick the one habit you keep putting off and attach it to something you already do. Then write that sentence down tonight. That's what Demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. If you want to try it out, I've put the link in the bio.",
+ "words": [
+  {
+   "w": "later",
+   "raw": "Later",
+   "s": 0.0,
+   "e": 0.46
+  },
+  {
+   "w": "isnt",
+   "raw": "isn't",
+   "s": 0.46,
+   "e": 0.78
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 0.78,
+   "e": 0.94
+  },
+  {
+   "w": "time",
+   "raw": "time.",
+   "s": 0.94,
+   "e": 1.26
+  },
+  {
+   "w": "when",
+   "raw": "When",
+   "s": 1.78,
+   "e": 1.86
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 1.86,
+   "e": 1.98
+  },
+  {
+   "w": "say",
+   "raw": "say",
+   "s": 1.98,
+   "e": 2.16
+  },
+  {
+   "w": "youll",
+   "raw": "you'll",
+   "s": 2.16,
+   "e": 2.36
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 2.36,
+   "e": 2.46
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 2.46,
+   "e": 2.6
+  },
+  {
+   "w": "later",
+   "raw": "later,",
+   "s": 2.6,
+   "e": 2.86
+  },
+  {
+   "w": "theres",
+   "raw": "there's",
+   "s": 3.02,
+   "e": 3.22
+  },
+  {
+   "w": "nothing",
+   "raw": "nothing",
+   "s": 3.22,
+   "e": 3.44
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 3.44,
+   "e": 3.7
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 3.7,
+   "e": 3.84
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 3.84,
+   "e": 4.04
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 4.04,
+   "e": 4.22
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 4.22,
+   "e": 4.62
+  },
+  {
+   "w": "says",
+   "raw": "says",
+   "s": 4.62,
+   "e": 4.9
+  },
+  {
+   "w": "later",
+   "raw": "later,",
+   "s": 4.9,
+   "e": 5.22
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 5.62,
+   "e": 5.84
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 5.84,
+   "e": 5.96
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 5.96,
+   "e": 6.1
+  },
+  {
+   "w": "never",
+   "raw": "never",
+   "s": 6.1,
+   "e": 6.34
+  },
+  {
+   "w": "comes",
+   "raw": "comes.",
+   "s": 6.34,
+   "e": 6.72
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 7.24,
+   "e": 7.38
+  },
+  {
+   "w": "give",
+   "raw": "give",
+   "s": 7.38,
+   "e": 7.54
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 7.54,
+   "e": 7.68
+  },
+  {
+   "w": "habit",
+   "raw": "habit",
+   "s": 7.68,
+   "e": 7.88
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 7.88,
+   "e": 8.06
+  },
+  {
+   "w": "trigger",
+   "raw": "trigger",
+   "s": 8.06,
+   "e": 8.22
+  },
+  {
+   "w": "instead",
+   "raw": "instead,",
+   "s": 8.22,
+   "e": 8.72
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 9.12,
+   "e": 9.26
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 9.26,
+   "e": 9.52
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 9.52,
+   "e": 9.8
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 9.8,
+   "e": 10.06
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 10.06,
+   "e": 10.36
+  },
+  {
+   "w": "single",
+   "raw": "single",
+   "s": 10.36,
+   "e": 10.72
+  },
+  {
+   "w": "day",
+   "raw": "day.",
+   "s": 10.72,
+   "e": 11.06
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 11.46,
+   "e": 11.6
+  },
+  {
+   "w": "use",
+   "raw": "use",
+   "s": 11.6,
+   "e": 11.78
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 11.78,
+   "e": 12.0
+  },
+  {
+   "w": "sentence",
+   "raw": "sentence,",
+   "s": 12.0,
+   "e": 12.36
+  },
+  {
+   "w": "after",
+   "raw": "after",
+   "s": 12.72,
+   "e": 12.9
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 12.9,
+   "e": 13.1
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 13.1,
+   "e": 13.24
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 13.24,
+   "e": 13.42
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 13.42,
+   "e": 13.58
+  },
+  {
+   "w": "will",
+   "raw": "will",
+   "s": 13.58,
+   "e": 13.7
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 13.7,
+   "e": 13.84
+  },
+  {
+   "w": "that",
+   "raw": "that.",
+   "s": 13.84,
+   "e": 14.12
+  },
+  {
+   "w": "like",
+   "raw": "Like",
+   "s": 14.5,
+   "e": 14.66
+  },
+  {
+   "w": "after",
+   "raw": "after",
+   "s": 14.66,
+   "e": 14.9
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 14.9,
+   "e": 15.12
+  },
+  {
+   "w": "pour",
+   "raw": "pour",
+   "s": 15.12,
+   "e": 15.28
+  },
+  {
+   "w": "my",
+   "raw": "my",
+   "s": 15.28,
+   "e": 15.46
+  },
+  {
+   "w": "morning",
+   "raw": "morning",
+   "s": 15.46,
+   "e": 15.72
+  },
+  {
+   "w": "coffee",
+   "raw": "coffee,",
+   "s": 15.72,
+   "e": 16.14
+  },
+  {
+   "w": "ill",
+   "raw": "I'll",
+   "s": 16.38,
+   "e": 16.52
+  },
+  {
+   "w": "go",
+   "raw": "go",
+   "s": 16.52,
+   "e": 16.66
+  },
+  {
+   "w": "through",
+   "raw": "through",
+   "s": 16.66,
+   "e": 16.86
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 16.86,
+   "e": 17.12
+  },
+  {
+   "w": "spanish",
+   "raw": "Spanish",
+   "s": 17.12,
+   "e": 17.6
+  },
+  {
+   "w": "flashcards",
+   "raw": "flashcards.",
+   "s": 17.6,
+   "e": 18.24
+  },
+  {
+   "w": "after",
+   "raw": "After",
+   "s": 18.78,
+   "e": 18.92
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 18.92,
+   "e": 19.16
+  },
+  {
+   "w": "close",
+   "raw": "close",
+   "s": 19.16,
+   "e": 19.4
+  },
+  {
+   "w": "my",
+   "raw": "my",
+   "s": 19.4,
+   "e": 19.66
+  },
+  {
+   "w": "laptop",
+   "raw": "laptop",
+   "s": 19.66,
+   "e": 19.98
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 19.98,
+   "e": 20.28
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 20.28,
+   "e": 20.4
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 20.4,
+   "e": 20.6
+  },
+  {
+   "w": "ill",
+   "raw": "I'll",
+   "s": 20.72,
+   "e": 20.86
+  },
+  {
+   "w": "go",
+   "raw": "go",
+   "s": 20.86,
+   "e": 21.0
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 21.0,
+   "e": 21.22
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "s": 21.22,
+   "e": 21.54
+  },
+  {
+   "w": "minute",
+   "raw": "minute",
+   "s": 21.54,
+   "e": 21.7
+  },
+  {
+   "w": "walk",
+   "raw": "walk.",
+   "s": 21.7,
+   "e": 22.06
+  },
+  {
+   "w": "after",
+   "raw": "After",
+   "s": 22.5,
+   "e": 22.7
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 22.7,
+   "e": 22.88
+  },
+  {
+   "w": "finish",
+   "raw": "finish",
+   "s": 22.88,
+   "e": 23.1
+  },
+  {
+   "w": "dinner",
+   "raw": "dinner,",
+   "s": 23.1,
+   "e": 23.42
+  },
+  {
+   "w": "ill",
+   "raw": "I'll",
+   "s": 23.6,
+   "e": 23.8
+  },
+  {
+   "w": "read",
+   "raw": "read",
+   "s": 23.8,
+   "e": 24.0
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 24.0,
+   "e": 24.28
+  },
+  {
+   "w": "pages",
+   "raw": "pages",
+   "s": 24.28,
+   "e": 24.66
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 24.66,
+   "e": 24.84
+  },
+  {
+   "w": "my",
+   "raw": "my",
+   "s": 24.84,
+   "e": 24.98
+  },
+  {
+   "w": "book",
+   "raw": "book.",
+   "s": 24.98,
+   "e": 25.24
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 25.78,
+   "e": 25.98
+  },
+  {
+   "w": "pick",
+   "raw": "pick",
+   "s": 25.98,
+   "e": 26.16
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 26.16,
+   "e": 26.32
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 26.32,
+   "e": 26.5
+  },
+  {
+   "w": "habit",
+   "raw": "habit",
+   "s": 26.5,
+   "e": 26.76
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 26.76,
+   "e": 27.0
+  },
+  {
+   "w": "keep",
+   "raw": "keep",
+   "s": 27.0,
+   "e": 27.16
+  },
+  {
+   "w": "putting",
+   "raw": "putting",
+   "s": 27.16,
+   "e": 27.38
+  },
+  {
+   "w": "off",
+   "raw": "off",
+   "s": 27.38,
+   "e": 27.7
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 27.7,
+   "e": 27.9
+  },
+  {
+   "w": "attach",
+   "raw": "attach",
+   "s": 27.9,
+   "e": 28.2
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 28.2,
+   "e": 28.36
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 28.36,
+   "e": 28.5
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 28.5,
+   "e": 28.8
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 28.8,
+   "e": 29.0
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 29.0,
+   "e": 29.32
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 29.32,
+   "e": 29.68
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 30.18,
+   "e": 30.36
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 30.36,
+   "e": 30.6
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 30.6,
+   "e": 30.84
+  },
+  {
+   "w": "sentence",
+   "raw": "sentence",
+   "s": 30.84,
+   "e": 31.22
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 31.22,
+   "e": 31.5
+  },
+  {
+   "w": "tonight",
+   "raw": "tonight.",
+   "s": 31.5,
+   "e": 31.86
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 32.42,
+   "e": 32.68
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 32.68,
+   "e": 32.86
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 32.86,
+   "e": 33.22
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 33.22,
+   "e": 33.4
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 33.4,
+   "e": 33.66
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 34.1,
+   "e": 34.18
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 34.18,
+   "e": 34.56
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 34.56,
+   "e": 34.78
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 34.78,
+   "e": 35.0
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 35.0,
+   "e": 35.34
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 35.34,
+   "e": 35.58
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 35.58,
+   "e": 35.72
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 35.72,
+   "e": 35.88
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 35.88,
+   "e": 36.1
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 36.1,
+   "e": 36.24
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 36.24,
+   "e": 36.54
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 36.54,
+   "e": 36.98
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 36.98,
+   "e": 37.16
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 37.16,
+   "e": 37.3
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 37.3,
+   "e": 37.52
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 37.52,
+   "e": 37.74
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 37.74,
+   "e": 38.04
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 38.04,
+   "e": 38.36
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 38.36,
+   "e": 38.56
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 38.56,
+   "e": 38.7
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 38.7,
+   "e": 39.0
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 39.0,
+   "e": 39.34
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 39.8,
+   "e": 39.96
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 39.96,
+   "e": 40.08
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 40.08,
+   "e": 40.24
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 40.24,
+   "e": 40.36
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 40.36,
+   "e": 40.58
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 40.58,
+   "e": 40.78
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 40.78,
+   "e": 41.04
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 41.26,
+   "e": 41.36
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 41.36,
+   "e": 41.48
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 41.48,
+   "e": 41.64
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 41.64,
+   "e": 41.8
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 41.8,
+   "e": 41.98
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 41.98,
+   "e": 42.08
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 42.08,
+   "e": 42.34
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 4.22,
+   "text": "Later isn't a time. When you say you'll do it later, there's nothing in your day that"
+  },
+  {
+   "s": 4.22,
+   "e": 9.26,
+   "text": "actually says later, so it just never comes. So give the habit a trigger instead, something"
+  },
+  {
+   "s": 9.26,
+   "e": 14.12,
+   "text": "you already do every single day. And use this sentence, after I do this I will do that."
+  },
+  {
+   "s": 14.5,
+   "e": 19.16,
+   "text": "Like after I pour my morning coffee, I'll go through 10 Spanish flashcards. After I"
+  },
+  {
+   "s": 19.16,
+   "e": 23.8,
+   "text": "close my laptop for the day, I'll go for 20 minute walk. After I finish dinner, I'll"
+  },
+  {
+   "s": 23.8,
+   "e": 28.5,
+   "text": "read 10 pages of my book. So pick the one habit you keep putting off and attach it to"
+  },
+  {
+   "s": 28.5,
+   "e": 33.22,
+   "text": "something you already do. Then write that sentence down tonight. That's what Demure"
+  },
+  {
+   "s": 33.22,
+   "e": 37.74,
+   "text": "is for. You archive your dream today so you can see it tomorrow and break it down into"
+  },
+  {
+   "s": 37.74,
+   "e": 42.34,
+   "text": "small steps you can actually do. If you want to try it out, I've put the link in the bio."
+  }
+ ],
+ "wps": 3.51
+}

@@ -292,3 +292,4 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Result:
 - Verdict + why:
 - Next: if illustrated wins watch % by a clear margin on both pairs, illustrated becomes 3 of 4 daily builds and kinetic is kept for one-sentence reels only.
+- 2026-10-25 (Claude, owner away, approvals delegated): the two kinetic-typography arms were rejected before posting because standalone text-only reels break the owner rule (graphics required, sound effects). Rebuilt as animated illustration (ill-later-trigger, ill-five-goals) with the same scripts. All 4 Oct-26 reels are now illustrated, so V-EXP-28 cannot compare styles; treat it as 4 more illustrated data points.

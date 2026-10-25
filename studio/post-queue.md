@@ -21,6 +21,14 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 - [ ] **2026-10-21 hours-in-a-week** (16.4s, no VO) · `ready-to-post/2026-10-21-hours-in-a-week/` · caption in post.md · tests V-EXP-22 · end card @dmyor_global
 
 
+## Scheduled on @becauseidmyor for 2026-10-26 (IST), animated illustration batch, scheduled by Claude (Sanyam delegated approval 2026-10-25)
+
+- [x] scheduled 09:30 IST · **ill-night-before** (52.4s) · `ready-to-post/2026-10-26-ill-night-before/`
+- [x] scheduled 13:00 IST · **ill-later-trigger** (43.5s, rebuilt from the text-only kt version) · `ready-to-post/2026-10-26-ill-later-trigger/`
+- [x] scheduled 16:30 IST · **ill-track-inputs** (44.3s) · `ready-to-post/2026-10-26-ill-track-inputs/`
+- [x] scheduled 19:30 IST · **ill-five-goals** (55.5s, rebuilt from the text-only kt version) · `ready-to-post/2026-10-26-ill-five-goals/`
+- Same times on Instagram, X and YouTube Shorts. kt-five-goals and kt-later-trigger moved to ready-to-post/_superseded/ (text-only, against owner rule).
+
 ## Scheduled on @becauseidmyor for 2026-10-25 (IST), animated illustration explainer batch (Graphite & Sage, object sound effects), Sanyam approved
 
 - [x] scheduled 09:30 IST · **ill-size-problem** (56.7s) · `ready-to-post/2026-10-25-ill-size-problem/`
