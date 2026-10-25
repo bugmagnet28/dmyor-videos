@@ -140,6 +140,14 @@ def score(T, total):
     add(buf, riser(.9, 400, 6000), T["link"] - .55, .2)
     add(buf, pad([D - 24, D - 12, D, D + 4, D + 7, D + 11, D + 14], total - T["link"] + 2, bright=7, a=.25, r=2.5), T["link"] + .3, .8)
     add(buf, bell(86, 4), T["link"] + .35, .3); add(buf, bell(81, 4), T["link"] + .6, .2); add(buf, bell(78, 4), T["link"] + 1.6, .15)
+    # pulse: soft kick on every beat + hats off-beat from the turn to the wordmark (keeps the reel moving)
+    bp_ = .5
+    for i, at in enumerate(np.arange(T["turn"], T["link"] + 1.5, bp_)):
+        tk = tt(.35); kick = np.sin(2 * np.pi * (52 + 70 * np.exp(-tk / .03)) * tk) * np.exp(-tk / .16)
+        g = .28 if at > T["light"] else .18
+        add(buf, kick, at, g)
+        hat = hp(rng.standard_normal(int(.05 * SR)), 7000) * np.exp(-np.arange(int(.05 * SR)) / SR / .012)
+        add(buf, hat, at + bp_ / 2, .06 if at > T["light"] else .04)
     buf = reverb(buf[:int(total * SR)], 3.0, .3)
     fo = int(1.8 * SR); buf[-fo:] *= np.linspace(1, 0, fo) ** 2
     return buf / (np.abs(buf).max() + 1e-9)
@@ -169,6 +177,12 @@ def sfx(T, total, kit):
     add(buf, k("right", 2), T["week"], .4)
     for i, at in enumerate(np.linspace(T["step1"] + .2, T["grow"] + .9, 9)): add(buf, k("pop", i % 6), at, .22)   # blossoms
     add(buf, whoosh(1.4, 250, 2500), T["close"] - .2, .4)                   # camera tilts up
+    w = max(T["write"], T["light"] + .15)
+    cuts = [T["notes"], T["head"], T["fade"], T["turn"], w + .05, T["keeps"] - .05, T["years"] - .05, T["started"] - .1, T["breakdown"] + .5, T["breakdown"] + 1.3,
+            T["milestones"] - .1, T["milestones"] + .45, T["milestones"] + .9, T["milestones"] + 1.45, T["steps"] - .05, T["steps"] + .5, T["steps"] + 1.05,
+            T["week"] - .1, T["step1"] - .1, T["grow"], T["archive"] - .1, T["tomorrow"] - .1, T["breakit"] - .1, T["link"] + 1.0]
+    for c in cuts:
+        add(buf, whoosh(.28, 900, 7000), c - .12, .22); add(buf, impact(.25)[: int(.4 * SR)], c, .18)
     for i in range(5): add(buf, k("tick")[: int(.03 * SR)], T["link"] + .35 + i * .09, .3)   # letters land
     return buf[:int(total * SR)]
 
