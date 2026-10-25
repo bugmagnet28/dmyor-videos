@@ -1,0 +1,44 @@
+{
+ "t": {
+  "hook": 1.72,
+  "notes": 4.12,
+  "head": 5.4,
+  "fade": 6.72,
+  "turn": 7.88,
+  "one": 9.34,
+  "write": 10.68,
+  "keeps": 12.34,
+  "years": 13.82,
+  "started": 15.98,
+  "breakdown": 17.2,
+  "milestones": 19.1,
+  "steps": 21.52,
+  "week": 23.04,
+  "step1": 24.18,
+  "grow": 25.94,
+  "close": 26.72,
+  "archive": 28.48,
+  "tomorrow": 30.54,
+  "breakit": 31.28,
+  "link": 34.16,
+  "ring": 10.09,
+  "light": 10.99
+ },
+ "total": 41.15,
+ "handle": "@becauseidmyor",
+ "dream": "Open my own design studio by 2028.",
+ "dreamShort": "Open my own design studio",
+ "milestones": [
+  "Portfolio site",
+  "First 3 clients",
+  "Studio space"
+ ],
+ "steps": [
+  "Pick a name",
+  "Call 2 studios",
+  "Save 20% a month",
+  "Set up the website"
+ ],
+ "archived": "Archived today",
+ "reopen": "Open again: Oct 2031"
+}

@@ -1,0 +1,23 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.22,
+ "gap_max": 0.36,
+ "spoken": "[hook] You have more dreams than you can hold. || Some live in your notes app. Some live in your head. And most of them quietly fade away. || [turn] So what if they all lived in one place? || You write your dream down today, and Dmyor keeps it for you. So years from now, you can open it and see where it all started. || Then you break it down. The big dream becomes milestones, and the milestones become small steps you can actually take this week. || [land] And one small step at a time, you watch it grow. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "handle": "@becauseidmyor",
+ "dream": "Open my own design studio by 2028.",
+ "dreamShort": "Open my own design studio",
+ "milestones": [
+  "Portfolio site",
+  "First 3 clients",
+  "Studio space"
+ ],
+ "steps": [
+  "Pick a name",
+  "Call 2 studios",
+  "Save 20% a month",
+  "Set up the website"
+ ],
+ "archived": "Archived today",
+ "reopen": "Open again: Oct 2031"
+}
