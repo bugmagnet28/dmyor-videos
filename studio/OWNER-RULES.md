@@ -37,6 +37,11 @@ Every decision Sanyam made about how Dmyor videos are made and posted, in one pl
   - pauses of 0.18-0.32 s between thoughts;
   - "Dmyor" is spoken "Deem-yor" (write `Deem-yor` in the TTS text).
 
+- Story reels (2026-10-27, Pixel Book): the story should not end abruptly on "That's what Dmyor is for". Bridge to the viewer first, then name Dmyor. Example: "Sam's story started on one page. Yours can too. Write your dreams and visions in one place, break them into small steps, and document your journey. Start yours on Dmyor."
+- Story reels: say the payoff concretely, not vaguely. "He did all he wanted to" was rejected; "His own company. The house. Every dream he once wrote in that book had come true." works.
+- Story reels: put a real pause after questions and dramatic beats ("But how?" then a beat). Record one clip per sentence so each pause can be placed.
+- Pacing: never hold a shot after its useful part ends; no long silences (fill with narration that makes sense). Aim for about 1:20 for story reels.
+
 ## 3. Look and motion
 - **Palette: Graphite & Sage.** bg `#151719`, ink `#E9E7E2`, accent `#9DB8A3`, secondary `#D8CBA8`, warning `#C98B7B`; deeper sage `#5E806A` for accent words on light backgrounds. Orange/black is rejected.
 - **Real graphics in every reel.** Never a captions-only or text-only (kinetic typography) reel (2026-10-24, "just captions won't cut it"). Kinetic type may only be a hook card inside a graphic reel.
@@ -65,6 +70,11 @@ Every decision Sanyam made about how Dmyor videos are made and posted, in one pl
   - Explainer reels have no background music (owner removed it earlier).
   - Cinematic/brand films have a composed score (synthesised) with a soft pulse, and the voice ducks it (2026-10-25: "the reel I sent had narration and soundtrack, we will also have that").
   - Open question (see section 7): music for every reel at posting time.
+
+- No risers or impacts building suspense (tried 2026-10-27, owner removed them).
+- Writing on paper: soft pen strokes, never a scratchy pencil sound.
+- Scene changes: a pop (picture and sound), not a page-turn effect.
+- Engine and vehicle sounds (helicopter etc.) fade in and out; never a hard loop at full level.
 
 ## 5. Styles (skills in `.claude/skills/`)
 | Style | Status | Use for |
