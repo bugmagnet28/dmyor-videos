@@ -8,89 +8,121 @@
  "tagline": "Archive your dream today.\nBreak it into steps you can do.",
  "handle": "@becauseidmyor",
  "brand_from": 8,
- "spoken": "[hook] Thinking about switching careers? Don't start with a course. Start with three conversations. || A course takes months of your evenings, and money. And you still won't know what the job actually feels like on a normal Tuesday. || [turn] The people already doing the job know that. So this week, find three of them. || Say you want to move into UX design. Search LinkedIn for UX designers in your city, and ask your friends if they know one. || Then send a short message. Something like: I'm thinking about moving into UX. Could I ask you three quick questions? Fifteen minutes, whenever suits you. || On the call, ask three things. What does a normal week look like? What do you wish you'd learned first? And how did you get your first role? || [land] After three calls, you'll know if you still want it. And which course is worth paying for, if any. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "spoken": "[hook] Want to switch careers? Don't start with a six month course. Start with three conversations. || A course costs months and money, and you still won't know the most important thing. What's a normal Tuesday like in that job? || [turn] So find three people who already do the work you want, and ask them. || Say you want to move into UX design. Search for UX designers, look for alumni from your school, or a friend of a friend. || Send a short message. Hi, I'm thinking about moving into UX. Could I ask you three quick questions about your work? || Keep the questions simple. What does a normal week look like? What do you wish you knew earlier? What should I learn first? || [land] Three conversations this week will tell you more than three months of guessing. Then pick the course, if you still need one. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
  "scenes": [
   {
    "type": "course-vs-talk",
-   "params": {},
-   "head": "Before the course:<br><b>3 conversations</b>."
+   "params": {
+    "course": "UX course",
+    "months": 6
+   },
+   "head": "Not a course first.<br><b>3 conversations</b>."
   },
   {
    "type": "course-cost",
    "params": {
+    "course": "UX design course",
+    "months": 6,
+    "q": "What's a normal Tuesday like?",
     "cue": [
      "months",
      "money",
      "tuesday"
     ]
    },
-   "head": "A course won't show you<br>a normal <b>Tuesday</b>."
+   "head": "Months, money,<br>still <b>unknown</b>."
   },
   {
    "type": "three-people",
    "params": {
+    "roles": [
+     "Designer",
+     "Product",
+     "Research"
+    ],
+    "label": "3 of 3 this week",
     "cue": [
-     "people",
-     "three"
+     "three",
+     "ask"
     ]
    },
-   "head": "Ask people<br><b>doing the job</b>."
+   "head": "Ask 3 people<br>who <b>do the job</b>."
   },
   {
    "type": "people-search",
    "params": {
+    "query": "UX designer",
+    "results": [
+     [
+      "UX designer",
+      "LinkedIn"
+     ],
+     [
+      "Product designer",
+      "Alumni"
+     ],
+     [
+      "UX researcher",
+      "Friend of a friend"
+     ]
+    ],
     "cue": [
-     "want",
-     "city",
-     "friends"
+     "search",
+     "alumni",
+     "friend"
     ]
    },
-   "head": "Find <b>three</b> of them."
+   "head": "Find them<br>in <b>10 minutes</b>."
   },
   {
    "type": "message-send",
    "params": {
+    "to": "Priya, UX designer",
+    "lines": [
+     "Hi! I'm thinking about moving into UX.",
+     "Could I ask you 3 quick",
+     "questions about your work?"
+    ],
     "cue": [
      "short",
      null,
-     "fifteen"
+     "questions"
     ]
    },
-   "head": "Send a <b>short</b> message."
+   "head": "One <b>short</b> message."
   },
   {
    "type": "question-list",
    "params": {
+    "title": "3 questions",
+    "items": [
+     "What's a normal week like?",
+     "What do you wish you knew?",
+     "What should I learn first?"
+    ],
     "cue": [
      "normal",
      "wish",
-     "how"
+     "learn"
     ]
    },
-   "head": "Ask <b>3 questions</b>."
+   "head": "Three <b>simple</b> questions."
   },
   {
-   "type": "goal-tree",
+   "type": "three-people",
    "params": {
-    "stage": "path",
-    "vision": "Work as a UX designer",
-    "milestones": [
-     "3 conversations",
-     "Pick the right course",
-     "First case study"
+    "roles": [
+     "Designer",
+     "Product",
+     "Research"
     ],
-    "actions": [
-     "Find 3 designers",
-     "Send 3 messages",
-     "Ask 3 questions"
-    ],
-    "m": 0,
-    "today": 1,
+    "label": "3 of 3 this week",
     "cue": [
-     "know"
+     "three",
+     "guessing"
     ]
    },
-   "head": "Then you know<br>what's <b>worth it</b>."
+   "head": "Then <b>decide</b>."
   },
   {
    "type": "dream-to-steps",
@@ -98,9 +130,9 @@
     "dream": "Work in UX design",
     "date": "Open it again: Oct 2027",
     "steps": [
-     "3 conversations",
-     "Pick one course",
-     "First case study"
+     "Talk to 3 UX designers",
+     "Pick one skill",
+     "Build 1 portfolio piece"
     ]
    },
    "head": "Archive the dream.<br>Break it into <b>steps</b>."
@@ -108,9 +140,9 @@
   null
  ],
  "caption": {
-  "instagram": "Switching careers? Don't start with a course. Start with 3 conversations.\n\n1. Find 3 people already doing the job (LinkedIn, friends of friends)\n2. Send a short message: \"Could I ask you 3 quick questions? 15 minutes, whenever suits you.\"\n3. Ask: what's a normal week like, what do you wish you'd learned first, how did you get your first role?\n\nThen you'll know if you still want it, and which course is worth it.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "instagram": "Want to switch careers? Don't start with a 6-month course. Start with 3 conversations.\n\n\u2022 Find 3 people who already do the job (LinkedIn, alumni, a friend of a friend)\n\u2022 Send one short message\n\u2022 Ask: What's a normal week like? What do you wish you knew earlier? What should I learn first?\n\nThree conversations this week beat three months of guessing.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
   "hashtags": "#careerchange #careeradvice #uxdesign #jobsearch #goals",
-  "x": "Switching careers? Before you pay for a course, talk to 3 people doing the job.\n\nAsk them:\n1. What does a normal week look like?\n2. What do you wish you'd learned first?\n3. How did you get your first role?",
-  "youtube_title": "Switching careers? Start with 3 conversations #Shorts"
+  "x": "Switching careers? Don't start with a 6-month course.\n\nTalk to 3 people who already do the job this week. Ask what a normal week looks like. Then decide on the course.",
+  "youtube_title": "Switching careers? Do this before any course #Shorts"
  }
 }

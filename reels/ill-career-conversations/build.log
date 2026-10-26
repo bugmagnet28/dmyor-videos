@@ -1,8 +1,12 @@
-reels/ill-career-conversations/audio.mp3  52.28s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body land outro outro
+reels/ill-career-conversations/audio.mp3  51.49s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body land outro outro
 /opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
   warnings.warn("FP16 is not supported on CPU; using FP32 instead")
-  0%|          | 0/5227 [00:00<?, ?frames/s] 56%|█████▌    | 2928/5227 [02:41<02:06, 18.15frames/s] 56%|█████▌    | 2928/5227 [02:52<02:06, 18.15frames/s]100%|██████████| 5227/5227 [05:39<00:00, 14.93frames/s]100%|██████████| 5227/5227 [05:39<00:00, 15.39frames/s]
+  0%|          | 0/5148 [00:00<?, ?frames/s] 56%|█████▋    | 2898/5148 [00:18<00:14, 160.00frames/s] 56%|█████▋    | 2898/5148 [00:30<00:14, 160.00frames/s] 94%|█████████▍| 4864/5148 [00:37<00:02, 125.56frames/s]100%|██████████| 5148/5148 [00:46<00:00, 96.84frames/s] 100%|██████████| 5148/5148 [00:46<00:00, 110.02frames/s]
 transcribing audio.mp3 with whisper (small.en)...
-189 words, 52.28s, 3.62 words/sec
+184 words, 51.49s, 3.57 words/sec
 -> reels/ill-career-conversations/cues.json
-sfx present: 41 sounds -> reels/ill-career-conversations/audio_mixed.mp3 pop@4.8 page@5.4 page@6.0 page@6.6 page@7.2 pop@10.4 pop@11.2 pop@11.7 pop@12.0 right@14.3 right@14.6 right@14.9 pop@15.2 typing@15.6 pop@19.8 pop@20.1 pop@20.7 right@21.2 right@21.5 right@21.8 typing@22.6 swish@27.3 pop@28.2 pop@28.9 pop@29.3 pencil@31.6 right@32.6 pencil@33.1 right@34.1 right@35.2 swish@36.1 pencil@37.2 right@38.5 tone@41.1 stamp@41.2 pop@42.8 pop@43.3 right@44.1 right@44.6 right@45.1 chord@48.5
+sfx present: 44 sounds -> reels/ill-career-conversations/audio_mixed.mp3 pop@5.1 page@5.7 page@6.3 page@6.9 page@7.5 pop@9.8 pop@11.7 pop@12.1 pop@12.4 pop@12.7 right@14.4 right@14.7 right@15.0 pop@15.4 typing@17.8 pop@19.4 pop@19.7 pop@20.7 right@21.2 right@21.5 right@21.8 typing@22.2 swish@26.7 pop@27.6 pop@28.2 pencil@30.0 right@31.0 pencil@31.4 right@32.4 pencil@32.7 right@33.7 pop@34.2 pop@34.5 right@36.9 right@37.2 right@37.5 tone@40.2 stamp@40.4 pop@42.0 pop@42.5 right@43.3 right@43.8 right@44.3 chord@47.6
+built reels/ill-career-conversations: 51.42s, 8 scenes, brand 47.64s, 3.57 words/sec
+scenes: [('course-vs-talk', 0.0, 5.05, None), ('course-cost', 5.05, 11.69, [0.63, 1.25, 4.75]), ('three-people', 11.69, 15.31, [0.39, 2.75]), ('people-search', 15.31, 21.85, [2.45, 4.07, 5.41]), ('message-send', 21.85, 28.17, [0.39, 0.99, 4.83]), ('question-list', 28.17, 33.89, [1.83, 3.27, 4.57]), ('three-people', 33.89, 40.23, [0.05, 3.01]), ('dream-to-steps', 40.23, 47.64, None)]
+recorded reels/ill-career-conversations/reel.mp4 (51.42s)
+packaged /Users/sanyampathak/Documents/dmyor-videos/ready-to-post/2026-10-27-ill-career-conversations

@@ -8,114 +8,91 @@
  "tagline": "Archive your dream today.\nBreak it into steps you can do.",
  "handle": "@becauseidmyor",
  "brand_from": 7,
- "spoken": "[hook] Your goal isn't stuck because you're lazy. It's stuck because it has no date. || Get fit, or read more, never asks anything of you today. There's no finish line, so there's always more time. || [turn] So rewrite it with a number and a date. Get fit becomes: run five K without stopping, by December thirty-first. || Now count back. That's about nine weeks away. So this week has a clear job: three sessions of twenty minutes, running and walking. || Same with reading. Read more becomes: twelve books by next October. That's one a month, or about ten pages a night. || [land] A goal without a date is just a wish. So pick one goal tonight, give it a number and a date, and you'll know exactly what this week is for. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "spoken": "[hook] Your goal has no date. That's why it's not moving. || Get fit sounds like a goal, but there's nothing to check. No number, no deadline, so every week feels the same. || [turn] Rewrite it with a number and a date. Get fit becomes, run five K by March first. || Now you can count. That's eighteen weeks from today, and this week has a job. Three easy runs, twenty minutes each. || Same with reading. Read more becomes twelve books by December thirty first. That's one book a month. || [land] Here's the test. If you can't tell whether this week was on track, the goal still needs a number or a date. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
  "scenes": [
   {
    "type": "goal-date",
    "params": {
     "stage": "hook",
-    "old": "Get fit"
+    "old": "Get fit",
+    "label": "no date"
    },
-   "head": "Your goal has<br><b>no date</b>."
+   "head": "No date.<br>That's why it's <b>not moving</b>."
   },
-  {
-   "type": "postpone-calendar",
-   "params": {
-    "note": "start tomorrow"
-   },
-   "head": "No finish line.<br>Always <b>more time</b>."
-  },
+  null,
   {
    "type": "goal-date",
    "params": {
     "stage": "rewrite",
     "old": "Get fit",
-    "neu": "Run 5K without stopping",
-    "date": "Dec 31",
+    "neu": "Run 5K",
+    "date": "by Mar 1",
     "cue": [
-     "rewrite",
-     "run",
-     "december"
+     "number",
+     "date",
+     "march"
     ]
    },
-   "head": "Add a number<br>and a <b>date</b>."
+   "head": "Add a <b>number</b><br>and a <b>date</b>."
   },
   {
    "type": "week-countdown",
    "params": {
-    "weeks": 9,
-    "end": "Dec 31",
+    "weeks": 18,
+    "end": "Mar 1",
     "rows": [
-     "Mon: run/walk 20 min",
-     "Wed: run/walk 20 min",
-     "Sat: run/walk 20 min"
+     "Easy run, 20 min",
+     "Easy run, 20 min",
+     "Easy run, 20 min"
     ],
     "cue": [
      "count",
-     "job",
+     "weeks",
      "three"
     ]
    },
-   "head": "9 weeks. This week:<br><b>3 sessions</b>."
+   "head": "18 weeks.<br>This week has a <b>job</b>."
   },
   {
-   "type": "math-split",
+   "type": "goal-date",
    "params": {
-    "total": 12,
-    "unit": "books",
-    "per": 1,
-    "cells": 12,
-    "cols": 6,
-    "cellLabels": [
-     "N",
-     "D",
-     "J",
-     "F",
-     "M",
-     "A",
-     "M",
-     "J",
-     "J",
-     "A",
-     "S",
-     "O"
-    ],
-    "perText": "÷ 12 months",
-    "resText": "≈ 10 pages a night",
-    "milestone": "Read more → 12 books by Oct",
+    "stage": "rewrite",
+    "old": "Read more",
+    "neu": "12 books",
+    "date": "by Dec 31",
     "cue": [
      "reading",
-     "october",
-     "month",
-     "pages"
+     "twelve",
+     "month"
     ]
    },
-   "head": "12 books by October<br>= <b>1 a month</b>."
+   "head": "Read more \u2192<br><b>12 books</b> by Dec 31."
   },
   {
    "type": "goal-date",
    "params": {
     "stage": "done",
     "old": "Get fit",
-    "neu": "Run 5K without stopping",
-    "date": "Dec 31",
-    "week": "3 run/walk sessions, 20 min",
+    "neu": "Run 5K",
+    "date": "by Mar 1",
+    "week": "3 easy runs",
+    "label": "on track?",
     "cue": [
-     "wish",
-     "week"
+     "test",
+     "track"
     ]
    },
-   "head": "No date is<br>just a <b>wish</b>."
+   "head": "Can you tell if<br>you're <b>on track</b>?"
   },
   {
    "type": "dream-to-steps",
    "params": {
-    "dream": "Run 5K, no stopping",
-    "date": "Open it again: Dec 31",
+    "dream": "Run 5K by Mar 1",
+    "date": "Open it again: Mar 2027",
     "steps": [
-     "3 sessions a week",
-     "A bit longer each week",
-     "5K on Dec 31"
+     "3 easy runs this week",
+     "Add 5 min each week",
+     "Race day: Mar 1"
     ]
    },
    "head": "Archive the dream.<br>Break it into <b>steps</b>."
@@ -123,9 +100,9 @@
   null
  ],
  "caption": {
-  "instagram": "Your goal isn't stuck because you're lazy. It has no date.\n\nRewrite it with a number and a date:\n• Get fit → run 5K without stopping by Dec 31 (9 weeks: 3 run/walk sessions this week)\n• Read more → 12 books by next October (about 10 pages a night)\n\nPick one goal tonight and give it a date.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
-  "hashtags": "#goalsetting #goals #productivity #selfimprovement #running",
-  "x": "Your goal isn't stuck because you're lazy. It has no date.\n\nGet fit → run 5K without stopping by Dec 31\nRead more → 12 books by October, about 10 pages a night\n\nA number and a date tell you what this week is for.",
-  "youtube_title": "Your goal has no date #Shorts"
+  "instagram": "Your goal has no date. That's why it's not moving.\n\n\u2022 \"Get fit\" \u2192 \"Run 5K by March 1\"\n\u2022 That's 18 weeks, and this week has a job: 3 easy runs, 20 min each\n\u2022 \"Read more\" \u2192 \"12 books by Dec 31\" = one a month\n\nThe test: if you can't tell whether this week was on track, add a number or a date.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#goals #goalsetting #running #selfimprovement #habits",
+  "x": "Your goal has no date. That's why it's not moving.\n\n\"Get fit\" \u2192 \"Run 5K by March 1\". 18 weeks. This week: 3 easy runs.\n\nIf you can't tell whether this week was on track, add a number or a date.",
+  "youtube_title": "Your goal needs a date #Shorts"
  }
 }

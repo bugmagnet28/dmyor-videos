@@ -8,90 +8,114 @@
  "tagline": "Archive your dream today.\nBreak it into steps you can do.",
  "handle": "@becauseidmyor",
  "brand_from": 8,
- "spoken": "[hook] You don't need more willpower to stop checking your phone. You need more distance. || When it's on your desk, checking it takes one second. So your hand gets there before you've even decided to. || [turn] So for your first focused block, put your phone in another room, and close the door. Then set a timer on your laptop for twenty-five minutes. || Now checking it means standing up and walking away from your work. And that small pause is usually enough to keep you on the task. || Studying? One chapter, phone in the kitchen. Writing a report? The first page, phone in the bedroom. || When the timer ends, take five minutes. Check whatever you want, then start the next block. || [land] So before your next block, pick the room your phone goes to. One closed door does more than willpower ever will. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "spoken": "[hook] You don't need more willpower to stop checking your phone. You need distance. || Every time it buzzes, picking it up takes one second. And one second is all your brain needs to say yes. || [turn] So make it harder. Put the phone in another room, close the door, and start a twenty five minute timer on your laptop. || Now checking it means standing up and walking to the door. That little pause is usually enough to keep you working. || Say you're studying for an exam. One block, twenty pages. A second block, twenty more. Phone in the kitchen both times. || When the timer ends, take a five minute break. Check whatever you want. Then go again. || [land] Pick the room right now. Tomorrow, your first block starts with the phone in the kitchen. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
  "scenes": [
   {
    "type": "phone-desk",
    "params": {
-    "stage": "hook"
+    "stage": "hook",
+    "label": "1 second"
    },
-   "head": "Not willpower.<br><b>Distance</b>."
+   "head": "Not willpower.<br>You need <b>distance</b>."
   },
   {
    "type": "phone-desk",
    "params": {
+    "label": "1 second",
     "cue": [
-     "desk",
+     "buzzes",
      "second"
     ]
    },
-   "head": "On the desk, it's<br><b>one second</b> away."
+   "head": "One second is <b>all it takes</b>."
   },
   {
    "type": "phone-room",
    "params": {
-    "room": "KITCHEN",
+    "room": "Kitchen",
+    "minutes": 25,
     "cue": [
-     "phone",
+     "room",
      "timer",
      "door"
     ]
    },
-   "head": "Another room.<br><b>Door closed</b>."
+   "head": "Phone in <b>another room</b>."
   },
   {
    "type": "phone-walk",
    "params": {
-    "room": "KITCHEN",
+    "room": "Kitchen",
+    "label": "the pause",
     "cue": [
      "standing",
-     "walking",
-     "pause"
+     "pause",
+     "working"
     ]
    },
-   "head": "Now it takes<br>a <b>walk</b>."
+   "head": "The walk is <b>the pause</b>."
   },
   {
    "type": "two-blocks",
    "params": {
+    "rows": [
+     [
+      "Study",
+      "20 pages",
+      "phone: kitchen"
+     ],
+     [
+      "Study",
+      "20 more pages",
+      "phone: kitchen"
+     ]
+    ],
     "cue": [
-     "studying",
-     "writing"
+     "block",
+     "second"
     ]
    },
-   "head": "Works for<br><b>any task</b>."
+   "head": "Two blocks.<br><b>Phone</b> stays out."
   },
   {
    "type": "break-timer",
    "params": {
+    "label": "5-min break",
     "cue": [
      "ends",
-     "five",
-     "next"
+     "break",
+     "again"
     ]
    },
-   "head": "Timer done?<br><b>5 minutes</b> for the phone."
+   "head": "25 on, <b>5 off</b>."
   },
   {
    "type": "room-pick",
    "params": {
+    "rooms": [
+     "Kitchen",
+     "Bedroom",
+     "Hallway"
+    ],
+    "pick": 0,
+    "note": "Tomorrow, first block: phone goes to the kitchen",
     "cue": [
-     "before",
-     "room",
-     "door"
+     "pick",
+     "tomorrow",
+     "kitchen"
     ]
    },
-   "head": "Pick the <b>room</b> now."
+   "head": "Pick the room <b>now</b>."
   },
   {
    "type": "dream-to-steps",
    "params": {
-    "dream": "Pass my final exams",
-    "date": "Open it again: June 2027",
+    "dream": "Pass my exam",
+    "date": "Open it again: Jun 2027",
     "steps": [
-     "25-min blocks",
      "Phone in the kitchen",
-     "One chapter a day"
+     "25-min blocks",
+     "5-min breaks"
     ]
    },
    "head": "Archive the dream.<br>Break it into <b>steps</b>."
@@ -99,9 +123,9 @@
   null
  ],
  "caption": {
-  "instagram": "You don't need more willpower to stop checking your phone. You need more distance.\n\n• Phone in another room, door closed\n• 25-minute timer on your laptop\n• Timer ends: 5 minutes for the phone, then the next block\n\nStudying? One chapter, phone in the kitchen.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
-  "hashtags": "#focus #productivity #studytips #deepwork #phoneaddiction",
-  "x": "You don't need more willpower to stop checking your phone. You need distance.\n\nPhone in another room, door closed, 25-minute timer on the laptop. When it rings, 5 minutes for the phone.",
-  "youtube_title": "Not willpower. Distance. #Shorts"
+  "instagram": "You don't need more willpower to stop checking your phone. You need distance.\n\n\u2022 Phone in another room, door closed\n\u2022 25-minute timer on your laptop\n\u2022 5-minute break, check whatever you want\n\u2022 Go again\n\nPick the room now. Tomorrow's first block starts with the phone in the kitchen.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#focus #productivity #studytips #deepwork #goals",
+  "x": "You don't need more willpower to stop checking your phone. You need distance.\n\nPhone in another room. Door closed. 25-minute timer. 5-minute break. Go again.",
+  "youtube_title": "Put your phone in another room #Shorts"
  }
 }

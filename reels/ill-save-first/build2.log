@@ -1,0 +1,12 @@
+reels/ill-save-first/audio.mp3  51.65s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body land outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/5164 [00:00<?, ?frames/s] 57%|█████▋    | 2928/5164 [00:55<00:42, 53.09frames/s] 57%|█████▋    | 2928/5164 [01:10<00:42, 53.09frames/s] 95%|█████████▌| 4906/5164 [02:32<00:08, 29.70frames/s] 95%|█████████▌| 4906/5164 [02:50<00:08, 29.70frames/s]100%|██████████| 5164/5164 [02:53<00:00, 26.47frames/s]100%|██████████| 5164/5164 [02:53<00:00, 29.76frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+186 words, 51.65s, 3.6 words/sec
+-> reels/ill-save-first/cues.json
+sfx present: 38 sounds -> reels/ill-save-first/audio_mixed.mp3 swish@4.0 miss@5.9 miss@6.5 miss@6.9 miss@9.1 pop@11.0 pop@12.1 right@14.0 pop@15.3 ratchet@15.6 pop@17.3 ratchet@18.1 right@19.9 swish@20.5 pop@21.7 pop@24.3 pop@25.2 coin@25.7 toggle@26.7 coin@27.4 swish@28.6 ratchet@29.6 ratchet@31.3 ratchet@33.2 right@34.5 pop@34.8 typing@36.0 pop@38.7 tap@39.4 right@39.7 tone@40.5 stamp@40.6 pop@42.2 pop@42.7 right@43.5 right@44.0 right@44.5 chord@47.8
+built reels/ill-save-first: 51.6s, 8 scenes, brand 47.82s, 3.6 words/sec
+scenes: [('month-leftover', 0.0, 4.01, None), ('month-leftover', 4.01, 10.91, [1.89, 2.49, 2.89, 5.05]), ('pay-order', 10.91, 15.29, [0.25, 1.19, 3.13]), ('math-split', 15.29, 20.47, [0.35, 1.99, 2.85, 4.65]), ('auto-transfer', 20.47, 28.57, [1.19, 3.81, 4.71, 6.19]), ('progress-bars', 28.57, 34.53, [0.99, 2.69, 4.67]), ('bank-form', 34.53, 40.45, [0.31, 1.45, 4.19, 4.83]), ('dream-to-steps', 40.45, 47.82, None)]
+recorded reels/ill-save-first/reel.mp4 (51.60s)
+packaged /Users/sanyampathak/Documents/dmyor-videos/ready-to-post/2026-10-27-ill-save-first
