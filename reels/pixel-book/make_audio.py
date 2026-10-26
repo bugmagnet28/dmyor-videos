@@ -77,7 +77,7 @@ section(117.6, 126.0, ["F", "G", "Am", "C"], .125, [0, 1, 2, 3, 4, 5, 6, 7], .09
 section(126.0, 128.6, ["F", "G"], .1, [0, 2, 4, 6, 7, 6, 4, 2], .08, .3); add(mus, syn.riser(U(126.0, 128.7), 300, 5000), 126.0, .25)
 for m in CH["C"] + [72, 76, 79]: add(mus, sq(m, 3.0, .5, vib=.004) * np.exp(-tt(3.0) * .9), 128.6, .07)
 add(mus, tri(36, 3.0), 128.6, .35)
-section(131.4, 155.6, ["C", "Am", "F", "G"], .32, [0, 2, 1, 3, None, 2, 1, None], .08, .2)   # back in the field
+section(130.0, 156.0, ["C", "Am", "F", "G"], .32, [0, 2, 1, 3, None, 2, 1, None], .08, .2)   # back in the field
 for m in [60, 64, 67, 72]: add(mus, sq(m, 2.8, .5) * np.exp(-tt(2.8) * 1.4), 154.0, .06)
 mus = syn.reverb(mus, 1.6, .18)[: int(TOTAL * SR)]
 fo = int(1.8 * SR); mus[-fo:] *= np.linspace(1, 0, fo) ** 2; mus /= np.abs(mus).max() + 1e-9
@@ -95,10 +95,11 @@ A(kit.step() / .6, 10.4, .3); A(sweep(60, 84, .35, .5), 10.65, .25)           # 
 A(syn.whoosh(1.1, 200, 6000), 11.0, .55); A(sweep(90, 40, .9), 11.25, .2)     # into the portal
 A(sweep(84, 50, .5), 12.0, .2); A(kit.step() / .6, 12.5, .5)                    # tumbles out, lands
 for st in np.arange(13.35, 14.7, .25): A(kit.step() / .6, st, .25)
-t_ = tt(1.6); A(np.sin(2 * np.pi * (48 + 10 * t_) * t_) * np.exp(-((t_ - .8) ** 2) * 2.5) * .9 + nz(1.6, 1.2, 1500) * .5, 13.6, .4)   # car
-A(K("door"), 15.6, .5)
-for st in np.arange(15.85, 17.0, .27): A(kit.step() / .6, st, .35)
-A(sweep(60, 79, .18, .5), 18.0, .25); A(K("pop", 3), 18.05, .3)
+hd = U(14.0, 21.2); th = tt(hd); chop = (0.5 + 0.5 * np.sign(np.sin(2 * np.pi * 13 * th))) * np.minimum(1, th / 1.2) * np.minimum(1, (hd - th) / 1.0)
+A((nz(hd, 0, 300) * .8 + np.sin(2 * np.pi * 55 * th) * .5) * chop, 14.0, .35)                                  # helicopter rotor
+A(K("door"), 16.0, .5)
+for st in np.arange(16.35, 17.4, .27): A(kit.step() / .6, st, .35)
+A(sweep(60, 79, .18, .5), 17.0, .25); A(K("pop", 3), 17.05, .3)
 A(sq(72, .1, .5), 22.1, .08); A(sq(76, .1, .5), 22.25, .08)                   # "?"
 A(syn.riser(.8, 300, 3000), 25.7, .25); A(syn.whoosh(.9, 200, 6000), 26.4, .5)
 A(K("riffle", U(26.9, 30.1)), 26.9, .5); A(K("page", .32), 30.2, .45)

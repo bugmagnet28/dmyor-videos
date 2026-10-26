@@ -1,7 +1,11 @@
-# Story time (t, what the scenes are written in) <-> film time (u, after cutting dead spans / fast-forwarding wordless ones).
+# Story time t (what scenes are written in) -> film time u, via timemap.json segments [u0, u1, t0, t1].
 import json, os
-M = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "timemap.json"))); SEGS = M["segs"]; TEMPO = M["tempo"]
-def t2u(t): return t - sum(max(0, min(b, t) - a) * (1 - f) for a, b, f in SEGS)
-def in_cut(t): return any(a < t < b and f == 0 for a, b, f in SEGS)
-def U(a, b): return max(.05, t2u(b) - t2u(a))      # film-time length of a story span
-TOTAL = round(t2u(M["end"]), 3)
+M = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "timemap.json"))); SEGS = M["segs"]; TOTAL = M["end_u"]
+def t2u(t):
+    for u0, u1, t0, t1 in SEGS:
+        if t0 <= t < t1: return u0 + (t - t0) / (t1 - t0) * (u1 - u0)
+    return None
+def in_cut(t): return t2u(t) is None
+def U(a, b):
+    ua, ub = t2u(a), t2u(b - 1e-3)
+    return max(.05, (ub if ub is not None else ua + 1) - (ua if ua is not None else 0))

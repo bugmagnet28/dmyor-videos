@@ -170,3 +170,16 @@ b.line(75, 8, 75, 94, "#C9B48A"); b.polygon([(0, 92), (75, 96), (150, 92), (150,
 for y in range(18, 88, 8): b.line(10, y, 68, y + 1, "#E3D3AE"); b.line(82, y + 1, 140, y, "#E3D3AE")
 b.outline(OL); save(b, "bigbook")
 print("scenes ok")
+
+# ================= HELICOPTER (side view, nose left) =================
+hc = new(100, 44)
+hc.polygon([(56, 18), (98, 15), (98, 20), (60, 26)], "#1E2A44")                  # tail boom
+hc.polygon([(92, 6), (98, 6), (99, 20), (93, 20)], "#1E2A44")                     # tail fin
+hc.ellipse(8, 10, 66, 36, "#1E2A44"); hc.ellipse(10, 11, 64, 33, "#2C3E66", only="#1E2A44")
+hc.polygon([(10, 22), (14, 13), (30, 11), (30, 24)], "#8FC4F0"); hc.line(14, 14, 24, 12, "#D6ECFF"); hc.line(30, 11, 30, 24, "#1E2A44")
+hc.rect(34, 14, 46, 28, "#24345A"); hc.rect(35, 15, 45, 22, "#6E9AD0")                           # door + window
+hc.line(12, 27, 64, 25, "#F2C14E"); hc.line(12, 28, 64, 26, "#F2C14E")                            # gold stripe
+hc.rect(32, 6, 44, 10, "#1E2A44"); hc.rect(36, 3, 40, 6, "#3A4256")                               # rotor mast
+hc.line(16, 41, 60, 41, "#3A4256"); hc.line(22, 35, 20, 41, "#3A4256"); hc.line(52, 35, 54, 41, "#3A4256")   # skids
+hc.outline(OL, where="outside"); save(hc, "heli")
+print("heli ok")
