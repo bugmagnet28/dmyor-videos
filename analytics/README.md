@@ -38,7 +38,7 @@ Raw files are never edited by hand except to fix a mistake; reports are never ed
 2. **Measure** posts that are about 24 h, 48 h and 7 days old (the 48 h reading matters most):
    `python3 analytics/scripts/record.py metrics --platform instagram --slug <slug> --captured "YYYY-MM-DD HH:MM" --views .. --reach .. ... --source <where>`
    and the follower count once a day: `record.py account --platform instagram --followers N --posts N --captured ...`
-3. **Rebuild**: `analytics/.venv/bin/python analytics/scripts/build.py`
+3. **Rebuild**: `analytics/.venv/bin/python analytics/scripts/build.py`, then the one-page chart `analytics/.venv/bin/python analytics/scripts/dashboard.py` (writes `reports/charts/DASHBOARD.png`)
 4. **Read** `reports/OVERALL.md` and `reports/WHAT_WORKED.md`; write conclusions into `studio/learnings.md` / `studio/playbook.md`.
 
 First-time setup of the chart environment: `python3 -m venv analytics/.venv && analytics/.venv/bin/pip install matplotlib`.
