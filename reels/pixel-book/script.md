@@ -1,113 +1,160 @@
-# Pixel Book: shot script v3 (2026-10-26)
+# Pixel Book: script v4 (2026-10-26, after owner feedback on v3 film)
 
-**Owner's visual gist:** a person reads a book in a field and is pulled inside it. He sees his future: a successful self stepping out of a luxury car at his big house. Back inside the book, he sees the moments where he had to choose. The camera zooms out to a grid of all the scenes with him in the middle. The scenes turn into coloured light beams in space that split, merge and meet in bright white light. The white fades back to the field, and he writes his dream in the book.
+**Owner feedback on v3:**
+- The message wasn't clear, and the scenes can follow the story better.
+- It was too fast. The narration needs pauses.
+- Choices should be shown separately, one option at a time and better designed, not two signs on one screen.
+- The portal should open IN the book. The camera zooms in, and the person JUMPS into it.
+- Length is not a constraint, so add narration where it helps explain.
 
-**Owner's message:**
-- Create a starting point.
-- Write down the dream that looks unachievable.
-- A dream is a series of daily decisions. You always have a choice, and your job is to make it.
-- A choice doesn't have to be right the first time, as long as it reaches the destination in the end.
+**Message (said plainly in the VO):**
+- Your future is not one big moment. It is built from small daily choices.
+- Write the dream down first; that's your starting point.
+- Every day, choose the option that moves you toward it. One choice changes nothing; the same choice made again and again changes everything.
+- You will get some wrong. Adjust and choose again.
+- All the choices connect, and they lead to the destination.
 
-**Look:** real pixel art. Sprites and tiles come from Pixel Art Studio. Frames are drawn at 270x480 and scaled up 4x with nearest-neighbour, so every pixel stays crisp. 16-bit era colours.
-**Voice:** first person, am_eric. Chiptune score plus pixel sound effects. Length is about 58 s.
+**Length:** about 2 min (owner: no time constraint). Every scene breathes: about 1 s of picture before and after key lines, and silence for big visual moments.
 
 ---
 
-## 1. HOOK: the field (0-5 s)
+## 1. THE BOOK OPENS A DOOR (0-11 s)
 - **Visual:**
-  - A sunny pixel field: rolling hills, a big tree, drifting clouds, wildflowers swaying, birds.
-  - He sits under the tree reading. A page glows gold, the pages riffle by themselves, and pixel sparkles spiral out.
-  - He leans in, gets sucked into the book in a pixel swirl, and the book snaps shut.
-- **Text:** "This book showed me my future."
-- **VO:** "This book showed me my future."
-- **SFX:** birds and wind, a page riffle, a magic shimmer rising, a "fwoomp" suction, the book slapping shut.
+  - 0-3 s: The field. He reads under the tree.
+  - 3-6 s: The pages start to glow and riffle by themselves. He puts the book down on the grass and stands up.
+  - 6-9 s: A swirling portal rises out of the open book: a tall glowing oval of purple and gold pixels standing on the pages. He steps back in awe.
+  - 9-11 s: The camera zooms in close to the portal. He crouches and JUMPS into it, and the screen swirls.
+- **VO:**
+  - "I was reading in the park... when the pages started to glow."
+  - (pause)
+  - "And the book... opened a door."
+  - (silence on the jump)
+- **Text:** "The book opened a door."
 
-## 2. THE FUTURE (5-12 s)
+## 2. TEN YEARS LATER (11-23 s)
 - **Visual:**
-  - Sunset. A long driveway leads to a big modern house with a pool glinting. A sleek luxury car pulls in.
-  - The door opens and an older him steps out in a sharp jacket and looks up at the house.
-  - Young him watches from behind a hedge, jaw dropped.
-- **Text:** "10 years later."
-- **VO:** "Ten years from now. The car. The house. The life I only ever wrote about. From where I sat, it looked impossible."
-- **SFX:** engine purr, tyres on gravel, car door, shoes on stone.
+  - He tumbles out of a portal onto a lawn at sunset.
+  - A luxury car rolls up a long driveway to a big house with a pool.
+  - The door opens and his older self steps out, looks up at the house and smiles.
+  - Slow camera.
+  - Cut to young him peeking over the hedge, jaw dropped.
+- **VO:**
+  - "It took me ten years into my future."
+  - (pause)
+  - "There I was. The car. The house. The life I had only ever dreamed about."
+  - (pause)
+  - "But I had one question. How did I get here?"
+- **Text:** "10 years later." Then: "How did I get here?"
 
-## 3. INTO THE CHAPTERS (12-31 s)
-Pages flip like doors, and each one opens a new pixel scene. A day counter sits in the corner.
-
-- **3a. Starting point (12-16 s):**
-  - Visual: a tiny room at night. A younger him writes on page one: "Dream: build my own company." The page glows.
-  - VO: "Then the book took me back. To where it started. One page. A dream that looked unachievable, written down anyway."
-- **3b. Choice: the alarm (16-19 s):**
-  - Visual: 6:00 AM. Two pixel signs pop up, "Snooze" and "Get up". He picks "Get up" with a chime.
-  - VO: "After that, it was choices. Small ones. Every day."
-- **3c. Choice: the night out (19-22 s):**
-  - Visual: friends wave from a car, "Come out!". The signs read "Go" and "Build". He waves them off and opens the laptop.
-  - VO: "Go out, or build. Scroll, or start. There was always a choice. His only job was to make it."
-- **3d. The wrong turn (22-27 s):**
-  - Visual: his first shop has a "CLOSED" sign and boxes, and the rain pours. He sits on the steps. The sign flips: a "miss" buzz.
-  - VO: "Not every choice was right. His first company failed."
-- **3e. Choosing again (27-31 s):**
-  - Visual: a small office and a whiteboard. A first customer shakes his hand. A rising chime, and the counter jumps to Day 1,204.
-  - VO: "He adjusted. And chose again."
-
-## 4. THE GRID (31-35 s)
+## 3. THE BOOK SHOWS HOW (23-27 s)
 - **Visual:**
-  - The camera pulls back. Every chapter scene shrinks into a 3x3 grid of moving tiles:
-    - field, house, room, alarm, friends, closed shop, office, plus two quick extras: a gym and a library.
-  - Young him stands in the centre tile looking around.
-- **Text:** "Every choice."
-- **VO:** "Every scene. Every choice."
-- **SFX:** tiles clicking into place, one per tile.
+  - The portal reappears behind him and he jumps back in.
+  - The book flies open and the pages flip fast like a flipbook, slowing to "Chapter 1".
+- **VO:** "The book showed me. Chapter by chapter."
 
-## 5. THE BEAMS (35-44 s)
+## 4. CHAPTER 1: THE STARTING POINT (27-37 s)
 - **Visual:**
-  - Each tile melts into a coloured beam of light (coral, gold, mint, sky, violet) that streaks into a pixel starfield.
-  - Beams branch into diverging lines; some lines bend back and merge, flaring brighter where they meet.
-  - The camera glides along the bundle.
+  - A small room at night. Ten years earlier, he sits at a desk with a notebook. He hesitates, pen hovering.
+  - Close-up on the page as he writes: "DREAM: BUILD MY OWN COMPANY."
+  - A sticky note pops up beside it: "impossible?"
+  - He underlines the dream anyway, and the page glows.
+- **VO:**
+  - "It started on one ordinary night."
+  - "He wrote his dream down. It looked impossible."
+  - (pause)
+  - "He wrote it anyway. That page was his starting point."
+- **Text:** "Chapter 1: Write it down."
+
+## 5. CHAPTER 2: THE MORNING CHOICE (37-52 s)
+Each option gets its own full screen.
+
+- **The fork (37-40 s):**
+  - Visual: 6:00 AM, the alarm rings. A pixel title card slides in: "Every morning. Two choices."
+  - VO: "After that, every single day gave him a choice."
+- **Option A, "Sleep in" (40-44 s):**
+  - Visual: A full-screen scene, desaturated and grey-blue. He pulls the blanket over his head. The clock spins 6:00, 8:00, 10:30. The sun crawls across the window and the notebook gathers dust.
+  - VO: "He could sleep in..."
+- **Option B, "Get up" (44-48 s):**
+  - Visual: A full-screen scene, warm and bright. He's up at 6, opens the notebook, ticks off one small task, and watches the sunrise.
+  - VO: "...or get up, and give his dream one hour."
+- **The choice (48-52 s):**
+  - Visual: The two scenes appear as cards side by side. He walks into the "Get up" card, it glows and fills the screen, and a chime plays.
+  - VO: "He chose to get up."
+
+## 6. CHAPTER 3: THE EVENING CHOICE (52-66 s)
+- **The fork:**
+  - Visual: 9:00 PM, on the bed, with the phone glowing.
+  - VO: "Every evening, another choice."
+- **Option A, "Scroll":**
+  - Visual: Full screen, grey. Endless pixel feed tiles slide past his face, the clock spins to 1 AM and he yawns.
+  - VO: "Scroll for three hours..."
+- **Option B, "Build":**
+  - Visual: Full screen, warm. At the desk with the laptop, a progress bar fills and a sticky note reads "first website done".
+  - VO: "...or build for one."
+- **The choice:**
+  - Visual: He puts the phone face down and walks to the desk. Chime.
+  - VO:
+    - "Neither choice changes your life in one day."
+    - (pause)
+    - "But one of them, made again and again... does."
+- **Text:** "One choice. Again and again."
+
+## 7. CHAPTER 4: THE WRONG TURN (66-76 s)
+- **Visual:**
+  - Rain. His first shop. The OPEN sign flips to CLOSED. He sits on the steps.
+  - (Hold. Rain only.)
+  - He stands up, takes the sign, and writes on the back of it: "Lesson 1".
+- **VO:**
+  - "Not every choice was right. His first company failed."
+  - (pause, rain only)
+  - "He didn't call it the end. He called it a lesson. He adjusted... and chose again."
+- **Text:** "Not every choice was right."
+
+## 8. CHAPTER 5: CHOSE AGAIN (76-82 s)
+- **Visual:** A bright office and a whiteboard with a rising chart. The day counter rolls to DAY 1,204. First big client, handshake, confetti.
+- **VO:** "Day one thousand, two hundred and four. His first big client."
+
+## 9. THE GRID (82-88 s)
+- **Visual:** The camera pulls back. Every chapter scene, still moving, settles into a 3x3 grid, with him in the gold centre tile.
+- **VO:** "When I looked back... every scene... was a choice."
+
+## 10. THE BEAMS (88-100 s)
+- **Visual:**
+  - The tiles melt into coloured beams in space.
+  - Slow camera.
+  - Beams split (the wrong turn), bend back and merge (choosing again), and link up.
+  - They converge into one point.
+- **VO:**
+  - "Each one pushed his life in a direction. Some split apart. Some came back together."
+  - (pause)
+  - "All of them were connected. And every one... led to the same place."
 - **Text:** "All connected."
-- **VO:** "Each one pushed his life in a direction. Some split apart. Some came back together. All of it connected."
-- **SFX:** synth swells, a soft "zip" per split, a bell per merge (no sound on every cut).
 
-## 6. THE LIGHT (44-47 s)
-- **Visual:** All the beams converge into one point and bloom into bright white that fills the screen.
-- **VO:** "And every line led to the same place."
-- **SFX:** a riser into a soft white-noise bloom.
-
-## 7. BACK TO THE FIELD (47-53 s)
+## 11. THE LIGHT AND THE RETURN (100-112 s)
 - **Visual:**
-  - The white fades into the field, same tree, same breeze. He blinks, sitting with the book.
-  - He turns to the first blank page, takes a pen, and writes: "Dream: ..." The words type in pixel letters.
-  - The page glows gold softly. Birds fly over.
-- **Text:** "So I wrote mine."
-- **VO:** "So I turned to the first page. And wrote mine."
-- **SFX:** birds, pencil scratch, a gentle chime.
+  - The beams converge, the house appears inside the light for a moment, then everything blooms to white.
+  - The white fades back to the field, same tree, same breeze.
+  - He sits up holding the book.
+  - He turns to the FIRST page, which is blank, takes the pen, and writes: "DREAM: BUILD MY OWN COMPANY."
+  - It is the same page we saw in Chapter 1, so the story loops.
+- **VO:**
+  - "Then I was back. Same field. Same book."
+  - (pause)
+  - "But now I knew how my story starts."
+  - (pause)
+  - "So I turned to the first page... and wrote it down."
+- **Text:** "Your starting point is today."
 
-## 8. VALUE CLOSE AND CTA (53-60 s)
-- **Visual:** A slow push out over the field to the sky, then the end card with the Dmyor logo and @becauseidmyor. The last frame echoes the first, so the reel loops.
+## 12. VALUE CLOSE AND CTA (112-122 s)
+- **Visual:** Slow pull out over the field and sky, then the end card.
 - **VO:** "That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do."
 - **Text:** "What would your first page say? Comment it."
 
 ---
 
-## Message mapping
-| Owner's point | Scene |
-|---|---|
-| Starting point / write the unachievable dream | 3a, and again in 7 |
-| Daily decisions; always a choice; your job is to make it | 3b, 3c |
-| It doesn't need to be right the first time | 3d, 3e |
-| It reaches the destination | 5, 6 |
+## Notes on pacing
+- About 1 s of silence before each chapter title, and 0.6-1.2 s of hold after each key line. Silence over big visuals: the portal jump, the rain hold, the white bloom.
+- Each choice gets a full-screen scene per option: the wrong option is grey and dull, the right option is warm and bright, then he walks into the right one.
+- Captions only at chapter heads and for the key lines.
 
-## Art list (Pixel Art Studio)
-- **Hero, young version:** reading, sitting, standing, walking, writing, and a sucked-in spin.
-- **Hero, older version:** jacket, stepping out of the car.
-- **Hero, earlier self:** writing, waking up, at the laptop, sitting sad, shaking hands.
-- **Friends:** 2.
-- **Customer:** 1.
-- **Tile sets:**
-  - field: tree, flowers, hills, clouds;
-  - the house with the pool and driveway;
-  - the luxury car;
-  - room interiors (bedroom, office);
-  - the closed shop with rain.
-- **Props:** book (closed, open, glowing pages), choice signs, alarm clock, laptop, whiteboard.
-- **Effects (code):** sparkles, the swirl, beams and splits, the starfield, the white bloom.
+**Change from v3:** the friends "go out" choice is cut, so the two choices that remain get room to breathe.

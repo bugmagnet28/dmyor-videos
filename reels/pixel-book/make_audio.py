@@ -6,7 +6,7 @@ Writes score.wav, sfx.wav, audio_mixed.mp3 in reels/pixel-book/.
 import importlib.util, os, subprocess, sys
 import numpy as np, soundfile as sf
 
-ROOT = os.getcwd(); D = os.path.join(ROOT, "reels/pixel-book"); SR = 44100; TOTAL = 55.4
+ROOT = os.getcwd(); D = os.path.join(ROOT, "reels/pixel-book"); SR = 44100; TOTAL = 158.5
 
 
 def load(name, path):
@@ -38,89 +38,101 @@ def sweep(m0, m1, d, duty=.25):
 def K(name, *a):
     f = getattr(kit, name)(*a); return f / (np.abs(f).max() + 1e-9)
 
-# ================= SCORE =================
+# ================= SCORE (v4 timeline) =================
 mus = np.zeros(int((TOTAL + 2) * SR)); add = lambda buf, x, at, g: syn.add(buf, x, at, g)
 CH = {"C": [60, 64, 67, 71], "F": [53, 57, 60, 64], "G": [55, 59, 62, 65], "Am": [57, 60, 64, 67], "Em": [52, 55, 59, 62], "Dm": [50, 53, 57, 60]}
-def section(a, b, prog, step, pattern, lead_g=.16, bass_g=.3, hat=False, oct=12, kick=False):
+def section(a, b, prog, step, pattern, lead_g=.16, bass_g=.3, hat=False, oct=12, kick=False, duty=.25):
     t, i = a, 0
     while t < b - .01:
         ch = CH[prog[int((t - a) / (step * len(pattern))) % len(prog)]]
         n = pattern[i % len(pattern)]
-        if n is not None: add(mus, sq(ch[n % 4] + oct + 12 * (n // 4), step * .9, duty=.25), t, lead_g)
-        if i % len(pattern) == 0: add(mus, tri(ch[0] - 12, step * len(pattern) * .95), t, bass_g)
-        if hat and i % 2 == 1: add(mus, nz(.05), t, .06)
-        if kick and i % 4 == 0: add(mus, sweep(52, 28, .14, .5), t, .22)
+        if n is not None: add(mus, sq(ch[n % 4] + oct + 12 * (n // 4), step * .9, duty=duty), t, lead_g)
+        if i % len(pattern) == 0 and bass_g: add(mus, tri(ch[0] - 12, step * len(pattern) * .95), t, bass_g)
+        if hat and i % 2 == 1: add(mus, nz(.05), t, .05)
+        if kick and i % 4 == 0: add(mus, sweep(52, 28, .14, .5), t, .2)
         t += step; i += 1
-# 1 wonder: twinkling arps
-section(0, 2.85, ["C", "F"], .15, [0, 1, 2, 3, 4, 3, 2, 1], .11, .18)
-# 2 the future: warm, broad
-section(2.85, 8.75, ["F", "G", "Em", "Am"], .184, [0, 2, 1, 2, 3, 2, 1, 2], .12, .28)
-# 3 choices: steady pulse with hats
-section(8.75, 22.85, ["Am", "F", "C", "G"], .3, [0, 2, 1, 2, 3, 2, 1, 2], .12, .3, hat=True)
-# 4 failure: sparse, low
-section(22.85, 25.95, ["Am", "Dm"], .6, [0, None, 2, None], .1, .26, oct=0)
-# 5 again + grid: brighter, kick
-section(25.95, 31.3, ["C", "G", "Am", "F"], .25, [0, 2, 4, 2, 1, 3, 5, 3], .12, .3, hat=True, kick=True)
-# 6 beams: full arps 16ths
-section(31.3, 37.9, ["F", "G", "Am", "C"], .125, [0, 1, 2, 3, 4, 5, 6, 7], .1, .32, hat=True, kick=True)
-# 7 converge -> white
-section(37.9, 40.0, ["F", "G"], .1, [0, 2, 4, 6, 7, 6, 4, 2], .09, .3)
-add(mus, syn.riser(2.1, 300, 5000), 37.9, .25)
-for m in CH["C"] + [72, 76, 79]: add(mus, sq(m, 3.0, .5, vib=.004) * np.exp(-tt(3.0) * .9), 40.0, .07)
-add(mus, tri(36, 3.0), 40.0, .35)
-# 8 field again: gentle
-section(41.8, TOTAL - 1.2, ["C", "Am", "F", "G"], .3, [0, 2, 1, 3, None, 2, 1, None], .09, .22)
-for m in [60, 64, 67, 72]: add(mus, sq(m, 2.8, .5) * np.exp(-tt(2.8) * 1.4), TOTAL - 2.9, .06)
+ARP = [0, 1, 2, 3, 4, 3, 2, 1]; BRK = [0, 2, 1, 2, 3, 2, 1, 2]; SPARSE = [0, None, 2, None, 1, None, 3, None]
+section(0, 6.6, ["C", "F"], .2, ARP, .09, .16)                                   # wonder
+section(6.6, 11.3, ["Am", "F"], .14, ARP, .1, .2); add(mus, syn.riser(4.6, 200, 4000), 6.6, .2)
+section(12.0, 26.6, ["F", "G", "Em", "Am"], .25, BRK, .11, .26)                  # the future
+section(26.9, 30.6, ["C", "G"], .1, ARP, .08, .2)                                # pages flip
+section(30.6, 44.6, ["Am", "F", "C", "G"], .4, SPARSE, .1, .22)                  # ch1, quiet night
+section(44.6, 50.6, ["C", "G"], .3, BRK, .1, .22)                                # morning fork
+section(50.6, 55.4, ["Dm"], .8, [0, None, None, None], .07, .2, oct=0, duty=.5)  # sleep in: dull
+section(55.4, 60.2, ["C", "G", "Am", "F"], .2, ARP, .11, .26, hat=True)         # get up: bright
+section(60.2, 62.6, ["Am"], .2, [0, None, 0, None], .08, .2)                     # which one?
+section(62.6, 64.6, ["C", "F"], .2, ARP, .11, .26)
+section(64.6, 69.8, ["Am", "F"], .4, SPARSE, .09, .22)                           # evening
+section(69.8, 73.8, ["Dm"], .8, [0, None, None, None], .07, .2, oct=0, duty=.5)  # scroll: dull
+section(73.8, 77.8, ["F", "G", "C", "Am"], .2, ARP, .11, .26, hat=True)         # build: bright
+section(77.8, 79.6, ["Am"], .2, [0, None, 0, None], .08, .2)
+section(79.6, 89.0, ["C", "G", "Am", "F"], .2, BRK, .11, .28, hat=True, kick=True)   # again and again
+section(89.0, 99.0, ["Am", "Dm"], .6, [0, None, 2, None], .08, .24, oct=0)      # the wrong turn
+section(99.0, 104.0, ["F", "C"], .4, SPARSE, .1, .24)                            # a lesson
+section(104.0, 111.0, ["C", "G", "Am", "F"], .25, BRK, .12, .28, hat=True, kick=True)  # chose again
+section(111.0, 117.6, ["F", "G", "Am", "C"], .2, ARP, .1, .3, hat=True, kick=True)    # grid
+section(117.6, 126.0, ["F", "G", "Am", "C"], .125, [0, 1, 2, 3, 4, 5, 6, 7], .09, .32, hat=True, kick=True)   # beams
+section(126.0, 128.6, ["F", "G"], .1, [0, 2, 4, 6, 7, 6, 4, 2], .08, .3); add(mus, syn.riser(2.7, 300, 5000), 126.0, .25)
+for m in CH["C"] + [72, 76, 79]: add(mus, sq(m, 3.0, .5, vib=.004) * np.exp(-tt(3.0) * .9), 128.6, .07)
+add(mus, tri(36, 3.0), 128.6, .35)
+section(131.4, TOTAL - 1.4, ["C", "Am", "F", "G"], .32, [0, 2, 1, 3, None, 2, 1, None], .08, .2)   # back in the field
+for m in [60, 64, 67, 72]: add(mus, sq(m, 2.8, .5) * np.exp(-tt(2.8) * 1.4), TOTAL - 3.0, .06)
 mus = syn.reverb(mus, 1.6, .18)[: int(TOTAL * SR)]
-fo = int(1.6 * SR); mus[-fo:] *= np.linspace(1, 0, fo) ** 2; mus /= np.abs(mus).max() + 1e-9
+fo = int(1.8 * SR); mus[-fo:] *= np.linspace(1, 0, fo) ** 2; mus /= np.abs(mus).max() + 1e-9
 sf.write(os.path.join(D, "score.wav"), (mus * .5).astype(np.float32), SR)
 
-# ================= SOUND EFFECTS =================
+# ================= SOUND EFFECTS (v4 timeline) =================
 fx = np.zeros(int((TOTAL + 3) * SR)); A = lambda x, at, g: syn.add(fx, x, at, g)
-# 1 field + pulled into the book
-for i in range(10): A(nz(.4, 6, 3000) * .3, i * .28, .05)                      # breeze
-A(K("riffle", 1.0), .4, .35); A(syn.riser(1.2, 600, 6000), .25, .2)
-for i, m in enumerate([72, 76, 79, 84, 88]): A(sq(m, .09, .25), .3 + i * .1, .12)  # shimmer
-A(syn.whoosh(1.0, 200, 5000), 1.45, .55); A(sweep(84, 40, .7), 1.5, .22)           # suction zap
-A(K("page", .3), 2.25, .5); A(syn.bell(84, 2.0), 2.55, .25)
-# 2 house
-t = tt(1.25); A(np.sin(2 * np.pi * (48 + 10 * t) * t) * np.exp(-((t - .6) ** 2) * 3) * .9 + nz(1.25, 1.5, 1500) * .5, 2.85, .4)   # engine + gravel
-A(K("door"), 4.35, .5)
-for st in np.arange(4.5, 5.7, .26): A(kit.step() / .6, st, .35)
-A(sweep(60, 79, .18, .5), 7.38, .25); A(K("pop", 2), 7.42, .3)                   # surprised blip
-# 3 flips between chapters
-for at in (8.55, 14.35, 17.3, 22.65, 25.75): A(K("page", .32), at, .55)
-A(K("pencil", 1.4), 9.0, .35); A(syn.bell(79, 1.5), 10.3, .18)
-A(K("pencil", 1.9), 11.75, .45); A(K("right", 3), 13.75, .45)
-# alarm
-for b in np.arange(14.6, 16.55, .14): A(sq(93, .06, .5), b, .14 if int((b - 14.6) / .14) % 4 < 3 else 0)
-A(K("pop", 0), 15.35, .4); A(K("pop", 1), 15.5, .4); A(K("right", 0), 16.6, .5); A(K("tick"), 16.6, .4)
-# friends, choices, typing
-for at in (17.62, 17.82): A(sq(67, .16, .5) + sq(71, .16, .5), at, .14)        # horn
-A(K("pop", 2), 17.6, .4); A(K("pop", 3), 17.75, .4); A(K("right", 1), 18.2, .5)
-for st in np.arange(18.45, 18.95, .26): A(kit.step() / .6, st, .3)
-A(K("pop", 4), 18.5, .4); A(K("pop", 5), 18.62, .4); A(K("buzz", .5), 18.55, .25); A(K("right", 2), 19.13, .5)
-A(K("typing", 3.8), 19.0, .3)
-# shop in the rain
-r = nz(3.4, 0, 2500) * .8; r *= env(len(r), .3, .4); A(r, 22.75, .28)
-A(K("page", .3), 24.98, .45); A(K("miss", 0), 25.1, .5)
-# office
-for i, at in enumerate(np.arange(26.0, 26.95, .06)): A(K("tick"), at, .18)
-A(K("pop", 3), 26.85, .45); A(K("right", 4), 26.9, .5); A(K("chord", 1.5), 27.05, .25)
-# grid
-A(syn.whoosh(.8, 300, 4000), 28.25, .35)
-for i in range(8): A(K("pop", i % 6), 28.55 + i * .1, .3)
-# melt + beams
-for i, m in enumerate([84, 79, 76, 72, 67, 64, 60]): A(sq(m, .07, .25), 31.3 + i * .07, .12)
-A(syn.whoosh(1.0, 200, 6000), 31.5, .4)
-for i in range(4): A(sweep(70 + i * 3, 90 + i * 3, .22), 33.3 + i * .08, .1)
-for i, at in enumerate((34.6, 34.9, 35.2, 35.5)): A(syn.bell(76 + [0, 3, 7, 12][i], 2.0), at, .22)
-for i, m in enumerate([84, 88, 91, 96]): A(sq(m, .08, .25), 36.05 + i * .06, .1)
-A(syn.impact(.7), 40.0, .3); A(nz(2.5, .9, 800) * .6, 40.0, .25)
-# field again, writing
-for i in range(6): A(sweep(88 + (i % 2) * 3, 96, .07, .5), 41.9 + i * .37 + (i % 2) * .12, .05)   # birds
-A(K("page", .32), 42.5, .5); A(K("pencil", 1.7), 43.35, .45); A(K("right", 5), 45.0, .45)
-A(syn.bell(84, 2.5), 50.6, .2)
+for i in range(22): A(nz(.4, 6, 3000) * .3, i * .3, .04)                       # breeze
+A(K("riffle", 1.2), 3.2, .35); for_i = [A(sq(m, .09, .25), 2.9 + i * .1, .1) for i, m in enumerate([72, 76, 79, 84])]
+A(kit.step() / .6, 4.62, .35); A(K("page", .25), 4.7, .3)                       # stands, sets the book down
+A(syn.riser(1.4, 200, 3000), 6.5, .3); A(sweep(48, 72, 1.3, .5), 6.6, .12)     # portal rises
+for st in (7.05, 7.25): A(kit.step() / .6, st, .3)
+A(K("pop", 2), 7.4, .25)                                                        # surprise
+A(kit.step() / .6, 10.4, .3); A(sweep(60, 84, .35, .5), 10.65, .25)           # crouch, jump
+A(syn.whoosh(1.1, 200, 6000), 11.0, .55); A(sweep(90, 40, .9), 11.25, .2)     # into the portal
+A(sweep(84, 50, .5), 12.0, .2); A(kit.step() / .6, 12.5, .5)                    # tumbles out, lands
+for st in np.arange(13.35, 14.7, .25): A(kit.step() / .6, st, .25)
+t_ = tt(1.6); A(np.sin(2 * np.pi * (48 + 10 * t_) * t_) * np.exp(-((t_ - .8) ** 2) * 2.5) * .9 + nz(1.6, 1.2, 1500) * .5, 13.6, .4)   # car
+A(K("door"), 15.6, .5)
+for st in np.arange(15.85, 17.0, .27): A(kit.step() / .6, st, .35)
+A(sweep(60, 79, .18, .5), 18.0, .25); A(K("pop", 3), 18.05, .3)
+A(sq(72, .1, .5), 22.1, .08); A(sq(76, .1, .5), 22.25, .08)                   # "?"
+A(syn.riser(.8, 300, 3000), 25.7, .25); A(syn.whoosh(.9, 200, 6000), 26.4, .5)
+A(K("riffle", 3.2), 26.9, .5); A(K("page", .32), 30.2, .45)
+for at in (30.35, 32.0, 44.35, 46.2, 50.35, 55.15, 64.35, 66.2, 69.55, 73.55, 88.75, 90.6, 103.75, 105.6): A(K("page", .32), at, .5)
+A(K("pencil", 1.0), 34.9, .3); A(K("pencil", 1.7), 36.35, .45); A(K("pop", 1), 38.2, .4); A(K("pencil", .5), 41.1, .4); A(syn.bell(79, 2.0), 42.5, .2)
+for b in np.arange(46.5, 50.5, .14): A(sq(93, .06, .5), b, .12 if int((b - 46.5) / .14) % 4 < 3 else 0)
+A(K("clock", 3.8), 51.0, .3)                                                    # time slipping by
+A(K("pencil", 1.2), 56.2, .3); A(K("right", 2), 57.4, .45)
+A(sq(67, .12, .5), 60.6, .08); A(sq(72, .12, .5), 60.8, .08)
+for st in np.arange(60.75, 62.0, .25): A(kit.step() / .6, st, .25)
+A(sweep(72, 96, .3, .5), 62.25, .15); A(K("right", 4), 62.6, .5); A(syn.whoosh(.8, 400, 5000), 62.9, .35)
+A(K("buzz", .5), 66.8, .2)
+for i in range(18): A(K("tap"), 70.2 + i * .19, .15)                           # scrolling flicks
+A(syn.whoosh(.5, 300, 1200), 72.6, .15)                                         # yawn
+A(K("typing", 3.6), 74.0, .3); A(K("pop", 4), 76.0, .4)
+for st in np.arange(78.05, 79.2, .25): A(kit.step() / .6, st, .25)
+A(sweep(72, 96, .3, .5), 79.25, .15); A(K("right", 5), 79.6, .5); A(syn.whoosh(.8, 400, 5000), 79.8, .35)
+A(K("typing", 8.0), 80.8, .2)
+for i in range(30): A(K("tick"), 80.85 + i * .25, .12)                         # days ticking by
+r = nz(13.0, 0, 2500) * .8; r *= env(len(r), .4, 2.5); A(r, 90.7, .26)        # rain
+A(K("page", .3), 93.55, .45); A(K("miss", 0), 93.75, .5)
+A(kit.step() / .6, 97.85, .3); A(K("page", .3), 98.7, .4); A(syn.bell(84, 2.0), 99.05, .22)
+for st in np.arange(100.85, 103.4, .27): A(kit.step() / .6, st, .3)
+for i, at in enumerate(np.arange(106.0, 107.6, .07)): A(K("tick"), at, .15)
+A(K("pop", 3), 108.85, .45); A(K("right", 4), 108.95, .5); A(K("chord", 1.5), 109.1, .25)
+A(syn.whoosh(.8, 300, 4000), 110.95, .35)
+for i in range(8): A(K("pop", i % 6), 111.5 + i * .14, .28)
+for i, m in enumerate([84, 79, 76, 72, 67, 64, 60]): A(sq(m, .07, .25), 117.0 + i * .07, .12)
+A(syn.whoosh(1.0, 200, 6000), 117.6, .4)
+for i in range(4): A(sweep(70 + i * 3, 90 + i * 3, .22), 120.7 + i * .1, .1)
+for i, at in enumerate((122.3, 122.6, 122.9, 123.2)): A(syn.bell(76 + [0, 3, 7, 12][i], 2.0), at, .22)
+for i, m in enumerate([84, 88, 91, 96]): A(sq(m, .08, .25), 124.95 + i * .06, .1)
+A(syn.impact(.7), 128.6, .3); A(nz(2.5, .9, 800) * .6, 128.6, .25)
+for i in range(8): A(sweep(88 + (i % 2) * 3, 96, .07, .5), 131.6 + i * .5 + (i % 2) * .12, .05)   # birds
+A(K("page", .32), 140.45, .5); A(K("pencil", 1.8), 141.0, .45); A(K("right", 5), 142.8, .45)
+A(syn.bell(84, 2.5), 154.8, .2)
 fx = fx[: int(TOTAL * SR)]
 sf.write(os.path.join(D, "sfx.wav"), (fx / (np.abs(fx).max() + 1e-9) * .6).astype(np.float32), SR)
 

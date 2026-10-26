@@ -135,6 +135,10 @@ build_hero(hero)
 hero.save_png(OUT + "hero_read.png")
 hb = Sprite.from_png(OUT + "hero_read.png", scale=1); hb.px(16, 7, SK[1]); hb.px(15, 8, "#1C1A24"); hb.px(16, 8, "#1C1A24"); hb.save_png(OUT + "hero_read_blink.png"); hero.preview(OUT + "hero_preview.png", scale=10, labels=False)
 
+# small open book lying on the grass
+bk = Sprite(18, 7, snap=False); bk.polygon([(1, 5), (8, 3), (8, 6), (1, 6)], "#FFF4E0"); bk.polygon([(9, 3), (16, 5), (16, 6), (9, 6)], "#FFF4E0")
+bk.line(8, 3, 8, 6, "#C9B48A"); bk.rect(0, 6, 17, 6, "#6A4FD1"); bk.outline(OL, where="outside") if False else None; bk.save_png(OUT + "book_ground.png")
+
 # ---------- composite at 4x ----------
 comp = Image.new("RGBA", (W, H))
 for n in ["sky", "clouds", "far", "mid", "ground", "shadow", "flowers", "tree"]:

@@ -5,7 +5,7 @@
 <script>
 // Pixel Book: every frame is a pure function of time. Worlds are drawn at 270x480 (1 art pixel = 4 screen px)
 // and blitted with a nearest-neighbour "pixel camera", so zooming makes the pixels bigger, never blurry.
-var W = 270, H = 480, OW = 1080, OH = 1920, DUR = 55.4;
+var W = 270, H = 480, OW = 1080, OH = 1920, DUR = 158.5;
 var C = document.getElementById("c"), X = C.getContext("2d"); X.imageSmoothingEnabled = false;
 function mk(w, h) { var c = document.createElement("canvas"); c.width = w; c.height = h; var x = c.getContext("2d"); x.imageSmoothingEnabled = false; return [c, x]; }
 var LB = mk(W, H), OA = mk(OW, OH), OB = mk(OW, OH), TINY = mk(W, H);
@@ -13,14 +13,14 @@ var LB = mk(W, H), OA = mk(OW, OH), OB = mk(OW, OH), TINY = mk(W, H);
 // ---------- assets ----------
 var A = {}, LIST = {
   sky: "art/field/sky.png", clouds: "art/field/clouds.png", far: "art/field/far.png", mid: "art/field/mid.png", ground: "art/field/ground.png",
-  shadow: "art/field/shadow.png", flowers: "art/field/flowers.png", tree: "art/field/tree.png", reader: "art/field/hero_read.png", reader_blink: "art/field/hero_read_blink.png",
+  shadow: "art/field/shadow.png", flowers: "art/field/flowers.png", tree: "art/field/tree.png", reader: "art/field/hero_read.png", reader_blink: "art/field/hero_read_blink.png", book_ground: "art/field/book_ground.png",
   house: "art/scenes/house.png", hedge: "art/scenes/hedge.png", car: "art/scenes/car.png", wheel0: "art/scenes/wheel0.png", wheel1: "art/scenes/wheel1.png",
   room_night: "art/scenes/room_night.png", room_dawn: "art/scenes/room_dawn.png", notebook: "art/scenes/notebook.png", laptop: "art/scenes/laptop.png",
   alarm0: "art/scenes/alarm0.png", alarm1: "art/scenes/alarm1.png", phone: "art/scenes/phone.png", friendcar: "art/scenes/friendcar.png",
   shop: "art/scenes/shop.png", sign0: "art/scenes/sign0.png", sign1: "art/scenes/sign1.png", office: "art/scenes/office.png", library: "art/scenes/library.png", bigbook: "art/scenes/bigbook.png"
 };
 ["stand", "blink", "shock", "walk0", "walk1", "walk2", "walk3", "owalk0", "owalk1", "owalk2", "owalk3", "ostand", "olook", "sit_write0", "sit_write1", "sit_type0", "sit_type1",
- "sit_bed", "sit_bed_blink", "stretch", "wave_off", "sad", "sad_blink", "shake0", "shake1", "cshake0", "cshake1"].forEach(function (n) { LIST["c_" + n] = "art/chars/" + n + ".png"; });
+ "sit_bed", "sit_bed_blink", "stretch", "wave_off", "sad", "sad_blink", "shake0", "shake1", "cshake0", "cshake1", "crouch", "jump", "lookup", "bed_phone", "bed_yawn", "bed_phone_blink"].forEach(function (n) { LIST["c_" + n] = "art/chars/" + n + ".png"; });
 var READY = Promise.all(Object.keys(LIST).map(function (k) { return new Promise(function (res) { var i = new Image(); i.onload = function () { A[k] = i; res(); }; i.onerror = function () { console.error("missing " + LIST[k]); res(); }; i.src = LIST[k]; }); }));
 
 // ---------- math ----------
@@ -109,230 +109,339 @@ function sign(label, cx, y, t, tPop, tPick, picked, tOut) {
 function chr(n, x, y, flip) { img("c_" + n, x, y, flip); }      // character sprite 48x56, feet at y+53
 var GY = 53;
 
-// =================== SCENES ===================
+// =================== SCENES (v4: chapters, separate choices, portal from the book) ===================
 function birds(t, n, y0) { for (var i = 0; i < n; i++) { var bx = ((t * (14 + i * 3) + i * 70) % 320) - 25, by = y0 + i * 9 + Math.round(Math.sin(t * 2 + i) * 2), up = Math.floor(t * 6 + i) % 2;
-  rect(bx, by, 1, 1, "#2F3E6B"); rect(bx - 1, by - up, 1, 1, "#2F3E6B"); rect(bx + 1, by - up, 1, 1, "#2F3E6B"); rect(bx - 2, by - 1 + up * 0, 1, 1, "#2F3E6B"); rect(bx + 2, by - 1, 1, 1, "#2F3E6B"); } }
+  rect(bx, by, 1, 1, "#2F3E6B"); rect(bx - 1, by - up, 1, 1, "#2F3E6B"); rect(bx + 1, by - up, 1, 1, "#2F3E6B"); rect(bx - 2, by - 1, 1, 1, "#2F3E6B"); rect(bx + 2, by - 1, 1, 1, "#2F3E6B"); } }
 function fieldBase(t) {
   L.drawImage(A.sky, 0, 0); var cx = Math.round(t * 3) % W; L.drawImage(A.clouds, cx - W, 0); L.drawImage(A.clouds, cx, 0);
   L.drawImage(A.far, 0, 0); L.drawImage(A.mid, 0, 0); L.drawImage(A.ground, 0, 0); L.drawImage(A.shadow, 0, 0);
   L.drawImage(A.flowers, Math.round(Math.sin(t * 1.6)), 0); L.drawImage(A.tree, 0, 0); birds(t, 3, 150);
 }
-var BOOK = { x: 107, y: 374 };
-// --- 1. field intro (0 - 2.85) ---
-function sField(t) {
-  fieldBase(t);
-  var suck = seg(t, 1.45, 2.3), hx = 82, hy = 357;
-  var glow = seg(t, .25, 1.2);
-  if (glow > 0) ddisc(BOOK.x, BOOK.y - 2, 6 + 22 * glow + Math.sin(t * 9) * 2, "#FFE9A0", .55 * glow);
-  if (suck < 1) { var s = 1 - eio(suck); img(blinkAt(t, 0) ? "reader_blink" : "reader", lerp(BOOK.x - 25, hx, s) + (1 - s) * 0, lerp(BOOK.y - 17, hy, s), false, s, Math.max(.05, s * (1 - suck * .3))); }
-  if (t > .5) for (var i = 0; i < 26; i++) {
-    var ph = (t * 1.3 + hash(i)) % 1, r = (1 - ph) * (34 + hash(i + 9) * 20) * (1 - suck * .6), a = hash(i + 3) * 6.28 + t * (3 + suck * 6);
-    spark(BOOK.x + Math.cos(a) * r, BOOK.y - 2 + Math.sin(a) * r * .7, i % 3 ? "#FFE9A0" : "#FFFFFF", i % 5 === 0);
-  }
-  if (suck > 0) ddisc(BOOK.x, BOOK.y - 2, 6 + 14 * suck, "#FFFFFF", .6 * suck);
-  return camAt([[0, 100, 368, 2.5], [1.45, 104, 370, 2.9], [2.75, BOOK.x, BOOK.y - 2, 10, 1.3]], t);
-}
 function blinkAt(t, off) { return ((t + off) % 3.3) < .12; }
-// --- 2. house at sunset (2.85 - 8.75) ---
-function sHouse(t) {
-  L.drawImage(A.house, 0, 0);
-  var cx = lerp(-95, 118, eout(seg(t, 2.9, 4.0))), cy = 364, wf = Math.floor(cx / 3) & 1;
-  img("car", cx, cy); img(wf ? "wheel1" : "wheel0", cx + 11, cy + 19); img(wf ? "wheel1" : "wheel0", cx + 60, cy + 19);
-  if (t > 4.35) { var wk = seg(t, 4.45, 5.7), ox = lerp(150, 196, wk), f = wk > 0 && wk < 1 ? "owalk" + (Math.floor(t * 8) % 4) : (t > 5.8 ? "olook" : "ostand"); chr(f, ox - 24, 396 - GY); }
-  if (t > 6.2) { var up = eout(seg(t, 6.25, 6.6)); chr(t > 7.38 ? "shock" : (blinkAt(t, 1) ? "blink" : "stand"), 30, lerp(412, 379, up)); }
-  L.drawImage(A.hedge, 0, 0);
-  if (t > 7.38) for (var i = 0; i < 4; i++) { var k = seg(t, 7.38 + i * .05, 7.8); if (k > 0 && k < 1) spark(70 + i * 3, 372 - k * 10 - i * 2, "#FFFFFF", true); }
-  return camAt([[2.85, 140, 330, 1.35], [4.0, 140, 340, 1.5], [5.4, 182, 352, 2.3, 1.3], [6.25, 182, 352, 2.3], [6.9, 64, 384, 2.7, .65], [8.75, 66, 384, 2.85]], t);
+var BOOK = { x: 107, y: 374 }, GB = { x: 119, y: 389 };
+var PCOL = ["#B07CFF", "#7A4FE0", "#FFC145", "#FFFFFF", "#4C2A9E", "#FF9FC2"];
+function portal(cx, cy, rx, ry, t) {          // swirling pixel portal (oval door of light)
+  if (rx < 1) return; ddisc(cx, cy, Math.max(rx, ry) * 1.5, "#B07CFF", .35);
+  L.fillStyle = "#24104A"; for (var y = -ry; y <= ry; y++) { var w = Math.round(rx * Math.sqrt(1 - (y * y) / (ry * ry))); L.fillRect(Math.round(cx - w), Math.round(cy + y), w * 2 + 1, 1); }
+  for (var f = 1; f > .15; f -= .17) for (var a = 0; a < 6.283; a += .09 / f) {
+    var c = PCOL[Math.floor(a * 2 + t * 9 * (f > .5 ? 1 : -1) + f * 7) % PCOL.length]; if (Math.floor(a * 6 + t * 10) % 3 === 0) continue;
+    rect(cx + Math.cos(a) * rx * f, cy + Math.sin(a) * ry * f, 1, 1, c);
+  }
+  for (var i = 0; i < 10; i++) { var ph = (t * 1.2 + hash(i)) % 1, a2 = hash(i + 3) * 6.28 + t * 2; spark(cx + Math.cos(a2) * rx * (1.6 - ph), cy + Math.sin(a2) * ry * (1.2 - ph * .6), i % 2 ? "#FFE9A0" : "#FFFFFF", i % 4 === 0); }
 }
-// --- 3a. night room, writing the dream; then the page (8.75 - 14.55) ---
+// --- 1. the book opens a door (0 - 12) ---
+function sPortal(t) {
+  fieldBase(t);
+  if (t < 4.6) {
+    if (t > 2.9) { var g = seg(t, 2.9, 3.8); ddisc(BOOK.x, BOOK.y - 2, 6 + 14 * g + Math.sin(t * 9) * 2, "#FFE9A0", .55 * g);
+      for (var i = 0; i < 8; i++) { var ph = (t * 1.5 + hash(i)) % 1; spark(BOOK.x - 6 + hash(i + 1) * 12, BOOK.y - 4 - ph * 22, i % 2 ? "#FFE9A0" : "#FFFFFF", false); } }
+    img(blinkAt(t, 0) ? "reader_blink" : "reader", 82, 357);
+  } else {
+    var pk = eout(seg(t, 6.6, 7.9)), py = GB.y - 2 - 30 * pk;
+    img("book_ground", GB.x - 9, GB.y - 4); ddisc(GB.x, GB.y - 2, 8 + 4 * Math.sin(t * 8), "#FFE9A0", .5);
+    if (t > 6.5 && t < 7.0) for (var j = 0; j < 12; j++) { var r0 = seg(t, 6.5, 7.0) * 20; spark(GB.x + Math.cos(j) * r0, GB.y - 4 - Math.abs(Math.sin(j)) * r0, "#FFFFFF", false); }
+    if (t < 11.25 || t > 11.25) portal(GB.x, py, Math.round(15 * pk), Math.round(30 * pk), t);
+    var hop = t < 4.8 ? -2 : 0;
+    if (t < 7.0) chr(blinkAt(t, .3) ? "blink" : "stand", 70, 392 - GY + hop);
+    else if (t < 7.35) chr("walk" + (Math.floor(t * 10) % 4), lerp(70, 62, seg(t, 7.0, 7.35)), 392 - GY);
+    else if (t < 9.9) chr("lookup", 62, 392 - GY);
+    else if (t < 10.3) chr("stand", 62, 392 - GY);
+    else if (t < 10.65) chr("crouch", 62, 392 - GY);
+    else if (t < 11.25) { var k = seg(t, 10.65, 11.25), fx = lerp(86, GB.x, eio(k)), fy = lerp(392, py + 14, eio(k)) - Math.sin(k * Math.PI) * 26, sc = k < .6 ? 1 : 1 - (k - .6) / .4 * .85;
+      img("c_jump", fx - 24 * sc, fy - 53 * sc, false, sc); }
+  }
+  return camAt([[0, 100, 368, 2.5], [4.5, 103, 370, 2.8], [5.2, 100, 362, 2.4, .6], [7.9, 102, 352, 2.3, 1.3], [10.3, 108, 360, 2.9, 1.4], [12.0, GB.x, GB.y - 32, 16, 1.4]], t);
+}
+// --- 2. ten years later (12 - 26.9) ---
+function sFuture(t) {
+  L.drawImage(A.house, 0, 0);
+  var cx = lerp(-95, 118, eout(seg(t, 13.6, 15.2))), cy = 364, wf = Math.floor(cx / 3) & 1;
+  img("car", cx, cy); img(wf ? "wheel1" : "wheel0", cx + 11, cy + 19); img(wf ? "wheel1" : "wheel0", cx + 60, cy + 19);
+  if (t > 15.65) { var wk = seg(t, 15.8, 17.0), ox = lerp(150, 196, wk), f = wk > 0 && wk < 1 ? "owalk" + (Math.floor(t * 8) % 4) : (t > 17.2 ? "olook" : "ostand"); chr(f, ox - 24, 396 - GY); }
+  // young: tumbles out of a portal on the lawn, hides behind the hedge, watches
+  var pin = t < 13.1 ? 1 - seg(t, 12.75, 13.1) : 0, pout = t > 25.7 ? eout(seg(t, 25.7, 26.2)) : 0;
+  if (pin > 0) portal(205, 424, Math.round(14 * pin), Math.round(28 * pin), t);
+  if (pout > 0) portal(118, 398, Math.round(14 * pout), Math.round(28 * pout), t);
+  if (t < 12.5) { var k = seg(t, 12.05, 12.5); img("c_jump", lerp(205, 172, k) - 24, lerp(424, 452, k) - 53 - Math.sin(k * Math.PI) * 10, true); }
+  else if (t < 12.85) chr("crouch", 150, 452 - GY, true);
+  else if (t < 13.3) chr("stand", 150, 452 - GY, true);
+  else if (t < 14.7) { var k2 = seg(t, 13.3, 14.7); chr("walk" + (Math.floor(t * 8) % 4), lerp(150, 44, k2), lerp(452, 436, k2) - GY, true); }
+  else if (t < 26.35) { var pose = t > 18.0 && t < 22.0 ? "shock" : (t >= 22.0 && t < 25.8 ? (blinkAt(t, 1) ? "blink" : "stand") : (t >= 25.8 ? "stand" : (blinkAt(t, 1) ? "blink" : "stand")));
+    chr(pose, 44, 436 - GY, t < 17.6); }
+  else if (t < 26.85) { var k3 = seg(t, 26.35, 26.85), sc = k3 < .5 ? 1 : 1 - (k3 - .5) * 1.7; img("c_jump", lerp(68, 118, eio(k3)) - 24 * sc, lerp(436, 412, k3) - 53 * sc - Math.sin(k3 * Math.PI) * 18, false, sc); }
+  L.drawImage(A.hedge, 0, 0);
+  if (t > 18.0 && t < 18.6) for (var i = 0; i < 4; i++) { var kk = seg(t, 18.0 + i * .05, 18.5); if (kk > 0 && kk < 1) spark(84 + i * 3, 386 - kk * 10 - i * 2, "#FFFFFF", true); }
+  if (t > 22.0 && t < 25.8) { var q = Math.floor(t * 2) % 2; ptext(L, "?", 74, 372 - q, 1, "#FFFFFF"); }
+  return camAt([[12.0, 192, 412, 2.6], [13.1, 186, 416, 2.6], [14.0, 140, 340, 1.4, .9], [15.3, 140, 345, 1.5], [16.6, 186, 352, 2.3, 1.1], [17.9, 170, 318, 1.8, 1.1], [19.8, 70, 398, 2.7, 1.4], [25.7, 74, 398, 2.9, 5.8], [26.9, 118, 398, 5, 1.0]], t);
+}
+// --- 3. the book flips to chapter 1 (26.9 - 30.6) ---
+function woodBg() { rect(0, 0, W, H, "#3B2A24"); for (var y = 0; y < H; y += 12) rect(0, y, W, 1, "#33241F"); }
+function sFlip(t) {
+  woodBg(); var bx = 60, by = 192; ddisc(135, 240, 80, "#FFE9A0", .25); L.drawImage(A.bigbook, bx, by);
+  var u = seg(t, 26.9, 30.2), flips = 22 * (1 - Math.pow(1 - u, 2.2)), ph = flips % 1;
+  if (u < 1) { var ex = 135 + Math.cos(ph * Math.PI) * 72, top = by + 6 - Math.sin(ph * Math.PI) * 10;
+    L.fillStyle = ph < .5 ? "#FFF4E0" : "#EADBB8"; L.beginPath(); L.moveTo(135, by + 8); L.lineTo(Math.round(ex), Math.round(top)); L.lineTo(Math.round(ex), Math.round(top + 86)); L.lineTo(135, by + 94); L.fill();
+    rect(Math.round(ex), Math.round(top), 1, 86, "#C9B48A"); }
+  if (u >= 1) { ptext(L, "CHAPTER", bx + 88, by + 30, 1, "#6A4FD1"); ptext(L, "ONE", bx + 98, by + 42, 2, "#2A1F2E"); }
+  return camAt([[26.9, 135, 240, 1.5], [30.6, 135, 240, 1.8, 3.7]], t);
+}
+// --- chapter title cards ---
+function card(n, title) {
+  return function (t) {
+    rect(0, 0, W, H, "#FFF4E0"); for (var y = 40; y < H; y += 14) rect(0, y, W, 1, "#EADBB8"); rect(28, 0, 1, H, "#F2A0A0");
+    var c = "CHAPTER " + n, w = pwidth(c, 2); ptext(L, c, Math.round((W - w) / 2), 176, 2, "#6A4FD1");
+    var words = title.split(" "), lines = [], cur = ""; words.forEach(function (wd) { if ((cur + " " + wd).trim().length > 12) { lines.push(cur.trim()); cur = wd; } else cur = (cur + " " + wd).trim(); }); lines.push(cur);
+    lines.forEach(function (ln, i) { var w2 = pwidth(ln, 3); ptext(L, ln, Math.round((W - w2) / 2) + 1, 214 + i * 28 + 1, 3, "#E3D3AE"); ptext(L, ln, Math.round((W - w2) / 2), 214 + i * 28, 3, "#2A1F2E"); });
+    rect(110, 214 + lines.length * 28 + 6, 50, 2, "#FFC145");
+    return { x: 135, y: 240, z: 1 + .04 * Math.sin(t) };
+  };
+}
+// --- page close-up (Chapter 1 and the ending): typed dream, sticky note, underline, glow ---
 var DREAM = ["DREAM:", "BUILD MY", "OWN", "COMPANY."];
-function pageView(t, t0, glowAt, bg) {
-  if (bg === "grass") { rect(0, 0, W, H, "#4E9F58"); for (var i = 0; i < 400; i++) rect(hash(i) * W, hash(i + 1e3) * H, 1, 2, i % 2 ? "#5FB068" : "#3E8A4A"); }
-  else { rect(0, 0, W, H, "#3B2A24"); for (var y = 0; y < H; y += 12) rect(0, y, W, 1, "#33241F"); }
-  var bx = 60, by = 192; if (t > glowAt) ddisc(135, 240, 90 * eout(seg(t, glowAt, glowAt + .5)), "#FFE9A0", .35);
+function pageView(t, o) {
+  if (o.bg === "grass") { rect(0, 0, W, H, "#4E9F58"); for (var i = 0; i < 400; i++) rect(hash(i) * W, hash(i + 1e3) * H, 1, 2, i % 2 ? "#5FB068" : "#3E8A4A"); } else woodBg();
+  var bx = 60, by = 192; if (o.glow && t > o.glow) ddisc(135, 240, 95 * eout(seg(t, o.glow, o.glow + .6)), "#FFE9A0", .4);
   L.drawImage(A.bigbook, bx, by);
-  // doodle of the future on the left page (pencil grey)
   var dg = "#B8A888"; rect(bx + 18, by + 50, 36, 1, dg); rect(bx + 22, by + 36, 26, 1, dg); rect(bx + 22, by + 36, 1, 14, dg); rect(bx + 47, by + 36, 1, 14, dg); rect(bx + 26, by + 30, 18, 1, dg); rect(bx + 26, by + 30, 1, 6, dg); rect(bx + 43, by + 30, 1, 6, dg);
   rect(bx + 12, by + 60, 20, 1, dg); rect(bx + 14, by + 56, 14, 1, dg); rect(bx + 13, by + 62, 3, 1, dg); rect(bx + 27, by + 62, 3, 1, dg);
-  var total = DREAM.join("").length, n = Math.floor(cl((t - t0) / 1.9, 0, 1) * total), cx = 0, cy = 0, px = bx + 86, py = by + 14;
+  var total = DREAM.join("").length, n = Math.floor(cl((t - o.t0) / o.dur, 0, 1) * total), cx = 0, cy = 0, px = bx + 86, py = by + 14;
   DREAM.forEach(function (ln, li) { for (var i = 0; i < ln.length; i++) { if (n-- <= 0) return; glyph(L, ln[i], px + i * 6, py + li * 9, 1, li === 0 ? "#6A4FD1" : "#2A1F2E"); cx = px + (i + 1) * 6; cy = py + li * 9; } });
-  if (t > t0 && t < t0 + 2.1) { rect(cx + 1, cy - 6, 1, 8, "#2A1F2E"); rect(cx + 2, cy - 8, 1, 3, "#E0453A"); rect(cx, cy + 2, 1, 1, "#2A1F2E"); }
+  if (t > o.t0 && t < o.t0 + o.dur + .2) { rect(cx + 1, cy - 6, 1, 8, "#2A1F2E"); rect(cx + 2, cy - 8, 1, 3, "#E0453A"); rect(cx, cy + 2, 1, 1, "#2A1F2E"); }
+  if (o.sticky && t > o.sticky) { var k = eout(seg(t, o.sticky, o.sticky + .3)), sy = by + 58 + Math.round((1 - k) * 6);
+    rect(bx + 78, sy, 71, 15, "#2A1F2E"); rect(bx + 79, sy + 1, 69, 13, "#FFE066"); rect(bx + 79, sy + 1, 69, 2, "#F2C94E"); ptext(L, "IMPOSSIBLE?", bx + 81, sy + 5, 1, "#8A5A2E"); }
+  if (o.under && t > o.under) { var u = Math.round(48 * seg(t, o.under, o.under + .5)); rect(px, py + 36, u, 1, "#E0453A"); rect(px, py + 37, Math.max(0, u - 4), 1, "#E0453A"); }
 }
 function sWrite(t) {
-  if (t >= 11.0) { pageView(t, 11.75, 13.75); return camAt([[11.0, 135, 240, 1.6], [14.55, 150, 246, 1.95, 3.5]], t); }
+  if (t >= 36.0) { pageView(t, { t0: 36.35, dur: 1.6, sticky: 38.2, under: 41.1, glow: 42.5 }); return camAt([[36.0, 135, 240, 1.6], [44.6, 150, 246, 1.95, 8.5]], t); }
   L.drawImage(A.room_night, 0, 0); ddisc(246, 322, 34, "#FFD678", .28);
-  img("notebook", 168, 331); if (t > 10.2) ddisc(183, 335, 16 * seg(t, 10.2, 10.8), "#FFE9A0", .5);
-  chr(Math.floor(t * 5) % 2 ? "sit_write1" : "sit_write0", 126, 352 - 40);
-  return camAt([[8.75, 190, 332, 2.3], [10.5, 178, 335, 2.7, 1.75], [10.98, 183, 334, 9, .45]], t);
+  img("notebook", 168, 331); if (t > 34.8) ddisc(183, 335, 16 * seg(t, 34.8, 35.4), "#FFE9A0", .5);
+  chr(t > 34.9 && Math.floor(t * 5) % 2 ? "sit_write1" : "sit_write0", 126, 352 - 40);
+  return camAt([[32.2, 190, 332, 2.3], [35.6, 178, 335, 2.7, 3.2], [36.0, 183, 334, 9, .4]], t);
 }
-// --- 3b. dawn, the alarm (14.55 - 17.5) ---
-function blanket() { rect(28, 344, 65, 37, "#4C9AFF"); rect(28, 344, 65, 4, "#7FB8FF"); rect(28, 380, 65, 1, "#3A78D0"); }
-function sAlarm(t) {
-  L.drawImage(A.room_dawn, 0, 0);
-  var ringing = t < 16.6, sh = ringing ? (Math.floor(t * 20) % 2 ? 1 : -1) : 0;
-  img(ringing && Math.floor(t * 12) % 2 ? "alarm1" : "alarm0", 101 + sh, 347);
-  if (ringing) { var p = Math.floor(t * 6) % 2; rect(98, 344 - p, 1, 1, "#FFFFFF"); rect(120, 344 - p, 1, 1, "#FFFFFF"); rect(96, 340 + p, 1, 2, "#FFFFFF"); rect(122, 340 + p, 1, 2, "#FFFFFF"); }
-  if (t < 16.6) { L.save(); L.translate(70, 358); L.rotate(-Math.PI / 2); L.drawImage(A[blinkAt(t, 0) ? "c_sit_bed_blink" : "c_sit_bed"], -2, -26); L.restore(); blanket(); }
-  else { chr(t > 17.0 ? "stretch" : "sit_bed", 22, 356 - 40); blanket(); }
-  sign("SNOOZE", 46, 286, t, 15.35, 16.6, false); sign("GET UP", 96, 286, t, 15.5, 16.6, true);
-  return camAt([[14.55, 72, 330, 2.4], [17.5, 70, 326, 2.65, 2.9]], t);
+// --- morning: the fork, sleep in (grey), get up (warm) ---
+function blanket(head) { rect(28, 344, 65, 37, "#4C9AFF"); rect(28, 344, 65, 4, "#7FB8FF"); rect(28, 380, 65, 1, "#3A78D0"); if (head) { rect(8, 336, 26, 12, "#4C9AFF"); rect(8, 336, 26, 3, "#7FB8FF"); } }
+function lying(t, head) { L.save(); L.translate(70, 358); L.rotate(-Math.PI / 2); L.drawImage(A[blinkAt(t, 0) ? "c_sit_bed_blink" : "c_sit_bed"], -2, -26); L.restore(); blanket(head); }
+function alarm(t, ringing) { var sh = ringing ? (Math.floor(t * 20) % 2 ? 1 : -1) : 0; img(ringing && Math.floor(t * 12) % 2 ? "alarm1" : "alarm0", 101 + sh, 347);
+  if (ringing) { var p = Math.floor(t * 6) % 2; rect(98, 344 - p, 1, 1, "#FFFFFF"); rect(120, 344 - p, 1, 1, "#FFFFFF"); rect(96, 340 + p, 1, 2, "#FFFFFF"); rect(122, 340 + p, 1, 2, "#FFFFFF"); } }
+function sMorning(t) { L.drawImage(A.room_dawn, 0, 0); alarm(t, true); lying(t, false); return camAt([[46.4, 72, 330, 2.4], [50.6, 70, 326, 2.75, 4.2]], t); }
+function sunWindow(k) { L.save(); L.beginPath(); L.rect(155, 195, 81, 101); L.clip(); L.globalAlpha = .75 * k; rect(155, 195, 81, 101, "#9FD3F4"); L.globalAlpha = 1;
+  L.fillStyle = "#FFF1C4"; L.beginPath(); L.arc(Math.round(lerp(170, 222, k)), Math.round(lerp(288, 212, k)), 7, 0, 7); L.fill(); L.restore(); rect(194, 190, 3, 111, "#F4E3C8"); rect(150, 244, 91, 3, "#F4E3C8"); }
+function sSleep(t) {
+  L.drawImage(A.room_dawn, 0, 0); var k = seg(t, 50.9, 54.9); sunWindow(k); alarm(t, false); lying(t, true);
+  img("notebook", 168, 331); for (var i = 0; i < 40 * k; i++) rect(168 + hash(i) * 30, 331 + hash(i + 9) * 9, 1, 1, "#9A9A9A");
+  for (var j = 0; j < 3; j++) { var zk = (t * .7 + j / 3) % 1; ptext(L, "Z", 40 + zk * 14, 328 - zk * 24, 1, "#FFFFFF"); }
+  return camAt([[50.6, 112, 322, 2.0], [55.4, 116, 324, 2.2, 4.8]], t);
 }
-// --- 3c. night: friends outside, then building (17.5 - 22.85) ---
-function sNight(t) {
-  L.drawImage(A.room_night, 0, 0); ddisc(246, 322, 34, "#FFD678", .28);
-  L.save(); L.beginPath(); L.rect(155, 195, 81, 101); L.clip();
-  var fx = t < 18.4 ? lerp(110, 168, eout(seg(t, 17.5, 17.85))) : lerp(168, 270, seg(t, 18.4, 19.0) * seg(t, 18.4, 19.0));
-  img("friendcar", fx, 268); if (t > 17.6 && t < 18.4) { var w = Math.floor(t * 6) % 2; rect(fx + 24, 260 - w, 1, 3, "#F2C6A0"); rect(fx + 38, 260 - (1 - w), 1, 3, "#F2C6A0"); }
-  L.restore();
-  img("laptop", 172, 316); if (t > 18.95) { ddisc(189, 318, 20, "#7FD4FF", .3); var ln = Math.floor((t - 19) * 4); for (var i = 0; i < Math.min(5, ln); i++) rect(180, 322 + i * 2 - 4, 6 + ((i * 7 + ln) % 12), 1, "#7FD4FF"); }
-  var ph = t > 18.55 && t < 19.13; img("phone", 225, 330); if (ph) { rect(226, 331, 6, 9, Math.floor(t * 10) % 2 ? "#FFFFFF" : "#7FD4FF"); }
-  if (t < 18.4) chr(t > 17.85 ? "wave_off" : "stand", 92, 400 - GY);
-  else if (t < 18.95) { var k = seg(t, 18.4, 18.95); chr("walk" + (Math.floor(t * 8) % 4), lerp(92, 104, k), 400 - GY); }
-  else chr(Math.floor(t * 7) % 2 ? "sit_type1" : "sit_type0", 126, 352 - 40);
-  sign("GO OUT", 120, 236, t, 17.6, 18.2, false, 18.9); sign("BUILD", 164, 236, t, 17.75, 18.2, true, 18.9);
-  if (t > 18.45) { sign("SCROLL", 128, 262, t, 18.5, 19.13, false, 20.0); sign("START", 176, 262, t, 18.62, 19.13, true, 20.0); }
-  return camAt([[17.5, 165, 300, 2.0], [19.2, 175, 318, 2.35, .9], [22.4, 168, 330, 3.0, 2.0]], t);
+function sGetUp(t) {
+  L.drawImage(A.room_dawn, 0, 0); ddisc(198, 270, 50 + 6 * Math.sin(t * 2), "#FFE9A0", .3); alarm(t, false);
+  rect(28, 344, 65, 37, "#4C9AFF"); rect(28, 344, 65, 4, "#7FB8FF");
+  img("notebook", 168, 331); chr(Math.floor(t * 5) % 2 ? "sit_write1" : "sit_write0", 126, 352 - 40);
+  var ck = seg(t, 57.4, 57.7); if (t > 57.4 || t < 55.5) { var cx = 196, cy = 312 - Math.round(4 * eout(ck)); rect(cx, cy + 4, 2, 2, "#28A86A"); rect(cx + 2, cy + 6, 2, 2, "#28A86A"); rect(cx + 4, cy + 4, 2, 2, "#28A86A"); rect(cx + 6, cy + 2, 2, 2, "#28A86A"); rect(cx + 8, cy, 2, 2, "#28A86A"); }
+  return camAt([[55.4, 182, 322, 2.3], [60.2, 180, 324, 2.6, 4.8]], t);
 }
-// --- 3d. the shop in the rain (22.85 - 25.95) ---
+// --- evening: the fork, scroll (grey), build (warm), then again and again ---
+function bedPhone(t, yawn) { chr(yawn ? "bed_yawn" : (blinkAt(t, .4) ? "bed_phone_blink" : "bed_phone"), 22, 356 - 40); blanket(false); rect(54, 333, 4, 6, "#1E2233"); rect(55, 334, 2, 4, "#7FD4FF"); ddisc(52, 330, 10, "#7FD4FF", .35); }
+function sEvening(t) { L.drawImage(A.room_night, 0, 0); ddisc(246, 322, 34, "#FFD678", .2); bedPhone(t, false); return camAt([[66.4, 72, 330, 2.5], [69.8, 70, 328, 2.8, 3.4]], t); }
+function sScroll(t) {
+  L.drawImage(A.room_night, 0, 0); bedPhone(t, t > 72.6 && t < 73.3);
+  var px = 92, py = 232; rect(px - 1, py - 1, 46, 80, "#2A1F2E"); rect(px, py, 44, 78, "#1E2233"); L.save(); L.beginPath(); L.rect(px + 3, py + 4, 38, 70); L.clip();
+  var cols = ["#FF7A59", "#FFC145", "#6CC7A3", "#4C9AFF", "#B07CFF", "#FF9FC2"], off = (t * 60) % 26;
+  for (var i = 0; i < 6; i++) { var y = py + 4 + i * 26 - off, c = cols[(i + Math.floor(t * 60 / 26)) % 6]; rect(px + 3, y, 38, 20, c); rect(px + 6, y + 14, 20, 2, "#FFFFFF"); } L.restore();
+  return camAt([[69.8, 92, 300, 2.2], [73.8, 90, 304, 2.4, 4]], t);
+}
+function laptopDesk(t, prog) {
+  img("laptop", 172, 316); ddisc(189, 318, 20, "#7FD4FF", .3); var ln = Math.floor(t * 4); for (var i = 0; i < 5; i++) rect(180, 318 + i * 2 - 4, 6 + ((i * 7 + ln) % 12), 1, "#7FD4FF");
+  img("phone", 225, 334); rect(226, 335, 6, 9, "#1E2233");
+  if (prog != null) { rect(170, 300, 40, 6, "#2A1F2E"); rect(171, 301, 38, 4, "#3A3F55"); rect(171, 301, Math.round(38 * prog), 4, "#28A86A"); }
+  chr(Math.floor(t * 7) % 2 ? "sit_type1" : "sit_type0", 126, 352 - 40);
+}
+function sBuild(t) {
+  L.drawImage(A.room_night, 0, 0); ddisc(246, 322, 34, "#FFD678", .3); laptopDesk(t, seg(t, 74.0, 77.0));
+  if (t > 76.0) { var k = eout(seg(t, 76.0, 76.3)), y = 270 + Math.round((1 - k) * 6); rect(205, y, 34, 14, "#2A1F2E"); rect(206, y + 1, 32, 12, "#FFE066"); ptext(L, "DONE!", 208, y + 4, 1, "#8A5A2E"); }
+  return camAt([[73.8, 186, 316, 2.4], [77.8, 186, 314, 2.7, 4]], t);
+}
+function sMontage(t) {
+  var d = Math.floor((t - 80.6) * 2.4), night = d % 2 === 0; L.drawImage(night ? A.room_night : A.room_dawn, 0, 0); if (night) ddisc(246, 322, 34, "#FFD678", .3);
+  laptopDesk(t, ((t - 80.6) * 2.4) % 1);
+  var cols = ["#FFE066", "#FF9FC2", "#7FD4FF", "#9BE3B0"], nst = Math.min(30, Math.floor((t - 80.6) * 4));
+  for (var i = 0; i < nst; i++) { var x = 152 + (i % 10) * 9, y = 150 + Math.floor(i / 10) * 11; rect(x, y, 7, 8, cols[i % 4]); rect(x, y, 7, 1, "#2A1F2E"); }
+  return camAt([[80.6, 186, 314, 2.7], [88.9, 182, 290, 1.9, 8.2]], t);
+}
+// --- the wrong turn ---
 function sShop(t) {
   L.drawImage(A.shop, 0, 0);
-  var flip = seg(t, 24.95, 25.25), sx = Math.abs(Math.cos(flip * Math.PI)), cur = flip < .5 ? 0 : 1, w = Math.max(1, Math.round(44 * sx));
-  L.drawImage(A["sign" + cur], 0, 0, 44, 28, 96 + Math.round((44 - w) / 2), 206, w, 28);
-  if (sx > .6) { var lab = cur ? "CLOSED" : "OPEN", tw = pwidth(lab, 1); ptext(L, lab, 96 + 22 - Math.round(tw / 2), 216, 1, cur ? "#E0453A" : "#FFFFFF"); }
-  chr(blinkAt(t, .5) ? "sad_blink" : "sad", 168, 352 - GY);
-  for (var i = 0; i < 140; i++) { var x = (hash(i) * 300 + t * 40) % 300 - 15, y = (hash(i + 50) * 480 + t * 520) % 500 - 10; rect(x, y, 1, 4, "#8FA8D8"); if (y > 470) rect(x - 1, 476, 3, 1, "#8FA8D8"); }
-  if (t > 25.09 && t < 25.25) { L.fillStyle = "rgba(255,255,255,.18)"; L.fillRect(0, 0, W, H); }
-  return camAt([[22.85, 150, 300, 2.0], [25.95, 160, 312, 2.5, 3.0]], t);
+  var f1 = seg(t, 93.55, 93.85), f2 = seg(t, 98.7, 99.0), stage = t < 93.7 ? 0 : (t < 98.85 ? 1 : 2), fl = t < 96 ? f1 : f2, sx = Math.abs(Math.cos(fl * Math.PI)), w = Math.max(1, Math.round(44 * sx));
+  var lab = ["OPEN", "CLOSED", "LESSON"][stage];
+  if (stage < 2) L.drawImage(A["sign" + stage], 0, 0, 44, 28, 96 + Math.round((44 - w) / 2), 206, w, 28);
+  else { var x0 = 96 + Math.round((44 - w) / 2); rect(x0, 214, w, 20, "#2A1F2E"); rect(x0 + 1, 215, Math.max(0, w - 2), 18, "#FFF4E0"); rect(106, 206, 1, 8, "#C9CED6"); rect(129, 206, 1, 8, "#C9CED6"); }
+  if (sx > .6) { var tw = pwidth(lab, 1); ptext(L, lab, 96 + 22 - Math.round(tw / 2), stage === 2 ? 221 : 216, 1, stage === 1 ? "#E0453A" : (stage === 2 ? "#2A1F2E" : "#FFFFFF")); if (stage === 2) ddisc(118, 222, 26 * seg(t, 99.0, 99.4), "#FFE9A0", .25); }
+  if (t < 97.8) chr(blinkAt(t, .5) ? "sad_blink" : "sad", 168, 352 - GY);
+  else if (t < 100.8) chr(t > 98.4 ? "lookup" : "stand", 160, 340 - GY, true);
+  else { var k = seg(t, 100.8, 103.4); chr("walk" + (Math.floor(t * 8) % 4), lerp(160, 290, k), 340 - GY); }
+  var rain = t < 101 ? 1 : 1 - seg(t, 101, 103.5);
+  for (var i = 0; i < 140 * rain; i++) { var x = (hash(i) * 300 + t * 40) % 300 - 15, y = (hash(i + 50) * 480 + t * 520) % 500 - 10; rect(x, y, 1, 4, "#8FA8D8"); if (y > 470) rect(x - 1, 476, 3, 1, "#8FA8D8"); }
+  if (t > 93.72 && t < 93.88) { L.fillStyle = "rgba(255,255,255,.18)"; L.fillRect(0, 0, W, H); }
+  if (t > 101.5) { L.globalAlpha = .25 * seg(t, 101.5, 103.5); ddisc(220, 60, 120, "#FFE9A0", .6); L.globalAlpha = 1; }
+  return camAt([[90.8, 150, 300, 2.0], [93.5, 140, 296, 2.2, 2.0], [97.4, 160, 312, 2.5, 3.5], [99.2, 132, 288, 2.3, 1.4], [104.0, 180, 300, 2.0, 4.5]], t);
 }
-// --- 3e. office: choosing again (25.95 - 28.3) ---
+// --- chose again ---
 function sOffice(t) {
   L.drawImage(A.office, 0, 0);
-  var sh = t > 26.85 && t < 27.6, f = Math.floor(t * 8) % 2;
-  chr(sh ? "shake" + f : (t > 27.6 ? "shake0" : "stand"), 140, 400 - GY); chr(sh ? "cshake" + f : (t > 27.6 ? "cshake0" : "cshake0"), 166, 400 - GY, true);
-  if (t > 26.85) for (var i = 0; i < 24; i++) { var k = seg(t, 26.85, 28.2), a = hash(i) * 6.28, r = k * (30 + hash(i + 7) * 40); var col = ["#FF7A59", "#FFC145", "#6CC7A3", "#4C9AFF", "#B07CFF"][i % 5];
+  var sh = t > 108.8 && t < 109.7, f = Math.floor(t * 8) % 2;
+  chr(sh ? "shake" + f : (t > 109.7 ? "shake0" : "stand"), 140, 400 - GY); chr(sh ? "cshake" + f : "cshake0", 166, 400 - GY, true);
+  if (t > 108.9) for (var i = 0; i < 24; i++) { var k = seg(t, 108.9, 110.5), a = hash(i) * 6.28, r = k * (30 + hash(i + 7) * 40), col = ["#FF7A59", "#FFC145", "#6CC7A3", "#4C9AFF", "#B07CFF"][i % 5];
     if (k < 1) rect(177 + Math.cos(a) * r, 360 + Math.sin(a) * r * .8 + k * k * 30, 2, 2, col); }
-  return camAt([[25.95, 168, 366, 2.4], [28.3, 172, 364, 2.75, 2.3]], t);
+  return camAt([[105.8, 168, 366, 2.4], [111, 172, 364, 2.75, 5]], t);
 }
-function sHero(t) {
-  rect(0, 0, W, H, "#140F2E"); for (var i = 0; i < 70; i++) if ((t * 2 + hash(i)) % 1 > .3) rect(hash(i) * W, hash(i + 70) * H, 1, 1, "#FFFFFF");
-  ddisc(135, 230, 40, "#B07CFF", .3); chr(blinkAt(t, .2) ? "blink" : "stand", 111, 262 - GY); return { x: 135, y: 236, z: 3.2 };
-}
-function sLibrary(t) { L.drawImage(A.library, 0, 0); img(blinkAt(t, 2) ? "reader_blink" : "reader", 110, 362); return { x: 128, y: 330, z: 2.0 }; }
-
-// --- beams, white, field outro ---
+function sHero(t) { rect(0, 0, W, H, "#140F2E"); for (var i = 0; i < 70; i++) if ((t * 2 + hash(i)) % 1 > .3) rect(hash(i) * W, hash(i + 70) * H, 1, 1, "#FFFFFF");
+  ddisc(135, 230, 40, "#B07CFF", .3); chr(blinkAt(t, .2) ? "blink" : "stand", 111, 262 - GY); return { x: 135, y: 236, z: 3.2 }; }
+// --- beams ---
 var BCOL = ["#FF7A59", "#FFC145", "#6CC7A3", "#4C9AFF", "#B07CFF", "#FF9FC2", "#7FD4FF", "#F2C14E"];
 function sBeams(t) {
   rect(0, 0, W, H, "#07061A");
-  for (var i = 0; i < 120; i++) { var x = hash(i) * W, y = (hash(i + 200) * H + t * (40 + hash(i + 9) * 90)) % H; rect(x, y, 1, hash(i + 4) > .8 ? 2 : 1, hash(i + 3) > .5 ? "#FFFFFF" : "#8C8FC8"); }
-  var head = lerp(H, -20, eout(seg(t, 31.55, 32.3))), split = eout(seg(t, 33.25, 33.9)), merge = eio(seg(t, 34.45, 35.6)), conv = eio(seg(t, 37.95, 39.5)), link = seg(t, 36.0, 36.4);
-  function bx(i, y) { var base = 24 + i * 31 + Math.sin(y * .018 + t * 1.4 + i) * 7; var tgt = lerp(base, 135, cl((260 - y) / 200, 0, 1)); return lerp(base, tgt, conv); }
-  for (var i = 0; i < 8; i++) {
-    var c = BCOL[i];
-    for (var y = Math.max(0, Math.floor(head)); y < H; y++) {
-      var x = bx(i, y); rect(x - 2, y, 1, 1, "#24205A"); rect(x - 1, y, 3, 1, c); rect(x, y, 1, 1, "#FFFFFF"); rect(x + 2, y, 1, 1, "#24205A");
-      if (split > 0 && y < 330) { var fk = cl((330 - y) / 70, 0, 1), d = 16 * split * fk * (1 - conv); var bxv = x + d * (i % 2 ? -1 : 1);
-        if (merge > 0 && i < 7) { var tx = bx(i + 1, y) + (i % 2 ? 0 : 0); bxv = lerp(bxv, tx, merge * cl((300 - y) / 120, 0, 1)); }
-        rect(bxv - 1, y, 2, 1, c); }
-    }
-    for (var p = 0; p < 3; p++) { var py = (H - ((t * 160 + p * 160 + i * 40) % (H + 40))); if (py > head) { var px = bx(i, py); rect(px - 1, py, 4, 2, "#FFFFFF"); } }
-  }
-  if (merge > 0) [34.6, 34.9, 35.2, 35.5].forEach(function (mt, j) { var k = seg(t, mt, mt + .5); if (k > 0 && k < 1) ddisc(bx(j * 2 + 1, 190), 190, 8 + 26 * k, "#FFFFFF", .8 * (1 - k)); });
-  if (link > 0 && conv < .6) for (var r = 0; r < 6; r++) { var ly = 70 + r * 62, on = (Math.floor(t * 8) + r) % 3 !== 0; if (!on) continue;
-    for (var i = 0; i < 7; i++) { var a = bx(i, ly), b = bx(i + 1, ly), n = Math.round((b - a) * link); for (var q = 2; q < n; q += 2) rect(a + q, ly, 1, 1, "#FFFFFF"); } }
-  if (conv > 0) ddisc(135, 60, 10 + 50 * conv, "#FFFFFF", .8 * conv);
-  return { x: 135 + Math.sin(t * .7) * 6, y: 240, z: 1.06 };
+  for (var i = 0; i < 120; i++) { var x = hash(i) * W, y = (hash(i + 200) * H + t * (30 + hash(i + 9) * 70)) % H; rect(x, y, 1, hash(i + 4) > .8 ? 2 : 1, hash(i + 3) > .5 ? "#FFFFFF" : "#8C8FC8"); }
+  var head = lerp(H, -20, eout(seg(t, 117.7, 118.9))), split = eout(seg(t, 120.6, 121.4)), merge = eio(seg(t, 121.9, 123.2)), conv = eio(seg(t, 125.9, 127.6)), link = seg(t, 124.9, 125.4);
+  function bx(i, y) { var base = 24 + i * 31 + Math.sin(y * .018 + t * 1.1 + i) * 7; var tgt = lerp(base, 135, cl((260 - y) / 200, 0, 1)); return lerp(base, tgt, conv); }
+  for (var i = 0; i < 8; i++) { var c = BCOL[i];
+    for (var y = Math.max(0, Math.floor(head)); y < H; y++) { var x = bx(i, y); rect(x - 2, y, 1, 1, "#24205A"); rect(x - 1, y, 3, 1, c); rect(x, y, 1, 1, "#FFFFFF"); rect(x + 2, y, 1, 1, "#24205A");
+      if (split > 0 && y < 330) { var fk = cl((330 - y) / 70, 0, 1), d = 16 * split * fk * (1 - conv), bxv = x + d * (i % 2 ? -1 : 1);
+        if (merge > 0 && i < 7) bxv = lerp(bxv, bx(i + 1, y), merge * cl((300 - y) / 120, 0, 1)); rect(bxv - 1, y, 2, 1, c); } }
+    for (var p = 0; p < 3; p++) { var py = (H - ((t * 130 + p * 160 + i * 40) % (H + 40))); if (py > head) { var px = bx(i, py); rect(px - 1, py, 4, 2, "#FFFFFF"); } } }
+  [122.3, 122.6, 122.9, 123.2].forEach(function (mt, j) { var k = seg(t, mt, mt + .5); if (k > 0 && k < 1) ddisc(bx(j * 2 + 1, 190), 190, 8 + 26 * k, "#FFFFFF", .8 * (1 - k)); });
+  if (link > 0 && conv < .6) for (var r = 0; r < 6; r++) { var ly = 70 + r * 62; if ((Math.floor(t * 8) + r) % 3 === 0) continue;
+    for (var i2 = 0; i2 < 7; i2++) { var a = bx(i2, ly), b = bx(i2 + 1, ly), n = Math.round((b - a) * link); for (var q = 2; q < n; q += 2) rect(a + q, ly, 1, 1, "#FFFFFF"); } }
+  if (conv > 0) { ddisc(135, 60, 10 + 50 * conv, "#FFFFFF", .8 * conv); var hk = seg(t, 127.3, 127.9) * (1 - seg(t, 128.6, 129.0)); if (hk > 0) { L.globalAlpha = hk; L.drawImage(A.house, 30, 190, 230, 210, 135 - 38, 34, 77, 70); L.globalAlpha = 1; } }
+  return { x: 135 + Math.sin(t * .6) * 6, y: 240, z: 1.06 };
 }
-function sField2(t) {               // outro: back in the field
-  if (t >= 42.8 && t < 45.3) { pageView(t, 43.35, 45.0, "grass"); return camAt([[42.8, 135, 240, 1.7], [45.3, 150, 246, 2.0, 2.5]], t); }
-  fieldBase(t); img(blinkAt(t, .7) ? "reader_blink" : "reader", 82, 357);
-  if (t < 42.8) { if (t > 42.3) ddisc(BOOK.x, BOOK.y - 2, 12 * seg(t, 42.3, 42.7), "#FFE9A0", .5); return camAt([[41.8, 102, 372, 2.6], [42.35, 103, 372, 2.75], [42.8, BOOK.x, BOOK.y - 2, 8, .45]], t); }
-  ddisc(BOOK.x, BOOK.y - 2, 10, "#FFE9A0", .35);
-  return camAt([[45.3, 104, 372, 2.6], [50.2, 135, 300, 1.0, 4.9]], t);
+// --- back in the field ---
+function sReturn(t) {
+  if (t >= 140.6 && t < 144.0) { pageView(t, { t0: 141.0, dur: 1.7, glow: 142.8, bg: "grass" }); return camAt([[140.6, 135, 240, 1.6], [144.0, 150, 246, 1.95, 3.4]], t); }
+  fieldBase(t); img(blinkAt(t, .7) ? "reader_blink" : "reader", 82, 357); ddisc(BOOK.x, BOOK.y - 2, 9, "#FFE9A0", .3);
+  if (t < 140.6) return camAt([[131.4, 102, 372, 2.6], [139.6, 103, 372, 2.8], [140.6, BOOK.x, BOOK.y - 2, 8, 1.0]], t);
+  return camAt([[144.0, 104, 372, 2.6], [151.0, 135, 300, 1.0, 7.0]], t);
+}
+
+// =================== CHOICE SCREENS (each option was shown alone; now he walks into one) ===================
+function drawHeroScreen(ctx, name, x, y, s, flip) { var i = A["c_" + name]; if (!i) return; ctx.save(); ctx.imageSmoothingEnabled = false; ctx.translate(Math.round(x), Math.round(y)); if (flip) { ctx.translate(48 * s, 0); ctx.scale(-1, 1); } ctx.drawImage(i, 0, 0, 48 * s, 56 * s); ctx.restore(); }
+function choiceScreen(o) {
+  return function (t, ctx) {
+    ctx.fillStyle = "#0B0920"; ctx.fillRect(0, 0, OW, OH);
+    for (var i = 0; i < 90; i++) if ((t * 1.5 + hash(i)) % 1 > .3) { ctx.fillStyle = "#3A3570"; ctx.fillRect(Math.floor(hash(i) * 270) * 4, Math.floor(hash(i + 90) * 480) * 4, 4, 4); }
+    var CWd = 456, CHt = 811, ay = 330, ax = 52, bxx = 572, ex = eio(seg(t, o.expand, o.expand + .8));
+    var rA = [ax, ay, CWd, CHt], rB = [lerp(bxx, 0, ex), lerp(ay, 0, ex), lerp(CWd, OW, ex), lerp(CHt, OH, ex)];
+    function cardDraw(r, f, lt, filter, glow) {
+      ctx.fillStyle = glow ? "#FFC145" : "#2A1F2E"; ctx.fillRect(r[0] - 10, r[1] - 10, r[2] + 20, r[3] + 20);
+      L.setTransform(1, 0, 0, 1, 0, 0); L.clearRect(0, 0, W, H); var cam = f(lt); ctx.save(); ctx.filter = filter || "none"; blit(cam, r[0], r[1], r[2], r[3], ctx); ctx.restore(); }
+    var la = o.a0 + ((t - o.start) % o.alen), lb = o.b0 + ((t - o.start) % o.blen);
+    if (ex < 1) { ctx.globalAlpha = 1 - .6 * seg(t, o.pick, o.pick + .5); cardDraw(rA, o.A, la, "saturate(.15) brightness(.75)"); ctx.globalAlpha = 1;
+      ptext(ctx, o.labA, ax + (CWd - pwidth(o.labA, 7)) / 2, ay + CHt + 40, 7, "#8C8FA8"); ptext(ctx, o.labB, bxx + (CWd - pwidth(o.labB, 7)) / 2, ay + CHt + 40, 7, "#FFC145"); }
+    cardDraw(rB, o.B, ex > 0 ? o.bEnd : lb, ex >= 1 ? "none" : "saturate(1.2)", t > o.pick && ex < 1);
+    if (ex < .05) { var wk = seg(t, o.walk, o.walk + 1.3), en = seg(t, o.walk + 1.3, o.pick), s = 6 * (1 - en * .7), hx = lerp(lerp(396, 640, wk), bxx + CWd / 2 - 24 * s, en), hy = lerp(1340 + 0, ay + CHt / 2 - 28 * s, en);
+      var nm = wk > 0 && wk < 1 ? "walk" + (Math.floor(t * 8) % 4) : (t < o.walk ? (blinkAt(t, .1) ? "blink" : "stand") : "jump"); if (en < 1) drawHeroScreen(ctx, nm, hx, hy, s, false); }
+  };
 }
 
 // =================== TIMELINE ===================
+var C1 = { start: 60.2, A: sSleep, B: sGetUp, a0: 52.0, alen: 3.0, b0: 56.0, blen: 3.0, labA: "SLEEP IN", labB: "GET UP", walk: 60.7, pick: 62.6, expand: 62.9, bEnd: 59.9 };
+var C2 = { start: 77.8, A: sScroll, B: sBuild, a0: 70.5, alen: 3.0, b0: 74.5, blen: 3.0, labA: "SCROLL", labB: "BUILD", walk: 78.0, pick: 79.6, expand: 79.8, bEnd: 77.7 };
 var SC = [
-  { a: 0, b: 2.85, f: sField }, { a: 2.85, b: 8.75, f: sHouse, tin: "flash" }, { a: 8.75, b: 14.55, f: sWrite, tin: "flip" },
-  { a: 14.55, b: 17.5, f: sAlarm, tin: "flip" }, { a: 17.5, b: 22.85, f: sNight, tin: "flip" }, { a: 22.85, b: 25.95, f: sShop, tin: "flip" }, { a: 25.95, b: 28.3, f: sOffice, tin: "flip" }
+  { a: 0, b: 12.0, f: sPortal }, { a: 12.0, b: 26.9, f: sFuture }, { a: 26.9, b: 30.6, f: sFlip },
+  { a: 30.6, b: 32.2, f: card(1, "WRITE IT DOWN"), tin: "flip" }, { a: 32.2, b: 44.6, f: sWrite, tin: "flip" },
+  { a: 44.6, b: 46.4, f: card(2, "THE MORNING CHOICE"), tin: "flip" }, { a: 46.4, b: 50.6, f: sMorning, tin: "flip" },
+  { a: 50.6, b: 55.4, f: sSleep, tin: "flip", filter: "saturate(.15) brightness(.8)" }, { a: 55.4, b: 60.2, f: sGetUp, tin: "flip", filter: "saturate(1.2) brightness(1.04)" },
+  { a: 60.2, b: 64.6, screen: choiceScreen(C1), f: sGetUp }, { a: 64.6, b: 66.4, f: card(3, "THE EVENING CHOICE"), tin: "flip" }, { a: 66.4, b: 69.8, f: sEvening, tin: "flip" },
+  { a: 69.8, b: 73.8, f: sScroll, tin: "flip", filter: "saturate(.15) brightness(.8)" }, { a: 73.8, b: 77.8, f: sBuild, tin: "flip", filter: "saturate(1.2) brightness(1.04)" },
+  { a: 77.8, b: 80.6, screen: choiceScreen(C2), f: sBuild }, { a: 80.6, b: 89.0, f: sMontage }, { a: 89.0, b: 90.8, f: card(4, "THE WRONG TURN"), tin: "flip" },
+  { a: 90.8, b: 104.0, f: sShop, tin: "flip" }, { a: 104.0, b: 105.8, f: card(5, "CHOSE AGAIN"), tin: "flip" }, { a: 105.8, b: 111.0, f: sOffice, tin: "flip" }
 ];
-function renderTo(f, t, ctx, dx, dy, dw, dh) { L.setTransform(1, 0, 0, 1, 0, 0); L.clearRect(0, 0, W, H); var cam = f(t); blit(cam, dx || 0, dy || 0, dw || OW, dh || OH, ctx); }
-function flipTrans(t, prev, next, k) {   // a paper page sweeps right-to-left, revealing the next scene
-  renderTo(prev.f, Math.min(t, prev.b - .001), OA[1]); renderTo(next.f, Math.max(t, next.a), OB[1]);
+function renderTo(f, t, ctx, filter) { L.setTransform(1, 0, 0, 1, 0, 0); L.clearRect(0, 0, W, H); var cam = f(t); ctx.save(); ctx.filter = filter || "none"; blit(cam, 0, 0, OW, OH, ctx); ctx.restore(); }
+function drawEntry(e, t, ctx) { if (e.screen) e.screen(t, ctx); else renderTo(e.f, t, ctx, e.filter); }
+function flipTrans(t, prev, next, k) {
+  drawEntry(prev, Math.min(t, prev.b - .001), OA[1]); drawEntry(next, Math.max(t, next.a), OB[1]);
   var fx = Math.round(OW * (1 - eio(k)) / 4) * 4; X.drawImage(OA[0], 0, 0);
   X.drawImage(OB[0], fx, 0, OW - fx, OH, fx, 0, OW - fx, OH);
   var pw = Math.round(Math.sin(k * Math.PI) * 220 / 4) * 4; X.fillStyle = "#FFF4E0"; X.fillRect(fx - pw, 0, pw, OH); X.fillStyle = "#E3D3AE"; X.fillRect(fx - 8, 0, 8, OH);
-  X.fillStyle = "#E3D3AE"; for (var y = 120; y < OH; y += 64) X.fillRect(fx - pw + 24, y, Math.max(0, pw - 48), 4); X.fillStyle = "rgba(20,10,30,.25)"; X.fillRect(fx, 0, 16, OH);
+  for (var y = 120; y < OH; y += 64) X.fillRect(fx - pw + 24, y, Math.max(0, pw - 48), 4); X.fillStyle = "rgba(20,10,30,.25)"; X.fillRect(fx, 0, 16, OH);
 }
-var TILES = [ // [scene fn, loop start, loop len]
-  [sField, .2, 1.1], [sHouse, 5.9, 1.4], [sWrite, 9.0, 1.4], [sAlarm, 14.7, 1.8], [sHero, 0, 9], [sNight, 19.5, 1.5], [sLibrary, 0, 9], [sShop, 23.2, 1.6], [sOffice, 26.9, 1.2]];
+var TILES = [[sPortal, 7.6, 2.0], [sFuture, 17.4, 2.0], [sWrite, 33.0, 2.0], [sGetUp, 56.0, 3.0, "saturate(1.2)"], [sHero, 0, 9], [sBuild, 74.5, 3.0, "saturate(1.2)"], [sMontage, 82.0, 3.0], [sShop, 94.2, 3.0], [sOffice, 108.8, 1.6]];
 var TW = 332, TH = 590, TG = 18, TX0 = 24, TY0 = 57;
 function tileRect(i) { return [TX0 + (i % 3) * (TW + TG), TY0 + Math.floor(i / 3) * (TH + TG), TW, TH]; }
 function drawTile(i, t, r, pix) {
-  var T = TILES[i], tt = T[1] + ((t - 28.3) % T[2]); L.setTransform(1, 0, 0, 1, 0, 0); L.clearRect(0, 0, W, H); var cam = T[0](tt);
+  var T = TILES[i], tt = T[1] + ((t - 111) % T[2]); L.setTransform(1, 0, 0, 1, 0, 0); L.clearRect(0, 0, W, H); var cam = T[0](tt);
+  X.save(); X.filter = T[3] || "none";
   if (pix > 1) { var tw = Math.max(2, Math.round(W / pix)), th = Math.max(2, Math.round(H / pix)); TINY[1].clearRect(0, 0, W, H); TINY[1].imageSmoothingEnabled = true;
     var sw = W / cam.z, sh = H / cam.z, sx = cl(cam.x - sw / 2, 0, W - sw), sy = cl(cam.y - sh / 2, 0, H - sh); TINY[1].drawImage(LB[0], sx, sy, sw, sh, 0, 0, tw, th);
     X.imageSmoothingEnabled = false; X.drawImage(TINY[0], 0, 0, tw, th, r[0], r[1], r[2], r[3]); }
   else blit(cam, r[0], r[1], r[2], r[3], X);
+  X.restore();
 }
 function sGrid(t) {
   X.fillStyle = "#0B0920"; X.fillRect(0, 0, OW, OH);
-  var zo = 1 - .06 * eio(seg(t, 29.6, 31.3)), melt = seg(t, 31.3, 31.85);
+  var zo = 1 - .06 * eio(seg(t, 113, 117)), melt = seg(t, 117.0, 117.6);
   X.save(); X.translate(OW / 2, OH / 2); X.scale(zo, zo); X.translate(-OW / 2, -OH / 2);
+  var ORDER = [0, 1, 2, 3, 7, 4, 5, 6];
   for (var i = 0; i < 9; i++) {
     var r = tileRect(i), k;
-    if (i === 8) { k = eio(seg(t, 28.3, 29.1)); r = [lerp(0, r[0], k), lerp(0, r[1], k), lerp(OW, r[2], k), lerp(OH, r[3], k)]; }
-    else { var order = [0, 1, 2, 3, 6, 5, 4, 7][i] != null ? [0, 1, 2, 3, 7, 4, 5, 6][i] : i; k = eout(seg(t, 28.55 + order * .1, 28.8 + order * .1)); if (k <= 0) continue;
-      var cx = r[0] + r[2] / 2, cy = r[1] + r[3] / 2, s = .6 + .4 * k; r = [cx - r[2] * s / 2, cy - r[3] * s / 2, r[2] * s, r[3] * s]; }
-    if (melt > 0) { X.globalAlpha = 1 - melt; }
-    X.fillStyle = "#2A1F2E"; X.fillRect(r[0] - 8, r[1] - 8, r[2] + 16, r[3] + 16);
+    if (i === 8) { k = eio(seg(t, 111.0, 111.9)); r = [lerp(0, r[0], k), lerp(0, r[1], k), lerp(OW, r[2], k), lerp(OH, r[3], k)]; }
+    else { k = eout(seg(t, 111.5 + ORDER[i] * .14, 111.8 + ORDER[i] * .14)); if (k <= 0) continue; var cx = r[0] + r[2] / 2, cy = r[1] + r[3] / 2, s = .6 + .4 * k; r = [cx - r[2] * s / 2, cy - r[3] * s / 2, r[2] * s, r[3] * s]; }
+    X.globalAlpha = 1 - melt; X.fillStyle = "#2A1F2E"; X.fillRect(r[0] - 8, r[1] - 8, r[2] + 16, r[3] + 16);
     drawTile(i, t, r, 1 + melt * 40);
     if (i === 4) { X.strokeStyle = "#FFC145"; X.lineWidth = 8; X.strokeRect(r[0] - 4, r[1] - 4, r[2] + 8, r[3] + 8); }
     X.globalAlpha = 1;
   }
   X.restore();
 }
+function whiteDither(a, c, from) {
+  X.fillStyle = c; var B = 12;
+  for (var y = 0; y < OH; y += B) for (var x = 0; x < OW; x += B) { var th = bay(x / B, y / B); if (from) { var d = Math.hypot(x - from[0], y - from[1]) / 2200; th = th * .35 + d * .65; } if (th < a) X.fillRect(x, y, B, B); }
+}
 function render(t) {
-  X.setTransform(1, 0, 0, 1, 0, 0); X.imageSmoothingEnabled = false; X.globalAlpha = 1;
-  if (t < 28.3) {
+  X.setTransform(1, 0, 0, 1, 0, 0); X.imageSmoothingEnabled = false; X.globalAlpha = 1; X.filter = "none";
+  if (t < 111.0) {
     var i = 0; while (i < SC.length - 1 && t >= SC[i + 1].a) i++;
     var cur = SC[i], nxt = SC[i + 1];
     if (nxt && nxt.tin === "flip" && t > nxt.a - .25) flipTrans(t, cur, nxt, seg(t, nxt.a - .25, nxt.a + .2));
     else if (cur.tin === "flip" && t < cur.a + .2) flipTrans(t, SC[i - 1], cur, seg(t, cur.a - .25, cur.a + .2));
-    else renderTo(cur.f, t, X);
-    if (t > 2.3 && t < 3.25) { var a = t < 2.85 ? seg(t, 2.3, 2.7) : 1 - seg(t, 2.85, 3.25); whiteDither(a, "#FFF4D6"); }
-  } else if (t < 31.85) sGrid(t);
-  else if (t < 41.8) {
+    else drawEntry(cur, t, X);
+    // portal swirls: into the book (11.3-12.4) and back in (26.5-27.3)
+    [[11.3, 12.0, 12.45], [26.55, 26.9, 27.3]].forEach(function (w) { if (t > w[0] && t < w[2]) { var a = t < w[1] ? seg(t, w[0], w[1]) : 1 - seg(t, w[1], w[2]); whiteDither(a, "#E9DDFF", [OW / 2, OH / 2]); } });
+  } else if (t < 117.6) sGrid(t);
+  else if (t < 131.4) {
     renderTo(sBeams, t, X);
-    if (t < 32.2) { var a0 = 1 - seg(t, 31.85, 32.2); if (a0 > 0) { X.globalAlpha = a0; X.fillStyle = "#0B0920"; X.fillRect(0, 0, OW, OH); X.globalAlpha = 1; } }
-    var wa = eio(seg(t, 39.55, 40.3)); if (t > 40.95) { renderTo(sField2, 41.8, X); wa = 1 - seg(t, 40.95, 41.8); }
-    if (wa > 0) whiteDither(wa, "#FFFFFF", t < 40.9 ? [OW / 2, 240] : null);
-  } else renderTo(sField2, t, X);
+    if (t < 118.0) { var a0 = 1 - seg(t, 117.6, 118.0); X.globalAlpha = a0; X.fillStyle = "#0B0920"; X.fillRect(0, 0, OW, OH); X.globalAlpha = 1; }
+    var wa = eio(seg(t, 128.4, 129.2)); if (t > 130.2) { renderTo(sReturn, 131.4, X); wa = 1 - seg(t, 130.2, 131.4); }
+    if (wa > 0) whiteDither(wa, "#FFFFFF", t < 130.2 ? [OW / 2, 240] : null);
+  } else renderTo(sReturn, t, X);
   overlays(t);
 }
-function whiteDither(a, c, from) {   // ordered-dither fill in 4-px blocks: a = coverage 0..1, optionally growing from a point
-  X.fillStyle = c; var B = 12;
-  for (var y = 0; y < OH; y += B) for (var x = 0; x < OW; x += B) {
-    var th = bay(x / B, y / B); if (from) { var d = Math.hypot(x - from[0], y - from[1]) / 2200; th = th * .35 + d * .65; }
-    if (th < a) X.fillRect(x, y, B, B);
-  }
-}
+function clockText(t, s, col) { var B = 12, w = pwidth(s, B); ptext(X, s, (OW - w) / 2 + B, 420 + B, B, "#1A1530"); ptext(X, s, (OW - w) / 2, 420, B, col || "#FFFFFF"); }
+function hhmm(m) { var h = Math.floor(m / 60) % 24, mm = Math.floor(m % 60), ap = h >= 12 ? "PM" : "AM", h12 = h % 12 === 0 ? 12 : h % 12; return h12 + ":" + String(mm).padStart(2, "0") + " " + ap; }
 function overlays(t) {
-  caption(t, "THIS BOOK SHOWED ME MY *FUTURE.*", .05, 2.5);
-  caption(t, "*10 YEARS* LATER", 3.1, 5.6);
-  caption(t, "CHOICES. *EVERY DAY.*", 14.75, 17.35);
-  caption(t, "THERE WAS *ALWAYS* A CHOICE.", 19.6, 22.7);
-  caption(t, "NOT EVERY CHOICE WAS *RIGHT.*", 22.95, 25.85, { y: 1560 });
-  caption(t, "HE CHOSE *AGAIN.*", 26.6, 28.25);
-  caption(t, "EVERY *CHOICE.*", 30.15, 31.3, { y: 900 });
-  caption(t, "ALL *CONNECTED.*", 35.7, 37.9);
-  caption(t, "SO I WROTE *MINE.*", 42.0, 45.2);
-  if (t > 25.95 && t < 28.3) { var n = Math.round(lerp(1, 1204, eout(seg(t, 26.0, 26.95)))), s = "DAY " + (n > 999 ? Math.floor(n / 1000) + "," + String(n % 1000).padStart(3, "0") : n);
-    var b = 6, w = pwidth(s, b); X.fillStyle = "#2A1F2E"; X.fillRect(OW - w - 88, 108, w + 48, 66); X.fillStyle = "#28A86A"; X.fillRect(OW - w - 84, 112, w + 40, 58); ptext(X, s, OW - w - 64, 122, b, "#FFFFFF"); }
-  if (t > 50.4) { var k = seg(t, 50.4, 50.9); X.globalAlpha = .55 * k; X.fillStyle = "#140F2E"; X.fillRect(0, 0, OW, OH); X.globalAlpha = 1;
-    caption(t, "WHAT WOULD YOUR *FIRST PAGE* SAY?", 50.6, 99, { y: 620 });
-    if (t > 51.6) { var lab = "DMYOR", B = 20, w2 = pwidth(lab, B); ptext(X, lab, (OW - w2) / 2 + B, 1120 + B, B, "#1A1530"); ptext(X, lab, (OW - w2) / 2, 1120, B, "#FFFFFF");
+  caption(t, "THE BOOK OPENED A *DOOR.*", 7.6, 10.4);
+  caption(t, "*10 YEARS* LATER", 13.1, 16.4);
+  caption(t, "HOW DID I *GET HERE?*", 23.4, 26.2);
+  caption(t, "EVERY MORNING. *TWO CHOICES.*", 47.8, 50.5);
+  if (t > 50.6 && t < 55.4) { caption(t, "*SLEEP IN*", 50.8, 55.3, { accent: "#C8CAD8" }); clockText(t, hhmm(lerp(360, 630, eio(seg(t, 51.0, 54.8)))), "#C8CAD8"); }
+  if (t > 55.4 && t < 60.2) { caption(t, "*GET UP*", 55.6, 60.1); clockText(t, "6:00 AM", "#FFC145"); }
+  caption(t, "WHICH *ONE?*", 60.4, 62.6, { y: 160 });
+  caption(t, "EVERY EVENING. *ANOTHER CHOICE.*", 67.4, 69.7);
+  if (t > 69.8 && t < 73.8) { caption(t, "*SCROLL*", 70.0, 73.7, { accent: "#C8CAD8" }); clockText(t, hhmm(lerp(21 * 60, 25 * 60, eio(seg(t, 70.2, 73.4)))), "#C8CAD8"); }
+  if (t > 73.8 && t < 77.8) { caption(t, "*BUILD*", 74.0, 77.7); clockText(t, "9:00 PM", "#FFC145"); }
+  caption(t, "WHICH *ONE?*", 78.0, 79.6, { y: 160 });
+  caption(t, "ONE CHOICE. *AGAIN AND AGAIN.*", 85.0, 88.9);
+  if (t > 80.8 && t < 89.0) dayBadge("DAY " + Math.min(300, 1 + Math.floor((t - 80.8) * 37)));
+  caption(t, "NOT EVERY CHOICE WAS *RIGHT.*", 91.6, 95.4, { y: 1560 });
+  caption(t, "IT WAS A *LESSON.*", 99.2, 103.6, { y: 1560 });
+  if (t > 105.8 && t < 111.0) { var n = Math.round(lerp(1, 1204, eout(seg(t, 106.0, 107.6)))); dayBadge("DAY " + (n > 999 ? Math.floor(n / 1000) + "," + String(n % 1000).padStart(3, "0") : n)); }
+  caption(t, "EVERY SCENE. *A CHOICE.*", 113.4, 117.2, { y: 900 });
+  caption(t, "ALL *CONNECTED.*", 125.0, 128.3, { y: 1560 });
+  caption(t, "YOUR STARTING POINT IS *TODAY.*", 143.0, 146.6);
+  if (t > 154.6) { var k = seg(t, 154.6, 155.1); X.globalAlpha = .55 * k; X.fillStyle = "#140F2E"; X.fillRect(0, 0, OW, OH); X.globalAlpha = 1;
+    caption(t, "WHAT WOULD YOUR *FIRST PAGE* SAY?", 154.8, 999, { y: 620 });
+    if (t > 155.6) { var lab = "DMYOR", B = 20, w2 = pwidth(lab, B); ptext(X, lab, (OW - w2) / 2 + B, 1120 + B, B, "#1A1530"); ptext(X, lab, (OW - w2) / 2, 1120, B, "#FFFFFF");
       var h = "@BECAUSEIDMYOR", w3 = pwidth(h, 7); ptext(X, h, (OW - w3) / 2, 1320, 7, "#FFC145"); } }
 }
+function dayBadge(s) { var b = 6, w = pwidth(s, b); X.fillStyle = "#2A1F2E"; X.fillRect(OW - w - 88, 108, w + 48, 66); X.fillStyle = "#28A86A"; X.fillRect(OW - w - 84, 112, w + 40, 58); ptext(X, s, OW - w - 64, 122, b, "#FFFFFF"); }
 window.__duration = DUR;
 window.__seek = function (t) { return READY.then(function () { render(t); }); };
 READY.then(function () { render(0); });

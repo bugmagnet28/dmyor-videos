@@ -1,1003 +1,1720 @@
 {
  "audio": "audio.mp3",
- "duration": 48.53,
- "text": "This book showed me my future. Ten years from now the car, the house, the life I only ever wrote about, from where I said it looked impossible. Then the book took me back to where it started, one page, a dream that looked unachievable, written down anyway. After that it was choices, small ones, every day. Go out or build, scroll or start, there was always a choice. His only job was to make it. Not every choice was right, his first company failed. He adjusted and chose again. Every scene, every choice. Each one pushed his life in a direction, some split apart, some came back together, all of it connected. And every line led to the same place. So I turned to the first page and wrote mine. That's what Demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do.",
+ "duration": 158.5,
+ "text": "I was reading in the park when the pages started to glow. And the book opened a door. It took me ten years into my future. There I was the car in the house, the life I had only ever dreamed about. But I had one question, how did I get here? The book showed me chapter by chapter. It started on one ordinary night. He wrote his dream down, it looked impossible. He wrote it anyway, that page was a starting point. After that, every single day gave him a choice. He could sleep in. Or get up and give his dream one hour. He chose to get up. Every evening another choice. Scroll for three hours. Or build for one. Neither choice changes your life in one day. But one of them made again and again does. Not every choice was right, his first company failed. He didn't call it the end, he called it a lesson. He adjusted and chose again. Day 1204, his first big client. When I looked back every scene was a choice. Each one pushed his life in a direction, some split apart, some came back together. All of them were connected, and everyone led to the same place. Then I was back, same field, same book. But now I knew how my story starts. So I turned to the first page and wrote it down. That's what Demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do.",
  "words": [
   {
-   "w": "this",
-   "raw": "This",
-   "s": 0.0,
-   "e": 0.32
-  },
-  {
-   "w": "book",
-   "raw": "book",
-   "s": 0.32,
-   "e": 0.52
-  },
-  {
-   "w": "showed",
-   "raw": "showed",
-   "s": 0.52,
-   "e": 0.8
-  },
-  {
-   "w": "me",
-   "raw": "me",
+   "w": "i",
+   "raw": "I",
    "s": 0.8,
-   "e": 0.98
-  },
-  {
-   "w": "my",
-   "raw": "my",
-   "s": 0.98,
-   "e": 1.14
-  },
-  {
-   "w": "future",
-   "raw": "future.",
-   "s": 1.14,
-   "e": 1.58
-  },
-  {
-   "w": "ten",
-   "raw": "Ten",
-   "s": 2.92,
-   "e": 3.06
-  },
-  {
-   "w": "years",
-   "raw": "years",
-   "s": 3.06,
-   "e": 3.28
-  },
-  {
-   "w": "from",
-   "raw": "from",
-   "s": 3.28,
-   "e": 3.52
-  },
-  {
-   "w": "now",
-   "raw": "now",
-   "s": 3.52,
-   "e": 3.76
-  },
-  {
-   "w": "the",
-   "raw": "the",
-   "s": 3.76,
-   "e": 3.9
-  },
-  {
-   "w": "car",
-   "raw": "car,",
-   "s": 3.9,
-   "e": 4.16
-  },
-  {
-   "w": "the",
-   "raw": "the",
-   "s": 4.26,
-   "e": 4.32
-  },
-  {
-   "w": "house",
-   "raw": "house,",
-   "s": 4.32,
-   "e": 4.62
-  },
-  {
-   "w": "the",
-   "raw": "the",
-   "s": 4.94,
-   "e": 5.04
-  },
-  {
-   "w": "life",
-   "raw": "life",
-   "s": 5.04,
-   "e": 5.24
-  },
-  {
-   "w": "i",
-   "raw": "I",
-   "s": 5.24,
-   "e": 5.42
-  },
-  {
-   "w": "only",
-   "raw": "only",
-   "s": 5.42,
-   "e": 5.64
-  },
-  {
-   "w": "ever",
-   "raw": "ever",
-   "s": 5.64,
-   "e": 5.88
-  },
-  {
-   "w": "wrote",
-   "raw": "wrote",
-   "s": 5.88,
-   "e": 6.08
-  },
-  {
-   "w": "about",
-   "raw": "about,",
-   "s": 6.08,
-   "e": 6.36
-  },
-  {
-   "w": "from",
-   "raw": "from",
-   "s": 6.5,
-   "e": 6.62
-  },
-  {
-   "w": "where",
-   "raw": "where",
-   "s": 6.62,
-   "e": 6.78
-  },
-  {
-   "w": "i",
-   "raw": "I",
-   "s": 6.78,
-   "e": 6.92
-  },
-  {
-   "w": "said",
-   "raw": "said",
-   "s": 6.92,
-   "e": 7.16
-  },
-  {
-   "w": "it",
-   "raw": "it",
-   "s": 7.16,
-   "e": 7.32
-  },
-  {
-   "w": "looked",
-   "raw": "looked",
-   "s": 7.32,
-   "e": 7.48
-  },
-  {
-   "w": "impossible",
-   "raw": "impossible.",
-   "s": 7.48,
-   "e": 8.04
-  },
-  {
-   "w": "then",
-   "raw": "Then",
-   "s": 8.97,
-   "e": 9.09
-  },
-  {
-   "w": "the",
-   "raw": "the",
-   "s": 9.09,
-   "e": 9.21
-  },
-  {
-   "w": "book",
-   "raw": "book",
-   "s": 9.21,
-   "e": 9.35
-  },
-  {
-   "w": "took",
-   "raw": "took",
-   "s": 9.35,
-   "e": 9.53
-  },
-  {
-   "w": "me",
-   "raw": "me",
-   "s": 9.53,
-   "e": 9.71
-  },
-  {
-   "w": "back",
-   "raw": "back",
-   "s": 9.71,
-   "e": 9.93
-  },
-  {
-   "w": "to",
-   "raw": "to",
-   "s": 9.93,
-   "e": 10.13
-  },
-  {
-   "w": "where",
-   "raw": "where",
-   "s": 10.13,
-   "e": 10.29
-  },
-  {
-   "w": "it",
-   "raw": "it",
-   "s": 10.29,
-   "e": 10.41
-  },
-  {
-   "w": "started",
-   "raw": "started,",
-   "s": 10.41,
-   "e": 10.71
-  },
-  {
-   "w": "one",
-   "raw": "one",
-   "s": 11.03,
-   "e": 11.27
-  },
-  {
-   "w": "page",
-   "raw": "page,",
-   "s": 11.27,
-   "e": 11.57
-  },
-  {
-   "w": "a",
-   "raw": "a",
-   "s": 11.85,
-   "e": 11.89
-  },
-  {
-   "w": "dream",
-   "raw": "dream",
-   "s": 11.89,
-   "e": 12.13
-  },
-  {
-   "w": "that",
-   "raw": "that",
-   "s": 12.13,
-   "e": 12.31
-  },
-  {
-   "w": "looked",
-   "raw": "looked",
-   "s": 12.31,
-   "e": 12.45
-  },
-  {
-   "w": "unachievable",
-   "raw": "unachievable,",
-   "s": 12.45,
-   "e": 13.23
-  },
-  {
-   "w": "written",
-   "raw": "written",
-   "s": 13.35,
-   "e": 13.47
-  },
-  {
-   "w": "down",
-   "raw": "down",
-   "s": 13.47,
-   "e": 13.77
-  },
-  {
-   "w": "anyway",
-   "raw": "anyway.",
-   "s": 13.77,
-   "e": 14.09
-  },
-  {
-   "w": "after",
-   "raw": "After",
-   "s": 14.71,
-   "e": 14.91
-  },
-  {
-   "w": "that",
-   "raw": "that",
-   "s": 14.91,
-   "e": 15.17
-  },
-  {
-   "w": "it",
-   "raw": "it",
-   "s": 15.17,
-   "e": 15.29
+   "e": 1.28
   },
   {
    "w": "was",
    "raw": "was",
-   "s": 15.29,
-   "e": 15.45
+   "s": 1.28,
+   "e": 1.44
   },
   {
-   "w": "choices",
-   "raw": "choices,",
-   "s": 15.45,
-   "e": 15.69
-  },
-  {
-   "w": "small",
-   "raw": "small",
-   "s": 16.03,
-   "e": 16.25
-  },
-  {
-   "w": "ones",
-   "raw": "ones,",
-   "s": 16.25,
-   "e": 16.55
-  },
-  {
-   "w": "every",
-   "raw": "every",
-   "s": 16.59,
-   "e": 16.87
-  },
-  {
-   "w": "day",
-   "raw": "day.",
-   "s": 16.87,
-   "e": 17.13
-  },
-  {
-   "w": "go",
-   "raw": "Go",
-   "s": 17.67,
-   "e": 17.85
-  },
-  {
-   "w": "out",
-   "raw": "out",
-   "s": 17.85,
-   "e": 18.05
-  },
-  {
-   "w": "or",
-   "raw": "or",
-   "s": 18.05,
-   "e": 18.21
-  },
-  {
-   "w": "build",
-   "raw": "build,",
-   "s": 18.21,
-   "e": 18.43
-  },
-  {
-   "w": "scroll",
-   "raw": "scroll",
-   "s": 18.57,
-   "e": 18.87
-  },
-  {
-   "w": "or",
-   "raw": "or",
-   "s": 18.87,
-   "e": 19.13
-  },
-  {
-   "w": "start",
-   "raw": "start,",
-   "s": 19.13,
-   "e": 19.43
-  },
-  {
-   "w": "there",
-   "raw": "there",
-   "s": 19.61,
-   "e": 19.69
-  },
-  {
-   "w": "was",
-   "raw": "was",
-   "s": 19.69,
-   "e": 19.79
-  },
-  {
-   "w": "always",
-   "raw": "always",
-   "s": 19.79,
-   "e": 20.03
-  },
-  {
-   "w": "a",
-   "raw": "a",
-   "s": 20.03,
-   "e": 20.19
-  },
-  {
-   "w": "choice",
-   "raw": "choice.",
-   "s": 20.19,
-   "e": 20.47
-  },
-  {
-   "w": "his",
-   "raw": "His",
-   "s": 20.97,
-   "e": 21.11
-  },
-  {
-   "w": "only",
-   "raw": "only",
-   "s": 21.11,
-   "e": 21.39
-  },
-  {
-   "w": "job",
-   "raw": "job",
-   "s": 21.39,
-   "e": 21.75
-  },
-  {
-   "w": "was",
-   "raw": "was",
-   "s": 21.75,
-   "e": 21.95
-  },
-  {
-   "w": "to",
-   "raw": "to",
-   "s": 21.95,
-   "e": 22.13
-  },
-  {
-   "w": "make",
-   "raw": "make",
-   "s": 22.13,
-   "e": 22.29
-  },
-  {
-   "w": "it",
-   "raw": "it.",
-   "s": 22.29,
-   "e": 22.53
-  },
-  {
-   "w": "not",
-   "raw": "Not",
-   "s": 22.95,
-   "e": 23.13
-  },
-  {
-   "w": "every",
-   "raw": "every",
-   "s": 23.13,
-   "e": 23.41
-  },
-  {
-   "w": "choice",
-   "raw": "choice",
-   "s": 23.41,
-   "e": 23.65
-  },
-  {
-   "w": "was",
-   "raw": "was",
-   "s": 23.65,
-   "e": 23.85
-  },
-  {
-   "w": "right",
-   "raw": "right,",
-   "s": 23.85,
-   "e": 24.15
-  },
-  {
-   "w": "his",
-   "raw": "his",
-   "s": 24.35,
-   "e": 24.49
-  },
-  {
-   "w": "first",
-   "raw": "first",
-   "s": 24.49,
-   "e": 24.75
-  },
-  {
-   "w": "company",
-   "raw": "company",
-   "s": 24.75,
-   "e": 25.09
-  },
-  {
-   "w": "failed",
-   "raw": "failed.",
-   "s": 25.09,
-   "e": 25.49
-  },
-  {
-   "w": "he",
-   "raw": "He",
-   "s": 26.07,
-   "e": 26.23
-  },
-  {
-   "w": "adjusted",
-   "raw": "adjusted",
-   "s": 26.23,
-   "e": 26.61
-  },
-  {
-   "w": "and",
-   "raw": "and",
-   "s": 26.61,
-   "e": 26.89
-  },
-  {
-   "w": "chose",
-   "raw": "chose",
-   "s": 26.89,
-   "e": 27.21
-  },
-  {
-   "w": "again",
-   "raw": "again.",
-   "s": 27.21,
-   "e": 27.61
-  },
-  {
-   "w": "every",
-   "raw": "Every",
-   "s": 29.43,
-   "e": 29.67
-  },
-  {
-   "w": "scene",
-   "raw": "scene,",
-   "s": 29.67,
-   "e": 29.95
-  },
-  {
-   "w": "every",
-   "raw": "every",
-   "s": 30.15,
-   "e": 30.35
-  },
-  {
-   "w": "choice",
-   "raw": "choice.",
-   "s": 30.35,
-   "e": 30.71
-  },
-  {
-   "w": "each",
-   "raw": "Each",
-   "s": 31.41,
-   "e": 31.53
-  },
-  {
-   "w": "one",
-   "raw": "one",
-   "s": 31.53,
-   "e": 31.71
-  },
-  {
-   "w": "pushed",
-   "raw": "pushed",
-   "s": 31.71,
-   "e": 31.91
-  },
-  {
-   "w": "his",
-   "raw": "his",
-   "s": 31.91,
-   "e": 32.11
-  },
-  {
-   "w": "life",
-   "raw": "life",
-   "s": 32.11,
-   "e": 32.31
+   "w": "reading",
+   "raw": "reading",
+   "s": 1.44,
+   "e": 1.76
   },
   {
    "w": "in",
    "raw": "in",
-   "s": 32.31,
-   "e": 32.47
+   "s": 1.76,
+   "e": 1.96
   },
   {
-   "w": "a",
-   "raw": "a",
-   "s": 32.47,
-   "e": 32.57
+   "w": "the",
+   "raw": "the",
+   "s": 1.96,
+   "e": 2.06
   },
   {
-   "w": "direction",
-   "raw": "direction,",
-   "s": 32.57,
-   "e": 32.99
+   "w": "park",
+   "raw": "park",
+   "s": 2.06,
+   "e": 2.34
   },
   {
-   "w": "some",
-   "raw": "some",
-   "s": 33.25,
-   "e": 33.37
+   "w": "when",
+   "raw": "when",
+   "s": 2.34,
+   "e": 2.6
   },
   {
-   "w": "split",
-   "raw": "split",
-   "s": 33.37,
-   "e": 33.67
+   "w": "the",
+   "raw": "the",
+   "s": 2.6,
+   "e": 2.72
   },
   {
-   "w": "apart",
-   "raw": "apart,",
-   "s": 33.67,
-   "e": 34.03
+   "w": "pages",
+   "raw": "pages",
+   "s": 2.72,
+   "e": 3.04
   },
   {
-   "w": "some",
-   "raw": "some",
-   "s": 34.47,
-   "e": 34.71
+   "w": "started",
+   "raw": "started",
+   "s": 3.04,
+   "e": 3.44
   },
   {
-   "w": "came",
-   "raw": "came",
-   "s": 34.71,
-   "e": 34.91
+   "w": "to",
+   "raw": "to",
+   "s": 3.44,
+   "e": 3.64
   },
   {
-   "w": "back",
-   "raw": "back",
-   "s": 34.91,
-   "e": 35.17
-  },
-  {
-   "w": "together",
-   "raw": "together,",
-   "s": 35.17,
-   "e": 35.49
-  },
-  {
-   "w": "all",
-   "raw": "all",
-   "s": 35.69,
-   "e": 35.83
-  },
-  {
-   "w": "of",
-   "raw": "of",
-   "s": 35.83,
-   "e": 35.95
-  },
-  {
-   "w": "it",
-   "raw": "it",
-   "s": 35.95,
-   "e": 36.05
-  },
-  {
-   "w": "connected",
-   "raw": "connected.",
-   "s": 36.05,
-   "e": 36.39
+   "w": "glow",
+   "raw": "glow.",
+   "s": 3.64,
+   "e": 3.98
   },
   {
    "w": "and",
    "raw": "And",
-   "s": 38.13,
-   "e": 38.27
-  },
-  {
-   "w": "every",
-   "raw": "every",
-   "s": 38.27,
-   "e": 38.53
-  },
-  {
-   "w": "line",
-   "raw": "line",
-   "s": 38.53,
-   "e": 38.87
-  },
-  {
-   "w": "led",
-   "raw": "led",
-   "s": 38.87,
-   "e": 39.09
-  },
-  {
-   "w": "to",
-   "raw": "to",
-   "s": 39.09,
-   "e": 39.25
+   "s": 7.22,
+   "e": 7.7
   },
   {
    "w": "the",
    "raw": "the",
-   "s": 39.25,
-   "e": 39.37
+   "s": 7.7,
+   "e": 7.82
   },
   {
-   "w": "same",
-   "raw": "same",
-   "s": 39.37,
-   "e": 39.61
+   "w": "book",
+   "raw": "book",
+   "s": 7.82,
+   "e": 7.98
   },
   {
-   "w": "place",
-   "raw": "place.",
-   "s": 39.61,
-   "e": 39.95
+   "w": "opened",
+   "raw": "opened",
+   "s": 7.98,
+   "e": 8.38
   },
   {
-   "w": "so",
-   "raw": "So",
-   "s": 41.97,
-   "e": 42.21
+   "w": "a",
+   "raw": "a",
+   "s": 8.38,
+   "e": 8.58
   },
   {
-   "w": "i",
-   "raw": "I",
-   "s": 42.21,
-   "e": 42.37
-  },
-  {
-   "w": "turned",
-   "raw": "turned",
-   "s": 42.37,
-   "e": 42.57
-  },
-  {
-   "w": "to",
-   "raw": "to",
-   "s": 42.57,
-   "e": 42.75
-  },
-  {
-   "w": "the",
-   "raw": "the",
-   "s": 42.75,
-   "e": 42.85
-  },
-  {
-   "w": "first",
-   "raw": "first",
-   "s": 42.85,
-   "e": 43.09
-  },
-  {
-   "w": "page",
-   "raw": "page",
-   "s": 43.09,
-   "e": 43.43
-  },
-  {
-   "w": "and",
-   "raw": "and",
-   "s": 43.43,
-   "e": 43.83
-  },
-  {
-   "w": "wrote",
-   "raw": "wrote",
-   "s": 43.83,
-   "e": 44.03
-  },
-  {
-   "w": "mine",
-   "raw": "mine.",
-   "s": 44.03,
-   "e": 44.39
-  },
-  {
-   "w": "thats",
-   "raw": "That's",
-   "s": 45.53,
-   "e": 45.79
-  },
-  {
-   "w": "what",
-   "raw": "what",
-   "s": 45.79,
-   "e": 45.97
-  },
-  {
-   "w": "demure",
-   "raw": "Demure",
-   "s": 45.97,
-   "e": 46.33
-  },
-  {
-   "w": "is",
-   "raw": "is",
-   "s": 46.33,
-   "e": 46.51
-  },
-  {
-   "w": "for",
-   "raw": "for.",
-   "s": 46.51,
-   "e": 46.79
-  },
-  {
-   "w": "you",
-   "raw": "You",
-   "s": 47.17,
-   "e": 47.29
-  },
-  {
-   "w": "archive",
-   "raw": "archive",
-   "s": 47.29,
-   "e": 47.67
-  },
-  {
-   "w": "your",
-   "raw": "your",
-   "s": 47.67,
-   "e": 47.89
-  },
-  {
-   "w": "dream",
-   "raw": "dream",
-   "s": 47.89,
-   "e": 48.11
-  },
-  {
-   "w": "today",
-   "raw": "today",
-   "s": 48.11,
-   "e": 48.45
-  },
-  {
-   "w": "so",
-   "raw": "so",
-   "s": 48.45,
-   "e": 48.69
-  },
-  {
-   "w": "you",
-   "raw": "you",
-   "s": 48.69,
-   "e": 48.83
-  },
-  {
-   "w": "can",
-   "raw": "can",
-   "s": 48.83,
-   "e": 49.01
-  },
-  {
-   "w": "see",
-   "raw": "see",
-   "s": 49.01,
-   "e": 49.21
+   "w": "door",
+   "raw": "door.",
+   "s": 8.58,
+   "e": 8.82
   },
   {
    "w": "it",
-   "raw": "it",
-   "s": 49.21,
-   "e": 49.35
+   "raw": "It",
+   "s": 12.78,
+   "e": 13.26
   },
   {
-   "w": "tomorrow",
-   "raw": "tomorrow",
-   "s": 49.35,
-   "e": 49.65
+   "w": "took",
+   "raw": "took",
+   "s": 13.26,
+   "e": 13.42
   },
   {
-   "w": "and",
-   "raw": "and",
-   "s": 49.65,
-   "e": 50.09
+   "w": "me",
+   "raw": "me",
+   "s": 13.42,
+   "e": 13.64
   },
   {
-   "w": "break",
-   "raw": "break",
-   "s": 50.09,
-   "e": 50.27
+   "w": "ten",
+   "raw": "ten",
+   "s": 13.64,
+   "e": 13.88
   },
   {
-   "w": "it",
-   "raw": "it",
-   "s": 50.27,
-   "e": 50.41
-  },
-  {
-   "w": "down",
-   "raw": "down",
-   "s": 50.41,
-   "e": 50.63
+   "w": "years",
+   "raw": "years",
+   "s": 13.88,
+   "e": 14.16
   },
   {
    "w": "into",
    "raw": "into",
-   "s": 50.63,
-   "e": 50.83
+   "s": 14.16,
+   "e": 14.42
   },
   {
-   "w": "small",
-   "raw": "small",
-   "s": 50.83,
-   "e": 51.15
+   "w": "my",
+   "raw": "my",
+   "s": 14.42,
+   "e": 14.58
   },
   {
-   "w": "steps",
-   "raw": "steps",
-   "s": 51.15,
-   "e": 51.47
+   "w": "future",
+   "raw": "future.",
+   "s": 14.58,
+   "e": 14.98
+  },
+  {
+   "w": "there",
+   "raw": "There",
+   "s": 16.72,
+   "e": 16.92
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 16.92,
+   "e": 17.08
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 17.08,
+   "e": 17.3
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 17.3,
+   "e": 17.52
+  },
+  {
+   "w": "car",
+   "raw": "car",
+   "s": 17.52,
+   "e": 17.74
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 17.74,
+   "e": 17.86
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 17.86,
+   "e": 17.92
+  },
+  {
+   "w": "house",
+   "raw": "house,",
+   "s": 17.92,
+   "e": 18.22
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 18.58,
+   "e": 18.62
+  },
+  {
+   "w": "life",
+   "raw": "life",
+   "s": 18.62,
+   "e": 18.8
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 18.8,
+   "e": 19.0
+  },
+  {
+   "w": "had",
+   "raw": "had",
+   "s": 19.0,
+   "e": 19.1
+  },
+  {
+   "w": "only",
+   "raw": "only",
+   "s": 19.1,
+   "e": 19.34
+  },
+  {
+   "w": "ever",
+   "raw": "ever",
+   "s": 19.34,
+   "e": 19.64
+  },
+  {
+   "w": "dreamed",
+   "raw": "dreamed",
+   "s": 19.64,
+   "e": 19.9
+  },
+  {
+   "w": "about",
+   "raw": "about.",
+   "s": 19.9,
+   "e": 20.28
+  },
+  {
+   "w": "but",
+   "raw": "But",
+   "s": 21.96,
+   "e": 22.28
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 22.28,
+   "e": 22.4
+  },
+  {
+   "w": "had",
+   "raw": "had",
+   "s": 22.4,
+   "e": 22.58
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 22.58,
+   "e": 22.8
+  },
+  {
+   "w": "question",
+   "raw": "question,",
+   "s": 22.8,
+   "e": 23.2
+  },
+  {
+   "w": "how",
+   "raw": "how",
+   "s": 23.46,
+   "e": 23.56
+  },
+  {
+   "w": "did",
+   "raw": "did",
+   "s": 23.56,
+   "e": 23.72
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 23.72,
+   "e": 23.84
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 23.84,
+   "e": 23.98
+  },
+  {
+   "w": "here",
+   "raw": "here?",
+   "s": 23.98,
+   "e": 24.28
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 27.32,
+   "e": 27.88
+  },
+  {
+   "w": "book",
+   "raw": "book",
+   "s": 27.88,
+   "e": 28.02
+  },
+  {
+   "w": "showed",
+   "raw": "showed",
+   "s": 28.02,
+   "e": 28.3
+  },
+  {
+   "w": "me",
+   "raw": "me",
+   "s": 28.3,
+   "e": 28.6
+  },
+  {
+   "w": "chapter",
+   "raw": "chapter",
+   "s": 28.6,
+   "e": 28.82
+  },
+  {
+   "w": "by",
+   "raw": "by",
+   "s": 28.82,
+   "e": 29.1
+  },
+  {
+   "w": "chapter",
+   "raw": "chapter.",
+   "s": 29.1,
+   "e": 29.62
+  },
+  {
+   "w": "it",
+   "raw": "It",
+   "s": 32.32,
+   "e": 32.88
+  },
+  {
+   "w": "started",
+   "raw": "started",
+   "s": 32.88,
+   "e": 33.2
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 33.2,
+   "e": 33.48
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 33.48,
+   "e": 33.8
+  },
+  {
+   "w": "ordinary",
+   "raw": "ordinary",
+   "s": 33.8,
+   "e": 34.26
+  },
+  {
+   "w": "night",
+   "raw": "night.",
+   "s": 34.26,
+   "e": 34.7
+  },
+  {
+   "w": "he",
+   "raw": "He",
+   "s": 36.3,
+   "e": 36.5
+  },
+  {
+   "w": "wrote",
+   "raw": "wrote",
+   "s": 36.5,
+   "e": 36.72
+  },
+  {
+   "w": "his",
+   "raw": "his",
+   "s": 36.72,
+   "e": 36.92
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 36.92,
+   "e": 37.18
+  },
+  {
+   "w": "down",
+   "raw": "down,",
+   "s": 37.18,
+   "e": 37.56
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 37.76,
+   "e": 37.8
+  },
+  {
+   "w": "looked",
+   "raw": "looked",
+   "s": 37.8,
+   "e": 37.96
+  },
+  {
+   "w": "impossible",
+   "raw": "impossible.",
+   "s": 37.96,
+   "e": 38.6
+  },
+  {
+   "w": "he",
+   "raw": "He",
+   "s": 40.48,
+   "e": 40.7
+  },
+  {
+   "w": "wrote",
+   "raw": "wrote",
+   "s": 40.7,
+   "e": 40.92
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 40.92,
+   "e": 41.08
+  },
+  {
+   "w": "anyway",
+   "raw": "anyway,",
+   "s": 41.08,
+   "e": 41.4
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 41.58,
+   "e": 41.74
+  },
+  {
+   "w": "page",
+   "raw": "page",
+   "s": 41.74,
+   "e": 42.02
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 42.02,
+   "e": 42.2
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 42.2,
+   "e": 42.38
+  },
+  {
+   "w": "starting",
+   "raw": "starting",
+   "s": 42.38,
+   "e": 42.66
+  },
+  {
+   "w": "point",
+   "raw": "point.",
+   "s": 42.66,
+   "e": 43.14
+  },
+  {
+   "w": "after",
+   "raw": "After",
+   "s": 46.8,
+   "e": 47.36
+  },
+  {
+   "w": "that",
+   "raw": "that,",
+   "s": 47.36,
+   "e": 47.7
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 47.86,
+   "e": 48.08
+  },
+  {
+   "w": "single",
+   "raw": "single",
+   "s": 48.08,
+   "e": 48.44
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 48.44,
+   "e": 48.7
+  },
+  {
+   "w": "gave",
+   "raw": "gave",
+   "s": 48.7,
+   "e": 48.94
+  },
+  {
+   "w": "him",
+   "raw": "him",
+   "s": 48.94,
+   "e": 49.1
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 49.1,
+   "e": 49.28
+  },
+  {
+   "w": "choice",
+   "raw": "choice.",
+   "s": 49.28,
+   "e": 49.64
+  },
+  {
+   "w": "he",
+   "raw": "He",
+   "s": 51.0,
+   "e": 51.72
+  },
+  {
+   "w": "could",
+   "raw": "could",
+   "s": 51.72,
+   "e": 51.9
+  },
+  {
+   "w": "sleep",
+   "raw": "sleep",
+   "s": 51.9,
+   "e": 52.22
+  },
+  {
+   "w": "in",
+   "raw": "in.",
+   "s": 52.22,
+   "e": 53.06
+  },
+  {
+   "w": "or",
+   "raw": "Or",
+   "s": 55.76,
+   "e": 56.2
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 56.2,
+   "e": 56.36
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 56.36,
+   "e": 56.54
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 56.54,
+   "e": 56.78
+  },
+  {
+   "w": "give",
+   "raw": "give",
+   "s": 56.78,
+   "e": 56.92
+  },
+  {
+   "w": "his",
+   "raw": "his",
+   "s": 56.92,
+   "e": 57.12
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 57.12,
+   "e": 57.38
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 57.38,
+   "e": 57.68
+  },
+  {
+   "w": "hour",
+   "raw": "hour.",
+   "s": 57.68,
+   "e": 58.06
+  },
+  {
+   "w": "he",
+   "raw": "He",
+   "s": 61.48,
+   "e": 62.12
+  },
+  {
+   "w": "chose",
+   "raw": "chose",
+   "s": 62.12,
+   "e": 62.38
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 62.38,
+   "e": 62.6
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 62.6,
+   "e": 62.72
+  },
+  {
+   "w": "up",
+   "raw": "up.",
+   "s": 62.72,
+   "e": 63.56
+  },
+  {
+   "w": "every",
+   "raw": "Every",
+   "s": 66.72,
+   "e": 67.44
+  },
+  {
+   "w": "evening",
+   "raw": "evening",
+   "s": 67.44,
+   "e": 67.8
+  },
+  {
+   "w": "another",
+   "raw": "another",
+   "s": 67.8,
+   "e": 68.16
+  },
+  {
+   "w": "choice",
+   "raw": "choice.",
+   "s": 68.16,
+   "e": 68.7
+  },
+  {
+   "w": "scroll",
+   "raw": "Scroll",
+   "s": 70.4,
+   "e": 70.78
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 70.78,
+   "e": 71.06
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 71.06,
+   "e": 71.32
+  },
+  {
+   "w": "hours",
+   "raw": "hours.",
+   "s": 71.32,
+   "e": 71.82
+  },
+  {
+   "w": "or",
+   "raw": "Or",
+   "s": 74.1,
+   "e": 74.62
+  },
+  {
+   "w": "build",
+   "raw": "build",
+   "s": 74.62,
+   "e": 74.92
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 74.92,
+   "e": 75.18
+  },
+  {
+   "w": "one",
+   "raw": "one.",
+   "s": 75.18,
+   "e": 76.1
+  },
+  {
+   "w": "neither",
+   "raw": "Neither",
+   "s": 81.12,
+   "e": 81.18
+  },
+  {
+   "w": "choice",
+   "raw": "choice",
+   "s": 81.18,
+   "e": 81.6
+  },
+  {
+   "w": "changes",
+   "raw": "changes",
+   "s": 81.6,
+   "e": 82.1
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 82.1,
+   "e": 82.3
+  },
+  {
+   "w": "life",
+   "raw": "life",
+   "s": 82.3,
+   "e": 82.56
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 82.56,
+   "e": 82.76
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 82.76,
+   "e": 83.0
+  },
+  {
+   "w": "day",
+   "raw": "day.",
+   "s": 83.0,
+   "e": 83.4
+  },
+  {
+   "w": "but",
+   "raw": "But",
+   "s": 85.1,
+   "e": 85.18
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 85.18,
+   "e": 85.34
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 85.34,
+   "e": 85.44
+  },
+  {
+   "w": "them",
+   "raw": "them",
+   "s": 85.44,
+   "e": 85.62
+  },
+  {
+   "w": "made",
+   "raw": "made",
+   "s": 85.62,
+   "e": 85.92
+  },
+  {
+   "w": "again",
+   "raw": "again",
+   "s": 85.92,
+   "e": 86.3
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 86.3,
+   "e": 86.46
+  },
+  {
+   "w": "again",
+   "raw": "again",
+   "s": 86.46,
+   "e": 86.74
+  },
+  {
+   "w": "does",
+   "raw": "does.",
+   "s": 86.74,
+   "e": 87.16
+  },
+  {
+   "w": "not",
+   "raw": "Not",
+   "s": 91.52,
+   "e": 91.74
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 91.74,
+   "e": 92.0
+  },
+  {
+   "w": "choice",
+   "raw": "choice",
+   "s": 92.0,
+   "e": 92.28
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 92.28,
+   "e": 92.48
+  },
+  {
+   "w": "right",
+   "raw": "right,",
+   "s": 92.48,
+   "e": 92.8
+  },
+  {
+   "w": "his",
+   "raw": "his",
+   "s": 93.0,
+   "e": 93.1
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 93.1,
+   "e": 93.4
+  },
+  {
+   "w": "company",
+   "raw": "company",
+   "s": 93.4,
+   "e": 93.72
+  },
+  {
+   "w": "failed",
+   "raw": "failed.",
+   "s": 93.72,
+   "e": 94.14
+  },
+  {
+   "w": "he",
+   "raw": "He",
+   "s": 97.02,
+   "e": 97.48
+  },
+  {
+   "w": "didnt",
+   "raw": "didn't",
+   "s": 97.48,
+   "e": 97.74
+  },
+  {
+   "w": "call",
+   "raw": "call",
+   "s": 97.74,
+   "e": 97.9
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 97.9,
+   "e": 98.02
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 98.02,
+   "e": 98.16
+  },
+  {
+   "w": "end",
+   "raw": "end,",
+   "s": 98.16,
+   "e": 98.42
+  },
+  {
+   "w": "he",
+   "raw": "he",
+   "s": 98.58,
+   "e": 98.7
+  },
+  {
+   "w": "called",
+   "raw": "called",
+   "s": 98.7,
+   "e": 98.9
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 98.9,
+   "e": 99.04
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 99.04,
+   "e": 99.14
+  },
+  {
+   "w": "lesson",
+   "raw": "lesson.",
+   "s": 99.14,
+   "e": 99.42
+  },
+  {
+   "w": "he",
+   "raw": "He",
+   "s": 100.5,
+   "e": 101.1
+  },
+  {
+   "w": "adjusted",
+   "raw": "adjusted",
+   "s": 101.1,
+   "e": 101.5
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 101.5,
+   "e": 101.92
+  },
+  {
+   "w": "chose",
+   "raw": "chose",
+   "s": 101.92,
+   "e": 102.16
+  },
+  {
+   "w": "again",
+   "raw": "again.",
+   "s": 102.16,
+   "e": 102.94
+  },
+  {
+   "w": "day",
+   "raw": "Day",
+   "s": 106.86,
+   "e": 107.46
+  },
+  {
+   "w": "1204",
+   "raw": "1204,",
+   "s": 107.46,
+   "e": 108.06
+  },
+  {
+   "w": "his",
+   "raw": "his",
+   "s": 108.38,
+   "e": 108.46
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 108.46,
+   "e": 108.74
+  },
+  {
+   "w": "big",
+   "raw": "big",
+   "s": 108.74,
+   "e": 109.02
+  },
+  {
+   "w": "client",
+   "raw": "client.",
+   "s": 109.02,
+   "e": 109.46
+  },
+  {
+   "w": "when",
+   "raw": "When",
+   "s": 112.3,
+   "e": 112.9
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 112.9,
+   "e": 113.02
+  },
+  {
+   "w": "looked",
+   "raw": "looked",
+   "s": 113.02,
+   "e": 113.14
+  },
+  {
+   "w": "back",
+   "raw": "back",
+   "s": 113.14,
+   "e": 113.5
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 113.5,
+   "e": 113.82
+  },
+  {
+   "w": "scene",
+   "raw": "scene",
+   "s": 113.82,
+   "e": 114.12
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 114.12,
+   "e": 114.3
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 114.3,
+   "e": 114.46
+  },
+  {
+   "w": "choice",
+   "raw": "choice.",
+   "s": 114.46,
+   "e": 114.84
+  },
+  {
+   "w": "each",
+   "raw": "Each",
+   "s": 118.1,
+   "e": 118.7
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 118.7,
+   "e": 118.9
+  },
+  {
+   "w": "pushed",
+   "raw": "pushed",
+   "s": 118.9,
+   "e": 119.1
+  },
+  {
+   "w": "his",
+   "raw": "his",
+   "s": 119.1,
+   "e": 119.3
+  },
+  {
+   "w": "life",
+   "raw": "life",
+   "s": 119.3,
+   "e": 119.54
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 119.54,
+   "e": 119.68
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 119.68,
+   "e": 119.78
+  },
+  {
+   "w": "direction",
+   "raw": "direction,",
+   "s": 119.78,
+   "e": 120.24
+  },
+  {
+   "w": "some",
+   "raw": "some",
+   "s": 120.42,
+   "e": 120.64
+  },
+  {
+   "w": "split",
+   "raw": "split",
+   "s": 120.64,
+   "e": 120.94
+  },
+  {
+   "w": "apart",
+   "raw": "apart,",
+   "s": 120.94,
+   "e": 121.34
+  },
+  {
+   "w": "some",
+   "raw": "some",
+   "s": 121.66,
+   "e": 121.8
+  },
+  {
+   "w": "came",
+   "raw": "came",
+   "s": 121.8,
+   "e": 122.0
+  },
+  {
+   "w": "back",
+   "raw": "back",
+   "s": 122.0,
+   "e": 122.28
+  },
+  {
+   "w": "together",
+   "raw": "together.",
+   "s": 122.28,
+   "e": 122.62
+  },
+  {
+   "w": "all",
+   "raw": "All",
+   "s": 124.14,
+   "e": 124.64
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 124.64,
+   "e": 124.8
+  },
+  {
+   "w": "them",
+   "raw": "them",
+   "s": 124.8,
+   "e": 124.92
+  },
+  {
+   "w": "were",
+   "raw": "were",
+   "s": 124.92,
+   "e": 125.08
+  },
+  {
+   "w": "connected",
+   "raw": "connected,",
+   "s": 125.08,
+   "e": 125.46
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 125.92,
+   "e": 125.98
+  },
+  {
+   "w": "everyone",
+   "raw": "everyone",
+   "s": 125.98,
+   "e": 126.34
+  },
+  {
+   "w": "led",
+   "raw": "led",
+   "s": 126.34,
+   "e": 126.64
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 126.64,
+   "e": 126.78
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 126.78,
+   "e": 126.92
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 126.92,
+   "e": 127.14
+  },
+  {
+   "w": "place",
+   "raw": "place.",
+   "s": 127.14,
+   "e": 127.6
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 131.96,
+   "e": 132.28
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 132.28,
+   "e": 132.44
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 132.44,
+   "e": 132.56
+  },
+  {
+   "w": "back",
+   "raw": "back,",
+   "s": 132.56,
+   "e": 132.86
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 133.04,
+   "e": 133.2
+  },
+  {
+   "w": "field",
+   "raw": "field,",
+   "s": 133.2,
+   "e": 133.58
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 133.8,
+   "e": 133.92
+  },
+  {
+   "w": "book",
+   "raw": "book.",
+   "s": 133.92,
+   "e": 134.24
+  },
+  {
+   "w": "but",
+   "raw": "But",
+   "s": 135.94,
+   "e": 136.18
+  },
+  {
+   "w": "now",
+   "raw": "now",
+   "s": 136.18,
+   "e": 136.44
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 136.44,
+   "e": 136.7
+  },
+  {
+   "w": "knew",
+   "raw": "knew",
+   "s": 136.7,
+   "e": 136.88
+  },
+  {
+   "w": "how",
+   "raw": "how",
+   "s": 136.88,
+   "e": 137.08
+  },
+  {
+   "w": "my",
+   "raw": "my",
+   "s": 137.08,
+   "e": 137.28
+  },
+  {
+   "w": "story",
+   "raw": "story",
+   "s": 137.28,
+   "e": 137.58
+  },
+  {
+   "w": "starts",
+   "raw": "starts.",
+   "s": 137.58,
+   "e": 138.06
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 139.6,
+   "e": 140.02
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 140.02,
+   "e": 140.18
+  },
+  {
+   "w": "turned",
+   "raw": "turned",
+   "s": 140.18,
+   "e": 140.38
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 140.38,
+   "e": 140.58
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 140.58,
+   "e": 140.68
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 140.68,
+   "e": 140.9
+  },
+  {
+   "w": "page",
+   "raw": "page",
+   "s": 140.9,
+   "e": 141.26
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 141.26,
+   "e": 141.56
+  },
+  {
+   "w": "wrote",
+   "raw": "wrote",
+   "s": 141.56,
+   "e": 141.72
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 141.72,
+   "e": 141.86
+  },
+  {
+   "w": "down",
+   "raw": "down.",
+   "s": 141.86,
+   "e": 142.18
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 146.7,
+   "e": 147.2
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 147.2,
+   "e": 147.38
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 147.38,
+   "e": 147.74
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 147.74,
+   "e": 147.92
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 147.92,
+   "e": 148.18
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 148.18,
+   "e": 148.68
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 148.68,
+   "e": 149.08
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 149.08,
+   "e": 149.3
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 149.3,
+   "e": 149.52
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 149.52,
+   "e": 149.88
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 149.88,
+   "e": 150.1
   },
   {
    "w": "you",
    "raw": "you",
-   "s": 51.47,
-   "e": 51.67
+   "s": 150.1,
+   "e": 150.24
   },
   {
    "w": "can",
    "raw": "can",
-   "s": 51.67,
-   "e": 51.81
+   "s": 150.24,
+   "e": 150.4
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 150.4,
+   "e": 150.62
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 150.62,
+   "e": 150.76
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 150.76,
+   "e": 151.08
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 151.08,
+   "e": 151.5
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 151.5,
+   "e": 151.68
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 151.68,
+   "e": 151.82
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 151.82,
+   "e": 152.04
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 152.04,
+   "e": 152.24
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 152.24,
+   "e": 152.58
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 152.58,
+   "e": 152.92
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 152.92,
+   "e": 153.1
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 153.1,
+   "e": 153.24
   },
   {
    "w": "actually",
    "raw": "actually",
-   "s": 51.81,
-   "e": 52.11
+   "s": 153.24,
+   "e": 153.56
   },
   {
    "w": "do",
    "raw": "do.",
-   "s": 52.11,
-   "e": 52.43
+   "s": 153.56,
+   "e": 153.92
   }
  ],
  "sentences": [
   {
-   "s": 0.0,
-   "e": 5.38,
-   "text": "This book showed me my future. Ten years from now the car, the house, the life I only ever wrote"
+   "s": 0.8,
+   "e": 3.98,
+   "text": "I was reading in the park when the pages started to glow."
   },
   {
-   "s": 5.38,
-   "e": 9.66,
-   "text": "about, from where I said it looked impossible. Then the book took me back to where it started,"
+   "s": 7.22,
+   "e": 8.82,
+   "text": "And the book opened a door."
   },
   {
-   "s": 9.98,
-   "e": 14.64,
-   "text": "one page, a dream that looked unachievable, written down anyway. After that it was choices,"
+   "s": 12.78,
+   "e": 14.98,
+   "text": "It took me ten years into my future."
   },
   {
-   "s": 14.98,
-   "e": 19.42,
-   "text": "small ones, every day. Go out or build, scroll or start, there was always a choice."
+   "s": 16.72,
+   "e": 20.28,
+   "text": "There I was the car in the house, the life I had only ever dreamed about."
   },
   {
-   "s": 19.92,
-   "e": 25.84,
-   "text": "His only job was to make it. Not every choice was right, his first company failed. He adjusted and"
+   "s": 21.96,
+   "e": 24.28,
+   "text": "But I had one question, how did I get here?"
   },
   {
-   "s": 25.84,
-   "e": 31.88,
-   "text": "chose again. Every scene, every choice. Each one pushed his life in a direction, some split apart,"
+   "s": 27.32,
+   "e": 29.62,
+   "text": "The book showed me chapter by chapter."
   },
   {
    "s": 32.32,
-   "e": 38.4,
-   "text": "some came back together, all of it connected. And every line led to the same place. So I turned to"
+   "e": 34.7,
+   "text": "It started on one ordinary night."
   },
   {
-   "s": 38.4,
-   "e": 44.16,
-   "text": "the first page and wrote mine. That's what Demure is for. You archive your dream today so you can"
+   "s": 36.3,
+   "e": 38.6,
+   "text": "He wrote his dream down, it looked impossible."
   },
   {
-   "s": 44.16,
-   "e": 47.58,
-   "text": "see it tomorrow and break it down into small steps you can actually do."
+   "s": 40.48,
+   "e": 43.14,
+   "text": "He wrote it anyway, that page was a starting point."
+  },
+  {
+   "s": 46.8,
+   "e": 49.64,
+   "text": "After that, every single day gave him a choice."
+  },
+  {
+   "s": 51.0,
+   "e": 53.06,
+   "text": "He could sleep in."
+  },
+  {
+   "s": 55.76,
+   "e": 58.06,
+   "text": "Or get up and give his dream one hour."
+  },
+  {
+   "s": 61.48,
+   "e": 63.56,
+   "text": "He chose to get up."
+  },
+  {
+   "s": 66.72,
+   "e": 68.7,
+   "text": "Every evening another choice."
+  },
+  {
+   "s": 70.4,
+   "e": 71.82,
+   "text": "Scroll for three hours."
+  },
+  {
+   "s": 74.1,
+   "e": 76.1,
+   "text": "Or build for one."
+  },
+  {
+   "s": 81.12,
+   "e": 83.4,
+   "text": "Neither choice changes your life in one day."
+  },
+  {
+   "s": 85.1,
+   "e": 87.16,
+   "text": "But one of them made again and again does."
+  },
+  {
+   "s": 91.52,
+   "e": 94.14,
+   "text": "Not every choice was right, his first company failed."
+  },
+  {
+   "s": 97.02,
+   "e": 99.42,
+   "text": "He didn't call it the end, he called it a lesson."
+  },
+  {
+   "s": 100.5,
+   "e": 102.94,
+   "text": "He adjusted and chose again."
+  },
+  {
+   "s": 106.86,
+   "e": 109.46,
+   "text": "Day 1204, his first big client."
+  },
+  {
+   "s": 112.3,
+   "e": 114.84,
+   "text": "When I looked back every scene was a choice."
+  },
+  {
+   "s": 118.1,
+   "e": 122.62,
+   "text": "Each one pushed his life in a direction, some split apart, some came back together."
+  },
+  {
+   "s": 124.14,
+   "e": 127.6,
+   "text": "All of them were connected, and everyone led to the same place."
+  },
+  {
+   "s": 131.96,
+   "e": 134.24,
+   "text": "Then I was back, same field, same book."
+  },
+  {
+   "s": 135.94,
+   "e": 138.06,
+   "text": "But now I knew how my story starts."
+  },
+  {
+   "s": 139.6,
+   "e": 142.18,
+   "text": "So I turned to the first page and wrote it down."
+  },
+  {
+   "s": 146.7,
+   "e": 148.18,
+   "text": "That's what Demure is for."
+  },
+  {
+   "s": 148.18,
+   "e": 153.92,
+   "text": "You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do."
   }
  ],
- "wps": 3.26
+ "wps": 1.64
 }
