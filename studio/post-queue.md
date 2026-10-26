@@ -4,7 +4,11 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 ## Ready to post
 
+- [ ] 22:00 IST Tue 2026-10-27 · **pixel-book (Adam voice)** (1:42, pixel story, ElevenLabs narration) · `ready-to-post/2026-10-27-pixel-book/` · owner approved scheduling; waiting on folder access for upload
+
 ## Waiting for approval: batch for Tue 2026-10-27 (IST), V-EXP-29, see VASK-018
+
+> Correction 2026-10-27 00:40 IST (Claude): the Oct 26 agent run stopped mid-way (first recording crashed with a pipe error, the other 3 were never built), so these files did NOT exist when this list was written. Rebuilt in the session on Oct 27: ill-save-first re-recorded, ill-phone-distance / ill-career-conversations / ill-goal-date scripted and built. Still needs Sanyam's OK before scheduling.
 
 - [ ] 09:30 IST · **ill-save-first** (money: save first, automatic transfer) · `ready-to-post/2026-10-27-ill-save-first/` · 36/40
 - [ ] 13:00 IST · **ill-career-conversations** (career: 3 conversations before a course) · `ready-to-post/2026-10-27-ill-career-conversations/` · 33/40

@@ -112,7 +112,7 @@ Instagram locked the account ("we locked your account to protect you from a poss
 - Old queue: not-lazy-next-step, tree-first-5k, hours-in-a-week are pre-owner-rules (orange palette, @dmyor_global, no value close). I suggest retiring them unless you want them; say "retire old queue" and I will move them to _superseded.
 
 ## VASK-018: Approve the Tue Oct 27 batch (4 reels), one reply (2026-10-26)
-- Status: open
+- Status: open (note 2026-10-27: files were missing after the Oct 26 run stalled; rebuilt Oct 27 00:40 IST)
 - What: 4 animated-illustration reels in new life areas (V-EXP-29): ill-save-first (money, 09:30), ill-career-conversations (career, 13:00), ill-goal-date (goal with a number + date, 16:30), ill-phone-distance (focus, 19:30). Files and captions in `ready-to-post/2026-10-27-*/`.
 - Steps: watch them, reply "OK" (or "OK except X") in `inbox/notes.md` or chat. After your OK they get scheduled on Instagram, X and YouTube at the listed IST times and registered in analytics.
 - Also useful on Oct 27 evening: app screenshots of the Oct-25 batch insights (48h: views, avg watch time, skip rate, shares, saves, follows) into `inbox/metrics/` (ASK-V), and the follower count.
