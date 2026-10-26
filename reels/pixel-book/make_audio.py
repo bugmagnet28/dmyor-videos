@@ -93,8 +93,8 @@ sf.write(os.path.join(D, "score.wav"), (mus * .5).astype(np.float32), SR)
 # ================= SOUND EFFECTS (v4 timeline) =================
 fx = np.zeros(int((TOTAL + 3) * SR)); A = lambda x, at, g: None if in_cut(at) else syn.add(fx, x, t2u(at), g)
 for i in range(22): A(nz(.4, 6, 3000) * .3, i * .3, .04)                       # breeze
-A(K("riffle", 1.2), 3.2, .35); for_i = [A(sq(m, .09, .25), 2.9 + i * .1, .1) for i, m in enumerate([72, 76, 79, 84])]
-A(kit.step() / .6, 4.62, .35); A(K("page", .25), 4.7, .3)                       # stands, sets the book down
+A(K("riffle", 1.2), 3.2, 0.175); for_i = [A(sq(m, .09, .25), 2.9 + i * .1, .1) for i, m in enumerate([72, 76, 79, 84])]
+A(kit.step() / .6, 4.62, .35); A(K("page", .25), 4.7, 0.105)                       # stands, sets the book down
 A(syn.riser(1.4, 200, 3000), 6.5, .3); A(sweep(48, 72, 1.3, .5), 6.6, .12)     # portal rises
 for st in (7.05, 7.25): A(kit.step() / .6, st, .3)
 A(K("pop", 2), 7.4, .25)                                                        # surprise
@@ -109,8 +109,8 @@ for st in np.arange(16.35, 17.4, .27): A(kit.step() / .6, st, .35)
 A(sweep(60, 79, .18, .5), 17.0, .25); A(K("pop", 3), 17.05, .3)
 A(sq(72, .1, .5), 22.1, .08); A(sq(76, .1, .5), 22.25, .08)                   # "?"
 A(syn.riser(.8, 300, 3000), 25.7, .25); A(syn.whoosh(.9, 200, 6000), 26.4, .5)
-A(K("riffle", U(26.9, 30.1)), 26.9, .5); A(K("page", .32), 30.2, .45)
-for i, at in enumerate((32.15, 46.35, 50.55, 55.35, 66.35, 69.75, 73.75, 90.75, 105.75)): A(K("pop", i % 6), at, .45)   # scene changes pop in
+A(K("riffle", U(26.9, 30.1)), 26.9, 0.25); A(K("page", .32), 30.2, 0.158)
+# scene changes: no sound (owner 2026-10-27)
 A(softwrite(1.0), 34.9, 0.18); A(softwrite(1.7), 36.35, 0.27); A(K("pop", 1), 38.2, .4); A(softwrite(.5), 41.1, 0.24); A(syn.bell(79, 2.0), 42.5, .2)
 for b in np.arange(46.5, 50.5, .14): A(sq(93, .06, .5), b, .12 if int((b - 46.5) / .14) % 4 < 3 else 0)
 A(K("clock", U(51.0, 54.8)), 51.0, .3)                                                    # time slipping by
@@ -127,8 +127,8 @@ A(sweep(72, 96, .3, .5), 79.25, .15); A(K("right", 5), 79.6, .5); A(syn.whoosh(.
 A(K("typing", U(80.8, 88.8)), 80.8, .2)
 for i in range(30): A(K("tick"), 80.85 + i * .25, .12)                         # days ticking by
 r = nz(U(90.7, 103.7), 0, 2500) * .8; r *= env(len(r), .4, 2.5); A(r, 90.7, .26)        # rain
-A(K("page", .3), 93.55, .45); A(K("miss", 0), 93.75, .5)
-A(kit.step() / .6, 97.85, .3); A(K("page", .3), 98.7, .4); A(syn.bell(84, 2.0), 99.05, .22)
+A(K("page", .3), 93.55, 0.158); A(K("miss", 0), 93.75, .5)
+A(kit.step() / .6, 97.85, .3); A(K("page", .3), 98.7, 0.14); A(syn.bell(84, 2.0), 99.05, .22)
 for st in np.arange(100.85, 103.4, .27): A(kit.step() / .6, st, .3)
 for i, at in enumerate(np.arange(106.0, 107.6, .07)): A(K("tick"), at, .15)
 A(K("pop", 3), 108.85, .45); A(K("right", 4), 108.95, .5); A(K("chord", 1.5), 109.1, .25)
@@ -143,7 +143,7 @@ A(syn.whoosh(1.2, 200, 3000), 122.4, .3)
 for i, m in enumerate([84, 88, 91, 96]): A(sq(m, .08, .25), 124.6 + i * .08, .08)
 A(syn.impact(.7), 128.6, .3); A(nz(2.5, .9, 800) * .6, 128.6, .25)
 for i in range(8): A(sweep(88 + (i % 2) * 3, 96, .07, .5), 131.6 + i * .5 + (i % 2) * .12, .05)   # birds
-A(K("page", .32), 140.45, .5); A(softwrite(1.8), 141.0, 0.27); A(K("right", 5), 142.8, .45)
+A(K("page", .32), 140.45, 0.175); A(softwrite(1.8), 141.0, 0.27); A(K("right", 5), 142.8, .45)
 A(syn.bell(84, 2.5), 154.8, .2)
 
 # ================= SUSPENSE: risers build until each scene lands, then an impact (and the score ducks under it) =================
