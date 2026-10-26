@@ -95,8 +95,8 @@ A(kit.step() / .6, 10.4, .3); A(sweep(60, 84, .35, .5), 10.65, .25)           # 
 A(syn.whoosh(1.1, 200, 6000), 11.0, .55); A(sweep(90, 40, .9), 11.25, .2)     # into the portal
 A(sweep(84, 50, .5), 12.0, .2); A(kit.step() / .6, 12.5, .5)                    # tumbles out, lands
 for st in np.arange(13.35, 14.7, .25): A(kit.step() / .6, st, .25)
-hd = U(14.0, 21.2); th = tt(hd); chop = (0.5 + 0.5 * np.sign(np.sin(2 * np.pi * 13 * th))) * np.minimum(1, th / 1.2) * np.minimum(1, (hd - th) / 1.0)
-A((nz(hd, 0, 300) * .8 + np.sin(2 * np.pi * 55 * th) * .5) * chop, 14.0, .35)                                  # helicopter rotor
+hd = U(14.0, 19.6); th = tt(hd); land = U(14.0, 15.8); chop = (0.5 + 0.5 * np.sign(np.sin(2 * np.pi * 13 * th))) * np.minimum(1, th / 1.5) * np.where(th < land, 1, np.clip(1 - (th - land) / (hd - land), 0, 1) ** 2)
+A((nz(hd, 0, 300) * .8 + np.sin(2 * np.pi * 55 * th) * .5) * chop, 14.0, .2)                                   # helicopter rotor
 A(K("door"), 16.0, .5)
 for st in np.arange(16.35, 17.4, .27): A(kit.step() / .6, st, .35)
 A(sweep(60, 79, .18, .5), 17.0, .25); A(K("pop", 3), 17.05, .3)
@@ -141,9 +141,7 @@ A(syn.bell(84, 2.5), 154.8, .2)
 
 # ================= SUSPENSE: risers build until each scene lands, then an impact (and the score ducks under it) =================
 # (riser start, hit, strength, dark) in story time
-SUS = [(4.6, 7.9, .7, False), (10.0, 12.5, 1.0, False), (14.2, 15.8, .8, False), (25.5, 26.9, .6, False), (36.4, 38.2, .45, False),
-       (40.9, 42.5, .7, False), (60.3, 62.6, .7, False), (77.9, 79.6, .7, False), (84.6, 88.4, .8, False), (90.9, 93.72, .9, True),
-       (106.0, 108.85, .8, False), (114.9, 122.4, 1.0, False), (125.0, 128.6, 1.0, False), (141.0, 142.8, .8, False), (154.6, 155.6, .9, False)]
+SUS = []   # owner 2026-10-27: no risers/impacts
 def riser2(d):
     t = tt(d); k = t / d
     noise = nz(d, 0, 1500) * k ** 2.2
