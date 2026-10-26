@@ -1,0 +1,138 @@
+{
+ "total": 50.7,
+ "brandT": 46.96,
+ "scenes": [
+  {
+   "type": "phone-desk",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "Not willpower.<br><b>Distance</b>.",
+   "t0": 0.0,
+   "t1": 4.01
+  },
+  {
+   "type": "phone-desk",
+   "params": {
+    "cue": [
+     "desk",
+     "second"
+    ],
+    "at": [
+     0.51,
+     1.85
+    ]
+   },
+   "head": "On the desk, it's<br><b>one second</b> away.",
+   "t0": 4.01,
+   "t1": 9.55
+  },
+  {
+   "type": "phone-room",
+   "params": {
+    "room": "KITCHEN",
+    "cue": [
+     "phone",
+     "timer",
+     "door"
+    ],
+    "at": [
+     1.93,
+     4.77,
+     3.39
+    ]
+   },
+   "head": "Another room.<br><b>Door closed</b>.",
+   "t0": 9.55,
+   "t1": 16.75
+  },
+  {
+   "type": "phone-walk",
+   "params": {
+    "room": "KITCHEN",
+    "cue": [
+     "standing",
+     "walking",
+     "pause"
+    ],
+    "at": [
+     0.97,
+     1.77,
+     3.93
+    ]
+   },
+   "head": "Now it takes<br>a <b>walk</b>.",
+   "t0": 16.75,
+   "t1": 23.49
+  },
+  {
+   "type": "two-blocks",
+   "params": {
+    "cue": [
+     "studying",
+     "writing"
+    ],
+    "at": [
+     0.05,
+     2.13
+    ]
+   },
+   "head": "Works for<br><b>any task</b>.",
+   "t0": 23.49,
+   "t1": 28.11
+  },
+  {
+   "type": "break-timer",
+   "params": {
+    "cue": [
+     "ends",
+     "five",
+     "next"
+    ],
+    "at": [
+     0.93,
+     1.55,
+     4.17
+    ]
+   },
+   "head": "Timer done?<br><b>5 minutes</b> for the phone.",
+   "t0": 28.11,
+   "t1": 33.29
+  },
+  {
+   "type": "room-pick",
+   "params": {
+    "cue": [
+     "before",
+     "room",
+     "door"
+    ],
+    "at": [
+     0.21,
+     1.59,
+     3.81
+    ]
+   },
+   "head": "Pick the <b>room</b> now.",
+   "t0": 33.29,
+   "t1": 39.57
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Pass my final exams",
+    "date": "Open it again: June 2027",
+    "steps": [
+     "25-min blocks",
+     "Phone in the kitchen",
+     "One chapter a day"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 39.57,
+   "t1": 46.96
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}

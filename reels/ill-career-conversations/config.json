@@ -1,0 +1,146 @@
+{
+ "total": 52.22,
+ "brandT": 48.46,
+ "scenes": [
+  {
+   "type": "course-vs-talk",
+   "params": {},
+   "head": "Before the course:<br><b>3 conversations</b>.",
+   "t0": 0.0,
+   "t1": 4.75
+  },
+  {
+   "type": "course-cost",
+   "params": {
+    "cue": [
+     "months",
+     "money",
+     "tuesday"
+    ],
+    "at": [
+     0.65,
+     1.91,
+     5.65
+    ]
+   },
+   "head": "A course won't show you<br>a normal <b>Tuesday</b>.",
+   "t0": 4.75,
+   "t1": 11.19
+  },
+  {
+   "type": "three-people",
+   "params": {
+    "cue": [
+     "people",
+     "three"
+    ],
+    "at": [
+     0.23,
+     3.11
+    ]
+   },
+   "head": "Ask people<br><b>doing the job</b>.",
+   "t0": 11.19,
+   "t1": 15.19
+  },
+  {
+   "type": "people-search",
+   "params": {
+    "cue": [
+     "want",
+     "city",
+     "friends"
+    ],
+    "at": [
+     0.37,
+     4.61,
+     5.53
+    ]
+   },
+   "head": "Find <b>three</b> of them.",
+   "t0": 15.19,
+   "t1": 21.97
+  },
+  {
+   "type": "message-send",
+   "params": {
+    "cue": [
+     "short",
+     null,
+     "fifteen"
+    ],
+    "at": [
+     0.65,
+     1.25,
+     5.32
+    ]
+   },
+   "head": "Send a <b>short</b> message.",
+   "t0": 21.97,
+   "t1": 29.23
+  },
+  {
+   "type": "question-list",
+   "params": {
+    "cue": [
+     "normal",
+     "wish",
+     "how"
+    ],
+    "at": [
+     2.41,
+     3.83,
+     5.01
+    ]
+   },
+   "head": "Ask <b>3 questions</b>.",
+   "t0": 29.23,
+   "t1": 36.07
+  },
+  {
+   "type": "goal-tree",
+   "params": {
+    "stage": "path",
+    "vision": "Work as a UX designer",
+    "milestones": [
+     "3 conversations",
+     "Pick the right course",
+     "First case study"
+    ],
+    "actions": [
+     "Find 3 designers",
+     "Send 3 messages",
+     "Ask 3 questions"
+    ],
+    "m": 0,
+    "today": 1,
+    "cue": [
+     "know"
+    ],
+    "at": [
+     1.15
+    ]
+   },
+   "head": "Then you know<br>what's <b>worth it</b>.",
+   "t0": 36.07,
+   "t1": 41.09
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Work in UX design",
+    "date": "Open it again: Oct 2027",
+    "steps": [
+     "3 conversations",
+     "Pick one course",
+     "First case study"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 41.09,
+   "t1": 48.46
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}

@@ -4,14 +4,15 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 ## Ready to post
 
-## Waiting for approval: batch for Mon 2026-10-26 (IST), V-EXP-28, see VASK-017
+## Waiting for approval: batch for Tue 2026-10-27 (IST), V-EXP-29, see VASK-018
 
-- [ ] 09:30 IST · **ill-night-before** (52.4s, animated illustration) · `ready-to-post/2026-10-26-ill-night-before/` · 34/40
-- [ ] 13:00 IST · **kt-later-trigger** (44.7s, kinetic typography) · `ready-to-post/2026-10-26-kt-later-trigger/` · 33/40
-- [ ] 16:30 IST · **ill-track-inputs** (44.3s, animated illustration) · `ready-to-post/2026-10-26-ill-track-inputs/` · 33/40
-- [ ] 19:30 IST · **kt-five-goals** (56.9s, kinetic typography) · `ready-to-post/2026-10-26-kt-five-goals/` · 31/40
-- All @becauseidmyor end cards, value close, voice am_eric. Same times on X and YouTube Shorts.
+- [ ] 09:30 IST · **ill-save-first** (money: save first, automatic transfer) · `ready-to-post/2026-10-27-ill-save-first/` · 36/40
+- [ ] 13:00 IST · **ill-career-conversations** (career: 3 conversations before a course) · `ready-to-post/2026-10-27-ill-career-conversations/` · 33/40
+- [ ] 16:30 IST · **ill-goal-date** (goal: a number and a date) · `ready-to-post/2026-10-27-ill-goal-date/` · 34/40
+- [ ] 19:30 IST · **ill-phone-distance** (focus: phone in another room) · `ready-to-post/2026-10-27-ill-phone-distance/` · 35/40
+- All animated illustration, am_eric, value close, @becauseidmyor end card. Same times on X and YouTube Shorts.
 
+## Older queue (pre-owner-rules styles; propose retiring, see VASK-016)
 
 **Post order: bottom one first (oldest). From Oct 24: one reel per day, best slot from the Oct 23 insights (VASK-014).** All queued reels are evergreen. Newest is listed on top.
 

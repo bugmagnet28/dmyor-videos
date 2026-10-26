@@ -1,0 +1,1209 @@
+{
+ "audio": "audio.mp3",
+ "duration": 52.28,
+ "text": "Thinking about switching careers don't start with a course, start with three conversations. A course takes months of your evenings and money, and you still won't know what the job actually feels like on a normal Tuesday. The people already doing the job know that, so this week find three of them. Say you want to move into UX design, search LinkedIn for UX designers in your city and ask your friends if they know one. Then send a short message, something like I'm thinking about moving into UX, could I ask you three quick questions 15 minutes whenever suits you. On the call ask three things, what does a normal week look like, what do you wish you'd learned first and how did you get your first role. After three calls you'll know if you still want it, and which course is worth paying for if any. That's what Demure is for, you archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. If you want to try it out I've put the link in the bio.",
+ "words": [
+  {
+   "w": "thinking",
+   "raw": "Thinking",
+   "s": 0.0,
+   "e": 0.34
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 0.34,
+   "e": 0.6
+  },
+  {
+   "w": "switching",
+   "raw": "switching",
+   "s": 0.6,
+   "e": 0.92
+  },
+  {
+   "w": "careers",
+   "raw": "careers",
+   "s": 0.92,
+   "e": 1.36
+  },
+  {
+   "w": "dont",
+   "raw": "don't",
+   "s": 1.36,
+   "e": 1.78
+  },
+  {
+   "w": "start",
+   "raw": "start",
+   "s": 1.78,
+   "e": 2.02
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 2.02,
+   "e": 2.16
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 2.16,
+   "e": 2.28
+  },
+  {
+   "w": "course",
+   "raw": "course,",
+   "s": 2.28,
+   "e": 2.58
+  },
+  {
+   "w": "start",
+   "raw": "start",
+   "s": 3.06,
+   "e": 3.16
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 3.16,
+   "e": 3.36
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 3.36,
+   "e": 3.58
+  },
+  {
+   "w": "conversations",
+   "raw": "conversations.",
+   "s": 3.58,
+   "e": 4.24
+  },
+  {
+   "w": "a",
+   "raw": "A",
+   "s": 4.8,
+   "e": 4.9
+  },
+  {
+   "w": "course",
+   "raw": "course",
+   "s": 4.9,
+   "e": 5.14
+  },
+  {
+   "w": "takes",
+   "raw": "takes",
+   "s": 5.14,
+   "e": 5.4
+  },
+  {
+   "w": "months",
+   "raw": "months",
+   "s": 5.4,
+   "e": 5.68
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 5.68,
+   "e": 5.86
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 5.86,
+   "e": 5.98
+  },
+  {
+   "w": "evenings",
+   "raw": "evenings",
+   "s": 5.98,
+   "e": 6.32
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 6.32,
+   "e": 6.66
+  },
+  {
+   "w": "money",
+   "raw": "money,",
+   "s": 6.66,
+   "e": 6.92
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 7.42,
+   "e": 7.56
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 7.56,
+   "e": 7.68
+  },
+  {
+   "w": "still",
+   "raw": "still",
+   "s": 7.68,
+   "e": 7.9
+  },
+  {
+   "w": "wont",
+   "raw": "won't",
+   "s": 7.9,
+   "e": 8.16
+  },
+  {
+   "w": "know",
+   "raw": "know",
+   "s": 8.16,
+   "e": 8.3
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 8.3,
+   "e": 8.46
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 8.46,
+   "e": 8.58
+  },
+  {
+   "w": "job",
+   "raw": "job",
+   "s": 8.58,
+   "e": 8.86
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 8.86,
+   "e": 9.3
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 9.3,
+   "e": 9.62
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 9.62,
+   "e": 9.88
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 9.88,
+   "e": 10.0
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 10.0,
+   "e": 10.14
+  },
+  {
+   "w": "normal",
+   "raw": "normal",
+   "s": 10.14,
+   "e": 10.4
+  },
+  {
+   "w": "tuesday",
+   "raw": "Tuesday.",
+   "s": 10.4,
+   "e": 10.74
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 11.24,
+   "e": 11.42
+  },
+  {
+   "w": "people",
+   "raw": "people",
+   "s": 11.42,
+   "e": 11.7
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 11.7,
+   "e": 12.02
+  },
+  {
+   "w": "doing",
+   "raw": "doing",
+   "s": 12.02,
+   "e": 12.28
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 12.28,
+   "e": 12.46
+  },
+  {
+   "w": "job",
+   "raw": "job",
+   "s": 12.46,
+   "e": 12.74
+  },
+  {
+   "w": "know",
+   "raw": "know",
+   "s": 12.74,
+   "e": 12.96
+  },
+  {
+   "w": "that",
+   "raw": "that,",
+   "s": 12.96,
+   "e": 13.26
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 13.46,
+   "e": 13.6
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 13.6,
+   "e": 13.74
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 13.74,
+   "e": 13.96
+  },
+  {
+   "w": "find",
+   "raw": "find",
+   "s": 13.96,
+   "e": 14.3
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 14.3,
+   "e": 14.6
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 14.6,
+   "e": 14.7
+  },
+  {
+   "w": "them",
+   "raw": "them.",
+   "s": 14.7,
+   "e": 14.88
+  },
+  {
+   "w": "say",
+   "raw": "Say",
+   "s": 15.24,
+   "e": 15.4
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 15.4,
+   "e": 15.56
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 15.56,
+   "e": 15.72
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 15.72,
+   "e": 15.86
+  },
+  {
+   "w": "move",
+   "raw": "move",
+   "s": 15.86,
+   "e": 16.02
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 16.02,
+   "e": 16.28
+  },
+  {
+   "w": "ux",
+   "raw": "UX",
+   "s": 16.28,
+   "e": 16.58
+  },
+  {
+   "w": "design",
+   "raw": "design,",
+   "s": 16.58,
+   "e": 17.06
+  },
+  {
+   "w": "search",
+   "raw": "search",
+   "s": 17.98,
+   "e": 17.98
+  },
+  {
+   "w": "linkedin",
+   "raw": "LinkedIn",
+   "s": 17.98,
+   "e": 18.3
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 18.3,
+   "e": 18.66
+  },
+  {
+   "w": "ux",
+   "raw": "UX",
+   "s": 18.66,
+   "e": 19.0
+  },
+  {
+   "w": "designers",
+   "raw": "designers",
+   "s": 19.0,
+   "e": 19.38
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 19.38,
+   "e": 19.68
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 19.68,
+   "e": 19.8
+  },
+  {
+   "w": "city",
+   "raw": "city",
+   "s": 19.8,
+   "e": 20.06
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 20.06,
+   "e": 20.34
+  },
+  {
+   "w": "ask",
+   "raw": "ask",
+   "s": 20.34,
+   "e": 20.56
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 20.56,
+   "e": 20.72
+  },
+  {
+   "w": "friends",
+   "raw": "friends",
+   "s": 20.72,
+   "e": 20.96
+  },
+  {
+   "w": "if",
+   "raw": "if",
+   "s": 20.96,
+   "e": 21.14
+  },
+  {
+   "w": "they",
+   "raw": "they",
+   "s": 21.14,
+   "e": 21.28
+  },
+  {
+   "w": "know",
+   "raw": "know",
+   "s": 21.28,
+   "e": 21.48
+  },
+  {
+   "w": "one",
+   "raw": "one.",
+   "s": 21.48,
+   "e": 21.78
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 22.02,
+   "e": 22.26
+  },
+  {
+   "w": "send",
+   "raw": "send",
+   "s": 22.26,
+   "e": 22.44
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 22.44,
+   "e": 22.62
+  },
+  {
+   "w": "short",
+   "raw": "short",
+   "s": 22.62,
+   "e": 22.84
+  },
+  {
+   "w": "message",
+   "raw": "message,",
+   "s": 22.84,
+   "e": 23.26
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 23.72,
+   "e": 23.88
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 23.88,
+   "e": 24.18
+  },
+  {
+   "w": "im",
+   "raw": "I'm",
+   "s": 24.18,
+   "e": 24.46
+  },
+  {
+   "w": "thinking",
+   "raw": "thinking",
+   "s": 24.46,
+   "e": 24.66
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 24.66,
+   "e": 24.92
+  },
+  {
+   "w": "moving",
+   "raw": "moving",
+   "s": 24.92,
+   "e": 25.18
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 25.18,
+   "e": 25.48
+  },
+  {
+   "w": "ux",
+   "raw": "UX,",
+   "s": 25.48,
+   "e": 25.88
+  },
+  {
+   "w": "could",
+   "raw": "could",
+   "s": 26.16,
+   "e": 26.22
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 26.22,
+   "e": 26.34
+  },
+  {
+   "w": "ask",
+   "raw": "ask",
+   "s": 26.34,
+   "e": 26.56
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 26.56,
+   "e": 26.72
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 26.72,
+   "e": 26.88
+  },
+  {
+   "w": "quick",
+   "raw": "quick",
+   "s": 26.88,
+   "e": 27.14
+  },
+  {
+   "w": "questions",
+   "raw": "questions",
+   "s": 27.14,
+   "e": 27.58
+  },
+  {
+   "w": "15",
+   "raw": "15",
+   "s": 27.58,
+   "e": 28.02
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 28.02,
+   "e": 28.3
+  },
+  {
+   "w": "whenever",
+   "raw": "whenever",
+   "s": 28.3,
+   "e": 28.64
+  },
+  {
+   "w": "suits",
+   "raw": "suits",
+   "s": 28.64,
+   "e": 28.98
+  },
+  {
+   "w": "you",
+   "raw": "you.",
+   "s": 28.98,
+   "e": 29.28
+  },
+  {
+   "w": "on",
+   "raw": "On",
+   "s": 29.28,
+   "e": 29.76
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 29.76,
+   "e": 29.86
+  },
+  {
+   "w": "call",
+   "raw": "call",
+   "s": 29.86,
+   "e": 30.1
+  },
+  {
+   "w": "ask",
+   "raw": "ask",
+   "s": 30.1,
+   "e": 30.4
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 30.4,
+   "e": 30.68
+  },
+  {
+   "w": "things",
+   "raw": "things,",
+   "s": 30.68,
+   "e": 31.08
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 31.28,
+   "e": 31.4
+  },
+  {
+   "w": "does",
+   "raw": "does",
+   "s": 31.4,
+   "e": 31.52
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 31.52,
+   "e": 31.64
+  },
+  {
+   "w": "normal",
+   "raw": "normal",
+   "s": 31.64,
+   "e": 31.9
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 31.9,
+   "e": 32.16
+  },
+  {
+   "w": "look",
+   "raw": "look",
+   "s": 32.16,
+   "e": 32.38
+  },
+  {
+   "w": "like",
+   "raw": "like,",
+   "s": 32.38,
+   "e": 32.62
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 32.72,
+   "e": 32.82
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 32.82,
+   "e": 32.96
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 32.96,
+   "e": 33.06
+  },
+  {
+   "w": "wish",
+   "raw": "wish",
+   "s": 33.06,
+   "e": 33.18
+  },
+  {
+   "w": "youd",
+   "raw": "you'd",
+   "s": 33.18,
+   "e": 33.38
+  },
+  {
+   "w": "learned",
+   "raw": "learned",
+   "s": 33.38,
+   "e": 33.54
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 33.54,
+   "e": 33.92
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 33.92,
+   "e": 34.24
+  },
+  {
+   "w": "how",
+   "raw": "how",
+   "s": 34.24,
+   "e": 34.42
+  },
+  {
+   "w": "did",
+   "raw": "did",
+   "s": 34.42,
+   "e": 34.56
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 34.56,
+   "e": 34.68
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 34.68,
+   "e": 34.82
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 34.82,
+   "e": 34.96
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 34.96,
+   "e": 35.2
+  },
+  {
+   "w": "role",
+   "raw": "role.",
+   "s": 35.2,
+   "e": 35.5
+  },
+  {
+   "w": "after",
+   "raw": "After",
+   "s": 36.12,
+   "e": 36.3
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 36.3,
+   "e": 36.6
+  },
+  {
+   "w": "calls",
+   "raw": "calls",
+   "s": 36.6,
+   "e": 36.98
+  },
+  {
+   "w": "youll",
+   "raw": "you'll",
+   "s": 36.98,
+   "e": 37.22
+  },
+  {
+   "w": "know",
+   "raw": "know",
+   "s": 37.22,
+   "e": 37.36
+  },
+  {
+   "w": "if",
+   "raw": "if",
+   "s": 37.36,
+   "e": 37.48
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 37.48,
+   "e": 37.6
+  },
+  {
+   "w": "still",
+   "raw": "still",
+   "s": 37.6,
+   "e": 37.82
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 37.82,
+   "e": 38.1
+  },
+  {
+   "w": "it",
+   "raw": "it,",
+   "s": 38.1,
+   "e": 38.32
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 38.58,
+   "e": 38.72
+  },
+  {
+   "w": "which",
+   "raw": "which",
+   "s": 38.72,
+   "e": 38.92
+  },
+  {
+   "w": "course",
+   "raw": "course",
+   "s": 38.92,
+   "e": 39.18
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 39.18,
+   "e": 39.42
+  },
+  {
+   "w": "worth",
+   "raw": "worth",
+   "s": 39.42,
+   "e": 39.62
+  },
+  {
+   "w": "paying",
+   "raw": "paying",
+   "s": 39.62,
+   "e": 39.94
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 39.94,
+   "e": 40.24
+  },
+  {
+   "w": "if",
+   "raw": "if",
+   "s": 40.24,
+   "e": 40.38
+  },
+  {
+   "w": "any",
+   "raw": "any.",
+   "s": 40.38,
+   "e": 40.64
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 41.14,
+   "e": 41.46
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 41.46,
+   "e": 41.62
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 41.62,
+   "e": 42.0
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 42.0,
+   "e": 42.16
+  },
+  {
+   "w": "for",
+   "raw": "for,",
+   "s": 42.16,
+   "e": 42.42
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 42.78,
+   "e": 42.92
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 42.92,
+   "e": 43.32
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 43.32,
+   "e": 43.54
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 43.54,
+   "e": 43.76
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 43.76,
+   "e": 44.1
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 44.1,
+   "e": 44.34
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 44.34,
+   "e": 44.48
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 44.48,
+   "e": 44.64
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 44.64,
+   "e": 44.86
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 44.86,
+   "e": 45.0
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 45.0,
+   "e": 45.28
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 45.28,
+   "e": 45.74
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 45.74,
+   "e": 45.92
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 45.92,
+   "e": 46.06
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 46.06,
+   "e": 46.28
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 46.28,
+   "e": 46.48
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 46.48,
+   "e": 46.8
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 46.8,
+   "e": 47.12
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 47.12,
+   "e": 47.32
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 47.32,
+   "e": 47.46
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 47.46,
+   "e": 47.76
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 47.76,
+   "e": 48.1
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 48.46,
+   "e": 48.62
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 48.62,
+   "e": 48.72
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 48.72,
+   "e": 48.9
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 48.9,
+   "e": 49.02
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 49.02,
+   "e": 49.24
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 49.24,
+   "e": 49.44
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 49.44,
+   "e": 49.7
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 49.7,
+   "e": 50.02
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 50.02,
+   "e": 50.14
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 50.14,
+   "e": 50.3
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 50.3,
+   "e": 50.48
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 50.48,
+   "e": 50.64
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 50.64,
+   "e": 50.74
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 50.74,
+   "e": 51.02
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 2.58,
+   "text": "Thinking about switching careers don't start with a course,"
+  },
+  {
+   "s": 3.06,
+   "e": 6.92,
+   "text": "start with three conversations. A course takes months of your evenings and money,"
+  },
+  {
+   "s": 7.42,
+   "e": 10.74,
+   "text": "and you still won't know what the job actually feels like on a normal Tuesday."
+  },
+  {
+   "s": 11.24,
+   "e": 14.88,
+   "text": "The people already doing the job know that, so this week find three of them."
+  },
+  {
+   "s": 15.24,
+   "e": 20.56,
+   "text": "Say you want to move into UX design, search LinkedIn for UX designers in your city and ask"
+  },
+  {
+   "s": 20.56,
+   "e": 24.66,
+   "text": "your friends if they know one. Then send a short message, something like I'm thinking"
+  },
+  {
+   "s": 24.66,
+   "e": 29.28,
+   "text": "about moving into UX, could I ask you three quick questions 15 minutes whenever suits you."
+  },
+  {
+   "s": 29.28,
+   "e": 32.62,
+   "text": "On the call ask three things, what does a normal week look like,"
+  },
+  {
+   "s": 32.72,
+   "e": 35.5,
+   "text": "what do you wish you'd learned first and how did you get your first role."
+  },
+  {
+   "s": 36.12,
+   "e": 40.64,
+   "text": "After three calls you'll know if you still want it, and which course is worth paying for if any."
+  },
+  {
+   "s": 41.14,
+   "e": 45.28,
+   "text": "That's what Demure is for, you archive your dream today so you can see it tomorrow"
+  },
+  {
+   "s": 45.28,
+   "e": 48.1,
+   "text": "and break it down into small steps you can actually do."
+  },
+  {
+   "s": 48.46,
+   "e": 51.02,
+   "text": "If you want to try it out I've put the link in the bio."
+  }
+ ],
+ "wps": 3.62
+}

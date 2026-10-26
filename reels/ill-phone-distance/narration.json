@@ -1,0 +1,107 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 8,
+ "spoken": "[hook] You don't need more willpower to stop checking your phone. You need more distance. || When it's on your desk, checking it takes one second. So your hand gets there before you've even decided to. || [turn] So for your first focused block, put your phone in another room, and close the door. Then set a timer on your laptop for twenty-five minutes. || Now checking it means standing up and walking away from your work. And that small pause is usually enough to keep you on the task. || Studying? One chapter, phone in the kitchen. Writing a report? The first page, phone in the bedroom. || When the timer ends, take five minutes. Check whatever you want, then start the next block. || [land] So before your next block, pick the room your phone goes to. One closed door does more than willpower ever will. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "phone-desk",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "Not willpower.<br><b>Distance</b>."
+  },
+  {
+   "type": "phone-desk",
+   "params": {
+    "cue": [
+     "desk",
+     "second"
+    ]
+   },
+   "head": "On the desk, it's<br><b>one second</b> away."
+  },
+  {
+   "type": "phone-room",
+   "params": {
+    "room": "KITCHEN",
+    "cue": [
+     "phone",
+     "timer",
+     "door"
+    ]
+   },
+   "head": "Another room.<br><b>Door closed</b>."
+  },
+  {
+   "type": "phone-walk",
+   "params": {
+    "room": "KITCHEN",
+    "cue": [
+     "standing",
+     "walking",
+     "pause"
+    ]
+   },
+   "head": "Now it takes<br>a <b>walk</b>."
+  },
+  {
+   "type": "two-blocks",
+   "params": {
+    "cue": [
+     "studying",
+     "writing"
+    ]
+   },
+   "head": "Works for<br><b>any task</b>."
+  },
+  {
+   "type": "break-timer",
+   "params": {
+    "cue": [
+     "ends",
+     "five",
+     "next"
+    ]
+   },
+   "head": "Timer done?<br><b>5 minutes</b> for the phone."
+  },
+  {
+   "type": "room-pick",
+   "params": {
+    "cue": [
+     "before",
+     "room",
+     "door"
+    ]
+   },
+   "head": "Pick the <b>room</b> now."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Pass my final exams",
+    "date": "Open it again: June 2027",
+    "steps": [
+     "25-min blocks",
+     "Phone in the kitchen",
+     "One chapter a day"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  null
+ ],
+ "caption": {
+  "instagram": "You don't need more willpower to stop checking your phone. You need more distance.\n\n• Phone in another room, door closed\n• 25-minute timer on your laptop\n• Timer ends: 5 minutes for the phone, then the next block\n\nStudying? One chapter, phone in the kitchen.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#focus #productivity #studytips #deepwork #phoneaddiction",
+  "x": "You don't need more willpower to stop checking your phone. You need distance.\n\nPhone in another room, door closed, 25-minute timer on the laptop. When it rings, 5 minutes for the phone.",
+  "youtube_title": "Not willpower. Distance. #Shorts"
+ }
+}

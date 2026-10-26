@@ -1,7 +1,8 @@
+"""Package a day's batch: package_batch.py <date YYYY-MM-DD> <slug>=<time label> ... (e.g. ill-save-first="Tue Oct 27, 09:30 IST").
+Reads reels/<slug>/{narration,script.meta}.json + reel.mp4 -> ready-to-post/<date>-<slug>/{video.mp4,post.md}."""
 import json,sys,shutil,os,subprocess
-date="2026-10-26"
-times={"ill-night-before":"Mon Oct 26, 09:30 IST","kt-later-trigger":"Mon Oct 26, 13:00 IST","ill-track-inputs":"Mon Oct 26, 16:30 IST","kt-five-goals":"Mon Oct 26, 19:30 IST"}
-for s in sys.argv[1:]:
+date=sys.argv[1];times=dict(a.split("=",1) for a in sys.argv[2:])
+for s in times:
     n=json.load(open(f"reels/{s}/narration.json"));m=json.load(open(f"reels/{s}/script.meta.json"));c=n["caption"]
     src=f"reels/{s}/reel.mp4";dur=float(subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",src],capture_output=True,text=True).stdout)
     d=f"ready-to-post/{date}-{s}";os.makedirs(d,exist_ok=True);shutil.copy(src,f"{d}/video.mp4")
@@ -27,7 +28,7 @@ Title: {c['youtube_title']}
 Frame 0 (the hook is fully drawn at 0.0s).
 
 ## Experiment
-V-EXP-28 (same-day style split, hard-truth behaviour hooks). {m['note']}
+{m.get('experiment','')}. {m['note']}
 
 ## Quality score
 hook {q['hook']} · usefulness {q['usefulness']} · specificity {q['specificity']} · clarity {q['clarity']} · retention {q['retention']} · craft {q['craft']} · voice {q['voice']} · brand {q['brand']} = **{q['total']}/40**
@@ -36,6 +37,6 @@ hook {q['hook']} · usefulness {q['usefulness']} · specificity {q['specificity'
 {n['spoken'].replace('||',chr(10)+chr(10)).replace('[hook] ','').replace('[turn] ','').replace('[land] ','').replace('[outro] ','')}
 
 ## Status
-Waiting for Sanyam's approval (batch message 2026-10-25). Not scheduled.
+Waiting for Sanyam's approval (batch message {date}). Not scheduled.
 """)
     print(d,round(dur,2))

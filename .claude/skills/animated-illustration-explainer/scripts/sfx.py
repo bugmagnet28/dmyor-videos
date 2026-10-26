@@ -205,14 +205,55 @@ def miss(i=0):
     return out
 
 
+def coin():
+    """a coin landing: bright inharmonic ring with a tiny metallic tap"""
+    n = int(.6 * SR); t = np.arange(n) / SR
+    m = sum(w * np.sin(2 * np.pi * f * t) * np.exp(-t / dd) for f, w, dd in [(2093, .5, .22), (2794, .3, .16), (4186, .18, .09), (5274, .1, .05)])
+    return m * env(n, .0008, 10) + hp(noise(n), 4000) * env(n, .0003, .003) * .4
+
+
+def typing(d=1.5):
+    """keyboard typing: irregular soft key clicks for d seconds"""
+    n = int((d + .2) * SR); out = np.zeros(n); at = 0.0
+    while at < d:
+        m = int(.05 * SR); tt = np.arange(m) / SR
+        k = (hp(lowpass(noise(m), 5000), 900) * env(m, .0005, .006) + np.sin(2 * np.pi * (300 + 120 * rng.random()) * tt) * env(m, .001, .01) * .4) * (.6 + .4 * rng.random())
+        i = int(at * SR); out[i:i + m] += k[: n - i]; at += .07 + .09 * rng.random()
+    return out[:n]
+
+
+def buzz(d=.9):
+    """phone vibrating on a desk: two short low buzzes"""
+    m = int(.32 * SR); t = np.arange(m) / SR
+    b = (np.sin(2 * np.pi * 150 * t) + .35 * np.sin(2 * np.pi * 300 * t)) * (0.6 + 0.4 * np.sin(2 * np.pi * 28 * t)) * np.sin(np.pi * t / .32) ** .5
+    b = b + hp(noise(m), 1800) * .05 * np.sin(np.pi * t / .32)
+    return np.concatenate([b, np.zeros(int(.16 * SR)), b])
+
+
+def door():
+    """a door closing: soft wooden thud plus a latch click"""
+    n = int(.5 * SR); t = np.arange(n) / SR
+    thud = np.sin(2 * np.pi * (70 + 30 * np.exp(-t / .02)) * t) * env(n, .003, .09) + lowpass(noise(n), 600) * env(n, .002, .05) * .5
+    c = tick()[: int(.04 * SR)] * .5; i = int(.06 * SR); thud[i:i + len(c)] += c
+    return thud
+
+
+def toggle():
+    """a switch flipping on: short plastic click"""
+    n = int(.06 * SR); t = np.arange(n) / SR
+    return np.sin(2 * np.pi * 1400 * t) * env(n, .0005, .006) + hp(noise(n), 2500) * env(n, .0003, .003) * .6
+
+
 KIT = {"tick": tick, "tap": tap, "swish": swish, "ratchet": ratchet, "tone": tone, "chord": chord,
        "clock": clock, "timer": timer, "pencil": pencil, "pen_check": pen_check, "page": page, "riffle": riffle,
-       "footsteps": footsteps, "plate": plate, "stamp": stamp, "beep2": beep2, "right": right, "pop": pop, "miss": miss}
+       "footsteps": footsteps, "plate": plate, "stamp": stamp, "beep2": beep2, "right": right, "pop": pop, "miss": miss,
+       "coin": coin, "typing": typing, "buzz": buzz, "door": door, "toggle": toggle}
 PEAK = {"tick": -16, "tap": -16, "swish": -21, "ratchet": -19, "tone": -21, "chord": -16,   # dBFS peak at "present" (voice peaks ~-1.5)
         "clock": -18, "timer": -20, "pencil": -15, "pen_check": -15, "page": -15, "riffle": -18,
-        "footsteps": -15, "plate": -15, "stamp": -14, "beep2": -21, "right": -15, "pop": -14, "miss": -16}
+        "footsteps": -15, "plate": -15, "stamp": -14, "beep2": -21, "right": -15, "pop": -14, "miss": -16,
+        "coin": -17, "typing": -17, "buzz": -16, "door": -14, "toggle": -15}
 LEVEL = {"present": 0, "subtle": -6}
-BEDS = {"clock", "timer", "footsteps", "riffle"}   # continuous sounds: may overlap one-shots
+BEDS = {"clock", "timer", "footsteps", "riffle", "typing"}   # continuous sounds: may overlap one-shots
 
 
 def beat(x, at):

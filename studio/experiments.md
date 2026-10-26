@@ -293,3 +293,14 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Verdict + why:
 - Next: if illustrated wins watch % by a clear margin on both pairs, illustrated becomes 3 of 4 daily builds and kinetic is kept for one-sentence reels only.
 - 2026-10-25 (Claude, owner away, approvals delegated): the two kinetic-typography arms were rejected before posting because standalone text-only reels break the owner rule (graphics required, sound effects). Rebuilt as animated illustration (ill-later-trigger, ill-five-goals) with the same scripts. All 4 Oct-26 reels are now illustrated, so V-EXP-28 cannot compare styles; treat it as 4 more illustrated data points.
+
+## V-EXP-29: New life areas (money, career, focus) on hard-truth hooks vs this week's habit/consistency reels
+- Status: running (opened 2026-10-26, before building)
+- Change: batch for Tue 2026-10-27, 4 animated-illustration reels, all hard-truth hooks (the one repeated signal, 2.1x n=4) but in life areas the account has never covered: money (ill-save-first: pay yourself first, automatic transfer), career (ill-career-conversations: 3 conversations before a course), focus (ill-phone-distance: phone in another room for a 25-min block) and goal-setting with a concrete number + date (ill-goal-date). 16 new scenes, 5 new object sounds (coin, typing, buzz, door, toggle). Baseline: the Oct-25 and Oct-26 illustrated batches (habits, consistency, procrastination, focus).
+- Why: the best reel so far (tree-study-abroad, 141 reach) was a concrete life goal, and behaviour topics beat planning-method topics. Money and phone use are among the biggest goals/self-improvement niches; if any reaches non-followers it shows a new audience door.
+- Metric + target (48h per reel): reach, avg watch time, shares+saves per 1k reach, follows. Target: median reach >= 20 (account median 16) and at least one follow from the batch.
+- Expectation: ill-save-first and ill-phone-distance highest reach and saves (broad, practical, a thing to do today); ill-goal-date lowest (goal-setting topic trailed at 0.4x). Confidence low (n=1 per topic).
+- Result:
+- Verdict + why:
+- Next: if money or focus clearly beats the habit reels, give that area 1 of 4 daily slots next week.
+- Note: all 4 are animated-illustration (the only style meeting every owner rule); the "2 styles per day" rule could not be met without rebuilding diagram/hybrid with sound, and the only cinematic film (brand-one-place) is posted today, so a second film with the same takeaway would repeat it.

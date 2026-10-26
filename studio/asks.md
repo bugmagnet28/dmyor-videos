@@ -110,3 +110,9 @@ Instagram locked the account ("we locked your account to protect you from a poss
   4. 19:30 IST · **kt-five-goals** (kinetic, 56.9s) · "Five goals. Zero progress." One main goal for 12 weeks, others on minimum, the rest parked with a date. 31/40
 - Steps: 1) watch with sound. 2) reply OK (or "drop N" / one line of changes) in inbox/notes.md or to Claude. 3) after OK, schedule at the times above (Instagram ≤ 5 scheduling flows per session, no insights in the same session; same times on X and YouTube). 4) tick them in studio/post-queue.md.
 - Old queue: not-lazy-next-step, tree-first-5k, hours-in-a-week are pre-owner-rules (orange palette, @dmyor_global, no value close). I suggest retiring them unless you want them; say "retire old queue" and I will move them to _superseded.
+
+## VASK-018: Approve the Tue Oct 27 batch (4 reels), one reply (2026-10-26)
+- Status: open
+- What: 4 animated-illustration reels in new life areas (V-EXP-29): ill-save-first (money, 09:30), ill-career-conversations (career, 13:00), ill-goal-date (goal with a number + date, 16:30), ill-phone-distance (focus, 19:30). Files and captions in `ready-to-post/2026-10-27-*/`.
+- Steps: watch them, reply "OK" (or "OK except X") in `inbox/notes.md` or chat. After your OK they get scheduled on Instagram, X and YouTube at the listed IST times and registered in analytics.
+- Also useful on Oct 27 evening: app screenshots of the Oct-25 batch insights (48h: views, avg watch time, skip rate, shares, saves, follows) into `inbox/metrics/` (ASK-V), and the follower count.

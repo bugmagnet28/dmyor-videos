@@ -1,0 +1,8 @@
+reels/ill-career-conversations/audio.mp3  52.28s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body land outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/5227 [00:00<?, ?frames/s] 56%|█████▌    | 2928/5227 [02:41<02:06, 18.15frames/s] 56%|█████▌    | 2928/5227 [02:52<02:06, 18.15frames/s]100%|██████████| 5227/5227 [05:39<00:00, 14.93frames/s]100%|██████████| 5227/5227 [05:39<00:00, 15.39frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+189 words, 52.28s, 3.62 words/sec
+-> reels/ill-career-conversations/cues.json
+sfx present: 41 sounds -> reels/ill-career-conversations/audio_mixed.mp3 pop@4.8 page@5.4 page@6.0 page@6.6 page@7.2 pop@10.4 pop@11.2 pop@11.7 pop@12.0 right@14.3 right@14.6 right@14.9 pop@15.2 typing@15.6 pop@19.8 pop@20.1 pop@20.7 right@21.2 right@21.5 right@21.8 typing@22.6 swish@27.3 pop@28.2 pop@28.9 pop@29.3 pencil@31.6 right@32.6 pencil@33.1 right@34.1 right@35.2 swish@36.1 pencil@37.2 right@38.5 tone@41.1 stamp@41.2 pop@42.8 pop@43.3 right@44.1 right@44.6 right@45.1 chord@48.5

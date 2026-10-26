@@ -1,0 +1,152 @@
+{
+ "total": 47.32,
+ "brandT": 43.54,
+ "scenes": [
+  {
+   "type": "goal-date",
+   "params": {
+    "stage": "hook",
+    "old": "Get fit"
+   },
+   "head": "Your goal has<br><b>no date</b>.",
+   "t0": 0.0,
+   "t1": 4.13
+  },
+  {
+   "type": "postpone-calendar",
+   "params": {
+    "note": "start tomorrow"
+   },
+   "head": "No finish line.<br>Always <b>more time</b>.",
+   "t0": 4.13,
+   "t1": 9.81
+  },
+  {
+   "type": "goal-date",
+   "params": {
+    "stage": "rewrite",
+    "old": "Get fit",
+    "neu": "Run 5K without stopping",
+    "date": "Dec 31",
+    "cue": [
+     "rewrite",
+     "run",
+     "december"
+    ],
+    "at": [
+     0.15,
+     2.95,
+     4.85
+    ]
+   },
+   "head": "Add a number<br>and a <b>date</b>.",
+   "t0": 9.81,
+   "t1": 16.15
+  },
+  {
+   "type": "week-countdown",
+   "params": {
+    "weeks": 9,
+    "end": "Dec 31",
+    "rows": [
+     "Mon: run/walk 20 min",
+     "Wed: run/walk 20 min",
+     "Sat: run/walk 20 min"
+    ],
+    "cue": [
+     "count",
+     "job",
+     "three"
+    ],
+    "at": [
+     0.23,
+     3.47,
+     3.81
+    ]
+   },
+   "head": "9 weeks. This week:<br><b>3 sessions</b>.",
+   "t0": 16.15,
+   "t1": 22.55
+  },
+  {
+   "type": "math-split",
+   "params": {
+    "total": 12,
+    "unit": "books",
+    "per": 1,
+    "cells": 12,
+    "cols": 6,
+    "cellLabels": [
+     "N",
+     "D",
+     "J",
+     "F",
+     "M",
+     "A",
+     "M",
+     "J",
+     "J",
+     "A",
+     "S",
+     "O"
+    ],
+    "perText": "\u00f7 12 months",
+    "resText": "\u2248 10 pages a night",
+    "milestone": "Read more \u2192 12 books by Oct",
+    "cue": [
+     "reading",
+     "october",
+     "month",
+     "pages"
+    ],
+    "at": [
+     0.43,
+     2.79,
+     4.17,
+     5.03
+    ]
+   },
+   "head": "12 books by October<br>= <b>1 a month</b>.",
+   "t0": 22.55,
+   "t1": 28.37
+  },
+  {
+   "type": "goal-date",
+   "params": {
+    "stage": "done",
+    "old": "Get fit",
+    "neu": "Run 5K without stopping",
+    "date": "Dec 31",
+    "week": "3 run/walk sessions, 20 min",
+    "cue": [
+     "wish",
+     "week"
+    ],
+    "at": [
+     2.11,
+     6.71
+    ]
+   },
+   "head": "No date is<br>just a <b>wish</b>.",
+   "t0": 28.37,
+   "t1": 36.11
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Run 5K, no stopping",
+    "date": "Open it again: Dec 31",
+    "steps": [
+     "3 sessions a week",
+     "A bit longer each week",
+     "5K on Dec 31"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 36.11,
+   "t1": 43.54
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}

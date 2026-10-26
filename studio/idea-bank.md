@@ -5,7 +5,7 @@ Every idea hands the viewer **one thing they can do today** (see `quality-bar.md
 | # | Hook (first 1.5 s) | The useful takeaway (what they can do today) | Style | Used |
 |---|---|---|---|---|
 | 1 | "You don't have a motivation problem. You have a size problem." | Shrink the goal until the first step takes 10 minutes; example: "write a book" → "write 3 sentences of chapter 1 tonight" | KT | 2026-10-25 (ill-size-problem) |
-| 2 | "Your goal has no date. That's why it's not moving." | Rewrite your goal with a date + a number in one line (template on screen) | KT | |
+| 2 | "Your goal has no date. That's why it's not moving." | Rewrite your goal with a date + a number in one line (template on screen) | KT | 2026-10-27 (ill-goal-date) |
 | 3 | "Here's how a $2,000/month freelance goal becomes today's to-do." | Vision → 3 milestones → 3 actions → pick one for today (full tree) | DG | 2026-10-23 (diagram-howto-vo) |
 | 4 | "Plan your year backwards. It's easier." | Year → 90 days → this week → today, worked on "run a half marathon" | DG | |
 | 5 | "Write your vision in 60 seconds. Watch." | Real app: horizon → write → tag → done; your vision is saved in the Intent Archive | HY | built (hybrid-create-vision) |
@@ -17,8 +17,8 @@ Every idea hands the viewer **one thing they can do today** (see `quality-bar.md
 | 11 | "The 3 questions to ask before you set any goal." | What does it look like on a Tuesday? What will I stop doing? How do I know it's done? | KT | |
 | 12 | "Here's what 'start small' actually means." | The first step should be embarrassingly small: 3 real examples across goals | KT | |
 | 13 | "Learning a language this year? Here's the whole plan." | Vision → milestones (A1, A2, first conversation) → this week's actions | DG | 2026-10-25 (ill-language-plan) |
-| 14 | "Want to switch careers in 12 months? Start here." | Milestones: skills map, portfolio piece, 10 conversations; today: list 5 people to message | DG | |
-| 15 | "Saving your first $5,000? Break it down like this." | $5K → monthly → weekly → today's one move (cancel one subscription) | DG | |
+| 14 | "Want to switch careers in 12 months? Start here." | Milestones: skills map, portfolio piece, 10 conversations; today: list 5 people to message | DG | 2026-10-27 (ill-career-conversations) |
+| 15 | "Saving your first $5,000? Break it down like this." | $5K → monthly → weekly → today's one move (cancel one subscription) | DG | 2026-10-27 (ill-save-first: pay yourself first, auto-transfer) |
 | 16 | "Your to-do list is lying to you." | Separate "actions" (doable today) from "milestones" (outcomes); rewrite 3 items | DG | |
 | 17 | "Why your New Year's goals die in February." | No path between the dream and Tuesday; build the path (tree) in 3 minutes | DG | |
 | 18 | "The 2-minute rule for habits you keep skipping." | Scale any habit down to 2 minutes; examples; stack it on an existing routine | KT | |
@@ -34,5 +34,10 @@ Every idea hands the viewer **one thing they can do today** (see `quality-bar.md
 | 28 | "Big goal, tiny week. How to fit both." | Time-box: 3 x 30-minute blocks this week, what goes in each | DG | |
 | 29 | "The 'done' test for every task." | If you can't picture the moment it's done, split it again (example) | DG | |
 | 30 | "One page that keeps a dream alive." | A journal entry template: what I did, what I learned, next step (features releasing soon) | KT | |
+| 31 | "You don't need more willpower to stop checking your phone. You need distance." | Phone in another room, door closed, 25-min laptop timer, 5-min phone break | ILL | 2026-10-27 (ill-phone-distance) |
+| 32 | "Your gym plan fails on day 4, not day 1." | Schedule the 3 sessions this week in the calendar with a time; bad-day version ready | ILL | |
+| 33 | "Stop budgeting. Do this one thing instead." | Pick one category (food delivery) and cap it weekly, tracked on Sunday | ILL | |
+| 34 | "You don't need a perfect resume. You need one sentence." | Write your one-line pitch: I help X do Y, proven by Z; use it in the headline + every message | ILL | |
+| 35 | "Read 12 books a year with 10 pages a night." | Book by the bed, 10 pages before the phone, track pages not books | ILL | |
 
 Rules: avoid pure quotes/motivation, avoid promising locked features ("full features are releasing soon"), one takeaway per reel, specific numbers and real examples, fuller spoken narration (write for the ear).

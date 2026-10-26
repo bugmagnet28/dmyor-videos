@@ -1,0 +1,8 @@
+reels/ill-goal-date/audio.mp3  47.39s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body land outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/4738 [00:00<?, ?frames/s] 60%|█████▉    | 2842/4738 [02:54<01:56, 16.29frames/s] 60%|█████▉    | 2842/4738 [03:12<01:56, 16.29frames/s]100%|██████████| 4738/4738 [05:14<00:00, 14.85frames/s]100%|██████████| 4738/4738 [05:14<00:00, 15.09frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+168 words, 47.39s, 3.55 words/sec
+-> reels/ill-goal-date/cues.json
+sfx present: 37 sounds -> reels/ill-goal-date/audio_mixed.mp3 swish@4.1 pencil@4.6 page@5.0 pencil@5.5 page@5.9 pencil@6.4 page@6.8 pencil@7.3 page@7.7 pencil@8.2 pencil@9.1 pop@9.9 pencil@12.8 stamp@14.7 swish@16.1 page@16.7 page@17.1 pop@19.6 right@20.0 right@20.5 right@21.1 pop@22.6 ratchet@23.0 pop@25.3 ratchet@26.7 right@27.6 swish@28.4 pop@30.5 right@35.1 tone@36.1 stamp@36.3 pop@37.9 pop@38.4 right@39.2 right@39.7 right@40.2 chord@43.5

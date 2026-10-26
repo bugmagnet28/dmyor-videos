@@ -1,0 +1,8 @@
+reels/ill-phone-distance/audio.mp3  50.78s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body land outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/5077 [00:00<?, ?frames/s] 55%|█████▌    | 2816/5077 [03:21<02:41, 14.00frames/s] 55%|█████▌    | 2816/5077 [03:32<02:41, 14.00frames/s]100%|██████████| 5077/5077 [04:58<00:00, 17.78frames/s]100%|██████████| 5077/5077 [04:58<00:00, 17.02frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+180 words, 50.78s, 3.54 words/sec
+-> reels/ill-phone-distance/cues.json
+sfx present: 34 sounds -> reels/ill-phone-distance/audio_mixed.mp3 pop@4.1 buzz@4.8 pop@5.9 buzz@7.0 pop@9.6 footsteps@11.5 door@12.9 timer@14.3 pop@16.8 footsteps@17.7 pop@20.7 right@21.3 swish@23.5 timer@23.9 right@25.3 timer@26.0 right@27.4 timer@28.2 beep2@29.7 buzz@30.1 pop@32.3 swish@33.3 pop@33.6 right@35.2 door@37.1 pop@37.4 tone@39.6 stamp@39.7 pop@41.3 pop@41.8 right@42.6 right@43.1 right@43.6 chord@47.0

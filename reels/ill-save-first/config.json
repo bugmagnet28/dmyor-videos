@@ -1,0 +1,196 @@
+{
+ "total": 51.6,
+ "brandT": 47.82,
+ "scenes": [
+  {
+   "type": "month-leftover",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "Saving what's left?<br>There's <b>nothing</b> left.",
+   "t0": 0.0,
+   "t1": 4.01
+  },
+  {
+   "type": "month-leftover",
+   "params": {
+    "cue": [
+     "dinner",
+     "sale",
+     "bill",
+     "gone"
+    ],
+    "at": [
+     1.89,
+     2.49,
+     2.89,
+     5.05
+    ]
+   },
+   "head": "Small things <b>eat it</b>.",
+   "t0": 4.01,
+   "t1": 10.91
+  },
+  {
+   "type": "pay-order",
+   "params": {
+    "cue": [
+     "flip",
+     "save",
+     "spend"
+    ],
+    "at": [
+     0.25,
+     1.19,
+     3.13
+    ]
+   },
+   "head": "<b>Save first</b>.<br>Spend what's left.",
+   "t0": 10.91,
+   "t1": 15.29
+  },
+  {
+   "type": "math-split",
+   "params": {
+    "total": 5000,
+    "prefix": "$",
+    "unit": "",
+    "per": 417,
+    "cells": 12,
+    "cols": 6,
+    "cellLabels": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "perText": "\u00f7 12 months",
+    "resText": "= $417 a month",
+    "milestone": "Goal: $5,000 in a year",
+    "cue": [
+     "want",
+     "year",
+     "about",
+     "month"
+    ],
+    "at": [
+     0.35,
+     1.99,
+     2.85,
+     4.65
+    ]
+   },
+   "head": "$5,000 a year<br>= <b>$417</b> a month.",
+   "t0": 15.29,
+   "t1": 20.47
+  },
+  {
+   "type": "auto-transfer",
+   "params": {
+    "amount": 417,
+    "cue": [
+     "automatic",
+     "payday",
+     "separate",
+     "never"
+    ],
+    "at": [
+     1.19,
+     3.81,
+     4.71,
+     6.19
+    ]
+   },
+   "head": "Make it <b>automatic</b>.",
+   "t0": 20.47,
+   "t1": 28.57
+  },
+  {
+   "type": "progress-bars",
+   "params": {
+    "rows": [
+     [
+      "Now",
+      100,
+      417,
+      " a month",
+      "$"
+     ],
+     [
+      "A few months in",
+      250,
+      417,
+      " a month",
+      "$"
+     ],
+     [
+      "The goal",
+      417,
+      417,
+      " a month",
+      "$"
+     ]
+    ],
+    "cue": [
+     "start",
+     "grow",
+     "habit"
+    ],
+    "at": [
+     0.99,
+     2.69,
+     4.67
+    ]
+   },
+   "head": "Start with <b>$100</b>.<br>Grow it later.",
+   "t0": 28.57,
+   "t1": 34.53
+  },
+  {
+   "type": "bank-form",
+   "params": {
+    "amount": "$417",
+    "cue": [
+     "today",
+     "five",
+     "every",
+     "without"
+    ],
+    "at": [
+     0.31,
+     1.45,
+     4.19,
+     4.83
+    ]
+   },
+   "head": "Set it up <b>today</b>.<br>About 5 minutes.",
+   "t0": 34.53,
+   "t1": 40.45
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "$5,000 saved",
+    "date": "Open it again: Oct 2027",
+    "steps": [
+     "Auto-transfer on",
+     "Start at $100",
+     "Raise it over time"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 40.45,
+   "t1": 47.82
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}

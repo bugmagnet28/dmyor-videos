@@ -1,0 +1,159 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 8,
+ "spoken": "[hook] If you save whatever's left at the end of the month, you'll probably save nothing. || Because there's always something. A dinner out, a sale, a bill you forgot about. And by the thirtieth, it's gone, without one big mistake. || [turn] So flip the order. Save first, on the day you get paid, and then spend what's left. || Say you want five thousand dollars in a year. That's about four hundred and seventeen dollars a month. || The trick is to make it automatic. Set up a transfer for the day after payday, into a separate savings account, so it never sits in your spending money. || Can't do four hundred yet? Start with a hundred. The amount can grow later. Paying yourself first is the habit that matters. || [land] Do it today. It takes about five minutes in your banking app, and after that it happens every month without you. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "month-leftover",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "Saving what's left?<br>There's <b>nothing</b> left."
+  },
+  {
+   "type": "month-leftover",
+   "params": {
+    "cue": [
+     "dinner",
+     "sale",
+     "bill",
+     "gone"
+    ]
+   },
+   "head": "Small things <b>eat it</b>."
+  },
+  {
+   "type": "pay-order",
+   "params": {
+    "cue": [
+     "flip",
+     "save",
+     "spend"
+    ]
+   },
+   "head": "<b>Save first</b>.<br>Spend what's left."
+  },
+  {
+   "type": "math-split",
+   "params": {
+    "total": 5000,
+    "prefix": "$",
+    "unit": "",
+    "per": 417,
+    "cells": 12,
+    "cols": 6,
+    "cellLabels": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "perText": "÷ 12 months",
+    "resText": "= $417 a month",
+    "milestone": "Goal: $5,000 in a year",
+    "cue": [
+     "want",
+     "year",
+     "about",
+     "month"
+    ]
+   },
+   "head": "$5,000 a year<br>= <b>$417</b> a month."
+  },
+  {
+   "type": "auto-transfer",
+   "params": {
+    "amount": 417,
+    "cue": [
+     "automatic",
+     "payday",
+     "separate",
+     "never"
+    ]
+   },
+   "head": "Make it <b>automatic</b>."
+  },
+  {
+   "type": "progress-bars",
+   "params": {
+    "rows": [
+     [
+      "Now",
+      100,
+      417,
+      " a month",
+      "$"
+     ],
+     [
+      "A few months in",
+      250,
+      417,
+      " a month",
+      "$"
+     ],
+     [
+      "The goal",
+      417,
+      417,
+      " a month",
+      "$"
+     ]
+    ],
+    "cue": [
+     "start",
+     "grow",
+     "habit"
+    ]
+   },
+   "head": "Start with <b>$100</b>.<br>Grow it later."
+  },
+  {
+   "type": "bank-form",
+   "params": {
+    "amount": "$417",
+    "cue": [
+     "today",
+     "five",
+     "every",
+     "without"
+    ]
+   },
+   "head": "Set it up <b>today</b>.<br>About 5 minutes."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "$5,000 saved",
+    "date": "Open it again: Oct 2027",
+    "steps": [
+     "Auto-transfer on",
+     "Start at $100",
+     "Raise it over time"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  null
+ ],
+ "caption": {
+  "instagram": "If you save what's left at the end of the month, there's usually nothing left.\n\nFlip the order:\n• Save first, the day after payday\n• $5,000 a year = about $417 a month\n• Can't do $417? Start with $100 and grow it\n• Set the automatic transfer today (about 5 minutes)\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#personalfinance #savingmoney #moneyhabits #goals #financialgoals",
+  "x": "Saving what's left at the end of the month usually means saving nothing.\n\nFlip it: an automatic transfer the day after payday.\n$5,000 a year = about $417 a month. Start with $100 if you have to.",
+  "youtube_title": "Stop saving what's left #Shorts"
+ }
+}

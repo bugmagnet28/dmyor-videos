@@ -1,0 +1,8 @@
+reels/ill-save-first/audio.mp3  51.65s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body land outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/5164 [00:00<?, ?frames/s] 57%|█████▋    | 2928/5164 [02:22<01:49, 20.48frames/s] 57%|█████▋    | 2928/5164 [02:41<01:49, 20.48frames/s] 95%|█████████▌| 4906/5164 [05:07<00:16, 15.21frames/s] 95%|█████████▌| 4906/5164 [05:23<00:16, 15.21frames/s]100%|██████████| 5164/5164 [06:09<00:00, 12.46frames/s]100%|██████████| 5164/5164 [06:09<00:00, 13.98frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+186 words, 51.65s, 3.6 words/sec
+-> reels/ill-save-first/cues.json
+sfx present: 38 sounds -> reels/ill-save-first/audio_mixed.mp3 swish@4.0 miss@5.9 miss@6.5 miss@6.9 miss@9.1 pop@11.0 pop@12.1 right@14.0 pop@15.3 ratchet@15.6 pop@17.3 ratchet@18.1 right@19.9 swish@20.5 pop@21.7 pop@24.3 pop@25.2 coin@25.7 toggle@26.7 coin@27.4 swish@28.6 ratchet@29.6 ratchet@31.3 ratchet@33.2 right@34.5 pop@34.8 typing@36.0 pop@38.7 tap@39.4 right@39.7 tone@40.5 stamp@40.6 pop@42.2 pop@42.7 right@43.5 right@44.0 right@44.5 chord@47.8

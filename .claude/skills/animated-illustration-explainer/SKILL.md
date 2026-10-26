@@ -32,7 +32,7 @@ From `~/Documents/dmyor-videos` (voice setup once: `bash .claude/skills/animated
 
 ## Sound design (`scripts/sfx.py`, `assets/events.json`)
 Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible level (default `"present"`). Synthesized in code, no samples, no music.
-- Object sounds: `clock` (tick-tock while a clock is on screen), `timer` (fast ticking while a timer runs), `beep2` (timer passes the limit), `pencil` (crossing out, writing; give a duration), `page` (calendar or page flip), `riffle` (pages counting up), `footsteps` (a person walking), `plate` (gym weight clink), `stamp` (archiving).
+- Object sounds: `clock` (tick-tock while a clock is on screen), `timer` (fast ticking while a timer runs), `beep2` (timer passes the limit), `pencil` (crossing out, writing; give a duration), `page` (calendar or page flip), `riffle` (pages counting up), `footsteps` (a person walking), `plate` (gym weight clink), `stamp` (archiving), `coin` (money landing), `typing` (keyboard, bed), `buzz` (phone vibrating), `door` (door closing), `toggle` (switch on).
 - Feedback sounds: `right` (every check mark / done: a soft two-note "correct" chime that steps up in pitch along a run of checks in the same scene) and `pop` (anything appearing: cards, chips, rows; pitch varies per item). Never reuse one sound for everything: checks = right, appearing = pop, objects = their own sound.
 - Interface sounds, only where nothing above fits: `swish` (scene change), `ratchet` (abstract counter), `tone` (warm swell under the value close), `chord` (brand card).
 - `events.json`: per scene type, `[seconds after scene start, sound, duration or "end"]`, mirroring the animation timings in `illustrated.html`: **change both together**, and give every new scene its object sounds.
@@ -55,7 +55,7 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `chain-switch` | "Skip" chain breaks, "Switch" chain holds with one thin link | cue: skip / switch |
 | `skip-vs-switch` | two weeks: switch (small check, week survives) vs skip (bad week) | cue x2 |
 | `goal-tree` | vision → 3 milestones → 3 actions + TODAY; `stage`: all (hook), vision (+ two people talking), milestones, actions, path (today lit up to the vision) | `vision`, `tag`, `milestones`, `actions`, `m`, `today`, `say1/2` |
-| `math-split` | total counts up, "÷ per day", grid of days fills, "= N days" | `total`, `per`, `unit`, `milestone`; cue x4 |
+| `math-split` | total counts up, "÷ per day", grid of days fills, "= N days" | `total`, `per`, `unit`, `milestone`, optional `prefix` ($), `cells`, `cols`, `cellLabels`, `perText`, `resText`; cue x4 |
 | `flashcards` | big vague goal struck through, flashcard stack flips through N cards, "about 15 min" | `big`, `n`, `words`, `time`; cue x4 |
 | `progress-bars` | three labelled bars fill (count, milestone %, vision %) | `rows`; cue x3 |
 | `date-chase` | START note jumps Monday → 1st → January, each date crossed out; `stage`: hook / chase | `dates`, `note`; cue x4 |
@@ -71,6 +71,24 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `outcome-line` | "morning weigh-in" display + a jagged 14-day line the dot follows, digits change; red "nothing's working" cross; `stage`: hook (finished) | `values`, `unit`, `label`, `days`, `quit`; cue x3 |
 | `outcome-vs-input` | OUTCOME card (can't control, dims) vs INPUT card (you control, sage + check) | `outcome[2]`, `input[2]`; cue x3 |
 | `input-week` | M-S grid rows of input ticks with live counters ("5 / 5") | `rows[[label,[day idx]]]`; cue per row |
+| `goal-date` | goal card "Get fit" with an empty date slot (blinking caret); `stage`: hook (finished) / rewrite (pencil strike, new goal typed, date chip stamped) / done (+ THIS WEEK card ticked) | `old`, `neu`, `date`, `week`, `label`; cue rewrite x3 / done x2 |
+| `week-countdown` | "N weeks" counts up, week columns W1..WN with the end date, W1 lit, THIS WEEK panel with 3 ticked rows | `weeks`, `end`, `rows[3]`; cue x3 |
+| `month-leftover` | payday balance line drops through expense chips to $0 by day 30, "Saved this month $0"; `stage`: hook | `items[[label, amount, x 0-1]]`, `save`; cue x4 |
+| `pay-order` | "Spend → Save what's left" struck out, "Save first → Spend what's left" ticked | `a`; cue x3 |
+| `auto-transfer` | Checking (Payday) → Savings, a $ coin travels every 1.7 s and the savings balance grows, "Every month" toggle switches on | `amount`, `when`; cue x4 |
+| `bank-form` | phone with a recurring-transfer form: rows appear, amount typed, repeat row, Confirm fills + check, 5-min timer | `amount`, `repeat`, `title`, `minutes`; cue x4 |
+| `course-vs-talk` | hook: dimmed COURSE card vs FIRST: 3 conversations card (heads breathing) | `course`, `months` |
+| `course-cost` | course card "Month 1 of 6" bar fills, "+ fees" chip, "What's a normal Tuesday like?" bubble, still unknown | `course`, `months`, `q`; cue x3 |
+| `three-people` | YOU + three people doing the job, dashed links, "3 of 3 this week" | `roles[3]`, `label`; cue x2 |
+| `people-search` | search bar typed, 3 result rows (one "friend of a friend"), ticked | `query`, `results[[role, source]]`; cue x3 |
+| `message-send` | phone chat: message typed line by line, sent, Delivered, counter 1/3 → 3/3 | `lines[3]`, `to`; cue [start, -, send] |
+| `question-list` | notepad, 3 questions written with a pencil reveal, each ticked | `items[3]`, `title`; cue x3 |
+| `phone-desk` | laptop with a blinking cursor, phone buzzing on the desk, "1 second" arc; `stage`: hook | `label`; cue x2 |
+| `phone-room` | the phone goes into another room, the door closes, laptop timer counts down from 25:00 | `room`, `minutes`; cue [phone, timer, door] |
+| `phone-walk` | footsteps from the desk to the closed door, "the pause", work line keeps growing + check | `room`, `label`; cue x3 |
+| `two-blocks` | two task cards (task, amount, "phone: kitchen") with 25-min rings filling and ticks | `rows[[task, amount, phone]]`; cue x2 |
+| `break-timer` | focus ring runs out, beep, 5-min BREAK ring, "Go again" back to 25:00 | `label`; cue x3 |
+| `room-pick` | three room doors, one picked + check, note "Tomorrow, first block: phone goes to the kitchen" | `rooms[3]`, `pick`, `note`; cue x3 |
 | `dream-to-steps` | "ARCHIVED TODAY" dream card branching into three ticked steps (use for the value close) | `tag`, `dream`, `date`, `steps[3]` |
 
 **Cues**: `params.cue` lists the spoken word that triggers each animation beat (null = default); `make_reel.py` resolves them to `params.at`, and `events.json` can time sounds as `"@i"` / `"@i+0.3"`, so picture and sound land on the voice. Prefer cues over fixed times for any new scene.
