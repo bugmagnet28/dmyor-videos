@@ -132,7 +132,8 @@ def build_hero(s, page=0):
     s.px(17, 11, "#B8584E"); s.px(16, 11, "#B8584E")                                  # smile
     s.px(17, 9, "#F4A7A0")                                                             # cheek
 build_hero(hero)
-hero.save_png(OUT + "hero_read.png"); hero.preview(OUT + "hero_preview.png", scale=10, labels=False)
+hero.save_png(OUT + "hero_read.png")
+hb = Sprite.from_png(OUT + "hero_read.png", scale=1); hb.px(16, 7, SK[1]); hb.px(15, 8, "#1C1A24"); hb.px(16, 8, "#1C1A24"); hb.save_png(OUT + "hero_read_blink.png"); hero.preview(OUT + "hero_preview.png", scale=10, labels=False)
 
 # ---------- composite at 4x ----------
 comp = Image.new("RGBA", (W, H))

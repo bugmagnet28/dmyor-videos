@@ -72,6 +72,7 @@ Every decision Sanyam made about how Dmyor videos are made and posted, in one pl
 | `animated-illustration-explainer` | default, meets every rule | methods and ideas with worked examples, one scene per thought, object sound effects |
 | `cinematic-motion` (`cosmos.html`) | approved 2026-10-25 (brand film "One place") | brand / flagship reels: typewriter fly-through opening, warp, dark glass card, tree of light, designed cosmic canvases, narration + score |
 | `prompt-animation` (`engine.html`) | built 2026-10-26, demo "anim-dream-mountain" awaiting owner review | story animation from a prompt: full-colour illustrated universe, characters with faces walking/typing/climbing, layered worlds, ambient life. Own vivid palette (owner exception to Graphite & Sage) |
+| pixel story (`reels/pixel-book/pixel.html` + `pixel-art-studio` skill) | built 2026-10-26, first film "pixel-book" awaiting owner review | 16-bit pixel art story reels: art drawn pixel by pixel with Pixel Art Studio (MIT), 270x480 worlds blitted 4x with a nearest-neighbour pixel camera, pixel-font captions, chiptune score + 8-bit/object sound effects, narration |
 | `diagram-motion-graphics`, `hybrid-graphics-plus-demo` | need rework (no sound effects, older motion) | rework before using |
 | `kinetic-typography` | not standalone | hook card only |
 
