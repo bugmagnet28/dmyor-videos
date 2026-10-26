@@ -138,8 +138,36 @@ A(syn.impact(.7), 128.6, .3); A(nz(2.5, .9, 800) * .6, 128.6, .25)
 for i in range(8): A(sweep(88 + (i % 2) * 3, 96, .07, .5), 131.6 + i * .5 + (i % 2) * .12, .05)   # birds
 A(K("page", .32), 140.45, .5); A(K("pencil", 1.8), 141.0, .45); A(K("right", 5), 142.8, .45)
 A(syn.bell(84, 2.5), 154.8, .2)
+
+# ================= SUSPENSE: risers build until each scene lands, then an impact (and the score ducks under it) =================
+# (riser start, hit, strength, dark) in story time
+SUS = [(4.6, 7.9, .7, False), (10.0, 12.5, 1.0, False), (14.2, 15.8, .8, False), (25.5, 26.9, .6, False), (36.4, 38.2, .45, False),
+       (40.9, 42.5, .7, False), (60.3, 62.6, .7, False), (77.9, 79.6, .7, False), (84.6, 88.4, .8, False), (90.9, 93.72, .9, True),
+       (106.0, 108.85, .8, False), (114.9, 122.4, 1.0, False), (125.0, 128.6, 1.0, False), (141.0, 142.8, .8, False), (154.6, 155.6, .9, False)]
+def riser2(d):
+    t = tt(d); k = t / d
+    noise = nz(d, 0, 1500) * k ** 2.2
+    tone = np.sin(2 * np.pi * np.cumsum(220 + 900 * k ** 2) / SR) * k ** 1.6 * .5
+    ph = np.cumsum(2 + 14 * k ** 2) / SR; clicks = np.zeros_like(t); idx = np.where(np.diff(np.floor(ph)) > 0)[0]
+    for i in idx: clicks[i:i + 300] += np.exp(-np.arange(min(300, len(t) - i)) / 40) * k[i]
+    x = noise * .7 + tone + clicks * .5; cut = int(.07 * SR); x[-cut:] = 0                  # a breath of silence right before the hit
+    return x
+def boom(s, dark=False):
+    d = 2.6; t = tt(d); f0 = 42 if dark else 55
+    body = np.sin(2 * np.pi * np.cumsum(f0 + 70 * np.exp(-t * 9)) / SR) * np.exp(-t * (1.6 if dark else 2.2))
+    crack = syn.lp(nz(d, 6, 40), 2500) * (1.6 if not dark else .8)
+    return (body * 1.2 + crack + syn.impact(s) * .6) * s
+duck = np.ones(len(mus))
+for a0, h, s, dark in SUS:
+    ua, uh = t2u(a0), t2u(h)
+    if ua is None or uh is None: continue
+    A(riser2(max(.4, uh - ua)), a0, .32 * s + .1); syn.add(fx, boom(s, dark), uh, .55)
+    i0, i1, i2 = int((uh - .3) * SR), int(uh * SR), int((uh + .5) * SR)
+    if i2 < len(duck): duck[i0:i1] = np.minimum(duck[i0:i1], np.linspace(1, .35, i1 - i0)); duck[i1:i2] = np.minimum(duck[i1:i2], np.linspace(.35, 1, i2 - i1))
 fx = fx[: int(TOTAL * SR)]
-sf.write(os.path.join(D, "sfx.wav"), (fx / (np.abs(fx).max() + 1e-9) * .6).astype(np.float32), SR)
+mus = mus[: len(duck)] * duck[: len(mus)]; sf.write(os.path.join(D, "score.wav"), (mus * .5).astype(np.float32), SR)
+nz_ = fx[np.abs(fx) > 1e-4]; ref = np.percentile(np.abs(nz_), 99.5) + 1e-9
+sf.write(os.path.join(D, "sfx.wav"), (np.tanh(fx / ref * 1.1) * .62).astype(np.float32), SR)   # soft-limit the impacts so small effects keep their level
 
 # ================= MIX =================
 fc = (f"[0:a]apad,atrim=0:{TOTAL},loudnorm=I=-16:TP=-2,asplit[v][sc];[1:a]volume=0.42[m0];[m0][sc]sidechaincompress=threshold=0.05:ratio=4:attack=20:release=350[m];"
