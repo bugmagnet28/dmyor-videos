@@ -125,13 +125,15 @@ A(kit.step() / .6, 97.85, .3); A(K("page", .3), 98.7, .4); A(syn.bell(84, 2.0), 
 for st in np.arange(100.85, 103.4, .27): A(kit.step() / .6, st, .3)
 for i, at in enumerate(np.arange(106.0, 107.6, .07)): A(K("tick"), at, .15)
 A(K("pop", 3), 108.85, .45); A(K("right", 4), 108.95, .5); A(K("chord", 1.5), 109.1, .25)
-A(syn.whoosh(.8, 300, 4000), 110.95, .35)
-for i in range(8): A(K("pop", i % 6), 111.5 + i * .14, .28)
-for i, m in enumerate([84, 79, 76, 72, 67, 64, 60]): A(sq(m, .07, .25), 117.0 + i * .07, .12)
-A(syn.whoosh(1.0, 200, 6000), 117.6, .4)
-for i in range(4): A(sweep(70 + i * 3, 90 + i * 3, .22), 120.7 + i * .1, .1)
-for i, at in enumerate((122.3, 122.6, 122.9, 123.2)): A(syn.bell(76 + [0, 3, 7, 12][i], 2.0), at, .22)
-for i, m in enumerate([84, 88, 91, 96]): A(sq(m, .08, .25), 124.95 + i * .06, .1)
+A(syn.whoosh(.8, 300, 4000), 110.95, .35)                                       # into the galaxy
+for i in range(7): A(K("pop", i % 6), 111.2 + i * .12, .26)
+A(syn.whoosh(1.0, 200, 5000), 113.5, .35)                                       # dive to the first scene
+for i, at in enumerate([114.8, 116.0, 117.2, 118.4, 121.0, 122.4]): A(K("right", i), at, .4)   # the light reaches each scene
+A(sweep(70, 94, .3), 118.4, .12); A(sweep(74, 98, .3), 118.5, .1)                # the path splits
+A(K("miss", 1), 119.4, .25)                                                      # the wrong turn
+A(syn.bell(79, 2.2), 120.6, .25); A(syn.bell(86, 2.2), 120.75, .18)             # back together
+A(syn.whoosh(1.2, 200, 3000), 122.4, .3)
+for i, m in enumerate([84, 88, 91, 96]): A(sq(m, .08, .25), 124.6 + i * .08, .08)
 A(syn.impact(.7), 128.6, .3); A(nz(2.5, .9, 800) * .6, 128.6, .25)
 for i in range(8): A(sweep(88 + (i % 2) * 3, 96, .07, .5), 131.6 + i * .5 + (i % 2) * .12, .05)   # birds
 A(K("page", .32), 140.45, .5); A(K("pencil", 1.8), 141.0, .45); A(K("right", 5), 142.8, .45)
