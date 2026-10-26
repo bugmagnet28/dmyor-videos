@@ -1,16 +1,11 @@
-# Place each narration clip at its start time (pauses are deliberate). Writes audio.mp3 + vo_times.json.
-import json, os, numpy as np, soundfile as sf, subprocess
-os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-START = {"L1":1.0,"L2":7.4,"L3":13.0,"L4":16.6,"L5":22.0,"L6":27.6,"L7":32.6,"L8":36.2,"L9":40.4,"L10":47.0,"L11":51.4,"L12":55.9,"L13":61.8,
-         "L14":67.0,"L15":70.3,"L16":74.3,"L17":80.8,"L18":84.9,"L19":91.4,"L20":97.2,"L21":100.8,"L22":106.2,"L23":112.6,"L24":118.4,"L25":124.3,
-         "L26":132.0,"L27":135.9,"L28":139.7,"L29":146.8}
-TOTAL = 158.5; SR = 44100; out = np.zeros(int(TOTAL * SR)); times = {}; prev_end = 0
-for k in sorted(START, key=lambda k: START[k]):
-    x, sr = sf.read(f"vo/{k}.wav"); x = x if x.ndim == 1 else x.mean(1)
-    assert sr == SR, sr
-    i = int(START[k] * SR); out[i:i + len(x)] += x; e = START[k] + len(x) / SR
-    assert START[k] >= prev_end - 0.01, (k, START[k], prev_end); prev_end = e
-    times[k] = [START[k], round(e, 3)]
-sf.write("audio.wav", out.astype(np.float32), SR)
-subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", "audio.wav", "-ar", "44100", "-b:a", "192k", "audio.mp3"], check=True)
-json.dump(times, open("vo_times.json", "w"), indent=0); print(times["L29"], "ok")
+# Place each narration clip (sped up by TEMPO) at its mapped film time. Writes audio.mp3.
+import json, os, sys, subprocess, numpy as np, soundfile as sf
+os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))); sys.path.insert(0, ".")
+from timemap import t2u, TEMPO, TOTAL
+START = json.load(open("vo_times.json")); SR = 44100; out = np.zeros(int((TOTAL + 1) * SR)); prev = 0
+for k in sorted(START, key=lambda k: START[k][0]):
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", f"vo/{k}.wav", "-af", f"atempo={TEMPO}", "-ar", str(SR), "-ac", "1", f"vo/_{k}.wav"], check=True)
+    x, _ = sf.read(f"vo/_{k}.wav"); u = t2u(START[k][0]); i = int(u * SR)
+    assert u >= prev - .02, (k, u, prev); out[i:i + len(x)] += x; prev = u + len(x) / SR
+sf.write("audio.wav", out[: int(TOTAL * SR)].astype(np.float32), SR)
+subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", "audio.wav", "-b:a", "192k", "audio.mp3"], check=True); print("vo ok", TOTAL)

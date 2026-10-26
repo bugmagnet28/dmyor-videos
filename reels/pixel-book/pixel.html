@@ -5,7 +5,13 @@
 <script>
 // Pixel Book: every frame is a pure function of time. Worlds are drawn at 270x480 (1 art pixel = 4 screen px)
 // and blitted with a nearest-neighbour "pixel camera", so zooming makes the pixels bigger, never blurry.
-var W = 270, H = 480, OW = 1080, OH = 1920, DUR = 158.5;
+var W = 270, H = 480, OW = 1080, OH = 1920;
+// film time u -> story time t: dead spans are cut, wordless ones fast-forwarded (timemap.json)
+var SEGS = [[0.0, 0.5, 0.0], [5.0, 6.4, 0.0], [9.6, 12.0, 0.65], [12.0, 12.85, 0.7], [20.664, 21.88, 0.0], [24.854, 25.6, 0.0], [25.0, 27.45, 0.6], [30.4, 31.4, 0.7], [31.4, 31.9, 0.0], [35.342, 36.0, 0.0], [39.229, 40.28, 0.0], [43.578, 44.3, 0.0], [45.3, 46.1, 0.0], [53.4, 55.1, 0.0], [58.679, 59.9, 0.0], [60.2, 61.65, 0.6], [63.8, 64.3, 0.0], [65.3, 66.1, 0.0], [76.4, 77.5, 0.0], [77.8, 80.6, 0.6], [83.763, 84.78, 0.0], [87.764, 88.7, 0.0], [89.7, 90.5, 0.0], [95.3, 97.08, 0.0], [100.077, 100.68, 0.0], [103.4, 103.7, 0.0], [104.7, 105.5, 0.0], [109.931, 110.7, 0.0], [111.0, 112.45, 0.7], [115.421, 116.9, 0.0], [116.9, 118.25, 0.7], [123.3, 124.18, 0.0], [128.1, 129.4, 0.6], [129.4, 130.1, 0.0], [130.1, 131.4, 0.7], [134.837, 135.78, 0.0], [138.73, 139.58, 0.0], [142.8, 144.4, 0.6], [144.4, 146.68, 0.0], [153.762, 154.4, 0.0]], STORY_END = 157.0;
+function t2u(t) { var u = t; SEGS.forEach(function (g) { u -= Math.max(0, Math.min(g[1], t) - g[0]) * (1 - g[2]); }); return u; }
+function u2t(u) { var t = 0, uu = 0; for (var i = 0; i < SEGS.length; i++) { var g = SEGS[i], pre = g[0] - t; if (uu + pre >= u) return t + (u - uu); uu += pre; t = g[0];
+  var len = (g[1] - g[0]) * g[2]; if (uu + len >= u && len > 0) return t + (u - uu) / g[2]; uu += len; t = g[1]; } return t + (u - uu); }
+var DUR = t2u(STORY_END);
 var C = document.getElementById("c"), X = C.getContext("2d"); X.imageSmoothingEnabled = false;
 function mk(w, h) { var c = document.createElement("canvas"); c.width = w; c.height = h; var x = c.getContext("2d"); x.imageSmoothingEnabled = false; return [c, x]; }
 var LB = mk(W, H), OA = mk(OW, OH), OB = mk(OW, OH), TINY = mk(W, H);
@@ -443,6 +449,6 @@ function overlays(t) {
 }
 function dayBadge(s) { var b = 6, w = pwidth(s, b); X.fillStyle = "#2A1F2E"; X.fillRect(OW - w - 88, 108, w + 48, 66); X.fillStyle = "#28A86A"; X.fillRect(OW - w - 84, 112, w + 40, 58); ptext(X, s, OW - w - 64, 122, b, "#FFFFFF"); }
 window.__duration = DUR;
-window.__seek = function (t) { return READY.then(function () { render(t); }); };
-READY.then(function () { render(0); });
+window.__seek = function (u) { return READY.then(function () { render(u2t(u)); }); };
+READY.then(function () { render(u2t(0)); });
 </script></body></html>
