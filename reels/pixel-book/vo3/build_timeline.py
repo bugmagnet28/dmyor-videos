@@ -2,7 +2,7 @@
 # Each line's slot maps onto the story-time span of the picture it describes. Writes audio.mp3, timemap.json, captions.json.
 import json, os, subprocess, numpy as np, soundfile as sf
 os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-SR = 44100; TEMPO = 1.09; LEAD = .35; END_HOLD = 2.4
+SR = 44100; TEMPO = 1.12; LEAD = .35; END_HOLD = 1.8
 LINES = json.load(open("vo3/lines.json"))
 PLAN = {
  "N1": ([[0.5, 4.6]], 0), "N2": ([[4.6, 5.0], [6.3, 8.6]], 0), "N3": ([[8.6, 12.4]], .4), "N4": ([[12.4, 14.2]], 0),
@@ -12,7 +12,7 @@ PLAN = {
  "N17": ([[73.55, 77.0]], 0), "N18": ([[77.8, 80.6]], .5), "N19": ([[80.6, 88.6]], 0), "N20": ([[90.55, 95.3]], 0),
  "N21": ([[96.9, 99.6]], 0), "N22": ([[99.6, 103.4]], 0), "N23": ([[105.55, 110.0]], 0), "N24": ([[110.9, 115.0]], .2),
  "N25": ([[115.0, 124.5]], .3), "N26": ([[124.5, 130.0]], .3), "N27": ([[130.0, 133.6]], 0), "N28": ([[139.5, 143.6]], 0),
- "N29": ([[143.6, 154.4]], 0), "END": ([[154.4, 157.0]], 0)}
+ "N29": ([[143.6, 154.4]], 0), "N30": ([[154.4, 155.8]], 0), "END": ([[155.8, 157.0]], 0)}
 CAP = {"N1": ["THIS BOOK OPENED A *DOOR.*", "N2"], "N4": ["*10 YEARS* LATER", "N5"], "N7": ["BUT *HOW?*", "N7"],
        "N9": ["STEP ONE: *WRITE IT DOWN.*", "N10"], "N14": ["WHICH *ONE?*", "N14"], "N18": ["WHICH *ONE?*", "N18"], "N19": ["AGAIN. AND *AGAIN.*", "N19"],
        "N20": ["NOT EVERY CHOICE WAS *RIGHT.*", "N20", 1560], "N21": ["IT WAS A *LESSON.*", "N22", 1560], "N24": ["EVERY SCENE. *A CHOICE.*", "N24", 1560],

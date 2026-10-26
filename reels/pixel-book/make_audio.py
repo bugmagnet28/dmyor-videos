@@ -36,6 +36,13 @@ def nz(d, decay=30.0, hp=6000):
 def sweep(m0, m1, d, duty=.25):
     t = tt(d); f = hz(m0) * (hz(m1) / hz(m0)) ** (t / d); ph = np.cumsum(f) / SR
     return np.where((ph % 1) < duty, 1.0, -1.0) * env(len(t), .003, .05)
+def softwrite(d):
+    """Gentle handwriting: soft, band-limited pen strokes (no scratch)."""
+    out = np.zeros(int(d * SR)); t0 = 0.0; rng = np.random.default_rng(int(d * 1000))
+    while t0 < d - .09:
+        n = int(rng.uniform(.06, .11) * SR); s = syn.bp(rng.uniform(-1, 1, n), 900, 2400) * np.hanning(n) * rng.uniform(.5, 1)
+        i = int(t0 * SR); out[i:i + n] += s[: len(out) - i]; t0 += rng.uniform(.09, .15)
+    return out / (np.abs(out).max() + 1e-9)
 def K(name, *a):
     f = getattr(kit, name)(*a); return f / (np.abs(f).max() + 1e-9)
 
@@ -103,11 +110,11 @@ A(sweep(60, 79, .18, .5), 17.0, .25); A(K("pop", 3), 17.05, .3)
 A(sq(72, .1, .5), 22.1, .08); A(sq(76, .1, .5), 22.25, .08)                   # "?"
 A(syn.riser(.8, 300, 3000), 25.7, .25); A(syn.whoosh(.9, 200, 6000), 26.4, .5)
 A(K("riffle", U(26.9, 30.1)), 26.9, .5); A(K("page", .32), 30.2, .45)
-for at in (30.35, 32.0, 44.35, 46.2, 50.35, 55.15, 64.35, 66.2, 69.55, 73.55, 88.75, 90.6, 103.75, 105.6): A(K("page", .32), at, .5)
-A(K("pencil", 1.0), 34.9, .3); A(K("pencil", 1.7), 36.35, .45); A(K("pop", 1), 38.2, .4); A(K("pencil", .5), 41.1, .4); A(syn.bell(79, 2.0), 42.5, .2)
+for i, at in enumerate((32.15, 46.35, 50.55, 55.35, 66.35, 69.75, 73.75, 90.75, 105.75)): A(K("pop", i % 6), at, .45)   # scene changes pop in
+A(softwrite(1.0), 34.9, 0.18); A(softwrite(1.7), 36.35, 0.27); A(K("pop", 1), 38.2, .4); A(softwrite(.5), 41.1, 0.24); A(syn.bell(79, 2.0), 42.5, .2)
 for b in np.arange(46.5, 50.5, .14): A(sq(93, .06, .5), b, .12 if int((b - 46.5) / .14) % 4 < 3 else 0)
 A(K("clock", U(51.0, 54.8)), 51.0, .3)                                                    # time slipping by
-A(K("pencil", 1.2), 56.2, .3); A(K("right", 2), 57.4, .45)
+A(softwrite(1.2), 56.2, 0.18); A(K("right", 2), 57.4, .45)
 A(sq(67, .12, .5), 60.6, .08); A(sq(72, .12, .5), 60.8, .08)
 for st in np.arange(60.75, 62.0, .25): A(kit.step() / .6, st, .25)
 A(sweep(72, 96, .3, .5), 62.25, .15); A(K("right", 4), 62.6, .5); A(syn.whoosh(.8, 400, 5000), 62.9, .35)
@@ -136,7 +143,7 @@ A(syn.whoosh(1.2, 200, 3000), 122.4, .3)
 for i, m in enumerate([84, 88, 91, 96]): A(sq(m, .08, .25), 124.6 + i * .08, .08)
 A(syn.impact(.7), 128.6, .3); A(nz(2.5, .9, 800) * .6, 128.6, .25)
 for i in range(8): A(sweep(88 + (i % 2) * 3, 96, .07, .5), 131.6 + i * .5 + (i % 2) * .12, .05)   # birds
-A(K("page", .32), 140.45, .5); A(K("pencil", 1.8), 141.0, .45); A(K("right", 5), 142.8, .45)
+A(K("page", .32), 140.45, .5); A(softwrite(1.8), 141.0, 0.27); A(K("right", 5), 142.8, .45)
 A(syn.bell(84, 2.5), 154.8, .2)
 
 # ================= SUSPENSE: risers build until each scene lands, then an impact (and the score ducks under it) =================

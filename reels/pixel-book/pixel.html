@@ -7,9 +7,9 @@
 // and blitted with a nearest-neighbour "pixel camera", so zooming makes the pixels bigger, never blurry.
 var W = 270, H = 480, OW = 1080, OH = 1920;
 // film time u -> story time t: each narration line's slot is mapped onto the span of picture it describes (timemap.json)
-var MAP = [[0.0, 3.6123, 0.5, 4.6], [3.6123, 3.9818, 4.6, 5.0], [3.9818, 6.1066, 6.3, 8.6], [6.1066, 8.6307, 8.6, 12.4], [8.6307, 10.6234, 12.4, 14.2], [10.6234, 14.5749, 14.2, 17.8], [14.5749, 19.1199, 17.8, 20.6], [19.1199, 19.5728, 20.6, 21.2], [19.5728, 23.2716, 25.5, 30.4], [23.2716, 25.5782, 32.0, 36.3], [25.5782, 28.3633, 36.3, 39.2], [28.3633, 29.7986, 40.9, 43.3], [29.7986, 31.5402, 46.15, 50.35], [31.5402, 33.3288, 50.35, 54.9], [33.3288, 35.36, 55.15, 58.8], [35.36, 38.2572, 60.2, 63.9], [38.2572, 39.9246, 66.15, 69.55], [39.9246, 41.2054, 69.55, 73.3], [41.2054, 42.737, 73.55, 77.0], [42.737, 44.55, 77.8, 80.6], [44.55, 47.9999, 80.6, 88.6], [47.9999, 51.5256, 90.55, 95.3], [51.5256, 54.5626, 96.9, 99.6], [54.5626, 56.4317, 99.6, 103.4], [56.4317, 59.5139, 105.55, 110.0], [59.5139, 61.2896, 110.9, 115.0], [61.2896, 64.7673, 115.0, 124.5], [64.7673, 67.4168, 124.5, 130.0], [67.4168, 69.9412, 130.0, 133.6], [69.9412, 73.0094, 139.5, 143.6], [73.0094, 79.3119, 143.6, 154.4], [79.3119, 81.7119, 154.4, 157.0]], DUR = 81.712;
+var MAP = [[0.0, 3.5348, 0.5, 4.6], [3.5348, 3.8971, 4.6, 5.0], [3.8971, 5.9802, 6.3, 8.6], [5.9802, 8.4675, 8.6, 12.4], [8.4675, 10.4227, 12.4, 14.2], [10.4227, 14.2882, 14.2, 17.8], [14.2882, 18.7523, 17.8, 20.6], [18.7523, 19.1961, 20.6, 21.2], [19.1961, 22.8209, 25.5, 30.4], [22.8209, 25.0676, 32.0, 36.3], [25.0676, 27.7927, 36.3, 39.2], [27.7927, 29.2017, 40.9, 43.3], [29.2017, 30.9072, 46.15, 50.35], [30.9072, 32.6527, 50.35, 54.9], [32.6527, 34.6416, 55.15, 58.8], [34.6416, 37.5045, 60.2, 63.9], [37.5045, 39.1283, 66.15, 69.55], [39.1283, 40.3804, 69.55, 73.3], [40.3804, 41.8788, 73.55, 77.0], [41.8788, 43.6757, 77.8, 80.6], [43.6757, 47.0554, 80.6, 88.6], [47.0554, 50.5058, 90.55, 95.3], [50.5058, 53.4873, 96.9, 99.6], [53.4873, 55.3177, 99.6, 103.4], [55.3177, 58.3434, 105.55, 110.0], [58.3434, 60.0943, 110.9, 115.0], [60.0943, 63.5199, 115.0, 124.5], [63.5199, 66.1273, 124.5, 130.0], [66.1273, 68.6022, 130.0, 133.6], [68.6022, 71.6189, 139.5, 143.6], [71.6189, 78.9166, 143.6, 154.4], [78.9166, 80.1498, 154.4, 155.8], [80.1498, 81.9498, 155.8, 157.0]], DUR = 81.95;
 function u2t(u) { for (var i = 0; i < MAP.length; i++) { var g = MAP[i]; if (u < g[1] || i === MAP.length - 1) return g[2] + (g[3] - g[2]) * Math.min(1, Math.max(0, (u - g[0]) / (g[1] - g[0]))); } return 0; }
-var FCAPS = [[0.3, 6.107, "THIS BOOK OPENED A *DOOR.*", null], [8.581, 14.575, "*10 YEARS* LATER", null], [19.07, 23.272, "BUT *HOW?*", null], [25.528, 29.799, "STEP ONE: *WRITE IT DOWN.*", null], [35.31, 37.757, "WHICH *ONE?*", null], [42.687000000000005, 44.05, "WHICH *ONE?*", null], [44.5, 48.0, "AGAIN. AND *AGAIN.*", null], [47.95, 51.526, "NOT EVERY CHOICE WAS *RIGHT.*", 1560], [51.476000000000006, 56.432, "IT WAS A *LESSON.*", 1560], [59.464000000000006, 61.09, "EVERY SCENE. *A CHOICE.*", 1560], [61.24, 67.117, "ALL *CONNECTED.*", 1560], [69.891, 73.009, "WRITE IT *DOWN.*", null]];
+var FCAPS = [[0.3, 5.98, "THIS BOOK OPENED A *DOOR.*", null], [8.417, 14.288, "*10 YEARS* LATER", null], [18.701999999999998, 22.821, "BUT *HOW?*", null], [25.018, 29.202, "STEP ONE: *WRITE IT DOWN.*", null], [34.592000000000006, 37.005, "WHICH *ONE?*", null], [41.829, 43.176, "WHICH *ONE?*", null], [43.626000000000005, 47.055, "AGAIN. AND *AGAIN.*", null], [47.005, 50.506, "NOT EVERY CHOICE WAS *RIGHT.*", 1560], [50.456, 55.318, "IT WAS A *LESSON.*", 1560], [58.293000000000006, 59.894, "EVERY SCENE. *A CHOICE.*", 1560], [60.044000000000004, 65.827, "ALL *CONNECTED.*", 1560], [68.552, 71.619, "WRITE IT *DOWN.*", null]];
 var C = document.getElementById("c"), X = C.getContext("2d"); X.imageSmoothingEnabled = false;
 function mk(w, h) { var c = document.createElement("canvas"); c.width = w; c.height = h; var x = c.getContext("2d"); x.imageSmoothingEnabled = false; return [c, x]; }
 var LB = mk(W, H), OA = mk(OW, OH), OB = mk(OW, OH), TINY = mk(W, H);
@@ -192,7 +192,7 @@ function sFlip(t) {
   if (u < 1) { var ex = 135 + Math.cos(ph * Math.PI) * 72, top = by + 6 - Math.sin(ph * Math.PI) * 10;
     L.fillStyle = ph < .5 ? "#FFF4E0" : "#EADBB8"; L.beginPath(); L.moveTo(135, by + 8); L.lineTo(Math.round(ex), Math.round(top)); L.lineTo(Math.round(ex), Math.round(top + 86)); L.lineTo(135, by + 94); L.fill();
     rect(Math.round(ex), Math.round(top), 1, 86, "#C9B48A"); }
-  if (u >= 1) { ptext(L, "CHAPTER", bx + 88, by + 30, 1, "#6A4FD1"); ptext(L, "ONE", bx + 98, by + 42, 2, "#2A1F2E"); }
+  if (u >= 1) { ptext(L, "DAY", bx + 100, by + 30, 1, "#6A4FD1"); ptext(L, "ONE", bx + 98, by + 42, 2, "#2A1F2E"); }
   return camAt([[26.9, 135, 240, 1.5], [30.6, 135, 240, 1.8, 3.7]], t);
 }
 // --- chapter title cards ---
@@ -456,12 +456,13 @@ var SC = [
 ];
 function renderTo(f, t, ctx, filter) { L.setTransform(1, 0, 0, 1, 0, 0); L.clearRect(0, 0, W, H); var cam = f(t); ctx.save(); ctx.filter = filter || "none"; blit(cam, 0, 0, OW, OH, ctx); ctx.restore(); }
 function drawEntry(e, t, ctx) { if (e.screen) e.screen(t, ctx); else renderTo(e.f, t, ctx, e.filter); }
-function flipTrans(t, prev, next, k) {
-  drawEntry(prev, Math.min(t, prev.b - .001), OA[1]); drawEntry(next, Math.max(t, next.a), OB[1]);
-  var fx = Math.round(OW * (1 - eio(k)) / 4) * 4; X.drawImage(OA[0], 0, 0);
-  X.drawImage(OB[0], fx, 0, OW - fx, OH, fx, 0, OW - fx, OH);
-  var pw = Math.round(Math.sin(k * Math.PI) * 220 / 4) * 4; X.fillStyle = "#FFF4E0"; X.fillRect(fx - pw, 0, pw, OH); X.fillStyle = "#E3D3AE"; X.fillRect(fx - 8, 0, 8, OH);
-  for (var y = 120; y < OH; y += 64) X.fillRect(fx - pw + 24, y, Math.max(0, pw - 48), 4); X.fillStyle = "rgba(20,10,30,.25)"; X.fillRect(fx, 0, 16, OH);
+function flipTrans(t, prev, next, k) {   // scene change: the old shot shrinks away, the new one pops in with a small overshoot
+  X.fillStyle = "#0B0920"; X.fillRect(0, 0, OW, OH);
+  if (k < .4) { var q = eio(k / .4), sc = 1 - .14 * q; drawEntry(prev, Math.min(t, prev.b - .001), OA[1]);
+    X.save(); X.globalAlpha = 1 - .5 * q; X.drawImage(OA[0], Math.round(OW * (1 - sc) / 2), Math.round(OH * (1 - sc) / 2), Math.round(OW * sc), Math.round(OH * sc)); X.restore(); }
+  else { var r = (k - .4) / .6, sc2 = r < .6 ? lerp(.82, 1.04, eout(r / .6)) : lerp(1.04, 1, eio((r - .6) / .4)); drawEntry(next, Math.max(t, next.a), OB[1]);
+    X.drawImage(OB[0], Math.round(OW * (1 - sc2) / 2), Math.round(OH * (1 - sc2) / 2), Math.round(OW * sc2), Math.round(OH * sc2));
+    if (r < .35) { X.fillStyle = "rgba(255,244,214," + (.35 * (1 - r / .35)) + ")"; X.fillRect(0, 0, OW, OH); } }
 }
 var TILES = [[sPortal, 7.6, 2.0], [sFuture, 17.4, 2.0], [sWrite, 33.0, 2.0], [sGetUp, 56.0, 3.0, "saturate(1.2)"], [sHero, 0, 9], [sBuild, 74.5, 3.0, "saturate(1.2)"], [sMontage, 82.0, 3.0], [sShop, 94.2, 3.0], [sOffice, 108.8, 1.6]];
 var TW = 332, TH = 590, TG = 18, TX0 = 24, TY0 = 57;
@@ -522,9 +523,9 @@ function overlays(t, u) {
   if (t > 73.8 && t < 77.8) { caption(t, "*BUILD*", 73.8, 77.7); clockText(t, "9:00 PM", "#FFC145"); }
   if (t > 80.8 && t < 89.0) dayBadge("DAY " + Math.min(300, 1 + Math.floor((t - 80.8) * 37)));
   if (t > 105.8 && t < 111.0) { var n = Math.round(lerp(1, 1204, eout(seg(t, 106.0, 107.6)))); dayBadge("DAY " + (n > 999 ? Math.floor(n / 1000) + "," + String(n % 1000).padStart(3, "0") : n)); }
-  if (t > 154.6) { var k = seg(t, 154.6, 155.1); X.globalAlpha = .55 * k; X.fillStyle = "#140F2E"; X.fillRect(0, 0, OW, OH); X.globalAlpha = 1;
-    caption(t, "WHAT WOULD YOUR *FIRST PAGE* SAY?", 154.5, 999, { y: 620 });
-    if (t > 155.6) { var lab = "DMYOR", B = 20, w2 = pwidth(lab, B); ptext(X, lab, (OW - w2) / 2 + B, 1120 + B, B, "#1A1530"); ptext(X, lab, (OW - w2) / 2, 1120, B, "#FFFFFF");
+  if (t > 154.3) { var k = seg(t, 154.3, 154.8); X.globalAlpha = .55 * k; X.fillStyle = "#140F2E"; X.fillRect(0, 0, OW, OH); X.globalAlpha = 1;
+    caption(t, "WHAT WOULD YOUR *FIRST PAGE* SAY?", 154.3, 999, { y: 620 });
+    if (t > 154.5) { var lab = "DMYOR", B = 20, w2 = pwidth(lab, B); ptext(X, lab, (OW - w2) / 2 + B, 1120 + B, B, "#1A1530"); ptext(X, lab, (OW - w2) / 2, 1120, B, "#FFFFFF");
       var h = "@BECAUSEIDMYOR", w3 = pwidth(h, 7); ptext(X, h, (OW - w3) / 2, 1320, 7, "#FFC145"); } }
 }
 function dayBadge(s) { var b = 6, w = pwidth(s, b); X.fillStyle = "#2A1F2E"; X.fillRect(OW - w - 88, 108, w + 48, 66); X.fillStyle = "#28A86A"; X.fillRect(OW - w - 84, 112, w + 40, 58); ptext(X, s, OW - w - 64, 122, b, "#FFFFFF"); }
