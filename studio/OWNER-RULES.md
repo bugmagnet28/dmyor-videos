@@ -97,6 +97,8 @@ Planned (agreed plan, from the Lemo-Opuscar reference in `reference/lemo-opuscar
 
 Target quality bar: @anmoldoesmotion's OpenAI piece, `studio/analysis/2026-10-25-reference-anmoldoesmotion-openai.md`.
 
+- Reel library (2026-10-28): `studio/library/index.html` lists every reel (status, style, art style, hook type + line, topic, voice, length, links, views) with filters. Rebuilt by `studio/tools/reel_library.py` after every batch.
+
 ## 6. Build and check
 - Build with the style's own script:
   - `make_reel.py` (illustrated): spoken `cue` words drive animation beats and sound events;
