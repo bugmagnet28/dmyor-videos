@@ -13,8 +13,8 @@ PLAN = {
 MIN_AFTER = {"N3": .7, "N14": .7, "N18": .8, "N24": .5, "N25": .5, "N26": .7}     # picture-only beats need at least this much after the line
 CAP = {"N1": ["THIS BOOK OPENED A *DOOR.*", "N2"], "N4": ["*10 YEARS* LATER", "N5"], "N7": ["BUT *HOW?*", "N7"],
        "N9": ["STEP ONE: *WRITE IT DOWN.*", "N10"], "N14": ["WHICH *ONE?*", "N14"], "N18": ["WHICH *ONE?*", "N18"], "N19": ["AGAIN. AND *AGAIN.*", "N19"],
-       "N20": ["NOT EVERY CHOICE WAS *RIGHT.*", "N20", 1560], "N21": ["IT WAS A *LESSON.*", "N22", 1560], "N24": ["EVERY SCENE. *A CHOICE.*", "N24", 1560],
-       "N25": ["ALL *CONNECTED.*", "N26", 1560], "N28": ["WRITE IT *DOWN.*", "N28"]}
+       "N24": ["EVERY SCENE. *A CHOICE.*", "N24", None],
+       "N25": ["ALL *CONNECTED.*", "N26", None], "N28": ["WRITE IT *DOWN.*", "N28"]}
 norm = lambda w: re.sub(r"[^a-z0-9]", "", w.lower().replace("favourite", "favorite"))
 LINES = json.load(open(os.path.join(D, "vo3/lines.json"))); keys = sorted(LINES, key=lambda k: int(k[1:]))
 sw, owner = [], []
@@ -29,14 +29,33 @@ for a, b, n in difflib.SequenceMatcher(None, sw, hw, autojunk=False).get_matchin
 span = {}
 for i, k in enumerate(owner):
     if i in match: j = match[i]; s = span.setdefault(k, [W[j]["s"], W[j]["e"]]); s[0] = min(s[0], W[j]["s"]); s[1] = max(s[1], W[j]["e"])
+tok = []                                              # display tokens (script spelling) + take times
+for k in keys:
+    for txt, _ in LINES[k]:
+        for w in txt.split():
+            if norm(w): tok.append([k, w.replace("Deem-yor", "Dmyor"), None, None])
+for i in range(len(tok)):
+    if i in match: tok[i][2], tok[i][3] = W[match[i]]["s"], W[match[i]]["e"]
+for i in range(len(tok)):                              # fill unmatched words between their neighbours
+    if tok[i][2] is None:
+        p = next((tok[j][3] for j in range(i - 1, -1, -1) if tok[j][3] is not None), 0.0)
+        n = next((tok[j][2] for j in range(i + 1, len(tok)) if tok[j][2] is not None), p + .4)
+        tok[i][2], tok[i][3] = p, max(p + .05, min(n, p + .4))
 miss = [k for k in keys if k not in span]; assert not miss, ("lines not found in take", miss)
 x, sr = sf.read(TAKE) if TAKE.endswith(".wav") else (None, None)
 if x is None:
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", TAKE, "-ar", str(SR), "-ac", "1", os.path.join(D, "_take.wav")], check=True); x, sr = sf.read(os.path.join(D, "_take.wav"))
-cuts = [max(0, span[keys[0]][0] - LEAD)] + [(span[keys[i]][1] + span[keys[i + 1]][0]) / 2 for i in range(len(keys) - 1)] + [min(len(x) / SR, span[keys[-1]][1] + .25)]
-out, u, segs, slots = [], 0.0, [], {}
+def quiet(a, b):                                       # cut at the quietest 20 ms between two lines, never inside a word
+    a, b = max(0, a), min(len(x) / SR, max(a + .02, b)); fr = int(.02 * SR); best, bt = 1e9, (a + b) / 2
+    for t in np.arange(a, b - .02, .01):
+        e = float((x[int(t * SR):int(t * SR) + fr] ** 2).mean())
+        if e < best: best, bt = e, t + .01
+    return bt
+# whisper word ends run early, so search a little past them; the last line keeps the take to its very end
+cuts = [max(0, span[keys[0]][0] - LEAD)] + [quiet(span[keys[i]][1] - .05, span[keys[i + 1]][0]) for i in range(len(keys) - 1)] + [len(x) / SR]
+out, u, segs, slots, off = [], 0.0, [], {}, {}
 for i, k in enumerate(keys):
-    a, b = cuts[i], cuts[i + 1]; piece = x[int(a * SR):int(b * SR)]
+    a, b = cuts[i], cuts[i + 1]; piece = x[int(a * SR):int(b * SR)]; off[k] = u - a
     after = b - span[k][1]; pad = max(0, MIN_AFTER.get(k, 0) - after) + (END_HOLD if k == keys[-1] else 0)
     piece = np.concatenate([piece, np.zeros(int(pad * SR))]); dur = len(piece) / SR
     slots[k] = [round(u + (span[k][0] - a), 3), round(u + (span[k][1] - a), 3)]
@@ -51,4 +70,18 @@ subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", os.path.join(D, "aud
 caps = [[slots[k][0] - .05, slots[v[1]][1] + .2, v[0], v[2] if len(v) > 2 else None] for k, v in CAP.items()]
 json.dump({"segs": segs, "end_u": TOTAL, "slots": slots}, open(os.path.join(D, "timemap.json"), "w"), indent=0)
 json.dump(caps, open(os.path.join(D, "captions.json"), "w"), indent=0)
+subs, cur = [], []
+def flush():
+    if cur: subs.append([round(cur[0][2] + off[cur[0][0]], 3), round(cur[-1][3] + off[cur[-1][0]], 3), " ".join(w for _, w, _, _ in cur).upper()]); cur.clear()
+for ti, t in enumerate(tok):
+    joined = len(" ".join(w for _, w, _, _ in cur + [t]))
+    last_of_sentence = t[1][-1] in ".?!," or ti == len(tok) - 1                 # don't strand one word on its own
+    limit = 44 if last_of_sentence else 34
+    if cur and (t[0] != cur[-1][0] or joined > limit or t[2] - cur[-1][3] > .35): flush()
+    cur.append(t)
+    if t[1][-1] in ".?!,": flush()
+flush()
+for i in range(len(subs) - 1): subs[i][1] = round(min(subs[i + 1][0] - .02, subs[i][1] + .45), 3)   # hold a beat, never overlap
+subs[-1][1] = round(subs[-1][1] + .8, 3)
+json.dump(subs, open(os.path.join(D, "subs.json"), "w"), indent=0)
 print(D, "film length", TOTAL, "| speed of picture per line:", {k: round(sum(s[3] - s[2] for s in segs if s[2] >= PLAN[k][0][0] and s[3] <= PLAN[k][-1][1]) / (slots[k][1] - slots[k][0] + 1e-9), 1) for k in ("N3", "N19", "N25")})

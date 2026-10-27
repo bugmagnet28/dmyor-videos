@@ -33,7 +33,14 @@ miss = [k for k in keys if k not in span]; assert not miss, ("lines not found in
 x, sr = sf.read(TAKE) if TAKE.endswith(".wav") else (None, None)
 if x is None:
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", TAKE, "-ar", str(SR), "-ac", "1", os.path.join(D, "_take.wav")], check=True); x, sr = sf.read(os.path.join(D, "_take.wav"))
-cuts = [max(0, span[keys[0]][0] - LEAD)] + [(span[keys[i]][1] + span[keys[i + 1]][0]) / 2 for i in range(len(keys) - 1)] + [min(len(x) / SR, span[keys[-1]][1] + .25)]
+def quiet(a, b):                                       # cut at the quietest 20 ms between two lines, never inside a word
+    a, b = max(0, a), min(len(x) / SR, max(a + .02, b)); fr = int(.02 * SR); best, bt = 1e9, (a + b) / 2
+    for t in np.arange(a, b - .02, .01):
+        e = float((x[int(t * SR):int(t * SR) + fr] ** 2).mean())
+        if e < best: best, bt = e, t + .01
+    return bt
+# whisper word ends run early, so search a little past them; the last line keeps the take to its very end
+cuts = [max(0, span[keys[0]][0] - LEAD)] + [quiet(span[keys[i]][1] - .05, span[keys[i + 1]][0]) for i in range(len(keys) - 1)] + [len(x) / SR]
 out, u, segs, slots = [], 0.0, [], {}
 for i, k in enumerate(keys):
     a, b = cuts[i], cuts[i + 1]; piece = x[int(a * SR):int(b * SR)]
