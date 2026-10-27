@@ -27,6 +27,22 @@ def clean(t):
     t = re.sub(r"\[[^\]]*\]", "", t or ""); t = re.sub(r"<[^>]+>", " ", t); t = t.replace("Deem-yor", "Dmyor")
     return re.sub(r"\s+", " ", t).strip()
 
+def made_with(slug, d):
+    """Which skill built the reel, from evidence in its folder. Returns (how, detail)."""
+    src = "".join(read(os.path.join(d, f)) for f in ("reel.html", "film.html", "anim.html"))
+    m = re.search(r"skills/([a-z-]+)", src)
+    if m:
+        sk = {"narrated-goal-tree-diagram-reel": "diagram-motion-graphics"}.get(m.group(1), m.group(1))
+        return "skill", sk + ("" if sk == m.group(1) else " (then named narrated-goal-tree-diagram-reel)")
+    if slug.startswith("pixel-"):
+        return "skill + custom", "pixel-art-studio for sprites and scenes; film engine (pixel.html, audio, timing) written by prompt for this reel"
+    if "tree-series" in src or "diagram.html" in read(os.path.join(d, "config.json")):
+        return "template (pre-skill)", "tree-series template, written by prompt; later turned into the diagram-motion-graphics skill"
+    if os.path.exists(os.path.join(d, "timeline.json")):
+        return "skill + custom", "dmyor-reel pipeline (script, voice, sync, record); animation hand-written by prompt for this reel"
+    if not glob.glob(os.path.join(d, "*.html")): return "none", "script only, never animated"
+    return "prompt-built", "written by prompt, no skill"
+
 catalog = defaultdict(list)
 for r in csv.DictReader(open(os.path.join(ROOT, "analytics/catalog/content.csv"))): catalog[r["slug"]].append(r)
 latest = {}
@@ -100,7 +116,8 @@ for d in sorted(glob.glob(os.path.join(ROOT, "reels", "*"))):
         elif re.search(r"\b(don't|doesn't|isn't|won't|not|no|wrong|never|probably)\b", h): hook_type = "~hard-truth"
         elif re.search(r"\d", h): hook_type = "~number-fact"
         else: hook_type = "~statement"
-    rows.append({"date": date, "slug": slug, "status": status, "style": style, "art_style": ART.get(style, ""),
+    how, how_detail = made_with(slug, d)
+    rows.append({"date": date, "slug": slug, "status": status, "style": style, "art_style": ART.get(style, ""), "made_with": how, "made_with_detail": how_detail,
                  "hook_type": hook_type, "hook": hook,
                  "topic": cat[0]["topic"] if cat else "", "voice": voice or "none", "length_s": length,
                  "experiment": cat[0]["experiment"] if cat else "", "ig_views": views["instagram"], "yt_views": views["youtube"],
@@ -108,7 +125,7 @@ for d in sorted(glob.glob(os.path.join(ROOT, "reels", "*"))):
                  "thumb": "thumbs/" + slug + ".jpg" if os.path.exists(thumb) else ""})
 
 rows.sort(key=lambda r: (r["date"] or "0000", r["slug"]), reverse=True)
-cols = ["date", "slug", "status", "style", "art_style", "hook_type", "hook", "topic", "voice", "length_s", "experiment", "ig_views", "yt_views", "x_views", "links", "folder"]
+cols = ["date", "slug", "status", "style", "art_style", "made_with", "made_with_detail", "hook_type", "hook", "topic", "voice", "length_s", "experiment", "ig_views", "yt_views", "x_views", "links", "folder"]
 with open(os.path.join(OUT, "reel-library.csv"), "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore"); w.writeheader(); w.writerows(rows)
 
@@ -117,9 +134,10 @@ trs = []
 for r in rows:
     links = " ".join(f'<a href="{html.escape(u)}" target="_blank">{p[:2].upper()}</a>' for p, u in (x.split(":", 1) for x in r["links"].split()) if u)
     img = f'<img src="{r["thumb"]}" loading="lazy">' if r["thumb"] else ""
-    trs.append(f'<tr data-status="{r["status"]}" data-style="{html.escape(r["style"])}" data-hook="{html.escape(r["hook_type"])}" data-topic="{html.escape(r["topic"])}">'
+    trs.append(f'<tr data-status="{r["status"]}" data-style="{html.escape(r["style"])}" data-hook="{html.escape(r["hook_type"])}" data-topic="{html.escape(r["topic"])}" data-made="{html.escape(r["made_with"])}">'
                f'<td>{img}</td><td>{r["date"]}</td><td><b>{html.escape(r["slug"])}</b><div class="f">{html.escape(r["folder"])}</div></td>'
                f'<td><span class="s {r["status"]}">{r["status"]}</span></td><td>{html.escape(r["style"])}<div class="f">{html.escape(r["art_style"])}</div></td>'
+               f'<td><b>{html.escape(r["made_with"])}</b><div class="f">{html.escape(r["made_with_detail"])}</div></td>'
                f'<td>{html.escape(r["hook_type"])}</td><td class="h">{html.escape(r["hook"])}</td><td>{html.escape(r["topic"])}</td>'
                f'<td>{html.escape(r["voice"])}</td><td>{r["length_s"]}</td><td class="n">{r["ig_views"]}</td><td class="n">{r["yt_views"]}</td><td class="n">{r["x_views"]}</td><td>{links}</td></tr>')
 counts = defaultdict(int)
@@ -130,18 +148,18 @@ body{{margin:0;background:var(--bg);color:var(--ink);font:14px/1.4 -apple-system
 h1{{margin:0 0 4px}} .sub{{color:var(--mute);margin-bottom:14px}} select,input{{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:6px;margin-right:6px}}
 table{{border-collapse:collapse;width:100%;margin-top:12px}} th,td{{border-bottom:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}}
 th{{cursor:pointer;color:var(--mute);position:sticky;top:0;background:var(--bg)}} img{{width:72px;border-radius:6px}} .f{{color:var(--mute);font-size:12px}}
-.h{{max-width:340px}} .n{{text-align:right}} a{{color:var(--acc);margin-right:4px}}
+.h{{max-width:300px}} td:nth-child(6){{max-width:240px}} .n{{text-align:right}} a{{color:var(--acc);margin-right:4px}}
 .s{{padding:2px 8px;border-radius:10px;font-size:12px;background:#2a2e33}} .posted{{background:#264d3a}} .scheduled{{background:#2d4466}} .ready{{background:#5a4a1f}} .superseded,.variant{{background:#3a3a3a;color:#aaa}}
 </style></head><body><h1>Reel Library</h1><div class="sub">Hook types starting with ~ are guessed from the hook line (not yet in analytics). {len(rows)} reels · {" · ".join(f"{v} {k}" for k, v in sorted(counts.items()))} · built by studio/tools/reel_library.py</div>
 <input id="q" placeholder="Search hook or slug"><select id="fs"><option value="">All statuses</option>{opts("status")}</select>
-<select id="fy"><option value="">All styles</option>{opts("style")}</select><select id="fh"><option value="">All hook types</option>{opts("hook_type")}</select><select id="ft"><option value="">All topics</option>{opts("topic")}</select>
-<table id="t"><thead><tr><th></th><th>Date</th><th>Reel</th><th>Status</th><th>Style / art</th><th>Hook type</th><th>Hook</th><th>Topic</th><th>Voice</th><th>Sec</th><th>IG views</th><th>YT</th><th>X</th><th>Links</th></tr></thead>
+<select id="fm"><option value="">Any build</option>{opts("made_with")}</select><select id="fy"><option value="">All styles</option>{opts("style")}</select><select id="fh"><option value="">All hook types</option>{opts("hook_type")}</select><select id="ft"><option value="">All topics</option>{opts("topic")}</select>
+<table id="t"><thead><tr><th></th><th>Date</th><th>Reel</th><th>Status</th><th>Style / art</th><th>Made with</th><th>Hook type</th><th>Hook</th><th>Topic</th><th>Voice</th><th>Sec</th><th>IG views</th><th>YT</th><th>X</th><th>Links</th></tr></thead>
 <tbody>{"".join(trs)}</tbody></table>
 <script>
-const f=()=>{{const q=document.getElementById('q').value.toLowerCase(),s=fs.value,y=fy.value,h=fh.value,t=ft.value;
-for(const tr of document.querySelectorAll('#t tbody tr')){{const ok=(!s||tr.dataset.status==s)&&(!y||tr.dataset.style==y)&&(!h||tr.dataset.hook==h)&&(!t||tr.dataset.topic==t)&&(!q||tr.innerText.toLowerCase().includes(q));tr.style.display=ok?'':'none'}}}};
-['q','fs','fy','fh','ft'].forEach(i=>document.getElementById(i).addEventListener('input',f));
-document.querySelectorAll('th').forEach((th,i)=>th.addEventListener('click',()=>{{const b=document.querySelector('#t tbody'),rs=[...b.rows],num=i>=9&&i<=12;
+const f=()=>{{const q=document.getElementById('q').value.toLowerCase(),s=fs.value,y=fy.value,h=fh.value,t=ft.value,m=fm.value;
+for(const tr of document.querySelectorAll('#t tbody tr')){{const ok=(!s||tr.dataset.status==s)&&(!y||tr.dataset.style==y)&&(!h||tr.dataset.hook==h)&&(!t||tr.dataset.topic==t)&&(!m||tr.dataset.made==m)&&(!q||tr.innerText.toLowerCase().includes(q));tr.style.display=ok?'':'none'}}}};
+['q','fs','fm','fy','fh','ft'].forEach(i=>document.getElementById(i).addEventListener('input',f));
+document.querySelectorAll('th').forEach((th,i)=>th.addEventListener('click',()=>{{const b=document.querySelector('#t tbody'),rs=[...b.rows],num=i>=10&&i<=13;
 const d=th.dataset.d=th.dataset.d==='1'?'-1':'1';rs.sort((a,c)=>{{let x=a.cells[i].innerText,z=c.cells[i].innerText;if(num){{x=+x||0;z=+z||0;return (x-z)*d}}return x.localeCompare(z)*d}});rs.forEach(r=>b.appendChild(r))}}));
 </script></body></html>"""
 open(os.path.join(OUT, "index.html"), "w").write(page)
