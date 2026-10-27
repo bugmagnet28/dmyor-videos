@@ -116,3 +116,15 @@ Instagram locked the account ("we locked your account to protect you from a poss
 - What: 4 animated-illustration reels in new life areas (V-EXP-29): ill-save-first (money, 09:30), ill-career-conversations (career, 13:00), ill-goal-date (goal with a number + date, 16:30), ill-phone-distance (focus, 19:30). Files and captions in `ready-to-post/2026-10-27-*/`.
 - Steps: watch them, reply "OK" (or "OK except X") in `inbox/notes.md` or chat. After your OK they get scheduled on Instagram, X and YouTube at the listed IST times and registered in analytics.
 - Also useful on Oct 27 evening: app screenshots of the Oct-25 batch insights (48h: views, avg watch time, skip rate, shares, saves, follows) into `inbox/metrics/` (ASK-V), and the follower count.
+
+## VASK-019: Approve the Wed Oct 28 batch (3 reels), and tell me what went live on Oct 27 (2026-10-27)
+- Status: open
+- What: 3 animated-illustration reels (V-EXP-30), files + captions in `ready-to-post/2026-10-28-*/`:
+  - 09:30 IST **ill-unclear-task**: "You don't procrastinate on hard tasks. You procrastinate on unclear ones." Rewrite each to-do as the next visible action (Taxes → Download March bank statement). 36/40
+  - 13:00 IST **ill-ten-pages**: "12 books a year is 10 pages a night." Book on the pillow, pages before the phone, track pages. 35/40
+  - 19:30 IST **ill-gym-day-four**: "Your gym plan fails around day four." Book 3 sessions as calendar meetings on Sunday; missed one? move it, don't delete it. 35/40
+- New this batch: the writing sound is now a soft pen (your 10-27 rule), applied to the whole illustrated kit. Please listen to one reel and say if it's right.
+- Steps:
+  1. Watch the 3 videos, reply "OK" (or "OK except X") in chat or `inbox/notes.md`.
+  2. Tell me which of the Oct 27 reels actually went live (ill-save-first, ill-career-conversations, ill-goal-date, ill-phone-distance, pixel-book 22:00). Nothing is ticked as scheduled in post-queue, so none is registered in analytics yet.
+  3. Optional but the most useful input: app screenshots (views, avg watch time, skip rate, shares, saves, follows) for the Oct-25 batch (now 48h+) into `inbox/metrics/`, plus the follower count.

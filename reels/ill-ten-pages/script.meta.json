@@ -1,0 +1,18 @@
+{
+ "style": "animated-illustration-explainer",
+ "experiment": "V-EXP-30",
+ "topic": "reading",
+ "hook_type": "number-contrast",
+ "quality": {
+  "hook": 4,
+  "usefulness": 5,
+  "specificity": 5,
+  "clarity": 5,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 35
+ },
+ "note": "Oct-28 batch. All illustrated (second style not possible this run: cinematic needs a new page per story, pixel/prompt styles still awaiting owner review of a reusable pipeline). New scenes written for each reel; pencil sound replaced by soft pen per owner 2026-10-27."
+}

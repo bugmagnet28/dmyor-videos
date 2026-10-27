@@ -6,7 +6,14 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 - [ ] 22:00 IST Tue 2026-10-27 · **pixel-book (Adam voice)** (1:42, pixel story, ElevenLabs narration) · `ready-to-post/2026-10-27-pixel-book/` · owner approved scheduling; waiting on folder access for upload
 
-## Waiting for approval: batch for Tue 2026-10-27 (IST), V-EXP-29, see VASK-018
+## Waiting for approval: batch for Wed 2026-10-28 (IST), V-EXP-30, see VASK-019
+
+- [ ] 09:30 IST · **ill-unclear-task** (procrastination: rewrite to-dos as the next visible action, 51.3s) · `ready-to-post/2026-10-28-ill-unclear-task/` · 36/40
+- [ ] 13:00 IST · **ill-ten-pages** (reading: 10 pages a night = 12 books a year, 49.1s) · `ready-to-post/2026-10-28-ill-ten-pages/` · 35/40
+- [ ] 19:30 IST · **ill-gym-day-four** (fitness: book 3 sessions as calendar meetings, 56.1s) · `ready-to-post/2026-10-28-ill-gym-day-four/` · 35/40
+- All animated illustration, am_eric, value close, @becauseidmyor end card, new soft pen sound. Same times on X and YouTube Shorts. Files 3.2-3.5 MB (under the 10 MB browser limit).
+
+## Approved (VASK-018), scheduling status unknown: batch for Tue 2026-10-27 (IST), V-EXP-29, see VASK-018
 
 > Correction 2026-10-27 00:40 IST (Claude): the Oct 26 agent run stopped mid-way (first recording crashed with a pipe error, the other 3 were never built), so these files did NOT exist when this list was written. Rebuilt in the session on Oct 27: ill-save-first re-recorded, ill-phone-distance / ill-career-conversations / ill-goal-date scripted and built. Still needs Sanyam's OK before scheduling.
 

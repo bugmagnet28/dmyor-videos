@@ -1,0 +1,133 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] Your gym plan doesn't fail on day one. It fails around day four. || On day one you're excited, so you just go. By day four the excitement is gone, and the question, when do I go today, gets answered by your mood. And your mood usually says tomorrow. || [turn] So don't let it decide. Keep the plan, and give every session a fixed time, like a meeting you wouldn't skip. || Here's how. On Sunday evening, open your calendar and book three sessions. Monday at seven, push. Wednesday at seven, pull. Friday at seven, legs. Forty five minutes each. || Now day four isn't a decision anymore. Thursday is rest, you already know that. And Friday at seven, it's legs. Your mood doesn't get a vote. || And if you miss one, move it, don't delete it. Missed Wednesday? It goes to Thursday at seven. || [land] So do it this Sunday. Three sessions, three times, in your calendar before the week starts. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "energy-dip",
+   "params": {
+    "lineLabel": "excitement",
+    "label": "day 4: no set time, no session"
+   },
+   "head": "Gym plans fail<br>on <b>day 4</b>."
+  },
+  {
+   "type": "when-question",
+   "params": {
+    "what": "Push day",
+    "mood": "maybe tomorrow",
+    "cue": [
+     "excited",
+     "gone",
+     "tomorrow"
+    ]
+   },
+   "head": "Your mood picks<br><b>the time</b>."
+  },
+  {
+   "type": "meeting-card",
+   "params": {
+    "title": "Gym: Push day",
+    "rows": [
+     "Mon, 7:00 to 7:45 AM",
+     "Repeats every week"
+    ],
+    "cue": [
+     "plan",
+     "meeting"
+    ]
+   },
+   "head": "Give it a time,<br>like a <b>meeting</b>."
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "add",
+    "cue": [
+     "Monday",
+     "Wednesday",
+     "Friday"
+    ]
+   },
+   "head": "Book <b>three sessions</b><br>on Sunday."
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "decide",
+    "hi": [
+     3,
+     4
+    ],
+    "rest": [
+     1,
+     3,
+     5,
+     6
+    ],
+    "note": "Day 4: already decided",
+    "cue": [
+     "Thursday",
+     "Friday"
+    ]
+   },
+   "head": "Day 4 is<br><b>already decided</b>."
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "move",
+    "move": [
+     1,
+     3
+    ],
+    "note": "Moved, not deleted",
+    "cue": [
+     "Missed",
+     "Thursday"
+    ]
+   },
+   "head": "Missed one?<br><b>Move it</b>."
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "ticks",
+    "note": "Booked before the week starts",
+    "cue": [
+     "Three",
+     "three",
+     "calendar"
+    ]
+   },
+   "head": "Book it<br><b>this Sunday</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Get strong this year",
+    "date": "Open it again: Oct 2027",
+    "steps": [
+     "Push: Mon 7:00",
+     "Pull: Wed 7:00",
+     "Legs: Fri 7:00"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  null
+ ],
+ "brand_from": 8,
+ "caption": {
+  "instagram": "Your gym plan doesn't fail on day one. It fails around day four, when the excitement is gone and your mood decides when you go.\n\nThe fix:\n• Sunday evening, book 3 sessions in your calendar\n• Mon 7:00 push, Wed 7:00 pull, Fri 7:00 legs, 45 min each\n• Missed one? Move it, don't delete it\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#gymmotivation #fitnessroutine #consistency #habits #goals",
+  "x": "Your gym plan doesn't fail on day one. It fails around day four.\n\nBook 3 sessions in your calendar on Sunday, with a time. Missed one? Move it, don't delete it.",
+  "youtube_title": "Why your gym plan fails on day 4 #Shorts"
+ }
+}

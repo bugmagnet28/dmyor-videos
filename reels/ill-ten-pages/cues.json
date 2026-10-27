@@ -1,0 +1,1080 @@
+{
+ "audio": "audio.mp3",
+ "duration": 49.22,
+ "text": "You don't need more free time to read 12 books a year. You need 10 pages a night. Most of us wait for a quiet weekend to read. It never really comes, so the book sits on the nightstand with the bookmark stuck on page 40. Do the math instead. 10 pages takes about 15 minutes. 10 pages every night is 3,650 pages a year. At 300 pages a book, that's 12 books. Here's the method. Put the book on your pillow in the morning. At night, 10 pages first before you touch your phone, then the phone. And track pages, not books. 12 books feels far away. 10 pages is something you finish tonight. Pick tonight's book right now and put it on your pillow before dinner. That's what Demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. If you want to try it out, I've put the link in the bio.",
+ "words": [
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "dont",
+   "raw": "don't",
+   "s": 0.24,
+   "e": 0.38
+  },
+  {
+   "w": "need",
+   "raw": "need",
+   "s": 0.38,
+   "e": 0.54
+  },
+  {
+   "w": "more",
+   "raw": "more",
+   "s": 0.54,
+   "e": 0.76
+  },
+  {
+   "w": "free",
+   "raw": "free",
+   "s": 0.76,
+   "e": 0.98
+  },
+  {
+   "w": "time",
+   "raw": "time",
+   "s": 0.98,
+   "e": 1.24
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 1.24,
+   "e": 1.42
+  },
+  {
+   "w": "read",
+   "raw": "read",
+   "s": 1.42,
+   "e": 1.58
+  },
+  {
+   "w": "12",
+   "raw": "12",
+   "s": 1.58,
+   "e": 1.9
+  },
+  {
+   "w": "books",
+   "raw": "books",
+   "s": 1.9,
+   "e": 2.12
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 2.12,
+   "e": 2.3
+  },
+  {
+   "w": "year",
+   "raw": "year.",
+   "s": 2.3,
+   "e": 2.48
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 2.98,
+   "e": 2.98
+  },
+  {
+   "w": "need",
+   "raw": "need",
+   "s": 2.98,
+   "e": 3.18
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 3.18,
+   "e": 3.46
+  },
+  {
+   "w": "pages",
+   "raw": "pages",
+   "s": 3.46,
+   "e": 3.78
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 3.78,
+   "e": 4.0
+  },
+  {
+   "w": "night",
+   "raw": "night.",
+   "s": 4.0,
+   "e": 4.22
+  },
+  {
+   "w": "most",
+   "raw": "Most",
+   "s": 4.68,
+   "e": 4.82
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 4.82,
+   "e": 4.98
+  },
+  {
+   "w": "us",
+   "raw": "us",
+   "s": 4.98,
+   "e": 5.12
+  },
+  {
+   "w": "wait",
+   "raw": "wait",
+   "s": 5.12,
+   "e": 5.34
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 5.34,
+   "e": 5.54
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 5.54,
+   "e": 5.68
+  },
+  {
+   "w": "quiet",
+   "raw": "quiet",
+   "s": 5.68,
+   "e": 5.96
+  },
+  {
+   "w": "weekend",
+   "raw": "weekend",
+   "s": 5.96,
+   "e": 6.34
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 6.34,
+   "e": 6.58
+  },
+  {
+   "w": "read",
+   "raw": "read.",
+   "s": 6.58,
+   "e": 6.86
+  },
+  {
+   "w": "it",
+   "raw": "It",
+   "s": 7.4,
+   "e": 7.5
+  },
+  {
+   "w": "never",
+   "raw": "never",
+   "s": 7.5,
+   "e": 7.74
+  },
+  {
+   "w": "really",
+   "raw": "really",
+   "s": 7.74,
+   "e": 8.0
+  },
+  {
+   "w": "comes",
+   "raw": "comes,",
+   "s": 8.0,
+   "e": 8.44
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 8.6,
+   "e": 8.74
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 8.74,
+   "e": 8.86
+  },
+  {
+   "w": "book",
+   "raw": "book",
+   "s": 8.86,
+   "e": 8.98
+  },
+  {
+   "w": "sits",
+   "raw": "sits",
+   "s": 8.98,
+   "e": 9.2
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 9.2,
+   "e": 9.4
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 9.4,
+   "e": 9.5
+  },
+  {
+   "w": "nightstand",
+   "raw": "nightstand",
+   "s": 9.5,
+   "e": 9.96
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 9.96,
+   "e": 10.14
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 10.14,
+   "e": 10.28
+  },
+  {
+   "w": "bookmark",
+   "raw": "bookmark",
+   "s": 10.28,
+   "e": 10.62
+  },
+  {
+   "w": "stuck",
+   "raw": "stuck",
+   "s": 10.62,
+   "e": 10.94
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 10.94,
+   "e": 11.16
+  },
+  {
+   "w": "page",
+   "raw": "page",
+   "s": 11.16,
+   "e": 11.34
+  },
+  {
+   "w": "40",
+   "raw": "40.",
+   "s": 11.34,
+   "e": 11.76
+  },
+  {
+   "w": "do",
+   "raw": "Do",
+   "s": 12.2,
+   "e": 12.34
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 12.34,
+   "e": 12.46
+  },
+  {
+   "w": "math",
+   "raw": "math",
+   "s": 12.46,
+   "e": 12.7
+  },
+  {
+   "w": "instead",
+   "raw": "instead.",
+   "s": 12.7,
+   "e": 13.2
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 13.58,
+   "e": 13.76
+  },
+  {
+   "w": "pages",
+   "raw": "pages",
+   "s": 13.76,
+   "e": 14.18
+  },
+  {
+   "w": "takes",
+   "raw": "takes",
+   "s": 14.18,
+   "e": 14.44
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 14.44,
+   "e": 14.7
+  },
+  {
+   "w": "15",
+   "raw": "15",
+   "s": 14.7,
+   "e": 15.06
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes.",
+   "s": 15.06,
+   "e": 15.44
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 15.94,
+   "e": 16.16
+  },
+  {
+   "w": "pages",
+   "raw": "pages",
+   "s": 16.16,
+   "e": 16.5
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 16.5,
+   "e": 16.86
+  },
+  {
+   "w": "night",
+   "raw": "night",
+   "s": 16.86,
+   "e": 17.12
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 17.12,
+   "e": 17.3
+  },
+  {
+   "w": "3",
+   "raw": "3",
+   "s": 17.3,
+   "e": 17.6
+  },
+  {
+   "w": "650",
+   "raw": ",650",
+   "s": 17.6,
+   "e": 18.4
+  },
+  {
+   "w": "pages",
+   "raw": "pages",
+   "s": 18.4,
+   "e": 19.14
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 19.14,
+   "e": 19.36
+  },
+  {
+   "w": "year",
+   "raw": "year.",
+   "s": 19.36,
+   "e": 19.66
+  },
+  {
+   "w": "at",
+   "raw": "At",
+   "s": 20.08,
+   "e": 20.2
+  },
+  {
+   "w": "300",
+   "raw": "300",
+   "s": 20.2,
+   "e": 20.6
+  },
+  {
+   "w": "pages",
+   "raw": "pages",
+   "s": 20.6,
+   "e": 20.9
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 20.9,
+   "e": 21.14
+  },
+  {
+   "w": "book",
+   "raw": "book,",
+   "s": 21.14,
+   "e": 21.3
+  },
+  {
+   "w": "thats",
+   "raw": "that's",
+   "s": 21.44,
+   "e": 21.62
+  },
+  {
+   "w": "12",
+   "raw": "12",
+   "s": 21.62,
+   "e": 21.84
+  },
+  {
+   "w": "books",
+   "raw": "books.",
+   "s": 21.84,
+   "e": 22.22
+  },
+  {
+   "w": "heres",
+   "raw": "Here's",
+   "s": 22.62,
+   "e": 22.9
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 22.9,
+   "e": 23.02
+  },
+  {
+   "w": "method",
+   "raw": "method.",
+   "s": 23.02,
+   "e": 23.28
+  },
+  {
+   "w": "put",
+   "raw": "Put",
+   "s": 23.44,
+   "e": 23.5
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 23.5,
+   "e": 23.64
+  },
+  {
+   "w": "book",
+   "raw": "book",
+   "s": 23.64,
+   "e": 23.76
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 23.76,
+   "e": 23.9
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 23.9,
+   "e": 24.02
+  },
+  {
+   "w": "pillow",
+   "raw": "pillow",
+   "s": 24.02,
+   "e": 24.2
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 24.2,
+   "e": 24.38
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 24.38,
+   "e": 24.48
+  },
+  {
+   "w": "morning",
+   "raw": "morning.",
+   "s": 24.48,
+   "e": 24.7
+  },
+  {
+   "w": "at",
+   "raw": "At",
+   "s": 25.24,
+   "e": 25.42
+  },
+  {
+   "w": "night",
+   "raw": "night,",
+   "s": 25.42,
+   "e": 25.64
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 25.8,
+   "e": 25.94
+  },
+  {
+   "w": "pages",
+   "raw": "pages",
+   "s": 25.94,
+   "e": 26.28
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 26.28,
+   "e": 26.58
+  },
+  {
+   "w": "before",
+   "raw": "before",
+   "s": 26.58,
+   "e": 26.88
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 26.88,
+   "e": 27.06
+  },
+  {
+   "w": "touch",
+   "raw": "touch",
+   "s": 27.06,
+   "e": 27.2
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 27.2,
+   "e": 27.4
+  },
+  {
+   "w": "phone",
+   "raw": "phone,",
+   "s": 27.4,
+   "e": 27.7
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 27.86,
+   "e": 27.94
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 27.94,
+   "e": 28.08
+  },
+  {
+   "w": "phone",
+   "raw": "phone.",
+   "s": 28.08,
+   "e": 28.4
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 28.4,
+   "e": 28.96
+  },
+  {
+   "w": "track",
+   "raw": "track",
+   "s": 28.96,
+   "e": 29.24
+  },
+  {
+   "w": "pages",
+   "raw": "pages,",
+   "s": 29.24,
+   "e": 29.62
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 29.86,
+   "e": 29.9
+  },
+  {
+   "w": "books",
+   "raw": "books.",
+   "s": 29.9,
+   "e": 30.24
+  },
+  {
+   "w": "12",
+   "raw": "12",
+   "s": 30.52,
+   "e": 30.66
+  },
+  {
+   "w": "books",
+   "raw": "books",
+   "s": 30.66,
+   "e": 30.94
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 30.94,
+   "e": 31.18
+  },
+  {
+   "w": "far",
+   "raw": "far",
+   "s": 31.18,
+   "e": 31.5
+  },
+  {
+   "w": "away",
+   "raw": "away.",
+   "s": 31.5,
+   "e": 31.82
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 32.16,
+   "e": 32.3
+  },
+  {
+   "w": "pages",
+   "raw": "pages",
+   "s": 32.3,
+   "e": 32.68
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 32.68,
+   "e": 32.96
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 32.96,
+   "e": 33.14
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 33.14,
+   "e": 33.38
+  },
+  {
+   "w": "finish",
+   "raw": "finish",
+   "s": 33.38,
+   "e": 33.6
+  },
+  {
+   "w": "tonight",
+   "raw": "tonight.",
+   "s": 33.6,
+   "e": 33.96
+  },
+  {
+   "w": "pick",
+   "raw": "Pick",
+   "s": 34.5,
+   "e": 34.62
+  },
+  {
+   "w": "tonights",
+   "raw": "tonight's",
+   "s": 34.62,
+   "e": 35.14
+  },
+  {
+   "w": "book",
+   "raw": "book",
+   "s": 35.14,
+   "e": 35.3
+  },
+  {
+   "w": "right",
+   "raw": "right",
+   "s": 35.3,
+   "e": 35.54
+  },
+  {
+   "w": "now",
+   "raw": "now",
+   "s": 35.54,
+   "e": 35.88
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 35.88,
+   "e": 36.1
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 36.1,
+   "e": 36.24
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 36.24,
+   "e": 36.34
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 36.34,
+   "e": 36.44
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 36.44,
+   "e": 36.56
+  },
+  {
+   "w": "pillow",
+   "raw": "pillow",
+   "s": 36.56,
+   "e": 36.8
+  },
+  {
+   "w": "before",
+   "raw": "before",
+   "s": 36.8,
+   "e": 37.18
+  },
+  {
+   "w": "dinner",
+   "raw": "dinner.",
+   "s": 37.18,
+   "e": 37.52
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 38.02,
+   "e": 38.3
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 38.3,
+   "e": 38.46
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 38.46,
+   "e": 38.84
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 38.84,
+   "e": 39.0
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 39.0,
+   "e": 39.28
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 39.68,
+   "e": 39.78
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 39.78,
+   "e": 40.18
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 40.18,
+   "e": 40.4
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 40.4,
+   "e": 40.62
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 40.62,
+   "e": 40.96
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 40.96,
+   "e": 41.2
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 41.2,
+   "e": 41.34
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 41.34,
+   "e": 41.5
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 41.5,
+   "e": 41.72
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 41.72,
+   "e": 41.84
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 41.84,
+   "e": 42.16
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 42.16,
+   "e": 42.6
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 42.6,
+   "e": 42.78
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 42.78,
+   "e": 42.92
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 42.92,
+   "e": 43.14
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 43.14,
+   "e": 43.34
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 43.34,
+   "e": 43.66
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 43.66,
+   "e": 43.96
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 43.96,
+   "e": 44.18
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 44.18,
+   "e": 44.3
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 44.3,
+   "e": 44.62
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 44.62,
+   "e": 44.94
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 45.4,
+   "e": 45.54
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 45.54,
+   "e": 45.68
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 45.68,
+   "e": 45.82
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 45.82,
+   "e": 45.96
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 45.96,
+   "e": 46.18
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 46.18,
+   "e": 46.38
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 46.38,
+   "e": 46.62
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 46.82,
+   "e": 46.96
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 46.96,
+   "e": 47.1
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 47.1,
+   "e": 47.24
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 47.24,
+   "e": 47.42
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 47.42,
+   "e": 47.58
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 47.58,
+   "e": 47.7
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 47.7,
+   "e": 47.94
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 5.34,
+   "text": "You don't need more free time to read 12 books a year. You need 10 pages a night. Most of us wait"
+  },
+  {
+   "s": 5.34,
+   "e": 10.14,
+   "text": "for a quiet weekend to read. It never really comes, so the book sits on the nightstand with"
+  },
+  {
+   "s": 10.14,
+   "e": 15.44,
+   "text": "the bookmark stuck on page 40. Do the math instead. 10 pages takes about 15 minutes."
+  },
+  {
+   "s": 15.94,
+   "e": 22.22,
+   "text": "10 pages every night is 3,650 pages a year. At 300 pages a book, that's 12 books."
+  },
+  {
+   "s": 22.62,
+   "e": 25.64,
+   "text": "Here's the method. Put the book on your pillow in the morning. At night,"
+  },
+  {
+   "s": 25.8,
+   "e": 28.4,
+   "text": "10 pages first before you touch your phone, then the phone."
+  },
+  {
+   "s": 28.4,
+   "e": 33.96,
+   "text": "And track pages, not books. 12 books feels far away. 10 pages is something you finish tonight."
+  },
+  {
+   "s": 34.5,
+   "e": 39.28,
+   "text": "Pick tonight's book right now and put it on your pillow before dinner. That's what Demure is for."
+  },
+  {
+   "s": 39.68,
+   "e": 44.18,
+   "text": "You archive your dream today so you can see it tomorrow and break it down into small steps you"
+  },
+  {
+   "s": 44.18,
+   "e": 47.94,
+   "text": "can actually do. If you want to try it out, I've put the link in the bio."
+  }
+ ],
+ "wps": 3.45
+}

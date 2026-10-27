@@ -30,7 +30,7 @@ def run(*cmd):
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("reel"); ap.add_argument("--record", action="store_true"); ap.add_argument("--package")
+    ap = argparse.ArgumentParser(); ap.add_argument("reel"); ap.add_argument("--record", action="store_true"); ap.add_argument("--package"); ap.add_argument("--skip-voice", action="store_true", help="reuse audio.mp3 + cues.json (picture/sound edits only)")
     o = ap.parse_args(); d = o.reel.rstrip("/"); slug = os.path.basename(d)
     n = json.load(open(os.path.join(d, "narration.json")))
     thoughts = [t.strip() for t in n["spoken"].split("||") if t.strip()]
@@ -38,10 +38,11 @@ def main():
     if len(scenes) != len(thoughts):
         sys.exit(f"{len(thoughts)} spoken thoughts but {len(scenes)} scenes: give one scene (or null) per thought")
     say_text = re.sub(r"\bDmyor\b", "Deem-yor", " || ".join(thoughts))
-    run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(SKILL, "scripts/say.py"), say_text, os.path.join(d, "audio.mp3"),
+    if not (o.skip_voice and os.path.exists(os.path.join(d, "cues.json"))):
+     run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(SKILL, "scripts/say.py"), say_text, os.path.join(d, "audio.mp3"),
         "--voice", n.get("voice", "am_eric"), "--speed", str(n.get("speed", 1.0)),
         "--gap-min", str(n.get("gap_min", 0.18)), "--gap-max", str(n.get("gap_max", 0.32)), *(["--stages"] if n.get("stages", True) else []))
-    run("python3", os.path.join(ROOT, ".claude/skills/dmyor-reel/scripts/align.py"), d)
+     run("python3", os.path.join(ROOT, ".claude/skills/dmyor-reel/scripts/align.py"), d)
     cues = json.load(open(os.path.join(d, "cues.json"))); W = cues["words"]
     words, owner = [], []
     for ti, th in enumerate(thoughts):

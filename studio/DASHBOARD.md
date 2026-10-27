@@ -1,47 +1,38 @@
 # Video dashboard (posting on @becauseidmyor, end card @becauseidmyor)
 
-_Last updated: 2026-10-25 (run 18)_
+_Last updated: 2026-10-27 19:40 IST (run 2026-10-27)_
 
 **Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints)
 
 | | |
 |---|---|
-| Instagram followers (@becauseidmyor) | **21** (last reading 2026-10-24 09:40) · flat since Oct 21 · 0 follows from 17 reels with data |
-| Reels live | 12 kinetic (Oct 21) + 3 tree (Oct 22) + 2 narrated diagram (Oct 23) + **4 illustrated explainers going live today, Oct 25** (09:30, 13:00, 16:30, 19:30; IG + X + YouTube) |
-| Reels with data | 16 IG (views only, profile grid Oct 24). No new reading today (no browser tool this run) |
-| Are we improving? | **No** so far: newer half median 12 views vs older half 17. Oct 25 batch (owner-rule format) is the first real test of the new direction; 48h read Oct 27 |
-| Waiting for approval | **4 for Mon Oct 26** (VASK-017): ill-night-before, kt-later-trigger, ill-track-inputs, kt-five-goals |
+| Instagram followers (@becauseidmyor) | **21** (last reading 2026-10-26 17:28) · flat since Oct 21 · 0 follows attributable to any reel |
+| X followers | 2 (2026-10-26) · YouTube subscribers 0 |
+| Are we improving? | **Instagram: yes on reach.** Newer half median reach 32 vs older half 17. Illustrated explainers: median 128 at 48h vs 20 for the account |
+| New data today | None (no screenshots in inbox, no browser tool this run) |
+| Waiting for approval | **3 for Wed Oct 28** (VASK-019): ill-unclear-task, ill-ten-pages, ill-gym-day-four |
+| Unknown status | Oct 27 batch (approved VASK-018) + pixel-book 22:00: not ticked as scheduled, not in analytics. Sanyam to confirm |
 
-## What the data says (unchanged since Oct 24)
-- **Signal:** hard-truth hooks 2.1x views (n=4). Quiz / framework-list / fill-the-blank at the bottom.
-- **Signal:** "planning" / "goal-setting" topics trail (0.4-0.6x); procrastination / habits / consistency / focus lead (hints, small n).
-- Missing: watch time, shares, saves, follows. Without them we can't tell a hook problem from a pacing problem (ASK-V).
+## What the data says (Oct 26 rebuild)
+- **Signal:** animated-illustration-explainer 8.0x the rest on IG reach (n=3).
+- **Signal:** hard-truth hooks 2.8x (n=7). Question hooks 0.5x.
+- **Signal:** procrastination topic 2.4x (n=3); planning 0.4x, goal-setting 0.3x.
+- Best so far: ill-size-problem (IG reach 272, YT 110), tree-study-abroad (141), ill-bad-day-version (128).
+- Missing: watch time, shares, saves, follows (need app screenshots, ASK-V / VASK-019 step 3).
 
-## Waiting for approval: Mon Oct 26 batch (V-EXP-28: kinetic vs illustrated, all hard-truth behaviour hooks)
-| Time (IST) | Reel | Style | Length | Hook | Takeaway | Score |
-|---|---|---|---|---|---|---|
-| 09:30 | ill-night-before | illustrated | 52.4s | "Your morning is decided the night before." | 3 things tonight, goal first, set up the start | 34/40 |
-| 13:00 | kt-later-trigger | kinetic | 44.7s | "Later isn't a time." | After I ___, I will ___ (3 examples) | 33/40 |
-| 16:30 | ill-track-inputs | illustrated | 44.3s | "You're tracking the wrong number." | Track inputs (3 gym sessions, 5 proposals), not results | 33/40 |
-| 19:30 | kt-five-goals | kinetic | 56.9s | "Five goals. Zero progress." | One goal for 12 weeks, rest on minimum or parked | 31/40 |
-
-## Last 7 reels
-| Date | Reel | Format | Length | Views (age) | Shares | Follows |
-|---|---|---|---|---|---|---|
-| 10-25 19:30 | ill-monday-wont-fix-it | illustrated VO | 43.3s | scheduled | | |
-| 10-25 16:30 | ill-language-plan | illustrated VO | 51.1s | scheduled | | |
-| 10-25 13:00 | ill-bad-day-version | illustrated VO | 51.4s | scheduled | | |
-| 10-25 09:30 | ill-size-problem | illustrated VO | 56.7s | live 1.5h at run start | | |
-| 10-23 | diagram-someday-vo | diagram VO | 27.1s | 27 (14h) | – | – |
-| 10-23 | diagram-howto-vo | diagram VO | 24.6s | 10 (24h) | – | – |
-| 10-22 | tree-study-abroad | tree | 16.2s | **141** (38h) | – | – |
-
-Best so far: tree-study-abroad (141 views). Best kinetic: someday-is-not-a-day (74). Worst: start-at-the-end (5).
+## Waiting for approval: Wed Oct 28 batch (V-EXP-30)
+| Time (IST) | Reel | Length | Hook | Takeaway | Score |
+|---|---|---|---|---|---|
+| 09:30 | ill-unclear-task | 51.3s | "You don't procrastinate on hard tasks. You procrastinate on unclear ones." | Rewrite each to-do as the next visible action, verb first; picture-it-done test | 36/40 |
+| 13:00 | ill-ten-pages | 49.1s | "12 books a year is 10 pages a night." | Book on the pillow, 10 pages before the phone, track pages | 35/40 |
+| 19:30 | ill-gym-day-four | 56.1s | "Your gym plan fails around day four." | Book 3 sessions as calendar meetings on Sunday; move missed ones, don't delete | 35/40 |
 
 ## Open experiments
-V-EXP-09..22 (kinetic, one per reel; verdicts wait for watch time), V-EXP-23..27, **V-EXP-28 (same-day style split, NEW)**.
+- V-EXP-28 (Oct 26 batch, all illustrated), V-EXP-29 (Oct 27: money/career/focus/goal-date), V-EXP-30 (Oct 28: procrastination/reading/fitness). All waiting for 48h data.
+
+## Stock
+- Approved, not confirmed posted: 4 (Oct 27 batch) + pixel-book. Waiting approval: 3. Target 5+ approved.
 
 ## Asks
-- **VASK-017**: watch the 4 Oct-26 reels, reply OK / drop / change; schedule after OK. Also: retire the 3 old-style queued reels?
-- **ASK-V / VASK-012**: watch time + skip rate screenshots from the Instagram app (most useful input). Oct 27: 48h of the Oct-25 illustrated batch.
-- VASK-004 follower count now and then.
+- **VASK-019**: approve the Oct 28 batch; confirm what went live Oct 27; insight screenshots for the Oct-25 batch; listen to the new soft pen sound.
+- VASK-012 / ASK-V: app insight screenshots (watch time, skip rate, shares, saves, follows).

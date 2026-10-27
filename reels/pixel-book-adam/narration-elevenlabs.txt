@@ -1,0 +1,36 @@
+Pixel Book narration (Sam's story). One line per clip, N1 to N30. <break> tags are ElevenLabs pause tags.
+
+N1: Sam was reading under his favourite tree, when the pages started to glow.
+N2: Then something rose out of the book. A door.
+N3: Sam didn't think twice. He jumped.
+N4: And he landed ten years in the future.
+N5: A helicopter came down on the lawn. And out stepped... Sam. Ten years older.
+N6: His own company. The house. Every dream he once wrote in that book, had come true.
+N7: But how? <break time="0.7s" /> The book pulled Sam back, page by page, to where it all began.
+N8: One ordinary night, Sam wrote his dream down.
+N9: Build my own company. <break time="0.3s" /> It looked impossible.
+N10: He wrote it anyway.
+N11: The next morning, the alarm rang.
+N12: He could hit snooze, and sleep till ten,
+N13: or get up, and give his dream one hour.
+N14: So which one? <break time="0.6s" /> He got up.
+N15: That night, his phone was calling.
+N16: Three hours of scrolling,
+N17: or one hour of building.
+N18: He picked building.
+N19: And then he picked it again. And again. Every single day.
+N20: But not every choice was right. <break time="0.3s" /> His first company failed.
+N21: It hurt. <break time="0.3s" /> But it wasn't the end. It was a lesson.
+N22: So he adjusted, and chose again.
+N23: Day twelve hundred and four. His first big client.
+N24: Every scene was a choice.
+N25: Some split his path apart. <break time="0.3s" /> Some brought it back together.
+N26: And all of them led to the same place.
+N27: Then Sam was back under the tree. Same book.
+N28: The first page was blank. <break time="0.4s" /> So he wrote it down.
+N29: Sam's story started on one page. Yours can too. <break time="0.4s" /> Write your dreams and visions in one place, break them into small steps, and document your journey.
+N30: Start yours on Deem-yor.
+
+FULL SCRIPT (one take):
+
+Sam was reading under his favourite tree, when the pages started to glow. Then something rose out of the book. A door. Sam didn't think twice. He jumped. And he landed ten years in the future. A helicopter came down on the lawn. And out stepped... Sam. Ten years older. His own company. The house. Every dream he once wrote in that book, had come true. But how? <break time="0.7s" /> The book pulled Sam back, page by page, to where it all began. One ordinary night, Sam wrote his dream down. Build my own company. <break time="0.3s" /> It looked impossible. He wrote it anyway. The next morning, the alarm rang. He could hit snooze, and sleep till ten, or get up, and give his dream one hour. So which one? <break time="0.6s" /> He got up. That night, his phone was calling. Three hours of scrolling, or one hour of building. He picked building. And then he picked it again. And again. Every single day. But not every choice was right. <break time="0.3s" /> His first company failed. It hurt. <break time="0.3s" /> But it wasn't the end. It was a lesson. So he adjusted, and chose again. Day twelve hundred and four. His first big client. Every scene was a choice. Some split his path apart. <break time="0.3s" /> Some brought it back together. And all of them led to the same place. Then Sam was back under the tree. Same book. The first page was blank. <break time="0.4s" /> So he wrote it down. Sam's story started on one page. Yours can too. <break time="0.4s" /> Write your dreams and visions in one place, break them into small steps, and document your journey. Start yours on Deem-yor.

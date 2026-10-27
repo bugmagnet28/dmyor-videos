@@ -1,0 +1,128 @@
+{
+ "total": 51.34,
+ "brandT": 47.54,
+ "scenes": [
+  {
+   "type": "vague-list",
+   "params": {},
+   "head": "Not hard.<br><b>Unclear</b>.",
+   "t0": 0.0,
+   "t1": 4.53
+  },
+  {
+   "type": "vague-list",
+   "params": {
+    "cue": [
+     "Taxes",
+     "Website",
+     "Thesis",
+     "phone"
+    ],
+    "at": [
+     1.89,
+     2.13,
+     2.61,
+     7.73
+    ]
+   },
+   "head": "No <b>first move</b>,<br>so you scroll.",
+   "t0": 4.53,
+   "t1": 13.21
+  },
+  {
+   "type": "rewrite-task",
+   "params": {
+    "old": "Thesis",
+    "neu": "Write 200 words of section 2.1",
+    "done": "Done = 200 words on the page",
+    "cue": [
+     "rewrite",
+     "verb",
+     "something"
+    ],
+    "at": [
+     0.81,
+     4.27,
+     4.99
+    ]
+   },
+   "head": "Rewrite it as the<br><b>next action</b>.",
+   "t0": 13.21,
+   "t1": 19.81
+  },
+  {
+   "type": "list-rewrite",
+   "params": {
+    "cue": [
+     "taxes",
+     "website",
+     "thesis"
+    ],
+    "at": [
+     0.19,
+     3.19,
+     6.17
+    ]
+   },
+   "head": "Three items,<br><b>rewritten</b>.",
+   "t0": 19.81,
+   "t1": 29.51
+  },
+  {
+   "type": "done-test",
+   "params": {
+    "cue": [
+     "picture",
+     "vague",
+     "split"
+    ],
+    "at": [
+     1.41,
+     3.05,
+     3.81
+    ]
+   },
+   "head": "Can you<br><b>picture done</b>?",
+   "t0": 29.51,
+   "t1": 35.01
+  },
+  {
+   "type": "rewrite-task",
+   "params": {
+    "old": "Insurance",
+    "neu": "Find the policy number in my email",
+    "done": "Done = number copied",
+    "cue": [
+     "avoiding",
+     "rewrite",
+     "line"
+    ],
+    "at": [
+     0.93,
+     2.09,
+     4.39
+    ]
+   },
+   "head": "Rewrite <b>one task</b><br>right now.",
+   "t0": 35.01,
+   "t1": 40.11
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Finish my thesis",
+    "date": "Open it again: Jun 2027",
+    "steps": [
+     "200 words of 2.1",
+     "Read 2 papers",
+     "Email my advisor"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 40.11,
+   "t1": 47.54
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}

@@ -17,7 +17,7 @@ description: Motion-graphics explainer where every spoken thought gets its own r
 ## Make a reel
 From `~/Documents/dmyor-videos` (voice setup once: `bash .claude/skills/animated-illustration-explainer/scripts/setup_tts.sh`).
 1. `mkdir reels/<slug>`; copy `examples/narration.example.json` to `reels/<slug>/narration.json`; write `spoken` and `scenes`.
-2. `python3 .claude/skills/animated-illustration-explainer/scripts/make_reel.py reels/<slug> --record` (`--package YYYY-MM-DD` creates `ready-to-post/<date>-<slug>/`).
+2. `python3 .claude/skills/animated-illustration-explainer/scripts/make_reel.py reels/<slug> --record` (`--skip-voice` reuses audio.mp3 + cues.json after picture fixes) (`--package YYYY-MM-DD` creates `ready-to-post/<date>-<slug>/`).
 3. Contact-sheet the frames (one per scene midpoint, plus frame 0 and the brand card), fix overlaps or empty stretches, show Sanyam, schedule only after his OK, register in `analytics/`.
 
 ## narration.json
@@ -32,6 +32,7 @@ From `~/Documents/dmyor-videos` (voice setup once: `bash .claude/skills/animated
 
 ## Sound design (`scripts/sfx.py`, `assets/events.json`)
 Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible level (default `"present"`). Synthesized in code, no samples, no music.
+- `pencil` is a soft pen (band-limited strokes, owner 2026-10-27: never a scratchy pencil).
 - Object sounds: `clock` (tick-tock while a clock is on screen), `timer` (fast ticking while a timer runs), `beep2` (timer passes the limit), `pencil` (crossing out, writing; give a duration), `page` (calendar or page flip), `riffle` (pages counting up), `footsteps` (a person walking), `plate` (gym weight clink), `stamp` (archiving), `coin` (money landing), `typing` (keyboard, bed), `buzz` (phone vibrating), `door` (door closing), `toggle` (switch on).
 - Feedback sounds: `right` (every check mark / done: a soft two-note "correct" chime that steps up in pitch along a run of checks in the same scene) and `pop` (anything appearing: cards, chips, rows; pitch varies per item). Never reuse one sound for everything: checks = right, appearing = pop, objects = their own sound.
 - Interface sounds, only where nothing above fits: `swish` (scene change), `ratchet` (abstract counter), `tone` (warm swell under the value close), `chord` (brand card).
@@ -89,6 +90,16 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `two-blocks` | two task cards (task, amount, "phone: kitchen") with 25-min rings filling and ticks | `rows[[task, amount, phone]]`; cue x2 |
 | `break-timer` | focus ring runs out, beep, 5-min BREAK ring, "Go again" back to 25:00 | `label`; cue x3 |
 | `room-pick` | three room doors, one picked + check, note "Tomorrow, first block: phone goes to the kitchen" | `rooms[3]`, `pick`, `note`; cue x3 |
+| `when-question` | TODAY'S WORKOUT card with a blinking "When?" slot, DAY 1 → DAY 4 counter, excitement bar drains; a "maybe tomorrow" chip fills the slot | `what`, `mood`, `bar`; cue x3 |
+| `meeting-card` | calendar NEW EVENT card: title typed with caret, time + repeat rows, reminder toggle on, "Saved, like a meeting" | `title`, `rows[2]`, `remind`; cue x2 |
+| `gym-calendar` | MON-SUN columns with 7:00 session blocks; `stage`: add (blocks pop in), decide (`hi` days light up, `rest` labels, note), move (`move`:[block, to day], missed X then slides), ticks (each block ticked, "3 of 3 this week") | `blocks[[day,time,label]]`, `note`; cue per beat |
+| `shelf-year` | "10 pages × 365 nights = 3,650 pages ÷ 300" and 12 book spines appearing on a shelf, "= 12 books a year" (hook) | `a`, `b`, `c`, `label`, `books` |
+| `pillow-book` | bed line art, book drops onto the pillow, page counter 0 → 10 / 10, phone on the side "later", order chips "1. Ten pages / 2. Then the phone", optional `note` card | `note`; cue [book, pages, phone, note] |
+| `page-log` | PAGES READ log rows ticked, Book 1 progress bar, "12 books: far away" dims vs "Tonight: 10 pages" ticked | `rows[[day,n]]`, `goal`; cue x3 |
+| `vague-list` | TO DO notepad, vague items written on with "?" each, phone slides in "picks this" and the list dims (hook-safe) | `items[3]`, `phone`; cue x4 |
+| `rewrite-task` | vague task struck out, the next action written in with the verb in sage + "verb" tag, "Done = ..." card ticked | `old`, `neu`, `done`; cue x3 |
+| `list-rewrite` | three cards: vague item struck, next action written, ticked | `rows[[old,new]]`; cue x3 |
+| `done-test` | "Work on website" + dashed "done = ?" frame crossed vs "Write the headline" + a page with a headline drawn, ticked; note "Can't picture done? Split it again." | `vague`, `clear`, `note`; cue x3 |
 | `dream-to-steps` | "ARCHIVED TODAY" dream card branching into three ticked steps (use for the value close) | `tag`, `dream`, `date`, `steps[3]` |
 
 **Cues**: `params.cue` lists the spoken word that triggers each animation beat (null = default); `make_reel.py` resolves them to `params.at`, and `events.json` can time sounds as `"@i"` / `"@i+0.3"`, so picture and sound land on the voice. Prefer cues over fixed times for any new scene.

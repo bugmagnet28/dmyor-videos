@@ -304,3 +304,14 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Verdict + why:
 - Next: if money or focus clearly beats the habit reels, give that area 1 of 4 daily slots next week.
 - Note: all 4 are animated-illustration (the only style meeting every owner rule); the "2 styles per day" rule could not be met without rebuilding diagram/hybrid with sound, and the only cinematic film (brand-one-place) is posted today, so a second film with the same takeaway would repeat it.
+
+## V-EXP-30: Concrete daily-life methods (gym schedule, reading, to-do rewriting) on hard-truth / number hooks
+- Status: running (opened 2026-10-27, before building)
+- Change: batch for Wed 2026-10-28, 3 animated-illustration reels, each with new scenes and one method with real numbers: ill-gym-day-four (fitness: book 3 gym sessions as calendar meetings, move don't delete; hard-truth), ill-ten-pages (reading: 10 pages a night = 12 books a year; number-contrast hook), ill-unclear-task (procrastination: rewrite to-dos as next visible action; hard-truth). Soft pen sound replaces the scratchy pencil (owner 2026-10-27).
+- Why: procrastination is the one topic signal (2.4x, n=3); hard-truth hooks the one hook signal (2.8x, n=7); number-contrast is a hint (1.4x, n=1) worth a second data point.
+- Metric + target (48h per reel, IG + YT): reach, avg watch time, shares+saves per 1k, follows. Target: median reach >= 46 (median of the illustrated reels so far is 128 on IG, account median 20) and at least one follow.
+- Expectation: ill-unclear-task highest reach (procrastination + hard truth); ill-ten-pages highest saves (a number people screenshot); ill-gym-day-four in between. Confidence low (n=1 each).
+- Result:
+- Verdict + why:
+- Next: if number-contrast (ten-pages) matches the hard-truth reels, keep one number hook per day.
+- Note: only one style again (see run journal 2026-10-27): diagram/hybrid lack sound, cinematic needs a bespoke page per story, pixel story pipeline is per-film. 3 reels, not 4, to keep each one built with new scenes under load ~30.

@@ -110,12 +110,14 @@ def timer(d=2.0):
 
 
 def pencil(d=.3):
-    """graphite on paper: grainy high noise, a little pressure swell"""
-    n = int(d * SR); t = np.arange(n) / SR
-    grain = np.repeat(rng.uniform(.3, 1, int(n / 90) + 1), 90)[:n]
-    x = hp(lowpass(noise(n), 7000), 1800) * grain
-    shape = np.sin(np.pi * np.clip(t / d, 0, 1)) ** .6
-    return x * shape
+    """soft pen on paper (owner 2026-10-27: soft pen strokes, never a scratchy pencil):
+    short band-limited strokes, 900-2400 Hz, hanning-shaped, no high grain"""
+    n = int(d * SR); out = np.zeros(n); t0 = 0.0; r = np.random.default_rng(int(d * 1000) + 7)
+    while t0 < max(d - .06, .001):
+        m = int(r.uniform(.06, .11) * SR)
+        s = lowpass(hp(noise(m), 900), 2400) * np.hanning(m) * r.uniform(.5, 1)
+        i = int(t0 * SR); out[i:i + m] += s[: max(0, n - i)]; t0 += r.uniform(.09, .15)
+    return .65 * out / (np.abs(out).max() + 1e-9)
 
 
 def pen_check():

@@ -1,0 +1,1115 @@
+{
+ "audio": "audio.mp3",
+ "duration": 51.39,
+ "text": "You don't procrastinate on hard tasks, you procrastinate on unclear ones. Look at a normal to-do list, taxes, website, thesis. None of those is something you can actually start, your brain can't see the first move so it picks up the phone instead. The fix is to rewrite each item as the next visible action. Start with a verb and make it something you could see is done. So taxes becomes download the Marchbank statement, website becomes write the headline for the homepage, and thesis becomes write 200 words of section 2.1. Here's the test, if you can't picture the moment it's done it's still too vague, split it again until you can. Take the task you've been avoiding the longest and rewrite it right now, then do just that one line. That's what Demure is for, you archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. If you want to try it out, I've put the link in the bio.",
+ "words": [
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 0.0,
+   "e": 0.26
+  },
+  {
+   "w": "dont",
+   "raw": "don't",
+   "s": 0.26,
+   "e": 0.5
+  },
+  {
+   "w": "procrastinate",
+   "raw": "procrastinate",
+   "s": 0.5,
+   "e": 1.16
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 1.16,
+   "e": 1.38
+  },
+  {
+   "w": "hard",
+   "raw": "hard",
+   "s": 1.38,
+   "e": 1.62
+  },
+  {
+   "w": "tasks",
+   "raw": "tasks,",
+   "s": 1.62,
+   "e": 2.08
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 2.5,
+   "e": 2.58
+  },
+  {
+   "w": "procrastinate",
+   "raw": "procrastinate",
+   "s": 2.58,
+   "e": 3.32
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 3.32,
+   "e": 3.52
+  },
+  {
+   "w": "unclear",
+   "raw": "unclear",
+   "s": 3.52,
+   "e": 3.84
+  },
+  {
+   "w": "ones",
+   "raw": "ones.",
+   "s": 3.84,
+   "e": 4.22
+  },
+  {
+   "w": "look",
+   "raw": "Look",
+   "s": 4.58,
+   "e": 4.72
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 4.72,
+   "e": 4.82
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 4.82,
+   "e": 4.94
+  },
+  {
+   "w": "normal",
+   "raw": "normal",
+   "s": 4.94,
+   "e": 5.18
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 5.18,
+   "e": 5.36
+  },
+  {
+   "w": "do",
+   "raw": "-do",
+   "s": 5.36,
+   "e": 5.56
+  },
+  {
+   "w": "list",
+   "raw": "list,",
+   "s": 5.56,
+   "e": 5.84
+  },
+  {
+   "w": "taxes",
+   "raw": "taxes,",
+   "s": 6.42,
+   "e": 6.42
+  },
+  {
+   "w": "website",
+   "raw": "website,",
+   "s": 6.66,
+   "e": 6.96
+  },
+  {
+   "w": "thesis",
+   "raw": "thesis.",
+   "s": 7.14,
+   "e": 7.34
+  },
+  {
+   "w": "none",
+   "raw": "None",
+   "s": 8.02,
+   "e": 8.1
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 8.1,
+   "e": 8.26
+  },
+  {
+   "w": "those",
+   "raw": "those",
+   "s": 8.26,
+   "e": 8.4
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 8.4,
+   "e": 8.62
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 8.62,
+   "e": 8.82
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 8.82,
+   "e": 9.02
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 9.02,
+   "e": 9.16
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 9.16,
+   "e": 9.5
+  },
+  {
+   "w": "start",
+   "raw": "start,",
+   "s": 9.5,
+   "e": 9.88
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 10.08,
+   "e": 10.2
+  },
+  {
+   "w": "brain",
+   "raw": "brain",
+   "s": 10.2,
+   "e": 10.44
+  },
+  {
+   "w": "cant",
+   "raw": "can't",
+   "s": 10.44,
+   "e": 10.76
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 10.76,
+   "e": 10.88
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 10.88,
+   "e": 11.0
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 11.0,
+   "e": 11.18
+  },
+  {
+   "w": "move",
+   "raw": "move",
+   "s": 11.18,
+   "e": 11.48
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 11.48,
+   "e": 11.72
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 11.72,
+   "e": 11.84
+  },
+  {
+   "w": "picks",
+   "raw": "picks",
+   "s": 11.84,
+   "e": 11.98
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 11.98,
+   "e": 12.14
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 12.14,
+   "e": 12.26
+  },
+  {
+   "w": "phone",
+   "raw": "phone",
+   "s": 12.26,
+   "e": 12.42
+  },
+  {
+   "w": "instead",
+   "raw": "instead.",
+   "s": 12.42,
+   "e": 12.84
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 13.26,
+   "e": 13.42
+  },
+  {
+   "w": "fix",
+   "raw": "fix",
+   "s": 13.42,
+   "e": 13.62
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 13.62,
+   "e": 13.86
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 13.86,
+   "e": 14.02
+  },
+  {
+   "w": "rewrite",
+   "raw": "rewrite",
+   "s": 14.02,
+   "e": 14.34
+  },
+  {
+   "w": "each",
+   "raw": "each",
+   "s": 14.34,
+   "e": 14.62
+  },
+  {
+   "w": "item",
+   "raw": "item",
+   "s": 14.62,
+   "e": 14.98
+  },
+  {
+   "w": "as",
+   "raw": "as",
+   "s": 14.98,
+   "e": 15.18
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 15.18,
+   "e": 15.32
+  },
+  {
+   "w": "next",
+   "raw": "next",
+   "s": 15.32,
+   "e": 15.56
+  },
+  {
+   "w": "visible",
+   "raw": "visible",
+   "s": 15.56,
+   "e": 15.96
+  },
+  {
+   "w": "action",
+   "raw": "action.",
+   "s": 15.96,
+   "e": 16.4
+  },
+  {
+   "w": "start",
+   "raw": "Start",
+   "s": 17.04,
+   "e": 17.2
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 17.2,
+   "e": 17.36
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 17.36,
+   "e": 17.48
+  },
+  {
+   "w": "verb",
+   "raw": "verb",
+   "s": 17.48,
+   "e": 17.7
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 17.7,
+   "e": 17.92
+  },
+  {
+   "w": "make",
+   "raw": "make",
+   "s": 17.92,
+   "e": 18.08
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 18.08,
+   "e": 18.2
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 18.2,
+   "e": 18.38
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 18.38,
+   "e": 18.62
+  },
+  {
+   "w": "could",
+   "raw": "could",
+   "s": 18.62,
+   "e": 18.76
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 18.76,
+   "e": 19.0
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 19.0,
+   "e": 19.18
+  },
+  {
+   "w": "done",
+   "raw": "done.",
+   "s": 19.18,
+   "e": 19.44
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 19.86,
+   "e": 20.0
+  },
+  {
+   "w": "taxes",
+   "raw": "taxes",
+   "s": 20.0,
+   "e": 20.32
+  },
+  {
+   "w": "becomes",
+   "raw": "becomes",
+   "s": 20.32,
+   "e": 20.78
+  },
+  {
+   "w": "download",
+   "raw": "download",
+   "s": 20.78,
+   "e": 21.34
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 21.34,
+   "e": 21.52
+  },
+  {
+   "w": "marchbank",
+   "raw": "Marchbank",
+   "s": 21.52,
+   "e": 22.0
+  },
+  {
+   "w": "statement",
+   "raw": "statement,",
+   "s": 22.0,
+   "e": 22.42
+  },
+  {
+   "w": "website",
+   "raw": "website",
+   "s": 23.0,
+   "e": 23.24
+  },
+  {
+   "w": "becomes",
+   "raw": "becomes",
+   "s": 23.24,
+   "e": 23.64
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 23.64,
+   "e": 23.94
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 23.94,
+   "e": 24.1
+  },
+  {
+   "w": "headline",
+   "raw": "headline",
+   "s": 24.1,
+   "e": 24.44
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 24.44,
+   "e": 24.68
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 24.68,
+   "e": 24.82
+  },
+  {
+   "w": "homepage",
+   "raw": "homepage,",
+   "s": 24.82,
+   "e": 25.24
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 25.86,
+   "e": 25.98
+  },
+  {
+   "w": "thesis",
+   "raw": "thesis",
+   "s": 25.98,
+   "e": 26.22
+  },
+  {
+   "w": "becomes",
+   "raw": "becomes",
+   "s": 26.22,
+   "e": 26.74
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 26.74,
+   "e": 27.08
+  },
+  {
+   "w": "200",
+   "raw": "200",
+   "s": 27.08,
+   "e": 27.52
+  },
+  {
+   "w": "words",
+   "raw": "words",
+   "s": 27.52,
+   "e": 27.82
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 27.82,
+   "e": 28.02
+  },
+  {
+   "w": "section",
+   "raw": "section",
+   "s": 28.02,
+   "e": 28.28
+  },
+  {
+   "w": "2",
+   "raw": "2",
+   "s": 28.28,
+   "e": 28.66
+  },
+  {
+   "w": "1",
+   "raw": ".1.",
+   "s": 28.66,
+   "e": 29.28
+  },
+  {
+   "w": "heres",
+   "raw": "Here's",
+   "s": 29.56,
+   "e": 29.84
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 29.84,
+   "e": 29.98
+  },
+  {
+   "w": "test",
+   "raw": "test,",
+   "s": 29.98,
+   "e": 30.28
+  },
+  {
+   "w": "if",
+   "raw": "if",
+   "s": 30.46,
+   "e": 30.52
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 30.52,
+   "e": 30.66
+  },
+  {
+   "w": "cant",
+   "raw": "can't",
+   "s": 30.66,
+   "e": 30.92
+  },
+  {
+   "w": "picture",
+   "raw": "picture",
+   "s": 30.92,
+   "e": 31.12
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 31.12,
+   "e": 31.3
+  },
+  {
+   "w": "moment",
+   "raw": "moment",
+   "s": 31.3,
+   "e": 31.5
+  },
+  {
+   "w": "its",
+   "raw": "it's",
+   "s": 31.5,
+   "e": 31.76
+  },
+  {
+   "w": "done",
+   "raw": "done",
+   "s": 31.76,
+   "e": 31.94
+  },
+  {
+   "w": "its",
+   "raw": "it's",
+   "s": 31.94,
+   "e": 32.18
+  },
+  {
+   "w": "still",
+   "raw": "still",
+   "s": 32.18,
+   "e": 32.36
+  },
+  {
+   "w": "too",
+   "raw": "too",
+   "s": 32.36,
+   "e": 32.56
+  },
+  {
+   "w": "vague",
+   "raw": "vague,",
+   "s": 32.56,
+   "e": 32.82
+  },
+  {
+   "w": "split",
+   "raw": "split",
+   "s": 33.32,
+   "e": 33.52
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 33.52,
+   "e": 33.62
+  },
+  {
+   "w": "again",
+   "raw": "again",
+   "s": 33.62,
+   "e": 33.86
+  },
+  {
+   "w": "until",
+   "raw": "until",
+   "s": 33.86,
+   "e": 34.08
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 34.08,
+   "e": 34.24
+  },
+  {
+   "w": "can",
+   "raw": "can.",
+   "s": 34.24,
+   "e": 34.52
+  },
+  {
+   "w": "take",
+   "raw": "Take",
+   "s": 35.06,
+   "e": 35.22
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 35.22,
+   "e": 35.4
+  },
+  {
+   "w": "task",
+   "raw": "task",
+   "s": 35.4,
+   "e": 35.62
+  },
+  {
+   "w": "youve",
+   "raw": "you've",
+   "s": 35.62,
+   "e": 35.86
+  },
+  {
+   "w": "been",
+   "raw": "been",
+   "s": 35.86,
+   "e": 35.94
+  },
+  {
+   "w": "avoiding",
+   "raw": "avoiding",
+   "s": 35.94,
+   "e": 36.26
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 36.26,
+   "e": 36.5
+  },
+  {
+   "w": "longest",
+   "raw": "longest",
+   "s": 36.5,
+   "e": 36.82
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 36.82,
+   "e": 37.1
+  },
+  {
+   "w": "rewrite",
+   "raw": "rewrite",
+   "s": 37.1,
+   "e": 37.42
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 37.42,
+   "e": 37.58
+  },
+  {
+   "w": "right",
+   "raw": "right",
+   "s": 37.58,
+   "e": 37.74
+  },
+  {
+   "w": "now",
+   "raw": "now,",
+   "s": 37.74,
+   "e": 38.1
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 38.46,
+   "e": 38.66
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 38.66,
+   "e": 38.84
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 38.84,
+   "e": 39.02
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 39.02,
+   "e": 39.22
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 39.22,
+   "e": 39.4
+  },
+  {
+   "w": "line",
+   "raw": "line.",
+   "s": 39.4,
+   "e": 39.72
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 40.16,
+   "e": 40.5
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 40.5,
+   "e": 40.64
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 40.64,
+   "e": 41.02
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 41.02,
+   "e": 41.18
+  },
+  {
+   "w": "for",
+   "raw": "for,",
+   "s": 41.18,
+   "e": 41.46
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 41.8,
+   "e": 41.96
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 41.96,
+   "e": 42.34
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 42.34,
+   "e": 42.58
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 42.58,
+   "e": 42.8
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 42.8,
+   "e": 43.12
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 43.12,
+   "e": 43.38
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 43.38,
+   "e": 43.54
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 43.54,
+   "e": 43.66
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 43.66,
+   "e": 43.9
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 43.9,
+   "e": 44.02
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 44.02,
+   "e": 44.32
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 44.32,
+   "e": 44.78
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 44.78,
+   "e": 44.94
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 44.94,
+   "e": 45.08
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 45.08,
+   "e": 45.3
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 45.3,
+   "e": 45.52
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 45.52,
+   "e": 45.84
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 45.84,
+   "e": 46.14
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 46.14,
+   "e": 46.36
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 46.36,
+   "e": 46.48
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 46.48,
+   "e": 46.8
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 46.8,
+   "e": 47.14
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 47.54,
+   "e": 47.72
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 47.72,
+   "e": 47.84
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 47.84,
+   "e": 48.0
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 48.0,
+   "e": 48.14
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 48.14,
+   "e": 48.36
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 48.36,
+   "e": 48.56
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 48.56,
+   "e": 48.82
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 48.98,
+   "e": 49.14
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 49.14,
+   "e": 49.26
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 49.26,
+   "e": 49.42
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 49.42,
+   "e": 49.6
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 49.6,
+   "e": 49.76
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 49.76,
+   "e": 49.86
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 49.86,
+   "e": 50.14
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 4.22,
+   "text": "You don't procrastinate on hard tasks, you procrastinate on unclear ones."
+  },
+  {
+   "s": 4.58,
+   "e": 9.16,
+   "text": "Look at a normal to-do list, taxes, website, thesis. None of those is something you can"
+  },
+  {
+   "s": 9.16,
+   "e": 12.84,
+   "text": "actually start, your brain can't see the first move so it picks up the phone instead."
+  },
+  {
+   "s": 13.26,
+   "e": 18.08,
+   "text": "The fix is to rewrite each item as the next visible action. Start with a verb and make"
+  },
+  {
+   "s": 18.08,
+   "e": 22.42,
+   "text": "it something you could see is done. So taxes becomes download the Marchbank statement,"
+  },
+  {
+   "s": 23.0,
+   "e": 27.82,
+   "text": "website becomes write the headline for the homepage, and thesis becomes write 200 words"
+  },
+  {
+   "s": 27.82,
+   "e": 32.82,
+   "text": "of section 2.1. Here's the test, if you can't picture the moment it's done it's still too vague,"
+  },
+  {
+   "s": 33.32,
+   "e": 37.74,
+   "text": "split it again until you can. Take the task you've been avoiding the longest and rewrite it right"
+  },
+  {
+   "s": 37.74,
+   "e": 43.12,
+   "text": "now, then do just that one line. That's what Demure is for, you archive your dream today"
+  },
+  {
+   "s": 43.12,
+   "e": 47.14,
+   "text": "so you can see it tomorrow and break it down into small steps you can actually do."
+  },
+  {
+   "s": 47.54,
+   "e": 50.14,
+   "text": "If you want to try it out, I've put the link in the bio."
+  }
+ ],
+ "wps": 3.41
+}

@@ -1,0 +1,536 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Pixel Book</title>
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block;width:1080px;height:1920px;image-rendering:pixelated}</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script>
+// Pixel Book: every frame is a pure function of time. Worlds are drawn at 270x480 (1 art pixel = 4 screen px)
+// and blitted with a nearest-neighbour "pixel camera", so zooming makes the pixels bigger, never blurry.
+var W = 270, H = 480, OW = 1080, OH = 1920;
+// film time u -> story time t: each narration line's slot is mapped onto the span of picture it describes (timemap.json)
+var MAP = [[0.0, 4.78, 0.5, 4.6], [4.78, 5.3222, 4.6, 5.0], [5.3222, 8.44, 6.3, 8.6], [8.44, 11.5, 8.6, 12.4], [11.5, 14.47, 12.4, 14.2], [14.47, 19.96, 14.2, 17.8], [19.96, 25.66, 17.8, 20.6], [25.66, 26.3309, 20.6, 21.2], [26.3309, 31.81, 25.5, 30.4], [31.81, 35.17, 32.0, 36.3], [35.17, 38.8, 36.3, 39.2], [38.8, 40.23, 40.9, 43.3], [40.23, 42.37, 46.15, 50.35], [42.37, 45.03, 50.35, 54.9], [45.03, 48.38, 55.15, 58.8], [48.38, 51.24, 60.2, 63.9], [51.24, 53.64, 66.15, 69.55], [53.64, 56.08, 69.55, 73.3], [56.08, 58.46, 73.55, 77.0], [58.46, 60.2199, 77.8, 80.6], [60.2199, 65.0499, 80.6, 88.6], [65.0499, 68.8899, 90.55, 95.3], [68.8899, 72.9699, 96.9, 99.6], [72.9699, 75.4099, 99.6, 103.4], [75.4099, 79.0999, 105.55, 110.0], [79.0999, 81.3599, 110.9, 115.0], [81.3599, 85.3199, 115.0, 124.5], [85.3199, 88.3699, 124.5, 130.0], [88.3699, 91.7699, 130.0, 133.6], [91.7699, 95.3699, 139.5, 143.6], [95.3699, 104.6799, 143.6, 154.4], [104.6799, 105.6799, 154.4, 155.8], [105.6799, 107.4799, 155.8, 157.0]], DUR = 107.48;
+function u2t(u) { for (var i = 0; i < MAP.length; i++) { var g = MAP[i]; if (u < g[1] || i === MAP.length - 1) return g[2] + (g[3] - g[2]) * Math.min(1, Math.max(0, (u - g[0]) / (g[1] - g[0]))); } return 0; }
+var FCAPS = [[-0.05, 8.34, "THIS BOOK OPENED A *DOOR.*", null], [11.45, 19.939999999999998, "*10 YEARS* LATER", null], [25.61, 31.7, "BUT *HOW?*", null], [35.43, 40.160000000000004, "STEP ONE: *WRITE IT DOWN.*", null], [48.550000000000004, 50.74, "WHICH *ONE?*", null], [58.690000000000005, 59.620000000000005, "WHICH *ONE?*", null], [60.410000000000004, 64.98, "AGAIN. AND *AGAIN.*", null], [65.27, 68.8, "NOT EVERY CHOICE WAS *RIGHT.*", 1560], [69.13000000000001, 75.34, "IT WAS A *LESSON.*", 1560], [79.33, 81.06, "EVERY SCENE. *A CHOICE.*", 1560], [81.63000000000001, 87.87, "ALL *CONNECTED.*", 1560], [91.96000000000001, 95.25, "WRITE IT *DOWN.*", null]];
+var C = document.getElementById("c"), X = C.getContext("2d"); X.imageSmoothingEnabled = false;
+function mk(w, h) { var c = document.createElement("canvas"); c.width = w; c.height = h; var x = c.getContext("2d"); x.imageSmoothingEnabled = false; return [c, x]; }
+var LB = mk(W, H), OA = mk(OW, OH), OB = mk(OW, OH), TINY = mk(W, H);
+
+// ---------- assets ----------
+var A = {}, LIST = {
+  sky: "art/field/sky.png", clouds: "art/field/clouds.png", far: "art/field/far.png", mid: "art/field/mid.png", ground: "art/field/ground.png",
+  shadow: "art/field/shadow.png", flowers: "art/field/flowers.png", tree: "art/field/tree.png", reader: "art/field/hero_read.png", reader_blink: "art/field/hero_read_blink.png", book_ground: "art/field/book_ground.png",
+  house: "art/scenes/house.png", hedge: "art/scenes/hedge.png", car: "art/scenes/car.png", wheel0: "art/scenes/wheel0.png", wheel1: "art/scenes/wheel1.png",
+  room_night: "art/scenes/room_night.png", room_dawn: "art/scenes/room_dawn.png", notebook: "art/scenes/notebook.png", laptop: "art/scenes/laptop.png",
+  alarm0: "art/scenes/alarm0.png", alarm1: "art/scenes/alarm1.png", phone: "art/scenes/phone.png", friendcar: "art/scenes/friendcar.png",
+  shop: "art/scenes/shop.png", sign0: "art/scenes/sign0.png", sign1: "art/scenes/sign1.png", office: "art/scenes/office.png", library: "art/scenes/library.png", bigbook: "art/scenes/bigbook.png", heli: "art/scenes/heli.png"
+};
+["stand", "blink", "shock", "walk0", "walk1", "walk2", "walk3", "owalk0", "owalk1", "owalk2", "owalk3", "ostand", "olook", "sit_write0", "sit_write1", "sit_type0", "sit_type1",
+ "sit_bed", "sit_bed_blink", "stretch", "wave_off", "sad", "sad_blink", "shake0", "shake1", "cshake0", "cshake1", "crouch", "jump", "lookup", "bed_phone", "bed_yawn", "bed_phone_blink"].forEach(function (n) { LIST["c_" + n] = "art/chars/" + n + ".png"; });
+var READY = Promise.all(Object.keys(LIST).map(function (k) { return new Promise(function (res) { var i = new Image(); i.onload = function () { A[k] = i; res(); }; i.onerror = function () { console.error("missing " + LIST[k]); res(); }; i.src = LIST[k]; }); }));
+
+// ---------- math ----------
+function cl(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function seg(t, a, b) { return cl((t - a) / (b - a), 0, 1); }
+function lerp(a, b, k) { return a + (b - a) * k; }
+function eio(k) { return k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; }
+function eout(k) { return 1 - Math.pow(1 - k, 3); }
+function hash(i) { var x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); }
+var BAY = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5];
+function bay(x, y) { return (BAY[(x & 3) + (y & 3) * 4] + .5) / 16; }
+
+// ---------- camera ----------
+function camAt(keys, t) {
+  if (t <= keys[0][0]) return { x: keys[0][1], y: keys[0][2], z: keys[0][3] };
+  for (var i = 1; i < keys.length; i++) {
+    var k0 = keys[i - 1], k1 = keys[i], ts = k1[4] != null ? k1[0] - k1[4] : k0[0];
+    if (t < k1[0]) { var k = t < ts ? 0 : eio(seg(t, ts, k1[0])); return { x: lerp(k0[1], k1[1], k), y: lerp(k0[2], k1[2], k), z: lerp(k0[3], k1[3], k) }; }
+  }
+  var L = keys[keys.length - 1]; return { x: L[1], y: L[2], z: L[3] };
+}
+function blit(cam, dx, dy, dw, dh, ctx, src) {
+  src = src || LB[0]; var sw = W / cam.z, sh = H / cam.z;
+  var sx = cl(cam.x - sw / 2, 0, Math.max(0, W - sw)), sy = cl(cam.y - sh / 2, 0, Math.max(0, H - sh));
+  sx = Math.round(sx * cam.z * 4) / (cam.z * 4); sy = Math.round(sy * cam.z * 4) / (cam.z * 4);
+  ctx.imageSmoothingEnabled = false; ctx.drawImage(src, sx, sy, sw, sh, dx, dy, dw, dh);
+}
+
+// ---------- low-res drawing helpers (L = LB context) ----------
+var L = LB[1];
+function img(n, x, y, flip, sx, sy) {
+  var i = A[n]; if (!i) return; sx = sx == null ? 1 : sx; sy = sy == null ? sx : sy;
+  L.save(); L.translate(Math.round(x), Math.round(y)); if (flip) { L.translate(Math.round(i.width * sx), 0); L.scale(-1, 1); }
+  L.drawImage(i, 0, 0, Math.max(1, Math.round(i.width * sx)), Math.max(1, Math.round(i.height * sy))); L.restore();
+}
+function rect(x, y, w, h, c) { L.fillStyle = c; L.fillRect(Math.round(x), Math.round(y), Math.round(w), Math.round(h)); }
+function ddisc(cx, cy, r, c, a, ctx) {           // dithered glow disc (crisp pixels, no blur)
+  ctx = ctx || L; ctx.fillStyle = c; cx = Math.round(cx); cy = Math.round(cy); var R = Math.ceil(r);
+  for (var y = -R; y <= R; y++) for (var x = -R; x <= R; x++) { var d = Math.sqrt(x * x + y * y) / r; if (d > 1) continue; if (bay(cx + x, cy + y) < a * (1 - d * d)) ctx.fillRect(cx + x, cy + y, 1, 1); }
+}
+function spark(x, y, c, big) { rect(x, y, 1, 1, c); if (big) { rect(x - 1, y, 1, 1, c); rect(x + 1, y, 1, 1, c); rect(x, y - 1, 1, 1, c); rect(x, y + 1, 1, 1, c); } }
+
+// ---------- pixel font 5x7 ----------
+var F = {A:"01110100011000111111100011000110001",B:"11110100011000111110100011000111110",C:"01110100011000010000100001000101110",D:"11110100011000110001100011000111110",
+E:"11111100001000011110100001000011111",F:"11111100001000011110100001000010000",G:"01110100011000010111100011000101111",H:"10001100011000111111100011000110001",
+I:"01110001000010000100001000010001110",J:"00111000100001000010000101001001100",K:"10001100101010011000101001001010001",L:"10000100001000010000100001000011111",
+M:"10001110111010110101100011000110001",N:"10001100011100110101100111000110001",O:"01110100011000110001100011000101110",P:"11110100011000111110100001000010000",
+Q:"01110100011000110001101011001001101",R:"11110100011000111110101001001010001",S:"01111100001000001110000010000111110",T:"11111001000010000100001000010000100",
+U:"10001100011000110001100011000101110",V:"10001100011000110001100010101000100",W:"10001100011000110101101011010101010",X:"10001100010101000100010101000110001",
+Y:"10001100010101000100001000010000100",Z:"11111000010001000100010001000011111","0":"01110100011001110101110011000101110","1":"00100011000010000100001000010001110",
+"2":"01110100010000100010001000100011111","3":"11110000010000101110000010000111110","4":"00010001100101010010111110001000010","5":"11111100001111000001000011000101110",
+"6":"00110010001000011110100011000101110","7":"11111000010001000100010000100001000","8":"01110100011000101110100011000101110","9":"01110100011000101111000010001001100",
+".":"00000000000000000000000000110001100",",":"00000000000000000000011000010001000",":":"00000011000110000000011000110000000","'":"00100001000100000000000000000000000",
+"?":"01110100010000100010001000000000100","!":"00100001000010000100001000000000100","-":"00000000000000011111000000000000000","@":"01110100011011110101101111000001110",
+"/":"00001000100001000100010000100010000"," ":"00000000000000000000000000000000000"};
+function glyph(ctx, ch, x, y, b, c) { var g = F[ch] || F[" "]; ctx.fillStyle = c; for (var i = 0; i < 35; i++) if (g[i] === "1") ctx.fillRect(x + (i % 5) * b, y + Math.floor(i / 5) * b, b, b); }
+function ptext(ctx, s, x, y, b, c) { for (var i = 0; i < s.length; i++) glyph(ctx, s[i], x + i * 6 * b, y, b, c); }
+function pwidth(s, b) { return s.length * 6 * b - b; }
+
+// screen-level caption: *word* = accent. Letters type on, shadowed, pixel blocks of 8 px (= 2 art px).
+function caption(t, s, a, b, opt) {
+  opt = opt || {}; if (t < a || t > b) return; var B = opt.b || 8, y0 = opt.y || 230, maxc = Math.floor((OW - 96) / (6 * B));
+  var words = [], acc = false; s.split(" ").forEach(function (w) { var st = w[0] === "*", en = w[w.length - 1] === "*" || w.slice(-2) === "*." || w.slice(-2) === "*?"; if (st) acc = true; words.push([w.replace(/\*/g, ""), acc]); if (en) acc = false; });
+  var lines = [[]], len = 0; words.forEach(function (w) { if (len + w[0].length > maxc && len) { lines.push([]); len = 0; } lines[lines.length - 1].push(w); len += w[0].length + 1; });
+  var shown = Math.floor((t - a) * 45), n = 0;
+  lines.forEach(function (ln, li) {
+    var str = ln.map(function (w) { return w[0]; }).join(" "), x = Math.round((OW - pwidth(str, B)) / 2), y = y0 + li * 11 * B;
+    ln.forEach(function (w) {
+      for (var i = 0; i < w[0].length; i++) { if (n++ >= shown) return; [[B, B], [B, 0], [-B, 0], [0, B], [0, -B], [B, -B], [-B, B], [-B, -B]].forEach(function (o) { glyph(X, w[0][i], x + o[0], y + o[1], B, "#1A1530"); }); glyph(X, w[0][i], x, y, B, w[1] ? (opt.accent || "#FFC145") : "#FFFFFF"); x += 6 * B; }
+      n++; x += 6 * B;
+    });
+  });
+}
+
+// ---------- in-world choice sign ----------
+function sign(label, cx, y, t, tPop, tPick, picked, tOut) {
+  if (t < tPop || (tOut && t > tOut)) return; var k = eout(seg(t, tPop, tPop + .25)), w = label.length * 6 + 7, x = Math.round(cx - w / 2), yy = Math.round(y - (1 - k) * 10);
+  var done = t >= tPick, col = done ? (picked ? "#28A86A" : "#6B6F80") : "#C98A4E", edge = done ? (picked ? "#1C7A4C" : "#4A4D5C") : "#8A5228";
+  if (done && picked) { var p0 = eout(seg(t, tPick, tPick + .25)); ddisc(cx, yy + 6, 18 * p0, "#FFE9A0", .35 * (1 - seg(t, tPick + .3, tPick + .9))); }
+  rect(x + w / 2 - 1, yy + 12, 2, 10, "#6B4430");
+  rect(x - 1, yy - 1, w + 2, 14, "#2A1F2E"); rect(x, yy, w, 12, col); rect(x, yy + 10, w, 2, edge);
+  ptext(L, label, x + 4, yy + 2, 1, done && !picked ? "#A8ABB8" : "#FFFFFF");
+  if (done && picked) { var p = eout(seg(t, tPick, tPick + .25)); if (p > 0) { rect(x + w + 2, yy + 4, 2, 2, "#FFFFFF"); rect(x + w + 4, yy + 6, 2, 2, "#FFFFFF"); rect(x + w + 6, yy + 2, 2, 4, "#FFFFFF"); } }
+  if (done && !picked) { rect(x, yy + 5, w, 1, "#4A4D5C"); }
+}
+function chr(n, x, y, flip) { img("c_" + n, x, y, flip); }      // character sprite 48x56, feet at y+53
+var GY = 53;
+
+// =================== SCENES (v4: chapters, separate choices, portal from the book) ===================
+function birds(t, n, y0) { for (var i = 0; i < n; i++) { var bx = ((t * (14 + i * 3) + i * 70) % 320) - 25, by = y0 + i * 9 + Math.round(Math.sin(t * 2 + i) * 2), up = Math.floor(t * 6 + i) % 2;
+  rect(bx, by, 1, 1, "#2F3E6B"); rect(bx - 1, by - up, 1, 1, "#2F3E6B"); rect(bx + 1, by - up, 1, 1, "#2F3E6B"); rect(bx - 2, by - 1, 1, 1, "#2F3E6B"); rect(bx + 2, by - 1, 1, 1, "#2F3E6B"); } }
+function fieldBase(t) {
+  L.drawImage(A.sky, 0, 0); var cx = Math.round(t * 3) % W; L.drawImage(A.clouds, cx - W, 0); L.drawImage(A.clouds, cx, 0);
+  L.drawImage(A.far, 0, 0); L.drawImage(A.mid, 0, 0); L.drawImage(A.ground, 0, 0); L.drawImage(A.shadow, 0, 0);
+  L.drawImage(A.flowers, Math.round(Math.sin(t * 1.6)), 0); L.drawImage(A.tree, 0, 0); birds(t, 3, 150);
+}
+function blinkAt(t, off) { return ((t + off) % 3.3) < .12; }
+var BOOK = { x: 107, y: 374 }, GB = { x: 119, y: 389 };
+var PCOL = ["#B07CFF", "#7A4FE0", "#FFC145", "#FFFFFF", "#4C2A9E", "#FF9FC2"];
+function portal(cx, cy, rx, ry, t) {          // swirling pixel portal (oval door of light)
+  if (rx < 1) return; ddisc(cx, cy, Math.max(rx, ry) * 1.5, "#B07CFF", .35);
+  L.fillStyle = "#24104A"; for (var y = -ry; y <= ry; y++) { var w = Math.round(rx * Math.sqrt(1 - (y * y) / (ry * ry))); L.fillRect(Math.round(cx - w), Math.round(cy + y), w * 2 + 1, 1); }
+  for (var f = 1; f > .15; f -= .17) for (var a = 0; a < 6.283; a += .09 / f) {
+    var c = PCOL[Math.floor(a * 2 + t * 9 * (f > .5 ? 1 : -1) + f * 7) % PCOL.length]; if (Math.floor(a * 6 + t * 10) % 3 === 0) continue;
+    rect(cx + Math.cos(a) * rx * f, cy + Math.sin(a) * ry * f, 1, 1, c);
+  }
+  for (var i = 0; i < 10; i++) { var ph = (t * 1.2 + hash(i)) % 1, a2 = hash(i + 3) * 6.28 + t * 2; spark(cx + Math.cos(a2) * rx * (1.6 - ph), cy + Math.sin(a2) * ry * (1.2 - ph * .6), i % 2 ? "#FFE9A0" : "#FFFFFF", i % 4 === 0); }
+}
+// --- 1. the book opens a door (0 - 12) ---
+function sPortal(t) {
+  fieldBase(t);
+  if (t < 4.6) {
+    if (t > 2.9) { var g = seg(t, 2.9, 3.8); ddisc(BOOK.x, BOOK.y - 2, 6 + 14 * g + Math.sin(t * 9) * 2, "#FFE9A0", .55 * g);
+      for (var i = 0; i < 8; i++) { var ph = (t * 1.5 + hash(i)) % 1; spark(BOOK.x - 6 + hash(i + 1) * 12, BOOK.y - 4 - ph * 22, i % 2 ? "#FFE9A0" : "#FFFFFF", false); } }
+    img(blinkAt(t, 0) ? "reader_blink" : "reader", 82, 357);
+  } else {
+    var pk = eout(seg(t, 6.6, 7.9)), py = GB.y - 2 - 30 * pk;
+    img("book_ground", GB.x - 9, GB.y - 4); ddisc(GB.x, GB.y - 2, 8 + 4 * Math.sin(t * 8), "#FFE9A0", .5);
+    if (t > 6.5 && t < 7.0) for (var j = 0; j < 12; j++) { var r0 = seg(t, 6.5, 7.0) * 20; spark(GB.x + Math.cos(j) * r0, GB.y - 4 - Math.abs(Math.sin(j)) * r0, "#FFFFFF", false); }
+    if (t < 11.25 || t > 11.25) portal(GB.x, py, Math.round(15 * pk), Math.round(30 * pk), t);
+    var hop = t < 4.8 ? -2 : 0;
+    if (t < 7.0) chr(blinkAt(t, .3) ? "blink" : "stand", 70, 392 - GY + hop);
+    else if (t < 7.35) chr("walk" + (Math.floor(t * 10) % 4), lerp(70, 62, seg(t, 7.0, 7.35)), 392 - GY);
+    else if (t < 9.9) chr("lookup", 62, 392 - GY);
+    else if (t < 10.3) chr("stand", 62, 392 - GY);
+    else if (t < 10.65) chr("crouch", 62, 392 - GY);
+    else if (t < 11.25) { var k = seg(t, 10.65, 11.25), fx = lerp(86, GB.x, eio(k)), fy = lerp(392, py + 14, eio(k)) - Math.sin(k * Math.PI) * 26, sc = k < .6 ? 1 : 1 - (k - .6) / .4 * .85;
+      img("c_jump", fx - 24 * sc, fy - 53 * sc, false, sc); }
+  }
+  return camAt([[0, 100, 368, 2.5], [4.5, 103, 370, 2.8], [5.2, 100, 362, 2.4, .6], [7.9, 102, 352, 2.3, 1.3], [10.3, 108, 360, 2.9, 1.4], [12.0, GB.x, GB.y - 32, 16, 1.4]], t);
+}
+// --- 2. ten years later: a helicopter lands and out steps... me (12 - 26.9) ---
+function sFuture(t) {
+  L.drawImage(A.house, 0, 0);
+  var land = eout(seg(t, 14.2, 15.8)), hx = 112, hy = Math.round(lerp(-60, 358, land)), bob = land < 1 ? Math.round(Math.sin(t * 9) * 1) : 0;
+  if (land > .85) for (var d = 0; d < 26; d++) { var k = seg(t, 15.2 + hash(d) * .4, 16.6 + hash(d) * .4); if (k > 0 && k < 1) rect(hx + 46 + (hash(d + 3) > .5 ? 1 : -1) * k * (30 + hash(d + 5) * 40), 398 - k * k * 10 - hash(d + 7) * 6, 2, 1, "#C9C2B4"); }
+  if (land > .7) { L.globalAlpha = .35; rect(hx + 12, 400, 70, 2, "#3A3550"); L.globalAlpha = 1; }
+  img("heli", hx, hy + bob);
+  var spin = Math.floor(t * 24) % 3, rl = [92, 60, 30][spin]; rect(hx + 38 - rl / 2, hy + bob + 2, rl, 1, "#2A1F2E"); rect(hx + 38 - rl / 2 + 4, hy + bob + 1, Math.max(0, rl - 8), 1, "#9AA3B5");
+  if (t > 16.0) { var dk = seg(t, 16.0, 16.3); rect(hx + 34, hy + 14, Math.round(12 * dk), 14, "#141C30"); }
+  if (t > 16.2) { var wk = seg(t, 16.3, 17.4), ox = lerp(hx + 40, hx + 14, wk), f = wk > 0 && wk < 1 ? "owalk" + (Math.floor(t * 8) % 4) : (t > 17.6 ? "olook" : "ostand"); chr(f, ox - 24, 400 - GY, true); }
+  var pin = t < 13.1 ? 1 - seg(t, 12.75, 13.1) : 0, pout = t > 25.5 ? eout(seg(t, 25.5, 26.1)) : 0;
+  if (pin > 0) portal(205, 424, Math.round(14 * pin), Math.round(28 * pin), t);
+  if (pout > 0) portal(86, 408, Math.round(14 * pout), Math.round(28 * pout), t);
+  if (t < 12.5) { var k1 = seg(t, 12.05, 12.5); img("c_jump", lerp(205, 172, k1) - 24, lerp(424, 452, k1) - 53 - Math.sin(k1 * Math.PI) * 10, true); }
+  else if (t < 12.85) chr("crouch", 150, 452 - GY, true);
+  else if (t < 13.1) chr("stand", 150, 452 - GY, true);
+  else if (t < 14.2) { var k2 = seg(t, 13.1, 14.2); chr("walk" + (Math.floor(t * 8) % 4), lerp(150, 34, k2), lerp(452, 436, k2) - GY, true); }
+  else if (t < 26.35) { var pose = t > 14.6 && t < 17.0 ? "lookup" : (t >= 17.0 && t < 21.2 ? "shock" : (blinkAt(t, 1) ? "blink" : "stand")); chr(pose, 34, 436 - GY); }
+  else if (t < 26.85) { var k3 = seg(t, 26.35, 26.85), sc = k3 < .5 ? 1 : 1 - (k3 - .5) * 1.7; img("c_jump", lerp(58, 86, eio(k3)) - 24 * sc, lerp(436, 420, k3) - 53 * sc - Math.sin(k3 * Math.PI) * 18, false, sc); }
+  L.drawImage(A.hedge, 0, 0);
+  if (t > 17.0 && t < 17.6) for (var i = 0; i < 4; i++) { var kk = seg(t, 17.0 + i * .05, 17.5); if (kk > 0 && kk < 1) spark(74 + i * 3, 386 - kk * 10 - i * 2, "#FFFFFF", true); }
+  if (t > 20.6 && t < 25.5) { var q = Math.floor(t * 2) % 2; ptext(L, "?", 64, 372 - q, 1, "#FFFFFF"); }
+  if (t > 17.9 && t < 21.0) { var bk = eout(seg(t, 17.9, 18.15)), bx0 = 96, by0 = 318 + Math.round((1 - bk) * 4);   // older Sam speaks
+    rect(bx0 - 1, by0 - 1, 72, 24, "#2A1F2E"); rect(bx0, by0, 70, 22, "#FFFFFF"); rect(bx0 + 30, by0 + 22, 3, 3, "#FFFFFF"); rect(bx0 + 29, by0 + 22, 1, 4, "#2A1F2E");
+    ptext(L, "IT ALL CAME", bx0 + 3, by0 + 3, 1, "#2A1F2E"); ptext(L, "TRUE.", bx0 + 3, by0 + 12, 1, "#E0453A"); }
+  return camAt([[12.0, 192, 412, 2.6], [12.9, 186, 416, 2.6], [13.6, 150, 300, 1.35, .7], [15.6, 155, 330, 1.5, 2.0], [16.4, 150, 368, 2.2, .8], [17.9, 104, 380, 1.6, 1.0],
+                [21.2, 62, 398, 2.6, .8], [25.5, 70, 400, 2.6], [26.9, 86, 404, 5, 1.0]], t);
+}
+// --- 3. the book flips to chapter 1 (26.9 - 30.6) ---
+function woodBg() { rect(0, 0, W, H, "#3B2A24"); for (var y = 0; y < H; y += 12) rect(0, y, W, 1, "#33241F"); }
+function sFlip(t) {
+  woodBg(); var bx = 60, by = 192; ddisc(135, 240, 80, "#FFE9A0", .25); L.drawImage(A.bigbook, bx, by);
+  var u = seg(t, 26.9, 30.2), flips = 22 * (1 - Math.pow(1 - u, 2.2)), ph = flips % 1;
+  if (u < 1) { var ex = 135 + Math.cos(ph * Math.PI) * 72, top = by + 6 - Math.sin(ph * Math.PI) * 10;
+    L.fillStyle = ph < .5 ? "#FFF4E0" : "#EADBB8"; L.beginPath(); L.moveTo(135, by + 8); L.lineTo(Math.round(ex), Math.round(top)); L.lineTo(Math.round(ex), Math.round(top + 86)); L.lineTo(135, by + 94); L.fill();
+    rect(Math.round(ex), Math.round(top), 1, 86, "#C9B48A"); }
+  if (u >= 1) { ptext(L, "DAY", bx + 100, by + 30, 1, "#6A4FD1"); ptext(L, "ONE", bx + 98, by + 42, 2, "#2A1F2E"); }
+  return camAt([[26.9, 135, 240, 1.5], [30.6, 135, 240, 1.8, 3.7]], t);
+}
+// --- chapter title cards ---
+function card(n, title) {
+  return function (t) {
+    rect(0, 0, W, H, "#FFF4E0"); for (var y = 40; y < H; y += 14) rect(0, y, W, 1, "#EADBB8"); rect(28, 0, 1, H, "#F2A0A0");
+    var c = "CHAPTER " + n, w = pwidth(c, 2); ptext(L, c, Math.round((W - w) / 2), 176, 2, "#6A4FD1");
+    var words = title.split(" "), lines = [], cur = ""; words.forEach(function (wd) { if ((cur + " " + wd).trim().length > 12) { lines.push(cur.trim()); cur = wd; } else cur = (cur + " " + wd).trim(); }); lines.push(cur);
+    lines.forEach(function (ln, i) { var w2 = pwidth(ln, 3); ptext(L, ln, Math.round((W - w2) / 2) + 1, 214 + i * 28 + 1, 3, "#E3D3AE"); ptext(L, ln, Math.round((W - w2) / 2), 214 + i * 28, 3, "#2A1F2E"); });
+    rect(110, 214 + lines.length * 28 + 6, 50, 2, "#FFC145");
+    return { x: 135, y: 240, z: 1 + .04 * Math.sin(t) };
+  };
+}
+// --- page close-up (Chapter 1 and the ending): typed dream, sticky note, underline, glow ---
+var DREAM = ["DREAM:", "BUILD MY", "OWN", "COMPANY."];
+function pageView(t, o) {
+  if (o.bg === "grass") { rect(0, 0, W, H, "#4E9F58"); for (var i = 0; i < 400; i++) rect(hash(i) * W, hash(i + 1e3) * H, 1, 2, i % 2 ? "#5FB068" : "#3E8A4A"); } else woodBg();
+  var bx = 60, by = 192; if (o.glow && t > o.glow) ddisc(135, 240, 95 * eout(seg(t, o.glow, o.glow + .6)), "#FFE9A0", .4);
+  L.drawImage(A.bigbook, bx, by);
+  var dg = "#B8A888"; rect(bx + 18, by + 50, 36, 1, dg); rect(bx + 22, by + 36, 26, 1, dg); rect(bx + 22, by + 36, 1, 14, dg); rect(bx + 47, by + 36, 1, 14, dg); rect(bx + 26, by + 30, 18, 1, dg); rect(bx + 26, by + 30, 1, 6, dg); rect(bx + 43, by + 30, 1, 6, dg);
+  rect(bx + 12, by + 60, 20, 1, dg); rect(bx + 14, by + 56, 14, 1, dg); rect(bx + 13, by + 62, 3, 1, dg); rect(bx + 27, by + 62, 3, 1, dg);
+  var total = DREAM.join("").length, n = Math.floor(cl((t - o.t0) / o.dur, 0, 1) * total), cx = 0, cy = 0, px = bx + 86, py = by + 14;
+  DREAM.forEach(function (ln, li) { for (var i = 0; i < ln.length; i++) { if (n-- <= 0) return; glyph(L, ln[i], px + i * 6, py + li * 9, 1, li === 0 ? "#6A4FD1" : "#2A1F2E"); cx = px + (i + 1) * 6; cy = py + li * 9; } });
+  if (t > o.t0 && t < o.t0 + o.dur + .2) { rect(cx + 1, cy - 6, 1, 8, "#2A1F2E"); rect(cx + 2, cy - 8, 1, 3, "#E0453A"); rect(cx, cy + 2, 1, 1, "#2A1F2E"); }
+  if (o.sticky && t > o.sticky) { var k = eout(seg(t, o.sticky, o.sticky + .3)), sy = by + 58 + Math.round((1 - k) * 6);
+    rect(bx + 78, sy, 71, 15, "#2A1F2E"); rect(bx + 79, sy + 1, 69, 13, "#FFE066"); rect(bx + 79, sy + 1, 69, 2, "#F2C94E"); ptext(L, "IMPOSSIBLE?", bx + 81, sy + 5, 1, "#8A5A2E"); }
+  if (o.under && t > o.under) { var u = Math.round(48 * seg(t, o.under, o.under + .5)); rect(px, py + 36, u, 1, "#E0453A"); rect(px, py + 37, Math.max(0, u - 4), 1, "#E0453A"); }
+}
+function sWrite(t) {
+  if (t >= 36.0) { pageView(t, { t0: 36.35, dur: 1.6, sticky: 38.2, under: 41.1, glow: 42.5 }); return camAt([[36.0, 135, 240, 1.6], [44.6, 150, 246, 1.95, 8.5]], t); }
+  L.drawImage(A.room_night, 0, 0); ddisc(246, 322, 34, "#FFD678", .28);
+  img("notebook", 168, 331); if (t > 34.8) ddisc(183, 335, 16 * seg(t, 34.8, 35.4), "#FFE9A0", .5);
+  chr(t > 34.9 && Math.floor(t * 5) % 2 ? "sit_write1" : "sit_write0", 126, 352 - 40);
+  return camAt([[32.2, 190, 332, 2.3], [35.6, 178, 335, 2.7, 3.2], [36.0, 183, 334, 9, .4]], t);
+}
+// --- morning: the fork, sleep in (grey), get up (warm) ---
+function blanket(head) { rect(28, 344, 65, 37, "#4C9AFF"); rect(28, 344, 65, 4, "#7FB8FF"); rect(28, 380, 65, 1, "#3A78D0"); if (head) { rect(8, 336, 26, 12, "#4C9AFF"); rect(8, 336, 26, 3, "#7FB8FF"); } }
+function lying(t, head) { L.save(); L.translate(70, 358); L.rotate(-Math.PI / 2); L.drawImage(A[blinkAt(t, 0) ? "c_sit_bed_blink" : "c_sit_bed"], -2, -26); L.restore(); blanket(head); }
+function alarm(t, ringing) { var sh = ringing ? (Math.floor(t * 20) % 2 ? 1 : -1) : 0; img(ringing && Math.floor(t * 12) % 2 ? "alarm1" : "alarm0", 101 + sh, 347);
+  if (ringing) { var p = Math.floor(t * 6) % 2; rect(98, 344 - p, 1, 1, "#FFFFFF"); rect(120, 344 - p, 1, 1, "#FFFFFF"); rect(96, 340 + p, 1, 2, "#FFFFFF"); rect(122, 340 + p, 1, 2, "#FFFFFF"); } }
+function sMorning(t) { L.drawImage(A.room_dawn, 0, 0); alarm(t, true); lying(t, false); return camAt([[46.4, 72, 330, 2.4], [50.6, 70, 326, 2.75, 4.2]], t); }
+function sunWindow(k) { L.save(); L.beginPath(); L.rect(155, 195, 81, 101); L.clip(); L.globalAlpha = .75 * k; rect(155, 195, 81, 101, "#9FD3F4"); L.globalAlpha = 1;
+  L.fillStyle = "#FFF1C4"; L.beginPath(); L.arc(Math.round(lerp(170, 222, k)), Math.round(lerp(288, 212, k)), 7, 0, 7); L.fill(); L.restore(); rect(194, 190, 3, 111, "#F4E3C8"); rect(150, 244, 91, 3, "#F4E3C8"); }
+function sSleep(t) {
+  L.drawImage(A.room_dawn, 0, 0); var k = seg(t, 50.9, 54.9); sunWindow(k); alarm(t, false); lying(t, true);
+  img("notebook", 168, 331); for (var i = 0; i < 40 * k; i++) rect(168 + hash(i) * 30, 331 + hash(i + 9) * 9, 1, 1, "#9A9A9A");
+  for (var j = 0; j < 3; j++) { var zk = (t * .7 + j / 3) % 1; ptext(L, "Z", 40 + zk * 14, 328 - zk * 24, 1, "#FFFFFF"); }
+  return camAt([[50.6, 112, 322, 2.0], [55.4, 116, 324, 2.2, 4.8]], t);
+}
+function sGetUp(t) {
+  L.drawImage(A.room_dawn, 0, 0); ddisc(198, 270, 50 + 6 * Math.sin(t * 2), "#FFE9A0", .3); alarm(t, false);
+  rect(28, 344, 65, 37, "#4C9AFF"); rect(28, 344, 65, 4, "#7FB8FF");
+  img("notebook", 168, 331); chr(Math.floor(t * 5) % 2 ? "sit_write1" : "sit_write0", 126, 352 - 40);
+  var ck = seg(t, 57.4, 57.7); if (t > 57.4 || t < 55.5) { var cx = 196, cy = 312 - Math.round(4 * eout(ck)); rect(cx, cy + 4, 2, 2, "#28A86A"); rect(cx + 2, cy + 6, 2, 2, "#28A86A"); rect(cx + 4, cy + 4, 2, 2, "#28A86A"); rect(cx + 6, cy + 2, 2, 2, "#28A86A"); rect(cx + 8, cy, 2, 2, "#28A86A"); }
+  return camAt([[55.4, 182, 322, 2.3], [60.2, 180, 324, 2.6, 4.8]], t);
+}
+// --- evening: the fork, scroll (grey), build (warm), then again and again ---
+function bedPhone(t, yawn) { chr(yawn ? "bed_yawn" : (blinkAt(t, .4) ? "bed_phone_blink" : "bed_phone"), 22, 356 - 40); blanket(false); rect(54, 333, 4, 6, "#1E2233"); rect(55, 334, 2, 4, "#7FD4FF"); ddisc(52, 330, 10, "#7FD4FF", .35); }
+function sEvening(t) { L.drawImage(A.room_night, 0, 0); ddisc(246, 322, 34, "#FFD678", .2); bedPhone(t, false); return camAt([[66.4, 72, 330, 2.5], [69.8, 70, 328, 2.8, 3.4]], t); }
+function sScroll(t) {
+  L.drawImage(A.room_night, 0, 0); bedPhone(t, t > 72.6 && t < 73.3);
+  var px = 92, py = 232; rect(px - 1, py - 1, 46, 80, "#2A1F2E"); rect(px, py, 44, 78, "#1E2233"); L.save(); L.beginPath(); L.rect(px + 3, py + 4, 38, 70); L.clip();
+  var cols = ["#FF7A59", "#FFC145", "#6CC7A3", "#4C9AFF", "#B07CFF", "#FF9FC2"], off = (t * 60) % 26;
+  for (var i = 0; i < 6; i++) { var y = py + 4 + i * 26 - off, c = cols[(i + Math.floor(t * 60 / 26)) % 6]; rect(px + 3, y, 38, 20, c); rect(px + 6, y + 14, 20, 2, "#FFFFFF"); } L.restore();
+  return camAt([[69.8, 92, 300, 2.2], [73.8, 90, 304, 2.4, 4]], t);
+}
+function laptopDesk(t, prog) {
+  img("laptop", 172, 316); ddisc(189, 318, 20, "#7FD4FF", .3); var ln = Math.floor(t * 4); for (var i = 0; i < 5; i++) rect(180, 318 + i * 2 - 4, 6 + ((i * 7 + ln) % 12), 1, "#7FD4FF");
+  img("phone", 225, 334); rect(226, 335, 6, 9, "#1E2233");
+  if (prog != null) { rect(170, 300, 40, 6, "#2A1F2E"); rect(171, 301, 38, 4, "#3A3F55"); rect(171, 301, Math.round(38 * prog), 4, "#28A86A"); }
+  chr(Math.floor(t * 7) % 2 ? "sit_type1" : "sit_type0", 126, 352 - 40);
+}
+function sBuild(t) {
+  L.drawImage(A.room_night, 0, 0); ddisc(246, 322, 34, "#FFD678", .3); laptopDesk(t, seg(t, 74.0, 77.0));
+  if (t > 76.0) { var k = eout(seg(t, 76.0, 76.3)), y = 270 + Math.round((1 - k) * 6); rect(205, y, 34, 14, "#2A1F2E"); rect(206, y + 1, 32, 12, "#FFE066"); ptext(L, "DONE!", 208, y + 4, 1, "#8A5A2E"); }
+  return camAt([[73.8, 186, 316, 2.4], [77.8, 186, 314, 2.7, 4]], t);
+}
+function sMontage(t) {
+  var d = Math.floor((t - 80.6) * 2.4), night = d % 2 === 0; L.drawImage(night ? A.room_night : A.room_dawn, 0, 0); if (night) ddisc(246, 322, 34, "#FFD678", .3);
+  laptopDesk(t, ((t - 80.6) * 2.4) % 1);
+  var cols = ["#FFE066", "#FF9FC2", "#7FD4FF", "#9BE3B0"], nst = Math.min(30, Math.floor((t - 80.6) * 4));
+  for (var i = 0; i < nst; i++) { var x = 152 + (i % 10) * 9, y = 150 + Math.floor(i / 10) * 11; rect(x, y, 7, 8, cols[i % 4]); rect(x, y, 7, 1, "#2A1F2E"); }
+  return camAt([[80.6, 186, 314, 2.7], [88.9, 182, 290, 1.9, 8.2]], t);
+}
+// --- the wrong turn ---
+function sShop(t) {
+  L.drawImage(A.shop, 0, 0);
+  var f1 = seg(t, 93.55, 93.85), f2 = seg(t, 98.7, 99.0), stage = t < 93.7 ? 0 : (t < 98.85 ? 1 : 2), fl = t < 96 ? f1 : f2, sx = Math.abs(Math.cos(fl * Math.PI)), w = Math.max(1, Math.round(44 * sx));
+  var lab = ["OPEN", "CLOSED", "LESSON"][stage];
+  if (stage < 2) L.drawImage(A["sign" + stage], 0, 0, 44, 28, 96 + Math.round((44 - w) / 2), 206, w, 28);
+  else { var x0 = 96 + Math.round((44 - w) / 2); rect(x0, 214, w, 20, "#2A1F2E"); rect(x0 + 1, 215, Math.max(0, w - 2), 18, "#FFF4E0"); rect(106, 206, 1, 8, "#C9CED6"); rect(129, 206, 1, 8, "#C9CED6"); }
+  if (sx > .6) { var tw = pwidth(lab, 1); ptext(L, lab, 96 + 22 - Math.round(tw / 2), stage === 2 ? 221 : 216, 1, stage === 1 ? "#E0453A" : (stage === 2 ? "#2A1F2E" : "#FFFFFF")); if (stage === 2) ddisc(118, 222, 26 * seg(t, 99.0, 99.4), "#FFE9A0", .25); }
+  if (t < 97.8) chr(blinkAt(t, .5) ? "sad_blink" : "sad", 168, 352 - GY);
+  else if (t < 100.8) chr(t > 98.4 ? "lookup" : "stand", 160, 340 - GY, true);
+  else { var k = seg(t, 100.8, 103.4); chr("walk" + (Math.floor(t * 8) % 4), lerp(160, 290, k), 340 - GY); }
+  var rain = t < 101 ? 1 : 1 - seg(t, 101, 103.5);
+  for (var i = 0; i < 140 * rain; i++) { var x = (hash(i) * 300 + t * 40) % 300 - 15, y = (hash(i + 50) * 480 + t * 520) % 500 - 10; rect(x, y, 1, 4, "#8FA8D8"); if (y > 470) rect(x - 1, 476, 3, 1, "#8FA8D8"); }
+  if (t > 93.72 && t < 93.88) { L.fillStyle = "rgba(255,255,255,.18)"; L.fillRect(0, 0, W, H); }
+  if (t > 101.5) { L.globalAlpha = .25 * seg(t, 101.5, 103.5); ddisc(220, 60, 120, "#FFE9A0", .6); L.globalAlpha = 1; }
+  return camAt([[90.8, 150, 300, 2.0], [93.5, 140, 296, 2.2, 2.0], [97.4, 160, 312, 2.5, 3.5], [99.2, 132, 288, 2.3, 1.4], [104.0, 180, 300, 2.0, 4.5]], t);
+}
+// --- chose again ---
+function sOffice(t) {
+  L.drawImage(A.office, 0, 0);
+  var sh = t > 108.8 && t < 109.7, f = Math.floor(t * 8) % 2;
+  chr(sh ? "shake" + f : (t > 109.7 ? "shake0" : "stand"), 140, 400 - GY); chr(sh ? "cshake" + f : "cshake0", 166, 400 - GY, true);
+  if (t > 108.9) for (var i = 0; i < 24; i++) { var k = seg(t, 108.9, 110.5), a = hash(i) * 6.28, r = k * (30 + hash(i + 7) * 40), col = ["#FF7A59", "#FFC145", "#6CC7A3", "#4C9AFF", "#B07CFF"][i % 5];
+    if (k < 1) rect(177 + Math.cos(a) * r, 360 + Math.sin(a) * r * .8 + k * k * 30, 2, 2, col); }
+  return camAt([[105.8, 168, 366, 2.4], [111, 172, 364, 2.75, 5]], t);
+}
+function sHero(t) { rect(0, 0, W, H, "#140F2E"); for (var i = 0; i < 70; i++) if ((t * 2 + hash(i)) % 1 > .3) rect(hash(i) * W, hash(i + 70) * H, 1, 1, "#FFFFFF");
+  ddisc(135, 230, 40, "#B07CFF", .3); chr(blinkAt(t, .2) ? "blink" : "stand", 111, 262 - GY); return { x: 135, y: 236, z: 3.2 }; }
+// --- beams ---
+var BCOL = ["#FF7A59", "#FFC145", "#6CC7A3", "#4C9AFF", "#B07CFF", "#FF9FC2", "#7FD4FF", "#F2C14E"];
+function sBeams(t) {
+  rect(0, 0, W, H, "#07061A");
+  for (var i = 0; i < 120; i++) { var x = hash(i) * W, y = (hash(i + 200) * H + t * (30 + hash(i + 9) * 70)) % H; rect(x, y, 1, hash(i + 4) > .8 ? 2 : 1, hash(i + 3) > .5 ? "#FFFFFF" : "#8C8FC8"); }
+  var head = lerp(H, -20, eout(seg(t, 117.7, 118.9))), split = eout(seg(t, 120.6, 121.4)), merge = eio(seg(t, 121.9, 123.2)), conv = eio(seg(t, 125.9, 127.6)), link = seg(t, 124.9, 125.4);
+  function bx(i, y) { var base = 24 + i * 31 + Math.sin(y * .018 + t * 1.1 + i) * 7; var tgt = lerp(base, 135, cl((260 - y) / 200, 0, 1)); return lerp(base, tgt, conv); }
+  for (var i = 0; i < 8; i++) { var c = BCOL[i];
+    for (var y = Math.max(0, Math.floor(head)); y < H; y++) { var x = bx(i, y); rect(x - 2, y, 1, 1, "#24205A"); rect(x - 1, y, 3, 1, c); rect(x, y, 1, 1, "#FFFFFF"); rect(x + 2, y, 1, 1, "#24205A");
+      if (split > 0 && y < 330) { var fk = cl((330 - y) / 70, 0, 1), d = 16 * split * fk * (1 - conv), bxv = x + d * (i % 2 ? -1 : 1);
+        if (merge > 0 && i < 7) bxv = lerp(bxv, bx(i + 1, y), merge * cl((300 - y) / 120, 0, 1)); rect(bxv - 1, y, 2, 1, c); } }
+    for (var p = 0; p < 3; p++) { var py = (H - ((t * 130 + p * 160 + i * 40) % (H + 40))); if (py > head) { var px = bx(i, py); rect(px - 1, py, 4, 2, "#FFFFFF"); } } }
+  [122.3, 122.6, 122.9, 123.2].forEach(function (mt, j) { var k = seg(t, mt, mt + .5); if (k > 0 && k < 1) ddisc(bx(j * 2 + 1, 190), 190, 8 + 26 * k, "#FFFFFF", .8 * (1 - k)); });
+  if (link > 0 && conv < .6) for (var r = 0; r < 6; r++) { var ly = 70 + r * 62; if ((Math.floor(t * 8) + r) % 3 === 0) continue;
+    for (var i2 = 0; i2 < 7; i2++) { var a = bx(i2, ly), b = bx(i2 + 1, ly), n = Math.round((b - a) * link); for (var q = 2; q < n; q += 2) rect(a + q, ly, 1, 1, "#FFFFFF"); } }
+  if (conv > 0) { ddisc(135, 60, 10 + 50 * conv, "#FFFFFF", .8 * conv); var hk = seg(t, 127.3, 127.9) * (1 - seg(t, 128.6, 129.0)); if (hk > 0) { L.globalAlpha = hk; L.drawImage(A.house, 30, 190, 230, 210, 135 - 38, 34, 77, 70); L.globalAlpha = 1; } }
+  return { x: 135 + Math.sin(t * .6) * 6, y: 240, z: 1.06 };
+}
+// --- back in the field ---
+function sReturn(t) {
+  if (t >= 140.6 && t < 144.0) { pageView(t, { t0: 141.0, dur: 1.7, glow: 142.8, bg: "grass" }); return camAt([[140.6, 135, 240, 1.6], [144.0, 150, 246, 1.95, 3.4]], t); }
+  fieldBase(t); img(blinkAt(t, .7) ? "reader_blink" : "reader", 82, 357); ddisc(BOOK.x, BOOK.y - 2, 9, "#FFE9A0", .3);
+  if (t < 140.6) return camAt([[131.4, 102, 372, 2.6], [139.6, 103, 372, 2.8], [140.6, BOOK.x, BOOK.y - 2, 8, 1.0]], t);
+  return camAt([[144.0, 104, 372, 2.6], [151.0, 135, 300, 1.0, 7.0]], t);
+}
+
+
+// =================== GALAXY: every scene floats in space, gives off light, and one continuous ray links them ===================
+var GBUF = mk(W, H), CVT = mk(W, H), GL = GBUF[1];
+var CARDS = [ // scene, loop start, loop length, filter, galaxy x, galaxy y
+  [sWrite, 33.0, 2.0, null, 92, 0], [sGetUp, 56.0, 3.0, "saturate(1.2)", 178, -150], [sBuild, 74.5, 3.0, "saturate(1.2)", 90, -300],
+  [sMontage, 82.0, 3.0, null, 172, -450], [sShop, 94.2, 3.0, null, 52, -575], [sOffice, 109.9, 1.0, null, 182, -700], [sFuture, 18.6, 2.0, null, 135, -875]];
+var CW2 = 64, CH2 = 114, GCOL = ["#FF7A59", "#FFC145", "#6CC7A3", "#4C9AFF", "#FF5A5A", "#B07CFF", "#FFE9A0"];
+function bez(p0, p1, p2, p3, u) { var v = 1 - u; return [v * v * v * p0[0] + 3 * v * v * u * p1[0] + 3 * v * u * u * p2[0] + u * u * u * p3[0], v * v * v * p0[1] + 3 * v * v * u * p1[1] + 3 * v * u * u * p2[1] + u * u * u * p3[1]]; }
+function link(a, b) { var A0 = [CARDS[a][4], CARDS[a][5] - CH2 / 2], B0 = [CARDS[b][4], CARDS[b][5] + CH2 / 2]; return [A0, [A0[0], A0[1] - 70], [B0[0], B0[1] + 70], B0]; }
+var MAIN = [link(0, 1), link(1, 2), link(2, 3), link(3, 5), link(5, 6)], BR1 = link(3, 4);
+var JOIN = bez.apply(null, MAIN[3].concat([.72])), JT = (function () { var a = bez.apply(null, MAIN[3].concat([.68])); return [JOIN[0] - a[0], JOIN[1] - a[1]]; })();
+var BR2 = [[CARDS[4][4], CARDS[4][5] - CH2 / 2], [CARDS[4][4], CARDS[4][5] - CH2 / 2 - 60], [JOIN[0] - JT[0] * 14, JOIN[1] - JT[1] * 14], JOIN];
+var GV = { x: 135, y: -430, z: .5 };
+function gs(x, y) { return [(x - GV.x) * GV.z + W / 2, (y - GV.y) * GV.z + H / 2]; }
+function gdot(x, y, c, w) { var p = gs(x, y); GL.fillStyle = c; GL.fillRect(Math.round(p[0] - (w || 1) / 2), Math.round(p[1]), w || 1, 1); }
+function gglow(x, y, r, c, a) { var p = gs(x, y); ddisc(p[0], p[1], r * Math.max(.5, GV.z), c, a, GL); }
+function ray(curve, from, to, c, t, bright) {          // a smooth ray of light along a bezier, revealed from 'from' to 'to'
+  if (to <= from) return; var n = 260;
+  for (var i = Math.floor(from * n); i <= to * n; i++) { var p = bez.apply(null, curve.concat([i / n])), q = gs(p[0], p[1]);
+    if (q[1] < -4 || q[1] > H + 4) continue; var w = GV.z > .7 ? 4 : 3;
+    if (i % 5 === 0) ddisc(q[0], q[1], w * 2.2, c, .22, GL);
+    GL.fillStyle = "#2A2060"; GL.fillRect(Math.round(q[0] - w), Math.round(q[1]), w * 2 + 1, 1);
+    GL.fillStyle = c; GL.fillRect(Math.round(q[0] - w / 2), Math.round(q[1]), w, 1);
+    GL.fillStyle = bright ? "#FFFFFF" : "#FFF4D6"; GL.fillRect(Math.round(q[0] - (w > 3 ? 1 : 0)), Math.round(q[1]), w > 3 ? 2 : 1, 1); }
+  for (var k = 0; k < 4; k++) { var ph = ((t * .45 + k / 4) % 1); if (ph < from || ph > to) continue; var pp = bez.apply(null, curve.concat([ph])), qq = gs(pp[0], pp[1]);
+    GL.fillStyle = "#FFFFFF"; GL.fillRect(Math.round(qq[0] - 1), Math.round(qq[1] - 1), 3, 3); }
+}
+function cardRays(x, y, t, lit, i) {                    // each scene radiates light
+  var n = 14, base = lit ? 1 : .6;
+  for (var r = 0; r < n; r++) { var a = r / n * 6.283 + t * .25 + i, len = (30 + 14 * Math.sin(t * 2 + r * 1.7 + i)) * base;
+    for (var d = 0; d < len; d += 1.5) { if (bay(Math.round(x + d), Math.round(y + r)) > (1 - d / len) * .8 * base) continue;
+      var px = x + Math.cos(a) * (CW2 * .55 + d), py = y + Math.sin(a) * (CH2 * .55 + d); gdot(px, py, d < 8 ? "#FFFFFF" : GCOL[i], GV.z > .7 ? 2 : 1); } }
+  gglow(x, y, CW2 * .9, GCOL[i], lit ? .25 : .12);
+}
+function drawCard(i, t, x, y, sc, alpha, lit) {
+  var C = CARDS[i], tt = C[1] + ((t - 110) % C[2] + C[2]) % C[2]; L.setTransform(1, 0, 0, 1, 0, 0); L.clearRect(0, 0, W, H); var cam = C[0](tt);
+  CVT[1].save(); CVT[1].filter = C[3] || "none"; blit(cam, 0, 0, W, H, CVT[1]); CVT[1].restore();
+  var p = gs(x, y), w = CW2 * GV.z * sc, h = CH2 * GV.z * sc; GL.save(); GL.globalAlpha = alpha;
+  GL.fillStyle = lit ? "#FFE9A0" : "#2A1F2E"; GL.fillRect(Math.round(p[0] - w / 2 - 1), Math.round(p[1] - h / 2 - 1), Math.round(w + 2), Math.round(h + 2));
+  GL.imageSmoothingEnabled = true; GL.drawImage(CVT[0], Math.round(p[0] - w / 2), Math.round(p[1] - h / 2), Math.round(w), Math.round(h)); GL.imageSmoothingEnabled = false; GL.restore();
+}
+function sGalaxy(t) {
+  GL.setTransform(1, 0, 0, 1, 0, 0); GL.fillStyle = "#07061A"; GL.fillRect(0, 0, W, H);
+  // camera: overview -> dive to the first scene -> follow the light -> pull back -> drift to the destination
+  var head = seg(t, 114.8, 122.4), hp = head < 1 ? headPos(head) : [CARDS[6][4], CARDS[6][5]];
+  var ov = { x: 135, y: -430, z: .5 }, fol = { x: lerp(135, hp[0], .45), y: hp[1] - 30, z: 1.0 }, dest = { x: 135, y: -760, z: .62 };
+  var k1 = eio(seg(t, 113.5, 114.8)), k2 = eio(seg(t, 122.4, 124.4)), k3 = eio(seg(t, 125.0, 128.6));
+  var cv = k1 < 1 ? { x: lerp(ov.x, fol.x, k1), y: lerp(ov.y, fol.y, k1), z: lerp(ov.z, fol.z, k1) } : fol;
+  if (k2 > 0) cv = { x: lerp(cv.x, ov.x, k2), y: lerp(cv.y, ov.y, k2), z: lerp(cv.z, ov.z, k2) };
+  if (k3 > 0) cv = { x: lerp(cv.x, dest.x, k3), y: lerp(cv.y, dest.y, k3), z: lerp(cv.z, dest.z, k3) };
+  GV = cv;
+  for (var i = 0; i < 160; i++) { var par = .2 + (i % 3) * .25, sx = (hash(i) * 400 - (GV.x * par) % 400 + 400) % 400 - 65, sy = (hash(i + 300) * 700 - (GV.y * par) % 700 + 700) % 700 - 110;
+    if ((t * 1.3 + hash(i + 5)) % 1 > .2) { GL.fillStyle = i % 7 === 0 ? "#B07CFF" : (i % 3 ? "#FFFFFF" : "#8C8FC8"); GL.fillRect(Math.round(sx), Math.round(sy), 1, 1); } }
+  [[60, -200, 120, "#3A1E6E"], [210, -520, 140, "#1E2E6E"], [90, -780, 130, "#4A1E5E"]].forEach(function (n) { gglow(n[0], n[1], n[2], n[3], .35); });
+  var conv = k3, fade = 1 - seg(t, 127.6, 128.6);
+  // the rays between scenes (revealed by the travelling light), then the whole path glows
+  var segT = [[114.8, 116.0], [116.0, 117.2], [117.2, 118.4], [118.4, 121.0], [121.0, 122.4]];
+  GL.globalAlpha = 1 - .85 * conv;
+  for (var m = 0; m < 5; m++) { var r = seg(t, segT[m][0], segT[m][1]); if (r > 0) ray(MAIN[m], 0, eio(r), GCOL[m + (m >= 3 ? 1 : 0)], t, t > 122.4); }
+  var b1 = seg(t, 118.4, 119.5), b2 = seg(t, 119.5, 120.6); if (b1 > 0) ray(BR1, 0, eio(b1), "#FF5A5A", t, false); if (b2 > 0) ray(BR2, 0, eio(b2), "#FF9A6A", t, t > 120.6);
+  GL.globalAlpha = 1;
+  var mf = seg(t, 120.5, 121.4); if (mf > 0 && mf < 1) gglow(JOIN[0], JOIN[1], 10 + 20 * Math.sin(mf * Math.PI), "#FFFFFF", .7 * Math.sin(mf * Math.PI));
+  var sf2 = seg(t, 118.35, 119.0); if (sf2 > 0 && sf2 < 1) gglow(CARDS[3][4], CARDS[3][5] - CH2 / 2, 8 + 14 * Math.sin(sf2 * Math.PI), "#FFFFFF", .6 * Math.sin(sf2 * Math.PI));
+  // scenes: appear, radiate, light up when the ray reaches them, finally travel along the light into the destination
+  var reach = [114.8, 116.0, 117.2, 118.4, 119.4, 121.0, 122.4], d6 = [CARDS[6][4], CARDS[6][5]];
+  for (var i = 0; i < 7; i++) {
+    var C = CARDS[i], x = C[4], y = C[5] + Math.sin(t * 1.2 + i) * 3, sc = 1, al = 1, lit = t > reach[i];
+    if (i !== 5) { var app = eout(seg(t, 111.2 + i * .12, 111.8 + i * .12)); if (app <= 0) continue; sc = .4 + .6 * app; al = app; }
+    if (i < 6 && conv > 0) { var ck = eio(cl((conv - i * .05) / .7, 0, 1)); x = lerp(x, d6[0] + Math.sin(i * 2.1) * 40 * (1 - ck), ck); y = lerp(y, d6[1], ck); sc *= 1 - .85 * ck; al *= 1 - ck * .6;
+      if (ck > 0 && ck < 1) for (var tr = 0; tr < 18; tr++) { var tk = ck * (1 - tr / 18); gdot(lerp(C[4], d6[0], tk) + Math.sin(i * 2.1) * 40 * (1 - tk) * tk * 2, lerp(C[5], d6[1], tk), GCOL[i], 2); } }
+    if (al > .3) cardRays(x, y, t, lit, i);
+    if (i === 5 && t < 112.0) continue;
+    drawCard(i, t, x, y, sc * (i === 6 ? 1 + .1 * conv : 1), al * fade + (i === 6 ? (1 - fade) : 0), lit);
+  }
+  if (t < 112.0) {                                      // the office shot shrinks into its place among the scenes
+    var k = eio(seg(t, 110.9, 112.0)), p = gs(CARDS[5][4], CARDS[5][5]), w = lerp(W, CW2 * GV.z, k), h = lerp(H, CH2 * GV.z, k);
+    var C5 = CARDS[5]; L.setTransform(1, 0, 0, 1, 0, 0); L.clearRect(0, 0, W, H); var cam = C5[0](Math.min(t, 110.99)); blit(cam, 0, 0, W, H, CVT[1]);
+    GL.imageSmoothingEnabled = true; GL.drawImage(CVT[0], Math.round(lerp(0, p[0] - CW2 * GV.z / 2, k)), Math.round(lerp(0, p[1] - CH2 * GV.z / 2, k)), Math.round(w), Math.round(h)); GL.imageSmoothingEnabled = false;
+  }
+  if (head > 0 && head < 1) { gglow(hp[0], hp[1], 12, "#FFFFFF", .8); gdot(hp[0], hp[1], "#FFFFFF", 3); }
+  if (conv > 0) gglow(d6[0], d6[1], 30 + 120 * conv, "#FFF4D6", .55 * conv + .2);
+  X.imageSmoothingEnabled = false; X.drawImage(GBUF[0], 0, 0, W, H, 0, 0, OW, OH);
+  var dp = gs(d6[0], d6[1]); GAL_DEST = [dp[0] * 4, dp[1] * 4];
+}
+var GAL_DEST = [OW / 2, 240];
+function headPos(h) {                                   // where the travelling light is (story order along the main path)
+  var segT = [[114.8, 116.0], [116.0, 117.2], [117.2, 118.4], [118.4, 121.0], [121.0, 122.4]], t = lerp(114.8, 122.4, h);
+  for (var m = 0; m < 5; m++) if (t <= segT[m][1]) return bez.apply(null, MAIN[m].concat([eio(seg(t, segT[m][0], segT[m][1]))]));
+  return [CARDS[6][4], CARDS[6][5]];
+}
+
+// =================== CHOICE SCREENS (each option was shown alone; now he walks into one) ===================
+function drawHeroScreen(ctx, name, x, y, s, flip) { var i = A["c_" + name]; if (!i) return; ctx.save(); ctx.imageSmoothingEnabled = false; ctx.translate(Math.round(x), Math.round(y)); if (flip) { ctx.translate(48 * s, 0); ctx.scale(-1, 1); } ctx.drawImage(i, 0, 0, 48 * s, 56 * s); ctx.restore(); }
+function choiceScreen(o) {
+  return function (t, ctx) {
+    ctx.fillStyle = "#0B0920"; ctx.fillRect(0, 0, OW, OH);
+    for (var i = 0; i < 90; i++) if ((t * 1.5 + hash(i)) % 1 > .3) { ctx.fillStyle = "#3A3570"; ctx.fillRect(Math.floor(hash(i) * 270) * 4, Math.floor(hash(i + 90) * 480) * 4, 4, 4); }
+    var CWd = 456, CHt = 811, ay = 330, ax = 52, bxx = 572, ex = eio(seg(t, o.expand, o.expand + .8));
+    var rA = [ax, ay, CWd, CHt], rB = [lerp(bxx, 0, ex), lerp(ay, 0, ex), lerp(CWd, OW, ex), lerp(CHt, OH, ex)];
+    function cardDraw(r, f, lt, filter, glow) {
+      ctx.fillStyle = glow ? "#FFC145" : "#2A1F2E"; ctx.fillRect(r[0] - 10, r[1] - 10, r[2] + 20, r[3] + 20);
+      L.setTransform(1, 0, 0, 1, 0, 0); L.clearRect(0, 0, W, H); var cam = f(lt); ctx.save(); ctx.filter = filter || "none"; blit(cam, r[0], r[1], r[2], r[3], ctx); ctx.restore(); }
+    var la = o.a0 + ((t - o.start) % o.alen), lb = o.b0 + ((t - o.start) % o.blen);
+    if (ex < 1) { ctx.globalAlpha = 1 - .6 * seg(t, o.pick, o.pick + .5); cardDraw(rA, o.A, la, "saturate(.15) brightness(.75)"); ctx.globalAlpha = 1;
+      ptext(ctx, o.labA, ax + (CWd - pwidth(o.labA, 7)) / 2, ay + CHt + 40, 7, "#8C8FA8"); ptext(ctx, o.labB, bxx + (CWd - pwidth(o.labB, 7)) / 2, ay + CHt + 40, 7, "#FFC145"); }
+    cardDraw(rB, o.B, ex > 0 ? o.bEnd : lb, ex >= 1 ? "none" : "saturate(1.2)", t > o.pick && ex < 1);
+    if (ex < .05) { var wk = seg(t, o.walk, o.walk + 1.3), en = seg(t, o.walk + 1.3, o.pick), s = 6 * (1 - en * .7), hx = lerp(lerp(396, 640, wk), bxx + CWd / 2 - 24 * s, en), hy = lerp(1340 + 0, ay + CHt / 2 - 28 * s, en);
+      var nm = wk > 0 && wk < 1 ? "walk" + (Math.floor(t * 8) % 4) : (t < o.walk ? (blinkAt(t, .1) ? "blink" : "stand") : "jump"); if (en < 1) drawHeroScreen(ctx, nm, hx, hy, s, false); }
+  };
+}
+
+// =================== TIMELINE ===================
+var C1 = { start: 60.2, A: sSleep, B: sGetUp, a0: 52.0, alen: 3.0, b0: 56.0, blen: 3.0, labA: "SLEEP IN", labB: "GET UP", walk: 60.7, pick: 62.6, expand: 62.9, bEnd: 59.9 };
+var C2 = { start: 77.8, A: sScroll, B: sBuild, a0: 70.5, alen: 3.0, b0: 74.5, blen: 3.0, labA: "SCROLL", labB: "BUILD", walk: 78.0, pick: 79.6, expand: 79.8, bEnd: 77.7 };
+var SC = [
+  { a: 0, b: 12.0, f: sPortal }, { a: 12.0, b: 26.9, f: sFuture }, { a: 26.9, b: 30.6, f: sFlip },
+  { a: 32.2, b: 44.6, f: sWrite, tin: "flip" },
+  { a: 46.4, b: 50.6, f: sMorning, tin: "flip" },
+  { a: 50.6, b: 55.4, f: sSleep, tin: "flip", filter: "saturate(.15) brightness(.8)" }, { a: 55.4, b: 60.2, f: sGetUp, tin: "flip", filter: "saturate(1.2) brightness(1.04)" },
+  { a: 60.2, b: 64.6, screen: choiceScreen(C1), f: sGetUp }, { a: 66.4, b: 69.8, f: sEvening, tin: "flip" },
+  { a: 69.8, b: 73.8, f: sScroll, tin: "flip", filter: "saturate(.15) brightness(.8)" }, { a: 73.8, b: 77.8, f: sBuild, tin: "flip", filter: "saturate(1.2) brightness(1.04)" },
+  { a: 77.8, b: 80.6, screen: choiceScreen(C2), f: sBuild }, { a: 80.6, b: 89.0, f: sMontage }, { a: 90.8, b: 104.0, f: sShop, tin: "flip" }, { a: 105.8, b: 111.0, f: sOffice, tin: "flip" }
+];
+function renderTo(f, t, ctx, filter) { L.setTransform(1, 0, 0, 1, 0, 0); L.clearRect(0, 0, W, H); var cam = f(t); ctx.save(); ctx.filter = filter || "none"; blit(cam, 0, 0, OW, OH, ctx); ctx.restore(); }
+function drawEntry(e, t, ctx) { if (e.screen) e.screen(t, ctx); else renderTo(e.f, t, ctx, e.filter); }
+function flipTrans(t, prev, next, k) {   // scene change: the old shot shrinks away, the new one pops in with a small overshoot
+  X.fillStyle = "#0B0920"; X.fillRect(0, 0, OW, OH);
+  if (k < .4) { var q = eio(k / .4), sc = 1 - .14 * q; drawEntry(prev, Math.min(t, prev.b - .001), OA[1]);
+    X.save(); X.globalAlpha = 1 - .5 * q; X.drawImage(OA[0], Math.round(OW * (1 - sc) / 2), Math.round(OH * (1 - sc) / 2), Math.round(OW * sc), Math.round(OH * sc)); X.restore(); }
+  else { var r = (k - .4) / .6, sc2 = r < .6 ? lerp(.82, 1.04, eout(r / .6)) : lerp(1.04, 1, eio((r - .6) / .4)); drawEntry(next, Math.max(t, next.a), OB[1]);
+    X.drawImage(OB[0], Math.round(OW * (1 - sc2) / 2), Math.round(OH * (1 - sc2) / 2), Math.round(OW * sc2), Math.round(OH * sc2));
+    if (r < .35) { X.fillStyle = "rgba(255,244,214," + (.35 * (1 - r / .35)) + ")"; X.fillRect(0, 0, OW, OH); } }
+}
+var TILES = [[sPortal, 7.6, 2.0], [sFuture, 17.4, 2.0], [sWrite, 33.0, 2.0], [sGetUp, 56.0, 3.0, "saturate(1.2)"], [sHero, 0, 9], [sBuild, 74.5, 3.0, "saturate(1.2)"], [sMontage, 82.0, 3.0], [sShop, 94.2, 3.0], [sOffice, 108.8, 1.6]];
+var TW = 332, TH = 590, TG = 18, TX0 = 24, TY0 = 57;
+function tileRect(i) { return [TX0 + (i % 3) * (TW + TG), TY0 + Math.floor(i / 3) * (TH + TG), TW, TH]; }
+function drawTile(i, t, r, pix) {
+  var T = TILES[i], tt = T[1] + ((t - 111) % T[2]); L.setTransform(1, 0, 0, 1, 0, 0); L.clearRect(0, 0, W, H); var cam = T[0](tt);
+  X.save(); X.filter = T[3] || "none";
+  if (pix > 1) { var tw = Math.max(2, Math.round(W / pix)), th = Math.max(2, Math.round(H / pix)); TINY[1].clearRect(0, 0, W, H); TINY[1].imageSmoothingEnabled = true;
+    var sw = W / cam.z, sh = H / cam.z, sx = cl(cam.x - sw / 2, 0, W - sw), sy = cl(cam.y - sh / 2, 0, H - sh); TINY[1].drawImage(LB[0], sx, sy, sw, sh, 0, 0, tw, th);
+    X.imageSmoothingEnabled = false; X.drawImage(TINY[0], 0, 0, tw, th, r[0], r[1], r[2], r[3]); }
+  else blit(cam, r[0], r[1], r[2], r[3], X);
+  X.restore();
+}
+function sGrid(t) {
+  X.fillStyle = "#0B0920"; X.fillRect(0, 0, OW, OH);
+  var zo = 1 - .06 * eio(seg(t, 113, 117)), melt = seg(t, 117.0, 117.6);
+  X.save(); X.translate(OW / 2, OH / 2); X.scale(zo, zo); X.translate(-OW / 2, -OH / 2);
+  var ORDER = [0, 1, 2, 3, 7, 4, 5, 6];
+  for (var i = 0; i < 9; i++) {
+    var r = tileRect(i), k;
+    if (i === 8) { k = eio(seg(t, 111.0, 111.9)); r = [lerp(0, r[0], k), lerp(0, r[1], k), lerp(OW, r[2], k), lerp(OH, r[3], k)]; }
+    else { k = eout(seg(t, 111.5 + ORDER[i] * .14, 111.8 + ORDER[i] * .14)); if (k <= 0) continue; var cx = r[0] + r[2] / 2, cy = r[1] + r[3] / 2, s = .6 + .4 * k; r = [cx - r[2] * s / 2, cy - r[3] * s / 2, r[2] * s, r[3] * s]; }
+    X.globalAlpha = 1 - melt; X.fillStyle = "#2A1F2E"; X.fillRect(r[0] - 8, r[1] - 8, r[2] + 16, r[3] + 16);
+    drawTile(i, t, r, 1 + melt * 40);
+    if (i === 4) { X.strokeStyle = "#FFC145"; X.lineWidth = 8; X.strokeRect(r[0] - 4, r[1] - 4, r[2] + 8, r[3] + 8); }
+    X.globalAlpha = 1;
+  }
+  X.restore();
+}
+function whiteDither(a, c, from) {
+  X.fillStyle = c; var B = 12;
+  for (var y = 0; y < OH; y += B) for (var x = 0; x < OW; x += B) { var th = bay(x / B, y / B); if (from) { var d = Math.hypot(x - from[0], y - from[1]) / 2200; th = th * .35 + d * .65; } if (th < a) X.fillRect(x, y, B, B); }
+}
+function render(t) {
+  X.setTransform(1, 0, 0, 1, 0, 0); X.imageSmoothingEnabled = false; X.globalAlpha = 1; X.filter = "none";
+  if (t < 110.9) {
+    var i = 0; while (i < SC.length - 1 && t >= SC[i + 1].a) i++;
+    var cur = SC[i], nxt = SC[i + 1];
+    if (nxt && nxt.tin === "flip" && t > nxt.a - .25) flipTrans(t, cur, nxt, seg(t, nxt.a - .25, nxt.a + .2));
+    else if (cur.tin === "flip" && t < cur.a + .2) flipTrans(t, SC[i - 1], cur, seg(t, cur.a - .25, cur.a + .2));
+    else drawEntry(cur, t, X);
+    // portal swirls: into the book (11.3-12.4) and back in (26.5-27.3)
+    [[11.3, 12.0, 12.45], [26.55, 26.9, 27.3]].forEach(function (w) { if (t > w[0] && t < w[2]) { var a = t < w[1] ? seg(t, w[0], w[1]) : 1 - seg(t, w[1], w[2]); whiteDither(a, "#E9DDFF", [OW / 2, OH / 2]); } });
+  } else if (t < 131.4) {
+    sGalaxy(Math.min(t, 130.0));
+    var wa = eio(seg(t, 128.6, 129.4)); if (t > 130.1) { renderTo(sReturn, 131.4, X); wa = 1 - seg(t, 130.1, 131.4); }
+    if (wa > 0) whiteDither(wa, "#FFFFFF", t < 130.1 ? GAL_DEST : null);
+  } else renderTo(sReturn, t, X);
+  overlays(t, U_NOW);
+}
+function clockText(t, s, col) { var B = 12, w = pwidth(s, B); ptext(X, s, (OW - w) / 2 + B, 420 + B, B, "#1A1530"); ptext(X, s, (OW - w) / 2, 420, B, col || "#FFFFFF"); }
+function hhmm(m) { var h = Math.floor(m / 60) % 24, mm = Math.floor(m % 60), ap = h >= 12 ? "PM" : "AM", h12 = h % 12 === 0 ? 12 : h % 12; return h12 + ":" + String(mm).padStart(2, "0") + " " + ap; }
+function overlays(t, u) {
+  FCAPS.forEach(function (c) { caption(u, c[2], c[0], c[1], c[3] ? { y: c[3] } : null); });
+  if (t > 50.6 && t < 55.15) { caption(t, "*SNOOZE*", 50.6, 55.1, { accent: "#C8CAD8" }); clockText(t, hhmm(lerp(360, 600, eio(seg(t, 50.8, 54.6)))), "#C8CAD8"); }
+  if (t > 55.4 && t < 60.2) { caption(t, "*GET UP*", 55.4, 60.1); clockText(t, "6:00 AM", "#FFC145"); }
+  if (t > 69.8 && t < 73.6) { caption(t, "*SCROLL*", 69.8, 73.5, { accent: "#C8CAD8" }); clockText(t, hhmm(lerp(21 * 60, 24 * 60, eio(seg(t, 70.0, 73.2)))), "#C8CAD8"); }
+  if (t > 73.8 && t < 77.8) { caption(t, "*BUILD*", 73.8, 77.7); clockText(t, "9:00 PM", "#FFC145"); }
+  if (t > 80.8 && t < 89.0) dayBadge("DAY " + Math.min(300, 1 + Math.floor((t - 80.8) * 37)));
+  if (t > 105.8 && t < 111.0) { var n = Math.round(lerp(1, 1204, eout(seg(t, 106.0, 107.6)))); dayBadge("DAY " + (n > 999 ? Math.floor(n / 1000) + "," + String(n % 1000).padStart(3, "0") : n)); }
+  if (t > 154.3) { var k = seg(t, 154.3, 154.8); X.globalAlpha = .55 * k; X.fillStyle = "#140F2E"; X.fillRect(0, 0, OW, OH); X.globalAlpha = 1;
+    caption(t, "WHAT WOULD YOUR *FIRST PAGE* SAY?", 154.3, 999, { y: 620 });
+    if (t > 154.5) { var lab = "DMYOR", B = 20, w2 = pwidth(lab, B); ptext(X, lab, (OW - w2) / 2 + B, 1120 + B, B, "#1A1530"); ptext(X, lab, (OW - w2) / 2, 1120, B, "#FFFFFF");
+      var h = "@BECAUSEIDMYOR", w3 = pwidth(h, 7); ptext(X, h, (OW - w3) / 2, 1320, 7, "#FFC145"); } }
+}
+function dayBadge(s) { var b = 6, w = pwidth(s, b); X.fillStyle = "#2A1F2E"; X.fillRect(OW - w - 88, 108, w + 48, 66); X.fillStyle = "#28A86A"; X.fillRect(OW - w - 84, 112, w + 40, 58); ptext(X, s, OW - w - 64, 122, b, "#FFFFFF"); }
+window.__duration = DUR;
+var U_NOW = 0;
+window.__seek = function (u) { return READY.then(function () { U_NOW = u; render(u2t(u)); }); };
+READY.then(function () { render(u2t(0)); });
+</script></body></html>

@@ -1,0 +1,130 @@
+{
+ "total": 49.14,
+ "brandT": 45.4,
+ "scenes": [
+  {
+   "type": "shelf-year",
+   "params": {},
+   "head": "12 books a year is<br><b>10 pages</b> a night.",
+   "t0": 0.0,
+   "t1": 4.63
+  },
+  {
+   "type": "postpone-calendar",
+   "params": {
+    "days": [
+     "SAT",
+     "SUN",
+     "SAT",
+     "SUN",
+     "SAT"
+    ],
+    "note": "read this weekend"
+   },
+   "head": "Waiting for a<br><b>free weekend</b>?",
+   "t0": 4.63,
+   "t1": 12.15
+  },
+  {
+   "type": "math-split",
+   "params": {
+    "total": 3650,
+    "unit": "pages",
+    "milestone": "10 pages a night, about 15 min",
+    "perText": "\u00f7 300 pages a book",
+    "cells": 12,
+    "cols": 6,
+    "resText": "= 12 books a year",
+    "cue": [
+     "every",
+     "at",
+     "three",
+     "twelve"
+    ],
+    "at": [
+     4.35,
+     7.93,
+     8.08,
+     9.44
+    ]
+   },
+   "head": "Do <b>the math</b>.",
+   "t0": 12.15,
+   "t1": 22.57
+  },
+  {
+   "type": "pillow-book",
+   "params": {
+    "cue": [
+     "pillow",
+     "pages",
+     "Then"
+    ],
+    "at": [
+     1.45,
+     3.37,
+     5.29
+    ]
+   },
+   "head": "Book on the pillow.<br><b>Pages first</b>.",
+   "t0": 22.57,
+   "t1": 28.35
+  },
+  {
+   "type": "page-log",
+   "params": {
+    "cue": [
+     "track",
+     "far",
+     "tonight"
+    ],
+    "at": [
+     0.61,
+     2.83,
+     5.25
+    ]
+   },
+   "head": "Track <b>pages</b>,<br>not books.",
+   "t0": 28.35,
+   "t1": 34.45
+  },
+  {
+   "type": "pillow-book",
+   "params": {
+    "note": "Tonight: book on the pillow before dinner",
+    "cue": [
+     "pick",
+     "pillow",
+     "dinner",
+     "now"
+    ],
+    "at": [
+     0.05,
+     2.11,
+     2.73,
+     1.09
+    ]
+   },
+   "head": "Tonight: <b>book<br>on the pillow</b>.",
+   "t0": 34.45,
+   "t1": 37.97
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Read 12 books in 2027",
+    "date": "Open it again: Dec 2027",
+    "steps": [
+     "Book on the pillow",
+     "10 pages, then phone",
+     "Track pages"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 37.97,
+   "t1": 45.4
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}
