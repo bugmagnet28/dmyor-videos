@@ -7,7 +7,7 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 ## Scheduled on @becauseidmyor (scheduled by Claude 2026-10-27 ~23:15 IST; Sanyam approved VASK-018 and the pixel film)
 
 Tue 2026-10-27 (today's slots had passed, so the Adam film went tonight and the batch moved to Wed):
-- [x] **pixel-book (Adam voice, 1:42)** · Instagram 22:45 · X 22:55 · YouTube 23:30 · `ready-to-post/2026-10-27-pixel-book/`
+- [x] **pixel-book (Adam voice)** went out 22:45-23:30 with the last word clipped. Replaced ~23:55 IST with **v2** (full ending + pixel-font subtitles, `video-v2.mp4`): Instagram reposted (likes/views hidden; old post deleted, in Recently deleted for 30 days), YouTube new upload https://youtube.com/shorts/39Oule3fqyE (old one set to Private), X new post https://x.com/becauseidmyor/status/2115146099312971804 (old X post 2115132669076054073 to be deleted by Sanyam).
 
 Wed 2026-10-28 (Instagram, X and YouTube at the same times):
 - [x] 09:30 IST · **ill-save-first** (51.6s) · `ready-to-post/2026-10-27-ill-save-first/`
