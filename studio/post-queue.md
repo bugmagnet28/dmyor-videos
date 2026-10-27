@@ -16,6 +16,14 @@ Wed 2026-10-28 (Instagram, X and YouTube at the same times):
 - [x] 19:30 IST · **ill-phone-distance** (47.8s) · `ready-to-post/2026-10-27-ill-phone-distance/`
 - Note: the Oct 26 agent run stalled after starting the first reel, so these were scripted/rebuilt in the Oct 27 session. The agent's next batch should target Thu Oct 29.
 
+## Waiting for approval: agent batch (VASK-019, V-EXP-30), moved to Thu 2026-10-29 because Wed 10-28 slots now hold the Oct 27 batch
+
+- [ ] 09:30 IST · **ill-unclear-task** (procrastination: rewrite to-dos as the next visible action, 51.3s) · `ready-to-post/2026-10-28-ill-unclear-task/` · 36/40
+- [ ] 13:00 IST · **ill-ten-pages** (reading: 10 pages a night = 12 books a year, 49.1s) · `ready-to-post/2026-10-28-ill-ten-pages/` · 35/40
+- [ ] 19:30 IST · **ill-gym-day-four** (fitness: book 3 sessions as calendar meetings, 56.1s) · `ready-to-post/2026-10-28-ill-gym-day-four/` · 35/40
+- All animated illustration, am_eric, value close, @becauseidmyor end card, new soft pen sound. Same times on X and YouTube Shorts. Files 3.2-3.5 MB.
+- Note (Claude, 10-27 22:45): entries were accidentally removed by a queue edit and restored here; ill-ten-pages reuses the "12 books" example that ill-goal-date (Wed 16:30) uses, so posting it a day later is better anyway.
+
 ## Older queue (pre-owner-rules styles; propose retiring, see VASK-016)
 
 **Post order: bottom one first (oldest). From Oct 24: one reel per day, best slot from the Oct 23 insights (VASK-014).** All queued reels are evergreen. Newest is listed on top.
