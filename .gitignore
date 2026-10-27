@@ -22,3 +22,6 @@ analytics/.venv/
 app-capture/profile/
 app-capture/raw/
 tts/gemini_usage.jsonl
+tools/earshot/.venv/
+tts2/out/
+tts2/.venv/

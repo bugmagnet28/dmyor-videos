@@ -1,0 +1,1 @@
+Source: https://github.com/Leonxlnx/earshot (MIT), v0.4.0 commit 591fa3e, saved 2026-10-28, installed with owner approval. Audited: only earshot/llm.py talks to the network (opt-in Gemini upload); never use --yes-upload.

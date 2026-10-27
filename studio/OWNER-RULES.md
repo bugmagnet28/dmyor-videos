@@ -76,6 +76,9 @@ Every decision Sanyam made about how Dmyor videos are made and posted, in one pl
 - Scene changes: a pop (picture and sound), not a page-turn effect.
 - Engine and vehicle sounds (helicopter etc.) fade in and out; never a hard loop at full level.
 
+- Narration voice (owner 2026-10-28): ElevenLabs **Adam** (Radio Announcer), generated manually by Sanyam from a one-take script with v3 audio tags (see `reels/pixel-book/narration-elevenlabs-v3.txt`). Fit the picture to the take with `reels/pixel-book/vo_external.py` (cuts only in real pauses, keeps the take to its natural end). Free voices tested and rejected for now: Kokoro (flat), Qwen3-TTS voice design + tone match (closest, still darker than Adam). Kokoro stays only for drafts.
+- Use `tools/earshot` (MIT, local) to check a mix: `earshot measure` (loudness, bands), `earshot ab A B` (differences in words), `earshot critique film.mp4`. Never use its `llm --yes-upload`.
+
 ## 5. Styles (skills in `.claude/skills/`)
 | Style | Status | Use for |
 |---|---|---|
