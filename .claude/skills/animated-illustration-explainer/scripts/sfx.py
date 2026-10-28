@@ -250,6 +250,42 @@ KIT = {"tick": tick, "tap": tap, "swish": swish, "ratchet": ratchet, "tone": ton
        "clock": clock, "timer": timer, "pencil": pencil, "pen_check": pen_check, "page": page, "riffle": riffle,
        "footsteps": footsteps, "plate": plate, "stamp": stamp, "beep2": beep2, "right": right, "pop": pop, "miss": miss,
        "coin": coin, "typing": typing, "buzz": buzz, "door": door, "toggle": toggle}
+# Real CC0 recordings replace the synthesised sounds (owner 2026-10-28). A file studio/sfx-library/real/<kit-key>.wav
+# (made by studio/sfx-library/use.py) is used for that key; keys without a file keep the synth. Licences: studio/sfx-library/LICENSES.md
+REAL_DIR = os.path.abspath(os.path.join(HERE, "..", "..", "..", "studio", "sfx-library", "real"))
+REAL_PERIOD = {"typing": None, "clock": .5, "timer": .16, "footsteps": .52}   # beds: tile one clip (None = loop the clip itself)
+
+
+def _real(key):
+    import wave
+    with wave.open(os.path.join(REAL_DIR, key + ".wav"), "rb") as w:   # 16-bit mono wav written by fetch_sfx.py
+        sr = w.getframerate(); x = np.frombuffer(w.readframes(w.getnframes()), dtype="<i2").astype("float64") / 32768
+    if sr != SR:
+        x = np.interp(np.arange(int(len(x) * SR / sr)) / SR, np.arange(len(x)) / sr, x)
+    return x
+
+
+def _make_real(key, synth):
+    x = _real(key)
+    if key not in REAL_PERIOD:
+        return lambda d=None: x.copy()
+
+    def bed(d=None):
+        d = d or 1.5; n = int(d * SR); out = np.zeros(n + len(x)); per = REAL_PERIOD[key]
+        if per is None:                                         # loop the clip itself, short fades at the seams
+            f = int(.01 * SR); y = x.copy(); y[:f] *= np.linspace(0, 1, f); y[-f:] *= np.linspace(1, 0, f)
+            for i in range(0, n, max(len(y) - f, 1)): out[i:i + len(y)] += y
+        else:                                                   # one hit per period, alternating level
+            for k in range(int(d / per) + 1): i = int(k * per * SR); out[i:i + len(x)] += x * (.85 if k % 2 else 1)
+        out = out[:n]; fo = min(int(.15 * SR), n); out[-fo:] *= np.linspace(1, 0, fo)
+        return out
+    return bed
+
+
+for _k in list(KIT):
+    if os.path.exists(os.path.join(REAL_DIR, _k + ".wav")):
+        KIT[_k] = _make_real(_k, KIT[_k])
+
 PEAK = {"tick": -16, "tap": -16, "swish": -21, "ratchet": -19, "tone": -21, "chord": -16,   # dBFS peak at "present" (voice peaks ~-1.5)
         "clock": -18, "timer": -20, "pencil": -15, "pen_check": -15, "page": -15, "riffle": -18,
         "footsteps": -15, "plate": -15, "stamp": -14, "beep2": -21, "right": -15, "pop": -14, "miss": -16,
