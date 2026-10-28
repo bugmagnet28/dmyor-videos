@@ -42,6 +42,18 @@ Every decision Sanyam made about how Dmyor videos are made and posted, in one pl
 - Story reels: put a real pause after questions and dramatic beats ("But how?" then a beat). Record one clip per sentence so each pause can be placed.
 - Pacing: never hold a shot after its useful part ends; no long silences (fill with narration that makes sense). Aim for about 1:20 for story reels.
 
+## 2b. Content Kit v2 (from 2026-10-28, new batches only)
+Full kit and decisions: **`studio/content-kit-v2.md`**, adapted from the owner's "Content Kit v2" PDF. Sanyam delegated the open choices ("do whats best", 2026-10-28).
+- Every script starts with a story frame in `script.meta.json` (`"frame"`): structure A (method with stakes), B (want, obstacle, choice, payoff) or C (mistake, cost, fix); the want, the obstacle and a cost in numbers.
+- Hooks: write three from the kit's hook bank, keep the one that passes all five checks. Hard truth first; never open with a question, greeting or title card. Triple hook in 1.5 s: finished picture with movement, truth text of 6 words or fewer, the truth as the first spoken line, one object sound in the first second (sfx.py plays the hook scene's first object sound at 0.12 s).
+- Every reel has a beat map (`"beats"`): open loop by 5 s, re-hook near 10 s and near 25 s, a save moment held 2 s+, one sendable line, one concrete follow reason.
+- Ending order: share line in the payoff, then the value close (unchanged), then the follow reason (a real, scheduled next reel or series part), then "link in bio".
+- Honesty: hook templates with numbers use only the reel's own arithmetic or a cited source. Never "most people", "half of", or a first-person experience we did not have.
+- Sound: five layers. Real CC0 object sounds replace synth when present; effects +4 dB (about 10 dB under the voice, under test); a quiet CC0 room-tone bed when available; two near-silences via narration `"silences"` cue words; check marks keep the rising chime; exactly one distinct payoff sound at the reveal; scene changes keep the pop (2026-10-27 rule).
+- Voice scripts for ElevenLabs carry `[pause]`, `[short pause]` and delivery tags per beat; captions use a clean copy.
+- Assets stay CC0 only. Real photo/video beats wait for a real-footage hybrid style (next style to build; it would also give the second daily style).
+- Per batch: 2+ story structures, no hook formula twice in a row, all beat maps before any animation.
+
 ## 3. Look and motion
 - **Palette: Graphite & Sage.** bg `#151719`, ink `#E9E7E2`, accent `#9DB8A3`, secondary `#D8CBA8`, warning `#C98B7B`; deeper sage `#5E806A` for accent words on light backgrounds. Orange/black is rejected.
 - **Real graphics in every reel.** Never a captions-only or text-only (kinetic typography) reel (2026-10-24, "just captions won't cut it"). Kinetic type may only be a hook card inside a graphic reel.

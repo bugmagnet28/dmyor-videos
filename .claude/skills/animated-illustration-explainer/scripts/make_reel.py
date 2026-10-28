@@ -94,6 +94,22 @@ def main():
     total = round(W[-1]["e"] + n.get("tail", 1.2), 2)
     cfg = {"total": total, "brandT": round(brandT, 3), "scenes": out, "tagline": n.get("tagline", "Turn your dream into\na plan you can see."),
            "handle": n.get("handle", "@becauseidmyor")}
+    # Content Kit v2: two near-silences (bed + effects drop ~0.5 s) just before the spoken cue words in "silences"
+    # (e.g. ["And step three", "Tell one person"]); numbers are taken as seconds. Optional "ambience" = file in studio/sfx-library/real/.
+    sil = []
+    for c in n.get("silences", []):
+        if isinstance(c, (int, float)):
+            sil.append(float(c)); continue
+        cw = [nz(x) for x in str(c).split()]
+        hit = next((i for i in range(len(words) - len(cw) + 1) if [nz(x) for x in words[i:i + len(cw)]] == cw), None)
+        if hit is None:
+            print(f"  silence cue not found: {c!r}")
+        else:
+            sil.append(round(st[hit] - .1, 3))
+    if sil:
+        cfg["silences"] = sil
+    if n.get("ambience"):
+        cfg["ambience"] = n["ambience"]
     json.dump(cfg, open(os.path.join(d, "config.json"), "w"), indent=1)
     html = open(os.path.join(SKILL, "assets/illustrated.html")).read().replace("/*__CONFIG__*/{}", json.dumps(cfg))
     html = html.replace("url(fonts/", "url(" + os.path.relpath(os.path.join(SKILL, "assets/fonts"), d) + "/")

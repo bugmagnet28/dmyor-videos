@@ -11,6 +11,7 @@ If you read one file first, read **[studio/OWNER-RULES.md](studio/OWNER-RULES.md
 | Every decision on look, sound, voice, scripts, posting | [studio/OWNER-RULES.md](studio/OWNER-RULES.md) |
 | The daily agent's full instructions and run cycle | [.claude/agents/video.md](.claude/agents/video.md) |
 | How a video style works | `.claude/skills/<style>/SKILL.md` (see Styles below) |
+| How to script a reel (story frame, hook bank, beat map, sound layers) | [studio/content-kit-v2.md](studio/content-kit-v2.md) |
 | Quality bar (score 0-40, ship at 30+) | [studio/quality-bar.md](studio/quality-bar.md) |
 | Strategy, playbook, lessons, experiments | `studio/strategy.md`, `playbook.md`, `learnings.md`, `experiments.md` |
 | What is ready, scheduled or waiting for approval | [studio/post-queue.md](studio/post-queue.md) |
@@ -52,7 +53,8 @@ The reel library's "Made with" column shows which of these built each past reel.
 
 ## Sound
 
-- Default effects are synthesised (`.claude/skills/animated-illustration-explainer/scripts/sfx.py`): audible, objects sound like themselves, no sound on every cut, no suspense risers.
+- Real CC0 recordings in `studio/sfx-library/real/` replace the synth automatically (promote a candidate with `studio/sfx-library/use.py`). Hook sound in the first second, two near-silences (narration `silences`), and a room-tone bed when available: see `studio/content-kit-v2.md`.
+- Fallback effects are synthesised (`.claude/skills/animated-illustration-explainer/scripts/sfx.py`): audible, objects sound like themselves, no sound on every cut, no suspense risers.
 - Real recordings are allowed from Openverse, **CC0 only**: `python3 studio/tools/fetch_sfx.py search "page turn"` then `get ... --name page`. Files and licence log live in `studio/sfx-library/`.
 - Music is an open decision. Explainers have none; cinematic films have a composed score.
 

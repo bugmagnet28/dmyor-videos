@@ -290,7 +290,7 @@ PEAK = {"tick": -16, "tap": -16, "swish": -21, "ratchet": -19, "tone": -21, "cho
         "clock": -18, "timer": -20, "pencil": -15, "pen_check": -15, "page": -15, "riffle": -18,
         "footsteps": -15, "plate": -15, "stamp": -14, "beep2": -21, "right": -15, "pop": -14, "miss": -16,
         "coin": -17, "typing": -17, "buzz": -16, "door": -14, "toggle": -15}
-LEVEL = {"present": 0, "subtle": -6}
+LEVEL = {"present": 4, "subtle": -2}   # +4 dB from 2026-10-28 (Content Kit v2: object sounds ~10 dB under voice); was present 0 / subtle -6
 BEDS = {"clock", "timer", "footsteps", "riffle", "typing"}   # continuous sounds: may overlap one-shots
 
 
@@ -310,8 +310,11 @@ def events(cfg, table, min_gap=.28):
         at_ = P.get("at", [])
         if i > 0 and not (own and isinstance(own[0][0], (int, float)) and own[0][0] < .1):
             ev.append((sc["t0"], "swish", None))
-        if i == 0:
-            continue   # the hook scene is already finished on frame 0
+        if i == 0:   # the hook scene is already finished on frame 0, but its first object sound still plays in the first second
+            first = next((e for e in own if e[1] not in ("right", "pop", "miss", "swish", "tone", "chord")), None)
+            if first:   # beds (clock, typing...) play a short 1 s burst; one-shots play whole
+                ev.append((sc["t0"] + .12, first[1], 1.0 if first[1] in BEDS or (len(first) > 2 and first[2] is not None) else None))
+            continue
         run = {}
         for e in own:
             try:
@@ -353,6 +356,20 @@ def main():
         s = KIT[kind](dur) if dur is not None else KIT[kind](); s = s / np.abs(s).max() * 10 ** ((PEAK[kind] + LEVEL[o.level]) / 20); i = int(at * SR)
         trk[i:i + len(s)] += s[: n - i]
     trk = trk[: int(cfg["total"] * SR)]
+    # Ambience bed (Content Kit v2): a quiet CC0 room/scene tone under the whole reel, ~26 dB under the voice, dropped out for
+    # ~0.5 s at each config "silences" time (two per reel: before the 25 s re-hook and before the final payoff line).
+    amb = cfg.get("ambience", "ambience-room"); n2 = len(trk)
+    if amb and os.path.exists(os.path.join(REAL_DIR, amb + ".wav")):
+        a = _real(amb); bed = np.resize(a, n2) if len(a) else np.zeros(n2)
+        bed = bed / (np.abs(bed).max() + 1e-9) * 10 ** (-27 / 20)
+        fi = min(int(.8 * SR), n2); bed[:fi] *= np.linspace(0, 1, fi); bed[-fi:] *= np.linspace(1, 0, fi)
+        trk = trk + bed
+    f = int(.03 * SR)
+    for t in cfg.get("silences", []):   # near-silence: bed and effects out for ~0.6 s, the voice carries on
+        i0, i1 = int((t - .25) * SR), int((t + .35) * SR)
+        if f < i0 < i1 < n2 - f:
+            g = np.ones(n2); g[i0:i1] = 0; g[i0 - f:i0] = np.linspace(1, 0, f); g[i1:i1 + f] = np.linspace(0, 1, f)
+            trk = trk * g
     tmp = tempfile.mktemp(suffix=".wav")
     import soundfile as sf
     sf.write(tmp, trk.astype(np.float32), SR)
