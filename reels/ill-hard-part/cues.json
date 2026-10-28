@@ -1,0 +1,1228 @@
+{
+ "audio": "audio.mp3",
+ "duration": 55.49,
+ "text": "You're not getting better because you keep practicing the part you can already do. Learning guitar most people play the song from the top every time. The verse sounds great, they mess up the same 4 bars in the chorus and they start over. So the easy part gets 50 plays and the hard part gets 5. Flip it, find the exact spot where you break down and practice only that. Loop those 4 bars slow enough to get them right. 10 clean times then nudge the speed up a little, after 10 minutes play the whole song once. Same with a language. If speaking is the hard part another vocabulary lesson won't fix it. Record yourself talking about your day for 1 minute every day. Here's the test, if practice feels easy you're rehearsing not improving. Next time you practice start with your weakest part for 10 minutes before anything else. That's what demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. If you want to try it out I've put the link in the bio.",
+ "words": [
+  {
+   "w": "youre",
+   "raw": "You're",
+   "s": 0.0,
+   "e": 0.28
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 0.28,
+   "e": 0.42
+  },
+  {
+   "w": "getting",
+   "raw": "getting",
+   "s": 0.42,
+   "e": 0.66
+  },
+  {
+   "w": "better",
+   "raw": "better",
+   "s": 0.66,
+   "e": 0.96
+  },
+  {
+   "w": "because",
+   "raw": "because",
+   "s": 0.96,
+   "e": 1.32
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 1.32,
+   "e": 1.48
+  },
+  {
+   "w": "keep",
+   "raw": "keep",
+   "s": 1.48,
+   "e": 1.68
+  },
+  {
+   "w": "practicing",
+   "raw": "practicing",
+   "s": 1.68,
+   "e": 2.1
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 2.1,
+   "e": 2.36
+  },
+  {
+   "w": "part",
+   "raw": "part",
+   "s": 2.36,
+   "e": 2.54
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 2.54,
+   "e": 2.72
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 2.72,
+   "e": 2.88
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 2.88,
+   "e": 3.12
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 3.12,
+   "e": 3.52
+  },
+  {
+   "w": "learning",
+   "raw": "Learning",
+   "s": 3.9,
+   "e": 4.06
+  },
+  {
+   "w": "guitar",
+   "raw": "guitar",
+   "s": 4.06,
+   "e": 4.46
+  },
+  {
+   "w": "most",
+   "raw": "most",
+   "s": 4.46,
+   "e": 4.78
+  },
+  {
+   "w": "people",
+   "raw": "people",
+   "s": 4.78,
+   "e": 5.08
+  },
+  {
+   "w": "play",
+   "raw": "play",
+   "s": 5.08,
+   "e": 5.34
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 5.34,
+   "e": 5.48
+  },
+  {
+   "w": "song",
+   "raw": "song",
+   "s": 5.48,
+   "e": 5.66
+  },
+  {
+   "w": "from",
+   "raw": "from",
+   "s": 5.66,
+   "e": 5.84
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 5.84,
+   "e": 5.98
+  },
+  {
+   "w": "top",
+   "raw": "top",
+   "s": 5.98,
+   "e": 6.18
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 6.18,
+   "e": 6.44
+  },
+  {
+   "w": "time",
+   "raw": "time.",
+   "s": 6.44,
+   "e": 6.82
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 7.26,
+   "e": 7.44
+  },
+  {
+   "w": "verse",
+   "raw": "verse",
+   "s": 7.44,
+   "e": 7.62
+  },
+  {
+   "w": "sounds",
+   "raw": "sounds",
+   "s": 7.62,
+   "e": 7.92
+  },
+  {
+   "w": "great",
+   "raw": "great,",
+   "s": 7.92,
+   "e": 8.22
+  },
+  {
+   "w": "they",
+   "raw": "they",
+   "s": 8.42,
+   "e": 8.5
+  },
+  {
+   "w": "mess",
+   "raw": "mess",
+   "s": 8.5,
+   "e": 8.66
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 8.66,
+   "e": 8.8
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 8.8,
+   "e": 8.94
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 8.94,
+   "e": 9.12
+  },
+  {
+   "w": "4",
+   "raw": "4",
+   "s": 9.12,
+   "e": 9.42
+  },
+  {
+   "w": "bars",
+   "raw": "bars",
+   "s": 9.42,
+   "e": 9.66
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 9.66,
+   "e": 9.88
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 9.88,
+   "e": 10.0
+  },
+  {
+   "w": "chorus",
+   "raw": "chorus",
+   "s": 10.0,
+   "e": 10.32
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 10.32,
+   "e": 10.56
+  },
+  {
+   "w": "they",
+   "raw": "they",
+   "s": 10.56,
+   "e": 10.7
+  },
+  {
+   "w": "start",
+   "raw": "start",
+   "s": 10.7,
+   "e": 10.92
+  },
+  {
+   "w": "over",
+   "raw": "over.",
+   "s": 10.92,
+   "e": 11.26
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 11.66,
+   "e": 11.86
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 11.86,
+   "e": 12.0
+  },
+  {
+   "w": "easy",
+   "raw": "easy",
+   "s": 12.0,
+   "e": 12.24
+  },
+  {
+   "w": "part",
+   "raw": "part",
+   "s": 12.24,
+   "e": 12.52
+  },
+  {
+   "w": "gets",
+   "raw": "gets",
+   "s": 12.52,
+   "e": 12.8
+  },
+  {
+   "w": "50",
+   "raw": "50",
+   "s": 12.8,
+   "e": 13.12
+  },
+  {
+   "w": "plays",
+   "raw": "plays",
+   "s": 13.12,
+   "e": 13.44
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 13.44,
+   "e": 13.74
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 13.74,
+   "e": 13.82
+  },
+  {
+   "w": "hard",
+   "raw": "hard",
+   "s": 13.82,
+   "e": 14.06
+  },
+  {
+   "w": "part",
+   "raw": "part",
+   "s": 14.06,
+   "e": 14.3
+  },
+  {
+   "w": "gets",
+   "raw": "gets",
+   "s": 14.3,
+   "e": 14.52
+  },
+  {
+   "w": "5",
+   "raw": "5.",
+   "s": 14.52,
+   "e": 14.9
+  },
+  {
+   "w": "flip",
+   "raw": "Flip",
+   "s": 15.32,
+   "e": 15.6
+  },
+  {
+   "w": "it",
+   "raw": "it,",
+   "s": 15.6,
+   "e": 15.8
+  },
+  {
+   "w": "find",
+   "raw": "find",
+   "s": 15.92,
+   "e": 16.14
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 16.14,
+   "e": 16.28
+  },
+  {
+   "w": "exact",
+   "raw": "exact",
+   "s": 16.28,
+   "e": 16.6
+  },
+  {
+   "w": "spot",
+   "raw": "spot",
+   "s": 16.6,
+   "e": 16.94
+  },
+  {
+   "w": "where",
+   "raw": "where",
+   "s": 16.94,
+   "e": 17.16
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 17.16,
+   "e": 17.28
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 17.28,
+   "e": 17.48
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 17.48,
+   "e": 17.78
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 17.78,
+   "e": 18.02
+  },
+  {
+   "w": "practice",
+   "raw": "practice",
+   "s": 18.02,
+   "e": 18.34
+  },
+  {
+   "w": "only",
+   "raw": "only",
+   "s": 18.34,
+   "e": 18.64
+  },
+  {
+   "w": "that",
+   "raw": "that.",
+   "s": 18.64,
+   "e": 19.04
+  },
+  {
+   "w": "loop",
+   "raw": "Loop",
+   "s": 19.46,
+   "e": 19.56
+  },
+  {
+   "w": "those",
+   "raw": "those",
+   "s": 19.56,
+   "e": 19.8
+  },
+  {
+   "w": "4",
+   "raw": "4",
+   "s": 19.8,
+   "e": 20.08
+  },
+  {
+   "w": "bars",
+   "raw": "bars",
+   "s": 20.08,
+   "e": 20.38
+  },
+  {
+   "w": "slow",
+   "raw": "slow",
+   "s": 20.38,
+   "e": 20.74
+  },
+  {
+   "w": "enough",
+   "raw": "enough",
+   "s": 20.74,
+   "e": 20.94
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 20.94,
+   "e": 21.14
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 21.14,
+   "e": 21.26
+  },
+  {
+   "w": "them",
+   "raw": "them",
+   "s": 21.26,
+   "e": 21.42
+  },
+  {
+   "w": "right",
+   "raw": "right.",
+   "s": 21.42,
+   "e": 21.68
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 22.2,
+   "e": 22.34
+  },
+  {
+   "w": "clean",
+   "raw": "clean",
+   "s": 22.34,
+   "e": 22.62
+  },
+  {
+   "w": "times",
+   "raw": "times",
+   "s": 22.62,
+   "e": 23.0
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 23.0,
+   "e": 23.28
+  },
+  {
+   "w": "nudge",
+   "raw": "nudge",
+   "s": 23.28,
+   "e": 23.52
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 23.52,
+   "e": 23.68
+  },
+  {
+   "w": "speed",
+   "raw": "speed",
+   "s": 23.68,
+   "e": 23.9
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 23.9,
+   "e": 24.08
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 24.08,
+   "e": 24.18
+  },
+  {
+   "w": "little",
+   "raw": "little,",
+   "s": 24.18,
+   "e": 24.32
+  },
+  {
+   "w": "after",
+   "raw": "after",
+   "s": 24.7,
+   "e": 24.94
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 24.94,
+   "e": 25.2
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 25.2,
+   "e": 25.46
+  },
+  {
+   "w": "play",
+   "raw": "play",
+   "s": 25.46,
+   "e": 25.68
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 25.68,
+   "e": 25.82
+  },
+  {
+   "w": "whole",
+   "raw": "whole",
+   "s": 25.82,
+   "e": 26.02
+  },
+  {
+   "w": "song",
+   "raw": "song",
+   "s": 26.02,
+   "e": 26.32
+  },
+  {
+   "w": "once",
+   "raw": "once.",
+   "s": 26.32,
+   "e": 26.66
+  },
+  {
+   "w": "same",
+   "raw": "Same",
+   "s": 27.14,
+   "e": 27.36
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 27.36,
+   "e": 27.54
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 27.54,
+   "e": 27.66
+  },
+  {
+   "w": "language",
+   "raw": "language.",
+   "s": 27.66,
+   "e": 27.98
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 28.48,
+   "e": 28.62
+  },
+  {
+   "w": "speaking",
+   "raw": "speaking",
+   "s": 28.62,
+   "e": 28.9
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 28.9,
+   "e": 29.18
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 29.18,
+   "e": 29.32
+  },
+  {
+   "w": "hard",
+   "raw": "hard",
+   "s": 29.32,
+   "e": 29.54
+  },
+  {
+   "w": "part",
+   "raw": "part",
+   "s": 29.54,
+   "e": 29.86
+  },
+  {
+   "w": "another",
+   "raw": "another",
+   "s": 29.86,
+   "e": 30.28
+  },
+  {
+   "w": "vocabulary",
+   "raw": "vocabulary",
+   "s": 30.28,
+   "e": 30.88
+  },
+  {
+   "w": "lesson",
+   "raw": "lesson",
+   "s": 30.88,
+   "e": 31.42
+  },
+  {
+   "w": "wont",
+   "raw": "won't",
+   "s": 31.42,
+   "e": 31.74
+  },
+  {
+   "w": "fix",
+   "raw": "fix",
+   "s": 31.74,
+   "e": 31.92
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 31.92,
+   "e": 32.22
+  },
+  {
+   "w": "record",
+   "raw": "Record",
+   "s": 32.9,
+   "e": 32.9
+  },
+  {
+   "w": "yourself",
+   "raw": "yourself",
+   "s": 32.9,
+   "e": 33.22
+  },
+  {
+   "w": "talking",
+   "raw": "talking",
+   "s": 33.22,
+   "e": 33.6
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 33.6,
+   "e": 33.88
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 33.88,
+   "e": 34.04
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 34.04,
+   "e": 34.2
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 34.2,
+   "e": 34.38
+  },
+  {
+   "w": "1",
+   "raw": "1",
+   "s": 34.38,
+   "e": 34.6
+  },
+  {
+   "w": "minute",
+   "raw": "minute",
+   "s": 34.6,
+   "e": 34.76
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 34.76,
+   "e": 35.12
+  },
+  {
+   "w": "day",
+   "raw": "day.",
+   "s": 35.12,
+   "e": 35.44
+  },
+  {
+   "w": "heres",
+   "raw": "Here's",
+   "s": 35.86,
+   "e": 36.04
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 36.04,
+   "e": 36.18
+  },
+  {
+   "w": "test",
+   "raw": "test,",
+   "s": 36.18,
+   "e": 36.44
+  },
+  {
+   "w": "if",
+   "raw": "if",
+   "s": 36.58,
+   "e": 36.7
+  },
+  {
+   "w": "practice",
+   "raw": "practice",
+   "s": 36.7,
+   "e": 37.0
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 37.0,
+   "e": 37.3
+  },
+  {
+   "w": "easy",
+   "raw": "easy",
+   "s": 37.3,
+   "e": 37.72
+  },
+  {
+   "w": "youre",
+   "raw": "you're",
+   "s": 37.72,
+   "e": 37.98
+  },
+  {
+   "w": "rehearsing",
+   "raw": "rehearsing",
+   "s": 37.98,
+   "e": 38.46
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 38.46,
+   "e": 38.66
+  },
+  {
+   "w": "improving",
+   "raw": "improving.",
+   "s": 38.66,
+   "e": 39.12
+  },
+  {
+   "w": "next",
+   "raw": "Next",
+   "s": 39.66,
+   "e": 39.88
+  },
+  {
+   "w": "time",
+   "raw": "time",
+   "s": 39.88,
+   "e": 40.08
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 40.08,
+   "e": 40.24
+  },
+  {
+   "w": "practice",
+   "raw": "practice",
+   "s": 40.24,
+   "e": 40.66
+  },
+  {
+   "w": "start",
+   "raw": "start",
+   "s": 40.66,
+   "e": 41.1
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 41.1,
+   "e": 41.28
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 41.28,
+   "e": 41.4
+  },
+  {
+   "w": "weakest",
+   "raw": "weakest",
+   "s": 41.4,
+   "e": 41.66
+  },
+  {
+   "w": "part",
+   "raw": "part",
+   "s": 41.66,
+   "e": 42.04
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 42.04,
+   "e": 42.3
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 42.3,
+   "e": 42.52
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 42.52,
+   "e": 42.82
+  },
+  {
+   "w": "before",
+   "raw": "before",
+   "s": 42.82,
+   "e": 43.14
+  },
+  {
+   "w": "anything",
+   "raw": "anything",
+   "s": 43.14,
+   "e": 43.46
+  },
+  {
+   "w": "else",
+   "raw": "else.",
+   "s": 43.46,
+   "e": 43.8
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 44.32,
+   "e": 44.68
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 44.68,
+   "e": 44.82
+  },
+  {
+   "w": "demure",
+   "raw": "demure",
+   "s": 44.82,
+   "e": 45.2
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 45.2,
+   "e": 45.36
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 45.36,
+   "e": 45.64
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 46.02,
+   "e": 46.14
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 46.14,
+   "e": 46.52
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 46.52,
+   "e": 46.74
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 46.74,
+   "e": 46.96
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 46.96,
+   "e": 47.3
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 47.3,
+   "e": 47.56
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 47.56,
+   "e": 47.7
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 47.7,
+   "e": 47.84
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 47.84,
+   "e": 48.08
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 48.08,
+   "e": 48.2
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 48.2,
+   "e": 48.5
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 48.5,
+   "e": 48.94
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 48.94,
+   "e": 49.12
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 49.12,
+   "e": 49.28
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 49.28,
+   "e": 49.48
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 49.48,
+   "e": 49.7
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 49.7,
+   "e": 50.0
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 50.0,
+   "e": 50.32
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 50.32,
+   "e": 50.52
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 50.52,
+   "e": 50.66
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 50.66,
+   "e": 50.98
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 50.98,
+   "e": 51.3
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 51.64,
+   "e": 51.82
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 51.82,
+   "e": 51.94
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 51.94,
+   "e": 52.1
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 52.1,
+   "e": 52.22
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 52.22,
+   "e": 52.46
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 52.46,
+   "e": 52.64
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 52.64,
+   "e": 52.9
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 52.9,
+   "e": 53.22
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 53.22,
+   "e": 53.36
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 53.36,
+   "e": 53.52
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 53.52,
+   "e": 53.68
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 53.68,
+   "e": 53.84
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 53.84,
+   "e": 53.96
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 53.96,
+   "e": 54.24
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 3.52,
+   "text": "You're not getting better because you keep practicing the part you can already do."
+  },
+  {
+   "s": 3.9,
+   "e": 8.22,
+   "text": "Learning guitar most people play the song from the top every time. The verse sounds great,"
+  },
+  {
+   "s": 8.42,
+   "e": 13.44,
+   "text": "they mess up the same 4 bars in the chorus and they start over. So the easy part gets 50 plays"
+  },
+  {
+   "s": 13.44,
+   "e": 19.04,
+   "text": "and the hard part gets 5. Flip it, find the exact spot where you break down and practice only that."
+  },
+  {
+   "s": 19.46,
+   "e": 24.32,
+   "text": "Loop those 4 bars slow enough to get them right. 10 clean times then nudge the speed up a little,"
+  },
+  {
+   "s": 24.7,
+   "e": 29.54,
+   "text": "after 10 minutes play the whole song once. Same with a language. If speaking is the hard"
+  },
+  {
+   "s": 29.54,
+   "e": 34.6,
+   "text": "part another vocabulary lesson won't fix it. Record yourself talking about your day for 1"
+  },
+  {
+   "s": 34.6,
+   "e": 39.12,
+   "text": "minute every day. Here's the test, if practice feels easy you're rehearsing not improving."
+  },
+  {
+   "s": 39.66,
+   "e": 43.8,
+   "text": "Next time you practice start with your weakest part for 10 minutes before anything else."
+  },
+  {
+   "s": 44.32,
+   "e": 48.94,
+   "text": "That's what demure is for. You archive your dream today so you can see it tomorrow and"
+  },
+  {
+   "s": 48.94,
+   "e": 53.68,
+   "text": "break it down into small steps you can actually do. If you want to try it out I've put the link"
+  },
+  {
+   "s": 53.68,
+   "e": 54.24,
+   "text": "in the bio."
+  }
+ ],
+ "wps": 3.48
+}

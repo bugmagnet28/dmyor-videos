@@ -315,3 +315,14 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Verdict + why:
 - Next: if number-contrast (ten-pages) matches the hard-truth reels, keep one number hook per day.
 - Note: only one style again (see run journal 2026-10-27): diagram/hybrid lack sound, cinematic needs a bespoke page per story, pixel story pipeline is per-film. 3 reels, not 4, to keep each one built with new scenes under load ~30.
+
+## V-EXP-31: Three new everyday skills (money cap, career pitch, deliberate practice), Kokoro draft → Adam final
+- Status: running (opened 2026-10-28, before building)
+- Change: batch for Fri 2026-10-30, 3 animated-illustration reels, hard-truth hooks, 15 new scenes: ill-one-category (money: cap your single biggest leak weekly, $240 → $40/week = $80 kept, Sunday check), ill-one-sentence (career: one sentence = who + what + proof, put it everywhere, friend test), ill-hard-part (learning: practise only where you break down; guitar 4 bars + language speaking). Built with Kokoro am_eric as a draft; final narration = Sanyam's ElevenLabs Adam take (owner rule 2026-10-28), fitted with `make_reel.py --vo`.
+- Why: hard-truth hooks are the one hook signal (2.8x, n=7); money and career got their first reels today (Oct 28), so these are second data points in each area; learning/skills is a new area.
+- Metric + target (48h per reel, IG + YT): reach, avg watch time, shares+saves per 1k, follows. Target: median reach >= 46 and at least one follow from the batch.
+- Expectation: ill-hard-part highest watch time (identity hook, a picture of a song); ill-one-category highest saves (numbers to copy); ill-one-sentence highest shares (send to a friend job hunting). Confidence low (n=1 each).
+- Also measures (if Adam takes arrive): Adam vs am_eric avg watch time across this batch and V-EXP-30, a first voice comparison.
+- Result:
+- Verdict + why:
+- Next: if one area clearly beats the habit reels, give it 1 daily slot next week.

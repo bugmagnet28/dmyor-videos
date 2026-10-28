@@ -1,0 +1,11 @@
+reels/ill-one-category/audio.mp3  55.15s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body land outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/5514 [00:00<?, ?frames/s] 52%|█████▏    | 2840/5514 [01:09<01:05, 40.80frames/s] 52%|█████▏    | 2840/5514 [01:20<01:05, 40.80frames/s] 97%|█████████▋| 5334/5514 [02:19<00:04, 37.65frames/s] 97%|█████████▋| 5334/5514 [02:30<00:04, 37.65frames/s]100%|██████████| 5514/5514 [02:43<00:00, 31.09frames/s]100%|██████████| 5514/5514 [02:43<00:00, 33.76frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+201 words, 55.15s, 3.64 words/sec
+-> reels/ill-one-category/cues.json
+sfx present: 38 sounds -> reels/ill-one-category/audio_mixed.mp3 pop@3.7 typing@5.7 miss@9.6 swish@12.5 pop@14.0 riffle@14.8 ratchet@16.1 swish@20.8 pop@23.3 pop@24.8 pop@26.8 coin@27.7 right@28.0 page@28.4 pop@30.4 pop@30.7 pop@31.0 right@31.6 pop@32.0 pop@32.3 pop@32.6 page@34.0 swish@34.6 pop@36.2 pop@36.6 pop@36.9 pop@37.3 right@38.8 pop@39.7 pencil@40.3 tone@44.0 stamp@44.2 pop@45.8 pop@46.3 right@47.1 right@47.6 right@48.1 chord@51.3
+built reels/ill-one-category: 55.1s, 8 scenes, brand 51.32s, 3.64 words/sec
+scenes: [('budget-vs-cap', 0.0, 3.67, None), ('budget-sheet', 3.67, 12.47, [2.05, 5.71]), ('bank-scroll', 12.47, 20.79, [1.53, 2.29, 3.67]), ('cap-math', 20.79, 28.35, [0.05, 2.55, 3.97, 6.05]), ('week-cap', 28.35, 34.65, [2.07, 3.27, 3.65, 5.61]), ('leak-pick', 34.65, 39.63, [1.57, 3.69]), ('night-list', 39.63, 44.01, [0.33, 3.49]), ('dream-to-steps', 44.01, 51.32, None)]
+EXIT 0

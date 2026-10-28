@@ -1,0 +1,114 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] You don't need a budget with twenty categories. You need a limit on one. || Most budgets die in week two. Tracking every coffee and every bus ticket turns into a second job, so you stop opening the spreadsheet, and the money leaks out anyway. || [turn] So do this instead. Open your bank app, scroll through last month, and add up the one category that leaks the most. For a lot of people, that's food delivery. || Say it came to two hundred and forty dollars. Set a cap of forty a week. Four weeks of forty is one sixty, so that's eighty dollars you keep, every month. || Then every Sunday, check one number. Under forty? That week is a win. Over? Don't quit. Next week starts again at zero. || It works for any leak. Clothes, games, coffee on the way to work. Just pick one, not five. || [land] Tonight, open your bank app, find your biggest leak, and write down your weekly cap. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "budget-vs-cap",
+   "params": {
+    "left": "20 categories",
+    "rows": 18
+   },
+   "head": "Not a budget.<br>A <b>cap</b> on one thing."
+  },
+  {
+   "type": "budget-sheet",
+   "params": {
+    "cue": [
+     "Tracking",
+     "stop"
+    ]
+   },
+   "head": "Track everything,<br>and you <b>stop</b>."
+  },
+  {
+   "type": "bank-scroll",
+   "params": {
+    "cue": [
+     "Open",
+     "scroll",
+     "add"
+    ]
+   },
+   "head": "Find your<br><b>biggest leak</b>."
+  },
+  {
+   "type": "cap-math",
+   "params": {
+    "cue": [
+     "Say",
+     "cap",
+     "Four",
+     "eighty"
+    ]
+   },
+   "head": "Cap it<br><b>weekly</b>."
+  },
+  {
+   "type": "week-cap",
+   "params": {
+    "cue": [
+     "Under",
+     "win",
+     "Over",
+     "zero"
+    ]
+   },
+   "head": "Sunday:<br>check <b>one number</b>."
+  },
+  {
+   "type": "leak-pick",
+   "params": {
+    "cue": [
+     null,
+     "one"
+    ]
+   },
+   "head": "Pick <b>one</b>,<br>not five."
+  },
+  {
+   "type": "night-list",
+   "params": {
+    "title": "TONIGHT",
+    "stage": "write",
+    "items": [
+     "Open the bank app",
+     "Find the biggest leak",
+     "Weekly cap: $40"
+    ],
+    "cue": [
+     "open",
+     "leak"
+    ]
+   },
+   "head": "Do it<br><b>tonight</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Save $5,000",
+    "date": "Open it again: Jun 2027",
+    "steps": [
+     "Cap: $40/week",
+     "Sunday check",
+     "Save $80"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  null
+ ],
+ "brand_from": 8,
+ "caption": {
+  "instagram": "You don't need a budget with 20 categories. You need a limit on one.\n\n1. Open your bank app, add up last month's biggest leak (often food delivery)\n2. Set a weekly cap: $240/month \u2192 $40/week = $80 kept\n3. Every Sunday, check one number. Over? Next week starts at $0\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#personalfinance #budgeting #moneytips #savingmoney #goals",
+  "x": "You don't need a budget with 20 categories. You need a cap on one.\n\nFind last month's biggest leak, cap it weekly ($240 \u2192 $40/week), check one number every Sunday.",
+  "youtube_title": "Stop budgeting everything. Cap one category #Shorts"
+ }
+}

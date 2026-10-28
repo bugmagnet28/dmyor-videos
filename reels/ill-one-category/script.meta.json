@@ -1,0 +1,21 @@
+{
+ "slug": "ill-one-category",
+ "style": "animated-illustration-explainer",
+ "hook_type": "hard-truth",
+ "topic": "money",
+ "hook": "You don't need a budget with twenty categories. You need a limit on one.",
+ "voice": "am_eric (draft); final = ElevenLabs Adam take from Sanyam via make_reel.py --vo",
+ "experiment": "V-EXP-31",
+ "quality": {
+  "hook": 4,
+  "usefulness": 5,
+  "specificity": 5,
+  "clarity": 5,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 35
+ },
+ "note": "Built 2026-10-28 for Fri Oct 30. v3 one-take script in narration-elevenlabs-v3.txt."
+}

@@ -18,6 +18,7 @@ description: Motion-graphics explainer where every spoken thought gets its own r
 From `~/Documents/dmyor-videos` (voice setup once: `bash .claude/skills/animated-illustration-explainer/scripts/setup_tts.sh`).
 1. `mkdir reels/<slug>`; copy `examples/narration.example.json` to `reels/<slug>/narration.json`; write `spoken` and `scenes`.
 2. `python3 .claude/skills/animated-illustration-explainer/scripts/make_reel.py reels/<slug> --record` (`--skip-voice` reuses audio.mp3 + cues.json after picture fixes) (`--package YYYY-MM-DD` creates `ready-to-post/<date>-<slug>/`).
+   **Final voice (owner 2026-10-28): ElevenLabs Adam.** Kokoro builds are drafts. Write the one-take script with `python3 studio/tools/v3_script.py reels/<slug>` (v3 audio tags, Dmyor → Deem-yor, a pause after questions), Sanyam generates the take, then `make_reel.py reels/<slug> --vo <take.mp3> --record`: the take is trimmed, aligned with whisper, and every cue/scene/sound re-times to it (the Kokoro audio is kept as audio-kokoro.mp3).
 3. Contact-sheet the frames (one per scene midpoint, plus frame 0 and the brand card), fix overlaps or empty stretches, show Sanyam, schedule only after his OK, register in `analytics/`.
 
 ## narration.json
@@ -100,6 +101,22 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `rewrite-task` | vague task struck out, the next action written in with the verb in sage + "verb" tag, "Done = ..." card ticked | `old`, `neu`, `done`; cue x3 |
 | `list-rewrite` | three cards: vague item struck, next action written, ticked | `rows[[old,new]]`; cue x3 |
 | `done-test` | "Work on website" + dashed "done = ?" frame crossed vs "Write the headline" + a page with a headline drawn, ticked; note "Can't picture done? Split it again." | `vague`, `clear`, `note`; cue x3 |
+| `budget-vs-cap` | dim 20-row budget sheet vs one "Food delivery $40 a week" cap card with a ring (hook) | `rows`, `left`, `cap`, `amt`, `per` |
+| `budget-sheet` | spreadsheet rows typed in with amounts, then the sheet greys and "Last opened: 9 days ago" | `rows[[label,amt]]`, `title`, `chip`; cue [start, stop] |
+| `bank-scroll` | phone transaction list scrolls, one category highlighted in sage, counter adds it up | `hl`, `total`; cue [open, scroll, add] |
+| `cap-math` | Last month $240 → weekly cap $40 → 4 weeks $160 → Kept $80, coin drops into a jar | `month`, `cap`, `weeks`; cue x4 |
+| `week-cap` | SUNDAY CHECK: week bars against a dashed cap line, WIN under the cap, overflow in clay, next week "starts at $0" | `cap`, `max`, `w1`, `w2`; cue [w1, win, w2, zero] |
+| `leak-pick` | 4 spending chips, one picked ("JUST ONE" + check), others dim | `items[4]`, `pick`; cue [items, one] |
+| `resume-vs-line` | dim resume page vs ONE SENTENCE card written in (hook) | `line`, `left` |
+| `ramble-bubble` | two people, speech bubble: job title, then rambling lines, "Forgotten by lunch" | `title`, `lines[3]`, `note`; cue x3 |
+| `pitch-template` | WHO / WHAT / PROOF rows; blank dashed slots, or filled with `who`/`what`/`proof` written in on cue | `who`, `what`, `proof`; cue x3 |
+| `pitch-places` | the sentence typed into a profile headline, resume top and a message | `line`; cue x3 |
+| `say-back` | long pitch (word count) → friend garbles it → struck, short version, friend repeats it, check | `long`, `short`, `n0`, `n1`, `garble`, `back`; cue x3 |
+| `practice-bars` | TIMES PLAYED bars per song section, hard section in clay; `stage` hook (finished) / replay (playhead restarts at the hard part, counts grow) | `sections[[name,count,hard]]`; cue x3 |
+| `loop-zoom` | 8 bars of notation, 4 bracketed with a loop arrow, the rest dim, "Practise only this" | `from`, `to`, `start`, `label`; cue x2 |
+| `tempo-loop` | swinging metronome (bpm), 10 clean-rep checks, bpm nudges up, "10 minutes, then the whole song" | `bpm[2]`, `n`, `timer`; cue x4 |
+| `voice-record` | vocab lesson chip struck, phone records 1:00 with a live waveform, M-S ticks | `drop`, `prompt`; cue x3 |
+| `easy-hard` | two effort gauges: "Feels easy = rehearsing" (dim) vs "Feels hard = improving" (sage + check) | `a`, `ar`, `b`, `br`; cue x2 |
 | `dream-to-steps` | "ARCHIVED TODAY" dream card branching into three ticked steps (use for the value close) | `tag`, `dream`, `date`, `steps[3]` |
 
 **Cues**: `params.cue` lists the spoken word that triggers each animation beat (null = default); `make_reel.py` resolves them to `params.at`, and `events.json` can time sounds as `"@i"` / `"@i+0.3"`, so picture and sound land on the voice. Prefer cues over fixed times for any new scene.

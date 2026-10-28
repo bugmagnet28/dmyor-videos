@@ -36,10 +36,13 @@ Every idea hands the viewer **one thing they can do today** (see `quality-bar.md
 | 30 | "One page that keeps a dream alive." | A journal entry template: what I did, what I learned, next step (features releasing soon) | KT | |
 | 31 | "You don't need more willpower to stop checking your phone. You need distance." | Phone in another room, door closed, 25-min laptop timer, 5-min phone break | ILL | 2026-10-27 (ill-phone-distance) |
 | 32 | "Your gym plan fails on day 4, not day 1." | Schedule the 3 sessions this week in the calendar with a time; bad-day version ready | ILL | 2026-10-28 (ill-gym-day-four: book sessions as calendar meetings) |
-| 33 | "Stop budgeting. Do this one thing instead." | Pick one category (food delivery) and cap it weekly, tracked on Sunday | ILL | |
-| 34 | "You don't need a perfect resume. You need one sentence." | Write your one-line pitch: I help X do Y, proven by Z; use it in the headline + every message | ILL | |
+| 33 | "Stop budgeting. Do this one thing instead." | Pick one category (food delivery) and cap it weekly, tracked on Sunday | ILL | 2026-10-28 built (ill-one-category, for Oct 30) |
+| 34 | "You don't need a perfect resume. You need one sentence." | Write your one-line pitch: I help X do Y, proven by Z; use it in the headline + every message | ILL | 2026-10-28 built (ill-one-sentence, for Oct 30) |
 | 35 | "Read 12 books a year with 10 pages a night." | Book by the bed, 10 pages before the phone, track pages not books | ILL |  2026-10-28 (ill-ten-pages) |
 | 36 | "You don't procrastinate on hard tasks. You procrastinate on unclear ones." | Rewrite each to-do as the next visible action (verb + visible done); test: can you picture it done? | ILL | 2026-10-28 (ill-unclear-task) |
 | 37 | "Missed a day? Here's the only rule that matters." (restart rule) | Never miss twice: after a miss, next session is fixed in the calendar | ILL | |
 
+| 38 | "You're not getting better because you keep practising the part you can already do." | Find where you break down, loop only that slowly (10 clean, then faster), 10 min before the whole thing; language: record 1 min of speaking | ILL | 2026-10-28 built (ill-hard-part, for Oct 30) |
+| 39 | "You don't need a morning routine. You need a first 10 minutes." | Write the first 10 minutes of tomorrow in 3 lines tonight; phone stays off until they are done | ILL | |
+| 40 | "Learning to cook? Stop collecting recipes. Master 3." | Pick 3 weeknight dinners, cook each twice this week, write the shopping list once | ILL | |
 Rules: avoid pure quotes/motivation, avoid promising locked features ("full features are releasing soon"), one takeaway per reel, specific numbers and real examples, fuller spoken narration (write for the ear).

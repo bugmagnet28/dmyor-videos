@@ -1,0 +1,6 @@
+sfx present: 37 sounds -> reels/ill-hard-part/audio_mixed.mp3 swish@3.9 swish@6.0 miss@7.3 swish@8.5 miss@9.8 miss@13.0 swish@15.3 pencil@16.3 swish@18.3 pop@18.8 swish@19.4 clock@19.5 right@22.2 right@22.5 right@22.8 right@23.1 right@23.4 pop@25.2 swish@27.1 pencil@30.3 toggle@32.9 right@34.8 right@35.3 right@35.8 pop@37.3 pop@38.7 right@39.3 pop@39.7 pencil@40.5 tone@44.3 stamp@44.4 pop@46.0 pop@46.5 right@47.3 right@47.8 right@48.3 chord@51.6
+built reels/ill-hard-part: 55.44s, 8 scenes, brand 51.64s, 3.48 words/sec
+scenes: [('practice-bars', 0.0, 3.85, None), ('practice-bars', 3.85, 15.27, [2.13, 4.65, 8.82]), ('loop-zoom', 15.27, 19.41, [1.01, 3.07]), ('tempo-loop', 19.41, 27.09, [0.05, 2.79, 3.87, 5.79]), ('voice-record', 27.09, 35.81, [3.19, 5.81, 7.67]), ('easy-hard', 35.81, 39.61, [1.49, 2.85]), ('night-list', 39.61, 44.27, [0.62, 2.91]), ('dream-to-steps', 44.27, 51.64, None)]
+recorded reels/ill-hard-part/reel.mp4 (55.43s)
+packaged /Users/sanyampathak/Documents/dmyor-videos/ready-to-post/2026-10-30-ill-hard-part
+EXIT 0

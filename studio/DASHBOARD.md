@@ -1,38 +1,41 @@
 # Video dashboard (posting on @becauseidmyor, end card @becauseidmyor)
 
-_Last updated: 2026-10-27 19:40 IST (run 2026-10-27)_
+_Last updated: 2026-10-28 19:05 IST (run 2026-10-28)_
 
-**Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints)
+**Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [reel library](library/index.html)
 
 | | |
 |---|---|
-| Instagram followers (@becauseidmyor) | **21** (last reading 2026-10-26 17:28) · flat since Oct 21 · 0 follows attributable to any reel |
+| Instagram followers (@becauseidmyor) | **21** (last reading 2026-10-26) · flat since Oct 21 · 0 follows attributable to any reel |
 | X followers | 2 (2026-10-26) · YouTube subscribers 0 |
-| Are we improving? | **Instagram: yes on reach.** Newer half median reach 32 vs older half 17. Illustrated explainers: median 128 at 48h vs 20 for the account |
-| New data today | None (no screenshots in inbox, no browser tool this run) |
-| Waiting for approval | **3 for Wed Oct 28** (VASK-019): ill-unclear-task, ill-ten-pages, ill-gym-day-four |
-| Unknown status | Oct 27 batch (approved VASK-018) + pixel-book 22:00: not ticked as scheduled, not in analytics. Sanyam to confirm |
+| Are we improving? | **Instagram: yes on reach.** Newer half median reach 32 vs older half 17. Illustrated explainers median 128 at 48h vs 20 for the account |
+| New data today | None (no screenshots, no browser tool). Registered today's 4 scheduled reels + pixel-book v2 in analytics |
+| Live today (Wed Oct 28) | ill-save-first 09:30, ill-career-conversations 13:00, ill-goal-date 16:30, ill-phone-distance 19:30 (IG/X/YT); pixel-book v2 went live last night |
+| Waiting for approval | **Thu Oct 29** (VASK-019): ill-unclear-task, ill-ten-pages, ill-gym-day-four · **Fri Oct 30** (VASK-020): ill-one-category, ill-one-sentence, ill-hard-part. All Kokoro drafts; Adam takes needed (owner rule 10-28) |
 
-## What the data says (Oct 26 rebuild)
+## What the data says (Oct 28 rebuild, unchanged)
 - **Signal:** animated-illustration-explainer 8.0x the rest on IG reach (n=3).
 - **Signal:** hard-truth hooks 2.8x (n=7). Question hooks 0.5x.
 - **Signal:** procrastination topic 2.4x (n=3); planning 0.4x, goal-setting 0.3x.
 - Best so far: ill-size-problem (IG reach 272, YT 110), tree-study-abroad (141), ill-bad-day-version (128).
-- Missing: watch time, shares, saves, follows (need app screenshots, ASK-V / VASK-019 step 3).
+- Missing: watch time, shares, saves, follows (need app screenshots).
 
-## Waiting for approval: Wed Oct 28 batch (V-EXP-30)
+## Waiting for approval: Fri Oct 30 batch (V-EXP-31)
 | Time (IST) | Reel | Length | Hook | Takeaway | Score |
 |---|---|---|---|---|---|
-| 09:30 | ill-unclear-task | 51.3s | "You don't procrastinate on hard tasks. You procrastinate on unclear ones." | Rewrite each to-do as the next visible action, verb first; picture-it-done test | 36/40 |
-| 13:00 | ill-ten-pages | 49.1s | "12 books a year is 10 pages a night." | Book on the pillow, 10 pages before the phone, track pages | 35/40 |
-| 19:30 | ill-gym-day-four | 56.1s | "Your gym plan fails around day four." | Book 3 sessions as calendar meetings on Sunday; move missed ones, don't delete | 35/40 |
+| 09:30 | ill-one-category | 55.1s | "You don't need a budget with twenty categories. You need a limit on one." | Find the biggest leak, cap it weekly ($240 → $40/week = $80 kept), Sunday check | 35/40 |
+| 13:00 | ill-one-sentence | 60.6s | "You don't need a perfect resume. You need one clear sentence." | I help [who] [do what], proven by [proof]; everywhere; friend test | 33/40 |
+| 19:30 | ill-hard-part | 55.4s | "You're not getting better, because you keep practising the part you can already do." | Loop only the bars you break on: slow, 10 clean, faster; language: record 1 min | 35/40 |
+
+Thu Oct 29 batch (VASK-019) still waiting: ill-unclear-task 36, ill-ten-pages 35, ill-gym-day-four 35.
 
 ## Open experiments
-- V-EXP-28 (Oct 26 batch, all illustrated), V-EXP-29 (Oct 27: money/career/focus/goal-date), V-EXP-30 (Oct 28: procrastination/reading/fitness). All waiting for 48h data.
+- V-EXP-28 (Oct 26, illustrated), V-EXP-29 (Oct 28 live: money/career/focus/goal-date), V-EXP-30 (Thu Oct 29: procrastination/reading/fitness), V-EXP-31 (Fri Oct 30: money cap/career pitch/deliberate practice; also first Adam vs am_eric comparison). All waiting for data.
 
 ## Stock
-- Approved, not confirmed posted: 4 (Oct 27 batch) + pixel-book. Waiting approval: 3. Target 5+ approved.
+- Scheduled: 4 (live today). Waiting approval: 6 (Thu + Fri). Approved-unposted: 0. Target 5+ approved.
 
 ## Asks
-- **VASK-019**: approve the Oct 28 batch; confirm what went live Oct 27; insight screenshots for the Oct-25 batch; listen to the new soft pen sound.
-- VASK-012 / ASK-V: app insight screenshots (watch time, skip rate, shares, saves, follows).
+- **VASK-020**: approve the Fri batch; generate Adam takes for the 6 waiting reels (`reels/<slug>/narration-elevenlabs-v3.txt` → `inbox/audio/<slug>.mp3`), or say "Kokoro OK for Thu".
+- **VASK-019**: approve the Thu batch; listen to the soft pen sound.
+- VASK-012 / ASK-V: app insight screenshots (watch time, skip rate, shares, saves, follows) + follower count.

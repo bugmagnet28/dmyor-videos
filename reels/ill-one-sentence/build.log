@@ -1,0 +1,11 @@
+reels/ill-one-sentence/audio.mp3  60.67s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body body land outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/6066 [00:00<?, ?frames/s] 48%|████▊     | 2938/6066 [01:11<01:16, 40.98frames/s] 48%|████▊     | 2938/6066 [01:30<01:16, 40.98frames/s] 96%|█████████▌| 5806/6066 [02:25<00:06, 39.61frames/s] 96%|█████████▌| 5806/6066 [02:40<00:06, 39.61frames/s]100%|██████████| 6066/6066 [02:47<00:00, 34.14frames/s]100%|██████████| 6066/6066 [02:47<00:00, 36.24frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+215 words, 60.67s, 3.54 words/sec
+-> reels/ill-one-sentence/cues.json
+sfx present: 44 sounds -> reels/ill-one-sentence/audio_mixed.mp3 swish@3.3 pop@3.6 pop@7.8 pop@8.4 pop@9.0 miss@11.7 pop@13.0 pencil@15.2 pencil@15.7 pencil@16.9 pop@17.6 pencil@18.7 pencil@19.3 pencil@21.6 pop@25.2 pencil@26.8 pencil@27.4 pencil@29.4 swish@32.7 pop@34.0 typing@34.3 pop@35.2 typing@35.4 pop@36.3 typing@36.6 swish@38.4 pop@39.3 pop@40.8 pencil@42.9 pop@43.4 pop@44.1 right@44.5 pencil@45.0 pop@46.0 pop@48.7 right@49.1 tone@49.4 stamp@49.5 pop@51.1 pop@51.6 right@52.4 right@52.9 right@53.4 chord@56.8
+built reels/ill-one-sentence: 60.62s, 9 scenes, brand 56.80s, 3.54 words/sec
+scenes: [('resume-vs-line', 0.0, 3.27, None), ('ramble-bubble', 3.27, 12.99, [0.35, 4.53, 8.39]), ('pitch-template', 12.99, 17.55, [2.21, 2.71, 3.87]), ('pitch-template', 17.55, 25.17, [1.13, 1.77, 4.05]), ('pitch-template', 25.17, 32.67, [1.63, 2.21, 4.21]), ('pitch-places', 32.67, 38.41, [1.37, 2.49, 3.63]), ('say-back', 38.41, 44.53, [0.89, 2.41, 4.45]), ('rewrite-task', 44.53, 49.37, [0.05, 1.42, 4.13]), ('dream-to-steps', 49.37, 56.8, None)]
+EXIT 0

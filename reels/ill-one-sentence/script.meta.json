@@ -1,0 +1,21 @@
+{
+ "slug": "ill-one-sentence",
+ "style": "animated-illustration-explainer",
+ "hook_type": "hard-truth",
+ "topic": "career",
+ "hook": "You don't need a perfect resume. You need one clear sentence.",
+ "voice": "am_eric (draft); final = ElevenLabs Adam take from Sanyam via make_reel.py --vo",
+ "experiment": "V-EXP-31",
+ "quality": {
+  "hook": 4,
+  "usefulness": 5,
+  "specificity": 4,
+  "clarity": 4,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 33
+ },
+ "note": "Built 2026-10-28 for Fri Oct 30. v3 one-take script in narration-elevenlabs-v3.txt."
+}

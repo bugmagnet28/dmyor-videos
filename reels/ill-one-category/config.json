@@ -1,0 +1,146 @@
+{
+ "total": 55.1,
+ "brandT": 51.32,
+ "scenes": [
+  {
+   "type": "budget-vs-cap",
+   "params": {
+    "left": "20 categories",
+    "rows": 18
+   },
+   "head": "Not a budget.<br>A <b>cap</b> on one thing.",
+   "t0": 0.0,
+   "t1": 3.67
+  },
+  {
+   "type": "budget-sheet",
+   "params": {
+    "cue": [
+     "Tracking",
+     "stop"
+    ],
+    "at": [
+     2.05,
+     5.71
+    ]
+   },
+   "head": "Track everything,<br>and you <b>stop</b>.",
+   "t0": 3.67,
+   "t1": 12.47
+  },
+  {
+   "type": "bank-scroll",
+   "params": {
+    "cue": [
+     "Open",
+     "scroll",
+     "add"
+    ],
+    "at": [
+     1.53,
+     2.29,
+     3.67
+    ]
+   },
+   "head": "Find your<br><b>biggest leak</b>.",
+   "t0": 12.47,
+   "t1": 20.79
+  },
+  {
+   "type": "cap-math",
+   "params": {
+    "cue": [
+     "Say",
+     "cap",
+     "Four",
+     "eighty"
+    ],
+    "at": [
+     0.05,
+     2.55,
+     3.97,
+     6.05
+    ]
+   },
+   "head": "Cap it<br><b>weekly</b>.",
+   "t0": 20.79,
+   "t1": 28.35
+  },
+  {
+   "type": "week-cap",
+   "params": {
+    "cue": [
+     "Under",
+     "win",
+     "Over",
+     "zero"
+    ],
+    "at": [
+     2.07,
+     3.27,
+     3.65,
+     5.61
+    ]
+   },
+   "head": "Sunday:<br>check <b>one number</b>.",
+   "t0": 28.35,
+   "t1": 34.65
+  },
+  {
+   "type": "leak-pick",
+   "params": {
+    "cue": [
+     null,
+     "one"
+    ],
+    "at": [
+     0.2,
+     3.69
+    ]
+   },
+   "head": "Pick <b>one</b>,<br>not five.",
+   "t0": 34.65,
+   "t1": 39.63
+  },
+  {
+   "type": "night-list",
+   "params": {
+    "title": "TONIGHT",
+    "stage": "write",
+    "items": [
+     "Open the bank app",
+     "Find the biggest leak",
+     "Weekly cap: $40"
+    ],
+    "cue": [
+     "open",
+     "leak"
+    ],
+    "at": [
+     0.33,
+     2.09
+    ]
+   },
+   "head": "Do it<br><b>tonight</b>.",
+   "t0": 39.63,
+   "t1": 44.01
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Save $5,000",
+    "date": "Open it again: Jun 2027",
+    "steps": [
+     "Cap: $40/week",
+     "Sunday check",
+     "Save $80"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 44.01,
+   "t1": 51.32
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}

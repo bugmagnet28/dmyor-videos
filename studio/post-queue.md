@@ -16,6 +16,13 @@ Wed 2026-10-28 (Instagram, X and YouTube at the same times):
 - [x] 19:30 IST · **ill-phone-distance** (47.8s) · `ready-to-post/2026-10-27-ill-phone-distance/`
 - Note: the Oct 26 agent run stalled after starting the first reel, so these were scripted/rebuilt in the Oct 27 session. The agent's next batch should target Thu Oct 29.
 
+## Waiting for approval: agent batch for Fri 2026-10-30 (VASK-020, V-EXP-31). Kokoro drafts; final = your Adam takes
+
+- [ ] 09:30 IST · **ill-one-category** (money: cap your biggest leak weekly, 55.1s) · `ready-to-post/2026-10-30-ill-one-category/` · 35/40
+- [ ] 13:00 IST · **ill-one-sentence** (career: who + what + proof pitch, 60.6s) · `ready-to-post/2026-10-30-ill-one-sentence/` · 33/40
+- [ ] 19:30 IST · **ill-hard-part** (learning: practise only where you break, 55.4s) · `ready-to-post/2026-10-30-ill-hard-part/` · 35/40
+- Adam scripts: `reels/<slug>/narration-elevenlabs-v3.txt` (also for the 3 Thu reels below). Drop takes in `inbox/audio/<slug>.mp3`.
+
 ## Waiting for approval: agent batch (VASK-019, V-EXP-30), moved to Thu 2026-10-29 because Wed 10-28 slots now hold the Oct 27 batch
 
 - [ ] 09:30 IST · **ill-unclear-task** (procrastination: rewrite to-dos as the next visible action, 51.3s) · `ready-to-post/2026-10-28-ill-unclear-task/` · 36/40

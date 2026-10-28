@@ -1,0 +1,143 @@
+{
+ "total": 55.44,
+ "brandT": 51.64,
+ "scenes": [
+  {
+   "type": "practice-bars",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "You practise the<br>part you <b>can do</b>.",
+   "t0": 0.0,
+   "t1": 3.85
+  },
+  {
+   "type": "practice-bars",
+   "params": {
+    "cue": [
+     "top",
+     "mess",
+     "fifty"
+    ],
+    "at": [
+     2.13,
+     4.65,
+     8.82
+    ]
+   },
+   "head": "Easy part: 50.<br><b>Hard part: 5</b>.",
+   "t0": 3.85,
+   "t1": 15.27
+  },
+  {
+   "type": "loop-zoom",
+   "params": {
+    "cue": [
+     "exact",
+     "only"
+    ],
+    "at": [
+     1.01,
+     3.07
+    ]
+   },
+   "head": "Practise only<br>where you <b>break</b>.",
+   "t0": 15.27,
+   "t1": 19.41
+  },
+  {
+   "type": "tempo-loop",
+   "params": {
+    "cue": [
+     "Loop",
+     "Ten",
+     "nudge",
+     "minutes"
+    ],
+    "at": [
+     0.05,
+     2.79,
+     3.87,
+     5.79
+    ]
+   },
+   "head": "Slow, clean,<br>then <b>a bit faster</b>.",
+   "t0": 19.41,
+   "t1": 27.09
+  },
+  {
+   "type": "voice-record",
+   "params": {
+    "cue": [
+     "vocabulary",
+     "Record",
+     "every"
+    ],
+    "at": [
+     3.19,
+     5.81,
+     7.67
+    ]
+   },
+   "head": "Language? Practise<br>the <b>speaking</b>.",
+   "t0": 27.09,
+   "t1": 35.81
+  },
+  {
+   "type": "easy-hard",
+   "params": {
+    "cue": [
+     "easy",
+     "improving"
+    ],
+    "at": [
+     1.49,
+     2.85
+    ]
+   },
+   "head": "Easy means<br><b>rehearsing</b>.",
+   "t0": 35.81,
+   "t1": 39.61
+  },
+  {
+   "type": "night-list",
+   "params": {
+    "title": "NEXT PRACTICE",
+    "stage": "write",
+    "items": [
+     "Weakest part: 10 min",
+     "Then the whole song",
+     "Log the next weak spot"
+    ],
+    "cue": [
+     "practise",
+     "minutes"
+    ],
+    "at": [
+     0.62,
+     2.91
+    ]
+   },
+   "head": "Start with your<br><b>weakest part</b>.",
+   "t0": 39.61,
+   "t1": 44.27
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Play at the wedding",
+    "date": "Open it again: Aug 2027",
+    "steps": [
+     "Loop 4 bars",
+     "10 clean",
+     "Whole song"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 44.27,
+   "t1": 51.64
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor"
+}

@@ -128,3 +128,16 @@ Instagram locked the account ("we locked your account to protect you from a poss
   1. Watch the 3 videos, reply "OK" (or "OK except X") in chat or `inbox/notes.md`.
   2. Tell me which of the Oct 27 reels actually went live (ill-save-first, ill-career-conversations, ill-goal-date, ill-phone-distance, pixel-book 22:00). Nothing is ticked as scheduled in post-queue, so none is registered in analytics yet.
   3. Optional but the most useful input: app screenshots (views, avg watch time, skip rate, shares, saves, follows) for the Oct-25 batch (now 48h+) into `inbox/metrics/`, plus the follower count.
+
+## VASK-020: Approve the Fri Oct 30 batch, and generate Adam takes (2026-10-28)
+- Status: open
+- Why: your 10-28 rule makes ElevenLabs Adam the final voice. I built these (and the Thu batch, VASK-019) with Kokoro as drafts so you can approve picture + script first; your Adam take then re-times everything automatically.
+- What: 3 animated-illustration reels, `ready-to-post/2026-10-30-*/` (video.mp4 = Kokoro draft, post.md):
+  - 09:30 **ill-one-category** (money): "You don't need a budget with twenty categories. You need a limit on one." Biggest leak → weekly cap ($240 → $40/week = $80 kept), Sunday check. 35/40
+  - 13:00 **ill-one-sentence** (career): "You don't need a perfect resume. You need one clear sentence." Who + what + proof; put it everywhere; friend test. 33/40
+  - 19:30 **ill-hard-part** (learning): "You're not getting better, because you keep practising the part you can already do." Loop the 4 bars you break on, 10 clean, then faster; language = record 1 min of speaking. 35/40
+- Steps:
+  1. Watch the 3 drafts (picture + script). Reply "OK" or "OK except X".
+  2. For each reel you OK (and the 3 from VASK-019), paste `reels/<slug>/narration-elevenlabs-v3.txt` into ElevenLabs v3 with Adam, one take, and save the mp3 into `inbox/audio/` named `<slug>.mp3` (e.g. `inbox/audio/ill-one-category.mp3`).
+  3. I fit each video to its take (`make_reel.py --vo`), check frames, and schedule after that. If you'd rather post the Kokoro versions for Thu to keep the cadence, say "Kokoro OK for Thu".
+- Still useful: app screenshots of insights for the Oct 25/26 batches (views, avg watch time, skip rate, shares, saves, follows) and the follower count.

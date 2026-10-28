@@ -31,6 +31,7 @@ def run(*cmd):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("reel"); ap.add_argument("--record", action="store_true"); ap.add_argument("--package"); ap.add_argument("--skip-voice", action="store_true", help="reuse audio.mp3 + cues.json (picture/sound edits only)")
+    ap.add_argument("--vo", help="external narration take (e.g. Sanyam's ElevenLabs Adam mp3): used instead of Kokoro, aligned with whisper")
     o = ap.parse_args(); d = o.reel.rstrip("/"); slug = os.path.basename(d)
     n = json.load(open(os.path.join(d, "narration.json")))
     thoughts = [t.strip() for t in n["spoken"].split("||") if t.strip()]
@@ -38,7 +39,12 @@ def main():
     if len(scenes) != len(thoughts):
         sys.exit(f"{len(thoughts)} spoken thoughts but {len(scenes)} scenes: give one scene (or null) per thought")
     say_text = re.sub(r"\bDmyor\b", "Deem-yor", " || ".join(thoughts))
-    if not (o.skip_voice and os.path.exists(os.path.join(d, "cues.json"))):
+    if o.vo:   # owner 2026-10-28: final narration = ElevenLabs Adam take; Kokoro stays for drafts
+        if os.path.exists(os.path.join(d, "audio.mp3")) and not os.path.exists(os.path.join(d, "audio-kokoro.mp3")): shutil.copy(os.path.join(d, "audio.mp3"), os.path.join(d, "audio-kokoro.mp3"))
+        run("ffmpeg", "-loglevel", "error", "-y", "-i", o.vo, "-af", "silenceremove=start_periods=1:start_threshold=-50dB,areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse,adelay=150",
+            "-ar", "44100", "-b:a", "192k", os.path.join(d, "audio.mp3"))
+        run("python3", os.path.join(ROOT, ".claude/skills/dmyor-reel/scripts/align.py"), d)
+    elif not (o.skip_voice and os.path.exists(os.path.join(d, "cues.json"))):
      run(os.path.join(ROOT, "tts/.venv/bin/python"), os.path.join(SKILL, "scripts/say.py"), say_text, os.path.join(d, "audio.mp3"),
         "--voice", n.get("voice", "am_eric"), "--speed", str(n.get("speed", 1.0)),
         "--gap-min", str(n.get("gap_min", 0.18)), "--gap-max", str(n.get("gap_max", 0.32)), *(["--stages"] if n.get("stages", True) else []))

@@ -1,0 +1,112 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] You're not getting better, because you keep practising the part you can already do. || Learning guitar? Most people play the song from the top every time. The verse sounds great, they mess up the same four bars in the chorus, and they start over. So the easy part gets fifty plays, and the hard part gets five. || [turn] Flip it. Find the exact spot where you break down, and practise only that. || Loop those four bars, slow enough to get them right. Ten clean times, then nudge the speed up a little. After ten minutes, play the whole song once. || Same with a language. If speaking is the hard part, another vocabulary lesson won't fix it. Record yourself talking about your day for one minute, every day. || Here's the test. If practice feels easy, you're rehearsing, not improving. || [land] Next time you practise, start with your weakest part, for ten minutes, before anything else. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "practice-bars",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "You practise the<br>part you <b>can do</b>."
+  },
+  {
+   "type": "practice-bars",
+   "params": {
+    "cue": [
+     "top",
+     "mess",
+     "fifty"
+    ]
+   },
+   "head": "Easy part: 50.<br><b>Hard part: 5</b>."
+  },
+  {
+   "type": "loop-zoom",
+   "params": {
+    "cue": [
+     "exact",
+     "only"
+    ]
+   },
+   "head": "Practise only<br>where you <b>break</b>."
+  },
+  {
+   "type": "tempo-loop",
+   "params": {
+    "cue": [
+     "Loop",
+     "Ten",
+     "nudge",
+     "minutes"
+    ]
+   },
+   "head": "Slow, clean,<br>then <b>a bit faster</b>."
+  },
+  {
+   "type": "voice-record",
+   "params": {
+    "cue": [
+     "vocabulary",
+     "Record",
+     "every"
+    ]
+   },
+   "head": "Language? Practise<br>the <b>speaking</b>."
+  },
+  {
+   "type": "easy-hard",
+   "params": {
+    "cue": [
+     "easy",
+     "improving"
+    ]
+   },
+   "head": "Easy means<br><b>rehearsing</b>."
+  },
+  {
+   "type": "night-list",
+   "params": {
+    "title": "NEXT PRACTICE",
+    "stage": "write",
+    "items": [
+     "Weakest part: 10 min",
+     "Then the whole song",
+     "Log the next weak spot"
+    ],
+    "cue": [
+     "practise",
+     "minutes"
+    ]
+   },
+   "head": "Start with your<br><b>weakest part</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Play at the wedding",
+    "date": "Open it again: Aug 2027",
+    "steps": [
+     "Loop 4 bars",
+     "10 clean",
+     "Whole song"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  null
+ ],
+ "brand_from": 8,
+ "caption": {
+  "instagram": "You're not getting better because you keep practising the part you can already do.\n\n\u2022 Find the exact spot where you break down (the 4 chorus bars)\n\u2022 Loop only that, slow enough to get it right: 10 clean, then a bit faster\n\u2022 After 10 minutes, play the whole thing once\n\nLanguage? Speaking is the hard part: record 1 minute about your day, daily.\n\nTest: if practice feels easy, you're rehearsing, not improving.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#learning #guitarpractice #languagelearning #selfimprovement #habits",
+  "x": "You're not getting better because you keep practising the part you can already do.\n\nFind where you break down. Loop only that, slow, 10 clean, then faster. If practice feels easy, you're rehearsing.",
+  "youtube_title": "Why practice isn't making you better #Shorts"
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] You don't need a perfect resume. You need one clear sentence. || When someone asks what you do, most people say a job title, and then they ramble. Marketing, I guess, a bit of everything, it kind of depends. The other person nods, and forgets it by lunch. || [turn] So write one sentence with three parts. Who you help, what you help them do, and your proof. || For example. I help local caf\u00e9s fill their quiet weekday hours, proven by a loyalty card that brought one caf\u00e9 thirty new regulars. || Or for a developer. I help small clinics cut missed appointments with text reminders, proven by the system I built for my dentist. || Then put it everywhere. Your profile headline, the top of your resume, and the first line of every message you send. || Here's the test. Read it to a friend, and ask them to say it back. If they can't repeat it, cut words until they can. || [land] Write yours right now, in under twenty five words. Who you help, what you do, and your proof. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "resume-vs-line",
+   "params": {
+    "line": "I help caf\u00e9s fill their quiet weekday hours."
+   },
+   "head": "Not a perfect resume.<br><b>One sentence</b>."
+  },
+  {
+   "type": "ramble-bubble",
+   "params": {
+    "cue": [
+     "asks",
+     "Marketing",
+     "forgets"
+    ]
+   },
+   "head": "A job title,<br>then a <b>ramble</b>."
+  },
+  {
+   "type": "pitch-template",
+   "params": {
+    "cue": [
+     "Who",
+     "what",
+     "proof"
+    ]
+   },
+   "head": "Who. What.<br><b>Proof</b>."
+  },
+  {
+   "type": "pitch-template",
+   "params": {
+    "who": "local caf\u00e9s",
+    "what": "fill their quiet weekday hours,",
+    "proof": "a loyalty card: 30 new regulars.",
+    "cue": [
+     "local",
+     "fill",
+     "proven"
+    ]
+   },
+   "head": "A <b>real</b> one."
+  },
+  {
+   "type": "pitch-template",
+   "params": {
+    "who": "small clinics",
+    "what": "cut missed appointments with texts,",
+    "proof": "the system I built for my dentist.",
+    "cue": [
+     "small",
+     "cut",
+     "proven"
+    ]
+   },
+   "head": "Another <b>field</b>."
+  },
+  {
+   "type": "pitch-places",
+   "params": {
+    "cue": [
+     "profile",
+     "top",
+     "first"
+    ]
+   },
+   "head": "Put it<br><b>everywhere</b>."
+  },
+  {
+   "type": "say-back",
+   "params": {
+    "cue": [
+     "Read",
+     "say",
+     "cut"
+    ],
+    "n0": "15 words"
+   },
+   "head": "Can a friend<br><b>repeat it</b>?"
+  },
+  {
+   "type": "rewrite-task",
+   "params": {
+    "old": "A bit of everything",
+    "neu": "Write my one sentence: who, what, proof",
+    "done": "Done = under 25 words",
+    "cue": [
+     "Write",
+     "twenty",
+     "proof"
+    ]
+   },
+   "head": "Write yours<br><b>now</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "A marketing role",
+    "date": "Open it again: Jun 2027",
+    "steps": [
+     "Write my sentence",
+     "Update my headline",
+     "Send 3 messages"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  null
+ ],
+ "brand_from": 9,
+ "caption": {
+  "instagram": "You don't need a perfect resume. You need one clear sentence.\n\nI help [who] [do what], proven by [proof].\n\n\u2022 I help local caf\u00e9s fill their quiet weekday hours, proven by a loyalty card that brought one caf\u00e9 30 new regulars\n\u2022 I help small clinics cut missed appointments with text reminders, proven by the system I built for my dentist\n\nPut it in your headline, your resume, every first message. Test: can a friend say it back?\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#careeradvice #jobsearch #resume #personalbranding #careerchange",
+  "x": "You don't need a perfect resume. You need one sentence.\n\nI help [who] [do what], proven by [proof]. Under 25 words. If a friend can't say it back, cut words.",
+  "youtube_title": "Your resume needs one sentence, not more bullets #Shorts"
+ }
+}

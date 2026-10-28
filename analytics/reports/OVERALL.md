@@ -1,6 +1,6 @@
 # Content performance: overall
 
-_Last rebuilt 2026-10-27 19:34 IST from 4 snapshot day(s) and 45 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
+_Last rebuilt 2026-10-28 12:11 IST from 4 snapshot day(s) and 45 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
 
 ## Headline
 
@@ -160,7 +160,7 @@ _Last rebuilt 2026-10-27 19:34 IST from 4 snapshot day(s) and 45 tracked post(s)
 ## Data gaps
 
 - 25 post(s) have no retention (watch time) data: Instagram web insights do not show it; get app screenshots.
-- In catalog but never measured: x:diagram-howto-vo, x:diagram-someday-vo, x:ill-size-problem, x:ill-later-trigger, x:ill-track-inputs, instagram:ill-five-goals, x:ill-five-goals, youtube:ill-five-goals, instagram:brand-one-place, x:brand-one-place, youtube:brand-one-place.
+- In catalog but never measured: x:diagram-howto-vo, x:diagram-someday-vo, x:ill-size-problem, x:ill-later-trigger, x:ill-track-inputs, instagram:ill-five-goals, x:ill-five-goals, youtube:ill-five-goals, instagram:brand-one-place, x:brand-one-place, youtube:brand-one-place, instagram:pixel-book, x:pixel-book, youtube:pixel-book, instagram:ill-save-first, x:ill-save-first, youtube:ill-save-first, instagram:ill-career-conversations, x:ill-career-conversations, youtube:ill-career-conversations, instagram:ill-goal-date, x:ill-goal-date, youtube:ill-goal-date, instagram:ill-phone-distance, x:ill-phone-distance, youtube:ill-phone-distance.
 
 See [WHAT_WORKED.md](WHAT_WORKED.md) for trait-by-trait comparisons and [latest_by_post.csv](latest_by_post.csv) for every number in one table.
 
