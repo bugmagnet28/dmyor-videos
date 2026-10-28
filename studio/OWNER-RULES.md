@@ -75,6 +75,7 @@ Every decision Sanyam made about how Dmyor videos are made and posted, in one pl
 - Writing on paper: soft pen strokes, never a scratchy pencil sound.
 - Scene changes: a pop (picture and sound), not a page-turn effect.
 - Engine and vehicle sounds (helicopter etc.) fade in and out; never a hard loop at full level.
+- **Real recorded sound effects (2026-10-28):** allowed from Openverse, **CC0 only**, fetched with `python3 studio/tools/fetch_sfx.py search|get`. Never CC BY, share-alike, NC or ND. Files live in `studio/sfx-library/` with every source logged in `LICENSES.md`. Listen and match loudness before use; the synthesised `sfx.py` sounds stay the default, so reels keep one consistent sound.
 
 - Narration voice (owner 2026-10-28): ElevenLabs **Adam** (Radio Announcer), generated manually by Sanyam from a one-take script with v3 audio tags (see `reels/pixel-book/narration-elevenlabs-v3.txt`). Fit the picture to the take with `reels/pixel-book/vo_external.py` (cuts only in real pauses, keeps the take to its natural end). Free voices tested and rejected for now: Kokoro (flat), Qwen3-TTS voice design + tone match (closest, still darker than Adam). Kokoro stays only for drafts.
 - Use `tools/earshot` (MIT, local) to check a mix: `earshot measure` (loudness, bands), `earshot ab A B` (differences in words), `earshot critique film.mp4`. Never use its `llm --yes-upload`.
