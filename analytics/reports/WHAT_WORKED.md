@@ -1,33 +1,37 @@
 # What worked
 
-_Generated 2026-10-28 12:11 by `scripts/build.py`. Compares posts at their 48-hour checkpoint. A **signal** needs n ≥ 3 and a ≥ 1.5× difference; everything else is a hint. Definitions: [METRICS.md](../METRICS.md)._
+_Generated 2026-10-28 23:21 by `scripts/build.py`. Compares posts at their 48-hour checkpoint. A **signal** needs n ≥ 3 and a ≥ 1.5× difference; everything else is a hint. Definitions: [METRICS.md](../METRICS.md)._
 
 ## By style
 
-**Instagram** (all posts: median reach 20)
+**Instagram** (all posts: median reach 29)
 
 | Style | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| animated-illustration-explainer | 3 | 128 | 70 | **signal**: 8.0× the rest |
-| diagram-motion-graphics | 2 | 24 | 49 | hint (n=2): 1.3× the rest |
-| kinetic-typography | 12 | 17 | 47 | **signal**: 0.4× the rest |
-| illustrated-scene | 3 | 14 | 41 | **signal**: 0.7× the rest |
+| pixel-story | 1 | 127 | 66 | hint (n=1): 4.5× the rest |
+| animated-illustration-explainer | 8 | 123 | 66 | **signal**: 6.8× the rest |
+| cinematic-motion | 1 | 30 | 53 | hint (n=1): 1.1× the rest |
+| diagram-motion-graphics | 2 | 24 | 45 | hint (n=2): 0.8× the rest |
+| kinetic-typography | 12 | 17 | 41 | **signal**: 0.3× the rest |
+| illustrated-scene | 3 | 14 | 36 | **signal**: 0.5× the rest |
 
 ## By hook type
 
-**Instagram** (all posts: median reach 20)
+**Instagram** (all posts: median reach 29)
 
 | Hook type | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| how-to-plan | 1 | 46 | 65 | hint (n=1): 2.6× the rest |
-| hard-truth | 7 | 39 | 62 | **signal**: 2.8× the rest |
-| reassurance-flip | 1 | 30 | 59 | hint (n=1): 1.7× the rest |
-| number-contrast | 1 | 26 | 54 | hint (n=1): 1.4× the rest |
-| number-fact | 2 | 17 | 47 | hint (n=2): 0.7× the rest |
-| question | 4 | 12 | 39 | **signal**: 0.5× the rest |
-| fill-in-the-blank | 1 | 10 | 37 | hint (n=1): 0.5× the rest |
-| quiz | 1 | 7 | 31 | hint (n=1): 0.3× the rest |
-| framework-list | 2 | 6 | 26 | hint (n=2): 0.2× the rest |
+| story | 1 | 127 | 66 | hint (n=1): 4.5× the rest |
+| hard-truth | 12 | 66 | 61 | **signal**: 4.1× the rest |
+| how-to-plan | 1 | 46 | 58 | hint (n=1): 1.6× the rest |
+| reassurance-flip | 1 | 30 | 53 | hint (n=1): 1.1× the rest |
+| relatable | 1 | 30 | 53 | hint (n=1): 1.1× the rest |
+| number-contrast | 1 | 26 | 46 | hint (n=1): 0.9× the rest |
+| number-fact | 2 | 17 | 41 | hint (n=2): 0.6× the rest |
+| question | 4 | 12 | 35 | **signal**: 0.4× the rest |
+| fill-in-the-blank | 1 | 10 | 33 | hint (n=1): 0.3× the rest |
+| quiz | 1 | 7 | 29 | hint (n=1): 0.2× the rest |
+| framework-list | 2 | 6 | 25 | hint (n=2): 0.2× the rest |
 
 **Youtube** (all posts: median reach 42)
 
@@ -38,20 +42,22 @@ _Generated 2026-10-28 12:11 by `scripts/build.py`. Compares posts at their 48-ho
 
 ## By topic
 
-**Instagram** (all posts: median reach 20)
+**Instagram** (all posts: median reach 29)
 
 | Topic | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| goal-size | 1 | 272 | 75 | hint (n=1): 15.1× the rest |
-| consistency | 2 | 78 | 63 | hint (n=2): 4.6× the rest |
-| language-learning | 1 | 46 | 65 | hint (n=1): 2.6× the rest |
-| procrastination | 3 | 39 | 62 | **signal**: 2.4× the rest |
-| habits | 1 | 30 | 59 | hint (n=1): 1.7× the rest |
-| focus | 1 | 26 | 54 | hint (n=1): 1.4× the rest |
-| time | 2 | 17 | 47 | hint (n=2): 0.7× the rest |
-| motivation | 1 | 16 | 45 | hint (n=1): 0.8× the rest |
-| planning | 5 | 10 | 37 | **signal**: 0.4× the rest |
-| goal-setting | 3 | 7 | 31 | **signal**: 0.3× the rest |
+| goal-size | 1 | 272 | 76 | hint (n=1): 9.7× the rest |
+| consistency | 3 | 128 | 68 | **signal**: 4.8× the rest |
+| dreams | 1 | 127 | 66 | hint (n=1): 4.5× the rest |
+| habits | 2 | 116 | 62 | hint (n=2): 4.3× the rest |
+| procrastination | 4 | 52 | 58 | **signal**: 1.9× the rest |
+| language-learning | 1 | 46 | 58 | hint (n=1): 1.6× the rest |
+| brand | 1 | 30 | 53 | hint (n=1): 1.1× the rest |
+| focus | 2 | 26 | 47 | hint (n=2): 0.9× the rest |
+| time | 2 | 17 | 41 | hint (n=2): 0.6× the rest |
+| motivation | 1 | 16 | 39 | hint (n=1): 0.5× the rest |
+| planning | 6 | 12 | 35 | **signal**: 0.4× the rest |
+| goal-setting | 3 | 7 | 29 | **signal**: 0.2× the rest |
 
 **Youtube** (all posts: median reach 42)
 
@@ -63,43 +69,43 @@ _Generated 2026-10-28 12:11 by `scripts/build.py`. Compares posts at their 48-ho
 
 ## By narrated
 
-**Instagram** (all posts: median reach 20)
+**Instagram** (all posts: median reach 29)
 
 | Narrated | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| yes | 5 | 46 | 65 | **signal**: 2.9× the rest |
-| no | 15 | 16 | 45 | **signal**: 0.3× the rest |
+| yes | 12 | 92 | 63 | **signal**: 5.8× the rest |
+| no | 15 | 16 | 39 | **signal**: 0.2× the rest |
 
 ## By length
 
-**Instagram** (all posts: median reach 20)
+**Instagram** (all posts: median reach 29)
 
 | Length | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| >30s | 3 | 128 | 70 | **signal**: 8.0× the rest |
-| 20-30s | 2 | 24 | 49 | hint (n=2): 1.3× the rest |
-| <15s | 6 | 20 | 50 | hint (n=6): 0.9× the rest |
-| 15-20s | 9 | 16 | 45 | **signal**: 0.6× the rest |
+| >30s | 10 | 122 | 65 | **signal**: 7.7× the rest |
+| 20-30s | 2 | 24 | 45 | hint (n=2): 0.8× the rest |
+| <15s | 6 | 20 | 43 | **signal**: 0.7× the rest |
+| 15-20s | 9 | 16 | 39 | **signal**: 0.4× the rest |
 
 ## By posting hour
 
-**Instagram** (all posts: median reach 20)
+**Instagram** (all posts: median reach 29)
 
 | Posting hour | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| 13:00 IST | 1 | 128 | 70 | hint (n=1): 7.1× the rest |
-| 09:00 IST | 3 | 65 | 67 | **signal**: 3.6× the rest |
-| 19:00 IST | 3 | 39 | 62 | **signal**: 2.2× the rest |
-| 16:00 IST | 2 | 31 | 55 | hint (n=2): 1.6× the rest |
-| 21:00 IST | 1 | 30 | 59 | hint (n=1): 1.7× the rest |
-| 14:00 IST | 1 | 29 | 57 | hint (n=1): 1.6× the rest |
-| 22:00 IST | 1 | 26 | 54 | hint (n=1): 1.4× the rest |
-| 17:00 IST | 1 | 21 | 51 | hint (n=1): 1.2× the rest |
-| 08:00 IST | 1 | 18 | 49 | hint (n=1): 0.9× the rest |
-| 00:00 IST | 1 | 16 | 45 | hint (n=1): 0.8× the rest |
-| 23:00 IST | 2 | 10 | 36 | hint (n=2): 0.4× the rest |
-| 05:00 IST | 2 | 6 | 29 | hint (n=2): 0.3× the rest |
-| 12:00 IST | 1 | 5 | 25 | hint (n=1): 0.2× the rest |
+| 13:00 IST | 2 | 166 | 70 | hint (n=2): 6.1× the rest |
+| 09:00 IST | 4 | 66 | 61 | **signal**: 2.4× the rest |
+| 16:00 IST | 3 | 46 | 58 | **signal**: 1.6× the rest |
+| 19:00 IST | 5 | 39 | 56 | hint (n=5): 1.4× the rest |
+| 21:00 IST | 1 | 30 | 53 | hint (n=1): 1.1× the rest |
+| 14:00 IST | 1 | 29 | 50 | hint (n=1): 1.0× the rest |
+| 22:00 IST | 2 | 28 | 50 | hint (n=2): 1.0× the rest |
+| 17:00 IST | 1 | 21 | 44 | hint (n=1): 0.7× the rest |
+| 08:00 IST | 1 | 18 | 42 | hint (n=1): 0.6× the rest |
+| 00:00 IST | 1 | 16 | 39 | hint (n=1): 0.5× the rest |
+| 23:00 IST | 3 | 14 | 36 | **signal**: 0.5× the rest |
+| 05:00 IST | 2 | 6 | 28 | hint (n=2): 0.2× the rest |
+| 12:00 IST | 1 | 5 | 24 | hint (n=1): 0.2× the rest |
 
 **Youtube** (all posts: median reach 42)
 
@@ -113,14 +119,14 @@ _Generated 2026-10-28 12:11 by `scripts/build.py`. Compares posts at their 48-ho
 
 | | Post | Style | Hook | Topic | Reach 48h | Traction |
 |---|---|---|---|---|---|---|
-| top | ill-size-problem | animated-illustration-explainer | hard-truth | goal-size | 272 | 75 |
-| top | tree-study-abroad | illustrated-scene | question | planning | 141 | 73 |
-| top | ill-bad-day-version | animated-illustration-explainer | hard-truth | consistency | 128 | 70 |
-| bottom | tree-freelance | illustrated-scene | question | planning | 7 | 31 |
-| bottom | three-questions-before-a-goal | kinetic-typography | framework-list | goal-setting | 6 | 27 |
-| bottom | start-at-the-end | kinetic-typography | framework-list | planning | 5 | 25 |
+| top | ill-size-problem | animated-illustration-explainer | hard-truth | goal-size | 272 | 76 |
+| top | ill-track-inputs | animated-illustration-explainer | hard-truth | consistency | 243 | 74 |
+| top | ill-later-trigger | animated-illustration-explainer | hard-truth | habits | 203 | 72 |
+| bottom | tree-freelance | illustrated-scene | question | planning | 7 | 29 |
+| bottom | three-questions-before-a-goal | kinetic-typography | framework-list | goal-setting | 6 | 26 |
+| bottom | start-at-the-end | kinetic-typography | framework-list | planning | 5 | 24 |
 
-Shared by all top 3: nothing in common yet.
+Shared by all top 3: style = animated-illustration-explainer, hook type = hard-truth.
 
 ## Youtube: top vs bottom 3 (by traction)
 
