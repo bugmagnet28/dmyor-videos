@@ -23,11 +23,11 @@ Wed 2026-10-28 (Instagram, X and YouTube at the same times):
 - [ ] 19:30 IST · **ill-hard-part** (learning: practise only where you break, 55.4s) · `ready-to-post/2026-10-30-ill-hard-part/` · 35/40
 - Adam scripts: `reels/<slug>/narration-elevenlabs-v3.txt` (also for the 3 Thu reels below). Drop takes in `inbox/audio/<slug>.mp3`.
 
-## Waiting for approval: agent batch (VASK-019, V-EXP-30), moved to Thu 2026-10-29 because Wed 10-28 slots now hold the Oct 27 batch
+## Scheduled on @becauseidmyor for Thu 2026-10-29 (VASK-019, V-EXP-30; scheduled by Claude 2026-10-28 ~21:00 IST on Sanyam's go-ahead; Kokoro drafts, no Adam takes). Instagram (likes hidden), X and YouTube Shorts at the same times
 
-- [ ] 09:30 IST · **ill-unclear-task** (procrastination: rewrite to-dos as the next visible action, 51.3s) · `ready-to-post/2026-10-28-ill-unclear-task/` · 36/40
-- [ ] 13:00 IST · **ill-ten-pages** (reading: 10 pages a night = 12 books a year, 49.1s) · `ready-to-post/2026-10-28-ill-ten-pages/` · 35/40
-- [ ] 19:30 IST · **ill-gym-day-four** (fitness: book 3 sessions as calendar meetings, 56.1s) · `ready-to-post/2026-10-28-ill-gym-day-four/` · 35/40
+- [x] 09:30 IST · **ill-unclear-task** (procrastination: rewrite to-dos as the next visible action, 51.3s) · `ready-to-post/2026-10-28-ill-unclear-task/` · 36/40
+- [x] 13:00 IST · **ill-ten-pages** (reading: 10 pages a night = 12 books a year, 49.1s) · `ready-to-post/2026-10-28-ill-ten-pages/` · 35/40
+- [x] 19:30 IST · **ill-gym-day-four** (fitness: book 3 sessions as calendar meetings, 56.1s) · `ready-to-post/2026-10-28-ill-gym-day-four/` · 35/40
 - All animated illustration, am_eric, value close, @becauseidmyor end card, new soft pen sound. Same times on X and YouTube Shorts. Files 3.2-3.5 MB.
 - Note (Claude, 10-27 22:45): entries were accidentally removed by a queue edit and restored here; ill-ten-pages reuses the "12 books" example that ill-goal-date (Wed 16:30) uses, so posting it a day later is better anyway.
 
