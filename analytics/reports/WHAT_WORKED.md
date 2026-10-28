@@ -1,6 +1,6 @@
 # What worked
 
-_Generated 2026-10-28 23:21 by `scripts/build.py`. Compares posts at their 48-hour checkpoint. A **signal** needs n ≥ 3 and a ≥ 1.5× difference; everything else is a hint. Definitions: [METRICS.md](../METRICS.md)._
+_Generated 2026-10-28 23:25 by `scripts/build.py`. Compares posts at their 48-hour checkpoint. A **signal** needs n ≥ 3 and a ≥ 1.5× difference; everything else is a hint. Definitions: [METRICS.md](../METRICS.md)._
 
 ## By style
 
@@ -8,11 +8,11 @@ _Generated 2026-10-28 23:21 by `scripts/build.py`. Compares posts at their 48-ho
 
 | Style | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| pixel-story | 1 | 127 | 66 | hint (n=1): 4.5× the rest |
-| animated-illustration-explainer | 8 | 123 | 66 | **signal**: 6.8× the rest |
-| cinematic-motion | 1 | 30 | 53 | hint (n=1): 1.1× the rest |
-| diagram-motion-graphics | 2 | 24 | 45 | hint (n=2): 0.8× the rest |
-| kinetic-typography | 12 | 17 | 41 | **signal**: 0.3× the rest |
+| pixel-story | 1 | 127 | 65 | hint (n=1): 4.5× the rest |
+| animated-illustration-explainer | 8 | 123 | 65 | **signal**: 6.8× the rest |
+| cinematic-motion | 1 | 30 | 52 | hint (n=1): 1.1× the rest |
+| diagram-motion-graphics | 2 | 24 | 44 | hint (n=2): 0.8× the rest |
+| kinetic-typography | 12 | 17 | 40 | **signal**: 0.3× the rest |
 | illustrated-scene | 3 | 14 | 36 | **signal**: 0.5× the rest |
 
 ## By hook type
@@ -21,14 +21,14 @@ _Generated 2026-10-28 23:21 by `scripts/build.py`. Compares posts at their 48-ho
 
 | Hook type | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| story | 1 | 127 | 66 | hint (n=1): 4.5× the rest |
-| hard-truth | 12 | 66 | 61 | **signal**: 4.1× the rest |
-| how-to-plan | 1 | 46 | 58 | hint (n=1): 1.6× the rest |
-| reassurance-flip | 1 | 30 | 53 | hint (n=1): 1.1× the rest |
-| relatable | 1 | 30 | 53 | hint (n=1): 1.1× the rest |
+| story | 1 | 127 | 65 | hint (n=1): 4.5× the rest |
+| hard-truth | 12 | 66 | 60 | **signal**: 4.1× the rest |
+| how-to-plan | 1 | 46 | 57 | hint (n=1): 1.6× the rest |
+| reassurance-flip | 1 | 30 | 52 | hint (n=1): 1.1× the rest |
+| relatable | 1 | 30 | 52 | hint (n=1): 1.1× the rest |
 | number-contrast | 1 | 26 | 46 | hint (n=1): 0.9× the rest |
-| number-fact | 2 | 17 | 41 | hint (n=2): 0.6× the rest |
-| question | 4 | 12 | 35 | **signal**: 0.4× the rest |
+| number-fact | 2 | 17 | 40 | hint (n=2): 0.6× the rest |
+| question | 4 | 12 | 34 | **signal**: 0.4× the rest |
 | fill-in-the-blank | 1 | 10 | 33 | hint (n=1): 0.3× the rest |
 | quiz | 1 | 7 | 29 | hint (n=1): 0.2× the rest |
 | framework-list | 2 | 6 | 25 | hint (n=2): 0.2× the rest |
@@ -46,17 +46,17 @@ _Generated 2026-10-28 23:21 by `scripts/build.py`. Compares posts at their 48-ho
 
 | Topic | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| goal-size | 1 | 272 | 76 | hint (n=1): 9.7× the rest |
-| consistency | 3 | 128 | 68 | **signal**: 4.8× the rest |
-| dreams | 1 | 127 | 66 | hint (n=1): 4.5× the rest |
+| goal-size | 1 | 272 | 75 | hint (n=1): 9.7× the rest |
+| consistency | 3 | 128 | 67 | **signal**: 4.8× the rest |
+| dreams | 1 | 127 | 65 | hint (n=1): 4.5× the rest |
 | habits | 2 | 116 | 62 | hint (n=2): 4.3× the rest |
-| procrastination | 4 | 52 | 58 | **signal**: 1.9× the rest |
-| language-learning | 1 | 46 | 58 | hint (n=1): 1.6× the rest |
-| brand | 1 | 30 | 53 | hint (n=1): 1.1× the rest |
+| procrastination | 4 | 52 | 57 | **signal**: 1.9× the rest |
+| language-learning | 1 | 46 | 57 | hint (n=1): 1.6× the rest |
+| brand | 1 | 30 | 52 | hint (n=1): 1.1× the rest |
 | focus | 2 | 26 | 47 | hint (n=2): 0.9× the rest |
-| time | 2 | 17 | 41 | hint (n=2): 0.6× the rest |
+| time | 2 | 17 | 40 | hint (n=2): 0.6× the rest |
 | motivation | 1 | 16 | 39 | hint (n=1): 0.5× the rest |
-| planning | 6 | 12 | 35 | **signal**: 0.4× the rest |
+| planning | 6 | 12 | 34 | **signal**: 0.4× the rest |
 | goal-setting | 3 | 7 | 29 | **signal**: 0.2× the rest |
 
 **Youtube** (all posts: median reach 42)
@@ -73,7 +73,7 @@ _Generated 2026-10-28 23:21 by `scripts/build.py`. Compares posts at their 48-ho
 
 | Narrated | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| yes | 12 | 92 | 63 | **signal**: 5.8× the rest |
+| yes | 12 | 92 | 62 | **signal**: 5.8× the rest |
 | no | 15 | 16 | 39 | **signal**: 0.2× the rest |
 
 ## By length
@@ -82,8 +82,8 @@ _Generated 2026-10-28 23:21 by `scripts/build.py`. Compares posts at their 48-ho
 
 | Length | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| >30s | 10 | 122 | 65 | **signal**: 7.7× the rest |
-| 20-30s | 2 | 24 | 45 | hint (n=2): 0.8× the rest |
+| >30s | 10 | 122 | 64 | **signal**: 7.7× the rest |
+| 20-30s | 2 | 24 | 44 | hint (n=2): 0.8× the rest |
 | <15s | 6 | 20 | 43 | **signal**: 0.7× the rest |
 | 15-20s | 9 | 16 | 39 | **signal**: 0.4× the rest |
 
@@ -93,18 +93,18 @@ _Generated 2026-10-28 23:21 by `scripts/build.py`. Compares posts at their 48-ho
 
 | Posting hour | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| 13:00 IST | 2 | 166 | 70 | hint (n=2): 6.1× the rest |
-| 09:00 IST | 4 | 66 | 61 | **signal**: 2.4× the rest |
-| 16:00 IST | 3 | 46 | 58 | **signal**: 1.6× the rest |
-| 19:00 IST | 5 | 39 | 56 | hint (n=5): 1.4× the rest |
-| 21:00 IST | 1 | 30 | 53 | hint (n=1): 1.1× the rest |
+| 13:00 IST | 2 | 166 | 69 | hint (n=2): 6.1× the rest |
+| 09:00 IST | 4 | 66 | 60 | **signal**: 2.4× the rest |
+| 16:00 IST | 3 | 46 | 57 | **signal**: 1.6× the rest |
+| 19:00 IST | 5 | 39 | 55 | hint (n=5): 1.4× the rest |
+| 21:00 IST | 1 | 30 | 52 | hint (n=1): 1.1× the rest |
 | 14:00 IST | 1 | 29 | 50 | hint (n=1): 1.0× the rest |
-| 22:00 IST | 2 | 28 | 50 | hint (n=2): 1.0× the rest |
+| 22:00 IST | 2 | 28 | 49 | hint (n=2): 1.0× the rest |
 | 17:00 IST | 1 | 21 | 44 | hint (n=1): 0.7× the rest |
 | 08:00 IST | 1 | 18 | 42 | hint (n=1): 0.6× the rest |
 | 00:00 IST | 1 | 16 | 39 | hint (n=1): 0.5× the rest |
 | 23:00 IST | 3 | 14 | 36 | **signal**: 0.5× the rest |
-| 05:00 IST | 2 | 6 | 28 | hint (n=2): 0.2× the rest |
+| 05:00 IST | 2 | 6 | 27 | hint (n=2): 0.2× the rest |
 | 12:00 IST | 1 | 5 | 24 | hint (n=1): 0.2× the rest |
 
 **Youtube** (all posts: median reach 42)
@@ -119,9 +119,9 @@ _Generated 2026-10-28 23:21 by `scripts/build.py`. Compares posts at their 48-ho
 
 | | Post | Style | Hook | Topic | Reach 48h | Traction |
 |---|---|---|---|---|---|---|
-| top | ill-size-problem | animated-illustration-explainer | hard-truth | goal-size | 272 | 76 |
-| top | ill-track-inputs | animated-illustration-explainer | hard-truth | consistency | 243 | 74 |
-| top | ill-later-trigger | animated-illustration-explainer | hard-truth | habits | 203 | 72 |
+| top | ill-track-inputs | animated-illustration-explainer | hard-truth | consistency | 223 | 87 |
+| top | ill-size-problem | animated-illustration-explainer | hard-truth | goal-size | 272 | 75 |
+| top | ill-later-trigger | animated-illustration-explainer | hard-truth | habits | 203 | 71 |
 | bottom | tree-freelance | illustrated-scene | question | planning | 7 | 29 |
 | bottom | three-questions-before-a-goal | kinetic-typography | framework-list | goal-setting | 6 | 26 |
 | bottom | start-at-the-end | kinetic-typography | framework-list | planning | 5 | 24 |
