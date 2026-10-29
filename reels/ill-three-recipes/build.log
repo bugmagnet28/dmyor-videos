@@ -1,0 +1,14 @@
+reels/ill-three-recipes/audio.mp3  67.79s  voice=am_eric preset=plain fx=False breaths=False stages=hook body body turn body body turn land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/6779 [00:00<?, ?frames/s] 38%|███▊      | 2552/6779 [00:58<01:36, 43.87frames/s] 38%|███▊      | 2552/6779 [01:10<01:36, 43.87frames/s] 75%|███████▌  | 5086/6779 [01:51<00:37, 45.73frames/s] 75%|███████▌  | 5086/6779 [02:10<00:37, 45.73frames/s]100%|██████████| 6779/6779 [02:34<00:00, 43.21frames/s]100%|██████████| 6779/6779 [02:34<00:00, 43.75frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+227 words, 67.79s, 3.35 words/sec
+-> reels/ill-three-recipes/cues.json
+  skip ['@0', 'pop']: scene gym-calendar has no beat for it
+  skip ['@1', 'pop']: scene gym-calendar has no beat for it
+  skip ['@2', 'pop']: scene gym-calendar has no beat for it
+  skip ['@2+0.5', 'plate']: scene gym-calendar has no beat for it
+sfx present: 47 sounds -> reels/ill-three-recipes/audio_mixed.mp3 tap@0.1 pop@3.5 tap@8.8 tap@9.1 tap@9.5 clock@9.7 pop@10.5 pop@11.3 pencil@11.6 pencil@12.1 pencil@12.5 pencil@13.0 pop@15.2 swish@17.9 pop@19.1 pop@19.4 pop@19.7 right@20.4 right@20.7 right@21.0 pop@22.0 pop@25.5 pop@30.4 pencil@30.9 right@31.9 pencil@33.4 right@34.4 pencil@35.8 right@36.8 swish@37.2 pop@37.9 pop@38.3 pop@38.7 reveal@39.9 pop@45.3 pencil@46.0 right@46.3 pencil@46.7 right@47.0 tone@51.3 stamp@51.4 pop@53.0 pop@53.5 right@54.3 right@54.8 right@55.3 chord@64.0
+built reels/ill-three-recipes: 67.72s, 9 scenes, brand 64.02s, 3.35 words/sec
+scenes: [('recipe-saved', 0.0, 3.41, None), ('recipe-saved', 3.41, 11.27, [5.39, 5.68, 7.13]), ('cost-tally', 11.27, 17.93, [0.05, 1.58, 3.95]), ('pick-three', 17.93, 25.47, [1.21, 2.17, 4.09]), ('gym-calendar', 25.47, 30.39, None), ('question-list', 30.39, 37.25, [0.55, 3.03, 5.37]), ('before-after', 37.25, 45.26, [0.67, 2.61]), ('rule-card', 45.21, 51.27, [0.77, 1.27, 1.49]), ('dream-to-steps', 51.27, 64.02, None)]

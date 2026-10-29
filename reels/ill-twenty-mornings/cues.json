@@ -1,0 +1,1692 @@
+{
+ "audio": "audio.mp3",
+ "duration": 77.74,
+ "text": "The free weekend you're waiting for is never coming. Maya learned that the hard way. Her sister's wedding was eight weeks away and Maya wanted to give her a portrait she'd drawn herself. She hadn't drawn since school. So she saved it for the weekend. Then a birthday took one Saturday, chores took the next and three weekends later the paper was still blank. Five weeks left so she made a different choice. 20 minutes every morning before work. It cost her the 20 minutes she used to spend scrolling in bed. Then she broke the portrait into one skill a week. Week one shapes then proportions then eyes then shading and in the last week the portrait itself and every morning had one small job like 20 circles freehand. Then in week four the shading came out muddy and she nearly quit. So what did she do? She didn't throw out the plan. She just did that week's 20 minutes again the next morning. On the wedding day her sister unwrapped a framed portrait of herself 35 mornings about 12 hours of drawing all in 20 minute pieces. Maya's portrait started with one goal and one date. Yours can too send this to someone who's still waiting for a free weekend. That's what demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do and follow because tonight's reel fixes the thing that wrecks most mornings your sleep. If you want to try it out I've put the link in the bio.",
+ "words": [
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "free",
+   "raw": "free",
+   "s": 0.24,
+   "e": 0.46
+  },
+  {
+   "w": "weekend",
+   "raw": "weekend",
+   "s": 0.46,
+   "e": 0.8
+  },
+  {
+   "w": "youre",
+   "raw": "you're",
+   "s": 0.8,
+   "e": 1.02
+  },
+  {
+   "w": "waiting",
+   "raw": "waiting",
+   "s": 1.02,
+   "e": 1.2
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 1.2,
+   "e": 1.54
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 1.54,
+   "e": 1.68
+  },
+  {
+   "w": "never",
+   "raw": "never",
+   "s": 1.68,
+   "e": 1.92
+  },
+  {
+   "w": "coming",
+   "raw": "coming.",
+   "s": 1.92,
+   "e": 2.3
+  },
+  {
+   "w": "maya",
+   "raw": "Maya",
+   "s": 2.94,
+   "e": 2.94
+  },
+  {
+   "w": "learned",
+   "raw": "learned",
+   "s": 2.94,
+   "e": 3.22
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 3.22,
+   "e": 3.42
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 3.42,
+   "e": 3.54
+  },
+  {
+   "w": "hard",
+   "raw": "hard",
+   "s": 3.54,
+   "e": 3.76
+  },
+  {
+   "w": "way",
+   "raw": "way.",
+   "s": 3.76,
+   "e": 4.06
+  },
+  {
+   "w": "her",
+   "raw": "Her",
+   "s": 4.42,
+   "e": 4.56
+  },
+  {
+   "w": "sisters",
+   "raw": "sister's",
+   "s": 4.56,
+   "e": 5.04
+  },
+  {
+   "w": "wedding",
+   "raw": "wedding",
+   "s": 5.04,
+   "e": 5.22
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 5.22,
+   "e": 5.48
+  },
+  {
+   "w": "eight",
+   "raw": "eight",
+   "s": 5.48,
+   "e": 5.7
+  },
+  {
+   "w": "weeks",
+   "raw": "weeks",
+   "s": 5.7,
+   "e": 5.94
+  },
+  {
+   "w": "away",
+   "raw": "away",
+   "s": 5.94,
+   "e": 6.28
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 6.28,
+   "e": 6.52
+  },
+  {
+   "w": "maya",
+   "raw": "Maya",
+   "s": 6.52,
+   "e": 6.8
+  },
+  {
+   "w": "wanted",
+   "raw": "wanted",
+   "s": 6.8,
+   "e": 7.02
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 7.02,
+   "e": 7.22
+  },
+  {
+   "w": "give",
+   "raw": "give",
+   "s": 7.22,
+   "e": 7.32
+  },
+  {
+   "w": "her",
+   "raw": "her",
+   "s": 7.32,
+   "e": 7.48
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 7.48,
+   "e": 7.6
+  },
+  {
+   "w": "portrait",
+   "raw": "portrait",
+   "s": 7.6,
+   "e": 7.88
+  },
+  {
+   "w": "shed",
+   "raw": "she'd",
+   "s": 7.88,
+   "e": 8.18
+  },
+  {
+   "w": "drawn",
+   "raw": "drawn",
+   "s": 8.18,
+   "e": 8.36
+  },
+  {
+   "w": "herself",
+   "raw": "herself.",
+   "s": 8.36,
+   "e": 8.72
+  },
+  {
+   "w": "she",
+   "raw": "She",
+   "s": 9.32,
+   "e": 9.44
+  },
+  {
+   "w": "hadnt",
+   "raw": "hadn't",
+   "s": 9.44,
+   "e": 9.68
+  },
+  {
+   "w": "drawn",
+   "raw": "drawn",
+   "s": 9.68,
+   "e": 9.94
+  },
+  {
+   "w": "since",
+   "raw": "since",
+   "s": 9.94,
+   "e": 10.16
+  },
+  {
+   "w": "school",
+   "raw": "school.",
+   "s": 10.16,
+   "e": 10.54
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 10.92,
+   "e": 11.04
+  },
+  {
+   "w": "she",
+   "raw": "she",
+   "s": 11.04,
+   "e": 11.2
+  },
+  {
+   "w": "saved",
+   "raw": "saved",
+   "s": 11.2,
+   "e": 11.46
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 11.46,
+   "e": 11.6
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 11.6,
+   "e": 11.72
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 11.72,
+   "e": 11.84
+  },
+  {
+   "w": "weekend",
+   "raw": "weekend.",
+   "s": 11.84,
+   "e": 12.22
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 12.72,
+   "e": 12.9
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 12.9,
+   "e": 13.0
+  },
+  {
+   "w": "birthday",
+   "raw": "birthday",
+   "s": 13.0,
+   "e": 13.26
+  },
+  {
+   "w": "took",
+   "raw": "took",
+   "s": 13.26,
+   "e": 13.52
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 13.52,
+   "e": 13.8
+  },
+  {
+   "w": "saturday",
+   "raw": "Saturday,",
+   "s": 13.8,
+   "e": 14.18
+  },
+  {
+   "w": "chores",
+   "raw": "chores",
+   "s": 14.62,
+   "e": 14.62
+  },
+  {
+   "w": "took",
+   "raw": "took",
+   "s": 14.62,
+   "e": 14.9
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 14.9,
+   "e": 15.06
+  },
+  {
+   "w": "next",
+   "raw": "next",
+   "s": 15.06,
+   "e": 15.3
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 15.3,
+   "e": 15.56
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 15.56,
+   "e": 15.76
+  },
+  {
+   "w": "weekends",
+   "raw": "weekends",
+   "s": 15.76,
+   "e": 16.12
+  },
+  {
+   "w": "later",
+   "raw": "later",
+   "s": 16.12,
+   "e": 16.4
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 16.4,
+   "e": 16.58
+  },
+  {
+   "w": "paper",
+   "raw": "paper",
+   "s": 16.58,
+   "e": 16.8
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 16.8,
+   "e": 17.04
+  },
+  {
+   "w": "still",
+   "raw": "still",
+   "s": 17.04,
+   "e": 17.26
+  },
+  {
+   "w": "blank",
+   "raw": "blank.",
+   "s": 17.26,
+   "e": 17.6
+  },
+  {
+   "w": "five",
+   "raw": "Five",
+   "s": 18.04,
+   "e": 18.34
+  },
+  {
+   "w": "weeks",
+   "raw": "weeks",
+   "s": 18.34,
+   "e": 18.6
+  },
+  {
+   "w": "left",
+   "raw": "left",
+   "s": 18.6,
+   "e": 18.9
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 18.9,
+   "e": 19.16
+  },
+  {
+   "w": "she",
+   "raw": "she",
+   "s": 19.16,
+   "e": 19.3
+  },
+  {
+   "w": "made",
+   "raw": "made",
+   "s": 19.3,
+   "e": 19.46
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 19.46,
+   "e": 19.62
+  },
+  {
+   "w": "different",
+   "raw": "different",
+   "s": 19.62,
+   "e": 19.84
+  },
+  {
+   "w": "choice",
+   "raw": "choice.",
+   "s": 19.84,
+   "e": 20.2
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "s": 20.84,
+   "e": 21.04
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 21.04,
+   "e": 21.3
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 21.3,
+   "e": 21.66
+  },
+  {
+   "w": "morning",
+   "raw": "morning",
+   "s": 21.66,
+   "e": 21.96
+  },
+  {
+   "w": "before",
+   "raw": "before",
+   "s": 21.96,
+   "e": 22.28
+  },
+  {
+   "w": "work",
+   "raw": "work.",
+   "s": 22.28,
+   "e": 22.62
+  },
+  {
+   "w": "it",
+   "raw": "It",
+   "s": 22.96,
+   "e": 23.1
+  },
+  {
+   "w": "cost",
+   "raw": "cost",
+   "s": 23.1,
+   "e": 23.34
+  },
+  {
+   "w": "her",
+   "raw": "her",
+   "s": 23.34,
+   "e": 23.52
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 23.52,
+   "e": 23.62
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "s": 23.62,
+   "e": 23.88
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 23.88,
+   "e": 24.12
+  },
+  {
+   "w": "she",
+   "raw": "she",
+   "s": 24.12,
+   "e": 24.3
+  },
+  {
+   "w": "used",
+   "raw": "used",
+   "s": 24.3,
+   "e": 24.46
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 24.46,
+   "e": 24.62
+  },
+  {
+   "w": "spend",
+   "raw": "spend",
+   "s": 24.62,
+   "e": 24.82
+  },
+  {
+   "w": "scrolling",
+   "raw": "scrolling",
+   "s": 24.82,
+   "e": 25.22
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 25.22,
+   "e": 25.5
+  },
+  {
+   "w": "bed",
+   "raw": "bed.",
+   "s": 25.5,
+   "e": 25.72
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 26.18,
+   "e": 26.3
+  },
+  {
+   "w": "she",
+   "raw": "she",
+   "s": 26.3,
+   "e": 26.44
+  },
+  {
+   "w": "broke",
+   "raw": "broke",
+   "s": 26.44,
+   "e": 26.62
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 26.62,
+   "e": 26.8
+  },
+  {
+   "w": "portrait",
+   "raw": "portrait",
+   "s": 26.8,
+   "e": 27.1
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 27.1,
+   "e": 27.32
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 27.32,
+   "e": 27.56
+  },
+  {
+   "w": "skill",
+   "raw": "skill",
+   "s": 27.56,
+   "e": 27.82
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 27.82,
+   "e": 27.98
+  },
+  {
+   "w": "week",
+   "raw": "week.",
+   "s": 27.98,
+   "e": 28.18
+  },
+  {
+   "w": "week",
+   "raw": "Week",
+   "s": 28.18,
+   "e": 28.26
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 28.26,
+   "e": 29.04
+  },
+  {
+   "w": "shapes",
+   "raw": "shapes",
+   "s": 29.04,
+   "e": 29.4
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 29.4,
+   "e": 29.92
+  },
+  {
+   "w": "proportions",
+   "raw": "proportions",
+   "s": 29.92,
+   "e": 30.36
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 30.36,
+   "e": 30.68
+  },
+  {
+   "w": "eyes",
+   "raw": "eyes",
+   "s": 30.68,
+   "e": 31.0
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 31.0,
+   "e": 31.28
+  },
+  {
+   "w": "shading",
+   "raw": "shading",
+   "s": 31.28,
+   "e": 31.62
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 31.62,
+   "e": 31.82
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 31.82,
+   "e": 31.9
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 31.9,
+   "e": 32.02
+  },
+  {
+   "w": "last",
+   "raw": "last",
+   "s": 32.02,
+   "e": 32.26
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 32.26,
+   "e": 32.5
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 32.5,
+   "e": 32.68
+  },
+  {
+   "w": "portrait",
+   "raw": "portrait",
+   "s": 32.68,
+   "e": 32.98
+  },
+  {
+   "w": "itself",
+   "raw": "itself",
+   "s": 32.98,
+   "e": 33.32
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 33.32,
+   "e": 34.02
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 34.02,
+   "e": 34.32
+  },
+  {
+   "w": "morning",
+   "raw": "morning",
+   "s": 34.32,
+   "e": 34.56
+  },
+  {
+   "w": "had",
+   "raw": "had",
+   "s": 34.56,
+   "e": 34.8
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 34.8,
+   "e": 35.06
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 35.06,
+   "e": 35.38
+  },
+  {
+   "w": "job",
+   "raw": "job",
+   "s": 35.38,
+   "e": 35.72
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 35.72,
+   "e": 36.0
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "s": 36.0,
+   "e": 36.26
+  },
+  {
+   "w": "circles",
+   "raw": "circles",
+   "s": 36.26,
+   "e": 36.66
+  },
+  {
+   "w": "freehand",
+   "raw": "freehand.",
+   "s": 36.66,
+   "e": 37.26
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 37.76,
+   "e": 37.78
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 37.78,
+   "e": 37.92
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 37.92,
+   "e": 38.04
+  },
+  {
+   "w": "four",
+   "raw": "four",
+   "s": 38.04,
+   "e": 38.38
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 38.38,
+   "e": 38.6
+  },
+  {
+   "w": "shading",
+   "raw": "shading",
+   "s": 38.6,
+   "e": 38.9
+  },
+  {
+   "w": "came",
+   "raw": "came",
+   "s": 38.9,
+   "e": 39.14
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 39.14,
+   "e": 39.34
+  },
+  {
+   "w": "muddy",
+   "raw": "muddy",
+   "s": 39.34,
+   "e": 39.58
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 39.58,
+   "e": 39.9
+  },
+  {
+   "w": "she",
+   "raw": "she",
+   "s": 39.9,
+   "e": 40.04
+  },
+  {
+   "w": "nearly",
+   "raw": "nearly",
+   "s": 40.04,
+   "e": 40.34
+  },
+  {
+   "w": "quit",
+   "raw": "quit.",
+   "s": 40.34,
+   "e": 40.64
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 41.08,
+   "e": 41.3
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 41.3,
+   "e": 41.5
+  },
+  {
+   "w": "did",
+   "raw": "did",
+   "s": 41.5,
+   "e": 41.66
+  },
+  {
+   "w": "she",
+   "raw": "she",
+   "s": 41.66,
+   "e": 41.82
+  },
+  {
+   "w": "do",
+   "raw": "do?",
+   "s": 41.82,
+   "e": 42.08
+  },
+  {
+   "w": "she",
+   "raw": "She",
+   "s": 42.78,
+   "e": 42.98
+  },
+  {
+   "w": "didnt",
+   "raw": "didn't",
+   "s": 42.98,
+   "e": 43.24
+  },
+  {
+   "w": "throw",
+   "raw": "throw",
+   "s": 43.24,
+   "e": 43.42
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 43.42,
+   "e": 43.6
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 43.6,
+   "e": 43.76
+  },
+  {
+   "w": "plan",
+   "raw": "plan.",
+   "s": 43.76,
+   "e": 44.06
+  },
+  {
+   "w": "she",
+   "raw": "She",
+   "s": 44.38,
+   "e": 44.56
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 44.56,
+   "e": 44.72
+  },
+  {
+   "w": "did",
+   "raw": "did",
+   "s": 44.72,
+   "e": 44.86
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 44.86,
+   "e": 45.02
+  },
+  {
+   "w": "weeks",
+   "raw": "week's",
+   "s": 45.02,
+   "e": 45.38
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "s": 45.38,
+   "e": 45.6
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 45.6,
+   "e": 45.82
+  },
+  {
+   "w": "again",
+   "raw": "again",
+   "s": 45.82,
+   "e": 46.12
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 46.12,
+   "e": 46.28
+  },
+  {
+   "w": "next",
+   "raw": "next",
+   "s": 46.28,
+   "e": 46.52
+  },
+  {
+   "w": "morning",
+   "raw": "morning.",
+   "s": 46.52,
+   "e": 46.92
+  },
+  {
+   "w": "on",
+   "raw": "On",
+   "s": 47.3,
+   "e": 47.52
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 47.52,
+   "e": 47.64
+  },
+  {
+   "w": "wedding",
+   "raw": "wedding",
+   "s": 47.64,
+   "e": 47.84
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 47.84,
+   "e": 48.12
+  },
+  {
+   "w": "her",
+   "raw": "her",
+   "s": 48.12,
+   "e": 48.3
+  },
+  {
+   "w": "sister",
+   "raw": "sister",
+   "s": 48.3,
+   "e": 48.56
+  },
+  {
+   "w": "unwrapped",
+   "raw": "unwrapped",
+   "s": 48.56,
+   "e": 49.12
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 49.12,
+   "e": 49.26
+  },
+  {
+   "w": "framed",
+   "raw": "framed",
+   "s": 49.26,
+   "e": 49.52
+  },
+  {
+   "w": "portrait",
+   "raw": "portrait",
+   "s": 49.52,
+   "e": 49.92
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 49.92,
+   "e": 50.06
+  },
+  {
+   "w": "herself",
+   "raw": "herself",
+   "s": 50.06,
+   "e": 50.46
+  },
+  {
+   "w": "35",
+   "raw": "35",
+   "s": 50.46,
+   "e": 51.08
+  },
+  {
+   "w": "mornings",
+   "raw": "mornings",
+   "s": 51.08,
+   "e": 51.8
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 51.8,
+   "e": 52.38
+  },
+  {
+   "w": "12",
+   "raw": "12",
+   "s": 52.38,
+   "e": 52.66
+  },
+  {
+   "w": "hours",
+   "raw": "hours",
+   "s": 52.66,
+   "e": 52.94
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 52.94,
+   "e": 53.16
+  },
+  {
+   "w": "drawing",
+   "raw": "drawing",
+   "s": 53.16,
+   "e": 53.46
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 53.46,
+   "e": 53.74
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 53.74,
+   "e": 53.9
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "s": 53.9,
+   "e": 54.14
+  },
+  {
+   "w": "minute",
+   "raw": "minute",
+   "s": 54.14,
+   "e": 54.3
+  },
+  {
+   "w": "pieces",
+   "raw": "pieces.",
+   "s": 54.3,
+   "e": 54.86
+  },
+  {
+   "w": "mayas",
+   "raw": "Maya's",
+   "s": 55.56,
+   "e": 55.76
+  },
+  {
+   "w": "portrait",
+   "raw": "portrait",
+   "s": 55.76,
+   "e": 55.98
+  },
+  {
+   "w": "started",
+   "raw": "started",
+   "s": 55.98,
+   "e": 56.3
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 56.3,
+   "e": 56.54
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 56.54,
+   "e": 56.78
+  },
+  {
+   "w": "goal",
+   "raw": "goal",
+   "s": 56.78,
+   "e": 57.02
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 57.02,
+   "e": 57.22
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 57.22,
+   "e": 57.42
+  },
+  {
+   "w": "date",
+   "raw": "date.",
+   "s": 57.42,
+   "e": 57.76
+  },
+  {
+   "w": "yours",
+   "raw": "Yours",
+   "s": 58.32,
+   "e": 58.48
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 58.48,
+   "e": 58.64
+  },
+  {
+   "w": "too",
+   "raw": "too",
+   "s": 58.64,
+   "e": 58.92
+  },
+  {
+   "w": "send",
+   "raw": "send",
+   "s": 58.92,
+   "e": 59.36
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 59.36,
+   "e": 59.54
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 59.54,
+   "e": 59.7
+  },
+  {
+   "w": "someone",
+   "raw": "someone",
+   "s": 59.7,
+   "e": 59.94
+  },
+  {
+   "w": "whos",
+   "raw": "who's",
+   "s": 59.94,
+   "e": 60.14
+  },
+  {
+   "w": "still",
+   "raw": "still",
+   "s": 60.14,
+   "e": 60.32
+  },
+  {
+   "w": "waiting",
+   "raw": "waiting",
+   "s": 60.32,
+   "e": 60.6
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 60.6,
+   "e": 60.9
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 60.9,
+   "e": 61.02
+  },
+  {
+   "w": "free",
+   "raw": "free",
+   "s": 61.02,
+   "e": 61.2
+  },
+  {
+   "w": "weekend",
+   "raw": "weekend.",
+   "s": 61.2,
+   "e": 61.6
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 62.12,
+   "e": 62.4
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 62.4,
+   "e": 62.56
+  },
+  {
+   "w": "demure",
+   "raw": "demure",
+   "s": 62.56,
+   "e": 62.92
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 62.92,
+   "e": 63.08
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 63.08,
+   "e": 63.38
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 63.74,
+   "e": 63.86
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 63.86,
+   "e": 64.24
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 64.24,
+   "e": 64.48
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 64.48,
+   "e": 64.7
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 64.7,
+   "e": 65.04
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 65.04,
+   "e": 65.28
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 65.28,
+   "e": 65.42
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 65.42,
+   "e": 65.56
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 65.56,
+   "e": 65.8
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 65.8,
+   "e": 65.92
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 65.92,
+   "e": 66.22
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 66.22,
+   "e": 66.68
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 66.68,
+   "e": 66.84
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 66.84,
+   "e": 67.0
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 67.0,
+   "e": 67.2
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 67.2,
+   "e": 67.42
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 67.42,
+   "e": 67.72
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 67.72,
+   "e": 68.04
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 68.04,
+   "e": 68.26
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 68.26,
+   "e": 68.38
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 68.38,
+   "e": 68.7
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 68.7,
+   "e": 69.04
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 69.04,
+   "e": 69.5
+  },
+  {
+   "w": "follow",
+   "raw": "follow",
+   "s": 69.5,
+   "e": 69.8
+  },
+  {
+   "w": "because",
+   "raw": "because",
+   "s": 69.8,
+   "e": 70.16
+  },
+  {
+   "w": "tonights",
+   "raw": "tonight's",
+   "s": 70.16,
+   "e": 70.7
+  },
+  {
+   "w": "reel",
+   "raw": "reel",
+   "s": 70.7,
+   "e": 70.82
+  },
+  {
+   "w": "fixes",
+   "raw": "fixes",
+   "s": 70.82,
+   "e": 71.18
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 71.18,
+   "e": 71.46
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 71.46,
+   "e": 71.62
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 71.62,
+   "e": 71.78
+  },
+  {
+   "w": "wrecks",
+   "raw": "wrecks",
+   "s": 71.78,
+   "e": 72.02
+  },
+  {
+   "w": "most",
+   "raw": "most",
+   "s": 72.02,
+   "e": 72.26
+  },
+  {
+   "w": "mornings",
+   "raw": "mornings",
+   "s": 72.26,
+   "e": 72.64
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 72.64,
+   "e": 73.16
+  },
+  {
+   "w": "sleep",
+   "raw": "sleep.",
+   "s": 73.16,
+   "e": 73.56
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 73.94,
+   "e": 74.06
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 74.06,
+   "e": 74.18
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 74.18,
+   "e": 74.36
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 74.36,
+   "e": 74.48
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 74.48,
+   "e": 74.7
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 74.7,
+   "e": 74.9
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 74.9,
+   "e": 75.14
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 75.14,
+   "e": 75.48
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 75.48,
+   "e": 75.6
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 75.6,
+   "e": 75.76
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 75.76,
+   "e": 75.94
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 75.94,
+   "e": 76.1
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 76.1,
+   "e": 76.2
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 76.2,
+   "e": 76.5
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 4.06,
+   "text": "The free weekend you're waiting for is never coming. Maya learned that the hard way."
+  },
+  {
+   "s": 4.42,
+   "e": 8.36,
+   "text": "Her sister's wedding was eight weeks away and Maya wanted to give her a portrait she'd drawn"
+  },
+  {
+   "s": 8.36,
+   "e": 13.52,
+   "text": "herself. She hadn't drawn since school. So she saved it for the weekend. Then a birthday took"
+  },
+  {
+   "s": 13.52,
+   "e": 17.6,
+   "text": "one Saturday, chores took the next and three weekends later the paper was still blank."
+  },
+  {
+   "s": 18.04,
+   "e": 23.52,
+   "text": "Five weeks left so she made a different choice. 20 minutes every morning before work. It cost her"
+  },
+  {
+   "s": 23.52,
+   "e": 28.18,
+   "text": "the 20 minutes she used to spend scrolling in bed. Then she broke the portrait into one skill a week."
+  },
+  {
+   "s": 28.18,
+   "e": 33.32,
+   "text": "Week one shapes then proportions then eyes then shading and in the last week the portrait itself"
+  },
+  {
+   "s": 33.32,
+   "e": 38.9,
+   "text": "and every morning had one small job like 20 circles freehand. Then in week four the shading"
+  },
+  {
+   "s": 38.9,
+   "e": 44.72,
+   "text": "came out muddy and she nearly quit. So what did she do? She didn't throw out the plan. She just"
+  },
+  {
+   "s": 44.72,
+   "e": 49.52,
+   "text": "did that week's 20 minutes again the next morning. On the wedding day her sister unwrapped a framed"
+  },
+  {
+   "s": 49.52,
+   "e": 55.98,
+   "text": "portrait of herself 35 mornings about 12 hours of drawing all in 20 minute pieces. Maya's portrait"
+  },
+  {
+   "s": 55.98,
+   "e": 60.9,
+   "text": "started with one goal and one date. Yours can too send this to someone who's still waiting for"
+  },
+  {
+   "s": 60.9,
+   "e": 66.22,
+   "text": "a free weekend. That's what demure is for. You archive your dream today so you can see it tomorrow"
+  },
+  {
+   "s": 66.22,
+   "e": 70.82,
+   "text": "and break it down into small steps you can actually do and follow because tonight's reel"
+  },
+  {
+   "s": 70.82,
+   "e": 75.94,
+   "text": "fixes the thing that wrecks most mornings your sleep. If you want to try it out I've put the link"
+  },
+  {
+   "s": 75.94,
+   "e": 76.5,
+   "text": "in the bio."
+  }
+ ],
+ "wps": 3.43
+}

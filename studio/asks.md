@@ -141,3 +141,14 @@ Instagram locked the account ("we locked your account to protect you from a poss
   2. For each reel you OK (and the 3 from VASK-019), paste `reels/<slug>/narration-elevenlabs-v3.txt` into ElevenLabs v3 with Adam, one take, and save the mp3 into `inbox/audio/` named `<slug>.mp3` (e.g. `inbox/audio/ill-one-category.mp3`).
   3. I fit each video to its take (`make_reel.py --vo`), check frames, and schedule after that. If you'd rather post the Kokoro versions for Thu to keep the cadence, say "Kokoro OK for Thu".
 - Still useful: app screenshots of insights for the Oct 25/26 batches (views, avg watch time, skip rate, shares, saves, follows) and the follower count.
+
+## VASK-021: Approve the Sat Oct 31 batch (first Content Kit v2 batch) (2026-10-29)
+- Status: open
+- What: 3 animated-illustration reels, `ready-to-post/2026-10-31-*/` (video.mp4 = Kokoro am_eric, which you OK'd for this batch; post.md with caption, hashtags, X text, YouTube title):
+  - 09:30 **ill-three-recipes** (cooking, structure C mistake/cost/fix, 67.7 s): "Saving recipes feels like learning to cook. It isn't." 20 min scrolling x 4 nights = 80 min a week deciding → pick 3 dinners (dal, tomato pasta, bean chili), cook each twice, one shopping list → 6 home dinners, 0 minutes deciding. 35/40
+  - 13:00 **ill-twenty-mornings** (story, structure B, 77.7 s): "The free weekend you're waiting for is never coming." Maya, sister's wedding in 8 weeks, 3 weekends lost → 20 min every morning, one skill a week, redoes the muddy week → framed portrait (35 mornings ≈ 12 h). 35/40
+  - 19:30 **ill-wake-time** (sleep, structure A, 74.4 s): "You can't fix your sleep at night. You fix it in the morning." Same wake time 7 days, daylight within 10 min, wind-down alarm, weekends +1 h max. 35/40
+- Kit v2 in every reel: story frame, 3 hooks considered (in script.meta.json), triple hook with an object sound in the first second (tap / pen / alarm), re-hooks ~10 s and ~25 s, two near-silences, a "SCREENSHOT THIS" rule card, a share line, ONE payoff sound (new "reveal" bell), and a follow reason after the value close with its own "Next on @becauseidmyor" card.
+- **Follow lines chain the slots**: recipes says "this afternoon's reel" (twenty-mornings, 1 PM); twenty-mornings says "tonight's reel" (wake-time, 7:30 PM); wake-time promises "tomorrow: the morning after a bad night", which I will build in the Sun Nov 1 batch. Keep this order and these slots, or tell me and I'll re-cut the lines.
+- Steps: watch the 3 videos, reply "OK" or "OK except X". After OK I (or the session you run) schedule them on IG/YT/X. Optional: Adam takes from `reels/<slug>/narration-elevenlabs-v3.txt` into `inbox/audio/<slug>.mp3`.
+- Also still open: ill-hard-part (Fri 19:30) is not scheduled on Instagram yet (5-flow limit on 10-28).

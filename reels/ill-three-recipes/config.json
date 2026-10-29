@@ -1,0 +1,236 @@
+{
+ "total": 67.72,
+ "brandT": 64.02,
+ "scenes": [
+  {
+   "type": "recipe-saved",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "Saving recipes<br>isn't <b>cooking</b>.",
+   "t0": 0.0,
+   "t1": 3.41
+  },
+  {
+   "type": "recipe-saved",
+   "params": {
+    "stage": "tuesday",
+    "cue": [
+     "scroll",
+     "twenty",
+     "toast"
+    ],
+    "at": [
+     5.39,
+     5.68,
+     7.13
+    ]
+   },
+   "head": "214 saved.<br><b>0 cooked.</b>",
+   "t0": 3.41,
+   "t1": 11.27
+  },
+  {
+   "type": "cost-tally",
+   "params": {
+    "cue": [
+     "Do",
+     "eighty",
+     "still"
+    ],
+    "total": 80,
+    "note": "Better at cooking: not yet",
+    "at": [
+     0.05,
+     1.58,
+     3.95
+    ]
+   },
+   "head": "80 minutes a week<br>just <b>deciding</b>.",
+   "t0": 11.27,
+   "t1": 17.93
+  },
+  {
+   "type": "pick-three",
+   "params": {
+    "cue": [
+     "Stop",
+     "three",
+     "master"
+    ],
+    "tag": "MASTER THESE 3",
+    "at": [
+     1.21,
+     2.17,
+     4.09
+    ]
+   },
+   "head": "Stop collecting.<br>Pick <b>three</b>.",
+   "t0": 17.93,
+   "t1": 25.47
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "add",
+    "blocks": [
+     [
+      0,
+      "7:30",
+      "Dal"
+     ],
+     [
+      1,
+      "7:30",
+      "Pasta"
+     ],
+     [
+      2,
+      "7:30",
+      "Chili"
+     ],
+     [
+      3,
+      "7:30",
+      "Dal"
+     ],
+     [
+      4,
+      "7:30",
+      "Pasta"
+     ],
+     [
+      5,
+      "7:30",
+      "Chili"
+     ]
+    ]
+   },
+   "head": "Cook each one<br><b>twice</b> this week.",
+   "t0": 25.47,
+   "t1": 30.39
+  },
+  {
+   "type": "question-list",
+   "params": {
+    "title": "ONE SHOPPING LIST",
+    "items": [
+     "Onions, tomatoes, garlic",
+     "Lentils, pasta, beans",
+     "Rice, chili powder"
+    ],
+    "cue": [
+     "shopping",
+     "base",
+     "nothing"
+    ],
+    "at": [
+     0.55,
+     3.03,
+     5.37
+    ]
+   },
+   "head": "One list for<br><b>all three</b>.",
+   "t0": 30.39,
+   "t1": 37.25
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "cue": [
+     "week",
+     "Three"
+    ],
+    "rows": [
+     [
+      "Saved recipes",
+      "214",
+      "3"
+     ],
+     [
+      "Home dinners",
+      "0",
+      "6"
+     ],
+     [
+      "Minutes deciding",
+      "80",
+      "0"
+     ]
+    ],
+    "a": "BEFORE",
+    "b": "BY SUNDAY",
+    "at": [
+     0.67,
+     2.61
+    ]
+   },
+   "head": "By Sunday?",
+   "t0": 37.25,
+   "t1": 45.26
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "THE 3-RECIPE RULE",
+    "items": [
+     "Pick 3 dinners",
+     "Cook each twice",
+     "One shopping list"
+    ],
+    "cue": [
+     "Pick",
+     "Cook",
+     "list"
+    ],
+    "at": [
+     0.77,
+     1.27,
+     2.71
+    ]
+   },
+   "head": "Screenshot<br><b>the rule</b>.",
+   "t0": 45.21,
+   "t1": 51.27
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Cook for my family",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "Pick 3",
+     "Cook twice",
+     "One list"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 51.27,
+   "t1": 58.77
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "How 20 minutes a day became a wedding gift",
+    "when": "Today, 1 PM",
+    "cue": [
+     null,
+     "wedding"
+    ],
+    "at": [
+     0.2,
+     4.21
+    ]
+   },
+   "head": "Next: <b>20 minutes</b><br>a day.",
+   "t0": 58.77,
+   "t1": 64.02
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  37.2,
+  39.76
+ ]
+}

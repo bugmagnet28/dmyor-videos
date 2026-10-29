@@ -1,0 +1,237 @@
+{
+ "total": 77.7,
+ "brandT": 73.94,
+ "scenes": [
+  {
+   "type": "postpone-calendar",
+   "params": {
+    "days": [
+     "SAT",
+     "SUN",
+     "SAT",
+     "SUN",
+     "SAT",
+     "SUN"
+    ],
+    "nums": [
+     "4",
+     "5",
+     "11",
+     "12",
+     "18",
+     "19"
+    ],
+    "note": "draw the portrait"
+   },
+   "head": "The free weekend<br><b>never comes</b>.",
+   "t0": 0.0,
+   "t1": 4.37
+  },
+  {
+   "type": "sketch-progress",
+   "params": {
+    "stage": "blank",
+    "chips": [
+     "Wedding in 8 weeks",
+     "A portrait for her sister"
+    ],
+    "cue": [
+     "eight",
+     "portrait"
+    ],
+    "at": [
+     1.11,
+     3.23
+    ]
+   },
+   "head": "One goal.<br><b>One date.</b>",
+   "t0": 4.37,
+   "t1": 10.87
+  },
+  {
+   "type": "postpone-calendar",
+   "params": {
+    "days": [
+     "SAT",
+     "SUN",
+     "SAT",
+     "SUN",
+     "SAT",
+     "SUN"
+    ],
+    "nums": [
+     "4",
+     "5",
+     "11",
+     "12",
+     "18",
+     "19"
+    ],
+    "note": "draw the portrait"
+   },
+   "head": "3 weekends gone.<br><b>Still blank.</b>",
+   "t0": 10.87,
+   "t1": 17.99
+  },
+  {
+   "type": "sketch-session",
+   "params": {
+    "time": "6:40 AM",
+    "cue": [
+     "Twenty",
+     "morning",
+     "scrolling"
+    ],
+    "cost": "Cost: 20 min less scrolling in bed",
+    "at": [
+     2.0,
+     3.67,
+     6.83
+    ]
+   },
+   "head": "20 minutes.<br><b>Every morning.</b>",
+   "t0": 17.99,
+   "t1": 26.13
+  },
+  {
+   "type": "fit-breakdown",
+   "params": {
+    "stage": "draw",
+    "goal": "Her sister's portrait",
+    "program": "5 weeks, 20 min every morning",
+    "days": [
+     [
+      "WEEK 1",
+      "Shapes"
+     ],
+     [
+      "WEEK 2",
+      "Proportion"
+     ],
+     [
+      "WEEK 3",
+      "Eyes"
+     ],
+     [
+      "WEEK 4",
+      "Shading"
+     ],
+     [
+      "WEEK 5",
+      "Portrait"
+     ]
+    ],
+    "today": [
+     "20 circles, freehand",
+     "5 boxes from 3 angles",
+     "Copy 1 simple face"
+    ]
+   },
+   "head": "One skill<br><b>a week</b>.",
+   "t0": 26.13,
+   "t1": 37.71
+  },
+  {
+   "type": "sketch-progress",
+   "params": {
+    "stage": "muddy",
+    "cue": [
+     "shading",
+     "quit",
+     "again"
+    ],
+    "mud": "Muddy",
+    "fix": "Same 20 minutes, next morning",
+    "at": [
+     0.89,
+     2.63,
+     8.11
+    ]
+   },
+   "head": "Week 4:<br>she nearly <b>quit</b>.",
+   "t0": 37.71,
+   "t1": 47.3
+  },
+  {
+   "type": "sketch-progress",
+   "params": {
+    "stage": "final",
+    "cue": [
+     "framed",
+     "Thirty-five"
+    ],
+    "count": "35 mornings \u00d7 20 min \u2248 12 hours",
+    "at": [
+     2.01,
+     2.96
+    ]
+   },
+   "head": "Twelve hours,<br>in <b>20-minute</b> pieces.",
+   "t0": 47.25,
+   "t1": 55.51
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "THE 20-MINUTE PLAN",
+    "items": [
+     "One goal, one date",
+     "One skill a week",
+     "20 minutes, mornings"
+    ],
+    "cue": [
+     "goal",
+     "date",
+     "Send"
+    ],
+    "at": [
+     1.27,
+     1.91,
+     3.41
+    ]
+   },
+   "head": "Yours can<br><b>start too</b>.",
+   "t0": 55.51,
+   "t1": 62.07
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Draw her portrait",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "Shapes",
+     "Proportion",
+     "Shading"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 62.07,
+   "t1": 68.99
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Fix the thing that wrecks your mornings",
+    "when": "Tonight, 7:30 PM",
+    "cue": [
+     null,
+     "wrecks"
+    ],
+    "at": [
+     0.2,
+     2.79
+    ]
+   },
+   "head": "Next: <b>your sleep</b>.",
+   "t0": 68.99,
+   "t1": 73.94
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  40.98,
+  47.2
+ ]
+}

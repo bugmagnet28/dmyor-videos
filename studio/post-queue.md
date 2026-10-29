@@ -4,6 +4,12 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 ## Ready to post
 
+### Waiting for approval: Sat 2026-10-31 (VASK-021, V-EXP-32, first Content Kit v2 batch; Kokoro voice OK'd)
+- [ ] 09:30 IST · **ill-three-recipes** (cooking, C, 67.7s) · `ready-to-post/2026-10-31-ill-three-recipes/` · 35/40
+- [ ] 13:00 IST · **ill-twenty-mornings** (story B, 77.7s) · `ready-to-post/2026-10-31-ill-twenty-mornings/` · 35/40
+- [ ] 19:30 IST · **ill-wake-time** (sleep, A, 74.4s) · `ready-to-post/2026-10-31-ill-wake-time/` · 35/40
+- Keep this order: each follow line names the next slot ("this afternoon's", "tonight's"); wake-time promises Sunday's "morning after a bad night" (idea #43, build in the Nov 1 batch).
+
 ## Scheduled on @becauseidmyor (scheduled by Claude 2026-10-27 ~23:15 IST; Sanyam approved VASK-018 and the pixel film)
 
 Tue 2026-10-27 (today's slots had passed, so the Adam film went tonight and the batch moved to Wed):

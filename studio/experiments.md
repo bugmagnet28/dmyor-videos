@@ -328,7 +328,7 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Next: if one area clearly beats the habit reels, give it 1 daily slot next week.
 
 ## V-EXP-32: Content Kit v2 (story frame, triple hook, re-hooks, follow reason, layered sound)
-- Status: planned (opened 2026-10-28; starts with the first batch scripted after this date)
+- Status: running (first batch: Sat 2026-10-31, ill-three-recipes [C], ill-twenty-mornings [B], ill-wake-time [A]; built 2026-10-29, awaiting approval VASK-021)
 - Change: scripts follow `studio/content-kit-v2.md`: structure A/B/C, hook bank, beat map (re-hooks ~10 s and ~25 s, save moment, share line, concrete follow reason after the value close), hook sound in the first second, real CC0 object sounds, effects +4 dB, two near-silences, room-tone bed when available.
 - Why: 30-day Instagram insights (2026-10-28): 1,824 views, 98.7% non-followers, 13 profile visits, 0 follows from any reel. Reels earn views but no reason to follow.
 - Metric + target (48h per reel, IG + YT): follows, saves+shares per 1k reach, avg watch time (from app screenshots), reach. Target: at least 1 follow per batch and higher saves+shares per 1k than the Oct 25-30 batches.

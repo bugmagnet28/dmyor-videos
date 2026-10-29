@@ -1,0 +1,205 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] The free weekend you're waiting for is never coming. Maya learned that the hard way. || Her sister's wedding was eight weeks away, and Maya wanted to give her a portrait she'd drawn herself. She hadn't drawn since school. || So she saved it for the weekend. Then a birthday took one Saturday, chores took the next, and three weekends later, the paper was still blank. || [turn] Five weeks left. So she made a different choice. Twenty minutes, every morning, before work. It cost her the twenty minutes she used to spend scrolling in bed. || Then she broke the portrait into one skill a week. Week one, shapes. Then proportions, then eyes, then shading, and in the last week, the portrait itself. And every morning had one small job, like twenty circles, freehand. || [turn] Then in week four, the shading came out muddy, and she nearly quit. || So what did she do? || She didn't throw out the plan. She just did that week's twenty minutes again, the next morning. || [land] On the wedding day, her sister unwrapped a framed portrait of herself. Thirty-five mornings. About twelve hours of drawing, all in twenty-minute pieces. || Maya's portrait started with one goal and one date. Yours can too. Send this to someone who's still waiting for a free weekend. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] And follow, because tonight's reel fixes the thing that wrecks most mornings: your sleep. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "postpone-calendar",
+   "params": {
+    "days": [
+     "SAT",
+     "SUN",
+     "SAT",
+     "SUN",
+     "SAT",
+     "SUN"
+    ],
+    "nums": [
+     "4",
+     "5",
+     "11",
+     "12",
+     "18",
+     "19"
+    ],
+    "note": "draw the portrait"
+   },
+   "head": "The free weekend<br><b>never comes</b>."
+  },
+  {
+   "type": "sketch-progress",
+   "params": {
+    "stage": "blank",
+    "chips": [
+     "Wedding in 8 weeks",
+     "A portrait for her sister"
+    ],
+    "cue": [
+     "eight",
+     "portrait"
+    ]
+   },
+   "head": "One goal.<br><b>One date.</b>"
+  },
+  {
+   "type": "postpone-calendar",
+   "params": {
+    "days": [
+     "SAT",
+     "SUN",
+     "SAT",
+     "SUN",
+     "SAT",
+     "SUN"
+    ],
+    "nums": [
+     "4",
+     "5",
+     "11",
+     "12",
+     "18",
+     "19"
+    ],
+    "note": "draw the portrait"
+   },
+   "head": "3 weekends gone.<br><b>Still blank.</b>"
+  },
+  {
+   "type": "sketch-session",
+   "params": {
+    "time": "6:40 AM",
+    "cue": [
+     "Twenty",
+     "morning",
+     "scrolling"
+    ],
+    "cost": "Cost: 20 min less scrolling in bed"
+   },
+   "head": "20 minutes.<br><b>Every morning.</b>"
+  },
+  {
+   "type": "fit-breakdown",
+   "params": {
+    "stage": "draw",
+    "goal": "Her sister's portrait",
+    "program": "5 weeks, 20 min every morning",
+    "days": [
+     [
+      "WEEK 1",
+      "Shapes"
+     ],
+     [
+      "WEEK 2",
+      "Proportion"
+     ],
+     [
+      "WEEK 3",
+      "Eyes"
+     ],
+     [
+      "WEEK 4",
+      "Shading"
+     ],
+     [
+      "WEEK 5",
+      "Portrait"
+     ]
+    ],
+    "today": [
+     "20 circles, freehand",
+     "5 boxes from 3 angles",
+     "Copy 1 simple face"
+    ]
+   },
+   "head": "One skill<br><b>a week</b>."
+  },
+  {
+   "type": "sketch-progress",
+   "params": {
+    "stage": "muddy",
+    "cue": [
+     "shading",
+     "quit",
+     "again"
+    ],
+    "mud": "Muddy",
+    "fix": "Same 20 minutes, next morning"
+   },
+   "head": "Week 4:<br>she nearly <b>quit</b>."
+  },
+  null,
+  null,
+  {
+   "type": "sketch-progress",
+   "params": {
+    "stage": "final",
+    "cue": [
+     "framed",
+     "Thirty-five"
+    ],
+    "count": "35 mornings \u00d7 20 min \u2248 12 hours"
+   },
+   "head": "Twelve hours,<br>in <b>20-minute</b> pieces."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "THE 20-MINUTE PLAN",
+    "items": [
+     "One goal, one date",
+     "One skill a week",
+     "20 minutes, mornings"
+    ],
+    "cue": [
+     "goal",
+     "date",
+     "Send"
+    ]
+   },
+   "head": "Yours can<br><b>start too</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Draw her portrait",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "Shapes",
+     "Proportion",
+     "Shading"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Fix the thing that wrecks your mornings",
+    "when": "Tonight, 7:30 PM",
+    "cue": [
+     null,
+     "wrecks"
+    ]
+   },
+   "head": "Next: <b>your sleep</b>."
+  },
+  null
+ ],
+ "brand_from": 12,
+ "silences": [
+  "So what did",
+  "On the wedding"
+ ],
+ "caption": {
+  "instagram": "The free weekend you're waiting for is never coming.\n\nMaya had 8 weeks until her sister's wedding and wanted to give her a portrait she drew herself. Three weekends went to a birthday and chores. Paper still blank.\n\nSo she changed the plan:\n1. 20 minutes every morning, before work (the 20 minutes she used to scroll in bed)\n2. One skill a week: shapes, proportions, eyes, shading, the portrait\n3. When week 4 came out muddy, she didn't quit. Same 20 minutes, next morning.\n\n35 mornings. About 12 hours of drawing. One framed portrait.\n\nSend this to someone who's still waiting for a free weekend.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#drawing #learntodraw #habits #consistency #goals",
+  "x": "The free weekend you're waiting for is never coming.\n\n20 minutes every morning. One skill a week. 35 mornings later: about 12 hours of drawing and a framed portrait.",
+  "youtube_title": "The free weekend never comes #Shorts"
+ }
+}

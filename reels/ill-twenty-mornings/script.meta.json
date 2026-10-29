@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft; Sanyam said Kokoro is fine for this batch)",
+ "experiment": "V-EXP-32 (Content Kit v2, first batch)",
+ "slug": "ill-twenty-mornings",
+ "hook_type": "story",
+ "topic": "consistency / learning a skill",
+ "hook": "The free weekend you're waiting for is never coming.",
+ "frame": {
+  "structure": "B (want, obstacle, choice, payoff)",
+  "want": "Maya: a self-drawn portrait for her sister's wedding in 8 weeks",
+  "obstacle": "waiting for free weekends; 3 weekends lost to a birthday and chores",
+  "cost": "3 weekends, 0 drawings, 5 weeks left; the choice costs 20 minutes of scrolling in bed each morning"
+ },
+ "hooks_considered": [
+  {
+   "formula": "hard truth (last line first)",
+   "line": "The free weekend you're waiting for is never coming.",
+   "checks": "hard truth Y, gap Y (so how did she?), muted Y (weekends struck), sendable Y, payoff Y (framed portrait)",
+   "kept": true
+  },
+  {
+   "formula": "number that changes it",
+   "line": "Twenty minutes a day is twelve hours by the wedding.",
+   "checks": "payoff given away, weak gap",
+   "kept": false
+  },
+  {
+   "formula": "uncomfortable comparison",
+   "line": "Same five weeks. One blank page, one framed portrait.",
+   "checks": "good but needs setup before it lands",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "The free weekend never comes (0.0 s)",
+  "open_loop": {
+   "promised": "how Maya got the portrait done",
+   "withheld": "20 minutes every morning + one skill a week"
+  },
+  "stakes": "wedding in 8 weeks, hasn't drawn since school",
+  "rehook_10": "three weekends later, the paper was still blank",
+  "interrupt": "alarm clock rings, 20:00 timer, circles drawn in the sketchbook",
+  "rehook_25": "week four, shading muddy, she nearly quit. So what did she do? (near-silence 1 before the question)",
+  "save_moment": "THE 20-MINUTE PLAN card",
+  "share_line": "Send this to someone who's still waiting for a free weekend.",
+  "follow_reason": "tonight's reel (ill-wake-time, 19:30 Sat): fixing sleep",
+  "payoff_sound": "reveal when the portrait frame appears"
+ },
+ "note": "Maya is an illustrative character (like Sam in pixel-book), not presented as a user or testimonial. Math: 5 weeks x 7 = 35 mornings x 20 min = 700 min = 11.7 h, said 'about twelve hours'. Bridge to the viewer before Dmyor (owner rule 10-27).",
+ "quality": {
+  "hook": 5,
+  "usefulness": 4,
+  "specificity": 5,
+  "clarity": 4,
+  "retention": 5,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 35
+ }
+}

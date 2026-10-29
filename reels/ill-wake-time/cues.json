@@ -1,0 +1,1686 @@
+{
+ "audio": "audio.mp3",
+ "duration": 74.43,
+ "text": "You can't fix your sleep at night, you fix it in the morning. There's one number that fixes most bad nights, and it isn't your bedtime. Say you wake up at 7 all week, then sleep in until 10 on the weekend. That's 3 hours. By Monday your body clock is in a different time zone, so you lie awake at midnight and drag yourself out of bed. The number is your wake-up time. Pick one you can keep 7 days a week, weekends 2, say 7.30. Step 2. When the alarm goes off, get daylight within 10 minutes. Open the curtains or have your coffee by the window. Step 3. Work backwards. If you need 8 hours, bedtime is 11.30, so set a second alarm at 11 to start winding down. But what about Saturday? You don't have to be strict, sleep in 1 hour max, 8.30 not 10. Keep that for a week and the jagged line goes flat. Monday stops feeling like jet lag and most nights you get sleepy around the same time. Here's your reset, same wake time, 7 days, daylight within 10 minutes, a wind-down alarm before bed, send this to the friend who sleeps until noon on Sundays. That's what Demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. And follow because tomorrow's reel is what to do the morning after a bad night. If you want to try it out, I've put the link in the bio.",
+ "words": [
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 0.0,
+   "e": 0.26
+  },
+  {
+   "w": "cant",
+   "raw": "can't",
+   "s": 0.26,
+   "e": 0.56
+  },
+  {
+   "w": "fix",
+   "raw": "fix",
+   "s": 0.56,
+   "e": 0.68
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 0.68,
+   "e": 0.84
+  },
+  {
+   "w": "sleep",
+   "raw": "sleep",
+   "s": 0.84,
+   "e": 1.04
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 1.04,
+   "e": 1.2
+  },
+  {
+   "w": "night",
+   "raw": "night,",
+   "s": 1.2,
+   "e": 1.42
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 1.62,
+   "e": 1.7
+  },
+  {
+   "w": "fix",
+   "raw": "fix",
+   "s": 1.7,
+   "e": 1.86
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 1.86,
+   "e": 2.02
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 2.02,
+   "e": 2.12
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 2.12,
+   "e": 2.22
+  },
+  {
+   "w": "morning",
+   "raw": "morning.",
+   "s": 2.22,
+   "e": 2.5
+  },
+  {
+   "w": "theres",
+   "raw": "There's",
+   "s": 3.0,
+   "e": 3.22
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 3.22,
+   "e": 3.42
+  },
+  {
+   "w": "number",
+   "raw": "number",
+   "s": 3.42,
+   "e": 3.66
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 3.66,
+   "e": 3.9
+  },
+  {
+   "w": "fixes",
+   "raw": "fixes",
+   "s": 3.9,
+   "e": 4.16
+  },
+  {
+   "w": "most",
+   "raw": "most",
+   "s": 4.16,
+   "e": 4.52
+  },
+  {
+   "w": "bad",
+   "raw": "bad",
+   "s": 4.52,
+   "e": 4.82
+  },
+  {
+   "w": "nights",
+   "raw": "nights,",
+   "s": 4.82,
+   "e": 5.18
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 5.5,
+   "e": 5.54
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 5.54,
+   "e": 5.64
+  },
+  {
+   "w": "isnt",
+   "raw": "isn't",
+   "s": 5.64,
+   "e": 5.84
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 5.84,
+   "e": 5.96
+  },
+  {
+   "w": "bedtime",
+   "raw": "bedtime.",
+   "s": 5.96,
+   "e": 6.48
+  },
+  {
+   "w": "say",
+   "raw": "Say",
+   "s": 6.88,
+   "e": 7.02
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 7.02,
+   "e": 7.16
+  },
+  {
+   "w": "wake",
+   "raw": "wake",
+   "s": 7.16,
+   "e": 7.32
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 7.32,
+   "e": 7.46
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 7.46,
+   "e": 7.6
+  },
+  {
+   "w": "7",
+   "raw": "7",
+   "s": 7.6,
+   "e": 7.82
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 7.82,
+   "e": 8.06
+  },
+  {
+   "w": "week",
+   "raw": "week,",
+   "s": 8.06,
+   "e": 8.3
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 8.48,
+   "e": 8.56
+  },
+  {
+   "w": "sleep",
+   "raw": "sleep",
+   "s": 8.56,
+   "e": 8.84
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 8.84,
+   "e": 9.02
+  },
+  {
+   "w": "until",
+   "raw": "until",
+   "s": 9.02,
+   "e": 9.26
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 9.26,
+   "e": 9.48
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 9.48,
+   "e": 9.64
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 9.64,
+   "e": 9.76
+  },
+  {
+   "w": "weekend",
+   "raw": "weekend.",
+   "s": 9.76,
+   "e": 10.08
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 10.54,
+   "e": 10.78
+  },
+  {
+   "w": "3",
+   "raw": "3",
+   "s": 10.78,
+   "e": 10.98
+  },
+  {
+   "w": "hours",
+   "raw": "hours.",
+   "s": 10.98,
+   "e": 11.28
+  },
+  {
+   "w": "by",
+   "raw": "By",
+   "s": 11.8,
+   "e": 11.92
+  },
+  {
+   "w": "monday",
+   "raw": "Monday",
+   "s": 11.92,
+   "e": 12.18
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 12.18,
+   "e": 12.42
+  },
+  {
+   "w": "body",
+   "raw": "body",
+   "s": 12.42,
+   "e": 12.64
+  },
+  {
+   "w": "clock",
+   "raw": "clock",
+   "s": 12.64,
+   "e": 12.9
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 12.9,
+   "e": 13.1
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 13.1,
+   "e": 13.2
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 13.2,
+   "e": 13.3
+  },
+  {
+   "w": "different",
+   "raw": "different",
+   "s": 13.3,
+   "e": 13.5
+  },
+  {
+   "w": "time",
+   "raw": "time",
+   "s": 13.5,
+   "e": 13.78
+  },
+  {
+   "w": "zone",
+   "raw": "zone,",
+   "s": 13.78,
+   "e": 14.08
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 14.3,
+   "e": 14.36
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 14.36,
+   "e": 14.52
+  },
+  {
+   "w": "lie",
+   "raw": "lie",
+   "s": 14.52,
+   "e": 14.66
+  },
+  {
+   "w": "awake",
+   "raw": "awake",
+   "s": 14.66,
+   "e": 14.94
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 14.94,
+   "e": 15.1
+  },
+  {
+   "w": "midnight",
+   "raw": "midnight",
+   "s": 15.1,
+   "e": 15.38
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 15.38,
+   "e": 15.58
+  },
+  {
+   "w": "drag",
+   "raw": "drag",
+   "s": 15.58,
+   "e": 15.82
+  },
+  {
+   "w": "yourself",
+   "raw": "yourself",
+   "s": 15.82,
+   "e": 16.12
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 16.12,
+   "e": 16.36
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 16.36,
+   "e": 16.5
+  },
+  {
+   "w": "bed",
+   "raw": "bed.",
+   "s": 16.5,
+   "e": 16.66
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 17.06,
+   "e": 17.24
+  },
+  {
+   "w": "number",
+   "raw": "number",
+   "s": 17.24,
+   "e": 17.4
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 17.4,
+   "e": 17.6
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 17.6,
+   "e": 17.76
+  },
+  {
+   "w": "wake",
+   "raw": "wake",
+   "s": 17.76,
+   "e": 17.96
+  },
+  {
+   "w": "up",
+   "raw": "-up",
+   "s": 17.96,
+   "e": 18.12
+  },
+  {
+   "w": "time",
+   "raw": "time.",
+   "s": 18.12,
+   "e": 18.46
+  },
+  {
+   "w": "pick",
+   "raw": "Pick",
+   "s": 18.76,
+   "e": 18.84
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 18.84,
+   "e": 19.02
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 19.02,
+   "e": 19.14
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 19.14,
+   "e": 19.26
+  },
+  {
+   "w": "keep",
+   "raw": "keep",
+   "s": 19.26,
+   "e": 19.42
+  },
+  {
+   "w": "7",
+   "raw": "7",
+   "s": 19.42,
+   "e": 19.76
+  },
+  {
+   "w": "days",
+   "raw": "days",
+   "s": 19.76,
+   "e": 19.98
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 19.98,
+   "e": 20.14
+  },
+  {
+   "w": "week",
+   "raw": "week,",
+   "s": 20.14,
+   "e": 20.32
+  },
+  {
+   "w": "weekends",
+   "raw": "weekends",
+   "s": 20.7,
+   "e": 20.7
+  },
+  {
+   "w": "2",
+   "raw": "2,",
+   "s": 20.7,
+   "e": 21.1
+  },
+  {
+   "w": "say",
+   "raw": "say",
+   "s": 21.3,
+   "e": 21.4
+  },
+  {
+   "w": "7",
+   "raw": "7",
+   "s": 21.4,
+   "e": 21.76
+  },
+  {
+   "w": "30",
+   "raw": ".30.",
+   "s": 21.76,
+   "e": 22.06
+  },
+  {
+   "w": "step",
+   "raw": "Step",
+   "s": 22.58,
+   "e": 22.76
+  },
+  {
+   "w": "2",
+   "raw": "2.",
+   "s": 22.76,
+   "e": 23.06
+  },
+  {
+   "w": "when",
+   "raw": "When",
+   "s": 23.22,
+   "e": 23.26
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 23.26,
+   "e": 23.4
+  },
+  {
+   "w": "alarm",
+   "raw": "alarm",
+   "s": 23.4,
+   "e": 23.64
+  },
+  {
+   "w": "goes",
+   "raw": "goes",
+   "s": 23.64,
+   "e": 23.9
+  },
+  {
+   "w": "off",
+   "raw": "off,",
+   "s": 23.9,
+   "e": 24.2
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 24.32,
+   "e": 24.42
+  },
+  {
+   "w": "daylight",
+   "raw": "daylight",
+   "s": 24.42,
+   "e": 24.78
+  },
+  {
+   "w": "within",
+   "raw": "within",
+   "s": 24.78,
+   "e": 25.06
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 25.06,
+   "e": 25.34
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes.",
+   "s": 25.34,
+   "e": 25.66
+  },
+  {
+   "w": "open",
+   "raw": "Open",
+   "s": 25.66,
+   "e": 26.28
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 26.28,
+   "e": 26.5
+  },
+  {
+   "w": "curtains",
+   "raw": "curtains",
+   "s": 26.5,
+   "e": 26.82
+  },
+  {
+   "w": "or",
+   "raw": "or",
+   "s": 26.82,
+   "e": 27.1
+  },
+  {
+   "w": "have",
+   "raw": "have",
+   "s": 27.1,
+   "e": 27.24
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 27.24,
+   "e": 27.38
+  },
+  {
+   "w": "coffee",
+   "raw": "coffee",
+   "s": 27.38,
+   "e": 27.68
+  },
+  {
+   "w": "by",
+   "raw": "by",
+   "s": 27.68,
+   "e": 27.9
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 27.9,
+   "e": 28.02
+  },
+  {
+   "w": "window",
+   "raw": "window.",
+   "s": 28.02,
+   "e": 28.4
+  },
+  {
+   "w": "step",
+   "raw": "Step",
+   "s": 28.84,
+   "e": 29.04
+  },
+  {
+   "w": "3",
+   "raw": "3.",
+   "s": 29.04,
+   "e": 29.34
+  },
+  {
+   "w": "work",
+   "raw": "Work",
+   "s": 29.5,
+   "e": 29.6
+  },
+  {
+   "w": "backwards",
+   "raw": "backwards.",
+   "s": 29.6,
+   "e": 30.04
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 30.52,
+   "e": 30.58
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 30.58,
+   "e": 30.68
+  },
+  {
+   "w": "need",
+   "raw": "need",
+   "s": 30.68,
+   "e": 30.86
+  },
+  {
+   "w": "8",
+   "raw": "8",
+   "s": 30.86,
+   "e": 31.12
+  },
+  {
+   "w": "hours",
+   "raw": "hours,",
+   "s": 31.12,
+   "e": 31.42
+  },
+  {
+   "w": "bedtime",
+   "raw": "bedtime",
+   "s": 31.58,
+   "e": 31.94
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 31.94,
+   "e": 32.12
+  },
+  {
+   "w": "11",
+   "raw": "11",
+   "s": 32.12,
+   "e": 32.4
+  },
+  {
+   "w": "30",
+   "raw": ".30,",
+   "s": 32.4,
+   "e": 32.78
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 33.12,
+   "e": 33.5
+  },
+  {
+   "w": "set",
+   "raw": "set",
+   "s": 33.5,
+   "e": 33.68
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 33.68,
+   "e": 33.8
+  },
+  {
+   "w": "second",
+   "raw": "second",
+   "s": 33.8,
+   "e": 34.06
+  },
+  {
+   "w": "alarm",
+   "raw": "alarm",
+   "s": 34.06,
+   "e": 34.34
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 34.34,
+   "e": 34.62
+  },
+  {
+   "w": "11",
+   "raw": "11",
+   "s": 34.62,
+   "e": 34.9
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 34.9,
+   "e": 35.16
+  },
+  {
+   "w": "start",
+   "raw": "start",
+   "s": 35.16,
+   "e": 35.4
+  },
+  {
+   "w": "winding",
+   "raw": "winding",
+   "s": 35.4,
+   "e": 35.72
+  },
+  {
+   "w": "down",
+   "raw": "down.",
+   "s": 35.72,
+   "e": 36.18
+  },
+  {
+   "w": "but",
+   "raw": "But",
+   "s": 36.64,
+   "e": 36.76
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 36.76,
+   "e": 36.92
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 36.92,
+   "e": 37.22
+  },
+  {
+   "w": "saturday",
+   "raw": "Saturday?",
+   "s": 37.22,
+   "e": 37.58
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 38.48,
+   "e": 38.58
+  },
+  {
+   "w": "dont",
+   "raw": "don't",
+   "s": 38.58,
+   "e": 38.74
+  },
+  {
+   "w": "have",
+   "raw": "have",
+   "s": 38.74,
+   "e": 38.9
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 38.9,
+   "e": 39.02
+  },
+  {
+   "w": "be",
+   "raw": "be",
+   "s": 39.02,
+   "e": 39.14
+  },
+  {
+   "w": "strict",
+   "raw": "strict,",
+   "s": 39.14,
+   "e": 39.42
+  },
+  {
+   "w": "sleep",
+   "raw": "sleep",
+   "s": 39.68,
+   "e": 39.8
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 39.8,
+   "e": 39.96
+  },
+  {
+   "w": "1",
+   "raw": "1",
+   "s": 39.96,
+   "e": 40.14
+  },
+  {
+   "w": "hour",
+   "raw": "hour",
+   "s": 40.14,
+   "e": 40.3
+  },
+  {
+   "w": "max",
+   "raw": "max,",
+   "s": 40.3,
+   "e": 40.58
+  },
+  {
+   "w": "8",
+   "raw": "8",
+   "s": 40.86,
+   "e": 41.06
+  },
+  {
+   "w": "30",
+   "raw": ".30",
+   "s": 41.06,
+   "e": 41.36
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 41.36,
+   "e": 41.58
+  },
+  {
+   "w": "10",
+   "raw": "10.",
+   "s": 41.58,
+   "e": 41.9
+  },
+  {
+   "w": "keep",
+   "raw": "Keep",
+   "s": 42.28,
+   "e": 42.58
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 42.58,
+   "e": 42.78
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 42.78,
+   "e": 42.96
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 42.96,
+   "e": 43.08
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 43.08,
+   "e": 43.22
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 43.22,
+   "e": 43.44
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 43.44,
+   "e": 43.58
+  },
+  {
+   "w": "jagged",
+   "raw": "jagged",
+   "s": 43.58,
+   "e": 43.88
+  },
+  {
+   "w": "line",
+   "raw": "line",
+   "s": 43.88,
+   "e": 44.16
+  },
+  {
+   "w": "goes",
+   "raw": "goes",
+   "s": 44.16,
+   "e": 44.46
+  },
+  {
+   "w": "flat",
+   "raw": "flat.",
+   "s": 44.46,
+   "e": 44.84
+  },
+  {
+   "w": "monday",
+   "raw": "Monday",
+   "s": 45.48,
+   "e": 45.68
+  },
+  {
+   "w": "stops",
+   "raw": "stops",
+   "s": 45.68,
+   "e": 46.04
+  },
+  {
+   "w": "feeling",
+   "raw": "feeling",
+   "s": 46.04,
+   "e": 46.38
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 46.38,
+   "e": 46.68
+  },
+  {
+   "w": "jet",
+   "raw": "jet",
+   "s": 46.68,
+   "e": 46.94
+  },
+  {
+   "w": "lag",
+   "raw": "lag",
+   "s": 46.94,
+   "e": 47.2
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 47.2,
+   "e": 47.46
+  },
+  {
+   "w": "most",
+   "raw": "most",
+   "s": 47.46,
+   "e": 47.66
+  },
+  {
+   "w": "nights",
+   "raw": "nights",
+   "s": 47.66,
+   "e": 47.9
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 47.9,
+   "e": 48.14
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 48.14,
+   "e": 48.3
+  },
+  {
+   "w": "sleepy",
+   "raw": "sleepy",
+   "s": 48.3,
+   "e": 48.66
+  },
+  {
+   "w": "around",
+   "raw": "around",
+   "s": 48.66,
+   "e": 48.96
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 48.96,
+   "e": 49.14
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 49.14,
+   "e": 49.34
+  },
+  {
+   "w": "time",
+   "raw": "time.",
+   "s": 49.34,
+   "e": 49.8
+  },
+  {
+   "w": "heres",
+   "raw": "Here's",
+   "s": 50.28,
+   "e": 50.46
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 50.46,
+   "e": 50.56
+  },
+  {
+   "w": "reset",
+   "raw": "reset,",
+   "s": 50.56,
+   "e": 50.9
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 51.12,
+   "e": 51.3
+  },
+  {
+   "w": "wake",
+   "raw": "wake",
+   "s": 51.3,
+   "e": 51.5
+  },
+  {
+   "w": "time",
+   "raw": "time,",
+   "s": 51.5,
+   "e": 51.8
+  },
+  {
+   "w": "7",
+   "raw": "7",
+   "s": 51.8,
+   "e": 52.22
+  },
+  {
+   "w": "days",
+   "raw": "days,",
+   "s": 52.22,
+   "e": 52.58
+  },
+  {
+   "w": "daylight",
+   "raw": "daylight",
+   "s": 52.78,
+   "e": 53.02
+  },
+  {
+   "w": "within",
+   "raw": "within",
+   "s": 53.02,
+   "e": 53.28
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 53.28,
+   "e": 53.56
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes,",
+   "s": 53.56,
+   "e": 53.88
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 54.34,
+   "e": 54.38
+  },
+  {
+   "w": "wind",
+   "raw": "wind",
+   "s": 54.38,
+   "e": 54.56
+  },
+  {
+   "w": "down",
+   "raw": "-down",
+   "s": 54.56,
+   "e": 54.84
+  },
+  {
+   "w": "alarm",
+   "raw": "alarm",
+   "s": 54.84,
+   "e": 55.2
+  },
+  {
+   "w": "before",
+   "raw": "before",
+   "s": 55.2,
+   "e": 55.5
+  },
+  {
+   "w": "bed",
+   "raw": "bed,",
+   "s": 55.5,
+   "e": 55.8
+  },
+  {
+   "w": "send",
+   "raw": "send",
+   "s": 56.12,
+   "e": 56.2
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 56.2,
+   "e": 56.38
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 56.38,
+   "e": 56.52
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 56.52,
+   "e": 56.66
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 56.66,
+   "e": 56.84
+  },
+  {
+   "w": "who",
+   "raw": "who",
+   "s": 56.84,
+   "e": 57.06
+  },
+  {
+   "w": "sleeps",
+   "raw": "sleeps",
+   "s": 57.06,
+   "e": 57.32
+  },
+  {
+   "w": "until",
+   "raw": "until",
+   "s": 57.32,
+   "e": 57.68
+  },
+  {
+   "w": "noon",
+   "raw": "noon",
+   "s": 57.68,
+   "e": 57.88
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 57.88,
+   "e": 58.12
+  },
+  {
+   "w": "sundays",
+   "raw": "Sundays.",
+   "s": 58.12,
+   "e": 58.4
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 59.0,
+   "e": 59.3
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 59.3,
+   "e": 59.44
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 59.44,
+   "e": 59.82
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 59.82,
+   "e": 59.98
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 59.98,
+   "e": 60.26
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 60.66,
+   "e": 60.78
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 60.78,
+   "e": 61.16
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 61.16,
+   "e": 61.36
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 61.36,
+   "e": 61.6
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 61.6,
+   "e": 61.92
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 61.92,
+   "e": 62.18
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 62.18,
+   "e": 62.32
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 62.32,
+   "e": 62.46
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 62.46,
+   "e": 62.7
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 62.7,
+   "e": 62.82
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 62.82,
+   "e": 63.12
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 63.12,
+   "e": 63.58
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 63.58,
+   "e": 63.74
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 63.74,
+   "e": 63.9
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 63.9,
+   "e": 64.1
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 64.1,
+   "e": 64.32
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 64.32,
+   "e": 64.64
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 64.64,
+   "e": 64.94
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 64.94,
+   "e": 65.16
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 65.16,
+   "e": 65.28
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 65.28,
+   "e": 65.62
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 65.62,
+   "e": 65.92
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 66.26,
+   "e": 66.42
+  },
+  {
+   "w": "follow",
+   "raw": "follow",
+   "s": 66.42,
+   "e": 66.7
+  },
+  {
+   "w": "because",
+   "raw": "because",
+   "s": 66.7,
+   "e": 67.18
+  },
+  {
+   "w": "tomorrows",
+   "raw": "tomorrow's",
+   "s": 67.18,
+   "e": 67.82
+  },
+  {
+   "w": "reel",
+   "raw": "reel",
+   "s": 67.82,
+   "e": 68.06
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 68.06,
+   "e": 68.36
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 68.36,
+   "e": 68.52
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 68.52,
+   "e": 68.68
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 68.68,
+   "e": 68.82
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 68.82,
+   "e": 68.92
+  },
+  {
+   "w": "morning",
+   "raw": "morning",
+   "s": 68.92,
+   "e": 69.16
+  },
+  {
+   "w": "after",
+   "raw": "after",
+   "s": 69.16,
+   "e": 69.48
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 69.48,
+   "e": 69.66
+  },
+  {
+   "w": "bad",
+   "raw": "bad",
+   "s": 69.66,
+   "e": 69.86
+  },
+  {
+   "w": "night",
+   "raw": "night.",
+   "s": 69.86,
+   "e": 70.18
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 70.6,
+   "e": 70.76
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 70.76,
+   "e": 70.88
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 70.88,
+   "e": 71.06
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 71.06,
+   "e": 71.18
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 71.18,
+   "e": 71.4
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 71.4,
+   "e": 71.6
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 71.6,
+   "e": 71.84
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 72.06,
+   "e": 72.18
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 72.18,
+   "e": 72.3
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 72.3,
+   "e": 72.46
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 72.46,
+   "e": 72.64
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 72.64,
+   "e": 72.82
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 72.82,
+   "e": 72.9
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 72.9,
+   "e": 73.18
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 2.5,
+   "text": "You can't fix your sleep at night, you fix it in the morning."
+  },
+  {
+   "s": 3.0,
+   "e": 6.48,
+   "text": "There's one number that fixes most bad nights, and it isn't your bedtime."
+  },
+  {
+   "s": 6.88,
+   "e": 11.28,
+   "text": "Say you wake up at 7 all week, then sleep in until 10 on the weekend. That's 3 hours."
+  },
+  {
+   "s": 11.8,
+   "e": 15.58,
+   "text": "By Monday your body clock is in a different time zone, so you lie awake at midnight and"
+  },
+  {
+   "s": 15.58,
+   "e": 20.32,
+   "text": "drag yourself out of bed. The number is your wake-up time. Pick one you can keep 7 days a week,"
+  },
+  {
+   "s": 20.7,
+   "e": 25.66,
+   "text": "weekends 2, say 7.30. Step 2. When the alarm goes off, get daylight within 10 minutes."
+  },
+  {
+   "s": 25.66,
+   "e": 28.4,
+   "text": "Open the curtains or have your coffee by the window."
+  },
+  {
+   "s": 28.84,
+   "e": 34.9,
+   "text": "Step 3. Work backwards. If you need 8 hours, bedtime is 11.30, so set a second alarm at 11"
+  },
+  {
+   "s": 34.9,
+   "e": 40.58,
+   "text": "to start winding down. But what about Saturday? You don't have to be strict, sleep in 1 hour max,"
+  },
+  {
+   "s": 40.86,
+   "e": 46.94,
+   "text": "8.30 not 10. Keep that for a week and the jagged line goes flat. Monday stops feeling like jet"
+  },
+  {
+   "s": 46.94,
+   "e": 51.8,
+   "text": "lag and most nights you get sleepy around the same time. Here's your reset, same wake time,"
+  },
+  {
+   "s": 51.8,
+   "e": 57.06,
+   "text": "7 days, daylight within 10 minutes, a wind-down alarm before bed, send this to the friend who"
+  },
+  {
+   "s": 57.06,
+   "e": 62.46,
+   "text": "sleeps until noon on Sundays. That's what Demure is for. You archive your dream today so you can"
+  },
+  {
+   "s": 62.46,
+   "e": 67.18,
+   "text": "see it tomorrow and break it down into small steps you can actually do. And follow because"
+  },
+  {
+   "s": 67.18,
+   "e": 72.3,
+   "text": "tomorrow's reel is what to do the morning after a bad night. If you want to try it out, I've put"
+  },
+  {
+   "s": 72.3,
+   "e": 73.18,
+   "text": "the link in the bio."
+  }
+ ],
+ "wps": 3.57
+}

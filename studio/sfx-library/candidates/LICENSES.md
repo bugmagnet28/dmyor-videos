@@ -15,3 +15,5 @@ Every file here is CC0 (no credit required). Source kept for the record.
 | door-close-door_close-2.wav | Cabinet Door Close | jackthemurray | CC0 | https://freesound.org/people/jackthemurray/sounds/433587 |
 | ambience-room-room_tone-1.wav | Room Tone Apartment Small Bachelor | leonelmail | CC0 | https://freesound.org/people/leonelmail/sounds/329568 |
 | ambience-room-room_tone-2.wav | room tone large empty bass hum rumble mosque.flac | kyles | CC0 | https://freesound.org/people/kyles/sounds/451616 |
+| page-flip-paper-1.wav | Paper Crumpled 001 | razrox | CC0 | https://freesound.org/people/razrox/sounds/197179 |
+| page-flip-paper-2.wav | paper flip 1.wav | gynation | CC0 | https://freesound.org/people/gynation/sounds/82377 |

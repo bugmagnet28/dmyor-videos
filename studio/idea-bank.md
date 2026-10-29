@@ -44,5 +44,9 @@ Every idea hands the viewer **one thing they can do today** (see `quality-bar.md
 
 | 38 | "You're not getting better because you keep practising the part you can already do." | Find where you break down, loop only that slowly (10 clean, then faster), 10 min before the whole thing; language: record 1 min of speaking | ILL | 2026-10-28 built (ill-hard-part, for Oct 30) |
 | 39 | "You don't need a morning routine. You need a first 10 minutes." | Write the first 10 minutes of tomorrow in 3 lines tonight; phone stays off until they are done | ILL | |
-| 40 | "Learning to cook? Stop collecting recipes. Master 3." | Pick 3 weeknight dinners, cook each twice this week, write the shopping list once | ILL | |
+| 40 | "Learning to cook? Stop collecting recipes. Master 3." | Pick 3 weeknight dinners, cook each twice this week, write the shopping list once | ILL | 2026-10-29 built (ill-three-recipes, for Oct 31) |
+| 41 | "The free weekend never comes." (story, Maya) | 20 min every morning, one skill a week, redo the week when it goes wrong | ILL story B | 2026-10-29 built (ill-twenty-mornings, for Oct 31) |
+| 42 | "You can't fix your sleep at night. You fix it in the morning." | Same wake time 7 days, daylight within 10 min, wind-down alarm, weekends +1 h max | ILL A | 2026-10-29 built (ill-wake-time, for Oct 31) |
+| 43 | **PROMISED (ill-wake-time follow line): "What to do the morning after a bad night"** | Get up at the usual time anyway, daylight, no lie-in; if you nap, 20 min before 3 PM; keep bedtime, don't go early | ILL | **must be in the Sun Nov 1 batch** |
+
 Rules: avoid pure quotes/motivation, avoid promising locked features ("full features are releasing soon"), one takeaway per reel, specific numbers and real examples, fuller spoken narration (write for the ear).

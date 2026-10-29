@@ -36,6 +36,7 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 - `pencil` is a soft pen (band-limited strokes, owner 2026-10-27: never a scratchy pencil).
 - Object sounds: `clock` (tick-tock while a clock is on screen), `timer` (fast ticking while a timer runs), `beep2` (timer passes the limit), `pencil` (crossing out, writing; give a duration), `page` (calendar or page flip), `riffle` (pages counting up), `footsteps` (a person walking), `plate` (gym weight clink), `stamp` (archiving), `coin` (money landing), `typing` (keyboard, bed), `buzz` (phone vibrating), `door` (door closing), `toggle` (switch on).
 - Feedback sounds: `right` (every check mark / done: a soft two-note "correct" chime that steps up in pitch along a run of checks in the same scene) and `pop` (anything appearing: cards, chips, rows; pitch varies per item). Never reuse one sound for everything: checks = right, appearing = pop, objects = their own sound.
+- New 2026-10-29: `alarm` (bedside alarm), `sizzle` (pan, fades), `chop` (knife on board), `reveal` (the ONE payoff sound per reel, Content Kit v2; `before-after` and `sketch-progress:final` use it).
 - Interface sounds, only where nothing above fits: `swish` (scene change), `ratchet` (abstract counter), `tone` (warm swell under the value close), `chord` (brand card).
 - `events.json`: per scene type, `[seconds after scene start, sound, duration or "end"]`, mirroring the animation timings in `illustrated.html`: **change both together**, and give every new scene its object sounds.
 - Hook scene is silent (finished on frame 0). One-shots closer than 0.28 s are dropped; beds (clock, timer, footsteps, riffle) may overlap. The voice ducks effects lightly. `"sfx"`: `"present"` (default), `"subtle"` (-6 dB), `"off"`. Outputs `audio_voice.mp3`, `audio_fx.wav` (effects alone, for checking), `audio_mixed.mp3`.
@@ -48,7 +49,7 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `book-vs-evening` | 300-page stack counts up next to a clock on a weeknight | `pages`, `when` |
 | `book-breakdown` | big item shrinks aside, sub-steps tick off, a daily-amount counter | `book`, `items[3]`, `per`, `unit` |
 | `week-tracker` | 7-day grid, chosen days ticked, a person walks the line | `on` (day indexes), `what` |
-| `fit-breakdown` | goal → program → 6 day chips → today (Chest) highlighted → today's exercises tick off | `goal`, `program`, `days[[day,name]]`, `today[3]` |
+| `fit-breakdown` | goal → program → 5-6 day chips (centred; `stage: draw` swaps the plate clink for pen sounds) → today (Chest) highlighted → today's exercises tick off | `goal`, `program`, `days[[day,name]]`, `today[3]` |
 | `fifteen-test` | timer runs past the limit (red, "too big"), the step splits into 3, timer resets green ("start now") | `minutes`, `over`, `small`, `step`, `parts[3]` |
 | `weather-week` | week of sunny days ticked, one cloudy day crossed, the rest fade (hook) | `bad`, `days` |
 | `energy-dip` | energy line dips; checks stop at the bad day, the rest of the week fades | cue: plans / bad / falls apart |
@@ -117,6 +118,17 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `tempo-loop` | swinging metronome (bpm), 10 clean-rep checks, bpm nudges up, "10 minutes, then the whole song" | `bpm[2]`, `n`, `timer`; cue x4 |
 | `voice-record` | vocab lesson chip struck, phone records 1:00 with a live waveform, M-S ticks | `drop`, `prompt`; cue x3 |
 | `easy-hard` | two effort gauges: "Feels easy = rehearsing" (dim) vs "Feels hard = improving" (sage + check) | `a`, `ar`, `b`, `br`; cue x2 |
+| `recipe-saved` | phone "Saved 214" grid of recipe tiles scrolling + COOKED 0 card; `stage` hook / tuesday (clock 7:00 → 7:20 PM, "Toast. Again." card) | `count`, `names`, `day`, `result`; cue [scroll, twenty, toast] |
+| `cost-tally` | (structure C) notepad rows [label, amount] pencilled in, sum line, total counts up in clay, optional note card | `rows`, `total`, `unit`, `title`, `totalLabel`, `note`; cue [rows, total, note] |
+| `pick-three` | 3x3 grid of options, three light up with checks, others dim, tag chip | `items[9]`, `pick[3]`, `tag`; cue [items, pick, tag] |
+| `before-after` | (payoff) BEFORE column (mute) → arrow → AFTER column (sage) with 3 rows; plays the reel's one `reveal` payoff sound | `rows[[label,before,after]]`, `a`, `b`; cue [before, after] |
+| `rule-card` | (save moment) "SCREENSHOT THIS" card, title, 3 numbered lines with checks | `title`, `items[3]` (≤ 20 chars), `tag`; cue x3 |
+| `struck-card` | "BEDTIME 11:00 PM" card struck out, dashed "?" card (open loop) | `a`, `aBig`, `b`; cue [?, strike] |
+| `sketch-progress` | paper portrait drawn in pencil; `stage` blank (+ `chips`), muddy (clay hatching, "Muddy", then redone neat + `fix` chip), final (time-lapse, frame, `count` chip, reveal) | cue: blank x2 / muddy [shading, quit, again] / final [frame, count] |
+| `sketch-session` | alarm clock rings (6:40 AM), 20:00 timer, sketchbook circles drawn, cost chip | `time`, `label`, `cost`; cue [timer, draw, cost] |
+| `wake-chart` | wake-up time per day M-S; `stage` hook (jagged + alarm + "+3 h"), jagged (points, bracket, chip), flat (morph to 7:30), weekend (+1 h band, "not 10") | `jag`, `chip`, `chipRed`; cue per beat |
+| `curtain-light` | curtains open, sun rises, light on the floor, coffee mug, "Daylight within 10 minutes" chip | `chip`; cue [curtains, coffee] |
+| `follow-next` | (follow reason) "NEXT ON @BECAUSEIDMYOR" card: next reel title + when, Follow button turns "Following" | `title`, `when`; cue [null, follow] |
 | `dream-to-steps` | "ARCHIVED TODAY" dream card branching into three ticked steps (use for the value close) | `tag`, `dream`, `date`, `steps[3]` |
 
 **Cues**: `params.cue` lists the spoken word that triggers each animation beat (null = default); `make_reel.py` resolves them to `params.at`, and `events.json` can time sounds as `"@i"` / `"@i+0.3"`, so picture and sound land on the voice. Prefer cues over fixed times for any new scene.

@@ -1,0 +1,10 @@
+reels/ill-twenty-mornings/audio.mp3  77.73s  voice=am_eric preset=plain fx=False breaths=False stages=hook body body turn body turn body body land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/7773 [00:00<?, ?frames/s] 36%|███▋      | 2818/7773 [00:59<01:44, 47.50frames/s] 36%|███▋      | 2818/7773 [01:10<01:44, 47.50frames/s] 72%|███████▏  | 5598/7773 [01:49<00:42, 51.76frames/s] 72%|███████▏  | 5598/7773 [02:00<00:42, 51.76frames/s]100%|██████████| 7773/7773 [02:37<00:00, 48.93frames/s]100%|██████████| 7773/7773 [02:37<00:00, 49.26frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+267 words, 77.74s, 3.43 words/sec
+-> reels/ill-twenty-mornings/cues.json
+sfx present: 53 sounds -> reels/ill-twenty-mornings/audio_mixed.mp3 pencil@0.1 pop@4.4 pop@5.5 pop@7.6 swish@10.9 pencil@11.4 page@11.7 pencil@12.3 page@12.6 pencil@13.2 page@13.5 pencil@14.1 page@14.4 pencil@15.0 pencil@15.9 swish@18.0 alarm@18.1 clock@20.0 pencil@21.7 pop@24.8 pop@26.2 pop@29.2 pop@31.1 pop@31.6 pop@33.6 pencil@35.1 pencil@35.5 pencil@36.0 right@36.5 right@36.8 right@37.1 swish@37.7 pencil@38.6 miss@40.3 pencil@46.2 right@47.2 reveal@49.3 pop@50.2 pop@55.6 pencil@56.8 right@57.1 pencil@57.4 right@57.8 pencil@58.9 right@59.3 tone@62.1 stamp@62.2 pop@63.8 pop@64.3 right@65.1 right@65.6 right@66.1 chord@73.9
+built reels/ill-twenty-mornings: 77.7s, 9 scenes, brand 73.94s, 3.43 words/sec
+scenes: [('postpone-calendar', 0.0, 4.37, None), ('sketch-progress', 4.37, 10.87, [3.23, 1.11]), ('postpone-calendar', 10.87, 17.99, None), ('sketch-session', 17.99, 26.13, [2.0, 3.67, 6.83]), ('fit-breakdown', 26.13, 37.71, None), ('sketch-progress', 37.71, 47.3, [0.89, 2.63, 8.11]), ('sketch-progress', 47.25, 55.51, [2.01, 2.96]), ('rule-card', 55.51, 62.07, [1.27, 1.91, 3.41]), ('dream-to-steps', 62.07, 73.94, None)]

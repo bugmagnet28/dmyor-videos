@@ -1,0 +1,61 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft; Sanyam said Kokoro is fine for this batch)",
+ "experiment": "V-EXP-32 (Content Kit v2, first batch)",
+ "slug": "ill-three-recipes",
+ "hook_type": "hard-truth",
+ "topic": "cooking",
+ "hook": "Saving recipes feels like learning to cook. It isn't.",
+ "frame": {
+  "structure": "C (mistake, cost, fix)",
+  "want": "cook real dinners at home on weeknights",
+  "obstacle": "200 saved recipes and no idea what to make when tired",
+  "cost": "20 min scrolling x 4 nights = 80 min a week deciding, 0 new dishes learned"
+ },
+ "hooks_considered": [
+  {
+   "formula": "thing nobody admits",
+   "line": "Saving recipes feels like learning to cook. It isn't.",
+   "checks": "hard truth Y, gap Y (then what is?), muted Y (214 saved / 0 cooked), sendable Y, payoff Y",
+   "kept": true
+  },
+  {
+   "formula": "expensive mistake",
+   "line": "Your saved recipes cost you 80 minutes a week.",
+   "checks": "gap weaker, number needs the example first",
+   "kept": false
+  },
+  {
+   "formula": "rule of one (three)",
+   "line": "Three recipes. That's the whole system.",
+   "checks": "topic-like, weaker truth",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "Saving recipes isn't cooking (0.0 s)",
+  "open_loop": {
+   "promised": "how to actually get dinners on the table",
+   "withheld": "the 3-recipe rule"
+  },
+  "stakes": "Tuesday 7 PM, tired, 20 min scrolling, toast",
+  "rehook_10": "80 minutes a week just deciding, no better than January",
+  "interrupt": "9-tile grid dims, three light up",
+  "rehook_25": "So what does your week look like by Sunday? (near-silence 1 before)",
+  "save_moment": "THE 3-RECIPE RULE card, held through the share line",
+  "share_line": "Send this to the friend with three hundred saved recipes.",
+  "follow_reason": "this afternoon's reel (ill-twenty-mornings, 13:00 Sat): how 20 minutes a day turned into a wedding gift",
+  "payoff_sound": "reveal at BY SUNDAY column"
+ },
+ "quality": {
+  "hook": 5,
+  "usefulness": 5,
+  "specificity": 5,
+  "clarity": 4,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 35
+ }
+}

@@ -1,0 +1,10 @@
+reels/ill-wake-time/audio.mp3  74.43s  voice=am_eric preset=plain fx=False breaths=False stages=hook body body turn body body turn body land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/7443 [00:00<?, ?frames/s] 34%|███▍      | 2566/7443 [01:02<01:59, 40.78frames/s] 34%|███▍      | 2566/7443 [01:20<01:59, 40.78frames/s] 70%|██████▉   | 5180/7443 [01:57<00:50, 44.54frames/s] 70%|██████▉   | 5180/7443 [02:10<00:50, 44.54frames/s] 97%|█████████▋| 7230/7443 [02:42<00:04, 45.03frames/s]100%|██████████| 7443/7443 [02:48<00:00, 44.33frames/s]100%|██████████| 7443/7443 [02:48<00:00, 44.11frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+266 words, 74.43s, 3.57 words/sec
+-> reels/ill-wake-time/cues.json
+sfx present: 50 sounds -> reels/ill-wake-time/audio_mixed.mp3 alarm@0.1 pop@3.0 pencil@5.6 swish@6.8 alarm@6.9 pop@7.6 pop@7.9 pop@8.2 pop@9.3 pop@9.6 miss@10.8 pop@11.9 swish@17.0 ratchet@19.4 pop@21.6 right@22.1 swish@22.5 swish@24.4 pop@27.4 pop@28.1 typing@28.3 pop@29.6 pop@30.0 pop@30.4 toggle@34.1 right@34.6 swish@36.6 pop@37.2 pencil@40.0 pop@40.6 right@41.1 swish@42.2 pop@42.7 pop@43.1 reveal@44.5 pop@50.3 pencil@51.1 right@51.5 pencil@52.8 right@53.1 pencil@54.5 right@54.8 tone@59.0 stamp@59.1 pop@60.7 pop@61.2 right@62.0 right@62.5 right@63.0 chord@70.6
+built reels/ill-wake-time: 74.38s, 10 scenes, brand 70.60s, 3.57 words/sec
+scenes: [('wake-chart', 0.0, 2.95, None), ('struck-card', 2.95, 6.83, [0.27, 2.69]), ('wake-chart', 6.83, 17.01, [0.78, 2.43, 3.95, 5.09]), ('wake-chart', 17.01, 22.53, [0.23, 2.4, 4.59]), ('curtain-light', 22.53, 28.12, [1.89, 4.85]), ('meeting-card', 28.12, 36.59, [1.48, 5.94]), ('wake-chart', 36.59, 42.28, [0.63, 3.55, 4.01]), ('before-after', 42.23, 50.23, [0.05, 2.23]), ('rule-card', 50.23, 58.95, [0.89, 2.55, 4.26]), ('dream-to-steps', 58.95, 70.6, None)]

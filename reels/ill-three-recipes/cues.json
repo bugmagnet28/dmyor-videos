@@ -1,0 +1,1462 @@
+{
+ "audio": "audio.mp3",
+ "duration": 67.79,
+ "text": "Saving recipes feels like learning to cook. It isn't. Here's why. It's Tuesday, 7 in the evening, and you're tired. You open your 200 saved recipes, scroll for 20 minutes, and end up making toast. Do that four nights a week, and that's 80 minutes just deciding. And you're still no better at cooking than you were in January. So here's the fix. Stop collecting. Pick three dinners you'd happily eat every week and master just those. Say dal, a tomato, pasta, and a bean chili. Cook each one twice this week. By the second time, you'll barely look at the recipe. And write one shopping list for all three. They share the same base, onions, tomatoes, and garlic so nothing goes to waste. So what does your week look like by Sunday? Three recipes, six home dinners, and zero minutes standing at the fridge wondering what to make. Here's the rule. Pick three. Cook each one twice. One list. Send this to the friend with 300 saved recipes. That's what Demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. And follow because this afternoon's real is how 20 minutes a day turned into a wedding gift. If you want to try it out, I've put the link in the bio.",
+ "words": [
+  {
+   "w": "saving",
+   "raw": "Saving",
+   "s": 0.0,
+   "e": 0.5
+  },
+  {
+   "w": "recipes",
+   "raw": "recipes",
+   "s": 0.5,
+   "e": 0.96
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 0.96,
+   "e": 1.28
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 1.28,
+   "e": 1.56
+  },
+  {
+   "w": "learning",
+   "raw": "learning",
+   "s": 1.56,
+   "e": 1.82
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 1.82,
+   "e": 2.08
+  },
+  {
+   "w": "cook",
+   "raw": "cook.",
+   "s": 2.08,
+   "e": 2.28
+  },
+  {
+   "w": "it",
+   "raw": "It",
+   "s": 2.58,
+   "e": 2.68
+  },
+  {
+   "w": "isnt",
+   "raw": "isn't.",
+   "s": 2.68,
+   "e": 3.18
+  },
+  {
+   "w": "heres",
+   "raw": "Here's",
+   "s": 3.46,
+   "e": 3.64
+  },
+  {
+   "w": "why",
+   "raw": "why.",
+   "s": 3.64,
+   "e": 3.88
+  },
+  {
+   "w": "its",
+   "raw": "It's",
+   "s": 4.06,
+   "e": 4.28
+  },
+  {
+   "w": "tuesday",
+   "raw": "Tuesday,",
+   "s": 4.28,
+   "e": 4.46
+  },
+  {
+   "w": "7",
+   "raw": "7",
+   "s": 4.78,
+   "e": 4.98
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 4.98,
+   "e": 5.1
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 5.1,
+   "e": 5.24
+  },
+  {
+   "w": "evening",
+   "raw": "evening,",
+   "s": 5.24,
+   "e": 5.44
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 5.58,
+   "e": 5.66
+  },
+  {
+   "w": "youre",
+   "raw": "you're",
+   "s": 5.66,
+   "e": 5.82
+  },
+  {
+   "w": "tired",
+   "raw": "tired.",
+   "s": 5.82,
+   "e": 6.16
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 6.74,
+   "e": 6.86
+  },
+  {
+   "w": "open",
+   "raw": "open",
+   "s": 6.86,
+   "e": 7.08
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 7.08,
+   "e": 7.24
+  },
+  {
+   "w": "200",
+   "raw": "200",
+   "s": 7.24,
+   "e": 7.62
+  },
+  {
+   "w": "saved",
+   "raw": "saved",
+   "s": 7.62,
+   "e": 8.02
+  },
+  {
+   "w": "recipes",
+   "raw": "recipes,",
+   "s": 8.02,
+   "e": 8.54
+  },
+  {
+   "w": "scroll",
+   "raw": "scroll",
+   "s": 8.8,
+   "e": 8.94
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 8.94,
+   "e": 9.22
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "s": 9.22,
+   "e": 9.48
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes,",
+   "s": 9.48,
+   "e": 9.76
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 9.8,
+   "e": 9.98
+  },
+  {
+   "w": "end",
+   "raw": "end",
+   "s": 9.98,
+   "e": 10.12
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 10.12,
+   "e": 10.28
+  },
+  {
+   "w": "making",
+   "raw": "making",
+   "s": 10.28,
+   "e": 10.54
+  },
+  {
+   "w": "toast",
+   "raw": "toast.",
+   "s": 10.54,
+   "e": 10.84
+  },
+  {
+   "w": "do",
+   "raw": "Do",
+   "s": 11.32,
+   "e": 11.42
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 11.42,
+   "e": 11.58
+  },
+  {
+   "w": "four",
+   "raw": "four",
+   "s": 11.58,
+   "e": 11.84
+  },
+  {
+   "w": "nights",
+   "raw": "nights",
+   "s": 11.84,
+   "e": 12.02
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 12.02,
+   "e": 12.22
+  },
+  {
+   "w": "week",
+   "raw": "week,",
+   "s": 12.22,
+   "e": 12.4
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 12.6,
+   "e": 12.7
+  },
+  {
+   "w": "thats",
+   "raw": "that's",
+   "s": 12.7,
+   "e": 13.02
+  },
+  {
+   "w": "80",
+   "raw": "80",
+   "s": 13.02,
+   "e": 13.22
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 13.22,
+   "e": 13.52
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 13.52,
+   "e": 13.8
+  },
+  {
+   "w": "deciding",
+   "raw": "deciding.",
+   "s": 13.8,
+   "e": 14.28
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 14.9,
+   "e": 15.04
+  },
+  {
+   "w": "youre",
+   "raw": "you're",
+   "s": 15.04,
+   "e": 15.22
+  },
+  {
+   "w": "still",
+   "raw": "still",
+   "s": 15.22,
+   "e": 15.34
+  },
+  {
+   "w": "no",
+   "raw": "no",
+   "s": 15.34,
+   "e": 15.58
+  },
+  {
+   "w": "better",
+   "raw": "better",
+   "s": 15.58,
+   "e": 15.78
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 15.78,
+   "e": 15.98
+  },
+  {
+   "w": "cooking",
+   "raw": "cooking",
+   "s": 15.98,
+   "e": 16.2
+  },
+  {
+   "w": "than",
+   "raw": "than",
+   "s": 16.2,
+   "e": 16.48
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 16.48,
+   "e": 16.62
+  },
+  {
+   "w": "were",
+   "raw": "were",
+   "s": 16.62,
+   "e": 16.76
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 16.76,
+   "e": 16.92
+  },
+  {
+   "w": "january",
+   "raw": "January.",
+   "s": 16.92,
+   "e": 17.36
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 17.98,
+   "e": 18.14
+  },
+  {
+   "w": "heres",
+   "raw": "here's",
+   "s": 18.14,
+   "e": 18.4
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 18.4,
+   "e": 18.54
+  },
+  {
+   "w": "fix",
+   "raw": "fix.",
+   "s": 18.54,
+   "e": 18.78
+  },
+  {
+   "w": "stop",
+   "raw": "Stop",
+   "s": 19.14,
+   "e": 19.28
+  },
+  {
+   "w": "collecting",
+   "raw": "collecting.",
+   "s": 19.28,
+   "e": 19.68
+  },
+  {
+   "w": "pick",
+   "raw": "Pick",
+   "s": 19.98,
+   "e": 20.1
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 20.1,
+   "e": 20.34
+  },
+  {
+   "w": "dinners",
+   "raw": "dinners",
+   "s": 20.34,
+   "e": 20.56
+  },
+  {
+   "w": "youd",
+   "raw": "you'd",
+   "s": 20.56,
+   "e": 20.82
+  },
+  {
+   "w": "happily",
+   "raw": "happily",
+   "s": 20.82,
+   "e": 21.06
+  },
+  {
+   "w": "eat",
+   "raw": "eat",
+   "s": 21.06,
+   "e": 21.32
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 21.32,
+   "e": 21.58
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 21.58,
+   "e": 21.84
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 21.84,
+   "e": 22.02
+  },
+  {
+   "w": "master",
+   "raw": "master",
+   "s": 22.02,
+   "e": 22.34
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 22.34,
+   "e": 22.6
+  },
+  {
+   "w": "those",
+   "raw": "those.",
+   "s": 22.6,
+   "e": 22.96
+  },
+  {
+   "w": "say",
+   "raw": "Say",
+   "s": 23.38,
+   "e": 23.44
+  },
+  {
+   "w": "dal",
+   "raw": "dal,",
+   "s": 23.44,
+   "e": 23.72
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 23.88,
+   "e": 23.94
+  },
+  {
+   "w": "tomato",
+   "raw": "tomato,",
+   "s": 23.94,
+   "e": 24.28
+  },
+  {
+   "w": "pasta",
+   "raw": "pasta,",
+   "s": 24.44,
+   "e": 24.7
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 24.8,
+   "e": 24.98
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 24.98,
+   "e": 25.08
+  },
+  {
+   "w": "bean",
+   "raw": "bean",
+   "s": 25.08,
+   "e": 25.24
+  },
+  {
+   "w": "chili",
+   "raw": "chili.",
+   "s": 25.24,
+   "e": 25.52
+  },
+  {
+   "w": "cook",
+   "raw": "Cook",
+   "s": 25.52,
+   "e": 26.18
+  },
+  {
+   "w": "each",
+   "raw": "each",
+   "s": 26.18,
+   "e": 26.44
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 26.44,
+   "e": 26.72
+  },
+  {
+   "w": "twice",
+   "raw": "twice",
+   "s": 26.72,
+   "e": 27.0
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 27.0,
+   "e": 27.24
+  },
+  {
+   "w": "week",
+   "raw": "week.",
+   "s": 27.24,
+   "e": 27.5
+  },
+  {
+   "w": "by",
+   "raw": "By",
+   "s": 27.86,
+   "e": 27.96
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 27.96,
+   "e": 28.12
+  },
+  {
+   "w": "second",
+   "raw": "second",
+   "s": 28.12,
+   "e": 28.3
+  },
+  {
+   "w": "time",
+   "raw": "time,",
+   "s": 28.3,
+   "e": 28.68
+  },
+  {
+   "w": "youll",
+   "raw": "you'll",
+   "s": 28.8,
+   "e": 28.92
+  },
+  {
+   "w": "barely",
+   "raw": "barely",
+   "s": 28.92,
+   "e": 29.1
+  },
+  {
+   "w": "look",
+   "raw": "look",
+   "s": 29.1,
+   "e": 29.38
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 29.38,
+   "e": 29.5
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 29.5,
+   "e": 29.6
+  },
+  {
+   "w": "recipe",
+   "raw": "recipe.",
+   "s": 29.6,
+   "e": 30.02
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 30.44,
+   "e": 30.58
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 30.58,
+   "e": 30.72
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 30.72,
+   "e": 30.94
+  },
+  {
+   "w": "shopping",
+   "raw": "shopping",
+   "s": 30.94,
+   "e": 31.34
+  },
+  {
+   "w": "list",
+   "raw": "list",
+   "s": 31.34,
+   "e": 31.56
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 31.56,
+   "e": 31.76
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 31.76,
+   "e": 31.96
+  },
+  {
+   "w": "three",
+   "raw": "three.",
+   "s": 31.96,
+   "e": 32.26
+  },
+  {
+   "w": "they",
+   "raw": "They",
+   "s": 32.68,
+   "e": 32.86
+  },
+  {
+   "w": "share",
+   "raw": "share",
+   "s": 32.86,
+   "e": 33.04
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 33.04,
+   "e": 33.2
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 33.2,
+   "e": 33.42
+  },
+  {
+   "w": "base",
+   "raw": "base,",
+   "s": 33.42,
+   "e": 33.74
+  },
+  {
+   "w": "onions",
+   "raw": "onions,",
+   "s": 33.92,
+   "e": 34.18
+  },
+  {
+   "w": "tomatoes",
+   "raw": "tomatoes,",
+   "s": 34.42,
+   "e": 34.74
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 34.98,
+   "e": 35.2
+  },
+  {
+   "w": "garlic",
+   "raw": "garlic",
+   "s": 35.2,
+   "e": 35.44
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 35.44,
+   "e": 35.76
+  },
+  {
+   "w": "nothing",
+   "raw": "nothing",
+   "s": 35.76,
+   "e": 36.02
+  },
+  {
+   "w": "goes",
+   "raw": "goes",
+   "s": 36.02,
+   "e": 36.22
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 36.22,
+   "e": 36.46
+  },
+  {
+   "w": "waste",
+   "raw": "waste.",
+   "s": 36.46,
+   "e": 36.74
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 37.3,
+   "e": 37.4
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 37.4,
+   "e": 37.6
+  },
+  {
+   "w": "does",
+   "raw": "does",
+   "s": 37.6,
+   "e": 37.76
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 37.76,
+   "e": 37.92
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 37.92,
+   "e": 38.14
+  },
+  {
+   "w": "look",
+   "raw": "look",
+   "s": 38.14,
+   "e": 38.38
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 38.38,
+   "e": 38.56
+  },
+  {
+   "w": "by",
+   "raw": "by",
+   "s": 38.56,
+   "e": 38.74
+  },
+  {
+   "w": "sunday",
+   "raw": "Sunday?",
+   "s": 38.74,
+   "e": 39.06
+  },
+  {
+   "w": "three",
+   "raw": "Three",
+   "s": 39.86,
+   "e": 40.16
+  },
+  {
+   "w": "recipes",
+   "raw": "recipes,",
+   "s": 40.16,
+   "e": 40.6
+  },
+  {
+   "w": "six",
+   "raw": "six",
+   "s": 40.88,
+   "e": 40.98
+  },
+  {
+   "w": "home",
+   "raw": "home",
+   "s": 40.98,
+   "e": 41.28
+  },
+  {
+   "w": "dinners",
+   "raw": "dinners,",
+   "s": 41.28,
+   "e": 41.56
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 42.08,
+   "e": 42.24
+  },
+  {
+   "w": "zero",
+   "raw": "zero",
+   "s": 42.24,
+   "e": 42.56
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 42.56,
+   "e": 42.78
+  },
+  {
+   "w": "standing",
+   "raw": "standing",
+   "s": 42.78,
+   "e": 43.12
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 43.12,
+   "e": 43.34
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 43.34,
+   "e": 43.46
+  },
+  {
+   "w": "fridge",
+   "raw": "fridge",
+   "s": 43.46,
+   "e": 43.72
+  },
+  {
+   "w": "wondering",
+   "raw": "wondering",
+   "s": 43.72,
+   "e": 44.08
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 44.08,
+   "e": 44.36
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 44.36,
+   "e": 44.54
+  },
+  {
+   "w": "make",
+   "raw": "make.",
+   "s": 44.54,
+   "e": 44.8
+  },
+  {
+   "w": "heres",
+   "raw": "Here's",
+   "s": 45.26,
+   "e": 45.5
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 45.5,
+   "e": 45.62
+  },
+  {
+   "w": "rule",
+   "raw": "rule.",
+   "s": 45.62,
+   "e": 45.8
+  },
+  {
+   "w": "pick",
+   "raw": "Pick",
+   "s": 45.98,
+   "e": 46.06
+  },
+  {
+   "w": "three",
+   "raw": "three.",
+   "s": 46.06,
+   "e": 46.34
+  },
+  {
+   "w": "cook",
+   "raw": "Cook",
+   "s": 46.48,
+   "e": 46.54
+  },
+  {
+   "w": "each",
+   "raw": "each",
+   "s": 46.54,
+   "e": 46.7
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 46.7,
+   "e": 46.9
+  },
+  {
+   "w": "twice",
+   "raw": "twice.",
+   "s": 46.9,
+   "e": 47.22
+  },
+  {
+   "w": "one",
+   "raw": "One",
+   "s": 47.7,
+   "e": 47.92
+  },
+  {
+   "w": "list",
+   "raw": "list.",
+   "s": 47.92,
+   "e": 48.2
+  },
+  {
+   "w": "send",
+   "raw": "Send",
+   "s": 48.48,
+   "e": 48.58
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 48.58,
+   "e": 48.76
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 48.76,
+   "e": 48.9
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 48.9,
+   "e": 49.02
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 49.02,
+   "e": 49.22
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 49.22,
+   "e": 49.44
+  },
+  {
+   "w": "300",
+   "raw": "300",
+   "s": 49.44,
+   "e": 49.88
+  },
+  {
+   "w": "saved",
+   "raw": "saved",
+   "s": 49.88,
+   "e": 50.32
+  },
+  {
+   "w": "recipes",
+   "raw": "recipes.",
+   "s": 50.32,
+   "e": 50.86
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 51.32,
+   "e": 51.76
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 51.76,
+   "e": 51.92
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 51.92,
+   "e": 52.3
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 52.3,
+   "e": 52.46
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 52.46,
+   "e": 52.74
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 53.14,
+   "e": 53.24
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 53.24,
+   "e": 53.62
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 53.62,
+   "e": 53.84
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 53.84,
+   "e": 54.06
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 54.06,
+   "e": 54.4
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 54.4,
+   "e": 54.66
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 54.66,
+   "e": 54.8
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 54.8,
+   "e": 54.94
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 54.94,
+   "e": 55.18
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 55.18,
+   "e": 55.3
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 55.3,
+   "e": 55.6
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 55.6,
+   "e": 56.04
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 56.04,
+   "e": 56.22
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 56.22,
+   "e": 56.38
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 56.38,
+   "e": 56.58
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 56.58,
+   "e": 56.78
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 56.78,
+   "e": 57.1
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 57.1,
+   "e": 57.4
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 57.4,
+   "e": 57.62
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 57.62,
+   "e": 57.76
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 57.76,
+   "e": 58.08
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 58.08,
+   "e": 58.4
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 58.82,
+   "e": 58.96
+  },
+  {
+   "w": "follow",
+   "raw": "follow",
+   "s": 58.96,
+   "e": 59.24
+  },
+  {
+   "w": "because",
+   "raw": "because",
+   "s": 59.24,
+   "e": 59.7
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 59.7,
+   "e": 59.96
+  },
+  {
+   "w": "afternoons",
+   "raw": "afternoon's",
+   "s": 59.96,
+   "e": 60.64
+  },
+  {
+   "w": "real",
+   "raw": "real",
+   "s": 60.64,
+   "e": 60.86
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 60.86,
+   "e": 61.18
+  },
+  {
+   "w": "how",
+   "raw": "how",
+   "s": 61.18,
+   "e": 61.36
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "s": 61.36,
+   "e": 61.7
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 61.7,
+   "e": 61.92
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 61.92,
+   "e": 62.12
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 62.12,
+   "e": 62.26
+  },
+  {
+   "w": "turned",
+   "raw": "turned",
+   "s": 62.26,
+   "e": 62.56
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 62.56,
+   "e": 62.82
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 62.82,
+   "e": 62.98
+  },
+  {
+   "w": "wedding",
+   "raw": "wedding",
+   "s": 62.98,
+   "e": 63.18
+  },
+  {
+   "w": "gift",
+   "raw": "gift.",
+   "s": 63.18,
+   "e": 63.52
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 64.02,
+   "e": 64.12
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 64.12,
+   "e": 64.24
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 64.24,
+   "e": 64.4
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 64.4,
+   "e": 64.54
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 64.54,
+   "e": 64.76
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 64.76,
+   "e": 64.96
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 64.96,
+   "e": 65.22
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 65.42,
+   "e": 65.54
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 65.54,
+   "e": 65.66
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 65.66,
+   "e": 65.82
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 65.82,
+   "e": 66.0
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 66.0,
+   "e": 66.16
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 66.16,
+   "e": 66.26
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 66.26,
+   "e": 66.52
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 3.18,
+   "text": "Saving recipes feels like learning to cook. It isn't."
+  },
+  {
+   "s": 3.46,
+   "e": 6.16,
+   "text": "Here's why. It's Tuesday, 7 in the evening, and you're tired."
+  },
+  {
+   "s": 6.74,
+   "e": 10.84,
+   "text": "You open your 200 saved recipes, scroll for 20 minutes, and end up making toast."
+  },
+  {
+   "s": 11.32,
+   "e": 14.28,
+   "text": "Do that four nights a week, and that's 80 minutes just deciding."
+  },
+  {
+   "s": 14.9,
+   "e": 17.36,
+   "text": "And you're still no better at cooking than you were in January."
+  },
+  {
+   "s": 17.98,
+   "e": 19.68,
+   "text": "So here's the fix. Stop collecting."
+  },
+  {
+   "s": 19.98,
+   "e": 22.96,
+   "text": "Pick three dinners you'd happily eat every week and master just those."
+  },
+  {
+   "s": 23.38,
+   "e": 25.52,
+   "text": "Say dal, a tomato, pasta, and a bean chili."
+  },
+  {
+   "s": 25.52,
+   "e": 30.02,
+   "text": "Cook each one twice this week. By the second time, you'll barely look at the recipe."
+  },
+  {
+   "s": 30.44,
+   "e": 34.74,
+   "text": "And write one shopping list for all three. They share the same base, onions, tomatoes,"
+  },
+  {
+   "s": 34.98,
+   "e": 39.06,
+   "text": "and garlic so nothing goes to waste. So what does your week look like by Sunday?"
+  },
+  {
+   "s": 39.86,
+   "e": 44.8,
+   "text": "Three recipes, six home dinners, and zero minutes standing at the fridge wondering what to make."
+  },
+  {
+   "s": 45.26,
+   "e": 48.2,
+   "text": "Here's the rule. Pick three. Cook each one twice. One list."
+  },
+  {
+   "s": 48.48,
+   "e": 50.86,
+   "text": "Send this to the friend with 300 saved recipes."
+  },
+  {
+   "s": 51.32,
+   "e": 55.6,
+   "text": "That's what Demure is for. You archive your dream today so you can see it tomorrow"
+  },
+  {
+   "s": 55.6,
+   "e": 58.4,
+   "text": "and break it down into small steps you can actually do."
+  },
+  {
+   "s": 58.82,
+   "e": 63.52,
+   "text": "And follow because this afternoon's real is how 20 minutes a day turned into a wedding gift."
+  },
+  {
+   "s": 64.02,
+   "e": 66.52,
+   "text": "If you want to try it out, I've put the link in the bio."
+  }
+ ],
+ "wps": 3.35
+}

@@ -1,0 +1,234 @@
+{
+ "total": 74.38,
+ "brandT": 70.6,
+ "scenes": [
+  {
+   "type": "wake-chart",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "Fix your sleep<br>in the <b>morning</b>.",
+   "t0": 0.0,
+   "t1": 2.95
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "cue": [
+     "one",
+     "isn't"
+    ],
+    "a": "BEDTIME",
+    "aBig": "11:00 PM",
+    "b": "The one number that matters",
+    "at": [
+     0.27,
+     2.69
+    ]
+   },
+   "head": "One number.<br><b>Not</b> your bedtime.",
+   "t0": 2.95,
+   "t1": 6.83
+  },
+  {
+   "type": "wake-chart",
+   "params": {
+    "stage": "jagged",
+    "cue": [
+     "seven",
+     "ten",
+     "three",
+     "Monday"
+    ],
+    "chip": "Monday: jet lag",
+    "chipRed": true,
+    "at": [
+     0.78,
+     2.43,
+     3.95,
+     5.09
+    ]
+   },
+   "head": "Sleeping in<br>costs you <b>Monday</b>.",
+   "t0": 6.83,
+   "t1": 17.01
+  },
+  {
+   "type": "wake-chart",
+   "params": {
+    "stage": "flat",
+    "cue": [
+     "number",
+     "seven",
+     "thirty"
+    ],
+    "chip": "7:30 AM, 7 days a week",
+    "at": [
+     0.23,
+     2.4,
+     4.59
+    ]
+   },
+   "head": "Same wake-up time,<br><b>7 days</b>.",
+   "t0": 17.01,
+   "t1": 22.53
+  },
+  {
+   "type": "curtain-light",
+   "params": {
+    "cue": [
+     "daylight",
+     "coffee"
+    ],
+    "chip": "Daylight within 10 minutes",
+    "at": [
+     1.89,
+     4.85
+    ]
+   },
+   "head": "Daylight within<br><b>10 minutes</b>.",
+   "t0": 22.53,
+   "t1": 28.12
+  },
+  {
+   "type": "meeting-card",
+   "params": {
+    "title": "Wind down",
+    "rows": [
+     "11:00 PM, every night",
+     "Bed 11:30, up 7:30"
+    ],
+    "remind": "Screens off, lights low",
+    "cue": [
+     "backwards",
+     "alarm"
+    ],
+    "at": [
+     1.48,
+     5.94
+    ]
+   },
+   "head": "Work <b>backwards</b><br>to bedtime.",
+   "t0": 28.12,
+   "t1": 36.59
+  },
+  {
+   "type": "wake-chart",
+   "params": {
+    "stage": "weekend",
+    "cue": [
+     "Saturday",
+     "hour",
+     "ten"
+    ],
+    "chip": "Weekend: 1 hour later, max",
+    "at": [
+     0.63,
+     3.55,
+     4.99
+    ]
+   },
+   "head": "Weekends?<br><b>One hour</b>, max.",
+   "t0": 36.59,
+   "t1": 42.28
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "cue": [
+     "Keep",
+     "flat"
+    ],
+    "rows": [
+     [
+      "Wake time",
+      "7 to 10",
+      "7:30"
+     ],
+     [
+      "Monday",
+      "Jet lag",
+      "Normal"
+     ],
+     [
+      "Sleepy at",
+      "Random",
+      "Same time"
+     ]
+    ],
+    "a": "BEFORE",
+    "b": "AFTER A WEEK",
+    "at": [
+     0.05,
+     2.23
+    ]
+   },
+   "head": "The line<br><b>goes flat</b>.",
+   "t0": 42.23,
+   "t1": 50.23
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "SLEEP RESET",
+    "items": [
+     "Same wake time, 7 days",
+     "Daylight in 10 min",
+     "Wind-down alarm"
+    ],
+    "cue": [
+     "Same",
+     "Daylight",
+     "wind-down"
+    ],
+    "at": [
+     0.89,
+     2.55,
+     4.26
+    ]
+   },
+   "head": "Screenshot<br><b>your reset</b>.",
+   "t0": 50.23,
+   "t1": 58.95
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Wake up rested",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "Up at 7:30",
+     "Daylight",
+     "Wind down"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 58.95,
+   "t1": 66.21
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "The morning after a bad night",
+    "when": "Tomorrow",
+    "cue": [
+     null,
+     "bad"
+    ],
+    "at": [
+     0.2,
+     3.45
+    ]
+   },
+   "head": "Next: after a<br><b>bad night</b>.",
+   "t0": 66.21,
+   "t1": 70.6
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  36.54,
+  42.18
+ ]
+}

@@ -1,0 +1,185 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] You can't fix your sleep at night. You fix it in the morning. || There's one number that fixes most bad nights, and it isn't your bedtime. || Say you wake up at seven all week, then sleep in until ten on the weekend. That's three hours. By Monday, your body clock is in a different time zone, so you lie awake at midnight and drag yourself out of bed. || [turn] The number is your wake-up time. Pick one you can keep seven days a week, weekends too. Say, seven thirty. || Step two. When the alarm goes off, get daylight within ten minutes. Open the curtains, or have your coffee by the window. || And step three, work backwards. If you need eight hours, bedtime is eleven thirty. So set a second alarm at eleven, to start winding down. || [turn] But what about Saturday? || You don't have to be strict. Sleep in one hour, max. Eight thirty, not ten. || [land] Keep that for a week, and the jagged line goes flat. Monday stops feeling like jet lag, and most nights, you get sleepy around the same time. || Here's your reset. Same wake time, seven days. Daylight within ten minutes. A wind-down alarm before bed. Send this to the friend who sleeps until noon on Sundays. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] And follow, because tomorrow's reel is what to do the morning after a bad night. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "wake-chart",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "Fix your sleep<br>in the <b>morning</b>."
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "cue": [
+     "one",
+     "isn't"
+    ],
+    "a": "BEDTIME",
+    "aBig": "11:00 PM",
+    "b": "The one number that matters"
+   },
+   "head": "One number.<br><b>Not</b> your bedtime."
+  },
+  {
+   "type": "wake-chart",
+   "params": {
+    "stage": "jagged",
+    "cue": [
+     "seven",
+     "ten",
+     "three",
+     "Monday"
+    ],
+    "chip": "Monday: jet lag",
+    "chipRed": true
+   },
+   "head": "Sleeping in<br>costs you <b>Monday</b>."
+  },
+  {
+   "type": "wake-chart",
+   "params": {
+    "stage": "flat",
+    "cue": [
+     "number",
+     "seven",
+     "thirty"
+    ],
+    "chip": "7:30 AM, 7 days a week"
+   },
+   "head": "Same wake-up time,<br><b>7 days</b>."
+  },
+  {
+   "type": "curtain-light",
+   "params": {
+    "cue": [
+     "daylight",
+     "coffee"
+    ],
+    "chip": "Daylight within 10 minutes"
+   },
+   "head": "Daylight within<br><b>10 minutes</b>."
+  },
+  {
+   "type": "meeting-card",
+   "params": {
+    "title": "Wind down",
+    "rows": [
+     "11:00 PM, every night",
+     "Bed 11:30, up 7:30"
+    ],
+    "remind": "Screens off, lights low",
+    "cue": [
+     "backwards",
+     "alarm"
+    ]
+   },
+   "head": "Work <b>backwards</b><br>to bedtime."
+  },
+  {
+   "type": "wake-chart",
+   "params": {
+    "stage": "weekend",
+    "cue": [
+     "Saturday",
+     "hour",
+     "ten"
+    ],
+    "chip": "Weekend: 1 hour later, max"
+   },
+   "head": "Weekends?<br><b>One hour</b>, max."
+  },
+  null,
+  {
+   "type": "before-after",
+   "params": {
+    "cue": [
+     "Keep",
+     "flat"
+    ],
+    "rows": [
+     [
+      "Wake time",
+      "7 to 10",
+      "7:30"
+     ],
+     [
+      "Monday",
+      "Jet lag",
+      "Normal"
+     ],
+     [
+      "Sleepy at",
+      "Random",
+      "Same time"
+     ]
+    ],
+    "a": "BEFORE",
+    "b": "AFTER A WEEK"
+   },
+   "head": "The line<br><b>goes flat</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "SLEEP RESET",
+    "items": [
+     "Same wake time, 7 days",
+     "Daylight in 10 min",
+     "Wind-down alarm"
+    ],
+    "cue": [
+     "Same",
+     "Daylight",
+     "wind-down"
+    ]
+   },
+   "head": "Screenshot<br><b>your reset</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Wake up rested",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "Up at 7:30",
+     "Daylight",
+     "Wind down"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "The morning after a bad night",
+    "when": "Tomorrow",
+    "cue": [
+     null,
+     "bad"
+    ]
+   },
+   "head": "Next: after a<br><b>bad night</b>."
+  },
+  null
+ ],
+ "brand_from": 12,
+ "silences": [
+  "But what about",
+  "Keep that for"
+ ],
+ "caption": {
+  "instagram": "You can't fix your sleep at night. You fix it in the morning.\n\nUp at 7 all week, sleep in till 10 on the weekend: that's 3 hours. By Monday your body clock is in another time zone.\n\nThe sleep reset:\n1. One wake-up time, 7 days a week (say 7:30)\n2. Daylight within 10 minutes: curtains open, coffee by the window\n3. Work backwards: need 8 hours? Bed at 11:30, wind-down alarm at 11\n\nWeekends: 1 hour later, max. 8:30, not 10.\n\nSend this to the friend who sleeps until noon on Sundays.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#sleep #sleepbetter #morningroutine #habits #selfimprovement",
+  "x": "You can't fix your sleep at night. You fix it in the morning.\n\nSame wake time 7 days. Daylight within 10 minutes. Wind-down alarm 30 min before bed. Weekends: 1 hour later, max.",
+  "youtube_title": "Fix your sleep in the morning #Shorts"
+ }
+}

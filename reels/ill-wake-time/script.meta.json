@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft; Sanyam said Kokoro is fine for this batch)",
+ "experiment": "V-EXP-32 (Content Kit v2, first batch)",
+ "slug": "ill-wake-time",
+ "hook_type": "hard-truth",
+ "topic": "sleep",
+ "hook": "You can't fix your sleep at night. You fix it in the morning.",
+ "frame": {
+  "structure": "A (method with stakes)",
+  "want": "wake up rested, sleep at a normal time",
+  "obstacle": "weekday 7:00 vs weekend 10:00 wake-ups",
+  "cost": "3 hours of shift every weekend, Monday feels like jet lag, awake at midnight"
+ },
+ "hooks_considered": [
+  {
+   "formula": "backwards rule",
+   "line": "You can't fix your sleep at night. You fix it in the morning.",
+   "checks": "hard truth Y, gap Y (how?), muted Y (jagged chart + alarm), sendable Y, payoff Y (flat line)",
+   "kept": true
+  },
+  {
+   "formula": "thing nobody admits",
+   "line": "You're not a night owl. You just sleep in on Sundays.",
+   "checks": "too accusatory, overclaims",
+   "kept": false
+  },
+  {
+   "formula": "hidden step",
+   "line": "Every sleep tip skips the one number that matters.",
+   "checks": "good gap, weaker truth on frame 0",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "Fix your sleep in the morning (0.0 s)",
+  "open_loop": {
+   "promised": "one number fixes most bad nights",
+   "withheld": "it's the wake-up time (revealed ~20 s)"
+  },
+  "stakes": "7:00 weekdays, 10:00 weekends = +3 h, Monday jet lag",
+  "rehook_10": "+3 h bracket, Monday: jet lag",
+  "interrupt": "curtains open, sun rises, coffee mug",
+  "rehook_25": "But what about Saturday? (near-silence 1 before)",
+  "save_moment": "SLEEP RESET card",
+  "share_line": "Send this to the friend who sleeps until noon on Sundays.",
+  "follow_reason": "tomorrow's reel: what to do the morning after a bad night (MUST be in the Sun Nov 1 batch)",
+  "payoff_sound": "reveal at AFTER A WEEK column"
+ },
+ "note": "Advice is mainstream sleep hygiene (consistent wake time, morning light, wind-down, limited weekend lie-in); no study cited. 'Most nights you get sleepy around the same time' is soft, hedged wording.",
+ "quality": {
+  "hook": 5,
+  "usefulness": 5,
+  "specificity": 5,
+  "clarity": 4,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 35
+ }
+}

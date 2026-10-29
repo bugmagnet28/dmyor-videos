@@ -246,10 +246,54 @@ def toggle():
     return np.sin(2 * np.pi * 1400 * t) * env(n, .0005, .006) + hp(noise(n), 2500) * env(n, .0003, .003) * .6
 
 
+def alarm(d=1.2):
+    """bedside alarm clock: soft double-bell trill in short bursts (not a harsh buzzer)"""
+    n = int((d + .3) * SR); out = np.zeros(n); at = 0.0
+    while at < d:
+        m = int(.06 * SR); t = np.arange(m) / SR
+        b = sum(w * np.sin(2 * np.pi * f * t) for f, w in [(1760, .6), (2637, .25), (3520, .1)]) * env(m, .001, .025)
+        for j in range(4):
+            i = int((at + j * .065) * SR); out[i:i + m] += b[: max(0, n - i)]
+        at += .55
+    return out[:n]
+
+
+def sizzle(d=1.6):
+    """a pan sizzling: crackly band-limited noise that fades in and out (never a hard loop)"""
+    n = int(d * SR); t = np.arange(n) / SR
+    base = hp(lowpass(noise(n), 6000), 1800) * .35
+    cr = np.zeros(n)
+    for _ in range(int(d * 90)):
+        i = rng.integers(0, n - 200); m = 120; cr[i:i + m] += hp(noise(m), 3000) * env(m, .0002, .0015) * rng.uniform(.3, 1)
+    fade = np.minimum(1, t / .35) * np.minimum(1, (d - t) / .45)
+    return (base + cr) * fade
+
+
+def chop(d=1.2):
+    """knife on a chopping board: dull wooden taps, steady rhythm"""
+    n = int((d + .2) * SR); out = np.zeros(n); at = 0.0
+    while at < d:
+        m = int(.07 * SR); t = np.arange(m) / SR
+        k = np.sin(2 * np.pi * (210 + 60 * np.exp(-t / .006)) * t) * env(m, .0006, .012) + lowpass(noise(m), 2500) * env(m, .0004, .004) * .5
+        i = int(at * SR); out[i:i + m] += k[: n - i] * (.8 + .2 * rng.random()); at += .2 + .03 * rng.random()
+    return out[:n]
+
+
+def reveal():
+    """the ONE payoff sound per reel (Content Kit v2): a warm three-note bell rising, longer and softer than the check chime"""
+    n = int(2.2 * SR); out = np.zeros(n)
+    for j, f in enumerate([523.3, 659.3, 784.0, 1046.5]):
+        m = int(1.8 * SR); t = np.arange(m) / SR
+        b = (np.sin(2 * np.pi * f * t) + .25 * np.sin(2 * np.pi * 2.01 * f * t) * np.exp(-t / .3) + .08 * np.sin(2 * np.pi * 3 * f * t) * np.exp(-t / .15)) * env(m, .004, .7)
+        i = int(j * .11 * SR); out[i:i + m] += b[: n - i] * (.7 if j < 3 else .55)
+    return out
+
+
 KIT = {"tick": tick, "tap": tap, "swish": swish, "ratchet": ratchet, "tone": tone, "chord": chord,
        "clock": clock, "timer": timer, "pencil": pencil, "pen_check": pen_check, "page": page, "riffle": riffle,
        "footsteps": footsteps, "plate": plate, "stamp": stamp, "beep2": beep2, "right": right, "pop": pop, "miss": miss,
-       "coin": coin, "typing": typing, "buzz": buzz, "door": door, "toggle": toggle}
+       "coin": coin, "typing": typing, "buzz": buzz, "door": door, "toggle": toggle,
+       "alarm": alarm, "sizzle": sizzle, "chop": chop, "reveal": reveal}
 # Real CC0 recordings replace the synthesised sounds (owner 2026-10-28). A file studio/sfx-library/real/<kit-key>.wav
 # (made by studio/sfx-library/use.py) is used for that key; keys without a file keep the synth. Licences: studio/sfx-library/LICENSES.md
 REAL_DIR = os.path.abspath(os.path.join(HERE, "..", "..", "..", "studio", "sfx-library", "real"))
@@ -289,9 +333,10 @@ for _k in list(KIT):
 PEAK = {"tick": -16, "tap": -16, "swish": -21, "ratchet": -19, "tone": -21, "chord": -16,   # dBFS peak at "present" (voice peaks ~-1.5)
         "clock": -18, "timer": -20, "pencil": -15, "pen_check": -15, "page": -15, "riffle": -18,
         "footsteps": -15, "plate": -15, "stamp": -14, "beep2": -21, "right": -15, "pop": -14, "miss": -16,
-        "coin": -17, "typing": -17, "buzz": -16, "door": -14, "toggle": -15}
+        "coin": -17, "typing": -17, "buzz": -16, "door": -14, "toggle": -15,
+        "alarm": -19, "sizzle": -20, "chop": -15, "reveal": -14}
 LEVEL = {"present": 4, "subtle": -2}   # +4 dB from 2026-10-28 (Content Kit v2: object sounds ~10 dB under voice); was present 0 / subtle -6
-BEDS = {"clock", "timer", "footsteps", "riffle", "typing"}   # continuous sounds: may overlap one-shots
+BEDS = {"clock", "timer", "footsteps", "riffle", "typing", "sizzle", "chop", "alarm"}   # continuous sounds: may overlap one-shots
 
 
 def beat(x, at):
@@ -311,7 +356,7 @@ def events(cfg, table, min_gap=.28):
         if i > 0 and not (own and isinstance(own[0][0], (int, float)) and own[0][0] < .1):
             ev.append((sc["t0"], "swish", None))
         if i == 0:   # the hook scene is already finished on frame 0, but its first object sound still plays in the first second
-            first = next((e for e in own if e[1] not in ("right", "pop", "miss", "swish", "tone", "chord")), None)
+            first = next((e for e in own if e[1] not in ("right", "pop", "miss", "swish", "tone", "chord", "reveal")), None)
             if first:   # beds (clock, typing...) play a short 1 s burst; one-shots play whole
                 ev.append((sc["t0"] + .12, first[1], 1.0 if first[1] in BEDS or (len(first) > 2 and first[2] is not None) else None))
             continue
@@ -334,7 +379,7 @@ def events(cfg, table, min_gap=.28):
     ev.sort(key=lambda e: e[0]); kept = []
     for e in ev:
         last = [k for k in kept if k[1] not in BEDS]
-        if e[1] in BEDS or e[1] in ("tone", "chord", "stamp") or not last or e[0] - last[-1][0] >= min_gap:
+        if e[1] in BEDS or e[1] in ("tone", "chord", "stamp", "reveal") or not last or e[0] - last[-1][0] >= min_gap:
             kept.append(e)
     return kept
 
