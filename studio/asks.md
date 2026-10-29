@@ -143,7 +143,7 @@ Instagram locked the account ("we locked your account to protect you from a poss
 - Still useful: app screenshots of insights for the Oct 25/26 batches (views, avg watch time, skip rate, shares, saves, follows) and the follower count.
 
 ## VASK-021: Approve the Sat Oct 31 batch (first Content Kit v2 batch) (2026-10-29)
-- Status: open
+- Status: done 2026-10-29 (approved; scheduled on IG, X, YT for Sat Oct 31)
 - What: 3 animated-illustration reels, `ready-to-post/2026-10-31-*/` (video.mp4 = Kokoro am_eric, which you OK'd for this batch; post.md with caption, hashtags, X text, YouTube title):
   - 09:30 **ill-three-recipes** (cooking, structure C mistake/cost/fix, 67.7 s): "Saving recipes feels like learning to cook. It isn't." 20 min scrolling x 4 nights = 80 min a week deciding → pick 3 dinners (dal, tomato pasta, bean chili), cook each twice, one shopping list → 6 home dinners, 0 minutes deciding. 35/40
   - 13:00 **ill-twenty-mornings** (story, structure B, 77.7 s): "The free weekend you're waiting for is never coming." Maya, sister's wedding in 8 weeks, 3 weekends lost → 20 min every morning, one skill a week, redoes the muddy week → framed portrait (35 mornings ≈ 12 h). 35/40
