@@ -25,3 +25,5 @@ tts/gemini_usage.jsonl
 tools/earshot/.venv/
 tts2/out/
 tts2/.venv/
+.claude/**/__pycache__/
+studio/tools/__pycache__/
