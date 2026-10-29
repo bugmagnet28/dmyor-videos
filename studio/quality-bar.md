@@ -28,7 +28,7 @@ A reel that fails a pass/fail gate is not scored until it passes. Details: `stud
 |---|---|---|
 | Triple hook (pass/fail) | Muted, sound-only and picture-only versions of the first 1.5 s each make you want the next second | Rebuild the opening before voice |
 | Beat map (pass/fail) | All `beats` fields filled: open loop, both re-hooks, save moment, share line, concrete follow reason | Back to scripting |
-| Honest numbers (pass/fail) | Every number is the reel's own arithmetic or cited | Rewrite the line |
+| No fake sources (pass/fail) | No invented study/survey/source, no invented Dmyor user numbers or testimonials (rhetorical hook numbers are fine, owner 2026-10-29) | Rewrite the line |
 | Story frame (score into Retention) | Want, obstacle and a cost in numbers are clear to a cold viewer | Rewrite the stakes beat |
 | Sound layers (score into Craft) | Hook sound in the first second, object sounds match, one payoff sound, two near-silences | Sound pass again before approval |
 

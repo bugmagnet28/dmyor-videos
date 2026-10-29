@@ -92,7 +92,7 @@ Inputs from Sanyam: `inbox/metrics/` (insight screenshots, or `video-performance
 - **Readable muted:** burned-in text carries the message. Body text 56px+, key words 90px+, strong contrast, filling the frame, inside the safe area.
 - **Viewer first:** a specific, relatable moment, truth, number or useful tool about the viewer's life. dmyor appears in the value close and the brand card (`dmyor` + `@becauseidmyor`), or naturally if the video shows the real app.
 - **Give a reason to save, share or rewatch:** lists, checklists, prompts to do now, loops, "send this to someone who...".
-- **Honest:** no invented statistics, studies, testimonials or user numbers. No fake urgency. No claims about features without checking the app (`~/Documents/Dmyor/millionClient`, read-only).
+- **Honest:** no invented studies, sources, testimonials or Dmyor user numbers. Rhetorical numbers in hooks are allowed (owner 2026-10-29, see `studio/content-kit-v2.md`). No fake urgency. No claims about features without checking the app (`~/Documents/Dmyor/millionClient`, read-only).
 - On screen the brand is always `dmyor`. Any voiceover says "deemyor".
 - No copyrighted music or footage. Sound effects and scores are synthesized; voice is Kokoro am_eric (or Sanyam's voiceover). Photos only if CC0/public domain, and the cinematic style uses designed canvases instead.
 

@@ -10,7 +10,7 @@ How every new reel is scripted, from the owner's "Content Kit v2" PDF (October 2
 |---|---|---|
 | No generic "pop"; object sounds only | **Keep the owner's pop on scene changes** (2026-10-27 rule). Inside a scene, anything that is an object makes its own sound; a pop is only for abstract items (labels, cards) | Owner chose the pop explicitly; the PDF's point (objects sound like themselves) is kept |
 | One payoff sound per reel | **Check marks keep their rising "right" chime** (feedback). Add exactly **one distinct payoff sound** at the reveal (stamp, book closing or chord), different from the chimes | Feedback and payoff are different jobs |
-| Hook templates with numbers / "most people" / "I did X" | **Allowed only with a real number**: the reel's own worked arithmetic (10 pages x 365 = 3,650) or a cited source. Never "most people", "half of", or a first-person experience we did not have. Story reels use a named character (Sam), never a fake "I" | Owner rule: no invented statistics or testimonials |
+| Hook templates with numbers / "most people" / "I did X" | **Owner 2026-10-29: allowed.** Number hooks may be rhetorical ("Half of those blocks will never happen"). Still never attribute a number to a study, survey or research, never fake Dmyor user numbers or testimonials, and the method inside the reel must be real | Owner decision; keeps hooks strong without fake "research" |
 | Sources: Pexels, Pixabay, Unsplash, Openverse, Commons | **CC0 only** (Openverse filter `license=cc0`). Unsplash is banned (blocks automation). Pexels/Pixabay need a new owner decision | Owner said CC0 on 2026-10-28 |
 | Real photo/video preferred for stakes and proof beats | **Not yet.** Our engines are drawn canvases with no video layer. A real-footage hybrid style is the next style to build (it also gives the missing 2nd daily style). Until then the shot list uses the fallback ladder steps 3-4 (illustration, designed canvas) | Pipeline cannot play footage today |
 
@@ -32,12 +32,12 @@ Lead with a hard truth (our only hook signal: 2.8x, now 4.1x; question hooks 0.4
 
 **Hook score, all five must pass:** hard truth not a topic; a specific curiosity gap; works muted; at least one sendable line in the reel; payoff promised concretely.
 
-**Hook bank** (fill the brackets; honesty notes in brackets are binding):
+**Hook bank** (fill the brackets):
 - The thing nobody admits: "You don't stop [habit] because you're lazy. You stop because [real reason]."
 - The expensive mistake: "This one [mistake] costs you [amount/time from the reel's own example] every [week]."
 - The 2-minute version: "You don't need [big system]. You need [small action] for two minutes."
 - The backwards rule: "[Common advice] works, but only if you do it backwards."
-- The day it breaks: "Day [n] is where [the plan] breaks. Here's why." (only if the reel shows why)
+- The day it breaks: "Day [n] is where [the plan] breaks. Here's why."
 - Stop doing this first: "Before you [method], stop [habit]. It cancels everything."
 - The check you can do now: "Open [app/calendar]. If you see [signal], this is already happening to you."
 - The honest trade-off: "[Method] works. Here's what it actually costs you."
@@ -45,13 +45,13 @@ Lead with a hard truth (our only hook signal: 2.8x, now 4.1x; question hooks 0.4
 - The before picture: "This is [your desk/budget/week] before. Wait for after."
 - The rule of one: "One [page/rule]. That's the whole system."
 - The hidden step: "Every tutorial skips step [n]. It's the only one that makes the rest work."
-- The uncomfortable comparison: "Same [time/income]. One [outcome A], one [outcome B]. The difference is boring." (two named characters)
+- The uncomfortable comparison: "Same [time/income]. One [outcome A], one [outcome B]. The difference is boring."
 - The thing you already own: "You already own everything you need for [result]. It's in [place]."
 - The screenshot moment: "Screenshot this [checklist]. You'll need it on [day]."
-- The restart: "If I had to start [goal] from zero, I wouldn't start with [obvious step]." (framed as advice, no claimed history)
+- The restart: "If I had to start [goal] from zero, I wouldn't start with [obvious step]."
 - The last line first: "The answer is [payoff]. Here's why it works."
-- The number that changes it: "[Real arithmetic, e.g. 20 minutes a day is 121 hours a year]." (own maths only, never a made-up percentage)
-- Not used: "[n]% of results...", "[n] of those blocks will never happen", "most people waste nine of them", "I removed X for a week", "the numbers say the opposite" unless a real cited source exists.
+- The number that changes it: "[Number]% of [result] comes from [one overlooked step]. Here's the step."
+- Also allowed (owner 2026-10-29): "[n]% of [result] comes from [one step]", "[n] of those blocks will never happen", "The first ten minutes decide the day. Most people waste nine of them", "I removed [one thing] for a week...", "The 7-day test: day four is where almost everyone quits". Never add "studies show" or name a source that does not exist.
 
 ## 3. Beat map (fill before animating)
 
