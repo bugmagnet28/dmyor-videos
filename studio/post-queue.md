@@ -4,6 +4,13 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 ## Ready to post
 
+## Scheduled for Sat 2026-10-31 (VASK-021, V-EXP-32, first Content Kit v2 batch; Sanyam approved 2026-10-29, scheduled by Claude ~10:15 IST). Instagram (likes hidden), X and YouTube Shorts at the same times
+
+- [x] 09:30 IST · **ill-three-recipes** (cooking, structure C, 67.7s) · `ready-to-post/2026-10-31-ill-three-recipes/`
+- [x] 13:00 IST · **ill-twenty-mornings** (Maya's portrait, structure B, 77.7s) · `ready-to-post/2026-10-31-ill-twenty-mornings/`
+- [x] 19:30 IST · **ill-wake-time** (sleep, structure A, 74.4s) · `ready-to-post/2026-10-31-ill-wake-time/`
+- Follow card in the sleep reel promises "the morning after a bad night" tomorrow: the Sun Nov 1 batch must include it.
+
 ### Waiting for approval: Sat 2026-10-31 (VASK-021, V-EXP-32, first Content Kit v2 batch; Kokoro voice OK'd)
 - [ ] 09:30 IST · **ill-three-recipes** (cooking, C, 67.7s) · `ready-to-post/2026-10-31-ill-three-recipes/` · 35/40
 - [ ] 13:00 IST · **ill-twenty-mornings** (story B, 77.7s) · `ready-to-post/2026-10-31-ill-twenty-mornings/` · 35/40
@@ -26,7 +33,7 @@ Wed 2026-10-28 (Instagram, X and YouTube at the same times):
 
 - [x] 09:30 IST · **ill-one-category** (money: cap your biggest leak weekly, 55.1s) · `ready-to-post/2026-10-30-ill-one-category/` · Instagram (likes hidden), X, YouTube all scheduled
 - [x] 13:00 IST · **ill-one-sentence** (career: who + what + proof pitch, 60.6s) · `ready-to-post/2026-10-30-ill-one-sentence/` · Instagram (likes hidden), X, YouTube all scheduled
-- [~] 19:30 IST · **ill-hard-part** (learning: practise only where you break, 55.4s) · `ready-to-post/2026-10-30-ill-hard-part/` · X and YouTube scheduled; **Instagram still to schedule** (5-flow session limit reached on 2026-10-28; do it in a fresh browser session)
+- [x] 19:30 IST · **ill-hard-part** (learning: practise only where you break, 55.4s) · `ready-to-post/2026-10-30-ill-hard-part/` · X and YouTube scheduled; Instagram scheduled 2026-10-29 (likes hidden)
 - Adam scripts: `reels/<slug>/narration-elevenlabs-v3.txt` (also for the 3 Thu reels below). Drop takes in `inbox/audio/<slug>.mp3`.
 
 ## Scheduled on @becauseidmyor for Thu 2026-10-29 (VASK-019, V-EXP-30; scheduled by Claude 2026-10-28 ~21:00 IST on Sanyam's go-ahead; Kokoro drafts, no Adam takes). Instagram (likes hidden), X and YouTube Shorts at the same times
