@@ -1,6 +1,6 @@
 # What worked
 
-_Generated 2026-10-29 09:02 by `scripts/build.py`. Compares posts at their 48-hour checkpoint. A **signal** needs n ≥ 3 and a ≥ 1.5× difference; everything else is a hint. Definitions: [METRICS.md](../METRICS.md)._
+_Generated 2026-10-31 11:34 by `scripts/build.py`. Compares posts at their 48-hour checkpoint. A **signal** needs n ≥ 3 and a ≥ 1.5× difference; everything else is a hint. Definitions: [METRICS.md](../METRICS.md)._
 
 ## By style
 

@@ -1,6 +1,6 @@
 # Content performance: overall
 
-_Last rebuilt 2026-10-29 09:02 IST from 5 snapshot day(s) and 52 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
+_Last rebuilt 2026-10-31 11:34 IST from 5 snapshot day(s) and 52 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
 
 ## Headline
 
@@ -167,7 +167,7 @@ _Last rebuilt 2026-10-29 09:02 IST from 5 snapshot day(s) and 52 tracked post(s)
 ## Data gaps
 
 - 32 post(s) have no retention (watch time) data: Instagram web insights do not show it; get app screenshots.
-- In catalog but never measured: x:diagram-howto-vo, x:diagram-someday-vo, x:ill-size-problem, x:ill-later-trigger, x:ill-track-inputs, x:ill-five-goals, youtube:ill-five-goals, x:brand-one-place, youtube:brand-one-place, x:pixel-book, youtube:pixel-book, x:ill-save-first, youtube:ill-save-first, x:ill-career-conversations, youtube:ill-career-conversations, x:ill-goal-date, youtube:ill-goal-date, x:ill-phone-distance, youtube:ill-phone-distance, instagram:ill-unclear-task, x:ill-unclear-task, youtube:ill-unclear-task, instagram:ill-ten-pages, x:ill-ten-pages, youtube:ill-ten-pages, instagram:ill-gym-day-four, x:ill-gym-day-four, youtube:ill-gym-day-four, instagram:ill-one-category, x:ill-one-category, youtube:ill-one-category, instagram:ill-one-sentence, x:ill-one-sentence, youtube:ill-one-sentence, x:ill-hard-part, youtube:ill-hard-part.
+- In catalog but never measured: x:diagram-howto-vo, x:diagram-someday-vo, x:ill-size-problem, x:ill-later-trigger, x:ill-track-inputs, x:ill-five-goals, youtube:ill-five-goals, x:brand-one-place, youtube:brand-one-place, x:pixel-book, youtube:pixel-book, x:ill-save-first, youtube:ill-save-first, x:ill-career-conversations, youtube:ill-career-conversations, x:ill-goal-date, youtube:ill-goal-date, x:ill-phone-distance, youtube:ill-phone-distance, instagram:ill-unclear-task, x:ill-unclear-task, youtube:ill-unclear-task, instagram:ill-ten-pages, x:ill-ten-pages, youtube:ill-ten-pages, instagram:ill-gym-day-four, x:ill-gym-day-four, youtube:ill-gym-day-four, instagram:ill-one-category, x:ill-one-category, youtube:ill-one-category, instagram:ill-one-sentence, x:ill-one-sentence, youtube:ill-one-sentence, instagram:ill-hard-part, x:ill-hard-part, youtube:ill-hard-part, instagram:ill-three-recipes, x:ill-three-recipes, youtube:ill-three-recipes, instagram:ill-twenty-mornings, x:ill-twenty-mornings, youtube:ill-twenty-mornings, instagram:ill-wake-time, x:ill-wake-time, youtube:ill-wake-time.
 
 See [WHAT_WORKED.md](WHAT_WORKED.md) for trait-by-trait comparisons and [latest_by_post.csv](latest_by_post.csv) for every number in one table.
 
