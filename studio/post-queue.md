@@ -4,6 +4,13 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 ## Ready to post
 
+## Waiting for approval: Tue 2026-11-03 batch (VASK-022, V-EXP-32 batch 2, Content Kit v2). Instagram, X and YouTube Shorts at the same times
+
+- [ ] 09:30 IST · **ill-bad-night** (sleep, structure A, the overdue "morning after a bad night" promise) · `ready-to-post/2026-11-03-ill-bad-night/`
+- [ ] 13:00 IST · **ill-subscriptions** (money, structure C) · `ready-to-post/2026-11-03-ill-subscriptions/`
+- [ ] 19:30 IST · **ill-catch-up** (friendship story, structure B) · `ready-to-post/2026-11-03-ill-catch-up/`
+- Keep slot order: follow lines chain 09:30 → "this afternoon" → "tonight" → "tomorrow: a big goal in a busy week" (next batch).
+
 ## Scheduled for Sat 2026-10-31 (VASK-021, V-EXP-32, first Content Kit v2 batch; Sanyam approved 2026-10-29, scheduled by Claude ~10:15 IST). Instagram (likes hidden), X and YouTube Shorts at the same times
 
 - [x] 09:30 IST · **ill-three-recipes** (cooking, structure C, 67.7s) · `ready-to-post/2026-10-31-ill-three-recipes/`

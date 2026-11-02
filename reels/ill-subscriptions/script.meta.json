@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "experiment": "V-EXP-32 (Content Kit v2, batch 2)",
+ "hook_type": "hard-truth",
+ "slug": "ill-subscriptions",
+ "topic": "money",
+ "hook": "You're paying every month for things you forgot you have.",
+ "frame": {
+  "structure": "C (mistake, cost, fix)",
+  "want": "stop losing money to forgotten recurring charges",
+  "obstacle": "charges are small and automatic; people pause or postpone instead of cancelling",
+  "cost": "$81.96 a month, about $984 a year; after the check $30 a month, over $600 a year back"
+ },
+ "hooks_considered": [
+  {
+   "formula": "check you can do now",
+   "line": "You're paying every month for things you forgot you have.",
+   "checks": "hard truth Y, gap Y (which?), muted Y (bank list, highlighted repeats, $81.96), sendable Y, payoff Y ($600)",
+   "kept": true
+  },
+  {
+   "formula": "expensive mistake",
+   "line": "This one habit costs you $984 a year.",
+   "checks": "number without context on frame 0",
+   "kept": false
+  },
+  {
+   "formula": "check you can do now (literal)",
+   "line": "Open your bank app. If the same amount leaves every month, watch this.",
+   "checks": "instruction not truth; 6-word screen limit fails",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "paying for things you forgot (0 s)",
+  "open_loop": {
+   "promised": "5-minute check",
+   "withheld": "the mistake at the end (pause instead of cancel)"
+  },
+  "stakes": "5 charges listed, $82/month, ~$1,000/year",
+  "rehook_10": "Almost a thousand dollars a year",
+  "interrupt": "phone list scrolls, repeats light up",
+  "rehook_25": "So what's the mistake? (near-silence 1)",
+  "save_moment": "MONEY CHECK rule card",
+  "share_line": "Send this to the friend with four streaming apps.",
+  "follow_reason": "tonight's reel (ill-catch-up, Tue 19:30)",
+  "payoff_sound": "reveal at AFTER 5 MINUTES"
+ },
+ "note": "App names are invented (WatchBox, StreamFlix, Music+, CloudBox) to avoid real brands. Different takeaway from ill-one-category (Oct 30: weekly cap on one category). Engine: bank-scroll now takes names/amts/hls/label/dec; cost-tally takes prefix.",
+ "quality": {
+  "hook": 5,
+  "usefulness": 5,
+  "specificity": 5,
+  "clarity": 5,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 36
+ }
+}

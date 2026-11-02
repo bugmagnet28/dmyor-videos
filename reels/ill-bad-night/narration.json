@@ -1,0 +1,200 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] After a bad night, the worst thing you can do is sleep in. || Here's how to get through the next day instead, and it starts the moment your alarm goes off. || Say you slept four hours. So you sleep in until eleven, nap for two hours after lunch, and go to bed early to catch up. It feels smart. But at one in the morning, you're wide awake again. One bad night just became two. || [turn] So here's what works. Step one. Get up at your usual time anyway. Seven thirty, same as always. You'll feel rough for an hour, and that's okay. || Step two. Get daylight in the first ten minutes. Open the curtains, or take your coffee outside. || Step three. If you need a nap, keep it short. Twenty minutes, before three in the afternoon, with an alarm. || [turn] And tonight? Should you go to bed early? || No. Go to bed at your normal time. Eleven thirty, not nine. By then you're tired enough to actually fall asleep. || [land] Do that, and the bad night stays one bad night. You're asleep by midnight, and the next morning feels normal again. || Here are the three rules. Up at your usual time. A twenty minute nap, before three. Your normal bedtime. Send this to the friend who texted you at four AM last night. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] And follow, because this afternoon's reel is the five minute check that finds money you're losing every month. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "AFTER A BAD NIGHT",
+    "aBig": "Sleep in",
+    "b": "What actually works"
+   },
+   "head": "After a bad night,<br><b>don't</b> sleep in."
+  },
+  null,
+  {
+   "type": "cost-tally",
+   "params": {
+    "title": "THE CATCH-UP PLAN",
+    "rows": [
+     [
+      "Slept",
+      "4 h"
+     ],
+     [
+      "Sleep in until",
+      "11 AM"
+     ],
+     [
+      "Nap after lunch",
+      "2 h"
+     ],
+     [
+      "Bed early",
+      "9 PM"
+     ]
+    ],
+    "total": 2,
+    "unit": " bad nights",
+    "totalLabel": "RESULT",
+    "note": "One bad night became two",
+    "cue": [
+     "awake",
+     "became",
+     "slept",
+     "sleep",
+     "nap",
+     "bed"
+    ],
+    "stage": "rowcue"
+   },
+   "head": "The catch-up plan<br><b>backfires</b>."
+  },
+  {
+   "type": "wake-chart",
+   "params": {
+    "stage": "flat",
+    "chip": "7:30 AM, even after 4 h",
+    "cue": [
+     "usual",
+     "seven",
+     "rough"
+    ]
+   },
+   "head": "Up at your<br><b>usual time</b>."
+  },
+  {
+   "type": "curtain-light",
+   "params": {
+    "chip": "Daylight within 10 minutes",
+    "cue": [
+     "daylight",
+     "coffee"
+    ]
+   },
+   "head": "Daylight in the<br><b>first 10 minutes</b>."
+  },
+  {
+   "type": "two-versions",
+   "params": {
+    "title": "If you need a nap",
+    "tagA": "NOT",
+    "full": "2 hours after lunch",
+    "tagB": "INSTEAD",
+    "small": "20 min, before 3 PM",
+    "noIcon": true,
+    "cue": [
+     "nap",
+     "short",
+     "Twenty",
+     "alarm"
+    ]
+   },
+   "head": "Nap? <b>20 minutes</b>,<br>before 3 PM."
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "TONIGHT",
+    "aBig": "Bed at 9",
+    "b": "Usual bedtime: 11:30",
+    "cue": [
+     "tonight",
+     "No"
+    ]
+   },
+   "head": "Tonight: your<br><b>normal</b> bedtime."
+  },
+  null,
+  {
+   "type": "before-after",
+   "params": {
+    "a": "SLEEP IN",
+    "b": "GET UP",
+    "rows": [
+     [
+      "Up at",
+      "11 AM",
+      "7:30"
+     ],
+     [
+      "Nap",
+      "2 h",
+      "20 min"
+     ],
+     [
+      "Asleep by",
+      "1 AM",
+      "12 AM"
+     ]
+    ],
+    "cue": [
+     "Do",
+     "stays"
+    ]
+   },
+   "head": "One bad night<br>stays <b>one</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "AFTER A BAD NIGHT",
+    "items": [
+     "Up at the usual time",
+     "20-min nap before 3",
+     "Normal bedtime"
+    ],
+    "cue": [
+     "Up",
+     "twenty",
+     "normal"
+    ]
+   },
+   "head": "Screenshot<br><b>the rules</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Wake up rested",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "Up at 7:30",
+     "Short nap",
+     "Usual bedtime"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "The 5-minute money check",
+    "when": "This afternoon, 1 PM",
+    "cue": [
+     null,
+     "check"
+    ]
+   },
+   "head": "Next: money you're<br><b>losing</b> monthly."
+  },
+  null
+ ],
+ "brand_from": 12,
+ "silences": [
+  "And tonight",
+  "Do that, and"
+ ],
+ "caption": {
+  "instagram": "After a bad night, the worst thing you can do is sleep in.\n\nSleep till 11, nap 2 hours, bed at 9 to catch up... and you're wide awake at 1 AM. One bad night becomes two.\n\nThe day after a bad night:\n1. Get up at your usual time anyway (7:30)\n2. Daylight in the first 10 minutes\n3. Need a nap? 20 minutes, before 3 PM, with an alarm\n\nTonight: your normal bedtime. 11:30, not 9.\n\nSend this to the friend who texted you at 4 AM last night.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#sleep #insomnia #sleepbetter #habits #selfimprovement",
+  "x": "After a bad night, the worst thing you can do is sleep in.\n\nUp at your usual time. Daylight in 10 minutes. Nap 20 min max, before 3 PM. Normal bedtime tonight, not early.",
+  "youtube_title": "After a bad night, don't sleep in #Shorts"
+ }
+}

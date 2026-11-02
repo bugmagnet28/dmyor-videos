@@ -1,0 +1,12 @@
+reels/ill-subscriptions/audio.mp3  80.82s  voice=am_eric preset=plain fx=False breaths=False stages=hook body body turn body body turn body land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/8081 [00:00<?, ?frames/s] 35%|███▍      | 2818/8081 [00:36<01:07, 77.80frames/s] 35%|███▍      | 2818/8081 [00:50<01:07, 77.80frames/s] 66%|██████▋   | 5372/8081 [01:12<00:37, 72.92frames/s] 66%|██████▋   | 5372/8081 [01:31<00:37, 72.92frames/s] 98%|█████████▊| 7930/8081 [01:52<00:02, 69.32frames/s]100%|██████████| 8081/8081 [02:06<00:00, 57.30frames/s]100%|██████████| 8081/8081 [02:06<00:00, 63.70frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+269 words, 80.82s, 3.33 words/sec
+-> reels/ill-subscriptions/cues.json
+sfx present: 49 sounds -> reels/ill-subscriptions/audio_mixed.mp3 riffle@0.1 pop@8.4 pencil@9.8 pencil@10.3 pencil@10.7 pencil@11.2 ratchet@19.6 pop@20.1 swish@21.7 pop@22.3 riffle@23.3 ratchet@25.7 swish@27.1 pop@29.7 pop@31.7 right@32.8 swish@33.3 pencil@35.0 pencil@35.4 right@36.3 pencil@36.8 right@37.7 pencil@38.1 right@39.0 pop@42.6 pop@43.2 pencil@44.6 swish@50.7 pop@51.1 pop@51.5 reveal@52.8 pop@57.6 pencil@58.1 right@58.4 pencil@59.4 right@59.7 pencil@60.5 right@60.8 tone@64.1 stamp@64.3 pop@65.9 pop@66.4 right@67.2 right@67.7 right@68.2 pop@71.4 toggle@73.3 right@73.7 chord@77.0
+built reels/ill-subscriptions: 80.84s, 10 scenes, brand 76.96s, 3.33 words/sec
+scenes: [('bank-scroll', 0.0, 8.42, None), ('cost-tally', 8.37, 21.71, [1.17, 11.03, 11.73]), ('bank-scroll', 21.71, 27.09, [0.61, 1.59, 4.03]), ('two-versions', 27.09, 33.31, [1.77, 2.59, 4.61, 5.21]), ('list-rewrite', 33.31, 42.57, [1.65, 3.05, 4.39]), ('struck-card', 42.57, 50.74, [0.59, 2.05]), ('before-after', 50.69, 57.55, [0.05, 2.15]), ('rule-card', 57.55, 64.11, [0.51, 1.81, 2.93]), ('dream-to-steps', 64.11, 71.37, None), ('follow-next', 71.37, 76.96, [0.2, 1.95])]
+recorded reels/ill-subscriptions/reel.mp4 (80.83s)
+packaged /Users/sanyampathak/Documents/dmyor-videos/ready-to-post/2026-11-03-ill-subscriptions

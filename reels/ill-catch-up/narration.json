@@ -1,0 +1,217 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] You don't lose friends in a fight. You lose them to, let's catch up soon. || Rohan found that out the hard way. And the fix he used took one calendar invite. || Two years ago he moved cities for work. His three closest friends from college kept saying the same thing. We should catch up soon. Then March went by. Then May. Then August. The last time all four of them talked was seven months ago. || [turn] Nobody stopped caring. The problem was that every catch-up needed someone to plan it, and everyone was busy. || So Rohan stopped planning. He sent one calendar invite. A video call, the first Sunday of every month, at eleven. It repeats. Nobody has to organise it again. || And between calls, one small thing every Sunday. A short message to one friend. Saw this and thought of you. Thirty seconds. || [turn] Did everyone show up? || Not every time. The first month, only two of them made it. But the next call was already in the calendar, so it didn't depend on anyone remembering. || [land] Three months later, they'd had three calls, and they'd booked a weekend trip for March. Same friends. Same busy lives. The only difference was a date that repeats. || Here's the whole system. One repeating date. One message every Sunday. And if someone misses, the next call is already set. Send this to the friend you keep saying let's catch up to. || [outro] Rohan didn't need more time, just a plan that runs by itself. Yours can too. That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] And follow, because tomorrow's reel is how to fit a big goal into a busy week, in three blocks. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "postpone-calendar",
+   "params": {
+    "days": [
+     "MAR",
+     "MAY",
+     "AUG",
+     "OCT"
+    ],
+    "nums": [
+     "12",
+     "3",
+     "20",
+     "9"
+    ],
+    "note": "let's catch up soon"
+   },
+   "head": "Friendships end with<br><b>\"catch up soon\"</b>."
+  },
+  null,
+  {
+   "type": "cost-tally",
+   "params": {
+    "title": "THE GROUP CHAT",
+    "rows": [
+     [
+      "Mar",
+      "\"Catch up soon!\""
+     ],
+     [
+      "May",
+      "\"Yes, soon!\""
+     ],
+     [
+      "Aug",
+      "\"For sure, soon\""
+     ]
+    ],
+    "total": 7,
+    "unit": " months",
+    "totalLabel": "LAST CALL",
+    "cue": [
+     "seven",
+     null,
+     "friends",
+     "May",
+     "August"
+    ],
+    "stage": "rowcue"
+   },
+   "head": "<b>7 months</b><br>since all four talked."
+  },
+  {
+   "type": "two-versions",
+   "params": {
+    "title": "Every catch-up",
+    "tagA": "NEEDED",
+    "full": "Someone to plan it",
+    "tagB": "INSTEAD",
+    "small": "A date that repeats",
+    "noIcon": true,
+    "cue": [
+     "caring",
+     "problem",
+     "busy"
+    ]
+   },
+   "head": "Nobody stopped <b>caring</b>."
+  },
+  {
+   "type": "meeting-card",
+   "params": {
+    "title": "College call",
+    "rows": [
+     "1st Sunday, 11:00 AM",
+     "Repeats every month"
+    ],
+    "remind": "Invite all 3",
+    "cue": [
+     "invite",
+     "Nobody"
+    ]
+   },
+   "head": "<b>One invite</b>.<br>It repeats."
+  },
+  {
+   "type": "message-send",
+   "params": {
+    "to": "Ananya",
+    "lines": [
+     "Saw this and thought of you.",
+     "Still up for that trip?",
+     "Miss you guys."
+    ],
+    "cue": [
+     "Sunday",
+     null,
+     "Thirty"
+    ]
+   },
+   "head": "One message<br>every <b>Sunday</b>."
+  },
+  {
+   "type": "three-people",
+   "params": {
+    "me": "ROHAN",
+    "roles": [
+     "Kabir",
+     "Ananya",
+     "Dev"
+    ],
+    "label": "First call",
+    "count": "2 of 3 made it",
+    "cue": [
+     "show",
+     "two"
+    ]
+   },
+   "head": "Did everyone<br><b>show up</b>?"
+  },
+  null,
+  {
+   "type": "before-after",
+   "params": {
+    "a": "BEFORE",
+    "b": "3 MONTHS LATER",
+    "rows": [
+     [
+      "Calls",
+      "0",
+      "3"
+     ],
+     [
+      "Last talked",
+      "7 mo",
+      "2 wks"
+     ],
+     [
+      "Trip",
+      "Someday",
+      "March"
+     ]
+    ],
+    "cue": [
+     "Three",
+     "calls"
+    ]
+   },
+   "head": "Same friends.<br>A date that <b>repeats</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "KEEP YOUR FRIENDS",
+    "items": [
+     "One repeating date",
+     "A Sunday message",
+     "Next call is set"
+    ],
+    "cue": [
+     "One",
+     "message",
+     "next"
+    ]
+   },
+   "head": "Screenshot<br><b>the system</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Keep my old friends",
+    "date": "Open it again: Mar 2027",
+    "steps": [
+     "Repeat invite",
+     "Sunday message",
+     "Book the trip"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "A big goal in a busy week",
+    "when": "Tomorrow",
+    "cue": [
+     null,
+     "busy"
+    ]
+   },
+   "head": "Next: a big goal,<br>a <b>busy week</b>."
+  },
+  null
+ ],
+ "brand_from": 12,
+ "silences": [
+  "Did everyone",
+  "Three months later"
+ ],
+ "caption": {
+  "instagram": "You don't lose friends in a fight. You lose them to \"let's catch up soon\".\n\nRohan moved cities. His 3 closest friends kept saying \"catch up soon\". March, May, August. Seven months without one call.\n\nThe fix took one calendar invite:\n1. A video call, first Sunday of every month, 11 AM. It repeats, so nobody has to plan it\n2. Every Sunday, one short message to one friend (30 seconds)\n3. Someone misses? The next call is already set\n\nThree months later: three calls and a trip booked for March.\n\nSend this to the friend you keep saying \"let's catch up\" to.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#friendship #friends #relationships #habits #adulting",
+  "x": "You don't lose friends in a fight. You lose them to \"let's catch up soon\".\n\nOne repeating calendar invite (1st Sunday, 11 AM). One short message every Sunday. If someone misses, the next call is already set.",
+  "youtube_title": "You don't lose friends in a fight #Shorts"
+ }
+}

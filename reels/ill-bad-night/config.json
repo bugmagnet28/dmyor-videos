@@ -1,0 +1,245 @@
+{
+ "total": 75.66,
+ "brandT": 71.46,
+ "scenes": [
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "AFTER A BAD NIGHT",
+    "aBig": "Sleep in",
+    "b": "What actually works"
+   },
+   "head": "After a bad night,<br><b>don't</b> sleep in.",
+   "t0": 0.0,
+   "t1": 7.72
+  },
+  {
+   "type": "cost-tally",
+   "params": {
+    "title": "THE CATCH-UP PLAN",
+    "rows": [
+     [
+      "Slept",
+      "4 h"
+     ],
+     [
+      "Sleep in until",
+      "11 AM"
+     ],
+     [
+      "Nap after lunch",
+      "2 h"
+     ],
+     [
+      "Bed early",
+      "9 PM"
+     ]
+    ],
+    "total": 2,
+    "unit": " bad nights",
+    "totalLabel": "RESULT",
+    "note": "One bad night became two",
+    "cue": [
+     "awake",
+     "became",
+     "slept",
+     "sleep",
+     "nap",
+     "bed"
+    ],
+    "stage": "rowcue",
+    "at": [
+     7.91,
+     9.63,
+     0.27,
+     1.71,
+     2.95,
+     4.45
+    ]
+   },
+   "head": "The catch-up plan<br><b>backfires</b>.",
+   "t0": 7.67,
+   "t1": 18.29
+  },
+  {
+   "type": "wake-chart",
+   "params": {
+    "stage": "flat",
+    "chip": "7:30 AM, even after 4 h",
+    "cue": [
+     "usual",
+     "seven",
+     "rough"
+    ],
+    "at": [
+     2.17,
+     2.84,
+     5.39
+    ]
+   },
+   "head": "Up at your<br><b>usual time</b>.",
+   "t0": 18.29,
+   "t1": 25.65
+  },
+  {
+   "type": "curtain-light",
+   "params": {
+    "chip": "Daylight within 10 minutes",
+    "cue": [
+     "daylight",
+     "coffee"
+    ],
+    "at": [
+     0.73,
+     3.81
+    ]
+   },
+   "head": "Daylight in the<br><b>first 10 minutes</b>.",
+   "t0": 25.65,
+   "t1": 30.89
+  },
+  {
+   "type": "two-versions",
+   "params": {
+    "title": "If you need a nap",
+    "tagA": "NOT",
+    "full": "2 hours after lunch",
+    "tagB": "INSTEAD",
+    "small": "20 min, before 3 PM",
+    "noIcon": true,
+    "cue": [
+     "nap",
+     "short",
+     "Twenty",
+     "alarm"
+    ],
+    "at": [
+     0.93,
+     1.49,
+     1.64,
+     4.37
+    ]
+   },
+   "head": "Nap? <b>20 minutes</b>,<br>before 3 PM.",
+   "t0": 30.89,
+   "t1": 36.11
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "TONIGHT",
+    "aBig": "Bed at 9",
+    "b": "Usual bedtime: 11:30",
+    "cue": [
+     "tonight",
+     "No"
+    ],
+    "at": [
+     0.15,
+     2.43
+    ]
+   },
+   "head": "Tonight: your<br><b>normal</b> bedtime.",
+   "t0": 36.11,
+   "t1": 44.28
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "a": "SLEEP IN",
+    "b": "GET UP",
+    "rows": [
+     [
+      "Up at",
+      "11 AM",
+      "7:30"
+     ],
+     [
+      "Nap",
+      "2 h",
+      "20 min"
+     ],
+     [
+      "Asleep by",
+      "1 AM",
+      "12 AM"
+     ]
+    ],
+    "cue": [
+     "Do",
+     "stays"
+    ],
+    "at": [
+     0.05,
+     1.09
+    ]
+   },
+   "head": "One bad night<br>stays <b>one</b>.",
+   "t0": 44.23,
+   "t1": 50.55
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "AFTER A BAD NIGHT",
+    "items": [
+     "Up at the usual time",
+     "20-min nap before 3",
+     "Normal bedtime"
+    ],
+    "cue": [
+     "Up",
+     "twenty",
+     "normal"
+    ],
+    "at": [
+     0.91,
+     2.56,
+     4.05
+    ]
+   },
+   "head": "Screenshot<br><b>the rules</b>.",
+   "t0": 50.55,
+   "t1": 58.89
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Wake up rested",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "Up at 7:30",
+     "Short nap",
+     "Usual bedtime"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 58.89,
+   "t1": 66.15
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "The 5-minute money check",
+    "when": "This afternoon, 1 PM",
+    "cue": [
+     null,
+     "check"
+    ],
+    "at": [
+     0.2,
+     2.99
+    ]
+   },
+   "head": "Next: money you're<br><b>losing</b> monthly.",
+   "t0": 66.15,
+   "t1": 71.46
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  36.06,
+  44.18
+ ]
+}

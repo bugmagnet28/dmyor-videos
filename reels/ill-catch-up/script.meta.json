@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "experiment": "V-EXP-32 (Content Kit v2, batch 2)",
+ "hook_type": "hard-truth",
+ "slug": "ill-catch-up",
+ "topic": "friendship",
+ "hook": "You don't lose friends in a fight. You lose them to \"let's catch up soon\".",
+ "frame": {
+  "structure": "B (want, obstacle, choice, payoff)",
+  "want": "Rohan keeps his three college friends after moving cities",
+  "obstacle": "every catch-up needs someone to plan it; everyone is busy",
+  "cost": "7 months without a call; 'catch up soon' in Mar, May, Aug"
+ },
+ "hooks_considered": [
+  {
+   "formula": "thing nobody admits",
+   "line": "You don't lose friends in a fight. You lose them to 'let's catch up soon'.",
+   "checks": "hard truth Y, gap Y (then how?), muted Y (calendar flipping, 'catch up soon' struck each month), sendable Y (very), payoff Y (trip booked)",
+   "kept": true
+  },
+  {
+   "formula": "uncomfortable comparison",
+   "line": "Same busy friends. One group still talks, one doesn't. The difference is boring.",
+   "checks": "long, weaker frame 0",
+   "kept": false
+  },
+  {
+   "formula": "the friend line",
+   "line": "Send this to the friend you keep saying 'let's catch up' to.",
+   "checks": "good share line, kept as share line instead",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "friendships end with 'catch up soon' (0 s)",
+  "open_loop": {
+   "promised": "the fix took one calendar invite",
+   "withheld": "what the invite is + did it work"
+  },
+  "stakes": "moved cities, Mar/May/Aug, 7 months since all four talked",
+  "rehook_10": "Nobody stopped caring",
+  "interrupt": "calendar invite typed, repeat toggle on",
+  "rehook_25": "Did everyone show up? (near-silence 1)",
+  "save_moment": "KEEP YOUR FRIENDS rule card",
+  "share_line": "Send this to the friend you keep saying let's catch up to.",
+  "follow_reason": "tomorrow's reel: a big goal in a busy week, 3 blocks (idea #28, MUST be in the next batch)",
+  "payoff_sound": "reveal at 3 MONTHS LATER"
+ },
+ "note": "New life area (friendship). Rohan is a fictional illustrative character (like Maya, Sam), not a Dmyor user or testimonial. Bridge to viewer before value close (owner story rule 2026-10-27). Engine: three-people takes me/count.",
+ "quality": {
+  "hook": 5,
+  "usefulness": 4,
+  "specificity": 5,
+  "clarity": 5,
+  "retention": 5,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 36
+ }
+}

@@ -1,0 +1,12 @@
+reels/ill-bad-night/audio.mp3  75.71s  voice=am_eric preset=plain fx=False breaths=False stages=hook body body turn body body turn body land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/7571 [00:00<?, ?frames/s] 33%|███▎      | 2482/7571 [00:51<01:45, 48.16frames/s] 33%|███▎      | 2482/7571 [01:10<01:45, 48.16frames/s] 68%|██████▊   | 5146/7571 [01:55<00:55, 44.07frames/s] 68%|██████▊   | 5146/7571 [02:11<00:55, 44.07frames/s] 94%|█████████▍| 7146/7571 [02:56<00:10, 38.78frames/s] 94%|█████████▍| 7146/7571 [03:12<00:10, 38.78frames/s]100%|██████████| 7571/7571 [03:23<00:00, 33.39frames/s]100%|██████████| 7571/7571 [03:23<00:00, 37.12frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+280 words, 75.71s, 3.7 words/sec
+-> reels/ill-bad-night/cues.json
+sfx present: 44 sounds -> reels/ill-bad-night/audio_mixed.mp3 pencil@0.1 pop@7.7 pencil@8.2 pencil@8.7 pencil@9.1 pencil@9.6 pop@15.6 ratchet@17.5 swish@18.3 pop@20.5 ratchet@21.1 pop@23.7 right@24.1 swish@25.6 swish@26.4 pop@29.5 right@30.3 swish@30.9 pop@32.4 right@35.7 pop@36.2 pencil@38.5 swish@44.2 pop@44.7 pop@45.1 reveal@45.3 pop@50.6 pencil@51.5 right@51.8 pencil@53.1 right@53.5 pencil@54.6 right@54.9 tone@58.9 stamp@59.0 pop@60.6 pop@61.1 right@61.9 right@62.4 right@62.9 pop@66.2 toggle@69.1 right@69.5 chord@71.5
+built reels/ill-bad-night: 75.66s, 10 scenes, brand 71.46s, 3.7 words/sec
+scenes: [('struck-card', 0.0, 7.72, None), ('cost-tally', 7.67, 18.29, [0.27, 9.63, 7.91]), ('wake-chart', 18.29, 25.65, [2.17, 2.84, 5.39]), ('curtain-light', 25.65, 30.89, [0.73, 3.81]), ('two-versions', 30.89, 36.11, [0.93, 1.49, 1.64, 4.37]), ('struck-card', 36.11, 44.28, [0.15, 2.43]), ('before-after', 44.23, 50.55, [0.05, 1.09]), ('rule-card', 50.55, 58.89, [0.91, 2.56, 4.05]), ('dream-to-steps', 58.89, 66.15, None), ('follow-next', 66.15, 71.46, [0.2, 2.99])]
+recorded reels/ill-bad-night/reel.mp4 (75.66s)
+packaged /Users/sanyampathak/Documents/dmyor-videos/ready-to-post/2026-11-03-ill-bad-night

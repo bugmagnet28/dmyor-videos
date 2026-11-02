@@ -1,0 +1,8 @@
+  skip ['@6+0.05', 'pencil', 0.3]: scene cost-tally has no beat for it
+  skip ['@7+0.05', 'pencil', 0.3]: scene cost-tally has no beat for it
+  skip ['@8+0.05', 'pencil', 0.3]: scene cost-tally has no beat for it
+sfx present: 43 sounds -> reels/ill-bad-night/audio_mixed.mp3 pencil@0.1 pop@7.7 pencil@9.4 pencil@10.7 pencil@12.2 ratchet@15.8 pop@17.3 swish@18.3 pop@20.5 ratchet@21.1 pop@23.7 right@24.1 swish@25.6 swish@26.4 pop@29.5 right@30.3 swish@30.9 pop@32.4 right@35.7 pop@36.2 pencil@38.5 swish@44.2 pop@44.7 pop@45.1 reveal@45.3 pop@50.6 pencil@51.5 right@51.8 pencil@53.1 right@53.5 pencil@54.6 right@54.9 tone@58.9 stamp@59.0 pop@60.6 pop@61.1 right@61.9 right@62.4 right@62.9 pop@66.2 toggle@69.1 right@69.5 chord@71.5
+built reels/ill-bad-night: 75.66s, 10 scenes, brand 71.46s, 3.7 words/sec
+scenes: [('struck-card', 0.0, 7.72, None), ('cost-tally', 7.67, 18.29, [7.91, 9.63, 0.27, 1.71, 2.95, 4.45]), ('wake-chart', 18.29, 25.65, [2.17, 2.84, 5.39]), ('curtain-light', 25.65, 30.89, [0.73, 3.81]), ('two-versions', 30.89, 36.11, [0.93, 1.49, 1.64, 4.37]), ('struck-card', 36.11, 44.28, [0.15, 2.43]), ('before-after', 44.23, 50.55, [0.05, 1.09]), ('rule-card', 50.55, 58.89, [0.91, 2.56, 4.05]), ('dream-to-steps', 58.89, 66.15, None), ('follow-next', 66.15, 71.46, [0.2, 2.99])]
+recorded reels/ill-bad-night/reel.mp4 (75.66s)
+packaged /Users/sanyampathak/Documents/dmyor-videos/ready-to-post/2026-11-03-ill-bad-night

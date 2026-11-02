@@ -1,0 +1,1704 @@
+{
+ "audio": "audio.mp3",
+ "duration": 80.82,
+ "text": "You're paying every month for things you forgot you have. There's a five-minute check that finds them, but most people make one mistake at the end and keep paying. Here's what it looks like, a streaming app 5099, a second one 1199, music 1099, cloud storage 299, and a gym you last went to in August $40. That's $82 a month, almost $1000 a year. Step one, open your bank app, search last month for every amount that repeats, and write each one down. Step two, next to each one, ask a single question. Did I use this in the last 30 days? Not might I use it, did I? Step three, cancel every no, the gym from August gone, the second streaming app gone, cloud storage you use every day, keep it. You can always rejoin the month you actually need it. So what's the mistake? People pause instead of canceling or they tell themselves they'll do it on the first, then the first comes and it bills again. Do it today and $82 a month becomes 30. That's over $600 a year back from five minutes. Here's the checklist every repeat, used in 30 days, cancel every no today, send this to the friend with four streaming apps. That's what demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. And follow because tonight's reel is how Rohan got his old friends back with one calendar invite. If you want to try it out, I've put the link in the bio.",
+ "words": [
+  {
+   "w": "youre",
+   "raw": "You're",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "paying",
+   "raw": "paying",
+   "s": 0.32,
+   "e": 0.52
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 0.52,
+   "e": 0.94
+  },
+  {
+   "w": "month",
+   "raw": "month",
+   "s": 0.94,
+   "e": 1.14
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 1.14,
+   "e": 1.38
+  },
+  {
+   "w": "things",
+   "raw": "things",
+   "s": 1.38,
+   "e": 1.58
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 1.58,
+   "e": 1.76
+  },
+  {
+   "w": "forgot",
+   "raw": "forgot",
+   "s": 1.76,
+   "e": 2.06
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 2.06,
+   "e": 2.26
+  },
+  {
+   "w": "have",
+   "raw": "have.",
+   "s": 2.26,
+   "e": 2.6
+  },
+  {
+   "w": "theres",
+   "raw": "There's",
+   "s": 3.06,
+   "e": 3.22
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 3.22,
+   "e": 3.36
+  },
+  {
+   "w": "five",
+   "raw": "five",
+   "s": 3.36,
+   "e": 3.58
+  },
+  {
+   "w": "minute",
+   "raw": "-minute",
+   "s": 3.58,
+   "e": 3.76
+  },
+  {
+   "w": "check",
+   "raw": "check",
+   "s": 3.76,
+   "e": 4.06
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 4.06,
+   "e": 4.3
+  },
+  {
+   "w": "finds",
+   "raw": "finds",
+   "s": 4.3,
+   "e": 4.62
+  },
+  {
+   "w": "them",
+   "raw": "them,",
+   "s": 4.62,
+   "e": 4.92
+  },
+  {
+   "w": "but",
+   "raw": "but",
+   "s": 5.18,
+   "e": 5.44
+  },
+  {
+   "w": "most",
+   "raw": "most",
+   "s": 5.44,
+   "e": 5.66
+  },
+  {
+   "w": "people",
+   "raw": "people",
+   "s": 5.66,
+   "e": 5.94
+  },
+  {
+   "w": "make",
+   "raw": "make",
+   "s": 5.94,
+   "e": 6.2
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 6.2,
+   "e": 6.44
+  },
+  {
+   "w": "mistake",
+   "raw": "mistake",
+   "s": 6.44,
+   "e": 6.76
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 6.76,
+   "e": 6.94
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 6.94,
+   "e": 7.06
+  },
+  {
+   "w": "end",
+   "raw": "end",
+   "s": 7.06,
+   "e": 7.26
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 7.26,
+   "e": 7.44
+  },
+  {
+   "w": "keep",
+   "raw": "keep",
+   "s": 7.44,
+   "e": 7.6
+  },
+  {
+   "w": "paying",
+   "raw": "paying.",
+   "s": 7.6,
+   "e": 8.02
+  },
+  {
+   "w": "heres",
+   "raw": "Here's",
+   "s": 8.42,
+   "e": 8.62
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 8.62,
+   "e": 8.7
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 8.7,
+   "e": 8.78
+  },
+  {
+   "w": "looks",
+   "raw": "looks",
+   "s": 8.78,
+   "e": 8.94
+  },
+  {
+   "w": "like",
+   "raw": "like,",
+   "s": 8.94,
+   "e": 9.22
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 9.44,
+   "e": 9.54
+  },
+  {
+   "w": "streaming",
+   "raw": "streaming",
+   "s": 9.54,
+   "e": 9.82
+  },
+  {
+   "w": "app",
+   "raw": "app",
+   "s": 9.82,
+   "e": 10.12
+  },
+  {
+   "w": "5099",
+   "raw": "5099,",
+   "s": 10.12,
+   "e": 10.92
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 11.3,
+   "e": 11.42
+  },
+  {
+   "w": "second",
+   "raw": "second",
+   "s": 11.42,
+   "e": 11.68
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 11.68,
+   "e": 11.84
+  },
+  {
+   "w": "1199",
+   "raw": "1199,",
+   "s": 11.84,
+   "e": 12.76
+  },
+  {
+   "w": "music",
+   "raw": "music",
+   "s": 12.82,
+   "e": 13.02
+  },
+  {
+   "w": "1099",
+   "raw": "1099,",
+   "s": 13.02,
+   "e": 13.72
+  },
+  {
+   "w": "cloud",
+   "raw": "cloud",
+   "s": 14.14,
+   "e": 14.14
+  },
+  {
+   "w": "storage",
+   "raw": "storage",
+   "s": 14.14,
+   "e": 14.58
+  },
+  {
+   "w": "299",
+   "raw": "299,",
+   "s": 14.58,
+   "e": 14.98
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 15.46,
+   "e": 15.54
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 15.54,
+   "e": 15.66
+  },
+  {
+   "w": "gym",
+   "raw": "gym",
+   "s": 15.66,
+   "e": 15.8
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 15.8,
+   "e": 15.96
+  },
+  {
+   "w": "last",
+   "raw": "last",
+   "s": 15.96,
+   "e": 16.18
+  },
+  {
+   "w": "went",
+   "raw": "went",
+   "s": 16.18,
+   "e": 16.36
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 16.36,
+   "e": 16.54
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 16.54,
+   "e": 16.7
+  },
+  {
+   "w": "august",
+   "raw": "August",
+   "s": 16.7,
+   "e": 16.9
+  },
+  {
+   "w": "40",
+   "raw": "$40.",
+   "s": 16.9,
+   "e": 17.44
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 18.14,
+   "e": 18.58
+  },
+  {
+   "w": "82",
+   "raw": "$82",
+   "s": 18.58,
+   "e": 19.0
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 19.0,
+   "e": 19.4
+  },
+  {
+   "w": "month",
+   "raw": "month,",
+   "s": 19.4,
+   "e": 19.6
+  },
+  {
+   "w": "almost",
+   "raw": "almost",
+   "s": 19.8,
+   "e": 20.04
+  },
+  {
+   "w": "1000",
+   "raw": "$1000",
+   "s": 20.04,
+   "e": 20.54
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 20.54,
+   "e": 20.96
+  },
+  {
+   "w": "year",
+   "raw": "year.",
+   "s": 20.96,
+   "e": 21.2
+  },
+  {
+   "w": "step",
+   "raw": "Step",
+   "s": 21.76,
+   "e": 21.82
+  },
+  {
+   "w": "one",
+   "raw": "one,",
+   "s": 21.82,
+   "e": 22.14
+  },
+  {
+   "w": "open",
+   "raw": "open",
+   "s": 22.32,
+   "e": 22.52
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 22.52,
+   "e": 22.7
+  },
+  {
+   "w": "bank",
+   "raw": "bank",
+   "s": 22.7,
+   "e": 22.9
+  },
+  {
+   "w": "app",
+   "raw": "app,",
+   "s": 22.9,
+   "e": 23.16
+  },
+  {
+   "w": "search",
+   "raw": "search",
+   "s": 23.3,
+   "e": 23.42
+  },
+  {
+   "w": "last",
+   "raw": "last",
+   "s": 23.42,
+   "e": 23.76
+  },
+  {
+   "w": "month",
+   "raw": "month",
+   "s": 23.76,
+   "e": 23.98
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 23.98,
+   "e": 24.2
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 24.2,
+   "e": 24.48
+  },
+  {
+   "w": "amount",
+   "raw": "amount",
+   "s": 24.48,
+   "e": 24.76
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 24.76,
+   "e": 24.96
+  },
+  {
+   "w": "repeats",
+   "raw": "repeats,",
+   "s": 24.96,
+   "e": 25.3
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 25.6,
+   "e": 25.74
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 25.74,
+   "e": 25.94
+  },
+  {
+   "w": "each",
+   "raw": "each",
+   "s": 25.94,
+   "e": 26.14
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 26.14,
+   "e": 26.36
+  },
+  {
+   "w": "down",
+   "raw": "down.",
+   "s": 26.36,
+   "e": 26.68
+  },
+  {
+   "w": "step",
+   "raw": "Step",
+   "s": 27.14,
+   "e": 27.34
+  },
+  {
+   "w": "two",
+   "raw": "two,",
+   "s": 27.34,
+   "e": 27.64
+  },
+  {
+   "w": "next",
+   "raw": "next",
+   "s": 27.78,
+   "e": 27.9
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 27.9,
+   "e": 28.08
+  },
+  {
+   "w": "each",
+   "raw": "each",
+   "s": 28.08,
+   "e": 28.18
+  },
+  {
+   "w": "one",
+   "raw": "one,",
+   "s": 28.18,
+   "e": 28.34
+  },
+  {
+   "w": "ask",
+   "raw": "ask",
+   "s": 28.48,
+   "e": 28.52
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 28.52,
+   "e": 28.68
+  },
+  {
+   "w": "single",
+   "raw": "single",
+   "s": 28.68,
+   "e": 28.86
+  },
+  {
+   "w": "question",
+   "raw": "question.",
+   "s": 28.86,
+   "e": 29.24
+  },
+  {
+   "w": "did",
+   "raw": "Did",
+   "s": 29.68,
+   "e": 29.76
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 29.76,
+   "e": 29.88
+  },
+  {
+   "w": "use",
+   "raw": "use",
+   "s": 29.88,
+   "e": 30.08
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 30.08,
+   "e": 30.24
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 30.24,
+   "e": 30.38
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 30.38,
+   "e": 30.48
+  },
+  {
+   "w": "last",
+   "raw": "last",
+   "s": 30.48,
+   "e": 30.7
+  },
+  {
+   "w": "30",
+   "raw": "30",
+   "s": 30.7,
+   "e": 31.02
+  },
+  {
+   "w": "days",
+   "raw": "days?",
+   "s": 31.02,
+   "e": 31.28
+  },
+  {
+   "w": "not",
+   "raw": "Not",
+   "s": 31.54,
+   "e": 31.7
+  },
+  {
+   "w": "might",
+   "raw": "might",
+   "s": 31.7,
+   "e": 31.9
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 31.9,
+   "e": 32.08
+  },
+  {
+   "w": "use",
+   "raw": "use",
+   "s": 32.08,
+   "e": 32.26
+  },
+  {
+   "w": "it",
+   "raw": "it,",
+   "s": 32.26,
+   "e": 32.48
+  },
+  {
+   "w": "did",
+   "raw": "did",
+   "s": 32.54,
+   "e": 32.58
+  },
+  {
+   "w": "i",
+   "raw": "I?",
+   "s": 32.58,
+   "e": 32.92
+  },
+  {
+   "w": "step",
+   "raw": "Step",
+   "s": 33.36,
+   "e": 33.48
+  },
+  {
+   "w": "three",
+   "raw": "three,",
+   "s": 33.48,
+   "e": 33.76
+  },
+  {
+   "w": "cancel",
+   "raw": "cancel",
+   "s": 33.9,
+   "e": 34.08
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 34.08,
+   "e": 34.44
+  },
+  {
+   "w": "no",
+   "raw": "no,",
+   "s": 34.44,
+   "e": 34.66
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 34.92,
+   "e": 34.96
+  },
+  {
+   "w": "gym",
+   "raw": "gym",
+   "s": 34.96,
+   "e": 35.16
+  },
+  {
+   "w": "from",
+   "raw": "from",
+   "s": 35.16,
+   "e": 35.38
+  },
+  {
+   "w": "august",
+   "raw": "August",
+   "s": 35.38,
+   "e": 35.66
+  },
+  {
+   "w": "gone",
+   "raw": "gone,",
+   "s": 35.66,
+   "e": 36.0
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 36.28,
+   "e": 36.36
+  },
+  {
+   "w": "second",
+   "raw": "second",
+   "s": 36.36,
+   "e": 36.6
+  },
+  {
+   "w": "streaming",
+   "raw": "streaming",
+   "s": 36.6,
+   "e": 36.96
+  },
+  {
+   "w": "app",
+   "raw": "app",
+   "s": 36.96,
+   "e": 37.24
+  },
+  {
+   "w": "gone",
+   "raw": "gone,",
+   "s": 37.24,
+   "e": 37.5
+  },
+  {
+   "w": "cloud",
+   "raw": "cloud",
+   "s": 37.7,
+   "e": 37.82
+  },
+  {
+   "w": "storage",
+   "raw": "storage",
+   "s": 37.82,
+   "e": 38.2
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 38.2,
+   "e": 38.42
+  },
+  {
+   "w": "use",
+   "raw": "use",
+   "s": 38.42,
+   "e": 38.62
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 38.62,
+   "e": 38.9
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 38.9,
+   "e": 39.16
+  },
+  {
+   "w": "keep",
+   "raw": "keep",
+   "s": 39.28,
+   "e": 39.38
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 39.38,
+   "e": 39.58
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 40.04,
+   "e": 40.12
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 40.12,
+   "e": 40.22
+  },
+  {
+   "w": "always",
+   "raw": "always",
+   "s": 40.22,
+   "e": 40.54
+  },
+  {
+   "w": "rejoin",
+   "raw": "rejoin",
+   "s": 40.54,
+   "e": 41.0
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 41.0,
+   "e": 41.14
+  },
+  {
+   "w": "month",
+   "raw": "month",
+   "s": 41.14,
+   "e": 41.3
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 41.3,
+   "e": 41.46
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 41.46,
+   "e": 41.84
+  },
+  {
+   "w": "need",
+   "raw": "need",
+   "s": 41.84,
+   "e": 42.1
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 42.1,
+   "e": 42.38
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 42.62,
+   "e": 42.78
+  },
+  {
+   "w": "whats",
+   "raw": "what's",
+   "s": 42.78,
+   "e": 43.08
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 43.08,
+   "e": 43.16
+  },
+  {
+   "w": "mistake",
+   "raw": "mistake?",
+   "s": 43.16,
+   "e": 43.56
+  },
+  {
+   "w": "people",
+   "raw": "People",
+   "s": 44.18,
+   "e": 44.62
+  },
+  {
+   "w": "pause",
+   "raw": "pause",
+   "s": 44.62,
+   "e": 44.98
+  },
+  {
+   "w": "instead",
+   "raw": "instead",
+   "s": 44.98,
+   "e": 45.28
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 45.28,
+   "e": 45.44
+  },
+  {
+   "w": "canceling",
+   "raw": "canceling",
+   "s": 45.44,
+   "e": 45.94
+  },
+  {
+   "w": "or",
+   "raw": "or",
+   "s": 45.94,
+   "e": 46.1
+  },
+  {
+   "w": "they",
+   "raw": "they",
+   "s": 46.1,
+   "e": 46.26
+  },
+  {
+   "w": "tell",
+   "raw": "tell",
+   "s": 46.26,
+   "e": 46.46
+  },
+  {
+   "w": "themselves",
+   "raw": "themselves",
+   "s": 46.46,
+   "e": 46.88
+  },
+  {
+   "w": "theyll",
+   "raw": "they'll",
+   "s": 46.88,
+   "e": 47.2
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 47.2,
+   "e": 47.36
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 47.36,
+   "e": 47.46
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 47.46,
+   "e": 47.56
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 47.56,
+   "e": 47.7
+  },
+  {
+   "w": "first",
+   "raw": "first,",
+   "s": 47.7,
+   "e": 48.02
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 48.5,
+   "e": 48.66
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 48.66,
+   "e": 48.78
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 48.78,
+   "e": 49.0
+  },
+  {
+   "w": "comes",
+   "raw": "comes",
+   "s": 49.0,
+   "e": 49.32
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 49.32,
+   "e": 49.58
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 49.58,
+   "e": 49.7
+  },
+  {
+   "w": "bills",
+   "raw": "bills",
+   "s": 49.7,
+   "e": 49.92
+  },
+  {
+   "w": "again",
+   "raw": "again.",
+   "s": 49.92,
+   "e": 50.3
+  },
+  {
+   "w": "do",
+   "raw": "Do",
+   "s": 50.74,
+   "e": 50.92
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 50.92,
+   "e": 51.02
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 51.02,
+   "e": 51.34
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 51.34,
+   "e": 51.58
+  },
+  {
+   "w": "82",
+   "raw": "$82",
+   "s": 51.58,
+   "e": 52.12
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 52.12,
+   "e": 52.64
+  },
+  {
+   "w": "month",
+   "raw": "month",
+   "s": 52.64,
+   "e": 52.84
+  },
+  {
+   "w": "becomes",
+   "raw": "becomes",
+   "s": 52.84,
+   "e": 53.22
+  },
+  {
+   "w": "30",
+   "raw": "30.",
+   "s": 53.22,
+   "e": 53.72
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 53.72,
+   "e": 54.46
+  },
+  {
+   "w": "over",
+   "raw": "over",
+   "s": 54.46,
+   "e": 54.64
+  },
+  {
+   "w": "600",
+   "raw": "$600",
+   "s": 54.64,
+   "e": 55.08
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 55.08,
+   "e": 55.62
+  },
+  {
+   "w": "year",
+   "raw": "year",
+   "s": 55.62,
+   "e": 55.72
+  },
+  {
+   "w": "back",
+   "raw": "back",
+   "s": 55.72,
+   "e": 56.04
+  },
+  {
+   "w": "from",
+   "raw": "from",
+   "s": 56.04,
+   "e": 56.3
+  },
+  {
+   "w": "five",
+   "raw": "five",
+   "s": 56.3,
+   "e": 56.62
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes.",
+   "s": 56.62,
+   "e": 57.02
+  },
+  {
+   "w": "heres",
+   "raw": "Here's",
+   "s": 57.6,
+   "e": 57.76
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 57.76,
+   "e": 57.9
+  },
+  {
+   "w": "checklist",
+   "raw": "checklist",
+   "s": 57.9,
+   "e": 58.24
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 58.24,
+   "e": 58.68
+  },
+  {
+   "w": "repeat",
+   "raw": "repeat,",
+   "s": 58.68,
+   "e": 59.08
+  },
+  {
+   "w": "used",
+   "raw": "used",
+   "s": 59.36,
+   "e": 59.6
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 59.6,
+   "e": 59.76
+  },
+  {
+   "w": "30",
+   "raw": "30",
+   "s": 59.76,
+   "e": 60.02
+  },
+  {
+   "w": "days",
+   "raw": "days,",
+   "s": 60.02,
+   "e": 60.34
+  },
+  {
+   "w": "cancel",
+   "raw": "cancel",
+   "s": 60.48,
+   "e": 60.64
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 60.64,
+   "e": 61.06
+  },
+  {
+   "w": "no",
+   "raw": "no",
+   "s": 61.06,
+   "e": 61.26
+  },
+  {
+   "w": "today",
+   "raw": "today,",
+   "s": 61.26,
+   "e": 61.64
+  },
+  {
+   "w": "send",
+   "raw": "send",
+   "s": 61.84,
+   "e": 61.94
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 61.94,
+   "e": 62.12
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 62.12,
+   "e": 62.26
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 62.26,
+   "e": 62.38
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 62.38,
+   "e": 62.56
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 62.56,
+   "e": 62.76
+  },
+  {
+   "w": "four",
+   "raw": "four",
+   "s": 62.76,
+   "e": 63.02
+  },
+  {
+   "w": "streaming",
+   "raw": "streaming",
+   "s": 63.02,
+   "e": 63.38
+  },
+  {
+   "w": "apps",
+   "raw": "apps.",
+   "s": 63.38,
+   "e": 63.74
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 64.16,
+   "e": 64.48
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 64.48,
+   "e": 64.62
+  },
+  {
+   "w": "demure",
+   "raw": "demure",
+   "s": 64.62,
+   "e": 65.0
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 65.0,
+   "e": 65.16
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 65.16,
+   "e": 65.44
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 65.82,
+   "e": 65.94
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 65.94,
+   "e": 66.34
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 66.34,
+   "e": 66.54
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 66.54,
+   "e": 66.78
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 66.78,
+   "e": 67.12
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 67.12,
+   "e": 67.36
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 67.36,
+   "e": 67.5
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 67.5,
+   "e": 67.64
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 67.64,
+   "e": 67.88
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 67.88,
+   "e": 68.0
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 68.0,
+   "e": 68.3
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 68.3,
+   "e": 68.74
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 68.74,
+   "e": 68.92
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 68.92,
+   "e": 69.08
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 69.08,
+   "e": 69.28
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 69.28,
+   "e": 69.48
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 69.48,
+   "e": 69.8
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 69.8,
+   "e": 70.12
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 70.12,
+   "e": 70.32
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 70.32,
+   "e": 70.46
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 70.46,
+   "e": 70.78
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 70.78,
+   "e": 71.12
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 71.42,
+   "e": 71.6
+  },
+  {
+   "w": "follow",
+   "raw": "follow",
+   "s": 71.6,
+   "e": 71.84
+  },
+  {
+   "w": "because",
+   "raw": "because",
+   "s": 71.84,
+   "e": 72.22
+  },
+  {
+   "w": "tonights",
+   "raw": "tonight's",
+   "s": 72.22,
+   "e": 72.74
+  },
+  {
+   "w": "reel",
+   "raw": "reel",
+   "s": 72.74,
+   "e": 72.9
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 72.9,
+   "e": 73.14
+  },
+  {
+   "w": "how",
+   "raw": "how",
+   "s": 73.14,
+   "e": 73.32
+  },
+  {
+   "w": "rohan",
+   "raw": "Rohan",
+   "s": 73.32,
+   "e": 73.62
+  },
+  {
+   "w": "got",
+   "raw": "got",
+   "s": 73.62,
+   "e": 73.9
+  },
+  {
+   "w": "his",
+   "raw": "his",
+   "s": 73.9,
+   "e": 74.06
+  },
+  {
+   "w": "old",
+   "raw": "old",
+   "s": 74.06,
+   "e": 74.28
+  },
+  {
+   "w": "friends",
+   "raw": "friends",
+   "s": 74.28,
+   "e": 74.58
+  },
+  {
+   "w": "back",
+   "raw": "back",
+   "s": 74.58,
+   "e": 74.94
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 74.94,
+   "e": 75.44
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 75.44,
+   "e": 75.68
+  },
+  {
+   "w": "calendar",
+   "raw": "calendar",
+   "s": 75.68,
+   "e": 76.08
+  },
+  {
+   "w": "invite",
+   "raw": "invite.",
+   "s": 76.08,
+   "e": 76.48
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 76.96,
+   "e": 77.16
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 77.16,
+   "e": 77.28
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 77.28,
+   "e": 77.44
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 77.44,
+   "e": 77.56
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 77.56,
+   "e": 77.8
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 77.8,
+   "e": 77.98
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 77.98,
+   "e": 78.24
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 78.38,
+   "e": 78.56
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 78.56,
+   "e": 78.7
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 78.7,
+   "e": 78.84
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 78.84,
+   "e": 79.02
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 79.02,
+   "e": 79.18
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 79.18,
+   "e": 79.3
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 79.3,
+   "e": 79.64
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 4.62,
+   "text": "You're paying every month for things you forgot you have. There's a five-minute check that finds"
+  },
+  {
+   "s": 4.62,
+   "e": 9.22,
+   "text": "them, but most people make one mistake at the end and keep paying. Here's what it looks like,"
+  },
+  {
+   "s": 9.44,
+   "e": 16.36,
+   "text": "a streaming app 5099, a second one 1199, music 1099, cloud storage 299, and a gym you last went"
+  },
+  {
+   "s": 16.36,
+   "e": 23.16,
+   "text": "to in August $40. That's $82 a month, almost $1000 a year. Step one, open your bank app,"
+  },
+  {
+   "s": 23.3,
+   "e": 28.18,
+   "text": "search last month for every amount that repeats, and write each one down. Step two, next to each"
+  },
+  {
+   "s": 28.18,
+   "e": 32.92,
+   "text": "one, ask a single question. Did I use this in the last 30 days? Not might I use it, did I?"
+  },
+  {
+   "s": 33.36,
+   "e": 37.5,
+   "text": "Step three, cancel every no, the gym from August gone, the second streaming app gone,"
+  },
+  {
+   "s": 37.7,
+   "e": 42.38,
+   "text": "cloud storage you use every day, keep it. You can always rejoin the month you actually need it."
+  },
+  {
+   "s": 42.62,
+   "e": 47.46,
+   "text": "So what's the mistake? People pause instead of canceling or they tell themselves they'll do it"
+  },
+  {
+   "s": 47.46,
+   "e": 53.72,
+   "text": "on the first, then the first comes and it bills again. Do it today and $82 a month becomes 30."
+  },
+  {
+   "s": 53.72,
+   "e": 59.08,
+   "text": "That's over $600 a year back from five minutes. Here's the checklist every repeat,"
+  },
+  {
+   "s": 59.36,
+   "e": 63.74,
+   "text": "used in 30 days, cancel every no today, send this to the friend with four streaming apps."
+  },
+  {
+   "s": 64.16,
+   "e": 69.08,
+   "text": "That's what demure is for. You archive your dream today so you can see it tomorrow and break it"
+  },
+  {
+   "s": 69.08,
+   "e": 73.9,
+   "text": "down into small steps you can actually do. And follow because tonight's reel is how Rohan got"
+  },
+  {
+   "s": 73.9,
+   "e": 79.3,
+   "text": "his old friends back with one calendar invite. If you want to try it out, I've put the link in the"
+  },
+  {
+   "s": 79.3,
+   "e": 79.64,
+   "text": "bio."
+  }
+ ],
+ "wps": 3.33
+}

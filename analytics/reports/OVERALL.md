@@ -1,6 +1,6 @@
 # Content performance: overall
 
-_Last rebuilt 2026-10-31 11:34 IST from 5 snapshot day(s) and 52 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
+_Last rebuilt 2026-11-02 11:06 IST from 5 snapshot day(s) and 52 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
 
 ## Headline
 

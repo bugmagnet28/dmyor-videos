@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "experiment": "V-EXP-32 (Content Kit v2, batch 2)",
+ "hook_type": "hard-truth",
+ "slug": "ill-bad-night",
+ "topic": "sleep",
+ "hook": "After a bad night, the worst thing you can do is sleep in.",
+ "frame": {
+  "structure": "A (method with stakes)",
+  "want": "get through the day after a bad night and sleep normally the next night",
+  "obstacle": "the instinct to catch up: lie-in, long nap, early bed",
+  "cost": "4 h sleep -> lie-in till 11 + 2 h nap + bed at 9 -> awake at 1 AM: 2 bad nights instead of 1"
+ },
+ "hooks_considered": [
+  {
+   "formula": "stop doing this first",
+   "line": "After a bad night, the worst thing you can do is sleep in.",
+   "checks": "hard truth Y, gap Y (then what?), muted Y (struck 'Sleep in' + ?), sendable Y, payoff Y",
+   "kept": true
+  },
+  {
+   "formula": "day it breaks",
+   "line": "The night after a bad night is where it really breaks.",
+   "checks": "vaguer truth",
+   "kept": false
+  },
+  {
+   "formula": "restart",
+   "line": "If I slept four hours, I wouldn't try to catch up.",
+   "checks": "first-person, weaker frame 0",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "don't sleep in (0 s)",
+  "open_loop": {
+   "promised": "how to get through the next day",
+   "withheld": "the 3 rules + tonight's bedtime"
+  },
+  "stakes": "4 h, lie-in to 11, 2 h nap, bed at 9 -> awake at 1 AM",
+  "rehook_10": "One bad night just became two",
+  "interrupt": "curtains open, sun rises",
+  "rehook_25": "And tonight? Should you go to bed early? (near-silence 1)",
+  "save_moment": "AFTER A BAD NIGHT rule card",
+  "share_line": "Send this to the friend who texted you at 4 AM last night.",
+  "follow_reason": "this afternoon's reel (ill-subscriptions, Tue 13:00)",
+  "payoff_sound": "reveal at GET UP column"
+ },
+ "note": "Fulfils the ill-wake-time (Oct 31) promise two days late (Oct 31 and Nov 1 runs timed out). Advice is standard sleep-hygiene / CBT-I practice (fixed wake time, morning light, short early nap, no early bedtime); no study cited.",
+ "quality": {
+  "hook": 5,
+  "usefulness": 5,
+  "specificity": 5,
+  "clarity": 4,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 35
+ }
+}

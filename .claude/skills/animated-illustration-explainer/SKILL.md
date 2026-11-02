@@ -82,7 +82,7 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `bank-form` | phone with a recurring-transfer form: rows appear, amount typed, repeat row, Confirm fills + check, 5-min timer | `amount`, `repeat`, `title`, `minutes`; cue x4 |
 | `course-vs-talk` | hook: dimmed COURSE card vs FIRST: 3 conversations card (heads breathing) | `course`, `months` |
 | `course-cost` | course card "Month 1 of 6" bar fills, "+ fees" chip, "What's a normal Tuesday like?" bubble, still unknown | `course`, `months`, `q`; cue x3 |
-| `three-people` | YOU + three people doing the job, dashed links, "3 of 3 this week" | `roles[3]`, `label`; cue x2 |
+| `three-people` | YOU + three people doing the job, dashed links, "3 of 3 this week" | `roles[3]`, `label`, `me` (replaces YOU), `count` (fixed counter text); cue x2 |
 | `people-search` | search bar typed, 3 result rows (one "friend of a friend"), ticked | `query`, `results[[role, source]]`; cue x3 |
 | `message-send` | phone chat: message typed line by line, sent, Delivered, counter 1/3 → 3/3 | `lines[3]`, `to`; cue [start, -, send] |
 | `question-list` | notepad, 3 questions written with a pencil reveal, each ticked | `items[3]`, `title`; cue x3 |
@@ -104,7 +104,7 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `done-test` | "Work on website" + dashed "done = ?" frame crossed vs "Write the headline" + a page with a headline drawn, ticked; note "Can't picture done? Split it again." | `vague`, `clear`, `note`; cue x3 |
 | `budget-vs-cap` | dim 20-row budget sheet vs one "Food delivery $40 a week" cap card with a ring (hook) | `rows`, `left`, `cap`, `amt`, `per` |
 | `budget-sheet` | spreadsheet rows typed in with amounts, then the sheet greys and "Last opened: 9 days ago" | `rows[[label,amt]]`, `title`, `chip`; cue [start, stop] |
-| `bank-scroll` | phone transaction list scrolls, one category highlighted in sage, counter adds it up | `hl`, `total`; cue [open, scroll, add] |
+| `bank-scroll` | phone transaction list scrolls, one category highlighted in sage, counter adds it up | `hl`, `total`, optional `names[]`/`amts[]` rows, `hls[]` (highlight several), `label`, `dec` (cents); cue [open, scroll, add] |
 | `cap-math` | Last month $240 → weekly cap $40 → 4 weeks $160 → Kept $80, coin drops into a jar | `month`, `cap`, `weeks`; cue x4 |
 | `week-cap` | SUNDAY CHECK: week bars against a dashed cap line, WIN under the cap, overflow in clay, next week "starts at $0" | `cap`, `max`, `w1`, `w2`; cue [w1, win, w2, zero] |
 | `leak-pick` | 4 spending chips, one picked ("JUST ONE" + check), others dim | `items[4]`, `pick`; cue [items, one] |
@@ -119,7 +119,7 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `voice-record` | vocab lesson chip struck, phone records 1:00 with a live waveform, M-S ticks | `drop`, `prompt`; cue x3 |
 | `easy-hard` | two effort gauges: "Feels easy = rehearsing" (dim) vs "Feels hard = improving" (sage + check) | `a`, `ar`, `b`, `br`; cue x2 |
 | `recipe-saved` | phone "Saved 214" grid of recipe tiles scrolling + COOKED 0 card; `stage` hook / tuesday (clock 7:00 → 7:20 PM, "Toast. Again." card) | `count`, `names`, `day`, `result`; cue [scroll, twenty, toast] |
-| `cost-tally` | (structure C) notepad rows [label, amount] pencilled in, sum line, total counts up in clay, optional note card | `rows`, `total`, `unit`, `title`, `totalLabel`, `note`; cue [rows, total, note] |
+| `cost-tally` | (structure C) notepad rows [label, amount] pencilled in, sum line, total counts up in clay, optional note card | `rows`, `total`, `prefix` ($), `unit`, `title`, `totalLabel`, `note`; cue [rows, total, note]; `stage: rowcue` = one cue per row: cue [total, note, row0, row1, ...] (rows land on the words) |
 | `pick-three` | 3x3 grid of options, three light up with checks, others dim, tag chip | `items[9]`, `pick[3]`, `tag`; cue [items, pick, tag] |
 | `before-after` | (payoff) BEFORE column (mute) → arrow → AFTER column (sage) with 3 rows; plays the reel's one `reveal` payoff sound | `rows[[label,before,after]]`, `a`, `b`; cue [before, after] |
 | `rule-card` | (save moment) "SCREENSHOT THIS" card, title, 3 numbered lines with checks | `title`, `items[3]` (≤ 20 chars), `tag`; cue x3 |
@@ -130,6 +130,8 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `curtain-light` | curtains open, sun rises, light on the floor, coffee mug, "Daylight within 10 minutes" chip | `chip`; cue [curtains, coffee] |
 | `follow-next` | (follow reason) "NEXT ON @BECAUSEIDMYOR" card: next reel title + when, Follow button turns "Following" | `title`, `when`; cue [null, follow] |
 | `dream-to-steps` | "ARCHIVED TODAY" dream card branching into three ticked steps (use for the value close) | `tag`, `dream`, `date`, `steps[3]` |
+
+**Any scene can be the hook**: scene 0 renders at t + `pre` (default 4 s), so it is finished on frame 0 if its default beats end within `pre` (set `pre` higher for slow scenes).
 
 **Cues**: `params.cue` lists the spoken word that triggers each animation beat (null = default); `make_reel.py` resolves them to `params.at`, and `events.json` can time sounds as `"@i"` / `"@i+0.3"`, so picture and sound land on the voice. Prefer cues over fixed times for any new scene.
 

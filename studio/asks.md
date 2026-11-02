@@ -152,3 +152,17 @@ Instagram locked the account ("we locked your account to protect you from a poss
 - **Follow lines chain the slots**: recipes says "this afternoon's reel" (twenty-mornings, 1 PM); twenty-mornings says "tonight's reel" (wake-time, 7:30 PM); wake-time promises "tomorrow: the morning after a bad night", which I will build in the Sun Nov 1 batch. Keep this order and these slots, or tell me and I'll re-cut the lines.
 - Steps: watch the 3 videos, reply "OK" or "OK except X". After OK I (or the session you run) schedule them on IG/YT/X. Optional: Adam takes from `reels/<slug>/narration-elevenlabs-v3.txt` into `inbox/audio/<slug>.mp3`.
 - Also still open: ill-hard-part (Fri 19:30) is not scheduled on Instagram yet (5-flow limit on 10-28).
+
+## VASK-022: Approve the Tue Nov 3 batch (3 reels), and send insight screenshots (2026-11-02)
+- Status: open
+- Why late: the scheduled runs on Oct 31 and Nov 1 timed out before building anything, so there was no Sun/Mon batch, and the Oct 31 sleep reel's "tomorrow: the morning after a bad night" promise is two days late. This batch fixes that first.
+- What: 3 animated-illustration reels (Kokoro am_eric drafts, Content Kit v2), `ready-to-post/2026-11-03-*/` (video.mp4 + post.md):
+  - 09:30 **ill-bad-night** (sleep, structure A): "After a bad night, the worst thing you can do is sleep in." Up at the usual time, daylight in 10 min, nap 20 min before 3 PM, normal bedtime (not early). 35/40
+  - 13:00 **ill-subscriptions** (money, structure C): "You're paying every month for things you forgot you have." 5-minute bank check: list repeats, used in 30 days?, cancel every no today (pausing isn't cancelling). $82 → $30 a month. 36/40
+  - 19:30 **ill-catch-up** (friendship story, structure B): "You don't lose friends in a fight. You lose them to 'let's catch up soon'." Rohan: one repeating calendar invite + one Sunday message → 3 calls in 3 months, trip booked. 36/40
+- Follow lines chain the slots (09:30 → "this afternoon", 13:00 → "tonight"); 19:30 promises "tomorrow: a big goal in a busy week" (idea #28, I build it in the next run). Keep this order and these slots.
+- Steps:
+  1. Watch the 3 videos, reply "OK" or "OK except X" (chat or `inbox/notes.md`).
+  2. After OK, schedule on Instagram, YouTube Shorts and X at the times above (IG: max 5 flows per session, no insights in the same session). Tick them in `studio/post-queue.md`.
+  3. Most useful input I'm missing: **no metrics since Oct 28**. App screenshots (views, avg watch time, skip rate, shares, saves, follows) for any of the Oct 29-31 reels, plus the follower count, into `inbox/metrics/`. 5 minutes; tells me whether Content Kit v2 (longer 68-78 s reels) helped or hurt.
+  4. Optional: the scheduled runs keep timing out ("Request timed out" in `studio/runs/logs/`). Starting a run by hand worked on Oct 29 and today.

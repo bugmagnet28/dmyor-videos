@@ -31,7 +31,7 @@ Every idea hands the viewer **one thing they can do today** (see `quality-bar.md
 | 25 | "A goal without a first action is a wish." | Write the very first physical action (open laptop, put shoes by the door) | KT | |
 | 26 | "Comment your goal. I'll break it down." | Engagement prompt; follow-ups become teardown reels | KT | |
 | 27 | "[Comment] wants to launch a podcast. Here's the plan." | Teardown of a real comment's goal into milestones + today's action | DG | |
-| 28 | "Big goal, tiny week. How to fit both." | Time-box: 3 x 30-minute blocks this week, what goes in each | DG | |
+| 28 | "Big goal, tiny week. How to fit both." | Time-box: 3 x 30-minute blocks this week, what goes in each | DG | **PROMISED by ill-catch-up (Tue Nov 3 19:30): must be in the Wed Nov 4 batch** |
 | 29 | "The 'done' test for every task." | If you can't picture the moment it's done, split it again (example) | DG | |
 | 30 | "One page that keeps a dream alive." | A journal entry template: what I did, what I learned, next step (features releasing soon) | KT | |
 | 31 | "You don't need more willpower to stop checking your phone. You need distance." | Phone in another room, door closed, 25-min laptop timer, 5-min phone break | ILL | 2026-10-27 (ill-phone-distance) |
@@ -47,6 +47,8 @@ Every idea hands the viewer **one thing they can do today** (see `quality-bar.md
 | 40 | "Learning to cook? Stop collecting recipes. Master 3." | Pick 3 weeknight dinners, cook each twice this week, write the shopping list once | ILL | 2026-10-29 built (ill-three-recipes, for Oct 31) |
 | 41 | "The free weekend never comes." (story, Maya) | 20 min every morning, one skill a week, redo the week when it goes wrong | ILL story B | 2026-10-29 built (ill-twenty-mornings, for Oct 31) |
 | 42 | "You can't fix your sleep at night. You fix it in the morning." | Same wake time 7 days, daylight within 10 min, wind-down alarm, weekends +1 h max | ILL A | 2026-10-29 built (ill-wake-time, for Oct 31) |
-| 43 | **PROMISED (ill-wake-time follow line): "What to do the morning after a bad night"** | Get up at the usual time anyway, daylight, no lie-in; if you nap, 20 min before 3 PM; keep bedtime, don't go early | ILL | **must be in the Sun Nov 1 batch** |
+| 43 | **PROMISED (ill-wake-time follow line): "What to do the morning after a bad night"** | Get up at the usual time anyway, daylight, no lie-in; if you nap, 20 min before 3 PM; keep bedtime, don't go early | ILL | 2026-11-02 built (ill-bad-night, for Tue Nov 3 09:30; 2 days late, Oct 31 + Nov 1 runs timed out) |
+| 44 | "You're paying every month for things you forgot you have." | 5-min bank check: list repeats, used in 30 days?, cancel every no today (not pause) | ILL C | 2026-11-02 built (ill-subscriptions, Tue Nov 3 13:00) |
+| 45 | "You don't lose friends in a fight. You lose them to 'let's catch up soon'." (story, Rohan) | One repeating calendar invite + one Sunday message | ILL story B | 2026-11-02 built (ill-catch-up, Tue Nov 3 19:30) |
 
 Rules: avoid pure quotes/motivation, avoid promising locked features ("full features are releasing soon"), one takeaway per reel, specific numbers and real examples, fuller spoken narration (write for the ear).

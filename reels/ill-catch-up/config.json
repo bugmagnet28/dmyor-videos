@@ -1,0 +1,260 @@
+{
+ "total": 88.78,
+ "brandT": 85.1,
+ "scenes": [
+  {
+   "type": "postpone-calendar",
+   "params": {
+    "days": [
+     "MAR",
+     "MAY",
+     "AUG",
+     "OCT"
+    ],
+    "nums": [
+     "12",
+     "3",
+     "20",
+     "9"
+    ],
+    "note": "let's catch up soon"
+   },
+   "head": "Friendships end with<br><b>\"catch up soon\"</b>.",
+   "t0": 0.0,
+   "t1": 8.28
+  },
+  {
+   "type": "cost-tally",
+   "params": {
+    "title": "THE GROUP CHAT",
+    "rows": [
+     [
+      "Mar",
+      "\"Catch up soon!\""
+     ],
+     [
+      "May",
+      "\"Yes, soon!\""
+     ],
+     [
+      "Aug",
+      "\"For sure, soon\""
+     ]
+    ],
+    "total": 7,
+    "unit": " months",
+    "totalLabel": "LAST CALL",
+    "cue": [
+     "seven",
+     null,
+     "friends",
+     "May",
+     "August"
+    ],
+    "stage": "rowcue",
+    "at": [
+     10.35,
+     10.95,
+     2.85,
+     7.33,
+     7.93
+    ]
+   },
+   "head": "<b>7 months</b><br>since all four talked.",
+   "t0": 8.23,
+   "t1": 19.75
+  },
+  {
+   "type": "two-versions",
+   "params": {
+    "title": "Every catch-up",
+    "tagA": "NEEDED",
+    "full": "Someone to plan it",
+    "tagB": "INSTEAD",
+    "small": "A date that repeats",
+    "noIcon": true,
+    "cue": [
+     "caring",
+     "problem",
+     "busy"
+    ],
+    "at": [
+     0.75,
+     1.69,
+     4.99
+    ]
+   },
+   "head": "Nobody stopped <b>caring</b>.",
+   "t0": 19.75,
+   "t1": 25.39
+  },
+  {
+   "type": "meeting-card",
+   "params": {
+    "title": "College call",
+    "rows": [
+     "1st Sunday, 11:00 AM",
+     "Repeats every month"
+    ],
+    "remind": "Invite all 3",
+    "cue": [
+     "invite",
+     "Nobody"
+    ],
+    "at": [
+     2.33,
+     6.99
+    ]
+   },
+   "head": "<b>One invite</b>.<br>It repeats.",
+   "t0": 25.39,
+   "t1": 33.76
+  },
+  {
+   "type": "message-send",
+   "params": {
+    "to": "Ananya",
+    "lines": [
+     "Saw this and thought of you.",
+     "Still up for that trip?",
+     "Miss you guys."
+    ],
+    "cue": [
+     "Sunday",
+     null,
+     "Thirty"
+    ],
+    "at": [
+     2.42,
+     3.02,
+     5.81
+    ]
+   },
+   "head": "One message<br>every <b>Sunday</b>.",
+   "t0": 33.76,
+   "t1": 40.69
+  },
+  {
+   "type": "three-people",
+   "params": {
+    "me": "ROHAN",
+    "roles": [
+     "Kabir",
+     "Ananya",
+     "Dev"
+    ],
+    "label": "First call",
+    "count": "2 of 3 made it",
+    "cue": [
+     "show",
+     "two"
+    ],
+    "at": [
+     0.59,
+     3.61
+    ]
+   },
+   "head": "Did everyone<br><b>show up</b>?",
+   "t0": 40.69,
+   "t1": 50.1
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "a": "BEFORE",
+    "b": "3 MONTHS LATER",
+    "rows": [
+     [
+      "Calls",
+      "0",
+      "3"
+     ],
+     [
+      "Last talked",
+      "7 mo",
+      "2 wks"
+     ],
+     [
+      "Trip",
+      "Someday",
+      "March"
+     ]
+    ],
+    "cue": [
+     "Three",
+     "calls"
+    ],
+    "at": [
+     0.05,
+     1.49
+    ]
+   },
+   "head": "Same friends.<br>A date that <b>repeats</b>.",
+   "t0": 50.05,
+   "t1": 58.79
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "KEEP YOUR FRIENDS",
+    "items": [
+     "One repeating date",
+     "A Sunday message",
+     "Next call is set"
+    ],
+    "cue": [
+     "One",
+     "message",
+     "next"
+    ],
+    "at": [
+     1.35,
+     2.63,
+     4.99
+    ]
+   },
+   "head": "Screenshot<br><b>the system</b>.",
+   "t0": 58.79,
+   "t1": 68.31
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Keep my old friends",
+    "date": "Open it again: Mar 2027",
+    "steps": [
+     "Repeat invite",
+     "Sunday message",
+     "Book the trip"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 68.31,
+   "t1": 79.69
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "A big goal in a busy week",
+    "when": "Tomorrow",
+    "cue": [
+     null,
+     "busy"
+    ],
+    "at": [
+     0.2,
+     3.27
+    ]
+   },
+   "head": "Next: a big goal,<br>a <b>busy week</b>.",
+   "t0": 79.69,
+   "t1": 85.1
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  40.64,
+  50.0
+ ]
+}

@@ -1,0 +1,1972 @@
+{
+ "audio": "audio.mp3",
+ "duration": 88.84,
+ "text": "You don't lose friends in a fight. You lose them too. Let's catch up soon.\" Rohan found that out the hard way, and the fix he used took one calendar invite. Two years ago he moved cities for work. His three closest friends from college kept saying the same thing. We should catch up soon. Then March went by. Then May. Then August. The last time all four of them talked was seven months ago. Nobody stopped caring. The problem was that every catch-up needed someone to plan it and everyone was busy. So Rohan stopped planning. He sent one calendar invite. A video call the first Sunday of every month at 11. It repeats. Nobody has to organize it again. In between calls, one small thing every Sunday. A short message to one friend saw this and thought of you 30 seconds. Did everyone show up? Not every time. The first month only two of them made it. But the next call was already in the calendar, so it didn't depend on anyone remembering. Three months later they'd had three calls and they'd booked a weekend trip for March. Same friends. Same busy lives. The only difference was a date that repeats. Here's the whole system. One repeating date. One message every Sunday. And if someone misses, the next call is already set. Send this to the friend you keep saying let's catch up to. Rohan didn't need more time. Just a plan that runs by itself. Yours can too. That's what Demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. And follow because tomorrow's real is how to fit a big goal into a busy week in three blocks. If you want to try it out, I've put the link in the bio.",
+ "words": [
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 0.0,
+   "e": 0.26
+  },
+  {
+   "w": "dont",
+   "raw": "don't",
+   "s": 0.26,
+   "e": 0.46
+  },
+  {
+   "w": "lose",
+   "raw": "lose",
+   "s": 0.46,
+   "e": 0.6
+  },
+  {
+   "w": "friends",
+   "raw": "friends",
+   "s": 0.6,
+   "e": 0.88
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 0.88,
+   "e": 1.06
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 1.06,
+   "e": 1.18
+  },
+  {
+   "w": "fight",
+   "raw": "fight.",
+   "s": 1.18,
+   "e": 1.36
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 1.58,
+   "e": 1.7
+  },
+  {
+   "w": "lose",
+   "raw": "lose",
+   "s": 1.7,
+   "e": 1.9
+  },
+  {
+   "w": "them",
+   "raw": "them",
+   "s": 1.9,
+   "e": 2.08
+  },
+  {
+   "w": "too",
+   "raw": "too.",
+   "s": 2.08,
+   "e": 2.26
+  },
+  {
+   "w": "lets",
+   "raw": "Let's",
+   "s": 2.4,
+   "e": 2.56
+  },
+  {
+   "w": "catch",
+   "raw": "catch",
+   "s": 2.56,
+   "e": 2.72
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 2.72,
+   "e": 2.92
+  },
+  {
+   "w": "soon",
+   "raw": "soon.\"",
+   "s": 2.92,
+   "e": 3.78
+  },
+  {
+   "w": "rohan",
+   "raw": "Rohan",
+   "s": 3.78,
+   "e": 4.02
+  },
+  {
+   "w": "found",
+   "raw": "found",
+   "s": 4.02,
+   "e": 4.32
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 4.32,
+   "e": 4.54
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 4.54,
+   "e": 4.74
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 4.74,
+   "e": 4.86
+  },
+  {
+   "w": "hard",
+   "raw": "hard",
+   "s": 4.86,
+   "e": 5.1
+  },
+  {
+   "w": "way",
+   "raw": "way,",
+   "s": 5.1,
+   "e": 5.4
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 5.68,
+   "e": 5.9
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 5.9,
+   "e": 6.02
+  },
+  {
+   "w": "fix",
+   "raw": "fix",
+   "s": 6.02,
+   "e": 6.18
+  },
+  {
+   "w": "he",
+   "raw": "he",
+   "s": 6.18,
+   "e": 6.36
+  },
+  {
+   "w": "used",
+   "raw": "used",
+   "s": 6.36,
+   "e": 6.64
+  },
+  {
+   "w": "took",
+   "raw": "took",
+   "s": 6.64,
+   "e": 6.84
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 6.84,
+   "e": 7.12
+  },
+  {
+   "w": "calendar",
+   "raw": "calendar",
+   "s": 7.12,
+   "e": 7.46
+  },
+  {
+   "w": "invite",
+   "raw": "invite.",
+   "s": 7.46,
+   "e": 7.86
+  },
+  {
+   "w": "two",
+   "raw": "Two",
+   "s": 8.28,
+   "e": 8.46
+  },
+  {
+   "w": "years",
+   "raw": "years",
+   "s": 8.46,
+   "e": 8.64
+  },
+  {
+   "w": "ago",
+   "raw": "ago",
+   "s": 8.64,
+   "e": 8.9
+  },
+  {
+   "w": "he",
+   "raw": "he",
+   "s": 8.9,
+   "e": 9.08
+  },
+  {
+   "w": "moved",
+   "raw": "moved",
+   "s": 9.08,
+   "e": 9.34
+  },
+  {
+   "w": "cities",
+   "raw": "cities",
+   "s": 9.34,
+   "e": 9.58
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 9.58,
+   "e": 9.84
+  },
+  {
+   "w": "work",
+   "raw": "work.",
+   "s": 9.84,
+   "e": 10.06
+  },
+  {
+   "w": "his",
+   "raw": "His",
+   "s": 10.34,
+   "e": 10.46
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 10.46,
+   "e": 10.7
+  },
+  {
+   "w": "closest",
+   "raw": "closest",
+   "s": 10.7,
+   "e": 11.08
+  },
+  {
+   "w": "friends",
+   "raw": "friends",
+   "s": 11.08,
+   "e": 11.38
+  },
+  {
+   "w": "from",
+   "raw": "from",
+   "s": 11.38,
+   "e": 11.58
+  },
+  {
+   "w": "college",
+   "raw": "college",
+   "s": 11.58,
+   "e": 11.88
+  },
+  {
+   "w": "kept",
+   "raw": "kept",
+   "s": 11.88,
+   "e": 12.14
+  },
+  {
+   "w": "saying",
+   "raw": "saying",
+   "s": 12.14,
+   "e": 12.42
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 12.42,
+   "e": 12.58
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 12.58,
+   "e": 12.8
+  },
+  {
+   "w": "thing",
+   "raw": "thing.",
+   "s": 12.8,
+   "e": 13.1
+  },
+  {
+   "w": "we",
+   "raw": "We",
+   "s": 13.34,
+   "e": 13.42
+  },
+  {
+   "w": "should",
+   "raw": "should",
+   "s": 13.42,
+   "e": 13.58
+  },
+  {
+   "w": "catch",
+   "raw": "catch",
+   "s": 13.58,
+   "e": 13.8
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 13.8,
+   "e": 14.06
+  },
+  {
+   "w": "soon",
+   "raw": "soon.",
+   "s": 14.06,
+   "e": 14.32
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 14.46,
+   "e": 14.56
+  },
+  {
+   "w": "march",
+   "raw": "March",
+   "s": 14.56,
+   "e": 14.78
+  },
+  {
+   "w": "went",
+   "raw": "went",
+   "s": 14.78,
+   "e": 15.02
+  },
+  {
+   "w": "by",
+   "raw": "by.",
+   "s": 15.02,
+   "e": 15.3
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 15.42,
+   "e": 15.56
+  },
+  {
+   "w": "may",
+   "raw": "May.",
+   "s": 15.56,
+   "e": 15.8
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 16.06,
+   "e": 16.16
+  },
+  {
+   "w": "august",
+   "raw": "August.",
+   "s": 16.16,
+   "e": 16.48
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 16.84,
+   "e": 16.96
+  },
+  {
+   "w": "last",
+   "raw": "last",
+   "s": 16.96,
+   "e": 17.16
+  },
+  {
+   "w": "time",
+   "raw": "time",
+   "s": 17.16,
+   "e": 17.4
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 17.4,
+   "e": 17.64
+  },
+  {
+   "w": "four",
+   "raw": "four",
+   "s": 17.64,
+   "e": 17.88
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 17.88,
+   "e": 17.98
+  },
+  {
+   "w": "them",
+   "raw": "them",
+   "s": 17.98,
+   "e": 18.1
+  },
+  {
+   "w": "talked",
+   "raw": "talked",
+   "s": 18.1,
+   "e": 18.38
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 18.38,
+   "e": 18.58
+  },
+  {
+   "w": "seven",
+   "raw": "seven",
+   "s": 18.58,
+   "e": 18.88
+  },
+  {
+   "w": "months",
+   "raw": "months",
+   "s": 18.88,
+   "e": 19.08
+  },
+  {
+   "w": "ago",
+   "raw": "ago.",
+   "s": 19.08,
+   "e": 19.4
+  },
+  {
+   "w": "nobody",
+   "raw": "Nobody",
+   "s": 19.8,
+   "e": 20.12
+  },
+  {
+   "w": "stopped",
+   "raw": "stopped",
+   "s": 20.12,
+   "e": 20.5
+  },
+  {
+   "w": "caring",
+   "raw": "caring.",
+   "s": 20.5,
+   "e": 20.92
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 21.28,
+   "e": 21.44
+  },
+  {
+   "w": "problem",
+   "raw": "problem",
+   "s": 21.44,
+   "e": 21.68
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 21.68,
+   "e": 22.0
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 22.0,
+   "e": 22.16
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 22.16,
+   "e": 22.44
+  },
+  {
+   "w": "catch",
+   "raw": "catch",
+   "s": 22.44,
+   "e": 22.68
+  },
+  {
+   "w": "up",
+   "raw": "-up",
+   "s": 22.68,
+   "e": 22.88
+  },
+  {
+   "w": "needed",
+   "raw": "needed",
+   "s": 22.88,
+   "e": 23.12
+  },
+  {
+   "w": "someone",
+   "raw": "someone",
+   "s": 23.12,
+   "e": 23.44
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 23.44,
+   "e": 23.62
+  },
+  {
+   "w": "plan",
+   "raw": "plan",
+   "s": 23.62,
+   "e": 23.86
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 23.86,
+   "e": 24.02
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 24.02,
+   "e": 24.18
+  },
+  {
+   "w": "everyone",
+   "raw": "everyone",
+   "s": 24.18,
+   "e": 24.46
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 24.46,
+   "e": 24.74
+  },
+  {
+   "w": "busy",
+   "raw": "busy.",
+   "s": 24.74,
+   "e": 25.06
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 25.44,
+   "e": 25.64
+  },
+  {
+   "w": "rohan",
+   "raw": "Rohan",
+   "s": 25.64,
+   "e": 25.96
+  },
+  {
+   "w": "stopped",
+   "raw": "stopped",
+   "s": 25.96,
+   "e": 26.24
+  },
+  {
+   "w": "planning",
+   "raw": "planning.",
+   "s": 26.24,
+   "e": 26.6
+  },
+  {
+   "w": "he",
+   "raw": "He",
+   "s": 26.8,
+   "e": 26.92
+  },
+  {
+   "w": "sent",
+   "raw": "sent",
+   "s": 26.92,
+   "e": 27.08
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 27.08,
+   "e": 27.32
+  },
+  {
+   "w": "calendar",
+   "raw": "calendar",
+   "s": 27.32,
+   "e": 27.72
+  },
+  {
+   "w": "invite",
+   "raw": "invite.",
+   "s": 27.72,
+   "e": 28.16
+  },
+  {
+   "w": "a",
+   "raw": "A",
+   "s": 28.6,
+   "e": 28.72
+  },
+  {
+   "w": "video",
+   "raw": "video",
+   "s": 28.72,
+   "e": 28.92
+  },
+  {
+   "w": "call",
+   "raw": "call",
+   "s": 28.92,
+   "e": 29.24
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 29.24,
+   "e": 29.44
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 29.44,
+   "e": 29.68
+  },
+  {
+   "w": "sunday",
+   "raw": "Sunday",
+   "s": 29.68,
+   "e": 29.98
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 29.98,
+   "e": 30.16
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 30.16,
+   "e": 30.38
+  },
+  {
+   "w": "month",
+   "raw": "month",
+   "s": 30.38,
+   "e": 30.64
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 30.64,
+   "e": 30.84
+  },
+  {
+   "w": "11",
+   "raw": "11.",
+   "s": 30.84,
+   "e": 31.16
+  },
+  {
+   "w": "it",
+   "raw": "It",
+   "s": 31.34,
+   "e": 31.42
+  },
+  {
+   "w": "repeats",
+   "raw": "repeats.",
+   "s": 31.42,
+   "e": 31.76
+  },
+  {
+   "w": "nobody",
+   "raw": "Nobody",
+   "s": 32.38,
+   "e": 32.56
+  },
+  {
+   "w": "has",
+   "raw": "has",
+   "s": 32.56,
+   "e": 32.86
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 32.86,
+   "e": 33.04
+  },
+  {
+   "w": "organize",
+   "raw": "organize",
+   "s": 33.04,
+   "e": 33.42
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 33.42,
+   "e": 33.66
+  },
+  {
+   "w": "again",
+   "raw": "again.",
+   "s": 33.66,
+   "e": 33.9
+  },
+  {
+   "w": "in",
+   "raw": "In",
+   "s": 34.3,
+   "e": 34.4
+  },
+  {
+   "w": "between",
+   "raw": "between",
+   "s": 34.4,
+   "e": 34.64
+  },
+  {
+   "w": "calls",
+   "raw": "calls,",
+   "s": 34.64,
+   "e": 35.0
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 35.22,
+   "e": 35.36
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 35.36,
+   "e": 35.66
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 35.66,
+   "e": 35.88
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 35.88,
+   "e": 36.18
+  },
+  {
+   "w": "sunday",
+   "raw": "Sunday.",
+   "s": 36.18,
+   "e": 36.58
+  },
+  {
+   "w": "a",
+   "raw": "A",
+   "s": 37.06,
+   "e": 37.24
+  },
+  {
+   "w": "short",
+   "raw": "short",
+   "s": 37.24,
+   "e": 37.46
+  },
+  {
+   "w": "message",
+   "raw": "message",
+   "s": 37.46,
+   "e": 37.76
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 37.76,
+   "e": 38.0
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 38.0,
+   "e": 38.2
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 38.2,
+   "e": 38.44
+  },
+  {
+   "w": "saw",
+   "raw": "saw",
+   "s": 38.44,
+   "e": 38.74
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 38.74,
+   "e": 38.96
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 38.96,
+   "e": 39.14
+  },
+  {
+   "w": "thought",
+   "raw": "thought",
+   "s": 39.14,
+   "e": 39.3
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 39.3,
+   "e": 39.42
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 39.42,
+   "e": 39.58
+  },
+  {
+   "w": "30",
+   "raw": "30",
+   "s": 39.58,
+   "e": 39.86
+  },
+  {
+   "w": "seconds",
+   "raw": "seconds.",
+   "s": 39.86,
+   "e": 40.32
+  },
+  {
+   "w": "did",
+   "raw": "Did",
+   "s": 40.74,
+   "e": 40.92
+  },
+  {
+   "w": "everyone",
+   "raw": "everyone",
+   "s": 40.92,
+   "e": 41.28
+  },
+  {
+   "w": "show",
+   "raw": "show",
+   "s": 41.28,
+   "e": 41.64
+  },
+  {
+   "w": "up",
+   "raw": "up?",
+   "s": 41.64,
+   "e": 41.94
+  },
+  {
+   "w": "not",
+   "raw": "Not",
+   "s": 42.4,
+   "e": 42.7
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 42.7,
+   "e": 42.98
+  },
+  {
+   "w": "time",
+   "raw": "time.",
+   "s": 42.98,
+   "e": 43.28
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 43.42,
+   "e": 43.54
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 43.54,
+   "e": 43.74
+  },
+  {
+   "w": "month",
+   "raw": "month",
+   "s": 43.74,
+   "e": 44.0
+  },
+  {
+   "w": "only",
+   "raw": "only",
+   "s": 44.0,
+   "e": 44.3
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 44.3,
+   "e": 44.6
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 44.6,
+   "e": 44.7
+  },
+  {
+   "w": "them",
+   "raw": "them",
+   "s": 44.7,
+   "e": 44.84
+  },
+  {
+   "w": "made",
+   "raw": "made",
+   "s": 44.84,
+   "e": 45.04
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 45.04,
+   "e": 45.26
+  },
+  {
+   "w": "but",
+   "raw": "But",
+   "s": 45.66,
+   "e": 45.86
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 45.86,
+   "e": 45.96
+  },
+  {
+   "w": "next",
+   "raw": "next",
+   "s": 45.96,
+   "e": 46.2
+  },
+  {
+   "w": "call",
+   "raw": "call",
+   "s": 46.2,
+   "e": 46.46
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 46.46,
+   "e": 46.66
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 46.66,
+   "e": 47.0
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 47.0,
+   "e": 47.2
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 47.2,
+   "e": 47.32
+  },
+  {
+   "w": "calendar",
+   "raw": "calendar,",
+   "s": 47.32,
+   "e": 47.66
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 47.84,
+   "e": 48.0
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 48.0,
+   "e": 48.12
+  },
+  {
+   "w": "didnt",
+   "raw": "didn't",
+   "s": 48.12,
+   "e": 48.32
+  },
+  {
+   "w": "depend",
+   "raw": "depend",
+   "s": 48.32,
+   "e": 48.58
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 48.58,
+   "e": 48.76
+  },
+  {
+   "w": "anyone",
+   "raw": "anyone",
+   "s": 48.76,
+   "e": 49.14
+  },
+  {
+   "w": "remembering",
+   "raw": "remembering.",
+   "s": 49.14,
+   "e": 49.62
+  },
+  {
+   "w": "three",
+   "raw": "Three",
+   "s": 50.1,
+   "e": 50.38
+  },
+  {
+   "w": "months",
+   "raw": "months",
+   "s": 50.38,
+   "e": 50.56
+  },
+  {
+   "w": "later",
+   "raw": "later",
+   "s": 50.56,
+   "e": 50.92
+  },
+  {
+   "w": "theyd",
+   "raw": "they'd",
+   "s": 50.92,
+   "e": 51.16
+  },
+  {
+   "w": "had",
+   "raw": "had",
+   "s": 51.16,
+   "e": 51.26
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 51.26,
+   "e": 51.54
+  },
+  {
+   "w": "calls",
+   "raw": "calls",
+   "s": 51.54,
+   "e": 51.88
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 51.88,
+   "e": 52.12
+  },
+  {
+   "w": "theyd",
+   "raw": "they'd",
+   "s": 52.12,
+   "e": 52.32
+  },
+  {
+   "w": "booked",
+   "raw": "booked",
+   "s": 52.32,
+   "e": 52.46
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 52.46,
+   "e": 52.62
+  },
+  {
+   "w": "weekend",
+   "raw": "weekend",
+   "s": 52.62,
+   "e": 52.86
+  },
+  {
+   "w": "trip",
+   "raw": "trip",
+   "s": 52.86,
+   "e": 53.14
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 53.14,
+   "e": 53.36
+  },
+  {
+   "w": "march",
+   "raw": "March.",
+   "s": 53.36,
+   "e": 53.66
+  },
+  {
+   "w": "same",
+   "raw": "Same",
+   "s": 54.1,
+   "e": 54.3
+  },
+  {
+   "w": "friends",
+   "raw": "friends.",
+   "s": 54.3,
+   "e": 54.72
+  },
+  {
+   "w": "same",
+   "raw": "Same",
+   "s": 54.94,
+   "e": 55.1
+  },
+  {
+   "w": "busy",
+   "raw": "busy",
+   "s": 55.1,
+   "e": 55.38
+  },
+  {
+   "w": "lives",
+   "raw": "lives.",
+   "s": 55.38,
+   "e": 55.78
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 56.32,
+   "e": 56.46
+  },
+  {
+   "w": "only",
+   "raw": "only",
+   "s": 56.46,
+   "e": 56.72
+  },
+  {
+   "w": "difference",
+   "raw": "difference",
+   "s": 56.72,
+   "e": 57.08
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 57.08,
+   "e": 57.34
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 57.34,
+   "e": 57.5
+  },
+  {
+   "w": "date",
+   "raw": "date",
+   "s": 57.5,
+   "e": 57.62
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 57.62,
+   "e": 57.84
+  },
+  {
+   "w": "repeats",
+   "raw": "repeats.",
+   "s": 57.84,
+   "e": 58.2
+  },
+  {
+   "w": "heres",
+   "raw": "Here's",
+   "s": 58.84,
+   "e": 59.06
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 59.06,
+   "e": 59.18
+  },
+  {
+   "w": "whole",
+   "raw": "whole",
+   "s": 59.18,
+   "e": 59.4
+  },
+  {
+   "w": "system",
+   "raw": "system.",
+   "s": 59.4,
+   "e": 59.84
+  },
+  {
+   "w": "one",
+   "raw": "One",
+   "s": 60.14,
+   "e": 60.3
+  },
+  {
+   "w": "repeating",
+   "raw": "repeating",
+   "s": 60.3,
+   "e": 60.7
+  },
+  {
+   "w": "date",
+   "raw": "date.",
+   "s": 60.7,
+   "e": 61.02
+  },
+  {
+   "w": "one",
+   "raw": "One",
+   "s": 61.22,
+   "e": 61.42
+  },
+  {
+   "w": "message",
+   "raw": "message",
+   "s": 61.42,
+   "e": 61.74
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 61.74,
+   "e": 62.06
+  },
+  {
+   "w": "sunday",
+   "raw": "Sunday.",
+   "s": 62.06,
+   "e": 62.4
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 62.78,
+   "e": 62.88
+  },
+  {
+   "w": "if",
+   "raw": "if",
+   "s": 62.88,
+   "e": 62.98
+  },
+  {
+   "w": "someone",
+   "raw": "someone",
+   "s": 62.98,
+   "e": 63.24
+  },
+  {
+   "w": "misses",
+   "raw": "misses,",
+   "s": 63.24,
+   "e": 63.48
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 63.68,
+   "e": 63.78
+  },
+  {
+   "w": "next",
+   "raw": "next",
+   "s": 63.78,
+   "e": 64.0
+  },
+  {
+   "w": "call",
+   "raw": "call",
+   "s": 64.0,
+   "e": 64.26
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 64.26,
+   "e": 64.46
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 64.46,
+   "e": 64.74
+  },
+  {
+   "w": "set",
+   "raw": "set.",
+   "s": 64.74,
+   "e": 65.06
+  },
+  {
+   "w": "send",
+   "raw": "Send",
+   "s": 65.54,
+   "e": 65.66
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 65.66,
+   "e": 65.84
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 65.84,
+   "e": 65.98
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 65.98,
+   "e": 66.12
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 66.12,
+   "e": 66.3
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 66.3,
+   "e": 66.48
+  },
+  {
+   "w": "keep",
+   "raw": "keep",
+   "s": 66.48,
+   "e": 66.64
+  },
+  {
+   "w": "saying",
+   "raw": "saying",
+   "s": 66.64,
+   "e": 66.94
+  },
+  {
+   "w": "lets",
+   "raw": "let's",
+   "s": 66.94,
+   "e": 67.28
+  },
+  {
+   "w": "catch",
+   "raw": "catch",
+   "s": 67.28,
+   "e": 67.44
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 67.44,
+   "e": 67.68
+  },
+  {
+   "w": "to",
+   "raw": "to.",
+   "s": 67.68,
+   "e": 67.92
+  },
+  {
+   "w": "rohan",
+   "raw": "Rohan",
+   "s": 68.36,
+   "e": 68.6
+  },
+  {
+   "w": "didnt",
+   "raw": "didn't",
+   "s": 68.6,
+   "e": 68.92
+  },
+  {
+   "w": "need",
+   "raw": "need",
+   "s": 68.92,
+   "e": 69.06
+  },
+  {
+   "w": "more",
+   "raw": "more",
+   "s": 69.06,
+   "e": 69.28
+  },
+  {
+   "w": "time",
+   "raw": "time.",
+   "s": 69.28,
+   "e": 69.6
+  },
+  {
+   "w": "just",
+   "raw": "Just",
+   "s": 69.78,
+   "e": 69.88
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 69.88,
+   "e": 70.04
+  },
+  {
+   "w": "plan",
+   "raw": "plan",
+   "s": 70.04,
+   "e": 70.22
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 70.22,
+   "e": 70.36
+  },
+  {
+   "w": "runs",
+   "raw": "runs",
+   "s": 70.36,
+   "e": 70.56
+  },
+  {
+   "w": "by",
+   "raw": "by",
+   "s": 70.56,
+   "e": 70.8
+  },
+  {
+   "w": "itself",
+   "raw": "itself.",
+   "s": 70.8,
+   "e": 71.18
+  },
+  {
+   "w": "yours",
+   "raw": "Yours",
+   "s": 71.88,
+   "e": 72.14
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 72.14,
+   "e": 72.28
+  },
+  {
+   "w": "too",
+   "raw": "too.",
+   "s": 72.28,
+   "e": 72.54
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 72.78,
+   "e": 72.9
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 72.9,
+   "e": 73.08
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 73.08,
+   "e": 73.44
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 73.44,
+   "e": 73.62
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 73.62,
+   "e": 73.88
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 74.28,
+   "e": 74.5
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 74.5,
+   "e": 74.84
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 74.84,
+   "e": 75.04
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 75.04,
+   "e": 75.26
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 75.26,
+   "e": 75.62
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 75.62,
+   "e": 75.86
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 75.86,
+   "e": 76.0
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 76.0,
+   "e": 76.12
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 76.12,
+   "e": 76.36
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 76.36,
+   "e": 76.5
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 76.5,
+   "e": 76.78
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 76.78,
+   "e": 77.14
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 77.14,
+   "e": 77.32
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 77.32,
+   "e": 77.46
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 77.46,
+   "e": 77.68
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 77.68,
+   "e": 77.88
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 77.88,
+   "e": 78.22
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 78.22,
+   "e": 78.5
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 78.5,
+   "e": 78.7
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 78.7,
+   "e": 78.82
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 78.82,
+   "e": 79.14
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 79.14,
+   "e": 79.48
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 79.74,
+   "e": 79.96
+  },
+  {
+   "w": "follow",
+   "raw": "follow",
+   "s": 79.96,
+   "e": 80.24
+  },
+  {
+   "w": "because",
+   "raw": "because",
+   "s": 80.24,
+   "e": 80.68
+  },
+  {
+   "w": "tomorrows",
+   "raw": "tomorrow's",
+   "s": 80.68,
+   "e": 81.24
+  },
+  {
+   "w": "real",
+   "raw": "real",
+   "s": 81.24,
+   "e": 81.4
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 81.4,
+   "e": 81.62
+  },
+  {
+   "w": "how",
+   "raw": "how",
+   "s": 81.62,
+   "e": 81.8
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 81.8,
+   "e": 81.92
+  },
+  {
+   "w": "fit",
+   "raw": "fit",
+   "s": 81.92,
+   "e": 82.04
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 82.04,
+   "e": 82.16
+  },
+  {
+   "w": "big",
+   "raw": "big",
+   "s": 82.16,
+   "e": 82.3
+  },
+  {
+   "w": "goal",
+   "raw": "goal",
+   "s": 82.3,
+   "e": 82.56
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 82.56,
+   "e": 82.8
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 82.8,
+   "e": 82.96
+  },
+  {
+   "w": "busy",
+   "raw": "busy",
+   "s": 82.96,
+   "e": 83.16
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 83.16,
+   "e": 83.46
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 83.46,
+   "e": 83.82
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 83.82,
+   "e": 84.06
+  },
+  {
+   "w": "blocks",
+   "raw": "blocks.",
+   "s": 84.06,
+   "e": 84.5
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 85.1,
+   "e": 85.18
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 85.18,
+   "e": 85.3
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 85.3,
+   "e": 85.46
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 85.46,
+   "e": 85.58
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 85.58,
+   "e": 85.82
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 85.82,
+   "e": 86.0
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 86.0,
+   "e": 86.26
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 86.48,
+   "e": 86.58
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 86.58,
+   "e": 86.72
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 86.72,
+   "e": 86.86
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 86.86,
+   "e": 87.04
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 87.04,
+   "e": 87.22
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 87.22,
+   "e": 87.3
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 87.3,
+   "e": 87.58
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 3.78,
+   "text": "You don't lose friends in a fight. You lose them too. Let's catch up soon.\""
+  },
+  {
+   "s": 3.78,
+   "e": 7.86,
+   "text": "Rohan found that out the hard way, and the fix he used took one calendar invite."
+  },
+  {
+   "s": 8.28,
+   "e": 12.8,
+   "text": "Two years ago he moved cities for work. His three closest friends from college kept saying the same"
+  },
+  {
+   "s": 12.8,
+   "e": 17.88,
+   "text": "thing. We should catch up soon. Then March went by. Then May. Then August. The last time all four"
+  },
+  {
+   "s": 17.88,
+   "e": 22.44,
+   "text": "of them talked was seven months ago. Nobody stopped caring. The problem was that every"
+  },
+  {
+   "s": 22.44,
+   "e": 27.28,
+   "text": "catch-up needed someone to plan it and everyone was busy. So Rohan stopped planning. He sent one"
+  },
+  {
+   "s": 27.32,
+   "e": 33.04,
+   "text": "calendar invite. A video call the first Sunday of every month at 11. It repeats. Nobody has to"
+  },
+  {
+   "s": 33.04,
+   "e": 38.44,
+   "text": "organize it again. In between calls, one small thing every Sunday. A short message to one friend"
+  },
+  {
+   "s": 38.44,
+   "e": 43.74,
+   "text": "saw this and thought of you 30 seconds. Did everyone show up? Not every time. The first"
+  },
+  {
+   "s": 43.74,
+   "e": 48.58,
+   "text": "month only two of them made it. But the next call was already in the calendar, so it didn't depend"
+  },
+  {
+   "s": 48.58,
+   "e": 52.86,
+   "text": "on anyone remembering. Three months later they'd had three calls and they'd booked a weekend"
+  },
+  {
+   "s": 52.86,
+   "e": 58.2,
+   "text": "trip for March. Same friends. Same busy lives. The only difference was a date that repeats."
+  },
+  {
+   "s": 58.84,
+   "e": 63.48,
+   "text": "Here's the whole system. One repeating date. One message every Sunday. And if someone misses,"
+  },
+  {
+   "s": 63.68,
+   "e": 67.92,
+   "text": "the next call is already set. Send this to the friend you keep saying let's catch up to."
+  },
+  {
+   "s": 68.36,
+   "e": 73.08,
+   "text": "Rohan didn't need more time. Just a plan that runs by itself. Yours can too. That's what"
+  },
+  {
+   "s": 73.08,
+   "e": 77.68,
+   "text": "Demure is for. You archive your dream today so you can see it tomorrow and break it down"
+  },
+  {
+   "s": 77.68,
+   "e": 82.56,
+   "text": "into small steps you can actually do. And follow because tomorrow's real is how to fit a big goal"
+  },
+  {
+   "s": 82.56,
+   "e": 87.58,
+   "text": "into a busy week in three blocks. If you want to try it out, I've put the link in the bio."
+  }
+ ],
+ "wps": 3.51
+}
