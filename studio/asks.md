@@ -154,7 +154,7 @@ Instagram locked the account ("we locked your account to protect you from a poss
 - Also still open: ill-hard-part (Fri 19:30) is not scheduled on Instagram yet (5-flow limit on 10-28).
 
 ## VASK-022: Approve the Tue Nov 3 batch (3 reels), and send insight screenshots (2026-11-02)
-- Status: open
+- Status: done 2026-11-02 (approved; scheduled on IG, X, YT for Tue Nov 3)
 - Why late: the scheduled runs on Oct 31 and Nov 1 timed out before building anything, so there was no Sun/Mon batch, and the Oct 31 sleep reel's "tomorrow: the morning after a bad night" promise is two days late. This batch fixes that first.
 - What: 3 animated-illustration reels (Kokoro am_eric drafts, Content Kit v2), `ready-to-post/2026-11-03-*/` (video.mp4 + post.md):
   - 09:30 **ill-bad-night** (sleep, structure A): "After a bad night, the worst thing you can do is sleep in." Up at the usual time, daylight in 10 min, nap 20 min before 3 PM, normal bedtime (not early). 35/40
