@@ -337,3 +337,10 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Verdict + why:
 - Next (days 11-14): keep winning formulas and structures, retire the weakest, lock mix levels, decide explainer music by A/B.
 - 2026-11-02: batch 2 built for Tue Nov 3 (ill-bad-night A, ill-subscriptions C, ill-catch-up B), 3 hook formulas (stop-doing-this-first / check-you-can-do-now / thing-nobody-admits). Lengths 75.7 / 80.8 / 88.8 s (longer than batch 1: numbers and story read slowly). Still no 48h numbers for batch 1 (Oct 31): no screenshots, no browser. Verdict pending; the length question (do 70-90 s reels hold?) is now the main thing to read from screenshots.
+
+## V-EXP-33: Chart-on-frame-0 + universal daily behaviour, and a short-vs-long length test
+- Status: planned (opened 2026-11-02 from the breakout analysis)
+- Change: next batches open at least 2 of 3 reels on a before/after data chart showing the mistake, on universal daily behaviours; one reel per batch is 40-50 s instead of 75-89 s; strongest reel at 19:30; follow line promises a daily series.
+- Why: ill-hard-part (1,597) and ill-wake-time (1,290) both opened on a chart correcting a daily behaviour; narrow topics stayed at 100-180. n=2, so this is a hint to test.
+- Metric: 48h views, saves+shares per 1k, follows; avg watch time and % watched from app screenshots for the length test.
+- Result:
