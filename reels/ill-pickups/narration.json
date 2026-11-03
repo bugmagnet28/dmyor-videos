@@ -1,0 +1,190 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] Your screen time isn't the real problem. Your pickups are. || And your phone already tells you which app keeps pulling you back. Most people never look. || Open Screen Time on an iPhone, or Digital Wellbeing on Android, and find pickups, or unlocks. Say it says ninety a day. || [turn] That's ninety times you didn't decide. If each one costs you two minutes, that's three hours, gone in pieces. || Now scroll down to first used after pickup. That's the app your thumb opens before you've even thought about it. Say it's Instagram. || [turn] So what do you do with it? || Step one. Move that one app off your home screen, into a folder on the last page. Not deleted. Just three swipes away. || Step two. Turn off its notifications, so it stops calling you. || [land] The phone stays. But now there's a pause, and the pause is where you get to decide. Check your pickups again in seven days. || Here's the reset. Find your first app. Move it off page one. Mute it, and check again on day seven. Send this to the friend who checks their phone mid-sentence. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] Follow for one fix a day. Tonight, the coffee that's still in you at bedtime. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "screen-time",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "Not screen time.<br><b>Pickups</b>."
+  },
+  {
+   "type": "phone-desk",
+   "params": {
+    "label": "pulls you back",
+    "cue": [
+     "pulling",
+     "look"
+    ]
+   },
+   "head": "Your phone<br><b>already knows</b>."
+  },
+  {
+   "type": "screen-time",
+   "params": {
+    "stage": "count",
+    "cue": [
+     "Screen",
+     "ninety"
+    ]
+   },
+   "head": "Find your<br><b>pickups</b>."
+  },
+  {
+   "type": "cost-tally",
+   "params": {
+    "title": "EVERY DAY",
+    "rows": [
+     [
+      "Pickups a day",
+      "90"
+     ],
+     [
+      "Minutes each",
+      "x 2"
+     ]
+    ],
+    "total": 3,
+    "unit": " hours",
+    "totalLabel": "A DAY",
+    "cue": [
+     "three",
+     "pieces",
+     "ninety",
+     "two"
+    ],
+    "note": "Gone in pieces",
+    "stage": "rowcue"
+   },
+   "head": "Ninety times<br>you <b>didn't decide</b>."
+  },
+  {
+   "type": "screen-time",
+   "params": {
+    "stage": "first",
+    "cue": [
+     "first",
+     "Instagram"
+    ]
+   },
+   "head": "The app your<br><b>thumb</b> picks."
+  },
+  null,
+  {
+   "type": "home-move",
+   "params": {
+    "stage": "move",
+    "cue": [
+     "Move",
+     "folder",
+     "swipes"
+    ],
+    "chip": "3 swipes away"
+   },
+   "head": "Off the<br><b>home screen</b>."
+  },
+  {
+   "type": "home-move",
+   "params": {
+    "stage": "mute",
+    "cue": [
+     "notifications",
+     "calling"
+    ],
+    "chip": "It stops calling you"
+   },
+   "head": "Turn off its<br><b>notifications</b>."
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "cue": [
+     "stays",
+     "pause"
+    ],
+    "rows": [
+     [
+      "First app",
+      "Page one",
+      "Last page"
+     ],
+     [
+      "Notifications",
+      "On",
+      "Off"
+     ],
+     [
+      "Pickup",
+      "Automatic",
+      "A choice"
+     ]
+    ],
+    "a": "BEFORE",
+    "b": "AFTER"
+   },
+   "head": "Now there's<br>a <b>pause</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "PICKUP RESET",
+    "items": [
+     "Find your first app",
+     "Move it off page 1",
+     "Mute it, check day 7"
+    ],
+    "cue": [
+     "Find",
+     "Move",
+     "Mute"
+    ]
+   },
+   "head": "Screenshot<br><b>your reset</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Use my phone less",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "Find first app",
+     "Move it",
+     "Mute it"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "The coffee still in you at bedtime",
+    "when": "Tonight, 7:30 PM",
+    "cue": [
+     null,
+     "coffee"
+    ]
+   },
+   "head": "One fix<br><b>a day</b>."
+  },
+  null
+ ],
+ "brand_from": 12,
+ "silences": [
+  "So what do",
+  "The phone stays"
+ ],
+ "caption": {
+  "instagram": "Your screen time isn't the real problem. Your pickups are.\n\nOpen Screen Time (iPhone) or Digital Wellbeing (Android). Find pickups, or unlocks. 90 a day x 2 minutes = 3 hours, gone in pieces.\n\nThen scroll to \"first used after pickup\": the app your thumb opens before you've thought about it.\n\nThe pickup reset:\n1. Move that one app off your home screen, into a folder on the last page\n2. Turn off its notifications\n3. Check your pickups again in 7 days\n\nSend this to the friend who checks their phone mid-sentence.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#screentime #phoneaddiction #digitalwellbeing #focus #habits",
+  "x": "Your screen time isn't the real problem. Your pickups are.\n\nFind \"first used after pickup\" in Screen Time. Move that one app off your home screen, mute its notifications, check again in 7 days.",
+  "youtube_title": "How to stop picking up your phone #Shorts"
+ }
+}

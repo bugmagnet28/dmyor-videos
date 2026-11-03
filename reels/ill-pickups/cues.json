@@ -1,0 +1,1582 @@
+{
+ "audio": "audio.mp3",
+ "duration": 68.68,
+ "text": "Your screen time isn't the real problem, your pickups are. And your phone already tells you which app keeps pulling you back. Most people never look. Open screen time on an iPhone or digital wellbeing on Android and find pickups or unlocks. Say it says 90 a day. That's 90 times you didn't decide. If each one costs you two minutes, that's three hours gone in pieces. Now scroll down to first used after pickup. That's the app your thumb opens before you've even thought about it. Say it's Instagram. So what do you do with it? Step one, move that one app off your home screen into a folder on the last page. Not deleted, just three swipes away. Step two, turn off its notifications so it stops calling you. The phone stays, but now there's a pause and the pause is where you get to decide. Check your pickups again in seven days. Here's the reset, find your first app, move it off page one, mute it and check again on day seven. Send this to the friend who checks their phone mid-sentence. That's what Demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. Follow for one fix a day, tonight the coffee that's still in you at bedtime. If you want to try it out, I've put the link in the bio.",
+ "words": [
+  {
+   "w": "your",
+   "raw": "Your",
+   "s": 0.0,
+   "e": 0.28
+  },
+  {
+   "w": "screen",
+   "raw": "screen",
+   "s": 0.28,
+   "e": 0.56
+  },
+  {
+   "w": "time",
+   "raw": "time",
+   "s": 0.56,
+   "e": 0.9
+  },
+  {
+   "w": "isnt",
+   "raw": "isn't",
+   "s": 0.9,
+   "e": 1.22
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 1.22,
+   "e": 1.36
+  },
+  {
+   "w": "real",
+   "raw": "real",
+   "s": 1.36,
+   "e": 1.56
+  },
+  {
+   "w": "problem",
+   "raw": "problem,",
+   "s": 1.56,
+   "e": 2.04
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 2.16,
+   "e": 2.24
+  },
+  {
+   "w": "pickups",
+   "raw": "pickups",
+   "s": 2.24,
+   "e": 2.5
+  },
+  {
+   "w": "are",
+   "raw": "are.",
+   "s": 2.5,
+   "e": 3.06
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 3.2,
+   "e": 3.32
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 3.32,
+   "e": 3.46
+  },
+  {
+   "w": "phone",
+   "raw": "phone",
+   "s": 3.46,
+   "e": 3.74
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 3.74,
+   "e": 4.08
+  },
+  {
+   "w": "tells",
+   "raw": "tells",
+   "s": 4.08,
+   "e": 4.36
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 4.36,
+   "e": 4.6
+  },
+  {
+   "w": "which",
+   "raw": "which",
+   "s": 4.6,
+   "e": 4.72
+  },
+  {
+   "w": "app",
+   "raw": "app",
+   "s": 4.72,
+   "e": 4.92
+  },
+  {
+   "w": "keeps",
+   "raw": "keeps",
+   "s": 4.92,
+   "e": 5.18
+  },
+  {
+   "w": "pulling",
+   "raw": "pulling",
+   "s": 5.18,
+   "e": 5.46
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 5.46,
+   "e": 5.66
+  },
+  {
+   "w": "back",
+   "raw": "back.",
+   "s": 5.66,
+   "e": 5.9
+  },
+  {
+   "w": "most",
+   "raw": "Most",
+   "s": 6.3,
+   "e": 6.44
+  },
+  {
+   "w": "people",
+   "raw": "people",
+   "s": 6.44,
+   "e": 6.7
+  },
+  {
+   "w": "never",
+   "raw": "never",
+   "s": 6.7,
+   "e": 7.02
+  },
+  {
+   "w": "look",
+   "raw": "look.",
+   "s": 7.02,
+   "e": 7.34
+  },
+  {
+   "w": "open",
+   "raw": "Open",
+   "s": 7.72,
+   "e": 7.94
+  },
+  {
+   "w": "screen",
+   "raw": "screen",
+   "s": 7.94,
+   "e": 8.24
+  },
+  {
+   "w": "time",
+   "raw": "time",
+   "s": 8.24,
+   "e": 8.58
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 8.58,
+   "e": 8.74
+  },
+  {
+   "w": "an",
+   "raw": "an",
+   "s": 8.74,
+   "e": 8.92
+  },
+  {
+   "w": "iphone",
+   "raw": "iPhone",
+   "s": 8.92,
+   "e": 9.24
+  },
+  {
+   "w": "or",
+   "raw": "or",
+   "s": 9.24,
+   "e": 9.6
+  },
+  {
+   "w": "digital",
+   "raw": "digital",
+   "s": 9.6,
+   "e": 9.92
+  },
+  {
+   "w": "wellbeing",
+   "raw": "wellbeing",
+   "s": 9.92,
+   "e": 10.28
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 10.28,
+   "e": 10.52
+  },
+  {
+   "w": "android",
+   "raw": "Android",
+   "s": 10.52,
+   "e": 10.92
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 10.92,
+   "e": 11.14
+  },
+  {
+   "w": "find",
+   "raw": "find",
+   "s": 11.14,
+   "e": 11.38
+  },
+  {
+   "w": "pickups",
+   "raw": "pickups",
+   "s": 11.38,
+   "e": 11.78
+  },
+  {
+   "w": "or",
+   "raw": "or",
+   "s": 11.78,
+   "e": 12.1
+  },
+  {
+   "w": "unlocks",
+   "raw": "unlocks.",
+   "s": 12.1,
+   "e": 12.5
+  },
+  {
+   "w": "say",
+   "raw": "Say",
+   "s": 13.06,
+   "e": 13.18
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 13.18,
+   "e": 13.28
+  },
+  {
+   "w": "says",
+   "raw": "says",
+   "s": 13.28,
+   "e": 13.44
+  },
+  {
+   "w": "90",
+   "raw": "90",
+   "s": 13.44,
+   "e": 13.74
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 13.74,
+   "e": 13.9
+  },
+  {
+   "w": "day",
+   "raw": "day.",
+   "s": 13.9,
+   "e": 14.12
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 14.5,
+   "e": 14.84
+  },
+  {
+   "w": "90",
+   "raw": "90",
+   "s": 14.84,
+   "e": 15.08
+  },
+  {
+   "w": "times",
+   "raw": "times",
+   "s": 15.08,
+   "e": 15.36
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 15.36,
+   "e": 15.54
+  },
+  {
+   "w": "didnt",
+   "raw": "didn't",
+   "s": 15.54,
+   "e": 15.74
+  },
+  {
+   "w": "decide",
+   "raw": "decide.",
+   "s": 15.74,
+   "e": 16.16
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 16.62,
+   "e": 16.78
+  },
+  {
+   "w": "each",
+   "raw": "each",
+   "s": 16.78,
+   "e": 16.92
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 16.92,
+   "e": 17.1
+  },
+  {
+   "w": "costs",
+   "raw": "costs",
+   "s": 17.1,
+   "e": 17.3
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 17.3,
+   "e": 17.52
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 17.52,
+   "e": 17.68
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes,",
+   "s": 17.68,
+   "e": 17.94
+  },
+  {
+   "w": "thats",
+   "raw": "that's",
+   "s": 18.08,
+   "e": 18.26
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 18.26,
+   "e": 18.44
+  },
+  {
+   "w": "hours",
+   "raw": "hours",
+   "s": 18.44,
+   "e": 18.8
+  },
+  {
+   "w": "gone",
+   "raw": "gone",
+   "s": 18.8,
+   "e": 19.1
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 19.1,
+   "e": 19.28
+  },
+  {
+   "w": "pieces",
+   "raw": "pieces.",
+   "s": 19.28,
+   "e": 19.52
+  },
+  {
+   "w": "now",
+   "raw": "Now",
+   "s": 20.12,
+   "e": 20.32
+  },
+  {
+   "w": "scroll",
+   "raw": "scroll",
+   "s": 20.32,
+   "e": 20.64
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 20.64,
+   "e": 20.98
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 20.98,
+   "e": 21.2
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 21.2,
+   "e": 21.4
+  },
+  {
+   "w": "used",
+   "raw": "used",
+   "s": 21.4,
+   "e": 21.7
+  },
+  {
+   "w": "after",
+   "raw": "after",
+   "s": 21.7,
+   "e": 21.96
+  },
+  {
+   "w": "pickup",
+   "raw": "pickup.",
+   "s": 21.96,
+   "e": 22.3
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 22.78,
+   "e": 23.06
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 23.06,
+   "e": 23.18
+  },
+  {
+   "w": "app",
+   "raw": "app",
+   "s": 23.18,
+   "e": 23.34
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 23.34,
+   "e": 23.48
+  },
+  {
+   "w": "thumb",
+   "raw": "thumb",
+   "s": 23.48,
+   "e": 23.66
+  },
+  {
+   "w": "opens",
+   "raw": "opens",
+   "s": 23.66,
+   "e": 24.04
+  },
+  {
+   "w": "before",
+   "raw": "before",
+   "s": 24.04,
+   "e": 24.38
+  },
+  {
+   "w": "youve",
+   "raw": "you've",
+   "s": 24.38,
+   "e": 24.62
+  },
+  {
+   "w": "even",
+   "raw": "even",
+   "s": 24.62,
+   "e": 24.8
+  },
+  {
+   "w": "thought",
+   "raw": "thought",
+   "s": 24.8,
+   "e": 25.06
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 25.06,
+   "e": 25.3
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 25.3,
+   "e": 25.5
+  },
+  {
+   "w": "say",
+   "raw": "Say",
+   "s": 25.76,
+   "e": 25.9
+  },
+  {
+   "w": "its",
+   "raw": "it's",
+   "s": 25.9,
+   "e": 26.14
+  },
+  {
+   "w": "instagram",
+   "raw": "Instagram.",
+   "s": 26.14,
+   "e": 26.58
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 27.16,
+   "e": 27.36
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 27.36,
+   "e": 27.58
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 27.58,
+   "e": 27.7
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 27.7,
+   "e": 27.8
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 27.8,
+   "e": 27.98
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 27.98,
+   "e": 28.16
+  },
+  {
+   "w": "it",
+   "raw": "it?",
+   "s": 28.16,
+   "e": 28.36
+  },
+  {
+   "w": "step",
+   "raw": "Step",
+   "s": 28.36,
+   "e": 29.14
+  },
+  {
+   "w": "one",
+   "raw": "one,",
+   "s": 29.14,
+   "e": 29.4
+  },
+  {
+   "w": "move",
+   "raw": "move",
+   "s": 29.54,
+   "e": 29.66
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 29.66,
+   "e": 29.86
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 29.86,
+   "e": 30.0
+  },
+  {
+   "w": "app",
+   "raw": "app",
+   "s": 30.0,
+   "e": 30.2
+  },
+  {
+   "w": "off",
+   "raw": "off",
+   "s": 30.2,
+   "e": 30.38
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 30.38,
+   "e": 30.54
+  },
+  {
+   "w": "home",
+   "raw": "home",
+   "s": 30.54,
+   "e": 30.72
+  },
+  {
+   "w": "screen",
+   "raw": "screen",
+   "s": 30.72,
+   "e": 31.08
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 31.08,
+   "e": 31.32
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 31.32,
+   "e": 31.5
+  },
+  {
+   "w": "folder",
+   "raw": "folder",
+   "s": 31.5,
+   "e": 31.74
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 31.74,
+   "e": 31.94
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 31.94,
+   "e": 32.04
+  },
+  {
+   "w": "last",
+   "raw": "last",
+   "s": 32.04,
+   "e": 32.3
+  },
+  {
+   "w": "page",
+   "raw": "page.",
+   "s": 32.3,
+   "e": 32.7
+  },
+  {
+   "w": "not",
+   "raw": "Not",
+   "s": 33.1,
+   "e": 33.32
+  },
+  {
+   "w": "deleted",
+   "raw": "deleted,",
+   "s": 33.32,
+   "e": 33.68
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 33.96,
+   "e": 34.08
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 34.08,
+   "e": 34.36
+  },
+  {
+   "w": "swipes",
+   "raw": "swipes",
+   "s": 34.36,
+   "e": 34.66
+  },
+  {
+   "w": "away",
+   "raw": "away.",
+   "s": 34.66,
+   "e": 35.04
+  },
+  {
+   "w": "step",
+   "raw": "Step",
+   "s": 35.68,
+   "e": 35.76
+  },
+  {
+   "w": "two",
+   "raw": "two,",
+   "s": 35.76,
+   "e": 36.08
+  },
+  {
+   "w": "turn",
+   "raw": "turn",
+   "s": 36.24,
+   "e": 36.38
+  },
+  {
+   "w": "off",
+   "raw": "off",
+   "s": 36.38,
+   "e": 36.52
+  },
+  {
+   "w": "its",
+   "raw": "its",
+   "s": 36.52,
+   "e": 36.66
+  },
+  {
+   "w": "notifications",
+   "raw": "notifications",
+   "s": 36.66,
+   "e": 37.22
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 37.22,
+   "e": 37.58
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 37.58,
+   "e": 37.7
+  },
+  {
+   "w": "stops",
+   "raw": "stops",
+   "s": 37.7,
+   "e": 37.96
+  },
+  {
+   "w": "calling",
+   "raw": "calling",
+   "s": 37.96,
+   "e": 38.36
+  },
+  {
+   "w": "you",
+   "raw": "you.",
+   "s": 38.36,
+   "e": 38.68
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 39.06,
+   "e": 39.22
+  },
+  {
+   "w": "phone",
+   "raw": "phone",
+   "s": 39.22,
+   "e": 39.42
+  },
+  {
+   "w": "stays",
+   "raw": "stays,",
+   "s": 39.42,
+   "e": 39.78
+  },
+  {
+   "w": "but",
+   "raw": "but",
+   "s": 40.04,
+   "e": 40.14
+  },
+  {
+   "w": "now",
+   "raw": "now",
+   "s": 40.14,
+   "e": 40.34
+  },
+  {
+   "w": "theres",
+   "raw": "there's",
+   "s": 40.34,
+   "e": 40.56
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 40.56,
+   "e": 40.68
+  },
+  {
+   "w": "pause",
+   "raw": "pause",
+   "s": 40.68,
+   "e": 40.98
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 40.98,
+   "e": 41.2
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 41.2,
+   "e": 41.32
+  },
+  {
+   "w": "pause",
+   "raw": "pause",
+   "s": 41.32,
+   "e": 41.6
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 41.6,
+   "e": 41.78
+  },
+  {
+   "w": "where",
+   "raw": "where",
+   "s": 41.78,
+   "e": 41.9
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 41.9,
+   "e": 42.02
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 42.02,
+   "e": 42.16
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 42.16,
+   "e": 42.3
+  },
+  {
+   "w": "decide",
+   "raw": "decide.",
+   "s": 42.3,
+   "e": 42.68
+  },
+  {
+   "w": "check",
+   "raw": "Check",
+   "s": 43.26,
+   "e": 43.4
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 43.4,
+   "e": 43.56
+  },
+  {
+   "w": "pickups",
+   "raw": "pickups",
+   "s": 43.56,
+   "e": 43.82
+  },
+  {
+   "w": "again",
+   "raw": "again",
+   "s": 43.82,
+   "e": 44.18
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 44.18,
+   "e": 44.4
+  },
+  {
+   "w": "seven",
+   "raw": "seven",
+   "s": 44.4,
+   "e": 44.68
+  },
+  {
+   "w": "days",
+   "raw": "days.",
+   "s": 44.68,
+   "e": 45.08
+  },
+  {
+   "w": "heres",
+   "raw": "Here's",
+   "s": 45.64,
+   "e": 45.9
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 45.9,
+   "e": 46.0
+  },
+  {
+   "w": "reset",
+   "raw": "reset,",
+   "s": 46.0,
+   "e": 46.32
+  },
+  {
+   "w": "find",
+   "raw": "find",
+   "s": 46.48,
+   "e": 46.58
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 46.58,
+   "e": 46.76
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 46.76,
+   "e": 46.98
+  },
+  {
+   "w": "app",
+   "raw": "app,",
+   "s": 46.98,
+   "e": 47.24
+  },
+  {
+   "w": "move",
+   "raw": "move",
+   "s": 47.42,
+   "e": 47.54
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 47.54,
+   "e": 47.64
+  },
+  {
+   "w": "off",
+   "raw": "off",
+   "s": 47.64,
+   "e": 47.8
+  },
+  {
+   "w": "page",
+   "raw": "page",
+   "s": 47.8,
+   "e": 48.04
+  },
+  {
+   "w": "one",
+   "raw": "one,",
+   "s": 48.04,
+   "e": 48.44
+  },
+  {
+   "w": "mute",
+   "raw": "mute",
+   "s": 48.68,
+   "e": 48.86
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 48.86,
+   "e": 49.02
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 49.02,
+   "e": 49.14
+  },
+  {
+   "w": "check",
+   "raw": "check",
+   "s": 49.14,
+   "e": 49.34
+  },
+  {
+   "w": "again",
+   "raw": "again",
+   "s": 49.34,
+   "e": 49.62
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 49.62,
+   "e": 49.78
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 49.78,
+   "e": 49.92
+  },
+  {
+   "w": "seven",
+   "raw": "seven.",
+   "s": 49.92,
+   "e": 50.3
+  },
+  {
+   "w": "send",
+   "raw": "Send",
+   "s": 50.78,
+   "e": 50.88
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 50.88,
+   "e": 51.06
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 51.06,
+   "e": 51.2
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 51.2,
+   "e": 51.34
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 51.34,
+   "e": 51.54
+  },
+  {
+   "w": "who",
+   "raw": "who",
+   "s": 51.54,
+   "e": 51.76
+  },
+  {
+   "w": "checks",
+   "raw": "checks",
+   "s": 51.76,
+   "e": 51.98
+  },
+  {
+   "w": "their",
+   "raw": "their",
+   "s": 51.98,
+   "e": 52.24
+  },
+  {
+   "w": "phone",
+   "raw": "phone",
+   "s": 52.24,
+   "e": 52.5
+  },
+  {
+   "w": "mid",
+   "raw": "mid",
+   "s": 52.5,
+   "e": 52.68
+  },
+  {
+   "w": "sentence",
+   "raw": "-sentence.",
+   "s": 52.68,
+   "e": 53.08
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 53.48,
+   "e": 53.8
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 53.8,
+   "e": 53.96
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 53.96,
+   "e": 54.32
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 54.32,
+   "e": 54.5
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 54.5,
+   "e": 54.76
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 54.76,
+   "e": 55.26
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 55.26,
+   "e": 55.66
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 55.66,
+   "e": 55.88
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 55.88,
+   "e": 56.1
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 56.1,
+   "e": 56.46
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 56.46,
+   "e": 56.68
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 56.68,
+   "e": 56.82
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 56.82,
+   "e": 56.98
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 56.98,
+   "e": 57.2
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 57.2,
+   "e": 57.32
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 57.32,
+   "e": 57.64
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 57.64,
+   "e": 58.08
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 58.08,
+   "e": 58.26
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 58.26,
+   "e": 58.4
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 58.4,
+   "e": 58.62
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 58.62,
+   "e": 58.82
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 58.82,
+   "e": 59.14
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 59.14,
+   "e": 59.44
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 59.44,
+   "e": 59.66
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 59.66,
+   "e": 59.8
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 59.8,
+   "e": 60.1
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 60.1,
+   "e": 60.44
+  },
+  {
+   "w": "follow",
+   "raw": "Follow",
+   "s": 60.78,
+   "e": 61.06
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 61.06,
+   "e": 61.32
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 61.32,
+   "e": 61.52
+  },
+  {
+   "w": "fix",
+   "raw": "fix",
+   "s": 61.52,
+   "e": 61.74
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 61.74,
+   "e": 61.92
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 61.92,
+   "e": 62.16
+  },
+  {
+   "w": "tonight",
+   "raw": "tonight",
+   "s": 62.32,
+   "e": 62.62
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 62.62,
+   "e": 62.82
+  },
+  {
+   "w": "coffee",
+   "raw": "coffee",
+   "s": 62.82,
+   "e": 63.12
+  },
+  {
+   "w": "thats",
+   "raw": "that's",
+   "s": 63.12,
+   "e": 63.44
+  },
+  {
+   "w": "still",
+   "raw": "still",
+   "s": 63.44,
+   "e": 63.58
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 63.58,
+   "e": 63.72
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 63.72,
+   "e": 63.82
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 63.82,
+   "e": 63.92
+  },
+  {
+   "w": "bedtime",
+   "raw": "bedtime.",
+   "s": 63.92,
+   "e": 64.42
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 64.88,
+   "e": 65.02
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 65.02,
+   "e": 65.14
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 65.14,
+   "e": 65.3
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 65.3,
+   "e": 65.42
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 65.42,
+   "e": 65.66
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 65.66,
+   "e": 65.84
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 65.84,
+   "e": 66.1
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 66.32,
+   "e": 66.42
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 66.42,
+   "e": 66.56
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 66.56,
+   "e": 66.7
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 66.7,
+   "e": 66.88
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 66.88,
+   "e": 67.04
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 67.04,
+   "e": 67.14
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 67.14,
+   "e": 67.38
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 3.06,
+   "text": "Your screen time isn't the real problem, your pickups are."
+  },
+  {
+   "s": 3.2,
+   "e": 5.9,
+   "text": "And your phone already tells you which app keeps pulling you back."
+  },
+  {
+   "s": 6.3,
+   "e": 7.34,
+   "text": "Most people never look."
+  },
+  {
+   "s": 7.72,
+   "e": 12.5,
+   "text": "Open screen time on an iPhone or digital wellbeing on Android and find pickups or unlocks."
+  },
+  {
+   "s": 13.06,
+   "e": 14.12,
+   "text": "Say it says 90 a day."
+  },
+  {
+   "s": 14.5,
+   "e": 16.16,
+   "text": "That's 90 times you didn't decide."
+  },
+  {
+   "s": 16.62,
+   "e": 19.52,
+   "text": "If each one costs you two minutes, that's three hours gone in pieces."
+  },
+  {
+   "s": 20.12,
+   "e": 22.3,
+   "text": "Now scroll down to first used after pickup."
+  },
+  {
+   "s": 22.78,
+   "e": 25.5,
+   "text": "That's the app your thumb opens before you've even thought about it."
+  },
+  {
+   "s": 25.76,
+   "e": 26.58,
+   "text": "Say it's Instagram."
+  },
+  {
+   "s": 27.16,
+   "e": 28.36,
+   "text": "So what do you do with it?"
+  },
+  {
+   "s": 28.36,
+   "e": 32.7,
+   "text": "Step one, move that one app off your home screen into a folder on the last page."
+  },
+  {
+   "s": 33.1,
+   "e": 35.04,
+   "text": "Not deleted, just three swipes away."
+  },
+  {
+   "s": 35.68,
+   "e": 38.68,
+   "text": "Step two, turn off its notifications so it stops calling you."
+  },
+  {
+   "s": 39.06,
+   "e": 42.68,
+   "text": "The phone stays, but now there's a pause and the pause is where you get to decide."
+  },
+  {
+   "s": 43.26,
+   "e": 45.08,
+   "text": "Check your pickups again in seven days."
+  },
+  {
+   "s": 45.64,
+   "e": 48.44,
+   "text": "Here's the reset, find your first app, move it off page one,"
+  },
+  {
+   "s": 48.68,
+   "e": 50.3,
+   "text": "mute it and check again on day seven."
+  },
+  {
+   "s": 50.78,
+   "e": 53.08,
+   "text": "Send this to the friend who checks their phone mid-sentence."
+  },
+  {
+   "s": 53.48,
+   "e": 54.76,
+   "text": "That's what Demure is for."
+  },
+  {
+   "s": 54.76,
+   "e": 57.64,
+   "text": "You archive your dream today so you can see it tomorrow"
+  },
+  {
+   "s": 57.64,
+   "e": 60.44,
+   "text": "and break it down into small steps you can actually do."
+  },
+  {
+   "s": 60.78,
+   "e": 64.42,
+   "text": "Follow for one fix a day, tonight the coffee that's still in you at bedtime."
+  },
+  {
+   "s": 64.88,
+   "e": 67.38,
+   "text": "If you want to try it out, I've put the link in the bio."
+  }
+ ],
+ "wps": 3.52
+}

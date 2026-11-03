@@ -289,11 +289,19 @@ def reveal():
     return out
 
 
+def cup():
+    """ceramic mug set down on a table: a soft low knock plus short ceramic partials"""
+    n = int(.6 * SR); t = np.arange(n) / SR
+    knock = np.sin(2 * np.pi * (140 + 60 * np.exp(-t / .008)) * t) * env(n, .001, .03) * .8
+    ring = sum(w * np.sin(2 * np.pi * f * t) * np.exp(-t / dd) for f, w, dd in [(1870, .35, .09), (3120, .22, .06), (4710, .12, .04)])
+    return knock + ring * env(n, .001, 1) + hp(lowpass(noise(n), 4000), 600) * env(n, .001, .006) * .4
+
+
 KIT = {"tick": tick, "tap": tap, "swish": swish, "ratchet": ratchet, "tone": tone, "chord": chord,
        "clock": clock, "timer": timer, "pencil": pencil, "pen_check": pen_check, "page": page, "riffle": riffle,
        "footsteps": footsteps, "plate": plate, "stamp": stamp, "beep2": beep2, "right": right, "pop": pop, "miss": miss,
        "coin": coin, "typing": typing, "buzz": buzz, "door": door, "toggle": toggle,
-       "alarm": alarm, "sizzle": sizzle, "chop": chop, "reveal": reveal}
+       "alarm": alarm, "sizzle": sizzle, "chop": chop, "reveal": reveal, "cup": cup}
 # Real CC0 recordings replace the synthesised sounds (owner 2026-10-28). A file studio/sfx-library/real/<kit-key>.wav
 # (made by studio/sfx-library/use.py) is used for that key; keys without a file keep the synth. Licences: studio/sfx-library/LICENSES.md
 REAL_DIR = os.path.abspath(os.path.join(HERE, "..", "..", "..", "studio", "sfx-library", "real"))
@@ -334,7 +342,7 @@ PEAK = {"tick": -16, "tap": -16, "swish": -21, "ratchet": -19, "tone": -21, "cho
         "clock": -18, "timer": -20, "pencil": -15, "pen_check": -15, "page": -15, "riffle": -18,
         "footsteps": -15, "plate": -15, "stamp": -14, "beep2": -21, "right": -15, "pop": -14, "miss": -16,
         "coin": -17, "typing": -17, "buzz": -16, "door": -14, "toggle": -15,
-        "alarm": -19, "sizzle": -20, "chop": -15, "reveal": -14}
+        "alarm": -19, "sizzle": -20, "chop": -15, "reveal": -14, "cup": -15}
 LEVEL = {"present": 4, "subtle": -2}   # +4 dB from 2026-10-28 (Content Kit v2: object sounds ~10 dB under voice); was present 0 / subtle -6
 BEDS = {"clock", "timer", "footsteps", "riffle", "typing", "sizzle", "chop", "alarm"}   # continuous sounds: may overlap one-shots
 

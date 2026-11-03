@@ -1,0 +1,150 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] Your four o'clock coffee is still in you at bedtime. || You can probably still fall asleep. That's not the problem. There's one time on the clock that fixes this, and most people never set it. || Here's the math. Caffeine takes about five hours to drop by half. A cup at four? At nine, half of it is still in you. At two in the morning, a quarter. || [turn] So you sleep, but caffeine can keep that sleep lighter. You wake up tired, and you reach for another coffee. || [turn] So where's the line? || Take your bedtime and count back eight hours. Bed at eleven? Your cut-off is three PM. || After that, it's decaf, or nothing. And when the four o'clock slump hits, take a ten-minute walk outside instead. It wakes you up, and it doesn't follow you to bed. || [land] Swap just that one cup, and at bedtime you're down from half a cup to about an eighth. || Here's the rule. Bedtime minus eight hours. Decaf after that. A walk for the slump. Send this to the friend who orders a latte at five. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] Follow for one fix a day, for the things that keep stalling. Tomorrow, what to do when it's still dark when you wake up. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "caffeine-curve",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "Your 4 PM coffee<br>is still <b>in you</b>."
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "FALL ASLEEP?",
+    "aBig": "Probably",
+    "b": "The one time that fixes it",
+    "cue": [
+     "one",
+     "problem"
+    ]
+   },
+   "head": "Not falling asleep.<br><b>Sleeping deep</b>."
+  },
+  {
+   "type": "caffeine-curve",
+   "params": {
+    "stage": "math",
+    "cue": [
+     "Caffeine",
+     "nine",
+     "two"
+    ]
+   },
+   "head": "Half of it,<br><b>five hours</b> later."
+  },
+  {
+   "type": "sleep-depth",
+   "params": {
+    "cue": [
+     "lighter",
+     "tired",
+     "another"
+    ]
+   },
+   "head": "Lighter sleep,<br><b>another coffee</b>."
+  },
+  null,
+  {
+   "type": "caffeine-curve",
+   "params": {
+    "stage": "cutoff",
+    "cue": [
+     "bedtime",
+     "eight",
+     "three"
+    ]
+   },
+   "head": "Bedtime minus<br><b>8 hours</b>."
+  },
+  {
+   "type": "week-tracker",
+   "params": {
+    "on": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "what": "4 PM: 10-min walk",
+    "stage": "slow",
+    "walk": 8.0
+   },
+   "head": "Decaf after that.<br>A <b>walk</b> for the slump."
+  },
+  {
+   "type": "caffeine-curve",
+   "params": {
+    "stage": "fix",
+    "cue": [
+     "Swap",
+     "down"
+    ]
+   },
+   "head": "Half a cup<br>to an <b>eighth</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "CUT-OFF RULE",
+    "items": [
+     "Bedtime minus 8 h",
+     "Decaf after that",
+     "Walk for the slump"
+    ],
+    "cue": [
+     "Bedtime",
+     "Decaf",
+     "walk"
+    ]
+   },
+   "head": "Screenshot<br><b>the rule</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Sleep deeper",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "Cut-off 3 PM",
+     "Decaf after",
+     "4 PM walk"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "When it's still dark at wake-up",
+    "when": "Tomorrow",
+    "cue": [
+     null,
+     "dark"
+    ]
+   },
+   "head": "One fix<br><b>a day</b>."
+  },
+  null
+ ],
+ "brand_from": 11,
+ "silences": [
+  "So where's",
+  "Swap just"
+ ],
+ "caption": {
+  "instagram": "Your 4 PM coffee is still in you at bedtime.\n\nCaffeine takes about 5 hours to drop by half. A cup at 4: half of it at 9 PM, a quarter at 2 AM. You can still fall asleep, but caffeine can keep that sleep lighter. Then you wake up tired and reach for another coffee.\n\nThe cut-off rule:\n1. Bedtime minus 8 hours (bed at 11 = cut-off 3 PM)\n2. Decaf after that\n3. 4 PM slump? A 10-minute walk outside\n\nSwap that one cup: at bedtime you go from about half a cup to about an eighth.\n\nSend this to the friend who orders a latte at five.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#sleep #caffeine #coffee #sleepbetter #energy #habits",
+  "x": "Your 4 PM coffee is still in you at bedtime.\n\nCaffeine halves in about 5 hours: a 4 PM cup is half there at 9, a quarter at 2 AM. Cut-off = bedtime minus 8 hours. Decaf after. Walk for the slump.",
+  "youtube_title": "When to stop drinking coffee for better sleep #Shorts"
+ }
+}

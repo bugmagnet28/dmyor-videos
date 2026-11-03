@@ -1,0 +1,10 @@
+reels/ill-busy-week/audio.mp3  44.87s  voice=am_eric preset=plain fx=False breaths=False stages=hook body body turn land outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/4487 [00:00<?, ?frames/s] 64%|██████▍   | 2892/4487 [00:16<00:09, 173.76frames/s]100%|██████████| 4487/4487 [00:27<00:00, 158.47frames/s]100%|██████████| 4487/4487 [00:27<00:00, 161.21frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+153 words, 44.87s, 3.41 words/sec
+-> reels/ill-busy-week/cues.json
+sfx present: 36 sounds -> reels/ill-busy-week/audio_mixed.mp3 plate@0.1 swish@3.5 right@4.0 pop@5.2 pop@5.5 pop@5.8 pop@6.1 pop@6.4 right@8.3 pop@9.0 typing@9.2 pop@10.2 pop@10.6 pop@11.0 toggle@13.8 right@14.3 pop@14.6 pop@17.3 pop@19.3 pop@21.3 plate@21.8 swish@23.1 pop@23.7 pop@24.1 reveal@25.4 tone@28.9 stamp@29.0 pop@30.6 pop@31.1 right@31.9 right@32.4 right@32.9 pop@36.8 toggle@39.2 right@39.5 chord@41.1
+built reels/ill-busy-week: 44.78s, 7 scenes, brand 41.06s, 3.41 words/sec
+scenes: [('gym-calendar', 0.0, 3.49, None), ('day-done', 3.49, 9.03, [1.69, 4.61]), ('meeting-card', 9.03, 14.57, [1.17, 4.73]), ('gym-calendar', 14.57, 23.09, [2.71, 4.71, 6.69]), ('before-after', 23.09, 28.87, [0.2, 2.35]), ('dream-to-steps', 28.87, 36.79, None), ('follow-next', 36.79, 41.06, [0.2, 2.41])]

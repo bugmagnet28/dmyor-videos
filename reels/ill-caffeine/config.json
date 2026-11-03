@@ -1,0 +1,188 @@
+{
+ "total": 67.1,
+ "brandT": 63.4,
+ "scenes": [
+  {
+   "type": "caffeine-curve",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "Your 4 PM coffee<br>is still <b>in you</b>.",
+   "t0": 0.0,
+   "t1": 2.89
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "FALL ASLEEP?",
+    "aBig": "Probably",
+    "b": "The one time that fixes it",
+    "cue": [
+     "one",
+     "problem"
+    ],
+    "at": [
+     3.39,
+     2.39
+    ]
+   },
+   "head": "Not falling asleep.<br><b>Sleeping deep</b>.",
+   "t0": 2.89,
+   "t1": 9.69
+  },
+  {
+   "type": "caffeine-curve",
+   "params": {
+    "stage": "math",
+    "cue": [
+     "Caffeine",
+     "nine",
+     "two"
+    ],
+    "at": [
+     0.83,
+     4.31,
+     6.25
+    ]
+   },
+   "head": "Half of it,<br><b>five hours</b> later.",
+   "t0": 9.69,
+   "t1": 17.43
+  },
+  {
+   "type": "sleep-depth",
+   "params": {
+    "cue": [
+     "lighter",
+     "tired",
+     "another"
+    ],
+    "at": [
+     2.03,
+     3.37,
+     4.45
+    ]
+   },
+   "head": "Lighter sleep,<br><b>another coffee</b>.",
+   "t0": 17.43,
+   "t1": 24.48
+  },
+  {
+   "type": "caffeine-curve",
+   "params": {
+    "stage": "cutoff",
+    "cue": [
+     "bedtime",
+     "eight",
+     "three"
+    ],
+    "at": [
+     0.61,
+     1.73,
+     4.13
+    ]
+   },
+   "head": "Bedtime minus<br><b>8 hours</b>.",
+   "t0": 24.43,
+   "t1": 29.59
+  },
+  {
+   "type": "week-tracker",
+   "params": {
+    "on": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "what": "4 PM: 10-min walk",
+    "stage": "slow",
+    "walk": 8.0
+   },
+   "head": "Decaf after that.<br>A <b>walk</b> for the slump.",
+   "t0": 29.59,
+   "t1": 38.25
+  },
+  {
+   "type": "caffeine-curve",
+   "params": {
+    "stage": "fix",
+    "cue": [
+     "Swap",
+     "down"
+    ],
+    "at": [
+     0.05,
+     2.17
+    ]
+   },
+   "head": "Half a cup<br>to an <b>eighth</b>.",
+   "t0": 38.25,
+   "t1": 42.61
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "CUT-OFF RULE",
+    "items": [
+     "Bedtime minus 8 h",
+     "Decaf after that",
+     "Walk for the slump"
+    ],
+    "cue": [
+     "Bedtime",
+     "Decaf",
+     "walk"
+    ],
+    "at": [
+     0.77,
+     2.41,
+     3.33
+    ]
+   },
+   "head": "Screenshot<br><b>the rule</b>.",
+   "t0": 42.61,
+   "t1": 49.23
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Sleep deeper",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "Cut-off 3 PM",
+     "Decaf after",
+     "4 PM walk"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 49.23,
+   "t1": 57.21
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "When it's still dark at wake-up",
+    "when": "Tomorrow",
+    "cue": [
+     null,
+     "dark"
+    ],
+    "at": [
+     0.2,
+     4.65
+    ]
+   },
+   "head": "One fix<br><b>a day</b>.",
+   "t0": 57.21,
+   "t1": 63.4
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  23.0,
+  38.2
+ ]
+}

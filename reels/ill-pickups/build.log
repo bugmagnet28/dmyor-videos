@@ -1,0 +1,15 @@
+reels/ill-pickups/audio.mp3  68.68s  voice=am_eric preset=plain fx=False breaths=False stages=hook body body turn body turn body body land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/6868 [00:00<?, ?frames/s] 41%|████▏     | 2836/6868 [00:24<00:35, 114.02frames/s] 41%|████▏     | 2836/6868 [00:40<00:35, 114.02frames/s] 80%|███████▉  | 5476/6868 [00:52<00:13, 102.93frames/s]100%|██████████| 6868/6868 [01:10<00:00, 93.35frames/s] 100%|██████████| 6868/6868 [01:10<00:00, 97.37frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+242 words, 68.68s, 3.52 words/sec
+-> reels/ill-pickups/cues.json
+  skip ['@4+0.05', 'pencil', 0.3]: scene cost-tally has no beat for it
+  skip ['@5+0.05', 'pencil', 0.3]: scene cost-tally has no beat for it
+  skip ['@6+0.05', 'pencil', 0.3]: scene cost-tally has no beat for it
+  skip ['@7+0.05', 'pencil', 0.3]: scene cost-tally has no beat for it
+  skip ['@8+0.05', 'pencil', 0.3]: scene cost-tally has no beat for it
+sfx present: 49 sounds -> reels/ill-pickups/audio_mixed.mp3 buzz@0.1 pop@3.2 buzz@5.5 pop@7.0 pop@7.7 ratchet@11.4 pop@13.4 pop@14.5 pencil@17.6 ratchet@18.5 pop@19.3 pop@20.1 pop@21.2 pop@21.5 pop@21.8 toggle@26.1 pop@28.4 pop@29.5 swish@31.5 pop@32.4 right@34.4 pop@35.7 toggle@36.7 toggle@37.0 toggle@37.4 right@38.0 swish@39.0 pop@39.4 pop@39.8 pop@40.2 reveal@40.7 pop@45.6 pencil@46.5 right@46.8 pencil@47.4 right@47.8 pencil@48.7 right@49.0 tone@53.4 stamp@53.6 pop@55.2 pop@55.7 right@56.5 right@57.0 right@57.5 pop@60.8 toggle@62.8 right@63.2 chord@64.9
+built reels/ill-pickups: 68.58s, 11 scenes, brand 64.88s, 3.52 words/sec
+scenes: [('screen-time', 0.0, 3.15, None), ('phone-desk', 3.15, 7.67, [2.03, 3.87]), ('screen-time', 7.67, 14.45, [3.71, 5.76]), ('cost-tally', 14.45, 20.07, [3.81, 4.83, 0.2, 3.07]), ('screen-time', 20.07, 28.36, [1.13, 6.07]), ('home-move', 28.31, 35.63, [1.23, 3.19, 6.05]), ('home-move', 35.63, 39.01, [1.03, 2.33]), ('before-after', 39.01, 45.59, [0.41, 1.67]), ('rule-card', 45.59, 53.43, [0.89, 1.83, 3.09]), ('dream-to-steps', 53.43, 60.73, None), ('follow-next', 60.73, 64.88, [0.2, 2.09])]

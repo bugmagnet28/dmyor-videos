@@ -1,0 +1,178 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.3,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] You don't need a free week for a big goal. You need three half-hours. || Even a packed week has them. Before work, a lunch break, Sunday morning. But finding them is the easy part. || Say the goal is your first podcast episode. Tonight, put three thirty-minute blocks in your calendar. || [turn] Then give each block one output, not a topic. Monday, outline episode one. Wednesday, record a ten-minute test. Sunday, listen back and fix one thing. || [land] That's ninety minutes, and by Sunday the episode exists. Send this to the friend who's waiting for a quiet month. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] Follow for one fix a day. This afternoon, the phone habit you don't notice. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "add-cal",
+    "blocks": [
+     [
+      0,
+      "7:00",
+      "30 min"
+     ],
+     [
+      2,
+      "1:00",
+      "30 min"
+     ],
+     [
+      6,
+      "9:00",
+      "30 min"
+     ]
+    ]
+   },
+   "head": "No free week needed.<br>Three <b>half-hours</b>."
+  },
+  {
+   "type": "day-done",
+   "params": {
+    "rows": [
+     [
+      "7:00",
+      "30 min: goal"
+     ],
+     [
+      "9:00",
+      "Work"
+     ],
+     [
+      "1:00",
+      "Lunch"
+     ],
+     [
+      "6:00",
+      "Errands"
+     ]
+    ],
+    "label": "the gaps are already there",
+    "cue": [
+     "work",
+     "easy"
+    ]
+   },
+   "head": "Even a <b>packed</b> week<br>has gaps."
+  },
+  {
+   "type": "meeting-card",
+   "params": {
+    "title": "Podcast: block 1 of 3",
+    "rows": [
+     "Mon 7:00 to 7:30 AM",
+     "Also Wed 1:00, Sun 9:00"
+    ],
+    "remind": "Reminder 10 min before",
+    "cue": [
+     "podcast",
+     "calendar"
+    ]
+   },
+   "head": "Three blocks,<br><b>tonight</b>."
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "add-cal",
+    "blocks": [
+     [
+      0,
+      "7:00",
+      "Outline"
+     ],
+     [
+      2,
+      "1:00",
+      "Record"
+     ],
+     [
+      6,
+      "9:00",
+      "Fix 1"
+     ]
+    ],
+    "cue": [
+     "Monday",
+     "Wednesday",
+     "Sunday"
+    ],
+    "note": "One output per block"
+   },
+   "head": "One <b>output</b>,<br>not a topic."
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "cue": [
+     "ninety",
+     "exists"
+    ],
+    "rows": [
+     [
+      "Free evenings",
+      "0",
+      "0"
+     ],
+     [
+      "Time on it",
+      "0 min",
+      "90 min"
+     ],
+     [
+      "Episode one",
+      "An idea",
+      "Recorded"
+     ]
+    ],
+    "a": "WAITING",
+    "b": "3 BLOCKS"
+   },
+   "head": "By Sunday,<br>it <b>exists</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "My first podcast",
+    "date": "Open it again: Jan 2027",
+    "steps": [
+     "Outline",
+     "Record a test",
+     "Fix one thing"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "The phone habit you don't notice",
+    "when": "This afternoon",
+    "cue": [
+     null,
+     "phone"
+    ]
+   },
+   "head": "One fix<br><b>a day</b>."
+  },
+  null
+ ],
+ "brand_from": 7,
+ "silences": [
+  "Then give",
+  "That's ninety"
+ ],
+ "caption": {
+  "instagram": "You don't need a free week for a big goal. You need three half-hours.\n\nEven a packed week has them: before work, a lunch break, Sunday morning.\n\n1. Tonight, put three 30-minute blocks in your calendar\n2. Give each block one output, not a topic\n   Mon: outline episode one\n   Wed: record a 10-minute test\n   Sun: listen back, fix one thing\n3. 90 minutes, and by Sunday the episode exists\n\nSend this to the friend who's waiting for a quiet month.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#productivity #timemanagement #goals #busylife #podcasting",
+  "x": "You don't need a free week for a big goal. You need three half-hours.\n\nPut three 30-min blocks in your calendar tonight. Give each one an output, not a topic: outline, record a test, fix one thing. 90 minutes and it exists.",
+  "youtube_title": "How to work on a big goal when you're busy #Shorts"
+ }
+}

@@ -2,7 +2,12 @@
 
 Owned by the video agent. Rewritten in each weekly review. Started 2026-10-08 as hypotheses.
 
-## Where we are (2026-10-22)
+## Where we are (2026-11-03)
+- @becauseidmyor: 22 followers (Nov 2, +1 from a reel, the first ever). Instagram 30-day views 5,835 (from 1,824 on Oct 28), 99.6% non-followers.
+- One style carries everything: animated-illustration-explainer (14 posts, 8.6x the rest on IG reach). Hard-truth hooks 7.9x (n=18). Two breakouts (ill-hard-part 1,597, ill-wake-time 1,290), both chart-on-frame-0 corrections of a daily behaviour at 19:30.
+- Production: 3 reels/day, all Kokoro am_eric, Content Kit v2 since Oct 31. Scheduled runs timed out on Oct 31 + Nov 1 (no batches those days).
+
+## Where we were (2026-10-22)
 - Posting unblocked: 1 posted Oct 21 00:54 + 11 scheduled Oct 21 (region test) + 3 tree reels scheduled Oct 22 on @becauseidmyor. 21 followers (Oct 21). 0 reels with metrics yet; first 48h insights Oct 23 (VASK-012).
 - Two formats now live: calm kinetic type (12 reels) and the tree series (illustrated product tree + synthesized music, Sanyam's brief, 3 reels + tree-first-5k ready).
 
@@ -58,6 +63,27 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 - Voiceover reels are NOT part of week 1: most viewers watch muted and we have no VO data. Revisit at the first weekly review, so no VO script is kept in asks for now.
 
 ## Weekly reviews
+## Weekly review 2026-11-03 (weeks 3-4: Oct 22 - Nov 2)
+
+**What happened.** ~35 reels went live on IG/YT/X: diagram (2), kinetic (1), animated illustration (~25), cinematic brand film (1), pixel story (1). Owner rules settled the look (Graphite & Sage, real graphics, object sounds, value close). Content Kit v2 started Oct 31. Two run timeouts cost two days (Oct 31, Nov 1).
+
+**Side by side (IG views, grid read Nov 2).** Winners: ill-hard-part 1,597 (14 saves), ill-wake-time 1,290 (18 saves, 5 shares, 1 follow). Middle (100-275): size-problem, track-inputs, later-trigger, gym-day-four, one-category, twenty-mornings, one-sentence, bad-day-version, pixel-book, three-recipes, monday. Bottom (<70): night-before, unclear-task, language-plan, save-first, brand-one-place, five-goals, goal-date. YouTube small and falling (newer median 11).
+
+**What the data says (signals vs hints).**
+- Signal: animated illustration >> kinetic / old illustrated-scene / diagram. Keep it as the only production style until a second one passes owner rules.
+- Signal: hard-truth hooks; question hooks lose (0.3x).
+- Hint (n=2): a data chart on frame 0 + a correction of a universal daily behaviour (practising, sleeping) + 19:30. Narrow topics (recipes, subscriptions, pitch, budget) stall at 100-180.
+- Hint: Kit v2 did not lift the floor yet (median 158 vs 165), but gave the first follow and the most saves/shares.
+- Unknown: watch time. Reels drifted to 75-89 s; no avg-watch numbers since Oct 28.
+
+**Decisions for week 5 (Nov 3-9).**
+1. Double down: 2 of 3 reels per day open on a before/after chart; topics from universal daily behaviour (sleep, energy, phone, focus, practice, mornings, exercise). Strongest at 19:30. Follow-ups to winners allowed with a new method (V-EXP-33).
+2. Length test: one 40-50 s reel per batch vs the 70-85 s ones; decide by avg watch % in the week-6 review (needs app screenshots).
+3. Follow line = a daily series promise naming a real next reel ("Follow for one fix a day. Tomorrow: ..."); only one tomorrow-promise per batch, and the next run builds it first.
+4. Kill: narrow-niche topics as standalone reels (recipes, subscriptions, career pitch), question hooks, text-only reels, brand films as growth content.
+5. Ops: build batches a day ahead; renders under caffeinate; keep new scene types to what one run can check.
+6. Still owed: a second production style (real-footage hybrid or whiteboard/paper) so batches meet "2 styles a day". Not before the length + chart tests read out.
+
 
 ## Weekly review 2026-10-15 (week 1: Oct 8-14)
 

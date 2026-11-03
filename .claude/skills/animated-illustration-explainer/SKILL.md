@@ -36,6 +36,7 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 - `pencil` is a soft pen (band-limited strokes, owner 2026-10-27: never a scratchy pencil).
 - Object sounds: `clock` (tick-tock while a clock is on screen), `timer` (fast ticking while a timer runs), `beep2` (timer passes the limit), `pencil` (crossing out, writing; give a duration), `page` (calendar or page flip), `riffle` (pages counting up), `footsteps` (a person walking), `plate` (gym weight clink), `stamp` (archiving), `coin` (money landing), `typing` (keyboard, bed), `buzz` (phone vibrating), `door` (door closing), `toggle` (switch on).
 - Feedback sounds: `right` (every check mark / done: a soft two-note "correct" chime that steps up in pitch along a run of checks in the same scene) and `pop` (anything appearing: cards, chips, rows; pitch varies per item). Never reuse one sound for everything: checks = right, appearing = pop, objects = their own sound.
+- New 2026-11-03: `cup` (ceramic mug set down).
 - New 2026-10-29: `alarm` (bedside alarm), `sizzle` (pan, fades), `chop` (knife on board), `reveal` (the ONE payoff sound per reel, Content Kit v2; `before-after` and `sketch-progress:final` use it).
 - Interface sounds, only where nothing above fits: `swish` (scene change), `ratchet` (abstract counter), `tone` (warm swell under the value close), `chord` (brand card).
 - `events.json`: per scene type, `[seconds after scene start, sound, duration or "end"]`, mirroring the animation timings in `illustrated.html`: **change both together**, and give every new scene its object sounds.
@@ -48,7 +49,7 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `postpone-calendar` | day after day, "start tomorrow" struck through and pushed on | `days`, `note` |
 | `book-vs-evening` | 300-page stack counts up next to a clock on a weeknight | `pages`, `when` |
 | `book-breakdown` | big item shrinks aside, sub-steps tick off, a daily-amount counter | `book`, `items[3]`, `per`, `unit` |
-| `week-tracker` | 7-day grid, chosen days ticked, a person walks the line | `on` (day indexes), `what` |
+| `week-tracker` | 7-day grid, chosen days ticked, a person walks the line (`stage: slow` walks for `walk` s, footsteps to scene end) | `on` (day indexes), `what`, `walk` |
 | `fit-breakdown` | goal → program → 5-6 day chips (centred; `stage: draw` swaps the plate clink for pen sounds) → today (Chest) highlighted → today's exercises tick off | `goal`, `program`, `days[[day,name]]`, `today[3]` |
 | `fifteen-test` | timer runs past the limit (red, "too big"), the step splits into 3, timer resets green ("start now") | `minutes`, `over`, `small`, `step`, `parts[3]` |
 | `weather-week` | week of sunny days ticked, one cloudy day crossed, the rest fade (hook) | `bad`, `days` |
@@ -94,7 +95,7 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `room-pick` | three room doors, one picked + check, note "Tomorrow, first block: phone goes to the kitchen" | `rooms[3]`, `pick`, `note`; cue x3 |
 | `when-question` | TODAY'S WORKOUT card with a blinking "When?" slot, DAY 1 → DAY 4 counter, excitement bar drains; a "maybe tomorrow" chip fills the slot | `what`, `mood`, `bar`; cue x3 |
 | `meeting-card` | calendar NEW EVENT card: title typed with caret, time + repeat rows, reminder toggle on, "Saved, like a meeting" | `title`, `rows[2]`, `remind`; cue x2 |
-| `gym-calendar` | MON-SUN columns with 7:00 session blocks; `stage`: add (blocks pop in), decide (`hi` days light up, `rest` labels, note), move (`move`:[block, to day], missed X then slides), ticks (each block ticked, "3 of 3 this week") | `blocks[[day,time,label]]`, `note`; cue per beat |
+| `gym-calendar` | MON-SUN columns with 7:00 session blocks; `stage`: add (blocks pop in, plate clink) / add-cal (same, pen + pop sounds, + `note`; use for non-gym calendars), decide (`hi` days light up, `rest` labels, note), move (`move`:[block, to day], missed X then slides), ticks (each block ticked, "3 of 3 this week") | `blocks[[day,time,label]]`, `note`; cue per beat |
 | `shelf-year` | "10 pages × 365 nights = 3,650 pages ÷ 300" and 12 book spines appearing on a shelf, "= 12 books a year" (hook) | `a`, `b`, `c`, `label`, `books` |
 | `pillow-book` | bed line art, book drops onto the pillow, page counter 0 → 10 / 10, phone on the side "later", order chips "1. Ten pages / 2. Then the phone", optional `note` card | `note`; cue [book, pages, phone, note] |
 | `page-log` | PAGES READ log rows ticked, Book 1 progress bar, "12 books: far away" dims vs "Tonight: 10 pages" ticked | `rows[[day,n]]`, `goal`; cue x3 |
@@ -128,6 +129,10 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `sketch-session` | alarm clock rings (6:40 AM), 20:00 timer, sketchbook circles drawn, cost chip | `time`, `label`, `cost`; cue [timer, draw, cost] |
 | `wake-chart` | wake-up time per day M-S; `stage` hook (jagged + alarm + "+3 h"), jagged (points, bracket, chip), flat (morph to 7:30), weekend (+1 h band, "not 10") | `jag`, `chip`, `chipRed`; cue per beat |
 | `curtain-light` | curtains open, sun rises, light on the floor, coffee mug, "Daylight within 10 minutes" chip | `chip`; cue [curtains, coffee] |
+| `caffeine-curve` | caffeine-in-you line chart 8 AM-2 AM (cups at 8 AM + 4 PM, half-life `half` 5 h), bedtime line + dot labelled in cups; `stage` hook (finished, red "1/2 cup" chip) / math (only the 4 PM cup, curve draws to 9 PM "1/2" and 2 AM "1/4") / cutoff ("8 hours back" arrow, cut-off line) / fix (4 PM cup -> DECAF, dot drops to 1/8, sage chip, `reveal`) | `chip`, `chip2`, `bed`, `cut`, `half`; cue x2-3 per stage |
+| `screen-time` | phone with SCREEN TIME pickups count + 7 bar chart + "FIRST USED AFTER PICKUP" rows; `stage` hook / count (bars grow, count to `count` on cue 2) / first (rows appear, row 1 highlighted) | `count`, `bars[7]`, `rows[[app,n]]`, `unit`, `title`; cue x2 |
+| `home-move` | phone home screen; `stage` move (app icon lifts, swipes to the last page into a "Later" folder, chip) / mute (app notification settings, 3 toggles switch off, chip) | `app`, `chip`; cue move x3 / mute x2 |
+| `sleep-depth` | hypnogram 11 PM-7 AM: dashed sage "No late coffee" vs clay "4 PM coffee" staying lighter, "7:00 AM: tired" + "Another coffee" loop | `a`, `b`, `tired`, `again`; cue x3 |
 | `follow-next` | (follow reason) "NEXT ON @BECAUSEIDMYOR" card: next reel title + when, Follow button turns "Following" | `title`, `when`; cue [null, follow] |
 | `dream-to-steps` | "ARCHIVED TODAY" dream card branching into three ticked steps (use for the value close) | `tag`, `dream`, `date`, `steps[3]` |
 

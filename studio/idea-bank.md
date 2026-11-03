@@ -31,7 +31,7 @@ Every idea hands the viewer **one thing they can do today** (see `quality-bar.md
 | 25 | "A goal without a first action is a wish." | Write the very first physical action (open laptop, put shoes by the door) | KT | |
 | 26 | "Comment your goal. I'll break it down." | Engagement prompt; follow-ups become teardown reels | KT | |
 | 27 | "[Comment] wants to launch a podcast. Here's the plan." | Teardown of a real comment's goal into milestones + today's action | DG | |
-| 28 | "Big goal, tiny week. How to fit both." | Time-box: 3 x 30-minute blocks this week, what goes in each | DG | **PROMISED by ill-catch-up (Tue Nov 3 19:30): must be in the Wed Nov 4 batch** |
+| 28 | "Big goal, tiny week. How to fit both." | Time-box: 3 x 30-minute blocks this week, what goes in each | DG | 2026-11-03 built (ill-busy-week, Wed Nov 4 09:30, the short 45 s arm) |
 | 29 | "The 'done' test for every task." | If you can't picture the moment it's done, split it again (example) | DG | |
 | 30 | "One page that keeps a dream alive." | A journal entry template: what I did, what I learned, next step (features releasing soon) | KT | |
 | 31 | "You don't need more willpower to stop checking your phone. You need distance." | Phone in another room, door closed, 25-min laptop timer, 5-min phone break | ILL | 2026-10-27 (ill-phone-distance) |
@@ -50,5 +50,10 @@ Every idea hands the viewer **one thing they can do today** (see `quality-bar.md
 | 43 | **PROMISED (ill-wake-time follow line): "What to do the morning after a bad night"** | Get up at the usual time anyway, daylight, no lie-in; if you nap, 20 min before 3 PM; keep bedtime, don't go early | ILL | 2026-11-02 built (ill-bad-night, for Tue Nov 3 09:30; 2 days late, Oct 31 + Nov 1 runs timed out) |
 | 44 | "You're paying every month for things you forgot you have." | 5-min bank check: list repeats, used in 30 days?, cancel every no today (not pause) | ILL C | 2026-11-02 built (ill-subscriptions, Tue Nov 3 13:00) |
 | 45 | "You don't lose friends in a fight. You lose them to 'let's catch up soon'." (story, Rohan) | One repeating calendar invite + one Sunday message | ILL story B | 2026-11-02 built (ill-catch-up, Tue Nov 3 19:30) |
+| 46 | "Your screen time isn't the real problem. Your pickups are." | Screen Time "first used after pickup" -> move that app to the last page, mute it, check day 7 | ILL C | 2026-11-03 built (ill-pickups, Wed Nov 4 13:00) |
+| 47 | "Your 4 PM coffee is still in you at bedtime." | Caffeine halves in ~5 h; cut-off = bedtime minus 8 h; decaf after; walk for the slump | ILL C | 2026-11-03 built (ill-caffeine, Wed Nov 4 19:30) |
+| 48 | **PROMISED (ill-caffeine follow line): "What to do when it's still dark when you wake up"** (answers cv7n__ on ill-wake-time: uni at 7:30, up 6:45, no sunlight) | Brightest lights on as soon as you're up, face a bright lamp/screen-free light while getting ready, get outside on the commute/first break, keep the wake time; chart: light exposure vs time | ILL A | **must be in the Thu Nov 5 batch** |
+| 49 | "Practising a language? Stop learning words you never say." (hard-part follow-up, new method) | Write the 20 sentences you actually say in a day, learn those first; say them aloud daily | ILL C | |
+| 50 | "Your afternoon crash starts at lunch." | 10-min walk after lunch + hardest task before noon; chart: energy line | ILL A | |
 
 Rules: avoid pure quotes/motivation, avoid promising locked features ("full features are releasing soon"), one takeaway per reel, specific numbers and real examples, fuller spoken narration (write for the ear).

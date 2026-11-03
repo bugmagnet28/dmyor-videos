@@ -1,41 +1,48 @@
 # Video dashboard (posting on @becauseidmyor, end card @becauseidmyor)
 
-_Last updated: 2026-11-02 IST (run 2026-11-02)_
+_Last updated: 2026-11-03 IST (run 2026-11-03)_
 
-**Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [reel library](library/index.html)
+**Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [reel library](library/index.html) · weekly review 2026-11-03 in [strategy.md](strategy.md)
 
 | | |
 |---|---|
-| Instagram followers (@becauseidmyor) | **21** (last reading 2026-10-26) · flat since Oct 21 · 0 follows attributable to any reel |
-| X followers | 2 (2026-10-26) · YouTube subscribers 0 |
-| Are we improving? | **Instagram: yes on reach** (newer half median reach 92 vs older half 16). Followers: no. No new data since Oct 28 |
-| Missed | **Oct 31 + Nov 1 scheduled runs timed out** before writing anything: no Sun Nov 1 / Mon Nov 2 batches. Nothing new is scheduled after the Sat Oct 31 batch |
-| Last posted | Sat Oct 31: ill-three-recipes 09:30, ill-twenty-mornings 13:00, ill-wake-time 19:30 (IG/X/YT) |
-| Waiting for approval | **Tue Nov 3** (VASK-022, Content Kit v2 batch 2) |
+| Instagram followers (@becauseidmyor) | **22** (2026-11-02) · +1 from ill-wake-time, the first follow from any reel |
+| Instagram 30-day views | 5,835 (was 1,824 on Oct 28) · 99.6% non-followers |
+| Are we improving? | **Reach: yes.** Followers: barely. YouTube: declining (newer median 11) |
+| Live today (Tue Nov 3) | ill-bad-night 09:30, ill-subscriptions 13:00, ill-catch-up 19:30 (IG/X/YT) |
+| Waiting for approval | **Wed Nov 4** (VASK-023) |
 
-## Waiting for approval: Tue Nov 3 batch (V-EXP-32 batch 2)
-| Time (IST) | Reel | Structure | Length | Hook | Takeaway | Score |
+## Last reels with numbers (IG views, grid read Nov 2)
+| Reel | Posted | Views | Saves | Shares | Follows |
+|---|---|---|---|---|---|
+| ill-hard-part (best) | Fri Oct 30 19:30 | 1,597 | 14 | 2 | 0 |
+| ill-wake-time | Sat Oct 31 19:30 | 1,290 | 18 | 5 | 1 |
+| ill-twenty-mornings | Sat Oct 31 13:00 | 158 | | | |
+| ill-three-recipes | Sat Oct 31 09:30 | 126 | | | |
+| ill-one-category | Fri Oct 30 09:30 | 179 | | | |
+| ill-one-sentence | Fri Oct 30 13:00 | 151 | | | |
+| ill-goal-date (worst) | Wed Oct 28 16:30 | 13 | | | |
+
+## Waiting for approval: Wed Nov 4 batch (V-EXP-33 first batch)
+| Time (IST) | Reel | Structure | Length | Hook | Frame 0 | Score |
 |---|---|---|---|---|---|---|
-| 09:30 | ill-bad-night | A method | 75.7s | "After a bad night, the worst thing you can do is sleep in." | Up at usual time, daylight in 10 min, nap 20 min before 3 PM, normal bedtime | 35/40 |
-| 13:00 | ill-subscriptions | C mistake/cost/fix | 80.8s | "You're paying every month for things you forgot you have." | List repeats, used in 30 days?, cancel every no today ($82 → $30/month) | 36/40 |
-| 19:30 | ill-catch-up | B story (Rohan) | 88.8s | "You don't lose friends in a fight. You lose them to 'let's catch up soon'." | One repeating calendar invite + one Sunday message | 36/40 |
+| 09:30 | ill-busy-week | A (compressed) | 44.8 s (short arm) | "You don't need a free week for a big goal. You need three half-hours." | week calendar, 3 blocks | 34/40 |
+| 13:00 | ill-pickups | C | 68.6 s | "Your screen time isn't the real problem. Your pickups are." | Screen Time bar chart, 90 pickups | 35/40 |
+| 19:30 | ill-caffeine | C | 67.1 s | "Your 4 PM coffee is still in you at bedtime." | caffeine curve, 1/2 cup at bedtime | 36/40 |
 
-Follow lines chain the slots; ill-catch-up promises "tomorrow: a big goal in a busy week" (idea #28, next batch must include it).
+19:30 promises "tomorrow: when it's still dark at wake-up" → Thu Nov 5 batch must build it (idea #48).
 
-## What the data says (unchanged since Oct 28)
-- **Signal:** animated-illustration-explainer far ahead of other styles on IG reach.
-- **Signal:** hard-truth hooks 2.8x (n=7). Question hooks 0.5x.
-- Best so far: ill-size-problem (IG reach 272), ill-track-inputs (IG traction 87).
-- Missing: watch time, shares, saves, follows for everything since Oct 28 (need app screenshots).
+## What the data says
+- **Signal:** animated illustration 8.6x the rest on IG reach (n=14). Hard-truth hooks 7.9x (n=18); question hooks 0.3x.
+- **Hint (n=2):** chart on frame 0 + a correction of a universal daily behaviour + 19:30 = the two breakouts. Being tested now (V-EXP-33).
+- Missing: avg watch time for anything since Oct 28 (length test needs app screenshots).
 
 ## Open experiments
-- V-EXP-29..31 (new life areas, hard-truth hooks): waiting for 48h numbers.
-- V-EXP-32 Content Kit v2: batch 1 posted Oct 31 (no numbers yet), batch 2 built today. Key question: do 70-90 s reels hold?
+- V-EXP-32 Content Kit v2: batches Oct 31, Nov 3, Nov 4. First follow ever came from it; floor not lifted yet.
+- V-EXP-33 chart hooks + length test: first batch Wed Nov 4.
 
 ## Asks
-- VASK-022: approve Tue batch (keep slot order) + insight screenshots for Oct 29-31 + follower count.
+- VASK-023: approve Wed batch; app screenshots of avg watch % for ill-wake-time, ill-hard-part, ill-bad-night.
 
 ## Known gaps
-- Only one style passes OWNER-RULES (illustrated); second daily style still owed.
-- Kit v2 reels run 75-89 s; if watch time drops, cut the method section, not the close.
-- Scheduled runs time out; manual runs work.
+- Only one style passes OWNER-RULES; second daily style still owed.

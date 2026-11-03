@@ -1,0 +1,238 @@
+{
+ "total": 68.58,
+ "brandT": 64.88,
+ "scenes": [
+  {
+   "type": "screen-time",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "Not screen time.<br><b>Pickups</b>.",
+   "t0": 0.0,
+   "t1": 3.15
+  },
+  {
+   "type": "phone-desk",
+   "params": {
+    "label": "pulls you back",
+    "cue": [
+     "pulling",
+     "look"
+    ],
+    "at": [
+     2.03,
+     3.87
+    ]
+   },
+   "head": "Your phone<br><b>already knows</b>.",
+   "t0": 3.15,
+   "t1": 7.67
+  },
+  {
+   "type": "screen-time",
+   "params": {
+    "stage": "count",
+    "cue": [
+     "Screen",
+     "ninety"
+    ],
+    "at": [
+     0.27,
+     5.76
+    ]
+   },
+   "head": "Find your<br><b>pickups</b>.",
+   "t0": 7.67,
+   "t1": 14.45
+  },
+  {
+   "type": "cost-tally",
+   "params": {
+    "title": "EVERY DAY",
+    "rows": [
+     [
+      "Pickups a day",
+      "90"
+     ],
+     [
+      "Minutes each",
+      "x 2"
+     ]
+    ],
+    "total": 3,
+    "unit": " hours",
+    "totalLabel": "A DAY",
+    "cue": [
+     "three",
+     "pieces",
+     "ninety",
+     "two"
+    ],
+    "note": "Gone in pieces",
+    "stage": "rowcue",
+    "at": [
+     3.81,
+     4.83,
+     0.2,
+     3.07
+    ]
+   },
+   "head": "Ninety times<br>you <b>didn't decide</b>.",
+   "t0": 14.45,
+   "t1": 20.07
+  },
+  {
+   "type": "screen-time",
+   "params": {
+    "stage": "first",
+    "cue": [
+     "first",
+     "Instagram"
+    ],
+    "at": [
+     1.13,
+     6.07
+    ]
+   },
+   "head": "The app your<br><b>thumb</b> picks.",
+   "t0": 20.07,
+   "t1": 28.36
+  },
+  {
+   "type": "home-move",
+   "params": {
+    "stage": "move",
+    "cue": [
+     "Move",
+     "folder",
+     "swipes"
+    ],
+    "chip": "3 swipes away",
+    "at": [
+     1.23,
+     3.19,
+     6.05
+    ]
+   },
+   "head": "Off the<br><b>home screen</b>.",
+   "t0": 28.31,
+   "t1": 35.63
+  },
+  {
+   "type": "home-move",
+   "params": {
+    "stage": "mute",
+    "cue": [
+     "notifications",
+     "calling"
+    ],
+    "chip": "It stops calling you",
+    "at": [
+     1.03,
+     2.33
+    ]
+   },
+   "head": "Turn off its<br><b>notifications</b>.",
+   "t0": 35.63,
+   "t1": 39.01
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "cue": [
+     "stays",
+     "pause"
+    ],
+    "rows": [
+     [
+      "First app",
+      "Page one",
+      "Last page"
+     ],
+     [
+      "Notifications",
+      "On",
+      "Off"
+     ],
+     [
+      "Pickup",
+      "Automatic",
+      "A choice"
+     ]
+    ],
+    "a": "BEFORE",
+    "b": "AFTER",
+    "at": [
+     0.41,
+     1.67
+    ]
+   },
+   "head": "Now there's<br>a <b>pause</b>.",
+   "t0": 39.01,
+   "t1": 45.59
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "PICKUP RESET",
+    "items": [
+     "Find your first app",
+     "Move it off page 1",
+     "Mute it, check day 7"
+    ],
+    "cue": [
+     "Find",
+     "Move",
+     "Mute"
+    ],
+    "at": [
+     0.89,
+     1.83,
+     3.09
+    ]
+   },
+   "head": "Screenshot<br><b>your reset</b>.",
+   "t0": 45.59,
+   "t1": 53.43
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Use my phone less",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "Find first app",
+     "Move it",
+     "Mute it"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 53.43,
+   "t1": 60.73
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "The coffee still in you at bedtime",
+    "when": "Tonight, 7:30 PM",
+    "cue": [
+     null,
+     "coffee"
+    ],
+    "at": [
+     0.2,
+     2.09
+    ]
+   },
+   "head": "One fix<br><b>a day</b>.",
+   "t0": 60.73,
+   "t1": 64.88
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  27.06,
+  38.96
+ ]
+}

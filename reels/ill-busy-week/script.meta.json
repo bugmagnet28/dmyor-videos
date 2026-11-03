@@ -1,0 +1,29 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "experiment": "V-EXP-33 (short arm: 40-50 s) + V-EXP-32 (Kit v2)",
+ "slug": "ill-busy-week",
+ "hook_type": "hard-truth",
+ "topic": "time",
+ "hook": "You don't need a free week for a big goal. You need three half-hours.",
+ "frame": {"structure": "A (method with stakes), compressed", "want": "make real progress on a big goal (first podcast episode)", "obstacle": "a packed week with no free evening", "cost": "0 minutes on the goal while waiting for a quiet month"},
+ "hooks_considered": [
+  {"formula": "2-minute version (you don't need X, you need Y)", "line": "You don't need a free week for a big goal. You need three half-hours.", "checks": "hard truth Y, gap Y (which half-hours, what goes in them), muted Y (week with 3 blocks), sendable Y, payoff Y (episode exists)", "kept": true},
+  {"formula": "uncomfortable comparison", "line": "Same busy week. One person records an episode, one waits for a quiet month.", "checks": "longer, weaker frame 0", "kept": false},
+  {"formula": "thing nobody admits", "line": "You're not too busy. You're waiting for a free week that never comes.", "checks": "repeats last night's formula (ill-catch-up) and Maya's 'free weekend' line (Oct 31)", "kept": false}
+ ],
+ "beats": {
+  "hard_truth": "three half-hours (0.0 s)",
+  "open_loop": {"promised": "a big goal fits in a packed week", "withheld": "finding the blocks is easy; what goes in each is the trick (revealed ~15 s)"},
+  "stakes": "first podcast episode, no free evening",
+  "rehook_10": "But finding them is the easy part.",
+  "interrupt": "calendar event typed live",
+  "rehook_25": "one output, not a topic (near-silence 1 before)",
+  "save_moment": "calendar with Outline / Record / Fix 1 + note card (held through the thought)",
+  "share_line": "Send this to the friend who's waiting for a quiet month.",
+  "follow_reason": "Follow for one fix a day. This afternoon: the phone habit you don't notice (ill-pickups, 13:00 same day)",
+  "payoff_sound": "reveal at the 3 BLOCKS column"
+ },
+ "note": "V-EXP-33 short arm: target 40-50 s (kit beats compressed: no separate rule card, the calendar with outputs is the save moment). Fulfils idea #28, promised by ill-catch-up (Tue 19:30). Takeaway differs from ill-gym-day-four (book sessions as meetings) and ill-twenty-mornings (20 min every morning): here each block gets a defined output. YouTube title as a search phrase (owner 2026-11-02).",
+ "quality": {"hook": 4, "usefulness": 5, "specificity": 4, "clarity": 5, "retention": 4, "craft": 4, "voice": 4, "brand": 4, "total": 34}
+}

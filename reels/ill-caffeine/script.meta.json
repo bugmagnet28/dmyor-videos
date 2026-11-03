@@ -1,0 +1,29 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "experiment": "V-EXP-33 (chart on frame 0, follow-up to the ill-wake-time hit, 19:30) + V-EXP-32 (Kit v2)",
+ "slug": "ill-caffeine",
+ "hook_type": "hard-truth",
+ "topic": "sleep",
+ "hook": "Your four o'clock coffee is still in you at bedtime.",
+ "frame": {"structure": "C (mistake, cost, fix)", "want": "wake up rested", "obstacle": "a 4 PM coffee habit", "cost": "about half a cup of caffeine still in you at 11 PM, every night; lighter sleep, tired, another coffee"},
+ "hooks_considered": [
+  {"formula": "expensive mistake / last line first", "line": "Your four o'clock coffee is still in you at bedtime.", "checks": "hard truth Y, gap Y (how much, what time fixes it), muted Y (caffeine curve with 1/2 cup at bedtime), sendable Y, payoff Y (1/2 -> 1/8)", "kept": true},
+  {"formula": "backwards rule", "line": "Your cut-off isn't a time of day. It's your bedtime minus eight.", "checks": "gives the answer away", "kept": false},
+  {"formula": "hidden step", "line": "Every sleep tip skips the cup you had at four.", "checks": "repeats ill-wake-time's considered hook", "kept": false}
+ ],
+ "beats": {
+  "hard_truth": "4 PM coffee still in you (0.0 s, caffeine chart on frame 0, cup sound)",
+  "open_loop": {"promised": "one time on the clock fixes it", "withheld": "bedtime minus 8 h (revealed ~25 s)"},
+  "stakes": "half at 9 PM, a quarter at 2 AM",
+  "rehook_10": "lighter sleep -> tired -> another coffee (the loop)",
+  "interrupt": "sleep-depth chart, 7 AM alarm",
+  "rehook_25": "So where's the line? (near-silence 1 before)",
+  "save_moment": "CUT-OFF RULE card",
+  "share_line": "Send this to the friend who orders a latte at five.",
+  "follow_reason": "Follow for one fix a day. Tomorrow: what to do when it's still dark when you wake up (answers the cv7n__ question on ill-wake-time; MUST be in the Thu Nov 5 batch)",
+  "payoff_sound": "reveal when the bedtime dot drops to 1/8"
+ },
+ "note": "Facts: caffeine half-life about 5 h in healthy adults (varies 2-10 h; said as 'about'). Curve math: 100 mg cups at 8 AM and 4 PM -> ~50 mg at 11 PM (~1/2 cup); 4 PM cup swapped for decaf -> ~12.5 mg (~1/8). 'Can keep that sleep lighter' is hedged; 8 h cut-off is common sleep-hygiene advice (no study cited). Strongest reel of the batch, so 19:30 (owner 2026-11-02).",
+ "quality": {"hook": 5, "usefulness": 5, "specificity": 5, "clarity": 5, "retention": 4, "craft": 4, "voice": 4, "brand": 4, "total": 36}
+}

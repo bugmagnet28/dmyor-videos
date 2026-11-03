@@ -1,0 +1,10 @@
+reels/ill-caffeine/audio.mp3  67.18s  voice=am_eric preset=plain fx=False breaths=False stages=hook body body turn turn body body land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/6717 [00:00<?, ?frames/s] 36%|███▌      | 2406/6717 [00:26<00:47, 91.72frames/s] 36%|███▌      | 2406/6717 [00:40<00:47, 91.72frames/s] 73%|███████▎  | 4928/6717 [00:53<00:19, 91.47frames/s] 73%|███████▎  | 4928/6717 [01:10<00:19, 91.47frames/s]100%|██████████| 6717/6717 [01:16<00:00, 85.99frames/s]100%|██████████| 6717/6717 [01:16<00:00, 87.56frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+250 words, 67.18s, 3.72 words/sec
+-> reels/ill-caffeine/cues.json
+sfx present: 40 sounds -> reels/ill-caffeine/audio_mixed.mp3 cup@0.1 pop@2.9 pencil@5.3 pop@6.3 pop@9.7 cup@13.5 pop@14.0 pop@15.9 pop@17.5 pencil@19.5 alarm@20.8 cup@21.9 pop@24.5 clock@26.2 pencil@28.6 swish@29.6 footsteps@30.2 right@30.4 right@30.9 right@31.4 pop@38.3 reveal@42.0 pop@42.7 pencil@43.4 right@43.7 pencil@45.0 right@45.4 pencil@45.9 right@46.3 tone@49.2 stamp@49.4 pop@51.0 pop@51.5 right@52.3 right@52.8 right@53.3 pop@57.3 toggle@61.9 right@62.2 chord@63.4
+built reels/ill-caffeine: 67.1s, 10 scenes, brand 63.40s, 3.72 words/sec
+scenes: [('caffeine-curve', 0.0, 2.89, None), ('struck-card', 2.89, 9.69, [3.39, 2.39]), ('caffeine-curve', 9.69, 17.43, [3.77, 4.31, 6.25]), ('sleep-depth', 17.43, 24.48, [2.03, 3.37, 4.45]), ('caffeine-curve', 24.43, 29.59, [0.61, 1.73, 4.13]), ('week-tracker', 29.59, 38.25, None), ('caffeine-curve', 38.25, 42.61, [0.05, 3.71]), ('rule-card', 42.61, 49.23, [0.77, 2.41, 3.33]), ('dream-to-steps', 49.23, 57.21, None), ('follow-next', 57.21, 63.4, [0.2, 4.65])]

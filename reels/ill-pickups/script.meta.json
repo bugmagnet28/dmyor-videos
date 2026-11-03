@@ -1,0 +1,29 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "experiment": "V-EXP-33 (chart on frame 0, universal daily behaviour) + V-EXP-32 (Kit v2)",
+ "slug": "ill-pickups",
+ "hook_type": "hard-truth",
+ "topic": "focus",
+ "hook": "Your screen time isn't the real problem. Your pickups are.",
+ "frame": {"structure": "C (mistake, cost, fix)", "want": "use the phone less without deleting anything", "obstacle": "one app opens on autopilot, ~90 pickups a day", "cost": "90 pickups x 2 min = 3 hours a day, in pieces"},
+ "hooks_considered": [
+  {"formula": "the check you can do now", "line": "Your screen time isn't the real problem. Your pickups are.", "checks": "hard truth Y, gap Y (which app, what to do), muted Y (Screen Time chart, 90 pickups), sendable Y, payoff Y (pause = choice)", "kept": true},
+  {"formula": "number that changes it", "line": "Ninety pickups a day. You decided maybe five of them.", "checks": "strong but the number reads as a claim about the viewer", "kept": false},
+  {"formula": "stop doing this first", "line": "Before you delete Instagram, move it. That's the whole fix.", "checks": "good, but gives the method away in second 1", "kept": false}
+ ],
+ "beats": {
+  "hard_truth": "Not screen time. Pickups (0.0 s, chart on frame 0)",
+  "open_loop": {"promised": "your phone tells you which app pulls you back", "withheld": "what to do with that app (revealed ~30 s)"},
+  "stakes": "90 pickups a day, 3 hours in pieces",
+  "rehook_10": "That's ninety times you didn't decide.",
+  "interrupt": "home-screen icon swiped to the last page",
+  "rehook_25": "So what do you do with it? (near-silence 1 before)",
+  "save_moment": "PICKUP RESET card",
+  "share_line": "Send this to the friend who checks their phone mid-sentence.",
+  "follow_reason": "Follow for one fix a day. Tonight: the coffee still in you at bedtime (ill-caffeine, 19:30 same day)",
+  "payoff_sound": "reveal at the AFTER column"
+ },
+ "note": "Screen Time (iOS) really shows Pickups and 'First Used after Pickup'; Android Digital Wellbeing shows unlocks. 90/day and 2 min each are framed as 'say', a worked example, not a statistic. No promise of a specific drop; the claim is a pause where you decide. Different from ill-phone-distance (phone in another room while working).",
+ "quality": {"hook": 5, "usefulness": 5, "specificity": 5, "clarity": 4, "retention": 4, "craft": 4, "voice": 4, "brand": 4, "total": 35}
+}

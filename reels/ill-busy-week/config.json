@@ -1,0 +1,200 @@
+{
+ "total": 44.78,
+ "brandT": 41.06,
+ "scenes": [
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "add-cal",
+    "blocks": [
+     [
+      0,
+      "7:00",
+      "30 min"
+     ],
+     [
+      2,
+      "1:00",
+      "30 min"
+     ],
+     [
+      6,
+      "9:00",
+      "30 min"
+     ]
+    ]
+   },
+   "head": "No free week needed.<br>Three <b>half-hours</b>.",
+   "t0": 0.0,
+   "t1": 3.49
+  },
+  {
+   "type": "day-done",
+   "params": {
+    "rows": [
+     [
+      "7:00",
+      "30 min: goal"
+     ],
+     [
+      "9:00",
+      "Work"
+     ],
+     [
+      "1:00",
+      "Lunch"
+     ],
+     [
+      "6:00",
+      "Errands"
+     ]
+    ],
+    "label": "the gaps are already there",
+    "cue": [
+     "work",
+     "easy"
+    ],
+    "at": [
+     1.69,
+     4.61
+    ]
+   },
+   "head": "Even a <b>packed</b> week<br>has gaps.",
+   "t0": 3.49,
+   "t1": 9.03
+  },
+  {
+   "type": "meeting-card",
+   "params": {
+    "title": "Podcast: block 1 of 3",
+    "rows": [
+     "Mon 7:00 to 7:30 AM",
+     "Also Wed 1:00, Sun 9:00"
+    ],
+    "remind": "Reminder 10 min before",
+    "cue": [
+     "podcast",
+     "calendar"
+    ],
+    "at": [
+     1.17,
+     4.73
+    ]
+   },
+   "head": "Three blocks,<br><b>tonight</b>.",
+   "t0": 9.03,
+   "t1": 14.57
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "add-cal",
+    "blocks": [
+     [
+      0,
+      "7:00",
+      "Outline"
+     ],
+     [
+      2,
+      "1:00",
+      "Record"
+     ],
+     [
+      6,
+      "9:00",
+      "Fix 1"
+     ]
+    ],
+    "cue": [
+     "Monday",
+     "Wednesday",
+     "Sunday"
+    ],
+    "note": "One output per block",
+    "at": [
+     2.71,
+     4.71,
+     6.69
+    ]
+   },
+   "head": "One <b>output</b>,<br>not a topic.",
+   "t0": 14.57,
+   "t1": 23.09
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "cue": [
+     "ninety",
+     "exists"
+    ],
+    "rows": [
+     [
+      "Free evenings",
+      "0",
+      "0"
+     ],
+     [
+      "Time on it",
+      "0 min",
+      "90 min"
+     ],
+     [
+      "Episode one",
+      "An idea",
+      "Recorded"
+     ]
+    ],
+    "a": "WAITING",
+    "b": "3 BLOCKS",
+    "at": [
+     0.2,
+     2.35
+    ]
+   },
+   "head": "By Sunday,<br>it <b>exists</b>.",
+   "t0": 23.09,
+   "t1": 28.87
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "My first podcast",
+    "date": "Open it again: Jan 2027",
+    "steps": [
+     "Outline",
+     "Record a test",
+     "Fix one thing"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 28.87,
+   "t1": 36.79
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "The phone habit you don't notice",
+    "when": "This afternoon",
+    "cue": [
+     null,
+     "phone"
+    ],
+    "at": [
+     0.2,
+     2.41
+    ]
+   },
+   "head": "One fix<br><b>a day</b>.",
+   "t0": 36.79,
+   "t1": 41.06
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  14.52,
+  23.04
+ ]
+}
