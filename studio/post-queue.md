@@ -4,18 +4,20 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 ## Ready to post
 
-## Awaiting approval: Thu 2026-11-05 (VASK-024, V-EXP-33 batch 2 + V-EXP-32 Kit v2). Instagram, X and YouTube Shorts at the same times
+- Note 2026-11-04 23:00 (Claude): `[~]` = YouTube + X done, Instagram not yet. Instagram browser stopped responding during the first upload (ill-busy-week caption typed, not shared). Remaining on Instagram: post ill-busy-week, ill-pickups, ill-caffeine now; schedule ill-dark-morning 09:30, ill-say-sentences 13:00, ill-forget-book 19:30 on Thu Nov 5 (6 flows: split across two sessions, max 5 each).
 
-- [ ] 09:30 IST · **ill-dark-morning** (sleep, structure A, light chart on frame 0, ~47 s: the short arm; answers the cv7n__ question and keeps ill-caffeine's "tomorrow" promise) · `ready-to-post/2026-11-05-ill-dark-morning/`
-- [ ] 13:00 IST · **ill-say-sentences** (language story B, Ana, 400 words vs 0 sentences bar chart on frame 0, ~71 s; ill-hard-part follow-up, new method) · `ready-to-post/2026-11-05-ill-say-sentences/`
-- [ ] 19:30 IST · **ill-forget-book** (reading, structure C, forgetting curve on frame 0, ~66 s, strongest) · `ready-to-post/2026-11-05-ill-forget-book/`
+## Scheduled Thu 2026-11-05 (auto-approved, was built for Thu; follow lines still chain). YouTube + X scheduled 09:30 / 13:00 / 19:30; Instagram pending
+
+- [~] 09:30 IST · **ill-dark-morning** (sleep, structure A, light chart on frame 0, ~47 s: the short arm; answers the cv7n__ question and keeps ill-caffeine's "tomorrow" promise) · `ready-to-post/2026-11-05-ill-dark-morning/`
+- [~] 13:00 IST · **ill-say-sentences** (language story B, Ana, 400 words vs 0 sentences bar chart on frame 0, ~71 s; ill-hard-part follow-up, new method) · `ready-to-post/2026-11-05-ill-say-sentences/`
+- [~] 19:30 IST · **ill-forget-book** (reading, structure C, forgetting curve on frame 0, ~66 s, strongest) · `ready-to-post/2026-11-05-ill-forget-book/`
 - Follow lines chain: 09:30 -> "this afternoon" (say-sentences), 13:00 -> "tonight, 7:30 PM" (forget-book); 19:30 promises "tomorrow: the one rule for the day after you miss a day" (Fri Nov 6, idea #52). If the Wed batch slips to Thu, shift this batch one day too (the chain still holds).
 
-## Awaiting approval: Wed 2026-11-04 (VASK-023, V-EXP-33 first batch + V-EXP-32 Kit v2). Instagram, X and YouTube Shorts at the same times
+## Posted Wed 2026-11-04 ~22:45 IST (auto-approved; slots had passed, posted immediately on Sanyam's go-ahead). YouTube + X live; Instagram in progress (see note)
 
-- [ ] 09:30 IST · **ill-busy-week** (time, structure A compressed, ~45 s: the short arm of the length test; fulfils "tomorrow: a big goal in a busy week" from ill-catch-up) · `ready-to-post/2026-11-04-ill-busy-week/`
-- [ ] 13:00 IST · **ill-pickups** (phone, structure C, Screen Time chart on frame 0, ~69 s) · `ready-to-post/2026-11-04-ill-pickups/`
-- [ ] 19:30 IST · **ill-caffeine** (sleep follow-up, structure C, caffeine curve on frame 0, ~67 s, strongest) · `ready-to-post/2026-11-04-ill-caffeine/`
+- [~] posted now · **ill-busy-week** (time, structure A compressed, ~45 s: the short arm of the length test; fulfils "tomorrow: a big goal in a busy week" from ill-catch-up) · `ready-to-post/2026-11-04-ill-busy-week/`
+- [~] posted now · **ill-pickups** (phone, structure C, Screen Time chart on frame 0, ~69 s) · `ready-to-post/2026-11-04-ill-pickups/`
+- [~] posted now · **ill-caffeine** (sleep follow-up, structure C, caffeine curve on frame 0, ~67 s, strongest) · `ready-to-post/2026-11-04-ill-caffeine/`
 - Follow lines chain: 09:30 -> "this afternoon" (pickups), 13:00 -> "tonight, 7:30 PM" (caffeine); 19:30 promises "tomorrow: what to do when it's still dark when you wake up" (Thu Nov 5, idea #48). YouTube titles are search phrases (in each post.md).
 
 ## Scheduled for Tue 2026-11-03 (VASK-022, V-EXP-32 batch 2, Content Kit v2; Sanyam said "do videos for today and post" on 2026-11-02, scheduled by Claude ~23:30 IST). Instagram (likes hidden), X and YouTube Shorts at the same times

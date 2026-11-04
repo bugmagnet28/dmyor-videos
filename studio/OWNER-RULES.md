@@ -6,7 +6,8 @@ Every decision Sanyam made about how Dmyor videos are made and posted, in one pl
 - **One account everywhere: @becauseidmyor.** Use it on the end card, in captions and in mentions. `@dmyor_global` is retired, so never put it on new videos.
 - **Platforms:** the same 1080x1920 file goes to Instagram (@becauseidmyor), YouTube Shorts (channel "Dmyor") and X (@becauseidmyor).
 - **Cadence:** 3-5 reels a day, at least 2-3 h apart. Typical IST slots: 09:30, 13:00, 16:30, 19:30, plus 22:00 for a 5th. Timing matters less than quality (2026-10-24).
-- **Approval:** Sanyam approves a batch before it is scheduled. When he says "don't ask, just do it", schedule only what passes these rules, and fix or rebuild anything that doesn't (as on 2026-10-25, when two text-only reels were rebuilt).
+- **Approval (owner 2026-11-04: automatic):** batches that pass the quality bar and the Content Kit gates are approved automatically and scheduled as soon as they are built; no approval ask. Mark them "auto-approved" in post-queue.md; the next session with a browser schedules them on Instagram, X and YouTube. Earlier rule (Sanyam approves each batch) is replaced.
+- Previously: **Approval:** Sanyam approves a batch before it is scheduled. When he says "don't ask, just do it", schedule only what passes these rules, and fix or rebuild anything that doesn't (as on 2026-10-25, when two text-only reels were rebuilt).
 - **Instagram safety:**
   - at most 5 scheduling flows per browser session;
   - no bulk insight scraping;

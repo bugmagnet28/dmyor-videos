@@ -18,7 +18,7 @@ All performance data lives in `analytics/` (read `analytics/README.md` and `anal
 4. Learn from `analytics/reports/OVERALL.md` ("are we improving?", leaderboard) and `analytics/reports/WHAT_WORKED.md` (signals vs hints). Base decisions on signals; treat hints as experiments to run next. Link both reports from `studio/DASHBOARD.md`.
 Instagram safety: never bulk-open insight pages from the browser (account locked 2026-10-22). One Reels-grid read per day for views; ask Sanyam for app screenshots for watch time and skip rate.
 
-**Daily batch (3-5 reels)**: package all of the day's reels together and send Sanyam ONE approval message (previews + scripts + quality scores). After his OK, schedule them spaced ≥ 2-3 h apart. Instagram safety still applies: at most 5 scheduling flows per browser session and no insights scraping in the same session; if anything errors ("could not be shared"), stop and ask instead of retrying repeatedly.
+**Daily batch (3-5 reels)**: auto-approved since 2026-11-04 (owner): reels that pass the quality bar go into post-queue.md as "auto-approved, to schedule" (no approval ask; mention them in the run email). They are scheduled by the next session with a browser, spaced ≥ 2-3 h apart. Instagram safety still applies: at most 5 scheduling flows per browser session and no insights scraping in the same session; if anything errors ("could not be shared"), stop and ask instead of retrying repeatedly.
 
 ## Video styles (one skill per production style)
 
