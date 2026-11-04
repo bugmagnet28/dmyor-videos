@@ -168,7 +168,7 @@ Instagram locked the account ("we locked your account to protect you from a poss
   4. Optional: the scheduled runs keep timing out ("Request timed out" in `studio/runs/logs/`). Starting a run by hand worked on Oct 29 and today.
 
 ## VASK-023: Approve the Wed Nov 4 batch (3 reels) (2026-11-03)
-- Status: open
+- Status: open (2026-11-04 11:00: not approved yet, 09:30 slot passed. Options: post 13:00 + 19:30 today and busy-week tomorrow 09:30 before the Thu batch, or shift the whole Wed batch to Thu and Thu to Fri)
 - What: 3 animated-illustration reels (Kokoro am_eric drafts, Content Kit v2), applying your Nov 2 notes (chart on frame 0, universal daily behaviour, one 40-50 s reel, "one fix a day" follow line, YouTube search titles). `ready-to-post/2026-11-04-*/` (video.mp4 + post.md):
   - 09:30 **ill-busy-week** (~45 s, the short arm): "You don't need a free week for a big goal. You need three half-hours." Three 30-min blocks tonight, each with one output (outline / record a 10-min test / fix one thing). Fulfils last night's promise. 34/40
   - 13:00 **ill-pickups** (~69 s, Screen Time bar chart on frame 0): "Your screen time isn't the real problem. Your pickups are." Find "first used after pickup", move that app to the last page, mute it, check day 7. 35/40
@@ -178,3 +178,15 @@ Instagram locked the account ("we locked your account to protect you from a poss
   2. After OK, schedule on Instagram, YouTube Shorts (use the YouTube title in post.md) and X at the times above; tick them in `studio/post-queue.md`.
   3. Most useful input: app screenshots of avg watch time + % watched for ill-wake-time, ill-hard-part and today's ill-bad-night (48 h on Nov 5). That is the only way to read the length test (45 s vs 70-90 s).
 - 19:30 promises "tomorrow: what to do when it's still dark when you wake up" (answers the cv7n__ comment). I build it first in the next run.
+
+## VASK-024: Approve the Thu Nov 5 batch (3 reels) (2026-11-04)
+- Status: open
+- What: 3 animated-illustration reels (Kokoro am_eric drafts, Content Kit v2, V-EXP-33: all three open on a chart, one short arm). `ready-to-post/2026-11-05-*/` (video.mp4 + post.md):
+  - 09:30 **ill-dark-morning** (~47 s, short arm): "If it's dark when you wake up, your body thinks it's still night." Answers cv7n__ (class 7:30, up 6:45, no sun): every light on when you're up, outside at the first daylight before 10 (a grey sky beats a lamp), same wake time daily. Keeps ill-caffeine's promise. 34/40
+  - 13:00 **ill-say-sentences** (~71 s, story): "You can know 400 words and still freeze ordering a coffee." Ana, Madrid in 12 weeks: write the 20 sentences you actually say, say them aloud every morning, record 1 minute. 35/40
+  - 19:30 **ill-forget-book** (~66 s): "A week after you finish a book, most of it is gone." 3 lines from memory when you close it, again next day, again in a week (forgetting curve on frame 0). 35/40
+- Steps:
+  1. Watch the 3 videos, reply "OK" or "OK except X". (If Wed's batch moves to Thu, this one moves to Fri; same slots.)
+  2. After OK, schedule on Instagram, YouTube Shorts (YouTube title in post.md) and X; tick them in `studio/post-queue.md`.
+  3. Still the most useful input: app screenshots of avg watch time + % watched for ill-wake-time, ill-hard-part, ill-bad-night (and busy-week once live). Without them the length test can't be read.
+- Optional: Adam takes from `reels/<slug>/narration-elevenlabs-v3.txt` into `inbox/audio/<slug>.mp3`.

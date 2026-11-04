@@ -1,0 +1,192 @@
+{
+ "total": 65.74,
+ "brandT": 62.02,
+ "scenes": [
+  {
+   "type": "forget-curve",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "A book, <b>gone</b><br>in a week.",
+   "t0": 0.0,
+   "t1": 2.87
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "THE PROBLEM",
+    "aBig": "Bad memory",
+    "b": "A 3-minute fix",
+    "cue": [
+     "fix",
+     "bad"
+    ],
+    "at": [
+     4.05,
+     1.23
+    ]
+   },
+   "head": "Not a <b>memory</b><br>problem.",
+   "t0": 2.87,
+   "t1": 8.67
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Hours reading",
+      6,
+      "ink"
+     ],
+     [
+      "Ideas you can explain",
+      1,
+      "red"
+     ]
+    ],
+    "chip": "A week later",
+    "cue": [
+     "six",
+     "friend",
+     "sentence"
+    ],
+    "at": [
+     1.93,
+     4.23,
+     6.23
+    ]
+   },
+   "head": "6 hours in.<br><b>1 sentence</b> out.",
+   "t0": 8.67,
+   "t1": 15.75
+  },
+  {
+   "type": "forget-curve",
+   "params": {
+    "stage": "draw",
+    "chip": "Rereading barely slows it",
+    "cue": [
+     "curve",
+     "sliding",
+     "highlighting"
+    ],
+    "at": [
+     0.21,
+     4.25,
+     6.07
+    ]
+   },
+   "head": "Fast drop,<br><b>then a slide</b>.",
+   "t0": 15.75,
+   "t1": 25.32
+  },
+  {
+   "type": "question-list",
+   "params": {
+    "title": "FROM MEMORY, NO PEEKING",
+    "items": [
+     "What it said",
+     "One example",
+     "One thing I'll do"
+    ],
+    "cue": [
+     "write",
+     "example",
+     "do"
+    ],
+    "at": [
+     1.95,
+     4.93,
+     6.17
+    ]
+   },
+   "head": "Three lines,<br><b>from memory</b>.",
+   "t0": 25.27,
+   "t1": 31.99
+  },
+  {
+   "type": "forget-curve",
+   "params": {
+    "stage": "fix",
+    "chip2": "A week later: still there",
+    "cue": [
+     "next",
+     "week",
+     "longer"
+    ],
+    "at": [
+     0.23,
+     2.35,
+     7.17
+    ]
+   },
+   "head": "Pull it out<br><b>again</b>.",
+   "t0": 31.99,
+   "t1": 42.58
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "THE 3-LINE RULE",
+    "items": [
+     "3 lines from memory",
+     "Again tomorrow",
+     "Again in a week"
+    ],
+    "cue": [
+     "Three",
+     "tomorrow",
+     "week"
+    ],
+    "at": [
+     0.55,
+     3.33,
+     4.41
+    ]
+   },
+   "head": "Screenshot<br><b>the rule</b>.",
+   "t0": 42.53,
+   "t1": 49.97
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Remember what I read",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "3 lines per book",
+     "Recall next day",
+     "Again in a week"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 49.97,
+   "t1": 56.97
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "The day after you miss a day",
+    "when": "Tomorrow",
+    "cue": [
+     null,
+     "miss"
+    ],
+    "at": [
+     0.2,
+     4.09
+    ]
+   },
+   "head": "One fix<br><b>a day</b>.",
+   "t0": 56.97,
+   "t1": 62.02
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  23.88,
+  37.22
+ ]
+}

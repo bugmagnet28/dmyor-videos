@@ -150,3 +150,10 @@ While scheduling diagram-howto-vo from the web (browser automation), two "Your p
 - 2026-11-03 [content] Short arm of the length test: a 5-thought body + full close (value close, follow, link) lands at 44.9 s with Kokoro (153 words, 3.4 w/s). Budget for a 40-50 s reel: ~95 words of body + ~60 words of close. Confidence: high
 - 2026-11-03 [sound] gym-calendar `add` ends with a plate clink: wrong for non-gym calendars. New stage `add-cal` (pen + pop) for any calendar-block use. Check a reused scene's object sounds fit the new topic, not only its picture. Confidence: high
 - 2026-11-03 [craft] Calendar block labels over 5 characters overflowed the 108 px block at 32 px ("Outline", "30 min"); now auto 24 px. Short labels read better on a phone anyway. Confidence: high
+
+## 2026-11-04 (run)
+- 2026-11-04 [data] No new metrics (inbox/metrics blank template, no browser). The Wed Nov 4 batch (VASK-023) is still unapproved at 11:00, so its 09:30 slot passed unposted; not registered in analytics (correct: nothing scheduled). Followers 22 (Nov 2). Confidence: n/a
+- 2026-11-04 [content] Takeaway overlap check caught idea #50 (afternoon crash: walk after lunch) against ill-caffeine's "walk for the 4 PM slump" (Nov 4); held to Nov 11+, swapped for the forgetting curve (#51). Confidence: high
+- 2026-11-04 [content] Short arm budget held: 101 body words + 56 close words = 45.5 s at Kokoro pace (3.47 w/s). Trimming meant cutting connectors, not steps; the weekend nuance was dropped because ill-wake-time already covers it. Confidence: high
+- 2026-11-04 [craft] Static stat scenes (a bar at 0 for 9 s) read as a frozen screen; a slow clay pulse on the zero bar keeps it alive without adding a new beat. Bar-chart containers (axis, labels) should be visible from the scene start; only the bars wait for their cue. Confidence: medium
+- 2026-11-04 [tooling] studio/tools/shots.js screenshots reel.html at any times before recording (puppeteer, __seek), so scene checks no longer need a full render. In zsh, a space-separated time list must go through `bash -c` (zsh does not word-split $T). Confidence: high

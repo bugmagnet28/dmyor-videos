@@ -2755,5 +2755,139 @@
    1.85,
    "right"
   ]
+ ],
+ "light-chart:hook": [
+  [
+   0.0,
+   "toggle"
+  ]
+ ],
+ "light-chart:grow": [
+  [
+   "@0",
+   "pop"
+  ],
+  [
+   "@1",
+   "pop"
+  ],
+  [
+   "@2",
+   "pop"
+  ],
+  [
+   "@3",
+   "pop"
+  ]
+ ],
+ "light-chart:morph": [
+  [
+   "@0",
+   "toggle"
+  ],
+  [
+   "@1",
+   "footsteps",
+   1.2
+  ],
+  [
+   "@2",
+   "reveal"
+  ]
+ ],
+ "forget-curve:hook": [
+  [
+   0.0,
+   "page"
+  ]
+ ],
+ "forget-curve:draw": [
+  [
+   0.05,
+   "page"
+  ],
+  [
+   "@1",
+   "pop"
+  ],
+  [
+   "@2",
+   "pop"
+  ]
+ ],
+ "forget-curve:fix": [
+  [
+   0.3,
+   "pencil",
+   0.8
+  ],
+  [
+   "@0",
+   "right"
+  ],
+  [
+   "@1",
+   "right"
+  ],
+  [
+   "@2",
+   "reveal"
+  ]
+ ],
+ "bar-compare:hook": [
+  [
+   0.0,
+   "riffle",
+   0.6
+  ]
+ ],
+ "bar-compare": [
+  [
+   "@0",
+   "pop"
+  ],
+  [
+   "@1",
+   "pop"
+  ],
+  [
+   "@2",
+   "pop"
+  ]
+ ],
+ "week-tracker:daily": [
+  [
+   0.6,
+   "footsteps",
+   "end"
+  ],
+  [
+   0.85,
+   "right"
+  ],
+  [
+   1.15,
+   "right"
+  ],
+  [
+   1.45,
+   "right"
+  ],
+  [
+   1.75,
+   "right"
+  ],
+  [
+   2.05,
+   "right"
+  ],
+  [
+   2.35,
+   "right"
+  ],
+  [
+   2.65,
+   "right"
+  ]
  ]
 }

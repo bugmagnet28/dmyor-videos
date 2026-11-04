@@ -1,0 +1,245 @@
+{
+ "total": 70.8,
+ "brandT": 67.06,
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Words learned",
+      400,
+      "ink"
+     ],
+     [
+      "Sentences you can say",
+      0,
+      "red"
+     ]
+    ],
+    "chip": "Ordering a coffee: froze"
+   },
+   "head": "400 words.<br><b>Zero</b> sentences.",
+   "t0": 0.0,
+   "t1": 3.51
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "THE FIX",
+    "aBig": "More words",
+    "b": "One list, ten minutes",
+    "cue": [
+     "fix",
+     "wasn't"
+    ],
+    "at": [
+     1.49,
+     1.67
+    ]
+   },
+   "head": "Not more words.<br><b>One list</b>.",
+   "t0": 3.51,
+   "t1": 8.02
+  },
+  {
+   "type": "week-countdown",
+   "params": {
+    "weeks": 12,
+    "end": "Madrid",
+    "rows": [
+     "20 new words",
+     "20 new words",
+     "20 new words"
+    ],
+    "cue": [
+     "was",
+     "every",
+     "twenty"
+    ],
+    "at": [
+     0.8,
+     3.26,
+     4.13
+    ]
+   },
+   "head": "12 weeks.<br><b>20 words</b> a night.",
+   "t0": 8.02,
+   "t1": 13.75
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Words she knew",
+      400,
+      "ink"
+     ],
+     [
+      "Sentences she could say",
+      0,
+      "red"
+     ]
+    ],
+    "chip": "Never said out loud",
+    "cue": [
+     "hundred",
+     "caf\u00e9",
+     "never"
+    ],
+    "at": [
+     1.19,
+     3.22,
+     6.97
+    ]
+   },
+   "head": "Week 6.<br><b>Stuck</b> at the caf\u00e9.",
+   "t0": 13.75,
+   "t1": 24.54
+  },
+  {
+   "type": "question-list",
+   "params": {
+    "title": "20 SENTENCES I SAY",
+    "items": [
+     "A coffee, please.",
+     "Can you say that slower?",
+     "Where's the metro?"
+    ],
+    "cue": [
+     "wrote",
+     "slower",
+     "metro"
+    ],
+    "at": [
+     0.25,
+     5.33,
+     6.15
+    ]
+   },
+   "head": "The <b>20 sentences</b><br>she says.",
+   "t0": 24.49,
+   "t1": 31.41
+  },
+  {
+   "type": "voice-record",
+   "params": {
+    "drop": "New word list",
+    "prompt": "\"Un caf\u00e9, por favor...\"",
+    "cue": [
+     "translated",
+     "recorded",
+     "five"
+    ],
+    "at": [
+     0.21,
+     4.17,
+     5.55
+    ]
+   },
+   "head": "Out loud.<br><b>Every morning</b>.",
+   "t0": 31.41,
+   "t1": 38.39
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "a": "WEEK 6",
+    "b": "WEEK 10",
+    "rows": [
+     [
+      "Sentences she can say",
+      "0",
+      "20"
+     ],
+     [
+      "Caf\u00e9 order",
+      "Froze",
+      "Done"
+     ],
+     [
+      "Minutes a day",
+      "15",
+      "5"
+     ]
+    ],
+    "cue": [
+     "Week",
+     "ordered"
+    ],
+    "at": [
+     0.05,
+     0.75
+    ]
+   },
+   "head": "Week 10.<br><b>In Spanish</b>.",
+   "t0": 38.39,
+   "t1": 43.03
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "SAY-IT RULE",
+    "items": [
+     "Your 20 sentences",
+     "Out loud, mornings",
+     "Record 1 minute"
+    ],
+    "cue": [
+     "Write",
+     "loud",
+     "Record"
+    ],
+    "at": [
+     0.79,
+     3.53,
+     4.71
+    ]
+   },
+   "head": "Screenshot<br><b>the rule</b>.",
+   "t0": 43.03,
+   "t1": 51.86
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Speak Spanish",
+    "date": "Open it again: Feb 2027",
+    "steps": [
+     "Write 20 sentences",
+     "Say them daily",
+     "Record 1 min"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 51.86,
+   "t1": 62.65
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why you forget most of a book",
+    "when": "Tonight, 7:30 PM",
+    "cue": [
+     null,
+     "forget"
+    ],
+    "at": [
+     0.2,
+     2.49
+    ]
+   },
+   "head": "One fix<br><b>a day</b>.",
+   "t0": 62.65,
+   "t1": 67.06
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  22.58,
+  38.34
+ ]
+}

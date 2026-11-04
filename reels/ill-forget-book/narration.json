@@ -1,0 +1,156 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] A week after you finish a book, most of it is gone. || Not because your memory is bad. Because of what you do the moment you close it. And the fix takes about three minutes. || Think about it. Three hundred pages, around six hours of reading. A week later, a friend asks what it was about, and you've got one sentence. || This curve is over a hundred years old. Memory drops fast in the first day, then keeps sliding. And rereading or highlighting barely slows it down. || [turn] So what does? || Pulling it back out. When you close the book, write three lines from memory. No peeking. What it said, one example, and one thing you'll do. || Then the next day, cover them and say them again. A week later, once more. Under three minutes, in total. || [land] Every time you pull it back out, it sticks longer. A week later, you can still explain the book. || Here's the rule. Three lines from memory when you close the book. Again tomorrow. Again in a week. Send this to the friend who highlights everything. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] Follow for one fix a day. Tomorrow, the one rule for the day after you miss a day. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "forget-curve",
+   "params": {
+    "stage": "hook"
+   },
+   "head": "A book, <b>gone</b><br>in a week."
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "THE PROBLEM",
+    "aBig": "Bad memory",
+    "b": "A 3-minute fix",
+    "cue": [
+     "fix",
+     "bad"
+    ]
+   },
+   "head": "Not a <b>memory</b><br>problem."
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Hours reading",
+      6,
+      "ink"
+     ],
+     [
+      "Ideas you can explain",
+      1,
+      "red"
+     ]
+    ],
+    "chip": "A week later",
+    "cue": [
+     "six",
+     "friend",
+     "sentence"
+    ]
+   },
+   "head": "6 hours in.<br><b>1 sentence</b> out."
+  },
+  {
+   "type": "forget-curve",
+   "params": {
+    "stage": "draw",
+    "chip": "Rereading barely slows it",
+    "cue": [
+     "curve",
+     "sliding",
+     "highlighting"
+    ]
+   },
+   "head": "Fast drop,<br><b>then a slide</b>."
+  },
+  null,
+  {
+   "type": "question-list",
+   "params": {
+    "title": "FROM MEMORY, NO PEEKING",
+    "items": [
+     "What it said",
+     "One example",
+     "One thing I'll do"
+    ],
+    "cue": [
+     "write",
+     "example",
+     "do"
+    ]
+   },
+   "head": "Three lines,<br><b>from memory</b>."
+  },
+  {
+   "type": "forget-curve",
+   "params": {
+    "stage": "fix",
+    "chip2": "A week later: still there",
+    "cue": [
+     "next",
+     "week",
+     "longer"
+    ]
+   },
+   "head": "Pull it out<br><b>again</b>."
+  },
+  null,
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "THE 3-LINE RULE",
+    "items": [
+     "3 lines from memory",
+     "Again tomorrow",
+     "Again in a week"
+    ],
+    "cue": [
+     "Three",
+     "tomorrow",
+     "week"
+    ]
+   },
+   "head": "Screenshot<br><b>the rule</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Remember what I read",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "3 lines per book",
+     "Recall next day",
+     "Again in a week"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "The day after you miss a day",
+    "when": "Tomorrow",
+    "cue": [
+     null,
+     "miss"
+    ]
+   },
+   "head": "One fix<br><b>a day</b>."
+  },
+  null
+ ],
+ "brand_from": 11,
+ "silences": [
+  "So what does",
+  "Every time"
+ ],
+ "caption": {
+  "instagram": "A week after you finish a book, most of it is gone.\n\nNot because your memory is bad. 300 pages, about 6 hours of reading, and a week later you can explain it in one sentence. Memory drops fast in the first day, then keeps sliding, and rereading or highlighting barely slows it down. Pulling it back out does.\n\nThe 3-line rule:\n1. When you close the book, write 3 lines from memory: what it said, one example, one thing you'll do\n2. Next day, cover them and say them again\n3. A week later, once more\n\nUnder 3 minutes in total.\n\nSend this to the friend who highlights everything.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#reading #books #studytips #memory #learning #habits",
+  "x": "A week after you finish a book, most of it is gone.\n\nWhen you close it, write 3 lines from memory: what it said, one example, one thing you'll do. Say them again tomorrow. Once more in a week. Under 3 minutes.",
+  "youtube_title": "How to remember what you read #Shorts"
+ }
+}

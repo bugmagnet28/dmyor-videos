@@ -1,0 +1,183 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] If it's dark when you wake up, your body thinks it's still night. || Someone asked me this. Class at seven thirty, up at six forty-five, and no sunlight. Three fixes. || Your body clock sets itself by light, and a room lamp is dim next to even a grey sky. Daylight at lunch is hours late. || [turn] One. Every light on, the moment you're up. || Two. Get outside at the first daylight, before ten if you can. A grey sky counts. || Three. Same wake time, every single day. That's what locks it in. || [land] Lights on, outside by ten, same wake time. Send this to someone who wakes up in the dark. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] Follow for one fix a day. This afternoon, four hundred words, and still no coffee. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "light-chart",
+   "params": {
+    "stage": "hook",
+    "chip": "First daylight: 12:30"
+   },
+   "head": "Your body thinks<br>it's <b>still night</b>."
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "MORNING LIGHT",
+    "aBig": "None",
+    "b": "Three fixes, no sun needed",
+    "cue": [
+     "asked",
+     "sunlight"
+    ]
+   },
+   "head": "Class at 7:30.<br><b>No sun</b>."
+  },
+  {
+   "type": "light-chart",
+   "params": {
+    "stage": "grow",
+    "bars": [
+     [
+      "Indoors",
+      "Room lamp",
+      50,
+      "red"
+     ],
+     [
+      "Outdoors",
+      "Grey sky",
+      5000,
+      "ink"
+     ]
+    ],
+    "chip": "Daylight at lunch = hours late",
+    "cue": [
+     "light",
+     "sky",
+     "late"
+    ]
+   },
+   "head": "A lamp vs<br>a <b>grey sky</b>."
+  },
+  {
+   "type": "light-chart",
+   "params": {
+    "stage": "morph",
+    "bars": [
+     [
+      "6:45",
+      "Room",
+      50,
+      "red"
+     ],
+     [
+      "10:00",
+      "",
+      0,
+      "ink"
+     ],
+     [
+      "12:30",
+      "Lunch outside",
+      5000,
+      "mute"
+     ]
+    ],
+    "after": [
+     [
+      "6:45",
+      "All lights on",
+      250,
+      "acc"
+     ],
+     [
+      "10:00",
+      "Break outside",
+      5000,
+      "acc"
+     ],
+     null
+    ],
+    "chip": "Daylight by 10, not 12:30",
+    "cue": [
+     "light",
+     "outside",
+     "ten"
+    ]
+   },
+   "head": "Lights on.<br><b>Outside</b> by ten."
+  },
+  null,
+  {
+   "type": "week-tracker",
+   "params": {
+    "on": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "what": "Up at 6:45",
+    "stage": "daily",
+    "walk": 3.5,
+    "tick": 0.3
+   },
+   "head": "Same wake time.<br><b>Every day</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "DARK MORNING RULE",
+    "items": [
+     "Every light on",
+     "Outside by 10 AM",
+     "Same wake time"
+    ],
+    "cue": [
+     "Lights",
+     "outside",
+     "same"
+    ]
+   },
+   "head": "Screenshot<br><b>the rule</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Wake up rested",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "Lights on 6:45",
+     "Outside by 10",
+     "Same wake time"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "400 words, still can't order",
+    "when": "Today, 1 PM",
+    "cue": [
+     null,
+     "afternoon"
+    ]
+   },
+   "head": "One fix<br><b>a day</b>."
+  },
+  null
+ ],
+ "brand_from": 9,
+ "silences": [
+  "One",
+  "Lights on"
+ ],
+ "caption": {
+  "instagram": "If it's dark when you wake up, your body thinks it's still night.\n\nA viewer asked: class at 7:30, up at 6:45, no sunlight. Your body clock sets itself by light, and a room lamp is dim next to even a grey sky. If your first daylight is lunch, the morning signal comes hours late.\n\nThe dark morning rule:\n1. Every light on the moment you're up, breakfast next to the brightest one\n2. Outside at the first daylight you get, before 10 if you can (a grey sky counts)\n3. Same wake time every day, give or take an hour on weekends\n\nSend this to the friend who wakes up in the dark.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#sleep #morningroutine #wakeup #sleepbetter #energy #habits",
+  "x": "If it's dark when you wake up, your body thinks it's still night.\n\nEvery light on the moment you're up. Outside at the first daylight, before 10 if you can (a grey sky still beats a lamp). Same wake time every day.",
+  "youtube_title": "How to wake up when it's still dark outside #Shorts"
+ }
+}

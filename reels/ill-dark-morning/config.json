@@ -1,0 +1,208 @@
+{
+ "total": 46.74,
+ "brandT": 43.0,
+ "scenes": [
+  {
+   "type": "light-chart",
+   "params": {
+    "stage": "hook",
+    "chip": "First daylight: 12:30"
+   },
+   "head": "Your body thinks<br>it's <b>still night</b>.",
+   "t0": 0.0,
+   "t1": 3.33
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "MORNING LIGHT",
+    "aBig": "None",
+    "b": "Three fixes, no sun needed",
+    "cue": [
+     "asked",
+     "sunlight"
+    ],
+    "at": [
+     0.21,
+     3.75
+    ]
+   },
+   "head": "Class at 7:30.<br><b>No sun</b>.",
+   "t0": 3.33,
+   "t1": 8.63
+  },
+  {
+   "type": "light-chart",
+   "params": {
+    "stage": "grow",
+    "bars": [
+     [
+      "Indoors",
+      "Room lamp",
+      50,
+      "red"
+     ],
+     [
+      "Outdoors",
+      "Grey sky",
+      5000,
+      "ink"
+     ]
+    ],
+    "chip": "Daylight at lunch = hours late",
+    "cue": [
+     "light",
+     "sky",
+     "late"
+    ],
+    "at": [
+     1.45,
+     3.73,
+     5.89
+    ]
+   },
+   "head": "A lamp vs<br>a <b>grey sky</b>.",
+   "t0": 8.63,
+   "t1": 15.35
+  },
+  {
+   "type": "light-chart",
+   "params": {
+    "stage": "morph",
+    "bars": [
+     [
+      "6:45",
+      "Room",
+      50,
+      "red"
+     ],
+     [
+      "10:00",
+      "",
+      0,
+      "ink"
+     ],
+     [
+      "12:30",
+      "Lunch outside",
+      5000,
+      "mute"
+     ]
+    ],
+    "after": [
+     [
+      "6:45",
+      "All lights on",
+      250,
+      "acc"
+     ],
+     [
+      "10:00",
+      "Break outside",
+      5000,
+      "acc"
+     ],
+     null
+    ],
+    "chip": "Daylight by 10, not 12:30",
+    "cue": [
+     "light",
+     "outside",
+     "ten"
+    ],
+    "at": [
+     0.53,
+     2.73,
+     4.23
+    ]
+   },
+   "head": "Lights on.<br><b>Outside</b> by ten.",
+   "t0": 15.35,
+   "t1": 21.98
+  },
+  {
+   "type": "week-tracker",
+   "params": {
+    "on": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "what": "Up at 6:45",
+    "stage": "daily",
+    "walk": 3.5,
+    "tick": 0.3
+   },
+   "head": "Same wake time.<br><b>Every day</b>.",
+   "t0": 21.93,
+   "t1": 24.99
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "DARK MORNING RULE",
+    "items": [
+     "Every light on",
+     "Outside by 10 AM",
+     "Same wake time"
+    ],
+    "cue": [
+     "Lights",
+     "outside",
+     "same"
+    ],
+    "at": [
+     0.05,
+     0.99,
+     1.97
+    ]
+   },
+   "head": "Screenshot<br><b>the rule</b>.",
+   "t0": 24.99,
+   "t1": 30.73
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Wake up rested",
+    "date": "Open it again: Dec 2026",
+    "steps": [
+     "Lights on 6:45",
+     "Outside by 10",
+     "Same wake time"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 30.73,
+   "t1": 38.09
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "400 words, still can't order",
+    "when": "Today, 1 PM",
+    "cue": [
+     null,
+     "afternoon"
+    ],
+    "at": [
+     0.2,
+     1.89
+    ]
+   },
+   "head": "One fix<br><b>a day</b>.",
+   "t0": 38.09,
+   "t1": 43.0
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  15.3,
+  24.94
+ ]
+}

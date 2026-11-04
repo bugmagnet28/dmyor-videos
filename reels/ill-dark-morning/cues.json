@@ -1,0 +1,1039 @@
+{
+ "audio": "audio.mp3",
+ "duration": 46.8,
+ "text": "If it's dark when you wake up, your body thinks it's still night. Someone asked me this, class at 7.30 up at 6.45 and no sunlight, three fixes. Your body clock sets itself by light and a room lamp is dim next to even a gray sky. Daylight at lunch is hours late. One, every light on the moment you're up. Two, get outside at the first daylight before 10 if you can. A gray sky counts. Three, same wake time every single day, that's what locks it in. Lights on outside by 10 same wake time. Send this to someone who wakes up in the dark. That's what demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. Follow for one fix a day, this afternoon 400 words and still no coffee. If you want to try it out, I've put the link in the bio.",
+ "words": [
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 0.0,
+   "e": 0.26
+  },
+  {
+   "w": "its",
+   "raw": "it's",
+   "s": 0.26,
+   "e": 0.48
+  },
+  {
+   "w": "dark",
+   "raw": "dark",
+   "s": 0.48,
+   "e": 0.72
+  },
+  {
+   "w": "when",
+   "raw": "when",
+   "s": 0.72,
+   "e": 0.92
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 0.92,
+   "e": 1.06
+  },
+  {
+   "w": "wake",
+   "raw": "wake",
+   "s": 1.06,
+   "e": 1.24
+  },
+  {
+   "w": "up",
+   "raw": "up,",
+   "s": 1.24,
+   "e": 1.48
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 1.62,
+   "e": 1.7
+  },
+  {
+   "w": "body",
+   "raw": "body",
+   "s": 1.7,
+   "e": 1.92
+  },
+  {
+   "w": "thinks",
+   "raw": "thinks",
+   "s": 1.92,
+   "e": 2.12
+  },
+  {
+   "w": "its",
+   "raw": "it's",
+   "s": 2.12,
+   "e": 2.38
+  },
+  {
+   "w": "still",
+   "raw": "still",
+   "s": 2.38,
+   "e": 2.54
+  },
+  {
+   "w": "night",
+   "raw": "night.",
+   "s": 2.54,
+   "e": 2.86
+  },
+  {
+   "w": "someone",
+   "raw": "Someone",
+   "s": 3.38,
+   "e": 3.54
+  },
+  {
+   "w": "asked",
+   "raw": "asked",
+   "s": 3.54,
+   "e": 3.82
+  },
+  {
+   "w": "me",
+   "raw": "me",
+   "s": 3.82,
+   "e": 4.02
+  },
+  {
+   "w": "this",
+   "raw": "this,",
+   "s": 4.02,
+   "e": 4.32
+  },
+  {
+   "w": "class",
+   "raw": "class",
+   "s": 4.66,
+   "e": 4.8
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 4.8,
+   "e": 5.0
+  },
+  {
+   "w": "7",
+   "raw": "7",
+   "s": 5.0,
+   "e": 5.3
+  },
+  {
+   "w": "30",
+   "raw": ".30",
+   "s": 5.3,
+   "e": 5.58
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 5.58,
+   "e": 5.8
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 5.8,
+   "e": 5.9
+  },
+  {
+   "w": "6",
+   "raw": "6",
+   "s": 5.9,
+   "e": 6.1
+  },
+  {
+   "w": "45",
+   "raw": ".45",
+   "s": 6.1,
+   "e": 6.52
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 6.52,
+   "e": 6.88
+  },
+  {
+   "w": "no",
+   "raw": "no",
+   "s": 6.88,
+   "e": 7.08
+  },
+  {
+   "w": "sunlight",
+   "raw": "sunlight,",
+   "s": 7.08,
+   "e": 7.52
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 7.68,
+   "e": 7.82
+  },
+  {
+   "w": "fixes",
+   "raw": "fixes.",
+   "s": 7.82,
+   "e": 8.14
+  },
+  {
+   "w": "your",
+   "raw": "Your",
+   "s": 8.68,
+   "e": 8.76
+  },
+  {
+   "w": "body",
+   "raw": "body",
+   "s": 8.76,
+   "e": 9.02
+  },
+  {
+   "w": "clock",
+   "raw": "clock",
+   "s": 9.02,
+   "e": 9.26
+  },
+  {
+   "w": "sets",
+   "raw": "sets",
+   "s": 9.26,
+   "e": 9.54
+  },
+  {
+   "w": "itself",
+   "raw": "itself",
+   "s": 9.54,
+   "e": 9.9
+  },
+  {
+   "w": "by",
+   "raw": "by",
+   "s": 9.9,
+   "e": 10.08
+  },
+  {
+   "w": "light",
+   "raw": "light",
+   "s": 10.08,
+   "e": 10.32
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 10.32,
+   "e": 10.48
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 10.48,
+   "e": 10.6
+  },
+  {
+   "w": "room",
+   "raw": "room",
+   "s": 10.6,
+   "e": 10.76
+  },
+  {
+   "w": "lamp",
+   "raw": "lamp",
+   "s": 10.76,
+   "e": 11.04
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 11.04,
+   "e": 11.24
+  },
+  {
+   "w": "dim",
+   "raw": "dim",
+   "s": 11.24,
+   "e": 11.42
+  },
+  {
+   "w": "next",
+   "raw": "next",
+   "s": 11.42,
+   "e": 11.68
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 11.68,
+   "e": 11.86
+  },
+  {
+   "w": "even",
+   "raw": "even",
+   "s": 11.86,
+   "e": 12.08
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 12.08,
+   "e": 12.18
+  },
+  {
+   "w": "gray",
+   "raw": "gray",
+   "s": 12.18,
+   "e": 12.36
+  },
+  {
+   "w": "sky",
+   "raw": "sky.",
+   "s": 12.36,
+   "e": 12.72
+  },
+  {
+   "w": "daylight",
+   "raw": "Daylight",
+   "s": 13.64,
+   "e": 13.64
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 13.64,
+   "e": 13.84
+  },
+  {
+   "w": "lunch",
+   "raw": "lunch",
+   "s": 13.84,
+   "e": 14.02
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 14.02,
+   "e": 14.22
+  },
+  {
+   "w": "hours",
+   "raw": "hours",
+   "s": 14.22,
+   "e": 14.52
+  },
+  {
+   "w": "late",
+   "raw": "late.",
+   "s": 14.52,
+   "e": 14.86
+  },
+  {
+   "w": "one",
+   "raw": "One,",
+   "s": 15.4,
+   "e": 15.54
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 15.66,
+   "e": 15.88
+  },
+  {
+   "w": "light",
+   "raw": "light",
+   "s": 15.88,
+   "e": 16.1
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 16.1,
+   "e": 16.36
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 16.36,
+   "e": 16.56
+  },
+  {
+   "w": "moment",
+   "raw": "moment",
+   "s": 16.56,
+   "e": 16.74
+  },
+  {
+   "w": "youre",
+   "raw": "you're",
+   "s": 16.74,
+   "e": 17.06
+  },
+  {
+   "w": "up",
+   "raw": "up.",
+   "s": 17.06,
+   "e": 17.28
+  },
+  {
+   "w": "two",
+   "raw": "Two,",
+   "s": 17.66,
+   "e": 17.88
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 18.02,
+   "e": 18.08
+  },
+  {
+   "w": "outside",
+   "raw": "outside",
+   "s": 18.08,
+   "e": 18.48
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 18.48,
+   "e": 18.62
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 18.62,
+   "e": 18.74
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 18.74,
+   "e": 18.94
+  },
+  {
+   "w": "daylight",
+   "raw": "daylight",
+   "s": 18.94,
+   "e": 19.32
+  },
+  {
+   "w": "before",
+   "raw": "before",
+   "s": 19.32,
+   "e": 19.58
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 19.58,
+   "e": 19.8
+  },
+  {
+   "w": "if",
+   "raw": "if",
+   "s": 19.8,
+   "e": 19.92
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 19.92,
+   "e": 20.04
+  },
+  {
+   "w": "can",
+   "raw": "can.",
+   "s": 20.04,
+   "e": 20.32
+  },
+  {
+   "w": "a",
+   "raw": "A",
+   "s": 20.56,
+   "e": 20.64
+  },
+  {
+   "w": "gray",
+   "raw": "gray",
+   "s": 20.64,
+   "e": 20.86
+  },
+  {
+   "w": "sky",
+   "raw": "sky",
+   "s": 20.86,
+   "e": 21.12
+  },
+  {
+   "w": "counts",
+   "raw": "counts.",
+   "s": 21.12,
+   "e": 21.54
+  },
+  {
+   "w": "three",
+   "raw": "Three,",
+   "s": 21.98,
+   "e": 22.26
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 22.4,
+   "e": 22.58
+  },
+  {
+   "w": "wake",
+   "raw": "wake",
+   "s": 22.58,
+   "e": 22.76
+  },
+  {
+   "w": "time",
+   "raw": "time",
+   "s": 22.76,
+   "e": 23.06
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 23.06,
+   "e": 23.36
+  },
+  {
+   "w": "single",
+   "raw": "single",
+   "s": 23.36,
+   "e": 23.7
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 23.7,
+   "e": 23.94
+  },
+  {
+   "w": "thats",
+   "raw": "that's",
+   "s": 24.08,
+   "e": 24.28
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 24.28,
+   "e": 24.42
+  },
+  {
+   "w": "locks",
+   "raw": "locks",
+   "s": 24.42,
+   "e": 24.64
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 24.64,
+   "e": 24.8
+  },
+  {
+   "w": "in",
+   "raw": "in.",
+   "s": 24.8,
+   "e": 25.04
+  },
+  {
+   "w": "lights",
+   "raw": "Lights",
+   "s": 25.04,
+   "e": 25.7
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 25.7,
+   "e": 25.98
+  },
+  {
+   "w": "outside",
+   "raw": "outside",
+   "s": 25.98,
+   "e": 26.38
+  },
+  {
+   "w": "by",
+   "raw": "by",
+   "s": 26.38,
+   "e": 26.64
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 26.64,
+   "e": 26.96
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 26.96,
+   "e": 27.3
+  },
+  {
+   "w": "wake",
+   "raw": "wake",
+   "s": 27.3,
+   "e": 27.54
+  },
+  {
+   "w": "time",
+   "raw": "time.",
+   "s": 27.54,
+   "e": 27.94
+  },
+  {
+   "w": "send",
+   "raw": "Send",
+   "s": 28.44,
+   "e": 28.6
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 28.6,
+   "e": 28.76
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 28.76,
+   "e": 28.94
+  },
+  {
+   "w": "someone",
+   "raw": "someone",
+   "s": 28.94,
+   "e": 29.18
+  },
+  {
+   "w": "who",
+   "raw": "who",
+   "s": 29.18,
+   "e": 29.34
+  },
+  {
+   "w": "wakes",
+   "raw": "wakes",
+   "s": 29.34,
+   "e": 29.5
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 29.5,
+   "e": 29.7
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 29.7,
+   "e": 29.82
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 29.82,
+   "e": 29.92
+  },
+  {
+   "w": "dark",
+   "raw": "dark.",
+   "s": 29.92,
+   "e": 30.22
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 30.78,
+   "e": 31.08
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 31.08,
+   "e": 31.24
+  },
+  {
+   "w": "demure",
+   "raw": "demure",
+   "s": 31.24,
+   "e": 31.62
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 31.62,
+   "e": 31.78
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 31.78,
+   "e": 32.06
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 32.46,
+   "e": 32.56
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 32.56,
+   "e": 32.94
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 32.94,
+   "e": 33.16
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 33.16,
+   "e": 33.4
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 33.4,
+   "e": 33.72
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 33.72,
+   "e": 33.98
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 33.98,
+   "e": 34.12
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 34.12,
+   "e": 34.26
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 34.26,
+   "e": 34.5
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 34.5,
+   "e": 34.62
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 34.62,
+   "e": 34.92
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 34.92,
+   "e": 35.36
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 35.36,
+   "e": 35.54
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 35.54,
+   "e": 35.68
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 35.68,
+   "e": 35.9
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 35.9,
+   "e": 36.12
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 36.12,
+   "e": 36.42
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 36.42,
+   "e": 36.74
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 36.74,
+   "e": 36.94
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 36.94,
+   "e": 37.08
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 37.08,
+   "e": 37.4
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 37.4,
+   "e": 37.76
+  },
+  {
+   "w": "follow",
+   "raw": "Follow",
+   "s": 38.14,
+   "e": 38.4
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 38.4,
+   "e": 38.66
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 38.66,
+   "e": 38.88
+  },
+  {
+   "w": "fix",
+   "raw": "fix",
+   "s": 38.88,
+   "e": 39.08
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 39.08,
+   "e": 39.24
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 39.24,
+   "e": 39.5
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 39.78,
+   "e": 39.98
+  },
+  {
+   "w": "afternoon",
+   "raw": "afternoon",
+   "s": 39.98,
+   "e": 40.46
+  },
+  {
+   "w": "400",
+   "raw": "400",
+   "s": 40.46,
+   "e": 40.86
+  },
+  {
+   "w": "words",
+   "raw": "words",
+   "s": 40.86,
+   "e": 41.44
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 41.44,
+   "e": 41.62
+  },
+  {
+   "w": "still",
+   "raw": "still",
+   "s": 41.62,
+   "e": 41.84
+  },
+  {
+   "w": "no",
+   "raw": "no",
+   "s": 41.84,
+   "e": 42.04
+  },
+  {
+   "w": "coffee",
+   "raw": "coffee.",
+   "s": 42.04,
+   "e": 42.44
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 43.0,
+   "e": 43.14
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 43.14,
+   "e": 43.26
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 43.26,
+   "e": 43.42
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 43.42,
+   "e": 43.56
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 43.56,
+   "e": 43.78
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 43.78,
+   "e": 43.96
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 43.96,
+   "e": 44.22
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 44.42,
+   "e": 44.54
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 44.54,
+   "e": 44.68
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 44.68,
+   "e": 44.82
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 44.82,
+   "e": 45.0
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 45.0,
+   "e": 45.16
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 45.16,
+   "e": 45.28
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 45.28,
+   "e": 45.54
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 4.32,
+   "text": "If it's dark when you wake up, your body thinks it's still night. Someone asked me this,"
+  },
+  {
+   "s": 4.66,
+   "e": 10.48,
+   "text": "class at 7.30 up at 6.45 and no sunlight, three fixes. Your body clock sets itself by light and"
+  },
+  {
+   "s": 10.48,
+   "e": 15.88,
+   "text": "a room lamp is dim next to even a gray sky. Daylight at lunch is hours late. One, every"
+  },
+  {
+   "s": 15.88,
+   "e": 20.32,
+   "text": "light on the moment you're up. Two, get outside at the first daylight before 10 if you can."
+  },
+  {
+   "s": 20.56,
+   "e": 25.04,
+   "text": "A gray sky counts. Three, same wake time every single day, that's what locks it in."
+  },
+  {
+   "s": 25.04,
+   "e": 31.24,
+   "text": "Lights on outside by 10 same wake time. Send this to someone who wakes up in the dark. That's what"
+  },
+  {
+   "s": 31.24,
+   "e": 36.42,
+   "text": "demure is for. You archive your dream today so you can see it tomorrow and break it down into small"
+  },
+  {
+   "s": 36.42,
+   "e": 42.44,
+   "text": "steps you can actually do. Follow for one fix a day, this afternoon 400 words and still no coffee."
+  },
+  {
+   "s": 43.0,
+   "e": 45.54,
+   "text": "If you want to try it out, I've put the link in the bio."
+  }
+ ],
+ "wps": 3.5
+}

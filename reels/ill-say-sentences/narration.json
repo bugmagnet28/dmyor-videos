@@ -1,0 +1,202 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] You can know four hundred words and still freeze ordering a coffee. || That's what happened to Ana. And the fix wasn't more words. It was one list she wrote in ten minutes. || Ana was moving to Madrid in twelve weeks. So every night, she learned twenty new words in an app. || Six weeks in, she knew four hundred words. Then she walked into a café, and couldn't say one full sentence. The words weren't wrong. She'd just never said them out loud, together. || [turn] So what did she change? || She wrote down the twenty sentences she actually says in a normal day. A coffee, please. Can you say that slower? Where's the metro? || She translated them once. Then every morning, she said all twenty out loud, and recorded one minute. About five minutes a day. || [land] Week ten, Ana ordered, asked for the bill, and chatted with her landlord. In Spanish. || Here's the rule. Write the twenty sentences you say every day. Say them out loud each morning. Record one minute. Send this to the friend with a long streak who still can't order a coffee. || [outro] Ana's plan started with one list. Yours can too. That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] Follow for one fix a day. Tonight, why you forget most of a book within a week. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Words learned",
+      400,
+      "ink"
+     ],
+     [
+      "Sentences you can say",
+      0,
+      "red"
+     ]
+    ],
+    "chip": "Ordering a coffee: froze"
+   },
+   "head": "400 words.<br><b>Zero</b> sentences."
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "THE FIX",
+    "aBig": "More words",
+    "b": "One list, ten minutes",
+    "cue": [
+     "fix",
+     "wasn't"
+    ]
+   },
+   "head": "Not more words.<br><b>One list</b>."
+  },
+  {
+   "type": "week-countdown",
+   "params": {
+    "weeks": 12,
+    "end": "Madrid",
+    "rows": [
+     "20 new words",
+     "20 new words",
+     "20 new words"
+    ],
+    "cue": [
+     "was",
+     "every",
+     "twenty"
+    ]
+   },
+   "head": "12 weeks.<br><b>20 words</b> a night."
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Words she knew",
+      400,
+      "ink"
+     ],
+     [
+      "Sentences she could say",
+      0,
+      "red"
+     ]
+    ],
+    "chip": "Never said out loud",
+    "cue": [
+     "hundred",
+     "café",
+     "never"
+    ]
+   },
+   "head": "Week 6.<br><b>Stuck</b> at the café."
+  },
+  null,
+  {
+   "type": "question-list",
+   "params": {
+    "title": "20 SENTENCES I SAY",
+    "items": [
+     "A coffee, please.",
+     "Can you say that slower?",
+     "Where's the metro?"
+    ],
+    "cue": [
+     "wrote",
+     "slower",
+     "metro"
+    ]
+   },
+   "head": "The <b>20 sentences</b><br>she says."
+  },
+  {
+   "type": "voice-record",
+   "params": {
+    "drop": "New word list",
+    "prompt": "\"Un café, por favor...\"",
+    "cue": [
+     "translated",
+     "recorded",
+     "five"
+    ]
+   },
+   "head": "Out loud.<br><b>Every morning</b>."
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "a": "WEEK 6",
+    "b": "WEEK 10",
+    "rows": [
+     [
+      "Sentences she can say",
+      "0",
+      "20"
+     ],
+     [
+      "Café order",
+      "Froze",
+      "Done"
+     ],
+     [
+      "Minutes a day",
+      "15",
+      "5"
+     ]
+    ],
+    "cue": [
+     "Week",
+     "ordered"
+    ]
+   },
+   "head": "Week 10.<br><b>In Spanish</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "SAY-IT RULE",
+    "items": [
+     "Your 20 sentences",
+     "Out loud, mornings",
+     "Record 1 minute"
+    ],
+    "cue": [
+     "Write",
+     "loud",
+     "Record"
+    ]
+   },
+   "head": "Screenshot<br><b>the rule</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Speak Spanish",
+    "date": "Open it again: Feb 2027",
+    "steps": [
+     "Write 20 sentences",
+     "Say them daily",
+     "Record 1 min"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why you forget most of a book",
+    "when": "Tonight, 7:30 PM",
+    "cue": [
+     null,
+     "forget"
+    ]
+   },
+   "head": "One fix<br><b>a day</b>."
+  },
+  null
+ ],
+ "brand_from": 11,
+ "silences": [
+  "So what did",
+  "Week ten"
+ ],
+ "caption": {
+  "instagram": "You can know 400 words and still freeze ordering a coffee.\n\nAna was moving to Madrid in 12 weeks and learned 20 new words a night. Six weeks in: 400 words, and she couldn't say one sentence at a café. The words weren't wrong. She'd never said them out loud, together.\n\nThe say-it rule:\n1. Write the 20 sentences you actually say in a normal day\n2. Say all of them out loud every morning\n3. Record one minute (about 5 minutes a day in total)\n\nWeek 10: she ordered, asked for the bill and chatted with her landlord.\n\nSend this to the friend with a long streak who still can't order a coffee.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#languagelearning #learnspanish #speaking #studytips #habits",
+  "x": "You can know 400 words and still freeze ordering a coffee.\n\nWrite the 20 sentences you actually say in a day. Say them out loud every morning. Record one minute.",
+  "youtube_title": "How to actually start speaking a new language #Shorts"
+ }
+}

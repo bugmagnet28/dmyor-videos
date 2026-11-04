@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "experiment": "V-EXP-33 (bar chart on frame 0, follow-up to the ill-hard-part hit with a new method) + V-EXP-32 (Kit v2, story B)",
+ "slug": "ill-say-sentences",
+ "hook_type": "story",
+ "topic": "learning",
+ "hook": "You can know four hundred words and still freeze ordering a coffee.",
+ "frame": {
+  "structure": "B (want, obstacle, choice, payoff)",
+  "want": "Ana: speak Spanish in Madrid in 12 weeks",
+  "obstacle": "400 words after 6 weeks, can't say one sentence at a café",
+  "cost": "6 weeks, 20 words a night (~15 min), 0 sentences said aloud"
+ },
+ "hooks_considered": [
+  {
+   "formula": "uncomfortable comparison",
+   "line": "You can know four hundred words and still freeze ordering a coffee.",
+   "checks": "hard truth Y, gap Y (why, what fixes it), muted Y (400 vs 0 bars), sendable Y (the streak friend), payoff Y (week 10 in Spanish)",
+   "kept": true
+  },
+  {
+   "formula": "restart",
+   "line": "If I started a language from zero, I wouldn't start with words.",
+   "checks": "first-person, weaker picture",
+   "kept": false
+  },
+  {
+   "formula": "rule of one",
+   "line": "One list of twenty sentences. That's the whole system.",
+   "checks": "gives the answer away",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "400 words, still freeze (0.0 s, bar chart on frame 0, riffle)",
+  "open_loop": {
+   "promised": "one list she wrote in ten minutes",
+   "withheld": "what is on the list"
+  },
+  "stakes": "Madrid in 12 weeks, 20 words a night",
+  "rehook_10": "week 6 café, couldn't say one sentence",
+  "interrupt": "bars count up, sentence bar stays at 0",
+  "rehook_25": "So what did she change? (near-silence 1)",
+  "save_moment": "SAY-IT RULE card",
+  "share_line": "Send this to the friend with a long streak who still can't order a coffee.",
+  "follow_reason": "Follow for one fix a day. Tonight: why you forget most of a book within a week (ill-forget-book, 19:30)",
+  "payoff_sound": "reveal on before-after (week 6 -> week 10)"
+ },
+ "note": "Story is illustrative (Ana is a character, not a testimonial). Does not call word apps wrong: 'the words weren't wrong, she'd never said them out loud, together' (consistent with ill-language-plan Oct 25, 20 words/day). New method vs ill-hard-part (Oct 30): personal sentence list, said aloud daily. Owner story rule: bridge to the viewer before naming Dmyor ('Ana's plan started with one list. Yours can too.').",
+ "quality": {
+  "hook": 5,
+  "usefulness": 5,
+  "specificity": 4,
+  "clarity": 5,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 35
+ }
+}

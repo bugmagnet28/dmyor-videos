@@ -4,6 +4,13 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 ## Ready to post
 
+## Awaiting approval: Thu 2026-11-05 (VASK-024, V-EXP-33 batch 2 + V-EXP-32 Kit v2). Instagram, X and YouTube Shorts at the same times
+
+- [ ] 09:30 IST · **ill-dark-morning** (sleep, structure A, light chart on frame 0, ~47 s: the short arm; answers the cv7n__ question and keeps ill-caffeine's "tomorrow" promise) · `ready-to-post/2026-11-05-ill-dark-morning/`
+- [ ] 13:00 IST · **ill-say-sentences** (language story B, Ana, 400 words vs 0 sentences bar chart on frame 0, ~71 s; ill-hard-part follow-up, new method) · `ready-to-post/2026-11-05-ill-say-sentences/`
+- [ ] 19:30 IST · **ill-forget-book** (reading, structure C, forgetting curve on frame 0, ~66 s, strongest) · `ready-to-post/2026-11-05-ill-forget-book/`
+- Follow lines chain: 09:30 -> "this afternoon" (say-sentences), 13:00 -> "tonight, 7:30 PM" (forget-book); 19:30 promises "tomorrow: the one rule for the day after you miss a day" (Fri Nov 6, idea #52). If the Wed batch slips to Thu, shift this batch one day too (the chain still holds).
+
 ## Awaiting approval: Wed 2026-11-04 (VASK-023, V-EXP-33 first batch + V-EXP-32 Kit v2). Instagram, X and YouTube Shorts at the same times
 
 - [ ] 09:30 IST · **ill-busy-week** (time, structure A compressed, ~45 s: the short arm of the length test; fulfils "tomorrow: a big goal in a busy week" from ill-catch-up) · `ready-to-post/2026-11-04-ill-busy-week/`

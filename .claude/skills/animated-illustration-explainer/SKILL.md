@@ -49,7 +49,7 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `postpone-calendar` | day after day, "start tomorrow" struck through and pushed on | `days`, `note` |
 | `book-vs-evening` | 300-page stack counts up next to a clock on a weeknight | `pages`, `when` |
 | `book-breakdown` | big item shrinks aside, sub-steps tick off, a daily-amount counter | `book`, `items[3]`, `per`, `unit` |
-| `week-tracker` | 7-day grid, chosen days ticked, a person walks the line (`stage: slow` walks for `walk` s, footsteps to scene end) | `on` (day indexes), `what`, `walk` |
+| `week-tracker` | 7-day grid, chosen days ticked, a person walks the line (`stage: slow` walks for `walk` s, footsteps to scene end; `stage: daily` = same + one chime per day for 7 ticks, use with `tick: .3`) | `on` (day indexes), `what`, `walk`, `tick` (s between checks, default .5) |
 | `fit-breakdown` | goal → program → 5-6 day chips (centred; `stage: draw` swaps the plate clink for pen sounds) → today (Chest) highlighted → today's exercises tick off | `goal`, `program`, `days[[day,name]]`, `today[3]` |
 | `fifteen-test` | timer runs past the limit (red, "too big"), the step splits into 3, timer resets green ("start now") | `minutes`, `over`, `small`, `step`, `parts[3]` |
 | `weather-week` | week of sunny days ticked, one cloudy day crossed, the rest fade (hook) | `bad`, `days` |
@@ -133,6 +133,9 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `screen-time` | phone with SCREEN TIME pickups count + 7 bar chart + "FIRST USED AFTER PICKUP" rows; `stage` hook / count (bars grow, count to `count` on cue 2) / first (rows appear, row 1 highlighted) | `count`, `bars[7]`, `rows[[app,n]]`, `unit`, `title`; cue x2 |
 | `home-move` | phone home screen; `stage` move (app icon lifts, swipes to the last page into a "Later" folder, chip) / mute (app notification settings, 3 toggles switch off, chip) | `app`, `chip`; cue move x3 / mute x2 |
 | `sleep-depth` | hypnogram 11 PM-7 AM: dashed sage "No late coffee" vs clay "4 PM coffee" staying lighter, "7:00 AM: tired" + "Another coffee" loop | `a`, `b`, `tired`, `again`; cue x3 |
+| `light-chart` | (new 2026-11-04) LUX bar chart per time of day, lux printed on bars (square-root height); `stage` hook (finished + red chip, switch sound) / grow (bars rise on cues, chip on the last cue) / morph (bars change to `after` entries one per cue, colour turns sage, chip on the next cue + `reveal`) | `bars[[time,label,lux,col]]` (col red/ink/acc/mute/sand; lux 0 = hidden until morphed), `after[]` (same length, null = unchanged), `chip`, `ylabel`; cue: grow n+1 / morph changes+1 |
+| `forget-curve` | (new 2026-11-04) "HOW MUCH YOU REMEMBER" curve over days 0-8; `stage` hook (red curve + dot at day 7 + chip, page sound) / draw (curve draws to day 1, then day 7, chip) / fix (old curve dashed, sage recall curve with jumps back to the top at day 0/1/7 and pen markers, chip2 + `reveal`) | `chip`, `chip2`, `m0..m2` marker labels, `ylabel`; cue x3 |
+| `bar-compare` | (new 2026-11-04) 2-3 horizontal labelled bars counting up, last one in clay (e.g. 400 words vs 0 sentences), chip under; `stage` hook (finished, riffle sound) / default grow (one bar per cue, chip on the next) | `rows[[label,value,col]]`, `max`, `unit`, `chip`, `y0`, `gap`; cue rows+1 |
 | `follow-next` | (follow reason) "NEXT ON @BECAUSEIDMYOR" card: next reel title + when, Follow button turns "Following" | `title`, `when`; cue [null, follow] |
 | `dream-to-steps` | "ARCHIVED TODAY" dream card branching into three ticked steps (use for the value close) | `tag`, `dream`, `date`, `steps[3]` |
 

@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "experiment": "V-EXP-33 (forgetting curve on frame 0, universal learning behaviour, 19:30 strongest) + V-EXP-32 (Kit v2, structure C)",
+ "slug": "ill-forget-book",
+ "hook_type": "hard-truth",
+ "topic": "learning",
+ "hook": "A week after you finish a book, most of it is gone.",
+ "frame": {
+  "structure": "C (mistake, cost, fix)",
+  "want": "remember the books you read",
+  "obstacle": "closing the book and moving on (or rereading/highlighting)",
+  "cost": "300 pages, ~6 hours, one sentence left a week later"
+ },
+ "hooks_considered": [
+  {
+   "formula": "number that changes it / hard truth",
+   "line": "A week after you finish a book, most of it is gone.",
+   "checks": "hard truth Y, gap Y (3-minute fix), muted Y (forgetting curve), sendable Y (highlighter friend), payoff Y (still there at day 7)",
+   "kept": true
+  },
+  {
+   "formula": "expensive mistake",
+   "line": "Highlighting costs you six hours a book.",
+   "checks": "overclaims",
+   "kept": false
+  },
+  {
+   "formula": "the friend line",
+   "line": "Send this to the friend who highlights everything.",
+   "checks": "kept as share line",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "most of a book gone in a week (0.0 s, forgetting curve, page sound)",
+  "open_loop": {
+   "promised": "a 3-minute fix",
+   "withheld": "pulling it back out (3 lines from memory)"
+  },
+  "stakes": "6 hours reading -> 1 sentence",
+  "rehook_10": "the curve is over 100 years old; rereading barely slows it",
+  "interrupt": "curve draws with a dot sliding",
+  "rehook_25": "So what does? (near-silence 1)",
+  "save_moment": "THE 3-LINE RULE card",
+  "share_line": "Send this to the friend who highlights everything.",
+  "follow_reason": "Follow for one fix a day. Tomorrow: the one rule for the day after you miss a day (idea #37, build first next run)",
+  "payoff_sound": "reveal when the recall curve finishes high at day 8"
+ },
+ "note": "Facts: Ebbinghaus forgetting curve (1885) is real; curve shape is illustrative, no percentages spoken. Retrieval practice and spacing beat rereading/highlighting (well established in learning research; no study named on screen). Strongest of the batch -> 19:30.",
+ "quality": {
+  "hook": 5,
+  "usefulness": 5,
+  "specificity": 4,
+  "clarity": 5,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 35
+ }
+}

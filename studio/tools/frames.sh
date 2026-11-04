@@ -4,7 +4,7 @@
 # Times in seconds. Frames are laid out left to right at 360x640 each.
 set -euo pipefail
 VID="$1"; shift
-OUT="$(dirname "$0")/../state/frames_$(basename "${VID%.*}")_$(date +%H%M%S).png"
+OUT="$(dirname "$0")/../state/frames_$(basename "$(dirname "$VID")")_$(basename "${VID%.*}")_$(date +%H%M%S).png"
 ARGS=(); FILTER=""; i=0
 for t in "$@"; do ARGS+=(-ss "$t" -i "$VID"); FILTER+="[$i:v]scale=360:640,setsar=1[f$i];"; i=$((i+1)); done
 INS=""; for ((k=0;k<i;k++)); do INS+="[f$k]"; done

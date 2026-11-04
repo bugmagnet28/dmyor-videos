@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "experiment": "V-EXP-33 (chart on frame 0, short arm of the length test, answers the cv7n__ viewer question on ill-wake-time; fulfils ill-caffeine's 'tomorrow' promise) + V-EXP-32 (Kit v2)",
+ "slug": "ill-dark-morning",
+ "hook_type": "hard-truth",
+ "topic": "sleep",
+ "hook": "If it's dark when you wake up, your body thinks it's still night.",
+ "frame": {
+  "structure": "A (method with stakes)",
+  "want": "wake up alert on dark winter mornings",
+  "obstacle": "no daylight before class (up 6:45, class 7:30)",
+  "cost": "first real daylight at 12:30, about 6 hours after waking; a room lamp ~50 lux vs a grey sky ~5,000"
+ },
+ "hooks_considered": [
+  {
+   "formula": "thing nobody admits",
+   "line": "If it's dark when you wake up, your body thinks it's still night.",
+   "checks": "hard truth Y, gap Y (what to do without sun), muted Y (light chart, first daylight 12:30), sendable Y, payoff Y (daylight by 10)",
+   "kept": true
+  },
+  {
+   "formula": "check you can do now",
+   "line": "Look at when you first step outside tomorrow. That's when your day actually starts.",
+   "checks": "long, weaker muted",
+   "kept": false
+  },
+  {
+   "formula": "hidden step",
+   "line": "Every sleep tip says 'get sunlight'. Here's what to do when there isn't any.",
+   "checks": "good gap but opens on a topic, not a truth",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "dark = body thinks it's night (0.0 s, light chart on frame 0, switch sound)",
+  "open_loop": {
+   "promised": "three fixes, no sun needed",
+   "withheld": "what they are"
+  },
+  "stakes": "viewer question: class 7:30, up 6:45, no sun",
+  "rehook_10": "lamp 50 vs grey sky 5,000: daylight at lunch is hours late",
+  "interrupt": "bars grow, then morph",
+  "rehook_25": "near-silence before 'One.'",
+  "save_moment": "DARK MORNING RULE card",
+  "share_line": "Send this to someone who wakes up in the dark.",
+  "follow_reason": "Follow for one fix a day. This afternoon: 400 words and still no coffee (ill-say-sentences, 13:00)",
+  "payoff_sound": "reveal when the 10:00 'Break outside' bar lands"
+ },
+ "note": "Short arm (~45-50 s) of the length test. Facts: light is the main signal for the body clock; typical home lamp light ~50-200 lux, overcast daylight ~1,000-10,000 lux (shown 5,000, said 'far brighter', no ratio claimed aloud). No study cited. 'Give or take an hour on weekends' dropped in the trim; ill-wake-time already covers weekends. Chart uses a square-root height scale with the lux values printed on the bars.",
+ "quality": {
+  "hook": 5,
+  "usefulness": 4,
+  "specificity": 4,
+  "clarity": 5,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 34
+ }
+}
