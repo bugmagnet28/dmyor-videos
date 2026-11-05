@@ -4,7 +4,7 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 ## Ready to post
 
-- Note 2026-11-04 23:00 (Claude): `[~]` = YouTube + X done, Instagram not yet. Instagram browser stopped responding during the first upload (ill-busy-week caption typed, not shared). Remaining on Instagram: post ill-busy-week, ill-pickups, ill-caffeine now; schedule ill-dark-morning 09:30, ill-say-sentences 13:00, ill-forget-book 19:30 on Thu Nov 5 (6 flows: split across two sessions, max 5 each).
+- Note 2026-11-05 20:35 (Claude): Tue Nov 3 batch is live on Instagram. Instagram for the Wed/Thu batches: ill-forget-book posted now (Nov 5 ~20:30), ill-caffeine scheduled Nov 5 22:00, ill-dark-morning scheduled Fri Nov 6 09:30 (all likes hidden). STILL TO DO on Instagram: ill-pickups (Fri 13:00), ill-busy-week (Fri 16:30), ill-say-sentences (Fri 19:30). Chrome extension disconnected again. YouTube + X were done on Nov 4.
 
 ## Scheduled Thu 2026-11-05 (auto-approved, was built for Thu; follow lines still chain). YouTube + X scheduled 09:30 / 13:00 / 19:30; Instagram pending
 
