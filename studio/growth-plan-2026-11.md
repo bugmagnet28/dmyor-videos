@@ -90,3 +90,6 @@ Success after 2 weeks: median views ≥ 300 (now ~150), at least 3 reels > 1,000
 2. **Agent login:** runs failed on "OAuth session expired". Owner runs `claude` once in a terminal and logs in.
 3. **Metrics:** one Reels-grid read per day (done by Claude); once a week the owner sends app screenshots of avg watch time and % watched for the top and bottom reels. Without watch time we cannot judge length.
 4. **Reply to comments:** Claude checks comments on the newest reels in each session and drafts short, playful replies (owner style 2026-11-03: sarcastic one-liners).
+
+## 7. Recurring question (owner 2026-11-07)
+Every reel (explainers and pixel stories) addresses: **"Why do we stop doing things we know are good for us?"** Each reel answers it with one specific reason (motivation decay, daily decision, invisible quitting, all-or-nothing, no visible progress, wrong size, ...) and then gives the fix. Number the reasons across reels ("Reason #n") so the series builds.
