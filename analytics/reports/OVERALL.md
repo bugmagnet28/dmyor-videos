@@ -1,18 +1,18 @@
 # Content performance: overall
 
-_Last rebuilt 2026-11-06 18:48 IST from 6 snapshot day(s) and 75 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
+_Last rebuilt 2026-11-06 21:44 IST from 7 snapshot day(s) and 82 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
 
 ## Headline
 
 | Platform | Followers now | Change (first → latest reading) | Posts tracked | Posts with 48h data | Median reach at 48h | Best post (traction) |
 |---|---|---|---|---|---|---|
-| instagram | 22 | 21 → 22 (+1) | 40 | 33 | 39 | ill-wake-time (97) |
+| instagram | 24 | 21 → 24 (+3) | 47 | 37 | 65 | ill-wake-time (96) |
 | youtube | 0 | 0 → 0 (+0) | 31 | 9 | 17 | ill-size-problem (74) |
 | x | 2 | 2 → 2 (+0) | 4 | 2 | 1 | ill-language-plan (50) |
 
 ## Are we improving?
 
-- **instagram**: newer half of posts median reach 128 vs older half 16 → **improving**.
+- **instagram**: newer half of posts median reach 128 vs older half 17 → **improving**.
 - **youtube**: newer half of posts median reach 11 vs older half 30 → **declining**.
 - **x**: only 2 post(s) with 48h data; need 4+ for a trend.
 
@@ -96,39 +96,43 @@ _Last rebuilt 2026-11-06 18:48 IST from 6 snapshot day(s) and 75 tracked post(s)
 
 | # | Post | Posted (IST) | Style | Hook | Reach 48h | Retention % | Shares+saves /1k | Follows /1k | Traction |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | ill-wake-time | 2026-10-31 19:30 | animated-illustration-explainer | hard-truth | 1,124 | – | 20.5 | 0.9 | 97 |
+| 1 | ill-wake-time | 2026-10-31 19:30 | animated-illustration-explainer | hard-truth | 1,124 | – | 20.5 | 0.9 | 96 |
 | 2 | ill-hard-part | 2026-10-30 19:30 | animated-illustration-explainer | hard-truth | 1,448 | – | 11.0 | 0.0 | 88 |
-| 3 | [ill-track-inputs](https://www.instagram.com/reel/De9IEdqzGDC/) | 2026-10-26 16:30 | animated-illustration-explainer | hard-truth | 223 | – | 9.0 | 0.0 | 82 |
-| 4 | [ill-size-problem](https://www.instagram.com/reel/De5zI6YTeeV/) | 2026-10-25 09:30 | animated-illustration-explainer | hard-truth | 272 | – | 0.0 | 0.0 | 71 |
-| 5 | [ill-later-trigger](https://www.instagram.com/reel/De8v_dwzUDu/) | 2026-10-26 13:00 | animated-illustration-explainer | hard-truth | 203 | – | 0.0 | 0.0 | 68 |
-| 6 | ill-one-category | 2026-10-30 09:30 | animated-illustration-explainer | hard-truth | 179 | – | 0.0 | 0.0 | 66 |
-| 7 | ill-twenty-mornings | 2026-10-31 13:00 | animated-illustration-explainer | hard-truth | 158 | – | 0.0 | 0.0 | 65 |
-| 8 | ill-one-sentence | 2026-10-30 13:00 | animated-illustration-explainer | hard-truth | 151 | – | 0.0 | 0.0 | 63 |
-| 9 | [tree-study-abroad](https://www.instagram.com/reel/DezJblYzfye/) | 2026-10-22 19:30 | illustrated-scene | question | 141 | – | 0.0 | 0.0 | 61 |
-| 10 | [ill-bad-day-version](https://www.instagram.com/reel/De6LNpMTDf7/) | 2026-10-25 13:00 | animated-illustration-explainer | hard-truth | 128 | – | 0.0 | 0.0 | 60 |
-| 11 | pixel-book | 2026-10-27 23:55 | pixel-story | story | 127 | – | 0.0 | 0.0 | 58 |
-| 12 | ill-three-recipes | 2026-10-31 09:30 | animated-illustration-explainer | hard-truth | 126 | – | 0.0 | 0.0 | 57 |
-| 13 | [ill-monday-wont-fix-it](https://www.instagram.com/reel/De633j1TDG9/) | 2026-10-25 19:30 | animated-illustration-explainer | hard-truth | 118 | – | 0.0 | 0.0 | 55 |
-| 14 | [ill-night-before](https://www.instagram.com/reel/De8X8KzzMBa/) | 2026-10-26 09:30 | animated-illustration-explainer | hard-truth | 67 | – | 0.0 | 0.0 | 53 |
-| 15 | [someday-is-not-a-day](https://www.instagram.com/reel/Devf-yOz9AS/) | 2026-10-21 09:30 | kinetic-typography | hard-truth | 65 | – | 0.0 | 0.0 | 52 |
-| 16 | [ill-language-plan](https://www.instagram.com/reel/De6jQagTCom/) | 2026-10-25 16:30 | animated-illustration-explainer | how-to-plan | 46 | – | 0.0 | 0.0 | 50 |
-| 17 | [diagram-someday-vo](https://www.instagram.com/reel/De1uUEGzH1P/) | 2026-10-23 19:30 | diagram-motion-graphics | hard-truth | 39 | – | 0.0 | 0.0 | 48 |
-| 18 | [never-miss-twice](https://www.instagram.com/reel/DewyWMxzwg1/) | 2026-10-21 21:30 | kinetic-typography | reassurance-flip | 30 | – | 0.0 | 0.0 | 46 |
-| 19 | brand-one-place | 2026-10-26 22:00 | cinematic-motion | relatable | 30 | – | 0.0 | 0.0 | 46 |
-| 20 | [plan-the-bad-day](https://www.instagram.com/reel/DewCV5ATeLJ/) | 2026-10-21 14:30 | kinetic-typography | hard-truth | 29 | – | 0.0 | 0.0 | 44 |
-| 21 | ill-five-goals | 2026-10-26 19:30 | animated-illustration-explainer | hard-truth | 27 | – | 0.0 | 0.0 | 42 |
-| 22 | [too-many-goals](https://www.instagram.com/reel/Dew5OYwTJZK/) | 2026-10-21 22:30 | kinetic-typography | number-contrast | 26 | – | 0.0 | 0.0 | 40 |
-| 23 | [about-to-start](https://www.instagram.com/reel/DewW-D0TzPm/) | 2026-10-21 17:30 | kinetic-typography | hard-truth | 21 | – | 0.0 | 0.0 | 39 |
-| 24 | [twenty-minutes-a-day](https://www.instagram.com/reel/DevZFYvz8iS/) | 2026-10-21 08:30 | kinetic-typography | number-fact | 18 | – | 0.0 | 0.0 | 37 |
-| 25 | [next-step-not-motivation](https://www.instagram.com/reel/DeulBhStyuO/) | 2026-10-21 00:54 | kinetic-typography | hard-truth | 16 | – | 0.0 | 0.0 | 35 |
-| 26 | [life-in-weeks](https://www.instagram.com/reel/DewQFg0TZfs/) | 2026-10-21 16:30 | kinetic-typography | number-fact | 16 | – | 0.0 | 0.0 | 35 |
-| 27 | [tree-novel](https://www.instagram.com/reel/Dezk97kTy37/) | 2026-10-22 23:30 | illustrated-scene | question | 14 | – | 0.0 | 0.0 | 32 |
-| 28 | [fill-the-blank](https://www.instagram.com/reel/Dewkt5bTJJ1/) | 2026-10-21 19:30 | kinetic-typography | fill-in-the-blank | 10 | – | 0.0 | 0.0 | 30 |
-| 29 | [diagram-howto-vo](https://www.instagram.com/reel/De0pmqQTJ3O/) | 2026-10-23 09:30 | diagram-motion-graphics | question | 10 | – | 0.0 | 0.0 | 30 |
-| 30 | [which-one-is-a-plan](https://www.instagram.com/reel/DexAG3sTNN-/) | 2026-10-21 23:30 | kinetic-typography | quiz | 7 | – | 0.0 | 0.0 | 27 |
-| 31 | [tree-freelance](https://www.instagram.com/reel/DexpYG0zBz4/) | 2026-10-22 05:30 | illustrated-scene | question | 7 | – | 0.0 | 0.0 | 27 |
-| 32 | [three-questions-before-a-goal](https://www.instagram.com/reel/DevEkV9T33l/) | 2026-10-21 05:30 | kinetic-typography | framework-list | 6 | – | 0.0 | 0.0 | 24 |
-| 33 | [start-at-the-end](https://www.instagram.com/reel/Dev0ly8T2f8/) | 2026-10-21 12:30 | kinetic-typography | framework-list | 5 | – | 0.0 | 0.0 | 23 |
+| 3 | [ill-track-inputs](https://www.instagram.com/reel/De9IEdqzGDC/) | 2026-10-26 16:30 | animated-illustration-explainer | hard-truth | 223 | – | 9.0 | 0.0 | 80 |
+| 4 | ill-bad-night | 2026-11-03 09:30 | animated-illustration-explainer | hard-truth | 1,363 | – | 0.0 | 0.0 | 73 |
+| 5 | ill-forget-book | 2026-11-05 20:30 | animated-illustration-explainer | hard-truth | 519 | – | 0.0 | 0.0 | 70 |
+| 6 | [ill-size-problem](https://www.instagram.com/reel/De5zI6YTeeV/) | 2026-10-25 09:30 | animated-illustration-explainer | hard-truth | 272 | – | 0.0 | 0.0 | 69 |
+| 7 | [ill-later-trigger](https://www.instagram.com/reel/De8v_dwzUDu/) | 2026-10-26 13:00 | animated-illustration-explainer | hard-truth | 203 | – | 0.0 | 0.0 | 66 |
+| 8 | ill-one-category | 2026-10-30 09:30 | animated-illustration-explainer | hard-truth | 179 | – | 0.0 | 0.0 | 65 |
+| 9 | ill-twenty-mornings | 2026-10-31 13:00 | animated-illustration-explainer | hard-truth | 158 | – | 0.0 | 0.0 | 63 |
+| 10 | ill-one-sentence | 2026-10-30 13:00 | animated-illustration-explainer | hard-truth | 151 | – | 0.0 | 0.0 | 62 |
+| 11 | [tree-study-abroad](https://www.instagram.com/reel/DezJblYzfye/) | 2026-10-22 19:30 | illustrated-scene | question | 141 | – | 0.0 | 0.0 | 60 |
+| 12 | [ill-bad-day-version](https://www.instagram.com/reel/De6LNpMTDf7/) | 2026-10-25 13:00 | animated-illustration-explainer | hard-truth | 128 | – | 0.0 | 0.0 | 59 |
+| 13 | pixel-book | 2026-10-27 23:55 | pixel-story | story | 127 | – | 0.0 | 0.0 | 57 |
+| 14 | ill-three-recipes | 2026-10-31 09:30 | animated-illustration-explainer | hard-truth | 126 | – | 0.0 | 0.0 | 56 |
+| 15 | [ill-monday-wont-fix-it](https://www.instagram.com/reel/De633j1TDG9/) | 2026-10-25 19:30 | animated-illustration-explainer | hard-truth | 118 | – | 0.0 | 0.0 | 54 |
+| 16 | ill-catch-up | 2026-11-03 19:30 | animated-illustration-explainer | story | 113 | – | 0.0 | 0.0 | 53 |
+| 17 | ill-subscriptions | 2026-11-03 13:00 | animated-illustration-explainer | hard-truth | 80 | – | 0.0 | 0.0 | 52 |
+| 18 | [ill-night-before](https://www.instagram.com/reel/De8X8KzzMBa/) | 2026-10-26 09:30 | animated-illustration-explainer | hard-truth | 67 | – | 0.0 | 0.0 | 50 |
+| 19 | [someday-is-not-a-day](https://www.instagram.com/reel/Devf-yOz9AS/) | 2026-10-21 09:30 | kinetic-typography | hard-truth | 65 | – | 0.0 | 0.0 | 49 |
+| 20 | [ill-language-plan](https://www.instagram.com/reel/De6jQagTCom/) | 2026-10-25 16:30 | animated-illustration-explainer | how-to-plan | 46 | – | 0.0 | 0.0 | 47 |
+| 21 | [diagram-someday-vo](https://www.instagram.com/reel/De1uUEGzH1P/) | 2026-10-23 19:30 | diagram-motion-graphics | hard-truth | 39 | – | 0.0 | 0.0 | 46 |
+| 22 | [never-miss-twice](https://www.instagram.com/reel/DewyWMxzwg1/) | 2026-10-21 21:30 | kinetic-typography | reassurance-flip | 30 | – | 0.0 | 0.0 | 44 |
+| 23 | brand-one-place | 2026-10-26 22:00 | cinematic-motion | relatable | 30 | – | 0.0 | 0.0 | 44 |
+| 24 | [plan-the-bad-day](https://www.instagram.com/reel/DewCV5ATeLJ/) | 2026-10-21 14:30 | kinetic-typography | hard-truth | 29 | – | 0.0 | 0.0 | 41 |
+| 25 | ill-five-goals | 2026-10-26 19:30 | animated-illustration-explainer | hard-truth | 27 | – | 0.0 | 0.0 | 40 |
+| 26 | [too-many-goals](https://www.instagram.com/reel/Dew5OYwTJZK/) | 2026-10-21 22:30 | kinetic-typography | number-contrast | 26 | – | 0.0 | 0.0 | 39 |
+| 27 | [about-to-start](https://www.instagram.com/reel/DewW-D0TzPm/) | 2026-10-21 17:30 | kinetic-typography | hard-truth | 21 | – | 0.0 | 0.0 | 37 |
+| 28 | [twenty-minutes-a-day](https://www.instagram.com/reel/DevZFYvz8iS/) | 2026-10-21 08:30 | kinetic-typography | number-fact | 18 | – | 0.0 | 0.0 | 36 |
+| 29 | [next-step-not-motivation](https://www.instagram.com/reel/DeulBhStyuO/) | 2026-10-21 00:54 | kinetic-typography | hard-truth | 16 | – | 0.0 | 0.0 | 34 |
+| 30 | [life-in-weeks](https://www.instagram.com/reel/DewQFg0TZfs/) | 2026-10-21 16:30 | kinetic-typography | number-fact | 16 | – | 0.0 | 0.0 | 34 |
+| 31 | [tree-novel](https://www.instagram.com/reel/Dezk97kTy37/) | 2026-10-22 23:30 | illustrated-scene | question | 14 | – | 0.0 | 0.0 | 31 |
+| 32 | [fill-the-blank](https://www.instagram.com/reel/Dewkt5bTJJ1/) | 2026-10-21 19:30 | kinetic-typography | fill-in-the-blank | 10 | – | 0.0 | 0.0 | 29 |
+| 33 | [diagram-howto-vo](https://www.instagram.com/reel/De0pmqQTJ3O/) | 2026-10-23 09:30 | diagram-motion-graphics | question | 10 | – | 0.0 | 0.0 | 29 |
+| 34 | [which-one-is-a-plan](https://www.instagram.com/reel/DexAG3sTNN-/) | 2026-10-21 23:30 | kinetic-typography | quiz | 7 | – | 0.0 | 0.0 | 26 |
+| 35 | [tree-freelance](https://www.instagram.com/reel/DexpYG0zBz4/) | 2026-10-22 05:30 | illustrated-scene | question | 7 | – | 0.0 | 0.0 | 26 |
+| 36 | [three-questions-before-a-goal](https://www.instagram.com/reel/DevEkV9T33l/) | 2026-10-21 05:30 | kinetic-typography | framework-list | 6 | – | 0.0 | 0.0 | 24 |
+| 37 | [start-at-the-end](https://www.instagram.com/reel/Dev0ly8T2f8/) | 2026-10-21 12:30 | kinetic-typography | framework-list | 5 | – | 0.0 | 0.0 | 23 |
 
 ### Youtube
 
@@ -155,6 +159,7 @@ _Last rebuilt 2026-11-06 18:48 IST from 6 snapshot day(s) and 75 tracked post(s)
 
 | Post | Platform | Posted (IST) | Latest age (h) | Latest views |
 |---|---|---|---|---|
+| ill-say-sentences | instagram |  | – | 104 |
 | next-step-not-motivation | youtube | 2026-10-21 23:45 | 114 | 8 |
 | three-questions-before-a-goal | youtube | 2026-10-21 23:52 | 114 | 8 |
 | twenty-minutes-a-day | youtube | 2026-10-22 00:00 | 114 | 15 |
@@ -180,17 +185,20 @@ _Last rebuilt 2026-11-06 18:48 IST from 6 snapshot day(s) and 75 tracked post(s)
 | ill-goal-date | youtube | 2026-10-28 16:30 | 127 | 7 |
 | ill-phone-distance | instagram | 2026-10-28 19:30 | 124 | 112 |
 | ill-phone-distance | youtube | 2026-10-28 19:30 | 124 | 0 |
-| ill-unclear-task | instagram | 2026-10-29 09:30 | 110 | 47 |
+| ill-unclear-task | instagram | 2026-10-29 09:30 | 204 | 47 |
 | ill-unclear-task | youtube | 2026-10-29 09:30 | 110 | 11 |
-| ill-ten-pages | instagram | 2026-10-29 13:00 | 107 | 106 |
+| ill-ten-pages | instagram | 2026-10-29 13:00 | 201 | 106 |
 | ill-ten-pages | youtube | 2026-10-29 13:00 | 107 | 22 |
-| ill-gym-day-four | instagram | 2026-10-29 19:30 | 100 | 187 |
+| ill-gym-day-four | instagram | 2026-10-29 19:30 | 194 | 187 |
 | ill-gym-day-four | youtube | 2026-10-29 19:30 | 100 | 5 |
+| ill-caffeine | instagram | 2026-11-05 22:00 | 24 | 169 |
+| ill-dark-morning | instagram | 2026-11-06 09:30 | 12 | 193 |
 
 ## Data gaps
 
-- 44 post(s) have no retention (watch time) data: Instagram web insights do not show it; get app screenshots.
-- In catalog but never measured: x:diagram-howto-vo, x:diagram-someday-vo, x:ill-size-problem, x:ill-later-trigger, x:ill-track-inputs, x:ill-five-goals, youtube:ill-five-goals, x:brand-one-place, youtube:brand-one-place, x:pixel-book, x:ill-save-first, x:ill-career-conversations, x:ill-goal-date, x:ill-phone-distance, x:ill-unclear-task, x:ill-ten-pages, x:ill-gym-day-four, x:ill-one-category, x:ill-one-sentence, x:ill-hard-part, x:ill-three-recipes, x:ill-twenty-mornings, x:ill-wake-time, instagram:ill-bad-night, x:ill-bad-night, youtube:ill-bad-night, instagram:ill-subscriptions, x:ill-subscriptions, youtube:ill-subscriptions, instagram:ill-catch-up, x:ill-catch-up, youtube:ill-catch-up, x:ill-busy-week, x:ill-pickups, x:ill-caffeine, youtube:ill-busy-week, youtube:ill-pickups, youtube:ill-caffeine, x:ill-dark-morning, youtube:ill-dark-morning, x:ill-say-sentences, youtube:ill-say-sentences, x:ill-forget-book, youtube:ill-forget-book, instagram:ill-forget-book, instagram:ill-caffeine, instagram:ill-dark-morning.
+- 48 post(s) have no retention (watch time) data: Instagram web insights do not show it; get app screenshots.
+- Not in catalog (traits unknown): instagram:ill-say-sentences. Register with `record.py content`.
+- In catalog but never measured: x:diagram-howto-vo, x:diagram-someday-vo, x:ill-size-problem, x:ill-later-trigger, x:ill-track-inputs, x:ill-five-goals, youtube:ill-five-goals, x:brand-one-place, youtube:brand-one-place, x:pixel-book, x:ill-save-first, x:ill-career-conversations, x:ill-goal-date, x:ill-phone-distance, x:ill-unclear-task, x:ill-ten-pages, x:ill-gym-day-four, x:ill-one-category, x:ill-one-sentence, x:ill-hard-part, x:ill-three-recipes, x:ill-twenty-mornings, x:ill-wake-time, x:ill-bad-night, youtube:ill-bad-night, x:ill-subscriptions, youtube:ill-subscriptions, x:ill-catch-up, youtube:ill-catch-up, x:ill-busy-week, x:ill-pickups, x:ill-caffeine, youtube:ill-busy-week, youtube:ill-pickups, youtube:ill-caffeine, x:ill-dark-morning, youtube:ill-dark-morning, x:ill-say-sentences, youtube:ill-say-sentences, x:ill-forget-book, youtube:ill-forget-book.
 
 See [WHAT_WORKED.md](WHAT_WORKED.md) for trait-by-trait comparisons and [latest_by_post.csv](latest_by_post.csv) for every number in one table.
 

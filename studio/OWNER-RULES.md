@@ -55,6 +55,9 @@ Full kit and decisions: **`studio/content-kit-v2.md`**, adapted from the owner's
 - Assets stay CC0 only. Real photo/video beats wait for a real-footage hybrid style (next style to build; it would also give the second daily style).
 - Per batch: 2+ story structures, no hook formula twice in a row, all beat maps before any animation.
 
+## 2c. Topic focus (owner 2026-11-06: "reels are going off topic")
+Every reel must link to reaching a big goal and show a hidden mechanism. Pillars, banned topics, length cap and engagement rules: `studio/growth-plan-2026-11.md` (overrides the content kit where they differ).
+
 ## 3. Look and motion
 - **Palette: Graphite & Sage.** bg `#151719`, ink `#E9E7E2`, accent `#9DB8A3`, secondary `#D8CBA8`, warning `#C98B7B`; deeper sage `#5E806A` for accent words on light backgrounds. Orange/black is rejected.
 - **Real graphics in every reel.** Never a captions-only or text-only (kinetic typography) reel (2026-10-24, "just captions won't cut it"). Kinetic type may only be a hook card inside a graphic reel.

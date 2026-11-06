@@ -347,3 +347,8 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - 2026-11-04: batch 2 built for Thu Nov 5: ill-dark-morning (09:30, short arm 46.7 s, light bar chart on frame 0), ill-say-sentences (13:00, story B, 400 vs 0 bar chart, 70.8 s), ill-forget-book (19:30, forgetting curve, 65.7 s). 3 of 3 open on a chart. Expectation: forget-book >= 800 views at 48h (learning + chart + 19:30, like ill-hard-part); dark-morning 300-600 (sleep series, answers a real comment); say-sentences 200-500. Wed batch still unapproved, so no numbers yet for batch 1.
 - 2026-11-06: batch 3 built (Nov 5 run failed, so this is for Fri Nov 6 night / Sat Nov 7): ill-miss-twice (A, short arm 45.6 s, streak-rows chart on frame 0, the #52 promise), ill-ten-minute-reset (story B, home, 240 vs 70 min bar chart, ~69 s), ill-same-weight (C, fitness, flat 40 kg line, ~61 s, strongest). 3 of 3 open on a chart. Expectation at 48h: same-weight >= 800 IG views (gym + chart + correction of a daily behaviour, like ill-hard-part); miss-twice 300-600; reset 200-500 (new area, story). Still no app screenshots for the length test.
 - Result:
+
+## V-EXP-34: On-topic pillars, 35-50 s, series label, comment question (Nov 7-20)
+- Status: running from the next batch
+- Plan and targets: `studio/growth-plan-2026-11.md` section 5. Baseline: median ~150 views, 4 reels >500 of the last 20, followers 24.
+- Result:
