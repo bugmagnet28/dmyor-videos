@@ -1,0 +1,299 @@
+{
+ "total": 68.68,
+ "brandT": 64.98,
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Big Sunday clean",
+      240,
+      "red"
+     ],
+     [
+      "10 minutes a night",
+      70,
+      "acc"
+     ]
+    ],
+    "unit": " min",
+    "max": 240,
+    "chip": "Same flat. 170 minutes back."
+   },
+   "head": "Mess comes in<br><b>10-minute</b> pieces.",
+   "t0": 0.0,
+   "t1": 3.72
+  },
+  {
+   "type": "cost-tally",
+   "params": {
+    "stage": "rowcue",
+    "title": "MEERA'S SUNDAY",
+    "rows": [
+     [
+      "Dishes",
+      "40 min"
+     ],
+     [
+      "Laundry",
+      "70 min"
+     ],
+     [
+      "Desk",
+      "60 min"
+     ],
+     [
+      "Kitchen",
+      "70 min"
+     ]
+    ],
+    "total": 240,
+    "totalLabel": "EVERY SUNDAY",
+    "note": "Messy again by Wednesday",
+    "cue": [
+     "Four",
+     "Wednesday",
+     "cleaned",
+     "laundry",
+     "desk",
+     "kitchen"
+    ],
+    "at": [
+     4.48,
+     5.08,
+     0.82,
+     3.0,
+     3.52,
+     3.98
+    ]
+   },
+   "head": "Four hours,<br><b>every</b> Sunday.",
+   "t0": 3.72,
+   "t1": 10.01
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Sundays a year",
+      52,
+      "ink"
+     ],
+     [
+      "Hours cleaning",
+      208,
+      "red"
+     ]
+    ],
+    "max": 208,
+    "chip": "The same week, 52 times",
+    "cue": [
+     "exactly",
+     "hundred",
+     "year"
+    ],
+    "at": [
+     1.25,
+     3.71,
+     4.41
+    ]
+   },
+   "head": "Over <b>200 hours</b><br>a year.",
+   "t0": 10.01,
+   "t1": 16.09
+  },
+  {
+   "type": "meeting-card",
+   "params": {
+    "title": "10-minute reset",
+    "rows": [
+     "Every day, 9:00 PM",
+     "Timer: 10 minutes"
+    ],
+    "remind": "Rule: back where it lives",
+    "cue": [
+     "nine",
+     "rule"
+    ],
+    "at": [
+     2.37,
+     3.99
+    ]
+   },
+   "head": "Ten minutes,<br><b>every</b> night.",
+   "t0": 16.09,
+   "t1": 22.67
+  },
+  {
+   "type": "question-list",
+   "params": {
+    "title": "THE 10-MINUTE RESET",
+    "items": [
+     "Dishes in the sink",
+     "Clothes off the chair",
+     "Desk cleared"
+    ],
+    "cue": [
+     "Dishes",
+     "clothes",
+     "desk"
+    ],
+    "at": [
+     2.21,
+     2.83,
+     4.11
+    ]
+   },
+   "head": "Just <b>three</b> things.",
+   "t0": 22.67,
+   "t1": 27.75
+  },
+  {
+   "type": "week-tracker",
+   "params": {
+    "on": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "what": "9 PM reset",
+    "stage": "daily",
+    "walk": 4.5,
+    "tick": 0.45
+   },
+   "head": "Night three<br>is the <b>hard</b> one.",
+   "t0": 27.75,
+   "t1": 33.19
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "rows": [
+     [
+      "Sunday cleaning",
+      "4 h",
+      "0"
+     ],
+     [
+      "Minutes a week",
+      "240",
+      "70"
+     ],
+     [
+      "Messy by Wed",
+      "Yes",
+      "No"
+     ]
+    ],
+    "a": "BIG SUNDAY",
+    "b": "10 A NIGHT",
+    "cue": [
+     "Sunday",
+     "flat"
+    ],
+    "at": [
+     1.03,
+     2.57
+    ]
+   },
+   "head": "Her Sunday,<br><b>back</b>.",
+   "t0": 33.19,
+   "t1": 41.13
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "THE 10-MINUTE RESET",
+    "items": [
+     "9 PM, 10-min timer",
+     "Back where it lives",
+     "Sink, chair, desk"
+    ],
+    "cue": [
+     "small",
+     "Screenshot",
+     "Send"
+    ],
+    "at": [
+     0.45,
+     2.99,
+     4.29
+    ]
+   },
+   "head": "Clean the way<br>the mess <b>arrives</b>.",
+   "t0": 41.13,
+   "t1": 47.72
+  },
+  {
+   "type": "week-countdown",
+   "params": {
+    "weeks": 2,
+    "end": "Sunday free",
+    "rows": [
+     "Reset at 9 PM",
+     "Ten minutes",
+     "Same three things"
+    ],
+    "cue": [
+     "Meera",
+     "ten",
+     "goals"
+    ],
+    "at": [
+     0.05,
+     1.86,
+     3.7
+    ]
+   },
+   "head": "Ten minutes<br><b>at a time</b>.",
+   "t0": 47.72,
+   "t1": 52.69
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "A calm home",
+    "date": "Open it again: Jan 2027",
+    "steps": [
+     "9 PM timer",
+     "Back where it lives",
+     "Sunday free"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 52.69,
+   "t1": 60.57
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Same weight, no progress",
+    "when": "Next",
+    "cue": [
+     null,
+     "lifting"
+    ],
+    "at": [
+     0.2,
+     2.21
+    ]
+   },
+   "head": "One fix<br><b>a day</b>.",
+   "t0": 60.57,
+   "t1": 64.98
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  27.7,
+  33.14
+ ]
+}

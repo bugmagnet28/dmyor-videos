@@ -1,6 +1,6 @@
 # Video dashboard (posting on @becauseidmyor, end card @becauseidmyor)
 
-_Last updated: 2026-11-04 IST (run 2026-11-04)_
+_Last updated: 2026-11-06 IST (run 2026-11-06)_
 
 **Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [reel library](library/index.html) · weekly review 2026-11-03 in [strategy.md](strategy.md)
 
@@ -9,8 +9,8 @@ _Last updated: 2026-11-04 IST (run 2026-11-04)_
 | Instagram followers (@becauseidmyor) | **22** (2026-11-02) · +1 from ill-wake-time, the first follow from any reel |
 | Instagram 30-day views | 5,835 (was 1,824 on Oct 28) · 99.6% non-followers |
 | Are we improving? | **Reach: yes.** Followers: barely. YouTube: declining (newer median 11) |
-| Live | Tue Nov 3 batch (ill-bad-night, ill-subscriptions, ill-catch-up). **Nothing scheduled for Wed Nov 4 yet** (09:30 slot passed) |
-| Waiting for approval | **Wed Nov 4** (VASK-023) + **Thu Nov 5** (VASK-024) |
+| Live | Tue Nov 3 batch; Wed + Thu batches on YT + X; IG: forget-book, caffeine, dark-morning live. IG still owes pickups, busy-week, say-sentences |
+| Ready to schedule (auto-approved) | **ill-miss-twice** (Fri 22:00), **ill-ten-minute-reset** (Sat 13:00), **ill-same-weight** (Sat 19:30) |
 
 ## Last reels with numbers (IG views, grid read Nov 2)
 | Reel | Posted | Views | Saves | Shares | Follows |
@@ -23,23 +23,15 @@ _Last updated: 2026-11-04 IST (run 2026-11-04)_
 | ill-one-sentence | Fri Oct 30 13:00 | 151 | | | |
 | ill-goal-date (worst) | Wed Oct 28 16:30 | 13 | | | |
 
-## Waiting for approval: Thu Nov 5 batch (V-EXP-33 batch 2, all three open on a chart)
+## Built today: Fri night / Sat Nov 7 batch (V-EXP-33 batch 3, all three open on a chart)
 | Time (IST) | Reel | Structure | Length | Hook | Frame 0 | Score |
 |---|---|---|---|---|---|---|
-| 09:30 | ill-dark-morning | A | 46.7 s (short arm) | "If it's dark when you wake up, your body thinks it's still night." | light bar chart, first daylight 12:30 | 34/40 |
-| 13:00 | ill-say-sentences | B (story, Ana) | 70.8 s | "You can know 400 words and still freeze ordering a coffee." | 400 words vs 0 sentences bars | 35/40 |
-| 19:30 | ill-forget-book | C | 65.7 s | "A week after you finish a book, most of it is gone." | forgetting curve | 35/40 |
+| Fri 22:00 | ill-miss-twice | A | 45.6 s (short arm) | "Missing one day doesn't break a habit. Missing the second day does." | streak rows, 11 of 12 vs 4 of 12 | 35/40 |
+| Sat 13:00 | ill-ten-minute-reset | B (story, Meera) | ~69 s | "Your room doesn't get messy on Sunday. It gets messy ten minutes at a time." | 240 vs 70 min bars | 34/40 |
+| Sat 19:30 | ill-same-weight | C | ~61 s | "If you've lifted the same weight for two months, you're not training. You're maintaining." | flat 40 kg line, 8 weeks | 35/40 |
 
-19:30 promises "tomorrow: the one rule for the day after you miss a day" (idea #52, build first next run).
-
-## Waiting for approval: Wed Nov 4 batch (V-EXP-33 first batch)
-| Time (IST) | Reel | Structure | Length | Hook | Frame 0 | Score |
-|---|---|---|---|---|---|---|
-| 09:30 | ill-busy-week | A (compressed) | 44.8 s (short arm) | "You don't need a free week for a big goal. You need three half-hours." | week calendar, 3 blocks | 34/40 |
-| 13:00 | ill-pickups | C | 68.6 s | "Your screen time isn't the real problem. Your pickups are." | Screen Time bar chart, 90 pickups | 35/40 |
-| 19:30 | ill-caffeine | C | 67.1 s | "Your 4 PM coffee is still in you at bedtime." | caffeine curve, 1/2 cup at bedtime | 36/40 |
-
-19:30 promises "tomorrow: when it's still dark at wake-up": built (ill-dark-morning, Thu 09:30).
+Follow lines say "Next" (slot-proof). ill-same-weight promises "the first ten minutes of your morning" (idea #39): build first next run.
+Previous batches (Wed Nov 4, Thu Nov 5) are live/scheduled; see post-queue.md.
 
 ## What the data says
 - **Signal:** animated illustration 8.6x the rest on IG reach (n=14). Hard-truth hooks 7.9x (n=18); question hooks 0.3x.
@@ -48,12 +40,10 @@ _Last updated: 2026-11-04 IST (run 2026-11-04)_
 
 ## Open experiments
 - V-EXP-32 Content Kit v2: batches Oct 31, Nov 3, Nov 4. First follow ever came from it; floor not lifted yet.
-- V-EXP-33 chart hooks + length test: batch 1 Wed Nov 4 (unapproved), batch 2 Thu Nov 5 built.
+- V-EXP-33 chart hooks + length test: batches Nov 4, Nov 5 live; batch 3 built Nov 6.
 
 ## Asks
-- VASK-023: approve Wed batch (09:30 already missed: post 13:00 + 19:30 today, or shift a day).
-- VASK-024: approve Thu batch.
-- App screenshots of avg watch % for ill-wake-time, ill-hard-part, ill-bad-night (length test).
+- VASK-025: app screenshots of avg watch time for wake-time, hard-part, bad-night, busy-week, caffeine, dark-morning, forget-book (length test); schedule the new batch.
 
 ## Known gaps
 - Only one style passes OWNER-RULES; second daily style still owed.

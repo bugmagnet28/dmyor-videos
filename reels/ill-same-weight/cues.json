@@ -1,0 +1,1384 @@
+{
+ "audio": "audio.mp3",
+ "duration": 61.27,
+ "text": "If you've lifted the same weight for two months you're not training, you're maintaining. Bench press 40 kilos three sets of eight every Monday Wednesday and Friday for eight weeks. That's 24 sessions and not one of them asked your body for more than it could already do, so it had no reason to change. The fix has a name double progression and all it needs is a notebook. One pick a rep range eight to ten two every session try to add one rep eight eight eight then nine nine eight then ten ten nine three when all three sets hit 10 add two and a half kilos and drop back to eight so what happens in the same eight weeks 40 becomes 50 same gym same days same time the only change is one more rep send this to your gym partner screenshot the rule eight to ten reps one more rep each session all tens add two and a half kilos that's what demure is for you archive your dream today so you can see it tomorrow and break it down into small steps you can actually do follow for one fix a day next the first 10 minutes of your morning if you want to try it out i've put the link in the bio",
+ "words": [
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 0.0,
+   "e": 0.26
+  },
+  {
+   "w": "youve",
+   "raw": "you've",
+   "s": 0.26,
+   "e": 0.48
+  },
+  {
+   "w": "lifted",
+   "raw": "lifted",
+   "s": 0.48,
+   "e": 0.7
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 0.7,
+   "e": 0.88
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 0.88,
+   "e": 1.1
+  },
+  {
+   "w": "weight",
+   "raw": "weight",
+   "s": 1.1,
+   "e": 1.34
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 1.34,
+   "e": 1.54
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 1.54,
+   "e": 1.72
+  },
+  {
+   "w": "months",
+   "raw": "months",
+   "s": 1.72,
+   "e": 1.94
+  },
+  {
+   "w": "youre",
+   "raw": "you're",
+   "s": 1.94,
+   "e": 2.18
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 2.18,
+   "e": 2.32
+  },
+  {
+   "w": "training",
+   "raw": "training,",
+   "s": 2.32,
+   "e": 2.66
+  },
+  {
+   "w": "youre",
+   "raw": "you're",
+   "s": 3.0,
+   "e": 3.08
+  },
+  {
+   "w": "maintaining",
+   "raw": "maintaining.",
+   "s": 3.08,
+   "e": 3.52
+  },
+  {
+   "w": "bench",
+   "raw": "Bench",
+   "s": 4.08,
+   "e": 4.2
+  },
+  {
+   "w": "press",
+   "raw": "press",
+   "s": 4.2,
+   "e": 4.52
+  },
+  {
+   "w": "40",
+   "raw": "40",
+   "s": 4.52,
+   "e": 4.98
+  },
+  {
+   "w": "kilos",
+   "raw": "kilos",
+   "s": 4.98,
+   "e": 5.46
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 5.46,
+   "e": 5.7
+  },
+  {
+   "w": "sets",
+   "raw": "sets",
+   "s": 5.7,
+   "e": 5.92
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 5.92,
+   "e": 6.08
+  },
+  {
+   "w": "eight",
+   "raw": "eight",
+   "s": 6.08,
+   "e": 6.26
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 6.26,
+   "e": 6.7
+  },
+  {
+   "w": "monday",
+   "raw": "Monday",
+   "s": 6.7,
+   "e": 7.04
+  },
+  {
+   "w": "wednesday",
+   "raw": "Wednesday",
+   "s": 7.04,
+   "e": 7.36
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 7.36,
+   "e": 7.6
+  },
+  {
+   "w": "friday",
+   "raw": "Friday",
+   "s": 7.6,
+   "e": 7.88
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 7.88,
+   "e": 8.16
+  },
+  {
+   "w": "eight",
+   "raw": "eight",
+   "s": 8.16,
+   "e": 8.36
+  },
+  {
+   "w": "weeks",
+   "raw": "weeks.",
+   "s": 8.36,
+   "e": 8.72
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 9.04,
+   "e": 9.4
+  },
+  {
+   "w": "24",
+   "raw": "24",
+   "s": 9.4,
+   "e": 9.86
+  },
+  {
+   "w": "sessions",
+   "raw": "sessions",
+   "s": 9.86,
+   "e": 10.3
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 10.3,
+   "e": 10.66
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 10.66,
+   "e": 10.86
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 10.86,
+   "e": 11.04
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 11.04,
+   "e": 11.14
+  },
+  {
+   "w": "them",
+   "raw": "them",
+   "s": 11.14,
+   "e": 11.24
+  },
+  {
+   "w": "asked",
+   "raw": "asked",
+   "s": 11.24,
+   "e": 11.56
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 11.56,
+   "e": 11.74
+  },
+  {
+   "w": "body",
+   "raw": "body",
+   "s": 11.74,
+   "e": 12.0
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 12.0,
+   "e": 12.24
+  },
+  {
+   "w": "more",
+   "raw": "more",
+   "s": 12.24,
+   "e": 12.42
+  },
+  {
+   "w": "than",
+   "raw": "than",
+   "s": 12.42,
+   "e": 12.56
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 12.56,
+   "e": 12.66
+  },
+  {
+   "w": "could",
+   "raw": "could",
+   "s": 12.66,
+   "e": 12.8
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 12.8,
+   "e": 13.08
+  },
+  {
+   "w": "do",
+   "raw": "do,",
+   "s": 13.08,
+   "e": 13.48
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 13.68,
+   "e": 14.08
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 14.08,
+   "e": 14.18
+  },
+  {
+   "w": "had",
+   "raw": "had",
+   "s": 14.18,
+   "e": 14.3
+  },
+  {
+   "w": "no",
+   "raw": "no",
+   "s": 14.3,
+   "e": 14.54
+  },
+  {
+   "w": "reason",
+   "raw": "reason",
+   "s": 14.54,
+   "e": 14.76
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 14.76,
+   "e": 15.04
+  },
+  {
+   "w": "change",
+   "raw": "change.",
+   "s": 15.04,
+   "e": 15.46
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 15.9,
+   "e": 16.04
+  },
+  {
+   "w": "fix",
+   "raw": "fix",
+   "s": 16.04,
+   "e": 16.18
+  },
+  {
+   "w": "has",
+   "raw": "has",
+   "s": 16.18,
+   "e": 16.4
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 16.4,
+   "e": 16.54
+  },
+  {
+   "w": "name",
+   "raw": "name",
+   "s": 16.54,
+   "e": 16.82
+  },
+  {
+   "w": "double",
+   "raw": "double",
+   "s": 16.82,
+   "e": 17.1
+  },
+  {
+   "w": "progression",
+   "raw": "progression",
+   "s": 17.1,
+   "e": 17.6
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 17.6,
+   "e": 18.02
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 18.02,
+   "e": 18.18
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 18.18,
+   "e": 18.3
+  },
+  {
+   "w": "needs",
+   "raw": "needs",
+   "s": 18.3,
+   "e": 18.54
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 18.54,
+   "e": 18.7
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 18.7,
+   "e": 18.84
+  },
+  {
+   "w": "notebook",
+   "raw": "notebook.",
+   "s": 18.84,
+   "e": 19.16
+  },
+  {
+   "w": "one",
+   "raw": "One",
+   "s": 19.64,
+   "e": 19.82
+  },
+  {
+   "w": "pick",
+   "raw": "pick",
+   "s": 19.82,
+   "e": 19.98
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 19.98,
+   "e": 20.1
+  },
+  {
+   "w": "rep",
+   "raw": "rep",
+   "s": 20.1,
+   "e": 20.22
+  },
+  {
+   "w": "range",
+   "raw": "range",
+   "s": 20.22,
+   "e": 20.52
+  },
+  {
+   "w": "eight",
+   "raw": "eight",
+   "s": 20.52,
+   "e": 20.74
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 20.74,
+   "e": 20.88
+  },
+  {
+   "w": "ten",
+   "raw": "ten",
+   "s": 20.88,
+   "e": 21.12
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 21.12,
+   "e": 21.4
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 21.4,
+   "e": 21.72
+  },
+  {
+   "w": "session",
+   "raw": "session",
+   "s": 21.72,
+   "e": 22.12
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 22.12,
+   "e": 22.34
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 22.34,
+   "e": 22.48
+  },
+  {
+   "w": "add",
+   "raw": "add",
+   "s": 22.48,
+   "e": 22.62
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 22.62,
+   "e": 22.84
+  },
+  {
+   "w": "rep",
+   "raw": "rep",
+   "s": 22.84,
+   "e": 23.14
+  },
+  {
+   "w": "eight",
+   "raw": "eight",
+   "s": 23.14,
+   "e": 23.66
+  },
+  {
+   "w": "eight",
+   "raw": "eight",
+   "s": 23.66,
+   "e": 23.92
+  },
+  {
+   "w": "eight",
+   "raw": "eight",
+   "s": 23.92,
+   "e": 24.12
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 24.12,
+   "e": 24.32
+  },
+  {
+   "w": "nine",
+   "raw": "nine",
+   "s": 24.32,
+   "e": 24.6
+  },
+  {
+   "w": "nine",
+   "raw": "nine",
+   "s": 24.6,
+   "e": 24.84
+  },
+  {
+   "w": "eight",
+   "raw": "eight",
+   "s": 24.84,
+   "e": 25.16
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 25.16,
+   "e": 25.58
+  },
+  {
+   "w": "ten",
+   "raw": "ten",
+   "s": 25.58,
+   "e": 25.84
+  },
+  {
+   "w": "ten",
+   "raw": "ten",
+   "s": 25.84,
+   "e": 26.1
+  },
+  {
+   "w": "nine",
+   "raw": "nine",
+   "s": 26.1,
+   "e": 26.5
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 26.5,
+   "e": 27.06
+  },
+  {
+   "w": "when",
+   "raw": "when",
+   "s": 27.06,
+   "e": 27.26
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 27.26,
+   "e": 27.46
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 27.46,
+   "e": 27.68
+  },
+  {
+   "w": "sets",
+   "raw": "sets",
+   "s": 27.68,
+   "e": 27.94
+  },
+  {
+   "w": "hit",
+   "raw": "hit",
+   "s": 27.94,
+   "e": 28.14
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 28.14,
+   "e": 28.44
+  },
+  {
+   "w": "add",
+   "raw": "add",
+   "s": 28.44,
+   "e": 28.78
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 28.78,
+   "e": 28.94
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 28.94,
+   "e": 29.08
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 29.08,
+   "e": 29.12
+  },
+  {
+   "w": "half",
+   "raw": "half",
+   "s": 29.12,
+   "e": 29.3
+  },
+  {
+   "w": "kilos",
+   "raw": "kilos",
+   "s": 29.3,
+   "e": 29.78
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 29.78,
+   "e": 29.9
+  },
+  {
+   "w": "drop",
+   "raw": "drop",
+   "s": 29.9,
+   "e": 30.08
+  },
+  {
+   "w": "back",
+   "raw": "back",
+   "s": 30.08,
+   "e": 30.32
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 30.32,
+   "e": 30.52
+  },
+  {
+   "w": "eight",
+   "raw": "eight",
+   "s": 30.52,
+   "e": 30.74
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 30.74,
+   "e": 31.26
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 31.26,
+   "e": 31.44
+  },
+  {
+   "w": "happens",
+   "raw": "happens",
+   "s": 31.44,
+   "e": 31.8
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 31.8,
+   "e": 32.02
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 32.02,
+   "e": 32.18
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 32.18,
+   "e": 32.42
+  },
+  {
+   "w": "eight",
+   "raw": "eight",
+   "s": 32.42,
+   "e": 32.64
+  },
+  {
+   "w": "weeks",
+   "raw": "weeks",
+   "s": 32.64,
+   "e": 33.06
+  },
+  {
+   "w": "40",
+   "raw": "40",
+   "s": 33.06,
+   "e": 34.04
+  },
+  {
+   "w": "becomes",
+   "raw": "becomes",
+   "s": 34.04,
+   "e": 34.4
+  },
+  {
+   "w": "50",
+   "raw": "50",
+   "s": 34.4,
+   "e": 34.82
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 34.82,
+   "e": 35.32
+  },
+  {
+   "w": "gym",
+   "raw": "gym",
+   "s": 35.32,
+   "e": 35.62
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 35.62,
+   "e": 35.94
+  },
+  {
+   "w": "days",
+   "raw": "days",
+   "s": 35.94,
+   "e": 36.26
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 36.26,
+   "e": 36.54
+  },
+  {
+   "w": "time",
+   "raw": "time",
+   "s": 36.54,
+   "e": 36.94
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 36.94,
+   "e": 37.12
+  },
+  {
+   "w": "only",
+   "raw": "only",
+   "s": 37.12,
+   "e": 37.44
+  },
+  {
+   "w": "change",
+   "raw": "change",
+   "s": 37.44,
+   "e": 37.74
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 37.74,
+   "e": 37.94
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 37.94,
+   "e": 38.14
+  },
+  {
+   "w": "more",
+   "raw": "more",
+   "s": 38.14,
+   "e": 38.36
+  },
+  {
+   "w": "rep",
+   "raw": "rep",
+   "s": 38.36,
+   "e": 38.66
+  },
+  {
+   "w": "send",
+   "raw": "send",
+   "s": 38.66,
+   "e": 39.24
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 39.24,
+   "e": 39.42
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 39.42,
+   "e": 39.56
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 39.56,
+   "e": 39.68
+  },
+  {
+   "w": "gym",
+   "raw": "gym",
+   "s": 39.68,
+   "e": 39.9
+  },
+  {
+   "w": "partner",
+   "raw": "partner",
+   "s": 39.9,
+   "e": 40.42
+  },
+  {
+   "w": "screenshot",
+   "raw": "screenshot",
+   "s": 40.42,
+   "e": 41.2
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 41.2,
+   "e": 41.4
+  },
+  {
+   "w": "rule",
+   "raw": "rule",
+   "s": 41.4,
+   "e": 41.6
+  },
+  {
+   "w": "eight",
+   "raw": "eight",
+   "s": 41.6,
+   "e": 41.84
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 41.84,
+   "e": 41.98
+  },
+  {
+   "w": "ten",
+   "raw": "ten",
+   "s": 41.98,
+   "e": 42.16
+  },
+  {
+   "w": "reps",
+   "raw": "reps",
+   "s": 42.16,
+   "e": 42.48
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 42.48,
+   "e": 42.92
+  },
+  {
+   "w": "more",
+   "raw": "more",
+   "s": 42.92,
+   "e": 43.08
+  },
+  {
+   "w": "rep",
+   "raw": "rep",
+   "s": 43.08,
+   "e": 43.26
+  },
+  {
+   "w": "each",
+   "raw": "each",
+   "s": 43.26,
+   "e": 43.44
+  },
+  {
+   "w": "session",
+   "raw": "session",
+   "s": 43.44,
+   "e": 43.78
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 43.78,
+   "e": 44.04
+  },
+  {
+   "w": "tens",
+   "raw": "tens",
+   "s": 44.04,
+   "e": 44.38
+  },
+  {
+   "w": "add",
+   "raw": "add",
+   "s": 44.38,
+   "e": 44.7
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 44.7,
+   "e": 44.88
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 44.88,
+   "e": 45.02
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 45.02,
+   "e": 45.06
+  },
+  {
+   "w": "half",
+   "raw": "half",
+   "s": 45.06,
+   "e": 45.24
+  },
+  {
+   "w": "kilos",
+   "raw": "kilos",
+   "s": 45.24,
+   "e": 45.8
+  },
+  {
+   "w": "thats",
+   "raw": "that's",
+   "s": 45.8,
+   "e": 46.46
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 46.46,
+   "e": 46.64
+  },
+  {
+   "w": "demure",
+   "raw": "demure",
+   "s": 46.64,
+   "e": 47.0
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 47.0,
+   "e": 47.18
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 47.18,
+   "e": 47.46
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 47.46,
+   "e": 47.94
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 47.94,
+   "e": 48.34
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 48.34,
+   "e": 48.54
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 48.54,
+   "e": 48.78
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 48.78,
+   "e": 49.1
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 49.1,
+   "e": 49.36
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 49.36,
+   "e": 49.5
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 49.5,
+   "e": 49.64
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 49.64,
+   "e": 49.88
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 49.88,
+   "e": 50.0
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 50.0,
+   "e": 50.32
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 50.32,
+   "e": 50.76
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 50.76,
+   "e": 50.94
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 50.94,
+   "e": 51.08
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 51.08,
+   "e": 51.28
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 51.28,
+   "e": 51.5
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 51.5,
+   "e": 51.82
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 51.82,
+   "e": 52.14
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 52.14,
+   "e": 52.34
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 52.34,
+   "e": 52.46
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 52.46,
+   "e": 52.78
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 52.78,
+   "e": 53.16
+  },
+  {
+   "w": "follow",
+   "raw": "follow",
+   "s": 53.16,
+   "e": 53.8
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 53.8,
+   "e": 54.08
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 54.08,
+   "e": 54.3
+  },
+  {
+   "w": "fix",
+   "raw": "fix",
+   "s": 54.3,
+   "e": 54.52
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 54.52,
+   "e": 54.68
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 54.68,
+   "e": 54.94
+  },
+  {
+   "w": "next",
+   "raw": "next",
+   "s": 54.94,
+   "e": 55.46
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 55.46,
+   "e": 55.7
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 55.7,
+   "e": 55.94
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 55.94,
+   "e": 56.2
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 56.2,
+   "e": 56.42
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 56.42,
+   "e": 56.6
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 56.6,
+   "e": 56.7
+  },
+  {
+   "w": "morning",
+   "raw": "morning",
+   "s": 56.7,
+   "e": 57.02
+  },
+  {
+   "w": "if",
+   "raw": "if",
+   "s": 57.02,
+   "e": 57.6
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 57.6,
+   "e": 57.72
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 57.72,
+   "e": 57.88
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 57.88,
+   "e": 58.02
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 58.02,
+   "e": 58.26
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 58.26,
+   "e": 58.44
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 58.44,
+   "e": 58.7
+  },
+  {
+   "w": "ive",
+   "raw": "i've",
+   "s": 58.7,
+   "e": 59.02
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 59.02,
+   "e": 59.14
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 59.14,
+   "e": 59.3
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 59.3,
+   "e": 59.48
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 59.48,
+   "e": 59.64
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 59.64,
+   "e": 59.74
+  },
+  {
+   "w": "bio",
+   "raw": "bio",
+   "s": 59.74,
+   "e": 60.02
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 3.52,
+   "text": "If you've lifted the same weight for two months you're not training, you're maintaining."
+  },
+  {
+   "s": 4.08,
+   "e": 8.72,
+   "text": "Bench press 40 kilos three sets of eight every Monday Wednesday and Friday for eight weeks."
+  },
+  {
+   "s": 9.04,
+   "e": 13.48,
+   "text": "That's 24 sessions and not one of them asked your body for more than it could already do,"
+  },
+  {
+   "s": 13.68,
+   "e": 19.16,
+   "text": "so it had no reason to change. The fix has a name double progression and all it needs is a notebook."
+  },
+  {
+   "s": 19.64,
+   "e": 24.12,
+   "text": "One pick a rep range eight to ten two every session try to add one rep eight eight eight"
+  },
+  {
+   "s": 24.12,
+   "e": 29.3,
+   "text": "then nine nine eight then ten ten nine three when all three sets hit 10 add two and a half"
+  },
+  {
+   "s": 29.3,
+   "e": 35.94,
+   "text": "kilos and drop back to eight so what happens in the same eight weeks 40 becomes 50 same gym same"
+  },
+  {
+   "s": 35.94,
+   "e": 41.6,
+   "text": "days same time the only change is one more rep send this to your gym partner screenshot the rule"
+  },
+  {
+   "s": 41.6,
+   "e": 47.0,
+   "text": "eight to ten reps one more rep each session all tens add two and a half kilos that's what demure"
+  },
+  {
+   "s": 47.0,
+   "e": 52.14,
+   "text": "is for you archive your dream today so you can see it tomorrow and break it down into small steps"
+  },
+  {
+   "s": 52.14,
+   "e": 57.02,
+   "text": "you can actually do follow for one fix a day next the first 10 minutes of your morning"
+  },
+  {
+   "s": 57.02,
+   "e": 60.02,
+   "text": "if you want to try it out i've put the link in the bio"
+  }
+ ],
+ "wps": 3.57
+}

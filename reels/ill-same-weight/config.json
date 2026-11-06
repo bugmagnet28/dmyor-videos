@@ -1,0 +1,222 @@
+{
+ "total": 61.22,
+ "brandT": 57.02,
+ "scenes": [
+  {
+   "type": "lift-chart",
+   "params": {
+    "stage": "hook",
+    "chip": "8 weeks. Still 40 kg."
+   },
+   "head": "Same weight.<br><b>Zero</b> progress.",
+   "t0": 0.0,
+   "t1": 4.03
+  },
+  {
+   "type": "lift-chart",
+   "params": {
+    "stage": "draw",
+    "chip": "24 sessions at 40 kg",
+    "cue": [
+     "Forty",
+     "weeks"
+    ],
+    "at": [
+     0.32,
+     4.33
+    ]
+   },
+   "head": "Three sets of eight,<br><b>every</b> week.",
+   "t0": 4.03,
+   "t1": 8.99
+  },
+  {
+   "type": "cost-tally",
+   "params": {
+    "title": "8 WEEKS OF BENCH PRESS",
+    "rows": [
+     [
+      "Sessions",
+      "24"
+     ],
+     [
+      "Sets",
+      "72"
+     ],
+     [
+      "Reps",
+      "576"
+     ]
+    ],
+    "total": 0,
+    "unit": " kg",
+    "totalLabel": "WEIGHT ADDED",
+    "note": "No reason to change",
+    "cue": [
+     "sessions",
+     "asked",
+     "reason"
+    ],
+    "at": [
+     0.87,
+     2.25,
+     5.55
+    ]
+   },
+   "head": "24 sessions.<br><b>0 kg</b> added.",
+   "t0": 8.99,
+   "t1": 15.85
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "SAME EVERY SESSION",
+    "aBig": "3 x 8",
+    "b": "Double progression",
+    "cue": [
+     "name",
+     "Double"
+    ],
+    "at": [
+     0.69,
+     0.97
+    ]
+   },
+   "head": "The fix has<br>a <b>name</b>.",
+   "t0": 15.85,
+   "t1": 19.59
+  },
+  {
+   "type": "rep-log",
+   "params": {
+    "rows": [
+     [
+      "Mon",
+      "8",
+      "8",
+      "8"
+     ],
+     [
+      "Wed",
+      "9",
+      "9",
+      "8"
+     ],
+     [
+      "Fri",
+      "10",
+      "10",
+      "9"
+     ],
+     [
+      "Mon",
+      "10",
+      "10",
+      "10"
+     ]
+    ],
+    "next": "All 10s? Add 2.5 kg",
+    "cue": [
+     "session",
+     "nine",
+     "ten",
+     "Three",
+     "add"
+    ],
+    "at": [
+     2.13,
+     4.73,
+     5.99,
+     6.91,
+     8.85
+    ]
+   },
+   "head": "One more rep,<br><b>every</b> session.",
+   "t0": 19.59,
+   "t1": 30.74
+  },
+  {
+   "type": "lift-chart",
+   "params": {
+    "stage": "fix",
+    "chip2": "Same 8 weeks: 40 \u2192 50 kg",
+    "cue": [
+     "same",
+     "fifty",
+     "only"
+    ],
+    "at": [
+     1.49,
+     3.5,
+     6.43
+    ]
+   },
+   "head": "Same 8 weeks.<br><b>Forty</b> to fifty.",
+   "t0": 30.69,
+   "t1": 40.42
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "DOUBLE PROGRESSION",
+    "items": [
+     "8 to 10 reps",
+     "+1 rep a session",
+     "All 10s: +2.5 kg"
+    ],
+    "cue": [
+     "Eight",
+     "One",
+     "tens"
+    ],
+    "at": [
+     1.23,
+     2.11,
+     3.67
+    ]
+   },
+   "head": "Screenshot<br><b>the rule</b>.",
+   "t0": 40.37,
+   "t1": 45.75
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Bench 60 kg",
+    "date": "Open it again: May 2027",
+    "steps": [
+     "3 x 8 at 40 kg",
+     "+1 rep a session",
+     "All 10s: +2.5 kg"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 45.75,
+   "t1": 53.11
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "The first 10 minutes of your morning",
+    "when": "Next",
+    "cue": [
+     null,
+     "morning"
+    ],
+    "at": [
+     0.2,
+     3.59
+    ]
+   },
+   "head": "One fix<br><b>a day</b>.",
+   "t0": 53.11,
+   "t1": 57.02
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  30.64,
+  32.69
+ ]
+}

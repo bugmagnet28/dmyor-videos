@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "experiment": "V-EXP-33 (chart on frame 0: bar compare; new life area: home) + V-EXP-32 (Kit v2)",
+ "slug": "ill-ten-minute-reset",
+ "hook_type": "story",
+ "topic": "home",
+ "hook": "Your room doesn't get messy on Sunday. It gets messy ten minutes at a time.",
+ "frame": {
+  "structure": "B (want, obstacle, choice, payoff)",
+  "want": "Meera wants a tidy flat without losing her Sunday",
+  "obstacle": "4-hour Sunday clean, messy again by Wednesday",
+  "cost": "240 min a week, about 208 hours a year"
+ },
+ "hooks_considered": [
+  {
+   "formula": "thing nobody admits",
+   "line": "Your room doesn't get messy on Sunday. It gets messy ten minutes at a time.",
+   "checks": "hard truth Y, gap Y (so how do you clean), muted Y (240 vs 70 min chart), sendable Y, payoff Y (Sunday free)",
+   "kept": true
+  },
+  {
+   "formula": "uncomfortable comparison",
+   "line": "Same flat. One costs four hours every Sunday, one costs ten minutes a night.",
+   "checks": "strong muted, but gives the answer away",
+   "kept": false
+  },
+  {
+   "formula": "the before picture",
+   "line": "This is Meera's flat on Wednesday. She cleaned it on Sunday.",
+   "checks": "needs a photo-real flat; we can't draw it well enough",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "mess arrives in 10-minute pieces (0.0 s, 240 vs 70 min bars on frame 0, riffle sound)",
+  "open_loop": {
+   "promised": "a tidy flat and a free Sunday",
+   "withheld": "what she changed"
+  },
+  "stakes": "Meera, 4 hours every Sunday",
+  "rehook_10": "messy again by Wednesday, 200+ hours a year",
+  "interrupt": "calendar event card, then the notepad",
+  "rehook_25": "'The hard part? Night three.' with near-silence 1",
+  "save_moment": "THE 10-MINUTE RESET rule card",
+  "share_line": "Send it to the friend who loses every Sunday to cleaning.",
+  "follow_reason": "Follow for one fix a day. Next: why lifting the same weight stops working (ill-same-weight, next slot)",
+  "payoff_sound": "reveal in before-after"
+ },
+ "note": "Story B, new life area (home). Numbers are Meera's example (4 h × 52 = 208 h, said 'over two hundred'; 10 min × 7 = 70 min). Method is the common nightly 'reset' / tidy-as-you-go routine; no study cited. Bridge to the viewer before naming Dmyor (story rule 2026-10-27).",
+ "quality": {
+  "hook": 4,
+  "usefulness": 5,
+  "specificity": 4,
+  "clarity": 5,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 34
+ }
+}

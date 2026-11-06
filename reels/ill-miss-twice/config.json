@@ -1,0 +1,191 @@
+{
+ "total": 45.62,
+ "brandT": 41.86,
+ "scenes": [
+  {
+   "type": "streak-rows",
+   "params": {
+    "stage": "hook",
+    "chip": "Day two is where it breaks"
+   },
+   "head": "Miss once.<br>Never <b>twice</b>.",
+   "t0": 0.0,
+   "t1": 3.77
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "WEDNESDAY RUN",
+    "aBig": "Missed",
+    "b": "The next day decides it",
+    "cue": [
+     "next",
+     "missed"
+    ],
+    "at": [
+     3.53,
+     2.33
+    ]
+   },
+   "head": "Wednesday:<br><b>missed</b>.",
+   "t0": 3.77,
+   "t1": 8.83
+  },
+  {
+   "type": "streak-rows",
+   "params": {
+    "stage": "draw",
+    "a": "Missed once",
+    "b": "Missed twice",
+    "chip": "One miss became two",
+    "cue": [
+     "catch",
+     "skip",
+     "miss"
+    ],
+    "at": [
+     0.89,
+     3.57,
+     4.7
+    ]
+   },
+   "head": "Catching up<br>is the <b>trap</b>.",
+   "t0": 8.83,
+   "t1": 14.51
+  },
+  {
+   "type": "two-versions",
+   "params": {
+    "title": "Thursday",
+    "tagA": "CATCH UP",
+    "full": "Two runs, 10K",
+    "tagB": "NEXT RUN",
+    "small": "One run, 5K",
+    "noIcon": true,
+    "cue": [
+     "One",
+     "double",
+     "next",
+     "normal"
+    ],
+    "at": [
+     0.05,
+     0.55,
+     1.43,
+     2.29
+    ]
+   },
+   "head": "Don't <b>double</b> up.",
+   "t0": 14.51,
+   "t1": 17.97
+  },
+  {
+   "type": "meeting-card",
+   "params": {
+    "title": "Run, 5K",
+    "rows": [
+     "Thu, 7:00 to 7:40 AM",
+     "Does not repeat"
+    ],
+    "remind": "Reminder: the night before",
+    "cue": [
+     "Thursday",
+     "calendar"
+    ],
+    "at": [
+     1.13,
+     2.55
+    ]
+   },
+   "head": "Book it <b>now</b>.",
+   "t0": 17.97,
+   "t1": 21.81
+  },
+  {
+   "type": "habit-split",
+   "params": {
+    "habit": "Thursday run",
+    "full": "5K run",
+    "fullSub": "good day",
+    "small": "10-minute jog",
+    "smallSub": "bad day",
+    "cue": [
+     "Three",
+     "wrong",
+     "ten"
+    ],
+    "at": [
+     0.05,
+     1.03,
+     1.45
+    ]
+   },
+   "head": "Ten minutes<br><b>counts</b>.",
+   "t0": 21.81,
+   "t1": 24.97
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "NEVER MISS TWICE",
+    "items": [
+     "No catch-up runs",
+     "Book the next one",
+     "10 minutes counts"
+    ],
+    "cue": [
+     "Miss",
+     "Never",
+     "Send"
+    ],
+    "at": [
+     0.05,
+     1.61,
+     2.95
+    ]
+   },
+   "head": "Screenshot<br><b>the rule</b>.",
+   "t0": 24.97,
+   "t1": 30.09
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Run a 10K",
+    "date": "Open it again: Mar 2027",
+    "steps": [
+     "Run Mon Wed Fri",
+     "Never miss twice",
+     "10 min counts"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 30.09,
+   "t1": 37.49
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Your Sunday clean-up, in 10 minutes",
+    "when": "Next",
+    "cue": [
+     null,
+     "minutes"
+    ],
+    "at": [
+     0.2,
+     3.23
+    ]
+   },
+   "head": "One fix<br><b>a day</b>.",
+   "t0": 37.49,
+   "t1": 41.86
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  0.28,
+  24.92
+ ]
+}

@@ -190,3 +190,11 @@ Instagram locked the account ("we locked your account to protect you from a poss
   2. After OK, schedule on Instagram, YouTube Shorts (YouTube title in post.md) and X; tick them in `studio/post-queue.md`.
   3. Still the most useful input: app screenshots of avg watch time + % watched for ill-wake-time, ill-hard-part, ill-bad-night (and busy-week once live). Without them the length test can't be read.
 - Optional: Adam takes from `reels/<slug>/narration-elevenlabs-v3.txt` into `inbox/audio/<slug>.mp3`.
+
+## VASK-025: Watch-time screenshots for the length test + schedule the Fri/Sat batch (2026-11-06)
+- Status: open
+- Why: 6 short-vs-long pairs are now live (busy-week 45 s, dark-morning 47 s vs 65-89 s reels) but no avg watch time has been read since Oct 28. Grid views alone cannot settle the length test.
+- Steps:
+  1. In the Instagram app, open each reel below > View insights, screenshot the "Average watch time" and "Skip rate"/retention screen: ill-wake-time, ill-hard-part, ill-bad-night, ill-busy-week, ill-caffeine, ill-dark-morning, ill-forget-book. Drop them in `inbox/metrics/` (one session, no rush, no browser scraping).
+  2. The new batch is auto-approved: next browser session schedules ill-miss-twice (Fri 22:00 or the next free slot), ill-ten-minute-reset (Sat 13:00), ill-same-weight (Sat 19:30) on IG, YT and X. Max 5 scheduling flows per session; Instagram still owes pickups, busy-week, say-sentences from Fri.
+  3. Optional: Adam takes from `reels/<slug>/narration-elevenlabs-v3.txt` into `inbox/audio/<slug>.mp3`.

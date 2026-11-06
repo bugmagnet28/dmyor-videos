@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "experiment": "V-EXP-33 (chart on frame 0: flat weight line; universal daily behaviour: exercise; strongest, 19:30) + V-EXP-32 (Kit v2)",
+ "slug": "ill-same-weight",
+ "hook_type": "hard-truth",
+ "topic": "fitness",
+ "hook": "If you've lifted the same weight for two months, you're not training. You're maintaining.",
+ "frame": {
+  "structure": "C (mistake, cost, fix)",
+  "want": "get stronger at the gym",
+  "obstacle": "the same 40 kg, 3 x 8, every session",
+  "cost": "24 sessions, 72 sets, 0 kg added in 8 weeks"
+ },
+ "hooks_considered": [
+  {
+   "formula": "thing nobody admits",
+   "line": "If you've lifted the same weight for two months, you're not training. You're maintaining.",
+   "checks": "hard truth Y, gap Y (then what), muted Y (flat red line 8 weeks), sendable Y (gym partner), payoff Y (40 to 50)",
+   "kept": true
+  },
+  {
+   "formula": "expensive mistake",
+   "line": "This one habit at the gym costs you 24 sessions every two months.",
+   "checks": "vaguer, number without context",
+   "kept": false
+  },
+  {
+   "formula": "hidden step",
+   "line": "Every workout plan skips the only step that makes it work: writing your reps down.",
+   "checks": "good but long, and the notebook is a means, not the fix",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "same weight = maintaining (0.0 s, flat 40 kg line on frame 0, plate clink)",
+  "open_loop": {
+   "promised": "a way out of the plateau",
+   "withheld": "the method name and steps"
+  },
+  "stakes": "bench press 40 kg 3 x 8, 3 days a week, 8 weeks",
+  "rehook_10": "24 sessions, 0 kg added",
+  "interrupt": "rep log notebook",
+  "rehook_25": "'So what happens in the same eight weeks?' with near-silence 1",
+  "save_moment": "DOUBLE PROGRESSION rule card",
+  "share_line": "Send this to your gym partner.",
+  "follow_reason": "Follow for one fix a day. Next: the first ten minutes of your morning (idea #39, to build in the next run)",
+  "payoff_sound": "reveal when the staircase reaches 50 kg"
+ },
+ "note": "Double progression is a standard, widely used method (rep range, add reps, then load). 40 to 50 kg in 8 weeks is labelled as this example; plausible for a beginner stuck at 40 kg (+2.5 kg roughly every 2 weeks). No study cited. 'Not one of them asked your body for more than it could already do' is the progressive-overload principle in plain words. Follow line promises idea #39: the next run MUST build it.",
+ "quality": {
+  "hook": 5,
+  "usefulness": 5,
+  "specificity": 5,
+  "clarity": 4,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 35
+ }
+}

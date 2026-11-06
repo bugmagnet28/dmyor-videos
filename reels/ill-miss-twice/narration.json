@@ -1,0 +1,153 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] Missing one day doesn't break a habit. Missing the second day does. || Say you run three times a week, and on Wednesday, you missed it. What you do next decides the habit. || [turn] Most people try to catch up. Two runs on Thursday. It feels heavy, so they skip that too. Now one miss is two. || One. Don't double up. Just the next run, at its normal size. || Two. Book it now. Thursday, seven AM, in your calendar like a meeting. || Three. If Thursday goes wrong, ten minutes counts. Zero doesn't. || [land] Miss once, that's life. Never miss twice. Send this to someone who just missed a day. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] Follow for one fix a day. Next, your Sunday clean-up, in ten minutes a night. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "streak-rows",
+   "params": {
+    "stage": "hook",
+    "chip": "Day two is where it breaks"
+   },
+   "head": "Miss once.<br>Never <b>twice</b>."
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "WEDNESDAY RUN",
+    "aBig": "Missed",
+    "b": "The next day decides it",
+    "cue": [
+     "next",
+     "missed"
+    ]
+   },
+   "head": "Wednesday:<br><b>missed</b>."
+  },
+  {
+   "type": "streak-rows",
+   "params": {
+    "stage": "draw",
+    "a": "Missed once",
+    "b": "Missed twice",
+    "chip": "One miss became two",
+    "cue": [
+     "catch",
+     "skip",
+     "miss"
+    ]
+   },
+   "head": "Catching up<br>is the <b>trap</b>."
+  },
+  {
+   "type": "two-versions",
+   "params": {
+    "title": "Thursday",
+    "tagA": "CATCH UP",
+    "full": "Two runs, 10K",
+    "tagB": "NEXT RUN",
+    "small": "One run, 5K",
+    "noIcon": true,
+    "cue": [
+     "One",
+     "double",
+     "next",
+     "normal"
+    ]
+   },
+   "head": "Don't <b>double</b> up."
+  },
+  {
+   "type": "meeting-card",
+   "params": {
+    "title": "Run, 5K",
+    "rows": [
+     "Thu, 7:00 to 7:40 AM",
+     "Does not repeat"
+    ],
+    "remind": "Reminder: the night before",
+    "cue": [
+     "Thursday",
+     "calendar"
+    ]
+   },
+   "head": "Book it <b>now</b>."
+  },
+  {
+   "type": "habit-split",
+   "params": {
+    "habit": "Thursday run",
+    "full": "5K run",
+    "fullSub": "good day",
+    "small": "10-minute jog",
+    "smallSub": "bad day",
+    "cue": [
+     "Three",
+     "wrong",
+     "ten"
+    ]
+   },
+   "head": "Ten minutes<br><b>counts</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "NEVER MISS TWICE",
+    "items": [
+     "No catch-up runs",
+     "Book the next one",
+     "10 minutes counts"
+    ],
+    "cue": [
+     "Miss",
+     "Never",
+     "Send"
+    ]
+   },
+   "head": "Screenshot<br><b>the rule</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Run a 10K",
+    "date": "Open it again: Mar 2027",
+    "steps": [
+     "Run Mon Wed Fri",
+     "Never miss twice",
+     "10 min counts"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Your Sunday clean-up, in 10 minutes",
+    "when": "Next",
+    "cue": [
+     null,
+     "minutes"
+    ]
+   },
+   "head": "One fix<br><b>a day</b>."
+  },
+  null
+ ],
+ "brand_from": 9,
+ "silences": [
+  "One",
+  "Miss once"
+ ],
+ "caption": {
+  "instagram": "Missing one day doesn't break a habit. Missing the second day does.\n\nThe day after you miss:\n1. Don't double up. No catch-up session, just the next one at its normal size\n2. Book it now, with a time, in your calendar like a meeting\n3. If that day goes wrong, 10 minutes counts. A short version keeps the habit alive. Zero doesn't\n\nMiss once, that's life. Never miss twice.\n\nSend this to someone who just missed a day.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#habits #consistency #running #discipline #selfimprovement #motivation",
+  "x": "Missing one day doesn't break a habit. Missing the second day does.\n\nAfter a miss: don't double up, book the next session now, and if it goes wrong, 10 minutes counts. Never miss twice.",
+  "youtube_title": "How to get back on track after missing a day #Shorts"
+ }
+}

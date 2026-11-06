@@ -1,0 +1,1531 @@
+{
+ "audio": "audio.mp3",
+ "duration": 68.77,
+ "text": "Your room doesn't get messy on Sunday, it gets messy ten minutes at a time. Mira cleaned her flat every Sunday. Dishes, laundry the desk, the kitchen, four hours every single week. And by Wednesday, it looked exactly the same again. That's over two hundred hours a year cleaning up the same week. So she tried something much smaller, every night at nine a ten-minute timer in one rule, everything goes back where it lives. Not a deep clean, just three things. Dishes in the sink, clothes off the chair and the desk cleared. The hard part night three, she was tired and the sink was full, she did it anyway because it was only ten minutes. Two weeks later, her Sunday was free. The flat never got past ten minutes of mess and the whole week took seventy minutes not two hundred and forty. Clean in small pieces the same way the mess arrives, screenshot this, send it to the friend who loses every Sunday to cleaning. Mira got her Sundays back ten minutes at a time, your bigger goals work the same way. That's what Demure is for. You archive your dream today so you can see it tomorrow and break it down into small steps you can actually do. Follow for one fix a day. Next, while lifting the same weight stops working. If you want to try it out, I've put the link in the bio.",
+ "words": [
+  {
+   "w": "your",
+   "raw": "Your",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "room",
+   "raw": "room",
+   "s": 0.32,
+   "e": 0.56
+  },
+  {
+   "w": "doesnt",
+   "raw": "doesn't",
+   "s": 0.56,
+   "e": 0.88
+  },
+  {
+   "w": "get",
+   "raw": "get",
+   "s": 0.88,
+   "e": 1.06
+  },
+  {
+   "w": "messy",
+   "raw": "messy",
+   "s": 1.06,
+   "e": 1.34
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 1.34,
+   "e": 1.56
+  },
+  {
+   "w": "sunday",
+   "raw": "Sunday,",
+   "s": 1.56,
+   "e": 1.92
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 2.22,
+   "e": 2.3
+  },
+  {
+   "w": "gets",
+   "raw": "gets",
+   "s": 2.3,
+   "e": 2.52
+  },
+  {
+   "w": "messy",
+   "raw": "messy",
+   "s": 2.52,
+   "e": 2.86
+  },
+  {
+   "w": "ten",
+   "raw": "ten",
+   "s": 2.86,
+   "e": 3.08
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 3.08,
+   "e": 3.34
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 3.34,
+   "e": 3.5
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 3.5,
+   "e": 3.62
+  },
+  {
+   "w": "time",
+   "raw": "time.",
+   "s": 3.62,
+   "e": 3.96
+  },
+  {
+   "w": "mira",
+   "raw": "Mira",
+   "s": 4.4,
+   "e": 4.54
+  },
+  {
+   "w": "cleaned",
+   "raw": "cleaned",
+   "s": 4.54,
+   "e": 4.76
+  },
+  {
+   "w": "her",
+   "raw": "her",
+   "s": 4.76,
+   "e": 4.94
+  },
+  {
+   "w": "flat",
+   "raw": "flat",
+   "s": 4.94,
+   "e": 5.18
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 5.18,
+   "e": 5.44
+  },
+  {
+   "w": "sunday",
+   "raw": "Sunday.",
+   "s": 5.44,
+   "e": 5.82
+  },
+  {
+   "w": "dishes",
+   "raw": "Dishes,",
+   "s": 6.38,
+   "e": 6.66
+  },
+  {
+   "w": "laundry",
+   "raw": "laundry",
+   "s": 6.72,
+   "e": 7.02
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 7.02,
+   "e": 7.24
+  },
+  {
+   "w": "desk",
+   "raw": "desk,",
+   "s": 7.24,
+   "e": 7.48
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 7.64,
+   "e": 7.7
+  },
+  {
+   "w": "kitchen",
+   "raw": "kitchen,",
+   "s": 7.7,
+   "e": 8.0
+  },
+  {
+   "w": "four",
+   "raw": "four",
+   "s": 8.2,
+   "e": 8.38
+  },
+  {
+   "w": "hours",
+   "raw": "hours",
+   "s": 8.38,
+   "e": 8.72
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 8.72,
+   "e": 9.08
+  },
+  {
+   "w": "single",
+   "raw": "single",
+   "s": 9.08,
+   "e": 9.42
+  },
+  {
+   "w": "week",
+   "raw": "week.",
+   "s": 9.42,
+   "e": 9.68
+  },
+  {
+   "w": "and",
+   "raw": "And",
+   "s": 10.06,
+   "e": 10.22
+  },
+  {
+   "w": "by",
+   "raw": "by",
+   "s": 10.22,
+   "e": 10.38
+  },
+  {
+   "w": "wednesday",
+   "raw": "Wednesday,",
+   "s": 10.38,
+   "e": 10.76
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 10.9,
+   "e": 11.08
+  },
+  {
+   "w": "looked",
+   "raw": "looked",
+   "s": 11.08,
+   "e": 11.26
+  },
+  {
+   "w": "exactly",
+   "raw": "exactly",
+   "s": 11.26,
+   "e": 11.7
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 11.7,
+   "e": 12.0
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 12.0,
+   "e": 12.26
+  },
+  {
+   "w": "again",
+   "raw": "again.",
+   "s": 12.26,
+   "e": 12.56
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 13.16,
+   "e": 13.34
+  },
+  {
+   "w": "over",
+   "raw": "over",
+   "s": 13.34,
+   "e": 13.54
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 13.54,
+   "e": 13.72
+  },
+  {
+   "w": "hundred",
+   "raw": "hundred",
+   "s": 13.72,
+   "e": 13.96
+  },
+  {
+   "w": "hours",
+   "raw": "hours",
+   "s": 13.96,
+   "e": 14.24
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 14.24,
+   "e": 14.42
+  },
+  {
+   "w": "year",
+   "raw": "year",
+   "s": 14.42,
+   "e": 14.6
+  },
+  {
+   "w": "cleaning",
+   "raw": "cleaning",
+   "s": 14.6,
+   "e": 14.92
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 14.92,
+   "e": 15.14
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 15.14,
+   "e": 15.26
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 15.26,
+   "e": 15.48
+  },
+  {
+   "w": "week",
+   "raw": "week.",
+   "s": 15.48,
+   "e": 15.76
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 16.14,
+   "e": 16.34
+  },
+  {
+   "w": "she",
+   "raw": "she",
+   "s": 16.34,
+   "e": 16.48
+  },
+  {
+   "w": "tried",
+   "raw": "tried",
+   "s": 16.48,
+   "e": 16.72
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 16.72,
+   "e": 17.0
+  },
+  {
+   "w": "much",
+   "raw": "much",
+   "s": 17.0,
+   "e": 17.24
+  },
+  {
+   "w": "smaller",
+   "raw": "smaller,",
+   "s": 17.24,
+   "e": 17.68
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 17.94,
+   "e": 18.16
+  },
+  {
+   "w": "night",
+   "raw": "night",
+   "s": 18.16,
+   "e": 18.34
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 18.34,
+   "e": 18.46
+  },
+  {
+   "w": "nine",
+   "raw": "nine",
+   "s": 18.46,
+   "e": 18.72
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 18.72,
+   "e": 18.92
+  },
+  {
+   "w": "ten",
+   "raw": "ten",
+   "s": 18.92,
+   "e": 19.12
+  },
+  {
+   "w": "minute",
+   "raw": "-minute",
+   "s": 19.12,
+   "e": 19.34
+  },
+  {
+   "w": "timer",
+   "raw": "timer",
+   "s": 19.34,
+   "e": 19.62
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 19.62,
+   "e": 19.88
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 19.88,
+   "e": 20.08
+  },
+  {
+   "w": "rule",
+   "raw": "rule,",
+   "s": 20.08,
+   "e": 20.36
+  },
+  {
+   "w": "everything",
+   "raw": "everything",
+   "s": 20.88,
+   "e": 21.1
+  },
+  {
+   "w": "goes",
+   "raw": "goes",
+   "s": 21.1,
+   "e": 21.4
+  },
+  {
+   "w": "back",
+   "raw": "back",
+   "s": 21.4,
+   "e": 21.68
+  },
+  {
+   "w": "where",
+   "raw": "where",
+   "s": 21.68,
+   "e": 21.86
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 21.86,
+   "e": 21.98
+  },
+  {
+   "w": "lives",
+   "raw": "lives.",
+   "s": 21.98,
+   "e": 22.26
+  },
+  {
+   "w": "not",
+   "raw": "Not",
+   "s": 22.72,
+   "e": 22.88
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 22.88,
+   "e": 22.98
+  },
+  {
+   "w": "deep",
+   "raw": "deep",
+   "s": 22.98,
+   "e": 23.14
+  },
+  {
+   "w": "clean",
+   "raw": "clean,",
+   "s": 23.14,
+   "e": 23.46
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 23.68,
+   "e": 23.82
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 23.82,
+   "e": 24.08
+  },
+  {
+   "w": "things",
+   "raw": "things.",
+   "s": 24.08,
+   "e": 24.44
+  },
+  {
+   "w": "dishes",
+   "raw": "Dishes",
+   "s": 24.88,
+   "e": 25.0
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 25.0,
+   "e": 25.14
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 25.14,
+   "e": 25.28
+  },
+  {
+   "w": "sink",
+   "raw": "sink,",
+   "s": 25.28,
+   "e": 25.5
+  },
+  {
+   "w": "clothes",
+   "raw": "clothes",
+   "s": 25.5,
+   "e": 25.84
+  },
+  {
+   "w": "off",
+   "raw": "off",
+   "s": 25.84,
+   "e": 26.06
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 26.06,
+   "e": 26.22
+  },
+  {
+   "w": "chair",
+   "raw": "chair",
+   "s": 26.22,
+   "e": 26.48
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 26.48,
+   "e": 26.66
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 26.66,
+   "e": 26.78
+  },
+  {
+   "w": "desk",
+   "raw": "desk",
+   "s": 26.78,
+   "e": 27.0
+  },
+  {
+   "w": "cleared",
+   "raw": "cleared.",
+   "s": 27.0,
+   "e": 27.34
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 27.8,
+   "e": 27.92
+  },
+  {
+   "w": "hard",
+   "raw": "hard",
+   "s": 27.92,
+   "e": 28.14
+  },
+  {
+   "w": "part",
+   "raw": "part",
+   "s": 28.14,
+   "e": 28.42
+  },
+  {
+   "w": "night",
+   "raw": "night",
+   "s": 28.42,
+   "e": 28.66
+  },
+  {
+   "w": "three",
+   "raw": "three,",
+   "s": 28.66,
+   "e": 28.98
+  },
+  {
+   "w": "she",
+   "raw": "she",
+   "s": 29.16,
+   "e": 29.22
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 29.22,
+   "e": 29.36
+  },
+  {
+   "w": "tired",
+   "raw": "tired",
+   "s": 29.36,
+   "e": 29.7
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 29.7,
+   "e": 29.92
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 29.92,
+   "e": 30.06
+  },
+  {
+   "w": "sink",
+   "raw": "sink",
+   "s": 30.06,
+   "e": 30.2
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 30.2,
+   "e": 30.38
+  },
+  {
+   "w": "full",
+   "raw": "full,",
+   "s": 30.38,
+   "e": 30.68
+  },
+  {
+   "w": "she",
+   "raw": "she",
+   "s": 30.92,
+   "e": 30.98
+  },
+  {
+   "w": "did",
+   "raw": "did",
+   "s": 30.98,
+   "e": 31.12
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 31.12,
+   "e": 31.24
+  },
+  {
+   "w": "anyway",
+   "raw": "anyway",
+   "s": 31.24,
+   "e": 31.54
+  },
+  {
+   "w": "because",
+   "raw": "because",
+   "s": 31.54,
+   "e": 31.84
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 31.84,
+   "e": 31.96
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 31.96,
+   "e": 32.06
+  },
+  {
+   "w": "only",
+   "raw": "only",
+   "s": 32.06,
+   "e": 32.3
+  },
+  {
+   "w": "ten",
+   "raw": "ten",
+   "s": 32.3,
+   "e": 32.52
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes.",
+   "s": 32.52,
+   "e": 32.86
+  },
+  {
+   "w": "two",
+   "raw": "Two",
+   "s": 33.24,
+   "e": 33.48
+  },
+  {
+   "w": "weeks",
+   "raw": "weeks",
+   "s": 33.48,
+   "e": 33.66
+  },
+  {
+   "w": "later",
+   "raw": "later,",
+   "s": 33.66,
+   "e": 34.02
+  },
+  {
+   "w": "her",
+   "raw": "her",
+   "s": 34.1,
+   "e": 34.22
+  },
+  {
+   "w": "sunday",
+   "raw": "Sunday",
+   "s": 34.22,
+   "e": 34.52
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 34.52,
+   "e": 34.76
+  },
+  {
+   "w": "free",
+   "raw": "free.",
+   "s": 34.76,
+   "e": 35.1
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 35.6,
+   "e": 35.76
+  },
+  {
+   "w": "flat",
+   "raw": "flat",
+   "s": 35.76,
+   "e": 35.98
+  },
+  {
+   "w": "never",
+   "raw": "never",
+   "s": 35.98,
+   "e": 36.22
+  },
+  {
+   "w": "got",
+   "raw": "got",
+   "s": 36.22,
+   "e": 36.46
+  },
+  {
+   "w": "past",
+   "raw": "past",
+   "s": 36.46,
+   "e": 36.74
+  },
+  {
+   "w": "ten",
+   "raw": "ten",
+   "s": 36.74,
+   "e": 37.0
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 37.0,
+   "e": 37.22
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 37.22,
+   "e": 37.42
+  },
+  {
+   "w": "mess",
+   "raw": "mess",
+   "s": 37.42,
+   "e": 37.66
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 37.66,
+   "e": 37.96
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 37.96,
+   "e": 38.06
+  },
+  {
+   "w": "whole",
+   "raw": "whole",
+   "s": 38.06,
+   "e": 38.26
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 38.26,
+   "e": 38.5
+  },
+  {
+   "w": "took",
+   "raw": "took",
+   "s": 38.5,
+   "e": 38.7
+  },
+  {
+   "w": "seventy",
+   "raw": "seventy",
+   "s": 38.7,
+   "e": 39.1
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 39.1,
+   "e": 39.46
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 39.46,
+   "e": 39.7
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 39.7,
+   "e": 39.9
+  },
+  {
+   "w": "hundred",
+   "raw": "hundred",
+   "s": 39.9,
+   "e": 40.1
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 40.1,
+   "e": 40.26
+  },
+  {
+   "w": "forty",
+   "raw": "forty.",
+   "s": 40.26,
+   "e": 40.54
+  },
+  {
+   "w": "clean",
+   "raw": "Clean",
+   "s": 41.18,
+   "e": 41.4
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 41.4,
+   "e": 41.58
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 41.58,
+   "e": 41.82
+  },
+  {
+   "w": "pieces",
+   "raw": "pieces",
+   "s": 41.82,
+   "e": 42.24
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 42.24,
+   "e": 42.5
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 42.5,
+   "e": 42.72
+  },
+  {
+   "w": "way",
+   "raw": "way",
+   "s": 42.72,
+   "e": 42.92
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 42.92,
+   "e": 43.04
+  },
+  {
+   "w": "mess",
+   "raw": "mess",
+   "s": 43.04,
+   "e": 43.2
+  },
+  {
+   "w": "arrives",
+   "raw": "arrives,",
+   "s": 43.2,
+   "e": 43.66
+  },
+  {
+   "w": "screenshot",
+   "raw": "screenshot",
+   "s": 44.12,
+   "e": 44.36
+  },
+  {
+   "w": "this",
+   "raw": "this,",
+   "s": 44.36,
+   "e": 44.96
+  },
+  {
+   "w": "send",
+   "raw": "send",
+   "s": 45.42,
+   "e": 45.58
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 45.58,
+   "e": 45.7
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 45.7,
+   "e": 45.8
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 45.8,
+   "e": 45.94
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 45.94,
+   "e": 46.16
+  },
+  {
+   "w": "who",
+   "raw": "who",
+   "s": 46.16,
+   "e": 46.4
+  },
+  {
+   "w": "loses",
+   "raw": "loses",
+   "s": 46.4,
+   "e": 46.62
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 46.62,
+   "e": 47.02
+  },
+  {
+   "w": "sunday",
+   "raw": "Sunday",
+   "s": 47.02,
+   "e": 47.34
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 47.34,
+   "e": 47.62
+  },
+  {
+   "w": "cleaning",
+   "raw": "cleaning.",
+   "s": 47.62,
+   "e": 47.92
+  },
+  {
+   "w": "mira",
+   "raw": "Mira",
+   "s": 48.4,
+   "e": 48.62
+  },
+  {
+   "w": "got",
+   "raw": "got",
+   "s": 48.62,
+   "e": 48.78
+  },
+  {
+   "w": "her",
+   "raw": "her",
+   "s": 48.78,
+   "e": 48.96
+  },
+  {
+   "w": "sundays",
+   "raw": "Sundays",
+   "s": 48.96,
+   "e": 49.26
+  },
+  {
+   "w": "back",
+   "raw": "back",
+   "s": 49.26,
+   "e": 49.58
+  },
+  {
+   "w": "ten",
+   "raw": "ten",
+   "s": 49.58,
+   "e": 49.88
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 49.88,
+   "e": 50.16
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 50.16,
+   "e": 50.32
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 50.32,
+   "e": 50.46
+  },
+  {
+   "w": "time",
+   "raw": "time,",
+   "s": 50.46,
+   "e": 50.76
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 51.1,
+   "e": 51.22
+  },
+  {
+   "w": "bigger",
+   "raw": "bigger",
+   "s": 51.22,
+   "e": 51.42
+  },
+  {
+   "w": "goals",
+   "raw": "goals",
+   "s": 51.42,
+   "e": 51.72
+  },
+  {
+   "w": "work",
+   "raw": "work",
+   "s": 51.72,
+   "e": 52.0
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 52.0,
+   "e": 52.18
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 52.18,
+   "e": 52.44
+  },
+  {
+   "w": "way",
+   "raw": "way.",
+   "s": 52.44,
+   "e": 52.74
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 52.74,
+   "e": 53.48
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 53.48,
+   "e": 53.62
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 53.62,
+   "e": 54.02
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 54.02,
+   "e": 54.16
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 54.16,
+   "e": 54.44
+  },
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 54.84,
+   "e": 54.96
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 54.96,
+   "e": 55.34
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 55.34,
+   "e": 55.56
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 55.56,
+   "e": 55.78
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 55.78,
+   "e": 56.12
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 56.12,
+   "e": 56.36
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 56.36,
+   "e": 56.5
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 56.5,
+   "e": 56.66
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 56.66,
+   "e": 56.88
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 56.88,
+   "e": 57.0
+  },
+  {
+   "w": "tomorrow",
+   "raw": "tomorrow",
+   "s": 57.0,
+   "e": 57.3
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 57.3,
+   "e": 57.76
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 57.76,
+   "e": 57.94
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 57.94,
+   "e": 58.08
+  },
+  {
+   "w": "down",
+   "raw": "down",
+   "s": 58.08,
+   "e": 58.28
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 58.28,
+   "e": 58.5
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 58.5,
+   "e": 58.82
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 58.82,
+   "e": 59.12
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 59.12,
+   "e": 59.34
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 59.34,
+   "e": 59.46
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 59.46,
+   "e": 59.78
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 59.78,
+   "e": 60.1
+  },
+  {
+   "w": "follow",
+   "raw": "Follow",
+   "s": 60.62,
+   "e": 60.8
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 60.8,
+   "e": 61.08
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 61.08,
+   "e": 61.28
+  },
+  {
+   "w": "fix",
+   "raw": "fix",
+   "s": 61.28,
+   "e": 61.5
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 61.5,
+   "e": 61.66
+  },
+  {
+   "w": "day",
+   "raw": "day.",
+   "s": 61.66,
+   "e": 61.88
+  },
+  {
+   "w": "next",
+   "raw": "Next,",
+   "s": 62.28,
+   "e": 62.44
+  },
+  {
+   "w": "while",
+   "raw": "while",
+   "s": 62.7,
+   "e": 62.78
+  },
+  {
+   "w": "lifting",
+   "raw": "lifting",
+   "s": 62.78,
+   "e": 63.1
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 63.1,
+   "e": 63.26
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 63.26,
+   "e": 63.5
+  },
+  {
+   "w": "weight",
+   "raw": "weight",
+   "s": 63.5,
+   "e": 63.74
+  },
+  {
+   "w": "stops",
+   "raw": "stops",
+   "s": 63.74,
+   "e": 64.02
+  },
+  {
+   "w": "working",
+   "raw": "working.",
+   "s": 64.02,
+   "e": 64.54
+  },
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 64.98,
+   "e": 65.1
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 65.1,
+   "e": 65.22
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 65.22,
+   "e": 65.38
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 65.38,
+   "e": 65.52
+  },
+  {
+   "w": "try",
+   "raw": "try",
+   "s": 65.52,
+   "e": 65.74
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 65.74,
+   "e": 65.94
+  },
+  {
+   "w": "out",
+   "raw": "out,",
+   "s": 65.94,
+   "e": 66.18
+  },
+  {
+   "w": "ive",
+   "raw": "I've",
+   "s": 66.4,
+   "e": 66.52
+  },
+  {
+   "w": "put",
+   "raw": "put",
+   "s": 66.52,
+   "e": 66.64
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 66.64,
+   "e": 66.8
+  },
+  {
+   "w": "link",
+   "raw": "link",
+   "s": 66.8,
+   "e": 66.96
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 66.96,
+   "e": 67.14
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 67.14,
+   "e": 67.24
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 67.24,
+   "e": 67.48
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 3.96,
+   "text": "Your room doesn't get messy on Sunday, it gets messy ten minutes at a time."
+  },
+  {
+   "s": 4.4,
+   "e": 8.0,
+   "text": "Mira cleaned her flat every Sunday. Dishes, laundry the desk, the kitchen,"
+  },
+  {
+   "s": 8.2,
+   "e": 12.56,
+   "text": "four hours every single week. And by Wednesday, it looked exactly the same again."
+  },
+  {
+   "s": 13.16,
+   "e": 15.76,
+   "text": "That's over two hundred hours a year cleaning up the same week."
+  },
+  {
+   "s": 16.14,
+   "e": 20.36,
+   "text": "So she tried something much smaller, every night at nine a ten-minute timer in one rule,"
+  },
+  {
+   "s": 20.88,
+   "e": 25.5,
+   "text": "everything goes back where it lives. Not a deep clean, just three things. Dishes in the sink,"
+  },
+  {
+   "s": 25.5,
+   "e": 29.92,
+   "text": "clothes off the chair and the desk cleared. The hard part night three, she was tired and"
+  },
+  {
+   "s": 29.92,
+   "e": 34.02,
+   "text": "the sink was full, she did it anyway because it was only ten minutes. Two weeks later,"
+  },
+  {
+   "s": 34.1,
+   "e": 38.7,
+   "text": "her Sunday was free. The flat never got past ten minutes of mess and the whole week took"
+  },
+  {
+   "s": 38.7,
+   "e": 43.66,
+   "text": "seventy minutes not two hundred and forty. Clean in small pieces the same way the mess arrives,"
+  },
+  {
+   "s": 44.12,
+   "e": 47.92,
+   "text": "screenshot this, send it to the friend who loses every Sunday to cleaning."
+  },
+  {
+   "s": 48.4,
+   "e": 52.74,
+   "text": "Mira got her Sundays back ten minutes at a time, your bigger goals work the same way."
+  },
+  {
+   "s": 52.74,
+   "e": 58.28,
+   "text": "That's what Demure is for. You archive your dream today so you can see it tomorrow and break it down"
+  },
+  {
+   "s": 58.28,
+   "e": 62.44,
+   "text": "into small steps you can actually do. Follow for one fix a day. Next,"
+  },
+  {
+   "s": 62.7,
+   "e": 67.48,
+   "text": "while lifting the same weight stops working. If you want to try it out, I've put the link in the bio."
+  }
+ ],
+ "wps": 3.5
+}

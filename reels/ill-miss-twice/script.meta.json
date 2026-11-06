@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "experiment": "V-EXP-33 (chart on frame 0: streak rows; short arm of the length test; fulfils ill-forget-book's promise 'the one rule for the day after you miss a day') + V-EXP-32 (Kit v2)",
+ "slug": "ill-miss-twice",
+ "hook_type": "hard-truth",
+ "topic": "habits",
+ "hook": "Missing one day doesn't break a habit. Missing the second day does.",
+ "frame": {
+  "structure": "A (method with stakes)",
+  "want": "keep a running habit (3 runs a week) going",
+  "obstacle": "missed Wednesday; the urge to catch up with a double session",
+  "cost": "missed twice: 4 of 12 sessions in 4 weeks vs 11 of 12 when the miss stays single"
+ },
+ "hooks_considered": [
+  {
+   "formula": "the day it breaks",
+   "line": "Missing one day doesn't break a habit. Missing the second day does.",
+   "checks": "hard truth Y, gap Y (what to do on day two), muted Y (streak rows 11 of 12 vs 4 of 12), sendable Y, payoff Y (the rule)",
+   "kept": true
+  },
+  {
+   "formula": "stop doing this first",
+   "line": "Before you get back on track, stop trying to catch up. It cancels everything.",
+   "checks": "good, but the catch-up is one of three steps; narrower",
+   "kept": false
+  },
+  {
+   "formula": "rule of one",
+   "line": "One rule after a missed day. That's the whole system.",
+   "checks": "topic-ish, weaker muted",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "one miss is fine, two breaks it (0.0 s, streak rows on frame 0, pen sound)",
+  "open_loop": {
+   "promised": "what to do the day after",
+   "withheld": "the three steps"
+  },
+  "stakes": "you run 3x a week, Wednesday missed",
+  "rehook_10": "the catch-up trap: two runs Thursday, skipped too, one miss is two",
+  "interrupt": "streak rows replay, then two cards",
+  "rehook_25": "near-silence before 'One.'",
+  "save_moment": "NEVER MISS TWICE rule card",
+  "share_line": "Send this to someone who just missed a day.",
+  "follow_reason": "Follow for one fix a day. Next: your Sunday clean-up in 10 minutes a night (ill-ten-minute-reset, next slot)",
+  "payoff_sound": "none distinct (short arm); rule-card checks"
+ },
+ "note": "Short arm (~45-50 s). 'Never miss twice' is a common habit heuristic (stated as advice, no study cited). The 4-of-12 row is an illustration, labelled 'Missed twice', not data. Running example (3x/week, 5K) is a different area from the same-batch lifting reel. Follow line says 'Next' (not 'tomorrow') so it stays true if the slot slips. Takeaway checked against ill-gym-day-four (Oct 29, move a missed session): this reel's rule is about the day after, no catch-up, smallest version.",
+ "quality": {
+  "hook": 5,
+  "usefulness": 5,
+  "specificity": 4,
+  "clarity": 5,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 35
+ }
+}

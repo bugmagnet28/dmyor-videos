@@ -43,7 +43,7 @@ Every idea hands the viewer **one thing they can do today** (see `quality-bar.md
 | 37 | "Missed a day? Here's the only rule that matters." (restart rule) | Never miss twice: after a miss, next session is fixed in the calendar | ILL | |
 
 | 38 | "You're not getting better because you keep practising the part you can already do." | Find where you break down, loop only that slowly (10 clean, then faster), 10 min before the whole thing; language: record 1 min of speaking | ILL | 2026-10-28 built (ill-hard-part, for Oct 30) |
-| 39 | "You don't need a morning routine. You need a first 10 minutes." | Write the first 10 minutes of tomorrow in 3 lines tonight; phone stays off until they are done | ILL | |
+| 39 | "You don't need a morning routine. You need a first 10 minutes." | Write the first 10 minutes of tomorrow in 3 lines tonight; phone stays off until they are done | ILL | **PROMISED by ill-same-weight follow line ('Next: the first ten minutes of your morning'): build in the next run** |
 | 40 | "Learning to cook? Stop collecting recipes. Master 3." | Pick 3 weeknight dinners, cook each twice this week, write the shopping list once | ILL | 2026-10-29 built (ill-three-recipes, for Oct 31) |
 | 41 | "The free weekend never comes." (story, Maya) | 20 min every morning, one skill a week, redo the week when it goes wrong | ILL story B | 2026-10-29 built (ill-twenty-mornings, for Oct 31) |
 | 42 | "You can't fix your sleep at night. You fix it in the morning." | Same wake time 7 days, daylight within 10 min, wind-down alarm, weekends +1 h max | ILL A | 2026-10-29 built (ill-wake-time, for Oct 31) |
@@ -56,6 +56,8 @@ Every idea hands the viewer **one thing they can do today** (see `quality-bar.md
 | 49 | "Practising a language? Stop learning words you never say." (hard-part follow-up, new method) | Write the 20 sentences you actually say in a day, learn those first; say them aloud daily | ILL C | 2026-11-04 built as story B (ill-say-sentences, Ana, Thu Nov 5 13:00) |
 | 50 | "Your afternoon crash starts at lunch." | 10-min walk after lunch + hardest task before noon; chart: energy line | ILL A | held: the walk-for-the-slump overlaps ill-caffeine (Nov 4); not before Nov 11 |
 | 51 | "A week after you finish a book, most of it is gone." | 3 lines from memory when you close it, again next day, again in a week; chart: forgetting curve | ILL C | 2026-11-04 built (ill-forget-book, Thu Nov 5 19:30) |
-| 52 | **PROMISED (ill-forget-book follow line): "The one rule for the day after you miss a day"** (#37 never miss twice) | After a miss, the next session is fixed in the calendar with the smallest version; chart: streak with one gap vs two | ILL A | **build first next run, for Fri Nov 6** |
+| 52 | **PROMISED (ill-forget-book follow line): "The one rule for the day after you miss a day"** (#37 never miss twice) | After a miss, the next session is fixed in the calendar with the smallest version; chart: streak with one gap vs two | ILL A | 2026-11-06 built (ill-miss-twice, short arm) |
+| 53 | "Your room doesn't get messy on Sunday. It gets messy ten minutes at a time." (story, Meera) | 10-minute reset every night at 9 PM: timer, everything back where it lives, sink/chair/desk; 70 min a week vs a 4-hour Sunday | ILL story B | 2026-11-06 built (ill-ten-minute-reset) |
+| 54 | "If you've lifted the same weight for two months, you're not training. You're maintaining." | Double progression: 8-10 rep range, +1 rep a session, all 10s → +2.5 kg and back to 8; write every set | ILL C | 2026-11-06 built (ill-same-weight) |
 
 Rules: avoid pure quotes/motivation, avoid promising locked features ("full features are releasing soon"), one takeaway per reel, specific numbers and real examples, fuller spoken narration (write for the ear).

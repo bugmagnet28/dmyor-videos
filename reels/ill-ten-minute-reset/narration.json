@@ -1,0 +1,250 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] Your room doesn't get messy on Sunday. It gets messy ten minutes at a time. || Meera cleaned her flat every Sunday. Dishes, laundry, the desk, the kitchen. Four hours, every single week. || [turn] And by Wednesday, it looked exactly the same again. That's over two hundred hours a year, cleaning up the same week. || So she tried something much smaller. Every night at nine, a ten-minute timer, and one rule. Everything goes back where it lives. || Not a deep clean. Just three things. Dishes in the sink, clothes off the chair, and the desk cleared. || The hard part? Night three. She was tired, and the sink was full. She did it anyway, because it was only ten minutes. || [land] Two weeks later, her Sunday was free. The flat never got past ten minutes of mess, and the whole week took seventy minutes, not two hundred and forty. || Clean in small pieces, the same way the mess arrives. Screenshot this. Send it to the friend who loses every Sunday to cleaning. || Meera got her Sundays back ten minutes at a time. Your bigger goals work the same way. || [outro] That's what Dmyor is for. You archive your dream today, so you can see it tomorrow, and break it down into small steps you can actually do. || [outro] Follow for one fix a day. Next, why lifting the same weight stops working. || [outro] If you want to try it out, I've put the link in the bio.",
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Big Sunday clean",
+      240,
+      "red"
+     ],
+     [
+      "10 minutes a night",
+      70,
+      "acc"
+     ]
+    ],
+    "unit": " min",
+    "max": 240,
+    "chip": "Same flat. 170 minutes back."
+   },
+   "head": "Mess comes in<br><b>10-minute</b> pieces."
+  },
+  {
+   "type": "cost-tally",
+   "params": {
+    "stage": "rowcue",
+    "title": "MEERA'S SUNDAY",
+    "rows": [
+     [
+      "Dishes",
+      "40 min"
+     ],
+     [
+      "Laundry",
+      "70 min"
+     ],
+     [
+      "Desk",
+      "60 min"
+     ],
+     [
+      "Kitchen",
+      "70 min"
+     ]
+    ],
+    "total": 240,
+    "totalLabel": "EVERY SUNDAY",
+    "note": "Messy again by Wednesday",
+    "cue": [
+     "Four",
+     "Wednesday",
+     "cleaned",
+     "laundry",
+     "desk",
+     "kitchen"
+    ]
+   },
+   "head": "Four hours,<br><b>every</b> Sunday."
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Sundays a year",
+      52,
+      "ink"
+     ],
+     [
+      "Hours cleaning",
+      208,
+      "red"
+     ]
+    ],
+    "max": 208,
+    "chip": "The same week, 52 times",
+    "cue": [
+     "exactly",
+     "hundred",
+     "year"
+    ]
+   },
+   "head": "Over <b>200 hours</b><br>a year."
+  },
+  {
+   "type": "meeting-card",
+   "params": {
+    "title": "10-minute reset",
+    "rows": [
+     "Every day, 9:00 PM",
+     "Timer: 10 minutes"
+    ],
+    "remind": "Rule: back where it lives",
+    "cue": [
+     "nine",
+     "rule"
+    ]
+   },
+   "head": "Ten minutes,<br><b>every</b> night."
+  },
+  {
+   "type": "question-list",
+   "params": {
+    "title": "THE 10-MINUTE RESET",
+    "items": [
+     "Dishes in the sink",
+     "Clothes off the chair",
+     "Desk cleared"
+    ],
+    "cue": [
+     "Dishes",
+     "clothes",
+     "desk"
+    ]
+   },
+   "head": "Just <b>three</b> things."
+  },
+  {
+   "type": "week-tracker",
+   "params": {
+    "on": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "what": "9 PM reset",
+    "stage": "daily",
+    "walk": 4.5,
+    "tick": 0.45
+   },
+   "head": "Night three<br>is the <b>hard</b> one."
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "rows": [
+     [
+      "Sunday cleaning",
+      "4 h",
+      "0"
+     ],
+     [
+      "Minutes a week",
+      "240",
+      "70"
+     ],
+     [
+      "Messy by Wed",
+      "Yes",
+      "No"
+     ]
+    ],
+    "a": "BIG SUNDAY",
+    "b": "10 A NIGHT",
+    "cue": [
+     "Sunday",
+     "flat"
+    ]
+   },
+   "head": "Her Sunday,<br><b>back</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "THE 10-MINUTE RESET",
+    "items": [
+     "9 PM, 10-min timer",
+     "Back where it lives",
+     "Sink, chair, desk"
+    ],
+    "cue": [
+     "small",
+     "Screenshot",
+     "Send"
+    ]
+   },
+   "head": "Clean the way<br>the mess <b>arrives</b>."
+  },
+  {
+   "type": "week-countdown",
+   "params": {
+    "weeks": 2,
+    "end": "Sunday free",
+    "rows": [
+     "Reset at 9 PM",
+     "Ten minutes",
+     "Same three things"
+    ],
+    "cue": [
+     "Meera",
+     "ten",
+     "goals"
+    ]
+   },
+   "head": "Ten minutes<br><b>at a time</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "A calm home",
+    "date": "Open it again: Jan 2027",
+    "steps": [
+     "9 PM timer",
+     "Back where it lives",
+     "Sunday free"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Same weight, no progress",
+    "when": "Next",
+    "cue": [
+     null,
+     "lifting"
+    ]
+   },
+   "head": "One fix<br><b>a day</b>."
+  },
+  null
+ ],
+ "brand_from": 11,
+ "silences": [
+  "The hard part",
+  "Two weeks"
+ ],
+ "caption": {
+  "instagram": "Your room doesn't get messy on Sunday. It gets messy ten minutes at a time.\n\nMeera spent 4 hours every Sunday cleaning, and by Wednesday the flat looked the same again. So she switched to a 10-minute reset:\n1. Every night at 9 PM, a 10-minute timer\n2. One rule: everything goes back where it lives\n3. Only three things: dishes in the sink, clothes off the chair, desk cleared\n\nTwo weeks later her Sunday was free, and the week took 70 minutes instead of 240.\n\nSend this to the friend who loses every Sunday to cleaning.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#cleaning #cleaninghacks #organization #habits #productivity #home",
+  "x": "Your room doesn't get messy on Sunday. It gets messy ten minutes at a time.\n\nSo clean the same way: a 10-minute timer every night at 9, everything back where it lives, just sink, chair and desk. 70 minutes a week instead of a 4-hour Sunday.",
+  "youtube_title": "How to keep your room clean without a big Sunday clean #Shorts"
+ }
+}
