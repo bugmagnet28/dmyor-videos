@@ -1,0 +1,10 @@
+{
+ "S1": [["Kabir started journaling.", 0.3], ["Deep self-reflection. Every single night.", 0.35], ["Here's the whole week.", 0.3], ["Truly life-changing material.", 0.6]],
+ "S2": [["So why do we stop doing things we know are good for us?", 0.4], ["Reason number three.", 0.5]],
+ "S3": [["You don't notice you've stopped.", 0.3], ["Because every page says okay...", 0.3], ["while the gym, the book, and the plan quietly leave the week.", 0.6]],
+ "S4": [["The problem isn't the journal.", 0.3], ["How was today, is the easiest question to lie to.", 0.6]],
+ "S5": [["So he changed the question.", 0.4], ["What did I avoid today?", 0.6]],
+ "S6": [["Suddenly, the journal is full.", 0.3], ["And every answer points at the thing he actually wants.", 0.6]],
+ "S7": [["You don't avoid what doesn't matter.", 0.3], ["Your avoid list is your real to-do list.", 0.6]],
+ "S8": [["So tonight, skip how was today.", 0.25], ["Write what you avoided.", 0.4], ["What's on your list?", 0.3], ["Tell me below.", 1.4]]
+}

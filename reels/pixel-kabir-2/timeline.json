@@ -1,0 +1,193 @@
+{
+ "total": 49.291,
+ "scenes": {
+  "S1": [
+   0.5,
+   6.074
+  ],
+  "S2": [
+   6.074,
+   10.839
+  ],
+  "S3": [
+   10.839,
+   16.315
+  ],
+  "S4": [
+   16.315,
+   24.454
+  ],
+  "S5": [
+   24.454,
+   27.673
+  ],
+  "S6": [
+   27.673,
+   35.517
+  ],
+  "S7": [
+   35.517,
+   41.22
+  ],
+  "S8": [
+   41.22,
+   49.291
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   2.058,
+   "Kabir bought a gym membership."
+  ],
+  [
+   "S1",
+   1,
+   2.358,
+   3.887,
+   "Twelve months. Paid in full."
+  ],
+  [
+   "S1",
+   2,
+   4.187,
+   5.474,
+   "Discipline, purchased."
+  ],
+  [
+   "S2",
+   0,
+   6.074,
+   8.692,
+   "So why do we stop doing things we know are good for us?"
+  ],
+  [
+   "S2",
+   1,
+   9.092,
+   10.289,
+   "Reason number two."
+  ],
+  [
+   "S3",
+   0,
+   10.839,
+   12.439,
+   "Day one, he's unstoppable."
+  ],
+  [
+   "S3",
+   1,
+   12.739,
+   14.041,
+   "Day two, still great."
+  ],
+  [
+   "S3",
+   2,
+   14.341,
+   15.765,
+   "Day three... it's leg day."
+  ],
+  [
+   "S4",
+   0,
+   16.315,
+   17.867,
+   "Day four is where it dies."
+  ],
+  [
+   "S4",
+   1,
+   18.167,
+   19.655,
+   "Not because he's lazy."
+  ],
+  [
+   "S4",
+   2,
+   19.955,
+   22.336,
+   "Because, when do I go today, is now a question..."
+  ],
+  [
+   "S4",
+   3,
+   22.586,
+   23.854,
+   "and his mood answers it."
+  ],
+  [
+   "S5",
+   0,
+   24.454,
+   25.325,
+   "Three visits."
+  ],
+  [
+   "S5",
+   1,
+   25.625,
+   27.073,
+   "Very expensive card."
+  ],
+  [
+   "S6",
+   0,
+   27.673,
+   28.906,
+   "So stop asking."
+  ],
+  [
+   "S6",
+   1,
+   29.206,
+   32.806,
+   "Book three sessions a week, with a time, like a meeting you wouldn't skip."
+  ],
+  [
+   "S6",
+   2,
+   33.206,
+   34.917,
+   "Missed one? Move it. Don't delete it."
+  ],
+  [
+   "S7",
+   0,
+   35.517,
+   37.064,
+   "Discipline isn't a feeling."
+  ],
+  [
+   "S7",
+   1,
+   37.364,
+   40.62,
+   "It's a decision you made on Sunday, so Wednesday doesn't have to."
+  ],
+  [
+   "S8",
+   0,
+   41.22,
+   42.87,
+   "Same card. Very used now."
+  ],
+  [
+   "S8",
+   1,
+   43.27,
+   44.454,
+   "What's your day four?"
+  ],
+  [
+   "S8",
+   2,
+   44.754,
+   45.691,
+   "Tell me below."
+  ]
+ ]
+}

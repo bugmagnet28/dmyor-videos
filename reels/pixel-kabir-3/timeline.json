@@ -1,0 +1,186 @@
+{
+ "total": 49.087,
+ "scenes": {
+  "S1": [
+   0.5,
+   8.549
+  ],
+  "S2": [
+   8.549,
+   13.285
+  ],
+  "S3": [
+   13.285,
+   20.544
+  ],
+  "S4": [
+   20.544,
+   25.687
+  ],
+  "S5": [
+   25.687,
+   29.493
+  ],
+  "S6": [
+   29.493,
+   34.652
+  ],
+  "S7": [
+   34.652,
+   39.392
+  ],
+  "S8": [
+   39.392,
+   49.087
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   1.882,
+   "Kabir started journaling."
+  ],
+  [
+   "S1",
+   1,
+   2.182,
+   4.311,
+   "Deep self-reflection. Every single night."
+  ],
+  [
+   "S1",
+   2,
+   4.661,
+   5.847,
+   "Here's the whole week."
+  ],
+  [
+   "S1",
+   3,
+   6.147,
+   7.949,
+   "Truly life-changing material."
+  ],
+  [
+   "S2",
+   0,
+   8.549,
+   11.167,
+   "So why do we stop doing things we know are good for us?"
+  ],
+  [
+   "S2",
+   1,
+   11.567,
+   12.785,
+   "Reason number three."
+  ],
+  [
+   "S3",
+   0,
+   13.285,
+   14.679,
+   "You don't notice you've stopped."
+  ],
+  [
+   "S3",
+   1,
+   14.979,
+   16.795,
+   "Because every page says okay..."
+  ],
+  [
+   "S3",
+   2,
+   17.095,
+   19.944,
+   "while the gym, the book, and the plan quietly leave the week."
+  ],
+  [
+   "S4",
+   0,
+   20.544,
+   22.169,
+   "The problem isn't the journal."
+  ],
+  [
+   "S4",
+   1,
+   22.469,
+   25.087,
+   "How was today, is the easiest question to lie to."
+  ],
+  [
+   "S5",
+   0,
+   25.687,
+   27.119,
+   "So he changed the question."
+  ],
+  [
+   "S5",
+   1,
+   27.519,
+   28.893,
+   "What did I avoid today?"
+  ],
+  [
+   "S6",
+   0,
+   29.493,
+   31.122,
+   "Suddenly, the journal is full."
+  ],
+  [
+   "S6",
+   1,
+   31.422,
+   34.052,
+   "And every answer points at the thing he actually wants."
+  ],
+  [
+   "S7",
+   0,
+   34.652,
+   36.254,
+   "You don't avoid what doesn't matter."
+  ],
+  [
+   "S7",
+   1,
+   36.554,
+   38.792,
+   "Your avoid list is your real to-do list."
+  ],
+  [
+   "S8",
+   0,
+   39.392,
+   41.189,
+   "So tonight, skip how was today."
+  ],
+  [
+   "S8",
+   1,
+   41.439,
+   42.698,
+   "Write what you avoided."
+  ],
+  [
+   "S8",
+   2,
+   43.098,
+   44.251,
+   "What's on your list?"
+  ],
+  [
+   "S8",
+   3,
+   44.551,
+   45.487,
+   "Tell me below."
+  ]
+ ]
+}

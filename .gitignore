@@ -27,3 +27,5 @@ tts2/out/
 tts2/.venv/
 .claude/**/__pycache__/
 studio/tools/__pycache__/
+reels/*/snaps/
+reels/**/__pycache__/

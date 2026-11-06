@@ -1,0 +1,172 @@
+{
+ "total": 47.976,
+ "scenes": {
+  "S1": [
+   0.5,
+   5.845
+  ],
+  "S2": [
+   5.845,
+   10.537
+  ],
+  "S3": [
+   10.537,
+   15.274
+  ],
+  "S4": [
+   15.274,
+   20.046
+  ],
+  "S5": [
+   20.046,
+   25.23
+  ],
+  "S6": [
+   25.23,
+   31.765
+  ],
+  "S7": [
+   31.765,
+   35.833
+  ],
+  "S8": [
+   35.833,
+   47.976
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   2.134,
+   "Kabir is starting on Monday."
+  ],
+  [
+   "S1",
+   1,
+   2.484,
+   5.245,
+   "He has been starting on Monday, for forty-one Mondays."
+  ],
+  [
+   "S2",
+   0,
+   5.845,
+   8.463,
+   "So why do we stop doing things we know are good for us?"
+  ],
+  [
+   "S2",
+   1,
+   8.863,
+   9.987,
+   "Reason number one."
+  ],
+  [
+   "S3",
+   0,
+   10.537,
+   12.098,
+   "Here's what nobody tells you."
+  ],
+  [
+   "S3",
+   1,
+   12.398,
+   14.824,
+   "Motivation peaks the moment you make the plan."
+  ],
+  [
+   "S4",
+   0,
+   15.274,
+   16.876,
+   "Friday. Saturday. Sunday."
+  ],
+  [
+   "S4",
+   1,
+   17.176,
+   19.496,
+   "By the time Monday shows up, it's already gone."
+  ],
+  [
+   "S5",
+   0,
+   20.046,
+   22.546,
+   "So Monday Kabir looks at Sunday Kabir's plan..."
+  ],
+  [
+   "S5",
+   1,
+   22.996,
+   24.53,
+   "and says, absolutely not."
+  ],
+  [
+   "S6",
+   0,
+   25.23,
+   26.922,
+   "The fix isn't a better Monday."
+  ],
+  [
+   "S6",
+   1,
+   27.222,
+   28.539,
+   "It's a smaller tonight."
+  ],
+  [
+   "S6",
+   2,
+   28.939,
+   31.215,
+   "Do two minutes of it, while the bar is still full."
+  ],
+  [
+   "S7",
+   0,
+   31.765,
+   33.524,
+   "Two minutes is too small to skip."
+  ],
+  [
+   "S7",
+   1,
+   33.824,
+   35.233,
+   "And the chain does the rest."
+  ],
+  [
+   "S8",
+   0,
+   35.833,
+   37.436,
+   "Kabir didn't start on Monday."
+  ],
+  [
+   "S8",
+   1,
+   37.686,
+   40.119,
+   "He started on a Sunday night, in his pyjamas."
+  ],
+  [
+   "S8",
+   2,
+   40.619,
+   42.117,
+   "What are you starting on Monday?"
+  ],
+  [
+   "S8",
+   3,
+   42.417,
+   44.376,
+   "Tell me. And start two minutes of it tonight."
+  ]
+ ]
+}

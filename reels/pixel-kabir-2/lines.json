@@ -1,0 +1,10 @@
+{
+ "S1": [["Kabir bought a gym membership.", 0.3], ["Twelve months. Paid in full.", 0.3], ["Discipline, purchased.", 0.6]],
+ "S2": [["So why do we stop doing things we know are good for us?", 0.4], ["Reason number two.", 0.55]],
+ "S3": [["Day one, he's unstoppable.", 0.3], ["Day two, still great.", 0.3], ["Day three... it's leg day.", 0.55]],
+ "S4": [["Day four is where it dies.", 0.3], ["Not because he's lazy.", 0.3], ["Because, when do I go today, is now a question...", 0.25], ["and his mood answers it.", 0.6]],
+ "S5": [["Three visits.", 0.3], ["Very expensive card.", 0.6]],
+ "S6": [["So stop asking.", 0.3], ["Book three sessions a week, with a time, like a meeting you wouldn't skip.", 0.4], ["Missed one? Move it. Don't delete it.", 0.6]],
+ "S7": [["Discipline isn't a feeling.", 0.3], ["It's a decision you made on Sunday, so Wednesday doesn't have to.", 0.6]],
+ "S8": [["Same card. Very used now.", 0.4], ["What's your day four?", 0.3], ["Tell me below.", 1.4]]
+}

@@ -1,0 +1,10 @@
+{
+ "S1": [["Kabir is starting on Monday.", 0.35], ["He has been starting on Monday, for forty-one Mondays.", 0.6]],
+ "S2": [["So why do we stop doing things we know are good for us?", 0.4], ["Reason number one.", 0.55]],
+ "S3": [["Here's what nobody tells you.", 0.3], ["Motivation peaks the moment you make the plan.", 0.45]],
+ "S4": [["Friday. Saturday. Sunday.", 0.3], ["By the time Monday shows up, it's already gone.", 0.55]],
+ "S5": [["So Monday Kabir looks at Sunday Kabir's plan...", 0.45], ["and says, absolutely not.", 0.7]],
+ "S6": [["The fix isn't a better Monday.", 0.3], ["It's a smaller tonight.", 0.4], ["Do two minutes of it, while the bar is still full.", 0.55]],
+ "S7": [["Two minutes is too small to skip.", 0.3], ["And the chain does the rest.", 0.6]],
+ "S8": [["Kabir didn't start on Monday.", 0.25], ["He started on a Sunday night, in his pyjamas.", 0.5], ["What are you starting on Monday?", 0.3], ["Tell me. And start two minutes of it tonight.", 1.4]]
+}

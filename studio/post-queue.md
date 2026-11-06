@@ -6,6 +6,12 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 - Note 2026-11-06 21:30 (Claude): Nov 6 batch scheduled on IG (likes hidden), X and YT: miss-twice Fri 22:00, ten-minute-reset Sat 13:00, same-weight Sat 19:30. Leftover Wed/Thu reels on Instagram: say-sentences posted Fri ~20:20, pickups scheduled Sat 09:30; busy-week skipped on IG (already on X/YT; 5-flow limit). All Wed/Thu reels now done on every platform except busy-week on IG.
 
+## Pixel series "Kabir vs. Kabir" #1-#3 (built 2026-11-06 night; 1 pixel reel/day; no music, owner may add music in the Instagram app)
+
+- [ ] Sun 2026-11-08 19:30 IST · **pixel-kabir-1** "Starting Monday" (Reason #1) · `ready-to-post/2026-11-08-pixel-kabir-1/`
+- [ ] Mon 2026-11-09 19:30 IST · **pixel-kabir-2** "The gym membership" (Reason #2) · `ready-to-post/2026-11-09-pixel-kabir-2/`
+- [ ] Tue 2026-11-10 19:30 IST · **pixel-kabir-3** "Today was okay" (Reason #3) · `ready-to-post/2026-11-10-pixel-kabir-3/`
+
 ## Built Fri 2026-11-06 (auto-approved, to schedule; Nov 5 run failed so there was no Fri batch). Instagram, X and YouTube Shorts
 
 Suggested: **ill-miss-twice tonight Fri 22:00 IST** on all three (it is the reel ill-forget-book promised for "tomorrow"; YT + X have nothing else today). Then Sat Nov 7: **13:00 ill-ten-minute-reset**, **19:30 ill-same-weight** (strongest). If Instagram's Fri backlog (pickups 13:00, busy-week 16:30, say-sentences 19:30) is still not scheduled, do those first and move this batch one slot later each; follow lines say "Next", so any order of these three still holds.
