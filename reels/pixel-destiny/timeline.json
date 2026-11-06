@@ -1,0 +1,242 @@
+{
+ "total": 79.761,
+ "scenes": {
+  "S1": [
+   0.5,
+   5.221
+  ],
+  "S2": [
+   5.221,
+   11.774
+  ],
+  "S3": [
+   11.774,
+   23.008
+  ],
+  "S4": [
+   23.008,
+   30.887
+  ],
+  "S5": [
+   30.887,
+   44.843
+  ],
+  "S6": [
+   44.843,
+   51.932
+  ],
+  "S7": [
+   51.932,
+   68.512
+  ],
+  "S8": [
+   68.512,
+   79.761
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   2.56,
+   "What would it take, to write your own destiny..."
+  ],
+  [
+   "S1",
+   1,
+   2.86,
+   4.521,
+   "and not just hope to get lucky?"
+  ],
+  [
+   "S2",
+   0,
+   5.221,
+   8.495,
+   "How much control do we really have, over making our dreams real?"
+  ],
+  [
+   "S2",
+   1,
+   8.995,
+   10.168,
+   "Let's figure it out."
+  ],
+  [
+   "S2",
+   2,
+   10.418,
+   11.224,
+   "Three steps."
+  ],
+  [
+   "S3",
+   0,
+   11.774,
+   13.198,
+   "Step one. Possibility."
+  ],
+  [
+   "S3",
+   1,
+   13.598,
+   15.794,
+   "Is what you're dreaming of, actually possible?"
+  ],
+  [
+   "S3",
+   2,
+   16.294,
+   19.811,
+   "The less likely you believe it is, the harder it gets to make it real."
+  ],
+  [
+   "S3",
+   3,
+   20.261,
+   20.824,
+   "Harder."
+  ],
+  [
+   "S3",
+   4,
+   21.174,
+   22.358,
+   "But not impossible."
+  ],
+  [
+   "S4",
+   0,
+   23.008,
+   24.137,
+   "Step two. The path."
+  ],
+  [
+   "S4",
+   1,
+   24.537,
+   26.781,
+   "There's never just one way to reach a future."
+  ],
+  [
+   "S4",
+   2,
+   27.131,
+   30.237,
+   "Look at your options, and pick the one that's best for you, right now."
+  ],
+  [
+   "S5",
+   0,
+   30.887,
+   32.336,
+   "Step three. Execution."
+  ],
+  [
+   "S5",
+   1,
+   32.736,
+   34.742,
+   "A big goal doesn't happen in an instant."
+  ],
+  [
+   "S5",
+   2,
+   35.042,
+   36.33,
+   "Turn it into tasks."
+  ],
+  [
+   "S5",
+   3,
+   36.53,
+   38.013,
+   "Decide what comes first."
+  ],
+  [
+   "S5",
+   4,
+   38.263,
+   41.145,
+   "Then break each task, into something you can do today."
+  ],
+  [
+   "S5",
+   5,
+   41.595,
+   44.193,
+   "Think of it as one stair, in a very long staircase."
+  ],
+  [
+   "S6",
+   0,
+   44.843,
+   46.119,
+   "And you don't do this once."
+  ],
+  [
+   "S6",
+   1,
+   46.419,
+   49.917,
+   "Your situation changes, so you come back to steps two and three..."
+  ],
+  [
+   "S6",
+   2,
+   50.117,
+   51.282,
+   "again, and again."
+  ],
+  [
+   "S7",
+   0,
+   51.932,
+   54.326,
+   "So, does this make you the author of your destiny?"
+  ],
+  [
+   "S7",
+   1,
+   54.976,
+   61.084,
+   "If the effort is logical, and it makes sense, it takes you to a reality that would never exist, if you just drifted."
+  ],
+  [
+   "S7",
+   2,
+   61.584,
+   63.314,
+   "That's how the future gets written."
+  ],
+  [
+   "S7",
+   3,
+   63.614,
+   67.862,
+   "Every choice any of us makes, leads to a reality that wouldn't exist otherwise."
+  ],
+  [
+   "S8",
+   0,
+   68.512,
+   70.029,
+   "That's what Dmyor is for."
+  ],
+  [
+   "S8",
+   1,
+   70.229,
+   73.779,
+   "Write your dream down today, and break it into steps you can actually take."
+  ],
+  [
+   "S8",
+   2,
+   74.179,
+   75.961,
+   "What's the one stair you'll take today?"
+  ]
+ ]
+}

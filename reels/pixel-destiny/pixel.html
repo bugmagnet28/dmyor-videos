@@ -1,0 +1,343 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Pixel Destiny</title>
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block;width:1080px;height:1920px;image-rendering:pixelated}</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script src="timeline.js"></script>
+<script>
+// Pixel Book: every frame is a pure function of time. Worlds are drawn at 270x480 (1 art pixel = 4 screen px)
+// and blitted with a nearest-neighbour "pixel camera", so zooming makes the pixels bigger, never blurry.
+var W = 270, H = 480, OW = 1080, OH = 1920;
+// film time u -> story time t: each narration line's slot is mapped onto the span of picture it describes (timemap.json)
+var C = document.getElementById("c"), X = C.getContext("2d"); X.imageSmoothingEnabled = false;
+function mk(w, h) { var c = document.createElement("canvas"); c.width = w; c.height = h; var x = c.getContext("2d"); x.imageSmoothingEnabled = false; return [c, x]; }
+var LB = mk(W, H), OA = mk(OW, OH), OB = mk(OW, OH), TINY = mk(W, H);
+
+// ---------- assets ----------
+var A = {}, LIST = {
+  sky: "../pixel-book/art/field/sky.png", clouds: "../pixel-book/art/field/clouds.png", far: "../pixel-book/art/field/far.png", mid: "../pixel-book/art/field/mid.png", ground: "../pixel-book/art/field/ground.png",
+  shadow: "../pixel-book/art/field/shadow.png", flowers: "../pixel-book/art/field/flowers.png", tree: "../pixel-book/art/field/tree.png", reader: "../pixel-book/art/field/hero_read.png", reader_blink: "../pixel-book/art/field/hero_read_blink.png", book_ground: "../pixel-book/art/field/book_ground.png",
+  house: "../pixel-book/art/scenes/house.png", hedge: "../pixel-book/art/scenes/hedge.png", car: "../pixel-book/art/scenes/car.png", wheel0: "../pixel-book/art/scenes/wheel0.png", wheel1: "../pixel-book/art/scenes/wheel1.png",
+  room_night: "../pixel-book/art/scenes/room_night.png", room_dawn: "../pixel-book/art/scenes/room_dawn.png", notebook: "../pixel-book/art/scenes/notebook.png", laptop: "../pixel-book/art/scenes/laptop.png",
+  alarm0: "../pixel-book/art/scenes/alarm0.png", alarm1: "../pixel-book/art/scenes/alarm1.png", phone: "../pixel-book/art/scenes/phone.png", friendcar: "../pixel-book/art/scenes/friendcar.png",
+  shop: "../pixel-book/art/scenes/shop.png", sign0: "../pixel-book/art/scenes/sign0.png", sign1: "../pixel-book/art/scenes/sign1.png", office: "../pixel-book/art/scenes/office.png", library: "../pixel-book/art/scenes/library.png", bigbook: "../pixel-book/art/scenes/bigbook.png", heli: "../pixel-book/art/scenes/heli.png"
+};
+["stand", "blink", "shock", "walk0", "walk1", "walk2", "walk3", "owalk0", "owalk1", "owalk2", "owalk3", "ostand", "olook", "sit_write0", "sit_write1", "sit_type0", "sit_type1",
+ "sit_bed", "sit_bed_blink", "stretch", "wave_off", "sad", "sad_blink", "shake0", "shake1", "cshake0", "cshake1", "crouch", "jump", "lookup", "bed_phone", "bed_yawn", "bed_phone_blink"].forEach(function (n) { LIST["c_" + n] = "../pixel-book/art/chars/" + n + ".png"; });
+var READY = Promise.all(Object.keys(LIST).map(function (k) { return new Promise(function (res) { var i = new Image(); i.onload = function () { A[k] = i; res(); }; i.onerror = function () { console.error("missing " + LIST[k]); res(); }; i.src = LIST[k]; }); }));
+
+// ---------- math ----------
+function cl(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function seg(t, a, b) { return cl((t - a) / (b - a), 0, 1); }
+function lerp(a, b, k) { return a + (b - a) * k; }
+function eio(k) { return k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; }
+function eout(k) { return 1 - Math.pow(1 - k, 3); }
+function hash(i) { var x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); }
+var BAY = [0, 8, 2, 10, 12, 4, 14, 6, 3, 11, 1, 9, 15, 7, 13, 5];
+function bay(x, y) { return (BAY[(x & 3) + (y & 3) * 4] + .5) / 16; }
+
+// ---------- camera ----------
+function camAt(keys, t) {
+  if (t <= keys[0][0]) return { x: keys[0][1], y: keys[0][2], z: keys[0][3] };
+  for (var i = 1; i < keys.length; i++) {
+    var k0 = keys[i - 1], k1 = keys[i], ts = k1[4] != null ? k1[0] - k1[4] : k0[0];
+    if (t < k1[0]) { var k = t < ts ? 0 : eio(seg(t, ts, k1[0])); return { x: lerp(k0[1], k1[1], k), y: lerp(k0[2], k1[2], k), z: lerp(k0[3], k1[3], k) }; }
+  }
+  var L = keys[keys.length - 1]; return { x: L[1], y: L[2], z: L[3] };
+}
+function blit(cam, dx, dy, dw, dh, ctx, src) {
+  src = src || LB[0]; var sw = W / cam.z, sh = H / cam.z;
+  var sx = cl(cam.x - sw / 2, 0, Math.max(0, W - sw)), sy = cl(cam.y - sh / 2, 0, Math.max(0, H - sh));
+  sx = Math.round(sx * cam.z * 4) / (cam.z * 4); sy = Math.round(sy * cam.z * 4) / (cam.z * 4);
+  ctx.imageSmoothingEnabled = false; ctx.drawImage(src, sx, sy, sw, sh, dx, dy, dw, dh);
+}
+
+// ---------- low-res drawing helpers (L = LB context) ----------
+var L = LB[1];
+function img(n, x, y, flip, sx, sy) {
+  var i = A[n]; if (!i) return; sx = sx == null ? 1 : sx; sy = sy == null ? sx : sy;
+  L.save(); L.translate(Math.round(x), Math.round(y)); if (flip) { L.translate(Math.round(i.width * sx), 0); L.scale(-1, 1); }
+  L.drawImage(i, 0, 0, Math.max(1, Math.round(i.width * sx)), Math.max(1, Math.round(i.height * sy))); L.restore();
+}
+function rect(x, y, w, h, c) { L.fillStyle = c; L.fillRect(Math.round(x), Math.round(y), Math.round(w), Math.round(h)); }
+function ddisc(cx, cy, r, c, a, ctx) {           // dithered glow disc (crisp pixels, no blur)
+  ctx = ctx || L; ctx.fillStyle = c; cx = Math.round(cx); cy = Math.round(cy); var R = Math.ceil(r);
+  for (var y = -R; y <= R; y++) for (var x = -R; x <= R; x++) { var d = Math.sqrt(x * x + y * y) / r; if (d > 1) continue; if (bay(cx + x, cy + y) < a * (1 - d * d)) ctx.fillRect(cx + x, cy + y, 1, 1); }
+}
+function spark(x, y, c, big) { rect(x, y, 1, 1, c); if (big) { rect(x - 1, y, 1, 1, c); rect(x + 1, y, 1, 1, c); rect(x, y - 1, 1, 1, c); rect(x, y + 1, 1, 1, c); } }
+
+// ---------- pixel font 5x7 ----------
+var F = {A:"01110100011000111111100011000110001",B:"11110100011000111110100011000111110",C:"01110100011000010000100001000101110",D:"11110100011000110001100011000111110",
+E:"11111100001000011110100001000011111",F:"11111100001000011110100001000010000",G:"01110100011000010111100011000101111",H:"10001100011000111111100011000110001",
+I:"01110001000010000100001000010001110",J:"00111000100001000010000101001001100",K:"10001100101010011000101001001010001",L:"10000100001000010000100001000011111",
+M:"10001110111010110101100011000110001",N:"10001100011100110101100111000110001",O:"01110100011000110001100011000101110",P:"11110100011000111110100001000010000",
+Q:"01110100011000110001101011001001101",R:"11110100011000111110101001001010001",S:"01111100001000001110000010000111110",T:"11111001000010000100001000010000100",
+U:"10001100011000110001100011000101110",V:"10001100011000110001100010101000100",W:"10001100011000110101101011010101010",X:"10001100010101000100010101000110001",
+Y:"10001100010101000100001000010000100",Z:"11111000010001000100010001000011111","0":"01110100011001110101110011000101110","1":"00100011000010000100001000010001110",
+"2":"01110100010000100010001000100011111","3":"11110000010000101110000010000111110","4":"00010001100101010010111110001000010","5":"11111100001111000001000011000101110",
+"6":"00110010001000011110100011000101110","7":"11111000010001000100010000100001000","8":"01110100011000101110100011000101110","9":"01110100011000101111000010001001100",
+".":"00000000000000000000000000110001100",",":"00000000000000000000011000010001000",":":"00000011000110000000011000110000000","'":"00100001000100000000000000000000000",
+"?":"01110100010000100010001000000000100","!":"00100001000010000100001000000000100","-":"00000000000000011111000000000000000","@":"01110100011011110101101111000001110",
+"/":"00001000100001000100010000100010000"," ":"00000000000000000000000000000000000"};
+function glyph(ctx, ch, x, y, b, c) { var g = F[ch] || F[" "]; ctx.fillStyle = c; for (var i = 0; i < 35; i++) if (g[i] === "1") ctx.fillRect(x + (i % 5) * b, y + Math.floor(i / 5) * b, b, b); }
+function ptext(ctx, s, x, y, b, c) { for (var i = 0; i < s.length; i++) glyph(ctx, s[i], x + i * 6 * b, y, b, c); }
+function pwidth(s, b) { return s.length * 6 * b - b; }
+
+// screen-level caption: *word* = accent. Letters type on, shadowed, pixel blocks of 8 px (= 2 art px).
+function caption(t, s, a, b, opt) {
+  opt = opt || {}; if (t < a || t > b) return; var B = opt.b || 8, y0 = opt.y || 230, maxc = Math.floor((OW - 96) / (6 * B));
+  var words = [], acc = false; s.split(" ").forEach(function (w) { var st = w[0] === "*", en = w[w.length - 1] === "*" || w.slice(-2) === "*." || w.slice(-2) === "*?"; if (st) acc = true; words.push([w.replace(/\*/g, ""), acc]); if (en) acc = false; });
+  var lines = [[]], len = 0; words.forEach(function (w) { if (len + w[0].length > maxc && len) { lines.push([]); len = 0; } lines[lines.length - 1].push(w); len += w[0].length + 1; });
+  var shown = Math.floor((t - a) * 45), n = 0;
+  lines.forEach(function (ln, li) {
+    var str = ln.map(function (w) { return w[0]; }).join(" "), x = Math.round((OW - pwidth(str, B)) / 2), y = y0 + li * 11 * B;
+    ln.forEach(function (w) {
+      for (var i = 0; i < w[0].length; i++) { if (n++ >= shown) return; [[B, B], [B, 0], [-B, 0], [0, B], [0, -B], [B, -B], [-B, B], [-B, -B]].forEach(function (o) { glyph(X, w[0][i], x + o[0], y + o[1], B, "#1A1530"); }); glyph(X, w[0][i], x, y, B, w[1] ? (opt.accent || "#FFC145") : "#FFFFFF"); x += 6 * B; }
+      n++; x += 6 * B;
+    });
+  });
+}
+
+// ---------- in-world choice sign ----------
+function sign(label, cx, y, t, tPop, tPick, picked, tOut) {
+  if (t < tPop || (tOut && t > tOut)) return; var k = eout(seg(t, tPop, tPop + .25)), w = label.length * 6 + 7, x = Math.round(cx - w / 2), yy = Math.round(y - (1 - k) * 10);
+  var done = t >= tPick, col = done ? (picked ? "#28A86A" : "#6B6F80") : "#C98A4E", edge = done ? (picked ? "#1C7A4C" : "#4A4D5C") : "#8A5228";
+  if (done && picked) { var p0 = eout(seg(t, tPick, tPick + .25)); ddisc(cx, yy + 6, 18 * p0, "#FFE9A0", .35 * (1 - seg(t, tPick + .3, tPick + .9))); }
+  rect(x + w / 2 - 1, yy + 12, 2, 10, "#6B4430");
+  rect(x - 1, yy - 1, w + 2, 14, "#2A1F2E"); rect(x, yy, w, 12, col); rect(x, yy + 10, w, 2, edge);
+  ptext(L, label, x + 4, yy + 2, 1, done && !picked ? "#A8ABB8" : "#FFFFFF");
+  if (done && picked) { var p = eout(seg(t, tPick, tPick + .25)); if (p > 0) { rect(x + w + 2, yy + 4, 2, 2, "#FFFFFF"); rect(x + w + 4, yy + 6, 2, 2, "#FFFFFF"); rect(x + w + 6, yy + 2, 2, 4, "#FFFFFF"); } }
+  if (done && !picked) { rect(x, yy + 5, w, 1, "#4A4D5C"); }
+}
+function chr(n, x, y, flip) { img("c_" + n, x, y, flip); }      // character sprite 48x56, feet at y+53
+var GY = 53;
+
+
+// =================== PIXEL DESTINY: scenes (film time u = narration time; TL from timeline.js) ===================
+var DUR = TL.total, SCN = TL.scenes;
+function LN(k, i) { for (var j = 0; j < TL.lines.length; j++) { var l = TL.lines[j]; if (l[0] === k && l[1] === i) return l[2]; } return 0; }
+function LE(k, i) { for (var j = 0; j < TL.lines.length; j++) { var l = TL.lines[j]; if (l[0] === k && l[1] === i) return l[3]; } return 0; }
+function blinkAt(t, off) { return ((t + off) % 3.3) < .12; }
+function stars(t, n, col) { for (var i = 0; i < n; i++) if ((t * 1.3 + hash(i + 5)) % 1 > .25) rect(hash(i) * W, hash(i + 300) * H, 1, hash(i + 9) > .9 ? 2 : 1, col || (i % 4 ? "#FFFFFF" : "#8C8FC8")); }
+
+// ---------- the bedroom from above: ceiling fan (top half) and the bed (bottom half) ----------
+function fanBlades(cx, cy, ang, col, hi, len) {
+  for (var b = 0; b < 3; b++) { var a = ang + b * 2.0944, ca = Math.cos(a), sa = Math.sin(a);
+    for (var d = 9; d < len; d += .5) { var w = d < 16 ? 2.5 : 5.5 - (d - 16) / (len - 16) * 1.5;
+      for (var q = -w; q <= w; q += .7) { var x = cx + ca * d - sa * q, y = cy + (sa * d + ca * q) * .55; rect(x, y, 1, 1, q > w - 1.4 ? hi : col); } } }
+}
+function ceilingFan(u) {
+  rect(0, 0, W, 236, "#24203F"); for (var i = 0; i < 60; i++) rect(hash(i) * W, hash(i + 60) * 236, 2, 1, "#2A2649");
+  L.fillStyle = "#34315A"; L.beginPath(); L.moveTo(0, 30); L.lineTo(120, 0); L.lineTo(200, 0); L.lineTo(40, 236); L.lineTo(0, 236); L.fill();   // moonlight from the window
+  for (var y = 0; y < 236; y += 3) for (var x = 0; x < W; x += 3) if (bay(x, y) < .08) rect(x, y, 1, 1, "#3B3866");
+  var cx = 135, cy = 118, ang = u * 2.4;
+  L.globalAlpha = .35; fanBlades(cx, cy, ang - .22, "#3E3448", "#3E3448", 74); L.globalAlpha = 1;      // motion ghost
+  fanBlades(cx, cy, ang, "#6E5848", "#9C8270", 74);
+  ddisc(cx, cy, 10, "#B8A890", .9); rect(cx - 5, cy - 4, 11, 8, "#8C7C68"); rect(cx - 3, cy - 3, 7, 5, "#C9BBA2"); rect(cx - 1, cy - 9, 3, 6, "#5A4C40");
+  rect(0, 232, W, 4, "#16132B");
+}
+var DESK = { lampOn: 0 };
+function bedTop(u, eyesOpen, sitK) {
+  rect(0, 236, W, H - 236, "#1C1934"); for (var i = 0; i < 40; i++) rect(hash(i + 7) * W, 240 + hash(i + 70) * 240, 6, 1, "#221F3D");
+  rect(62, 256, 146, 214, "#3E2A22"); rect(66, 260, 138, 206, "#E7E1D2");             // bed frame + sheet
+  rect(84, 266, 102, 28, "#F6F2E8"); rect(84, 292, 102, 2, "#D6CFBE");                  // pillow
+  var hy = 280 - Math.round(16 * (sitK || 0));
+  rect(124, hy - 9, 22, 8, "#2E1E16"); ddisc(135, hy, 9, "#2E1E16", 1);                // hair
+  rect(127, hy - 4, 16, 15, "#E8B48A"); rect(126, hy - 2, 1, 10, "#C98E68"); rect(143, hy - 2, 1, 10, "#C98E68"); rect(127, hy - 5, 16, 3, "#2E1E16");
+  var bl = !eyesOpen || blinkAt(u, .4); rect(130, hy + 2, 3, bl ? 1 : 2, "#2A1F2E"); rect(137, hy + 2, 3, bl ? 1 : 2, "#2A1F2E"); rect(133, hy + 7, 4, 1, "#B8735A");
+  rect(70, 300, 130, 162, "#3F7FD6"); rect(70, 300, 130, 6, "#6FA4EE"); for (var j = 0; j < 5; j++) rect(80 + j * 24, 320 + (j % 2) * 30, 14, 1, "#3570C0");
+  rect(110, 304, 12, 20, "#E8B48A"); rect(148, 304, 12, 20, "#E8B48A");                // arms over the blanket
+  // the fan's shadow: a faint, soft rotating band across the blanket
+  var ang = u * 2.4; for (var b = 0; b < 3; b++) { var a = ang + b * 2.0944;
+    for (var d = 20; d < 110; d += 2) for (var q = -8; q <= 8; q += 2) { var x = 135 + Math.cos(a) * d - Math.sin(a) * q, y = 380 + (Math.sin(a) * d + Math.cos(a) * q) * .55; if (y > 300 && y < 460 && x > 70 && x < 200 && bay(Math.round(x), Math.round(y)) < .1) rect(x, y, 2, 2, "#3570C0"); } }
+}
+function sBed(u, a, b) {
+  ceilingFan(u); bedTop(u, true, 0);
+  return camAt([[a, 135, 118, 1.7], [a + 1.6, 135, 118, 1.75], [a + 3.6, 135, 336, 1.8, 2.0], [b, 135, 334, 1.9]], u);
+}
+// ---------- thought bubble with the recipe book and dice ----------
+function bubbleFrame(cx, cy, w, h, k) {
+  if (k <= 0) return; var ww = Math.round(w * k), hh = Math.round(h * k), x = cx - ww / 2, y = cy - hh / 2;
+  rect(x - 2, y + 4, ww + 4, hh - 8, "#2A1F2E"); rect(x + 4, y - 2, ww - 8, hh + 4, "#2A1F2E"); rect(x, y + 4, ww, hh - 8, "#FFFFFF"); rect(x + 4, y, ww - 8, hh, "#FFFFFF");
+  [[0, 12, 5], [-10, 24, 3]].forEach(function (c) { ddisc(cx + c[0], cy + hh / 2 + c[1], c[2] * k, "#FFFFFF", 1); });
+}
+function die(x, y, n, rot) { L.save(); L.translate(Math.round(x), Math.round(y)); L.rotate(rot); L.scale(1.6, 1.6); rect(-6, -6, 12, 12, "#2A1F2E"); rect(-5, -5, 10, 10, "#FFFFFF");
+  var P = { 1: [[0, 0]], 2: [[-2, -2], [2, 2]], 3: [[-3, -3], [0, 0], [3, 3]], 4: [[-3, -3], [3, -3], [-3, 3], [3, 3]], 5: [[-3, -3], [3, -3], [0, 0], [-3, 3], [3, 3]], 6: [[-3, -3], [3, -3], [-3, 0], [3, 0], [-3, 3], [3, 3]] }[n];
+  P.forEach(function (p) { rect(p[0] - .5, p[1] - .5, 2, 2, "#E0453A"); }); L.restore(); }
+function recipeBook(x, y, k, filled) {
+  if (k <= 0) return; rect(x - 1, y - 1, 122, 72, "#2A1F2E"); rect(x, y, 120, 70, "#8A5228"); rect(x + 3, y + 3, 56, 64, "#FFF4E0"); rect(x + 61, y + 3, 56, 64, "#FFF4E0"); rect(x + 59, y + 2, 2, 66, "#5A3418");
+  ptext(L, "RECIPE:", x + 8, y + 9, 1, "#8A5A2E"); ptext(L, "DESTINY", x + 8, y + 19, 1, "#E0453A");
+  for (var i = 0; i < 3; i++) { var sy = y + 10 + i * 18; rect(x + 66, sy, 12, 12, "#2A1F2E"); rect(x + 67, sy + 1, 10, 10, filled > i ? ["#FFC145", "#6CC7A3", "#4C9AFF"][i] : "#EADBB8");
+    ptext(L, filled > i ? "OK" : "?", x + 82, sy + 3, 1, filled > i ? "#28A86A" : "#B8A888"); }
+  for (var j = 0; j < 4; j++) rect(x + 8, y + 34 + j * 7, 44 - (j % 2) * 10, 1, "#D8C8A8");
+}
+function sQuestion(u, a, b) {
+  rect(0, 0, W, H, "#1C1934"); stars(u, 40, "#3A3570");
+  bedTop(u, true, 0); var bk = eout(seg(u, a, a + .5)); bubbleFrame(135, 168, 150, 104, bk);
+  var bookK = seg(u, LN("S2", 1), LN("S2", 1) + .4);
+  if (bk > .9) {
+    var t0 = a + .3; for (var d = 0; d < 2; d++) { var tt = u - t0 - d * .15, flick = seg(u, LN("S2", 1) - .2, LN("S2", 1) + .3);
+      var x = lerp(250, 118 + d * 26, eout(cl(tt / 1.2, 0, 1))) + flick * 220, y = 168 + Math.abs(Math.sin(tt * 6)) * -14 * (1 - cl(tt / 1.2, 0, 1)) - flick * 40;
+      if (tt > 0 && bookK < 1) die(x, y, tt < 1.2 ? 1 + Math.floor((u * 8 + d * 3) % 6) : (d ? 3 : 5), tt < 1.2 ? tt * 9 : 0); }
+    if (bookK > 0) recipeBook(75, 133, bookK, 0);
+  }
+  return camAt([[a, 135, 236, 1.75], [b, 135, 226, 1.85, b - a]], u);
+}
+// ---------- step 1: possibility (dream peak + gauge) ----------
+function mountain(cx, base, h, k) {
+  L.fillStyle = "#4A4A7A"; L.beginPath(); L.moveTo(cx - 80, base); L.lineTo(cx, base - h); L.lineTo(cx + 80, base); L.fill();
+  L.fillStyle = "#5C5C92"; L.beginPath(); L.moveTo(cx, base - h); L.lineTo(cx + 80, base); L.lineTo(cx + 18, base); L.fill();
+  L.fillStyle = "#FFFFFF"; L.beginPath(); L.moveTo(cx, base - h); L.lineTo(cx - 14, base - h + 22); L.lineTo(cx + 13, base - h + 21); L.fill();
+  rect(cx, base - h - 16, 1, 16, "#2A1F2E"); rect(cx + 1, base - h - 16, 10, 6, "#FFC145");
+  if (k > 0) { for (var i = 0; i < 40 * k; i++) { var p = i / 40, x = lerp(cx - 60, cx, p) + Math.sin(p * 12) * 10 * (1 - p), y = lerp(base - 4, base - h + 6, p); if (i % 2 === 0) rect(x, y, 2, 1, "#FFE9A0"); } }
+}
+function gauge(cx, cy, r, val) {
+  for (var a = 0; a <= 180; a += 1.2) { var rad = Math.PI + a * Math.PI / 180, c = a < 36 ? "#E0453A" : (a < 108 ? "#FFC145" : "#28A86A");
+    for (var w = 0; w < 6; w++) rect(cx + Math.cos(rad) * (r - w), cy + Math.sin(rad) * (r - w), 1, 1, c); }
+  rect(cx - r - 2, cy, 2 * r + 5, 2, "#2A1F2E");
+  var na = Math.PI + val * Math.PI; for (var d = 0; d < r - 8; d++) rect(cx + Math.cos(na) * d, cy + Math.sin(na) * d, 2, 2, "#FFFFFF");
+  ddisc(cx, cy, 4, "#FFFFFF", 1); ptext(L, "0%", cx - r - 4, cy + 6, 1, "#E0453A"); ptext(L, "SURE", cx + r - 18, cy + 6, 1, "#28A86A");
+}
+function sPossible(u, a, b) {
+  rect(0, 0, W, H, "#140F2E"); stars(u, 70);
+  var hk = eout(seg(u, LN("S3", 3), LN("S3", 3) + .6)), h = 120 + 50 * hk;
+  ddisc(135, 230, 90, "#3A1E6E", .4); mountain(135, 262, h, seg(u, LN("S3", 4), LN("S3", 4) + 1.0));
+  var v = .7; v = lerp(.7, .07, eio(seg(u, LN("S3", 2), LN("S3", 2) + 1.4))); if (u > LN("S3", 4)) v = lerp(.07, .13, eout(seg(u, LN("S3", 4), LN("S3", 4) + .6)));
+  v += Math.sin(u * 30) * .006; gauge(135, 338, 52, cl(v, .02, 1));
+  if (u > LN("S3", 4) + .3) { var tk = eout(seg(u, LN("S3", 4) + .3, LN("S3", 4) + .6)); rect(104, 352 - tk * 4, 62, 14, "#2A1F2E"); rect(105, 353 - tk * 4, 60, 12, "#FFE066"); ptext(L, "NOT ZERO", 111, 356 - tk * 4, 1, "#8A5A2E"); }
+  return camAt([[a, 135, 280, 1.3], [b, 135, 270, 1.45, b - a]], u);
+}
+// ---------- step 2: the path (crossroads at dusk) ----------
+function dusk() { var C = ["#2A1E4E", "#4A2A66", "#7A3A6E", "#C2566A", "#F08A5C", "#FFC17A"]; for (var i = 0; i < 6; i++) rect(0, i * 46, W, 46, C[i]); ddisc(135, 270, 26, "#FFE9A0", .6); rect(0, 276, W, H - 276, "#2E4A3A"); for (var j = 0; j < 80; j++) rect(hash(j) * W, 280 + hash(j + 9) * 200, 2, 1, "#3C5E48"); }
+function road(x0, y0, x1, y1, w0, w1, col) { for (var s = 0; s <= 1; s += .004) { var x = lerp(x0, x1, s), y = lerp(y0, y1, s), w = lerp(w0, w1, s); rect(x - w / 2, y, w, 2, col); } }
+function signpost(x, y, icon, lit, k) {
+  if (k <= 0) return; var yy = y + Math.round((1 - k) * 8); rect(x - 1, yy, 2, 22, "#5A3E2E");
+  rect(x - 17, yy - 16, 34, 18, lit ? "#FFC145" : "#2A1F2E"); rect(x - 16, yy - 15, 32, 16, lit ? "#FFF0B8" : "#C98A4E");
+  var c = lit ? "#8A5A2E" : "#FFFFFF";
+  if (icon === 0) { ddisc(x, yy - 7, 5, c, 1); rect(x, yy - 10, 1, 4, lit ? "#FFF0B8" : "#C98A4E"); rect(x, yy - 7, 3, 1, lit ? "#FFF0B8" : "#C98A4E"); }
+  if (icon === 1) { ddisc(x, yy - 7, 5, c, 1); ptext(L, "$", x - 2, yy - 10, 1, lit ? "#FFF0B8" : "#C98A4E"); }
+  if (icon === 2) { L.fillStyle = c; L.beginPath(); L.moveTo(x, yy - 13); L.lineTo(x + 6, yy - 2); L.lineTo(x - 6, yy - 2); L.fill(); rect(x, yy - 9, 1, 4, lit ? "#FFF0B8" : "#C98A4E"); }
+}
+function sPath(u, a, b) {
+  dusk(); var pick = LN("S4", 2) + 2.2, scan0 = LN("S4", 2), pk = seg(u, pick, pick + .3);
+  var ends = [[60, 300], [135, 290], [210, 300]];
+  ends.forEach(function (e, i) { road(135, 470, e[0], e[1], 70, 10, i === 1 && pk > 0 ? "#E8C46A" : "#8A7A6A"); });
+  var sk = [0, 1, 2].map(function (i) { return eout(seg(u, LN("S4", 1) + i * .25, LN("S4", 1) + i * .25 + .3)); });
+  var look = u > scan0 && u < pick ? Math.floor((u - scan0) / ((pick - scan0) / 3)) : -1;
+  ends.forEach(function (e, i) { signpost(e[0], e[1] - 26, i, (i === look) || (i === 1 && pk > 0), sk[i]);
+    if (i === look) ddisc(e[0], e[1] - 34, 18, "#FFE9A0", .25); });
+  if (pk > 0) ddisc(135, 262, 30 * pk, "#FFE9A0", .4);
+  var wk = seg(u, pick + .5, b), sc = lerp(1, .45, wk), hx = 135 - 24 * sc + (look >= 0 ? (look - 1) * 4 : 0), hy = lerp(452, 330, wk);
+  if (wk > 0 && wk < 1) img("c_walk" + (Math.floor(u * 8) % 4), hx, hy - 53 * sc, false, sc);
+  else img(u > scan0 && u < pick ? "c_lookup" : (blinkAt(u, .2) ? "c_blink" : "c_stand"), hx, hy - 53 * sc, false, sc);
+  if (look >= 0) { var q = Math.floor(u * 3) % 2; ptext(L, "?", 135 + (look - 1) * 4, 388 - q, 1, "#FFFFFF"); }
+  return camAt([[a, 135, 340, 1.5], [scan0, 135, 330, 1.45, 1.0], [pick + .5, 135, 300, 1.6, .5], [b, 135, 300, 1.8, b - pick - .5]], u);
+}
+// ---------- step 3: execution (goal block -> tasks -> stairs) ----------
+var STEPN = 9;
+function stairPos(i) { return [70 + i * 18, 430 - i * 22]; }
+function stairs(u, n, lit, col) { for (var i = 0; i < n; i++) { var p = stairPos(i); rect(p[0], p[1], 20, 6, "#2A1F2E"); rect(p[0] + 1, p[1] + 1, 18, 4, i === lit ? "#FFE066" : (col || "#B8B0D8")); rect(p[0] + 1, p[1] + 5, 18, 3, "#4A4470"); } }
+function clouds(u) { for (var i = 0; i < 6; i++) { var x = (hash(i) * 300 + u * (4 + i)) % 320 - 30, y = 40 + i * 30; ddisc(x, y, 16 + hash(i + 3) * 10, "#E9E4FF", .55); } }
+function sExec(u, a, b) {
+  rect(0, 0, W, H, "#2A2560"); for (var i = 0; i < 6; i++) rect(0, i * 80, W, 80, ["#1E1A4A", "#2A2560", "#3A3274", "#4B3E86", "#5E4C96", "#6E5AA0"][i]); clouds(u);
+  var t1 = LN("S5", 2), t2 = LN("S5", 3), t3 = LN("S5", 4), t4 = LN("S5", 5);
+  var crack = seg(u, t1, t1 + .4), assemble = seg(u, t3, t3 + 2.0), nStairs = Math.floor(STEPN * eio(assemble));
+  if (crack < 1) { var gx = 120, gy = 150 + Math.sin(u * 2) * 2; rect(gx - 1, gy - 1, 62, 42, "#2A1F2E"); rect(gx, gy, 60, 40, "#8C86A8"); rect(gx, gy, 60, 4, "#A8A2C4"); ptext(L, "GOAL", gx + 18, gy + 16, 1, "#2A1F2E");
+    if (crack > 0) for (var c = 0; c < 6; c++) rect(gx + 10 + c * 8, gy + 6 + (c % 2) * 14, 1, 14, "#2A1F2E"); }
+  else if (assemble < 1) {
+    var pr = t2 < u ? [2, 0, 1] : [0, 1, 2], lab = ["3", "1", "2"];
+    for (var j = 0; j < 3; j++) { var slot = pr[j], x = 92 + slot * 32, y = 150 + Math.sin(u * 2 + j) * 2 - eout(seg(u, t1 + .4, t1 + .9)) * 0, bx = lerp(120 + j * 20, x, eout(seg(u, t1 + .3, t1 + .8)));
+      var f = assemble; if (f > 0) { var dst = stairPos(Math.min(STEPN - 1, j * 3)); bx = lerp(bx, dst[0], eio(f)); y = lerp(y, dst[1] - 8, eio(f)); }
+      rect(bx - 1, y - 1, 26, 26, "#2A1F2E"); rect(bx, y, 24, 24, "#8C86A8"); ptext(L, u > t2 ? String(slot + 1) : "?", bx + 10, y + 9, 1, "#2A1F2E"); }
+  }
+  stairs(u, nStairs, u > t4 ? 0 : -1);
+  if (assemble >= 1) { for (var k = STEPN; k < 22; k++) { var p = stairPos(k); if (p[1] > -20) { rect(p[0], p[1], 20, 6, "#2A1F2E"); rect(p[0] + 1, p[1] + 1, 18, 4, "#8C86B8"); } } }
+  var p0 = stairPos(0), onStair = u > t4 + .6;
+  img(onStair ? "c_stand" : (u > t4 ? "c_walk" + (Math.floor(u * 8) % 4) : "c_stand"), lerp(28, p0[0] - 14, eio(seg(u, t4, t4 + .6))), (onStair ? p0[1] : 430) - 53);
+  if (u > t4 + .6) { var lk = eout(seg(u, t4 + .6, t4 + 1.0)); rect(p0[0] - 18, p0[1] + 12 - lk * 3, 58, 13, "#2A1F2E"); rect(p0[0] - 17, p0[1] + 13 - lk * 3, 56, 11, "#FFE066"); ptext(L, "TODAY:20M", p0[0] - 14, p0[1] + 16 - lk * 3, 1, "#8A5A2E"); ddisc(p0[0] + 10, p0[1] + 2, 16 * lk, "#FFE9A0", .35); }
+  return camAt([[a, 135, 220, 1.6], [t3, 135, 220, 1.6], [t3 + 2.0, 120, 330, 1.45, 2.0], [t4 + .6, 100, 380, 1.9, .6], [b, 150, 250, 1.05, b - t4 - .6]], u);
+}
+// ---------- repeat: climb, a stair crumbles, re-plan, a new branch ----------
+function sRepeat(u, a, b) {
+  rect(0, 0, W, H, "#2A2560"); for (var i = 0; i < 6; i++) rect(0, i * 80, W, 80, ["#1E1A4A", "#2A2560", "#3A3274", "#4B3E86", "#5E4C96", "#6E5AA0"][i]); clouds(u);
+  var cyc = (b - a) / 2.2, ph = ((u - a) % cyc) / cyc, round = Math.floor((u - a) / cyc);
+  for (var k = 0; k < 22; k++) { var p = stairPos(k), broken = k === 5 && ph > .45; if (p[1] < -20) continue; if (!broken) { rect(p[0], p[1], 20, 6, "#2A1F2E"); rect(p[0] + 1, p[1] + 1, 18, 4, k < 5 ? "#FFE066" : "#B8B0D8"); } }
+  if (ph > .45 && ph < .7) for (var d = 0; d < 14; d++) { var pp = stairPos(5), kk = seg(ph, .45, .7); rect(pp[0] + hash(d) * 20, pp[1] + kk * kk * 120 + hash(d + 4) * 6, 2, 2, "#8C86B8"); }
+  // the new branch, rising to the left from stair 4
+  var br = eout(seg(ph, .7, .95)); for (var j = 0; j < 8 * br; j++) { var q = stairPos(4); var x = q[0] - 4 - j * 18, y = q[1] - 22 - j * 22; rect(x, y, 20, 6, "#2A1F2E"); rect(x + 1, y + 1, 18, 4, "#9BE3B0"); }
+  var si = ph < .45 ? Math.floor(lerp(0, 4.99, ph / .45)) : (ph < .7 ? lerp(4.99, 2, seg(ph, .5, .7)) : 2 + 2 * seg(ph, .7, 1)), sp = stairPos(Math.floor(si));
+  img(ph > .45 && ph < .55 ? "c_shock" : "c_walk" + (Math.floor(u * 8) % 4), sp[0] - 14, sp[1] - 53, ph > .55 && ph < .7);
+  if (ph > .5 && ph < .7) { var q2 = Math.floor(u * 4) % 2; ptext(L, "?", sp[0] + 8, sp[1] - 60 - q2, 1, "#FFFFFF"); }
+  var c = stairPos(4); return { x: c[0] + 10, y: c[1] - 20, z: 1.6 };
+}
+// ---------- many realities: branching lights in the night sky ----------
+var BC = ["#FF7A59", "#FFC145", "#6CC7A3", "#4C9AFF", "#B07CFF", "#FF9FC2", "#7FD4FF"];
+function branch(x, y, ang, len, depth, grow, seed) {
+  if (depth > 5 || grow <= 0) return; var g = cl(grow * 1.8, 0, 1), n = Math.floor(len * g), col = BC[(seed + depth) % BC.length];
+  for (var i = 0; i < n; i++) { var px = x + Math.cos(ang) * i, py = y + Math.sin(ang) * i; rect(px, py, depth < 2 ? 2 : 1, 1, col); if (i % 6 === 0 && depth < 3) rect(px, py, 1, 1, "#FFFFFF"); }
+  if (g >= 1) { var ex = x + Math.cos(ang) * len, ey = y + Math.sin(ang) * len, rest = (grow - .55) / .45;
+    branch(ex, ey, ang - .35 - hash(seed) * .25, len * .78, depth + 1, rest, seed * 2 + 1); branch(ex, ey, ang + .35 + hash(seed + 1) * .25, len * .78, depth + 1, rest, seed * 2 + 2);
+    if (depth === 5) ddisc(ex, ey, 2, "#FFFFFF", .8); }
+}
+function sMany(u, a, b) {
+  rect(0, 0, W, H, "#07061A"); stars(u, 140);
+  var g = seg(u, a - .2, LN("S7", 3) + 2.0);
+  for (var r = 0; r < 7; r++) { var gx = 20 + r * 38, gg = .12 + g * 1.5 - hash(r) * .12; branch(gx, 478, -Math.PI / 2 + (hash(r + 7) - .5) * .3, 78 + hash(r + 2) * 24, 0, gg, r + 1); }
+  // the one who drifts: a dim dot wandering with no path
+  var dx = 230 + Math.sin(u * .9) * 18 + Math.sin(u * 2.3) * 6, dy = 420 + Math.cos(u * 1.3) * 10; if (u > LN("S7", 1) && u < LN("S7", 2) + .5) { rect(dx, dy, 2, 2, "#6B6F80"); ptext(L, "?", dx + 3, dy - 8, 1, "#6B6F80"); }
+  return camAt([[a, 135, 400, 1.9], [LN("S7", 1), 135, 340, 1.4, 2.5], [b, 135, 250, 1.0, b - LN("S7", 1)]], u);
+}
+// ---------- the end: back to the fan, then the desk, the first page ----------
+function sEnd(u, a, b) {
+  var cut = a + 1.4;
+  if (u < cut) { ceilingFan(u); bedTop(u, true, seg(u, a + .6, cut)); return camAt([[a, 135, 118, 1.7], [cut, 135, 300, 1.6, 1.4]], u); }
+  L.drawImage(A.room_night, 0, 0); var lamp = eout(seg(u, cut + .2, cut + .6)); ddisc(246, 322, 34 + 30 * lamp, "#FFD678", .2 + .3 * lamp);
+  img("notebook", 168, 331); if (u > cut + .8) ddisc(183, 335, 14, "#FFE9A0", .45);
+  chr(Math.floor(u * 5) % 2 && u > cut + .6 ? "sit_write1" : "sit_write0", 126, 352 - 40);
+  return camAt([[cut, 178, 330, 2.3], [b, 182, 334, 2.8, b - cut]], u);
+}
+var SC = [["S1", sBed], ["S2", sQuestion], ["S3", sPossible], ["S4", sPath], ["S5", sExec], ["S6", sRepeat], ["S7", sMany], ["S8", sEnd]].map(function (s, i) {
+  var sp = SCN[s[0]]; return { a: i === 0 ? 0 : sp[0], b: sp[1], f: s[1], k: s[0] };
+});
+function renderTo(e, u, ctx) { L.setTransform(1, 0, 0, 1, 0, 0); L.clearRect(0, 0, W, H); var cam = e.f(u, e.a, e.b); ctx.save(); blit(cam, 0, 0, OW, OH, ctx); ctx.restore(); }
+function popTrans(u, prev, next, k) {   // owner rule: scene changes pop (no sound)
+  X.fillStyle = "#0B0920"; X.fillRect(0, 0, OW, OH);
+  if (k < .4) { var q = eio(k / .4), sc = 1 - .14 * q; renderTo(prev, Math.min(u, prev.b - .001), OA[1]);
+    X.save(); X.globalAlpha = 1 - .5 * q; X.drawImage(OA[0], Math.round(OW * (1 - sc) / 2), Math.round(OH * (1 - sc) / 2), Math.round(OW * sc), Math.round(OH * sc)); X.restore(); }
+  else { var r = (k - .4) / .6, sc2 = r < .6 ? lerp(.82, 1.04, eout(r / .6)) : lerp(1.04, 1, eio((r - .6) / .4)); renderTo(next, Math.max(u, next.a), OB[1]);
+    X.drawImage(OB[0], Math.round(OW * (1 - sc2) / 2), Math.round(OH * (1 - sc2) / 2), Math.round(OW * sc2), Math.round(OH * sc2)); }
+}
+function render(u) {
+  X.setTransform(1, 0, 0, 1, 0, 0); X.imageSmoothingEnabled = false; X.globalAlpha = 1; X.filter = "none";
+  var i = 0; while (i < SC.length - 1 && u >= SC[i + 1].a) i++;
+  var cur = SC[i], nxt = SC[i + 1];
+  if (nxt && u > nxt.a - .25) popTrans(u, cur, nxt, seg(u, nxt.a - .25, nxt.a + .2));
+  else if (i > 0 && u < cur.a + .2) popTrans(u, SC[i - 1], cur, seg(u, cur.a - .25, cur.a + .2));
+  else renderTo(cur, u, X);
+  overlays(u);
+}
+// ---------- screen overlays: step titles, ingredient slots, subtitles, end card ----------
+function slotsHUD(u) {
+  var on = seg(u, LN("S2", 2), LN("S2", 2) + .4) * (1 - seg(u, SCN.S7[0] - .3, SCN.S7[0])); if (on <= 0) return;
+  var names = ["POSSIBILITY", "PATH", "EXECUTION"], at = [SCN.S3[0], SCN.S4[0], SCN.S5[0]], cols = ["#FFC145", "#6CC7A3", "#4C9AFF"], bw = 300, gap = 24, x0 = (OW - 3 * bw - 2 * gap) / 2, y = 120;
+  X.globalAlpha = on;
+  for (var i = 0; i < 3; i++) { var x = x0 + i * (bw + gap), done = u > at[i] + .3, active = u > at[i] - .1 && (i === 2 ? u < SCN.S6[1] : u < at[i + 1]);
+    X.fillStyle = "#1A1530"; X.fillRect(x, y, bw, 92); X.fillStyle = done ? cols[i] : "#3A3560"; X.fillRect(x + 6, y + 6, bw - 12, 80);
+    if (active) { X.fillStyle = "#FFFFFF"; X.fillRect(x, y + 86, bw, 6); }
+    var s = (i + 1) + " " + names[i], B = 3, w = pwidth(s, B); ptext(X, s, x + (bw - w) / 2, y + 36, B, done ? "#1A1530" : "#8C88B8"); }
+  X.globalAlpha = 1;
+}
+function overlays(u) {
+  slotsHUD(u);
+  [["S3", "STEP 1: *POSSIBILITY*"], ["S4", "STEP 2: *THE PATH*"], ["S5", "STEP 3: *EXECUTION*"], ["S6", "AGAIN. AND *AGAIN.*"]].forEach(function (c) { var a = SCN[c[0]][0]; caption(u, c[1], a + .1, a + 3.2, { y: 300, b: 9 }); });
+  if (u < 0.05 || u < SCN.S1[1] - .3) caption(u + 3, "CAN YOU WRITE YOUR OWN *DESTINY?*", 0, SCN.S1[1] + 2.7, { y: 300, b: 9 });
+  var endAt = LN("S8", 2) - .2;
+  if (u > endAt) { var k = seg(u, endAt, endAt + .5); X.globalAlpha = .6 * k; X.fillStyle = "#140F2E"; X.fillRect(0, 0, OW, OH); X.globalAlpha = 1;
+    caption(u, "WHAT'S THE ONE *STAIR* YOU'LL TAKE TODAY?", endAt, 999, { y: 560 });
+    if (u > endAt + .3) { var lab = "DMYOR", B = 20, w2 = pwidth(lab, B); ptext(X, lab, (OW - w2) / 2 + B, 1080 + B, B, "#1A1530"); ptext(X, lab, (OW - w2) / 2, 1080, B, "#FFFFFF");
+      var h = "@BECAUSEIDMYOR", w3 = pwidth(h, 7); ptext(X, h, (OW - w3) / 2, 1280, 7, "#FFC145"); } }
+  else TL.subs.forEach(function (c) { if (u >= c[0] && u < c[1]) caption(u, c[2], c[0], c[1], { y: 1650, b: 7, accent: "#FFFFFF" }); });
+}
+window.__duration = DUR;
+window.__seek = function (u) { return READY.then(function () { render(u); }); };
+READY.then(function () { render(0); });
+</script></body></html>

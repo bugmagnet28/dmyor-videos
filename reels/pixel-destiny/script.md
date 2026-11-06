@@ -1,0 +1,19 @@
+# pixel-destiny: script v1 (2026-11-06, from the owner's brief)
+
+Pixel story reel, same engine and art style as the Sam film (`reels/pixel-book`). About 70 s. Narrator voice, calm and thoughtful, one dry beat in places.
+Owner's words are kept; only joined for the ear. Captions in pixel font throughout (as in Sam v2).
+
+| # | Time | Picture | Narration |
+|---|---|---|---|
+| 1 | 0-6 s | **Hook.** Night. Camera looks straight up at a ceiling fan, blades turning slowly, moonlight through the window. Tilt down: a young man lying in bed, eyes open, staring at the fan. Frame 0 = fan + text "Can you write your own destiny?" | What would it take to write your own destiny... and not just hope to get lucky? |
+| 2 | 6-12 s | Thought bubble above him: an old recipe book opens, "RECIPE: DESTINY", three empty ingredient slots. A pair of dice rolls past (luck) and he flicks it away. | How much control do we really have over making our dreams real? Let's figure it out. Three steps. |
+| 3 | 12-22 s | **Step 1, Possibility.** Slot 1 fills. His dream appears as a pixel picture in the bubble: a mountain peak with a flag. A "possibility" gauge beside it: the needle swings low, toward "unlikely", and stops just above zero. The peak shows a thin path. | Step one. Possibility. Is what you're dreaming of actually possible? The less likely you believe it is, the harder it gets to make it real. Harder. But not impossible. |
+| 4 | 22-32 s | **Step 2, The path.** He stands at a crossroads at dusk. Three signposts, each with small icons (time, cost, risk). He walks to each, pauses, and one sign lights up. | Step two. The path. There's never just one way to reach a future. Look at your options, and pick the one that's best for you right now. |
+| 5 | 32-46 s | **Step 3, Execution.** The chosen path rises into a long staircase into the clouds. A big stone block labelled with the goal cracks into smaller blocks with priority numbers 1, 2, 3; each block becomes a stair. He steps onto the first stair and it lights up: "Today: 20 min". | Step three. Execution. A big goal doesn't happen in an instant. Turn it into tasks. Decide what comes first. Then break each task into something you can do today. Think of it as one stair, in a very long staircase. |
+| 6 | 46-54 s | **Repeat.** Halfway up, a stair crumbles (life happens). He walks back down to the crossroads, picks again, and climbs a new branch. A small loop arrow "2 → 3 → 2 → 3" spins in the corner while this repeats quickly twice. | And you don't do this once. Your situation changes, so you come back to steps two and three... again, and again. |
+| 7 | 54-64 s | **Many realities.** Zoom out to the night sky: thousands of tiny climbers on their own staircases, each choice splitting into a new light (callback to the Sam beams). | So, does this make you the author of your destiny? If the effort is logical and it makes sense, it takes you to a reality that would never exist if you just drifted. That's how the future gets written. Every choice any of us makes leads to a reality that wouldn't exist otherwise. |
+| 8 | 64-72 s | **Back to the bed.** The fan again, same shot as frame 0 (loop). He sits up, switches on the lamp, writes the dream on page one. End card. | That's what Dmyor is for. Write your dream down today, and break it into steps you can actually take. What's the one stair you'll take today? |
+
+New art needed (Pixel Art Studio): ceiling fan (4-frame spin), bed top-down shot, recipe book + dice, possibility gauge, crossroads with 3 signposts, staircase into clouds, cracking goal block, sky of tiny climbers. Reused from Sam: room night/dawn, bed poses, notebook, writing, beams.
+
+Sound: soft night ambience, fan whir (fades), page turn, dice rattle, gauge tick, footsteps, stone crack, a soft chime on the lit stair. No risers (owner rule).

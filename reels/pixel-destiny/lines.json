@@ -1,0 +1,10 @@
+{
+ "S1": [["What would it take, to write your own destiny...", 0.3], ["and not just hope to get lucky?", 0.7]],
+ "S2": [["How much control do we really have, over making our dreams real?", 0.5], ["Let's figure it out.", 0.25], ["Three steps.", 0.55]],
+ "S3": [["Step one. Possibility.", 0.4], ["Is what you're dreaming of, actually possible?", 0.5], ["The less likely you believe it is, the harder it gets to make it real.", 0.45], ["Harder.", 0.35], ["But not impossible.", 0.65]],
+ "S4": [["Step two. The path.", 0.4], ["There's never just one way to reach a future.", 0.35], ["Look at your options, and pick the one that's best for you, right now.", 0.65]],
+ "S5": [["Step three. Execution.", 0.4], ["A big goal doesn't happen in an instant.", 0.3], ["Turn it into tasks.", 0.2], ["Decide what comes first.", 0.25], ["Then break each task, into something you can do today.", 0.45], ["Think of it as one stair, in a very long staircase.", 0.65]],
+ "S6": [["And you don't do this once.", 0.3], ["Your situation changes, so you come back to steps two and three...", 0.2], ["again, and again.", 0.65]],
+ "S7": [["So, does this make you the author of your destiny?", 0.65], ["If the effort is logical, and it makes sense, it takes you to a reality that would never exist, if you just drifted.", 0.5], ["That's how the future gets written.", 0.3], ["Every choice any of us makes, leads to a reality that wouldn't exist otherwise.", 0.65]],
+ "S8": [["That's what Deem-yor is for.", 0.2], ["Write your dream down today, and break it into steps you can actually take.", 0.4], ["What's the one stair you'll take today?", 1.6]]
+}
