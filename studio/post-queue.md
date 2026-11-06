@@ -4,13 +4,15 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 ## Ready to post
 
+- Note 2026-11-06 21:30 (Claude): Nov 6 batch scheduled on IG (likes hidden), X and YT: miss-twice Fri 22:00, ten-minute-reset Sat 13:00, same-weight Sat 19:30. Leftover Wed/Thu reels on Instagram: say-sentences posted Fri ~20:20, pickups scheduled Sat 09:30; busy-week skipped on IG (already on X/YT; 5-flow limit). All Wed/Thu reels now done on every platform except busy-week on IG.
+
 ## Built Fri 2026-11-06 (auto-approved, to schedule; Nov 5 run failed so there was no Fri batch). Instagram, X and YouTube Shorts
 
 Suggested: **ill-miss-twice tonight Fri 22:00 IST** on all three (it is the reel ill-forget-book promised for "tomorrow"; YT + X have nothing else today). Then Sat Nov 7: **13:00 ill-ten-minute-reset**, **19:30 ill-same-weight** (strongest). If Instagram's Fri backlog (pickups 13:00, busy-week 16:30, say-sentences 19:30) is still not scheduled, do those first and move this batch one slot later each; follow lines say "Next", so any order of these three still holds.
 
-- [ ] Fri 22:00 IST · **ill-miss-twice** (habits, structure A, streak-rows chart on frame 0, 45.6 s short arm; keeps ill-forget-book's promise) · `ready-to-post/2026-11-06-ill-miss-twice/`
-- [ ] Sat 13:00 IST · **ill-ten-minute-reset** (home, story B, Meera, 240 vs 70 min bar chart on frame 0, ~69 s) · `ready-to-post/2026-11-06-ill-ten-minute-reset/`
-- [ ] Sat 19:30 IST · **ill-same-weight** (fitness, structure C, flat 40 kg line on frame 0, ~61 s, strongest) · `ready-to-post/2026-11-06-ill-same-weight/`
+- [x] Fri 22:00 IST · **ill-miss-twice** (habits, structure A, streak-rows chart on frame 0, 45.6 s short arm; keeps ill-forget-book's promise) · `ready-to-post/2026-11-06-ill-miss-twice/`
+- [x] Sat 13:00 IST · **ill-ten-minute-reset** (home, story B, Meera, 240 vs 70 min bar chart on frame 0, ~69 s) · `ready-to-post/2026-11-06-ill-ten-minute-reset/`
+- [x] Sat 19:30 IST · **ill-same-weight** (fitness, structure C, flat 40 kg line on frame 0, ~61 s, strongest) · `ready-to-post/2026-11-06-ill-same-weight/`
 - **Render status (18:00-19:10 IST):** ill-miss-twice video ready. ill-ten-minute-reset and ill-same-weight were still recording (the Mac kept stalling, ~0.1 fps); a detached finisher (`studio/state/finish_2026-11-06.sh`, log `studio/state/finish_2026-11-06.log`) completes and packages them. Before scheduling, check `ready-to-post/2026-11-06-<slug>/video.mp4` exists; if not, run the finisher again.
 - Follow lines chain: miss-twice -> "Next: your Sunday clean-up, in ten minutes a night", reset -> "Next: why lifting the same weight stops working", same-weight -> "Next: the first ten minutes of your morning" (idea #39, next run builds it). YouTube titles are search phrases (in each post.md).
 
