@@ -65,12 +65,12 @@ Instagram ranks Reels mostly on: watch time and completion, replays, **sends per
 4. **Loop the ending:** the last frame visually matches frame 0 (same chart, now fixed), so autoplay replays look intentional.
 5. **Share trigger:** one line built to be sent ("Send this to the friend who…"), kept, but specific and in the middle, not only at the end.
 6. **Save trigger:** a screenshot-worthy rule card held 2 s.
-7. **Comments:** end with a question that is easy and personal ("What's the goal you keep restarting?"). Reply to every comment within the first hour (comment replies count as engagement and bring viewers back). [ASK] Comment-keyword funnel ("Comment PLAN and I'll send…"): Instagram demotes engagement bait, so only a genuine offer; needs owner OK.
+7. **Comments:** end with a question that is easy and personal ("What's the goal you keep restarting?"). Reply to every comment within the first hour (comment replies count as engagement and bring viewers back). Comment offer (owner OK 2026-11-06) ("Comment PLAN and I'll send…"): Instagram demotes engagement bait, so only a genuine offer; needs owner OK.
 8. **Captions as search:** first caption line restates the hook with keywords people search ("how to stop procrastinating", "why I can't stay consistent"). Instagram search indexes captions.
 9. **Series for follows:** follows come from expecting more. Name a recurring series on screen and in the follow line, e.g. **"Why your goals fail, #12"**. Number every pillar-A reel.
 10. **Posting:** strongest reel 19:30 IST (all three hits were evening or morning slots), the other two at 09:30 and 13:00. Keep 3/day, but drop any reel that fails the gate rather than fill the slot.
-11. [ASK] **Trial Reels:** Instagram lets professional accounts show a reel to non-followers only before it reaches followers. Useful for A/B testing hooks on the same video (two hooks, one winner). Needs owner OK to use.
-12. [ASK] **Music:** a quiet trending audio under the voice can add distribution. Explainers have no music by owner rule; propose a 1-week A/B.
+11. **Trial Reels (owner OK 2026-11-06):** Instagram lets professional accounts show a reel to non-followers only before it reaches followers. Useful for A/B testing hooks on the same video (two hooks, one winner). Needs owner OK to use.
+12. **Music (owner OK 2026-11-06, 1-week A/B):** a quiet trending audio under the voice can add distribution. Explainers have no music by owner rule; propose a 1-week A/B.
 13. **Pin the 3 best reels** to the top of the profile (hard-part, bad-night, wake-time) so profile visitors see proof before deciding to follow. [ASK] owner OK (the bio stays as is).
 
 ## 5. Two-week test (V-EXP-34, Nov 7-20)
