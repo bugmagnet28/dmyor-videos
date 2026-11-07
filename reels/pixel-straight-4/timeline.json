@@ -1,0 +1,129 @@
+{
+ "total": 36.525,
+ "scenes": {
+  "S1": [
+   0.5,
+   4.953
+  ],
+  "S2": [
+   4.953,
+   9.625
+  ],
+  "S3": [
+   9.625,
+   14.918
+  ],
+  "S4": [
+   14.918,
+   18.275
+  ],
+  "S5": [
+   18.275,
+   24.102
+  ],
+  "S6": [
+   24.102,
+   36.525
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   2.21,
+   "I'm just not a morning person."
+  ],
+  [
+   "S1",
+   1,
+   2.41,
+   4.353,
+   "I'm not a reader. I'm bad with money."
+  ],
+  [
+   "S2",
+   0,
+   4.953,
+   7.418,
+   "Why do we stop doing things we know are good for us?"
+  ],
+  [
+   "S2",
+   1,
+   7.818,
+   9.075,
+   "Reason number twelve."
+  ],
+  [
+   "S3",
+   0,
+   9.625,
+   11.752,
+   "When a habit doesn't match who you think you are,"
+  ],
+  [
+   "S3",
+   1,
+   11.952,
+   14.318,
+   "you quit, to stay consistent with the old you."
+  ],
+  [
+   "S4",
+   0,
+   14.918,
+   16.47,
+   "But identity isn't fixed."
+  ],
+  [
+   "S4",
+   1,
+   16.77,
+   17.675,
+   "It's evidence."
+  ],
+  [
+   "S5",
+   0,
+   18.275,
+   21.852,
+   "Every time you do the thing, even badly, even once, that's one vote."
+  ],
+  [
+   "S5",
+   1,
+   22.152,
+   23.502,
+   "I'm someone who reads."
+  ],
+  [
+   "S6",
+   0,
+   24.102,
+   25.997,
+   "You don't need a majority on day one."
+  ],
+  [
+   "S6",
+   1,
+   26.297,
+   27.576,
+   "You need the first vote."
+  ],
+  [
+   "S6",
+   2,
+   27.976,
+   31.046,
+   "That's what Dmyor is for. Every small step, kept as proof."
+  ],
+  [
+   "S6",
+   3,
+   31.446,
+   32.925,
+   "What's your first vote today?"
+  ]
+ ]
+}

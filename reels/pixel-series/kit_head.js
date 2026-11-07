@@ -131,3 +131,29 @@ function whyScene(u, a, b) {
 }
 function dayTag(lab, x, y, bg, fg) { var bw = pwidth(lab, 3) + 10; rect(x, y, bw, 32, "#2A1F2E"); rect(x + 1, y + 1, bw - 2, 30, bg || "#FFC145"); ptext(L, lab, x + 5, y + 6, 3, fg || "#1A1530"); }
 function bubble(x, y, w, h, tail) { rect(x - 1, y - 1, w + 2, h + 2, "#2A1F2E"); rect(x, y, w, h, "#FFFFFF"); if (tail) { rect(tail - 2, y + h, 5, 2, "#FFFFFF"); rect(tail - 1, y + h + 2, 3, 2, "#FFFFFF"); rect(tail, y + h + 4, 1, 2, "#FFFFFF"); } }
+// month grid: cells[i] = "tick" | "x" | "grey" | "now" | null; letters on the red header
+function monthGrid(x, y, cells, rows, k) {
+  rows = rows || 5; k = k == null ? 1 : k; var n = Math.floor(cells.length * k + .0001);
+  calendarGrid(x, y, 7, rows, 14, 12, function (i, cx, cy) { if (i >= n) return; var s = cells[i];
+    if (s === "tick") tick(cx + 1, cy + 4); else if (s === "x") redX(cx + 3, cy + 2, 7); else if (s === "grey") { rect(cx, cy, 13, 11, "#CFC6B4"); rect(cx + 3, cy + 5, 7, 1, "#A89F8C"); }
+    else if (s === "now") { rect(cx, cy, 13, 11, "#FFE066"); rect(cx, cy, 13, 1, "#E0453A"); } });
+  "MTWTFSS".split("").forEach(function (d, j) { ptext(L, d, x + j * 14 + 4, y - 10, 1, "#FFFFFF"); });
+}
+// line chart: series = [{pts: [0..1], col, k (0..1 drawn)}]
+function lineChart(x, y, w, h, series, title) {
+  rect(x - 1, y - 1, w + 2, h + 2, "#2A1F2E"); rect(x, y, w, h, "#FFF4E0"); if (title) ptext(L, title, x + 5, y + 4, 1, "#3A3560");
+  var gx = x + 8, gy = y + h - 8, gw = w - 16, gh = h - (title ? 22 : 14); rect(gx, gy - gh, 1, gh, "#3A3560"); rect(gx, gy, gw, 1, "#3A3560");
+  series.forEach(function (s) { var p = s.pts, m = p.length - 1, kk = s.k == null ? 1 : s.k;
+    for (var t = 0; t <= kk; t += .004) { var f = t * m, i = Math.min(m - 1, Math.floor(f)), r = f - i, v = lerp(p[i], p[i + 1], r); rect(gx + t * gw, gy - 2 - v * (gh - 4), 2, 2, s.col); } });
+  return { gx: gx, gy: gy, gw: gw, gh: gh };
+}
+// in-world sign card with 1-3 centred lines
+function signCard(cx, y, lines, bg, fg, b, k) {
+  b = b || 2; k = k == null ? 1 : eout(k); if (k <= 0) return; var w = 0; lines.forEach(function (l) { w = Math.max(w, pwidth(l, b)); }); w += 12 * b / 2 + 8; var h = lines.length * 10 * b + 8;
+  L.save(); L.translate(cx, y + h / 2); L.scale(k, k); L.translate(-w / 2, -h / 2);
+  L.fillStyle = "#1A1530"; L.fillRect(-1, -1, w + 2, h + 3); L.fillStyle = bg || "#FFC145"; L.fillRect(0, 0, w, h);
+  lines.forEach(function (l, i) { ptext(L, l, Math.round((w - pwidth(l, b)) / 2), 5 + i * 10 * b, b, fg || "#1A1530"); }); L.restore();
+}
+function floorRoom(wall, wall2, floor) { rect(0, 0, W, H, wall); for (var i = 0; i < 14; i++) rect(i * 20, 0, 1, 380, wall2); rect(0, 380, W, H - 380, floor || "#6B4430"); for (var j = 0; j < 6; j++) rect(0, 392 + j * 14, W, 1, "#5A3826"); }
+function sofaAt(x) { rect(x - 2, 326, 100, 54, "#2A1F2E"); rect(x, 328, 96, 26, "#C2566A"); rect(x, 352, 96, 18, "#A8434F"); rect(x - 2, 340, 12, 40, "#8E3644"); rect(x + 86, 340, 12, 40, "#8E3644"); }
+var STRAIGHT = { badgeBg: "#6CC7A3", badgeFg: "#1A1530" }, STORY = { badgeBg: "#B07CFF", badgeFg: "#FFFFFF" };

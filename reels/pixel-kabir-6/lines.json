@@ -1,0 +1,8 @@
+{
+ "S1": [["January first.", 0.2], ["Kabir changed his entire life. All of it. At once.", 0.6]],
+ "S2": [["So why do we stop doing things we know are good for us?", 0.4], ["Reason number nine.", 0.55]],
+ "S3": [["Five A M. Gym. Cold shower. Fifty pages. Meditation. No sugar. Spanish.", 0.4], ["Day three, one drops.", 0.3], ["Day four, all of them.", 0.6]],
+ "S4": [["Every new habit costs effort to start.", 0.3], ["Seven of them? He's out by lunch.", 0.6]],
+ "S5": [["So this year, he picked one.", 0.3], ["Just one. Until it runs on autopilot. Then the next.", 0.6]],
+ "S6": [["By December, he'd added five.", 0.3], ["Slowly. Boringly. For real.", 0.4], ["If you could keep only one, which would it be?", 1.4]]
+}

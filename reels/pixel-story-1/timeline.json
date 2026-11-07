@@ -1,0 +1,147 @@
+{
+ "total": 40.35,
+ "scenes": {
+  "S1": [
+   0.5,
+   4.124
+  ],
+  "S2": [
+   4.124,
+   8.648
+  ],
+  "S3": [
+   8.648,
+   13.183
+  ],
+  "S4": [
+   13.183,
+   18.102
+  ],
+  "S5": [
+   18.102,
+   23.906
+  ],
+  "S6": [
+   23.906,
+   30.691
+  ],
+  "S7": [
+   30.691,
+   40.35
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   1.222,
+   "Two people."
+  ],
+  [
+   "S1",
+   1,
+   1.422,
+   3.524,
+   "Same desk. Same goal. Same Monday."
+  ],
+  [
+   "S2",
+   0,
+   4.124,
+   6.588,
+   "Why do we stop doing things we know are good for us?"
+  ],
+  [
+   "S2",
+   1,
+   6.988,
+   8.098,
+   "Reason number eight."
+  ],
+  [
+   "S3",
+   0,
+   8.648,
+   10.662,
+   "Every day, one of them does twenty minutes."
+  ],
+  [
+   "S3",
+   1,
+   10.962,
+   12.583,
+   "The other one says, tomorrow."
+  ],
+  [
+   "S4",
+   0,
+   13.183,
+   15.403,
+   "After a week, nobody can tell the difference."
+  ],
+  [
+   "S4",
+   1,
+   15.803,
+   17.502,
+   "After a month, almost nothing."
+  ],
+  [
+   "S5",
+   0,
+   18.102,
+   19.383,
+   "This is why we stop."
+  ],
+  [
+   "S5",
+   1,
+   19.683,
+   23.306,
+   "The cost is today. The reward is so far away, it doesn't feel real."
+  ],
+  [
+   "S6",
+   0,
+   23.906,
+   24.822,
+   "After a year..."
+  ],
+  [
+   "S6",
+   1,
+   25.722,
+   27.358,
+   "one of them has a finished thing."
+  ],
+  [
+   "S6",
+   2,
+   27.658,
+   29.991,
+   "The other still has a note that says, tomorrow."
+  ],
+  [
+   "S7",
+   0,
+   30.691,
+   32.648,
+   "Twenty minutes was never the hard part."
+  ],
+  [
+   "S7",
+   1,
+   32.948,
+   35.079,
+   "Trusting a reward you can't see yet, is."
+  ],
+  [
+   "S7",
+   2,
+   35.479,
+   36.75,
+   "What's your twenty minutes?"
+  ]
+ ]
+}

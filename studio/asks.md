@@ -198,3 +198,11 @@ Instagram locked the account ("we locked your account to protect you from a poss
   1. In the Instagram app, open each reel below > View insights, screenshot the "Average watch time" and "Skip rate"/retention screen: ill-wake-time, ill-hard-part, ill-bad-night, ill-busy-week, ill-caffeine, ill-dark-morning, ill-forget-book. Drop them in `inbox/metrics/` (one session, no rush, no browser scraping).
   2. The new batch is auto-approved: next browser session schedules ill-miss-twice (Fri 22:00 or the next free slot), ill-ten-minute-reset (Sat 13:00), ill-same-weight (Sat 19:30) on IG, YT and X. Max 5 scheduling flows per session; Instagram still owes pickups, busy-week, say-sentences from Fri.
   3. Optional: Adam takes from `reels/<slug>/narration-elevenlabs-v3.txt` into `inbox/audio/<slug>.mp3`.
+
+## VASK-026: Schedule the Sun Nov 8 batch + watch-time screenshots (2026-11-07)
+- Status: open
+- What: 2 explainers, auto-approved (quality 35/40 each), `ready-to-post/2026-11-08-*/` (video.mp4 + post.md): 09:30 **ill-first-ten-minutes** (Reason #14), 13:00 **ill-decide-once** (Reason #15). 19:30 is pixel-kabir-1 as planned.
+- Steps:
+  1. Next browser session: schedule both on IG, X, YT (with pixel-kabir-1 that is 3 IG flows; max 5 per session).
+  2. Reason numbering: the pixel reels in `ready-to-post/pixel-review-2026-11-07/` already use #4-#13, so the explainers continue at #14. If you'd rather have the explainers take #4/#5 and renumber the pixel reels, say so and I'll re-cut the series cards (5 min each).
+  3. Still the most useful input (VASK-025): app screenshots of avg watch time + % watched for ill-wake-time, ill-hard-part, ill-bad-night, ill-busy-week, ill-dark-morning, ill-miss-twice into `inbox/metrics/`. The 50 s cap can't be judged without them.

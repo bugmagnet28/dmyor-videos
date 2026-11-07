@@ -1,0 +1,147 @@
+{
+ "total": 36.712,
+ "scenes": {
+  "S1": [
+   0.5,
+   4.449
+  ],
+  "S2": [
+   4.449,
+   9.321
+  ],
+  "S3": [
+   9.321,
+   14.999
+  ],
+  "S4": [
+   14.999,
+   19.349
+  ],
+  "S5": [
+   19.349,
+   24.124
+  ],
+  "S6": [
+   24.124,
+   30.293
+  ],
+  "S7": [
+   30.293,
+   36.712
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   2.29,
+   "Kabir is going to start a channel."
+  ],
+  [
+   "S1",
+   1,
+   2.59,
+   3.849,
+   "As soon as he's ready."
+  ],
+  [
+   "S2",
+   0,
+   4.449,
+   7.067,
+   "So why do we stop doing things we know are good for us?"
+  ],
+  [
+   "S2",
+   1,
+   7.467,
+   8.771,
+   "Reason number eleven."
+  ],
+  [
+   "S3",
+   0,
+   9.321,
+   10.945,
+   "First, the right microphone."
+  ],
+  [
+   "S3",
+   1,
+   11.195,
+   12.619,
+   "Then a camera. Then lights."
+  ],
+  [
+   "S3",
+   2,
+   12.869,
+   14.399,
+   "Then a course about lights."
+  ],
+  [
+   "S4",
+   0,
+   14.999,
+   15.949,
+   "Two years later."
+  ],
+  [
+   "S4",
+   1,
+   16.249,
+   18.749,
+   "Readiness: ninety nine percent. Videos: zero."
+  ],
+  [
+   "S5",
+   0,
+   19.349,
+   20.263,
+   "Here's the thing."
+  ],
+  [
+   "S5",
+   1,
+   20.513,
+   23.524,
+   "Ready is a feeling you get after you start. Not before."
+  ],
+  [
+   "S6",
+   0,
+   24.124,
+   26.49,
+   "So he filmed one. On his phone. In bad light."
+  ],
+  [
+   "S6",
+   1,
+   26.79,
+   27.736,
+   "It was terrible."
+  ],
+  [
+   "S6",
+   2,
+   28.036,
+   29.693,
+   "It was also video number one."
+  ],
+  [
+   "S7",
+   0,
+   30.293,
+   31.876,
+   "What are you still getting ready for?"
+  ],
+  [
+   "S7",
+   1,
+   32.176,
+   33.112,
+   "Tell me below."
+  ]
+ ]
+}

@@ -1,0 +1,11 @@
+ProtocolError: Target.setDiscoverTargets timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+    at <instance_members_initializer> (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/common/CallbackRegistry.js:108:14)
+    at new Callback (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/common/CallbackRegistry.js:112:16)
+    at CallbackRegistry.create (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/common/CallbackRegistry.js:27:26)
+    at Connection._rawSend (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/cdp/Connection.js:125:26)
+    at Connection.send (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/cdp/Connection.js:112:21)
+    at TargetManager.initialize (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/cdp/TargetManager.js:98:32)
+    at CdpBrowser._attach (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/cdp/Browser.js:98:35)
+    at CdpBrowser._create (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/cdp/Browser.js:40:23)
+    at ChromeLauncher.launch (file:///Users/sanyampathak/Documents/dmyor-videos/node_modules/puppeteer-core/lib/puppeteer/node/BrowserLauncher.js:168:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

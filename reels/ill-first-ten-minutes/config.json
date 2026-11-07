@@ -1,0 +1,192 @@
+{
+ "total": 48.96,
+ "brandT": 44.82,
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Ahead of your goal at 7 AM",
+      1,
+      "acc"
+     ],
+     [
+      "Ahead of your goal at 9 PM",
+      12,
+      "red"
+     ]
+    ],
+    "max": 12,
+    "chip": "The day goes first",
+    "y0": 980,
+    "gap": 300
+   },
+   "head": "At 9 PM,<br>the day <b>wins</b>.",
+   "t0": 0.0,
+   "t1": 4.67
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 14,
+    "title": "The day goes first",
+    "cue": [
+     "good",
+     "Reason"
+    ],
+    "at": [
+     1.75,
+     2.85
+    ]
+   },
+   "head": "Why we <b>stop</b>.",
+   "t0": 4.67,
+   "t1": 8.59
+  },
+  {
+   "type": "morning-drift",
+   "params": {
+    "hours": [
+     "9 AM",
+     "1 PM",
+     "6 PM",
+     "9 PM"
+    ],
+    "tiles": [
+     "An email",
+     "A favour",
+     "Tired"
+    ],
+    "goal": "Spanish: 30 min",
+    "cue": [
+     "email",
+     "favour",
+     "last"
+    ],
+    "at": [
+     1.31,
+     1.96,
+     4.47
+    ]
+   },
+   "head": "Every hour takes<br><b>a bite</b>.",
+   "t0": 8.59,
+   "t1": 15.71
+  },
+  {
+   "type": "ready-desk",
+   "params": {
+    "doc": "Before the phone",
+    "time": "7:00",
+    "note": "10 minutes",
+    "cue": [
+     "move",
+     "ten",
+     "phone"
+    ],
+    "at": [
+     0.31,
+     1.21,
+     3.49
+    ]
+   },
+   "head": "First ten <b>minutes</b>.",
+   "t0": 15.71,
+   "t1": 19.93
+  },
+  {
+   "type": "two-blocks",
+   "params": {
+    "mins": "10",
+    "rows": [
+     [
+      "Learning Spanish",
+      "Say 10 real sentences",
+      "phone: still off"
+     ],
+     [
+      "Writing a book",
+      "100 words",
+      "phone: still off"
+     ]
+    ],
+    "cue": [
+     "Spanish",
+     "book"
+    ],
+    "at": [
+     0.25,
+     4.07
+    ]
+   },
+   "head": "Ten minutes.<br><b>Before</b> anything.",
+   "t0": 19.93,
+   "t1": 26.61
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "FIRST 10 MINUTES",
+    "items": [
+     "Before the phone",
+     "One small piece",
+     "7 AM beats 9 PM"
+    ],
+    "cue": [
+     "Ten",
+     "nine",
+     "happens"
+    ],
+    "at": [
+     0.05,
+     2.76,
+     4.17
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>.",
+   "t0": 26.61,
+   "t1": 34.17
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Speak Spanish by summer",
+    "date": "Open it again: Jun 2027",
+    "steps": [
+     "7:00: 10 minutes",
+     "Before the phone",
+     "Every weekday"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 34.17,
+   "t1": 39.61
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why deciding every day ends good habits",
+    "when": "Next",
+    "cue": [
+     null,
+     "habits"
+    ],
+    "at": [
+     0.2,
+     4.33
+    ]
+   },
+   "head": "One reason<br><b>a day</b>.",
+   "t0": 39.61,
+   "t1": 44.82
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  15.66,
+  26.56
+ ]
+}

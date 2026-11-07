@@ -165,3 +165,11 @@ While scheduling diagram-howto-vo from the web (browser automation), two "Your p
 - 2026-11-06 [craft] A stat scene that lands its last item ~4.5 s in and then carries a second spoken thought sits static 5 s (cost-tally under "200 hours a year"). Give a cost line its own small chart (bar-compare: 52 Sundays vs 208 hours). Confidence: high
 - 2026-11-06 [craft] Faded "future" cells at 0.4 opacity with LINE stroke vanish on a phone; dashed MUTE stroke at ~0.55 reads as "never happened". Confidence: medium
 - 2026-11-06 [content] New life areas this batch: home (nightly 10-minute reset) and strength training (double progression). Both are universal daily behaviours with a chart on frame 0, per V-EXP-33. Confidence: n/a (bet)
+
+## 2026-11-07 (run)
+- 2026-11-07 [data] No new metrics (blank template, no browser this run). Registered the Nov 6 batch (miss-twice, ten-minute-reset, same-weight x IG/X/YT) and IG for pickups (Sat 09:30) and say-sentences (Fri ~20:20). Followers 24 (Nov 6 insights read). Confidence: n/a
+- 2026-11-07 [content] Before scripting a numbered "Reason #n", read the lines.json of every pixel reel in review: 13 reasons were already taken overnight, and my first idea (compare to week-one you) duplicated Kabir #13's fix. Dropped it for the daily-decision maths. Confidence: high
+- 2026-11-07 [content] Real arithmetic makes an honest frame-0 chart: 0.9^7 = 48%, 0.9^30 = 4% ("say you win the argument 9 days out of 10"). No study needed, nothing invented. Prefer computed curves over rhetorical bars when the mechanism allows. Confidence: medium (unmeasured)
+- 2026-11-07 [content] 50 s cap budget with the series card (~4 s) + comment question: ~95 body words + ~45 close words = 49 s at Kokoro 3.3-3.5 w/s. The close had to drop "so you can see it tomorrow" to fit. Confidence: high
+- 2026-11-07 [craft] A count-up number that waits for a late cue shows "#1" for 2-3 s; start the count at scene start and land it on the cue word instead. Confidence: high
+- 2026-11-07 [craft] A curve that finishes drawing after its scene's crossfade starts never shows its end value; keep the last draw segment shorter than (scene end - cue). Checked with shots.js before recording. Confidence: high

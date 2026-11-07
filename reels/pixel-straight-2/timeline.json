@@ -1,0 +1,115 @@
+{
+ "total": 38.463,
+ "scenes": {
+  "S1": [
+   0.5,
+   5.1
+  ],
+  "S2": [
+   5.1,
+   9.765
+  ],
+  "S3": [
+   9.765,
+   16.951
+  ],
+  "S4": [
+   16.951,
+   25.295
+  ],
+  "S5": [
+   25.295,
+   28.604
+  ],
+  "S6": [
+   28.604,
+   38.463
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   2.565,
+   "Get fit. Learn to code. Fix my money."
+  ],
+  [
+   "S1",
+   1,
+   2.865,
+   4.5,
+   "None of these can be done today."
+  ],
+  [
+   "S2",
+   0,
+   5.1,
+   7.564,
+   "Why do we stop doing things we know are good for us?"
+  ],
+  [
+   "S2",
+   1,
+   7.964,
+   9.215,
+   "Reason number seven."
+  ],
+  [
+   "S3",
+   0,
+   9.765,
+   11.354,
+   "A goal is a destination."
+  ],
+  [
+   "S3",
+   1,
+   11.654,
+   14.133,
+   "Every morning your brain asks, what do I do about it?"
+  ],
+  [
+   "S3",
+   2,
+   14.433,
+   16.351,
+   "And gets no answer. So it does nothing."
+  ],
+  [
+   "S4",
+   0,
+   16.951,
+   19.349,
+   "So break it down, until the next step is physical."
+  ],
+  [
+   "S4",
+   1,
+   19.649,
+   24.695,
+   "Get fit. Run a 5K. Run three times a week. Run Monday at seven. Put your shoes by the door."
+  ],
+  [
+   "S5",
+   0,
+   25.295,
+   28.004,
+   "If you can't picture your hands doing it, it's still too big."
+  ],
+  [
+   "S6",
+   0,
+   28.604,
+   32.969,
+   "That's what Dmyor is for. Break your dream into steps you can actually take today."
+  ],
+  [
+   "S6",
+   1,
+   33.369,
+   34.863,
+   "What's your next physical step?"
+  ]
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "S1": [["Get fit. Learn to code. Fix my money.", 0.3], ["None of these can be done today.", 0.6]],
+ "S2": [["Why do we stop doing things we know are good for us?", 0.4], ["Reason number seven.", 0.55]],
+ "S3": [["A goal is a destination.", 0.3], ["Every morning your brain asks, what do I do about it?", 0.3], ["And gets no answer. So it does nothing.", 0.6]],
+ "S4": [["So break it down, until the next step is physical.", 0.3], ["Get fit. Run a 5K. Run three times a week. Run Monday at seven. Put your shoes by the door.", 0.6]],
+ "S5": [["If you can't picture your hands doing it, it's still too big.", 0.6]],
+ "S6": [["That's what Deem-yor is for. Break your dream into steps you can actually take today.", 0.4], ["What's your next physical step?", 1.4]]
+}

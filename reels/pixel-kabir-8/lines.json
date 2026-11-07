@@ -1,0 +1,9 @@
+{
+ "S1": [["Day one. Kabir starts drawing.", 0.3], ["He draws a cat. It's... a cat. Probably.", 0.6]],
+ "S2": [["So why do we stop doing things we know are good for us?", 0.4], ["Reason number thirteen.", 0.55]],
+ "S3": [["Then he opens his phone.", 0.25], ["An artist. Year ten. Flawless.", 0.6]],
+ "S4": [["Day one Kabir, versus year ten stranger.", 0.3], ["Verdict: I have no talent. He quits.", 0.6]],
+ "S5": [["He compared his first page to someone's best page.", 0.3], ["That's not a fair fight. That's a highlight reel.", 0.6]],
+ "S6": [["So he changed opponents.", 0.3], ["Day thirty Kabir, versus day one Kabir.", 0.3], ["Day thirty wins. Every time.", 0.6]],
+ "S7": [["Who are you comparing yourself to?", 0.3], ["Tell me below.", 1.4]]
+}

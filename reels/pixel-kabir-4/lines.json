@@ -1,0 +1,9 @@
+{
+ "S1": [["Kabir had a twelve day streak.", 0.3], ["Perfect. Flawless. Unbreakable.", 0.6]],
+ "S2": [["So why do we stop doing things we know are good for us?", 0.4], ["Reason number four.", 0.55]],
+ "S3": [["Day thirteen. His cousin's birthday.", 0.3], ["He skipped one day.", 0.55]],
+ "S4": [["Well. It's ruined now.", 0.4], ["And since it was ruined anyway... he skipped the next seventeen.", 0.6]],
+ "S5": [["One missed day doesn't break a habit.", 0.3], ["Deciding it's broken does.", 0.6]],
+ "S6": [["So the rule is simple.", 0.25], ["Miss once? Fine. Never miss twice.", 0.4], ["Day fourteen is the only day that matters.", 0.6]],
+ "S7": [["Kabir's calendar has gaps now.", 0.3], ["It also has a habit.", 0.4], ["What did you quit after one bad day?", 0.3], ["Tell me below.", 1.4]]
+}

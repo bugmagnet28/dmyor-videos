@@ -1,0 +1,139 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] If you have to decide to do it, one day you'll decide not to. || Why do we stop doing things we know are good for us? Reason fifteen. || [turn] Say you win that argument nine days out of ten. Sounds great. But after a week, the odds you haven't skipped yet are about half. After a month, four percent. || So stop deciding every day. Decide once, in one sentence. After something I already do, I do the step. || After lunch, I walk fifteen minutes. After I brush my teeth, I read ten pages. After coffee, ten minutes of guitar. || [land] The habit you already have becomes the reminder, so there's nothing left to argue about. Send this to the friend who's always deciding to start. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. Next, why you forget your own goal by week three. || [outro] What habit could you hang yours on? The link's in the bio.",
+ "scenes": [
+  {
+   "type": "odds-curve",
+   "params": {
+    "stage": "hook",
+    "chip": "Day 30: 4% unbroken"
+   },
+   "head": "Decide daily.<br>Lose <b>eventually</b>."
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 15,
+    "title": "The daily decision",
+    "cue": [
+     "good",
+     "Reason"
+    ]
+   },
+   "head": "Why we <b>stop</b>."
+  },
+  {
+   "type": "odds-curve",
+   "params": {
+    "stage": "draw",
+    "chip": "9 wins out of 10 isn't enough",
+    "cue": [
+     "nine",
+     "week",
+     "month",
+     "percent"
+    ]
+   },
+   "head": "9 out of 10<br>isn't <b>enough</b>."
+  },
+  {
+   "type": "odds-curve",
+   "params": {
+    "stage": "fix",
+    "chip2": "One sentence. Decided once.",
+    "cue": [
+     "deciding",
+     "once",
+     "sentence"
+    ]
+   },
+   "head": "Decide <b>once</b>."
+  },
+  {
+   "type": "list-rewrite",
+   "params": {
+    "rows": [
+     [
+      "Walk more",
+      "After lunch: walk 15 minutes"
+     ],
+     [
+      "Read more",
+      "After teeth: read 10 pages"
+     ],
+     [
+      "Practise guitar",
+      "After coffee: 10 min guitar"
+     ]
+    ],
+    "cue": [
+     "lunch",
+     "teeth",
+     "coffee"
+    ]
+   },
+   "head": "After X,<br>I do <b>Y</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "DECIDE ONCE",
+    "items": [
+     "After [a habit]",
+     "I do [one step]",
+     "Never re-decide"
+    ],
+    "cue": [
+     "habit",
+     "nothing",
+     "Send"
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "My healthiest year",
+    "date": "Open it again: Nov 2027",
+    "steps": [
+     "After lunch: walk",
+     "After teeth: read",
+     "After coffee: guitar"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why you forget your goal by week 3",
+    "when": "Next",
+    "cue": [
+     null,
+     "three"
+    ]
+   },
+   "head": "One reason<br><b>a day</b>."
+  },
+  null
+ ],
+ "brand_from": 8,
+ "silences": [
+  "Sounds great",
+  "So stop deciding"
+ ],
+ "caption": {
+  "instagram": "Why you can't stay consistent: you're deciding every day.\n\nWhy we stop doing things we know are good for us, reason #15: the daily decision. Win the argument with yourself 9 days out of 10 and the chance you haven't skipped is about half after a week, and 4% after a month (0.9 to the power of 30).\n\nThe fix: decide once, in one sentence. After [something I already do], I do [the step].\n- After lunch, I walk 15 minutes\n- After I brush my teeth, I read 10 pages\n- After coffee, 10 minutes of guitar\n\nWhat habit could you hang yours on? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#consistency #habits #discipline #selfimprovement #goals",
+  "x": "If you have to decide to do it, one day you'll decide not to.\n\nWin the argument 9 days out of 10 and after a month the chance you never skipped is 4%. Decide once: \"After [habit I have], I do [the step].\"",
+  "youtube_title": "How to stay consistent with a new habit #Shorts"
+ }
+}

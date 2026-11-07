@@ -1,0 +1,1079 @@
+{
+ "audio": "audio.mp3",
+ "duration": 48.78,
+ "text": "If you have to decide to do it, one day you'll decide not to. Why do we stop doing things we know are good for us, reason 15? Say you win that argument 9 days out of 10, sounds great, but after a week the odds you haven't skipped yet are about half, after a month 4%. So stop deciding every day, decide once in one sentence. After something I already do I do the step. After lunch I walk 15 minutes. After I brush my teeth I read 10 pages, after coffee 10 minutes of guitar. The habit you already have becomes the reminder so there's nothing left to argue about, send this to the friend who's always deciding to start. That's what demure is for, archive your dream today and break it into small steps you can actually do. Follow for one reason a day, next why you forget your own goal by week 3. What habit could you hang yours on, the link's in the bio.",
+ "words": [
+  {
+   "w": "if",
+   "raw": "If",
+   "s": 0.0,
+   "e": 0.24
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 0.24,
+   "e": 0.36
+  },
+  {
+   "w": "have",
+   "raw": "have",
+   "s": 0.36,
+   "e": 0.52
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 0.52,
+   "e": 0.68
+  },
+  {
+   "w": "decide",
+   "raw": "decide",
+   "s": 0.68,
+   "e": 0.98
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 0.98,
+   "e": 1.18
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 1.18,
+   "e": 1.34
+  },
+  {
+   "w": "it",
+   "raw": "it,",
+   "s": 1.34,
+   "e": 1.46
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 1.66,
+   "e": 1.78
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 1.78,
+   "e": 1.92
+  },
+  {
+   "w": "youll",
+   "raw": "you'll",
+   "s": 1.92,
+   "e": 2.1
+  },
+  {
+   "w": "decide",
+   "raw": "decide",
+   "s": 2.1,
+   "e": 2.38
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 2.38,
+   "e": 2.62
+  },
+  {
+   "w": "to",
+   "raw": "to.",
+   "s": 2.62,
+   "e": 2.98
+  },
+  {
+   "w": "why",
+   "raw": "Why",
+   "s": 3.4,
+   "e": 3.52
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 3.52,
+   "e": 3.66
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 3.66,
+   "e": 3.78
+  },
+  {
+   "w": "stop",
+   "raw": "stop",
+   "s": 3.78,
+   "e": 4.02
+  },
+  {
+   "w": "doing",
+   "raw": "doing",
+   "s": 4.02,
+   "e": 4.3
+  },
+  {
+   "w": "things",
+   "raw": "things",
+   "s": 4.3,
+   "e": 4.6
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 4.6,
+   "e": 4.8
+  },
+  {
+   "w": "know",
+   "raw": "know",
+   "s": 4.8,
+   "e": 4.96
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 4.96,
+   "e": 5.12
+  },
+  {
+   "w": "good",
+   "raw": "good",
+   "s": 5.12,
+   "e": 5.28
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 5.28,
+   "e": 5.5
+  },
+  {
+   "w": "us",
+   "raw": "us,",
+   "s": 5.5,
+   "e": 5.74
+  },
+  {
+   "w": "reason",
+   "raw": "reason",
+   "s": 6.02,
+   "e": 6.18
+  },
+  {
+   "w": "15",
+   "raw": "15?",
+   "s": 6.18,
+   "e": 6.68
+  },
+  {
+   "w": "say",
+   "raw": "Say",
+   "s": 7.18,
+   "e": 7.34
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 7.34,
+   "e": 7.48
+  },
+  {
+   "w": "win",
+   "raw": "win",
+   "s": 7.48,
+   "e": 7.62
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 7.62,
+   "e": 7.76
+  },
+  {
+   "w": "argument",
+   "raw": "argument",
+   "s": 7.76,
+   "e": 8.12
+  },
+  {
+   "w": "9",
+   "raw": "9",
+   "s": 8.12,
+   "e": 8.48
+  },
+  {
+   "w": "days",
+   "raw": "days",
+   "s": 8.48,
+   "e": 8.7
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 8.7,
+   "e": 8.88
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 8.88,
+   "e": 9.0
+  },
+  {
+   "w": "10",
+   "raw": "10,",
+   "s": 9.0,
+   "e": 9.24
+  },
+  {
+   "w": "sounds",
+   "raw": "sounds",
+   "s": 9.48,
+   "e": 9.68
+  },
+  {
+   "w": "great",
+   "raw": "great,",
+   "s": 9.68,
+   "e": 10.0
+  },
+  {
+   "w": "but",
+   "raw": "but",
+   "s": 10.32,
+   "e": 10.5
+  },
+  {
+   "w": "after",
+   "raw": "after",
+   "s": 10.5,
+   "e": 10.74
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 10.74,
+   "e": 10.88
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 10.88,
+   "e": 10.98
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 10.98,
+   "e": 11.18
+  },
+  {
+   "w": "odds",
+   "raw": "odds",
+   "s": 11.18,
+   "e": 11.44
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 11.44,
+   "e": 11.62
+  },
+  {
+   "w": "havent",
+   "raw": "haven't",
+   "s": 11.62,
+   "e": 11.96
+  },
+  {
+   "w": "skipped",
+   "raw": "skipped",
+   "s": 11.96,
+   "e": 12.16
+  },
+  {
+   "w": "yet",
+   "raw": "yet",
+   "s": 12.16,
+   "e": 12.4
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 12.4,
+   "e": 12.5
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 12.5,
+   "e": 12.7
+  },
+  {
+   "w": "half",
+   "raw": "half,",
+   "s": 12.7,
+   "e": 12.98
+  },
+  {
+   "w": "after",
+   "raw": "after",
+   "s": 13.24,
+   "e": 13.42
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 13.42,
+   "e": 13.58
+  },
+  {
+   "w": "month",
+   "raw": "month",
+   "s": 13.58,
+   "e": 13.7
+  },
+  {
+   "w": "4",
+   "raw": "4%.",
+   "s": 13.7,
+   "e": 14.52
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 14.52,
+   "e": 14.96
+  },
+  {
+   "w": "stop",
+   "raw": "stop",
+   "s": 14.96,
+   "e": 15.28
+  },
+  {
+   "w": "deciding",
+   "raw": "deciding",
+   "s": 15.28,
+   "e": 15.72
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 15.72,
+   "e": 16.06
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 16.06,
+   "e": 16.32
+  },
+  {
+   "w": "decide",
+   "raw": "decide",
+   "s": 16.46,
+   "e": 16.76
+  },
+  {
+   "w": "once",
+   "raw": "once",
+   "s": 16.76,
+   "e": 17.06
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 17.06,
+   "e": 17.26
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 17.26,
+   "e": 17.5
+  },
+  {
+   "w": "sentence",
+   "raw": "sentence.",
+   "s": 17.5,
+   "e": 17.88
+  },
+  {
+   "w": "after",
+   "raw": "After",
+   "s": 18.42,
+   "e": 18.62
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 18.62,
+   "e": 18.88
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 18.88,
+   "e": 19.16
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 19.16,
+   "e": 19.44
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 19.44,
+   "e": 19.68
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 19.68,
+   "e": 19.86
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 19.86,
+   "e": 19.98
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 19.98,
+   "e": 20.14
+  },
+  {
+   "w": "step",
+   "raw": "step.",
+   "s": 20.14,
+   "e": 20.38
+  },
+  {
+   "w": "after",
+   "raw": "After",
+   "s": 20.74,
+   "e": 21.0
+  },
+  {
+   "w": "lunch",
+   "raw": "lunch",
+   "s": 21.0,
+   "e": 21.24
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 21.24,
+   "e": 21.48
+  },
+  {
+   "w": "walk",
+   "raw": "walk",
+   "s": 21.48,
+   "e": 21.68
+  },
+  {
+   "w": "15",
+   "raw": "15",
+   "s": 21.68,
+   "e": 22.06
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes.",
+   "s": 22.06,
+   "e": 22.4
+  },
+  {
+   "w": "after",
+   "raw": "After",
+   "s": 22.84,
+   "e": 23.02
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 23.02,
+   "e": 23.18
+  },
+  {
+   "w": "brush",
+   "raw": "brush",
+   "s": 23.18,
+   "e": 23.36
+  },
+  {
+   "w": "my",
+   "raw": "my",
+   "s": 23.36,
+   "e": 23.58
+  },
+  {
+   "w": "teeth",
+   "raw": "teeth",
+   "s": 23.58,
+   "e": 23.84
+  },
+  {
+   "w": "i",
+   "raw": "I",
+   "s": 23.84,
+   "e": 24.08
+  },
+  {
+   "w": "read",
+   "raw": "read",
+   "s": 24.08,
+   "e": 24.28
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 24.28,
+   "e": 24.54
+  },
+  {
+   "w": "pages",
+   "raw": "pages,",
+   "s": 24.54,
+   "e": 25.0
+  },
+  {
+   "w": "after",
+   "raw": "after",
+   "s": 25.24,
+   "e": 25.42
+  },
+  {
+   "w": "coffee",
+   "raw": "coffee",
+   "s": 25.42,
+   "e": 25.8
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 25.8,
+   "e": 26.1
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 26.1,
+   "e": 26.3
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 26.3,
+   "e": 26.48
+  },
+  {
+   "w": "guitar",
+   "raw": "guitar.",
+   "s": 26.48,
+   "e": 26.84
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 27.38,
+   "e": 27.52
+  },
+  {
+   "w": "habit",
+   "raw": "habit",
+   "s": 27.52,
+   "e": 27.74
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 27.74,
+   "e": 27.98
+  },
+  {
+   "w": "already",
+   "raw": "already",
+   "s": 27.98,
+   "e": 28.26
+  },
+  {
+   "w": "have",
+   "raw": "have",
+   "s": 28.26,
+   "e": 28.5
+  },
+  {
+   "w": "becomes",
+   "raw": "becomes",
+   "s": 28.5,
+   "e": 28.86
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 28.86,
+   "e": 29.06
+  },
+  {
+   "w": "reminder",
+   "raw": "reminder",
+   "s": 29.06,
+   "e": 29.42
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 29.42,
+   "e": 29.78
+  },
+  {
+   "w": "theres",
+   "raw": "there's",
+   "s": 29.78,
+   "e": 30.0
+  },
+  {
+   "w": "nothing",
+   "raw": "nothing",
+   "s": 30.0,
+   "e": 30.2
+  },
+  {
+   "w": "left",
+   "raw": "left",
+   "s": 30.2,
+   "e": 30.5
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 30.5,
+   "e": 30.72
+  },
+  {
+   "w": "argue",
+   "raw": "argue",
+   "s": 30.72,
+   "e": 31.02
+  },
+  {
+   "w": "about",
+   "raw": "about,",
+   "s": 31.02,
+   "e": 31.36
+  },
+  {
+   "w": "send",
+   "raw": "send",
+   "s": 32.0,
+   "e": 32.14
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 32.14,
+   "e": 32.34
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 32.34,
+   "e": 32.48
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 32.48,
+   "e": 32.62
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 32.62,
+   "e": 32.84
+  },
+  {
+   "w": "whos",
+   "raw": "who's",
+   "s": 32.84,
+   "e": 33.2
+  },
+  {
+   "w": "always",
+   "raw": "always",
+   "s": 33.2,
+   "e": 33.52
+  },
+  {
+   "w": "deciding",
+   "raw": "deciding",
+   "s": 33.52,
+   "e": 33.98
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 33.98,
+   "e": 34.24
+  },
+  {
+   "w": "start",
+   "raw": "start.",
+   "s": 34.24,
+   "e": 34.58
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 35.06,
+   "e": 35.34
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 35.34,
+   "e": 35.52
+  },
+  {
+   "w": "demure",
+   "raw": "demure",
+   "s": 35.52,
+   "e": 35.9
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 35.9,
+   "e": 36.06
+  },
+  {
+   "w": "for",
+   "raw": "for,",
+   "s": 36.06,
+   "e": 36.34
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 36.66,
+   "e": 36.92
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 36.92,
+   "e": 37.14
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 37.14,
+   "e": 37.34
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 37.34,
+   "e": 37.72
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 37.72,
+   "e": 37.96
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 37.96,
+   "e": 38.14
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 38.14,
+   "e": 38.28
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 38.28,
+   "e": 38.42
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 38.42,
+   "e": 38.76
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 38.76,
+   "e": 39.06
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 39.06,
+   "e": 39.26
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 39.26,
+   "e": 39.38
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 39.38,
+   "e": 39.68
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 39.68,
+   "e": 40.04
+  },
+  {
+   "w": "follow",
+   "raw": "Follow",
+   "s": 40.56,
+   "e": 40.82
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 40.82,
+   "e": 41.08
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 41.08,
+   "e": 41.28
+  },
+  {
+   "w": "reason",
+   "raw": "reason",
+   "s": 41.28,
+   "e": 41.56
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 41.56,
+   "e": 41.74
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 41.74,
+   "e": 41.98
+  },
+  {
+   "w": "next",
+   "raw": "next",
+   "s": 42.18,
+   "e": 42.5
+  },
+  {
+   "w": "why",
+   "raw": "why",
+   "s": 42.5,
+   "e": 42.82
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 42.82,
+   "e": 42.96
+  },
+  {
+   "w": "forget",
+   "raw": "forget",
+   "s": 42.96,
+   "e": 43.18
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 43.18,
+   "e": 43.36
+  },
+  {
+   "w": "own",
+   "raw": "own",
+   "s": 43.36,
+   "e": 43.54
+  },
+  {
+   "w": "goal",
+   "raw": "goal",
+   "s": 43.54,
+   "e": 43.78
+  },
+  {
+   "w": "by",
+   "raw": "by",
+   "s": 43.78,
+   "e": 44.0
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 44.0,
+   "e": 44.16
+  },
+  {
+   "w": "3",
+   "raw": "3.",
+   "s": 44.16,
+   "e": 44.52
+  },
+  {
+   "w": "what",
+   "raw": "What",
+   "s": 44.9,
+   "e": 45.12
+  },
+  {
+   "w": "habit",
+   "raw": "habit",
+   "s": 45.12,
+   "e": 45.38
+  },
+  {
+   "w": "could",
+   "raw": "could",
+   "s": 45.38,
+   "e": 45.58
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 45.58,
+   "e": 45.68
+  },
+  {
+   "w": "hang",
+   "raw": "hang",
+   "s": 45.68,
+   "e": 45.88
+  },
+  {
+   "w": "yours",
+   "raw": "yours",
+   "s": 45.88,
+   "e": 46.14
+  },
+  {
+   "w": "on",
+   "raw": "on,",
+   "s": 46.14,
+   "e": 46.5
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 46.68,
+   "e": 46.76
+  },
+  {
+   "w": "links",
+   "raw": "link's",
+   "s": 46.76,
+   "e": 47.08
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 47.08,
+   "e": 47.18
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 47.18,
+   "e": 47.28
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 47.28,
+   "e": 47.58
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 2.98,
+   "text": "If you have to decide to do it, one day you'll decide not to."
+  },
+  {
+   "s": 3.4,
+   "e": 6.68,
+   "text": "Why do we stop doing things we know are good for us, reason 15?"
+  },
+  {
+   "s": 7.18,
+   "e": 11.62,
+   "text": "Say you win that argument 9 days out of 10, sounds great, but after a week the odds you"
+  },
+  {
+   "s": 11.62,
+   "e": 16.32,
+   "text": "haven't skipped yet are about half, after a month 4%. So stop deciding every day,"
+  },
+  {
+   "s": 16.46,
+   "e": 20.38,
+   "text": "decide once in one sentence. After something I already do I do the step."
+  },
+  {
+   "s": 20.74,
+   "e": 26.3,
+   "text": "After lunch I walk 15 minutes. After I brush my teeth I read 10 pages, after coffee 10 minutes"
+  },
+  {
+   "s": 26.3,
+   "e": 31.36,
+   "text": "of guitar. The habit you already have becomes the reminder so there's nothing left to argue about,"
+  },
+  {
+   "s": 32.0,
+   "e": 34.58,
+   "text": "send this to the friend who's always deciding to start."
+  },
+  {
+   "s": 35.06,
+   "e": 39.38,
+   "text": "That's what demure is for, archive your dream today and break it into small steps you can"
+  },
+  {
+   "s": 39.38,
+   "e": 44.52,
+   "text": "actually do. Follow for one reason a day, next why you forget your own goal by week 3."
+  },
+  {
+   "s": 44.9,
+   "e": 47.58,
+   "text": "What habit could you hang yours on, the link's in the bio."
+  }
+ ],
+ "wps": 3.46
+}

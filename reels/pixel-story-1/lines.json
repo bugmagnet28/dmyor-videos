@@ -1,0 +1,9 @@
+{
+ "S1": [["Two people.", 0.2], ["Same desk. Same goal. Same Monday.", 0.6]],
+ "S2": [["Why do we stop doing things we know are good for us?", 0.4], ["Reason number eight.", 0.55]],
+ "S3": [["Every day, one of them does twenty minutes.", 0.3], ["The other one says, tomorrow.", 0.6]],
+ "S4": [["After a week, nobody can tell the difference.", 0.4], ["After a month, almost nothing.", 0.6]],
+ "S5": [["This is why we stop.", 0.3], ["The cost is today. The reward is so far away, it doesn't feel real.", 0.6]],
+ "S6": [["After a year...", 0.9], ["one of them has a finished thing.", 0.3], ["The other still has a note that says, tomorrow.", 0.7]],
+ "S7": [["Twenty minutes was never the hard part.", 0.3], ["Trusting a reward you can't see yet, is.", 0.4], ["What's your twenty minutes?", 1.4]]
+}

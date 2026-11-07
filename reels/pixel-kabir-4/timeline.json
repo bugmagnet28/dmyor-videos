@@ -1,0 +1,154 @@
+{
+ "total": 40.467,
+ "scenes": {
+  "S1": [
+   0.5,
+   4.811
+  ],
+  "S2": [
+   4.811,
+   9.601
+  ],
+  "S3": [
+   9.601,
+   13.575
+  ],
+  "S4": [
+   13.575,
+   19.02
+  ],
+  "S5": [
+   19.02,
+   23.382
+  ],
+  "S6": [
+   23.382,
+   30.046
+  ],
+  "S7": [
+   30.046,
+   40.467
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   2.155,
+   "Kabir had a twelve day streak."
+  ],
+  [
+   "S1",
+   1,
+   2.455,
+   4.211,
+   "Perfect. Flawless. Unbreakable."
+  ],
+  [
+   "S2",
+   0,
+   4.811,
+   7.429,
+   "So why do we stop doing things we know are good for us?"
+  ],
+  [
+   "S2",
+   1,
+   7.829,
+   9.051,
+   "Reason number four."
+  ],
+  [
+   "S3",
+   0,
+   9.601,
+   11.551,
+   "Day thirteen. His cousin's birthday."
+  ],
+  [
+   "S3",
+   1,
+   11.851,
+   13.025,
+   "He skipped one day."
+  ],
+  [
+   "S4",
+   0,
+   13.575,
+   14.874,
+   "Well. It's ruined now."
+  ],
+  [
+   "S4",
+   1,
+   15.274,
+   18.42,
+   "And since it was ruined anyway... he skipped the next seventeen."
+  ],
+  [
+   "S5",
+   0,
+   19.02,
+   20.883,
+   "One missed day doesn't break a habit."
+  ],
+  [
+   "S5",
+   1,
+   21.183,
+   22.782,
+   "Deciding it's broken does."
+  ],
+  [
+   "S6",
+   0,
+   23.382,
+   24.682,
+   "So the rule is simple."
+  ],
+  [
+   "S6",
+   1,
+   24.932,
+   26.696,
+   "Miss once? Fine. Never miss twice."
+  ],
+  [
+   "S6",
+   2,
+   27.096,
+   29.446,
+   "Day fourteen is the only day that matters."
+  ],
+  [
+   "S7",
+   0,
+   30.046,
+   31.798,
+   "Kabir's calendar has gaps now."
+  ],
+  [
+   "S7",
+   1,
+   32.098,
+   33.359,
+   "It also has a habit."
+  ],
+  [
+   "S7",
+   2,
+   33.759,
+   35.631,
+   "What did you quit after one bad day?"
+  ],
+  [
+   "S7",
+   3,
+   35.931,
+   36.867,
+   "Tell me below."
+  ]
+ ]
+}

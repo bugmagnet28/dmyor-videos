@@ -1,0 +1,171 @@
+{
+ "total": 48.78,
+ "brandT": 44.9,
+ "scenes": [
+  {
+   "type": "odds-curve",
+   "params": {
+    "stage": "hook",
+    "chip": "Day 30: 4% unbroken"
+   },
+   "head": "Decide daily.<br>Lose <b>eventually</b>.",
+   "t0": 0.0,
+   "t1": 3.35
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 15,
+    "title": "The daily decision",
+    "cue": [
+     "good",
+     "Reason"
+    ],
+    "at": [
+     1.77,
+     2.67
+    ]
+   },
+   "head": "Why we <b>stop</b>.",
+   "t0": 3.35,
+   "t1": 7.13
+  },
+  {
+   "type": "odds-curve",
+   "params": {
+    "stage": "draw",
+    "chip": "9 wins out of 10 isn't enough",
+    "cue": [
+     "nine",
+     "week",
+     "month",
+     "percent"
+    ],
+    "at": [
+     0.78,
+     3.75,
+     6.45,
+     6.75
+    ]
+   },
+   "head": "9 out of 10<br>isn't <b>enough</b>.",
+   "t0": 7.13,
+   "t1": 14.47
+  },
+  {
+   "type": "odds-curve",
+   "params": {
+    "stage": "fix",
+    "chip2": "One sentence. Decided once.",
+    "cue": [
+     "deciding",
+     "once",
+     "sentence"
+    ],
+    "at": [
+     0.81,
+     2.29,
+     3.03
+    ]
+   },
+   "head": "Decide <b>once</b>.",
+   "t0": 14.47,
+   "t1": 20.69
+  },
+  {
+   "type": "list-rewrite",
+   "params": {
+    "rows": [
+     [
+      "Walk more",
+      "After lunch: walk 15 minutes"
+     ],
+     [
+      "Read more",
+      "After teeth: read 10 pages"
+     ],
+     [
+      "Practise guitar",
+      "After coffee: 10 min guitar"
+     ]
+    ],
+    "cue": [
+     "lunch",
+     "teeth",
+     "coffee"
+    ],
+    "at": [
+     0.31,
+     2.89,
+     4.73
+    ]
+   },
+   "head": "After X,<br>I do <b>Y</b>.",
+   "t0": 20.69,
+   "t1": 27.33
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "DECIDE ONCE",
+    "items": [
+     "After [a habit]",
+     "I do [one step]",
+     "Never re-decide"
+    ],
+    "cue": [
+     "habit",
+     "nothing",
+     "Send"
+    ],
+    "at": [
+     0.19,
+     2.67,
+     4.67
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>.",
+   "t0": 27.33,
+   "t1": 35.01
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "My healthiest year",
+    "date": "Open it again: Nov 2027",
+    "steps": [
+     "After lunch: walk",
+     "After teeth: read",
+     "After coffee: guitar"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 35.01,
+   "t1": 40.51
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why you forget your goal by week 3",
+    "when": "Next",
+    "cue": [
+     null,
+     "three"
+    ],
+    "at": [
+     0.2,
+     3.65
+    ]
+   },
+   "head": "One reason<br><b>a day</b>.",
+   "t0": 40.51,
+   "t1": 44.9
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  9.38,
+  14.42
+ ]
+}

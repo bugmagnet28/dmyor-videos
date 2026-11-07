@@ -1,0 +1,8 @@
+{
+ "S1": [["Your plan works great.", 0.3], ["On the days nothing goes wrong.", 0.6]],
+ "S2": [["Why do we stop doing things we know are good for us?", 0.4], ["Reason number ten.", 0.55]],
+ "S3": [["Most plans assume a normal day.", 0.3], ["Then you're late at work. It rains. Someone calls.", 0.3], ["And the plan just stops.", 0.6]],
+ "S4": [["Because now you have to invent a new plan, while tired.", 0.3], ["So you don't.", 0.6]],
+ "S5": [["Decide it in advance.", 0.3], ["If this happens, then I'll do that.", 0.4], ["If I'm late, then ten minutes at home. If it rains, then the stairs.", 0.6]],
+ "S6": [["Now the obstacle already has a detour.", 0.4], ["That's what Deem-yor is for. Plan the bad day before it happens.", 0.4], ["What usually breaks your plan?", 1.4]]
+}

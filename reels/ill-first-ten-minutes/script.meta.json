@@ -1,0 +1,72 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-first-ten-minutes",
+ "hook_type": "hard-truth",
+ "topic": "consistency",
+ "pillar": "A (why goals fail) + D (energy/timing)",
+ "series": "Why we stop doing things we know are good for us, Reason #14 (the day goes first)",
+ "experiment": "V-EXP-34 (on-topic gate, 35-50 s, series label, comment question) + V-EXP-33 (chart on frame 0); keeps ill-same-weight's 'Next: the first ten minutes of your morning' promise (idea #39)",
+ "hook": "If your goal is planned for 9 PM, it's up against your whole day. And the day wins.",
+ "gate": {
+  "goal_link": "protects the daily step of any big goal from being dropped",
+  "mechanism": "every hour adds competing demands; an evening slot is last in line (bar chart: 1 thing ahead at 7 AM vs 12 at 9 PM)",
+  "universal": "most adults plan their goal for 'tonight'"
+ },
+ "frame": {
+  "structure": "A (method with stakes)",
+  "want": "do the daily step of a goal (Spanish, a book)",
+  "obstacle": "the slot is 9 PM, after the whole day",
+  "cost": "12 things go first; the goal is the easiest to drop"
+ },
+ "hooks_considered": [
+  {
+   "line": "If your goal is planned for 9 PM, it's up against your whole day. And the day wins.",
+   "checks": "hard truth Y, gap Y (what to do instead), muted Y (bar 1 vs 12), sendable Y, payoff Y",
+   "kept": true
+  },
+  {
+   "line": "You didn't skip it at 9 PM. The day skipped it for you.",
+   "checks": "strong, slightly abstract muted",
+   "kept": false
+  },
+  {
+   "line": "Saving your goal for tonight is why it never happens.",
+   "checks": "good; weaker chart link",
+   "kept": false
+  },
+  {
+   "line": "The workout you planned for after work was cancelled by 10 AM.",
+   "checks": "fitness-only, narrower",
+   "kept": false
+  },
+  {
+   "line": "Your best ten minutes are gone before you get out of bed.",
+   "checks": "vague",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "0.0 s, bar chart finished on frame 0, riffle sound",
+  "open_loop": "what to do instead (withheld until 15 s)",
+  "series": "Reason #14 card 4.7 s",
+  "rehook_10": "morning-drift: the goal card pushed to 'later...'",
+  "rehook_20": "near-silence before 'So move it'",
+  "save_moment": "FIRST 10 MINUTES rule card (held ~3 s)",
+  "share_line": "Send this to a friend who's starting tonight.",
+  "comment_q": "What's the goal you keep saving for tonight?",
+  "follow_reason": "Next: why deciding every day quietly ends good habits (ill-decide-once, next slot)"
+ },
+ "note": "Length cap 50 s (V-EXP-34): close compressed to the one-line value close + follow + question + link (48.96 s). Bar values (1 vs 12) are rhetorical, labelled as 'things ahead of your goal', no study cited. Examples: Spanish (say sentences you use) and a book (100 words) are credible 10-minute steps. No loop ending (the brand card stays last; noted against the growth plan). Reason numbering continues after the pixel reels under review (#4-#13).",
+ "quality": {
+  "hook": 5,
+  "usefulness": 5,
+  "specificity": 4,
+  "clarity": 5,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 35
+ }
+}

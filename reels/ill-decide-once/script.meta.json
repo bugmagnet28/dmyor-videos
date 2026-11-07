@@ -1,0 +1,71 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-decide-once",
+ "hook_type": "number-fact",
+ "topic": "habits",
+ "pillar": "A (why goals fail) + B (daily choices)",
+ "series": "Why we stop doing things we know are good for us, Reason #15 (the daily decision)",
+ "experiment": "V-EXP-34 + V-EXP-33 (curve on frame 0)",
+ "hook": "If you have to decide to do it, one day you'll decide not to.",
+ "gate": {
+  "goal_link": "keeps the daily steps of any goal going past week one",
+  "mechanism": "a daily yes/no is a repeated bet: 0.9^7 = 48%, 0.9^30 = 4% chance of an unbroken month (real arithmetic)",
+  "universal": "everyone 'decides' each day whether to work out, read, practise"
+ },
+ "frame": {
+  "structure": "C (mistake, cost, fix)",
+  "mistake": "deciding each day whether to do it",
+  "cost": "9 wins in 10 still leaves a 4% chance of an unbroken month",
+  "fix": "one if-then sentence anchored to an existing habit (implementation intention)"
+ },
+ "hooks_considered": [
+  {
+   "line": "If you have to decide to do it, one day you'll decide not to.",
+   "checks": "hard truth Y, gap Y, muted Y (curve to 4%), sendable Y, payoff Y",
+   "kept": true
+  },
+  {
+   "line": "Winning 9 days out of 10 still breaks your habit.",
+   "checks": "strong number, less relatable first",
+   "kept": false
+  },
+  {
+   "line": "Your habit has to win an argument every single day.",
+   "checks": "good; weaker chart",
+   "kept": false
+  },
+  {
+   "line": "After a month, there's a 4% chance you never skipped.",
+   "checks": "needs context",
+   "kept": false
+  },
+  {
+   "line": "Discipline isn't deciding well. It's deciding once.",
+   "checks": "quote-like",
+   "kept": false
+  }
+ ],
+ "beats": {
+  "hard_truth": "0.0 s, curve finished at 4% on frame 0, pen sound",
+  "series": "Reason #15 card 3.4 s",
+  "rehook_10": "curve draws: day 7 = 48%, day 30 = 4%",
+  "rehook_20": "30 decision diamonds collapse into 'Decided once' + reveal",
+  "save_moment": "DECIDE ONCE rule card",
+  "share_line": "Send this to the friend who's always deciding to start.",
+  "comment_q": "What habit could you hang yours on?",
+  "follow_reason": "Next: why you forget your own goal by week three (idea #55, next run builds it)"
+ },
+ "note": "48.78 s. Maths is exact (independent 90% days; stated as 'say you win 9 of 10'), no study cited. If-then anchoring is the well-known implementation-intention method, stated as advice. Anchors (lunch, brushing teeth, coffee) avoid contradicting ill-first-ten-minutes (no '9 PM' plan). Takeaway differs from the pixel reasons #1-#13 (checked lines.json).",
+ "quality": {
+  "hook": 5,
+  "usefulness": 5,
+  "specificity": 5,
+  "clarity": 4,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 35
+ }
+}

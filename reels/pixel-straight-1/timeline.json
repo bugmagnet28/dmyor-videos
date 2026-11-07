@@ -1,0 +1,154 @@
+{
+ "total": 43.542,
+ "scenes": {
+  "S1": [
+   0.5,
+   4.186
+  ],
+  "S2": [
+   4.186,
+   8.849
+  ],
+  "S3": [
+   8.849,
+   12.238
+  ],
+  "S4": [
+   12.238,
+   20.375
+  ],
+  "S5": [
+   20.375,
+   24.608
+  ],
+  "S6": [
+   24.608,
+   30.516
+  ],
+  "S7": [
+   30.516,
+   43.542
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   1.527,
+   "You're not failing."
+  ],
+  [
+   "S1",
+   1,
+   1.827,
+   3.586,
+   "You're in the part where nothing shows."
+  ],
+  [
+   "S2",
+   0,
+   4.186,
+   6.65,
+   "Why do we stop doing things we know are good for us?"
+  ],
+  [
+   "S2",
+   1,
+   7.05,
+   8.299,
+   "Reason number five."
+  ],
+  [
+   "S3",
+   0,
+   8.849,
+   10.382,
+   "Effort shows up on day one."
+  ],
+  [
+   "S3",
+   1,
+   10.682,
+   11.638,
+   "Results don't."
+  ],
+  [
+   "S4",
+   0,
+   12.238,
+   13.883,
+   "Plant a seed. Week one, nothing."
+  ],
+  [
+   "S4",
+   1,
+   14.183,
+   15.304,
+   "Week two, nothing."
+  ],
+  [
+   "S4",
+   2,
+   15.604,
+   17.02,
+   "Week three, still nothing."
+  ],
+  [
+   "S4",
+   3,
+   17.42,
+   19.775,
+   "But underground, the roots are doing all the work."
+  ],
+  [
+   "S5",
+   0,
+   20.375,
+   24.008,
+   "Most people quit right here, in the gap, where it feels like it isn't working."
+  ],
+  [
+   "S6",
+   0,
+   24.608,
+   27.028,
+   "So for the first month, stop counting results."
+  ],
+  [
+   "S6",
+   1,
+   27.328,
+   29.916,
+   "Count reps. Did you show up today? That's the scoreboard."
+  ],
+  [
+   "S7",
+   0,
+   30.516,
+   31.784,
+   "The results will come."
+  ],
+  [
+   "S7",
+   1,
+   32.084,
+   34.242,
+   "Your job is to still be there when they do."
+  ],
+  [
+   "S7",
+   2,
+   34.642,
+   37.702,
+   "That's what Dmyor is for. Small steps, counted every day."
+  ],
+  [
+   "S7",
+   3,
+   38.102,
+   39.942,
+   "What are you waiting to see results on?"
+  ]
+ ]
+}

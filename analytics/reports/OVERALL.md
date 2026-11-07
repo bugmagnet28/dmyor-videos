@@ -1,6 +1,6 @@
 # Content performance: overall
 
-_Last rebuilt 2026-11-06 21:44 IST from 7 snapshot day(s) and 82 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
+_Last rebuilt 2026-11-07 11:00 IST from 7 snapshot day(s) and 82 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
 
 ## Headline
 
@@ -159,7 +159,6 @@ _Last rebuilt 2026-11-06 21:44 IST from 7 snapshot day(s) and 82 tracked post(s)
 
 | Post | Platform | Posted (IST) | Latest age (h) | Latest views |
 |---|---|---|---|---|
-| ill-say-sentences | instagram |  | – | 104 |
 | next-step-not-motivation | youtube | 2026-10-21 23:45 | 114 | 8 |
 | three-questions-before-a-goal | youtube | 2026-10-21 23:52 | 114 | 8 |
 | twenty-minutes-a-day | youtube | 2026-10-22 00:00 | 114 | 15 |
@@ -193,12 +192,12 @@ _Last rebuilt 2026-11-06 21:44 IST from 7 snapshot day(s) and 82 tracked post(s)
 | ill-gym-day-four | youtube | 2026-10-29 19:30 | 100 | 5 |
 | ill-caffeine | instagram | 2026-11-05 22:00 | 24 | 169 |
 | ill-dark-morning | instagram | 2026-11-06 09:30 | 12 | 193 |
+| ill-say-sentences | instagram | 2026-11-06 20:20 | – | 104 |
 
 ## Data gaps
 
 - 48 post(s) have no retention (watch time) data: Instagram web insights do not show it; get app screenshots.
-- Not in catalog (traits unknown): instagram:ill-say-sentences. Register with `record.py content`.
-- In catalog but never measured: x:diagram-howto-vo, x:diagram-someday-vo, x:ill-size-problem, x:ill-later-trigger, x:ill-track-inputs, x:ill-five-goals, youtube:ill-five-goals, x:brand-one-place, youtube:brand-one-place, x:pixel-book, x:ill-save-first, x:ill-career-conversations, x:ill-goal-date, x:ill-phone-distance, x:ill-unclear-task, x:ill-ten-pages, x:ill-gym-day-four, x:ill-one-category, x:ill-one-sentence, x:ill-hard-part, x:ill-three-recipes, x:ill-twenty-mornings, x:ill-wake-time, x:ill-bad-night, youtube:ill-bad-night, x:ill-subscriptions, youtube:ill-subscriptions, x:ill-catch-up, youtube:ill-catch-up, x:ill-busy-week, x:ill-pickups, x:ill-caffeine, youtube:ill-busy-week, youtube:ill-pickups, youtube:ill-caffeine, x:ill-dark-morning, youtube:ill-dark-morning, x:ill-say-sentences, youtube:ill-say-sentences, x:ill-forget-book, youtube:ill-forget-book.
+- In catalog but never measured: x:diagram-howto-vo, x:diagram-someday-vo, x:ill-size-problem, x:ill-later-trigger, x:ill-track-inputs, x:ill-five-goals, youtube:ill-five-goals, x:brand-one-place, youtube:brand-one-place, x:pixel-book, x:ill-save-first, x:ill-career-conversations, x:ill-goal-date, x:ill-phone-distance, x:ill-unclear-task, x:ill-ten-pages, x:ill-gym-day-four, x:ill-one-category, x:ill-one-sentence, x:ill-hard-part, x:ill-three-recipes, x:ill-twenty-mornings, x:ill-wake-time, x:ill-bad-night, youtube:ill-bad-night, x:ill-subscriptions, youtube:ill-subscriptions, x:ill-catch-up, youtube:ill-catch-up, x:ill-busy-week, x:ill-pickups, x:ill-caffeine, youtube:ill-busy-week, youtube:ill-pickups, youtube:ill-caffeine, x:ill-dark-morning, youtube:ill-dark-morning, x:ill-say-sentences, youtube:ill-say-sentences, x:ill-forget-book, youtube:ill-forget-book, instagram:ill-miss-twice, x:ill-miss-twice, youtube:ill-miss-twice, instagram:ill-pickups, instagram:ill-ten-minute-reset, x:ill-ten-minute-reset, youtube:ill-ten-minute-reset, instagram:ill-same-weight, x:ill-same-weight, youtube:ill-same-weight.
 
 See [WHAT_WORKED.md](WHAT_WORKED.md) for trait-by-trait comparisons and [latest_by_post.csv](latest_by_post.csv) for every number in one table.
 

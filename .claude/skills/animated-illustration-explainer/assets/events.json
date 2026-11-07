@@ -2998,5 +2998,63 @@
    "@4",
    "pop"
   ]
+ ],
+ "series-card": [
+  [
+   0.05,
+   "pop"
+  ],
+  [
+   0.3,
+   "riffle",
+   1.4
+  ],
+  [
+   "@1",
+   "pop"
+  ]
+ ],
+ "odds-curve:hook": [
+  [
+   0.0,
+   "pencil",
+   0.5
+  ]
+ ],
+ "odds-curve:draw": [
+  [
+   "@0",
+   "pencil",
+   0.5
+  ],
+  [
+   "@1",
+   "pencil",
+   0.9
+  ],
+  [
+   "@2",
+   "pencil",
+   1.2
+  ],
+  [
+   "@3",
+   "pop"
+  ]
+ ],
+ "odds-curve:fix": [
+  [
+   "@0",
+   "riffle",
+   1.0
+  ],
+  [
+   "@1",
+   "stamp"
+  ],
+  [
+   "@2",
+   "reveal"
+  ]
  ]
 }

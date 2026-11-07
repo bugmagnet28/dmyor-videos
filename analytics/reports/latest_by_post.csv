@@ -1,5 +1,4 @@
 content_id,platform,slug,posted_at_ist,style,hook_type,topic,narrated,length_s,latest_captured,latest_age_h,latest_views,latest_reach,views_48h,reach_48h,age_48h,retention_48h,shares_per_1k_48h,saves_per_1k_48h,follows_per_1k_48h,traction,views_7d
-instagram:ill-say-sentences,instagram,ill-say-sentences,,,,,,,2026-11-06 21:44,,104.0,,,,,,,,,,
 instagram:next-step-not-motivation,instagram,next-step-not-motivation,2026-10-21 00:54,kinetic-typography,hard-truth,motivation,no,16.4,2026-10-26 17:28,136.6,22.0,,22.0,16.0,42.8,,0.0,0.0,0.0,34,
 instagram:three-questions-before-a-goal,instagram,three-questions-before-a-goal,2026-10-21 05:30,kinetic-typography,framework-list,goal-setting,no,17.6,2026-10-26 17:28,132.0,8.0,,8.0,6.0,38.2,,0.0,0.0,0.0,24,
 instagram:twenty-minutes-a-day,instagram,twenty-minutes-a-day,2026-10-21 08:30,kinetic-typography,number-fact,time,no,14.6,2026-10-26 17:28,129.0,19.0,,19.0,18.0,35.2,,0.0,0.0,0.0,36,
@@ -46,6 +45,7 @@ instagram:ill-catch-up,instagram,ill-catch-up,2026-11-03 19:30,animated-illustra
 instagram:ill-forget-book,instagram,ill-forget-book,2026-11-05 20:30,animated-illustration-explainer,hard-truth,learning,yes,65.7,2026-11-06 21:44,25.2,519.0,,519.0,,25.2,,0.0,0.0,0.0,70,
 instagram:ill-caffeine,instagram,ill-caffeine,2026-11-05 22:00,animated-illustration-explainer,hard-truth,sleep,yes,67.1,2026-11-06 21:44,23.7,169.0,,,,,,,,,,
 instagram:ill-dark-morning,instagram,ill-dark-morning,2026-11-06 09:30,animated-illustration-explainer,hard-truth,sleep,yes,46.7,2026-11-06 21:44,12.2,193.0,,,,,,,,,,
+instagram:ill-say-sentences,instagram,ill-say-sentences,2026-11-06 20:20,animated-illustration-explainer,story,learning,yes,70.8,2026-11-06 21:44,,104.0,,,,,,,,,,
 x:ill-bad-day-version,x,ill-bad-day-version,2026-10-25 13:00,animated-illustration-explainer,hard-truth,consistency,yes,51.4,2026-10-26 17:28,28.5,1.0,,1.0,,28.5,,0.0,0.0,0.0,50,
 x:ill-language-plan,x,ill-language-plan,2026-10-25 16:30,animated-illustration-explainer,how-to-plan,language-learning,yes,51.1,2026-10-26 17:28,25.0,1.0,,1.0,,25.0,,0.0,0.0,0.0,50,
 x:ill-monday-wont-fix-it,x,ill-monday-wont-fix-it,2026-10-25 19:30,animated-illustration-explainer,hard-truth,procrastination,yes,43.3,2026-10-26 17:28,22.0,1.0,,,,,,,,,,

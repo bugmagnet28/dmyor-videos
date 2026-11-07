@@ -90,7 +90,7 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `phone-desk` | laptop with a blinking cursor, phone buzzing on the desk, "1 second" arc; `stage`: hook | `label`; cue x2 |
 | `phone-room` | the phone goes into another room, the door closes, laptop timer counts down from 25:00 | `room`, `minutes`; cue [phone, timer, door] |
 | `phone-walk` | footsteps from the desk to the closed door, "the pause", work line keeps growing + check | `room`, `label`; cue x3 |
-| `two-blocks` | two task cards (task, amount, "phone: kitchen") with 25-min rings filling and ticks | `rows[[task, amount, phone]]`; cue x2 |
+| `two-blocks` | two task cards (task, amount, "phone: kitchen") with rings filling and ticks | `rows[[task, amount, phone]]`, `mins` (ring label, default 25); cue x2 |
 | `break-timer` | focus ring runs out, beep, 5-min BREAK ring, "Go again" back to 25:00 | `label`; cue x3 |
 | `room-pick` | three room doors, one picked + check, note "Tomorrow, first block: phone goes to the kitchen" | `rooms[3]`, `pick`, `note`; cue x3 |
 | `when-question` | TODAY'S WORKOUT card with a blinking "When?" slot, DAY 1 → DAY 4 counter, excitement bar drains; a "maybe tomorrow" chip fills the slot | `what`, `mood`, `bar`; cue x3 |
@@ -139,6 +139,8 @@ Owner rule (2026-10-24): **objects sound like themselves**, at a clearly audible
 | `streak-rows` | (new 2026-11-06) two rows of N session cells: "Missed once" (one X, the rest ticked, "11 of 12") vs "Missed twice" (two X, the rest dashed/faded, "4 of 12"), chip; `stage` hook (finished, pen sound) / draw (row A ticks on cue 0, row B on cue 1 with a miss sound, chip on cue 2) | `n`, `miss`, `a`, `b`, `chip`, `ylabel`; cue x3 |
 | `lift-chart` | (new 2026-11-06) weight-per-week chart W1..W8 (`ylabel`); `stage` hook (flat red line at `w0` + dot + chip, plate clink) / draw (flat line draws on cue 0, chip on cue 1) / fix (flat line dashed, sage staircase `steps[]` draws from cue 0 to cue 1, `chip2` + `reveal` on cue 2) | `w0`, `w1`, `weeks`, `steps`, `tick`, `chip`, `chip2`; cue x2-3 |
 | `rep-log` | (new 2026-11-06) workout notebook: title + target range, SET 1-3 columns, rows of reps written on cue (pen), full-target row in sage + check, "All 10s? Add 2.5 kg" bar on the last cue | `rows[[day,r1,r2,r3]]`, `title`, `range`, `top`, `next`; cue rows+1 |
+| `series-card` | (new 2026-11-07, series label) grey question "WHY DO WE STOP DOING THINGS / WE KNOW ARE GOOD FOR US?", "REASON #n" counts up from #1 (riffle), underline + title card on cue 1 | `n`, `title`, `q1`, `q2`; cue [unused, title] (count runs from 0.3 s to cue 1) |
+| `odds-curve` | (new 2026-11-07) "CHANCE YOU HAVEN'T SKIPPED YET" curve p^d over `days` (default 0.9, 30); `stage` hook (finished, dot + "4%" + chip, pen sound) / draw (day 1, day 7, day N on cues 0-2, chip on cue 3) / fix (curve dashed, N small decision diamonds appear on cue 0, collapse into a sage "Decided once" pin on cue 1, `chip2` + `reveal` on cue 2) | `p`, `days`, `chip`, `chip2`, `pin`, `qlabel`, `ylabel` |
 | `follow-next` | (follow reason) "NEXT ON @BECAUSEIDMYOR" card: next reel title + when, Follow button turns "Following" | `title`, `when`; cue [null, follow] |
 | `dream-to-steps` | "ARCHIVED TODAY" dream card branching into three ticked steps (use for the value close) | `tag`, `dream`, `date`, `steps[3]` |
 

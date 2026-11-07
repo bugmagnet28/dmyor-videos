@@ -1,0 +1,9 @@
+{
+ "S1": [["Kabir is going to start a channel.", 0.3], ["As soon as he's ready.", 0.6]],
+ "S2": [["So why do we stop doing things we know are good for us?", 0.4], ["Reason number eleven.", 0.55]],
+ "S3": [["First, the right microphone.", 0.25], ["Then a camera. Then lights.", 0.25], ["Then a course about lights.", 0.6]],
+ "S4": [["Two years later.", 0.3], ["Readiness: ninety nine percent. Videos: zero.", 0.6]],
+ "S5": [["Here's the thing.", 0.25], ["Ready is a feeling you get after you start. Not before.", 0.6]],
+ "S6": [["So he filmed one. On his phone. In bad light.", 0.3], ["It was terrible.", 0.3], ["It was also video number one.", 0.6]],
+ "S7": [["What are you still getting ready for?", 0.3], ["Tell me below.", 1.4]]
+}

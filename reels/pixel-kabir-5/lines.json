@@ -1,0 +1,9 @@
+{
+ "S1": [["Kabir wants to learn guitar.", 0.3], ["The guitar lives in a closet. In a case. Under three boxes.", 0.6]],
+ "S2": [["So why do we stop doing things we know are good for us?", 0.4], ["Reason number six.", 0.55]],
+ "S3": [["To play guitar: six steps.", 0.3], ["To open his phone: one.", 0.6]],
+ "S4": [["Guess which one wins. Every single evening.", 0.6]],
+ "S5": [["It's not about willpower.", 0.3], ["Whatever is closest, wins.", 0.6]],
+ "S6": [["So he moved the guitar onto a stand, next to the bed.", 0.3], ["And the phone sleeps in the kitchen.", 0.6]],
+ "S7": [["Now it's one step to play, and six to scroll.", 0.4], ["What's hiding in your closet?", 0.3], ["Tell me below.", 1.4]]
+}

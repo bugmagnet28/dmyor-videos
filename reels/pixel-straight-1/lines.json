@@ -1,0 +1,9 @@
+{
+ "S1": [["You're not failing.", 0.3], ["You're in the part where nothing shows.", 0.6]],
+ "S2": [["Why do we stop doing things we know are good for us?", 0.4], ["Reason number five.", 0.55]],
+ "S3": [["Effort shows up on day one.", 0.3], ["Results don't.", 0.6]],
+ "S4": [["Plant a seed. Week one, nothing.", 0.3], ["Week two, nothing.", 0.3], ["Week three, still nothing.", 0.4], ["But underground, the roots are doing all the work.", 0.6]],
+ "S5": [["Most people quit right here, in the gap, where it feels like it isn't working.", 0.6]],
+ "S6": [["So for the first month, stop counting results.", 0.3], ["Count reps. Did you show up today? That's the scoreboard.", 0.6]],
+ "S7": [["The results will come.", 0.3], ["Your job is to still be there when they do.", 0.4], ["That's what Deem-yor is for. Small steps, counted every day.", 0.4], ["What are you waiting to see results on?", 1.4]]
+}

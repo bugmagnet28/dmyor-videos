@@ -17,7 +17,7 @@ function render(u) {
   else renderTo(cur, u, X);
   overlays(u);
 }
-function badge(u) { var s = EP.badge, B = 4, w = pwidth(s, B); X.fillStyle = "#1A1530"; X.fillRect(48, 96, w + 40, 52); X.fillStyle = "#FFC145"; X.fillRect(52, 100, w + 32, 44); ptext(X, s, 68, 112, B, "#1A1530"); }
+function badge(u) { var s = EP.badge, B = 4, w = pwidth(s, B); X.fillStyle = "#1A1530"; X.fillRect(48, 96, w + 40, 52); X.fillStyle = EP.badgeBg || "#FFC145"; X.fillRect(52, 100, w + 32, 44); ptext(X, s, 68, 112, B, EP.badgeFg || "#1A1530"); }
 function overlays(u) {
   var endAt = EP.endAt();
   if (u < endAt) badge(u);

@@ -1,0 +1,162 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] If your goal is planned for 9 PM, it's up against your whole day. And the day wins. || Why do we stop doing things we know are good for us? Reason fourteen. || [turn] Every hour adds something. An email. A favour. Being tired. By evening, your goal is last in line, and it's the easiest thing to drop. || So move it. The first ten minutes after you wake up, before you touch your phone. || Learning Spanish? Ten minutes saying the sentences you actually use. Writing a book? A hundred words, before you open a single message. || [land] Ten minutes at seven beats an hour planned for nine, because seven actually happens. Send this to a friend who's starting tonight. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. Next, why deciding every day quietly ends good habits. || [outro] What's the goal you keep saving for tonight? The link's in the bio.",
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Ahead of your goal at 7 AM",
+      1,
+      "acc"
+     ],
+     [
+      "Ahead of your goal at 9 PM",
+      12,
+      "red"
+     ]
+    ],
+    "max": 12,
+    "chip": "The day goes first",
+    "y0": 980,
+    "gap": 300
+   },
+   "head": "At 9 PM,<br>the day <b>wins</b>."
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 14,
+    "title": "The day goes first",
+    "cue": [
+     "good",
+     "Reason"
+    ]
+   },
+   "head": "Why we <b>stop</b>."
+  },
+  {
+   "type": "morning-drift",
+   "params": {
+    "hours": [
+     "9 AM",
+     "1 PM",
+     "6 PM",
+     "9 PM"
+    ],
+    "tiles": [
+     "An email",
+     "A favour",
+     "Tired"
+    ],
+    "goal": "Spanish: 30 min",
+    "cue": [
+     "email",
+     "favour",
+     "last"
+    ]
+   },
+   "head": "Every hour takes<br><b>a bite</b>."
+  },
+  {
+   "type": "ready-desk",
+   "params": {
+    "doc": "Before the phone",
+    "time": "7:00",
+    "note": "10 minutes",
+    "cue": [
+     "move",
+     "ten",
+     "phone"
+    ]
+   },
+   "head": "First ten <b>minutes</b>."
+  },
+  {
+   "type": "two-blocks",
+   "params": {
+    "mins": "10",
+    "rows": [
+     [
+      "Learning Spanish",
+      "Say 10 real sentences",
+      "phone: still off"
+     ],
+     [
+      "Writing a book",
+      "100 words",
+      "phone: still off"
+     ]
+    ],
+    "cue": [
+     "Spanish",
+     "book"
+    ]
+   },
+   "head": "Ten minutes.<br><b>Before</b> anything."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "FIRST 10 MINUTES",
+    "items": [
+     "Before the phone",
+     "One small piece",
+     "7 AM beats 9 PM"
+    ],
+    "cue": [
+     "Ten",
+     "nine",
+     "happens"
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Speak Spanish by summer",
+    "date": "Open it again: Jun 2027",
+    "steps": [
+     "7:00: 10 minutes",
+     "Before the phone",
+     "Every weekday"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why deciding every day ends good habits",
+    "when": "Next",
+    "cue": [
+     null,
+     "habits"
+    ]
+   },
+   "head": "One reason<br><b>a day</b>."
+  },
+  null
+ ],
+ "brand_from": 8,
+ "silences": [
+  "So move it",
+  "Ten minutes at seven"
+ ],
+ "caption": {
+  "instagram": "Why you never do the thing you planned for tonight (and how to fix it).\n\nWhy we stop doing things we know are good for us, reason #14: the day goes first. Every hour adds something: an email, a favour, being tired. By 9 PM your goal is last in line and the easiest thing to drop.\n\nThe fix: the first 10 minutes after you wake up, before you touch your phone.\n- Learning Spanish: 10 minutes saying the sentences you actually use\n- Writing a book: 100 words before you open a single message\n\n10 minutes at 7 beats an hour planned for 9, because 7 actually happens.\n\nWhat's the goal you keep saving for tonight? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#consistency #goals #morningroutine #discipline #selfimprovement",
+  "x": "If your goal is planned for 9 PM, it's up against your whole day. And the day wins.\n\nReason #14 we stop doing what's good for us. Fix: the first 10 minutes after you wake up, before the phone. 10 minutes at 7 beats an hour planned for 9.",
+  "youtube_title": "How to stop skipping your evening goals #Shorts"
+ }
+}
