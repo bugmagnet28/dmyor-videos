@@ -1,0 +1,246 @@
+{
+ "total": 47.68,
+ "brandT": 44.08,
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Week 1",
+      7,
+      "acc"
+     ],
+     [
+      "Week 2",
+      4,
+      "ink"
+     ],
+     [
+      "Week 3",
+      1,
+      "ink"
+     ],
+     [
+      "Week 4",
+      0,
+      "red"
+     ]
+    ],
+    "max": 7,
+    "unit": " days",
+    "y0": 760,
+    "gap": 190,
+    "chip": "Days you thought about your goal"
+   },
+   "head": "You didn't quit.<br>You <b>forgot</b>.",
+   "t0": 0.0,
+   "t1": 2.55
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 16,
+    "title": "Out of sight",
+    "cue": [
+     "good",
+     "Reason"
+    ],
+    "at": [
+     1.75,
+     2.83
+    ]
+   },
+   "head": "Why we <b>stop</b>.",
+   "t0": 2.55,
+   "t1": 6.51
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Week 1",
+      7,
+      "acc"
+     ],
+     [
+      "Week 2",
+      4,
+      "ink"
+     ],
+     [
+      "Week 3",
+      1,
+      "ink"
+     ],
+     [
+      "Week 4",
+      0,
+      "red"
+     ]
+    ],
+    "max": 7,
+    "unit": " days",
+    "y0": 760,
+    "gap": 190,
+    "chip": "Days you thought about your goal",
+    "cue": [
+     "one",
+     "every",
+     "three",
+     "asks",
+     "going"
+    ],
+    "at": [
+     0.09,
+     1.11,
+     2.29,
+     3.45,
+     4.17
+    ]
+   },
+   "head": "By week 3,<br>it <b>fades</b>.",
+   "t0": 6.51,
+   "t1": 11.29
+  },
+  {
+   "type": "lock-screen",
+   "params": {
+    "stage": "notes",
+    "cue": [
+     "points",
+     "never"
+    ],
+    "at": [
+     0.77,
+     2.89
+    ]
+   },
+   "head": "Nothing <b>points</b> at it.",
+   "t0": 11.29,
+   "t1": 15.13
+  },
+  {
+   "type": "lock-screen",
+   "params": {
+    "stage": "lock",
+    "cue": [
+     "eyes",
+     "goal",
+     "step"
+    ],
+    "chip": "Where your eyes already go",
+    "at": [
+     0.73,
+     2.87,
+     3.91
+    ]
+   },
+   "head": "Put it on your<br><b>lock screen</b>.",
+   "t0": 15.13,
+   "t1": 19.69
+  },
+  {
+   "type": "lock-screen",
+   "params": {
+    "stage": "glance",
+    "cue": [
+     "see",
+     "phone"
+    ],
+    "at": [
+     0.51,
+     2.07
+    ]
+   },
+   "head": "See it <b>every</b><br>unlock.",
+   "t0": 19.69,
+   "t1": 22.37
+  },
+  {
+   "type": "lock-screen",
+   "params": {
+    "stage": "update",
+    "cue": [
+     "Cross",
+     "step",
+     "write"
+    ],
+    "chip": "Sunday: 2 minutes",
+    "at": [
+     1.81,
+     2.73,
+     3.11
+    ]
+   },
+   "head": "Sunday:<br><b>next step</b>.",
+   "t0": 22.37,
+   "t1": 26.27
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "KEEP IT IN SIGHT",
+    "items": [
+     "Goal on lock screen",
+     "This week's one step",
+     "Sunday: 2-min update"
+    ],
+    "cue": [
+     "Goal",
+     "step",
+     "Sunday"
+    ],
+    "at": [
+     0.05,
+     1.99,
+     2.95
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>.",
+   "t0": 26.27,
+   "t1": 33.27
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Run a 10K by March",
+    "date": "Open it again: Mar 2027",
+    "steps": [
+     "3 runs this week",
+     "Lock screen updated",
+     "Sunday: next step"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 33.27,
+   "t1": 38.61
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why Sunday-only practice is slowest",
+    "when": "Next",
+    "cue": [
+     null,
+     "learn"
+    ],
+    "at": [
+     0.2,
+     4.69
+    ]
+   },
+   "head": "One reason<br><b>a day</b>.",
+   "t0": 38.61,
+   "t1": 44.08
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  11.24,
+  15.08
+ ]
+}

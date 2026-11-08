@@ -1,0 +1,41 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-out-of-sight",
+ "hook_type": "hard-truth",
+ "topic": "goals",
+ "pillar": "A (why goals fail)",
+ "series": "Why we stop doing things we know are good for us, Reason #16 (out of sight)",
+ "experiment": "V-EXP-34",
+ "hook": "You didn't quit your goal. You just stopped seeing it.",
+ "gate": {
+  "goal_link": "keeps a big goal in daily attention so its weekly step actually happens",
+  "mechanism": "attention goes to what is in front of you; a goal stored in a notes app has no daily cue, so it drops out of mind by week 3 (shown as days-you-thought-about-it bars, illustrative)",
+  "universal": "almost everyone has a goal written somewhere they never look"
+ },
+ "frame": {
+  "structure": "C (mistake, cost, fix)",
+  "mistake": "the goal lives in a notes app nobody opens",
+  "cost": "7 days a week in week 1 -> 0 by week 4 (illustrative, labelled as days you thought about it)",
+  "fix": "goal + this week's one step on the lock screen; Sunday 2-min update"
+ },
+ "hooks_considered": [
+  {"line": "You didn't quit your goal. You just stopped seeing it.", "checks": "hard truth Y, gap Y, muted Y (bars fall to 0), sendable Y, payoff Y", "kept": true},
+  {"line": "By week three, you'll forget your own goal.", "checks": "good, a prediction more than a truth", "kept": false},
+  {"line": "Your goal lives in a notes app you never open.", "checks": "relatable, gives the answer away", "kept": false},
+  {"line": "Three weeks after you set a goal, it's gone from your day.", "checks": "number shape, weaker line", "kept": false},
+  {"line": "Out of sight, out of goals.", "checks": "pun, no", "kept": false}
+ ],
+ "beats": {
+  "hard_truth": "0.0 s, bars Week 1 7 days -> Week 4 0 days on frame 0",
+  "series": "Reason #16 card ~3.5 s",
+  "rehook_10": "bars grow week by week to the red zero",
+  "rehook_20": "notes app with the goal note '23 days ago' buried under notifications, then the lock screen typed",
+  "save_moment": "KEEP IT IN SIGHT rule card",
+  "share_line": "Send this to the friend whose goal lives in a notes app.",
+  "comment_q": "Where does your goal live right now?",
+  "follow_reason": "Next: why two hours on Sunday is the slowest way to learn (ill-sunday-practice, same day 13:00)"
+ },
+ "note": "Promised by ill-decide-once's follow line (idea #55). New scene lock-screen (notes / lock / glance / update). Bars are illustrative (no study cited, spoken as 'every day ... only when someone asks'). Takeaway differs from pixel Kabir #6 (friction: move the guitar) because this is about seeing the goal, not reaching the tool; checked all pixel lines.json. Payoff reveal sound on the glance chip.",
+ "quality": {"hook": 5, "usefulness": 5, "specificity": 4, "clarity": 5, "retention": 4, "craft": 4, "voice": 4, "brand": 4, "total": 35}
+}

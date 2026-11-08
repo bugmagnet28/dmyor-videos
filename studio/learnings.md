@@ -173,3 +173,10 @@ While scheduling diagram-howto-vo from the web (browser automation), two "Your p
 - 2026-11-07 [content] 50 s cap budget with the series card (~4 s) + comment question: ~95 body words + ~45 close words = 49 s at Kokoro 3.3-3.5 w/s. The close had to drop "so you can see it tomorrow" to fit. Confidence: high
 - 2026-11-07 [craft] A count-up number that waits for a late cue shows "#1" for 2-3 s; start the count at scene start and land it on the cue word instead. Confidence: high
 - 2026-11-07 [craft] A curve that finishes drawing after its scene's crossfade starts never shows its end value; keep the last draw segment shorter than (scene end - cue). Checked with shots.js before recording. Confidence: high
+
+## 2026-11-08 (run)
+- 2026-11-08 [data] No new metrics (template only, no browser). Sun Nov 8 batch (first-ten-minutes, decide-once, kabir-1) still unchecked in post-queue: not scheduled yet, so V-EXP-34 has zero data on day 2. The posting gap (growth plan 6.1) is now the biggest blocker, not content. Confidence: high
+- 2026-11-08 [craft] Typing animations cued on the last spoken word of a thought get cut by the crossfade (step line half typed). Cue typing on an earlier word ("eyes", "goal") and keep type-on ≤ 0.8-1.1 s; check the cue list printed by make_reel before recording. Confidence: high
+- 2026-11-08 [craft] Unit labels need singular handling ("1 days"): bar-compare now drops a trailing "s" when the value is 1. Confidence: high
+- 2026-11-08 [craft] Overlays that slide over a list must land on a block they fully cover (notifications over the Notes header), not interleave with rows; otherwise the screen reads as a glitch. Confidence: medium
+- 2026-11-08 [ops] Host stalls again: whisper small.en took ~40 min for a 48 s clip (load 9), and Chrome launch timed out once in shots.js (30 s WS timeout). Retry instead of assuming the scene failed. Confidence: high

@@ -1,0 +1,201 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] You didn't quit your goal. You just stopped seeing it. || Why do we stop doing things we know are good for us? Reason sixteen. || [turn] Week one, you think about it every day. By week three, only when someone asks how it's going. || Nothing in your day points at it. It lives in a notes app you never open. || So put it where your eyes already go. Your lock screen: the goal, and this week's one step. || Now you see it every time you pick up your phone. || And every Sunday, two minutes. Cross off this week's step, and write the next one. || [land] Goal on the lock screen, one step, two minutes on Sunday. Send this to the friend whose goal lives in a notes app. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. Next, why two hours on Sunday is the slowest way to learn. || [outro] Where does your goal live right now? The link's in the bio.",
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Week 1",
+      7,
+      "acc"
+     ],
+     [
+      "Week 2",
+      4,
+      "ink"
+     ],
+     [
+      "Week 3",
+      1,
+      "ink"
+     ],
+     [
+      "Week 4",
+      0,
+      "red"
+     ]
+    ],
+    "max": 7,
+    "unit": " days",
+    "y0": 760,
+    "gap": 190,
+    "chip": "Days you thought about your goal"
+   },
+   "head": "You didn't quit.<br>You <b>forgot</b>."
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 16,
+    "title": "Out of sight",
+    "cue": [
+     "good",
+     "Reason"
+    ]
+   },
+   "head": "Why we <b>stop</b>."
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Week 1",
+      7,
+      "acc"
+     ],
+     [
+      "Week 2",
+      4,
+      "ink"
+     ],
+     [
+      "Week 3",
+      1,
+      "ink"
+     ],
+     [
+      "Week 4",
+      0,
+      "red"
+     ]
+    ],
+    "max": 7,
+    "unit": " days",
+    "y0": 760,
+    "gap": 190,
+    "chip": "Days you thought about your goal",
+    "cue": [
+     "one",
+     "every",
+     "three",
+     "asks",
+     "going"
+    ]
+   },
+   "head": "By week 3,<br>it <b>fades</b>."
+  },
+  {
+   "type": "lock-screen",
+   "params": {
+    "stage": "notes",
+    "cue": [
+     "points",
+     "never"
+    ]
+   },
+   "head": "Nothing <b>points</b> at it."
+  },
+  {
+   "type": "lock-screen",
+   "params": {
+    "stage": "lock",
+    "cue": [
+     "eyes",
+     "goal",
+     "step"
+    ],
+    "chip": "Where your eyes already go"
+   },
+   "head": "Put it on your<br><b>lock screen</b>."
+  },
+  {
+   "type": "lock-screen",
+   "params": {
+    "stage": "glance",
+    "cue": [
+     "see",
+     "phone"
+    ]
+   },
+   "head": "See it <b>every</b><br>unlock."
+  },
+  {
+   "type": "lock-screen",
+   "params": {
+    "stage": "update",
+    "cue": [
+     "Cross",
+     "step",
+     "write"
+    ],
+    "chip": "Sunday: 2 minutes"
+   },
+   "head": "Sunday:<br><b>next step</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "KEEP IT IN SIGHT",
+    "items": [
+     "Goal on lock screen",
+     "This week's one step",
+     "Sunday: 2-min update"
+    ],
+    "cue": [
+     "Goal",
+     "step",
+     "Sunday"
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Run a 10K by March",
+    "date": "Open it again: Mar 2027",
+    "steps": [
+     "3 runs this week",
+     "Lock screen updated",
+     "Sunday: next step"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why Sunday-only practice is slowest",
+    "when": "Next",
+    "cue": [
+     null,
+     "learn"
+    ]
+   },
+   "head": "One reason<br><b>a day</b>."
+  },
+  null
+ ],
+ "brand_from": 10,
+ "silences": [
+  "Nothing in your day",
+  "So put it"
+ ],
+ "caption": {
+  "instagram": "Why you lose motivation for your goals by week three: you stopped seeing them.\n\nWhy we stop doing things we know are good for us, reason #16: out of sight. Week one you think about the goal every day. By week three it only comes up when someone asks, because nothing in your day points at it. It lives in a notes app you never open.\n\nThe fix:\n- Put the goal and this week's one step on your lock screen\n- You see it every time you pick up your phone\n- Every Sunday, 2 minutes: cross off this week's step, write the next one\n\nWhere does your goal live right now? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#goals #motivation #goalsetting #habits #selfimprovement",
+  "x": "You didn't quit your goal. You just stopped seeing it.\n\nPut the goal and this week's one step on your lock screen. Every Sunday, 2 minutes: cross off the step, write the next one.",
+  "youtube_title": "How to stop forgetting your goals #Shorts"
+ }
+}

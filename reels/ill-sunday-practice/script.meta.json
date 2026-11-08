@@ -1,0 +1,42 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-sunday-practice",
+ "hook_type": "hard-truth",
+ "topic": "learning",
+ "pillar": "C (learning & skill)",
+ "series": "Why we stop doing things we know are good for us, Reason #17 (the big session)",
+ "experiment": "V-EXP-34",
+ "hook": "Practising for two hours every Sunday is the slowest way to learn anything.",
+ "gate": {
+  "goal_link": "any skill goal (piano, code, a language) moves faster with the same weekly time",
+  "mechanism": "spacing: skills consolidate between sessions (much of it during sleep), so 7 short sessions beat 1 long one; plus one busy Sunday zeroes the week",
+  "universal": "'I'll practise at the weekend' is how most adults schedule a skill"
+ },
+ "frame": {
+  "structure": "A (method with stakes)",
+  "want": "learn a skill with the time you have",
+  "obstacle": "one weekly block: forgotten by next week, and skipped whenever Sunday gets busy",
+  "cost": "a missed Sunday = 0 minutes that week vs 120 when one of seven 20-min days is missed (real arithmetic)",
+  "fix": "same 140 minutes, 20 a day, anchored to dinner / before work / commute"
+ },
+ "hooks_considered": [
+  {"line": "Practising for two hours every Sunday is the slowest way to learn anything.", "checks": "hard truth Y, gap Y, muted Y (one red Sunday bar), sendable Y, payoff Y", "kept": true},
+  {"line": "You're not learning slowly. You're practising once a week.", "checks": "good; second sentence weaker", "kept": false},
+  {"line": "Same 140 minutes. One way works, one doesn't.", "checks": "needs the chart to land", "kept": false},
+  {"line": "The weekend is where skills go to die.", "checks": "too cute", "kept": false},
+  {"line": "Two people practise 140 minutes a week. One improves.", "checks": "good two-people shape, longer", "kept": false}
+ ],
+ "beats": {
+  "hard_truth": "0.0 s, week bars: only Sunday 140 in clay on frame 0",
+  "series": "Reason #17 card ~4 s",
+  "rehook_10": "forget curve: next Sunday you start by catching up",
+  "rehook_20": "busy Sunday = 0 min vs 120; then the Sunday bar splits into seven sage 20s + reveal",
+  "save_moment": "SPLIT THE SESSION rule card",
+  "share_line": "Send this to the friend who saves it all for the weekend.",
+  "comment_q": "What are you saving for the weekend?",
+  "follow_reason": "Tonight: pixel-kabir-2, the gym membership (scheduled Mon 19:30)"
+ },
+ "note": "Pillar C. Spacing + sleep consolidation stated as general knowledge, no study named. Distinct from ill-hard-part (what to practise) and ill-forget-book (recall after reading): this one is about how to split the time. Reuses forget-curve for the 'catching up' beat with a new label. New scene week-bars (linear vertical bars, morph).",
+ "quality": {"hook": 5, "usefulness": 5, "specificity": 5, "clarity": 4, "retention": 4, "craft": 4, "voice": 4, "brand": 4, "total": 35}
+}

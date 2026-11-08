@@ -1,0 +1,249 @@
+{
+ "total": 48.36,
+ "brandT": 44.54,
+ "scenes": [
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "hook",
+    "ylabel": "MINUTES PRACTISED THIS WEEK",
+    "chip": "1 session a week"
+   },
+   "head": "Sunday-only practice:<br>the <b>slowest</b> way.",
+   "t0": 0.0,
+   "t1": 4.27
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 17,
+    "title": "The big session",
+    "cue": [
+     "good",
+     "Reason"
+    ],
+    "at": [
+     1.81,
+     2.91
+    ]
+   },
+   "head": "Why we <b>stop</b>.",
+   "t0": 4.27,
+   "t1": 8.27
+  },
+  {
+   "type": "forget-curve",
+   "params": {
+    "stage": "draw",
+    "ylabel": "WHAT'S LEFT OF SUNDAY'S PRACTICE",
+    "d0": "Sun",
+    "chip": "Next Sunday: catching up",
+    "cue": [
+     "serious",
+     "next",
+     "catching"
+    ],
+    "at": [
+     1.15,
+     2.43,
+     5.29
+    ]
+   },
+   "head": "By next Sunday,<br>it's <b>faded</b>.",
+   "t0": 8.27,
+   "t1": 14.47
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "20 min a day, missed 1 day",
+      120,
+      "acc"
+     ],
+     [
+      "Sundays only, missed 1 Sunday",
+      0,
+      "red"
+     ]
+    ],
+    "max": 140,
+    "unit": " min",
+    "chip": "Practised that week",
+    "cue": [
+     "one",
+     "whole",
+     "zero"
+    ],
+    "at": [
+     0.27,
+     1.81,
+     2.61
+    ]
+   },
+   "head": "Miss one Sunday:<br><b>zero</b> week.",
+   "t0": 14.47,
+   "t1": 17.75
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "morph",
+    "ylabel": "MINUTES PRACTISED THIS WEEK",
+    "after": [
+     [
+      "M",
+      "",
+      20,
+      "acc"
+     ],
+     [
+      "T",
+      "",
+      20,
+      "acc"
+     ],
+     [
+      "W",
+      "",
+      20,
+      "acc"
+     ],
+     [
+      "T",
+      "",
+      20,
+      "acc"
+     ],
+     [
+      "F",
+      "",
+      20,
+      "acc"
+     ],
+     [
+      "S",
+      "",
+      20,
+      "acc"
+     ],
+     [
+      "S",
+      "",
+      20,
+      "acc"
+     ]
+    ],
+    "max": 140,
+    "chip2": "Same 140 min. 7 sessions.",
+    "cue": [
+     "split",
+     "Twenty"
+    ],
+    "at": [
+     3.85,
+     4.62
+    ]
+   },
+   "head": "Same time.<br><b>Split</b> it.",
+   "t0": 17.75,
+   "t1": 23.91
+  },
+  {
+   "type": "list-rewrite",
+   "params": {
+    "rows": [
+     [
+      "Piano on Sundays",
+      "After dinner: 20 min piano"
+     ],
+     [
+      "Code on weekends",
+      "Before work: 20 min code"
+     ],
+     [
+      "Spanish on Saturday",
+      "Commute: 20 min Spanish"
+     ]
+    ],
+    "cue": [
+     "Piano",
+     "Code",
+     "Spanish"
+    ],
+    "at": [
+     0.05,
+     1.21,
+     1.87
+    ]
+   },
+   "head": "20 minutes,<br><b>every day</b>.",
+   "t0": 23.91,
+   "t1": 28.33
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "SPLIT THE SESSION",
+    "items": [
+     "Same total time",
+     "20 minutes a day",
+     "Missed? 20 min lost"
+    ],
+    "cue": [
+     "missed",
+     "costs",
+     "Send"
+    ],
+    "at": [
+     0.33,
+     0.75,
+     2.93
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>.",
+   "t0": 28.33,
+   "t1": 34.07
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Play piano by summer",
+    "date": "Open it again: Jun 2027",
+    "steps": [
+     "20 min after dinner",
+     "One section a day",
+     "Sunday: play it through"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 34.07,
+   "t1": 39.57
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Kabir vs. Kabir: the gym membership",
+    "when": "Tonight, 7:30 PM",
+    "cue": [
+     null,
+     "membership"
+    ],
+    "at": [
+     0.2,
+     2.97
+    ]
+   },
+   "head": "One reason<br><b>a day</b>.",
+   "t0": 39.57,
+   "t1": 44.54
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  14.42,
+  17.7
+ ]
+}

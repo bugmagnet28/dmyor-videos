@@ -1,0 +1,26 @@
+{
+ "voice": "am_eric", "speed": 1.0, "gap_min": 0.18, "gap_max": 0.32, "tail": 1.2, "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] Practising for two hours every Sunday is the slowest way to learn anything. || Why do we stop doing things we know are good for us? Reason seventeen. || [turn] One long session feels serious. But by next Sunday, most of it has faded, and you spend the start just catching up. || And if one Sunday gets busy, that whole week is a zero. || Your brain locks in a new skill between sessions, a lot of it while you sleep. So split the same time. Twenty minutes a day. || Piano after dinner. Code before work. Spanish on your commute. Twenty minutes each. || [land] Now a missed day costs twenty minutes, not a week. Send this to the friend who saves it all for the weekend. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. Tonight, Kabir and the gym membership he paid for in full. || [outro] What are you saving for the weekend? The link's in the bio.",
+ "scenes": [
+  {"type": "week-bars", "params": {"stage": "hook", "ylabel": "MINUTES PRACTISED THIS WEEK", "chip": "1 session a week"}, "head": "Sunday-only practice:<br>the <b>slowest</b> way."},
+  {"type": "series-card", "params": {"n": 17, "title": "The big session", "cue": ["good", "Reason"]}, "head": "Why we <b>stop</b>."},
+  {"type": "forget-curve", "params": {"stage": "draw", "ylabel": "WHAT'S LEFT OF SUNDAY'S PRACTICE", "d0": "Sun", "chip": "Next Sunday: catching up", "cue": ["serious", "next", "catching"]}, "head": "By next Sunday,<br>it's <b>faded</b>."},
+  {"type": "bar-compare", "params": {"rows": [["20 min a day, missed 1 day", 120, "acc"], ["Sundays only, missed 1 Sunday", 0, "red"]], "max": 140, "unit": " min", "chip": "Practised that week", "cue": ["one", "whole", "zero"]}, "head": "Miss one Sunday:<br><b>zero</b> week."},
+  {"type": "week-bars", "params": {"stage": "morph", "ylabel": "MINUTES PRACTISED THIS WEEK", "after": [["M","",20,"acc"],["T","",20,"acc"],["W","",20,"acc"],["T","",20,"acc"],["F","",20,"acc"],["S","",20,"acc"],["S","",20,"acc"]], "max": 140, "chip2": "Same 140 min. 7 sessions.", "cue": ["split", "Twenty"]}, "head": "Same time.<br><b>Split</b> it."},
+  {"type": "list-rewrite", "params": {"rows": [["Piano on Sundays", "After dinner: 20 min piano"], ["Code on weekends", "Before work: 20 min code"], ["Spanish on Saturday", "Commute: 20 min Spanish"]], "cue": ["Piano", "Code", "Spanish"]}, "head": "20 minutes,<br><b>every day</b>."},
+  {"type": "rule-card", "params": {"title": "SPLIT THE SESSION", "items": ["Same total time", "20 minutes a day", "Missed? 20 min lost"], "cue": ["missed", "costs", "Send"]}, "head": "Screenshot<br><b>this</b>."},
+  {"type": "dream-to-steps", "params": {"dream": "Play piano by summer", "date": "Open it again: Jun 2027", "steps": ["20 min after dinner", "One section a day", "Sunday: play it through"]}, "head": "Archive the dream.<br>Break it into <b>steps</b>."},
+  {"type": "follow-next", "params": {"title": "Kabir vs. Kabir: the gym membership", "when": "Tonight, 7:30 PM", "cue": [null, "membership"]}, "head": "One reason<br><b>a day</b>."},
+  null
+ ],
+ "brand_from": 9,
+ "silences": ["And if one Sunday", "Your brain locks"],
+ "caption": {
+  "instagram": "How to learn a skill faster: stop practising only on Sundays.\n\nWhy we stop doing things we know are good for us, reason #17: the big session. Two hours once a week feels serious, but by next Sunday most of it has faded, and you spend the start catching up. And one busy Sunday makes the whole week a zero.\n\nYour brain locks in a new skill between sessions, a lot of it while you sleep. So split the same time:\n- Piano: 20 min after dinner\n- Code: 20 min before work\n- Spanish: 20 min on your commute\n\nSame 140 minutes, 7 sessions, and a missed day costs 20 minutes, not a week.\n\nWhat are you saving for the weekend? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#learning #practice #learnanything #habits #selfimprovement",
+  "x": "Practising 2 hours every Sunday is the slowest way to learn anything.\n\nSame 140 minutes, split: 20 min a day. Your brain locks in a skill between sessions, a lot of it while you sleep. And a missed day costs 20 minutes, not a week.",
+  "youtube_title": "How to learn a skill faster with less practice time #Shorts"
+ }
+}

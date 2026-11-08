@@ -206,3 +206,12 @@ Instagram locked the account ("we locked your account to protect you from a poss
   1. Next browser session: schedule both on IG, X, YT (with pixel-kabir-1 that is 3 IG flows; max 5 per session).
   2. Reason numbering: the pixel reels in `ready-to-post/pixel-review-2026-11-07/` already use #4-#13, so the explainers continue at #14. If you'd rather have the explainers take #4/#5 and renumber the pixel reels, say so and I'll re-cut the series cards (5 min each).
   3. Still the most useful input (VASK-025): app screenshots of avg watch time + % watched for ill-wake-time, ill-hard-part, ill-bad-night, ill-busy-week, ill-dark-morning, ill-miss-twice into `inbox/metrics/`. The 50 s cap can't be judged without them.
+
+## VASK-027: Schedule the Mon Nov 9 batch (and the still-unscheduled Sun batch) (2026-11-08)
+- Status: open
+- What: 2 explainers, auto-approved (35/40 each), `ready-to-post/2026-11-09-*/`: 09:30 **ill-out-of-sight** (Reason #16, kept promise of ill-decide-once), 13:00 **ill-sunday-practice** (Reason #17, pillar C). 19:30 stays pixel-kabir-2.
+- Steps:
+  1. Sun Nov 8 batch is not scheduled yet (09:30 + 13:00 slots passed). If a browser session happens tonight: post ill-first-ten-minutes now-ish, pixel-kabir-1 19:30, ill-decide-once 22:00 (its follow line points to Mon 09:30 ill-out-of-sight, so the chain holds). If not, shift everything one day: Sun batch to Mon, Mon batch to Tue.
+  2. Then schedule Mon: 09:30 ill-out-of-sight, 13:00 ill-sunday-practice (its follow line says "Tonight, Kabir and the gym membership", so it must go out the same day as pixel-kabir-2), 19:30 pixel-kabir-2. Max 5 IG flows per session: split over two sessions if needed.
+  3. Still wanted (VASK-025/026): avg watch time + % watched screenshots into `inbox/metrics/`.
+  4. Mac health: uptime 267 days, 14 GB of 15 GB swap used, fseventsd at ~57% CPU. Renders crawl at 0.1 fps (a 48 s reel takes ~4-5 h) and runs stall. A restart when convenient would likely fix it.

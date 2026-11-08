@@ -1,6 +1,6 @@
 # Video dashboard (posting on @becauseidmyor, end card @becauseidmyor)
 
-_Last updated: 2026-11-07 IST (run 2026-11-07)_
+_Last updated: 2026-11-08 IST (run 2026-11-08)_
 
 **Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [reel library](library/index.html) · [growth plan Nov 2026](growth-plan-2026-11.md) · weekly review 2026-11-03 in [strategy.md](strategy.md)
 
@@ -9,17 +9,25 @@ _Last updated: 2026-11-07 IST (run 2026-11-07)_
 | Instagram followers (@becauseidmyor) | **24** (2026-11-06) |
 | Instagram 30-day views | 7,437 (Nov 6) · 99.6% non-followers · 24 profile visits, 1 link tap |
 | Are we improving? | **Reach: yes** (newer median 128 vs 17). Followers: slow (+3 in 9 days). YouTube: declining |
-| Today (Sat Nov 7) on IG | 09:30 pickups · 13:00 ten-minute-reset · 19:30 same-weight (scheduled) |
-| Ready to schedule (auto-approved) | Sun Nov 8: **ill-first-ten-minutes** 09:30 (Reason #14), **ill-decide-once** 13:00 (Reason #15), pixel-kabir-1 19:30 (Reason #1); Kabir #2/#3 Mon/Tue 19:30 |
+| **Blocker** | Sun Nov 8 batch (first-ten-minutes, decide-once, kabir-1) **not scheduled yet**; V-EXP-34 has no data. See VASK-027 for tonight's catch-up order |
+| Ready to schedule (auto-approved) | Sun: ill-first-ten-minutes (#14), ill-decide-once (#15), pixel-kabir-1 (#1) · **Mon Nov 9: 09:30 ill-out-of-sight (#16), 13:00 ill-sunday-practice (#17), 19:30 pixel-kabir-2 (#2)** · Tue: pixel-kabir-3 |
 | Owner review | 8 pixel reels in ready-to-post/pixel-review-2026-11-07 (Reasons #4-#13) |
 | Open experiments | V-EXP-32 (kit v2), V-EXP-33 (chart frame 0 + length), **V-EXP-34** (on-topic pillars, ≤50 s, Reason series, comment question; Nov 7-20) |
-| Asks | VASK-025 / VASK-026: schedule Sun batch, watch-time screenshots |
+| Asks | VASK-027 (schedule Sun + Mon), VASK-025/026 watch-time screenshots |
 
-## Built today for Sun Nov 8 (V-EXP-34 batch 1)
-| Time (IST) | Reel | Reason | Length | Hook | Frame 0 | Score |
+## Built today for Mon Nov 9 (V-EXP-34 batch 2)
+| Time (IST) | Reel | Reason / pillar | Length | Hook | Frame 0 | Score |
 |---|---|---|---|---|---|---|
-| 09:30 | ill-first-ten-minutes | #14 the day goes first | 49.0 s | "If your goal is planned for 9 PM, it's up against your whole day. And the day wins." | bars: 1 thing ahead at 7 AM vs 12 at 9 PM | 35/40 |
-| 13:00 | ill-decide-once | #15 the daily decision | 48.8 s | "If you have to decide to do it, one day you'll decide not to." | curve 0.9^d, day 30 = 4% | 35/40 |
+| 09:30 | ill-out-of-sight | #16 out of sight / A | 47.7 s | "You didn't quit your goal. You just stopped seeing it." | bars: days you thought about it, week 1 = 7 -> week 4 = 0 | 35/40 |
+| 13:00 | ill-sunday-practice | #17 the big session / C | 48.4 s | "Practising for two hours every Sunday is the slowest way to learn anything." | week bars, only Sunday 140 min (clay) | 35/40 |
+
+Chain: decide-once -> out-of-sight -> sunday-practice -> "Tonight, Kabir and the gym membership" (pixel-kabir-2, same day 19:30).
+
+## Built Sat for Sun Nov 8 (V-EXP-34 batch 1, still unscheduled)
+| Time (IST) | Reel | Reason | Length | Score |
+|---|---|---|---|---|
+| 09:30 | ill-first-ten-minutes | #14 the day goes first | 49.0 s | 35/40 |
+| 13:00 | ill-decide-once | #15 the daily decision | 48.8 s | 35/40 |
 
 ## Last reels with numbers (IG views, grid read Nov 2)
 | Reel | Posted | Views | Saves | Shares | Follows |
@@ -52,7 +60,8 @@ Previous batches (Wed Nov 4, Thu Nov 5) are live/scheduled; see post-queue.md.
 - V-EXP-33 chart hooks + length test: batches Nov 4, Nov 5 live; batch 3 built Nov 6.
 
 ## Asks
-- VASK-025: app screenshots of avg watch time for wake-time, hard-part, bad-night, busy-week, caffeine, dark-morning, forget-book (length test); schedule the new batch.
+- VASK-027: schedule the Sun batch tonight (or shift a day) and the Mon batch.
+- VASK-025/026: app screenshots of avg watch time (length test).
 
 ## Known gaps
 - Only one style passes OWNER-RULES; second daily style still owed.

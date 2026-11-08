@@ -6,6 +6,13 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 - Note 2026-11-06 21:30 (Claude): Nov 6 batch scheduled on IG (likes hidden), X and YT: miss-twice Fri 22:00, ten-minute-reset Sat 13:00, same-weight Sat 19:30. Leftover Wed/Thu reels on Instagram: say-sentences posted Fri ~20:20, pickups scheduled Sat 09:30; busy-week skipped on IG (already on X/YT; 5-flow limit). All Wed/Thu reels now done on every platform except busy-week on IG.
 
+## Built Sun 2026-11-08 for Mon 2026-11-09 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 2
+
+- [ ] Mon 09:30 IST · **ill-out-of-sight** (Reason #16 "out of sight", pillar A, days-you-thought-about-it bars on frame 0, 47.7 s; keeps ill-decide-once's "Next: why you forget your own goal by week three") · `ready-to-post/2026-11-09-ill-out-of-sight/`
+- [ ] Mon 13:00 IST · **ill-sunday-practice** (Reason #17 "the big session", pillar C, one red 140-min Sunday bar on frame 0 that splits into seven 20s, 48.4 s, strongest) · `ready-to-post/2026-11-09-ill-sunday-practice/`
+- Mon 19:30 stays **pixel-kabir-2**. ill-sunday-practice's follow line says "Tonight, Kabir and the gym membership": post it the same day as pixel-kabir-2. If the Sun batch slips to Mon, shift this whole block (with kabir-2) to Tue.
+- Sun batch below is still unscheduled (see VASK-027 for tonight's catch-up order).
+
 ## Built Sat 2026-11-07 for Sun 2026-11-08 (auto-approved, to schedule). Instagram, X and YouTube Shorts. First V-EXP-34 batch (on-topic, ≤50 s, "Reason #n" series, comment question)
 
 - [ ] Sun 09:30 IST · **ill-first-ten-minutes** (Reason #14 "the day goes first", bar chart 1 vs 12 on frame 0, 49.0 s; keeps ill-same-weight's "Next: the first ten minutes of your morning") · `ready-to-post/2026-11-08-ill-first-ten-minutes/`
