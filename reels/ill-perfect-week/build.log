@@ -1,0 +1,17 @@
+reels/ill-perfect-week/audio.mp3  48.31s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body body land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/4831 [00:00<?, ?frames/s] 60%|██████    | 2918/4831 [12:27<08:10,  3.90frames/s]100%|██████████| 4831/4831 [43:00<00:00,  1.68frames/s]100%|██████████| 4831/4831 [43:00<00:00,  1.87frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+165 words, 48.31s, 3.42 words/sec
+-> reels/ill-perfect-week/cues.json
+  skip ['@0', 'pencil', 0.3]: scene gym-calendar has no beat for it
+  skip ['@0+0.3', 'pop']: scene gym-calendar has no beat for it
+  skip ['@1', 'pencil', 0.3]: scene gym-calendar has no beat for it
+  skip ['@1+0.3', 'pop']: scene gym-calendar has no beat for it
+  skip ['@2', 'pencil', 0.3]: scene gym-calendar has no beat for it
+  skip ['@2+0.3', 'pop']: scene gym-calendar has no beat for it
+  skip ['@4', 'pop']: scene week-bars has no beat for it
+sfx present: 47 sounds -> reels/ill-perfect-week/audio_mixed.mp3 riffle@0.1 pop@3.3 riffle@3.5 pop@6.0 pencil@7.1 swish@9.8 right@10.3 right@11.0 miss@11.7 miss@12.2 swish@13.3 pop@14.5 pop@15.9 pop@18.5 swish@19.0 right@19.8 right@20.1 right@20.4 right@20.7 right@21.0 right@21.6 right@21.9 right@22.2 right@22.5 pencil@22.8 pencil@23.4 pop@23.7 pop@24.2 swish@25.9 reveal@27.2 pop@29.2 right@29.5 pencil@31.0 right@31.3 pencil@31.7 right@32.0 tone@33.2 stamp@33.3 pop@34.9 pop@35.4 right@36.2 right@36.7 right@37.2 pop@38.7 toggle@42.5 right@42.9 chord@43.7
+built reels/ill-perfect-week: 48.26s, 11 scenes, brand 43.68s, 3.42 words/sec
+scenes: [('bar-compare', 0.0, 3.25, None), ('series-card', 3.25, 7.09, [1.83, 2.73]), ('gym-calendar', 7.09, 9.85, None), ('gym-calendar', 9.85, 13.31, [0.05, 0.21, 0.41, 1.11, 1.31, 1.85, 2.35]), ('week-bars', 13.31, 19.03, [1.23, 2.59, 5.21, 5.21]), ('input-week', 19.03, 22.79, [0.65, 2.37]), ('gym-calendar', 22.79, 25.93, [0.61, 0.76, 1.13, 1.93]), ('week-bars', 25.93, 29.13, [0.05, 1.23]), ('rule-card', 29.13, 33.17, [0.05, 1.84, 2.57]), ('dream-to-steps', 33.17, 38.69, None), ('follow-next', 38.69, 43.68, [0.2, 3.85])]

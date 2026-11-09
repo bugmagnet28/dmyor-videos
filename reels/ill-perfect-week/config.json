@@ -1,0 +1,436 @@
+{
+ "total": 48.26,
+ "brandT": 43.68,
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Planned 4 runs, did 4",
+      100,
+      "acc"
+     ],
+     [
+      "Planned 7 runs, did 4",
+      57,
+      "red"
+     ]
+    ],
+    "max": 100,
+    "unit": "%",
+    "chip": "Same 4 runs"
+   },
+   "head": "4 of 7 feels<br>like <b>failing</b>.",
+   "t0": 0.0,
+   "t1": 3.25
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 18,
+    "title": "The perfect week",
+    "cue": [
+     "good",
+     "Reason"
+    ],
+    "at": [
+     1.83,
+     2.73
+    ]
+   },
+   "head": "Why we <b>stop</b>.",
+   "t0": 3.25,
+   "t1": 7.09
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "add-cal",
+    "blocks": [
+     [
+      0,
+      "7:00",
+      "Run"
+     ],
+     [
+      1,
+      "7:00",
+      "Run"
+     ],
+     [
+      2,
+      "7:00",
+      "Run"
+     ],
+     [
+      3,
+      "7:00",
+      "Run"
+     ],
+     [
+      4,
+      "7:00",
+      "Run"
+     ],
+     [
+      5,
+      "7:00",
+      "Run"
+     ],
+     [
+      6,
+      "7:00",
+      "Run"
+     ]
+    ],
+    "note": "The plan: 7 runs",
+    "cue": [
+     "We",
+     "plan",
+     "for",
+     "a",
+     "perfect",
+     "week",
+     "Seven"
+    ],
+    "at": [
+     0.05,
+     0.21,
+     0.43,
+     0.67,
+     0.81,
+     1.11,
+     1.26
+    ]
+   },
+   "head": "Planned for a<br><b>perfect</b> week.",
+   "t0": 7.09,
+   "t1": 9.85
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "real",
+    "blocks": [
+     [
+      0,
+      "7:00",
+      "Run"
+     ],
+     [
+      2,
+      "7:00",
+      "Run"
+     ],
+     [
+      3,
+      "7:00",
+      "Run"
+     ],
+     [
+      5,
+      "7:00",
+      "Run"
+     ],
+     [
+      1,
+      "7:00",
+      "Run"
+     ],
+     [
+      4,
+      "7:00",
+      "Run"
+     ],
+     [
+      6,
+      "7:00",
+      "Run"
+     ]
+    ],
+    "miss": [
+     1,
+     4,
+     6
+    ],
+    "why": {
+     "1": "Meeting",
+     "4": "Cold",
+     "6": "Birthday"
+    },
+    "cue": [
+     "Then",
+     null,
+     null,
+     null,
+     "meeting",
+     "cold",
+     "birthday"
+    ],
+    "at": [
+     0.05,
+     0.65,
+     1.25,
+     1.85,
+     1.31,
+     1.85,
+     2.35
+    ]
+   },
+   "head": "Then the<br><b>real</b> week.",
+   "t0": 9.85,
+   "t1": 13.31
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "grow",
+    "bars": [
+     [
+      "Week 1",
+      "",
+      57,
+      "red"
+     ],
+     [
+      "Week 2",
+      "",
+      57,
+      "red"
+     ],
+     [
+      "Week 3",
+      "quit",
+      0,
+      "red"
+     ]
+    ],
+    "max": 100,
+    "ylabel": "% OF THE PLAN DONE",
+    "chip": "Fail. Fail. Quit.",
+    "cue": [
+     "good",
+     "percent",
+     "every",
+     "So"
+    ],
+    "at": [
+     1.23,
+     2.59,
+     4.25,
+     4.85
+    ]
+   },
+   "head": "Good weeks that<br>feel like <b>fails</b>.",
+   "t0": 13.31,
+   "t1": 19.03
+  },
+  {
+   "type": "input-week",
+   "params": {
+    "rows": [
+     [
+      "Last week",
+      [
+       0,
+       2,
+       3,
+       5
+      ]
+     ],
+     [
+      "Week before",
+      [
+       1,
+       2,
+       4,
+       5
+      ]
+     ]
+    ],
+    "unit": "runs",
+    "cue": [
+     "runs",
+     "last"
+    ],
+    "at": [
+     0.65,
+     1.93
+    ]
+   },
+   "head": "Count what you<br><b>actually</b> did.",
+   "t0": 19.03,
+   "t1": 22.79
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "add-cal",
+    "blocks": [
+     [
+      0,
+      "7:00",
+      "Run"
+     ],
+     [
+      2,
+      "7:00",
+      "Run"
+     ],
+     [
+      3,
+      "7:00",
+      "Run"
+     ],
+     [
+      5,
+      "7:00",
+      "Run"
+     ]
+    ],
+    "note": "2 weeks at 4? Add a 5th.",
+    "cue": [
+     "Plan",
+     "four",
+     "Hit",
+     "row"
+    ],
+    "at": [
+     0.61,
+     0.76,
+     1.13,
+     1.93
+    ]
+   },
+   "head": "Plan <b>that</b><br>number.",
+   "t0": 22.79,
+   "t1": 25.93
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "morph",
+    "bars": [
+     [
+      "Week 1",
+      "",
+      57,
+      "red"
+     ],
+     [
+      "Week 2",
+      "",
+      57,
+      "red"
+     ],
+     [
+      "Week 3",
+      "",
+      57,
+      "red"
+     ]
+    ],
+    "after": [
+     [
+      "Week 1",
+      "",
+      100,
+      "acc"
+     ],
+     [
+      "Week 2",
+      "",
+      100,
+      "acc"
+     ],
+     [
+      "Week 3",
+      "",
+      100,
+      "acc"
+     ]
+    ],
+    "together": true,
+    "max": 100,
+    "ylabel": "% OF THE PLAN DONE",
+    "chip2": "Planned 4. Did 4. 100%.",
+    "cue": [
+     "Same",
+     "hundred"
+    ],
+    "at": [
+     0.05,
+     1.23
+    ]
+   },
+   "head": "Same runs.<br><b>100%</b>.",
+   "t0": 25.93,
+   "t1": 29.13
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "PLAN THE REAL WEEK",
+    "items": [
+     "Count last 2 weeks",
+     "Plan that number",
+     "Hit it twice? Add 1"
+    ],
+    "cue": [
+     "Send",
+     "seven",
+     "quits"
+    ],
+    "at": [
+     0.05,
+     1.84,
+     2.57
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>.",
+   "t0": 29.13,
+   "t1": 33.17
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Run a half marathon",
+    "date": "Open it again: Apr 2027",
+    "steps": [
+     "4 runs this week",
+     "Hit it twice? Add one",
+     "Sunday: count the week"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 33.17,
+   "t1": 38.69
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why staying up late for your goal backfires",
+    "when": "This afternoon, 1 PM",
+    "cue": [
+     null,
+     "backfires"
+    ],
+    "at": [
+     0.2,
+     3.85
+    ]
+   },
+   "head": "One reason<br><b>a day</b>.",
+   "t0": 38.69,
+   "t1": 43.68
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  9.8,
+  18.98
+ ]
+}

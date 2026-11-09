@@ -3191,5 +3191,69 @@
    "@2",
    "right"
   ]
+ ],
+ "dual-line:hook": [
+  [
+   0.0,
+   "pencil",
+   0.4
+  ]
+ ],
+ "dual-line:draw": [
+  [
+   "@0",
+   "pencil",
+   1.1
+  ],
+  [
+   "@1",
+   "pencil",
+   1.5
+  ],
+  [
+   "@2",
+   "pop"
+  ]
+ ],
+ "dual-line:fix": [
+  [
+   "@0",
+   "pencil",
+   1.2
+  ],
+  [
+   "@1",
+   "reveal"
+  ]
+ ],
+ "gym-calendar:real": [
+  [
+   "@0",
+   "right"
+  ],
+  [
+   "@1",
+   "right"
+  ],
+  [
+   "@2",
+   "right"
+  ],
+  [
+   "@3",
+   "right"
+  ],
+  [
+   "@4",
+   "miss"
+  ],
+  [
+   "@5",
+   "miss"
+  ],
+  [
+   "@6",
+   "miss"
+  ]
  ]
 }

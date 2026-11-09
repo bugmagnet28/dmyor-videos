@@ -208,10 +208,19 @@ Instagram locked the account ("we locked your account to protect you from a poss
   3. Still the most useful input (VASK-025): app screenshots of avg watch time + % watched for ill-wake-time, ill-hard-part, ill-bad-night, ill-busy-week, ill-dark-morning, ill-miss-twice into `inbox/metrics/`. The 50 s cap can't be judged without them.
 
 ## VASK-027: Schedule the Mon Nov 9 batch (and the still-unscheduled Sun batch) (2026-11-08)
-- Status: open
+- Status: partly done (Sun batch posted/scheduled on IG + X on Nov 8 night; YT for Sun + all of Mon still open, folded into VASK-028)
 - What: 2 explainers, auto-approved (35/40 each), `ready-to-post/2026-11-09-*/`: 09:30 **ill-out-of-sight** (Reason #16, kept promise of ill-decide-once), 13:00 **ill-sunday-practice** (Reason #17, pillar C). 19:30 stays pixel-kabir-2.
 - Steps:
   1. Sun Nov 8 batch is not scheduled yet (09:30 + 13:00 slots passed). If a browser session happens tonight: post ill-first-ten-minutes now-ish, pixel-kabir-1 19:30, ill-decide-once 22:00 (its follow line points to Mon 09:30 ill-out-of-sight, so the chain holds). If not, shift everything one day: Sun batch to Mon, Mon batch to Tue.
   2. Then schedule Mon: 09:30 ill-out-of-sight, 13:00 ill-sunday-practice (its follow line says "Tonight, Kabir and the gym membership", so it must go out the same day as pixel-kabir-2), 19:30 pixel-kabir-2. Max 5 IG flows per session: split over two sessions if needed.
   3. Still wanted (VASK-025/026): avg watch time + % watched screenshots into `inbox/metrics/`.
   4. Mac health: uptime 267 days, 14 GB of 15 GB swap used, fseventsd at ~57% CPU. Renders crawl at 0.1 fps (a 48 s reel takes ~4-5 h) and runs stall. A restart when convenient would likely fix it.
+
+## VASK-028: Schedule Mon + Tue batches, YouTube for Sun, restart the Mac (2026-11-09)
+- Status: open
+- What: Mon Nov 9 (frames checked today, both clean): 09:30 slot passed, so post **ill-out-of-sight** as soon as you can, **ill-sunday-practice** ~13:00-16:30, **pixel-kabir-2** 19:30 (sunday-practice's follow line says "Tonight, Kabir"). Tue Nov 10: 09:30 **ill-perfect-week** (Reason #18), 13:00 **ill-borrowed-sleep** (Reason #19), 19:30 **pixel-kabir-3**. All auto-approved.
+- Steps:
+  1. Browser session: Mon batch on IG, X, YT (3 IG flows), then Tue batch in a second session (max 5 IG flows per session). YT also still owes Sun's ill-first-ten-minutes, ill-decide-once, pixel-kabir-1.
+  2. Before scheduling Tue: confirm `ready-to-post/2026-11-10-*/video.mp4` exist (detached finisher, log `studio/state/finish_2026-11-10.log`).
+  3. Wanted for V-EXP-34 (first 48 h readings land tonight): app screenshots of avg watch time + % watched for ill-first-ten-minutes and ill-decide-once into `inbox/metrics/` on Tue evening.
+  4. **Mac restart** please (uptime 268 days, 13.7 of 14 GB swap used). whisper takes ~20 min per reel and Chrome crashes in screenshots; a 50 s reel takes 4-5 h to record. This is now the slowest part of the pipeline.

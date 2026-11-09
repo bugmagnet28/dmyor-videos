@@ -1,0 +1,211 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] On six hours of sleep, you feel fine. You're not. || Why do we stop doing things we know are good for us? Reason nineteen. || [turn] Dev wants to ship his app. He codes from eleven till one. || Week one feels great. Week three, the same two hours finish almost nothing, and he decides he's not good at this. || Sleep researchers found that on six hours a night, people got worse at attention tests nearly every day, but felt only a little sleepy. || So Dev stopped borrowing from sleep. Lights out at eleven thirty. || And he moved the code to the time before work, when he's sharp. || [land] Fewer hours. More finished. And this time, he didn't quit. || Send this to the friend who's coding at one AM. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. Tonight, Kabir and the day that was okay. || [outro] What time do you actually fall asleep? The link's in the bio.",
+ "scenes": [
+  {
+   "type": "dual-line",
+   "params": {
+    "stage": "hook",
+    "a": "How sharp you feel",
+    "b": "How sharp you are",
+    "chip": "14 nights of 6 hours"
+   },
+   "head": "You feel fine.<br>You're <b>not</b>."
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 19,
+    "title": "Borrowed sleep",
+    "cue": [
+     "good",
+     "Reason"
+    ]
+   },
+   "head": "Why we <b>stop</b>."
+  },
+  {
+   "type": "ready-desk",
+   "params": {
+    "doc": "my-app.js",
+    "time": "11 PM",
+    "note": "ship the app",
+    "cue": [
+     "app",
+     "eleven",
+     "one"
+    ]
+   },
+   "head": "Dev codes<br>after <b>11 PM</b>."
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "grow",
+    "bars": [
+     [
+      "Week 1",
+      "",
+      6,
+      "ink"
+     ],
+     [
+      "Week 2",
+      "",
+      3,
+      "ink"
+     ],
+     [
+      "Week 3",
+      "",
+      1,
+      "red"
+     ]
+    ],
+    "max": 6,
+    "ylabel": "FEATURES FINISHED",
+    "chip": "\"I'm just not good at this.\"",
+    "cue": [
+     "one",
+     "three",
+     "nothing",
+     "decides"
+    ]
+   },
+   "head": "Same hours.<br><b>Less</b> done."
+  },
+  {
+   "type": "dual-line",
+   "params": {
+    "stage": "draw",
+    "a": "How sharp you feel",
+    "b": "How sharp you are",
+    "mid": 3,
+    "chip": "Tired, and you can't tell",
+    "cue": [
+     "researchers",
+     "worse",
+     "felt"
+    ]
+   },
+   "head": "The <b>hidden</b> part."
+  },
+  {
+   "type": "meeting-card",
+   "params": {
+    "title": "Lights out",
+    "rows": [
+     "11:30 PM, every night",
+     "Repeats every day"
+    ],
+    "cue": [
+     "borrowing",
+     "thirty"
+    ]
+   },
+   "head": "Stop <b>borrowing</b><br>from sleep."
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Before work, rested",
+      45,
+      "acc"
+     ],
+     [
+      "11 PM to 1 AM, tired",
+      120,
+      "red"
+     ]
+    ],
+    "max": 120,
+    "unit": " min",
+    "chip": "Shorter. Sharper.",
+    "cue": [
+     "moved",
+     "work",
+     "sharp"
+    ]
+   },
+   "head": "Code when<br>you're <b>sharp</b>."
+  },
+  {
+   "type": "dual-line",
+   "params": {
+    "stage": "fix",
+    "a": "How sharp you feel",
+    "b": "How sharp you are",
+    "c": "Sleeping 7 to 8 hours",
+    "chip2": "Fewer hours. More finished.",
+    "cue": [
+     "Fewer",
+     "finished"
+    ]
+   },
+   "head": "Sleep first.<br>Then <b>build</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "PROTECT THE SLEEP",
+    "items": [
+     "Fixed lights-out",
+     "Goal before work",
+     "Fine isn't rested"
+    ],
+    "cue": [
+     "Send",
+     "coding",
+     "AM"
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Ship my app by March",
+    "date": "Open it again: Mar 2027",
+    "steps": [
+     "45 min before work",
+     "Lights out 11:30",
+     "Sunday: plan the week"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Kabir vs. Kabir: today was okay",
+    "when": "Tonight, 7:30 PM",
+    "cue": [
+     null,
+     "okay"
+    ]
+   },
+   "head": "One reason<br><b>a day</b>."
+  },
+  null
+ ],
+ "brand_from": 11,
+ "silences": [
+  "Sleep researchers",
+  "So Dev"
+ ],
+ "caption": {
+  "instagram": "Why staying up late to work on your goal backfires.\n\nWhy we stop doing things we know are good for us, reason #19: borrowed sleep. Dev codes his app from 11 PM to 1 AM. Week one feels great. By week three the same two hours finish almost nothing, and he decides he's not good at this.\n\nThe hidden part: sleep researchers found that on six hours a night, people got worse at attention tests nearly every day, but said they felt only a little sleepy. You can't feel the drop.\n\nThe fix:\n- Lights out at a fixed time\n- Goal time before work, not after midnight\n- Feeling fine isn't proof you're rested\n\nWhat time do you actually fall asleep? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#sleep #sideproject #productivity #goals #selfimprovement",
+  "x": "On 6 hours of sleep you feel fine. You're not.\n\nSleep researchers found people on 6-hour nights got worse at attention tests nearly every day, but felt only a little sleepy.\n\nIf your goal lives at 1 AM, move it before work and keep a fixed lights-out.",
+  "youtube_title": "Why staying up late to work on your goals backfires #Shorts"
+ }
+}

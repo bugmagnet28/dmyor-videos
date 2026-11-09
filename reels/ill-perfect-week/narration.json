@@ -1,0 +1,376 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "spoken": "[hook] Four workouts a week feels like failing, if you planned seven. || Why do we stop doing things we know are good for us? Reason eighteen. || [turn] We plan for a perfect week. Seven runs. || Then real life. A late meeting, a cold, a birthday. Four out of seven. || Four runs is good. But next to seven, it's fifty-seven percent. A fail, every week. So you quit. || So count the runs you actually did in the last two weeks. That's your plan. || Did four? Plan four. Hit it two weeks in a row? Add one. || [land] Same four runs, now a hundred percent. A week you want to repeat. || Send this to the friend who plans seven and quits in week two. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. This afternoon: why staying up late for your goal backfires. || [outro] How many days did you really manage last week? The link's in the bio.",
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Planned 4 runs, did 4",
+      100,
+      "acc"
+     ],
+     [
+      "Planned 7 runs, did 4",
+      57,
+      "red"
+     ]
+    ],
+    "max": 100,
+    "unit": "%",
+    "chip": "Same 4 runs"
+   },
+   "head": "4 of 7 feels<br>like <b>failing</b>."
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 18,
+    "title": "The perfect week",
+    "cue": [
+     "good",
+     "Reason"
+    ]
+   },
+   "head": "Why we <b>stop</b>."
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "add-cal",
+    "blocks": [
+     [
+      0,
+      "7:00",
+      "Run"
+     ],
+     [
+      1,
+      "7:00",
+      "Run"
+     ],
+     [
+      2,
+      "7:00",
+      "Run"
+     ],
+     [
+      3,
+      "7:00",
+      "Run"
+     ],
+     [
+      4,
+      "7:00",
+      "Run"
+     ],
+     [
+      5,
+      "7:00",
+      "Run"
+     ],
+     [
+      6,
+      "7:00",
+      "Run"
+     ]
+    ],
+    "note": "The plan: 7 runs",
+    "cue": [
+     "We",
+     "plan",
+     "for",
+     "a",
+     "perfect",
+     "week",
+     "Seven"
+    ]
+   },
+   "head": "Planned for a<br><b>perfect</b> week."
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "real",
+    "blocks": [
+     [
+      0,
+      "7:00",
+      "Run"
+     ],
+     [
+      2,
+      "7:00",
+      "Run"
+     ],
+     [
+      3,
+      "7:00",
+      "Run"
+     ],
+     [
+      5,
+      "7:00",
+      "Run"
+     ],
+     [
+      1,
+      "7:00",
+      "Run"
+     ],
+     [
+      4,
+      "7:00",
+      "Run"
+     ],
+     [
+      6,
+      "7:00",
+      "Run"
+     ]
+    ],
+    "miss": [
+     1,
+     4,
+     6
+    ],
+    "why": {
+     "1": "Meeting",
+     "4": "Cold",
+     "6": "Birthday"
+    },
+    "cue": [
+     "Then",
+     null,
+     null,
+     null,
+     "meeting",
+     "cold",
+     "birthday"
+    ]
+   },
+   "head": "Then the<br><b>real</b> week."
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "grow",
+    "bars": [
+     [
+      "Week 1",
+      "",
+      57,
+      "red"
+     ],
+     [
+      "Week 2",
+      "",
+      57,
+      "red"
+     ],
+     [
+      "Week 3",
+      "quit",
+      0,
+      "red"
+     ]
+    ],
+    "max": 100,
+    "ylabel": "% OF THE PLAN DONE",
+    "chip": "Fail. Fail. Quit.",
+    "cue": [
+     "good",
+     "percent",
+     "every",
+     "So"
+    ]
+   },
+   "head": "Good weeks that<br>feel like <b>fails</b>."
+  },
+  {
+   "type": "input-week",
+   "params": {
+    "rows": [
+     [
+      "Last week",
+      [
+       0,
+       2,
+       3,
+       5
+      ]
+     ],
+     [
+      "Week before",
+      [
+       1,
+       2,
+       4,
+       5
+      ]
+     ]
+    ],
+    "unit": "runs",
+    "cue": [
+     "runs",
+     "last"
+    ]
+   },
+   "head": "Count what you<br><b>actually</b> did."
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "add-cal",
+    "blocks": [
+     [
+      0,
+      "7:00",
+      "Run"
+     ],
+     [
+      2,
+      "7:00",
+      "Run"
+     ],
+     [
+      3,
+      "7:00",
+      "Run"
+     ],
+     [
+      5,
+      "7:00",
+      "Run"
+     ]
+    ],
+    "note": "2 weeks at 4? Add a 5th.",
+    "cue": [
+     "Plan",
+     "four",
+     "Hit",
+     "row"
+    ]
+   },
+   "head": "Plan <b>that</b><br>number."
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "morph",
+    "bars": [
+     [
+      "Week 1",
+      "",
+      57,
+      "red"
+     ],
+     [
+      "Week 2",
+      "",
+      57,
+      "red"
+     ],
+     [
+      "Week 3",
+      "",
+      57,
+      "red"
+     ]
+    ],
+    "after": [
+     [
+      "Week 1",
+      "",
+      100,
+      "acc"
+     ],
+     [
+      "Week 2",
+      "",
+      100,
+      "acc"
+     ],
+     [
+      "Week 3",
+      "",
+      100,
+      "acc"
+     ]
+    ],
+    "together": true,
+    "max": 100,
+    "ylabel": "% OF THE PLAN DONE",
+    "chip2": "Planned 4. Did 4. 100%.",
+    "cue": [
+     "Same",
+     "hundred"
+    ]
+   },
+   "head": "Same runs.<br><b>100%</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "PLAN THE REAL WEEK",
+    "items": [
+     "Count last 2 weeks",
+     "Plan that number",
+     "Hit it twice? Add 1"
+    ],
+    "cue": [
+     "Send",
+     "seven",
+     "quits"
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Run a half marathon",
+    "date": "Open it again: Apr 2027",
+    "steps": [
+     "4 runs this week",
+     "Hit it twice? Add one",
+     "Sunday: count the week"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why staying up late for your goal backfires",
+    "when": "This afternoon, 1 PM",
+    "cue": [
+     null,
+     "backfires"
+    ]
+   },
+   "head": "One reason<br><b>a day</b>."
+  },
+  null
+ ],
+ "brand_from": 11,
+ "silences": [
+  "Then real",
+  "So count"
+ ],
+ "caption": {
+  "instagram": "How to stay consistent with a workout plan: plan for your real week, not a perfect one.\n\nWhy we stop doing things we know are good for us, reason #18: the perfect week. We plan seven runs, real life gives us four, and four out of seven reads as a fail. A few weeks of \"failing\" and we quit, even though four runs a week is good.\n\nThe fix:\n- Count what you actually did in the last two weeks\n- That number is your plan\n- Hit it two weeks in a row? Add one\n\nSame four runs, now a hundred percent, and that's a week you want to repeat.\n\nHow many days did you really manage last week? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#consistency #habits #running #goals #selfimprovement",
+  "x": "4 workouts a week feels like failing, if you planned 7.\n\nCount what you actually did in the last 2 weeks. That number is your plan. Hit it 2 weeks in a row? Add one.\n\nSame 4 runs, now 100%. That's a week you want to repeat.",
+  "youtube_title": "How to stay consistent with a workout plan #Shorts"
+ }
+}

@@ -1,0 +1,1069 @@
+{
+ "audio": "audio.mp3",
+ "duration": 49.99,
+ "text": "On 6 hours of sleep, you feel fine, you're not. Why do we stop doing things we know are good for us? Reason 19. Dev wants to ship his app, he codes from 11 till 1. Week 1 feels great, week 3 the same 2 hours finish almost nothing and he decides he's not good at this. Sleep researchers found that on 6 hours a night, people got worse at attention tests nearly every day but felt only a little sleepy. So Dev stopped borrowing from sleep, lights out at 1130, and he moved the code to the time before work when he's sharp. Fewer hours more finished and this time he didn't quit. Send this to the friend who's coding at 1 am. That's what Demure is for, archive your dream today and break it into small steps you can actually do. Follow for one reason a day, tonight caber and the day that was okay. What time do you actually fall asleep, the link's in the bio.",
+ "words": [
+  {
+   "w": "on",
+   "raw": "On",
+   "s": 0.0,
+   "e": 0.32
+  },
+  {
+   "w": "6",
+   "raw": "6",
+   "s": 0.32,
+   "e": 0.54
+  },
+  {
+   "w": "hours",
+   "raw": "hours",
+   "s": 0.54,
+   "e": 0.76
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 0.76,
+   "e": 0.96
+  },
+  {
+   "w": "sleep",
+   "raw": "sleep,",
+   "s": 0.96,
+   "e": 1.16
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 1.32,
+   "e": 1.4
+  },
+  {
+   "w": "feel",
+   "raw": "feel",
+   "s": 1.4,
+   "e": 1.58
+  },
+  {
+   "w": "fine",
+   "raw": "fine,",
+   "s": 1.58,
+   "e": 1.92
+  },
+  {
+   "w": "youre",
+   "raw": "you're",
+   "s": 2.04,
+   "e": 2.16
+  },
+  {
+   "w": "not",
+   "raw": "not.",
+   "s": 2.16,
+   "e": 2.38
+  },
+  {
+   "w": "why",
+   "raw": "Why",
+   "s": 2.9,
+   "e": 3.02
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 3.02,
+   "e": 3.16
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 3.16,
+   "e": 3.32
+  },
+  {
+   "w": "stop",
+   "raw": "stop",
+   "s": 3.32,
+   "e": 3.52
+  },
+  {
+   "w": "doing",
+   "raw": "doing",
+   "s": 3.52,
+   "e": 3.8
+  },
+  {
+   "w": "things",
+   "raw": "things",
+   "s": 3.8,
+   "e": 4.08
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 4.08,
+   "e": 4.28
+  },
+  {
+   "w": "know",
+   "raw": "know",
+   "s": 4.28,
+   "e": 4.44
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 4.44,
+   "e": 4.6
+  },
+  {
+   "w": "good",
+   "raw": "good",
+   "s": 4.6,
+   "e": 4.74
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 4.74,
+   "e": 4.98
+  },
+  {
+   "w": "us",
+   "raw": "us?",
+   "s": 4.98,
+   "e": 5.22
+  },
+  {
+   "w": "reason",
+   "raw": "Reason",
+   "s": 5.7,
+   "e": 5.7
+  },
+  {
+   "w": "19",
+   "raw": "19.",
+   "s": 5.7,
+   "e": 6.26
+  },
+  {
+   "w": "dev",
+   "raw": "Dev",
+   "s": 6.82,
+   "e": 6.88
+  },
+  {
+   "w": "wants",
+   "raw": "wants",
+   "s": 6.88,
+   "e": 7.16
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 7.16,
+   "e": 7.38
+  },
+  {
+   "w": "ship",
+   "raw": "ship",
+   "s": 7.38,
+   "e": 7.56
+  },
+  {
+   "w": "his",
+   "raw": "his",
+   "s": 7.56,
+   "e": 7.74
+  },
+  {
+   "w": "app",
+   "raw": "app,",
+   "s": 7.74,
+   "e": 7.96
+  },
+  {
+   "w": "he",
+   "raw": "he",
+   "s": 8.16,
+   "e": 8.26
+  },
+  {
+   "w": "codes",
+   "raw": "codes",
+   "s": 8.26,
+   "e": 8.52
+  },
+  {
+   "w": "from",
+   "raw": "from",
+   "s": 8.52,
+   "e": 8.78
+  },
+  {
+   "w": "11",
+   "raw": "11",
+   "s": 8.78,
+   "e": 9.08
+  },
+  {
+   "w": "till",
+   "raw": "till",
+   "s": 9.08,
+   "e": 9.32
+  },
+  {
+   "w": "1",
+   "raw": "1.",
+   "s": 9.32,
+   "e": 9.62
+  },
+  {
+   "w": "week",
+   "raw": "Week",
+   "s": 10.12,
+   "e": 10.2
+  },
+  {
+   "w": "1",
+   "raw": "1",
+   "s": 10.2,
+   "e": 10.48
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 10.48,
+   "e": 10.76
+  },
+  {
+   "w": "great",
+   "raw": "great,",
+   "s": 10.76,
+   "e": 11.12
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 11.64,
+   "e": 11.7
+  },
+  {
+   "w": "3",
+   "raw": "3",
+   "s": 11.7,
+   "e": 12.02
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 12.02,
+   "e": 12.18
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 12.18,
+   "e": 12.42
+  },
+  {
+   "w": "2",
+   "raw": "2",
+   "s": 12.42,
+   "e": 12.68
+  },
+  {
+   "w": "hours",
+   "raw": "hours",
+   "s": 12.68,
+   "e": 12.94
+  },
+  {
+   "w": "finish",
+   "raw": "finish",
+   "s": 12.94,
+   "e": 13.24
+  },
+  {
+   "w": "almost",
+   "raw": "almost",
+   "s": 13.24,
+   "e": 13.56
+  },
+  {
+   "w": "nothing",
+   "raw": "nothing",
+   "s": 13.56,
+   "e": 13.9
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 13.9,
+   "e": 14.18
+  },
+  {
+   "w": "he",
+   "raw": "he",
+   "s": 14.18,
+   "e": 14.28
+  },
+  {
+   "w": "decides",
+   "raw": "decides",
+   "s": 14.28,
+   "e": 14.62
+  },
+  {
+   "w": "hes",
+   "raw": "he's",
+   "s": 14.62,
+   "e": 14.88
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 14.88,
+   "e": 15.08
+  },
+  {
+   "w": "good",
+   "raw": "good",
+   "s": 15.08,
+   "e": 15.24
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 15.24,
+   "e": 15.36
+  },
+  {
+   "w": "this",
+   "raw": "this.",
+   "s": 15.36,
+   "e": 15.6
+  },
+  {
+   "w": "sleep",
+   "raw": "Sleep",
+   "s": 16.06,
+   "e": 16.26
+  },
+  {
+   "w": "researchers",
+   "raw": "researchers",
+   "s": 16.26,
+   "e": 16.66
+  },
+  {
+   "w": "found",
+   "raw": "found",
+   "s": 16.66,
+   "e": 17.14
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 17.14,
+   "e": 17.34
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 17.34,
+   "e": 17.5
+  },
+  {
+   "w": "6",
+   "raw": "6",
+   "s": 17.5,
+   "e": 17.78
+  },
+  {
+   "w": "hours",
+   "raw": "hours",
+   "s": 17.78,
+   "e": 18.04
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 18.04,
+   "e": 18.22
+  },
+  {
+   "w": "night",
+   "raw": "night,",
+   "s": 18.22,
+   "e": 18.44
+  },
+  {
+   "w": "people",
+   "raw": "people",
+   "s": 18.7,
+   "e": 18.9
+  },
+  {
+   "w": "got",
+   "raw": "got",
+   "s": 18.9,
+   "e": 19.16
+  },
+  {
+   "w": "worse",
+   "raw": "worse",
+   "s": 19.16,
+   "e": 19.42
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 19.42,
+   "e": 19.58
+  },
+  {
+   "w": "attention",
+   "raw": "attention",
+   "s": 19.58,
+   "e": 19.88
+  },
+  {
+   "w": "tests",
+   "raw": "tests",
+   "s": 19.88,
+   "e": 20.3
+  },
+  {
+   "w": "nearly",
+   "raw": "nearly",
+   "s": 20.3,
+   "e": 20.62
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 20.62,
+   "e": 20.98
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 20.98,
+   "e": 21.26
+  },
+  {
+   "w": "but",
+   "raw": "but",
+   "s": 21.26,
+   "e": 21.7
+  },
+  {
+   "w": "felt",
+   "raw": "felt",
+   "s": 21.7,
+   "e": 21.9
+  },
+  {
+   "w": "only",
+   "raw": "only",
+   "s": 21.9,
+   "e": 22.24
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 22.24,
+   "e": 22.4
+  },
+  {
+   "w": "little",
+   "raw": "little",
+   "s": 22.4,
+   "e": 22.56
+  },
+  {
+   "w": "sleepy",
+   "raw": "sleepy.",
+   "s": 22.56,
+   "e": 22.88
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 23.34,
+   "e": 23.54
+  },
+  {
+   "w": "dev",
+   "raw": "Dev",
+   "s": 23.54,
+   "e": 23.74
+  },
+  {
+   "w": "stopped",
+   "raw": "stopped",
+   "s": 23.74,
+   "e": 24.16
+  },
+  {
+   "w": "borrowing",
+   "raw": "borrowing",
+   "s": 24.16,
+   "e": 24.5
+  },
+  {
+   "w": "from",
+   "raw": "from",
+   "s": 24.5,
+   "e": 24.86
+  },
+  {
+   "w": "sleep",
+   "raw": "sleep,",
+   "s": 24.86,
+   "e": 25.22
+  },
+  {
+   "w": "lights",
+   "raw": "lights",
+   "s": 25.58,
+   "e": 25.78
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 25.78,
+   "e": 26.02
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 26.02,
+   "e": 26.14
+  },
+  {
+   "w": "1130",
+   "raw": "1130,",
+   "s": 26.14,
+   "e": 26.68
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 27.16,
+   "e": 27.34
+  },
+  {
+   "w": "he",
+   "raw": "he",
+   "s": 27.34,
+   "e": 27.44
+  },
+  {
+   "w": "moved",
+   "raw": "moved",
+   "s": 27.44,
+   "e": 27.62
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 27.62,
+   "e": 27.84
+  },
+  {
+   "w": "code",
+   "raw": "code",
+   "s": 27.84,
+   "e": 28.04
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 28.04,
+   "e": 28.22
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 28.22,
+   "e": 28.34
+  },
+  {
+   "w": "time",
+   "raw": "time",
+   "s": 28.34,
+   "e": 28.56
+  },
+  {
+   "w": "before",
+   "raw": "before",
+   "s": 28.56,
+   "e": 28.88
+  },
+  {
+   "w": "work",
+   "raw": "work",
+   "s": 28.88,
+   "e": 29.18
+  },
+  {
+   "w": "when",
+   "raw": "when",
+   "s": 29.18,
+   "e": 29.42
+  },
+  {
+   "w": "hes",
+   "raw": "he's",
+   "s": 29.42,
+   "e": 29.64
+  },
+  {
+   "w": "sharp",
+   "raw": "sharp.",
+   "s": 29.64,
+   "e": 29.94
+  },
+  {
+   "w": "fewer",
+   "raw": "Fewer",
+   "s": 30.68,
+   "e": 30.88
+  },
+  {
+   "w": "hours",
+   "raw": "hours",
+   "s": 30.88,
+   "e": 31.14
+  },
+  {
+   "w": "more",
+   "raw": "more",
+   "s": 31.14,
+   "e": 31.48
+  },
+  {
+   "w": "finished",
+   "raw": "finished",
+   "s": 31.48,
+   "e": 31.88
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 31.88,
+   "e": 32.28
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 32.28,
+   "e": 32.46
+  },
+  {
+   "w": "time",
+   "raw": "time",
+   "s": 32.46,
+   "e": 32.7
+  },
+  {
+   "w": "he",
+   "raw": "he",
+   "s": 32.7,
+   "e": 32.9
+  },
+  {
+   "w": "didnt",
+   "raw": "didn't",
+   "s": 32.9,
+   "e": 33.2
+  },
+  {
+   "w": "quit",
+   "raw": "quit.",
+   "s": 33.2,
+   "e": 33.34
+  },
+  {
+   "w": "send",
+   "raw": "Send",
+   "s": 33.88,
+   "e": 33.96
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 33.96,
+   "e": 34.14
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 34.14,
+   "e": 34.28
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 34.28,
+   "e": 34.44
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 34.44,
+   "e": 34.64
+  },
+  {
+   "w": "whos",
+   "raw": "who's",
+   "s": 34.64,
+   "e": 34.94
+  },
+  {
+   "w": "coding",
+   "raw": "coding",
+   "s": 34.94,
+   "e": 35.22
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 35.22,
+   "e": 35.44
+  },
+  {
+   "w": "1",
+   "raw": "1",
+   "s": 35.44,
+   "e": 35.68
+  },
+  {
+   "w": "am",
+   "raw": "am.",
+   "s": 35.68,
+   "e": 36.08
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 36.7,
+   "e": 36.98
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 36.98,
+   "e": 37.16
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 37.16,
+   "e": 37.54
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 37.54,
+   "e": 37.7
+  },
+  {
+   "w": "for",
+   "raw": "for,",
+   "s": 37.7,
+   "e": 37.98
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 38.34,
+   "e": 38.56
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 38.56,
+   "e": 38.78
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 38.78,
+   "e": 39.0
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 39.0,
+   "e": 39.36
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 39.36,
+   "e": 39.62
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 39.62,
+   "e": 39.78
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 39.78,
+   "e": 39.92
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 39.92,
+   "e": 40.06
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 40.06,
+   "e": 40.42
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 40.42,
+   "e": 40.7
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 40.7,
+   "e": 40.9
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 40.9,
+   "e": 41.02
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 41.02,
+   "e": 41.36
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 41.36,
+   "e": 41.68
+  },
+  {
+   "w": "follow",
+   "raw": "Follow",
+   "s": 42.22,
+   "e": 42.4
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 42.4,
+   "e": 42.66
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 42.66,
+   "e": 42.88
+  },
+  {
+   "w": "reason",
+   "raw": "reason",
+   "s": 42.88,
+   "e": 43.16
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 43.16,
+   "e": 43.34
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 43.34,
+   "e": 43.56
+  },
+  {
+   "w": "tonight",
+   "raw": "tonight",
+   "s": 43.72,
+   "e": 44.0
+  },
+  {
+   "w": "caber",
+   "raw": "caber",
+   "s": 44.0,
+   "e": 44.46
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 44.46,
+   "e": 44.6
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 44.6,
+   "e": 44.7
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 44.7,
+   "e": 44.86
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 44.86,
+   "e": 45.02
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 45.02,
+   "e": 45.16
+  },
+  {
+   "w": "okay",
+   "raw": "okay.",
+   "s": 45.16,
+   "e": 45.56
+  },
+  {
+   "w": "what",
+   "raw": "What",
+   "s": 46.0,
+   "e": 46.16
+  },
+  {
+   "w": "time",
+   "raw": "time",
+   "s": 46.16,
+   "e": 46.36
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 46.36,
+   "e": 46.54
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 46.54,
+   "e": 46.64
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 46.64,
+   "e": 46.98
+  },
+  {
+   "w": "fall",
+   "raw": "fall",
+   "s": 46.98,
+   "e": 47.26
+  },
+  {
+   "w": "asleep",
+   "raw": "asleep,",
+   "s": 47.26,
+   "e": 47.62
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 47.88,
+   "e": 47.94
+  },
+  {
+   "w": "links",
+   "raw": "link's",
+   "s": 47.94,
+   "e": 48.26
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 48.26,
+   "e": 48.38
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 48.38,
+   "e": 48.48
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 48.48,
+   "e": 48.8
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 4.98,
+   "text": "On 6 hours of sleep, you feel fine, you're not. Why do we stop doing things we know are good for"
+  },
+  {
+   "s": 4.98,
+   "e": 12.18,
+   "text": "us? Reason 19. Dev wants to ship his app, he codes from 11 till 1. Week 1 feels great, week 3 the"
+  },
+  {
+   "s": 12.18,
+   "e": 17.14,
+   "text": "same 2 hours finish almost nothing and he decides he's not good at this. Sleep researchers found"
+  },
+  {
+   "s": 17.14,
+   "e": 22.24,
+   "text": "that on 6 hours a night, people got worse at attention tests nearly every day but felt only"
+  },
+  {
+   "s": 22.24,
+   "e": 28.04,
+   "text": "a little sleepy. So Dev stopped borrowing from sleep, lights out at 1130, and he moved the code"
+  },
+  {
+   "s": 28.04,
+   "e": 33.34,
+   "text": "to the time before work when he's sharp. Fewer hours more finished and this time he didn't quit."
+  },
+  {
+   "s": 33.88,
+   "e": 39.36,
+   "text": "Send this to the friend who's coding at 1 am. That's what Demure is for, archive your dream today"
+  },
+  {
+   "s": 39.36,
+   "e": 44.46,
+   "text": "and break it into small steps you can actually do. Follow for one reason a day, tonight caber"
+  },
+  {
+   "s": 44.46,
+   "e": 48.8,
+   "text": "and the day that was okay. What time do you actually fall asleep, the link's in the bio."
+  }
+ ],
+ "wps": 3.38
+}

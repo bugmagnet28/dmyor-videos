@@ -1,6 +1,6 @@
 # Video dashboard (posting on @becauseidmyor, end card @becauseidmyor)
 
-_Last updated: 2026-11-08 IST (run 2026-11-08)_
+_Last updated: 2026-11-09 IST (run 2026-11-09)_
 
 **Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [reel library](library/index.html) · [growth plan Nov 2026](growth-plan-2026-11.md) · weekly review 2026-11-03 in [strategy.md](strategy.md)
 
@@ -9,25 +9,26 @@ _Last updated: 2026-11-08 IST (run 2026-11-08)_
 | Instagram followers (@becauseidmyor) | **24** (2026-11-06) |
 | Instagram 30-day views | 7,437 (Nov 6) · 99.6% non-followers · 24 profile visits, 1 link tap |
 | Are we improving? | **Reach: yes** (newer median 128 vs 17). Followers: slow (+3 in 9 days). YouTube: declining |
-| **Blocker** | Sun Nov 8 batch (first-ten-minutes, decide-once, kabir-1) **not scheduled yet**; V-EXP-34 has no data. See VASK-027 for tonight's catch-up order |
-| Ready to schedule (auto-approved) | Sun: ill-first-ten-minutes (#14), ill-decide-once (#15), pixel-kabir-1 (#1) · **Mon Nov 9: 09:30 ill-out-of-sight (#16), 13:00 ill-sunday-practice (#17), 19:30 pixel-kabir-2 (#2)** · Tue: pixel-kabir-3 |
+| Live since last run | Sun Nov 8 on IG + X: ill-first-ten-minutes (~20:00), pixel-kabir-1 (20:30), ill-decide-once (22:00). Registered in analytics; first 48 h readings Tue night. YT pending |
+| **Blocker** | Mon Nov 9 batch not scheduled at 11:00 (09:30 slot passed). Host swapping (14 GB) makes a 50 s render take 4-5 h |
+| Ready to schedule (auto-approved) | **Mon: ill-out-of-sight (#16), ill-sunday-practice (#17), pixel-kabir-2** (frames checked today, clean) · **Tue: 09:30 ill-perfect-week (#18), 13:00 ill-borrowed-sleep (#19), 19:30 pixel-kabir-3** (rendering, finisher) |
 | Owner review | 8 pixel reels in ready-to-post/pixel-review-2026-11-07 (Reasons #4-#13) |
 | Open experiments | V-EXP-32 (kit v2), V-EXP-33 (chart frame 0 + length), **V-EXP-34** (on-topic pillars, ≤50 s, Reason series, comment question; Nov 7-20) |
-| Asks | VASK-027 (schedule Sun + Mon), VASK-025/026 watch-time screenshots |
+| Asks | **VASK-028** (schedule Mon + Tue, YT for Sun, watch-time screenshots, restart the Mac) |
 
-## Built today for Mon Nov 9 (V-EXP-34 batch 2)
+## Built today for Tue Nov 10 (V-EXP-34 batch 3)
 | Time (IST) | Reel | Reason / pillar | Length | Hook | Frame 0 | Score |
 |---|---|---|---|---|---|---|
-| 09:30 | ill-out-of-sight | #16 out of sight / A | 47.7 s | "You didn't quit your goal. You just stopped seeing it." | bars: days you thought about it, week 1 = 7 -> week 4 = 0 | 35/40 |
-| 13:00 | ill-sunday-practice | #17 the big session / C | 48.4 s | "Practising for two hours every Sunday is the slowest way to learn anything." | week bars, only Sunday 140 min (clay) | 35/40 |
+| 09:30 | ill-perfect-week | #18 the perfect week / A (structure C) | 48.3 s | "Four workouts a week feels like failing, if you planned seven." | bars: planned 4 did 4 = 100% vs planned 7 did 4 = 57% | 35/40 |
+| 13:00 | ill-borrowed-sleep | #19 borrowed sleep / D (story B, Dev) | 50.0 s | "On six hours of sleep, you feel fine. You're not." | new dual-line chart: felt vs real sharpness over 14 nights | 34/40 |
 
-Chain: decide-once -> out-of-sight -> sunday-practice -> "Tonight, Kabir and the gym membership" (pixel-kabir-2, same day 19:30).
+Chain: perfect-week -> "This afternoon: why staying up late for your goal backfires" (borrowed-sleep) -> "Tonight, Kabir and the day that was okay" (pixel-kabir-3, 19:30).
 
-## Built Sat for Sun Nov 8 (V-EXP-34 batch 1, still unscheduled)
+## Built Sun for Mon Nov 9 (V-EXP-34 batch 2)
 | Time (IST) | Reel | Reason | Length | Score |
 |---|---|---|---|---|
-| 09:30 | ill-first-ten-minutes | #14 the day goes first | 49.0 s | 35/40 |
-| 13:00 | ill-decide-once | #15 the daily decision | 48.8 s | 35/40 |
+| 09:30 | ill-out-of-sight | #16 out of sight | 47.7 s | 35/40 |
+| 13:00 | ill-sunday-practice | #17 the big session | 48.4 s | 35/40 |
 
 ## Last reels with numbers (IG views, grid read Nov 2)
 | Reel | Posted | Views | Saves | Shares | Follows |

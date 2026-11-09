@@ -6,6 +6,14 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 - Note 2026-11-06 21:30 (Claude): Nov 6 batch scheduled on IG (likes hidden), X and YT: miss-twice Fri 22:00, ten-minute-reset Sat 13:00, same-weight Sat 19:30. Leftover Wed/Thu reels on Instagram: say-sentences posted Fri ~20:20, pickups scheduled Sat 09:30; busy-week skipped on IG (already on X/YT; 5-flow limit). All Wed/Thu reels now done on every platform except busy-week on IG.
 
+## Built Mon 2026-11-09 for Tue 2026-11-10 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 3
+
+- [ ] Tue 09:30 IST · **ill-perfect-week** (Reason #18 "the perfect week", pillar A, 100% vs 57% bars on frame 0, ~50 s) · `ready-to-post/2026-11-10-ill-perfect-week/`
+- [ ] Tue 13:00 IST · **ill-borrowed-sleep** (Reason #19 "borrowed sleep", pillar D, story B (Dev), felt-vs-real sharpness lines on frame 0, ~50 s) · `ready-to-post/2026-11-10-ill-borrowed-sleep/`
+- Tue 19:30 stays **pixel-kabir-3**. Follow lines: perfect-week -> "This afternoon: why staying up late for your goal backfires" (borrowed-sleep), borrowed-sleep -> "Tonight, Kabir and the day that was okay" (kabir-3). Post all three the same day.
+- Render status: rendering on a swapping host; a detached finisher packages them (`studio/state/finish_2026-11-10.log`). Before scheduling, check `video.mp4` exists and look at the frame sheet in `studio/state/`.
+- If the Mon batch (above) is still unscheduled when you read this, keep the order: Mon batch first (with kabir-2), then this one a day later.
+
 ## Built Sun 2026-11-08 for Mon 2026-11-09 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 2
 
 - [ ] Mon 09:30 IST · **ill-out-of-sight** (Reason #16 "out of sight", pillar A, days-you-thought-about-it bars on frame 0, 47.7 s; keeps ill-decide-once's "Next: why you forget your own goal by week three") · `ready-to-post/2026-11-09-ill-out-of-sight/`

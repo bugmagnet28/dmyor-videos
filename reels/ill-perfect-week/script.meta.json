@@ -1,0 +1,42 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-perfect-week",
+ "hook_type": "number-contrast",
+ "topic": "consistency",
+ "pillar": "A (why goals fail)",
+ "series": "Why we stop doing things we know are good for us, Reason #18 (the perfect week)",
+ "experiment": "V-EXP-34",
+ "hook": "Four workouts a week feels like failing, if you planned seven.",
+ "gate": {
+  "goal_link": "any goal with a weekly target (running, gym, a language) dies when good weeks are scored as fails",
+  "mechanism": "the same output is judged against the plan, not against zero: 4/7 = 57% reads as failure, 4/4 = 100% reads as success, and repeated 'failure' weeks end the habit",
+  "universal": "almost everyone has planned 7 days and managed 4"
+ },
+ "frame": {
+  "structure": "C (mistake, cost, fix)",
+  "want": "a weekly habit that lasts",
+  "obstacle": "plans written for a perfect week; real weeks bring meetings, colds, birthdays",
+  "cost": "4 runs = 57% of the plan, three 'failed' weeks, then 0",
+  "fix": "count the last 2 weeks, plan that number, add one after 2 weeks at 100% (the big plan stays as the next level)"
+ },
+ "hooks_considered": [
+  {"line": "Four workouts a week feels like failing, if you planned seven.", "checks": "hard truth Y, gap Y, muted Y (57% vs 100% bars), sendable Y, payoff Y", "kept": true},
+  {"line": "You didn't fail your plan. Your plan assumed a perfect week.", "checks": "good, abstract without the number", "kept": false},
+  {"line": "Same four runs. One week is a fail, the other a win.", "checks": "needs the chart", "kept": false},
+  {"line": "The day your plan fails isn't Tuesday. It's the day you wrote it.", "checks": "clever, less clear", "kept": false},
+  {"line": "Most plans are written for a week that never happens.", "checks": "good, softer", "kept": false}
+ ],
+ "beats": {
+  "hard_truth": "0.0 s, bars 100% (planned 4) vs 57% (planned 7) on frame 0",
+  "series": "Reason #18 card",
+  "rehook_10": "the real week: misses land on 'meeting', 'cold', 'birthday', 4 of 7",
+  "rehook_20": "57% fail, fail, quit -> count the last two weeks",
+  "save_moment": "PLAN THE REAL WEEK rule card",
+  "share_line": "Send this to the friend who plans seven and quits in week two.",
+  "comment_q": "How many days did you really manage last week?",
+  "follow_reason": "This afternoon: ill-borrowed-sleep (Tue 13:00)"
+ },
+ "note": "Pillar A. Big plan is not the villain: it returns as 'add one after two weeks at 100%'. gym-calendar gained stage 'real' (misses with reasons, counter counts ticks only); input-week gained `unit`.",
+ "quality": {"hook": 5, "usefulness": 5, "specificity": 5, "clarity": 4, "retention": 4, "craft": 4, "voice": 4, "brand": 4, "total": 35}
+}

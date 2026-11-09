@@ -64,4 +64,6 @@ Every idea hands the viewer **one thing they can do today** (see `quality-bar.md
 | 56 | "If you have to decide to do it, one day you'll decide not to." (Reason #15) | 0.9^30 = 4%: decide once with "After [habit I have], I do [step]" | ILL C | 2026-11-07 built (ill-decide-once, Sun Nov 8 13:00) |
 | 39b | "If your goal is planned for 9 PM, it's up against your whole day." (Reason #14; idea #39 first 10 minutes of your morning, the ill-same-weight promise) | First 10 minutes after waking, before the phone: Spanish sentences / 100 words | ILL A | 2026-11-07 built (ill-first-ten-minutes, Sun Nov 8 09:30) |
 
+| 58 | "Four workouts a week feels like failing, if you planned seven." (Reason #18, the perfect week) | Count the last 2 weeks, plan that number, 2 weeks at 100%? add one; 57% vs 100% bars | ILL C | 2026-11-09 built (ill-perfect-week, Tue Nov 10 09:30) |
+| 59 | "On six hours of sleep, you feel fine. You're not." (Reason #19, borrowed sleep; story B, Dev) | Fixed lights-out, goal time before work; felt vs real sharpness lines (Van Dongen 2003) | ILL B | 2026-11-09 built (ill-borrowed-sleep, Tue Nov 10 13:00) |
 Rules: avoid pure quotes/motivation, avoid promising locked features ("full features are releasing soon"), one takeaway per reel, specific numbers and real examples, fuller spoken narration (write for the ear).

@@ -1,0 +1,42 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-borrowed-sleep",
+ "hook_type": "hard-truth",
+ "topic": "sleep",
+ "pillar": "D (energy for goals)",
+ "series": "Why we stop doing things we know are good for us, Reason #19 (borrowed sleep)",
+ "experiment": "V-EXP-34",
+ "hook": "On six hours of sleep, you feel fine. You're not.",
+ "gate": {
+  "goal_link": "side goals (an app, a course, a book) get the hours after 11 PM; the sleep debt makes the work slow and the person concludes they are 'not good at this'",
+  "mechanism": "chronic sleep restriction: performance keeps falling while felt sleepiness levels off, so you cannot feel the drop (Van Dongen et al. 2003, 14 days of 6 h; stated as 'sleep researchers found', not quoted with numbers beyond what the study showed)",
+  "universal": "staying up late to finally work on your own thing"
+ },
+ "frame": {
+  "structure": "B (want, obstacle, choice, payoff)",
+  "want": "Dev wants to ship his app",
+  "obstacle": "only free after 11 PM, codes till 1 AM, output falls week by week, decides he is not good at this",
+  "cost": "same 2 hours a night: 6 features in week 1, 1 in week 3 (story numbers)",
+  "fix": "fixed lights-out 11:30, the code moves to the time before work"
+ },
+ "hooks_considered": [
+  {"line": "On six hours of sleep, you feel fine. You're not.", "checks": "hard truth Y, gap Y, muted Y (two lines drifting apart), sendable Y, payoff Y", "kept": true},
+  {"line": "Coding till 1 AM is why your side project is slow.", "checks": "narrow (coders)", "kept": false},
+  {"line": "The hours you steal from sleep, your goal pays back.", "checks": "nice line, abstract", "kept": false},
+  {"line": "You're not bad at this. You're tired and can't tell.", "checks": "strong, kept as the hidden-part beat", "kept": false},
+  {"line": "Two weeks of six-hour nights. You'll swear you're fine.", "checks": "longer", "kept": false}
+ ],
+ "beats": {
+  "hard_truth": "0.0 s, dual-line chart: 'feel' levels off, 'are' keeps falling, gap marked",
+  "series": "Reason #19 card",
+  "rehook_10": "week bars 6 -> 3 -> 1, 'I'm just not good at this'",
+  "rehook_20": "the hidden part: the two lines draw apart on the spoken study",
+  "save_moment": "PROTECT THE SLEEP rule card",
+  "share_line": "Send this to the friend who's coding at one AM.",
+  "comment_q": "What time do you actually fall asleep?",
+  "follow_reason": "Tonight: pixel-kabir-3 'Today was okay' (Tue 19:30)"
+ },
+ "note": "Pillar D (max 3/wk; first this week). New scene dual-line (felt vs real over N nights, hook/draw/fix). Study is real (Van Dongen 2003); chart is schematic, no numbers on the y axis.",
+ "quality": {"hook": 5, "usefulness": 4, "specificity": 4, "clarity": 4, "retention": 5, "craft": 4, "voice": 4, "brand": 4, "total": 34}
+}

@@ -1,0 +1,11 @@
+reels/ill-borrowed-sleep/audio.mp3  49.99s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body body land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/4999 [00:00<?, ?frames/s] 56%|█████▌    | 2804/4999 [15:58<12:30,  2.93frames/s]100%|██████████| 4999/4999 [28:15<00:00,  2.95frames/s]100%|██████████| 4999/4999 [28:15<00:00,  2.95frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+169 words, 49.99s, 3.38 words/sec
+-> reels/ill-borrowed-sleep/cues.json
+  skip ['@4', 'pop']: scene week-bars has no beat for it
+sfx present: 45 sounds -> reels/ill-borrowed-sleep/audio_mixed.mp3 pencil@0.1 pop@2.9 riffle@3.1 pop@5.7 swish@6.8 pop@7.7 pop@8.7 pop@9.3 swish@10.1 pop@11.7 pop@13.6 pop@14.3 swish@16.0 pencil@19.2 pop@21.7 pop@23.3 typing@23.5 pop@24.2 pop@24.6 pop@25.0 toggle@26.3 right@26.8 swish@27.1 pop@27.4 pop@28.9 pop@29.6 swish@30.6 reveal@31.5 pop@33.9 right@34.2 pencil@34.9 right@35.3 pencil@35.7 right@36.0 tone@36.6 stamp@36.8 pop@38.4 pop@38.9 right@39.7 right@40.2 right@40.7 pop@42.2 toggle@45.2 right@45.5 chord@46.0
+built reels/ill-borrowed-sleep: 50.0s, 11 scenes, brand 46.00s, 3.38 words/sec
+scenes: [('dual-line', 0.0, 2.85, None), ('series-card', 2.85, 6.77, [1.75, 2.85]), ('ready-desk', 6.77, 10.07, [0.97, 1.9, 2.55]), ('week-bars', 10.07, 16.01, [0.13, 1.63, 3.49, 4.21]), ('dual-line', 16.01, 23.29, [0.25, 3.15, 5.69]), ('meeting-card', 23.29, 27.11, [0.87, 3.03]), ('bar-compare', 27.11, 30.63, [0.33, 1.77, 2.53]), ('dual-line', 30.63, 33.83, [0.05, 0.85]), ('rule-card', 33.83, 36.65, [0.05, 1.11, 1.85]), ('dream-to-steps', 36.65, 42.17, None), ('follow-next', 42.17, 46.0, [0.2, 2.99])]
