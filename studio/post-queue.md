@@ -6,40 +6,47 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 - Note 2026-11-06 21:30 (Claude): Nov 6 batch scheduled on IG (likes hidden), X and YT: miss-twice Fri 22:00, ten-minute-reset Sat 13:00, same-weight Sat 19:30. Leftover Wed/Thu reels on Instagram: say-sentences posted Fri ~20:20, pickups scheduled Sat 09:30; busy-week skipped on IG (already on X/YT; 5-flow limit). All Wed/Thu reels now done on every platform except busy-week on IG.
 
+- Note 2026-11-11 22:30 (Claude): backlog caught up and re-slotted one day later (agent runs kept building while nothing was scheduled Mon-Wed).
+  - Wed 11 (posted now ~21:15): ill-out-of-sight on IG + X + YT. YT also got Sunday's 3 (first-ten-minutes, decide-once, pixel-kabir-1) published now.
+  - Thu 12: ill-sunday-practice 13:00, pixel-kabir-2 19:30 (IG + X + YT scheduled).
+  - Fri 13: ill-perfect-week 09:30, ill-borrowed-sleep 13:00 (IG + X + YT); pixel-kabir-3 19:30 (X + YT; **IG still to schedule**).
+  - Sat 14: ill-just-today 13:00 (X + YT; **IG still to schedule**), ill-mixed-practice 19:30 (X only; **IG + YT still to schedule**: IG 5-flow limit and YT daily upload limit hit tonight).
+  - Next session (Thu): IG kabir-3 Fri 19:30, just-today Sat 13:00, mixed-practice Sat 19:30; YT mixed-practice Sat 19:30. Shift the next agent batch to Sun 15.
+
 ## Built Wed 2026-11-11 for Thu 2026-11-12 (auto-approved, to schedule after the Mon + Tue batches). Instagram, X and YouTube Shorts. V-EXP-34 batch 4
 
-- [ ] 13:00 IST · **ill-just-today** (Reason #20 "just today", pillar B, bars 1 day vs 104 days on frame 0, 49.6 s; follow line "Next: why the practice that feels best teaches you least") · `ready-to-post/2026-11-12-ill-just-today/`
-- [ ] 19:30 IST · **ill-mixed-practice** (Reason #21 "the practice that feels best", pillar C, story B (Riya), bars mixed 63% vs blocks 20% on frame 0, ~50 s, strongest; follow line "Next: why your afternoon crash starts at lunch", next run builds it) · `ready-to-post/2026-11-12-ill-mixed-practice/`
+- [~] Sat 14 13:00 IST (X + YT scheduled, IG pending) · **ill-just-today** (Reason #20 "just today", pillar B, bars 1 day vs 104 days on frame 0, 49.6 s; follow line "Next: why the practice that feels best teaches you least") · `ready-to-post/2026-11-12-ill-just-today/`
+- [~] Sat 14 19:30 IST (X scheduled, IG + YT pending) · **ill-mixed-practice** (Reason #21 "the practice that feels best", pillar C, story B (Riya), bars mixed 63% vs blocks 20% on frame 0, ~50 s, strongest; follow line "Next: why your afternoon crash starts at lunch", next run builds it) · `ready-to-post/2026-11-12-ill-mixed-practice/`
 - Order: Mon batch, then Tue batch, then this one, one day each (the date in the folder name is a suggestion; if the backlog shifts, shift this too). Both follow lines say "Next", so any day works as long as just-today goes before mixed-practice.
 - Render status: a detached finisher records and packages both (`studio/state/finish_2026-11-12.log`). Before scheduling, check `video.mp4` exists and look at `studio/state/frames-2026-11-12/`.
 
 ## Built Mon 2026-11-09 for Tue 2026-11-10 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 3
 
-- [ ] Tue 09:30 IST · **ill-perfect-week** (Reason #18 "the perfect week", pillar A, 100% vs 57% bars on frame 0, ~50 s) · `ready-to-post/2026-11-10-ill-perfect-week/`
-- [ ] Tue 13:00 IST · **ill-borrowed-sleep** (Reason #19 "borrowed sleep", pillar D, story B (Dev), felt-vs-real sharpness lines on frame 0, ~50 s) · `ready-to-post/2026-11-10-ill-borrowed-sleep/`
+- [x] Fri 13 09:30 IST all three · **ill-perfect-week** (Reason #18 "the perfect week", pillar A, 100% vs 57% bars on frame 0, ~50 s) · `ready-to-post/2026-11-10-ill-perfect-week/`
+- [x] Fri 13 13:00 IST all three · **ill-borrowed-sleep** (Reason #19 "borrowed sleep", pillar D, story B (Dev), felt-vs-real sharpness lines on frame 0, ~50 s) · `ready-to-post/2026-11-10-ill-borrowed-sleep/`
 - Tue 19:30 stays **pixel-kabir-3**. Follow lines: perfect-week -> "This afternoon: why staying up late for your goal backfires" (borrowed-sleep), borrowed-sleep -> "Tonight, Kabir and the day that was okay" (kabir-3). Post all three the same day.
 - Render status: rendering on a swapping host; a detached finisher packages them (`studio/state/finish_2026-11-10.log`). Before scheduling, check `video.mp4` exists and look at the frame sheet in `studio/state/`.
 - If the Mon batch (above) is still unscheduled when you read this, keep the order: Mon batch first (with kabir-2), then this one a day later.
 
 ## Built Sun 2026-11-08 for Mon 2026-11-09 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 2
 
-- [ ] Mon 09:30 IST · **ill-out-of-sight** (Reason #16 "out of sight", pillar A, days-you-thought-about-it bars on frame 0, 47.7 s; keeps ill-decide-once's "Next: why you forget your own goal by week three") · `ready-to-post/2026-11-09-ill-out-of-sight/`
-- [ ] Mon 13:00 IST · **ill-sunday-practice** (Reason #17 "the big session", pillar C, one red 140-min Sunday bar on frame 0 that splits into seven 20s, 48.4 s, strongest) · `ready-to-post/2026-11-09-ill-sunday-practice/`
+- [x] posted Wed 11 ~21:15 IST all three · **ill-out-of-sight** (Reason #16 "out of sight", pillar A, days-you-thought-about-it bars on frame 0, 47.7 s; keeps ill-decide-once's "Next: why you forget your own goal by week three") · `ready-to-post/2026-11-09-ill-out-of-sight/`
+- [x] Thu 12 13:00 IST all three · **ill-sunday-practice** (Reason #17 "the big session", pillar C, one red 140-min Sunday bar on frame 0 that splits into seven 20s, 48.4 s, strongest) · `ready-to-post/2026-11-09-ill-sunday-practice/`
 - Mon 19:30 stays **pixel-kabir-2**. ill-sunday-practice's follow line says "Tonight, Kabir and the gym membership": post it the same day as pixel-kabir-2. If the Sun batch slips to Mon, shift this whole block (with kabir-2) to Tue.
 - Sun batch below is still unscheduled (see VASK-027 for tonight's catch-up order).
 
 ## Built Sat 2026-11-07 for Sun 2026-11-08 (auto-approved, to schedule). Instagram, X and YouTube Shorts. First V-EXP-34 batch (on-topic, ≤50 s, "Reason #n" series, comment question)
 
-- [x] posted Sun ~20:00 IST on IG + X (YT pending) · **ill-first-ten-minutes** (Reason #14 "the day goes first", bar chart 1 vs 12 on frame 0, 49.0 s; keeps ill-same-weight's "Next: the first ten minutes of your morning") · `ready-to-post/2026-11-08-ill-first-ten-minutes/`
-- [x] scheduled Sun 22:00 IST on IG + X (YT pending) · **ill-decide-once** (Reason #15 "the daily decision", 0.9^30 = 4% curve on frame 0, 48.8 s, strongest explainer) · `ready-to-post/2026-11-08-ill-decide-once/`
+- [x] posted Sun ~20:00 IST on IG + X, YT published Wed 11 · **ill-first-ten-minutes** (Reason #14 "the day goes first", bar chart 1 vs 12 on frame 0, 49.0 s; keeps ill-same-weight's "Next: the first ten minutes of your morning") · `ready-to-post/2026-11-08-ill-first-ten-minutes/`
+- [x] scheduled Sun 22:00 IST on IG + X, YT published Wed 11 · **ill-decide-once** (Reason #15 "the daily decision", 0.9^30 = 4% curve on frame 0, 48.8 s, strongest explainer) · `ready-to-post/2026-11-08-ill-decide-once/`
 - Sun 19:30 stays **pixel-kabir-1** (above). Follow lines chain: first-ten-minutes -> "Next: why deciding every day quietly ends good habits" (decide-once), decide-once -> "Next: why you forget your own goal by week three" (idea #55, next run builds it for Mon 09:30).
 - Captions open with a search phrase and end with the comment question; reply to comments in the first hour (growth plan 4.7). YouTube titles are search phrases (in post.md).
 
 ## Pixel series "Kabir vs. Kabir" #1-#3 (built 2026-11-06 night; 1 pixel reel/day; no music, owner may add music in the Instagram app)
 
-- [x] scheduled Sun 2026-11-08 20:30 IST on IG + X (YT pending), likes hidden · **pixel-kabir-1** "Starting Monday" (Reason #1) · `ready-to-post/2026-11-08-pixel-kabir-1/`
-- [ ] Mon 2026-11-09 19:30 IST · **pixel-kabir-2** "The gym membership" (Reason #2) · `ready-to-post/2026-11-09-pixel-kabir-2/`
-- [ ] Tue 2026-11-10 19:30 IST · **pixel-kabir-3** "Today was okay" (Reason #3) · `ready-to-post/2026-11-10-pixel-kabir-3/`
+- [x] scheduled Sun 2026-11-08 20:30 IST on IG + X, YT published Wed 11, likes hidden · **pixel-kabir-1** "Starting Monday" (Reason #1) · `ready-to-post/2026-11-08-pixel-kabir-1/`
+- [x] Thu 12 19:30 IST all three · **pixel-kabir-2** "The gym membership" (Reason #2) · `ready-to-post/2026-11-09-pixel-kabir-2/`
+- [~] Fri 13 19:30 IST (X + YT scheduled, IG pending) · **pixel-kabir-3** "Today was okay" (Reason #3) · `ready-to-post/2026-11-10-pixel-kabir-3/`
 
 ## Built Fri 2026-11-06 (auto-approved, to schedule; Nov 5 run failed so there was no Fri batch). Instagram, X and YouTube Shorts
 
