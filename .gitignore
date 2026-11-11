@@ -29,3 +29,5 @@ tts2/.venv/
 studio/tools/__pycache__/
 reels/*/snaps/
 reels/**/__pycache__/
+reels/*/record.log
+reels/pixel-series/*.log
