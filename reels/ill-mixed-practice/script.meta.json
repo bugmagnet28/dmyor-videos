@@ -1,0 +1,42 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-mixed-practice",
+ "hook_type": "hard-truth",
+ "topic": "learning",
+ "pillar": "C (learning & skill)",
+ "series": "Why we stop doing things we know are good for us, Reason #21 (the practice that feels best)",
+ "experiment": "V-EXP-34",
+ "hook": "The practice that feels best teaches you the least.",
+ "gate": {
+  "goal_link": "any learning goal (an exam, a language, an instrument) where practice in blocks feels like progress but does not transfer to the real test",
+  "mechanism": "interleaving: blocked practice gives high practice scores but poor delayed performance, because you never practise choosing the method; mixed practice feels worse and works better. Rohrer & Taylor 2007 (interleaved 63% vs blocked 20% a week later), said as 'about three times higher'",
+  "universal": "revising by doing many of the same exercise in a row"
+ },
+ "frame": {
+  "structure": "B (want, obstacle, choice, payoff)",
+  "want": "Riya wants to pass her maths exam",
+  "obstacle": "blocked practice feels great, the mixed exam makes her blank",
+  "cost": "63% vs 20% a week later (the study)",
+  "fix": "shuffle problem types every session; expect more mistakes"
+ },
+ "hooks_considered": [
+  {"line": "The practice that feels best teaches you the least.", "checks": "hard truth Y, gap Y, muted Y (63 vs 20 bars), sendable Y, payoff Y", "kept": true},
+  {"line": "You knew how to solve it. You just didn't know which one.", "checks": "relatable, needs exam context", "kept": false},
+  {"line": "Getting every practice problem right is a bad sign.", "checks": "good, kept for caption", "kept": false},
+  {"line": "Studying one topic at a time is why you blank in exams.", "checks": "long", "kept": false},
+  {"line": "Same hours of practice. Three times the score.", "checks": "close second", "kept": false}
+ ],
+ "beats": {
+  "hard_truth": "0.0 s, bars mixed 63% vs blocks 20%",
+  "series": "Reason #21 card",
+  "rehook_10": "12/12 right in blocks, 'I've got this'",
+  "rehook_20": "the exam shuffles the tiles: 6/12, 'Knew how. Not which.'",
+  "save_moment": "MIX YOUR PRACTICE rule card",
+  "share_line": "Send this to the friend who calls twenty of the same problem revision.",
+  "comment_q": "What are you practising right now?",
+  "follow_reason": "Next: ill-afternoon-crash (idea #50, pillar D, unlocked from Nov 11; next run builds it)"
+ },
+ "note": "Pillar C. New scene problem-tiles (block / shuffle, tiles move into a mixed order, ticks and X marks, counter). Study real (Rohrer & Taylor 2007, Instructional Science); caption names it.",
+ "quality": {"hook": 5, "usefulness": 4, "specificity": 5, "clarity": 4, "retention": 4, "craft": 4, "voice": 4, "brand": 4, "total": 34}
+}

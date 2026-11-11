@@ -1,0 +1,10 @@
+reels/ill-mixed-practice/audio.mp3  50.67s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body body body land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/5067 [00:00<?, ?frames/s] 51%|█████▏    | 2598/5067 [15:35<14:48,  2.78frames/s]100%|██████████| 5067/5067 [30:57<00:00,  2.72frames/s]100%|██████████| 5067/5067 [30:57<00:00,  2.73frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+171 words, 50.67s, 3.37 words/sec
+-> reels/ill-mixed-practice/cues.json
+sfx present: 39 sounds -> reels/ill-mixed-practice/audio_mixed.mp3 riffle@0.1 pop@3.0 riffle@3.2 pop@5.6 pencil@5.9 right@12.4 swish@14.4 swish@15.1 miss@16.1 pop@18.8 swish@19.3 pop@20.7 pop@21.9 pop@23.2 swish@23.8 swish@24.3 miss@25.4 pop@27.6 swish@30.6 pop@31.0 pop@31.4 reveal@32.5 pop@33.5 right@33.8 pencil@35.5 right@35.9 pencil@36.2 right@36.5 tone@37.1 stamp@37.2 pop@38.8 pop@39.3 right@40.1 right@40.6 right@41.1 pop@42.6 toggle@46.1 right@46.5 chord@46.9
+built reels/ill-mixed-practice: 50.62s, 10 scenes, brand 46.92s, 3.37 words/sec
+scenes: [('bar-compare', 0.0, 2.95, None), ('series-card', 2.95, 5.89, [1.73, 2.69]), ('problem-tiles', 5.89, 14.44, [0.05, 6.51, 7.85]), ('problem-tiles', 14.39, 19.31, [0.73, 1.69, 4.37]), ('bar-compare', 19.31, 23.75, [1.36, 2.59, 3.85]), ('problem-tiles', 23.75, 30.64, [0.53, 1.65, 3.83]), ('before-after', 30.59, 33.43, [0.05, 1.93]), ('rule-card', 33.43, 37.07, [0.05, 2.07, 2.73]), ('dream-to-steps', 37.07, 42.55, None), ('follow-next', 42.55, 46.92, [0.2, 3.59])]

@@ -359,7 +359,7 @@ def events(cfg, table, min_gap=.28):
     ev = []
     for i, sc in enumerate(cfg["scenes"]):
         P = sc.get("params") or {}
-        own = table.get(sc["type"] + ":" + str(P.get("stage", "")), table.get(sc["type"], []))
+        own = P.get("events") or table.get(sc["type"] + ":" + str(P.get("stage", "")), table.get(sc["type"], []))   # params.events overrides the table (2026-11-11)
         at_ = P.get("at", [])
         if i > 0 and not (own and isinstance(own[0][0], (int, float)) and own[0][0] < .1):
             ev.append((sc["t0"], "swish", None))

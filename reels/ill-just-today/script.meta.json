@@ -1,0 +1,42 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-just-today",
+ "hook_type": "number-fact",
+ "topic": "consistency",
+ "pillar": "B (daily choices compound)",
+ "series": "Why we stop doing things we know are good for us, Reason #20 (just today)",
+ "experiment": "V-EXP-34",
+ "hook": "Skipping just today, twice a week, costs you 104 days a year.",
+ "gate": {
+  "goal_link": "any big goal built from regular sessions (guitar, running, a side project) loses months to skips that each felt harmless",
+  "mechanism": "narrow choice bracketing: each skip is judged as one isolated day, so the cost of the repeated pattern is never seen (Read, Loewenstein & Rabin 1999, 'choice bracketing'; said as 'researchers call this choice bracketing', no numbers attributed)",
+  "universal": "saying 'just today' to a habit you care about"
+ },
+ "frame": {
+  "structure": "C (mistake, cost, fix)",
+  "want": "keep a 5-day practice habit",
+  "obstacle": "each skip feels like one free day",
+  "cost": "2 skips a week = 104 days a year (arithmetic, not a study)",
+  "fix": "before skipping ask 'would I be okay skipping this every week?'; if not, do the 10-minute version (the 45-minute plan stays, owner rule)"
+ },
+ "hooks_considered": [
+  {"line": "Skipping just today, twice a week, costs you 104 days a year.", "checks": "hard truth Y, gap Y, muted Y (1 vs 104 bars), sendable Y, payoff Y", "kept": true},
+  {"line": "You never skip once.", "checks": "strong but needs context", "kept": false},
+  {"line": "'Just today' is the most expensive thing you say.", "checks": "abstract, no chart", "kept": false},
+  {"line": "Your goal doesn't die. It gets skipped to death.", "checks": "nice, kept for caption idea", "kept": false},
+  {"line": "Two skips a week. Three months a year.", "checks": "close second", "kept": false}
+ ],
+ "beats": {
+  "hard_truth": "0.0 s, bars 1 day vs 104 days",
+  "series": "Reason #20 card",
+  "rehook_10": "the real week: Tue tired X, Thu busy X",
+  "rehook_20": "bars grow week 2 -> year 104, 'three months of your goal'",
+  "save_moment": "BEFORE YOU SKIP rule card",
+  "share_line": "Send this to the friend who skips just today, every week.",
+  "comment_q": "Which day do you usually skip?",
+  "follow_reason": "Next: ill-mixed-practice (Reason #21), built the same run"
+ },
+ "note": "Pillar B (first this week). Numbers are arithmetic (2 x 52). Choice bracketing is a real term; no study numbers quoted.",
+ "quality": {"hook": 5, "usefulness": 5, "specificity": 4, "clarity": 4, "retention": 4, "craft": 4, "voice": 4, "brand": 4, "total": 34}
+}

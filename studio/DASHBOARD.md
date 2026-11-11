@@ -1,6 +1,6 @@
 # Video dashboard (posting on @becauseidmyor, end card @becauseidmyor)
 
-_Last updated: 2026-11-09 IST (run 2026-11-09)_
+_Last updated: 2026-11-11 IST (run 2026-11-11; the 11-10 run timed out without output)_
 
 **Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [reel library](library/index.html) · [growth plan Nov 2026](growth-plan-2026-11.md) · weekly review 2026-11-03 in [strategy.md](strategy.md)
 
@@ -9,14 +9,20 @@ _Last updated: 2026-11-09 IST (run 2026-11-09)_
 | Instagram followers (@becauseidmyor) | **24** (2026-11-06) |
 | Instagram 30-day views | 7,437 (Nov 6) · 99.6% non-followers · 24 profile visits, 1 link tap |
 | Are we improving? | **Reach: yes** (newer median 128 vs 17). Followers: slow (+3 in 9 days). YouTube: declining |
-| Live since last run | Sun Nov 8 on IG + X: ill-first-ten-minutes (~20:00), pixel-kabir-1 (20:30), ill-decide-once (22:00). Registered in analytics; first 48 h readings Tue night. YT pending |
-| **Blocker** | Mon Nov 9 batch not scheduled at 11:00 (09:30 slot passed). Host swapping (14 GB) makes a 50 s render take 4-5 h |
-| Ready to schedule (auto-approved) | **Mon: ill-out-of-sight (#16), ill-sunday-practice (#17), pixel-kabir-2** (frames checked today, clean) · **Tue: 09:30 ill-perfect-week (#18), 13:00 ill-borrowed-sleep (#19), 19:30 pixel-kabir-3** (rendering, finisher) |
+| Live | Sun Nov 8 on IG + X: ill-first-ten-minutes, pixel-kabir-1, ill-decide-once (registered). Nothing posted since (as far as post-queue shows). No new readings: no screenshots, no browser session |
+| **Blocker** | 6 auto-approved reels unscheduled since Nov 9 (Mon + Tue batches). Host swapping (13.6/14 GB): ~4 h per render; the 11-10 run timed out |
+| Ready to schedule (auto-approved) | **Thu (new): 13:00 ill-just-today (#20), 19:30 ill-mixed-practice (#21)** (rendering, finisher) · **Mon: ill-out-of-sight (#16), ill-sunday-practice (#17), pixel-kabir-2** (frames checked today, clean) · **Tue: 09:30 ill-perfect-week (#18), 13:00 ill-borrowed-sleep (#19), 19:30 pixel-kabir-3** (frames checked, clean) |
 | Owner review | 8 pixel reels in ready-to-post/pixel-review-2026-11-07 (Reasons #4-#13) |
 | Open experiments | V-EXP-32 (kit v2), V-EXP-33 (chart frame 0 + length), **V-EXP-34** (on-topic pillars, ≤50 s, Reason series, comment question; Nov 7-20) |
-| Asks | **VASK-028** (schedule Mon + Tue, YT for Sun, watch-time screenshots, restart the Mac) |
+| Asks | **VASK-029** (schedule the 6-reel backlog + Thu batch, YT for Sun, watch-time screenshots, restart the Mac) |
 
-## Built today for Tue Nov 10 (V-EXP-34 batch 3)
+## Built today (Wed Nov 11) for Thu Nov 12 (V-EXP-34 batch 4)
+| Time (IST) | Reel | Reason / pillar | Length | Hook | Frame 0 | Score |
+|---|---|---|---|---|---|---|
+| 13:00 | ill-just-today | #20 just today / B (structure C) | 49.6 s | "Skipping just today, twice a week, costs you 104 days a year." | bars: 1 day vs 104 days | 34/40 |
+| 19:30 | ill-mixed-practice | #21 the practice that feels best / C (story B, Riya) | ~50 s | "The practice that feels best teaches you the least." | bars: mixed 63% vs blocks 20% a week later (Rohrer & Taylor 2007) + new problem-tiles scene | 34/40 |
+
+## Built Mon for Tue Nov 10 (V-EXP-34 batch 3)
 | Time (IST) | Reel | Reason / pillar | Length | Hook | Frame 0 | Score |
 |---|---|---|---|---|---|---|
 | 09:30 | ill-perfect-week | #18 the perfect week / A (structure C) | 48.3 s | "Four workouts a week feels like failing, if you planned seven." | bars: planned 4 did 4 = 100% vs planned 7 did 4 = 57% | 35/40 |

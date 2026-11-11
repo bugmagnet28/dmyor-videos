@@ -1,0 +1,228 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 12,
+ "silences": [
+  "Then the",
+  "In one"
+ ],
+ "spoken": "[hook] The practice that feels best teaches you the least. || Why do we stop doing things we know are good for us? Reason twenty-one. || [turn] Riya has a maths exam. Twenty problems of one type, then twenty of the next. || She gets almost every one right. It feels like she's got it. || Then the exam mixes them up, and she blanks. She knew how to solve them, not which method to pick. || In one study, students who mixed their problems scored three times higher a week later. || So Riya shuffles them. It feels slower, and she gets more wrong. Most people quit here. || But that struggle is the learning. || [land] Exam day, she knows which method to pick. || Send this to the friend who calls twenty of the same problem revision. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. Next: why your afternoon crash starts at lunch. || [outro] What are you practising right now? The link's in the bio.",
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Mixed up",
+      63,
+      "acc"
+     ],
+     [
+      "Same type in a row",
+      20,
+      "red"
+     ]
+    ],
+    "max": 100,
+    "unit": "%",
+    "chip": "Test score, a week later"
+   },
+   "head": "Feels best.<br>Sticks <b>least</b>."
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 21,
+    "title": "The practice that feels best",
+    "cue": [
+     "good",
+     "Reason"
+    ]
+   },
+   "head": "Why we <b>stop</b>."
+  },
+  {
+   "type": "problem-tiles",
+   "params": {
+    "stage": "block",
+    "types": [
+     "Area",
+     "Ratio",
+     "Speed"
+    ],
+    "ylabel": "RIYA'S PRACTICE, IN BLOCKS",
+    "chip": "\"I've got this.\"",
+    "cue": [
+     "Riya",
+     "right",
+     "got"
+    ]
+   },
+   "head": "One type<br>at a <b>time</b>."
+  },
+  null,
+  {
+   "type": "problem-tiles",
+   "params": {
+    "stage": "shuffle",
+    "types": [
+     "Area",
+     "Ratio",
+     "Speed"
+    ],
+    "ylabel": "THE EXAM, MIXED",
+    "miss": [
+     1,
+     2,
+     4,
+     6,
+     9,
+     10
+    ],
+    "chip": "Knew how. Not which.",
+    "cue": [
+     "mixes",
+     "blanks",
+     "knew"
+    ]
+   },
+   "head": "The exam<br><b>mixes</b> them."
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Mixed up",
+      63,
+      "acc"
+     ],
+     [
+      "Same type in a row",
+      20,
+      "red"
+     ]
+    ],
+    "max": 100,
+    "unit": "%",
+    "chip": "Test score, a week later",
+    "cue": [
+     "mixed",
+     "three",
+     "later"
+    ]
+   },
+   "head": "About <b>3x</b><br>higher."
+  },
+  {
+   "type": "problem-tiles",
+   "params": {
+    "stage": "shuffle",
+    "types": [
+     "Area",
+     "Ratio",
+     "Speed"
+    ],
+    "ylabel": "RIYA'S PRACTICE, MIXED",
+    "miss": [
+     2,
+     6,
+     9
+    ],
+    "chip": "Most people quit here",
+    "cue": [
+     "shuffles",
+     "slower",
+     "quit"
+    ]
+   },
+   "head": "Shuffle<br>the <b>problems</b>."
+  },
+  null,
+  {
+   "type": "before-after",
+   "params": {
+    "a": "In blocks",
+    "b": "Mixed",
+    "rows": [
+     [
+      "In practice",
+      "12 / 12",
+      "9 / 12"
+     ],
+     [
+      "A week later",
+      "Fades",
+      "Sticks"
+     ],
+     [
+      "Exam day",
+      "Blanks",
+      "Picks"
+     ]
+    ],
+    "cue": [
+     "Exam",
+     "she"
+    ]
+   },
+   "head": "Harder now.<br><b>Sticks</b> later."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "MIX YOUR PRACTICE",
+    "items": [
+     "One of each type",
+     "New order each time",
+     "Wrong is fine"
+    ],
+    "cue": [
+     "Send",
+     "same",
+     "revision"
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Pass my maths exam",
+    "date": "Open it again: Mar 2027",
+    "steps": [
+     "30 mixed problems",
+     "Shuffle every session",
+     "Sunday: mock test"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why your afternoon crash starts at lunch",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "lunch"
+    ]
+   },
+   "head": "One reason<br><b>a day</b>."
+  },
+  null
+ ],
+ "caption": {
+  "instagram": "How to study for exams so it sticks: mix your practice.\n\nWhy we stop doing things we know are good for us, reason #21: the practice that feels best teaches you least. Riya does twenty problems of one type, then twenty of the next. Almost all right. Then the exam mixes them up and she blanks: she knew how to solve them, not which method to pick.\n\nIn one study (Rohrer & Taylor, 2007), students who mixed their practice problems scored about three times higher a week later.\n\nThe fix:\n- One of each type, in a new order every time\n- Expect it to feel slower\n- Getting more wrong in practice is the learning\n\nWhat are you practising right now? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#studytips #learning #exam #studymotivation #selfimprovement",
+  "x": "The practice that feels best teaches you least.\n\n20 problems of one type, then 20 of the next: almost all right. Then the exam mixes them and you blank.\n\nIn one study, students who mixed their practice problems scored ~3x higher a week later. Shuffle them. Slower and harder is the point.",
+  "youtube_title": "How to study for exams so you remember it #Shorts"
+ }
+}

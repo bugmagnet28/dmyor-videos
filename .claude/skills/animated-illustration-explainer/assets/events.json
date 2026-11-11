@@ -3255,5 +3255,39 @@
    "@6",
    "miss"
   ]
+ ],
+ "problem-tiles": [
+  [
+   "@0",
+   "pencil"
+  ],
+  [
+   "@1",
+   "right"
+  ]
+ ],
+ "problem-tiles:block": [
+  [
+   "@0",
+   "pencil"
+  ],
+  [
+   "@1",
+   "right"
+  ]
+ ],
+ "problem-tiles:shuffle": [
+  [
+   "@0",
+   "swish"
+  ],
+  [
+   "@1",
+   "miss"
+  ],
+  [
+   "@2",
+   "pop"
+  ]
  ]
 }

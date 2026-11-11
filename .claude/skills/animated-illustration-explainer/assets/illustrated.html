@@ -1148,6 +1148,26 @@ var SCENES={
       var dx,dy;if(st==="fix"){dx=X(dEnd);dy=Y(R2(dEnd));}else{dx=X(dotD);dy=Y(F(dotD));}
       dot.setAttribute("cx",dx);dot.setAttribute("cy",dy);dot.setAttribute("stroke",st==="fix"?ACC:RED);dot.setAttribute("opacity",a0);
       var col=st==="fix"?ACC:RED;chR.setAttribute("stroke",col);chT.setAttribute("fill",col);chT.textContent=st==="fix"?(P.chip2||"A week later: still there"):(P.chip||"A week later: most of it gone");tr(chip,540,1590+drift(t,2),1,0,chipK);};},
+  "problem-tiles":function(p,P){var G=g(p);var st=P.stage||"block";var ty=P.types||["Area","Ratio","Speed"];var TC=[INK,PAL.acc2,MUTE];
+    var perm=P.perm||[0,4,8,1,9,5,10,2,6,3,11,7];var miss=P.miss||[2,6,9];var y0=P.y0||860;
+    var pos=function(s){return [540+((s%4)-1.5)*218,y0+Math.floor(s/4)*190];};
+    var ax=g(G);txt(ax,P.ylabel||"PRACTICE PROBLEMS",540,y0-150,26,MUTE,800);
+    var T=[];for(var i=0;i<12;i++){var Q=g(G);var k=Math.floor(i/4);el("rect",{x:-95,y:-75,width:190,height:150,rx:18,fill:PANEL,stroke:TC[k],"stroke-width":3},Q);
+      txt(Q,ty[k],0,-14,36,TC[k],800);var ok=draw(el("path",{d:"M-18 32 L-5 45 L20 18",stroke:ACC,"stroke-width":6,"stroke-linecap":"round","stroke-linejoin":"round",fill:"none"},Q));
+      var x=draw(el("path",{d:"M-14 18 L14 46 M14 18 L-14 46",stroke:RED,"stroke-width":6,"stroke-linecap":"round",fill:"none"},Q));T.push({Q:Q,ok:ok,x:x});}
+    var slotOf=[];perm.forEach(function(ti,s){slotOf[ti]=s;});
+    var cnt=txt(G,"",540,y0+3*190+20,48,INK,900);
+    var chip=g(G);el("rect",{x:-360,y:-50,width:720,height:100,rx:16,fill:PANEL,stroke:P.chipCol==="acc"?ACC:RED,"stroke-width":3},chip);txt(chip,P.chip||"",0,13,38,P.chipCol==="acc"?ACC:RED,800);
+    var B0=AT(P,0,.3),B1=AT(P,1,2.4),B2=AT(P,2,4);
+    return function(k,t){ax.setAttribute("opacity",eout(seg(t,0,.4)));var n=0,right=0;
+      if(st==="block"){var step=Math.min(.32,Math.max(.12,(B1-B0)/12));
+        T.forEach(function(o,i){var a=B0+i*step;var v=eout(seg(t,a,a+.3));var q=pos(i);tr(o.Q,q[0],q[1]+drift(t+i*.3,1.2)+(1-v)*14,1,0,v);drawTo(o.ok,seg(t,a+.15,a+.4));drawTo(o.x,0);if(t>a+.15){n++;right++;}});}
+      else{var mv=eio(seg(t,B0,B0+1.1));var mk=Math.max(B0+1.2,B1);var step2=Math.min(.3,Math.max(.12,((B2>mk?B2:mk+3)-mk)/12));
+        T.forEach(function(o,i){var a=pos(i),b=pos(slotOf[i]);var s=slotOf[i];var v=eout(seg(t,0,.4));
+          tr(o.Q,a[0]+(b[0]-a[0])*mv,a[1]+(b[1]-a[1])*mv+drift(t+i*.3,1.2)-Math.sin(Math.PI*mv)*30*((i%2)?1:-1),1,0,v);
+          var at=mk+s*step2;var bad=miss.indexOf(s)>=0;drawTo(o.ok,bad?0:seg(t,at,at+.25));drawTo(o.x,bad?seg(t,at,at+.25):0);if(t>at){n++;if(!bad)right++;}});}
+      cnt.textContent=n?right+" / 12 right":"";cnt.setAttribute("fill",right<n?RED:INK);
+      tr(chip,540,y0+3*190+140+drift(t,2),1,0,P.chip?eout(seg(t,B2,B2+.4)):0);};},
   "bar-compare":function(p,P){var G=g(p);var st=P.stage||"grow";var rows=P.rows||[["Words learned",400,"ink"],["Sentences you can say",0,"red"]];
     var mx=P.max||Math.max.apply(null,rows.map(function(r){return r[1];}))||1,BWm=800,y0=P.y0||900,gap=P.gap||270;
     var COL=function(c){return c==="red"?RED:c==="acc"?ACC:c==="mute"?MUTE:c==="sand"?PAL.acc2:INK;};

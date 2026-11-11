@@ -6,6 +6,13 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 - Note 2026-11-06 21:30 (Claude): Nov 6 batch scheduled on IG (likes hidden), X and YT: miss-twice Fri 22:00, ten-minute-reset Sat 13:00, same-weight Sat 19:30. Leftover Wed/Thu reels on Instagram: say-sentences posted Fri ~20:20, pickups scheduled Sat 09:30; busy-week skipped on IG (already on X/YT; 5-flow limit). All Wed/Thu reels now done on every platform except busy-week on IG.
 
+## Built Wed 2026-11-11 for Thu 2026-11-12 (auto-approved, to schedule after the Mon + Tue batches). Instagram, X and YouTube Shorts. V-EXP-34 batch 4
+
+- [ ] 13:00 IST · **ill-just-today** (Reason #20 "just today", pillar B, bars 1 day vs 104 days on frame 0, 49.6 s; follow line "Next: why the practice that feels best teaches you least") · `ready-to-post/2026-11-12-ill-just-today/`
+- [ ] 19:30 IST · **ill-mixed-practice** (Reason #21 "the practice that feels best", pillar C, story B (Riya), bars mixed 63% vs blocks 20% on frame 0, ~50 s, strongest; follow line "Next: why your afternoon crash starts at lunch", next run builds it) · `ready-to-post/2026-11-12-ill-mixed-practice/`
+- Order: Mon batch, then Tue batch, then this one, one day each (the date in the folder name is a suggestion; if the backlog shifts, shift this too). Both follow lines say "Next", so any day works as long as just-today goes before mixed-practice.
+- Render status: a detached finisher records and packages both (`studio/state/finish_2026-11-12.log`). Before scheduling, check `video.mp4` exists and look at `studio/state/frames-2026-11-12/`.
+
 ## Built Mon 2026-11-09 for Tue 2026-11-10 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 3
 
 - [ ] Tue 09:30 IST · **ill-perfect-week** (Reason #18 "the perfect week", pillar A, 100% vs 57% bars on frame 0, ~50 s) · `ready-to-post/2026-11-10-ill-perfect-week/`

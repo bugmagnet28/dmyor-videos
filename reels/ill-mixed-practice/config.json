@@ -1,0 +1,270 @@
+{
+ "total": 50.62,
+ "brandT": 46.92,
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Mixed up",
+      63,
+      "acc"
+     ],
+     [
+      "Same type in a row",
+      20,
+      "red"
+     ]
+    ],
+    "max": 100,
+    "unit": "%",
+    "chip": "Test score, a week later"
+   },
+   "head": "Feels best.<br>Sticks <b>least</b>.",
+   "t0": 0.0,
+   "t1": 2.95
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 21,
+    "title": "The practice that feels best",
+    "cue": [
+     "good",
+     "Reason"
+    ],
+    "at": [
+     1.73,
+     2.69
+    ]
+   },
+   "head": "Why we <b>stop</b>.",
+   "t0": 2.95,
+   "t1": 5.89
+  },
+  {
+   "type": "problem-tiles",
+   "params": {
+    "stage": "block",
+    "types": [
+     "Area",
+     "Ratio",
+     "Speed"
+    ],
+    "ylabel": "RIYA'S PRACTICE, IN BLOCKS",
+    "chip": "\"I've got this.\"",
+    "cue": [
+     "Riya",
+     "right",
+     "got"
+    ],
+    "at": [
+     0.05,
+     6.51,
+     7.85
+    ]
+   },
+   "head": "One type<br>at a <b>time</b>.",
+   "t0": 5.89,
+   "t1": 14.44
+  },
+  {
+   "type": "problem-tiles",
+   "params": {
+    "stage": "shuffle",
+    "types": [
+     "Area",
+     "Ratio",
+     "Speed"
+    ],
+    "ylabel": "THE EXAM, MIXED",
+    "miss": [
+     1,
+     2,
+     4,
+     6,
+     9,
+     10
+    ],
+    "chip": "Knew how. Not which.",
+    "cue": [
+     "mixes",
+     "blanks",
+     "knew"
+    ],
+    "at": [
+     0.73,
+     1.69,
+     2.63
+    ]
+   },
+   "head": "The exam<br><b>mixes</b> them.",
+   "t0": 14.39,
+   "t1": 19.31
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Mixed up",
+      63,
+      "acc"
+     ],
+     [
+      "Same type in a row",
+      20,
+      "red"
+     ]
+    ],
+    "max": 100,
+    "unit": "%",
+    "chip": "Test score, a week later",
+    "cue": [
+     "mixed",
+     "three",
+     "later"
+    ],
+    "at": [
+     1.36,
+     2.59,
+     3.85
+    ]
+   },
+   "head": "About <b>3x</b><br>higher.",
+   "t0": 19.31,
+   "t1": 23.75
+  },
+  {
+   "type": "problem-tiles",
+   "params": {
+    "stage": "shuffle",
+    "types": [
+     "Area",
+     "Ratio",
+     "Speed"
+    ],
+    "ylabel": "RIYA'S PRACTICE, MIXED",
+    "miss": [
+     2,
+     6,
+     9
+    ],
+    "chip": "Most people quit here",
+    "cue": [
+     "shuffles",
+     "slower",
+     "quit"
+    ],
+    "at": [
+     0.53,
+     1.65,
+     3.83
+    ]
+   },
+   "head": "Shuffle<br>the <b>problems</b>.",
+   "t0": 23.75,
+   "t1": 30.64
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "a": "In blocks",
+    "b": "Mixed",
+    "rows": [
+     [
+      "In practice",
+      "12 / 12",
+      "9 / 12"
+     ],
+     [
+      "A week later",
+      "Fades",
+      "Sticks"
+     ],
+     [
+      "Exam day",
+      "Blanks",
+      "Picks"
+     ]
+    ],
+    "cue": [
+     "Exam",
+     "she"
+    ],
+    "at": [
+     0.05,
+     0.83
+    ]
+   },
+   "head": "Harder now.<br><b>Sticks</b> later.",
+   "t0": 30.59,
+   "t1": 33.43
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "MIX YOUR PRACTICE",
+    "items": [
+     "One of each type",
+     "New order each time",
+     "Wrong is fine"
+    ],
+    "cue": [
+     "Send",
+     "same",
+     "revision"
+    ],
+    "at": [
+     0.05,
+     2.07,
+     2.73
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>.",
+   "t0": 33.43,
+   "t1": 37.07
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Pass my maths exam",
+    "date": "Open it again: Mar 2027",
+    "steps": [
+     "30 mixed problems",
+     "Shuffle every session",
+     "Sunday: mock test"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 37.07,
+   "t1": 42.55
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why your afternoon crash starts at lunch",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "lunch"
+    ],
+    "at": [
+     0.2,
+     3.59
+    ]
+   },
+   "head": "One reason<br><b>a day</b>.",
+   "t0": 42.55,
+   "t1": 46.92
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  14.34,
+  19.26
+ ]
+}

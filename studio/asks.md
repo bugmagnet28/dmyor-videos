@@ -217,10 +217,20 @@ Instagram locked the account ("we locked your account to protect you from a poss
   4. Mac health: uptime 267 days, 14 GB of 15 GB swap used, fseventsd at ~57% CPU. Renders crawl at 0.1 fps (a 48 s reel takes ~4-5 h) and runs stall. A restart when convenient would likely fix it.
 
 ## VASK-028: Schedule Mon + Tue batches, YouTube for Sun, restart the Mac (2026-11-09)
-- Status: open
+- Status: open, folded into VASK-029 (2026-11-11)
 - What: Mon Nov 9 (frames checked today, both clean): 09:30 slot passed, so post **ill-out-of-sight** as soon as you can, **ill-sunday-practice** ~13:00-16:30, **pixel-kabir-2** 19:30 (sunday-practice's follow line says "Tonight, Kabir"). Tue Nov 10: 09:30 **ill-perfect-week** (Reason #18), 13:00 **ill-borrowed-sleep** (Reason #19), 19:30 **pixel-kabir-3**. All auto-approved.
 - Steps:
   1. Browser session: Mon batch on IG, X, YT (3 IG flows), then Tue batch in a second session (max 5 IG flows per session). YT also still owes Sun's ill-first-ten-minutes, ill-decide-once, pixel-kabir-1.
   2. Before scheduling Tue: confirm `ready-to-post/2026-11-10-*/video.mp4` exist (detached finisher, log `studio/state/finish_2026-11-10.log`).
   3. Wanted for V-EXP-34 (first 48 h readings land tonight): app screenshots of avg watch time + % watched for ill-first-ten-minutes and ill-decide-once into `inbox/metrics/` on Tue evening.
   4. **Mac restart** please (uptime 268 days, 13.7 of 14 GB swap used). whisper takes ~20 min per reel and Chrome crashes in screenshots; a 50 s reel takes 4-5 h to record. This is now the slowest part of the pipeline.
+
+## VASK-029: Schedule the backlog (Mon + Tue batches, 6 reels) + Thu batch, restart the Mac (2026-11-11)
+- Status: open
+- What: 6 auto-approved reels are still unscheduled (VASK-028 open): Mon batch **ill-out-of-sight**, **ill-sunday-practice**, **pixel-kabir-2**; Tue batch **ill-perfect-week**, **ill-borrowed-sleep**, **pixel-kabir-3** (frames checked, all clean). New today: **ill-just-today** (Reason #20) and **ill-mixed-practice** (Reason #21), rendering now.
+- Steps:
+  1. Next browser session: Mon batch on IG, X, YT (09:30 / 13:00 / 19:30 of the next free day). Max 5 IG flows per session, so the Tue batch goes in a second session (next day's slots). Then the Thu batch (13:00 just-today, 19:30 mixed-practice) the day after.
+  2. YouTube still owes Sun Nov 8: ill-first-ten-minutes, ill-decide-once, pixel-kabir-1.
+  3. If you post them, tick `[x]` in `studio/post-queue.md` (or say "scheduled" in `inbox/notes.md`) so I register them in analytics.
+  4. Wanted: app screenshots of avg watch time + % watched for ill-first-ten-minutes and ill-decide-once (posted Nov 8) into `inbox/metrics/`, plus one profile screenshot for the follower count.
+  5. **Mac restart** please: uptime 270 days, 13.6 of 14 GB swap used. A 50 s reel takes ~4 h to record, and yesterday's run timed out without building anything.

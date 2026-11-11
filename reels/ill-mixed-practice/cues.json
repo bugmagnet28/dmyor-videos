@@ -1,0 +1,1086 @@
+{
+ "audio": "audio.mp3",
+ "duration": 50.67,
+ "text": "The practice that feels best teaches you the least. Why do we stop doing things we know are good for us? Reason 21. Rhea has a maths exam, 20 problems of one type, then 20 of the next. She gets almost everyone right, it feels like she's got it. Then the exam mixes them up and she blanks. She knew how to solve them, not which method to pick. In one study, students who mix their problems scored three times higher a week later. So Rhea shuffles them, it feels slower and she gets more wrong, most people quit here. But that struggle is the learning. Exam day, she knows which method to pick. Send this to the friend who calls 20 of the same problem revision. That's what demure is for. Archive your dream today and break it into small steps you can actually do. Follow for one reason a day, next, while your afternoon crash starts at lunch. What are you practicing right now? The link's in the bio.",
+ "words": [
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 0.0,
+   "e": 0.26
+  },
+  {
+   "w": "practice",
+   "raw": "practice",
+   "s": 0.26,
+   "e": 0.58
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 0.58,
+   "e": 0.84
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 0.84,
+   "e": 1.06
+  },
+  {
+   "w": "best",
+   "raw": "best",
+   "s": 1.06,
+   "e": 1.36
+  },
+  {
+   "w": "teaches",
+   "raw": "teaches",
+   "s": 1.36,
+   "e": 1.64
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 1.64,
+   "e": 2.0
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 2.0,
+   "e": 2.1
+  },
+  {
+   "w": "least",
+   "raw": "least.",
+   "s": 2.1,
+   "e": 2.38
+  },
+  {
+   "w": "why",
+   "raw": "Why",
+   "s": 3.0,
+   "e": 3.04
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 3.04,
+   "e": 3.18
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 3.18,
+   "e": 3.3
+  },
+  {
+   "w": "stop",
+   "raw": "stop",
+   "s": 3.3,
+   "e": 3.54
+  },
+  {
+   "w": "doing",
+   "raw": "doing",
+   "s": 3.54,
+   "e": 3.82
+  },
+  {
+   "w": "things",
+   "raw": "things",
+   "s": 3.82,
+   "e": 4.18
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 4.18,
+   "e": 4.36
+  },
+  {
+   "w": "know",
+   "raw": "know",
+   "s": 4.36,
+   "e": 4.52
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 4.52,
+   "e": 4.68
+  },
+  {
+   "w": "good",
+   "raw": "good",
+   "s": 4.68,
+   "e": 4.84
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 4.84,
+   "e": 5.06
+  },
+  {
+   "w": "us",
+   "raw": "us?",
+   "s": 5.06,
+   "e": 5.32
+  },
+  {
+   "w": "reason",
+   "raw": "Reason",
+   "s": 5.64,
+   "e": 5.8
+  },
+  {
+   "w": "21",
+   "raw": "21.",
+   "s": 5.8,
+   "e": 6.38
+  },
+  {
+   "w": "rhea",
+   "raw": "Rhea",
+   "s": 7.02,
+   "e": 7.1
+  },
+  {
+   "w": "has",
+   "raw": "has",
+   "s": 7.1,
+   "e": 7.34
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 7.34,
+   "e": 7.5
+  },
+  {
+   "w": "maths",
+   "raw": "maths",
+   "s": 7.5,
+   "e": 7.72
+  },
+  {
+   "w": "exam",
+   "raw": "exam,",
+   "s": 7.72,
+   "e": 8.2
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "s": 8.52,
+   "e": 8.66
+  },
+  {
+   "w": "problems",
+   "raw": "problems",
+   "s": 8.66,
+   "e": 9.12
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 9.12,
+   "e": 9.3
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 9.3,
+   "e": 9.48
+  },
+  {
+   "w": "type",
+   "raw": "type,",
+   "s": 9.48,
+   "e": 9.78
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 9.88,
+   "e": 10.02
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "s": 10.02,
+   "e": 10.28
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 10.28,
+   "e": 10.42
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 10.42,
+   "e": 10.52
+  },
+  {
+   "w": "next",
+   "raw": "next.",
+   "s": 10.52,
+   "e": 10.84
+  },
+  {
+   "w": "she",
+   "raw": "She",
+   "s": 11.22,
+   "e": 11.42
+  },
+  {
+   "w": "gets",
+   "raw": "gets",
+   "s": 11.42,
+   "e": 11.58
+  },
+  {
+   "w": "almost",
+   "raw": "almost",
+   "s": 11.58,
+   "e": 11.94
+  },
+  {
+   "w": "everyone",
+   "raw": "everyone",
+   "s": 11.94,
+   "e": 12.4
+  },
+  {
+   "w": "right",
+   "raw": "right,",
+   "s": 12.4,
+   "e": 12.72
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 12.92,
+   "e": 13.02
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 13.02,
+   "e": 13.24
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 13.24,
+   "e": 13.46
+  },
+  {
+   "w": "shes",
+   "raw": "she's",
+   "s": 13.46,
+   "e": 13.74
+  },
+  {
+   "w": "got",
+   "raw": "got",
+   "s": 13.74,
+   "e": 13.94
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 13.94,
+   "e": 14.22
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 14.44,
+   "e": 14.64
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 14.64,
+   "e": 14.76
+  },
+  {
+   "w": "exam",
+   "raw": "exam",
+   "s": 14.76,
+   "e": 15.12
+  },
+  {
+   "w": "mixes",
+   "raw": "mixes",
+   "s": 15.12,
+   "e": 15.44
+  },
+  {
+   "w": "them",
+   "raw": "them",
+   "s": 15.44,
+   "e": 15.62
+  },
+  {
+   "w": "up",
+   "raw": "up",
+   "s": 15.62,
+   "e": 15.78
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 15.78,
+   "e": 15.92
+  },
+  {
+   "w": "she",
+   "raw": "she",
+   "s": 15.92,
+   "e": 16.08
+  },
+  {
+   "w": "blanks",
+   "raw": "blanks.",
+   "s": 16.08,
+   "e": 16.4
+  },
+  {
+   "w": "she",
+   "raw": "She",
+   "s": 16.84,
+   "e": 17.02
+  },
+  {
+   "w": "knew",
+   "raw": "knew",
+   "s": 17.02,
+   "e": 17.12
+  },
+  {
+   "w": "how",
+   "raw": "how",
+   "s": 17.12,
+   "e": 17.28
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 17.28,
+   "e": 17.42
+  },
+  {
+   "w": "solve",
+   "raw": "solve",
+   "s": 17.42,
+   "e": 17.66
+  },
+  {
+   "w": "them",
+   "raw": "them,",
+   "s": 17.66,
+   "e": 17.88
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 17.96,
+   "e": 18.08
+  },
+  {
+   "w": "which",
+   "raw": "which",
+   "s": 18.08,
+   "e": 18.3
+  },
+  {
+   "w": "method",
+   "raw": "method",
+   "s": 18.3,
+   "e": 18.5
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 18.5,
+   "e": 18.76
+  },
+  {
+   "w": "pick",
+   "raw": "pick.",
+   "s": 18.76,
+   "e": 18.98
+  },
+  {
+   "w": "in",
+   "raw": "In",
+   "s": 19.36,
+   "e": 19.52
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 19.52,
+   "e": 19.7
+  },
+  {
+   "w": "study",
+   "raw": "study,",
+   "s": 19.7,
+   "e": 20.06
+  },
+  {
+   "w": "students",
+   "raw": "students",
+   "s": 20.32,
+   "e": 20.52
+  },
+  {
+   "w": "who",
+   "raw": "who",
+   "s": 20.52,
+   "e": 20.78
+  },
+  {
+   "w": "mix",
+   "raw": "mix",
+   "s": 20.78,
+   "e": 20.94
+  },
+  {
+   "w": "their",
+   "raw": "their",
+   "s": 20.94,
+   "e": 21.14
+  },
+  {
+   "w": "problems",
+   "raw": "problems",
+   "s": 21.14,
+   "e": 21.54
+  },
+  {
+   "w": "scored",
+   "raw": "scored",
+   "s": 21.54,
+   "e": 21.9
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 21.9,
+   "e": 22.22
+  },
+  {
+   "w": "times",
+   "raw": "times",
+   "s": 22.22,
+   "e": 22.54
+  },
+  {
+   "w": "higher",
+   "raw": "higher",
+   "s": 22.54,
+   "e": 22.84
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 22.84,
+   "e": 23.02
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 23.02,
+   "e": 23.16
+  },
+  {
+   "w": "later",
+   "raw": "later.",
+   "s": 23.16,
+   "e": 23.52
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 23.8,
+   "e": 24.04
+  },
+  {
+   "w": "rhea",
+   "raw": "Rhea",
+   "s": 24.04,
+   "e": 24.28
+  },
+  {
+   "w": "shuffles",
+   "raw": "shuffles",
+   "s": 24.28,
+   "e": 24.7
+  },
+  {
+   "w": "them",
+   "raw": "them,",
+   "s": 24.7,
+   "e": 24.94
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 25.08,
+   "e": 25.18
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 25.18,
+   "e": 25.4
+  },
+  {
+   "w": "slower",
+   "raw": "slower",
+   "s": 25.4,
+   "e": 25.74
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 25.74,
+   "e": 25.98
+  },
+  {
+   "w": "she",
+   "raw": "she",
+   "s": 25.98,
+   "e": 26.12
+  },
+  {
+   "w": "gets",
+   "raw": "gets",
+   "s": 26.12,
+   "e": 26.3
+  },
+  {
+   "w": "more",
+   "raw": "more",
+   "s": 26.3,
+   "e": 26.56
+  },
+  {
+   "w": "wrong",
+   "raw": "wrong,",
+   "s": 26.56,
+   "e": 26.92
+  },
+  {
+   "w": "most",
+   "raw": "most",
+   "s": 27.18,
+   "e": 27.32
+  },
+  {
+   "w": "people",
+   "raw": "people",
+   "s": 27.32,
+   "e": 27.58
+  },
+  {
+   "w": "quit",
+   "raw": "quit",
+   "s": 27.58,
+   "e": 27.82
+  },
+  {
+   "w": "here",
+   "raw": "here.",
+   "s": 27.82,
+   "e": 28.12
+  },
+  {
+   "w": "but",
+   "raw": "But",
+   "s": 28.56,
+   "e": 28.68
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 28.68,
+   "e": 28.86
+  },
+  {
+   "w": "struggle",
+   "raw": "struggle",
+   "s": 28.86,
+   "e": 29.22
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 29.22,
+   "e": 29.52
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 29.52,
+   "e": 29.7
+  },
+  {
+   "w": "learning",
+   "raw": "learning.",
+   "s": 29.7,
+   "e": 30.0
+  },
+  {
+   "w": "exam",
+   "raw": "Exam",
+   "s": 30.64,
+   "e": 30.96
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 30.96,
+   "e": 31.28
+  },
+  {
+   "w": "she",
+   "raw": "she",
+   "s": 31.42,
+   "e": 31.5
+  },
+  {
+   "w": "knows",
+   "raw": "knows",
+   "s": 31.5,
+   "e": 31.68
+  },
+  {
+   "w": "which",
+   "raw": "which",
+   "s": 31.68,
+   "e": 31.98
+  },
+  {
+   "w": "method",
+   "raw": "method",
+   "s": 31.98,
+   "e": 32.28
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 32.28,
+   "e": 32.52
+  },
+  {
+   "w": "pick",
+   "raw": "pick.",
+   "s": 32.52,
+   "e": 32.78
+  },
+  {
+   "w": "send",
+   "raw": "Send",
+   "s": 33.48,
+   "e": 33.6
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 33.6,
+   "e": 33.78
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 33.78,
+   "e": 33.92
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 33.92,
+   "e": 34.06
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 34.06,
+   "e": 34.3
+  },
+  {
+   "w": "who",
+   "raw": "who",
+   "s": 34.3,
+   "e": 34.62
+  },
+  {
+   "w": "calls",
+   "raw": "calls",
+   "s": 34.62,
+   "e": 34.88
+  },
+  {
+   "w": "20",
+   "raw": "20",
+   "s": 34.88,
+   "e": 35.24
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 35.24,
+   "e": 35.38
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 35.38,
+   "e": 35.5
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 35.5,
+   "e": 35.74
+  },
+  {
+   "w": "problem",
+   "raw": "problem",
+   "s": 35.74,
+   "e": 36.16
+  },
+  {
+   "w": "revision",
+   "raw": "revision.",
+   "s": 36.16,
+   "e": 36.56
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 37.12,
+   "e": 37.42
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 37.42,
+   "e": 37.58
+  },
+  {
+   "w": "demure",
+   "raw": "demure",
+   "s": 37.58,
+   "e": 37.98
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 37.98,
+   "e": 38.14
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 38.14,
+   "e": 38.4
+  },
+  {
+   "w": "archive",
+   "raw": "Archive",
+   "s": 38.98,
+   "e": 38.98
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 38.98,
+   "e": 39.22
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 39.22,
+   "e": 39.42
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 39.42,
+   "e": 39.8
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 39.8,
+   "e": 40.04
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 40.04,
+   "e": 40.2
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 40.2,
+   "e": 40.34
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 40.34,
+   "e": 40.5
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 40.5,
+   "e": 40.84
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 40.84,
+   "e": 41.14
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 41.14,
+   "e": 41.32
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 41.32,
+   "e": 41.44
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 41.44,
+   "e": 41.76
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 41.76,
+   "e": 42.1
+  },
+  {
+   "w": "follow",
+   "raw": "Follow",
+   "s": 42.6,
+   "e": 42.76
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 42.76,
+   "e": 43.02
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 43.02,
+   "e": 43.22
+  },
+  {
+   "w": "reason",
+   "raw": "reason",
+   "s": 43.22,
+   "e": 43.5
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 43.5,
+   "e": 43.68
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 43.68,
+   "e": 43.9
+  },
+  {
+   "w": "next",
+   "raw": "next,",
+   "s": 44.08,
+   "e": 44.4
+  },
+  {
+   "w": "while",
+   "raw": "while",
+   "s": 44.64,
+   "e": 44.76
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 44.76,
+   "e": 44.9
+  },
+  {
+   "w": "afternoon",
+   "raw": "afternoon",
+   "s": 44.9,
+   "e": 45.3
+  },
+  {
+   "w": "crash",
+   "raw": "crash",
+   "s": 45.3,
+   "e": 45.66
+  },
+  {
+   "w": "starts",
+   "raw": "starts",
+   "s": 45.66,
+   "e": 45.98
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 45.98,
+   "e": 46.14
+  },
+  {
+   "w": "lunch",
+   "raw": "lunch.",
+   "s": 46.14,
+   "e": 46.4
+  },
+  {
+   "w": "what",
+   "raw": "What",
+   "s": 46.92,
+   "e": 47.06
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 47.06,
+   "e": 47.16
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 47.16,
+   "e": 47.3
+  },
+  {
+   "w": "practicing",
+   "raw": "practicing",
+   "s": 47.3,
+   "e": 47.66
+  },
+  {
+   "w": "right",
+   "raw": "right",
+   "s": 47.66,
+   "e": 48.04
+  },
+  {
+   "w": "now",
+   "raw": "now?",
+   "s": 48.04,
+   "e": 48.36
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 48.54,
+   "e": 48.62
+  },
+  {
+   "w": "links",
+   "raw": "link's",
+   "s": 48.62,
+   "e": 48.92
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 48.92,
+   "e": 49.04
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 49.04,
+   "e": 49.14
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 49.14,
+   "e": 49.42
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 4.68,
+   "text": "The practice that feels best teaches you the least. Why do we stop doing things we know are"
+  },
+  {
+   "s": 4.68,
+   "e": 10.84,
+   "text": "good for us? Reason 21. Rhea has a maths exam, 20 problems of one type, then 20 of the next."
+  },
+  {
+   "s": 11.22,
+   "e": 15.92,
+   "text": "She gets almost everyone right, it feels like she's got it. Then the exam mixes them up and"
+  },
+  {
+   "s": 15.92,
+   "e": 20.94,
+   "text": "she blanks. She knew how to solve them, not which method to pick. In one study, students who mix"
+  },
+  {
+   "s": 20.94,
+   "e": 25.98,
+   "text": "their problems scored three times higher a week later. So Rhea shuffles them, it feels slower and"
+  },
+  {
+   "s": 25.98,
+   "e": 31.28,
+   "text": "she gets more wrong, most people quit here. But that struggle is the learning. Exam day,"
+  },
+  {
+   "s": 31.42,
+   "e": 36.56,
+   "text": "she knows which method to pick. Send this to the friend who calls 20 of the same problem revision."
+  },
+  {
+   "s": 37.12,
+   "e": 41.44,
+   "text": "That's what demure is for. Archive your dream today and break it into small steps you can"
+  },
+  {
+   "s": 41.44,
+   "e": 46.4,
+   "text": "actually do. Follow for one reason a day, next, while your afternoon crash starts at lunch."
+  },
+  {
+   "s": 46.92,
+   "e": 49.42,
+   "text": "What are you practicing right now? The link's in the bio."
+  }
+ ],
+ "wps": 3.37
+}
