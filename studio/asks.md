@@ -226,7 +226,7 @@ Instagram locked the account ("we locked your account to protect you from a poss
   4. **Mac restart** please (uptime 268 days, 13.7 of 14 GB swap used). whisper takes ~20 min per reel and Chrome crashes in screenshots; a 50 s reel takes 4-5 h to record. This is now the slowest part of the pipeline.
 
 ## VASK-029: Schedule the backlog (Mon + Tue batches, 6 reels) + Thu batch, restart the Mac (2026-11-11)
-- Status: open
+- Status: mostly done 2026-11-11 22:30 (backlog scheduled through Sat 14); leftovers and screenshots moved to VASK-030
 - What: 6 auto-approved reels are still unscheduled (VASK-028 open): Mon batch **ill-out-of-sight**, **ill-sunday-practice**, **pixel-kabir-2**; Tue batch **ill-perfect-week**, **ill-borrowed-sleep**, **pixel-kabir-3** (frames checked, all clean). New today: **ill-just-today** (Reason #20) and **ill-mixed-practice** (Reason #21), rendering now.
 - Steps:
   1. Next browser session: Mon batch on IG, X, YT (09:30 / 13:00 / 19:30 of the next free day). Max 5 IG flows per session, so the Tue batch goes in a second session (next day's slots). Then the Thu batch (13:00 just-today, 19:30 mixed-practice) the day after.
@@ -234,3 +234,11 @@ Instagram locked the account ("we locked your account to protect you from a poss
   3. If you post them, tick `[x]` in `studio/post-queue.md` (or say "scheduled" in `inbox/notes.md`) so I register them in analytics.
   4. Wanted: app screenshots of avg watch time + % watched for ill-first-ten-minutes and ill-decide-once (posted Nov 8) into `inbox/metrics/`, plus one profile screenshot for the follower count.
   5. **Mac restart** please: uptime 270 days, 13.6 of 14 GB swap used. A 50 s reel takes ~4 h to record, and yesterday's run timed out without building anything.
+
+## VASK-030: Finish Sat scheduling, schedule Sun 15 batch, screenshots, restart (2026-11-12)
+- Status: open
+- Steps:
+  1. Next browser session (Thu): Instagram **pixel-kabir-3** Fri 13 19:30, **ill-just-today** Sat 14 13:00, **ill-mixed-practice** Sat 14 19:30; YouTube **ill-mixed-practice** Sat 14 19:30.
+  2. Then the Sun 15 batch on IG, X and YT: **ill-afternoon-crash** 13:00, **ill-guessed-deadline** 19:30 (`ready-to-post/2026-11-15-*`, rendered). That is 5 IG flows in total, so it fits one session. Then Mon 16 13:00 **ill-make-first** (`ready-to-post/2026-11-16-ill-make-first/`) in the next session.
+  3. Wanted, the one thing that unblocks learning: app screenshots (views, avg watch time, % watched, saves, shares, follows) for **ill-first-ten-minutes** and **ill-decide-once** (live since Nov 8, the first on-topic V-EXP-34 reels), plus one profile screenshot. Nothing has been measured since Nov 6, so 11 reels have no data yet.
+  4. **Mac restart** still needed: uptime 270 days, swap 13.8 of 15 GB.

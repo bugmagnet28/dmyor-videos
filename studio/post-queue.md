@@ -13,6 +13,13 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
   - Sat 14: ill-just-today 13:00 (X + YT; **IG still to schedule**), ill-mixed-practice 19:30 (X only; **IG + YT still to schedule**: IG 5-flow limit and YT daily upload limit hit tonight).
   - Next session (Thu): IG kabir-3 Fri 19:30, just-today Sat 13:00, mixed-practice Sat 19:30; YT mixed-practice Sat 19:30. Shift the next agent batch to Sun 15.
 
+## Built Thu 2026-11-12 for Sun 2026-11-15 + Mon 16 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 5
+
+- [ ] Sun 15 13:00 IST · **ill-afternoon-crash** (Reason #22 "the 2 PM slot", pillar D, alertness bars with red 2:30 "Goal" bar on frame 0, 49.7 s; keeps mixed-practice's "Next: why your afternoon crash starts at lunch"; follow line "Next: why your deadline makes you quit") · `ready-to-post/2026-11-15-ill-afternoon-crash/`
+- [ ] Sun 15 19:30 IST · **ill-guessed-deadline** (Reason #23 "the guessed deadline", pillar A, story B (Arjun), bars Guessed 34 vs Took 56 days on frame 0 (Buehler et al. 1994), ~50 s, strongest; follow line "Next: why reading about it feels like doing it", next run builds it) · `ready-to-post/2026-11-15-ill-guessed-deadline/`
+- [ ] Mon 16 13:00 IST · **ill-make-first** (Reason #24 "reading about it", pillar A, structure C, bars 40 writing videos vs 0 pages on frame 0, 49.6 s; keeps guessed-deadline's promise; follow line "Next: why you stop improving after month one", next run builds it) · `ready-to-post/2026-11-16-ill-make-first/`
+- Order: after the Sat 14 pair (afternoon-crash must follow mixed-practice; make-first must follow guessed-deadline). Render status: detached finisher `studio/state/finish_2026-11-15.log`; check `video.mp4` exists and look at `studio/state/frames-2026-11-15/` before scheduling.
+
 ## Built Wed 2026-11-11 for Thu 2026-11-12 (auto-approved, to schedule after the Mon + Tue batches). Instagram, X and YouTube Shorts. V-EXP-34 batch 4
 
 - [~] Sat 14 13:00 IST (X + YT scheduled, IG pending) · **ill-just-today** (Reason #20 "just today", pillar B, bars 1 day vs 104 days on frame 0, 49.6 s; follow line "Next: why the practice that feels best teaches you least") · `ready-to-post/2026-11-12-ill-just-today/`

@@ -1,0 +1,236 @@
+{
+ "total": 49.64,
+ "brandT": 45.64,
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Writing videos watched",
+      40,
+      "ink"
+     ],
+     [
+      "Pages written",
+      0,
+      "red"
+     ]
+    ],
+    "max": 40,
+    "unit": "",
+    "chip": "Feels like progress"
+   },
+   "head": "Reading about it<br><b>isn't</b> doing it.",
+   "t0": 0.0,
+   "t1": 3.09
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 24,
+    "title": "Reading about it",
+    "cue": [
+     "good",
+     "Reason"
+    ],
+    "at": [
+     1.77,
+     2.91
+    ]
+   },
+   "head": "Why we <b>stop</b>.",
+   "t0": 3.09,
+   "t1": 7.13
+  },
+  {
+   "type": "progress-bars",
+   "params": {
+    "rows": [
+     [
+      "Books on writing",
+      3,
+      3,
+      " books"
+     ],
+     [
+      "Writing videos",
+      40,
+      40,
+      " videos"
+     ],
+     [
+      "Pages written",
+      0,
+      100,
+      " pages"
+     ]
+    ],
+    "cue": [
+     "Three",
+     "forty",
+     "zero"
+    ],
+    "at": [
+     1.19,
+     1.92,
+     4.15
+    ]
+   },
+   "head": "Weeks on it.<br><b>Zero</b> pages.",
+   "t0": 7.13,
+   "t1": 13.8
+  },
+  {
+   "type": "easy-hard",
+   "params": {
+    "a": "Reading about it",
+    "ar": "feels like work",
+    "b": "Writing a page",
+    "br": "is the work",
+    "cue": [
+     "Learning",
+     "made"
+    ],
+    "at": [
+     0.05,
+     3.77
+    ]
+   },
+   "head": "Busy is not<br><b>progress</b>.",
+   "t0": 13.75,
+   "t1": 21.1
+  },
+  {
+   "type": "list-rewrite",
+   "params": {
+    "rows": [
+     [
+      "Learn, then make",
+      "Make first, then learn"
+     ],
+     [
+      "Writing video first",
+      "100 words, then a video"
+     ],
+     [
+      "Running form article",
+      "15-min run, then read"
+     ]
+    ],
+    "cue": [
+     "flip",
+     "hundred",
+     "fifteen"
+    ],
+    "at": [
+     0.27,
+     2.97,
+     5.24
+    ]
+   },
+   "head": "Make <b>first</b>.<br>Learn second.",
+   "t0": 21.05,
+   "t1": 27.96
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "a": "Learn first",
+    "b": "Make first",
+    "rows": [
+     [
+      "Each day",
+      "A video",
+      "100 words"
+     ],
+     [
+      "6 weeks",
+      "0 pages",
+      "4K words"
+     ],
+     [
+      "The goal",
+      "Planned",
+      "Started"
+     ]
+    ],
+    "cue": [
+     "Six",
+     "thousand"
+    ],
+    "at": [
+     0.05,
+     1.31
+    ]
+   },
+   "head": "Six weeks.<br><b>4,000</b> words.",
+   "t0": 27.91,
+   "t1": 32.07
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "MAKE FIRST",
+    "items": [
+     "Make one thing",
+     "Then learn one thing",
+     "Only what it needs"
+    ],
+    "cue": [
+     "Send",
+     "full",
+     "empty"
+    ],
+    "at": [
+     0.05,
+     1.13,
+     2.53
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>.",
+   "t0": 32.07,
+   "t1": 35.87
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Write my first novel",
+    "date": "Open it again: Nov 2027",
+    "steps": [
+     "100 words a day",
+     "Then one craft tip",
+     "Sunday: reread"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 35.87,
+   "t1": 41.23
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why you stop improving after month one",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "month"
+    ],
+    "at": [
+     0.2,
+     3.45
+    ]
+   },
+   "head": "One reason<br><b>a day</b>.",
+   "t0": 41.23,
+   "t1": 45.64
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  18.2,
+  27.86
+ ]
+}

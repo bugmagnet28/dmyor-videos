@@ -1,0 +1,10 @@
+reels/ill-make-first/audio.mp3  49.66s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body body body land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/4966 [00:00<?, ?frames/s] 56%|█████▋    | 2796/4966 [00:35<00:27, 79.81frames/s] 56%|█████▋    | 2796/4966 [00:50<00:27, 79.81frames/s]100%|██████████| 4966/4966 [01:07<00:00, 72.37frames/s]100%|██████████| 4966/4966 [01:07<00:00, 73.52frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+166 words, 49.66s, 3.34 words/sec
+-> reels/ill-make-first/cues.json
+sfx present: 42 sounds -> reels/ill-make-first/audio_mixed.mp3 riffle@0.1 pop@3.1 riffle@3.4 pop@6.0 swish@7.1 ratchet@8.3 ratchet@9.1 ratchet@11.3 right@12.5 swish@13.8 pop@17.5 right@18.1 swish@21.1 pencil@21.7 right@22.6 pencil@24.0 pencil@24.4 right@25.3 pencil@26.3 pencil@26.7 right@27.6 swish@27.9 pop@28.4 pop@28.8 reveal@29.2 pop@32.1 right@32.5 pencil@33.2 right@33.5 pencil@34.6 right@35.0 tone@35.9 stamp@36.0 pop@37.6 pop@38.1 right@38.9 right@39.4 right@39.9 pop@41.3 toggle@41.7 right@42.0 chord@45.6
+built reels/ill-make-first: 49.64s, 9 scenes, brand 45.64s, 3.34 words/sec
+scenes: [('bar-compare', 0.0, 3.09, None), ('series-card', 3.09, 7.13, [1.77, 2.91]), ('progress-bars', 7.13, 13.8, [1.19, 1.92, 4.15]), ('easy-hard', 13.75, 21.1, [0.05, 3.77]), ('list-rewrite', 21.05, 27.96, [0.27, 2.97, 5.24]), ('before-after', 27.91, 32.07, [0.05, 1.31]), ('rule-card', 32.07, 35.87, [0.05, 1.13, 2.53]), ('dream-to-steps', 35.87, 41.23, None), ('follow-next', 41.23, 45.64, [0.2, 0.47])]

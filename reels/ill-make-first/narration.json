@@ -1,0 +1,203 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 12,
+ "silences": [
+  "Then one",
+  "Six weeks"
+ ],
+ "spoken": "[hook] Reading about your goal feels like doing it. It isn't. || Why do we stop doing things we know are good for us? Reason twenty-four. || [turn] Say you want to write a book. Three books on writing, forty videos. || Pages written: zero. But it feels like weeks of work. || Learning feels like progress. You're busy, and it's all about the goal. But nothing gets made. || Then one day you see how far you haven't come. You quit. || So flip the order. Make first, learn second. || Write a hundred words, then watch one video. Run fifteen minutes, then read about form. || [land] Six weeks later: four thousand words, not forty videos. || Send this to the friend with a full bookmarks folder and an empty page. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. Next: why you stop improving after month one. || [outro] What are you reading about instead of doing? The link's in the bio.",
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Writing videos watched",
+      40,
+      "ink"
+     ],
+     [
+      "Pages written",
+      0,
+      "red"
+     ]
+    ],
+    "max": 40,
+    "unit": "",
+    "chip": "Feels like progress"
+   },
+   "head": "Reading about it<br><b>isn't</b> doing it."
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 24,
+    "title": "Reading about it",
+    "cue": [
+     "good",
+     "Reason"
+    ]
+   },
+   "head": "Why we <b>stop</b>."
+  },
+  {
+   "type": "progress-bars",
+   "params": {
+    "rows": [
+     [
+      "Books on writing",
+      3,
+      3,
+      " books"
+     ],
+     [
+      "Writing videos",
+      40,
+      40,
+      " videos"
+     ],
+     [
+      "Pages written",
+      0,
+      100,
+      " pages"
+     ]
+    ],
+    "cue": [
+     "Three",
+     "forty",
+     "zero"
+    ]
+   },
+   "head": "Weeks on it.<br><b>Zero</b> pages."
+  },
+  null,
+  {
+   "type": "easy-hard",
+   "params": {
+    "a": "Reading about it",
+    "ar": "feels like work",
+    "b": "Writing a page",
+    "br": "is the work",
+    "cue": [
+     "Learning",
+     "made"
+    ]
+   },
+   "head": "Busy is not<br><b>progress</b>."
+  },
+  null,
+  {
+   "type": "list-rewrite",
+   "params": {
+    "rows": [
+     [
+      "Learn, then make",
+      "Make first, then learn"
+     ],
+     [
+      "Writing video first",
+      "100 words, then a video"
+     ],
+     [
+      "Running form article",
+      "15-min run, then read"
+     ]
+    ],
+    "cue": [
+     "flip",
+     "hundred",
+     "fifteen"
+    ]
+   },
+   "head": "Make <b>first</b>.<br>Learn second."
+  },
+  null,
+  {
+   "type": "before-after",
+   "params": {
+    "a": "Learn first",
+    "b": "Make first",
+    "rows": [
+     [
+      "Each day",
+      "A video",
+      "100 words"
+     ],
+     [
+      "6 weeks",
+      "0 pages",
+      "4K words"
+     ],
+     [
+      "The goal",
+      "Planned",
+      "Started"
+     ]
+    ],
+    "cue": [
+     "Six",
+     "thousand"
+    ]
+   },
+   "head": "Six weeks.<br><b>4,000</b> words."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "MAKE FIRST",
+    "items": [
+     "Make one thing",
+     "Then learn one thing",
+     "Only what it needs"
+    ],
+    "cue": [
+     "Send",
+     "full",
+     "empty"
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Write my first novel",
+    "date": "Open it again: Nov 2027",
+    "steps": [
+     "100 words a day",
+     "Then one craft tip",
+     "Sunday: reread"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why you stop improving after month one",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "month"
+    ]
+   },
+   "head": "One reason<br><b>a day</b>."
+  },
+  null
+ ],
+ "caption": {
+  "instagram": "How to stop procrastinating by learning: make first, learn second.\n\nWhy we stop doing things we know are good for us, reason #24: reading about it. Three books on writing, forty videos, zero pages. Learning feels like progress because you're busy and it's all about the goal. But nothing gets made, and one day you see how far you haven't come.\n\nThe fix:\n- Make one thing first (100 words, a 15-minute run)\n- Then learn one thing\n- Only what today's step needs\n\nWhat are you reading about instead of doing? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#procrastination #writingtips #goals #selfimprovement #habits",
+  "x": "Reading about your goal feels like doing it. It isn't.\n\nThree books on writing, forty videos, zero pages.\n\nFlip the order: make first, learn second. 100 words, then one video. A 15-minute run, then read about form.",
+  "youtube_title": "How to stop procrastinating by learning too much #Shorts"
+ }
+}

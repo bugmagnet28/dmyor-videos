@@ -1,0 +1,1062 @@
+{
+ "audio": "audio.mp3",
+ "duration": 50.14,
+ "text": "Your goal didn't fail, your deadline was a guess. Why do we stop doing things we know are good for us? Reason 23. Arjun gives himself 4 weeks for his design portfolio. Week 4 it's half done, he feels behind so he stops opening it. We plan from the best case. In one study students guess their thesis would take 34 days, it took 56. The goal was fine, the date was wrong. So before you set a date ask, how long did the last thing like this take me? Arjun's last big project took 6 weeks so he plans 9. Now at week 4 it's half done, right on track. Send this to the friend who's always behind their own plan. That's what demure is for, archive your dream today and break it into small steps you can actually do. Follow for one reason a day, next, why reading about it feels like doing it. Which deadline are you behind on, the links in the bio?",
+ "words": [
+  {
+   "w": "your",
+   "raw": "Your",
+   "s": 0.0,
+   "e": 0.3
+  },
+  {
+   "w": "goal",
+   "raw": "goal",
+   "s": 0.3,
+   "e": 0.5
+  },
+  {
+   "w": "didnt",
+   "raw": "didn't",
+   "s": 0.5,
+   "e": 0.84
+  },
+  {
+   "w": "fail",
+   "raw": "fail,",
+   "s": 0.84,
+   "e": 1.1
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 1.26,
+   "e": 1.36
+  },
+  {
+   "w": "deadline",
+   "raw": "deadline",
+   "s": 1.36,
+   "e": 1.64
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 1.64,
+   "e": 1.92
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 1.92,
+   "e": 2.08
+  },
+  {
+   "w": "guess",
+   "raw": "guess.",
+   "s": 2.08,
+   "e": 2.3
+  },
+  {
+   "w": "why",
+   "raw": "Why",
+   "s": 2.86,
+   "e": 2.98
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 2.98,
+   "e": 3.12
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 3.12,
+   "e": 3.24
+  },
+  {
+   "w": "stop",
+   "raw": "stop",
+   "s": 3.24,
+   "e": 3.5
+  },
+  {
+   "w": "doing",
+   "raw": "doing",
+   "s": 3.5,
+   "e": 3.76
+  },
+  {
+   "w": "things",
+   "raw": "things",
+   "s": 3.76,
+   "e": 4.1
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 4.1,
+   "e": 4.3
+  },
+  {
+   "w": "know",
+   "raw": "know",
+   "s": 4.3,
+   "e": 4.46
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 4.46,
+   "e": 4.62
+  },
+  {
+   "w": "good",
+   "raw": "good",
+   "s": 4.62,
+   "e": 4.78
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 4.78,
+   "e": 5.0
+  },
+  {
+   "w": "us",
+   "raw": "us?",
+   "s": 5.0,
+   "e": 5.28
+  },
+  {
+   "w": "reason",
+   "raw": "Reason",
+   "s": 5.58,
+   "e": 5.74
+  },
+  {
+   "w": "23",
+   "raw": "23.",
+   "s": 5.74,
+   "e": 6.38
+  },
+  {
+   "w": "arjun",
+   "raw": "Arjun",
+   "s": 6.96,
+   "e": 7.16
+  },
+  {
+   "w": "gives",
+   "raw": "gives",
+   "s": 7.16,
+   "e": 7.4
+  },
+  {
+   "w": "himself",
+   "raw": "himself",
+   "s": 7.4,
+   "e": 7.82
+  },
+  {
+   "w": "4",
+   "raw": "4",
+   "s": 7.82,
+   "e": 8.1
+  },
+  {
+   "w": "weeks",
+   "raw": "weeks",
+   "s": 8.1,
+   "e": 8.36
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 8.36,
+   "e": 8.6
+  },
+  {
+   "w": "his",
+   "raw": "his",
+   "s": 8.6,
+   "e": 8.78
+  },
+  {
+   "w": "design",
+   "raw": "design",
+   "s": 8.78,
+   "e": 9.2
+  },
+  {
+   "w": "portfolio",
+   "raw": "portfolio.",
+   "s": 9.2,
+   "e": 9.84
+  },
+  {
+   "w": "week",
+   "raw": "Week",
+   "s": 10.42,
+   "e": 10.52
+  },
+  {
+   "w": "4",
+   "raw": "4",
+   "s": 10.52,
+   "e": 10.82
+  },
+  {
+   "w": "its",
+   "raw": "it's",
+   "s": 10.82,
+   "e": 11.04
+  },
+  {
+   "w": "half",
+   "raw": "half",
+   "s": 11.04,
+   "e": 11.2
+  },
+  {
+   "w": "done",
+   "raw": "done,",
+   "s": 11.2,
+   "e": 11.46
+  },
+  {
+   "w": "he",
+   "raw": "he",
+   "s": 11.72,
+   "e": 11.82
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 11.82,
+   "e": 12.04
+  },
+  {
+   "w": "behind",
+   "raw": "behind",
+   "s": 12.04,
+   "e": 12.5
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 12.5,
+   "e": 12.76
+  },
+  {
+   "w": "he",
+   "raw": "he",
+   "s": 12.76,
+   "e": 12.88
+  },
+  {
+   "w": "stops",
+   "raw": "stops",
+   "s": 12.88,
+   "e": 13.16
+  },
+  {
+   "w": "opening",
+   "raw": "opening",
+   "s": 13.16,
+   "e": 13.58
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 13.58,
+   "e": 13.9
+  },
+  {
+   "w": "we",
+   "raw": "We",
+   "s": 14.14,
+   "e": 14.26
+  },
+  {
+   "w": "plan",
+   "raw": "plan",
+   "s": 14.26,
+   "e": 14.48
+  },
+  {
+   "w": "from",
+   "raw": "from",
+   "s": 14.48,
+   "e": 14.66
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 14.66,
+   "e": 14.82
+  },
+  {
+   "w": "best",
+   "raw": "best",
+   "s": 14.82,
+   "e": 15.02
+  },
+  {
+   "w": "case",
+   "raw": "case.",
+   "s": 15.02,
+   "e": 15.34
+  },
+  {
+   "w": "in",
+   "raw": "In",
+   "s": 15.78,
+   "e": 15.9
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 15.9,
+   "e": 16.12
+  },
+  {
+   "w": "study",
+   "raw": "study",
+   "s": 16.12,
+   "e": 16.4
+  },
+  {
+   "w": "students",
+   "raw": "students",
+   "s": 16.4,
+   "e": 16.7
+  },
+  {
+   "w": "guess",
+   "raw": "guess",
+   "s": 16.7,
+   "e": 17.06
+  },
+  {
+   "w": "their",
+   "raw": "their",
+   "s": 17.06,
+   "e": 17.26
+  },
+  {
+   "w": "thesis",
+   "raw": "thesis",
+   "s": 17.26,
+   "e": 17.54
+  },
+  {
+   "w": "would",
+   "raw": "would",
+   "s": 17.54,
+   "e": 17.8
+  },
+  {
+   "w": "take",
+   "raw": "take",
+   "s": 17.8,
+   "e": 17.98
+  },
+  {
+   "w": "34",
+   "raw": "34",
+   "s": 17.98,
+   "e": 18.38
+  },
+  {
+   "w": "days",
+   "raw": "days,",
+   "s": 18.38,
+   "e": 18.76
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 18.98,
+   "e": 19.08
+  },
+  {
+   "w": "took",
+   "raw": "took",
+   "s": 19.08,
+   "e": 19.24
+  },
+  {
+   "w": "56",
+   "raw": "56.",
+   "s": 19.24,
+   "e": 19.76
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 20.24,
+   "e": 20.46
+  },
+  {
+   "w": "goal",
+   "raw": "goal",
+   "s": 20.46,
+   "e": 20.64
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 20.64,
+   "e": 20.84
+  },
+  {
+   "w": "fine",
+   "raw": "fine,",
+   "s": 20.84,
+   "e": 21.2
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 21.34,
+   "e": 21.42
+  },
+  {
+   "w": "date",
+   "raw": "date",
+   "s": 21.42,
+   "e": 21.58
+  },
+  {
+   "w": "was",
+   "raw": "was",
+   "s": 21.58,
+   "e": 21.76
+  },
+  {
+   "w": "wrong",
+   "raw": "wrong.",
+   "s": 21.76,
+   "e": 22.06
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 22.52,
+   "e": 22.7
+  },
+  {
+   "w": "before",
+   "raw": "before",
+   "s": 22.7,
+   "e": 22.9
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 22.9,
+   "e": 23.1
+  },
+  {
+   "w": "set",
+   "raw": "set",
+   "s": 23.1,
+   "e": 23.28
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 23.28,
+   "e": 23.38
+  },
+  {
+   "w": "date",
+   "raw": "date",
+   "s": 23.38,
+   "e": 23.56
+  },
+  {
+   "w": "ask",
+   "raw": "ask,",
+   "s": 23.56,
+   "e": 23.88
+  },
+  {
+   "w": "how",
+   "raw": "how",
+   "s": 24.22,
+   "e": 24.36
+  },
+  {
+   "w": "long",
+   "raw": "long",
+   "s": 24.36,
+   "e": 24.6
+  },
+  {
+   "w": "did",
+   "raw": "did",
+   "s": 24.6,
+   "e": 24.74
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 24.74,
+   "e": 24.9
+  },
+  {
+   "w": "last",
+   "raw": "last",
+   "s": 24.9,
+   "e": 25.1
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 25.1,
+   "e": 25.32
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 25.32,
+   "e": 25.48
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 25.48,
+   "e": 25.68
+  },
+  {
+   "w": "take",
+   "raw": "take",
+   "s": 25.68,
+   "e": 25.9
+  },
+  {
+   "w": "me",
+   "raw": "me?",
+   "s": 25.9,
+   "e": 26.18
+  },
+  {
+   "w": "arjuns",
+   "raw": "Arjun's",
+   "s": 26.68,
+   "e": 27.16
+  },
+  {
+   "w": "last",
+   "raw": "last",
+   "s": 27.16,
+   "e": 27.4
+  },
+  {
+   "w": "big",
+   "raw": "big",
+   "s": 27.4,
+   "e": 27.66
+  },
+  {
+   "w": "project",
+   "raw": "project",
+   "s": 27.66,
+   "e": 28.1
+  },
+  {
+   "w": "took",
+   "raw": "took",
+   "s": 28.1,
+   "e": 28.32
+  },
+  {
+   "w": "6",
+   "raw": "6",
+   "s": 28.32,
+   "e": 28.6
+  },
+  {
+   "w": "weeks",
+   "raw": "weeks",
+   "s": 28.6,
+   "e": 28.86
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 28.86,
+   "e": 29.22
+  },
+  {
+   "w": "he",
+   "raw": "he",
+   "s": 29.22,
+   "e": 29.36
+  },
+  {
+   "w": "plans",
+   "raw": "plans",
+   "s": 29.36,
+   "e": 29.6
+  },
+  {
+   "w": "9",
+   "raw": "9.",
+   "s": 29.6,
+   "e": 30.0
+  },
+  {
+   "w": "now",
+   "raw": "Now",
+   "s": 30.46,
+   "e": 30.78
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 30.78,
+   "e": 30.94
+  },
+  {
+   "w": "week",
+   "raw": "week",
+   "s": 30.94,
+   "e": 31.08
+  },
+  {
+   "w": "4",
+   "raw": "4",
+   "s": 31.08,
+   "e": 31.38
+  },
+  {
+   "w": "its",
+   "raw": "it's",
+   "s": 31.38,
+   "e": 31.58
+  },
+  {
+   "w": "half",
+   "raw": "half",
+   "s": 31.58,
+   "e": 31.72
+  },
+  {
+   "w": "done",
+   "raw": "done,",
+   "s": 31.72,
+   "e": 32.0
+  },
+  {
+   "w": "right",
+   "raw": "right",
+   "s": 32.14,
+   "e": 32.3
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 32.3,
+   "e": 32.48
+  },
+  {
+   "w": "track",
+   "raw": "track.",
+   "s": 32.48,
+   "e": 32.78
+  },
+  {
+   "w": "send",
+   "raw": "Send",
+   "s": 33.5,
+   "e": 33.6
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 33.6,
+   "e": 33.78
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 33.78,
+   "e": 33.92
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 33.92,
+   "e": 34.06
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 34.06,
+   "e": 34.3
+  },
+  {
+   "w": "whos",
+   "raw": "who's",
+   "s": 34.3,
+   "e": 34.64
+  },
+  {
+   "w": "always",
+   "raw": "always",
+   "s": 34.64,
+   "e": 34.94
+  },
+  {
+   "w": "behind",
+   "raw": "behind",
+   "s": 34.94,
+   "e": 35.36
+  },
+  {
+   "w": "their",
+   "raw": "their",
+   "s": 35.36,
+   "e": 35.56
+  },
+  {
+   "w": "own",
+   "raw": "own",
+   "s": 35.56,
+   "e": 35.76
+  },
+  {
+   "w": "plan",
+   "raw": "plan.",
+   "s": 35.76,
+   "e": 36.14
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 36.64,
+   "e": 36.9
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 36.9,
+   "e": 37.06
+  },
+  {
+   "w": "demure",
+   "raw": "demure",
+   "s": 37.06,
+   "e": 37.46
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 37.46,
+   "e": 37.62
+  },
+  {
+   "w": "for",
+   "raw": "for,",
+   "s": 37.62,
+   "e": 37.88
+  },
+  {
+   "w": "archive",
+   "raw": "archive",
+   "s": 38.24,
+   "e": 38.48
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 38.48,
+   "e": 38.7
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 38.7,
+   "e": 38.9
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 38.9,
+   "e": 39.26
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 39.26,
+   "e": 39.52
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 39.52,
+   "e": 39.7
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 39.7,
+   "e": 39.82
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 39.82,
+   "e": 39.98
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 39.98,
+   "e": 40.32
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 40.32,
+   "e": 40.6
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 40.6,
+   "e": 40.8
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 40.8,
+   "e": 40.94
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 40.94,
+   "e": 41.24
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 41.24,
+   "e": 41.58
+  },
+  {
+   "w": "follow",
+   "raw": "Follow",
+   "s": 42.1,
+   "e": 42.28
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 42.28,
+   "e": 42.54
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 42.54,
+   "e": 42.74
+  },
+  {
+   "w": "reason",
+   "raw": "reason",
+   "s": 42.74,
+   "e": 43.04
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 43.04,
+   "e": 43.26
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 43.26,
+   "e": 43.46
+  },
+  {
+   "w": "next",
+   "raw": "next,",
+   "s": 43.64,
+   "e": 43.92
+  },
+  {
+   "w": "why",
+   "raw": "why",
+   "s": 44.24,
+   "e": 44.36
+  },
+  {
+   "w": "reading",
+   "raw": "reading",
+   "s": 44.36,
+   "e": 44.62
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 44.62,
+   "e": 44.86
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 44.86,
+   "e": 45.02
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 45.02,
+   "e": 45.16
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 45.16,
+   "e": 45.44
+  },
+  {
+   "w": "doing",
+   "raw": "doing",
+   "s": 45.44,
+   "e": 45.66
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 45.66,
+   "e": 46.0
+  },
+  {
+   "w": "which",
+   "raw": "Which",
+   "s": 46.34,
+   "e": 46.5
+  },
+  {
+   "w": "deadline",
+   "raw": "deadline",
+   "s": 46.5,
+   "e": 46.88
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 46.88,
+   "e": 47.1
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 47.1,
+   "e": 47.22
+  },
+  {
+   "w": "behind",
+   "raw": "behind",
+   "s": 47.22,
+   "e": 47.52
+  },
+  {
+   "w": "on",
+   "raw": "on,",
+   "s": 47.52,
+   "e": 47.82
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 47.98,
+   "e": 48.08
+  },
+  {
+   "w": "links",
+   "raw": "links",
+   "s": 48.08,
+   "e": 48.28
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 48.28,
+   "e": 48.52
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 48.52,
+   "e": 48.62
+  },
+  {
+   "w": "bio",
+   "raw": "bio?",
+   "s": 48.62,
+   "e": 48.88
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 5.0,
+   "text": "Your goal didn't fail, your deadline was a guess. Why do we stop doing things we know are good for"
+  },
+  {
+   "s": 5.0,
+   "e": 11.46,
+   "text": "us? Reason 23. Arjun gives himself 4 weeks for his design portfolio. Week 4 it's half done,"
+  },
+  {
+   "s": 11.72,
+   "e": 16.7,
+   "text": "he feels behind so he stops opening it. We plan from the best case. In one study students"
+  },
+  {
+   "s": 16.7,
+   "e": 22.06,
+   "text": "guess their thesis would take 34 days, it took 56. The goal was fine, the date was wrong."
+  },
+  {
+   "s": 22.52,
+   "e": 26.18,
+   "text": "So before you set a date ask, how long did the last thing like this take me?"
+  },
+  {
+   "s": 26.68,
+   "e": 32.0,
+   "text": "Arjun's last big project took 6 weeks so he plans 9. Now at week 4 it's half done,"
+  },
+  {
+   "s": 32.14,
+   "e": 36.14,
+   "text": "right on track. Send this to the friend who's always behind their own plan."
+  },
+  {
+   "s": 36.64,
+   "e": 40.94,
+   "text": "That's what demure is for, archive your dream today and break it into small steps you can"
+  },
+  {
+   "s": 40.94,
+   "e": 46.0,
+   "text": "actually do. Follow for one reason a day, next, why reading about it feels like doing it."
+  },
+  {
+   "s": 46.34,
+   "e": 48.88,
+   "text": "Which deadline are you behind on, the links in the bio?"
+  }
+ ],
+ "wps": 3.33
+}

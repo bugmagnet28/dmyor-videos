@@ -1,0 +1,10 @@
+reels/ill-guessed-deadline/audio.mp3  50.14s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body body body land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/5014 [00:00<?, ?frames/s] 52%|█████▏    | 2618/5014 [00:24<00:22, 106.24frames/s] 52%|█████▏    | 2618/5014 [00:40<00:22, 106.24frames/s]100%|██████████| 5014/5014 [01:08<00:00, 68.84frames/s] 100%|██████████| 5014/5014 [01:08<00:00, 72.86frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+167 words, 50.14s, 3.33 words/sec
+-> reels/ill-guessed-deadline/cues.json
+sfx present: 47 sounds -> reels/ill-guessed-deadline/audio_mixed.mp3 riffle@0.1 pop@2.9 riffle@3.1 pop@5.6 swish@6.9 page@7.3 page@7.7 right@9.2 right@9.8 right@10.3 ratchet@11.0 ratchet@12.9 swish@14.1 pop@16.6 pop@19.1 pop@21.8 pop@22.5 right@23.7 pencil@24.9 pencil@25.7 swish@26.6 page@28.2 page@28.6 page@28.9 pop@29.5 right@30.1 swish@30.4 pop@30.9 pop@31.3 reveal@32.5 pop@33.5 right@33.9 pencil@34.6 right@35.0 pencil@35.8 right@36.1 tone@36.6 stamp@36.7 pop@38.3 pop@38.8 right@39.6 right@40.1 right@40.6 pop@42.1 toggle@45.4 right@45.8 chord@46.3
+built reels/ill-guessed-deadline: 50.08s, 11 scenes, brand 46.34s, 3.33 words/sec
+scenes: [('bar-compare', 0.0, 2.81, None), ('series-card', 2.81, 6.91, [1.81, 2.77]), ('week-countdown', 6.91, 10.37, [0.05, 0.64, 2.29]), ('progress-bars', 10.37, 14.09, [0.05, 0.67, 2.51]), ('bar-compare', 14.09, 22.52, [2.46, 4.99, 7.67]), ('question-list', 22.47, 26.63, [0.23, 2.43, 3.21]), ('week-countdown', 26.63, 30.41, [1.62, 2.88, 3.48]), ('before-after', 30.41, 33.45, [0.05, 2.07]), ('rule-card', 33.45, 36.59, [0.05, 1.19, 2.31]), ('dream-to-steps', 36.59, 42.05, None), ('follow-next', 42.05, 46.34, [0.2, 3.39])]

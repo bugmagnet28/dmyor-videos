@@ -1,20 +1,28 @@
 # Video dashboard (posting on @becauseidmyor, end card @becauseidmyor)
 
-_Last updated: 2026-11-11 IST (run 2026-11-11; the 11-10 run timed out without output)_
+_Last updated: 2026-11-12 IST (run 2026-11-12)_
 
 **Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [reel library](library/index.html) · [growth plan Nov 2026](growth-plan-2026-11.md) · weekly review 2026-11-03 in [strategy.md](strategy.md)
 
 | | |
 |---|---|
-| Instagram followers (@becauseidmyor) | **24** (2026-11-06) |
-| Instagram 30-day views | 7,437 (Nov 6) · 99.6% non-followers · 24 profile visits, 1 link tap |
-| Are we improving? | **Reach: yes** (newer median 128 vs 17). Followers: slow (+3 in 9 days). YouTube: declining |
-| Live | Sun Nov 8 on IG + X: ill-first-ten-minutes, pixel-kabir-1, ill-decide-once (registered). Nothing posted since (as far as post-queue shows). No new readings: no screenshots, no browser session |
-| **Blocker** | 6 auto-approved reels unscheduled since Nov 9 (Mon + Tue batches). Host swapping (13.6/14 GB): ~4 h per render; the 11-10 run timed out |
-| Ready to schedule (auto-approved) | **Thu (new): 13:00 ill-just-today (#20), 19:30 ill-mixed-practice (#21)** (rendering, finisher) · **Mon: ill-out-of-sight (#16), ill-sunday-practice (#17), pixel-kabir-2** (frames checked today, clean) · **Tue: 09:30 ill-perfect-week (#18), 13:00 ill-borrowed-sleep (#19), 19:30 pixel-kabir-3** (frames checked, clean) |
-| Owner review | 8 pixel reels in ready-to-post/pixel-review-2026-11-07 (Reasons #4-#13) |
-| Open experiments | V-EXP-32 (kit v2), V-EXP-33 (chart frame 0 + length), **V-EXP-34** (on-topic pillars, ≤50 s, Reason series, comment question; Nov 7-20) |
-| Asks | **VASK-029** (schedule the 6-reel backlog + Thu batch, YT for Sun, watch-time screenshots, restart the Mac) |
+| Instagram followers (@becauseidmyor) | **24** (2026-11-06, last reading) |
+| Are we improving? | **Reach: yes** (IG newer median 128 vs 17). Followers: slow (+3 in 9 days). YouTube: declining |
+| Live / scheduled | Backlog caught up Wed night: out-of-sight live; Thu sunday-practice 13:00 + kabir-2 19:30; Fri perfect-week, borrowed-sleep, kabir-3; Sat just-today, mixed-practice (IG still owes kabir-3, just-today, mixed-practice; YT owes mixed-practice). All registered in analytics |
+| **Blocker** | No metrics since Nov 6: 11 V-EXP-34 reels live or scheduled, zero readings |
+| Ready to schedule (auto-approved) | **Sun 15: 13:00 ill-afternoon-crash (#22), 19:30 ill-guessed-deadline (#23)** · **Mon 16: 13:00 ill-make-first (#24)**. All rendered, frames checked |
+| Host | Render speed back to ~5 min per reel (was ~4 h); swap still 14.7/15 GB |
+| Open experiments | V-EXP-32 (kit v2), V-EXP-33 (chart frame 0 + length), **V-EXP-34** (on-topic pillars, ≤50 s, Reason series; Nov 7-20) |
+| Asks | **VASK-030** (IG leftovers + Sun/Mon batch, watch-time + profile screenshots, Mac restart) |
+
+## Built today (Thu Nov 12) for Sun 15 / Mon 16 (V-EXP-34 batch 5)
+| Slot (IST) | Reel | Reason / pillar | Length | Hook | Frame 0 | Score |
+|---|---|---|---|---|---|---|
+| Sun 13:00 | ill-afternoon-crash | #22 the 2 PM slot / D (structure A) | 49.7 s | "Your afternoon crash starts at lunch, and it's eating your goal." | alertness bars, red 2:30 "Goal" bar | 34/40 |
+| Sun 19:30 | ill-guessed-deadline | #23 the guessed deadline / A (story B, Arjun) | 50.1 s | "Your goal didn't fail. Your deadline was a guess." | Guessed 34 vs took 56 days (Buehler et al. 1994) | 35/40 |
+| Mon 13:00 | ill-make-first | #24 reading about it / A (structure C) | 49.6 s | "Reading about your goal feels like doing it. It isn't." | 40 writing videos vs 0 pages | 34/40 |
+
+Chain: mixed-practice -> afternoon-crash -> guessed-deadline -> make-first -> "why you stop improving after month one" (#25, next run).
 
 ## Built today (Wed Nov 11) for Thu Nov 12 (V-EXP-34 batch 4)
 | Time (IST) | Reel | Reason / pillar | Length | Hook | Frame 0 | Score |

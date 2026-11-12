@@ -1,0 +1,40 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-afternoon-crash",
+ "hook_type": "hard-truth",
+ "topic": "energy",
+ "pillar": "D (energy for goals)",
+ "series": "Why we stop doing things we know are good for us, Reason #22 (the 2 PM slot)",
+ "experiment": "V-EXP-34",
+ "hook": "Your afternoon crash starts at lunch, and it's eating your goal.",
+ "gate": {
+  "goal_link": "goal work (study, side project) planned for after lunch fails in the dip; people read it as laziness and quit",
+  "mechanism": "post-lunch dip: circadian alertness dip in the early afternoon (occurs even without a meal), deepened by large meals and inactivity; a 10-min brisk walk raised self-rated energy for up to ~2 h (Thayer 1987, said as 'in one study')",
+  "universal": "the 2-3 PM slump"
+ },
+ "frame": {
+  "structure": "A (method with stakes)",
+  "want": "study / work on a goal every day",
+  "obstacle": "the session sits in the afternoon dip",
+  "cost": "3 of 5 sessions lost to 'foggy/tired' (illustration)",
+  "fix": "hardest goal task before lunch, 10-min walk after lunch, easy work (emails) at 2:30"
+ },
+ "hooks_considered": [
+  {"line": "Your afternoon crash starts at lunch, and it's eating your goal.", "checks": "hard truth Y, gap Y, muted Y (alertness bars, red 2:30 'goal' bar), sendable Y, payoff Y; keeps ill-mixed-practice's promise", "kept": true},
+  {"line": "If your goal is planned for 2 PM, you picked your worst hour.", "checks": "strong, close second", "kept": false},
+  {"line": "You're not lazy at 2:30. You're scheduled wrong.", "checks": "good, used as turn", "kept": false}
+ ],
+ "beats": {
+  "hard_truth": "0.0 s alertness bars, 2:30 bar red 'Goal', chip 'Your goal is planned here'",
+  "series": "Reason #22 card",
+  "rehook_10": "the real week: Study 2 PM, Tue/Thu/Fri X 'Foggy/Tired/Skipped'",
+  "rehook_25": "list rewrite: study moves to 11 AM, emails to 2:30",
+  "save_moment": "PLAN AROUND THE DIP rule card",
+  "share_line": "Send this to the friend who studies at two.",
+  "comment_q": "When do you actually get your goal done?",
+  "follow_reason": "Next: ill-guessed-deadline (Reason #23), built the same run"
+ },
+ "note": "Alertness bar heights are a labelled illustration of a typical day, not measured data. Walk claim attributed to 'one study' (Thayer 1987, 10-min brisk walk vs sugar snack). Avoids ill-caffeine overlap (no coffee advice).",
+ "quality": {"hook": 5, "usefulness": 5, "specificity": 4, "clarity": 4, "retention": 4, "craft": 4, "voice": 4, "brand": 4, "total": 34}
+}

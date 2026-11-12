@@ -186,3 +186,10 @@ While scheduling diagram-howto-vo from the web (browser automation), two "Your p
 - 2026-11-09 [craft] A scene whose thought is one short sentence (≈2 s) cannot hold a draw + reveal; extend the line ("And this time, he didn't quit.") rather than squeeze the animation. Confidence: medium
 - 2026-11-11 [ops] The 2026-11-10 run ended with exit 1 ("Request timed out", git pull blocked by unstaged changes) and wrote no journal and no batch. A run that renders 4-5 h per reel on a swapping host is fragile: build voice + scene checks in the run, hand recording to a detached finisher, write the journal early and update it at the end. Confidence: high
 - 2026-11-11 [content] Reason map continues: #20 just today (choice bracketing, pillar B), #21 the practice that feels best (interleaving, pillar C). Next free number: #22. Confidence: high
+
+## 2026-11-12 (run)
+- 2026-11-12 [data] Still no metrics (blank template, no browser). Registered 23 platform posts (backlog scheduled Wed night through Sat 14). 11 V-EXP-34 reels live or scheduled, zero readings: the experiment cannot be judged until screenshots arrive (VASK-030). Confidence: high
+- 2026-11-12 [ops] Whisper ran at ~140 frames/s today (load ~3, vs ~25-40 min per take on Nov 8-11), so the voice step took minutes. Swap is still 13.8/15 GB; recording speed is the open question. Confidence: medium
+- 2026-11-12 [craft] In week-bars `grow`, a null cue falls back to its default time and can land a bar out of order (1 PM bar after 2:30). Give every bar a spoken cue in left-to-right order. Confidence: high
+- 2026-11-12 [tooling] Python here has no PIL. Make contact sheets with `ffmpeg -pattern_type glob -i 't*.png' -vf scale=270:480,tile=8x2` (the glob sorts lexically: t14.5 comes before t2). Confidence: high
+- 2026-11-12 [content] Reason map continues: #22 the 2 PM slot (post-lunch dip, pillar D), #23 the guessed deadline (planning fallacy, pillar A). Next free: #24 (promised: why reading about it feels like doing it). Confidence: high

@@ -1,0 +1,241 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 12,
+ "silences": [
+  "The goal",
+  "Now, at"
+ ],
+ "spoken": "[hook] Your goal didn't fail. Your deadline was a guess. || Why do we stop doing things we know are good for us? Reason twenty-three. || [turn] Arjun gives himself four weeks for his design portfolio. || Week four, it's half done. He feels behind, so he stops opening it. || We plan from the best case. In one study, students guessed their thesis would take thirty-four days. It took fifty-six. || The goal was fine. The date was wrong. || So before you set a date, ask: how long did the last thing like this take me? || Arjun's last big project took six weeks. So he plans nine. || [land] Now, at week four, it's half done. Right on track. || Send this to the friend who's always behind their own plan. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. Next: why reading about it feels like doing it. || [outro] Which deadline are you behind on? The link's in the bio.",
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Guessed",
+      34,
+      "ink"
+     ],
+     [
+      "Actually took",
+      56,
+      "red"
+     ]
+    ],
+    "max": 56,
+    "unit": " days",
+    "chip": "Thesis time, one study"
+   },
+   "head": "Your deadline<br>was a <b>guess</b>."
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 23,
+    "title": "The guessed deadline",
+    "cue": [
+     "good",
+     "Reason"
+    ]
+   },
+   "head": "Why we <b>stop</b>."
+  },
+  {
+   "type": "week-countdown",
+   "params": {
+    "weeks": 4,
+    "end": "Dec 13",
+    "rows": [
+     "Pick 3 projects",
+     "Write case study 1",
+     "Build the home page"
+    ],
+    "cue": [
+     "Arjun",
+     "four",
+     "portfolio"
+    ]
+   },
+   "head": "Four weeks.<br>A <b>portfolio</b>."
+  },
+  {
+   "type": "progress-bars",
+   "params": {
+    "rows": [
+     [
+      "Weeks used",
+      4,
+      4,
+      ""
+     ],
+     [
+      "Portfolio done",
+      50,
+      100,
+      "%"
+     ],
+     [
+      "Days since he opened it",
+      12,
+      30,
+      " days"
+     ]
+    ],
+    "cue": [
+     "Week",
+     "half",
+     "stops"
+    ]
+   },
+   "head": "Week four.<br><b>Behind</b>."
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Guessed",
+      34,
+      "ink"
+     ],
+     [
+      "Actually took",
+      56,
+      "red"
+     ]
+    ],
+    "max": 56,
+    "unit": " days",
+    "chip": "Thesis time, one study",
+    "cue": [
+     "guessed",
+     "took",
+     "wrong"
+    ]
+   },
+   "head": "We plan the<br><b>best case</b>."
+  },
+  null,
+  {
+   "type": "question-list",
+   "params": {
+    "title": "BEFORE YOU SET A DATE",
+    "items": [
+     "The last thing like it?",
+     "How long did it take?",
+     "Plan that, not hope"
+    ],
+    "cue": [
+     "before",
+     "last",
+     "take"
+    ]
+   },
+   "head": "Ask <b>one</b><br>question."
+  },
+  {
+   "type": "week-countdown",
+   "params": {
+    "weeks": 9,
+    "end": "Jan 17",
+    "rows": [
+     "Case study 1: draft",
+     "Case study 1: images",
+     "Home page: layout"
+    ],
+    "cue": [
+     "last",
+     "six",
+     "nine"
+    ]
+   },
+   "head": "Took six.<br>Plan <b>nine</b>."
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "a": "Guessed",
+    "b": "Measured",
+    "rows": [
+     [
+      "Deadline",
+      "4 weeks",
+      "9 weeks"
+     ],
+     [
+      "Week 4",
+      "Behind",
+      "On track"
+     ],
+     [
+      "Portfolio",
+      "Dropped",
+      "Still going"
+     ]
+    ],
+    "cue": [
+     "Now",
+     "track"
+    ]
+   },
+   "head": "Same work.<br><b>On track</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "SET A REAL DATE",
+    "items": [
+     "Find a past project",
+     "How long it took",
+     "Plan that much"
+    ],
+    "cue": [
+     "Send",
+     "always",
+     "plan"
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Switch into UX design",
+    "date": "Open it again: Sep 2027",
+    "steps": [
+     "Portfolio: 9 weeks",
+     "3 case studies",
+     "Then: 5 applications a week"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why reading about it feels like doing it",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "doing"
+    ]
+   },
+   "head": "One reason<br><b>a day</b>."
+  },
+  null
+ ],
+ "caption": {
+  "instagram": "How to set a realistic deadline for your goal.\n\nWhy we stop doing things we know are good for us, reason #23: the guessed deadline. Arjun gives himself 4 weeks for his portfolio. Week 4, it's half done, he feels behind and stops opening it. The goal was fine. The date was a guess from the best case.\n\nIn one study (Buehler, Griffin & Ross, 1994), students guessed their thesis would take about 34 days. It took about 56.\n\nThe fix: before you set a date, ask how long the last similar thing actually took you, and plan that.\n\nWhich deadline are you behind on? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#goals #planning #procrastination #selfimprovement #productivity",
+  "x": "Your goal didn't fail. Your deadline was a guess.\n\nIn one study, students guessed their thesis would take 34 days. It took 56.\n\nBefore you set a date, ask how long the last similar thing actually took you. Plan that.",
+  "youtube_title": "How to set a realistic deadline for your goals #Shorts"
+ }
+}

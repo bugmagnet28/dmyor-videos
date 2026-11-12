@@ -1,0 +1,40 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-make-first",
+ "hook_type": "hard-truth",
+ "topic": "learning",
+ "pillar": "A (why goals fail)",
+ "series": "Why we stop doing things we know are good for us, Reason #24 (reading about it)",
+ "experiment": "V-EXP-34",
+ "hook": "Reading about your goal feels like doing it. It isn't.",
+ "gate": {
+  "goal_link": "any creative/skill goal (book, running, a channel) where preparation replaces output",
+  "mechanism": "consuming information about a goal is low effort and feels on-topic, so it satisfies the urge to make progress without producing anything (motion vs action); the gap shows up weeks later and the goal is dropped. No study cited.",
+  "universal": "watching videos / buying books about a goal instead of doing it"
+ },
+ "frame": {
+  "structure": "C (mistake, cost, fix)",
+  "want": "write a book",
+  "obstacle": "learning about writing feels like working on it",
+  "cost": "3 books, 40 videos, 0 pages after weeks (illustration)",
+  "fix": "make first, learn second: 100 words then one video; 15-min run then read about form; learn only what today's step needs. 100 words x 6 weeks ~ 4,000 words (arithmetic)"
+ },
+ "hooks_considered": [
+  {"line": "Reading about your goal feels like doing it. It isn't.", "checks": "hard truth Y, gap Y, muted Y (40 videos vs 0 pages), sendable Y, payoff Y; keeps guessed-deadline's promise", "kept": true},
+  {"line": "Forty videos about writing. Zero pages.", "checks": "number-contrast, close second", "kept": false},
+  {"line": "Your bookmarks folder is not a plan.", "checks": "sendable, weaker chart", "kept": false}
+ ],
+ "beats": {
+  "hard_truth": "0.0 s bars 40 videos vs 0 pages",
+  "series": "Reason #24 card",
+  "rehook_10": "books 3, videos 40, pages 0 bars",
+  "rehook_25": "list rewrite: make first, learn second",
+  "save_moment": "MAKE FIRST rule card",
+  "share_line": "Send this to the friend with a full bookmarks folder and an empty page.",
+  "comment_q": "What are you reading about instead of doing?",
+  "follow_reason": "Next: 'why you stop improving after month one' (Reason #25, idea #65, next run builds it)"
+ },
+ "note": "Third reel of the day, possible because render speed recovered (5.4 fps). Pillar A. Numbers are illustration (3 books, 40 videos) and arithmetic (100 x 42 days = 4,200, said as 4,000). Big plan not the villain: learning stays, only the order flips.",
+ "quality": {"hook": 5, "usefulness": 5, "specificity": 4, "clarity": 4, "retention": 4, "craft": 4, "voice": 4, "brand": 4, "total": 34}
+}

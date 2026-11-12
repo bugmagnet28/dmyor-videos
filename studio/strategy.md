@@ -63,6 +63,20 @@ People 18 to 32 with big goals and no structure: students, new grads, career swi
 - Voiceover reels are NOT part of week 1: most viewers watch muted and we have no VO data. Revisit at the first weekly review, so no VO script is kept in asks for now.
 
 ## Weekly reviews
+## Weekly review 2026-11-12 (week 5: Nov 3-11)
+
+**What happened.** Built 25 reels (explainers + the Kabir pixel series #1-#3). On Nov 6 the owner re-focused everything (growth plan: on-topic pillars, Reason #n series, ≤50 s, chart on frame 0). Since Nov 7 every reel is a numbered reason (#14-#24 so far). Scheduling, not building, was the bottleneck: nothing was posted Mon-Wed. Sanyam caught up on Wed night, and everything is scheduled through Sat 14. The host was slow (≈4 h per render) until today (≈5 min).
+
+**Data.** The last reading is Nov 6: IG followers 24 (+3 since Oct 28), 30-day views 7,437. Signals still stand (n≥3, ≥1.5×): animated-illustration explainers 8.6× the other styles; hard-truth hooks 7.5×; question hooks 0.2×, kinetic 0.1×. **V-EXP-34 (on-topic, ≤50 s) has zero readings**: 11 reels are live or scheduled with no screenshots. YouTube keeps declining (median 11 vs 30).
+
+**Decisions for week 6 (Nov 12-18):**
+1. Keep: explainers with hard-truth hooks and a chart on frame 0, the Reason #n series, ≤50 s. The data supports all of it, and the owner rules require it.
+2. Build at the rate posting absorbs: 2-3 reels a day while the queue holds 5+, so stock never ages more than 2-3 days (follow lines say "Next", so they stay true).
+3. The first V-EXP-34 verdict needs 48 h / 7 d readings for first-ten-minutes, decide-once and out-of-sight. Ask every run until it arrives (VASK-030), then compare on-topic reels (Nov 8+) with the Oct 28-Nov 6 explainers: reach, saves+shares per view, follows.
+4. Pillar balance: A 4, B 1, C 3, D 2 in Nov 9-16 builds. Next week leans toward B (daily choices compound) and C.
+5. Second style: pixel story #4+ waits on the owner's review of the pixel-review set. Diagram/hybrid stay parked until they get sound effects. One style per day is accepted for now and noted in journals.
+6. Kill: nothing new. Question hooks and kinetic stay off.
+
 ## Weekly review 2026-11-03 (weeks 3-4: Oct 22 - Nov 2)
 
 **What happened.** ~35 reels went live on IG/YT/X: diagram (2), kinetic (1), animated illustration (~25), cinematic brand film (1), pixel story (1). Owner rules settled the look (Graphite & Sage, real graphics, object sounds, value close). Content Kit v2 started Oct 31. Two run timeouts cost two days (Oct 31, Nov 1).

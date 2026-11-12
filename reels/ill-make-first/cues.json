@@ -1,0 +1,1081 @@
+{
+ "audio": "audio.mp3",
+ "duration": 49.66,
+ "text": "Reading about your goal feels like doing it, it isn't. Why do we stop doing things we know are good for us? Reason 24. Say you want to write a book, three books on writing, 40 videos. Pages written zero but it feels like weeks of work. Learning feels like progress, you're busy and it's all about the goal but nothing gets made. Then one day you see how far you haven't come, you quit. So flip the order, make first, learn second. Write a hundred words then watch one video, run 50 minutes then read about form. Six weeks later, 4000 words not 40 videos. Send this to the friend with a full bookmarks folder and an empty page. That's what Demure is for. Archive your dream today and break it into small steps you can actually do. Follow for one reason a day, next, why you stop improving after month one. What are you reading about instead of doing, the links in the bio.",
+ "words": [
+  {
+   "w": "reading",
+   "raw": "Reading",
+   "s": 0.0,
+   "e": 0.4
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 0.4,
+   "e": 0.64
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 0.64,
+   "e": 0.78
+  },
+  {
+   "w": "goal",
+   "raw": "goal",
+   "s": 0.78,
+   "e": 1.0
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 1.0,
+   "e": 1.28
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 1.28,
+   "e": 1.58
+  },
+  {
+   "w": "doing",
+   "raw": "doing",
+   "s": 1.58,
+   "e": 1.78
+  },
+  {
+   "w": "it",
+   "raw": "it,",
+   "s": 1.78,
+   "e": 2.02
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 2.12,
+   "e": 2.28
+  },
+  {
+   "w": "isnt",
+   "raw": "isn't.",
+   "s": 2.28,
+   "e": 2.72
+  },
+  {
+   "w": "why",
+   "raw": "Why",
+   "s": 3.14,
+   "e": 3.2
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 3.2,
+   "e": 3.34
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 3.34,
+   "e": 3.48
+  },
+  {
+   "w": "stop",
+   "raw": "stop",
+   "s": 3.48,
+   "e": 3.7
+  },
+  {
+   "w": "doing",
+   "raw": "doing",
+   "s": 3.7,
+   "e": 3.98
+  },
+  {
+   "w": "things",
+   "raw": "things",
+   "s": 3.98,
+   "e": 4.32
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 4.32,
+   "e": 4.54
+  },
+  {
+   "w": "know",
+   "raw": "know",
+   "s": 4.54,
+   "e": 4.7
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 4.7,
+   "e": 4.86
+  },
+  {
+   "w": "good",
+   "raw": "good",
+   "s": 4.86,
+   "e": 5.0
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 5.0,
+   "e": 5.22
+  },
+  {
+   "w": "us",
+   "raw": "us?",
+   "s": 5.22,
+   "e": 5.5
+  },
+  {
+   "w": "reason",
+   "raw": "Reason",
+   "s": 6.0,
+   "e": 6.0
+  },
+  {
+   "w": "24",
+   "raw": "24.",
+   "s": 6.0,
+   "e": 6.58
+  },
+  {
+   "w": "say",
+   "raw": "Say",
+   "s": 7.18,
+   "e": 7.24
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 7.24,
+   "e": 7.36
+  },
+  {
+   "w": "want",
+   "raw": "want",
+   "s": 7.36,
+   "e": 7.5
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 7.5,
+   "e": 7.62
+  },
+  {
+   "w": "write",
+   "raw": "write",
+   "s": 7.62,
+   "e": 7.74
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 7.74,
+   "e": 7.9
+  },
+  {
+   "w": "book",
+   "raw": "book,",
+   "s": 7.9,
+   "e": 8.06
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 8.32,
+   "e": 8.44
+  },
+  {
+   "w": "books",
+   "raw": "books",
+   "s": 8.44,
+   "e": 8.68
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 8.68,
+   "e": 8.9
+  },
+  {
+   "w": "writing",
+   "raw": "writing,",
+   "s": 8.9,
+   "e": 9.22
+  },
+  {
+   "w": "40",
+   "raw": "40",
+   "s": 9.46,
+   "e": 9.6
+  },
+  {
+   "w": "videos",
+   "raw": "videos.",
+   "s": 9.6,
+   "e": 10.02
+  },
+  {
+   "w": "pages",
+   "raw": "Pages",
+   "s": 10.64,
+   "e": 10.88
+  },
+  {
+   "w": "written",
+   "raw": "written",
+   "s": 10.88,
+   "e": 11.28
+  },
+  {
+   "w": "zero",
+   "raw": "zero",
+   "s": 11.28,
+   "e": 11.66
+  },
+  {
+   "w": "but",
+   "raw": "but",
+   "s": 11.66,
+   "e": 12.02
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 12.02,
+   "e": 12.12
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 12.12,
+   "e": 12.32
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 12.32,
+   "e": 12.56
+  },
+  {
+   "w": "weeks",
+   "raw": "weeks",
+   "s": 12.56,
+   "e": 12.76
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 12.76,
+   "e": 12.96
+  },
+  {
+   "w": "work",
+   "raw": "work.",
+   "s": 12.96,
+   "e": 13.28
+  },
+  {
+   "w": "learning",
+   "raw": "Learning",
+   "s": 13.8,
+   "e": 13.94
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 13.94,
+   "e": 14.26
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 14.26,
+   "e": 14.5
+  },
+  {
+   "w": "progress",
+   "raw": "progress,",
+   "s": 14.5,
+   "e": 14.92
+  },
+  {
+   "w": "youre",
+   "raw": "you're",
+   "s": 15.32,
+   "e": 15.52
+  },
+  {
+   "w": "busy",
+   "raw": "busy",
+   "s": 15.52,
+   "e": 15.72
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 15.72,
+   "e": 15.96
+  },
+  {
+   "w": "its",
+   "raw": "it's",
+   "s": 15.96,
+   "e": 16.1
+  },
+  {
+   "w": "all",
+   "raw": "all",
+   "s": 16.1,
+   "e": 16.24
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 16.24,
+   "e": 16.42
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 16.42,
+   "e": 16.58
+  },
+  {
+   "w": "goal",
+   "raw": "goal",
+   "s": 16.58,
+   "e": 16.82
+  },
+  {
+   "w": "but",
+   "raw": "but",
+   "s": 16.82,
+   "e": 17.04
+  },
+  {
+   "w": "nothing",
+   "raw": "nothing",
+   "s": 17.04,
+   "e": 17.26
+  },
+  {
+   "w": "gets",
+   "raw": "gets",
+   "s": 17.26,
+   "e": 17.52
+  },
+  {
+   "w": "made",
+   "raw": "made.",
+   "s": 17.52,
+   "e": 17.9
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 18.3,
+   "e": 18.44
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 18.44,
+   "e": 18.64
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 18.64,
+   "e": 18.8
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 18.8,
+   "e": 18.96
+  },
+  {
+   "w": "see",
+   "raw": "see",
+   "s": 18.96,
+   "e": 19.12
+  },
+  {
+   "w": "how",
+   "raw": "how",
+   "s": 19.12,
+   "e": 19.32
+  },
+  {
+   "w": "far",
+   "raw": "far",
+   "s": 19.32,
+   "e": 19.52
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 19.52,
+   "e": 19.66
+  },
+  {
+   "w": "havent",
+   "raw": "haven't",
+   "s": 19.66,
+   "e": 19.98
+  },
+  {
+   "w": "come",
+   "raw": "come,",
+   "s": 19.98,
+   "e": 20.2
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 20.3,
+   "e": 20.44
+  },
+  {
+   "w": "quit",
+   "raw": "quit.",
+   "s": 20.44,
+   "e": 20.68
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 21.1,
+   "e": 21.32
+  },
+  {
+   "w": "flip",
+   "raw": "flip",
+   "s": 21.32,
+   "e": 21.52
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 21.52,
+   "e": 21.68
+  },
+  {
+   "w": "order",
+   "raw": "order,",
+   "s": 21.68,
+   "e": 21.92
+  },
+  {
+   "w": "make",
+   "raw": "make",
+   "s": 22.08,
+   "e": 22.22
+  },
+  {
+   "w": "first",
+   "raw": "first,",
+   "s": 22.22,
+   "e": 22.52
+  },
+  {
+   "w": "learn",
+   "raw": "learn",
+   "s": 22.68,
+   "e": 22.78
+  },
+  {
+   "w": "second",
+   "raw": "second.",
+   "s": 22.78,
+   "e": 23.18
+  },
+  {
+   "w": "write",
+   "raw": "Write",
+   "s": 23.74,
+   "e": 23.9
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 23.9,
+   "e": 24.02
+  },
+  {
+   "w": "hundred",
+   "raw": "hundred",
+   "s": 24.02,
+   "e": 24.22
+  },
+  {
+   "w": "words",
+   "raw": "words",
+   "s": 24.22,
+   "e": 24.62
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 24.62,
+   "e": 24.84
+  },
+  {
+   "w": "watch",
+   "raw": "watch",
+   "s": 24.84,
+   "e": 25.06
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 25.06,
+   "e": 25.34
+  },
+  {
+   "w": "video",
+   "raw": "video,",
+   "s": 25.34,
+   "e": 25.68
+  },
+  {
+   "w": "run",
+   "raw": "run",
+   "s": 26.14,
+   "e": 26.28
+  },
+  {
+   "w": "50",
+   "raw": "50",
+   "s": 26.28,
+   "e": 26.62
+  },
+  {
+   "w": "minutes",
+   "raw": "minutes",
+   "s": 26.62,
+   "e": 26.86
+  },
+  {
+   "w": "then",
+   "raw": "then",
+   "s": 26.86,
+   "e": 27.16
+  },
+  {
+   "w": "read",
+   "raw": "read",
+   "s": 27.16,
+   "e": 27.36
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 27.36,
+   "e": 27.6
+  },
+  {
+   "w": "form",
+   "raw": "form.",
+   "s": 27.6,
+   "e": 27.96
+  },
+  {
+   "w": "six",
+   "raw": "Six",
+   "s": 27.96,
+   "e": 28.68
+  },
+  {
+   "w": "weeks",
+   "raw": "weeks",
+   "s": 28.68,
+   "e": 28.92
+  },
+  {
+   "w": "later",
+   "raw": "later,",
+   "s": 28.92,
+   "e": 29.36
+  },
+  {
+   "w": "4000",
+   "raw": "4000",
+   "s": 29.56,
+   "e": 29.9
+  },
+  {
+   "w": "words",
+   "raw": "words",
+   "s": 29.9,
+   "e": 30.34
+  },
+  {
+   "w": "not",
+   "raw": "not",
+   "s": 30.34,
+   "e": 30.62
+  },
+  {
+   "w": "40",
+   "raw": "40",
+   "s": 30.62,
+   "e": 30.92
+  },
+  {
+   "w": "videos",
+   "raw": "videos.",
+   "s": 30.92,
+   "e": 31.32
+  },
+  {
+   "w": "send",
+   "raw": "Send",
+   "s": 32.12,
+   "e": 32.2
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 32.2,
+   "e": 32.36
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 32.36,
+   "e": 32.52
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 32.52,
+   "e": 32.64
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 32.64,
+   "e": 32.84
+  },
+  {
+   "w": "with",
+   "raw": "with",
+   "s": 32.84,
+   "e": 33.08
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 33.08,
+   "e": 33.2
+  },
+  {
+   "w": "full",
+   "raw": "full",
+   "s": 33.2,
+   "e": 33.4
+  },
+  {
+   "w": "bookmarks",
+   "raw": "bookmarks",
+   "s": 33.4,
+   "e": 33.84
+  },
+  {
+   "w": "folder",
+   "raw": "folder",
+   "s": 33.84,
+   "e": 34.14
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 34.14,
+   "e": 34.5
+  },
+  {
+   "w": "an",
+   "raw": "an",
+   "s": 34.5,
+   "e": 34.6
+  },
+  {
+   "w": "empty",
+   "raw": "empty",
+   "s": 34.6,
+   "e": 34.88
+  },
+  {
+   "w": "page",
+   "raw": "page.",
+   "s": 34.88,
+   "e": 35.26
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 35.92,
+   "e": 36.1
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 36.1,
+   "e": 36.26
+  },
+  {
+   "w": "demure",
+   "raw": "Demure",
+   "s": 36.26,
+   "e": 36.64
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 36.64,
+   "e": 36.8
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 36.8,
+   "e": 37.08
+  },
+  {
+   "w": "archive",
+   "raw": "Archive",
+   "s": 37.48,
+   "e": 37.64
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 37.64,
+   "e": 37.88
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 37.88,
+   "e": 38.1
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 38.1,
+   "e": 38.44
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 38.44,
+   "e": 38.72
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 38.72,
+   "e": 38.88
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 38.88,
+   "e": 39.02
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 39.02,
+   "e": 39.18
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 39.18,
+   "e": 39.5
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 39.5,
+   "e": 39.82
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 39.82,
+   "e": 40.0
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 40.0,
+   "e": 40.12
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 40.12,
+   "e": 40.44
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 40.44,
+   "e": 40.78
+  },
+  {
+   "w": "follow",
+   "raw": "Follow",
+   "s": 41.28,
+   "e": 41.44
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 41.44,
+   "e": 41.7
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 41.7,
+   "e": 41.92
+  },
+  {
+   "w": "reason",
+   "raw": "reason",
+   "s": 41.92,
+   "e": 42.2
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 42.2,
+   "e": 42.38
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 42.38,
+   "e": 42.6
+  },
+  {
+   "w": "next",
+   "raw": "next,",
+   "s": 42.76,
+   "e": 43.06
+  },
+  {
+   "w": "why",
+   "raw": "why",
+   "s": 43.38,
+   "e": 43.5
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 43.5,
+   "e": 43.66
+  },
+  {
+   "w": "stop",
+   "raw": "stop",
+   "s": 43.66,
+   "e": 43.9
+  },
+  {
+   "w": "improving",
+   "raw": "improving",
+   "s": 43.9,
+   "e": 44.34
+  },
+  {
+   "w": "after",
+   "raw": "after",
+   "s": 44.34,
+   "e": 44.68
+  },
+  {
+   "w": "month",
+   "raw": "month",
+   "s": 44.68,
+   "e": 44.88
+  },
+  {
+   "w": "one",
+   "raw": "one.",
+   "s": 44.88,
+   "e": 45.22
+  },
+  {
+   "w": "what",
+   "raw": "What",
+   "s": 45.64,
+   "e": 45.8
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 45.8,
+   "e": 45.9
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 45.9,
+   "e": 46.06
+  },
+  {
+   "w": "reading",
+   "raw": "reading",
+   "s": 46.06,
+   "e": 46.3
+  },
+  {
+   "w": "about",
+   "raw": "about",
+   "s": 46.3,
+   "e": 46.56
+  },
+  {
+   "w": "instead",
+   "raw": "instead",
+   "s": 46.56,
+   "e": 46.88
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 46.88,
+   "e": 47.04
+  },
+  {
+   "w": "doing",
+   "raw": "doing,",
+   "s": 47.04,
+   "e": 47.26
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 47.52,
+   "e": 47.62
+  },
+  {
+   "w": "links",
+   "raw": "links",
+   "s": 47.62,
+   "e": 47.82
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 47.82,
+   "e": 48.06
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 48.06,
+   "e": 48.16
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 48.16,
+   "e": 48.44
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 2.72,
+   "text": "Reading about your goal feels like doing it, it isn't."
+  },
+  {
+   "s": 3.14,
+   "e": 5.5,
+   "text": "Why do we stop doing things we know are good for us?"
+  },
+  {
+   "s": 6.0,
+   "e": 6.58,
+   "text": "Reason 24."
+  },
+  {
+   "s": 7.18,
+   "e": 10.02,
+   "text": "Say you want to write a book, three books on writing, 40 videos."
+  },
+  {
+   "s": 10.64,
+   "e": 13.28,
+   "text": "Pages written zero but it feels like weeks of work."
+  },
+  {
+   "s": 13.8,
+   "e": 17.9,
+   "text": "Learning feels like progress, you're busy and it's all about the goal but nothing gets made."
+  },
+  {
+   "s": 18.3,
+   "e": 20.68,
+   "text": "Then one day you see how far you haven't come, you quit."
+  },
+  {
+   "s": 21.1,
+   "e": 23.18,
+   "text": "So flip the order, make first, learn second."
+  },
+  {
+   "s": 23.74,
+   "e": 27.96,
+   "text": "Write a hundred words then watch one video, run 50 minutes then read about form."
+  },
+  {
+   "s": 27.96,
+   "e": 31.32,
+   "text": "Six weeks later, 4000 words not 40 videos."
+  },
+  {
+   "s": 32.12,
+   "e": 35.26,
+   "text": "Send this to the friend with a full bookmarks folder and an empty page."
+  },
+  {
+   "s": 35.92,
+   "e": 37.08,
+   "text": "That's what Demure is for."
+  },
+  {
+   "s": 37.48,
+   "e": 40.78,
+   "text": "Archive your dream today and break it into small steps you can actually do."
+  },
+  {
+   "s": 41.28,
+   "e": 45.22,
+   "text": "Follow for one reason a day, next, why you stop improving after month one."
+  },
+  {
+   "s": 45.64,
+   "e": 48.44,
+   "text": "What are you reading about instead of doing, the links in the bio."
+  }
+ ],
+ "wps": 3.34
+}
