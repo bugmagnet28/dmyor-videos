@@ -1,0 +1,313 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 13,
+ "silences": [
+  "Then it",
+  "Month four"
+ ],
+ "spoken": "[hook] You practise every day. You stopped getting better in month one. || Why do we stop doing things we know are good for us? Reason twenty-five. || [turn] Learning guitar: month one, zero to five songs. || Months two, three, four: same five songs, same level. || Once it feels easy, your brain runs it on autopilot. Easy practice keeps a skill. It doesn't grow it. || It's why years of typing never made you faster. || Then it feels pointless. You quit. || So every session, add one thing just out of reach. || Play it five beats faster. Fix the bar that breaks. Learning a language? One page that's a bit too hard. || [land] Month four, five, six: the line climbs again. || Send this to the friend stuck at the same level. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. Next: why a great day makes you skip the next one. || [outro] What skill are you stuck on? The link's in the bio.",
+ "scenes": [
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "hook",
+    "bars": [
+     [
+      "M1",
+      "",
+      5,
+      "ink"
+     ],
+     [
+      "M2",
+      "",
+      6,
+      "ink"
+     ],
+     [
+      "M3",
+      "",
+      6,
+      "red"
+     ],
+     [
+      "M4",
+      "",
+      6,
+      "red"
+     ],
+     [
+      "M5",
+      "",
+      6,
+      "red"
+     ],
+     [
+      "M6",
+      "",
+      6,
+      "red"
+     ]
+    ],
+    "max": 12,
+    "ylabel": "SONGS YOU CAN PLAY",
+    "chip": "Same level since month one"
+   },
+   "head": "Practice stopped<br><b>working</b>."
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 25,
+    "title": "Autopilot",
+    "cue": [
+     "good",
+     "Reason"
+    ]
+   },
+   "head": "Why we <b>stop</b>."
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "grow",
+    "bars": [
+     [
+      "M1",
+      "",
+      5,
+      "acc"
+     ],
+     [
+      "M2",
+      "",
+      6,
+      "ink"
+     ],
+     [
+      "M3",
+      "",
+      6,
+      "ink"
+     ],
+     [
+      "M4",
+      "",
+      6,
+      "red"
+     ]
+    ],
+    "max": 12,
+    "ylabel": "SONGS YOU CAN PLAY",
+    "chip": "Same five songs",
+    "cue": [
+     "five",
+     "two",
+     "three",
+     "four",
+     "level"
+    ]
+   },
+   "head": "Big jump.<br>Then <b>flat</b>."
+  },
+  null,
+  {
+   "type": "easy-hard",
+   "params": {
+    "a": "Feels easy",
+    "ar": "keeps the skill",
+    "b": "Just out of reach",
+    "br": "grows it",
+    "cue": [
+     "easy",
+     "grow"
+    ]
+   },
+   "head": "Easy is<br><b>autopilot</b>."
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Typing, year 1",
+      40,
+      "ink"
+     ],
+     [
+      "Typing, year 10",
+      40,
+      "red"
+     ]
+    ],
+    "max": 60,
+    "unit": " wpm",
+    "chip": "Every day. No faster.",
+    "cue": [
+     "years",
+     "typing",
+     "faster"
+    ]
+   },
+   "head": "Years of it.<br><b>No</b> faster."
+  },
+  null,
+  {
+   "type": "tempo-loop",
+   "params": {
+    "bpm": [
+     80,
+     85
+    ],
+    "n": 10,
+    "clean": "Until it breaks",
+    "timer": "Fix the bar that broke",
+    "cue": [
+     "session",
+     "Play",
+     "faster",
+     "Fix"
+    ]
+   },
+   "head": "One thing<br>just out of <b>reach</b>."
+  },
+  null,
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "morph",
+    "bars": [
+     [
+      "M1",
+      "",
+      5,
+      "ink"
+     ],
+     [
+      "M2",
+      "",
+      6,
+      "ink"
+     ],
+     [
+      "M3",
+      "",
+      6,
+      "red"
+     ],
+     [
+      "M4",
+      "",
+      6,
+      "red"
+     ],
+     [
+      "M5",
+      "",
+      6,
+      "red"
+     ],
+     [
+      "M6",
+      "",
+      6,
+      "red"
+     ]
+    ],
+    "after": [
+     null,
+     null,
+     [
+      "M3",
+      "",
+      6,
+      "ink"
+     ],
+     [
+      "M4",
+      "",
+      8,
+      "acc"
+     ],
+     [
+      "M5",
+      "",
+      10,
+      "acc"
+     ],
+     [
+      "M6",
+      "",
+      12,
+      "acc"
+     ]
+    ],
+    "max": 12,
+    "ylabel": "SONGS YOU CAN PLAY",
+    "chip": "Same level since month one",
+    "chip2": "Climbing again",
+    "cue": [
+     "four",
+     "climbs"
+    ]
+   },
+   "head": "The line<br><b>climbs</b> again."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "JUST OUT OF REACH",
+    "items": [
+     "Notice what's easy",
+     "Add one step harder",
+     "Fix what breaks"
+    ],
+    "cue": [
+     "Send",
+     "friend",
+     "stuck"
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Play 20 songs by summer",
+    "date": "Open it again: Nov 2027",
+    "steps": [
+     "Same song, +5 beats",
+     "Fix the bar that broke",
+     "Sunday: record it"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why a great day makes you skip the next one",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "skip"
+    ]
+   },
+   "head": "One reason<br><b>a day</b>."
+  },
+  null
+ ],
+ "caption": {
+  "instagram": "Why you stop improving at a skill after the first month (and how to fix the plateau).\n\nWhy we stop doing things we know are good for us, reason #25: autopilot. Month one, you go from nothing to five songs. Then months of the same five songs, and your level doesn't move. Once practice feels easy, your brain runs it on autopilot. Easy practice keeps a skill. It doesn't grow it. It's why you've typed every day for years and you're no faster.\n\nThe fix, every session:\n- Notice what feels easy\n- Add one thing just out of reach (the song 5 beats faster, one page that's a bit too hard)\n- Fix what breaks\n\nWhat skill are you stuck on? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#learning #practice #guitarpractice #selfimprovement #habits",
+  "x": "You practise every day. You stopped getting better in month one.\n\nOnce it feels easy, your brain runs it on autopilot. Easy practice keeps a skill. It doesn't grow it.\n\nEvery session, add one thing just out of reach: the song 5 beats faster, one page that's a bit too hard.",
+  "youtube_title": "How to get past a learning plateau #Shorts"
+ }
+}

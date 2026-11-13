@@ -356,3 +356,4 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Plan and targets: `studio/growth-plan-2026-11.md` section 5. Baseline: median ~150 views, 4 reels >500 of the last 20, followers 24.
 - Result:
 - 2026-11-11: batch 4 built (ill-just-today #20 pillar B, ill-mixed-practice #21 pillar C), both 49-51 s. Live so far: only the Nov 8 three; Mon/Tue batches unscheduled, so the test is short of data. No readings yet.
+- 2026-11-13: batch 6 built (ill-autopilot #25 pillar C, ill-good-day #26 pillar B, ill-middle #27 pillar A), 50.6-51.7 s (slightly over the cap after two trims). Week's pillar count Nov 9-17 builds: A 5, B 2, C 4, D 2. Still zero readings (no screenshots since Nov 6).

@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-autopilot",
+ "hook_type": "hard-truth",
+ "topic": "learning",
+ "pillar": "C (learning & skill)",
+ "series": "Why we stop doing things we know are good for us, Reason #25 (autopilot)",
+ "experiment": "V-EXP-34",
+ "hook": "You practise every day. You stopped getting better in month one.",
+ "gate": {
+  "goal_link": "any skill goal (instrument, language, sport): daily practice that stopped producing progress",
+  "mechanism": "once a skill feels easy it becomes automatic (autonomous stage, Fitts & Posner); comfortable repetition maintains it, only practice just past current level grows it. No study number cited.",
+  "universal": "typing every day for years without getting faster"
+ },
+ "frame": {
+  "structure": "A (method with stakes)",
+  "want": "get better at guitar",
+  "obstacle": "practice becomes autopilot once it's easy",
+  "cost": "months 2-6 at the same five songs (illustration)",
+  "fix": "every session add one thing just out of reach: song +5 bpm until it breaks, fix the bar that breaks; a page slightly too hard"
+ },
+ "hooks_considered": [
+  {
+   "line": "You practise every day. You stopped getting better in month one.",
+   "kept": true,
+   "checks": "hard truth Y, gap Y, muted Y (flat bars), sendable Y, keeps make-first's promise"
+  },
+  {
+   "line": "You've typed every day for ten years. You're not faster.",
+   "kept": false,
+   "checks": "strong but needs the skill link; used mid-reel as the sendable line"
+  },
+  {
+   "line": "Doing it every day isn't getting better.",
+   "kept": false,
+   "checks": "weaker chart"
+  }
+ ],
+ "beats": {
+  "hard_truth": "0.0 s flat songs-per-month bars",
+  "series": "Reason #25 card",
+  "rehook_10": "easy vs just-out-of-reach gauges",
+  "rehook_25": "metronome 80 -> 85 bpm",
+  "save_moment": "JUST OUT OF REACH rule card",
+  "share_line": "Send this to the friend stuck at the same level.",
+  "comment_q": "What skill are you stuck on?",
+  "follow_reason": "Next: why a great day makes you skip the next one (ill-good-day, built today)"
+ },
+ "note": "51.7 s, 1.7 s over the 50 s V-EXP-34 cap after two trims (Kokoro reads at 3.3 w/s). Loop ending: the same chart as frame 0 climbing. tempo-loop reused from ill-hard-part (different fix: difficulty, not the hard section).",
+ "quality": {
+  "hook": 5,
+  "usefulness": 5,
+  "specificity": 4,
+  "clarity": 4,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 34
+ }
+}

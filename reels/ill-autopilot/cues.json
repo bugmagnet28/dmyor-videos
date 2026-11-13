@@ -1,0 +1,1091 @@
+{
+ "audio": "audio.mp3",
+ "duration": 51.87,
+ "text": "You practice every day, you stop getting better in month one. Why do we stop doing things we know are good for us? Reason 25. Learning guitar month one zero to five songs. Months two three four same five songs same level. Once it feels easy your brain runs it on autopilot. Easy practice keeps a skill it doesn't grow it. It's why years of typing never made you faster. Then it feels pointless you quit. So every session add one thing just out of reach. Play at five beats faster fix the bar that breaks. Learning a language one page that's a bit too hard. Month four five six the line climbs again. Send this to the friend stuck at the same level. That's what Dmior is for. Archive your dream today and break it into small steps you can actually do. Follow for one reason a day next. Why a great day makes you skip the next one. What skill are you stuck on the links in the bio?",
+ "words": [
+  {
+   "w": "you",
+   "raw": "You",
+   "s": 0.0,
+   "e": 0.28
+  },
+  {
+   "w": "practice",
+   "raw": "practice",
+   "s": 0.28,
+   "e": 0.64
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 0.64,
+   "e": 1.04
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 1.04,
+   "e": 1.3
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 1.52,
+   "e": 1.6
+  },
+  {
+   "w": "stop",
+   "raw": "stop",
+   "s": 1.6,
+   "e": 1.86
+  },
+  {
+   "w": "getting",
+   "raw": "getting",
+   "s": 1.86,
+   "e": 2.06
+  },
+  {
+   "w": "better",
+   "raw": "better",
+   "s": 2.06,
+   "e": 2.3
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 2.3,
+   "e": 2.52
+  },
+  {
+   "w": "month",
+   "raw": "month",
+   "s": 2.52,
+   "e": 2.64
+  },
+  {
+   "w": "one",
+   "raw": "one.",
+   "s": 2.64,
+   "e": 3.02
+  },
+  {
+   "w": "why",
+   "raw": "Why",
+   "s": 3.42,
+   "e": 3.56
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 3.56,
+   "e": 3.7
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 3.7,
+   "e": 3.84
+  },
+  {
+   "w": "stop",
+   "raw": "stop",
+   "s": 3.84,
+   "e": 4.1
+  },
+  {
+   "w": "doing",
+   "raw": "doing",
+   "s": 4.1,
+   "e": 4.34
+  },
+  {
+   "w": "things",
+   "raw": "things",
+   "s": 4.34,
+   "e": 4.7
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 4.7,
+   "e": 4.9
+  },
+  {
+   "w": "know",
+   "raw": "know",
+   "s": 4.9,
+   "e": 5.06
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 5.06,
+   "e": 5.24
+  },
+  {
+   "w": "good",
+   "raw": "good",
+   "s": 5.24,
+   "e": 5.36
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 5.36,
+   "e": 5.58
+  },
+  {
+   "w": "us",
+   "raw": "us?",
+   "s": 5.58,
+   "e": 5.88
+  },
+  {
+   "w": "reason",
+   "raw": "Reason",
+   "s": 6.38,
+   "e": 6.38
+  },
+  {
+   "w": "25",
+   "raw": "25.",
+   "s": 6.38,
+   "e": 7.0
+  },
+  {
+   "w": "learning",
+   "raw": "Learning",
+   "s": 7.64,
+   "e": 7.82
+  },
+  {
+   "w": "guitar",
+   "raw": "guitar",
+   "s": 7.82,
+   "e": 8.24
+  },
+  {
+   "w": "month",
+   "raw": "month",
+   "s": 8.24,
+   "e": 8.52
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 8.52,
+   "e": 8.86
+  },
+  {
+   "w": "zero",
+   "raw": "zero",
+   "s": 8.86,
+   "e": 9.14
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 9.14,
+   "e": 9.38
+  },
+  {
+   "w": "five",
+   "raw": "five",
+   "s": 9.38,
+   "e": 9.64
+  },
+  {
+   "w": "songs",
+   "raw": "songs.",
+   "s": 9.64,
+   "e": 10.12
+  },
+  {
+   "w": "months",
+   "raw": "Months",
+   "s": 10.72,
+   "e": 10.72
+  },
+  {
+   "w": "two",
+   "raw": "two",
+   "s": 10.72,
+   "e": 11.02
+  },
+  {
+   "w": "three",
+   "raw": "three",
+   "s": 11.02,
+   "e": 11.28
+  },
+  {
+   "w": "four",
+   "raw": "four",
+   "s": 11.28,
+   "e": 11.6
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 11.6,
+   "e": 11.92
+  },
+  {
+   "w": "five",
+   "raw": "five",
+   "s": 11.92,
+   "e": 12.22
+  },
+  {
+   "w": "songs",
+   "raw": "songs",
+   "s": 12.22,
+   "e": 12.62
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 12.62,
+   "e": 12.9
+  },
+  {
+   "w": "level",
+   "raw": "level.",
+   "s": 12.9,
+   "e": 13.26
+  },
+  {
+   "w": "once",
+   "raw": "Once",
+   "s": 13.72,
+   "e": 13.84
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 13.84,
+   "e": 13.96
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 13.96,
+   "e": 14.16
+  },
+  {
+   "w": "easy",
+   "raw": "easy",
+   "s": 14.16,
+   "e": 14.58
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 14.58,
+   "e": 14.8
+  },
+  {
+   "w": "brain",
+   "raw": "brain",
+   "s": 14.8,
+   "e": 15.06
+  },
+  {
+   "w": "runs",
+   "raw": "runs",
+   "s": 15.06,
+   "e": 15.36
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 15.36,
+   "e": 15.5
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 15.5,
+   "e": 15.66
+  },
+  {
+   "w": "autopilot",
+   "raw": "autopilot.",
+   "s": 15.66,
+   "e": 16.32
+  },
+  {
+   "w": "easy",
+   "raw": "Easy",
+   "s": 16.82,
+   "e": 17.0
+  },
+  {
+   "w": "practice",
+   "raw": "practice",
+   "s": 17.0,
+   "e": 17.38
+  },
+  {
+   "w": "keeps",
+   "raw": "keeps",
+   "s": 17.38,
+   "e": 17.66
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 17.66,
+   "e": 17.82
+  },
+  {
+   "w": "skill",
+   "raw": "skill",
+   "s": 17.82,
+   "e": 18.1
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 18.1,
+   "e": 18.32
+  },
+  {
+   "w": "doesnt",
+   "raw": "doesn't",
+   "s": 18.32,
+   "e": 18.6
+  },
+  {
+   "w": "grow",
+   "raw": "grow",
+   "s": 18.6,
+   "e": 18.78
+  },
+  {
+   "w": "it",
+   "raw": "it.",
+   "s": 18.78,
+   "e": 19.06
+  },
+  {
+   "w": "its",
+   "raw": "It's",
+   "s": 19.26,
+   "e": 19.46
+  },
+  {
+   "w": "why",
+   "raw": "why",
+   "s": 19.46,
+   "e": 19.7
+  },
+  {
+   "w": "years",
+   "raw": "years",
+   "s": 19.7,
+   "e": 19.94
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 19.94,
+   "e": 20.12
+  },
+  {
+   "w": "typing",
+   "raw": "typing",
+   "s": 20.12,
+   "e": 20.46
+  },
+  {
+   "w": "never",
+   "raw": "never",
+   "s": 20.46,
+   "e": 20.82
+  },
+  {
+   "w": "made",
+   "raw": "made",
+   "s": 20.82,
+   "e": 21.08
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 21.08,
+   "e": 21.24
+  },
+  {
+   "w": "faster",
+   "raw": "faster.",
+   "s": 21.24,
+   "e": 21.66
+  },
+  {
+   "w": "then",
+   "raw": "Then",
+   "s": 22.0,
+   "e": 22.22
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 22.22,
+   "e": 22.34
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 22.34,
+   "e": 22.56
+  },
+  {
+   "w": "pointless",
+   "raw": "pointless",
+   "s": 22.56,
+   "e": 23.04
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 23.04,
+   "e": 23.32
+  },
+  {
+   "w": "quit",
+   "raw": "quit.",
+   "s": 23.32,
+   "e": 23.56
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 24.08,
+   "e": 24.32
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 24.32,
+   "e": 24.62
+  },
+  {
+   "w": "session",
+   "raw": "session",
+   "s": 24.62,
+   "e": 24.98
+  },
+  {
+   "w": "add",
+   "raw": "add",
+   "s": 24.98,
+   "e": 25.32
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 25.32,
+   "e": 25.56
+  },
+  {
+   "w": "thing",
+   "raw": "thing",
+   "s": 25.56,
+   "e": 25.8
+  },
+  {
+   "w": "just",
+   "raw": "just",
+   "s": 25.8,
+   "e": 26.04
+  },
+  {
+   "w": "out",
+   "raw": "out",
+   "s": 26.04,
+   "e": 26.26
+  },
+  {
+   "w": "of",
+   "raw": "of",
+   "s": 26.26,
+   "e": 26.38
+  },
+  {
+   "w": "reach",
+   "raw": "reach.",
+   "s": 26.38,
+   "e": 26.72
+  },
+  {
+   "w": "play",
+   "raw": "Play",
+   "s": 26.72,
+   "e": 27.26
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 27.26,
+   "e": 27.38
+  },
+  {
+   "w": "five",
+   "raw": "five",
+   "s": 27.38,
+   "e": 27.64
+  },
+  {
+   "w": "beats",
+   "raw": "beats",
+   "s": 27.64,
+   "e": 27.94
+  },
+  {
+   "w": "faster",
+   "raw": "faster",
+   "s": 27.94,
+   "e": 28.44
+  },
+  {
+   "w": "fix",
+   "raw": "fix",
+   "s": 28.44,
+   "e": 28.68
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 28.68,
+   "e": 28.9
+  },
+  {
+   "w": "bar",
+   "raw": "bar",
+   "s": 28.9,
+   "e": 29.06
+  },
+  {
+   "w": "that",
+   "raw": "that",
+   "s": 29.06,
+   "e": 29.24
+  },
+  {
+   "w": "breaks",
+   "raw": "breaks.",
+   "s": 29.24,
+   "e": 29.52
+  },
+  {
+   "w": "learning",
+   "raw": "Learning",
+   "s": 29.54,
+   "e": 30.02
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 30.02,
+   "e": 30.18
+  },
+  {
+   "w": "language",
+   "raw": "language",
+   "s": 30.18,
+   "e": 30.48
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 30.48,
+   "e": 30.88
+  },
+  {
+   "w": "page",
+   "raw": "page",
+   "s": 30.88,
+   "e": 31.18
+  },
+  {
+   "w": "thats",
+   "raw": "that's",
+   "s": 31.18,
+   "e": 31.44
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 31.44,
+   "e": 31.5
+  },
+  {
+   "w": "bit",
+   "raw": "bit",
+   "s": 31.5,
+   "e": 31.6
+  },
+  {
+   "w": "too",
+   "raw": "too",
+   "s": 31.6,
+   "e": 31.78
+  },
+  {
+   "w": "hard",
+   "raw": "hard.",
+   "s": 31.78,
+   "e": 32.26
+  },
+  {
+   "w": "month",
+   "raw": "Month",
+   "s": 32.84,
+   "e": 32.94
+  },
+  {
+   "w": "four",
+   "raw": "four",
+   "s": 32.94,
+   "e": 33.22
+  },
+  {
+   "w": "five",
+   "raw": "five",
+   "s": 33.22,
+   "e": 33.58
+  },
+  {
+   "w": "six",
+   "raw": "six",
+   "s": 33.58,
+   "e": 33.88
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 33.88,
+   "e": 34.22
+  },
+  {
+   "w": "line",
+   "raw": "line",
+   "s": 34.22,
+   "e": 34.48
+  },
+  {
+   "w": "climbs",
+   "raw": "climbs",
+   "s": 34.48,
+   "e": 34.82
+  },
+  {
+   "w": "again",
+   "raw": "again.",
+   "s": 34.82,
+   "e": 35.22
+  },
+  {
+   "w": "send",
+   "raw": "Send",
+   "s": 35.68,
+   "e": 35.94
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 35.94,
+   "e": 36.12
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 36.12,
+   "e": 36.26
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 36.26,
+   "e": 36.38
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 36.38,
+   "e": 36.6
+  },
+  {
+   "w": "stuck",
+   "raw": "stuck",
+   "s": 36.6,
+   "e": 36.96
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 36.96,
+   "e": 37.14
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 37.14,
+   "e": 37.26
+  },
+  {
+   "w": "same",
+   "raw": "same",
+   "s": 37.26,
+   "e": 37.5
+  },
+  {
+   "w": "level",
+   "raw": "level.",
+   "s": 37.5,
+   "e": 37.88
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 38.24,
+   "e": 38.58
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 38.58,
+   "e": 38.76
+  },
+  {
+   "w": "dmior",
+   "raw": "Dmior",
+   "s": 38.76,
+   "e": 39.14
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 39.14,
+   "e": 39.3
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 39.3,
+   "e": 39.58
+  },
+  {
+   "w": "archive",
+   "raw": "Archive",
+   "s": 39.96,
+   "e": 40.14
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 40.14,
+   "e": 40.38
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 40.38,
+   "e": 40.6
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 40.6,
+   "e": 40.96
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 40.96,
+   "e": 41.2
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 41.2,
+   "e": 41.38
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 41.38,
+   "e": 41.52
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 41.52,
+   "e": 41.66
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 41.66,
+   "e": 42.0
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 42.0,
+   "e": 42.3
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 42.3,
+   "e": 42.5
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 42.5,
+   "e": 42.62
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 42.62,
+   "e": 42.92
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 42.92,
+   "e": 43.3
+  },
+  {
+   "w": "follow",
+   "raw": "Follow",
+   "s": 43.72,
+   "e": 43.98
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 43.98,
+   "e": 44.24
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 44.24,
+   "e": 44.44
+  },
+  {
+   "w": "reason",
+   "raw": "reason",
+   "s": 44.44,
+   "e": 44.74
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 44.74,
+   "e": 44.94
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 44.94,
+   "e": 45.16
+  },
+  {
+   "w": "next",
+   "raw": "next.",
+   "s": 45.16,
+   "e": 45.6
+  },
+  {
+   "w": "why",
+   "raw": "Why",
+   "s": 45.94,
+   "e": 46.12
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 46.12,
+   "e": 46.24
+  },
+  {
+   "w": "great",
+   "raw": "great",
+   "s": 46.24,
+   "e": 46.42
+  },
+  {
+   "w": "day",
+   "raw": "day",
+   "s": 46.42,
+   "e": 46.62
+  },
+  {
+   "w": "makes",
+   "raw": "makes",
+   "s": 46.62,
+   "e": 46.8
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 46.8,
+   "e": 46.96
+  },
+  {
+   "w": "skip",
+   "raw": "skip",
+   "s": 46.96,
+   "e": 47.16
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 47.16,
+   "e": 47.34
+  },
+  {
+   "w": "next",
+   "raw": "next",
+   "s": 47.34,
+   "e": 47.56
+  },
+  {
+   "w": "one",
+   "raw": "one.",
+   "s": 47.56,
+   "e": 47.88
+  },
+  {
+   "w": "what",
+   "raw": "What",
+   "s": 48.2,
+   "e": 48.46
+  },
+  {
+   "w": "skill",
+   "raw": "skill",
+   "s": 48.46,
+   "e": 48.74
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 48.74,
+   "e": 48.9
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 48.9,
+   "e": 49.02
+  },
+  {
+   "w": "stuck",
+   "raw": "stuck",
+   "s": 49.02,
+   "e": 49.24
+  },
+  {
+   "w": "on",
+   "raw": "on",
+   "s": 49.24,
+   "e": 49.54
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 49.54,
+   "e": 49.76
+  },
+  {
+   "w": "links",
+   "raw": "links",
+   "s": 49.76,
+   "e": 49.98
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 49.98,
+   "e": 50.2
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 50.2,
+   "e": 50.32
+  },
+  {
+   "w": "bio",
+   "raw": "bio?",
+   "s": 50.32,
+   "e": 50.54
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 3.02,
+   "text": "You practice every day, you stop getting better in month one."
+  },
+  {
+   "s": 3.42,
+   "e": 7.0,
+   "text": "Why do we stop doing things we know are good for us? Reason 25."
+  },
+  {
+   "s": 7.64,
+   "e": 13.26,
+   "text": "Learning guitar month one zero to five songs. Months two three four same five songs same level."
+  },
+  {
+   "s": 13.72,
+   "e": 19.06,
+   "text": "Once it feels easy your brain runs it on autopilot. Easy practice keeps a skill it doesn't grow it."
+  },
+  {
+   "s": 19.26,
+   "e": 23.56,
+   "text": "It's why years of typing never made you faster. Then it feels pointless you quit."
+  },
+  {
+   "s": 24.08,
+   "e": 26.72,
+   "text": "So every session add one thing just out of reach."
+  },
+  {
+   "s": 26.72,
+   "e": 32.26,
+   "text": "Play at five beats faster fix the bar that breaks. Learning a language one page that's a bit too hard."
+  },
+  {
+   "s": 32.84,
+   "e": 37.88,
+   "text": "Month four five six the line climbs again. Send this to the friend stuck at the same level."
+  },
+  {
+   "s": 38.24,
+   "e": 43.3,
+   "text": "That's what Dmior is for. Archive your dream today and break it into small steps you can actually do."
+  },
+  {
+   "s": 43.72,
+   "e": 47.88,
+   "text": "Follow for one reason a day next. Why a great day makes you skip the next one."
+  },
+  {
+   "s": 48.2,
+   "e": 50.54,
+   "text": "What skill are you stuck on the links in the bio?"
+  }
+ ],
+ "wps": 3.3
+}

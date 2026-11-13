@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-good-day",
+ "hook_type": "hard-truth",
+ "topic": "consistency",
+ "pillar": "B (daily choices compound)",
+ "series": "Why we stop doing things we know are good for us, Reason #26 (the good day)",
+ "experiment": "V-EXP-34",
+ "hook": "A great day is the easiest excuse to skip the next one.",
+ "gate": {
+  "goal_link": "any goal worked on in sessions (learning to code): one big day licenses a week off",
+  "mechanism": "licensing: progress toward a goal feels like permission to relax it (Fishbach & Dhar, goals as excuses; named as 'licensing', no numbers cited)",
+  "universal": "all in on Monday, gone by Wednesday"
+ },
+ "frame": {
+  "structure": "B (want, obstacle, choice, payoff)",
+  "want": "Neha learns to code",
+  "obstacle": "Monday's 3 hours becomes the reason to skip Tue-Thu",
+  "cost": "180 min Monday, 0 the rest of the week (illustration)",
+  "fix": "end every good day by booking the next: write tomorrow's step (fix one bug, 10 min) before closing the laptop"
+ },
+ "hooks_considered": [
+  {
+   "line": "A great day is the easiest excuse to skip the next one.",
+   "kept": true,
+   "checks": "hard truth Y, gap Y, muted Y (180 vs 0 min bars), sendable Y"
+  },
+  {
+   "line": "Three hours on Monday. Zero the rest of the week.",
+   "kept": false,
+   "checks": "number contrast, close second"
+  },
+  {
+   "line": "You didn't lose motivation. You rewarded yourself.",
+   "kept": false,
+   "checks": "less concrete"
+  }
+ ],
+ "beats": {
+  "hard_truth": "0.0 s Monday 180 min vs Tue-Sun 0",
+  "series": "Reason #26 card",
+  "rehook_10": "week calendar: earned it / tired / next week Xs",
+  "rehook_25": "TOMORROW note written",
+  "save_moment": "AFTER A GOOD DAY rule card",
+  "share_line": "Send this to the friend who goes all in on Monday and vanishes by Wednesday.",
+  "comment_q": "What did you skip after a good day?",
+  "follow_reason": "Next: why goals die in the middle (ill-middle, built today)"
+ },
+ "note": "50.9 s. Pillar B was 1 of the week's builds; this is the B pick. Night-list reused from ill-night-before (Oct) with a different reason (licensing, not planning).",
+ "quality": {
+  "hook": 5,
+  "usefulness": 4,
+  "specificity": 4,
+  "clarity": 4,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 33
+ }
+}

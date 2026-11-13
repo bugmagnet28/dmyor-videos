@@ -1,0 +1,340 @@
+{
+ "total": 50.62,
+ "brandT": 46.94,
+ "scenes": [
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "hook",
+    "bars": [
+     [
+      "Start",
+      "",
+      90,
+      "ink"
+     ],
+     [
+      "",
+      "",
+      62,
+      "ink"
+     ],
+     [
+      "Middle",
+      "",
+      28,
+      "red"
+     ],
+     [
+      "",
+      "",
+      58,
+      "ink"
+     ],
+     [
+      "End",
+      "",
+      92,
+      "ink"
+     ]
+    ],
+    "max": 100,
+    "ylabel": "MOTIVATION ALONG A GOAL",
+    "chip": "Goals stall here"
+   },
+   "head": "Goals die in<br>the <b>middle</b>.",
+   "t0": 0.0,
+   "t1": 2.85
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 27,
+    "title": "The middle",
+    "cue": [
+     "good",
+     "Reason"
+    ],
+    "at": [
+     1.81,
+     2.99
+    ]
+   },
+   "head": "Why we <b>stop</b>.",
+   "t0": 2.85,
+   "t1": 6.99
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "grow",
+    "bars": [
+     [
+      "Month 1",
+      "",
+      90,
+      "acc"
+     ],
+     [
+      "Month 3",
+      "",
+      60,
+      "ink"
+     ],
+     [
+      "Month 6",
+      "",
+      28,
+      "red"
+     ]
+    ],
+    "max": 100,
+    "ylabel": "HOW MUCH TODAY FEELS LIKE PROGRESS",
+    "chip": "So you skip a week",
+    "cue": [
+     "one",
+     "six",
+     "nothing",
+     "week"
+    ],
+    "at": [
+     1.73,
+     4.4,
+     5.93,
+     7.05
+    ]
+   },
+   "head": "A year of<br><b>Spanish</b>.",
+   "t0": 6.99,
+   "t1": 14.68
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Done since the start",
+      50,
+      "ink"
+     ],
+     [
+      "Left to the finish",
+      50,
+      "red"
+     ]
+    ],
+    "max": 100,
+    "unit": "%",
+    "chip": "Far from both ends",
+    "cue": [
+     "zero",
+     "finish",
+     "both"
+    ],
+    "at": [
+     1.29,
+     2.53,
+     4.43
+    ]
+   },
+   "head": "Far from<br><b>both</b> ends.",
+   "t0": 14.63,
+   "t1": 19.73
+  },
+  {
+   "type": "week-countdown",
+   "params": {
+    "weeks": 4,
+    "end": "Order dinner in Spanish",
+    "rows": [
+     "20 food words",
+     "5 phrases out loud",
+     "Order once at a cafe"
+    ],
+    "cue": [
+     "twelve",
+     "dinner",
+     "Four"
+    ],
+    "at": [
+     0.78,
+     3.45,
+     4.04
+    ]
+   },
+   "head": "A finish line<br>every <b>month</b>.",
+   "t0": 19.73,
+   "t1": 25.48
+  },
+  {
+   "type": "list-rewrite",
+   "params": {
+    "rows": [
+     [
+      "One finish, a year off",
+      "A finish every month"
+     ],
+     [
+      "Count everything left",
+      "Half 1: count done"
+     ],
+     [
+      "Count everything done",
+      "Half 2: count left"
+     ]
+    ],
+    "cue": [
+     "smaller",
+     "First",
+     "Second"
+    ],
+    "at": [
+     1.03,
+     1.89,
+     3.37
+    ]
+   },
+   "head": "Count the<br><b>smaller</b> number.",
+   "t0": 25.43,
+   "t1": 30.67
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "morph",
+    "bars": [
+     [
+      "Start",
+      "",
+      90,
+      "ink"
+     ],
+     [
+      "",
+      "",
+      62,
+      "ink"
+     ],
+     [
+      "Middle",
+      "",
+      28,
+      "red"
+     ],
+     [
+      "",
+      "",
+      58,
+      "ink"
+     ],
+     [
+      "End",
+      "",
+      92,
+      "ink"
+     ]
+    ],
+    "after": [
+     null,
+     [
+      "",
+      "",
+      85,
+      "acc"
+     ],
+     [
+      "Month 6",
+      "",
+      88,
+      "acc"
+     ],
+     [
+      "",
+      "",
+      86,
+      "acc"
+     ],
+     null
+    ],
+    "max": 100,
+    "ylabel": "MOTIVATION ALONG A GOAL",
+    "chip2": "Always near a finish line",
+    "cue": [
+     "middle",
+     "line"
+    ],
+    "together": true,
+    "at": [
+     1.11,
+     1.89
+    ]
+   },
+   "head": "No more<br><b>middle</b>.",
+   "t0": 30.67,
+   "t1": 33.95
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "MANY FINISH LINES",
+    "items": [
+     "A finish every month",
+     "Half 1: count done",
+     "Half 2: count left"
+    ],
+    "cue": [
+     "Send",
+     "friend",
+     "stuck"
+    ],
+    "at": [
+     0.05,
+     0.59,
+     0.79
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>.",
+   "t0": 33.95,
+   "t1": 36.91
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Speak Spanish by 2027",
+    "date": "Open it again: Nov 2027",
+    "steps": [
+     "Month 1: order dinner",
+     "Month 2: ask directions",
+     "Today: 10 food words"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 36.91,
+   "t1": 42.29
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why a new goal feels better than finishing the old one",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "old"
+    ],
+    "at": [
+     0.2,
+     3.75
+    ]
+   },
+   "head": "One reason<br><b>a day</b>.",
+   "t0": 42.29,
+   "t1": 46.94
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  19.68,
+  30.62
+ ]
+}

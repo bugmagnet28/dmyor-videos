@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-middle",
+ "hook_type": "hard-truth",
+ "topic": "motivation",
+ "pillar": "A (why goals fail)",
+ "series": "Why we stop doing things we know are good for us, Reason #27 (the middle)",
+ "experiment": "V-EXP-34",
+ "hook": "Goals don't die at the start. They die in the middle.",
+ "gate": {
+  "goal_link": "any long goal (a year of Spanish): motivation sags halfway",
+  "mechanism": "stuck-in-the-middle / goal gradient: progress feels large measured from zero and the finish pulls near the end; in the middle both are far (Bonezzi et al. 2011; small-area: count the smaller number, Koo & Fishbach). No numbers cited; frame-0 bars are illustrative.",
+  "universal": "halfway through something big and losing steam"
+ },
+ "frame": {
+  "structure": "C (mistake, cost, fix)",
+  "want": "speak Spanish in a year",
+  "obstacle": "one finish line a year away",
+  "cost": "month 6: skip a week (illustration)",
+  "fix": "twelve monthly finish lines (month 1: order dinner in Spanish); count what's done in the first half, what's left in the second"
+ },
+ "hooks_considered": [
+  {
+   "line": "Goals don't die at the start. They die in the middle.",
+   "kept": true,
+   "checks": "hard truth Y, gap Y, muted Y (U-shaped bars), sendable Y"
+  },
+  {
+   "line": "Month six is where your goal quietly ends.",
+   "kept": false,
+   "checks": "good, less universal"
+  },
+  {
+   "line": "Halfway is the most dangerous place for a goal.",
+   "kept": false,
+   "checks": "vaguer"
+  }
+ ],
+ "beats": {
+  "hard_truth": "0.0 s motivation bars along a goal, middle in clay",
+  "series": "Reason #27",
+  "rehook_10": "done 50% vs left 50% bars",
+  "rehook_25": "4-week finish line: order dinner in Spanish",
+  "save_moment": "MANY FINISH LINES rule card",
+  "share_line": "Send this to the friend stuck halfway through something big.",
+  "comment_q": "Which goal are you halfway through?",
+  "follow_reason": "Next: why a new goal feels better than the old one (Reason #28, next run builds it)"
+ },
+ "note": "50.6 s. Strong Dmyor tie-in (milestones = finish lines). Loop ending: frame-0 chart with the middle filled in.",
+ "quality": {
+  "hook": 5,
+  "usefulness": 5,
+  "specificity": 4,
+  "clarity": 4,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 34
+ }
+}

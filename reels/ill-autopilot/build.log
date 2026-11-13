@@ -1,0 +1,10 @@
+reels/ill-autopilot/audio.mp3  51.87s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body body body body land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/5187 [00:00<?, ?frames/s] 52%|█████▏    | 2672/5187 [00:24<00:23, 109.27frames/s] 52%|█████▏    | 2672/5187 [00:40<00:23, 109.27frames/s]100%|██████████| 5187/5187 [00:53<00:00, 95.53frames/s] 100%|██████████| 5187/5187 [00:53<00:00, 97.42frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+171 words, 51.87s, 3.3 words/sec
+-> reels/ill-autopilot/cues.json
+sfx present: 43 sounds -> reels/ill-autopilot/audio_mixed.mp3 pencil@0.1 pop@3.4 riffle@3.7 pop@6.4 swish@7.6 pop@9.4 pop@10.7 pop@11.0 pop@12.9 swish@13.7 pop@14.2 pop@18.6 right@19.2 pop@19.7 pop@20.1 pop@21.2 swish@24.0 clock@24.1 right@26.7 right@27.0 right@27.3 right@27.6 right@27.9 pop@28.4 swish@32.8 reveal@34.5 pop@35.7 right@36.0 pencil@36.6 right@37.0 pencil@37.5 right@37.9 tone@38.2 stamp@38.3 pop@39.9 pop@40.4 right@41.2 right@41.7 right@42.2 pop@43.7 toggle@47.0 right@47.3 chord@48.2
+built reels/ill-autopilot: 51.74s, 10 scenes, brand 48.20s, 3.3 words/sec
+scenes: [('week-bars', 0.0, 3.37, None), ('series-card', 3.37, 7.59, [1.87, 3.01]), ('week-bars', 7.59, 13.72, [1.79, 3.13, 3.43, 3.69, 5.31]), ('easy-hard', 13.67, 19.21, [0.49, 4.93]), ('bar-compare', 19.21, 24.08, [0.49, 0.91, 2.03]), ('tempo-loop', 24.03, 32.84, [2.35, 2.69, 3.91, 4.41]), ('week-bars', 32.79, 35.63, [0.15, 1.69]), ('rule-card', 35.63, 38.19, [0.05, 0.97, 1.87]), ('dream-to-steps', 38.19, 43.67, None), ('follow-next', 43.67, 48.2, [0.2, 3.29])]

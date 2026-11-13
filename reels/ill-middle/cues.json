@@ -1,0 +1,1139 @@
+{
+ "audio": "audio.mp3",
+ "duration": 50.69,
+ "text": "Goals don't die at the start, they die in the middle. Why do we stop doing things we know are good for us? Reason 27. A year to speak Spanish, month 1 every new word feels like a win. Month 6 today's 10 words feel like nothing so you skip a week. At the start you measure from zero, near the end the finish pulls you, in the middle you're far from both. So give the year 12 finish lines. Finish line 1 order dinner in Spanish, 4 weeks away so it pulls. Count the smaller number, first half count what's done, second half count what's left. Now month 6 isn't the middle, it's finish line 6. Send this to the friend stuck halfway through something big. That's what demure is for. Archive your dream today and break it into small steps you can actually do. Follow for one reason a day, next, why a new goal feels better than the old one. Which goal are you halfway through? The links in the bio.",
+ "words": [
+  {
+   "w": "goals",
+   "raw": "Goals",
+   "s": 0.0,
+   "e": 0.38
+  },
+  {
+   "w": "dont",
+   "raw": "don't",
+   "s": 0.38,
+   "e": 0.74
+  },
+  {
+   "w": "die",
+   "raw": "die",
+   "s": 0.74,
+   "e": 0.92
+  },
+  {
+   "w": "at",
+   "raw": "at",
+   "s": 0.92,
+   "e": 1.04
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 1.04,
+   "e": 1.2
+  },
+  {
+   "w": "start",
+   "raw": "start,",
+   "s": 1.2,
+   "e": 1.44
+  },
+  {
+   "w": "they",
+   "raw": "they",
+   "s": 1.6,
+   "e": 1.72
+  },
+  {
+   "w": "die",
+   "raw": "die",
+   "s": 1.72,
+   "e": 1.92
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 1.92,
+   "e": 2.08
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 2.08,
+   "e": 2.16
+  },
+  {
+   "w": "middle",
+   "raw": "middle.",
+   "s": 2.16,
+   "e": 2.4
+  },
+  {
+   "w": "why",
+   "raw": "Why",
+   "s": 2.9,
+   "e": 3.0
+  },
+  {
+   "w": "do",
+   "raw": "do",
+   "s": 3.0,
+   "e": 3.14
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 3.14,
+   "e": 3.28
+  },
+  {
+   "w": "stop",
+   "raw": "stop",
+   "s": 3.28,
+   "e": 3.52
+  },
+  {
+   "w": "doing",
+   "raw": "doing",
+   "s": 3.52,
+   "e": 3.8
+  },
+  {
+   "w": "things",
+   "raw": "things",
+   "s": 3.8,
+   "e": 4.12
+  },
+  {
+   "w": "we",
+   "raw": "we",
+   "s": 4.12,
+   "e": 4.34
+  },
+  {
+   "w": "know",
+   "raw": "know",
+   "s": 4.34,
+   "e": 4.5
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 4.5,
+   "e": 4.66
+  },
+  {
+   "w": "good",
+   "raw": "good",
+   "s": 4.66,
+   "e": 4.8
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 4.8,
+   "e": 5.02
+  },
+  {
+   "w": "us",
+   "raw": "us?",
+   "s": 5.02,
+   "e": 5.28
+  },
+  {
+   "w": "reason",
+   "raw": "Reason",
+   "s": 5.84,
+   "e": 5.84
+  },
+  {
+   "w": "27",
+   "raw": "27.",
+   "s": 5.84,
+   "e": 6.48
+  },
+  {
+   "w": "a",
+   "raw": "A",
+   "s": 7.04,
+   "e": 7.14
+  },
+  {
+   "w": "year",
+   "raw": "year",
+   "s": 7.14,
+   "e": 7.26
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 7.26,
+   "e": 7.44
+  },
+  {
+   "w": "speak",
+   "raw": "speak",
+   "s": 7.44,
+   "e": 7.66
+  },
+  {
+   "w": "spanish",
+   "raw": "Spanish,",
+   "s": 7.66,
+   "e": 8.16
+  },
+  {
+   "w": "month",
+   "raw": "month",
+   "s": 8.68,
+   "e": 8.72
+  },
+  {
+   "w": "1",
+   "raw": "1",
+   "s": 8.72,
+   "e": 9.0
+  },
+  {
+   "w": "every",
+   "raw": "every",
+   "s": 9.0,
+   "e": 9.3
+  },
+  {
+   "w": "new",
+   "raw": "new",
+   "s": 9.3,
+   "e": 9.56
+  },
+  {
+   "w": "word",
+   "raw": "word",
+   "s": 9.56,
+   "e": 9.78
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 9.78,
+   "e": 10.04
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 10.04,
+   "e": 10.3
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 10.3,
+   "e": 10.44
+  },
+  {
+   "w": "win",
+   "raw": "win.",
+   "s": 10.44,
+   "e": 10.64
+  },
+  {
+   "w": "month",
+   "raw": "Month",
+   "s": 11.24,
+   "e": 11.28
+  },
+  {
+   "w": "6",
+   "raw": "6",
+   "s": 11.28,
+   "e": 11.56
+  },
+  {
+   "w": "todays",
+   "raw": "today's",
+   "s": 11.56,
+   "e": 12.02
+  },
+  {
+   "w": "10",
+   "raw": "10",
+   "s": 12.02,
+   "e": 12.2
+  },
+  {
+   "w": "words",
+   "raw": "words",
+   "s": 12.2,
+   "e": 12.5
+  },
+  {
+   "w": "feel",
+   "raw": "feel",
+   "s": 12.5,
+   "e": 12.74
+  },
+  {
+   "w": "like",
+   "raw": "like",
+   "s": 12.74,
+   "e": 12.92
+  },
+  {
+   "w": "nothing",
+   "raw": "nothing",
+   "s": 12.92,
+   "e": 13.22
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 13.22,
+   "e": 13.58
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 13.58,
+   "e": 13.7
+  },
+  {
+   "w": "skip",
+   "raw": "skip",
+   "s": 13.7,
+   "e": 13.9
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 13.9,
+   "e": 14.04
+  },
+  {
+   "w": "week",
+   "raw": "week.",
+   "s": 14.04,
+   "e": 14.28
+  },
+  {
+   "w": "at",
+   "raw": "At",
+   "s": 14.68,
+   "e": 14.82
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 14.82,
+   "e": 14.96
+  },
+  {
+   "w": "start",
+   "raw": "start",
+   "s": 14.96,
+   "e": 15.2
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 15.2,
+   "e": 15.42
+  },
+  {
+   "w": "measure",
+   "raw": "measure",
+   "s": 15.42,
+   "e": 15.66
+  },
+  {
+   "w": "from",
+   "raw": "from",
+   "s": 15.66,
+   "e": 15.92
+  },
+  {
+   "w": "zero",
+   "raw": "zero,",
+   "s": 15.92,
+   "e": 16.32
+  },
+  {
+   "w": "near",
+   "raw": "near",
+   "s": 16.52,
+   "e": 16.66
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 16.66,
+   "e": 16.84
+  },
+  {
+   "w": "end",
+   "raw": "end",
+   "s": 16.84,
+   "e": 17.0
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 17.0,
+   "e": 17.16
+  },
+  {
+   "w": "finish",
+   "raw": "finish",
+   "s": 17.16,
+   "e": 17.36
+  },
+  {
+   "w": "pulls",
+   "raw": "pulls",
+   "s": 17.36,
+   "e": 17.64
+  },
+  {
+   "w": "you",
+   "raw": "you,",
+   "s": 17.64,
+   "e": 17.88
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 18.1,
+   "e": 18.22
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 18.22,
+   "e": 18.32
+  },
+  {
+   "w": "middle",
+   "raw": "middle",
+   "s": 18.32,
+   "e": 18.5
+  },
+  {
+   "w": "youre",
+   "raw": "you're",
+   "s": 18.5,
+   "e": 18.74
+  },
+  {
+   "w": "far",
+   "raw": "far",
+   "s": 18.74,
+   "e": 18.84
+  },
+  {
+   "w": "from",
+   "raw": "from",
+   "s": 18.84,
+   "e": 19.06
+  },
+  {
+   "w": "both",
+   "raw": "both.",
+   "s": 19.06,
+   "e": 19.34
+  },
+  {
+   "w": "so",
+   "raw": "So",
+   "s": 19.78,
+   "e": 20.02
+  },
+  {
+   "w": "give",
+   "raw": "give",
+   "s": 20.02,
+   "e": 20.2
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 20.2,
+   "e": 20.36
+  },
+  {
+   "w": "year",
+   "raw": "year",
+   "s": 20.36,
+   "e": 20.56
+  },
+  {
+   "w": "12",
+   "raw": "12",
+   "s": 20.56,
+   "e": 20.92
+  },
+  {
+   "w": "finish",
+   "raw": "finish",
+   "s": 20.92,
+   "e": 21.2
+  },
+  {
+   "w": "lines",
+   "raw": "lines.",
+   "s": 21.2,
+   "e": 21.66
+  },
+  {
+   "w": "finish",
+   "raw": "Finish",
+   "s": 22.18,
+   "e": 22.36
+  },
+  {
+   "w": "line",
+   "raw": "line",
+   "s": 22.36,
+   "e": 22.56
+  },
+  {
+   "w": "1",
+   "raw": "1",
+   "s": 22.56,
+   "e": 22.92
+  },
+  {
+   "w": "order",
+   "raw": "order",
+   "s": 22.92,
+   "e": 23.18
+  },
+  {
+   "w": "dinner",
+   "raw": "dinner",
+   "s": 23.18,
+   "e": 23.4
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 23.4,
+   "e": 23.62
+  },
+  {
+   "w": "spanish",
+   "raw": "Spanish,",
+   "s": 23.62,
+   "e": 24.0
+  },
+  {
+   "w": "4",
+   "raw": "4",
+   "s": 24.34,
+   "e": 24.44
+  },
+  {
+   "w": "weeks",
+   "raw": "weeks",
+   "s": 24.44,
+   "e": 24.62
+  },
+  {
+   "w": "away",
+   "raw": "away",
+   "s": 24.62,
+   "e": 24.9
+  },
+  {
+   "w": "so",
+   "raw": "so",
+   "s": 24.9,
+   "e": 25.12
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 25.12,
+   "e": 25.26
+  },
+  {
+   "w": "pulls",
+   "raw": "pulls.",
+   "s": 25.26,
+   "e": 25.48
+  },
+  {
+   "w": "count",
+   "raw": "Count",
+   "s": 25.48,
+   "e": 26.26
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 26.26,
+   "e": 26.46
+  },
+  {
+   "w": "smaller",
+   "raw": "smaller",
+   "s": 26.46,
+   "e": 26.74
+  },
+  {
+   "w": "number",
+   "raw": "number,",
+   "s": 26.74,
+   "e": 27.08
+  },
+  {
+   "w": "first",
+   "raw": "first",
+   "s": 27.32,
+   "e": 27.5
+  },
+  {
+   "w": "half",
+   "raw": "half",
+   "s": 27.5,
+   "e": 27.76
+  },
+  {
+   "w": "count",
+   "raw": "count",
+   "s": 27.76,
+   "e": 28.02
+  },
+  {
+   "w": "whats",
+   "raw": "what's",
+   "s": 28.02,
+   "e": 28.3
+  },
+  {
+   "w": "done",
+   "raw": "done,",
+   "s": 28.3,
+   "e": 28.52
+  },
+  {
+   "w": "second",
+   "raw": "second",
+   "s": 28.8,
+   "e": 28.92
+  },
+  {
+   "w": "half",
+   "raw": "half",
+   "s": 28.92,
+   "e": 29.24
+  },
+  {
+   "w": "count",
+   "raw": "count",
+   "s": 29.24,
+   "e": 29.48
+  },
+  {
+   "w": "whats",
+   "raw": "what's",
+   "s": 29.48,
+   "e": 29.76
+  },
+  {
+   "w": "left",
+   "raw": "left.",
+   "s": 29.76,
+   "e": 30.08
+  },
+  {
+   "w": "now",
+   "raw": "Now",
+   "s": 30.72,
+   "e": 30.8
+  },
+  {
+   "w": "month",
+   "raw": "month",
+   "s": 30.8,
+   "e": 31.02
+  },
+  {
+   "w": "6",
+   "raw": "6",
+   "s": 31.02,
+   "e": 31.34
+  },
+  {
+   "w": "isnt",
+   "raw": "isn't",
+   "s": 31.34,
+   "e": 31.66
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 31.66,
+   "e": 31.78
+  },
+  {
+   "w": "middle",
+   "raw": "middle,",
+   "s": 31.78,
+   "e": 32.02
+  },
+  {
+   "w": "its",
+   "raw": "it's",
+   "s": 32.2,
+   "e": 32.38
+  },
+  {
+   "w": "finish",
+   "raw": "finish",
+   "s": 32.38,
+   "e": 32.56
+  },
+  {
+   "w": "line",
+   "raw": "line",
+   "s": 32.56,
+   "e": 32.86
+  },
+  {
+   "w": "6",
+   "raw": "6.",
+   "s": 32.86,
+   "e": 33.2
+  },
+  {
+   "w": "send",
+   "raw": "Send",
+   "s": 34.0,
+   "e": 34.1
+  },
+  {
+   "w": "this",
+   "raw": "this",
+   "s": 34.1,
+   "e": 34.28
+  },
+  {
+   "w": "to",
+   "raw": "to",
+   "s": 34.28,
+   "e": 34.42
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 34.42,
+   "e": 34.54
+  },
+  {
+   "w": "friend",
+   "raw": "friend",
+   "s": 34.54,
+   "e": 34.74
+  },
+  {
+   "w": "stuck",
+   "raw": "stuck",
+   "s": 34.74,
+   "e": 35.06
+  },
+  {
+   "w": "halfway",
+   "raw": "halfway",
+   "s": 35.06,
+   "e": 35.44
+  },
+  {
+   "w": "through",
+   "raw": "through",
+   "s": 35.44,
+   "e": 35.76
+  },
+  {
+   "w": "something",
+   "raw": "something",
+   "s": 35.76,
+   "e": 36.04
+  },
+  {
+   "w": "big",
+   "raw": "big.",
+   "s": 36.04,
+   "e": 36.44
+  },
+  {
+   "w": "thats",
+   "raw": "That's",
+   "s": 36.96,
+   "e": 37.22
+  },
+  {
+   "w": "what",
+   "raw": "what",
+   "s": 37.22,
+   "e": 37.38
+  },
+  {
+   "w": "demure",
+   "raw": "demure",
+   "s": 37.38,
+   "e": 37.76
+  },
+  {
+   "w": "is",
+   "raw": "is",
+   "s": 37.76,
+   "e": 37.92
+  },
+  {
+   "w": "for",
+   "raw": "for.",
+   "s": 37.92,
+   "e": 38.2
+  },
+  {
+   "w": "archive",
+   "raw": "Archive",
+   "s": 38.76,
+   "e": 38.76
+  },
+  {
+   "w": "your",
+   "raw": "your",
+   "s": 38.76,
+   "e": 39.0
+  },
+  {
+   "w": "dream",
+   "raw": "dream",
+   "s": 39.0,
+   "e": 39.22
+  },
+  {
+   "w": "today",
+   "raw": "today",
+   "s": 39.22,
+   "e": 39.58
+  },
+  {
+   "w": "and",
+   "raw": "and",
+   "s": 39.58,
+   "e": 39.84
+  },
+  {
+   "w": "break",
+   "raw": "break",
+   "s": 39.84,
+   "e": 40.0
+  },
+  {
+   "w": "it",
+   "raw": "it",
+   "s": 40.0,
+   "e": 40.14
+  },
+  {
+   "w": "into",
+   "raw": "into",
+   "s": 40.14,
+   "e": 40.28
+  },
+  {
+   "w": "small",
+   "raw": "small",
+   "s": 40.28,
+   "e": 40.62
+  },
+  {
+   "w": "steps",
+   "raw": "steps",
+   "s": 40.62,
+   "e": 40.94
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 40.94,
+   "e": 41.12
+  },
+  {
+   "w": "can",
+   "raw": "can",
+   "s": 41.12,
+   "e": 41.24
+  },
+  {
+   "w": "actually",
+   "raw": "actually",
+   "s": 41.24,
+   "e": 41.56
+  },
+  {
+   "w": "do",
+   "raw": "do.",
+   "s": 41.56,
+   "e": 41.9
+  },
+  {
+   "w": "follow",
+   "raw": "Follow",
+   "s": 42.34,
+   "e": 42.6
+  },
+  {
+   "w": "for",
+   "raw": "for",
+   "s": 42.6,
+   "e": 42.86
+  },
+  {
+   "w": "one",
+   "raw": "one",
+   "s": 42.86,
+   "e": 43.06
+  },
+  {
+   "w": "reason",
+   "raw": "reason",
+   "s": 43.06,
+   "e": 43.34
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 43.34,
+   "e": 43.56
+  },
+  {
+   "w": "day",
+   "raw": "day,",
+   "s": 43.56,
+   "e": 43.78
+  },
+  {
+   "w": "next",
+   "raw": "next,",
+   "s": 43.96,
+   "e": 44.26
+  },
+  {
+   "w": "why",
+   "raw": "why",
+   "s": 44.6,
+   "e": 44.7
+  },
+  {
+   "w": "a",
+   "raw": "a",
+   "s": 44.7,
+   "e": 44.82
+  },
+  {
+   "w": "new",
+   "raw": "new",
+   "s": 44.82,
+   "e": 44.96
+  },
+  {
+   "w": "goal",
+   "raw": "goal",
+   "s": 44.96,
+   "e": 45.16
+  },
+  {
+   "w": "feels",
+   "raw": "feels",
+   "s": 45.16,
+   "e": 45.4
+  },
+  {
+   "w": "better",
+   "raw": "better",
+   "s": 45.4,
+   "e": 45.72
+  },
+  {
+   "w": "than",
+   "raw": "than",
+   "s": 45.72,
+   "e": 45.92
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 45.92,
+   "e": 46.04
+  },
+  {
+   "w": "old",
+   "raw": "old",
+   "s": 46.04,
+   "e": 46.26
+  },
+  {
+   "w": "one",
+   "raw": "one.",
+   "s": 46.26,
+   "e": 46.54
+  },
+  {
+   "w": "which",
+   "raw": "Which",
+   "s": 46.94,
+   "e": 47.12
+  },
+  {
+   "w": "goal",
+   "raw": "goal",
+   "s": 47.12,
+   "e": 47.36
+  },
+  {
+   "w": "are",
+   "raw": "are",
+   "s": 47.36,
+   "e": 47.54
+  },
+  {
+   "w": "you",
+   "raw": "you",
+   "s": 47.54,
+   "e": 47.68
+  },
+  {
+   "w": "halfway",
+   "raw": "halfway",
+   "s": 47.68,
+   "e": 47.94
+  },
+  {
+   "w": "through",
+   "raw": "through?",
+   "s": 47.94,
+   "e": 48.34
+  },
+  {
+   "w": "the",
+   "raw": "The",
+   "s": 48.52,
+   "e": 48.62
+  },
+  {
+   "w": "links",
+   "raw": "links",
+   "s": 48.62,
+   "e": 48.82
+  },
+  {
+   "w": "in",
+   "raw": "in",
+   "s": 48.82,
+   "e": 49.04
+  },
+  {
+   "w": "the",
+   "raw": "the",
+   "s": 49.04,
+   "e": 49.16
+  },
+  {
+   "w": "bio",
+   "raw": "bio.",
+   "s": 49.16,
+   "e": 49.42
+  }
+ ],
+ "sentences": [
+  {
+   "s": 0.0,
+   "e": 2.4,
+   "text": "Goals don't die at the start, they die in the middle."
+  },
+  {
+   "s": 2.9,
+   "e": 5.28,
+   "text": "Why do we stop doing things we know are good for us?"
+  },
+  {
+   "s": 5.84,
+   "e": 6.48,
+   "text": "Reason 27."
+  },
+  {
+   "s": 7.04,
+   "e": 10.64,
+   "text": "A year to speak Spanish, month 1 every new word feels like a win."
+  },
+  {
+   "s": 11.24,
+   "e": 14.28,
+   "text": "Month 6 today's 10 words feel like nothing so you skip a week."
+  },
+  {
+   "s": 14.68,
+   "e": 17.88,
+   "text": "At the start you measure from zero, near the end the finish pulls you,"
+  },
+  {
+   "s": 18.1,
+   "e": 19.34,
+   "text": "in the middle you're far from both."
+  },
+  {
+   "s": 19.78,
+   "e": 21.66,
+   "text": "So give the year 12 finish lines."
+  },
+  {
+   "s": 22.18,
+   "e": 25.48,
+   "text": "Finish line 1 order dinner in Spanish, 4 weeks away so it pulls."
+  },
+  {
+   "s": 25.48,
+   "e": 30.08,
+   "text": "Count the smaller number, first half count what's done, second half count what's left."
+  },
+  {
+   "s": 30.72,
+   "e": 33.2,
+   "text": "Now month 6 isn't the middle, it's finish line 6."
+  },
+  {
+   "s": 34.0,
+   "e": 36.44,
+   "text": "Send this to the friend stuck halfway through something big."
+  },
+  {
+   "s": 36.96,
+   "e": 38.2,
+   "text": "That's what demure is for."
+  },
+  {
+   "s": 38.76,
+   "e": 41.9,
+   "text": "Archive your dream today and break it into small steps you can actually do."
+  },
+  {
+   "s": 42.34,
+   "e": 46.54,
+   "text": "Follow for one reason a day, next, why a new goal feels better than the old one."
+  },
+  {
+   "s": 46.94,
+   "e": 48.34,
+   "text": "Which goal are you halfway through?"
+  },
+  {
+   "s": 48.52,
+   "e": 49.42,
+   "text": "The links in the bio."
+  }
+ ],
+ "wps": 3.43
+}

@@ -1,0 +1,356 @@
+{
+ "total": 51.74,
+ "brandT": 48.2,
+ "scenes": [
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "hook",
+    "bars": [
+     [
+      "M1",
+      "",
+      5,
+      "ink"
+     ],
+     [
+      "M2",
+      "",
+      6,
+      "ink"
+     ],
+     [
+      "M3",
+      "",
+      6,
+      "red"
+     ],
+     [
+      "M4",
+      "",
+      6,
+      "red"
+     ],
+     [
+      "M5",
+      "",
+      6,
+      "red"
+     ],
+     [
+      "M6",
+      "",
+      6,
+      "red"
+     ]
+    ],
+    "max": 12,
+    "ylabel": "SONGS YOU CAN PLAY",
+    "chip": "Same level since month one"
+   },
+   "head": "Practice stopped<br><b>working</b>.",
+   "t0": 0.0,
+   "t1": 3.37
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 25,
+    "title": "Autopilot",
+    "cue": [
+     "good",
+     "Reason"
+    ],
+    "at": [
+     1.87,
+     3.01
+    ]
+   },
+   "head": "Why we <b>stop</b>.",
+   "t0": 3.37,
+   "t1": 7.59
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "grow",
+    "bars": [
+     [
+      "M1",
+      "",
+      5,
+      "acc"
+     ],
+     [
+      "M2",
+      "",
+      6,
+      "ink"
+     ],
+     [
+      "M3",
+      "",
+      6,
+      "ink"
+     ],
+     [
+      "M4",
+      "",
+      6,
+      "red"
+     ]
+    ],
+    "max": 12,
+    "ylabel": "SONGS YOU CAN PLAY",
+    "chip": "Same five songs",
+    "cue": [
+     "five",
+     "two",
+     "three",
+     "four",
+     "level"
+    ],
+    "at": [
+     1.79,
+     3.13,
+     3.43,
+     3.69,
+     5.31
+    ]
+   },
+   "head": "Big jump.<br>Then <b>flat</b>.",
+   "t0": 7.59,
+   "t1": 13.72
+  },
+  {
+   "type": "easy-hard",
+   "params": {
+    "a": "Feels easy",
+    "ar": "keeps the skill",
+    "b": "Just out of reach",
+    "br": "grows it",
+    "cue": [
+     "easy",
+     "grow"
+    ],
+    "at": [
+     0.49,
+     4.93
+    ]
+   },
+   "head": "Easy is<br><b>autopilot</b>.",
+   "t0": 13.67,
+   "t1": 19.21
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Typing, year 1",
+      40,
+      "ink"
+     ],
+     [
+      "Typing, year 10",
+      40,
+      "red"
+     ]
+    ],
+    "max": 60,
+    "unit": " wpm",
+    "chip": "Every day. No faster.",
+    "cue": [
+     "years",
+     "typing",
+     "faster"
+    ],
+    "at": [
+     0.49,
+     0.91,
+     2.03
+    ]
+   },
+   "head": "Years of it.<br><b>No</b> faster.",
+   "t0": 19.21,
+   "t1": 24.08
+  },
+  {
+   "type": "tempo-loop",
+   "params": {
+    "bpm": [
+     80,
+     85
+    ],
+    "n": 10,
+    "clean": "Until it breaks",
+    "timer": "Fix the bar that broke",
+    "cue": [
+     "session",
+     "Play",
+     "faster",
+     "Fix"
+    ],
+    "at": [
+     0.59,
+     2.69,
+     3.91,
+     4.41
+    ]
+   },
+   "head": "One thing<br>just out of <b>reach</b>.",
+   "t0": 24.03,
+   "t1": 32.84
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "morph",
+    "bars": [
+     [
+      "M1",
+      "",
+      5,
+      "ink"
+     ],
+     [
+      "M2",
+      "",
+      6,
+      "ink"
+     ],
+     [
+      "M3",
+      "",
+      6,
+      "red"
+     ],
+     [
+      "M4",
+      "",
+      6,
+      "red"
+     ],
+     [
+      "M5",
+      "",
+      6,
+      "red"
+     ],
+     [
+      "M6",
+      "",
+      6,
+      "red"
+     ]
+    ],
+    "after": [
+     null,
+     null,
+     [
+      "M3",
+      "",
+      6,
+      "ink"
+     ],
+     [
+      "M4",
+      "",
+      8,
+      "acc"
+     ],
+     [
+      "M5",
+      "",
+      10,
+      "acc"
+     ],
+     [
+      "M6",
+      "",
+      12,
+      "acc"
+     ]
+    ],
+    "max": 12,
+    "ylabel": "SONGS YOU CAN PLAY",
+    "chip": "Same level since month one",
+    "chip2": "Climbing again",
+    "cue": [
+     "four",
+     "climbs"
+    ],
+    "at": [
+     0.15,
+     1.69
+    ]
+   },
+   "head": "The line<br><b>climbs</b> again.",
+   "t0": 32.79,
+   "t1": 35.63
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "JUST OUT OF REACH",
+    "items": [
+     "Notice what's easy",
+     "Add one step harder",
+     "Fix what breaks"
+    ],
+    "cue": [
+     "Send",
+     "friend",
+     "stuck"
+    ],
+    "at": [
+     0.05,
+     0.75,
+     0.97
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>.",
+   "t0": 35.63,
+   "t1": 38.19
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Play 20 songs by summer",
+    "date": "Open it again: Nov 2027",
+    "steps": [
+     "Same song, +5 beats",
+     "Fix the bar that broke",
+     "Sunday: record it"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 38.19,
+   "t1": 43.67
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why a great day makes you skip the next one",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "skip"
+    ],
+    "at": [
+     0.2,
+     3.29
+    ]
+   },
+   "head": "One reason<br><b>a day</b>.",
+   "t0": 43.67,
+   "t1": 48.2
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  21.9,
+  32.74
+ ]
+}

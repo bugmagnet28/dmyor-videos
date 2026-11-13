@@ -13,6 +13,13 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
   - Sat 14: ill-just-today 13:00 (X + YT; **IG still to schedule**), ill-mixed-practice 19:30 (X only; **IG + YT still to schedule**: IG 5-flow limit and YT daily upload limit hit tonight).
   - Next session (Thu): IG kabir-3 Fri 19:30, just-today Sat 13:00, mixed-practice Sat 19:30; YT mixed-practice Sat 19:30. Shift the next agent batch to Sun 15.
 
+## Built Fri 2026-11-13 for Mon 16 + Tue 17 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 6
+
+- [ ] Mon 16 19:30 IST · **ill-autopilot** (Reason #25 "autopilot", pillar C, flat songs-per-month bars on frame 0, 51.7 s, strongest of the day; keeps make-first's "Next: why you stop improving after month one"; follow line "Next: why a great day makes you skip the next one") · `ready-to-post/2026-11-16-ill-autopilot/`
+- [ ] Tue 17 13:00 IST · **ill-good-day** (Reason #26 "the good day", pillar B, story B (Neha), Monday 180 min vs rest of week 0 on frame 0, 50.9 s; follow line "Next: why goals die in the middle") · `ready-to-post/2026-11-17-ill-good-day/`
+- [ ] Tue 17 19:30 IST · **ill-middle** (Reason #27 "the middle", pillar A, motivation-along-a-goal bars with the middle in clay on frame 0, 50.6 s; follow line "Next: why a new goal feels better than the old one", next run builds it) · `ready-to-post/2026-11-17-ill-middle/`
+- Order: after ill-make-first (Mon 16 13:00). autopilot must follow make-first; good-day follows autopilot; middle follows good-day. Render status: detached finisher `studio/state/finish_2026-11-13.log`; check `video.mp4` exists before scheduling.
+
 ## Built Thu 2026-11-12 for Sun 2026-11-15 + Mon 16 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 5
 
 - [ ] Sun 15 13:00 IST · **ill-afternoon-crash** (Reason #22 "the 2 PM slot", pillar D, alertness bars with red 2:30 "Goal" bar on frame 0, 49.7 s; keeps mixed-practice's "Next: why your afternoon crash starts at lunch"; follow line "Next: why your deadline makes you quit") · `ready-to-post/2026-11-15-ill-afternoon-crash/`

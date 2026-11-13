@@ -193,3 +193,10 @@ While scheduling diagram-howto-vo from the web (browser automation), two "Your p
 - 2026-11-12 [craft] In week-bars `grow`, a null cue falls back to its default time and can land a bar out of order (1 PM bar after 2:30). Give every bar a spoken cue in left-to-right order. Confidence: high
 - 2026-11-12 [tooling] Python here has no PIL. Make contact sheets with `ffmpeg -pattern_type glob -i 't*.png' -vf scale=270:480,tile=8x2` (the glob sorts lexically: t14.5 comes before t2). Confidence: high
 - 2026-11-12 [content] Reason map continues: #22 the 2 PM slot (post-lunch dip, pillar D), #23 the guessed deadline (planning fallacy, pillar A). Next free: #24 (promised: why reading about it feels like doing it). Confidence: high
+
+## 2026-11-13 (run)
+- 2026-11-13 [data] Still no metrics (blank template, no browser, no notes). Nothing newly posted since Nov 12 per post-queue. V-EXP-34 still has zero readings for its 14 live/scheduled reels. Confidence: high
+- 2026-11-13 [craft] First drafts at 204-215 words came out 60 s+; two trims got them to 175-189 words = 50.6-51.7 s. Story reels read slower (3.18 w/s) than method reels (3.43): budget ~160 words for story B, ~175 for A/C. Confidence: high
+- 2026-11-13 [craft] dream-to-steps card fits about 22 characters of `dream` before the text overruns the card ("Play 20 songs by next summer" overflowed); before-after AFTER cells fit about 12 characters. Caught on the shots.js contact sheet. Confidence: high
+- 2026-11-13 [tooling] Zero-pad shot times (`%05.2f`) so the ffmpeg glob sorts the contact sheet in time order; the shots.js call works in zsh with `$(echo $T)`. Confidence: high
+- 2026-11-13 [content] Reason map continues: #25 autopilot (plateau, C), #26 the good day (licensing, B), #27 the middle (stuck in the middle, A). Next free: #28 (promised: why a new goal feels better than the old one). Confidence: high

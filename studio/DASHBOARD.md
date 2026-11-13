@@ -1,6 +1,6 @@
 # Video dashboard (posting on @becauseidmyor, end card @becauseidmyor)
 
-_Last updated: 2026-11-12 IST (run 2026-11-12)_
+_Last updated: 2026-11-13 IST (run 2026-11-13)_
 
 **Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [reel library](library/index.html) · [growth plan Nov 2026](growth-plan-2026-11.md) · weekly review 2026-11-03 in [strategy.md](strategy.md)
 
@@ -10,12 +10,21 @@ _Last updated: 2026-11-12 IST (run 2026-11-12)_
 | Are we improving? | **Reach: yes** (IG newer median 128 vs 17). Followers: slow (+3 in 9 days). YouTube: declining |
 | Live / scheduled | Backlog caught up Wed night: out-of-sight live; Thu sunday-practice 13:00 + kabir-2 19:30; Fri perfect-week, borrowed-sleep, kabir-3; Sat just-today, mixed-practice (IG still owes kabir-3, just-today, mixed-practice; YT owes mixed-practice). All registered in analytics |
 | **Blocker** | No metrics since Nov 6: 11 V-EXP-34 reels live or scheduled, zero readings |
-| Ready to schedule (auto-approved) | **Sun 15: 13:00 ill-afternoon-crash (#22), 19:30 ill-guessed-deadline (#23)** · **Mon 16: 13:00 ill-make-first (#24)**. All rendered, frames checked |
-| Host | Render speed back to ~5 min per reel (was ~4 h); swap still 14.7/15 GB |
+| Ready to schedule (auto-approved) | **Sun 15: 13:00 ill-afternoon-crash (#22), 19:30 ill-guessed-deadline (#23)** · **Mon 16: 13:00 ill-make-first (#24), 19:30 ill-autopilot (#25)** · **Tue 17: 13:00 ill-good-day (#26), 19:30 ill-middle (#27)**. Stock: 6 unscheduled + 3 IG/YT leftovers |
+| Host | ~6 min per reel today (4.5 fps); uptime 271 days, swap 14.7/15 GB |
 | Open experiments | V-EXP-32 (kit v2), V-EXP-33 (chart frame 0 + length), **V-EXP-34** (on-topic pillars, ≤50 s, Reason series; Nov 7-20) |
-| Asks | **VASK-030** (IG leftovers + Sun/Mon batch, watch-time + profile screenshots, Mac restart) |
+| Asks | **VASK-030** (IG leftovers + Sun/Mon batch, Mac restart), **VASK-031** (Mon 19:30 + Tue pair, screenshots for the first V-EXP-34 reels) |
 
-## Built today (Thu Nov 12) for Sun 15 / Mon 16 (V-EXP-34 batch 5)
+## Built today (Fri Nov 13) for Mon 16 / Tue 17 (V-EXP-34 batch 6)
+| Slot (IST) | Reel | Reason / pillar | Length | Hook | Frame 0 | Score |
+|---|---|---|---|---|---|---|
+| Mon 19:30 | ill-autopilot | #25 autopilot / C (structure A) | 51.7 s | "You practise every day. You stopped getting better in month one." | songs-you-can-play bars flat from M2 | 34/40 |
+| Tue 13:00 | ill-good-day | #26 the good day / B (story B, Neha) | 50.9 s | "A great day is the easiest excuse to skip the next one." | Monday 180 min vs Tue-Sun 0 | 33/40 |
+| Tue 19:30 | ill-middle | #27 the middle / A (structure C) | 50.6 s | "Goals don't die at the start. They die in the middle." | motivation-along-a-goal bars, middle in clay | 34/40 |
+
+Chain: make-first -> autopilot -> good-day -> middle -> "why a new goal feels better than the old one" (#28, next run).
+
+## Built Thu Nov 12 for Sun 15 / Mon 16 (V-EXP-34 batch 5)
 | Slot (IST) | Reel | Reason / pillar | Length | Hook | Frame 0 | Score |
 |---|---|---|---|---|---|---|
 | Sun 13:00 | ill-afternoon-crash | #22 the 2 PM slot / D (structure A) | 49.7 s | "Your afternoon crash starts at lunch, and it's eating your goal." | alertness bars, red 2:30 "Goal" bar | 34/40 |

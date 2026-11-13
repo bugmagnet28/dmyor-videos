@@ -1,0 +1,297 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 12,
+ "silences": [
+  "So give",
+  "Now month"
+ ],
+ "spoken": "[hook] Goals don't die at the start. They die in the middle. || Why do we stop doing things we know are good for us? Reason twenty-seven. || [turn] A year to speak Spanish. Month one, every new word feels like a win. || Month six, today's ten words feel like nothing. So you skip a week. || At the start, you measure from zero. Near the end, the finish pulls you. In the middle, you're far from both. || So give the year twelve finish lines. || Finish line one: order dinner in Spanish. Four weeks away, so it pulls. || Count the smaller number. First half, count what's done. Second half, count what's left. || [land] Now month six isn't the middle. It's finish line six. || Send this to the friend stuck halfway through something big. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. Next: why a new goal feels better than the old one. || [outro] Which goal are you halfway through? The link's in the bio.",
+ "scenes": [
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "hook",
+    "bars": [
+     [
+      "Start",
+      "",
+      90,
+      "ink"
+     ],
+     [
+      "",
+      "",
+      62,
+      "ink"
+     ],
+     [
+      "Middle",
+      "",
+      28,
+      "red"
+     ],
+     [
+      "",
+      "",
+      58,
+      "ink"
+     ],
+     [
+      "End",
+      "",
+      92,
+      "ink"
+     ]
+    ],
+    "max": 100,
+    "ylabel": "MOTIVATION ALONG A GOAL",
+    "chip": "Goals stall here"
+   },
+   "head": "Goals die in<br>the <b>middle</b>."
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 27,
+    "title": "The middle",
+    "cue": [
+     "good",
+     "Reason"
+    ]
+   },
+   "head": "Why we <b>stop</b>."
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "grow",
+    "bars": [
+     [
+      "Month 1",
+      "",
+      90,
+      "acc"
+     ],
+     [
+      "Month 3",
+      "",
+      60,
+      "ink"
+     ],
+     [
+      "Month 6",
+      "",
+      28,
+      "red"
+     ]
+    ],
+    "max": 100,
+    "ylabel": "HOW MUCH TODAY FEELS LIKE PROGRESS",
+    "chip": "So you skip a week",
+    "cue": [
+     "one",
+     "six",
+     "nothing",
+     "week"
+    ]
+   },
+   "head": "A year of<br><b>Spanish</b>."
+  },
+  null,
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Done since the start",
+      50,
+      "ink"
+     ],
+     [
+      "Left to the finish",
+      50,
+      "red"
+     ]
+    ],
+    "max": 100,
+    "unit": "%",
+    "chip": "Far from both ends",
+    "cue": [
+     "zero",
+     "finish",
+     "both"
+    ]
+   },
+   "head": "Far from<br><b>both</b> ends."
+  },
+  {
+   "type": "week-countdown",
+   "params": {
+    "weeks": 4,
+    "end": "Order dinner in Spanish",
+    "rows": [
+     "20 food words",
+     "5 phrases out loud",
+     "Order once at a cafe"
+    ],
+    "cue": [
+     "twelve",
+     "dinner",
+     "Four"
+    ]
+   },
+   "head": "A finish line<br>every <b>month</b>."
+  },
+  null,
+  {
+   "type": "list-rewrite",
+   "params": {
+    "rows": [
+     [
+      "One finish, a year off",
+      "A finish every month"
+     ],
+     [
+      "Count everything left",
+      "Half 1: count done"
+     ],
+     [
+      "Count everything done",
+      "Half 2: count left"
+     ]
+    ],
+    "cue": [
+     "smaller",
+     "First",
+     "Second"
+    ]
+   },
+   "head": "Count the<br><b>smaller</b> number."
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "morph",
+    "bars": [
+     [
+      "Start",
+      "",
+      90,
+      "ink"
+     ],
+     [
+      "",
+      "",
+      62,
+      "ink"
+     ],
+     [
+      "Middle",
+      "",
+      28,
+      "red"
+     ],
+     [
+      "",
+      "",
+      58,
+      "ink"
+     ],
+     [
+      "End",
+      "",
+      92,
+      "ink"
+     ]
+    ],
+    "after": [
+     null,
+     [
+      "",
+      "",
+      85,
+      "acc"
+     ],
+     [
+      "Month 6",
+      "",
+      88,
+      "acc"
+     ],
+     [
+      "",
+      "",
+      86,
+      "acc"
+     ],
+     null
+    ],
+    "max": 100,
+    "ylabel": "MOTIVATION ALONG A GOAL",
+    "chip2": "Always near a finish line",
+    "cue": [
+     "middle",
+     "line"
+    ],
+    "together": true
+   },
+   "head": "No more<br><b>middle</b>."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "MANY FINISH LINES",
+    "items": [
+     "A finish every month",
+     "Half 1: count done",
+     "Half 2: count left"
+    ],
+    "cue": [
+     "Send",
+     "friend",
+     "stuck"
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Speak Spanish by 2027",
+    "date": "Open it again: Nov 2027",
+    "steps": [
+     "Month 1: order dinner",
+     "Month 2: ask directions",
+     "Today: 10 food words"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why a new goal feels better than finishing the old one",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "old"
+    ]
+   },
+   "head": "One reason<br><b>a day</b>."
+  },
+  null
+ ],
+ "caption": {
+  "instagram": "How to stay motivated halfway through a long goal: the middle problem.\n\nWhy we stop doing things we know are good for us, reason #27: the middle. Month one of learning Spanish, every word feels like a win. Month six, today's ten words feel like nothing. At the start you measure from zero, near the end the finish pulls you. In the middle you're far from both.\n\nThe fix:\n- A finish line every month (month one: order dinner in Spanish)\n- First half: count what's done\n- Second half: count what's left\n\nWhich goal are you halfway through? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#motivation #goals #languagelearning #selfimprovement #consistency",
+  "x": "Goals don't die at the start. They die in the middle.\n\nAt the start you measure from zero. Near the end the finish pulls you. In the middle you're far from both.\n\nGive a one-year goal twelve finish lines. And count the smaller number: what's done in the first half, what's left in the second.",
+  "youtube_title": "How to stay motivated in the middle of a long goal #Shorts"
+ }
+}

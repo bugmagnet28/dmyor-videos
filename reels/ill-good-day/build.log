@@ -1,0 +1,13 @@
+reels/ill-good-day/audio.mp3  50.90s  voice=am_eric preset=plain fx=False breaths=False stages=hook body turn body body body body body body land body outro outro outro
+/opt/homebrew/Cellar/openai-whisper/20250625_3/libexec/lib/python3.14/site-packages/whisper/transcribe.py:132: UserWarning: FP16 is not supported on CPU; using FP32 instead
+  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
+  0%|          | 0/5089 [00:00<?, ?frames/s] 54%|█████▍    | 2756/5089 [00:26<00:22, 104.91frames/s] 54%|█████▍    | 2756/5089 [00:40<00:22, 104.91frames/s]100%|██████████| 5089/5089 [00:53<00:00, 93.41frames/s] 100%|██████████| 5089/5089 [00:53<00:00, 95.10frames/s]
+transcribing audio.mp3 with whisper (small.en)...
+162 words, 50.9s, 3.18 words/sec
+-> reels/ill-good-day/cues.json
+  skip ['@4', 'miss']: scene gym-calendar has no beat for it
+  skip ['@5', 'miss']: scene gym-calendar has no beat for it
+  skip ['@6', 'miss']: scene gym-calendar has no beat for it
+sfx present: 40 sounds -> reels/ill-good-day/audio_mixed.mp3 riffle@0.1 pop@3.5 riffle@3.8 pop@6.4 swish@7.7 right@9.1 right@12.1 right@13.9 right@15.2 swish@16.3 pop@19.1 pop@20.7 right@22.4 pop@23.4 pencil@25.1 swish@27.5 pop@28.4 pop@29.5 pop@30.1 swish@30.7 pop@31.1 pop@31.5 reveal@31.9 pop@34.1 right@34.4 pencil@35.9 right@36.3 pencil@37.2 right@37.5 tone@38.0 stamp@38.1 pop@39.7 pop@40.2 right@41.0 right@41.5 right@42.0 pop@43.5 toggle@46.4 right@46.8 chord@47.1
+built reels/ill-good-day: 50.88s, 10 scenes, brand 47.12s, 3.18 words/sec
+scenes: [('bar-compare', 0.0, 3.49, None), ('series-card', 3.49, 7.65, [1.79, 2.91]), ('gym-calendar', 7.65, 16.36, [1.45, 4.41, 6.29, 7.59]), ('two-versions', 16.31, 23.36, [1.13, 2.81, 4.37, 5.65]), ('night-list', 23.31, 27.51, [1.49, 3.35]), ('bar-compare', 27.51, 30.67, [0.85, 1.96, 2.56]), ('before-after', 30.67, 34.05, [0.05, 1.19]), ('rule-card', 34.05, 37.99, [0.05, 1.87, 3.13]), ('dream-to-steps', 37.99, 43.45, None), ('follow-next', 43.45, 47.12, [0.2, 2.97])]

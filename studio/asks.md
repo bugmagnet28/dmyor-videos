@@ -236,9 +236,17 @@ Instagram locked the account ("we locked your account to protect you from a poss
   5. **Mac restart** please: uptime 270 days, 13.6 of 14 GB swap used. A 50 s reel takes ~4 h to record, and yesterday's run timed out without building anything.
 
 ## VASK-030: Finish Sat scheduling, schedule Sun 15 batch, screenshots, restart (2026-11-12)
-- Status: open
+- Status: open (still open 2026-11-13; Mon 16 19:30 + Tue 17 added in VASK-031)
 - Steps:
   1. Next browser session (Thu): Instagram **pixel-kabir-3** Fri 13 19:30, **ill-just-today** Sat 14 13:00, **ill-mixed-practice** Sat 14 19:30; YouTube **ill-mixed-practice** Sat 14 19:30.
   2. Then the Sun 15 batch on IG, X and YT: **ill-afternoon-crash** 13:00, **ill-guessed-deadline** 19:30 (`ready-to-post/2026-11-15-*`, rendered). That is 5 IG flows in total, so it fits one session. Then Mon 16 13:00 **ill-make-first** (`ready-to-post/2026-11-16-ill-make-first/`) in the next session.
   3. Wanted, the one thing that unblocks learning: app screenshots (views, avg watch time, % watched, saves, shares, follows) for **ill-first-ten-minutes** and **ill-decide-once** (live since Nov 8, the first on-topic V-EXP-34 reels), plus one profile screenshot. Nothing has been measured since Nov 6, so 11 reels have no data yet.
   4. **Mac restart** still needed: uptime 270 days, swap 13.8 of 15 GB.
+
+## VASK-031: Schedule Mon 16 + Tue 17 reels, screenshots (2026-11-13)
+- Status: open
+- Steps:
+  1. Do VASK-030 first (IG kabir-3 / just-today / mixed-practice if still pending, YT mixed-practice, Sun 15 pair, Mon 16 13:00 make-first).
+  2. Then on IG, X and YT: **ill-autopilot** Mon 16 19:30, **ill-good-day** Tue 17 13:00, **ill-middle** Tue 17 19:30 (`ready-to-post/2026-11-16-ill-autopilot/`, `2026-11-17-ill-good-day/`, `2026-11-17-ill-middle/`). Max 5 IG flows per session, so this likely needs a second session.
+  3. Tick `[x]` in `studio/post-queue.md` when scheduled so I register them in analytics.
+  4. Still the main blocker for learning: app screenshots (views, avg watch time, % watched, saves, shares, follows) for ill-first-ten-minutes, ill-decide-once, ill-out-of-sight, plus one profile screenshot. Nothing measured since Nov 6.

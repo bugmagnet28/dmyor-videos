@@ -1,0 +1,239 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 13,
+ "silences": [
+  "So end",
+  "Same Monday"
+ ],
+ "spoken": "[hook] A great day is the easiest excuse to skip the next one. || Why do we stop doing things we know are good for us? Reason twenty-six. || [turn] Neha's learning to code. Monday, three hours. || Tuesday: I did three hours. I've earned a night off. || Wednesday, she's tired. By Thursday, it's next week. || Psychologists call it licensing. Progress feels like permission to stop. || So end every good day by booking the next one. || Before closing the laptop, she writes tomorrow's step: fix one bug, ten minutes. || Tuesday, ten minutes turns into forty. || [land] Same Monday. Now it starts the week, instead of being the week. || Send this to the friend who goes all in on Monday and vanishes by Wednesday. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. Next: why goals die in the middle. || [outro] What did you skip after a good day? The link's in the bio.",
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Monday",
+      180,
+      "ink"
+     ],
+     [
+      "Tuesday to Sunday",
+      0,
+      "red"
+     ]
+    ],
+    "max": 180,
+    "unit": " min",
+    "chip": "\"I earned a break\""
+   },
+   "head": "Great day.<br>Then <b>nothing</b>."
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 26,
+    "title": "The good day",
+    "cue": [
+     "good",
+     "Reason"
+    ]
+   },
+   "head": "Why we <b>stop</b>."
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "real",
+    "blocks": [
+     [
+      0,
+      "8 PM",
+      "3 hours"
+     ],
+     [
+      1,
+      "8 PM",
+      "Code"
+     ],
+     [
+      2,
+      "8 PM",
+      "Code"
+     ],
+     [
+      3,
+      "8 PM",
+      "Code"
+     ]
+    ],
+    "miss": [
+     1,
+     2,
+     3
+    ],
+    "why": {
+     "1": "earned it",
+     "2": "tired",
+     "3": "next week"
+    },
+    "cue": [
+     "three",
+     "earned",
+     "tired",
+     "next"
+    ]
+   },
+   "head": "Neha's <b>week</b>."
+  },
+  null,
+  null,
+  {
+   "type": "two-versions",
+   "params": {
+    "noIcon": true,
+    "title": "After a good day",
+    "tagA": "LICENSING",
+    "full": "I've earned a night off",
+    "tagB": "INSTEAD",
+    "small": "Book the next one",
+    "cue": [
+     "licensing",
+     "permission",
+     "end",
+     "booking"
+    ]
+   },
+   "head": "Progress feels<br>like <b>permission</b>."
+  },
+  null,
+  {
+   "type": "night-list",
+   "params": {
+    "stage": "write",
+    "title": "TOMORROW",
+    "items": [
+     "Open the project",
+     "Fix one bug",
+     "10 minutes, that's it"
+    ],
+    "cue": [
+     "writes",
+     "bug"
+    ]
+   },
+   "head": "Book the<br><b>next</b> one."
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Planned",
+      10,
+      "ink"
+     ],
+     [
+      "Coded",
+      40,
+      "acc"
+     ]
+    ],
+    "max": 40,
+    "unit": " min",
+    "chip": "Starting was the hard part",
+    "cue": [
+     "ten",
+     "forty",
+     null
+    ]
+   },
+   "head": "Ten minutes<br>became <b>forty</b>."
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "a": "Earned a break",
+    "b": "Booked the next",
+    "rows": [
+     [
+      "Monday",
+      "3 hours",
+      "3 hours"
+     ],
+     [
+      "Rest of week",
+      "0",
+      "10 min a day"
+     ],
+     [
+      "The goal",
+      "Paused",
+      "Moving"
+     ]
+    ],
+    "cue": [
+     "Same",
+     "starts"
+    ]
+   },
+   "head": "Same Monday.<br><b>Different</b> week."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "AFTER A GOOD DAY",
+    "items": [
+     "Don't stop to reward",
+     "Write tomorrow's step",
+     "Keep it 10 minutes"
+    ],
+    "cue": [
+     "Send",
+     "all",
+     "Monday"
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Land a developer job",
+    "date": "Open it again: Nov 2027",
+    "steps": [
+     "Finish the course",
+     "Build 3 projects",
+     "Today: fix one bug"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why goals die in the middle",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "middle"
+    ]
+   },
+   "head": "One reason<br><b>a day</b>."
+  },
+  null
+ ],
+ "caption": {
+  "instagram": "Why I can't stay consistent after a good day: the licensing trap.\n\nWhy we stop doing things we know are good for us, reason #26: the good day. Neha codes three hours on Monday, her best day in weeks. Tuesday: I've earned a night off. Wednesday she's tired. By Thursday it's next week. Psychologists call it licensing: progress feels like permission to stop.\n\nThe fix:\n- Don't stop to reward a good day\n- Before you close the laptop, write tomorrow's first step\n- Keep it 10 minutes\n\nWhat did you skip after a good day? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#consistency #motivation #learntocode #selfimprovement #habits",
+  "x": "A great day is the easiest excuse to skip the next one.\n\nPsychologists call it licensing: progress feels like permission to stop.\n\nEnd every good day by booking the next one. Before you close the laptop, write tomorrow's first step. Ten minutes.",
+  "youtube_title": "How to stay consistent after a good day #Shorts"
+ }
+}

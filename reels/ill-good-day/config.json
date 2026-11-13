@@ -1,0 +1,281 @@
+{
+ "total": 50.88,
+ "brandT": 47.12,
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Monday",
+      180,
+      "ink"
+     ],
+     [
+      "Tuesday to Sunday",
+      0,
+      "red"
+     ]
+    ],
+    "max": 180,
+    "unit": " min",
+    "chip": "\"I earned a break\""
+   },
+   "head": "Great day.<br>Then <b>nothing</b>.",
+   "t0": 0.0,
+   "t1": 3.49
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 26,
+    "title": "The good day",
+    "cue": [
+     "good",
+     "Reason"
+    ],
+    "at": [
+     1.79,
+     2.91
+    ]
+   },
+   "head": "Why we <b>stop</b>.",
+   "t0": 3.49,
+   "t1": 7.65
+  },
+  {
+   "type": "gym-calendar",
+   "params": {
+    "stage": "real",
+    "blocks": [
+     [
+      0,
+      "8 PM",
+      "3 hours"
+     ],
+     [
+      1,
+      "8 PM",
+      "Code"
+     ],
+     [
+      2,
+      "8 PM",
+      "Code"
+     ],
+     [
+      3,
+      "8 PM",
+      "Code"
+     ]
+    ],
+    "miss": [
+     1,
+     2,
+     3
+    ],
+    "why": {
+     "1": "earned it",
+     "2": "tired",
+     "3": "next week"
+    },
+    "cue": [
+     "three",
+     "earned",
+     "tired",
+     "next"
+    ],
+    "at": [
+     1.45,
+     4.41,
+     6.29,
+     7.59
+    ]
+   },
+   "head": "Neha's <b>week</b>.",
+   "t0": 7.65,
+   "t1": 16.36
+  },
+  {
+   "type": "two-versions",
+   "params": {
+    "noIcon": true,
+    "title": "After a good day",
+    "tagA": "LICENSING",
+    "full": "I've earned a night off",
+    "tagB": "INSTEAD",
+    "small": "Book the next one",
+    "cue": [
+     "licensing",
+     "permission",
+     "end",
+     "booking"
+    ],
+    "at": [
+     1.13,
+     2.81,
+     4.37,
+     5.65
+    ]
+   },
+   "head": "Progress feels<br>like <b>permission</b>.",
+   "t0": 16.31,
+   "t1": 23.36
+  },
+  {
+   "type": "night-list",
+   "params": {
+    "stage": "write",
+    "title": "TOMORROW",
+    "items": [
+     "Open the project",
+     "Fix one bug",
+     "10 minutes, that's it"
+    ],
+    "cue": [
+     "writes",
+     "bug"
+    ],
+    "at": [
+     1.49,
+     3.35
+    ]
+   },
+   "head": "Book the<br><b>next</b> one.",
+   "t0": 23.31,
+   "t1": 27.51
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Planned",
+      10,
+      "ink"
+     ],
+     [
+      "Coded",
+      40,
+      "acc"
+     ]
+    ],
+    "max": 40,
+    "unit": " min",
+    "chip": "Starting was the hard part",
+    "cue": [
+     "ten",
+     "forty",
+     null
+    ],
+    "at": [
+     0.85,
+     1.96,
+     2.56
+    ]
+   },
+   "head": "Ten minutes<br>became <b>forty</b>.",
+   "t0": 27.51,
+   "t1": 30.67
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "a": "Earned a break",
+    "b": "Booked the next",
+    "rows": [
+     [
+      "Monday",
+      "3 hours",
+      "3 hours"
+     ],
+     [
+      "Rest of week",
+      "0",
+      "10 min a day"
+     ],
+     [
+      "The goal",
+      "Paused",
+      "Moving"
+     ]
+    ],
+    "cue": [
+     "Same",
+     "starts"
+    ],
+    "at": [
+     0.05,
+     1.19
+    ]
+   },
+   "head": "Same Monday.<br><b>Different</b> week.",
+   "t0": 30.67,
+   "t1": 34.05
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "AFTER A GOOD DAY",
+    "items": [
+     "Don't stop to reward",
+     "Write tomorrow's step",
+     "Keep it 10 minutes"
+    ],
+    "cue": [
+     "Send",
+     "all",
+     "Monday"
+    ],
+    "at": [
+     0.05,
+     1.25,
+     1.87
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>.",
+   "t0": 34.05,
+   "t1": 37.99
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Land a developer job",
+    "date": "Open it again: Nov 2027",
+    "steps": [
+     "Finish the course",
+     "Build 3 projects",
+     "Today: fix one bug"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 37.99,
+   "t1": 43.45
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why goals die in the middle",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "middle"
+    ],
+    "at": [
+     0.2,
+     2.97
+    ]
+   },
+   "head": "One reason<br><b>a day</b>.",
+   "t0": 43.45,
+   "t1": 47.12
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  20.38,
+  30.62
+ ]
+}
