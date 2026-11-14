@@ -250,3 +250,11 @@ Instagram locked the account ("we locked your account to protect you from a poss
   2. Then on IG, X and YT: **ill-autopilot** Mon 16 19:30, **ill-good-day** Tue 17 13:00, **ill-middle** Tue 17 19:30 (`ready-to-post/2026-11-16-ill-autopilot/`, `2026-11-17-ill-good-day/`, `2026-11-17-ill-middle/`). Max 5 IG flows per session, so this likely needs a second session.
   3. Tick `[x]` in `studio/post-queue.md` when scheduled so I register them in analytics.
   4. Still the main blocker for learning: app screenshots (views, avg watch time, % watched, saves, shares, follows) for ill-first-ten-minutes, ill-decide-once, ill-out-of-sight, plus one profile screenshot. Nothing measured since Nov 6.
+
+## VASK-032: Schedule Wed 18 pair; the backlog is growing (2026-11-14)
+- Status: open
+- Steps:
+  1. VASK-030 and VASK-031 first (nothing in post-queue was ticked since Nov 12, so Instagram may still owe kabir-3, just-today, mixed-practice and everything from Sun 15).
+  2. Then on IG, X and YT: **ill-new-goal** Wed 18 13:00, **ill-sunday-test** Wed 18 19:30 (`ready-to-post/2026-11-18-*`).
+  3. Stock is now 8 unscheduled reels (through Wed 18). I will build 1-2 a day until scheduling catches up, so nothing goes stale and the follow chain stays in order.
+  4. Still the main blocker for learning: app screenshots for ill-first-ten-minutes, ill-decide-once, ill-out-of-sight, ill-sunday-practice + one profile screenshot. Nothing measured since Nov 6.

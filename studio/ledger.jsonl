@@ -89,3 +89,4 @@
 {"ts": "2026-11-12T11:20:28", "channel": "video", "action": "build", "exp": "V-EXP-34", "summary": "built + packaged ill-make-first (V-EXP-34 batch 5)", "ref": "reels/ill-make-first", "status": "done", "cost_usd": 0.0}
 {"ts": "2026-11-12T11:21:21", "channel": "video", "action": "weekly-review", "exp": "", "summary": "weekly review 2026-11-12 written, emailed", "ref": "", "status": "done", "cost_usd": 0.0}
 {"ts": "2026-11-13T11:18:10", "channel": "video", "action": "build", "exp": "V-EXP-34", "summary": "Batch 6: ill-autopilot #25, ill-good-day #26, ill-middle #27 for Mon 16 / Tue 17", "ref": "", "status": "done", "cost_usd": 0.0}
+{"ts": "2026-11-14T12:06:59", "channel": "instagram", "action": "build", "exp": "V-EXP-34", "summary": "Built ill-new-goal (#28) + ill-sunday-test (#29) for Wed 18", "ref": "", "status": "done", "cost_usd": 0.0}

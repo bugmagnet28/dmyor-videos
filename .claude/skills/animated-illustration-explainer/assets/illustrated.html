@@ -836,7 +836,7 @@ var SCENES={
     var ph=g(G);el("rect",{x:-220,y:-340,width:440,height:680,rx:44,fill:PANEL,stroke:INK,"stroke-width":5},ph);txt(ph,P.prompt||"\"Today I...\"",0,-240,36,MUTE,700);
     var wv=[];for(var i=0;i<24;i++)wv.push(el("rect",{x:-180+i*15,y:-4,width:8,height:8,rx:4,fill:ACC},ph));var clk=txt(ph,"0:00",0,140,56,INK,800);
     el("circle",{cx:0,cy:250,r:46,fill:"none",stroke:INK,"stroke-width":4},ph);var rec=el("circle",{cx:0,cy:250,r:30,fill:RED},ph);
-    var days=g(G);var D=["M","T","W","T","F","S","S"];var dc=D.map(function(d,i){var Q=g(days);el("rect",{x:-34,y:-34,width:68,height:68,rx:14,fill:"none",stroke:LINE,"stroke-width":3},Q);txt(Q,d,0,-48,24,MUTE,700);var c=check(Q);tr(c,0,0,.8);tr(Q,-300+i*100,0);return c;});
+    var days=g(G);var D=P.days||["M","T","W","T","F","S","S"];var dc=D.map(function(d,i){var Q=g(days);el("rect",{x:-34,y:-34,width:68,height:68,rx:14,fill:"none",stroke:LINE,"stroke-width":3},Q);txt(Q,d,0,-48,24,MUTE,700);var c=check(Q);tr(c,0,0,.8);tr(Q,-(D.length-1)*50+i*100,0);return c;});
     var B0=AT(P,0,.3),B1=AT(P,1,1.3),B2=AT(P,2,3);
     return function(k,t){tr(vc,540,720,1,0,eout(seg(t,0,.4))*(1-.5*seg(t,B1,B1+.5)));drawTo(sl,seg(t,B0,B0+.4));tr(ph,540,1180,1,0,eout(seg(t,.2,.6)));
       var r=seg(t,B1,B1+4);clk.textContent="0:"+String(Math.min(59,Math.floor(60*r))).padStart(2,"0");if(r>=1)clk.textContent="1:00";

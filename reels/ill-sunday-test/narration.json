@@ -1,0 +1,246 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 13,
+ "silences": [
+  "The catch",
+  "Two months"
+ ],
+ "spoken": "[hook] You're getting better. You just can't see it. || Why do we stop doing things we know are good for us? Reason twenty-nine. || [turn] Tara sang twenty minutes a day for two months. Every day sounded like yesterday. || So she decided she wasn't good at it, and almost quit. || The catch: you compare today with yesterday, and one day of practice is too small to hear. || The change only shows across weeks. || So every Sunday, Tara recorded the same minute of the same song, and never deleted one. || Running? Same two kilometres, timed. Writing? Same prompt, ten minutes. || In week eight, she played week one, then week eight. || [land] Two months of progress she couldn't hear, all at once. || Send this to someone who thinks they've stopped improving. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. Next: why telling people your goal makes it harder. || [outro] What would you record every Sunday? The link's in the bio.",
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Better than week 1",
+      40,
+      "acc"
+     ],
+     [
+      "Better than yesterday",
+      1,
+      "red"
+     ]
+    ],
+    "max": 50,
+    "unit": "%",
+    "chip": "Too small to notice daily"
+   },
+   "head": "You're improving.<br>You can't <b>see</b> it."
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 29,
+    "title": "Invisible progress",
+    "cue": [
+     "good",
+     "Reason"
+    ]
+   },
+   "head": "Why we <b>stop</b>."
+  },
+  {
+   "type": "week-tracker",
+   "params": {
+    "stage": "daily",
+    "on": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "what": "Sing 20 min",
+    "tick": 0.3
+   },
+   "head": "Tara sings<br><b>20 min</b> a day."
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "MY GOAL",
+    "aBig": "Learn to sing",
+    "b": "Not good at it?",
+    "cue": [
+     "decided",
+     "quit"
+    ]
+   },
+   "head": "Two months.<br>She almost <b>quit</b>."
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "grow",
+    "bars": [
+     [
+      "Day 1",
+      "",
+      50,
+      "ink"
+     ],
+     [
+      "Day 2",
+      "",
+      51,
+      "ink"
+     ],
+     [
+      "Day 3",
+      "",
+      52,
+      "ink"
+     ],
+     [
+      "Week 8",
+      "",
+      82,
+      "acc"
+     ]
+    ],
+    "max": 100,
+    "ylabel": "HOW GOOD SHE SOUNDS",
+    "chip": "Visible only across weeks",
+    "cue": [
+     "compare",
+     "yesterday",
+     "small",
+     "change",
+     "weeks"
+    ]
+   },
+   "head": "Today vs <b>yesterday</b>?<br>Too small."
+  },
+  null,
+  {
+   "type": "voice-record",
+   "params": {
+    "drop": "Delete old takes",
+    "prompt": "Sunday: same song",
+    "days": [
+     "W1",
+     "W2",
+     "W3",
+     "W4",
+     "W5",
+     "W6",
+     "W7",
+     "W8"
+    ],
+    "cue": [
+     "deleted",
+     "recorded",
+     "song"
+    ]
+   },
+   "head": "Every <b>Sunday</b>,<br>record it."
+  },
+  {
+   "type": "question-list",
+   "params": {
+    "title": "YOUR SUNDAY TEST",
+    "items": [
+     "Running: same 2 km, timed",
+     "Writing: same prompt, 10 min",
+     "Singing: same song, 1 min"
+    ],
+    "cue": [
+     "Running",
+     "Writing",
+     "minutes"
+    ]
+   },
+   "head": "Same test,<br><b>any</b> goal."
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "a": "WEEK 1",
+    "b": "WEEK 8",
+    "rows": [
+     [
+      "Pitch",
+      "shaky",
+      "steady"
+     ],
+     [
+      "Breath",
+      "runs out",
+      "lasts"
+     ],
+     [
+      "Top note",
+      "skipped",
+      "hit"
+     ]
+    ],
+    "cue": [
+     "one",
+     "then"
+    ]
+   },
+   "head": "Week 1, then<br><b>week 8</b>."
+  },
+  null,
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "THE SUNDAY TEST",
+    "items": [
+     "Same test, each week",
+     "Never delete one",
+     "Compare to week 1"
+    ],
+    "cue": [
+     "Send",
+     "someone",
+     "improving"
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Sing on stage by June",
+    "date": "Open it again: Jun 2027",
+    "steps": [
+     "Daily: 20 min practice",
+     "Sunday: record 1 min",
+     "Week 8: play week 1"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why telling people your goal makes it harder",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "harder"
+    ]
+   },
+   "head": "One reason<br><b>a day</b>."
+  },
+  null
+ ],
+ "caption": {
+  "instagram": "How to see your progress when you feel stuck: the Sunday test.\n\nWhy we stop doing things we know are good for us, reason #29: invisible progress. Tara practised singing 20 minutes a day for two months and every day sounded like the day before. You compare today with yesterday, and one day of practice is too small to notice. The change only shows across weeks.\n\nThe fix, the Sunday test:\n- Same test every week (same song, same 2 km, same prompt)\n- Never delete one\n- In week 8, play week 1 first\n\nWhat would you record every Sunday? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#progress #selfimprovement #singing #motivation #consistency",
+  "x": "You're getting better. You just can't see it.\n\nYou compare today with yesterday, and one day of practice is too small to notice. The change only shows across weeks.\n\nThe Sunday test: record the same song (or run the same 2 km, or write to the same prompt) every Sunday. Never delete one. In week 8, play week 1 first.",
+  "youtube_title": "How to see progress when you feel stuck #Shorts"
+ }
+}

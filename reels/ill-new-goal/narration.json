@@ -1,0 +1,330 @@
+{
+ "voice": "am_eric",
+ "speed": 1.0,
+ "gap_min": 0.18,
+ "gap_max": 0.32,
+ "tail": 1.2,
+ "sfx": "present",
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "brand_from": 12,
+ "silences": [
+  "So the",
+  "It's parked"
+ ],
+ "spoken": "[hook] Starting a new goal feels better than finishing the old one. || Why do we stop doing things we know are good for us? Reason twenty-eight. || [turn] Week one of guitar, you're buzzing. Week six, it's hard chords and sore fingers. || Then a Spanish video shows up, and the buzz is back. || A new goal starts at zero, where every step feels huge. And planning it feels like progress. || So the guitar never gets finished. It gets replaced. || The fix: before adding a goal, give the old one its next finish line. Guitar: one full song by month end. || The new goal goes on a later list, with a date. Spanish: December first. || [land] It's parked, and the guitar gets its four weeks. || Send this to the friend with five half-started goals. || [outro] That's what Deem-yor is for. Archive your dream today, and break it into small steps you can actually do. || [outro] Follow for one reason a day. Next: why you can't see yourself getting better. || [outro] Which goal did you start, then replace? The link's in the bio.",
+ "scenes": [
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "hook",
+    "bars": [
+     [
+      "Wk 1",
+      "Guitar",
+      90,
+      "ink"
+     ],
+     [
+      "Wk 6",
+      "Guitar",
+      30,
+      "red"
+     ],
+     [
+      "Wk 7",
+      "Spanish",
+      90,
+      "ink"
+     ],
+     [
+      "Wk 12",
+      "Spanish",
+      28,
+      "red"
+     ],
+     [
+      "Wk 13",
+      "Running",
+      92,
+      "ink"
+     ]
+    ],
+    "max": 100,
+    "ylabel": "EXCITEMENT, WEEK BY WEEK",
+    "chip": "Three starts. Zero finishes."
+   },
+   "head": "The new goal<br>always <b>wins</b>."
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 28,
+    "title": "The new goal",
+    "cue": [
+     "good",
+     "Reason"
+    ]
+   },
+   "head": "Why we <b>stop</b>."
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "grow",
+    "bars": [
+     [
+      "Week 1",
+      "",
+      90,
+      "acc"
+     ],
+     [
+      "Week 3",
+      "",
+      60,
+      "ink"
+     ],
+     [
+      "Week 6",
+      "",
+      28,
+      "red"
+     ]
+    ],
+    "max": 100,
+    "ylabel": "HOW GOOD GUITAR PRACTICE FEELS",
+    "chip": "Hard chords, sore fingers",
+    "cue": [
+     "one",
+     "six",
+     "hard",
+     "fingers"
+    ]
+   },
+   "head": "Week six of<br><b>guitar</b>."
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Guitar, week 6",
+      28,
+      "red"
+     ],
+     [
+      "Spanish, day 1",
+      90,
+      "acc"
+     ]
+    ],
+    "max": 100,
+    "unit": "%",
+    "chip": "The buzz is back",
+    "cue": [
+     "Then",
+     "Spanish",
+     "back"
+    ]
+   },
+   "head": "Then a <b>new</b> idea."
+  },
+  {
+   "type": "easy-hard",
+   "params": {
+    "a": "Planning",
+    "ar": "feels good",
+    "b": "Practising",
+    "br": "is progress",
+    "cue": [
+     "planning",
+     "progress"
+    ]
+   },
+   "head": "Planning feels<br>like <b>progress</b>."
+  },
+  {
+   "type": "bar-compare",
+   "params": {
+    "rows": [
+     [
+      "Goals started",
+      3,
+      "ink"
+     ],
+     [
+      "Goals finished",
+      0,
+      "red"
+     ]
+    ],
+    "max": 4,
+    "unit": "",
+    "chip": "Replaced, not finished",
+    "cue": [
+     "guitar",
+     "finished",
+     "replaced"
+    ]
+   },
+   "head": "Replaced,<br>not <b>finished</b>."
+  },
+  {
+   "type": "goal-date",
+   "params": {
+    "stage": "rewrite",
+    "label": "OLD GOAL: NEXT FINISH LINE",
+    "old": "Learn guitar",
+    "neu": "Play one full song",
+    "date": "Month end",
+    "cue": [
+     "Before",
+     "Guitar",
+     "month"
+    ]
+   },
+   "head": "Old goal first:<br>a <b>finish line</b>."
+  },
+  {
+   "type": "night-list",
+   "params": {
+    "stage": "write",
+    "title": "LATER LIST",
+    "items": [
+     "Spanish: Dec 1",
+     "Running: Jan 10",
+     "Pottery: Feb 1"
+    ],
+    "cue": [
+     "later",
+     "December"
+    ]
+   },
+   "head": "New goal:<br>the <b>later</b> list."
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "morph",
+    "bars": [
+     [
+      "Wk 1",
+      "Guitar",
+      90,
+      "ink"
+     ],
+     [
+      "Wk 6",
+      "Guitar",
+      30,
+      "red"
+     ],
+     [
+      "Wk 7",
+      "Spanish",
+      90,
+      "ink"
+     ],
+     [
+      "Wk 12",
+      "Spanish",
+      28,
+      "red"
+     ],
+     [
+      "Wk 13",
+      "Running",
+      92,
+      "ink"
+     ]
+    ],
+    "after": [
+     null,
+     [
+      "Wk 4",
+      "Song done",
+      88,
+      "acc"
+     ],
+     [
+      "Wk 5",
+      "2nd song",
+      84,
+      "acc"
+     ],
+     [
+      "Dec 1",
+      "Spanish",
+      60,
+      "mute"
+     ],
+     [
+      "Jan",
+      "Running",
+      40,
+      "mute"
+     ]
+    ],
+    "max": 100,
+    "ylabel": "EXCITEMENT, WEEK BY WEEK",
+    "chip2": "One goal finished first",
+    "cue": [
+     "parked",
+     "weeks"
+    ],
+    "together": true
+   },
+   "head": "Parked,<br><b>not</b> lost."
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "BEFORE A NEW GOAL",
+    "items": [
+     "Old goal: a finish",
+     "New goal: later list",
+     "Write its start date"
+    ],
+    "cue": [
+     "Send",
+     "friend",
+     "five"
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>."
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Play guitar by summer",
+    "date": "Open it again: Jun 2027",
+    "steps": [
+     "Month 1: one full song",
+     "Later: Spanish, Dec 1",
+     "Today: 15 min chords"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>."
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why you can't see yourself getting better",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "better"
+    ]
+   },
+   "head": "One reason<br><b>a day</b>."
+  },
+  null
+ ],
+ "caption": {
+  "instagram": "Why a new goal feels better than finishing the old one (and how to stop starting over).\n\nWhy we stop doing things we know are good for us, reason #28: the new goal. Week six of guitar is hard chords and sore fingers. Then a Spanish video gives you the buzz back. A new goal puts you back at zero, where every step feels huge, and planning feels like progress even though nothing is done.\n\nThe fix:\n- Old goal first: give it its next finish line (play one full song this month)\n- New goal: on a later list\n- Write its start date (Spanish: Dec 1)\n\nWhich goal did you start, then replace? Tell me below.\n\nDmyor: archive your dream today, break it into steps you can actually do. Link in bio.",
+  "hashtags": "#goals #motivation #selfimprovement #learnguitar #consistency",
+  "x": "Starting a new goal feels better than finishing the old one.\n\nA new goal puts you back at zero, where every step feels huge. Planning it feels like progress, even though nothing is done.\n\nBefore you add a goal: give the old one its next finish line. Put the new one on a later list, with a start date.",
+  "youtube_title": "How to stop starting new goals and finish one #Shorts"
+ }
+}

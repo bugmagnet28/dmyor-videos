@@ -1,6 +1,6 @@
 # Video dashboard (posting on @becauseidmyor, end card @becauseidmyor)
 
-_Last updated: 2026-11-13 IST (run 2026-11-13)_
+_Last updated: 2026-11-14 IST (run 2026-11-14)_
 
 **Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [reel library](library/index.html) · [growth plan Nov 2026](growth-plan-2026-11.md) · weekly review 2026-11-03 in [strategy.md](strategy.md)
 
@@ -10,12 +10,20 @@ _Last updated: 2026-11-13 IST (run 2026-11-13)_
 | Are we improving? | **Reach: yes** (IG newer median 128 vs 17). Followers: slow (+3 in 9 days). YouTube: declining |
 | Live / scheduled | Backlog caught up Wed night: out-of-sight live; Thu sunday-practice 13:00 + kabir-2 19:30; Fri perfect-week, borrowed-sleep, kabir-3; Sat just-today, mixed-practice (IG still owes kabir-3, just-today, mixed-practice; YT owes mixed-practice). All registered in analytics |
 | **Blocker** | No metrics since Nov 6: 11 V-EXP-34 reels live or scheduled, zero readings |
-| Ready to schedule (auto-approved) | **Sun 15: 13:00 ill-afternoon-crash (#22), 19:30 ill-guessed-deadline (#23)** · **Mon 16: 13:00 ill-make-first (#24), 19:30 ill-autopilot (#25)** · **Tue 17: 13:00 ill-good-day (#26), 19:30 ill-middle (#27)**. Stock: 6 unscheduled + 3 IG/YT leftovers |
-| Host | ~6 min per reel today (4.5 fps); uptime 271 days, swap 14.7/15 GB |
+| Ready to schedule (auto-approved) | **Wed 18: 13:00 ill-new-goal (#28), 19:30 ill-sunday-test (#29)** · **Sun 15: 13:00 ill-afternoon-crash (#22), 19:30 ill-guessed-deadline (#23)** · **Mon 16: 13:00 ill-make-first (#24), 19:30 ill-autopilot (#25)** · **Tue 17: 13:00 ill-good-day (#26), 19:30 ill-middle (#27)**. Stock: 8 unscheduled + 3 IG/YT leftovers (post-queue not ticked since Nov 12) |
+| Host | ~4.5 min per reel today; uptime 272 days, swap 16.7/17 GB |
 | Open experiments | V-EXP-32 (kit v2), V-EXP-33 (chart frame 0 + length), **V-EXP-34** (on-topic pillars, ≤50 s, Reason series; Nov 7-20) |
-| Asks | **VASK-030** (IG leftovers + Sun/Mon batch, Mac restart), **VASK-031** (Mon 19:30 + Tue pair, screenshots for the first V-EXP-34 reels) |
+| Asks | **VASK-030** (IG leftovers + Sun/Mon batch, Mac restart), **VASK-031** (Mon 19:30 + Tue pair, screenshots), **VASK-032** (Wed 18 pair; backlog growing) |
 
-## Built today (Fri Nov 13) for Mon 16 / Tue 17 (V-EXP-34 batch 6)
+## Built today (Sat Nov 14) for Wed 18 (V-EXP-34 batch 7)
+| Slot (IST) | Reel | Reason / pillar | Length | Hook | Frame 0 | Score |
+|---|---|---|---|---|---|---|
+| Wed 13:00 | ill-new-goal | #28 the new goal / A (structure C) | 52.3 s | "Starting a new goal feels better than finishing the old one." | excitement bars: guitar, Spanish, running each drop at wk 6 | 33/40 |
+| Wed 19:30 | ill-sunday-test | #29 invisible progress / C (story B, Tara) | 52.5 s | "You're getting better. You just can't see it." | better than week 1 40% vs yesterday 1% | 34/40 |
+
+Chain: middle -> new-goal -> sunday-test -> "why telling people your goal makes it harder" (#30, next run).
+
+## Built Fri Nov 13 for Mon 16 / Tue 17 (V-EXP-34 batch 6)
 | Slot (IST) | Reel | Reason / pillar | Length | Hook | Frame 0 | Score |
 |---|---|---|---|---|---|---|
 | Mon 19:30 | ill-autopilot | #25 autopilot / C (structure A) | 51.7 s | "You practise every day. You stopped getting better in month one." | songs-you-can-play bars flat from M2 | 34/40 |

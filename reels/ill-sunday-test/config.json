@@ -1,0 +1,291 @@
+{
+ "total": 52.46,
+ "brandT": 48.18,
+ "scenes": [
+  {
+   "type": "bar-compare",
+   "params": {
+    "stage": "hook",
+    "rows": [
+     [
+      "Better than week 1",
+      40,
+      "acc"
+     ],
+     [
+      "Better than yesterday",
+      1,
+      "red"
+     ]
+    ],
+    "max": 50,
+    "unit": "%",
+    "chip": "Too small to notice daily"
+   },
+   "head": "You're improving.<br>You can't <b>see</b> it.",
+   "t0": 0.0,
+   "t1": 2.21
+  },
+  {
+   "type": "series-card",
+   "params": {
+    "n": 29,
+    "title": "Invisible progress",
+    "cue": [
+     "good",
+     "Reason"
+    ],
+    "at": [
+     1.85,
+     3.05
+    ]
+   },
+   "head": "Why we <b>stop</b>.",
+   "t0": 2.21,
+   "t1": 6.43
+  },
+  {
+   "type": "week-tracker",
+   "params": {
+    "stage": "daily",
+    "on": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "what": "Sing 20 min",
+    "tick": 0.3
+   },
+   "head": "Tara sings<br><b>20 min</b> a day.",
+   "t0": 6.43,
+   "t1": 10.91
+  },
+  {
+   "type": "struck-card",
+   "params": {
+    "a": "MY GOAL",
+    "aBig": "Learn to sing",
+    "b": "Not good at it?",
+    "cue": [
+     "decided",
+     "quit"
+    ],
+    "at": [
+     0.41,
+     2.39
+    ]
+   },
+   "head": "Two months.<br>She almost <b>quit</b>.",
+   "t0": 10.91,
+   "t1": 14.01
+  },
+  {
+   "type": "week-bars",
+   "params": {
+    "stage": "grow",
+    "bars": [
+     [
+      "Day 1",
+      "",
+      50,
+      "ink"
+     ],
+     [
+      "Day 2",
+      "",
+      51,
+      "ink"
+     ],
+     [
+      "Day 3",
+      "",
+      52,
+      "ink"
+     ],
+     [
+      "Week 8",
+      "",
+      82,
+      "acc"
+     ]
+    ],
+    "max": 100,
+    "ylabel": "HOW GOOD SHE SOUNDS",
+    "chip": "Visible only across weeks",
+    "cue": [
+     "compare",
+     "yesterday",
+     "small",
+     "change",
+     "weeks"
+    ],
+    "at": [
+     0.73,
+     1.57,
+     3.63,
+     4.91,
+     6.35
+    ]
+   },
+   "head": "Today vs <b>yesterday</b>?<br>Too small.",
+   "t0": 14.01,
+   "t1": 21.14
+  },
+  {
+   "type": "voice-record",
+   "params": {
+    "drop": "Delete old takes",
+    "prompt": "Sunday: same song",
+    "days": [
+     "W1",
+     "W2",
+     "W3",
+     "W4",
+     "W5",
+     "W6",
+     "W7",
+     "W8"
+    ],
+    "cue": [
+     "deleted",
+     "recorded",
+     "song"
+    ],
+    "at": [
+     3.97,
+     1.27,
+     3.01
+    ]
+   },
+   "head": "Every <b>Sunday</b>,<br>record it.",
+   "t0": 21.09,
+   "t1": 25.75
+  },
+  {
+   "type": "question-list",
+   "params": {
+    "title": "YOUR SUNDAY TEST",
+    "items": [
+     "Running: same 2 km, timed",
+     "Writing: same prompt, 10 min",
+     "Singing: same song, 1 min"
+    ],
+    "cue": [
+     "Running",
+     "Writing",
+     "minutes"
+    ],
+    "at": [
+     0.05,
+     1.68,
+     3.41
+    ]
+   },
+   "head": "Same test,<br><b>any</b> goal.",
+   "t0": 25.75,
+   "t1": 29.93
+  },
+  {
+   "type": "before-after",
+   "params": {
+    "a": "WEEK 1",
+    "b": "WEEK 8",
+    "rows": [
+     [
+      "Pitch",
+      "shaky",
+      "steady"
+     ],
+     [
+      "Breath",
+      "runs out",
+      "lasts"
+     ],
+     [
+      "Top note",
+      "skipped",
+      "hit"
+     ]
+    ],
+    "cue": [
+     "one",
+     "then"
+    ],
+    "at": [
+     1.13,
+     1.45
+    ]
+   },
+   "head": "Week 1, then<br><b>week 8</b>.",
+   "t0": 29.93,
+   "t1": 35.76
+  },
+  {
+   "type": "rule-card",
+   "params": {
+    "title": "THE SUNDAY TEST",
+    "items": [
+     "Same test, each week",
+     "Never delete one",
+     "Compare to week 1"
+    ],
+    "cue": [
+     "Send",
+     "someone",
+     "improving"
+    ],
+    "at": [
+     0.05,
+     0.53,
+     1.89
+    ]
+   },
+   "head": "Screenshot<br><b>this</b>.",
+   "t0": 35.71,
+   "t1": 38.57
+  },
+  {
+   "type": "dream-to-steps",
+   "params": {
+    "dream": "Sing on stage by June",
+    "date": "Open it again: Jun 2027",
+    "steps": [
+     "Daily: 20 min practice",
+     "Sunday: record 1 min",
+     "Week 8: play week 1"
+    ]
+   },
+   "head": "Archive the dream.<br>Break it into <b>steps</b>.",
+   "t0": 38.57,
+   "t1": 44.03
+  },
+  {
+   "type": "follow-next",
+   "params": {
+    "title": "Why telling people your goal makes it harder",
+    "when": "Next reel",
+    "cue": [
+     null,
+     "harder"
+    ],
+    "at": [
+     0.2,
+     3.83
+    ]
+   },
+   "head": "One reason<br><b>a day</b>.",
+   "t0": 44.03,
+   "t1": 48.18
+  }
+ ],
+ "tagline": "Archive your dream today.\nBreak it into steps you can do.",
+ "handle": "@becauseidmyor",
+ "silences": [
+  13.96,
+  7.88
+ ]
+}

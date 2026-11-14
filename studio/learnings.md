@@ -200,3 +200,9 @@ While scheduling diagram-howto-vo from the web (browser automation), two "Your p
 - 2026-11-13 [craft] dream-to-steps card fits about 22 characters of `dream` before the text overruns the card ("Play 20 songs by next summer" overflowed); before-after AFTER cells fit about 12 characters. Caught on the shots.js contact sheet. Confidence: high
 - 2026-11-13 [tooling] Zero-pad shot times (`%05.2f`) so the ffmpeg glob sorts the contact sheet in time order; the shots.js call works in zsh with `$(echo $T)`. Confidence: high
 - 2026-11-13 [content] Reason map continues: #25 autopilot (plateau, C), #26 the good day (licensing, B), #27 the middle (stuck in the middle, A). Next free: #28 (promised: why a new goal feels better than the old one). Confidence: high
+
+## 2026-11-14
+- Craft: Kokoro reads these scripts at ~3.3 w/s, so the 50 s cap means ~170 spoken words including the fixed series line, value close, follow and link lines (~55 words). First drafts at 188 words ran 55.7 s; trimming 15-20 words lands ~52 s. Draft to 170 from the start. (confidence: high, 3 runs)
+- Craft: when a list scene's first item is not spoken first, give it the first cue word; a later cue landing before an earlier one makes item 2 appear before item 1 (question-list, sunday-test). Check cue arrays are ascending in the make_reel "scenes" printout. (confidence: high)
+- Engine: voice-record now takes an optional `days` label list (e.g. W1-W8 for weekly recordings).
+- Ops: in zsh, `$VAR` with spaces doesn't split; run shots.js loops through `bash -c`. sheet.py needs PIL: use analytics/.venv/bin/python.

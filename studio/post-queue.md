@@ -13,6 +13,12 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
   - Sat 14: ill-just-today 13:00 (X + YT; **IG still to schedule**), ill-mixed-practice 19:30 (X only; **IG + YT still to schedule**: IG 5-flow limit and YT daily upload limit hit tonight).
   - Next session (Thu): IG kabir-3 Fri 19:30, just-today Sat 13:00, mixed-practice Sat 19:30; YT mixed-practice Sat 19:30. Shift the next agent batch to Sun 15.
 
+## Built Sat 2026-11-14 for Wed 18 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 7
+
+- [ ] Wed 18 13:00 IST · **ill-new-goal** (Reason #28 "the new goal", pillar A, structure C, excitement-per-goal bars (spike, clay drop at wk 6, next goal) on frame 0, 52.3 s; keeps ill-middle's promise; follow line "Next: why you can't see yourself getting better") · `ready-to-post/2026-11-18-ill-new-goal/`
+- [ ] Wed 18 19:30 IST · **ill-sunday-test** (Reason #29 "invisible progress", pillar C, story B (Tara, singing), bars better-than-week-1 40% vs better-than-yesterday 1% on frame 0, 52.5 s, strongest; follow line "Next: why telling people your goal makes it harder", next run builds it) · `ready-to-post/2026-11-18-ill-sunday-test/`
+- Order: after ill-middle (Tue 17 19:30). new-goal must follow middle; sunday-test follows new-goal. Render status: detached finisher `studio/state/finish_2026-11-14.log`; check `video.mp4` exists before scheduling.
+
 ## Built Fri 2026-11-13 for Mon 16 + Tue 17 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 6
 
 - [ ] Mon 16 19:30 IST · **ill-autopilot** (Reason #25 "autopilot", pillar C, flat songs-per-month bars on frame 0, 51.7 s, strongest of the day; keeps make-first's "Next: why you stop improving after month one"; follow line "Next: why a great day makes you skip the next one") · `ready-to-post/2026-11-16-ill-autopilot/`

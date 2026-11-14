@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-sunday-test",
+ "hook_type": "hard-truth",
+ "topic": "learning",
+ "pillar": "C (learning & skill)",
+ "series": "Why we stop doing things we know are good for us, Reason #29 (invisible progress)",
+ "experiment": "V-EXP-34",
+ "hook": "You're getting better. You just can't see it.",
+ "gate": {
+  "goal_link": "any skill goal (singing): quitting because progress feels flat",
+  "mechanism": "day-to-day change is below what you can notice; you compare with yesterday, so progress only shows against an old fixed benchmark. No study cited; bars are an illustration.",
+  "universal": "practising daily and feeling no better"
+ },
+ "frame": {
+  "structure": "B (want, obstacle, choice, payoff), Tara",
+  "want": "learn to sing",
+  "obstacle": "two months of 20 min a day, every day sounds like the day before",
+  "cost": "almost quit after 60 days (~20 hours of practice)",
+  "fix": "the Sunday test: same song, same minute, same key every Sunday, never delete; at week 8 play week 1 first. Running: same 2 km timed; writing: same prompt 10 min"
+ },
+ "hooks_considered": [
+  {
+   "line": "You're getting better. You just can't see it.",
+   "kept": true,
+   "checks": "hard truth Y, gap Y (why not?), muted Y (40% vs 1% bars), sendable Y"
+  },
+  {
+   "line": "Most people quit right before they could hear the difference.",
+   "kept": false,
+   "checks": "too long for 6-word text"
+  },
+  {
+   "line": "Yesterday is the worst thing to compare yourself to.",
+   "kept": false,
+   "checks": "less clear without context"
+  }
+ ],
+ "beats": {
+  "hard_truth": "0.0 s bars better than week 1 40% vs better than yesterday 1%",
+  "series": "Reason #29",
+  "rehook_10": "MY GOAL Learn to sing struck, 'Not good at it?'",
+  "rehook_25": "phone records the Sunday take, W1-W8 ticks",
+  "save_moment": "THE SUNDAY TEST rule card",
+  "share_line": "Send this to someone who thinks they've stopped improving.",
+  "comment_q": "What would you record every Sunday?",
+  "follow_reason": "Next: why telling people your goal makes it harder (Reason #30, idea #70, next run builds it)"
+ },
+ "note": "Payoff reveal = before-after week 1 vs week 8. Different story structure from ill-new-goal (B vs C).",
+ "quality": {
+  "hook": 4,
+  "usefulness": 5,
+  "specificity": 4,
+  "clarity": 5,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 34
+ }
+}

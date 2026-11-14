@@ -1,0 +1,62 @@
+{
+ "style": "animated-illustration-explainer",
+ "voice": "am_eric (Kokoro draft)",
+ "slug": "ill-new-goal",
+ "hook_type": "hard-truth",
+ "topic": "motivation",
+ "pillar": "A (why goals fail)",
+ "series": "Why we stop doing things we know are good for us, Reason #28 (the new goal)",
+ "experiment": "V-EXP-34",
+ "hook": "Starting a new goal feels better than finishing the old one.",
+ "gate": {
+  "goal_link": "any long goal (guitar) abandoned for a fresh one (Spanish)",
+  "mechanism": "a new goal resets progress to 'measured from zero' where each step feels big (goal gradient / small-area), and planning gives a feeling of progress without output. No study cited; frame-0 bars are an illustration.",
+  "universal": "half-started goals replaced by new ones"
+ },
+ "frame": {
+  "structure": "C (mistake, cost, fix)",
+  "want": "learn guitar",
+  "obstacle": "week 6 is hard and a new goal feels exciting",
+  "cost": "three goals started, zero finished (illustration)",
+  "fix": "before adding a goal, give the old one its next finish line (one full song by month end); new goal on a later list with a start date (Spanish: Dec 1)"
+ },
+ "hooks_considered": [
+  {
+   "line": "Starting a new goal feels better than finishing the old one.",
+   "kept": true,
+   "checks": "hard truth Y, gap Y (why?), muted Y (spike-drop bars per goal), sendable Y"
+  },
+  {
+   "line": "You don't lose goals. You replace them.",
+   "kept": false,
+   "checks": "strong, less clear muted"
+  },
+  {
+   "line": "Three goals started this year. Zero finished.",
+   "kept": false,
+   "checks": "number hook used twice this week"
+  }
+ ],
+ "beats": {
+  "hard_truth": "0.0 s excitement bars: guitar/Spanish/running spikes, each wk 6 in clay",
+  "series": "Reason #28",
+  "rehook_10": "Spanish day 1 90% vs guitar week 6 28%",
+  "rehook_25": "goal-date rewrite: Learn guitar -> Play one full song, Month end",
+  "save_moment": "BEFORE A NEW GOAL rule card",
+  "share_line": "Send this to the friend with five half-started goals.",
+  "comment_q": "Which goal did you start, then replace?",
+  "follow_reason": "Next: why you can't see yourself getting better (Reason #29, ill-sunday-test, built today)"
+ },
+ "note": "Keeps ill-middle's promise. Loop ending: frame-0 chart morphs so guitar is finished first. voice-record scene got an optional days param today (used by ill-sunday-test).",
+ "quality": {
+  "hook": 5,
+  "usefulness": 4,
+  "specificity": 4,
+  "clarity": 4,
+  "retention": 4,
+  "craft": 4,
+  "voice": 4,
+  "brand": 4,
+  "total": 33
+ }
+}
