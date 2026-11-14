@@ -35,8 +35,8 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 ## Built Wed 2026-11-11 for Thu 2026-11-12 (auto-approved, to schedule after the Mon + Tue batches). Instagram, X and YouTube Shorts. V-EXP-34 batch 4
 
-- [~] Sat 14 13:00 IST (X + YT scheduled, IG pending) · **ill-just-today** (Reason #20 "just today", pillar B, bars 1 day vs 104 days on frame 0, 49.6 s; follow line "Next: why the practice that feels best teaches you least") · `ready-to-post/2026-11-12-ill-just-today/`
-- [~] Sat 14 19:30 IST (X scheduled, IG + YT pending) · **ill-mixed-practice** (Reason #21 "the practice that feels best", pillar C, story B (Riya), bars mixed 63% vs blocks 20% on frame 0, ~50 s, strongest; follow line "Next: why your afternoon crash starts at lunch", next run builds it) · `ready-to-post/2026-11-12-ill-mixed-practice/`
+- [x] Sat 14 13:00 IST X + YT; IG posted Sat 14 ~12:55 · **ill-just-today** (Reason #20 "just today", pillar B, bars 1 day vs 104 days on frame 0, 49.6 s; follow line "Next: why the practice that feels best teaches you least") · `ready-to-post/2026-11-12-ill-just-today/`
+- [x] Sat 14 19:30 IST all three (IG + YT scheduled Sat 14 ~13:00) · **ill-mixed-practice** (Reason #21 "the practice that feels best", pillar C, story B (Riya), bars mixed 63% vs blocks 20% on frame 0, ~50 s, strongest; follow line "Next: why your afternoon crash starts at lunch", next run builds it) · `ready-to-post/2026-11-12-ill-mixed-practice/`
 - Order: Mon batch, then Tue batch, then this one, one day each (the date in the folder name is a suggestion; if the backlog shifts, shift this too). Both follow lines say "Next", so any day works as long as just-today goes before mixed-practice.
 - Render status: a detached finisher records and packages both (`studio/state/finish_2026-11-12.log`). Before scheduling, check `video.mp4` exists and look at `studio/state/frames-2026-11-12/`.
 
@@ -66,7 +66,7 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 - [x] scheduled Sun 2026-11-08 20:30 IST on IG + X, YT published Wed 11, likes hidden · **pixel-kabir-1** "Starting Monday" (Reason #1) · `ready-to-post/2026-11-08-pixel-kabir-1/`
 - [x] Thu 12 19:30 IST all three · **pixel-kabir-2** "The gym membership" (Reason #2) · `ready-to-post/2026-11-09-pixel-kabir-2/`
-- [~] Fri 13 19:30 IST (X + YT scheduled, IG pending) · **pixel-kabir-3** "Today was okay" (Reason #3) · `ready-to-post/2026-11-10-pixel-kabir-3/`
+- [x] Fri 13 19:30 IST X + YT; IG Sat 14 16:30 (Thu session never ran) · **pixel-kabir-3** "Today was okay" (Reason #3) · `ready-to-post/2026-11-10-pixel-kabir-3/`
 
 ## Built Fri 2026-11-06 (auto-approved, to schedule; Nov 5 run failed so there was no Fri batch). Instagram, X and YouTube Shorts
 
