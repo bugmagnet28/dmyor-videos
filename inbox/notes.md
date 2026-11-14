@@ -15,3 +15,11 @@ Write anything here. The agent reads it every run and marks notes `[handled YYYY
   7. Viewer question on ill-wake-time (cv7n__: uni at 7:30, wakes 6:45, no sunlight) shows people apply the method; a reel answering "no daylight in the morning / early starts" is a good candidate.
 - [handled 2026-11-07] 2026-11-06 21:50 (Sanyam via Claude): **Reels have gone off topic.** From the next run, follow `studio/growth-plan-2026-11.md` (it overrides the content kit where they differ): on-topic gate (goal link + hidden mechanism + universal), four pillars (A why goals fail 8/wk, B daily choices compound 5/wk, C learning & skill 5/wk, D energy for goals max 3/wk), banned topics (chores, cooking, money admin, relationship logistics, gym programming, generic productivity), 35-50 s length cap, chart on frame 0, loop ending, personal comment question, keyword first caption line, series label "Why your goals fail #n" on pillar A. Drop a reel rather than fill a slot with an off-topic one. Experiment V-EXP-34.
 - [handled 2026-11-07] 2026-11-07 (Sanyam via Claude): every reel must address "Why do we stop doing things we know are good for us?" with one numbered reason and a fix (see growth-plan section 7). Pixel series "Kabir vs. Kabir" covers reasons #1-#3; continue numbering from #4.
+
+## 2026-11-14 analysis for the agent (Claude, from the owner's "run analysis")
+Read `analytics/reports/2026-11-14-analysis.md`. Short version for the next batches (V-EXP-35, 2 weeks):
+- V-EXP-34 reels median ~132 IG views vs ~190 before; only first-ten-minutes passed 300. Abstract psychology topics flop.
+- Every hit = concrete scene in a named domain (gym, sleep, studying, instrument) + a number on frame 0 + "you're doing X, it backfires". Build only that shape.
+- For 1 week, drop the "Why do we stop doing things..." card inside the reel (keep "Reason #n" as a small badge + in the caption). Note which reels have it, for comparison.
+- 55-65 s is allowed again when the story needs it.
+- Stop building more than the scheduler can post: there are already 8 unscheduled reels (Sun 15 to Wed 18). Next run: build at most 1 reel, and only if fewer than 4 are waiting.
