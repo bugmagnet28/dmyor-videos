@@ -1,0 +1,111 @@
+{
+ "total": 37.181,
+ "scenes": {
+  "S1": [
+   0.5,
+   5.386
+  ],
+  "S2": [
+   5.386,
+   11.581
+  ],
+  "S3": [
+   11.581,
+   19.476
+  ],
+  "S4": [
+   19.476,
+   26.859
+  ],
+  "S5": [
+   26.859,
+   37.181
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   2.369,
+   "Kabir trains seven days a week."
+  ],
+  [
+   "S1",
+   1,
+   2.619,
+   4.886,
+   "Rest days are for people who don't want it enough."
+  ],
+  [
+   "S2",
+   0,
+   5.386,
+   7.512,
+   "Week three: he's lifting less than in week one."
+  ],
+  [
+   "S2",
+   1,
+   7.912,
+   11.081,
+   "Obviously not enough training. So he adds an eighth day. Somehow."
+  ],
+  [
+   "S3",
+   0,
+   11.581,
+   12.591,
+   "Here's the twist."
+  ],
+  [
+   "S3",
+   1,
+   12.841,
+   16.55,
+   "The workout breaks the muscle down. It grows back stronger while you rest."
+  ],
+  [
+   "S3",
+   2,
+   16.85,
+   18.976,
+   "No rest, no rebuilding. Just breaking."
+  ],
+  [
+   "S4",
+   0,
+   19.476,
+   23.387,
+   "So rest days aren't lazy. They're the part where you actually get stronger."
+  ],
+  [
+   "S4",
+   1,
+   23.687,
+   26.409,
+   "Train hard. Then let it build. Two rest days a week."
+  ],
+  [
+   "S5",
+   0,
+   26.859,
+   29.109,
+   "Kabir rests on purpose now. And lifts more."
+  ],
+  [
+   "S5",
+   1,
+   29.409,
+   31.767,
+   "Send this to the friend who trained through a fever."
+  ],
+  [
+   "S5",
+   2,
+   32.067,
+   33.681,
+   "How many rest days do you take?"
+  ]
+ ]
+}

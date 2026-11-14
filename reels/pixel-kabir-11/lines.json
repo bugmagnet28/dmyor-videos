@@ -1,0 +1,7 @@
+{
+ "S1": [["Kabir is learning a song.", 0.2], ["He plays it from the start. Every time. Forty times a day.", 0.5]],
+ "S2": [["Bars one to eleven: perfect.", 0.25], ["Bar twelve: a crime scene.", 0.5]],
+ "S3": [["Do the maths.", 0.2], ["Forty run-throughs. Forty tries at bar twelve. Four hundred and forty at the part he already knows.", 0.5]],
+ "S4": [["So practise the broken bar. Alone. Slowly. Ten times.", 0.3], ["Then stitch it back in.", 0.45]],
+ "S5": [["A week later, bar twelve is his best part.", 0.3], ["Send this to the friend who always starts from the top.", 0.3], ["What's your bar twelve?", 1.3]]
+}

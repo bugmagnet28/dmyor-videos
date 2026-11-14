@@ -1,0 +1,7 @@
+{
+ "S1": [["Kabir has a presentation tomorrow.", 0.25], ["He's read his slides twenty times. Silently. In his head. Flawless.", 0.5]],
+ "S2": [["Next morning, he opens his mouth... and nothing comes out.", 0.4], ["His brain knew the words. His mouth had never met them.", 0.5]],
+ "S3": [["Reading in your head and saying it out loud are different skills.", 0.3], ["You only get better at the one you actually practise.", 0.5]],
+ "S4": [["So rehearse out loud. Standing up. Three times. Once to a friend.", 0.3], ["The first run will sound terrible. That's the run that counts.", 0.5]],
+ "S5": [["Send this to the friend reading their slides on the train.", 0.3], ["When's your next one?", 1.3]]
+}

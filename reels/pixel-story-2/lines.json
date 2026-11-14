@@ -1,0 +1,7 @@
+{
+ "S1": [["Two students. Same chapter. Same three hours.", 0.5]],
+ "S2": [["Sam reads it three times. It feels easy. It feels familiar.", 0.35], ["Dev reads it once, closes the book, and writes down everything he remembers.", 0.5]],
+ "S3": [["It feels awful. He gets half of it wrong.", 0.4], ["Sam feels ready. Dev feels behind.", 0.5]],
+ "S4": [["One week later, the test.", 0.5], ["Dev remembers more.", 0.45]],
+ "S5": [["Pulling it back out is what makes it stay.", 0.3], ["Familiar isn't the same as remembered.", 0.4], ["Are you a Sam, or a Dev?", 1.3]]
+}

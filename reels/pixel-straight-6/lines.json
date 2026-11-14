@@ -1,0 +1,7 @@
+{
+ "S1": [["Perfect day. Healthy food. A long walk.", 0.25], ["Next morning: up one point two kilos.", 0.5]],
+ "S2": [["Before you quit: that's not fat.", 0.3], ["Your weight moves one to two kilos a day, from water, salt and food still in you.", 0.45]],
+ "S3": [["A kilo of fat is about seven and a half thousand calories. You didn't eat that yesterday.", 0.5]],
+ "S4": [["So stop reading single days.", 0.25], ["Weigh in daily if you like, but only trust the weekly average.", 0.3], ["The line under the noise is the real one.", 0.45]],
+ "S5": [["Send this to the friend who quit because of one morning.", 0.3], ["Do you weigh yourself every day?", 1.3]]
+}

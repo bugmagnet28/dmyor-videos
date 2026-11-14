@@ -1,0 +1,79 @@
+{
+ "total": 26.27,
+ "scenes": {
+  "S1": [
+   0.5,
+   3.923
+  ],
+  "S2": [
+   3.923,
+   11.48
+  ],
+  "S3": [
+   11.48,
+   21.411
+  ],
+  "S4": [
+   21.411,
+   26.27
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   2.134,
+   "Six hours the night before."
+  ],
+  [
+   "S1",
+   1,
+   2.334,
+   3.473,
+   "Gone by Friday."
+  ],
+  [
+   "S2",
+   0,
+   3.923,
+   7.302,
+   "Cramming feels productive, because everything is fresh while you're doing it."
+  ],
+  [
+   "S2",
+   1,
+   7.602,
+   11.08,
+   "But your brain keeps what it has to fetch again, not what it saw once."
+  ],
+  [
+   "S3",
+   0,
+   11.48,
+   15.687,
+   "Same six hours, split: one hour a day, for six days. Quiz yourself each time."
+  ],
+  [
+   "S3",
+   1,
+   15.987,
+   18.629,
+   "It sticks, because every day you had to pull it back out."
+  ],
+  [
+   "S3",
+   2,
+   18.929,
+   21.111,
+   "Send this to the friend opening the book tonight."
+  ],
+  [
+   "S4",
+   0,
+   21.411,
+   22.77,
+   "When's your next exam?"
+  ]
+ ]
+}

@@ -1,0 +1,6 @@
+{
+ "S1": [["Six hours the night before.", 0.2], ["Gone by Friday.", 0.45]],
+ "S2": [["Cramming feels productive, because everything is fresh while you're doing it.", 0.3], ["But your brain keeps what it has to fetch again, not what it saw once.", 0.4]],
+ "S3": [["Same six hours, split: one hour a day, for six days. Quiz yourself each time.", 0.3], ["It sticks, because every day you had to pull it back out.", 0.3], ["Send this to the friend opening the book tonight.", 0.3]],
+ "S4": [["When's your next exam?", 1.3]]
+}

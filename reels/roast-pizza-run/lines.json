@@ -1,0 +1,6 @@
+{
+ "S1": [["Ran five kilometres to earn the pizza.", 0.2], ["The pizza is winning.", 0.45]],
+ "S2": [["A five K run burns roughly what a slice and a half has.", 0.3], ["The other six slices are still on the table.", 0.45]],
+ "S3": [["You can't out-run your fork.", 0.3], ["Run for your heart and your head. Change the plate for the weight.", 0.3], ["Send this to the running buddy who orders a large.", 0.3]],
+ "S4": [["What's your earned treat?", 1.3]]
+}

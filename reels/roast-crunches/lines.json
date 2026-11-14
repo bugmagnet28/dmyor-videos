@@ -1,0 +1,6 @@
+{
+ "S1": [["A thousand crunches a day.", 0.2], ["Belly: unchanged. Abs: very tired.", 0.4]],
+ "S2": [["Here's the part nobody tells you.", 0.25], ["Crunches train the muscle underneath. They don't choose which fat leaves.", 0.45]],
+ "S3": [["So swap nine hundred of them for a walk and a better dinner.", 0.3], ["Send this to the friend on crunch number six hundred.", 0.3]],
+ "S4": [["How many are you on?", 1.3]]
+}

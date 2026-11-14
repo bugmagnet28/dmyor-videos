@@ -28,7 +28,7 @@ function overlays(u) {
     caption(u, EP.endQ, endAt, 999, { y: 560 });
     if (u > endAt + .3) { var lab = "DMYOR", B = 20, w2 = pwidth(lab, B); ptext(X, lab, (OW - w2) / 2 + B, 1080 + B, B, "#1A1530"); ptext(X, lab, (OW - w2) / 2, 1080, B, "#FFFFFF");
       var h = "@BECAUSEIDMYOR", w3 = pwidth(h, 7); ptext(X, h, (OW - w3) / 2, 1280, 7, "#FFC145"); } }
-  else TL.subs.forEach(function (c) { if (u >= c[0] && u < c[1]) caption(u, c[2], c[0], c[1], { y: 1650, b: 7, accent: "#FFFFFF" }); });
+  else { var cur = null; TL.subs.forEach(function (c) { if (u >= c[0] && u < c[1]) cur = c; }); if (cur) caption(u, cur[2], cur[0], cur[1], { y: 1650, b: 7, accent: "#FFFFFF" }); }
 }
 window.__duration = DUR;
 window.__seek = function (u) { return READY.then(function () { render(u); }); };

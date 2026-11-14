@@ -157,3 +157,9 @@ function signCard(cx, y, lines, bg, fg, b, k) {
 function floorRoom(wall, wall2, floor) { rect(0, 0, W, H, wall); for (var i = 0; i < 14; i++) rect(i * 20, 0, 1, 380, wall2); rect(0, 380, W, H - 380, floor || "#6B4430"); for (var j = 0; j < 6; j++) rect(0, 392 + j * 14, W, 1, "#5A3826"); }
 function sofaAt(x) { rect(x - 2, 326, 100, 54, "#2A1F2E"); rect(x, 328, 96, 26, "#C2566A"); rect(x, 352, 96, 18, "#A8434F"); rect(x - 2, 340, 12, 40, "#8E3644"); rect(x + 86, 340, 12, 40, "#8E3644"); }
 var STRAIGHT = { badgeBg: "#6CC7A3", badgeFg: "#1A1530" }, STORY = { badgeBg: "#B07CFF", badgeFg: "#FFFFFF" };
+var ROAST = { badgeBg: "#E0453A", badgeFg: "#FFFFFF" };
+// big counter readout: label + number (b px blocks) inside a dark chip
+function counter(x, y, label, num, col, b) { b = b || 3; var w = Math.max(pwidth(num, b), pwidth(label, 1)) + 12; rect(x - 1, y - 1, w + 2, 12 + 8 * b + 2, "#1A1530"); rect(x, y, w, 12 + 8 * b, "#2A2245"); ptext(L, label, x + 6, y + 3, 1, "#B8B0D8"); ptext(L, num, x + 6, y + 11, b, col || "#FFFFFF"); return w; }
+function mat(x, y, w) { rect(x, y, w, 5, "#2A1F2E"); rect(x + 1, y, w - 2, 3, "#4C9AFF"); }
+function plateIcon(x, y) { ell2(x, y, 9, "#FFFFFF"); ell2(x, y, 6, "#E9E4D0"); rect(x - 3, y - 2, 6, 4, "#6CC7A3"); rect(x - 12, y - 6, 1, 12, "#C8C0E8"); rect(x + 12, y - 6, 1, 12, "#C8C0E8"); }
+function ell2(cx, cy, r, c) { for (var y = -r; y <= r; y++) { var w = Math.round(Math.sqrt(r * r - y * y)); rect(cx - w, cy + y, w * 2 + 1, 1, c); } }

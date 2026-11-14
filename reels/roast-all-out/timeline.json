@@ -1,0 +1,79 @@
+{
+ "total": 23.81,
+ "scenes": {
+  "S1": [
+   0.5,
+   4.176
+  ],
+  "S2": [
+   4.176,
+   10.127
+  ],
+  "S3": [
+   10.127,
+   18.917
+  ],
+  "S4": [
+   18.917,
+   23.81
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   1.788,
+   "Every run, all out."
+  ],
+  [
+   "S1",
+   1,
+   1.988,
+   3.776,
+   "Every run, the same slow time."
+  ],
+  [
+   "S2",
+   0,
+   4.176,
+   6.755,
+   "Plot twist: slow is how good runners get fast."
+  ],
+  [
+   "S2",
+   1,
+   7.055,
+   9.727,
+   "Most of their runs are easy. Easy enough to talk."
+  ],
+  [
+   "S3",
+   0,
+   10.127,
+   13.103,
+   "Running hard every day just keeps you too tired to improve."
+  ],
+  [
+   "S3",
+   1,
+   13.403,
+   16.155,
+   "Make four out of five runs easy. Go hard once."
+  ],
+  [
+   "S3",
+   2,
+   16.455,
+   18.617,
+   "Send this to the friend who sprints the warm-up."
+  ],
+  [
+   "S4",
+   0,
+   18.917,
+   20.31,
+   "Can you talk on your runs?"
+  ]
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "total": 28.445,
+ "scenes": {
+  "S1": [
+   0.5,
+   5.045
+  ],
+  "S2": [
+   5.045,
+   10.069
+  ],
+  "S3": [
+   10.069,
+   17.753
+  ],
+  "S4": [
+   17.753,
+   28.445
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   2.571,
+   "Practising fast doesn't make you fast."
+  ],
+  [
+   "S1",
+   1,
+   2.821,
+   4.545,
+   "It makes you fast at your mistakes."
+  ],
+  [
+   "S2",
+   0,
+   5.045,
+   6.944,
+   "Every rep teaches your hands something."
+  ],
+  [
+   "S2",
+   1,
+   7.194,
+   9.619,
+   "If the rep is sloppy, sloppy is what they learn."
+  ],
+  [
+   "S3",
+   0,
+   10.069,
+   11.808,
+   "Here's the part most people skip."
+  ],
+  [
+   "S3",
+   1,
+   12.058,
+   14.588,
+   "Slow down until it's clean. Ten clean reps."
+  ],
+  [
+   "S3",
+   2,
+   14.888,
+   17.303,
+   "Then speed up a little. Still clean? Speed up again."
+  ],
+  [
+   "S4",
+   0,
+   17.753,
+   20.344,
+   "Clean at slow speed becomes clean at full speed."
+  ],
+  [
+   "S4",
+   1,
+   20.644,
+   23.046,
+   "Typing, guitar, a tennis serve. Same rule."
+  ],
+  [
+   "S4",
+   2,
+   23.446,
+   24.945,
+   "What are you rushing right now?"
+  ]
+ ]
+}

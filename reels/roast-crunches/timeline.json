@@ -1,0 +1,72 @@
+{
+ "total": 21.816,
+ "scenes": {
+  "S1": [
+   0.5,
+   4.953
+  ],
+  "S2": [
+   4.953,
+   10.896
+  ],
+  "S3": [
+   10.896,
+   17.132
+  ],
+  "S4": [
+   17.132,
+   21.816
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   2.071,
+   "A thousand crunches a day."
+  ],
+  [
+   "S1",
+   1,
+   2.271,
+   4.553,
+   "Belly: unchanged. Abs: very tired."
+  ],
+  [
+   "S2",
+   0,
+   4.953,
+   6.689,
+   "Here's the part nobody tells you."
+  ],
+  [
+   "S2",
+   1,
+   6.939,
+   10.446,
+   "Crunches train the muscle underneath. They don't choose which fat leaves."
+  ],
+  [
+   "S3",
+   0,
+   10.896,
+   13.905,
+   "So swap nine hundred of them for a walk and a better dinner."
+  ],
+  [
+   "S3",
+   1,
+   14.205,
+   16.832,
+   "Send this to the friend on crunch number six hundred."
+  ],
+  [
+   "S4",
+   0,
+   17.132,
+   18.316,
+   "How many are you on?"
+  ]
+ ]
+}

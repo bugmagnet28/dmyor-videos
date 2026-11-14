@@ -1,0 +1,79 @@
+{
+ "total": 23.505,
+ "scenes": {
+  "S1": [
+   0.5,
+   4.507
+  ],
+  "S2": [
+   4.507,
+   10.672
+  ],
+  "S3": [
+   10.672,
+   18.757
+  ],
+  "S4": [
+   18.757,
+   23.505
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   2.572,
+   "Ran five kilometres to earn the pizza."
+  ],
+  [
+   "S1",
+   1,
+   2.772,
+   4.057,
+   "The pizza is winning."
+  ],
+  [
+   "S2",
+   0,
+   4.507,
+   7.65,
+   "A five K run burns roughly what a slice and a half has."
+  ],
+  [
+   "S2",
+   1,
+   7.95,
+   10.222,
+   "The other six slices are still on the table."
+  ],
+  [
+   "S3",
+   0,
+   10.672,
+   12.169,
+   "You can't out-run your fork."
+  ],
+  [
+   "S3",
+   1,
+   12.469,
+   15.609,
+   "Run for your heart and your head. Change the plate for the weight."
+  ],
+  [
+   "S3",
+   2,
+   15.909,
+   18.457,
+   "Send this to the running buddy who orders a large."
+  ],
+  [
+   "S4",
+   0,
+   18.757,
+   20.005,
+   "What's your earned treat?"
+  ]
+ ]
+}

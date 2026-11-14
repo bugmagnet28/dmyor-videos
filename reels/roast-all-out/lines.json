@@ -1,0 +1,6 @@
+{
+ "S1": [["Every run, all out.", 0.2], ["Every run, the same slow time.", 0.4]],
+ "S2": [["Plot twist: slow is how good runners get fast.", 0.3], ["Most of their runs are easy. Easy enough to talk.", 0.4]],
+ "S3": [["Running hard every day just keeps you too tired to improve.", 0.3], ["Make four out of five runs easy. Go hard once.", 0.3], ["Send this to the friend who sprints the warm-up.", 0.3]],
+ "S4": [["Can you talk on your runs?", 1.3]]
+}

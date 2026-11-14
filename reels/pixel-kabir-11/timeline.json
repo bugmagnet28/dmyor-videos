@@ -1,0 +1,104 @@
+{
+ "total": 32.276,
+ "scenes": {
+  "S1": [
+   0.5,
+   5.597
+  ],
+  "S2": [
+   5.597,
+   9.797
+  ],
+  "S3": [
+   9.797,
+   16.679
+  ],
+  "S4": [
+   16.679,
+   22.032
+  ],
+  "S5": [
+   22.032,
+   32.276
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   1.919,
+   "Kabir is learning a song."
+  ],
+  [
+   "S1",
+   1,
+   2.119,
+   5.097,
+   "He plays it from the start. Every time. Forty times a day."
+  ],
+  [
+   "S2",
+   0,
+   5.597,
+   7.379,
+   "Bars one to eleven: perfect."
+  ],
+  [
+   "S2",
+   1,
+   7.629,
+   9.297,
+   "Bar twelve: a crime scene."
+  ],
+  [
+   "S3",
+   0,
+   9.797,
+   10.647,
+   "Do the maths."
+  ],
+  [
+   "S3",
+   1,
+   10.847,
+   16.179,
+   "Forty run-throughs. Forty tries at bar twelve. Four hundred and forty at the part he already knows."
+  ],
+  [
+   "S4",
+   0,
+   16.679,
+   19.936,
+   "So practise the broken bar. Alone. Slowly. Ten times."
+  ],
+  [
+   "S4",
+   1,
+   20.236,
+   21.582,
+   "Then stitch it back in."
+  ],
+  [
+   "S5",
+   0,
+   22.032,
+   24.233,
+   "A week later, bar twelve is his best part."
+  ],
+  [
+   "S5",
+   1,
+   24.533,
+   27.199,
+   "Send this to the friend who always starts from the top."
+  ],
+  [
+   "S5",
+   2,
+   27.499,
+   28.776,
+   "What's your bar twelve?"
+  ]
+ ]
+}

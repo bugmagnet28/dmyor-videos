@@ -1,0 +1,7 @@
+{
+ "S1": [["Kabir trains seven days a week.", 0.25], ["Rest days are for people who don't want it enough.", 0.5]],
+ "S2": [["Week three: he's lifting less than in week one.", 0.4], ["Obviously not enough training. So he adds an eighth day. Somehow.", 0.5]],
+ "S3": [["Here's the twist.", 0.25], ["The workout breaks the muscle down. It grows back stronger while you rest.", 0.3], ["No rest, no rebuilding. Just breaking.", 0.5]],
+ "S4": [["So rest days aren't lazy. They're the part where you actually get stronger.", 0.3], ["Train hard. Then let it build. Two rest days a week.", 0.45]],
+ "S5": [["Kabir rests on purpose now. And lifts more.", 0.3], ["Send this to the friend who trained through a fever.", 0.3], ["How many rest days do you take?", 1.3]]
+}

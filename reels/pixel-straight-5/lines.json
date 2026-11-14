@@ -1,0 +1,6 @@
+{
+ "S1": [["Practising fast doesn't make you fast.", 0.25], ["It makes you fast at your mistakes.", 0.5]],
+ "S2": [["Every rep teaches your hands something.", 0.25], ["If the rep is sloppy, sloppy is what they learn.", 0.45]],
+ "S3": [["Here's the part most people skip.", 0.25], ["Slow down until it's clean. Ten clean reps.", 0.3], ["Then speed up a little. Still clean? Speed up again.", 0.45]],
+ "S4": [["Clean at slow speed becomes clean at full speed.", 0.3], ["Typing, guitar, a tennis serve. Same rule.", 0.4], ["What are you rushing right now?", 1.3]]
+}

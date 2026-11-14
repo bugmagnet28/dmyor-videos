@@ -23,3 +23,6 @@ Read `analytics/reports/2026-11-14-analysis.md`. Short version for the next batc
 - For 1 week, drop the "Why do we stop doing things..." card inside the reel (keep "Reason #n" as a small badge + in the caption). Note which reels have it, for comparison.
 - 55-65 s is allowed again when the story needs it.
 - Stop building more than the scheduler can post: there are already 8 unscheduled reels (Sun 15 to Wed 18). Next run: build at most 1 reel, and only if fewer than 4 are waiting.
+
+## 2026-11-14 retention playbook (Claude, owner request)
+Every new reel follows `studio/retention-playbook.md` (researched hook/retention rules + our hit pattern). Owner wants humour: roast the habit (never the person) and sarcasm, then real help. Batch `ready-to-post/batch-2026-11-15/` (10 reels: 4 Habit Roast quick-hits 21-26 s, 3 Kabir roasts, 2 Straight Answer, 1 Small Story) is the reference. Owner target: 10 reels a day, browser posting only.

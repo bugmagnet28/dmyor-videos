@@ -1,0 +1,97 @@
+{
+ "total": 29.843,
+ "scenes": {
+  "S1": [
+   0.5,
+   3.535
+  ],
+  "S2": [
+   3.535,
+   11.405
+  ],
+  "S3": [
+   11.405,
+   16.503
+  ],
+  "S4": [
+   16.503,
+   20.18
+  ],
+  "S5": [
+   20.18,
+   29.843
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   3.035,
+   "Two students. Same chapter. Same three hours."
+  ],
+  [
+   "S2",
+   0,
+   3.535,
+   6.72,
+   "Sam reads it three times. It feels easy. It feels familiar."
+  ],
+  [
+   "S2",
+   1,
+   7.07,
+   10.905,
+   "Dev reads it once, closes the book, and writes down everything he remembers."
+  ],
+  [
+   "S3",
+   0,
+   11.405,
+   13.483,
+   "It feels awful. He gets half of it wrong."
+  ],
+  [
+   "S3",
+   1,
+   13.883,
+   16.003,
+   "Sam feels ready. Dev feels behind."
+  ],
+  [
+   "S4",
+   0,
+   16.503,
+   17.953,
+   "One week later, the test."
+  ],
+  [
+   "S4",
+   1,
+   18.453,
+   19.73,
+   "Dev remembers more."
+  ],
+  [
+   "S5",
+   0,
+   20.18,
+   22.129,
+   "Pulling it back out is what makes it stay."
+  ],
+  [
+   "S5",
+   1,
+   22.429,
+   24.439,
+   "Familiar isn't the same as remembered."
+  ],
+  [
+   "S5",
+   2,
+   24.839,
+   26.343,
+   "Are you a Sam, or a Dev?"
+  ]
+ ]
+}

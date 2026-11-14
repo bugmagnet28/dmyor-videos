@@ -1,0 +1,97 @@
+{
+ "total": 34.985,
+ "scenes": {
+  "S1": [
+   0.5,
+   6.897
+  ],
+  "S2": [
+   6.897,
+   13.408
+  ],
+  "S3": [
+   13.408,
+   19.94
+  ],
+  "S4": [
+   19.94,
+   27.295
+  ],
+  "S5": [
+   27.295,
+   34.985
+  ]
+ },
+ "lines": [
+  [
+   "S1",
+   0,
+   0.5,
+   2.519,
+   "Kabir has a presentation tomorrow."
+  ],
+  [
+   "S1",
+   1,
+   2.769,
+   6.397,
+   "He's read his slides twenty times. Silently. In his head. Flawless."
+  ],
+  [
+   "S2",
+   0,
+   6.897,
+   9.745,
+   "Next morning, he opens his mouth... and nothing comes out."
+  ],
+  [
+   "S2",
+   1,
+   10.145,
+   12.908,
+   "His brain knew the words. His mouth had never met them."
+  ],
+  [
+   "S3",
+   0,
+   13.408,
+   16.448,
+   "Reading in your head and saying it out loud are different skills."
+  ],
+  [
+   "S3",
+   1,
+   16.748,
+   19.44,
+   "You only get better at the one you actually practise."
+  ],
+  [
+   "S4",
+   0,
+   19.94,
+   23.32,
+   "So rehearse out loud. Standing up. Three times. Once to a friend."
+  ],
+  [
+   "S4",
+   1,
+   23.62,
+   26.795,
+   "The first run will sound terrible. That's the run that counts."
+  ],
+  [
+   "S5",
+   0,
+   27.295,
+   30.033,
+   "Send this to the friend reading their slides on the train."
+  ],
+  [
+   "S5",
+   1,
+   30.333,
+   31.485,
+   "When's your next one?"
+  ]
+ ]
+}
