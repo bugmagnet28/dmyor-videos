@@ -28,3 +28,6 @@ Read `analytics/reports/2026-11-14-analysis.md`. Short version for the next batc
 Every new reel follows `studio/retention-playbook.md` (researched hook/retention rules + our hit pattern). Owner wants humour: roast the habit (never the person) and sarcasm, then real help. Batch `ready-to-post/batch-2026-11-15/` (10 reels: 4 Habit Roast quick-hits 21-26 s, 3 Kabir roasts, 2 Straight Answer, 1 Small Story) is the reference. Owner target: 10 reels a day, browser posting only.
 
 - [agent 2026-11-15] Handled both 2026-11-14 notes: built 0 reels (18 waiting > 4), logged the Nov 14 views + 28 followers in analytics, opened V-EXP-35, wrote a combined 4-day schedule at the top of post-queue.md. Next builds follow studio/retention-playbook.md.
+
+## 2026-11-15 music (Claude)
+Background music is now ON for all reels: use `m.write(music="<mood>")` in each reel's make_audio.py (pixel series) and package both `video.mp4` (music) and `video-nomusic.mp4`. Rules in `studio/OWNER-RULES.md` (Background music). For the explainer engine, add the same: mix a library track ducked under the voice (copy the filter from sfxmix.py).

@@ -9,4 +9,4 @@ A(K("ratchet", .8), SC["S3"][0] + .2, .15); A(K("buzz", .4), SC["S3"][0] + 1.4, 
 for i in range(3): A(K("tick"), SC["S4"][0] + .3 + i * (LE["S4", 0] - SC["S4"][0] - .3) / 3, .25)
 A(K("pop", 2), LN["S4", 1], .25)
 A(K("reveal"), SC["S5"][0] + .1, .3); A(m.syn.bell(79, 2.0), LN["S5", 1] - .1, .2)
-m.write()
+m.write(music="playful")

@@ -137,3 +137,9 @@ Target quality bar: @anmoldoesmotion's OpenAI piece, `studio/analysis/2026-10-25
   - Not decided yet. Explainers stay without music until then.
 - **Comment-keyword funnel** ("Comment PLAN…"): proposed in the niche scan, not approved.
 - **A face on camera** (founder clip): proposed, not approved.
+
+## Background music (owner 2026-11-15)
+- Pixabay Music is approved (free, no attribution). Approved tracks live in `studio/music-library/tracks/` (moods: playful for Habit Roast and Kabir, lofi for Small Stories, ambient for Straight Answer); every track's page is in `studio/music-library/LICENSES.md`.
+- Music is mixed quietly under the voice (about 13 dB under in pauses, ducked further while the narrator talks) by `reels/pixel-series/sfxmix.py` (`m.write(music="playful")`). Never louder than that; the voice must stay fully clear.
+- Every reel keeps a no-music version (`video-nomusic.mp4`) for the phone trending-audio test: Sanyam posts 1-2 reels a week from the phone with a trending sound, to compare reach.
+- No copyrighted songs baked into files. Only library tracks or Instagram's in-app music.

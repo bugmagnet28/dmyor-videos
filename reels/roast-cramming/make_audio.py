@@ -8,4 +8,4 @@ A(m.syn.whoosh(.6, 300, 1500), LN["S2", 0] + .8, .15); A(K("pop", 2), LN["S2", 1
 for i in range(6): A(K("pen_check"), SC["S3"][0] + .2 + i * (LE["S3", 0] - SC["S3"][0] - .2) / 6, .2)
 A(K("reveal"), LN["S3", 1], .3)
 A(m.syn.bell(79, 2.0), LN["S4", 0] - .1, .2)
-m.write()
+m.write(music="playful")

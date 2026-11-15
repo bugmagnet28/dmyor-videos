@@ -1,0 +1,28 @@
+comedy|2024/11/07/audio_78adb42282.mp3|Comedy Quirky Sneaky Music|STAROSTIN|comedy-comedy-quirky-sneaky-music-261165
+comedy|2026/08/13/audio_a5e59456d1.mp3|Quirky Music|echoes_of_lumen|eccentric-quirky-quirky-music-584892
+comedy|2026/10/02/audio_273e6bfea0.mp3|Sneaky Quirky Music|andriih|eccentric-quirky-sneaky-quirky-music-614286
+comedy|2026/08/10/audio_b88ed556ef.mp3|Comedy BGM Funny Background Music|alex-morgan|comedy-comedy-bgm-funny-background-music-583242
+comedy|2026/10/07/audio_946924ec7c.mp3|Comedy - Comedy Music|NastelBom|comedy-comedy-comedy-music-617004
+comedy|2026/10/07/audio_409270b825.mp3|Comedy - Comedy Music|NastelBom|comedy-comedy-comedy-music-616998
+comedy|2026/10/23/audio_d035156da3.mp3|Comedy|AtlasAudio|comedy-comedy-625698
+comedy|2026/08/22/audio_e0d45d6e79.mp3|Comedy - Comedy Music|Tatamusic|comedy-comedy-comedy-music-590375
+comedy|2026/11/05/audio_1b6a19b3f3.mp3|Quirky Funky|StudioKolomna|comedy-quirky-funky-632658
+playful|2026/07/31/audio_dd36c79ca4.mp3|Playful|SoundSurfer|old-school-hip-hop-playful-577784
+playful|2025/02/24/audio_0bb014815b.mp3|Playful - Playful Music|JonasBlakewood|indie-pop-playful-playful-music-305507
+playful|2025/11/24/audio_df40e5aa49.mp3|Playful|leberch|electronic-playful-441727
+lofi|2026/09/29/audio_8d40e98b91.mp3|Lofi Chill|ZephiraMusic|lofi-lofi-chill-612445
+lofi|2026/07/24/audio_65367c9de0.mp3|Lofi Chill - Lofi Chill Music|JonasBlakewood|lofi-lofi-chill-lofi-chill-music-573480
+lofi|2026/08/14/audio_a5f2abd4d3.mp3|Chill Lofi|ZephiraMusic|lofi-chill-lofi-585360
+lofi|2026/10/07/audio_29f3a6bc18.mp3|Chill Lofi|VelarioMusic|beats-chill-lofi-616929
+lofi|2026/08/15/audio_1b1a4a1612.mp3|Lofi Instrumental|Sub_Clair|lofi-lofi-instrumental-586096
+lofi|2026/11/02/audio_c44901ab35.mp3|Lofi Beats Instrumental|Sub_Clair|beats-lofi-beats-instrumental-630607
+lofi|2026/08/21/audio_fb2f7c7216.mp3|Lofi Chill|AtlasAudio|beats-lofi-chill-589987
+lofi|2026/07/29/audio_c2db3e0de0.mp3|Study Lofi Music|APALONBeats|lofi-study-lofi-music-576259
+ambient|2026/11/06/audio_2339a294b7.mp3|Calm - Calm Music|andriig|acoustic-group-calm-calm-music-632887
+ambient|2026/10/23/audio_89470468f5.mp3|Ambient Calm|AtlasAudio|ambient-ambient-calm-625679
+ambient|2026/09/14/audio_11be9e80f7.mp3|Calm Ambient|VelarioMusic|ambient-calm-ambient-603158
+ambient|2026/10/23/audio_97c51a27a9.mp3|Calm Ambient|AtlasAudio|ambient-calm-ambient-625684
+ambient|2026/10/23/audio_5cf4147ba0.mp3|Ambient Background|AtlasAudio|ambient-ambient-background-625678
+ambient|2026/10/19/audio_90b7659a9a.mp3|Ambient Background Music|Cinematic-Soul|ambient-ambient-ambient-background-music-622728
+ambient|2025/02/01/audio_2b695d900c.mp3|Calm Ambient|NastelBom|ambient-calm-ambient-295786
+ambient|2026/10/24/audio_074eb59a08.mp3|Calm Background|AtlasAudio|upbeat-calm-background-625753
