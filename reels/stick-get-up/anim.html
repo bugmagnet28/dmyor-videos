@@ -13,7 +13,7 @@ canvas{display:block;width:100vw;height:100vh;object-fit:contain}
 // "Get Up": wordless stick-figure choice reel. Silent render, every move sits on a 120 BPM grid (beat = 0.5 s)
 // so any ~120 BPM funk track added in Instagram lines up. Pure function of time: window.__seek(t).
 (function () {
-var W = 1080, H = 1920, cv = document.getElementById("c"), X = cv.getContext("2d"), DUR = 38;
+var W = 1080, H = 1920, cv = document.getElementById("c"), X = cv.getContext("2d"), DUR = 40;
 var ACC = "#F2762E", PAPER_D = "#F3EDE1", PAPER_N = "#1E2134", INK_D = "#1B1A1F", INK_N = "#EDE5D3";
 var T = 0, NK = 0, PAPER, INK, FB = 0, SEED = 0;
 
@@ -108,15 +108,16 @@ function face(cx, cy, R, ex, rot) {
     var ex0 = s * R * .36 + lk, ey = -R * .04;
     if (ex.squeeze) ink([[ex0 - s * R * .13, ey - R * .13], [ex0 + s * R * .06, ey], [ex0 - s * R * .13, ey + R * .13]], lw, INK, false, null, .6);
     else if ((ex.lid || 0) < .12) ink([[ex0 - R * .13, ey], [ex0, ey + R * .07], [ex0 + R * .13, ey]], lw, INK, false, null, .6);
-    else { var lid = Math.min(ex.lid, 1.35); X.beginPath(); X.ellipse(ex0, ey, R * .085 * (lid > 1 ? lid : 1), R * .15 * lid, 0, 0, Math.PI * 2); X.fillStyle = INK; X.fill();
+    else { var lid = Math.min(ex.lid, 1.35); var rd = cl(ex.red || 0, 0, 1), gr = ex.grey || 0, ec = mixh(mixh(INK, RED, rd), GREY, gr); X.save(); if (rd > .05 && gr < .9) { X.shadowColor = RED; X.shadowBlur = R * .45 * (ex.red || 0) * (1 - gr); }
+      X.beginPath(); X.ellipse(ex0, ey, R * .085 * (lid > 1 ? lid : 1) * (1 + .25 * rd), R * .15 * lid * (1 + .15 * rd), 0, 0, Math.PI * 2); X.fillStyle = ec; X.fill(); X.restore();
       if (ex.lid < .7) { X.lineWidth = lw * .8; X.strokeStyle = INK; X.beginPath(); X.moveTo(ex0 - R * .14, ey - R * .15 * lid); X.lineTo(ex0 + R * .14, ey - R * .15 * lid); X.stroke(); }
       if (lid > .55) { X.beginPath(); X.arc(ex0 + R * .03, ey - R * .05 * lid, R * .028 * lid, 0, Math.PI * 2); X.fillStyle = PAPER; X.fill(); } }
     var b = ex.brow || 0, iy = -R * .3 - R * .09 * b, oy = -R * .36 + R * .07 * b;
     ink([[s * R * .13 + lk, iy], [s * R * .55 + lk, oy]], lw * 1.05, INK, false, null, .7);
   });
   if (ex.smile > 0) { var sp = .3 * ex.smile; ink(circ(0, R * .12, R * .3, R * .26, Math.PI * (.5 - sp), Math.PI * (.5 + sp), 8), lw, INK, false, null, .5); }
-  if (ex.band) { var by = -R * .55; ink([[-R * .93, by + R * .1], [0, by - R * .02], [R * .93, by + R * .1]], R * .17, ACC, false, null, 1);
-    for (var k = 0; k < 2; k++) { var tp = [], wv = T * 13 + k; for (var j = 0; j <= 4; j++) tp.push([-R * .9 - j * R * .2, by + R * .1 + j * R * (.1 + k * .09) + Math.sin(wv + j) * R * .06]); ink(tp, R * .1, ACC, false, null, .6); } }
+  if (ex.band) { var by = -R * .55, bg = ex.grey || 0, bc = mixh(ACC, GREY, bg); ink([[-R * .93, by + R * .1], [0, by - R * .02], [R * .93, by + R * .1]], R * .17, bc, false, null, 1);
+    for (var k = 0; k < 2; k++) { var tp = [], wv = T * (13 - 9 * bg) + k; for (var j = 0; j <= 4; j++) tp.push([-R * .9 - j * R * .2 * (1 - .6 * bg), by + R * .1 + j * R * (.1 + k * .09 + .28 * bg) + Math.sin(wv + j) * R * .06 * (1 - bg)]); ink(tp, R * .1, bc, false, null, .6); } }
   if (ex.vein > 0) { X.save(); X.translate(R * .62, -R * .62); X.scale(ex.vein, ex.vein); [0, 1, 2, 3].forEach(function (q) { X.save(); X.rotate(q * Math.PI / 2); ink(circ(R * .2, R * .2, R * .12, R * .12, Math.PI, Math.PI * 1.5, 5), R * .07, ACC, false, null, .5); X.restore(); }); X.restore(); }
   X.restore();
 }
@@ -182,7 +183,7 @@ function partBed(t) {
     ink([sh, el, hand], 13); ink(circ(hand[0], hand[1], 15, 12), 8, INK, true, PAPER); }
   if (t > 2.58 && t < 2.95) { var ik = seg(t, 2.58, 2.95); X.globalAlpha = 1 - ik; for (i = 0; i < 7; i++) { var a = -Math.PI * (.1 + .8 * i / 6), r0 = 40 + 30 * ik; ln(1005 + Math.cos(a) * r0, 1030 + Math.sin(a) * r0, 1005 + Math.cos(a) * (r0 + 34), 1030 + Math.sin(a) * (r0 + 34), 6, ACC, .5); } X.globalAlpha = 1; }
   // head on the pillow
-  var lid = lidAt(t), angry = t >= 8.5, ex = { lid: lid, squeeze: t < 2.7, brow: t < 2.7 ? .7 : (angry ? -1 : lerp(.2, .6, seg(t, 4, 8))), vein: angry ? back(seg(t, 8.56, 8.8)) : 0, m: 0 };
+  var lid = lidAt(t), angry = t >= 8.5, ex = { lid: lid, squeeze: t < 2.7, brow: t < 2.7 ? .7 : (angry ? -1 : lerp(.2, .6, seg(t, 4, 8))), vein: angry ? back(seg(t, 8.56, 8.8)) : 0, m: 0, red: angry ? 1.2 : 0 };
   ink(circ(HEAD[0], HEAD[1], 58, 58), 13, INK, true, PAPER); face(HEAD[0], HEAD[1], 58, ex, rad(-8));
   if (t > 2.9 && t < 4.1) { X.globalAlpha = sm(t, 2.9, 3.2) * (1 - sm(t, 3.8, 4.1)); for (i = 0; i < 3; i++) { var zt = (t * .9 + i * .33) % 1; txt("z", HEAD[0] + 70 + zt * 60, HEAD[1] - 70 - zt * 120, 34 + i * 8, INK); } X.globalAlpha = 1; }
   X.restore();
@@ -204,8 +205,10 @@ function partBed(t) {
 }
 
 // =====================================================================
-// PART 2 (10-30 s): the montage. He stays centred; days, nights and seasons turn behind him.
+// PART 2 (10-40 s): the montage with two give-ups. He stays centred; the calendar tears, seasons turn.
+// Eyes: red = fire, grey = given up. The world loses colour with him.
 // =====================================================================
+var RED = "#E8312A", GREY = "#9A9A9A";
 var Q = {};
 Q.S0 = P({}); Q.UP = P({ lu: -168, ll: -172, ru: 168, rl: 172 });
 Q.RL = P({ torso: -18, lu: -135, ll: -115, ru: -178, rl: -145 }); Q.RR = mirror(Q.RL);
@@ -215,35 +218,79 @@ Q.PR = P({ torso: -8, ru: 92, rl: 90, lu: -35, ll: -165, lt: -16, ls: -10, rt: 1
 Q.RA = P({ lt: -6, ls: -4, rt: 105, rs: 0, lu: -30, ll: -150, ru: 25, rl: 60, lift: 12 }); Q.RB = mirror(Q.RA);
 Q.PK = P({ torso: 80, side: 1, gall: 1, lu: 6, ll: 2, ru: 10, rl: 4, lt: -98, ls: -98, rt: -95, rs: -95 });
 Q.PD = P({ torso: 87, side: 1, gall: 1, lu: -48, ll: 38, ru: -42, rl: 42, lt: -93, ls: -93, rt: -91, rs: -91 });
+Q.FLAT = P({ torso: 92, head: 14, side: 1, gall: 1, lu: 40, ll: 80, ru: 52, rl: 88, lt: -90, ls: -90, rt: -88, rs: -88 });
+Q.LIFTHEAD = P({ torso: 90, head: -22, side: 1, gall: 1, lu: -20, ll: 30, ru: -14, rl: 34, lt: -90, ls: -90, rt: -88, rs: -88 });
 Q.LD = P({ lu: -55, ll: -165, ru: 55, rl: 165, bar: 1, lt: -12, rt: 12, ls: -8, rs: 8 }); Q.LU = P({ lu: -160, ll: -172, ru: 160, rl: 172, bar: 1, lt: -14, rt: 14, ls: -10, rs: 10 });
+Q.LSHAKE = P({ lu: -120, ll: -150, ru: 120, rl: 150, bar: 1, lt: -16, rt: 16, ls: -12, rs: 12, torso: 4 });
+Q.KNEEL = P({ torso: 18, head: 14, lt: -4, ls: -96, rt: 88, rs: 4, lu: 30, ll: 60, ru: 40, rl: 10, side: .6 });
+Q.SIT = P({ torso: 34, head: 40, lt: 122, ls: 14, rt: 116, rs: 10, lu: 98, ll: 18, ru: 104, rl: 24, side: 1, lift: -42 });
+Q.SITUP = P({ torso: 10, head: -18, lt: 122, ls: 14, rt: 116, rs: 10, lu: 70, ll: 20, ru: 76, rl: 26, side: 1, lift: -42 });
 Q.DA = P({ torso: 8, ru: 140, rl: 145, lu: -40, ll: 35, lt: -16, ls: -12, rt: 10, rs: 20 }); Q.DB = P({ torso: -8, lu: -50, ll: -55, ru: 40, rl: -35, lt: -10, ls: -20, rt: 16, rs: 12 });
 Q.WLP = P({ torso: 10, lu: 40, ll: 75, ru: 20, rl: 10 }); Q.WLH = P({ torso: -12, lu: -115, ll: -128, ru: 14, rl: 6, lt: -14, rt: 10 });
-Q.WRP = mirror(Q.WLP); Q.WRH = mirror(Q.WLH);
 Q.HIPS = P({ lu: -42, ll: 42, ru: 42, rl: -42, lt: -10, rt: 10, ls: -6, rs: 6 });
-var MOVES = [["UP", "RL"], ["UP", "RR"], ["JO", "JC"], ["JO", "JC"], ["SQ", "S0"], ["WLP", "WLH"], ["PR", "PL"], ["PR", "PL"], ["RA", "RB"], ["RA", "RB"],
-             ["PK", "PD"], ["WRP", "WRH"], ["PK", "PD"], ["LD", "LU"], ["LD", "LU"], ["DA", "DB"], ["WLP", "WLH"], ["DA", "DB"], ["RA", "RB"], ["UP", "HIPS"]];
-var BEATS = []; MOVES.forEach(function (mv) { BEATS.push(Q[mv[0]], Q[mv[1]]); });
-var TEMPT = [{ s: "STAY", side: -1, tin: 14.4, hit: 15.6 }, { s: "TOMORROW", side: 1, tin: 20.4, hit: 21.6 }, { s: "LATER", side: -1, tin: 25.4, hit: 26.6, blind: 1 }];
-function poseAt(t) { if (t >= 30) return Q.HIPS; var i = Math.floor((t - 10) / .5), lt = (t - 10) - i * .5, prev = i > 0 ? BEATS[i - 1] : Q.S0;
-  return lerpPose(prev, BEATS[i], eout(seg(lt, 0, .2))); }
-var GROUND = 1450;
-function seasonW(t) { var u = Math.max(0, (t - 10) / 2.5); if (t >= 30) u = 8; var i = Math.floor(u), f = u - i, k = t >= 30 ? 0 : sm(f, .8, 1), w = [0, 0, 0, 0]; w[i % 4] += 1 - k; w[(i + 1) % 4] += k; return w; }
-function dayNK(t) { if (t >= 29) return (1 - sm(t, 29, 30)) * dayNK0(29); return dayNK0(t); }
+var KEYS = []; function K(t, p, d) { KEYS.push([t, Q[p], d || .2]); }
+// A (10-15): spring, on fire
+K(10, "UP"); K(10.5, "RL"); K(11, "UP"); K(11.5, "RR"); K(12, "JO"); K(12.5, "JC"); K(13, "JO"); K(13.5, "JC"); K(14, "PK"); K(14.5, "PD");
+// give-up 1 (15-18): summer heat, push-ups too hard; collapse; GET UP calls; he pushes back up and swats STAY
+K(15, "PK", .35); K(15.45, "PD", .45); K(15.85, "FLAT", .5); K(17.0, "LIFTHEAD", .3); K(17.35, "PK", .25); K(17.6, "S0", .2); K(17.75, "WLP", .12); K(18, "WLH", .12);
+// B (18-23): autumn, harder work
+K(18.5, "PR"); K(19, "PL"); K(19.5, "PR"); K(20, "PL"); K(20.5, "RA"); K(21, "RB"); K(21.5, "RA"); K(22, "RB"); K(22.5, "LD");
+// give-up 2 (23-27): winter, the bar wins; sits in the snow; a calendar page flies past; rises, lifts it, signs shatter
+K(23, "LSHAKE", .35); K(23.35, "LD", .15); K(23.5, "KNEEL", .35); K(23.9, "SIT", .6); K(25.2, "SITUP", .5); K(25.8, "KNEEL", .45); K(26.3, "S0", .3); K(26.5, "LD", .2); K(27, "LU", .15);
+// C (27-32): unstoppable
+K(27.5, "DA"); K(28, "DB"); K(28.5, "DA"); K(29, "DB"); K(29.5, "WLP"); K(30, "WLH"); K(30.5, "RA"); K(31, "RB"); K(31.5, "UP"); K(32, "HIPS", .3);
+function poseAt(t) { var i = -1; for (var j = 0; j < KEYS.length; j++) if (KEYS[j][0] <= t) i = j; if (i < 0) return Q.S0;
+  var p = lerpPose(i > 0 ? KEYS[i - 1][1] : Q.S0, KEYS[i][1], eout(seg(t, KEYS[i][0], KEYS[i][0] + KEYS[i][2])));
+  var tr = Math.max(seg(t, 14.9, 15.2) * (1 - seg(t, 15.8, 15.9)), seg(t, 22.9, 23.0) * (1 - seg(t, 23.35, 23.4)));   // trembling arms before each give-up
+  if (tr > 0) { var w = Math.sin(t * 70) * 5 * tr; p.lu += w; p.ru -= w; p.ll += w; p.rl -= w; }
+  return p; }
+function giveK(t) { return Math.max(sm(t, 15.7, 16.7) * (1 - sm(t, 17.0, 17.5)), sm(t, 23.6, 24.9) * (1 - sm(t, 25.6, 26.3))); }
+function recK(t) { return Math.max(sm(t, 17.0, 17.4) * (1 - sm(t, 17.6, 18.3)), sm(t, 25.6, 26.2) * (1 - sm(t, 26.8, 27.6))); }
+
+// ---- calendar: one page per beat (two per beat at the end); pages lost while he's down get a red X ----
+var MON = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"], MD = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+var DK = [[10, 0], [15, 95], [18, 175], [23, 280], [27, 350], [32, 730]];
+function Dat(t) { if (t <= 10) return 0; for (var i = 1; i < DK.length; i++) if (t < DK[i][0]) return lerp(DK[i - 1][1], DK[i][1], seg(t, DK[i - 1][0], DK[i][0])); return 730; }
+function dateOf(D) { var doy = (59 + Math.floor(D)) % 365, m = 0; while (doy >= MD[m]) { doy -= MD[m]; m++; } return { m: m, d: doy + 1, y: 1 + Math.floor(D / 365) }; }
+var TEARS = []; (function () { for (var t = 10.5; t < 27.01; t += .5) TEARS.push(t); for (t = 27.25; t < 32.01; t += .25) TEARS.push(t); })();
+function page(x, y, w, h, D, wasted, a) {
+  var dt = dateOf(D); X.globalAlpha = a;
+  ink(box(x - w / 2, y, w, h), 7, INK, true, wasted ? mix(PAPER, GREY, .45) : PAPER, 2);
+  X.save(); X.translate(x, y); X.font = "44px Marker"; X.fillStyle = wasted ? GREY : INK; X.textAlign = "center"; X.textBaseline = "middle"; X.fillText(MON[dt.m], 0, 40);
+  X.font = "112px Marker"; X.fillText(String(dt.d), 0, 128); X.restore();
+  if (wasted) { ink([[x - w * .36, y + 24], [x + w * .36, y + h - 18]], 12, RED, false, null, 2); ink([[x + w * .36, y + 24], [x - w * .36, y + h - 18]], 12, RED, false, null, 2); }
+  X.globalAlpha = 1;
+}
+function calendar(t, alpha) {
+  if (alpha <= 0) return; var x = W / 2, y = 150, w = 250, h = 190, i = -1; X.save(); X.translate(x, 70); X.scale(1.35, 1.35); X.translate(-x, -70);
+  for (var j = 0; j < TEARS.length; j++) if (TEARS[j] <= t) i = j;
+  X.save(); X.globalAlpha = alpha;
+  ink(box(x - w / 2 + 8, y + 70, w, h), 7, INK, true, mix(PAPER, INK, .14), 2);
+  var D = i < 0 ? 0 : Dat(TEARS[i]); page(x, y + 62, w, h, D, giveK(t) > .5, alpha);
+  ink(box(x - w / 2 - 6, y, w + 12, 66), 7, INK, true, ACC, 2); X.globalAlpha = alpha;
+  X.save(); X.font = "40px Marker"; X.fillStyle = INK_D; X.textAlign = "center"; X.textBaseline = "middle"; X.fillText("YEAR " + dateOf(D).y, x, y + 35); X.restore();
+  [-1, 1].forEach(function (s) { ink(circ(x + s * 80, y, 12, 16, Math.PI, Math.PI * 2, 6), 6, INK, false, null, .5); });
+  for (var k = Math.max(0, i - 2); k <= i; k++) { var ft = t - TEARS[k]; if (k < 0 || ft > .42) continue; var Dp = k > 0 ? Dat(TEARS[k - 1]) : 0, f = ft / .42;
+    X.save(); X.translate(x - w / 2, y + 62); var dir = k % 2 ? 1 : -1; X.translate(dir * 420 * eout(f) + (dir > 0 ? w : 0), -40 * Math.sin(Math.PI * Math.min(1, f * 2)) + 520 * f * f); X.rotate(dir * (.2 + 1.3 * f)); X.translate(-(dir > 0 ? w : 0), 0); X.translate(-(x - w / 2), -(y + 62));
+    page(x, y + 62, w, h, Dp, giveK(TEARS[k]) > .5, alpha * (1 - sm(f, .5, 1))); X.restore(); }
+  X.restore(); X.restore();
+}
+function seasonW(t) { var D = Dat(t), sp = (D % 365) / 91.25, i = Math.floor(sp), f = sp - i, k = sm(f, .82, 1), w = [0, 0, 0, 0]; w[i % 4] += 1 - k; w[(i + 1) % 4] += k; return w; }
 function dayNK0(t) { var f = (((t - 10) / 4) % 1 + 1) % 1; return sm(f, .45, .58) - sm(f, .9, 1); }
+function dayNK(t) { return t >= 31 ? (1 - sm(t, 31, 32)) * dayNK0(31) : dayNK0(t); }
+var GROUND = 1450;
 function tree(sw, x) {
   var spring = sw[0], summer = sw[1], autumn = sw[2], winter = sw[3];
   ink([[x, GROUND], [x + 6, 1200], [x - 4, 1040]], 16); ink([[x + 4, 1180], [x + 90, 1090], [x + 130, 1060]], 10); ink([[x, 1120], [x - 80, 1050]], 10); ink([[x - 2, 1060], [x + 50, 990]], 9);
   var can = spring * .8 + summer + autumn * .75;
-  if (can > .01) { X.globalAlpha = can; var blobs = [[x - 40, 1010, 120], [x + 70, 990, 110], [x + 10, 930, 110]];
-    blobs.forEach(function (b, i) { ink(circ(b[0], b[1], b[2], b[2] * .82), 8, INK, true, mix(PAPER, INK, summer * .16 + autumn * .1)); });
-    if (summer > .05) { X.globalAlpha = summer; for (var h = 0; h < 9; h++) ln(x - 120 + h * 26, 1060 - h * 4, x - 90 + h * 26, 1030 - h * 4, 4, INK, 1); }
-    X.globalAlpha = 1; }
-  if (spring > .05) { X.globalAlpha = spring; for (var i = 0; i < 14; i++) { var bx = x - 120 + hash(i * 3) * 240, by = 900 + hash(i * 5) * 170; ink(circ(bx, by, 10, 10, 0, null, 8), 4, INK, true, PAPER); } X.globalAlpha = 1; }
+  if (can > .01) { X.globalAlpha = can; [[x - 40, 1010, 120], [x + 70, 990, 110], [x + 10, 930, 110]].forEach(function (b) { ink(circ(b[0], b[1], b[2], b[2] * .82), 8, INK, true, mix(PAPER, autumn > .5 ? ACC : INK, summer * .16 + autumn * .2)); });
+    if (summer > .05) { X.globalAlpha = summer; for (var h = 0; h < 9; h++) ln(x - 120 + h * 26, 1060 - h * 4, x - 90 + h * 26, 1030 - h * 4, 4, INK, 1); } X.globalAlpha = 1; }
+  if (spring > .05) { X.globalAlpha = spring; for (var i = 0; i < 14; i++) ink(circ(x - 120 + hash(i * 3) * 240, 900 + hash(i * 5) * 170, 10, 10, 0, null, 8), 4, INK, true, PAPER); X.globalAlpha = 1; }
   if (winter > .05) { X.globalAlpha = winter; ink(circ(x + 100, 1078, 40, 10), 5, INK, true, PAPER); ink(circ(x - 70, 1042, 30, 8), 5, INK, true, PAPER); X.globalAlpha = 1; }
 }
 function particles(sw, t) {
   var i, n;
-  if (sw[2] > .05) { X.globalAlpha = sw[2]; for (i = 0; i < 14; i++) { var y = ((hash(i) * 1600 + t * (120 + 60 * hash(i + 2))) % 1500) + 300, x = hash(i + 9) * W + Math.sin(t * 2 + i) * 40; X.save(); X.translate(x, y); X.rotate(t * 3 + i); ink(circ(0, 0, 14, 7, 0, null, 8), 4, INK, true, mix(PAPER, ACC, .25)); X.restore(); } X.globalAlpha = 1; }
+  if (sw[2] > .05) { X.globalAlpha = sw[2]; for (i = 0; i < 14; i++) { var y = ((hash(i) * 1600 + t * (120 + 60 * hash(i + 2))) % 1500) + 300, x = hash(i + 9) * W + Math.sin(t * 2 + i) * 40; X.save(); X.translate(x, y); X.rotate(t * 3 + i); ink(circ(0, 0, 14, 7, 0, null, 8), 4, INK, true, mix(PAPER, ACC, .35)); X.restore(); } X.globalAlpha = 1; }
   if (sw[3] > .05) { X.globalAlpha = sw[3]; for (i = 0; i < 46; i++) { var sy = ((hash(i * 2) * 1800 + t * (160 + 80 * hash(i + 4))) % 1700) + 120, sx = hash(i * 7) * W + Math.sin(t * 1.5 + i) * 26, r = 4 + hash(i) * 5; X.beginPath(); X.arc(sx, sy, r, 0, Math.PI * 2); X.fillStyle = INK; X.fill(); X.beginPath(); X.arc(sx, sy, r - 1.5, 0, Math.PI * 2); X.fillStyle = PAPER; X.fill(); } X.globalAlpha = 1; }
   if (sw[0] > .05) { X.globalAlpha = sw[0]; for (i = 0; i < 10; i++) { var py = ((hash(i * 5) * 1500 + t * 90) % 1300) + 400, px = (hash(i * 3) * W + t * 60) % W; ink(circ(px, py, 7, 5, 0, null, 6), 3, INK, true, PAPER); } X.globalAlpha = 1; }
   if (sw[1] > .05) { X.globalAlpha = sw[1] * .8; for (i = 0; i < 6; i++) { var hx = 120 + i * 170, pts = []; for (n = 0; n < 6; n++) pts.push([hx + Math.sin(t * 6 + n + i) * 10, GROUND - 30 - n * 28]); ink(pts, 4, INK, false, null, .5); } X.globalAlpha = 1; }
@@ -258,51 +305,77 @@ function groundDeco(sw) {
 }
 function sky(t) {
   var f = (((t - 10) / 4) % 1 + 1) % 1;
-  if (NK > .05) { X.globalAlpha = NK; for (var i = 0; i < 26; i++) { var sx = hash(i * 13) * W, sy = 180 + hash(i * 17) * 900, tw = .5 + .5 * Math.sin(t * 5 + i); X.globalAlpha = NK * (.5 + .5 * tw); ln(sx - 6, sy, sx + 6, sy, 3, INK, .3); ln(sx, sy - 6, sx, sy + 6, 3, INK, .3); } X.globalAlpha = 1; }
-  if (t < 30) {
-    if (f < .6) { var s = (f + .02) / .58, x = 80 + 920 * s, y = 1300 - 820 * Math.sin(Math.PI * cl(s, 0, 1));
+  if (NK > .05) { for (var i = 0; i < 26; i++) { var sx = hash(i * 13) * W, sy = 380 + hash(i * 17) * 800, tw = .5 + .5 * Math.sin(t * 5 + i); X.globalAlpha = NK * (.5 + .5 * tw); ln(sx - 6, sy, sx + 6, sy, 3, INK, .3); ln(sx, sy - 6, sx, sy + 6, 3, INK, .3); } X.globalAlpha = 1; }
+  if (t < 31.5) {
+    if (f < .6) { var s = (f + .02) / .58, x = 80 + 920 * s, y = 1300 - 760 * Math.sin(Math.PI * cl(s, 0, 1));
       for (var r = 0; r < 10; r++) { var a = r / 10 * Math.PI * 2 + t; ln(x + Math.cos(a) * 92, y + Math.sin(a) * 92, x + Math.cos(a) * 122, y + Math.sin(a) * 122, 6, INK, 1); }
       ink(circ(x, y, 72, 72), 8, INK, true, mix(PAPER, ACC, .3)); }
-    if (f > .48) { var mm = (f - .48) / .52, mx = 80 + 920 * mm, my = 1300 - 760 * Math.sin(Math.PI * mm); ink(circ(mx, my, 56, 56), 7, INK, true, INK); ink(circ(mx - 24, my - 14, 50, 50), 0, null, true, PAPER); }
+    if (f > .48) { var mm = (f - .48) / .52, mx = 80 + 920 * mm, my = 1300 - 700 * Math.sin(Math.PI * mm); ink(circ(mx, my, 56, 56), 7, INK, true, INK); ink(circ(mx - 24, my - 14, 50, 50), 0, null, true, PAPER); }
   }
 }
+function rainCloud(x, y, a, t) { if (a <= 0) return; X.globalAlpha = a;
+  for (var i = 0; i < 14; i++) { var rx = x - 110 + hash(i * 3) * 220, ry = y + 40 + ((t * 700 + hash(i) * 300) % 300); ln(rx, ry, rx - 6, ry + 30, 4, "#7A8AA0", .5); }
+  [[x - 70, y, 62], [x + 10, y - 26, 76], [x + 85, y + 4, 56]].forEach(function (b) { ink(circ(b[0], b[1], b[2], b[2] * .75), 7, INK, true, "#B9BDC6"); });
+  X.globalAlpha = 1; }
+function snowCap(hx, hy, R, k) { if (k <= 0) return; ink(circ(hx, hy - R * .82, R * (.55 + .4 * k), R * .35 * k + 6, Math.PI, Math.PI * 2, 10).concat([[hx + R * .9, hy - R * .7], [hx - R * .9, hy - R * .7]]), 5, INK, true, "#FFFFFF", 1); }
+var TEMPT = [{ s: "STAY", side: -1, tin: 15.9, hit: 18.05, mode: "swat", grow: 1 }, { s: "TOMORROW", side: 1, tin: 24.0, hit: 27.0, mode: "shatter", grow: 1 },
+             { s: "LATER", side: -1, tin: 24.3, hit: 27.0, mode: "shatter", grow: 1 }, { s: "SKIP IT", side: -1, tin: 29.2, hit: 30.05, mode: "swat", blind: 1 }];
 function partMontage(t) {
-  NK = t < 30 ? dayNK(t) : 0; setPal(); paper();
-  var sw = seasonW(t), m = cl((t - 10) / 20, 0, 1);
-  // camera: identity, a tiny bump on every beat; pull back during the pedestal
-  var bf = ((t - 10) % .5) / .5, bump = t < 30 ? .016 * (1 - eout(cl(bf / .4, 0, 1))) : 0, pk = eio(seg(t, 29.8, 34.8));
-  var c = { x: 540, y: lerp(960, 900, pk), z: (1 + bump) * lerp(1, .78, pk) };
+  var g = giveK(t), rec = recK(t), gN = Math.max(sm(t, 15.3, 15.9) * (1 - sm(t, 17.4, 17.9)), sm(t, 23.0, 23.6) * (1 - sm(t, 26.4, 26.9)));
+  NK = t < 32 ? dayNK(t) * (1 - gN) : 0; setPal(); paper();
+  var sw = seasonW(t), m = cl((t - 10) / 22, 0, 1);
+  // camera: identity with a beat bump; pushes in while he is down; pulls back for the pedestal
+  var bf = ((t - 10) % .5) / .5, bump = t < 32 && g < .2 ? .016 * (1 - eout(cl(bf / .4, 0, 1))) : 0, pk = eio(seg(t, 31.8, 36.8));
+  var gz = Math.max(.35 * sm(t, 15.6, 16.9) * (1 - sm(t, 17.3, 17.7)), .5 * sm(t, 23.6, 25.3) * (1 - sm(t, 26.2, 26.6)));
+  var c = { x: 540, y: lerp(960, 900, pk) + 560 * gz, z: (1 + bump) * lerp(1, .78, pk) + gz };
+  if (t > 27 && t < 27.4) { var s0 = shk(31, 16 * (1 - seg(t, 27, 27.4))); c.sx = s0[0]; c.sy = s0[1]; }
   X.save(); camApply(c);
-  if (t >= 29.5) { var rise = eout(seg(t, 29.5, 34.5)), sy = lerp(1600, 1080, rise); X.save(); X.translate(540, sy); X.rotate(t * .15);
+  if (t >= 31.5) { var rise = eout(seg(t, 31.5, 36.5)), sy = lerp(1600, 1080, rise); X.save(); X.translate(540, sy); X.rotate(t * .15);
       for (var r = 0; r < 16; r++) { var a = r / 16 * Math.PI * 2; ln(Math.cos(a) * 300, Math.sin(a) * 300, Math.cos(a) * 380, Math.sin(a) * 380, 9, ACC, 1.5); } X.restore();
     ink(circ(540, sy, 270, 270), 9, ACC, true, mix(PAPER, ACC, .22)); }
   sky(t);
-  X.save(); X.translate(40, GROUND); X.scale(1.85, 1.85); X.translate(-150, -GROUND); tree(sw, 150); X.restore(); groundDeco(sw);
-  // pedestal: one block per beat from 30 s, newest at the bottom pushing him up
+  X.save(); X.translate(40, GROUND); X.scale(1.85, 1.85); X.translate(-150, -GROUND); tree(sw, 150); X.restore();
+  groundDeco(sw);
+  // pedestal: one block per beat from 32 s, newest at the bottom pushing him up
   var BH = 62, h = 0, ks = [];
-  for (var k = 0; k < 10; k++) { var e = eout(seg(t, 30 + k * .5, 30 + k * .5 + .22)); ks.push(e); h += BH * e; }
+  for (var k = 0; k < 10; k++) { var e = eout(seg(t, 32 + k * .5, 32 + k * .5 + .22)); ks.push(e); h += BH * e; }
   if (h > 0) { var yy = GROUND - h; for (k = 0; k < 10; k++) { if (ks[k] <= 0) continue; var bh = BH * ks[k], bw = 330 + 36 * k;
       ink(box(540 - bw / 2, yy, bw, bh), 8, INK, true, k == 0 ? ACC : mix(PAPER, INK, k % 2 ? .06 : .13)); yy += bh; } }
-  // temptations he swats away
+  // dropped bar (give-up 2)
+  if (t > 23.4 && t < 26.5) { var bk = seg(t, 23.4, 23.7), by = lerp(GROUND - 240, GROUND - 16, bk * bk) - (bk >= 1 ? 14 * Math.abs(Math.sin((t - 23.7) * 14)) * Math.max(0, 1 - (t - 23.7) * 3) : 0);
+    ln(640, by, 940, by + 6, 10); ink(circ(670, by, 12, 34), 7, INK, true, INK); ink(circ(910, by + 5, 12, 34), 7, INK, true, INK); }
+  particles(sw, t);
+  X.restore();
+  // the world loses its colour while he is down
+  if (g > 0) { X.save(); X.globalCompositeOperation = "saturation"; X.globalAlpha = g; X.fillStyle = "#808080"; X.fillRect(0, 0, W, H); X.restore(); X.fillStyle = "rgba(40,42,52," + (.22 * g) + ")"; X.fillRect(0, 0, W, H); }
+  X.save(); camApply(c);
+  // temptations
   var look = 0;
   TEMPT.forEach(function (q, i) { if (t < q.tin || t > q.hit + 1.2) return;
-    var enter = eout(seg(t, q.tin, q.tin + .45)), hx = 540 + q.side * 270, ox = q.side * (W / 2 + 300), x = lerp(hx + q.side * 600, hx, enter), y = 1110, rot = 0, al = 1, sc = 1;
-    if (t > q.hit) { var fl = seg(t, q.hit, q.hit + 1.0); x = hx + q.side * 900 * eout(fl); y = 1110 - 700 * fl + 900 * fl * fl; rot = q.side * 5 * fl; al = 1 - sm(fl, .6, 1); }
-    var s = shk(20 + i, t < q.hit ? 9 : 0); sign(q.s, x + s[0], y + s[1], q.s.length > 5 ? 74 : 96, { rot: rot + s[2] + q.side * .06, alpha: al, sc: sc });
-    if (!q.blind && t > q.tin + .1 && t < q.hit + .3) look = q.side; });
+    var sh = q.mode == "shatter", enter = eout(seg(t, q.tin, q.tin + .45)), hx = sh ? (q.side > 0 ? 750 : 360) : 540 + q.side * 270, x = lerp(hx + q.side * 600, hx, enter), y = sh ? (q.side > 0 ? 925 : 850) : 1110, rot = 0, al = 1, size = sh ? 58 : (q.s.length > 5 ? 74 : 96);
+    var sc = q.grow ? lerp(1, 1.3, seg(t, q.tin, q.hit - .6)) : 1, s = shk(20 + i, t < q.hit ? 6 + 10 * g : 0);
+    if (t > q.hit && q.mode == "swat") { var fl = seg(t, q.hit, q.hit + 1.0); x = hx + q.side * 900 * eout(fl); y = y - 700 * fl + 900 * fl * fl; rot = q.side * 5 * fl; al = 1 - sm(fl, .6, 1); }
+    if (t > q.hit && q.mode == "shatter") { var fa = seg(t, q.hit, q.hit + 1.0); [-1, 1].forEach(function (sd) { sign(q.s, x + sd * (30 + 240 * fa), y + 900 * fa * fa, size, { sc: sc, rot: sd * 1.2 * fa * fa, half: sd, alpha: 1 - sm(fa, .7, 1) }); }); return; }
+    sign(q.s, x + s[0], y + s[1], size, { rot: rot + s[2] + q.side * .06, alpha: al, sc: sc });
+    if (!q.blind && g < .3 && t > q.tin + .1 && t < q.hit + .3) look = q.side; });
   var p = poseAt(t), groundY = GROUND - h, S = 1.12 * (1 + .05 * m);
-  var brow = t < 30 ? lerp(-1, -.35, m) : lerp(-.35, .2, seg(t, 31, 33)), smile = eout(seg(t, 33.4, 34.4));
-  TEMPT.forEach(function (q) { if (t > q.hit - .6 && t < q.hit + .2) brow = -1; });
-  figure(p, 540, groundY, S, { lid: t < 30 ? .92 : lerp(.92, .8, seg(t, 31, 33)), brow: brow, smile: smile, look: look, m: m, band: 1 });
+  var brow = lerp(lerp(-.85, -.35, m), .9, g); if (rec > 0) brow = lerp(brow, -1, rec); if (t > 32) brow = lerp(-.35, .2, seg(t, 33, 35));
+  TEMPT.forEach(function (q) { if (q.mode == "swat" && t > q.hit - .5 && t < q.hit + .2) brow = -1; });
+  var red = t < 32 ? 1 - g : lerp(1, .6, seg(t, 33, 35)); red *= 1 + .5 * rec;
+  var F = figure(p, 540, groundY, S, { lid: lerp(.95, .5, g) + .3 * rec, brow: brow, smile: eout(seg(t, 35.4, 36.4)), look: look, m: m, band: 1, red: red, grey: g, vein: rec > .2 ? back(seg(rec, .2, .6)) : 0 });
+  snowCap(F.head[0], F.head[1], 46 * S, sm(t, 24.0, 25.4) * (1 - seg(t, 26.3, 26.35)));
+  if (t > 26.3 && t < 27) { var bt = seg(t, 26.3, 27); X.globalAlpha = 1 - bt; for (var q = 0; q < 16; q++) { var a2 = q / 16 * Math.PI * 2, rr = 50 + 160 * eout(bt); X.beginPath(); X.arc(F.head[0] + Math.cos(a2) * rr, F.head[1] - 30 + Math.sin(a2) * rr * .7, 6, 0, Math.PI * 2); X.fillStyle = "#FFFFFF"; X.fill(); X.lineWidth = 3; X.strokeStyle = INK; X.stroke(); } X.globalAlpha = 1; }
+  rainCloud(F.head[0] + 10, F.head[1] - 190, sm(t, 15.9, 16.4) * (1 - sm(t, 17.3, 17.7)), t);
   X.restore();
-  // day counter (top), then the closing line
-  if (t < 30.2) { var n = Math.max(1, Math.round(730 * ein(seg(t, 10, 30)) * .25 + 730 * seg(t, 10, 30) * .75)); X.globalAlpha = 1 - sm(t, 29.8, 30.2); txt("DAY " + n, W / 2, 200, 96, INK); X.globalAlpha = 1; }
-  if (t >= 35) { var words = [["WHERE", 0], ["WILL", .25], ["YOUR", .5], ["CHOICES", .75], ["TAKE", 1.0], ["YOU?", 1.25]];
-    X.font = "96px Marker"; var l1 = "WHERE WILL YOUR", l2 = "CHOICES TAKE YOU?";
-    function line(ws, y, s) { var full = ws.map(function (w) { return w[0]; }).join(" "), x = W / 2 - X.measureText(full).width / 2;
-      ws.forEach(function (w) { var ww = X.measureText(w[0] + " ").width, k = back(seg(t, 35 + w[1], 35 + w[1] + .25)); if (k > 0) { X.save(); X.translate(x + X.measureText(w[0]).width / 2, y); X.scale(k, k); txt(w[0], 0, 0, 96, w[0] == "CHOICES" ? ACC : INK); X.restore(); } x += ww; }); }
-    line(words.slice(0, 3), 200, 0); line(words.slice(3), 312, 0);
-    X.globalAlpha = sm(t, 35.8, 36.3); txt("dmyor", W / 2, 1810, 52, INK, "center", "Tight"); X.globalAlpha = 1; }
+  if (t > 16.6 && t < 17.6) { var ck = seg(t, 16.6, 16.9), sk = shk(41, 3); sign("GET UP", 540 + sk[0], 760 + sk[1], 84, { fill: ACC, ink: INK_D, sc: back(ck) * (1 + .06 * Math.sin(t * 25)), alpha: 1 - sm(t, 17.3, 17.6) }); }
+  if (t > 27 && t < 27.12) { X.fillStyle = "rgba(255,255,255," + (.5 * (1 - seg(t, 27, 27.12))) + ")"; X.fillRect(0, 0, W, H); }
+  calendar(t, 1 - sm(t, 32, 32.5));
+  if (t >= 37) { var words = [["WHERE", 0], ["WILL", .25], ["YOUR", .5], ["CHOICES", .75], ["TAKE", 1.0], ["YOU?", 1.25]];
+    X.font = "96px Marker";
+    function line(ws, y) { var full = ws.map(function (w) { return w[0]; }).join(" "), x = W / 2 - X.measureText(full).width / 2;
+      ws.forEach(function (w) { var ww = X.measureText(w[0] + " ").width, k = back(seg(t, 37 + w[1], 37 + w[1] + .25)); if (k > 0) { X.save(); X.translate(x + X.measureText(w[0]).width / 2, y); X.scale(k, k); txt(w[0], 0, 0, 96, w[0] == "CHOICES" ? ACC : INK); X.restore(); } x += ww; }); }
+    line(words.slice(0, 3), 200); line(words.slice(3), 312);
+    X.globalAlpha = sm(t, 37.8, 38.3); txt("dmyor", W / 2, 1810, 52, INK, "center", "Tight"); X.globalAlpha = 1; }
 }
 
 // ---------- frame ----------
