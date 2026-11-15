@@ -141,12 +141,12 @@ function lidAt(t) { var K = [[3.8, 0], [4.25, .45], [5.1, .22], [5.5, .58], [6.3
 function partBed(t) {
   NK = 1 - sm(t, 8.6, 9.6); setPal(); paper();
   var c = { x: 770, y: 1000, z: 1.6 };
-  if (t < 4) c = camLerp({ x: 820, y: 960, z: 1.65 }, { x: 600, y: 990, z: 1.1 }, eio(seg(t, 1.0, 4)));
-  else if (t < 4.7) c = camLerp({ x: 600, y: 990, z: 1.1 }, { x: 760, y: 1032, z: 2.5 }, eio(seg(t, 4, 4.7)));
-  else if (t < 8.5) c = camLerp({ x: 760, y: 1032, z: 2.5 }, { x: 760, y: 1036, z: 2.9 }, seg(t, 4.7, 8.5));
-  else if (t < 9.1) c = { x: 760, y: 1036, z: 3.15 };
-  else if (t < 9.6) c = camLerp({ x: 760, y: 1036, z: 3.15 }, { x: 600, y: 1040, z: 1.35 }, eio(seg(t, 9.1, 9.6)));
-  else c = camLerp({ x: 600, y: 1040, z: 1.35 }, { x: 760, y: 1032, z: 3.6 }, ein(seg(t, 9.6, 10)));
+  if (t < 4) c = camLerp({ x: 850, y: 960, z: 1.4 }, { x: 600, y: 990, z: 1.1 }, eio(seg(t, 1.0, 4)));
+  else if (t < 4.7) c = camLerp({ x: 600, y: 990, z: 1.1 }, { x: 760, y: 1032, z: 2.0 }, eio(seg(t, 4, 4.7)));
+  else if (t < 8.5) c = camLerp({ x: 760, y: 1032, z: 2.0 }, { x: 760, y: 1036, z: 2.3 }, seg(t, 4.7, 8.5));
+  else if (t < 9.1) c = { x: 760, y: 1036, z: 2.55 };
+  else if (t < 9.6) c = camLerp({ x: 760, y: 1036, z: 2.55 }, { x: 600, y: 1040, z: 1.2 }, eio(seg(t, 9.1, 9.6)));
+  else c = camLerp({ x: 600, y: 1040, z: 1.2 }, { x: 760, y: 1032, z: 3.6 }, ein(seg(t, 9.6, 10)));
   if (t >= 8.5 && t < 9.1) { var sa = 22 * (1 - seg(t, 8.5, 9.0)), s = shk(5, sa); c.sx = s[0]; c.sy = s[1]; }
   X.save(); camApply(c);
   // window: moon at night, sunrise after the snap
@@ -271,13 +271,13 @@ function partMontage(t) {
   var sw = seasonW(t), m = cl((t - 10) / 20, 0, 1);
   // camera: identity, a tiny bump on every beat; pull back during the pedestal
   var bf = ((t - 10) % .5) / .5, bump = t < 30 ? .016 * (1 - eout(cl(bf / .4, 0, 1))) : 0, pk = eio(seg(t, 29.8, 34.8));
-  var c = { x: 540, y: lerp(960, 790, pk), z: (1 + bump) * lerp(1, .64, pk) };
+  var c = { x: 540, y: lerp(960, 900, pk), z: (1 + bump) * lerp(1, .78, pk) };
   X.save(); camApply(c);
   if (t >= 29.5) { var rise = eout(seg(t, 29.5, 34.5)), sy = lerp(1600, 1080, rise); X.save(); X.translate(540, sy); X.rotate(t * .15);
       for (var r = 0; r < 16; r++) { var a = r / 16 * Math.PI * 2; ln(Math.cos(a) * 300, Math.sin(a) * 300, Math.cos(a) * 380, Math.sin(a) * 380, 9, ACC, 1.5); } X.restore();
     ink(circ(540, sy, 270, 270), 9, ACC, true, mix(PAPER, ACC, .22)); }
   sky(t);
-  X.save(); X.translate(150, GROUND); X.scale(1.45, 1.45); X.translate(-150, -GROUND); tree(sw, 150); X.restore(); groundDeco(sw);
+  X.save(); X.translate(40, GROUND); X.scale(1.85, 1.85); X.translate(-150, -GROUND); tree(sw, 150); X.restore(); groundDeco(sw);
   // pedestal: one block per beat from 30 s, newest at the bottom pushing him up
   var BH = 62, h = 0, ks = [];
   for (var k = 0; k < 10; k++) { var e = eout(seg(t, 30 + k * .5, 30 + k * .5 + .22)); ks.push(e); h += BH * e; }
@@ -286,11 +286,11 @@ function partMontage(t) {
   // temptations he swats away
   var look = 0;
   TEMPT.forEach(function (q, i) { if (t < q.tin || t > q.hit + 1.2) return;
-    var enter = eout(seg(t, q.tin, q.tin + .45)), hx = 540 + q.side * 270, ox = q.side * (W / 2 + 300), x = lerp(hx + q.side * 600, hx, enter), y = 1000, rot = 0, al = 1, sc = 1;
-    if (t > q.hit) { var fl = seg(t, q.hit, q.hit + 1.0); x = hx + q.side * 900 * eout(fl); y = 1000 - 700 * fl + 900 * fl * fl; rot = q.side * 5 * fl; al = 1 - sm(fl, .6, 1); }
+    var enter = eout(seg(t, q.tin, q.tin + .45)), hx = 540 + q.side * 270, ox = q.side * (W / 2 + 300), x = lerp(hx + q.side * 600, hx, enter), y = 1110, rot = 0, al = 1, sc = 1;
+    if (t > q.hit) { var fl = seg(t, q.hit, q.hit + 1.0); x = hx + q.side * 900 * eout(fl); y = 1110 - 700 * fl + 900 * fl * fl; rot = q.side * 5 * fl; al = 1 - sm(fl, .6, 1); }
     var s = shk(20 + i, t < q.hit ? 9 : 0); sign(q.s, x + s[0], y + s[1], q.s.length > 5 ? 74 : 96, { rot: rot + s[2] + q.side * .06, alpha: al, sc: sc });
     if (!q.blind && t > q.tin + .1 && t < q.hit + .3) look = q.side; });
-  var p = poseAt(t), groundY = GROUND - h, S = 1.6 * (1 + .05 * m);
+  var p = poseAt(t), groundY = GROUND - h, S = 1.12 * (1 + .05 * m);
   var brow = t < 30 ? lerp(-1, -.35, m) : lerp(-.35, .2, seg(t, 31, 33)), smile = eout(seg(t, 33.4, 34.4));
   TEMPT.forEach(function (q) { if (t > q.hit - .6 && t < q.hit + .2) brow = -1; });
   figure(p, 540, groundY, S, { lid: t < 30 ? .92 : lerp(.92, .8, seg(t, 31, 33)), brow: brow, smile: smile, look: look, m: m, band: 1 });
