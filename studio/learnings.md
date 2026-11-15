@@ -206,3 +206,8 @@ While scheduling diagram-howto-vo from the web (browser automation), two "Your p
 - Craft: when a list scene's first item is not spoken first, give it the first cue word; a later cue landing before an earlier one makes item 2 appear before item 1 (question-list, sunday-test). Check cue arrays are ascending in the make_reel "scenes" printout. (confidence: high)
 - Engine: voice-record now takes an optional `days` label list (e.g. W1-W8 for weekly recordings).
 - Ops: in zsh, `$VAR` with spaces doesn't split; run shots.js loops through `bash -c`. sheet.py needs PIL: use analytics/.venv/bin/python.
+
+## 2026-11-15
+- [data] First readings for V-EXP-34 (owner analysis, IG grid 2026-11-14 13:10): median ~132 views across 8 reels vs ~190 before; only first-ten-minutes (457) passed 300. Abstract psychology topics (deciding, forgetting your goal, "just today") land 110-170; every IG hit (>450) is a concrete body/skill scene with the viewer's own wrong pattern charted on frame 0. Repeated signal across 6 hits vs ~44 misses. Confidence: medium-high.
+- [data] Followers 24 (Nov 6) -> 28 (Nov 14): ~1 follow per 400-500 views; profile visits 42, link taps 2 in 30 days. Views grow, conversion stays flat. Confidence: high.
+- [ops] The bottleneck is scheduling, not building: 18 reels waiting (8 agent + 10 owner-session) on Nov 15, nothing ticked since Nov 14. Building more only makes reels stale and breaks follow chains. Rule (owner 2026-11-14): build at most 1, and only when fewer than 4 are waiting. Confidence: high.

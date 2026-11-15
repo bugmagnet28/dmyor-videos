@@ -13,6 +13,15 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
   - Sat 14: ill-just-today 13:00 (X + YT; **IG still to schedule**), ill-mixed-practice 19:30 (X only; **IG + YT still to schedule**: IG 5-flow limit and YT daily upload limit hit tonight).
   - Next session (Thu): IG kabir-3 Fri 19:30, just-today Sat 13:00, mixed-practice Sat 19:30; YT mixed-practice Sat 19:30. Shift the next agent batch to Sun 15.
 
+## Combined schedule from Sun 2026-11-15 (agent run 2026-11-15): 18 reels waiting, schedule in this order
+
+Waiting: 8 agent reels (Sun 15 to Wed 18 blocks below, all rendered, with the "Why do we stop..." series card) + 10 reels in `ready-to-post/batch-2026-11-15/` (retention-playbook batch, no series card, owner session). Interleave them so each day has both (that is the V-EXP-35 card A/B) and the agent follow-chain stays in order. 5 slots a day = one Instagram session (5-flow limit). If a day slips, shift the whole day.
+- **Day 1** (Sun 15 if still possible, else first free day): 09:30 batch 01-roast-crunches · 13:00 ill-afternoon-crash · 16:30 ill-guessed-deadline · 19:30 batch 03-roast-cramming · 22:00 batch 05-pixel-kabir-9
+- **Day 2**: 09:30 batch 02-roast-all-out · 13:00 ill-make-first · 16:30 ill-autopilot · 19:30 batch 06-pixel-kabir-10 · 22:00 batch 08-pixel-straight-5
+- **Day 3**: 09:30 batch 04-roast-pizza-run · 13:00 ill-good-day · 16:30 ill-middle · 19:30 batch 09-pixel-story-2 · 22:00 batch 07-pixel-kabir-11
+- **Day 4**: 09:30 batch 10-pixel-straight-6 · 13:00 ill-new-goal · 19:30 ill-sunday-test
+- Why: 19:30 is where 5 of 6 hits went out, so it goes to the hit-shape batch reels (concrete domain + number on frame 0); the agent chain uses 13:00/16:30 (its follow lines say "Next", not a time, so order is all that matters). Tick each line's block below (or write the day under it) so the next run registers it in analytics.
+
 ## Built Sat 2026-11-14 for Wed 18 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 7
 
 - [ ] Wed 18 13:00 IST · **ill-new-goal** (Reason #28 "the new goal", pillar A, structure C, excitement-per-goal bars (spike, clay drop at wk 6, next goal) on frame 0, 52.3 s; keeps ill-middle's promise; follow line "Next: why you can't see yourself getting better") · `ready-to-post/2026-11-18-ill-new-goal/`

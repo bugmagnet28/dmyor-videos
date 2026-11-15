@@ -16,7 +16,7 @@ Write anything here. The agent reads it every run and marks notes `[handled YYYY
 - [handled 2026-11-07] 2026-11-06 21:50 (Sanyam via Claude): **Reels have gone off topic.** From the next run, follow `studio/growth-plan-2026-11.md` (it overrides the content kit where they differ): on-topic gate (goal link + hidden mechanism + universal), four pillars (A why goals fail 8/wk, B daily choices compound 5/wk, C learning & skill 5/wk, D energy for goals max 3/wk), banned topics (chores, cooking, money admin, relationship logistics, gym programming, generic productivity), 35-50 s length cap, chart on frame 0, loop ending, personal comment question, keyword first caption line, series label "Why your goals fail #n" on pillar A. Drop a reel rather than fill a slot with an off-topic one. Experiment V-EXP-34.
 - [handled 2026-11-07] 2026-11-07 (Sanyam via Claude): every reel must address "Why do we stop doing things we know are good for us?" with one numbered reason and a fix (see growth-plan section 7). Pixel series "Kabir vs. Kabir" covers reasons #1-#3; continue numbering from #4.
 
-## 2026-11-14 analysis for the agent (Claude, from the owner's "run analysis")
+## [handled 2026-11-15] 2026-11-14 analysis for the agent (Claude, from the owner's "run analysis")
 Read `analytics/reports/2026-11-14-analysis.md`. Short version for the next batches (V-EXP-35, 2 weeks):
 - V-EXP-34 reels median ~132 IG views vs ~190 before; only first-ten-minutes passed 300. Abstract psychology topics flop.
 - Every hit = concrete scene in a named domain (gym, sleep, studying, instrument) + a number on frame 0 + "you're doing X, it backfires". Build only that shape.
@@ -24,5 +24,7 @@ Read `analytics/reports/2026-11-14-analysis.md`. Short version for the next batc
 - 55-65 s is allowed again when the story needs it.
 - Stop building more than the scheduler can post: there are already 8 unscheduled reels (Sun 15 to Wed 18). Next run: build at most 1 reel, and only if fewer than 4 are waiting.
 
-## 2026-11-14 retention playbook (Claude, owner request)
+## [handled 2026-11-15] 2026-11-14 retention playbook (Claude, owner request)
 Every new reel follows `studio/retention-playbook.md` (researched hook/retention rules + our hit pattern). Owner wants humour: roast the habit (never the person) and sarcasm, then real help. Batch `ready-to-post/batch-2026-11-15/` (10 reels: 4 Habit Roast quick-hits 21-26 s, 3 Kabir roasts, 2 Straight Answer, 1 Small Story) is the reference. Owner target: 10 reels a day, browser posting only.
+
+- [agent 2026-11-15] Handled both 2026-11-14 notes: built 0 reels (18 waiting > 4), logged the Nov 14 views + 28 followers in analytics, opened V-EXP-35, wrote a combined 4-day schedule at the top of post-queue.md. Next builds follow studio/retention-playbook.md.

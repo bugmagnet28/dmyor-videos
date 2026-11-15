@@ -1,19 +1,20 @@
 # Video dashboard (posting on @becauseidmyor, end card @becauseidmyor)
 
-_Last updated: 2026-11-14 IST (run 2026-11-14)_
+_Last updated: 2026-11-15 IST (run 2026-11-15)_
 
-**Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [reel library](library/index.html) · [growth plan Nov 2026](growth-plan-2026-11.md) · weekly review 2026-11-03 in [strategy.md](strategy.md)
+**Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [2026-11-14 analysis](../analytics/reports/2026-11-14-analysis.md) · [retention playbook](retention-playbook.md) · [reel library](library/index.html) · weekly review 2026-11-12 in [strategy.md](strategy.md)
 
 | | |
 |---|---|
-| Instagram followers (@becauseidmyor) | **24** (2026-11-06, last reading) |
-| Are we improving? | **Reach: yes** (IG newer median 128 vs 17). Followers: slow (+3 in 9 days). YouTube: declining |
-| Live / scheduled | Backlog caught up Wed night: out-of-sight live; Thu sunday-practice 13:00 + kabir-2 19:30; Fri perfect-week, borrowed-sleep, kabir-3; Sat just-today, mixed-practice (IG still owes kabir-3, just-today, mixed-practice; YT owes mixed-practice). All registered in analytics |
-| **Blocker** | No metrics since Nov 6: 11 V-EXP-34 reels live or scheduled, zero readings |
-| Ready to schedule (auto-approved) | **Wed 18: 13:00 ill-new-goal (#28), 19:30 ill-sunday-test (#29)** · **Sun 15: 13:00 ill-afternoon-crash (#22), 19:30 ill-guessed-deadline (#23)** · **Mon 16: 13:00 ill-make-first (#24), 19:30 ill-autopilot (#25)** · **Tue 17: 13:00 ill-good-day (#26), 19:30 ill-middle (#27)**. Stock: 8 unscheduled + 3 IG/YT leftovers (post-queue not ticked since Nov 12) |
-| Host | ~4.5 min per reel today; uptime 272 days, swap 16.7/17 GB |
-| Open experiments | V-EXP-32 (kit v2), V-EXP-33 (chart frame 0 + length), **V-EXP-34** (on-topic pillars, ≤50 s, Reason series; Nov 7-20) |
-| Asks | **VASK-030** (IG leftovers + Sun/Mon batch, Mac restart), **VASK-031** (Mon 19:30 + Tue pair, screenshots), **VASK-032** (Wed 18 pair; backlog growing) |
+| Instagram followers (@becauseidmyor) | **28** (2026-11-14; 24 on Nov 6). 30-day views 11,665 (+57%) |
+| Are we improving? | **Reach: yes** (IG newer-half median 140 vs 21). Followers: slow (~1 per 400 views). YouTube: declining |
+| Last 8 measured (IG views, Nov 14) | first-ten-minutes **457** (best) · borrowed-sleep 168 · sunday-practice 140 · decide-once 133 · out-of-sight 132 · kabir-2 117 · perfect-week 117 · kabir-1 **112** (worst) |
+| Live since | Sat 14: just-today, mixed-practice, kabir-3 (IG 16:30) on all platforms; now registered in analytics |
+| **Blocker** | Scheduling: 18 reels waiting. No watch-time data since Nov 6 |
+| Ready to schedule | **Combined 4-day schedule** at the top of post-queue.md: 8 agent reels (series card ON) interleaved with the 10-reel `batch-2026-11-15` (card OFF) |
+| Open experiments | **V-EXP-35** (hit shape + retention playbook, card OFF vs ON; Nov 15-28). V-EXP-34 closed: missed (median ~132 vs ~190) |
+| Asks | **VASK-033** (schedule the 18 + screenshots; replaces 030-032) |
+| Built today | Nothing (owner rule: build at most 1, only when fewer than 4 waiting) |
 
 ## Built today (Sat Nov 14) for Wed 18 (V-EXP-34 batch 7)
 | Slot (IST) | Reel | Reason / pillar | Length | Hook | Frame 0 | Score |

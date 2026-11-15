@@ -2,7 +2,13 @@
 
 Owned by the video agent. Rewritten in each weekly review. Started 2026-10-08 as hypotheses.
 
-## Where we are (2026-11-03)
+## Where we are (2026-11-15)
+- @becauseidmyor: 28 followers (Nov 14). IG 30-day views 11,665 (+57% vs Nov 6), 99.6% non-followers, ~1 follow per 400 views.
+- V-EXP-34 (on-topic gate, series card, <=50 s) missed: median ~132 vs ~190 before. The hit shape is clear from 6 hits: a body/skill domain, the viewer's own "trying hard" mistake charted on frame 0 with a number.
+- Now V-EXP-35 (to Nov 28): retention playbook (`studio/retention-playbook.md`), roast/sarcasm formats, series card off, 55-65 s allowed for explainers. 18 reels waiting (8 card-ON agent reels + 10 card-OFF owner batch) interleaved in post-queue.md.
+- Production rule until scheduling catches up: build at most 1 reel per run, only when fewer than 4 are waiting. Spare runs go to analytics and asks. Next build: an explainer in the hit shape (illustrated, 55-65 s, gym/sleep/studying/instrument, "you're doing X because you're trying").
+
+## Where we were (2026-11-03)
 - @becauseidmyor: 22 followers (Nov 2, +1 from a reel, the first ever). Instagram 30-day views 5,835 (from 1,824 on Oct 28), 99.6% non-followers.
 - One style carries everything: animated-illustration-explainer (14 posts, 8.6x the rest on IG reach). Hard-truth hooks 7.9x (n=18). Two breakouts (ill-hard-part 1,597, ill-wake-time 1,290), both chart-on-frame-0 corrections of a daily behaviour at 19:30.
 - Production: 3 reels/day, all Kokoro am_eric, Content Kit v2 since Oct 31. Scheduled runs timed out on Oct 31 + Nov 1 (no batches those days).
