@@ -4,10 +4,14 @@
 
 **Instagram caption:**
 Every morning you vote twice: stay or get up, today or tomorrow.
-Nobody sees the votes. Everybody sees where they add up.
+You will lose some of those votes. He lost two. What matters is the next one.
 
-Where will your choices take you?
+That's what Dmyor is for. Write your dreams and visions in one place, break them into small steps you can actually do, and document your journey so you can see how far your choices have taken you.
 
-#discipline #motivation #morningroutine #consistency #selfimprovement #dmyor
+Start yours at www.dmyor.com (link in bio). Full features are releasing soon.
+
+Where will your choices take you? Tell us in the comments.
+
+#discipline #motivation #consistency #selfimprovement #goals #dmyor
 
 **YouTube title:** Every morning is a choice #shorts
