@@ -13,6 +13,7 @@ def x_trim(t):
     return t[:270]
 taken = {o["when_ist"] for o in S["items"]}
 now = dt.datetime.now(); day = now.date() + dt.timedelta(days=1 if now.hour >= 12 else 0)
+if sys.argv[1].startswith("--from="): day = dt.date.fromisoformat(sys.argv.pop(1)[7:])
 def next_slot():
     global day
     while True:
