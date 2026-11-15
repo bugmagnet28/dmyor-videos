@@ -260,7 +260,7 @@ Instagram locked the account ("we locked your account to protect you from a poss
   4. Still the main blocker for learning: app screenshots for ill-first-ten-minutes, ill-decide-once, ill-out-of-sight, ill-sunday-practice + one profile screenshot. Nothing measured since Nov 6.
 
 ## VASK-033: One schedule for all 18 waiting reels + screenshots (2026-11-15)
-- Status: open. Replaces the scheduling steps of VASK-030/031/032 (those reels are all in it).
+- Status: handled 2026-11-15 by Claude/owner: the 18 reels are in `studio/schedule.json` and the new publisher job (studio/publish.sh, 12:30 + 18:30 daily) posts them; metrics now come from the publisher (analytics/inbox/), so no screenshots needed. Was open. Replaces the scheduling steps of VASK-030/031/032 (those reels are all in it).
 - Steps:
   1. Schedule from the **Combined schedule** at the top of `studio/post-queue.md`: 4 days, 5 slots a day (one Instagram session = 5 flows), agent reels interleaved with `ready-to-post/batch-2026-11-15/`. IG + X + YT for each.
   2. Tick each reel in post-queue.md (or write the day next to it) so the next run registers it in analytics.

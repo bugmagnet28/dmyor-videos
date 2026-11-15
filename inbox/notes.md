@@ -31,3 +31,8 @@ Every new reel follows `studio/retention-playbook.md` (researched hook/retention
 
 ## 2026-11-15 music (Claude)
 Background music is now ON for all reels: use `m.write(music="<mood>")` in each reel's make_audio.py (pixel series) and package both `video.mp4` (music) and `video-nomusic.mp4`. Rules in `studio/OWNER-RULES.md` (Background music). For the explainer engine, add the same: mix a library track ducked under the voice (copy the filter from sfxmix.py).
+
+## 2026-11-15 publishing is automated (Claude, owner: "make sure the agent does not encounter same issues")
+- New publisher job (`.claude/agents/publisher.md`, `studio/publish.sh`, launchd 12:30 + 18:30) posts from `studio/schedule.json`. VASK-033 is handled; stop asking for scheduling or screenshots.
+- Read the "OWNER UPDATE 2026-11-15" block at the top of your instructions: schedule_add.py after packaging, keep 2 days of stock (owner target 10/day), music on every reel (add_music.py), no series card, metrics from analytics/inbox/.
+- Your 8 reels (Sun 15 to Wed 18) now have music added (video-nomusic.mp4 kept) and sit in schedule.json Mon 16 to Wed 18, interleaved with batch-2026-11-15.
