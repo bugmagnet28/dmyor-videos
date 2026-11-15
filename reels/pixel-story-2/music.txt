@@ -1,1 +1,2 @@
-studio/music-library/tracks/lofi-01.mp3
+0.00s studio/music-library/tracks/mystery-01.mp3
+16.50s studio/music-library/tracks/resolve-01.mp3

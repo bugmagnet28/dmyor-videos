@@ -1,1 +1,3 @@
-studio/music-library/tracks/playful-05.mp3
+0.00s studio/music-library/tracks/comedy-05.mp3
+11.58s studio/music-library/tracks/investigate-04.mp3
+19.48s studio/music-library/tracks/resolve-01.mp3

@@ -1,0 +1,28 @@
+mystery|2026/07/28/audio_dca3f157b3.mp3|Mysterious Fog Curious Discovery|alex-morgan|electronic-mysterious-fog-curious-discovery-575877
+mystery|2026/03/22/audio_a0e4abf022.mp3|Sneaky Curious Jazzy|Sonican|traditional-jazz-sneaky-curious-jazzy-506460
+mystery|2025/09/27/audio_4b8434b04e.mp3|Curious Circuits - Playful Electronic|Sonican|eccentric-quirky-curious-circuits-playful-electronic-music-411246
+mystery|2026/03/27/audio_e75bd9fc2f.mp3|Sneaky Curious - Jazzy Dramedy|Sonican|modern-jazz-sneaky-curious-jazzy-dramedy-loop-509478
+mystery|2026/04/18/audio_437a6d662b.mp3|Sneaky Curious Jazzy Loop No.2|Sonican|traditional-jazz-sneaky-curious-jazzy-loop-no2-516876
+mystery|2025/11/24/audio_368500d317.mp3|Brooding Cello & Flute|AiCanvas|modern-classical-brooding-cello-amp-flute-441760
+mystery|2026/05/19/audio_00a50e4b6f.mp3|Sneaky Jazz - Curious Loop|Sonican|modern-jazz-sneaky-jazz-curious-loop-527153
+sneaky|2025/07/16/audio_14c12f81bc.mp3|Sneaky Quirky|leberch|sneaky-sneaky-quirky-375841
+sneaky|2026/08/03/audio_e214f508d8.mp3|Sneaky Tiptoe Music|alex-morgan|cartoons-sneaky-tiptoe-music-579470
+sneaky|2025/07/16/audio_6905ebf12c.mp3|Sneaky Quirky|leberch|sneaky-sneaky-quirky-375837
+sneaky|2026/09/04/audio_d915fc3871.mp3|Sneaky Music|echoes_of_lumen|comedy-sneaky-music-597576
+sneaky|2025/07/15/audio_780f47a0d6.mp3|Quirky Sneaky|leberch|comedy-quirky-sneaky-375264
+sneaky|2026/10/04/audio_c25e2deec1.mp3|Quirky Sneaky Music|ViacheslavStarostin|fantasy-dreamy-childrens-quirky-sneaky-music-614988
+sneaky|2024/11/26/audio_9aa8197738.mp3|Quirky Sneaky Memes Background|HitsLab|comedy-quirky-sneaky-memes-background-music-269132
+investigate|2026/10/22/audio_65b31a5691.mp3|Investigation|leberch|crime-scene-investigation-625069
+investigate|2026/09/18/audio_1d4fad0ea7.mp3|Investigation - Investigation Music|leberch|crime-scene-investigation-investigation-music-606086
+investigate|2026/09/15/audio_f143572eee.mp3|Investigation|leberch|crime-scene-investigation-604094
+investigate|2026/10/24/audio_3161721e3d.mp3|Mysterious|leberch|mystery-mysterious-626022
+investigate|2026/09/28/audio_74c8ba1224.mp3|Investigation Piano|leberch|crime-scene-investigation-piano-611639
+investigate|2026/08/31/audio_3ea3984aa5.mp3|Our Line (Investigation Music)|leberch|crime-scene-our-line-investigation-music-594953
+investigate|2026/08/13/audio_26df9e483a.mp3|Mysterious|leberch|ambient-mysterious-585275
+investigate|2026/08/07/audio_c62f52d1ab.mp3|Mysterious|AtlasAudio|electronic-mysterious-581914
+resolve|2023/07/05/audio_75275e2e57.mp3|Hopeful Piano|PaulYudin|wedding-hopeful-piano-156908
+resolve|2023/08/16/audio_6b7cbbee18.mp3|Uplifting Piano|PaulYudin|modern-classical-uplifting-piano-162456
+resolve|2023/09/03/audio_d06966cd17.mp3|Soft Hopeful Piano|PaulYudin|main-title-soft-hopeful-piano-164828
+resolve|2026/09/13/audio_ab337ea43f.mp3|Inspiring Piano|NastelBom|small-drama-inspiring-piano-602520
+resolve|2023/04/17/audio_e1778a35ca.mp3|Hopeful Piano|Ivan_Luzan|modern-classical-hopeful-piano-146733
+resolve|2022/06/07/audio_7998efb548.mp3|Uplifting Piano Is|Music_Unlimited|modern-classical-uplifting-piano-is-112841

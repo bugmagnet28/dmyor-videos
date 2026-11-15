@@ -139,7 +139,8 @@ Target quality bar: @anmoldoesmotion's OpenAI piece, `studio/analysis/2026-10-25
 - **A face on camera** (founder clip): proposed, not approved.
 
 ## Background music (owner 2026-11-15)
-- Pixabay Music is approved (free, no attribution). Approved tracks live in `studio/music-library/tracks/` (moods: playful for Habit Roast and Kabir, lofi for Small Stories, ambient for Straight Answer); every track's page is in `studio/music-library/LICENSES.md`.
-- Music is mixed quietly under the voice (about 13 dB under in pauses, ducked further while the narrator talks) by `reels/pixel-series/sfxmix.py` (`m.write(music="playful")`). Never louder than that; the voice must stay fully clear.
-- Every reel keeps a no-music version (`video-nomusic.mp4`) for the phone trending-audio test: Sanyam posts 1-2 reels a week from the phone with a trending sound, to compare reach.
+- Pixabay Music is approved (free, no attribution). Tracks live in `studio/music-library/tracks/`, sources in `LICENSES.md`, listen in `preview.html`. Owner liked comedy-01 (leberch "Playful") and comedy-02 (STAROSTIN "Comedy Quirky Sneaky"); the first library's other tracks were rejected (`rejected/`).
+- **Music follows the emotion of the reel** (owner 2026-11-15): moods `comedy` (sneaky/quirky, roasts and Kabir), `mystery` (curious hooks and twists), `investigate` (darker mystery for the problem part), `resolve` (hopeful piano once the fix lands). Each reel gets an arc, e.g. `m.write(music=[("investigate", 0), ("resolve", SC["S4"][0])])`; tracks crossfade at the turn.
+- **Level (owner 2026-11-15): audible while the narrator speaks.** About 9-10 dB under the voice during speech, about 6 dB under in pauses (`music_lufs=-21`, gentle ducking). The voice must still be fully clear.
+- Every reel keeps a no-music version (`video-nomusic.mp4`) for the phone trending-audio test (1-2 reels a week posted from the phone with a trending sound).
 - No copyrighted songs baked into files. Only library tracks or Instagram's in-app music.

@@ -4,14 +4,19 @@ Source: Pixabay Music (Pixabay Content License: free for commercial use, no attr
 
 | file | mood | title | artist | Pixabay page |
 |---|---|---|---|---|
-| tracks/playful-01.mp3 | playful | Playful - Playful Music | JonasBlakewood | https://pixabay.com/music/indie-pop-playful-playful-music-305507/ |
-| tracks/playful-02.mp3 | playful | Playful | SoundSurfer | https://pixabay.com/music/old-school-hip-hop-playful-577784/ |
-| tracks/playful-03.mp3 | playful | Quirky Funky | StudioKolomna | https://pixabay.com/music/comedy-quirky-funky-632658/ |
-| tracks/playful-04.mp3 | playful | Playful | leberch | https://pixabay.com/music/electronic-playful-441727/ |
-| tracks/playful-05.mp3 | playful | Comedy Quirky Sneaky Music | STAROSTIN | https://pixabay.com/music/comedy-comedy-quirky-sneaky-music-261165/ |
-| tracks/lofi-01.mp3 | lofi | Chill Lofi | ZephiraMusic | https://pixabay.com/music/lofi-chill-lofi-585360/ |
-| tracks/lofi-02.mp3 | lofi | Lofi Instrumental | Sub_Clair | https://pixabay.com/music/lofi-lofi-instrumental-586096/ |
-| tracks/lofi-03.mp3 | lofi | Lofi Chill | AtlasAudio | https://pixabay.com/music/beats-lofi-chill-589987/ |
-| tracks/ambient-01.mp3 | ambient | Calm Ambient | VelarioMusic | https://pixabay.com/music/ambient-calm-ambient-603158/ |
-| tracks/ambient-02.mp3 | ambient | Calm Ambient | NastelBom | https://pixabay.com/music/ambient-calm-ambient-295786/ |
-| tracks/ambient-03.mp3 | ambient | Calm - Calm Music | andriig | https://pixabay.com/music/acoustic-group-calm-calm-music-632887/ |
+| tracks/comedy-01.mp3 | comedy | Playful | leberch | https://pixabay.com/music/electronic-playful-441727/ |
+| tracks/comedy-02.mp3 | comedy | Comedy Quirky Sneaky Music | STAROSTIN | https://pixabay.com/music/comedy-comedy-quirky-sneaky-music-261165/ |
+| tracks/comedy-03.mp3 | comedy | Sneaky Quirky | leberch | https://pixabay.com/music/sneaky-sneaky-quirky-375837/ |
+| tracks/comedy-04.mp3 | comedy | Sneaky Quirky | leberch | https://pixabay.com/music/sneaky-sneaky-quirky-375841/ |
+| tracks/comedy-05.mp3 | comedy | Quirky Sneaky Memes Background | HitsLab | https://pixabay.com/music/comedy-quirky-sneaky-memes-background-music-269132/ |
+| tracks/mystery-01.mp3 | mystery | Curious Circuits - Playful Electronic | Sonican | https://pixabay.com/music/eccentric-quirky-curious-circuits-playful-electronic-music-411246/ |
+| tracks/mystery-02.mp3 | mystery | Sneaky Curious Jazzy | Sonican | https://pixabay.com/music/traditional-jazz-sneaky-curious-jazzy-506460/ |
+| tracks/mystery-03.mp3 | mystery | Brooding Cello & Flute | AiCanvas | https://pixabay.com/music/modern-classical-brooding-cello-amp-flute-441760/ |
+| tracks/investigate-01.mp3 | investigate | Investigation | leberch | https://pixabay.com/music/crime-scene-investigation-625069/ |
+| tracks/investigate-02.mp3 | investigate | Investigation | leberch | https://pixabay.com/music/crime-scene-investigation-604094/ |
+| tracks/investigate-03.mp3 | investigate | Mysterious | leberch | https://pixabay.com/music/mystery-mysterious-626022/ |
+| tracks/investigate-04.mp3 | investigate | Mysterious | leberch | https://pixabay.com/music/ambient-mysterious-585275/ |
+| tracks/resolve-01.mp3 | resolve | Soft Hopeful Piano | PaulYudin | https://pixabay.com/music/main-title-soft-hopeful-piano-164828/ |
+| tracks/resolve-02.mp3 | resolve | Uplifting Piano | PaulYudin | https://pixabay.com/music/modern-classical-uplifting-piano-162456/ |
+| tracks/resolve-03.mp3 | resolve | Inspiring Piano | NastelBom | https://pixabay.com/music/small-drama-inspiring-piano-602520/ |
+| tracks/resolve-04.mp3 | resolve | Hopeful Piano | Ivan_Luzan | https://pixabay.com/music/modern-classical-hopeful-piano-146733/ |

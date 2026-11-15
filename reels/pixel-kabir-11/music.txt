@@ -1,1 +1,2 @@
-studio/music-library/tracks/playful-01.mp3
+0.00s studio/music-library/tracks/comedy-01.mp3
+16.68s studio/music-library/tracks/resolve-01.mp3
