@@ -206,3 +206,13 @@ Region test: each slot is ~8 PM local in the target region. @becauseidmyor end-c
 ## Skipped
 
 - **2026-10-08 twelve-weeks-one-thing** (24s) · skipped 2026-10-12: never posted, hook "12 weeks left in 2026" no longer true after Oct 11. Files kept in `ready-to-post/2026-10-08-twelve-weeks-one-thing/`. Its V-EXP-09 test moves to the next posted reel.
+
+## Publisher run 2026-11-15 (~18:30-21:30 IST) - actual slots
+- [x] 01-roast-crunches: IG posted now, X posted now, YT published now (09:30 slot long past; made public after checks finished)
+- [x] 03-roast-cramming: IG scheduled Sun 15 19:30, X posted now (19:30 passed while working), YT published now
+- [x] 05-pixel-kabir-9: IG scheduled Sun 15 22:00, X scheduled Sun 15 22:00, YT scheduled Sun 15 22:00
+- [x] 02-roast-all-out: IG, X, YT scheduled Mon 16 09:30
+- [x] ill-afternoon-crash: IG, X, YT scheduled Mon 16 13:00
+- [x] ill-guessed-deadline: X, YT scheduled Mon 16 16:30 (IG still todo, IG 5-flow cap hit)
+- [x] 06-pixel-kabir-10: X, YT scheduled Mon 16 19:30 (IG todo)
+- [x] 08-pixel-straight-5: X, YT scheduled Mon 16 22:00 (IG todo)
