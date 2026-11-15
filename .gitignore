@@ -31,3 +31,6 @@ reels/*/snaps/
 reels/**/__pycache__/
 reels/*/record.log
 reels/pixel-series/*.log
+reels/stick-get-up/snaps/
+reels/stick-get-up/*.mp4
+reels/stick-get-up/record.log

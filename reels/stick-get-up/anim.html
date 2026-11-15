@@ -1,0 +1,322 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"Marker";src:url(fonts/PermanentMarker.woff2)}
+@font-face{font-family:"Tight";font-weight:800;src:url(../../.claude/skills/prompt-animation/assets/fonts/InterTight-normal-800.woff2)}
+html,body{margin:0;background:#111;overflow:hidden}
+canvas{display:block;width:100vw;height:100vh;object-fit:contain}
+#playBtn{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);font:700 22px sans-serif;padding:14px 26px;border-radius:999px;border:0;background:#F2762E;color:#111;cursor:pointer}
+</style></head><body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<button id="playBtn">Play</button>
+<script>
+// "Get Up": wordless stick-figure choice reel. Silent render, every move sits on a 120 BPM grid (beat = 0.5 s)
+// so any ~120 BPM funk track added in Instagram lines up. Pure function of time: window.__seek(t).
+(function () {
+var W = 1080, H = 1920, cv = document.getElementById("c"), X = cv.getContext("2d"), DUR = 38;
+var ACC = "#F2762E", PAPER_D = "#F3EDE1", PAPER_N = "#1E2134", INK_D = "#1B1A1F", INK_N = "#EDE5D3";
+var T = 0, NK = 0, PAPER, INK, FB = 0, SEED = 0;
+
+// ---------- helpers ----------
+function cl(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function lerp(a, b, k) { return a + (b - a) * k; }
+function seg(t, a, b) { return cl((t - a) / (b - a), 0, 1); }
+function eio(k) { return k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; }
+function eout(k) { return 1 - Math.pow(1 - k, 3); }
+function ein(k) { return k * k * k; }
+function back(k) { var c1 = 1.9, c3 = c1 + 1; return 1 + c3 * Math.pow(k - 1, 3) + c1 * Math.pow(k - 1, 2); }
+function sm(t, a, b) { var k = seg(t, a, b); return k * k * (3 - 2 * k); }
+function hash(n) { var s = Math.sin(n * 12.9898 + 78.233) * 43758.5453; return s - Math.floor(s); }
+function rgb(h) { return [parseInt(h.substr(1, 2), 16), parseInt(h.substr(3, 2), 16), parseInt(h.substr(5, 2), 16)]; }
+function mix(a, b, k) { var p = rgb(a), q = rgb(b); return "rgb(" + Math.round(lerp(p[0], q[0], k)) + "," + Math.round(lerp(p[1], q[1], k)) + "," + Math.round(lerp(p[2], q[2], k)) + ")"; }
+function mixh(a, b, k) { var p = rgb(a), q = rgb(b), r = [0, 1, 2].map(function (i) { return Math.round(lerp(p[i], q[i], k)); }); return "#" + r.map(function (v) { return ("0" + v.toString(16)).slice(-2); }).join(""); }
+function setPal() { PAPER = mixh(PAPER_D, PAPER_N, NK); INK = NK > .5 ? INK_N : INK_D; }
+function rad(d) { return d * Math.PI / 180; }
+function dv(a) { return [Math.sin(rad(a)), Math.cos(rad(a))]; }
+function add(p, v, s) { return [p[0] + v[0] * s, p[1] + v[1] * s]; }
+
+// ---------- boiling ink ----------
+function ink(pts, w, col, closed, fill, amp) {
+  SEED++; amp = amp == null ? 2.2 : amp;
+  var src = closed ? pts.concat([pts[0]]) : pts, p = [];
+  for (var i = 0; i < src.length - 1; i++) { var a = src[i], b = src[i + 1], L = Math.hypot(b[0] - a[0], b[1] - a[1]), n = Math.max(1, Math.round(L / 42));
+    for (var j = 0; j < n; j++) p.push([lerp(a[0], b[0], j / n), lerp(a[1], b[1], j / n)]); }
+  if (!closed) p.push(src[src.length - 1]);
+  for (i = 0; i < p.length; i++) p[i] = [p[i][0] + (hash(SEED * 17.3 + i * 3.1 + FB * 7.7) - .5) * 2 * amp, p[i][1] + (hash(SEED * 9.1 + i * 5.3 + FB * 3.3) - .5) * 2 * amp];
+  X.beginPath();
+  if (closed) { p[p.length] = p[0]; var m0 = [(p[0][0] + p[1][0]) / 2, (p[0][1] + p[1][1]) / 2]; X.moveTo(m0[0], m0[1]);
+    for (i = 1; i < p.length - 1; i++) X.quadraticCurveTo(p[i][0], p[i][1], (p[i][0] + p[i + 1][0]) / 2, (p[i][1] + p[i + 1][1]) / 2);
+    X.quadraticCurveTo(p[0][0], p[0][1], m0[0], m0[1]); X.closePath(); }
+  else { X.moveTo(p[0][0], p[0][1]); if (p.length == 2) X.lineTo(p[1][0], p[1][1]);
+    else { for (i = 1; i < p.length - 1; i++) X.quadraticCurveTo(p[i][0], p[i][1], (p[i][0] + p[i + 1][0]) / 2, (p[i][1] + p[i + 1][1]) / 2); X.lineTo(p[p.length - 1][0], p[p.length - 1][1]); } }
+  if (fill) { X.fillStyle = fill; X.fill(); }
+  if (w) { X.lineWidth = w; X.strokeStyle = col || INK; X.lineCap = "round"; X.lineJoin = "round"; X.stroke(); }
+}
+function circ(cx, cy, rx, ry, a0, a1, n) { var o = []; a0 = a0 || 0; a1 = a1 == null ? Math.PI * 2 : a1; n = n || 26; var full = Math.abs(a1 - a0) >= Math.PI * 2 - 1e-6;
+  for (var i = 0; i < (full ? n : n + 1); i++) { var a = a0 + (a1 - a0) * i / n; o.push([cx + Math.cos(a) * rx, cy + Math.sin(a) * ry]); } return o; }
+function box(x, y, w, h) { return [[x, y], [x + w, y], [x + w, y + h], [x, y + h]]; }
+function ln(x1, y1, x2, y2, w, col, amp) { ink([[x1, y1], [x2, y2]], w, col, false, null, amp); }
+function txt(s, x, y, size, col, align, font) { X.font = size + "px " + (font || "Marker"); X.fillStyle = col || INK; X.textAlign = align || "center"; X.textBaseline = "middle";
+  X.save(); X.translate(x, y); X.rotate((hash(FB * 3 + size) - .5) * .012); X.fillText(s, 0, 0); X.restore(); }
+function shk(seed, amp) { var b = Math.floor(T * 24); return [(hash(seed * 7 + b * 13.1) - .5) * 2 * amp, (hash(seed * 11 + b * 7.3) - .5) * 2 * amp, (hash(seed * 5 + b * 3.7) - .5) * amp * .006]; }
+
+// a hand-drawn sign; o: fill, ink, alpha, sc, rot, half (-1 left / 1 right piece of a cracked sign)
+function sign(s, x, y, size, o) {
+  o = o || {}; X.save(); X.globalAlpha = o.alpha == null ? 1 : cl(o.alpha, 0, 1); X.translate(x, y); X.rotate(o.rot || 0); var sc = o.sc == null ? 1 : o.sc; X.scale(sc, sc);
+  X.font = size + "px Marker"; var tw = X.measureText(s).width, pw = tw + size * .8, ph = size * 1.3, zig = [[4, -ph / 2 - 20], [-16, -ph / 4], [12, 0], [-10, ph / 4], [6, ph / 2 + 20]];
+  if (o.half) { X.beginPath(); var bx = o.half * (pw + 60); X.moveTo(bx, -ph); zig.forEach(function (p) { X.lineTo(p[0], p[1]); }); X.lineTo(bx, ph); X.closePath(); X.clip(); }
+  ink(box(-pw / 2, -ph / 2, pw, ph), size * .07, o.ink || INK, true, o.fill || PAPER, 3);
+  X.fillStyle = o.ink || INK; X.textAlign = "center"; X.textBaseline = "middle"; X.fillText(s, 0, size * .05);
+  if (o.half) ink(zig, size * .06, o.ink || INK, false, null, 1);
+  X.restore();
+}
+
+// ---------- stick figure rig (absolute limb angles; 0 = straight down, + = toward screen right) ----------
+var STAND = { x: 0, torso: 0, head: 0, lu: -12, ll: -6, ru: 12, rl: 6, lt: -8, ls: -4, rt: 8, rs: 4, lift: 0, side: 0, bar: 0, gall: 0 };
+function P(o) { var p = {}, k; for (k in STAND) p[k] = STAND[k]; for (k in o) p[k] = o[k]; return p; }
+function mirror(p) { return P({ x: -p.x, torso: -p.torso, head: -p.head, lu: -p.ru, ll: -p.rl, ru: -p.lu, rl: -p.ll, lt: -p.rt, ls: -p.rs, rt: -p.lt, rs: -p.ls, lift: p.lift, side: p.side, bar: p.bar, gall: p.gall }); }
+function lerpPose(a, b, k) { var p = {}; for (var key in STAND) p[key] = lerp(a[key], b[key], k); return p; }
+function figure(p, bx, groundY, S, ex) {
+  var m = ex.m || 0, Tl = 170 * S, U = 92 * S, F = 88 * S, Th = 112 * S, Sh = 112 * S, R = 46 * S, sw = (5 + 20 * m) * S * (1 - p.side * .85), lw = (12 + 4 * m) * S / 1.15;
+  var tr = p.torso, td = [Math.sin(rad(tr)), -Math.cos(rad(tr))], pp = [Math.cos(rad(tr)), Math.sin(rad(tr))];
+  var hip = [0, 0], neck = add(hip, td, Tl), sc = add(neck, td, -14 * S), shL = add(sc, pp, -sw), shR = add(sc, pp, sw);
+  var hd = [Math.sin(rad(tr + p.head)), -Math.cos(rad(tr + p.head))], hc = add(neck, hd, R + 10 * S);
+  var elL = add(shL, dv(p.lu), U), haL = add(elL, dv(p.ll), F), elR = add(shR, dv(p.ru), U), haR = add(elR, dv(p.rl), F);
+  var hpL = add(hip, pp, -7 * S), hpR = add(hip, pp, 7 * S), knL = add(hpL, dv(p.lt), Th), ftL = add(knL, dv(p.ls), Sh), knR = add(hpR, dv(p.rt), Th), ftR = add(knR, dv(p.rs), Sh);
+  var low = Math.max(ftL[1], ftR[1]); if (p.gall > .5) low = Math.max(low, haL[1], haR[1]);
+  var ox = bx + p.x * S, oy = groundY - low - p.lift * S;
+  function o(q) { return [q[0] + ox, q[1] + oy]; }
+  ink([o(ftL), o(knL), o(hpL), o(hpR), o(knR), o(ftR)], lw);
+  ink([o(hip), o(neck)], lw);
+  if (sw > 4) ink([o(shL), o(shR)], lw);
+  ink([o(shL), o(elL), o(haL)], lw); ink([o(shR), o(elR), o(haR)], lw);
+  if (p.bar > .5) { var a = o(haL), b = o(haR), dx = b[0] - a[0], dy = b[1] - a[1], L = Math.hypot(dx, dy) || 1, ux = dx / L, uy = dy / L;
+    ln(a[0] - ux * 90, a[1] - uy * 90, b[0] + ux * 90, b[1] + uy * 90, lw * .8);
+    [[a, -1], [b, 1]].forEach(function (q) { var c = [q[0][0] + ux * 70 * q[1], q[0][1] + uy * 70 * q[1]]; ink(circ(c[0], c[1], 12 * S, 34 * S), lw * .7, INK, true, INK); }); }
+  var H0 = o(hc); ink(circ(H0[0], H0[1], R, R), lw, INK, true, PAPER);
+  face(H0[0], H0[1], R, ex, rad(tr + p.head));
+  return { head: H0, hl: o(haL), hr: o(haR), feet: [o(ftL), o(ftR)] };
+}
+// face: lid (0 shut .. 1 open .. 1.3 wide), brow (-1 angry .. 1 worried), squeeze, smile, vein, look, m (maturity), band
+function face(cx, cy, R, ex, rot) {
+  X.save(); X.translate(cx, cy); X.rotate(rot || 0);
+  var m = ex.m || 0, lw = R * .085, lk = (ex.look || 0) * R * .12;
+  if (m > .3) { var bk = sm(m, .3, .75), pts = []; for (var i = 0; i <= 18; i++) { var a = rad(22 + 136 * i / 18), r = R * (i % 2 ? 1.0 + .16 * bk : .95); pts.push([Math.cos(a) * r, Math.sin(a) * r]); }
+    X.globalAlpha = .35 + .65 * bk; ink(pts, lw * .9, INK, false, null, 1); X.globalAlpha = 1;
+    if (m > .55) { X.globalAlpha = sm(m, .55, .85); ink([[-R * .22, R * .36], [-R * .05, R * .3], [R * .05, R * .3], [R * .22, R * .36]], lw * .8, INK, false, null, .8); X.globalAlpha = 1; } }
+  [-1, 1].forEach(function (s) {
+    var ex0 = s * R * .36 + lk, ey = -R * .04;
+    if (ex.squeeze) ink([[ex0 - s * R * .13, ey - R * .13], [ex0 + s * R * .06, ey], [ex0 - s * R * .13, ey + R * .13]], lw, INK, false, null, .6);
+    else if ((ex.lid || 0) < .12) ink([[ex0 - R * .13, ey], [ex0, ey + R * .07], [ex0 + R * .13, ey]], lw, INK, false, null, .6);
+    else { var lid = Math.min(ex.lid, 1.35); X.beginPath(); X.ellipse(ex0, ey, R * .085 * (lid > 1 ? lid : 1), R * .15 * lid, 0, 0, Math.PI * 2); X.fillStyle = INK; X.fill();
+      if (ex.lid < .7) { X.lineWidth = lw * .8; X.strokeStyle = INK; X.beginPath(); X.moveTo(ex0 - R * .14, ey - R * .15 * lid); X.lineTo(ex0 + R * .14, ey - R * .15 * lid); X.stroke(); }
+      if (lid > .55) { X.beginPath(); X.arc(ex0 + R * .03, ey - R * .05 * lid, R * .028 * lid, 0, Math.PI * 2); X.fillStyle = PAPER; X.fill(); } }
+    var b = ex.brow || 0, iy = -R * .3 - R * .09 * b, oy = -R * .36 + R * .07 * b;
+    ink([[s * R * .13 + lk, iy], [s * R * .55 + lk, oy]], lw * 1.05, INK, false, null, .7);
+  });
+  if (ex.smile > 0) { var sp = .3 * ex.smile; ink(circ(0, R * .12, R * .3, R * .26, Math.PI * (.5 - sp), Math.PI * (.5 + sp), 8), lw, INK, false, null, .5); }
+  if (ex.band) { var by = -R * .55; ink([[-R * .93, by + R * .1], [0, by - R * .02], [R * .93, by + R * .1]], R * .17, ACC, false, null, 1);
+    for (var k = 0; k < 2; k++) { var tp = [], wv = T * 13 + k; for (var j = 0; j <= 4; j++) tp.push([-R * .9 - j * R * .2, by + R * .1 + j * R * (.1 + k * .09) + Math.sin(wv + j) * R * .06]); ink(tp, R * .1, ACC, false, null, .6); } }
+  if (ex.vein > 0) { X.save(); X.translate(R * .62, -R * .62); X.scale(ex.vein, ex.vein); [0, 1, 2, 3].forEach(function (q) { X.save(); X.rotate(q * Math.PI / 2); ink(circ(R * .2, R * .2, R * .12, R * .12, Math.PI, Math.PI * 1.5, 5), R * .07, ACC, false, null, .5); X.restore(); }); X.restore(); }
+  X.restore();
+}
+
+// ---------- camera ----------
+function camApply(c) { X.translate(W / 2 + (c.sx || 0), H / 2 + (c.sy || 0)); X.scale(c.z, c.z); X.translate(-c.x, -c.y); }
+function camLerp(a, b, k) { return { x: lerp(a.x, b.x, k), y: lerp(a.y, b.y, k), z: lerp(a.z, b.z, k) }; }
+
+// ---------- paper ----------
+function paper() {
+  X.fillStyle = PAPER; X.fillRect(0, 0, W, H);
+  X.fillStyle = INK; for (var i = 0; i < 420; i++) { X.globalAlpha = .035 + .03 * hash(i * 3); X.fillRect(hash(i) * W, hash(i + 99) * H, 2 + hash(i + 7) * 2, 2); } X.globalAlpha = 1;
+}
+function vignette() { var g = X.createRadialGradient(W / 2, H / 2, H * .3, W / 2, H / 2, H * .75); g.addColorStop(0, "rgba(0,0,0,0)"); g.addColorStop(1, "rgba(0,0,0," + (.16 + .14 * NK) + ")"); X.fillStyle = g; X.fillRect(0, 0, W, H); }
+
+// =====================================================================
+// PART 1 (0-10 s): the bedroom. Alarm, slap, the drift back, the snap.
+// =====================================================================
+var HEAD = [760, 1032];
+function lidAt(t) { var K = [[3.8, 0], [4.25, .45], [5.1, .22], [5.5, .58], [6.3, .18], [6.7, .4], [7.5, .07], [8.0, 0], [8.5, 0], [8.56, 1.3], [9.2, 1.1]]; if (t <= K[0][0]) return 0;
+  for (var i = 1; i < K.length; i++) if (t < K[i][0]) return lerp(K[i - 1][1], K[i][1], eio(seg(t, K[i - 1][0], K[i][0]))); return 1.1; }
+function partBed(t) {
+  NK = 1 - sm(t, 8.6, 9.6); setPal(); paper();
+  var c = { x: 770, y: 1000, z: 1.6 };
+  if (t < 4) c = camLerp({ x: 820, y: 960, z: 1.65 }, { x: 600, y: 990, z: 1.1 }, eio(seg(t, 1.0, 4)));
+  else if (t < 4.7) c = camLerp({ x: 600, y: 990, z: 1.1 }, { x: 760, y: 1032, z: 2.5 }, eio(seg(t, 4, 4.7)));
+  else if (t < 8.5) c = camLerp({ x: 760, y: 1032, z: 2.5 }, { x: 760, y: 1036, z: 2.9 }, seg(t, 4.7, 8.5));
+  else if (t < 9.1) c = { x: 760, y: 1036, z: 3.15 };
+  else if (t < 9.6) c = camLerp({ x: 760, y: 1036, z: 3.15 }, { x: 600, y: 1040, z: 1.35 }, eio(seg(t, 9.1, 9.6)));
+  else c = camLerp({ x: 600, y: 1040, z: 1.35 }, { x: 760, y: 1032, z: 3.6 }, ein(seg(t, 9.6, 10)));
+  if (t >= 8.5 && t < 9.1) { var sa = 22 * (1 - seg(t, 8.5, 9.0)), s = shk(5, sa); c.sx = s[0]; c.sy = s[1]; }
+  X.save(); camApply(c);
+  // window: moon at night, sunrise after the snap
+  var day = sm(t, 8.6, 9.8);
+  ink(box(240, 520, 330, 390), 9, INK, true, mix(PAPER_N, "#C9DCEA", day * .9));
+  if (day > 0) { X.save(); X.beginPath(); X.rect(240, 520, 330, 390); X.clip(); var sy = lerp(980, 820, eout(day)); ink(circ(405, sy, 80, 80), 7, ACC, true, mix("#C9DCEA", ACC, .55)); X.restore(); }
+  if (day < 1) { X.globalAlpha = 1 - day; ink(circ(480, 610, 36, 36), 6, INK_N, true, INK_N); ink(circ(462, 598, 32, 32), 0, null, true, mix(PAPER_N, "#C9DCEA", 0)); for (var i = 0; i < 6; i++) { var stx = 270 + hash(i) * 180, sty = 560 + hash(i + 5) * 300; ln(stx - 7, sty, stx + 7, sty, 3, INK_N, .5); ln(stx, sty - 7, stx, sty + 7, 3, INK_N, .5); } X.globalAlpha = 1; }
+  ln(405, 520, 405, 910, 7); ln(240, 715, 570, 715, 7);
+  // floor
+  ln(0, 1300, 1080, 1300, 8); for (i = 0; i < 9; i++) ln(30 + i * 125, 1340 + (i % 2) * 40, 90 + i * 125, 1340 + (i % 2) * 40, 4, INK, 1);
+  // bed
+  ink(box(884, 930, 30, 370), 8, INK, true, mix(PAPER, INK, .12)); ink(box(110, 1090, 774, 92), 8, INK, true, PAPER); ln(130, 1182, 130, 1300, 8); ln(860, 1182, 860, 1300, 8);
+  ink(circ(765, 1082, 98, 34), 8, INK, true, PAPER);
+  // body under the blanket (revealed when it flies off)
+  var body = [[HEAD[0] - 50, HEAD[1] + 30], [520, 1068]]; ink(body, 13); ink([[520, 1068], [330, 1074], [150, 1072]], 13); ink([[HEAD[0] - 60, HEAD[1] + 34], [590, 1078], [480, 1082]], 13);
+  // blanket
+  var fly = seg(t, 9.15, 9.6), fk = ein(fly);
+  X.save(); X.translate(-380 * fk, -1100 * fk); X.translate(420, 1100); X.rotate(-.7 * fk); X.translate(-420, -1100);
+  var blank = mix(mixh("#3A4064", "#E2D6BE", 1 - NK), INK, .0);
+  ink([[700, 1004], [610, 1032], [500, 1020], [380, 1040], [250, 1026], [118, 1060], [104, 1178], [712, 1180], [722, 1090]], 8, INK, true, blank);
+  ink([[600, 1060], [560, 1150]], 5, INK, false, null, 1.5); ink([[420, 1066], [440, 1160]], 5, INK, false, null, 1.5); ink([[250, 1060], [230, 1150]], 5, INK, false, null, 1.5);
+  X.restore();
+  // nightstand + clock (6:00, ringing until the slap)
+  ink(box(930, 1120, 150, 180), 8, INK, true, PAPER); ln(930, 1190, 1080, 1190, 6); ink(circ(1005, 1158, 7, 7), 5);
+  var ring = t < 2.6, cs = ring ? shk(9, 7) : [0, 0, 0], sq = 1 - .18 * Math.sin(Math.PI * seg(t, 2.6, 2.85));
+  X.save(); X.translate(1005 + cs[0], 1118); X.scale(1 + (1 - sq) * .6, sq); X.translate(-1005, -1118);
+  ink(box(948, 1042 + cs[1], 114, 76), 8, INK, true, mix(PAPER, INK, .1));
+  X.save(); X.shadowColor = ACC; X.shadowBlur = 28; txt("6:00", 1005, 1082 + cs[1], 50, ACC); X.restore(); X.restore();
+  if (ring) { var rp = (t * 4) % 1; [-1, 1].forEach(function (s) { for (var k = 0; k < 3; k++) { X.globalAlpha = .9 - k * .2; ink(circ(1005 + s * 40, 1078, 60 + k * 22 + rp * 10, 50 + k * 18 + rp * 8, s > 0 ? -.6 : Math.PI - .6, s > 0 ? .6 : Math.PI + .6, 6), 6, INK, false, null, 1); } }); X.globalAlpha = 1; }
+  // the slap
+  var reach = eout(seg(t, 2.05, 2.55)) - eio(seg(t, 2.95, 3.4));
+  if (reach > .02) { var sh = [HEAD[0] - 40, HEAD[1] + 26], tgt = [1005, 1030], hand = [lerp(sh[0], tgt[0], reach), lerp(sh[1], tgt[1], reach)], el = [lerp(sh[0], 860, reach), lerp(sh[1], 930, reach) - 40 * Math.sin(Math.PI * reach)];
+    ink([sh, el, hand], 13); ink(circ(hand[0], hand[1], 15, 12), 8, INK, true, PAPER); }
+  if (t > 2.58 && t < 2.95) { var ik = seg(t, 2.58, 2.95); X.globalAlpha = 1 - ik; for (i = 0; i < 7; i++) { var a = -Math.PI * (.1 + .8 * i / 6), r0 = 40 + 30 * ik; ln(1005 + Math.cos(a) * r0, 1030 + Math.sin(a) * r0, 1005 + Math.cos(a) * (r0 + 34), 1030 + Math.sin(a) * (r0 + 34), 6, ACC, .5); } X.globalAlpha = 1; }
+  // head on the pillow
+  var lid = lidAt(t), angry = t >= 8.5, ex = { lid: lid, squeeze: t < 2.7, brow: t < 2.7 ? .7 : (angry ? -1 : lerp(.2, .6, seg(t, 4, 8))), vein: angry ? back(seg(t, 8.56, 8.8)) : 0, m: 0 };
+  ink(circ(HEAD[0], HEAD[1], 58, 58), 13, INK, true, PAPER); face(HEAD[0], HEAD[1], 58, ex, rad(-8));
+  if (t > 2.9 && t < 4.1) { X.globalAlpha = sm(t, 2.9, 3.2) * (1 - sm(t, 3.8, 4.1)); for (i = 0; i < 3; i++) { var zt = (t * .9 + i * .33) % 1; txt("z", HEAD[0] + 70 + zt * 60, HEAD[1] - 70 - zt * 120, 34 + i * 8, INK); } X.globalAlpha = 1; }
+  X.restore();
+
+  // screen-space: hook line, then the two choice signs
+  if (t < 4.2) { X.globalAlpha = 1 - sm(t, 3.8, 4.2); txt("EVERY DAY STARTS", W / 2, 300, 78, INK); txt("WITH ONE CHOICE.", W / 2, 395, 78, INK); X.globalAlpha = 1; }
+  if (t > 4.5 && t < 9.9) {
+    var press = seg(t, 4.6, 8.0), frozen = t >= 8.0 && t < 8.5;
+    // STAY: heavy, growing, shaking harder
+    if (t < 8.5) { var a1 = frozen ? [0, 0, 0] : shk(1, 3 + 14 * press), pop = back(seg(t, 4.5, 4.8)), beat = 1 + .035 * Math.sin(t * Math.PI * 4);
+      sign("STAY", W / 2 + a1[0], 1460 + a1[1] + 30 * press, 170, { sc: pop * lerp(1, 1.28, press) * (frozen ? 1.02 : beat), rot: a1[2] - .04 }); }
+    else { var fall = seg(t, 8.55, 9.5), g = fall * fall; [-1, 1].forEach(function (s) { sign("STAY", W / 2 + s * (40 + 260 * fall), 1490 + 900 * g, 170, { sc: 1.28, rot: s * 1.1 * g, half: s, alpha: 1 - sm(fall, .7, 1) }); }); }
+    // GET UP: small, fading, nervous; then it wins
+    if (t < 8.5) { var a2 = frozen ? [0, 0, 0] : shk(2, 2 + 6 * press); sign("GET UP", W / 2 + a2[0], 520 + a2[1], 110, { sc: back(seg(t, 4.8, 5.1)) * lerp(1, .62, press), alpha: lerp(1, .38, press), rot: a2[2] + .03 }); }
+    else { var win = seg(t, 8.5, 8.85), a3 = shk(3, 4); sign("GET UP", W / 2 + a3[0], lerp(520, 600, eout(win)) + a3[1], 110, { sc: lerp(.62, 1.6, back(win)), fill: ACC, ink: INK_D, rot: a3[2] - .02 }); }
+  }
+  if (t >= 8.5 && t < 8.62) { X.fillStyle = "rgba(255,255,255," + (.55 * (1 - seg(t, 8.5, 8.62))) + ")"; X.fillRect(0, 0, W, H); }
+  if (t >= 9.85) { X.fillStyle = ACC; X.globalAlpha = sm(t, 9.85, 10); X.fillRect(0, 0, W, H); X.globalAlpha = 1; }
+}
+
+// =====================================================================
+// PART 2 (10-30 s): the montage. He stays centred; days, nights and seasons turn behind him.
+// =====================================================================
+var Q = {};
+Q.S0 = P({}); Q.UP = P({ lu: -168, ll: -172, ru: 168, rl: 172 });
+Q.RL = P({ torso: -18, lu: -135, ll: -115, ru: -178, rl: -145 }); Q.RR = mirror(Q.RL);
+Q.JO = P({ lu: -128, ll: -150, ru: 128, rl: 150, lt: -26, ls: -24, rt: 26, rs: 24, lift: 34 }); Q.JC = P({ lu: -14, ll: -6, ru: 14, rl: 6, lt: -4, ls: -2, rt: 4, rs: 2 });
+Q.SQ = P({ lt: -72, ls: -6, rt: 72, rs: 6, lu: -88, ll: -88, ru: 88, rl: 88 });
+Q.PR = P({ torso: -8, ru: 92, rl: 90, lu: -35, ll: -165, lt: -16, ls: -10, rt: 14, rs: 8 }); Q.PL = mirror(Q.PR);
+Q.RA = P({ lt: -6, ls: -4, rt: 105, rs: 0, lu: -30, ll: -150, ru: 25, rl: 60, lift: 12 }); Q.RB = mirror(Q.RA);
+Q.PK = P({ torso: 80, side: 1, gall: 1, lu: 6, ll: 2, ru: 10, rl: 4, lt: -98, ls: -98, rt: -95, rs: -95 });
+Q.PD = P({ torso: 87, side: 1, gall: 1, lu: -48, ll: 38, ru: -42, rl: 42, lt: -93, ls: -93, rt: -91, rs: -91 });
+Q.LD = P({ lu: -55, ll: -165, ru: 55, rl: 165, bar: 1, lt: -12, rt: 12, ls: -8, rs: 8 }); Q.LU = P({ lu: -160, ll: -172, ru: 160, rl: 172, bar: 1, lt: -14, rt: 14, ls: -10, rs: 10 });
+Q.DA = P({ torso: 8, ru: 140, rl: 145, lu: -40, ll: 35, lt: -16, ls: -12, rt: 10, rs: 20 }); Q.DB = P({ torso: -8, lu: -50, ll: -55, ru: 40, rl: -35, lt: -10, ls: -20, rt: 16, rs: 12 });
+Q.WLP = P({ torso: 10, lu: 40, ll: 75, ru: 20, rl: 10 }); Q.WLH = P({ torso: -12, lu: -115, ll: -128, ru: 14, rl: 6, lt: -14, rt: 10 });
+Q.WRP = mirror(Q.WLP); Q.WRH = mirror(Q.WLH);
+Q.HIPS = P({ lu: -42, ll: 42, ru: 42, rl: -42, lt: -10, rt: 10, ls: -6, rs: 6 });
+var MOVES = [["UP", "RL"], ["UP", "RR"], ["JO", "JC"], ["JO", "JC"], ["SQ", "S0"], ["WLP", "WLH"], ["PR", "PL"], ["PR", "PL"], ["RA", "RB"], ["RA", "RB"],
+             ["PK", "PD"], ["WRP", "WRH"], ["PK", "PD"], ["LD", "LU"], ["LD", "LU"], ["DA", "DB"], ["WLP", "WLH"], ["DA", "DB"], ["RA", "RB"], ["UP", "HIPS"]];
+var BEATS = []; MOVES.forEach(function (mv) { BEATS.push(Q[mv[0]], Q[mv[1]]); });
+var TEMPT = [{ s: "STAY", side: -1, tin: 14.4, hit: 15.6 }, { s: "TOMORROW", side: 1, tin: 20.4, hit: 21.6 }, { s: "LATER", side: -1, tin: 25.4, hit: 26.6, blind: 1 }];
+function poseAt(t) { if (t >= 30) return Q.HIPS; var i = Math.floor((t - 10) / .5), lt = (t - 10) - i * .5, prev = i > 0 ? BEATS[i - 1] : Q.S0;
+  return lerpPose(prev, BEATS[i], eout(seg(lt, 0, .2))); }
+var GROUND = 1450;
+function seasonW(t) { var u = Math.max(0, (t - 10) / 2.5); if (t >= 30) u = 8; var i = Math.floor(u), f = u - i, k = t >= 30 ? 0 : sm(f, .8, 1), w = [0, 0, 0, 0]; w[i % 4] += 1 - k; w[(i + 1) % 4] += k; return w; }
+function dayNK(t) { if (t >= 29) return (1 - sm(t, 29, 30)) * dayNK0(29); return dayNK0(t); }
+function dayNK0(t) { var f = (((t - 10) / 4) % 1 + 1) % 1; return sm(f, .45, .58) - sm(f, .9, 1); }
+function tree(sw, x) {
+  var spring = sw[0], summer = sw[1], autumn = sw[2], winter = sw[3];
+  ink([[x, GROUND], [x + 6, 1200], [x - 4, 1040]], 16); ink([[x + 4, 1180], [x + 90, 1090], [x + 130, 1060]], 10); ink([[x, 1120], [x - 80, 1050]], 10); ink([[x - 2, 1060], [x + 50, 990]], 9);
+  var can = spring * .8 + summer + autumn * .75;
+  if (can > .01) { X.globalAlpha = can; var blobs = [[x - 40, 1010, 120], [x + 70, 990, 110], [x + 10, 930, 110]];
+    blobs.forEach(function (b, i) { ink(circ(b[0], b[1], b[2], b[2] * .82), 8, INK, true, mix(PAPER, INK, summer * .16 + autumn * .1)); });
+    if (summer > .05) { X.globalAlpha = summer; for (var h = 0; h < 9; h++) ln(x - 120 + h * 26, 1060 - h * 4, x - 90 + h * 26, 1030 - h * 4, 4, INK, 1); }
+    X.globalAlpha = 1; }
+  if (spring > .05) { X.globalAlpha = spring; for (var i = 0; i < 14; i++) { var bx = x - 120 + hash(i * 3) * 240, by = 900 + hash(i * 5) * 170; ink(circ(bx, by, 10, 10, 0, null, 8), 4, INK, true, PAPER); } X.globalAlpha = 1; }
+  if (winter > .05) { X.globalAlpha = winter; ink(circ(x + 100, 1078, 40, 10), 5, INK, true, PAPER); ink(circ(x - 70, 1042, 30, 8), 5, INK, true, PAPER); X.globalAlpha = 1; }
+}
+function particles(sw, t) {
+  var i, n;
+  if (sw[2] > .05) { X.globalAlpha = sw[2]; for (i = 0; i < 14; i++) { var y = ((hash(i) * 1600 + t * (120 + 60 * hash(i + 2))) % 1500) + 300, x = hash(i + 9) * W + Math.sin(t * 2 + i) * 40; X.save(); X.translate(x, y); X.rotate(t * 3 + i); ink(circ(0, 0, 14, 7, 0, null, 8), 4, INK, true, mix(PAPER, ACC, .25)); X.restore(); } X.globalAlpha = 1; }
+  if (sw[3] > .05) { X.globalAlpha = sw[3]; for (i = 0; i < 46; i++) { var sy = ((hash(i * 2) * 1800 + t * (160 + 80 * hash(i + 4))) % 1700) + 120, sx = hash(i * 7) * W + Math.sin(t * 1.5 + i) * 26, r = 4 + hash(i) * 5; X.beginPath(); X.arc(sx, sy, r, 0, Math.PI * 2); X.fillStyle = INK; X.fill(); X.beginPath(); X.arc(sx, sy, r - 1.5, 0, Math.PI * 2); X.fillStyle = PAPER; X.fill(); } X.globalAlpha = 1; }
+  if (sw[0] > .05) { X.globalAlpha = sw[0]; for (i = 0; i < 10; i++) { var py = ((hash(i * 5) * 1500 + t * 90) % 1300) + 400, px = (hash(i * 3) * W + t * 60) % W; ink(circ(px, py, 7, 5, 0, null, 6), 3, INK, true, PAPER); } X.globalAlpha = 1; }
+  if (sw[1] > .05) { X.globalAlpha = sw[1] * .8; for (i = 0; i < 6; i++) { var hx = 120 + i * 170, pts = []; for (n = 0; n < 6; n++) pts.push([hx + Math.sin(t * 6 + n + i) * 10, GROUND - 30 - n * 28]); ink(pts, 4, INK, false, null, .5); } X.globalAlpha = 1; }
+}
+function groundDeco(sw) {
+  ln(0, GROUND, W, GROUND, 9);
+  ink([[0, 1360], [180, 1320], [380, 1350], [560, 1300], [760, 1345], [930, 1310], [1080, 1340]], 5, INK, false, null, 2);
+  var g = sw[0] + sw[1]; if (g > .05) { X.globalAlpha = g; for (var i = 0; i < 16; i++) { var gx = 30 + i * 68 + hash(i) * 20; ln(gx, GROUND, gx - 8, GROUND - 22, 4, INK, .5); ln(gx + 8, GROUND, gx + 12, GROUND - 18, 4, INK, .5); } X.globalAlpha = 1; }
+  if (sw[2] > .05) { X.globalAlpha = sw[2]; for (i = 0; i < 9; i++) ink(circ(80 + i * 120, GROUND - 6, 26, 10, Math.PI, Math.PI * 2, 8), 4, INK, false, null, 1); X.globalAlpha = 1; }
+  if (sw[3] > .05) { X.globalAlpha = sw[3]; ink([[0, GROUND], [0, GROUND - 26], [200, GROUND - 40], [420, GROUND - 22], [700, GROUND - 38], [900, GROUND - 20], [1080, GROUND - 34], [1080, GROUND]], 6, INK, true, PAPER); X.globalAlpha = 1; }
+  for (i = 0; i < 7; i++) ln(40 + i * 160, GROUND + 60 + (i % 2) * 70, 120 + i * 160, GROUND + 60 + (i % 2) * 70, 4, INK, 1);
+}
+function sky(t) {
+  var f = (((t - 10) / 4) % 1 + 1) % 1;
+  if (NK > .05) { X.globalAlpha = NK; for (var i = 0; i < 26; i++) { var sx = hash(i * 13) * W, sy = 180 + hash(i * 17) * 900, tw = .5 + .5 * Math.sin(t * 5 + i); X.globalAlpha = NK * (.5 + .5 * tw); ln(sx - 6, sy, sx + 6, sy, 3, INK, .3); ln(sx, sy - 6, sx, sy + 6, 3, INK, .3); } X.globalAlpha = 1; }
+  if (t < 30) {
+    if (f < .6) { var s = (f + .02) / .58, x = 80 + 920 * s, y = 1300 - 820 * Math.sin(Math.PI * cl(s, 0, 1));
+      for (var r = 0; r < 10; r++) { var a = r / 10 * Math.PI * 2 + t; ln(x + Math.cos(a) * 92, y + Math.sin(a) * 92, x + Math.cos(a) * 122, y + Math.sin(a) * 122, 6, INK, 1); }
+      ink(circ(x, y, 72, 72), 8, INK, true, mix(PAPER, ACC, .3)); }
+    if (f > .48) { var mm = (f - .48) / .52, mx = 80 + 920 * mm, my = 1300 - 760 * Math.sin(Math.PI * mm); ink(circ(mx, my, 56, 56), 7, INK, true, INK); ink(circ(mx - 24, my - 14, 50, 50), 0, null, true, PAPER); }
+  }
+}
+function partMontage(t) {
+  NK = t < 30 ? dayNK(t) : 0; setPal(); paper();
+  var sw = seasonW(t), m = cl((t - 10) / 20, 0, 1);
+  // camera: identity, a tiny bump on every beat; pull back during the pedestal
+  var bf = ((t - 10) % .5) / .5, bump = t < 30 ? .016 * (1 - eout(cl(bf / .4, 0, 1))) : 0, pk = eio(seg(t, 29.8, 34.8));
+  var c = { x: 540, y: lerp(960, 790, pk), z: (1 + bump) * lerp(1, .64, pk) };
+  X.save(); camApply(c);
+  if (t >= 29.5) { var rise = eout(seg(t, 29.5, 34.5)), sy = lerp(1600, 1080, rise); X.save(); X.translate(540, sy); X.rotate(t * .15);
+      for (var r = 0; r < 16; r++) { var a = r / 16 * Math.PI * 2; ln(Math.cos(a) * 300, Math.sin(a) * 300, Math.cos(a) * 380, Math.sin(a) * 380, 9, ACC, 1.5); } X.restore();
+    ink(circ(540, sy, 270, 270), 9, ACC, true, mix(PAPER, ACC, .22)); }
+  sky(t);
+  X.save(); X.translate(150, GROUND); X.scale(1.45, 1.45); X.translate(-150, -GROUND); tree(sw, 150); X.restore(); groundDeco(sw);
+  // pedestal: one block per beat from 30 s, newest at the bottom pushing him up
+  var BH = 62, h = 0, ks = [];
+  for (var k = 0; k < 10; k++) { var e = eout(seg(t, 30 + k * .5, 30 + k * .5 + .22)); ks.push(e); h += BH * e; }
+  if (h > 0) { var yy = GROUND - h; for (k = 0; k < 10; k++) { if (ks[k] <= 0) continue; var bh = BH * ks[k], bw = 330 + 36 * k;
+      ink(box(540 - bw / 2, yy, bw, bh), 8, INK, true, k == 0 ? ACC : mix(PAPER, INK, k % 2 ? .06 : .13)); yy += bh; } }
+  // temptations he swats away
+  var look = 0;
+  TEMPT.forEach(function (q, i) { if (t < q.tin || t > q.hit + 1.2) return;
+    var enter = eout(seg(t, q.tin, q.tin + .45)), hx = 540 + q.side * 270, ox = q.side * (W / 2 + 300), x = lerp(hx + q.side * 600, hx, enter), y = 1000, rot = 0, al = 1, sc = 1;
+    if (t > q.hit) { var fl = seg(t, q.hit, q.hit + 1.0); x = hx + q.side * 900 * eout(fl); y = 1000 - 700 * fl + 900 * fl * fl; rot = q.side * 5 * fl; al = 1 - sm(fl, .6, 1); }
+    var s = shk(20 + i, t < q.hit ? 9 : 0); sign(q.s, x + s[0], y + s[1], q.s.length > 5 ? 74 : 96, { rot: rot + s[2] + q.side * .06, alpha: al, sc: sc });
+    if (!q.blind && t > q.tin + .1 && t < q.hit + .3) look = q.side; });
+  var p = poseAt(t), groundY = GROUND - h, S = 1.6 * (1 + .05 * m);
+  var brow = t < 30 ? lerp(-1, -.35, m) : lerp(-.35, .2, seg(t, 31, 33)), smile = eout(seg(t, 33.4, 34.4));
+  TEMPT.forEach(function (q) { if (t > q.hit - .6 && t < q.hit + .2) brow = -1; });
+  figure(p, 540, groundY, S, { lid: t < 30 ? .92 : lerp(.92, .8, seg(t, 31, 33)), brow: brow, smile: smile, look: look, m: m, band: 1 });
+  X.restore();
+  // day counter (top), then the closing line
+  if (t < 30.2) { var n = Math.max(1, Math.round(730 * ein(seg(t, 10, 30)) * .25 + 730 * seg(t, 10, 30) * .75)); X.globalAlpha = 1 - sm(t, 29.8, 30.2); txt("DAY " + n, W / 2, 200, 96, INK); X.globalAlpha = 1; }
+  if (t >= 35) { var words = [["WHERE", 0], ["WILL", .25], ["YOUR", .5], ["CHOICES", .75], ["TAKE", 1.0], ["YOU?", 1.25]];
+    X.font = "96px Marker"; var l1 = "WHERE WILL YOUR", l2 = "CHOICES TAKE YOU?";
+    function line(ws, y, s) { var full = ws.map(function (w) { return w[0]; }).join(" "), x = W / 2 - X.measureText(full).width / 2;
+      ws.forEach(function (w) { var ww = X.measureText(w[0] + " ").width, k = back(seg(t, 35 + w[1], 35 + w[1] + .25)); if (k > 0) { X.save(); X.translate(x + X.measureText(w[0]).width / 2, y); X.scale(k, k); txt(w[0], 0, 0, 96, w[0] == "CHOICES" ? ACC : INK); X.restore(); } x += ww; }); }
+    line(words.slice(0, 3), 200, 0); line(words.slice(3), 312, 0);
+    X.globalAlpha = sm(t, 35.8, 36.3); txt("dmyor", W / 2, 1810, 52, INK, "center", "Tight"); X.globalAlpha = 1; }
+}
+
+// ---------- frame ----------
+function frame(t) {
+  T = t; FB = Math.floor(t * 8); SEED = 0; X.setTransform(1, 0, 0, 1, 0, 0);
+  if (t < 10) partBed(t); else partMontage(t);
+  vignette();
+}
+function ready() {
+  window.__duration = DUR; window.__seek = function (t) { frame(t); }; frame(0);
+  var btn = document.getElementById("playBtn");
+  btn.onclick = function () { btn.style.display = "none"; var t0 = performance.now(); (function loop() { var t = (performance.now() - t0) / 1000; if (t > DUR) t = DUR; frame(t); if (t < DUR) requestAnimationFrame(loop); })(); };
+}
+Promise.all([document.fonts.load("96px Marker"), document.fonts.load("800 52px Tight")]).then(ready, ready);
+})();
+</script>
+</body></html>
