@@ -1,20 +1,19 @@
 # Video dashboard (posting on @becauseidmyor, end card @becauseidmyor)
 
-_Last updated: 2026-11-15 IST (run 2026-11-15)_
+_Last updated: 2026-11-16 IST (run 2026-11-16)_
 
 **Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [2026-11-14 analysis](../analytics/reports/2026-11-14-analysis.md) · [retention playbook](retention-playbook.md) · [reel library](library/index.html) · weekly review 2026-11-12 in [strategy.md](strategy.md)
 
 | | |
 |---|---|
-| Instagram followers (@becauseidmyor) | **28** (2026-11-14; 24 on Nov 6). 30-day views 11,665 (+57%) |
-| Are we improving? | **Reach: yes** (IG newer-half median 140 vs 21). Followers: slow (~1 per 400 views). YouTube: declining |
-| Last 8 measured (IG views, Nov 14) | first-ten-minutes **457** (best) · borrowed-sleep 168 · sunday-practice 140 · decide-once 133 · out-of-sight 132 · kabir-2 117 · perfect-week 117 · kabir-1 **112** (worst) |
-| Live since | Sat 14: just-today, mixed-practice, kabir-3 (IG 16:30) on all platforms; now registered in analytics |
-| **Blocker** | Scheduling: 18 reels waiting. No watch-time data since Nov 6 |
-| Ready to schedule | **Combined 4-day schedule** at the top of post-queue.md: 8 agent reels (series card ON) interleaved with the 10-reel `batch-2026-11-15` (card OFF) |
-| Open experiments | **V-EXP-35** (hit shape + retention playbook, card OFF vs ON; Nov 15-28). V-EXP-34 closed: missed (median ~132 vs ~190) |
-| Asks | **VASK-033** (schedule the 18 + screenshots; replaces 030-032) |
-| Built today | Nothing (owner rule: build at most 1, only when fewer than 4 waiting) |
+| Instagram followers (@becauseidmyor) | **28** (2026-11-15; flat since Nov 14). 30-day views 11,879, profile visits 43, link taps 2 |
+| Are we improving? | **Reach: yes** (IG newer-half median 140 vs 21). Followers: slow. YouTube: declining (newer median 12 vs 17) |
+| New this run | **ill-same-weight = 1,359 IG views** (gym double progression, Nov 7): 7th hit, same shape (body/skill + own pattern charted + method). Others first read: ten-minute-reset 276, miss-twice 228, pickups 129 |
+| Best / worst of the last 32 read | hard-part 1,602 · bad-night 1,364 · same-weight 1,359 · wake-time 1,309 / goal-date 13 |
+| Posting | Automated (publisher, schedule.json). Stock: Nov 17 10 todo, Nov 18 10 todo = 2 days |
+| Open experiments | **V-EXP-35** (hit shape + retention playbook, card OFF vs ON; Nov 15-28). No data on its reels yet |
+| Built today | Nothing finished: Mac out of memory (swap 13.7 GB). Habit Roast #5 snooze (voiced), #6 highlighter, #7 new program scripted, waiting for render |
+| Asks | Restart the Mac |
 
 ## Built today (Sat Nov 14) for Wed 18 (V-EXP-34 batch 7)
 | Slot (IST) | Reel | Reason / pillar | Length | Hook | Frame 0 | Score |

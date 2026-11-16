@@ -1,19 +1,19 @@
 # Content performance: overall
 
-_Last rebuilt 2026-11-15 11:00 IST from 8 snapshot day(s) and 90 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
+_Last rebuilt 2026-11-16 12:18 IST from 9 snapshot day(s) and 115 tracked post(s). Start here. Raw data lives in `daily/<date>/`, post traits in `catalog/content.csv`, definitions in [METRICS.md](../METRICS.md)._
 
 ## Headline
 
 | Platform | Followers now | Change (first → latest reading) | Posts tracked | Posts with 48h data | Median reach at 48h | Best post (traction) |
 |---|---|---|---|---|---|---|
-| instagram | 28 | 21 → 28 (+7) | 55 | 42 | 96 | ill-wake-time (96) |
-| youtube | 0 | 0 → 0 (+0) | 31 | 9 | 17 | ill-size-problem (74) |
+| instagram | 28 | 21 → 28 (+7) | 59 | 42 | 96 | ill-wake-time (96) |
+| youtube | 0 | 0 → 0 (+0) | 52 | 15 | 13 | ill-size-problem (75) |
 | x | 2 | 2 → 2 (+0) | 4 | 2 | 1 | ill-language-plan (50) |
 
 ## Are we improving?
 
 - **instagram**: newer half of posts median reach 140 vs older half 21 → **improving**.
-- **youtube**: newer half of posts median reach 11 vs older half 30 → **declining**.
+- **youtube**: newer half of posts median reach 12 vs older half 17 → **declining**.
 - **x**: only 2 post(s) with 48h data; need 4+ for a trend.
 
 ## Charts
@@ -41,6 +41,10 @@ _Last rebuilt 2026-11-15 11:00 IST from 8 snapshot day(s) and 90 tracked post(s)
 ### Instagram: median reach at 48h by style
 
 ![Instagram: median reach at 48h by style](charts/instagram_by_style.png)
+
+### Youtube: median reach at 48h by style
+
+![Youtube: median reach at 48h by style](charts/youtube_by_style.png)
 
 ### Instagram: median reach at 48h by hook type
 
@@ -143,15 +147,21 @@ _Last rebuilt 2026-11-15 11:00 IST from 8 snapshot day(s) and 90 tracked post(s)
 
 | # | Post | Posted (IST) | Style | Hook | Reach 48h | Retention % | Shares+saves /1k | Follows /1k | Traction |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | [ill-size-problem](https://youtube.com/shorts/U8PvH17xm-k) | 2026-10-25 09:30 | animated-illustration-explainer | hard-truth | 110 | – | 0.0 | 0.0 | 74 |
-| 2 | ill-wake-time | 2026-10-31 19:30 | animated-illustration-explainer | hard-truth | 54 | – | 0.0 | 0.0 | 68 |
-| 3 | [ill-bad-day-version](https://youtube.com/shorts/g1Ri7WMhaG4) | 2026-10-25 13:00 | animated-illustration-explainer | hard-truth | 42 | – | 0.0 | 0.0 | 62 |
-| 4 | ill-language-plan | 2026-10-25 16:30 | animated-illustration-explainer | how-to-plan | 19 | – | 0.0 | 0.0 | 56 |
-| 5 | ill-hard-part | 2026-10-30 19:30 | animated-illustration-explainer | hard-truth | 17 | – | 0.0 | 0.0 | 50 |
-| 6 | ill-twenty-mornings | 2026-10-31 13:00 | animated-illustration-explainer | hard-truth | 11 | – | 0.0 | 0.0 | 44 |
-| 7 | ill-three-recipes | 2026-10-31 09:30 | animated-illustration-explainer | hard-truth | 7 | – | 0.0 | 0.0 | 38 |
-| 8 | ill-one-sentence | 2026-10-30 13:00 | animated-illustration-explainer | hard-truth | 3 | – | 0.0 | 0.0 | 32 |
-| 9 | ill-one-category | 2026-10-30 09:30 | animated-illustration-explainer | hard-truth | 0 | – | 0.0 | – | 20 |
+| 1 | [ill-size-problem](https://youtube.com/shorts/U8PvH17xm-k) | 2026-10-25 09:30 | animated-illustration-explainer | hard-truth | 110 | – | 0.0 | 0.0 | 75 |
+| 2 | ill-mixed-practice | 2026-11-14 19:30 | animated-illustration-explainer | hard-truth | 55 | – | 0.0 | 0.0 | 71 |
+| 3 | ill-wake-time | 2026-10-31 19:30 | animated-illustration-explainer | hard-truth | 54 | – | 0.0 | 0.0 | 68 |
+| 4 | [ill-bad-day-version](https://youtube.com/shorts/g1Ri7WMhaG4) | 2026-10-25 13:00 | animated-illustration-explainer | hard-truth | 42 | – | 0.0 | 0.0 | 64 |
+| 5 | ill-just-today | 2026-11-14 13:00 | animated-illustration-explainer | number-fact | 24 | – | 0.0 | 0.0 | 61 |
+| 6 | ill-language-plan | 2026-10-25 16:30 | animated-illustration-explainer | how-to-plan | 19 | – | 0.0 | 0.0 | 57 |
+| 7 | ill-hard-part | 2026-10-30 19:30 | animated-illustration-explainer | hard-truth | 17 | – | 0.0 | 0.0 | 54 |
+| 8 | ill-sunday-practice | 2026-11-12 13:00 | animated-illustration-explainer | hard-truth | 13 | – | 0.0 | 0.0 | 50 |
+| 9 | ill-twenty-mornings | 2026-10-31 13:00 | animated-illustration-explainer | hard-truth | 11 | – | 0.0 | 0.0 | 46 |
+| 10 | ill-perfect-week | 2026-11-13 09:30 | animated-illustration-explainer | number-contrast | 9 | – | 0.0 | 0.0 | 43 |
+| 11 | ill-three-recipes | 2026-10-31 09:30 | animated-illustration-explainer | hard-truth | 7 | – | 0.0 | 0.0 | 39 |
+| 12 | ill-one-sentence | 2026-10-30 13:00 | animated-illustration-explainer | hard-truth | 3 | – | 0.0 | 0.0 | 34 |
+| 13 | ill-borrowed-sleep | 2026-11-13 13:00 | animated-illustration-explainer | hard-truth | 3 | – | 0.0 | 0.0 | 34 |
+| 14 | ill-one-category | 2026-10-30 09:30 | animated-illustration-explainer | hard-truth | 0 | – | 0.0 | – | 21 |
+| 15 | pixel-kabir-2 | 2026-11-12 19:30 | pixel-story | relatable | 0 | – | 0.0 | – | 21 |
 
 ### X
 
@@ -181,31 +191,50 @@ _Last rebuilt 2026-11-15 11:00 IST from 8 snapshot day(s) and 90 tracked post(s)
 | ill-later-trigger | youtube | 2026-10-26 13:00 | 4 | 5 |
 | ill-track-inputs | youtube | 2026-10-26 16:30 | 1 | 0 |
 | pixel-book | youtube | 2026-10-27 23:55 | 144 | 126 |
-| ill-save-first | instagram | 2026-10-28 09:30 | 134 | 40 |
+| ill-save-first | instagram | 2026-10-28 09:30 | 444 | 40 |
 | ill-save-first | youtube | 2026-10-28 09:30 | 134 | 0 |
-| ill-career-conversations | instagram | 2026-10-28 13:00 | 131 | 82 |
+| ill-career-conversations | instagram | 2026-10-28 13:00 | 440 | 82 |
 | ill-career-conversations | youtube | 2026-10-28 13:00 | 131 | 5 |
-| ill-goal-date | instagram | 2026-10-28 16:30 | 127 | 13 |
+| ill-goal-date | instagram | 2026-10-28 16:30 | 437 | 13 |
 | ill-goal-date | youtube | 2026-10-28 16:30 | 127 | 7 |
-| ill-phone-distance | instagram | 2026-10-28 19:30 | 124 | 112 |
+| ill-phone-distance | instagram | 2026-10-28 19:30 | 434 | 112 |
 | ill-phone-distance | youtube | 2026-10-28 19:30 | 124 | 0 |
-| ill-unclear-task | instagram | 2026-10-29 09:30 | 204 | 47 |
+| ill-unclear-task | instagram | 2026-10-29 09:30 | 420 | 47 |
 | ill-unclear-task | youtube | 2026-10-29 09:30 | 110 | 11 |
-| ill-ten-pages | instagram | 2026-10-29 13:00 | 201 | 106 |
+| ill-ten-pages | instagram | 2026-10-29 13:00 | 416 | 106 |
 | ill-ten-pages | youtube | 2026-10-29 13:00 | 107 | 22 |
-| ill-gym-day-four | instagram | 2026-10-29 19:30 | 194 | 187 |
+| ill-gym-day-four | instagram | 2026-10-29 19:30 | 410 | 187 |
 | ill-gym-day-four | youtube | 2026-10-29 19:30 | 100 | 5 |
-| ill-caffeine | instagram | 2026-11-05 22:00 | 24 | 169 |
-| ill-dark-morning | instagram | 2026-11-06 09:30 | 12 | 193 |
-| ill-say-sentences | instagram | 2026-11-06 20:20 | – | 104 |
+| ill-subscriptions | youtube | 2026-11-03 13:00 | 296 | 4 |
+| ill-catch-up | youtube | 2026-11-03 19:30 | 290 | 7 |
+| ill-caffeine | youtube | 2026-11-04 22:45 | 263 | 31 |
+| ill-pickups | youtube | 2026-11-04 22:45 | 263 | 26 |
+| ill-busy-week | youtube | 2026-11-04 22:45 | 263 | 21 |
+| ill-dark-morning | youtube | 2026-11-05 09:30 | 252 | 29 |
+| ill-say-sentences | youtube | 2026-11-05 13:00 | 248 | 8 |
+| ill-forget-book | youtube | 2026-11-05 19:30 | 242 | 39 |
+| ill-caffeine | instagram | 2026-11-05 22:00 | 240 | 174 |
+| ill-dark-morning | instagram | 2026-11-06 09:30 | 228 | 212 |
+| ill-say-sentences | instagram | 2026-11-06 20:20 | 217 | 114 |
+| ill-miss-twice | instagram | 2026-11-06 22:00 | 216 | 228 |
+| ill-miss-twice | youtube | 2026-11-06 22:00 | 216 | 17 |
+| ill-pickups | instagram | 2026-11-07 09:30 | 204 | 129 |
+| ill-ten-minute-reset | instagram | 2026-11-07 13:00 | 200 | 276 |
+| ill-ten-minute-reset | youtube | 2026-11-07 13:00 | 200 | 85 |
+| ill-same-weight | instagram | 2026-11-07 19:30 | 194 | 1,359 |
+| ill-same-weight | youtube | 2026-11-07 19:30 | 194 | 71 |
 | ill-first-ten-minutes | instagram | 2026-11-08 20:00 | 137 | 457 |
 | pixel-kabir-1 | instagram | 2026-11-08 20:30 | 137 | 112 |
 | ill-decide-once | instagram | 2026-11-08 22:00 | 135 | 133 |
+| ill-out-of-sight | youtube | 2026-11-11 21:15 | 96 | 20 |
+| pixel-kabir-1 | youtube | 2026-11-11 21:15 | 96 | 49 |
+| ill-decide-once | youtube | 2026-11-11 21:15 | 96 | 16 |
+| ill-first-ten-minutes | youtube | 2026-11-11 21:15 | 96 | 24 |
 
 ## Data gaps
 
-- 53 post(s) have no retention (watch time) data: Instagram web insights do not show it; get app screenshots.
-- In catalog but never measured: x:diagram-howto-vo, x:diagram-someday-vo, x:ill-size-problem, x:ill-later-trigger, x:ill-track-inputs, x:ill-five-goals, youtube:ill-five-goals, x:brand-one-place, youtube:brand-one-place, x:pixel-book, x:ill-save-first, x:ill-career-conversations, x:ill-goal-date, x:ill-phone-distance, x:ill-unclear-task, x:ill-ten-pages, x:ill-gym-day-four, x:ill-one-category, x:ill-one-sentence, x:ill-hard-part, x:ill-three-recipes, x:ill-twenty-mornings, x:ill-wake-time, x:ill-bad-night, youtube:ill-bad-night, x:ill-subscriptions, youtube:ill-subscriptions, x:ill-catch-up, youtube:ill-catch-up, x:ill-busy-week, x:ill-pickups, x:ill-caffeine, youtube:ill-busy-week, youtube:ill-pickups, youtube:ill-caffeine, x:ill-dark-morning, youtube:ill-dark-morning, x:ill-say-sentences, youtube:ill-say-sentences, x:ill-forget-book, youtube:ill-forget-book, instagram:ill-miss-twice, x:ill-miss-twice, youtube:ill-miss-twice, instagram:ill-pickups, instagram:ill-ten-minute-reset, x:ill-ten-minute-reset, youtube:ill-ten-minute-reset, instagram:ill-same-weight, x:ill-same-weight, youtube:ill-same-weight, x:ill-first-ten-minutes, x:pixel-kabir-1, x:ill-decide-once, x:ill-out-of-sight, youtube:ill-first-ten-minutes, youtube:ill-decide-once, youtube:pixel-kabir-1, youtube:ill-out-of-sight, x:ill-sunday-practice, youtube:ill-sunday-practice, x:pixel-kabir-2, youtube:pixel-kabir-2, x:ill-perfect-week, youtube:ill-perfect-week, x:ill-borrowed-sleep, youtube:ill-borrowed-sleep, x:pixel-kabir-3, youtube:pixel-kabir-3, instagram:ill-just-today, x:ill-just-today, youtube:ill-just-today, instagram:pixel-kabir-3, instagram:ill-mixed-practice, x:ill-mixed-practice, youtube:ill-mixed-practice.
+- 59 post(s) have no retention (watch time) data: Instagram web insights do not show it; get app screenshots.
+- In catalog but never measured: x:diagram-howto-vo, x:diagram-someday-vo, x:ill-size-problem, x:ill-later-trigger, x:ill-track-inputs, x:ill-five-goals, youtube:ill-five-goals, x:brand-one-place, youtube:brand-one-place, x:pixel-book, x:ill-save-first, x:ill-career-conversations, x:ill-goal-date, x:ill-phone-distance, x:ill-unclear-task, x:ill-ten-pages, x:ill-gym-day-four, x:ill-one-category, x:ill-one-sentence, x:ill-hard-part, x:ill-three-recipes, x:ill-twenty-mornings, x:ill-wake-time, x:ill-bad-night, youtube:ill-bad-night, x:ill-subscriptions, x:ill-catch-up, x:ill-busy-week, x:ill-pickups, x:ill-caffeine, x:ill-dark-morning, x:ill-say-sentences, x:ill-forget-book, x:ill-miss-twice, x:ill-ten-minute-reset, x:ill-same-weight, x:ill-first-ten-minutes, x:pixel-kabir-1, x:ill-decide-once, x:ill-out-of-sight, x:ill-sunday-practice, x:pixel-kabir-2, x:ill-perfect-week, x:ill-borrowed-sleep, x:pixel-kabir-3, youtube:pixel-kabir-3, instagram:ill-just-today, x:ill-just-today, instagram:pixel-kabir-3, instagram:ill-mixed-practice, x:ill-mixed-practice, instagram:roast-crunches, instagram:roast-cramming, x:roast-crunches, x:roast-cramming, youtube:roast-crunches, youtube:roast-cramming, instagram:pixel-kabir-9, x:pixel-kabir-9, youtube:pixel-kabir-9, instagram:roast-all-out, x:roast-all-out, youtube:roast-all-out, instagram:ill-afternoon-crash, x:ill-afternoon-crash, youtube:ill-afternoon-crash.
 
 See [WHAT_WORKED.md](WHAT_WORKED.md) for trait-by-trait comparisons and [latest_by_post.csv](latest_by_post.csv) for every number in one table.
 

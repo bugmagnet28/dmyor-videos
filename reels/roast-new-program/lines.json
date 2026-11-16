@@ -1,0 +1,6 @@
+{
+ "S1": [["New workout program every Monday.", 0.2], ["Eight programs later, still lifting the same weight.", 0.4]],
+ "S2": [["The idea is to confuse your muscles.", 0.25], ["But muscles don't get confused. They grow when the same lift slowly gets heavier. Switch every week, and you never repeat a lift long enough to add weight.", 0.45]],
+ "S3": [["So pick one program and run it for eight weeks.", 0.3], ["Same lifts, and add one rep or a little weight each week.", 0.3], ["Send this to the friend with forty saved workouts.", 0.3]],
+ "S4": [["How many programs have you saved?", 1.3]]
+}

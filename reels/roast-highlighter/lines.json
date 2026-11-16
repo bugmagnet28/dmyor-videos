@@ -1,0 +1,6 @@
+{
+ "S1": [["Twenty-four pages. All yellow.", 0.2], ["Exam day, all you remember is the colour.", 0.4]],
+ "S2": [["Here's the trap.", 0.25], ["Reading your yellow lines again feels like knowing it, because it looks familiar. But the exam doesn't show you the page. It makes you pull the answer out of your head.", 0.45]],
+ "S3": [["So turn each heading into a question. Cover the page, and answer it out loud.", 0.3], ["The ones you can't answer are what you study next.", 0.3], ["Send this to the friend with the neon yellow textbook.", 0.3]],
+ "S4": [["What colour is your highlighter?", 1.3]]
+}

@@ -1,6 +1,6 @@
 # What worked
 
-_Generated 2026-11-15 11:00 by `scripts/build.py`. Compares posts at their 48-hour checkpoint. A **signal** needs n ≥ 3 and a ≥ 1.5× difference; everything else is a hint. Definitions: [METRICS.md](../METRICS.md)._
+_Generated 2026-11-16 12:18 by `scripts/build.py`. Compares posts at their 48-hour checkpoint. A **signal** needs n ≥ 3 and a ≥ 1.5× difference; everything else is a hint. Definitions: [METRICS.md](../METRICS.md)._
 
 ## By style
 
@@ -14,6 +14,13 @@ _Generated 2026-11-15 11:00 by `scripts/build.py`. Compares posts at their 48-ho
 | diagram-motion-graphics | 2 | 24 | 36 | hint (n=2): 0.2× the rest |
 | kinetic-typography | 12 | 17 | 33 | **signal**: 0.1× the rest |
 | illustrated-scene | 3 | 14 | 30 | **signal**: 0.1× the rest |
+
+**Youtube** (all posts: median reach 13)
+
+| Style | Posts | Median reach 48h | Median traction | Verdict |
+|---|---|---|---|---|
+| animated-illustration-explainer | 14 | 15 | 52 | – |
+| pixel-story | 1 | 0 | 21 | – |
 
 ## By hook type
 
@@ -33,12 +40,15 @@ _Generated 2026-11-15 11:00 by `scripts/build.py`. Compares posts at their 48-ho
 | quiz | 1 | 7 | 26 | hint (n=1): 0.1× the rest |
 | framework-list | 2 | 6 | 23 | hint (n=2): 0.0× the rest |
 
-**Youtube** (all posts: median reach 17)
+**Youtube** (all posts: median reach 13)
 
 | Hook type | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| how-to-plan | 1 | 19 | 56 | hint (n=1): 1.4× the rest |
-| hard-truth | 8 | 14 | 47 | hint (n=8): 0.7× the rest |
+| number-fact | 1 | 24 | 61 | hint (n=1): 2.0× the rest |
+| how-to-plan | 1 | 19 | 57 | hint (n=1): 1.6× the rest |
+| hard-truth | 11 | 13 | 50 | hint (n=11): 0.9× the rest |
+| number-contrast | 1 | 9 | 43 | hint (n=1): 0.6× the rest |
+| relatable | 1 | 0 | 21 | – |
 
 ## By topic
 
@@ -66,18 +76,19 @@ _Generated 2026-11-15 11:00 by `scripts/build.py`. Compares posts at their 48-ho
 | planning | 6 | 12 | 29 | **signal**: 0.1× the rest |
 | goal-setting | 3 | 7 | 26 | **signal**: 0.1× the rest |
 
-**Youtube** (all posts: median reach 17)
+**Youtube** (all posts: median reach 13)
 
 | Topic | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| goal-size | 1 | 110 | 74 | hint (n=1): 7.9× the rest |
-| sleep | 1 | 54 | 68 | hint (n=1): 3.9× the rest |
-| consistency | 1 | 42 | 62 | hint (n=1): 3.0× the rest |
-| language-learning | 1 | 19 | 56 | hint (n=1): 1.4× the rest |
-| learning | 2 | 14 | 47 | hint (n=2): 0.7× the rest |
-| cooking | 1 | 7 | 38 | hint (n=1): 0.4× the rest |
-| career | 1 | 3 | 32 | hint (n=1): 0.2× the rest |
-| money | 1 | 0 | 20 | – |
+| goal-size | 1 | 110 | 75 | hint (n=1): 9.2× the rest |
+| sleep | 2 | 28 | 51 | hint (n=2): 2.2× the rest |
+| consistency | 3 | 24 | 61 | **signal**: 2.0× the rest |
+| language-learning | 1 | 19 | 57 | hint (n=1): 1.6× the rest |
+| learning | 4 | 15 | 52 | **signal**: 1.7× the rest |
+| cooking | 1 | 7 | 39 | hint (n=1): 0.5× the rest |
+| career | 1 | 3 | 34 | hint (n=1): 0.2× the rest |
+| money | 1 | 0 | 21 | – |
+| habits | 1 | 0 | 21 | – |
 
 ## By narrated
 
@@ -120,14 +131,14 @@ _Generated 2026-11-15 11:00 by `scripts/build.py`. Compares posts at their 48-ho
 | 05:00 IST | 2 | 6 | 25 | hint (n=2): 0.1× the rest |
 | 12:00 IST | 1 | 5 | 23 | hint (n=1): 0.0× the rest |
 
-**Youtube** (all posts: median reach 17)
+**Youtube** (all posts: median reach 13)
 
 | Posting hour | Posts | Median reach 48h | Median traction | Verdict |
 |---|---|---|---|---|
-| 19:00 IST | 2 | 36 | 59 | hint (n=2): 3.2× the rest |
-| 16:00 IST | 1 | 19 | 56 | hint (n=1): 1.4× the rest |
-| 13:00 IST | 3 | 11 | 44 | **signal**: 0.6× the rest |
-| 09:00 IST | 3 | 7 | 38 | **signal**: 0.4× the rest |
+| 19:00 IST | 4 | 36 | 61 | **signal**: 3.2× the rest |
+| 16:00 IST | 1 | 19 | 57 | hint (n=1): 1.6× the rest |
+| 13:00 IST | 6 | 12 | 48 | hint (n=6): 0.7× the rest |
+| 09:00 IST | 4 | 8 | 41 | **signal**: 0.5× the rest |
 
 ## Instagram: top vs bottom 3 (by traction)
 
@@ -146,12 +157,12 @@ Shared by all top 3: style = animated-illustration-explainer, hook type = hard-t
 
 | | Post | Style | Hook | Topic | Reach 48h | Traction |
 |---|---|---|---|---|---|---|
-| top | ill-size-problem | animated-illustration-explainer | hard-truth | goal-size | 110 | 74 |
+| top | ill-size-problem | animated-illustration-explainer | hard-truth | goal-size | 110 | 75 |
+| top | ill-mixed-practice | animated-illustration-explainer | hard-truth | learning | 55 | 71 |
 | top | ill-wake-time | animated-illustration-explainer | hard-truth | sleep | 54 | 68 |
-| top | ill-bad-day-version | animated-illustration-explainer | hard-truth | consistency | 42 | 62 |
-| bottom | ill-three-recipes | animated-illustration-explainer | hard-truth | cooking | 7 | 38 |
-| bottom | ill-one-sentence | animated-illustration-explainer | hard-truth | career | 3 | 32 |
-| bottom | ill-one-category | animated-illustration-explainer | hard-truth | money | 0 | 20 |
+| bottom | ill-borrowed-sleep | animated-illustration-explainer | hard-truth | sleep | 3 | 34 |
+| bottom | ill-one-category | animated-illustration-explainer | hard-truth | money | 0 | 21 |
+| bottom | pixel-kabir-2 | pixel-story | relatable | habits | 0 | 21 |
 
 Shared by all top 3: style = animated-illustration-explainer, hook type = hard-truth.
 

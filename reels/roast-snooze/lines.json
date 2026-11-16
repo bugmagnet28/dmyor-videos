@@ -1,0 +1,6 @@
+{
+ "S1": [["Six alarms. Six snoozes.", 0.2], ["Forty-five extra minutes in bed, and you wake up more tired.", 0.4]],
+ "S2": [["Here's the part nobody tells you.", 0.25], ["Every snooze starts a new nap that gets cut off nine minutes later. That isn't rest. That's being woken up six times.", 0.45]],
+ "S3": [["So set one alarm, for the time you actually get up, and put it across the room.", 0.3], ["Then open the curtain before you open your phone.", 0.3], ["Send this to the friend whose alarm goes off at six, six-oh-nine, six-eighteen.", 0.3]],
+ "S4": [["How many snoozes are you on?", 1.3]]
+}
