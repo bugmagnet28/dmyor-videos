@@ -1,0 +1,11 @@
+# Sound effects (Pixabay Content License: free for commercial use, no attribution required)
+- whoosh.mp3: "Slow Swoosh" by Universfield
+- warp.mp3: "Slowdown FX" by SoundReality
+- warp2.mp3: "warp magic (1)" by Yodguard (not used)
+- chime.mp3: "Fantasy Healing Spell Soft Magic Chime #1" by Vadim_Makes_Sound
+- clock.mp3: "Slow Cinematic Clock Ticking" by DRAGON-STUDIO
+- wind.mp3: "aiplane wind thing" by freesound_community
+- typing.mp3: "Keyboard Typing Sound Effect" by DRAGON-STUDIO
+- send.mp3: "Message Ping" by Universfield
+- shimmer.mp3: "Magic sparkle" by Liecio
+- spell.mp3: "Magic Spell 02" by Universfield

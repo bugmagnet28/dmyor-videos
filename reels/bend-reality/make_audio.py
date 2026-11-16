@@ -1,7 +1,6 @@
 # sound design for bend-reality: voice (audio.wav) + effects -> audio_mixed.wav/mp3 (music added later by add_music.py)
 import json, os, sys, subprocess, numpy as np, soundfile as sf
 ROOT = os.getcwd(); D = os.path.join(ROOT, "reels/bend-reality"); sys.path.insert(0, os.path.join(ROOT, ".claude/skills/animated-illustration-explainer/scripts"))
-import sfx as S
 SR = 44100; tl = json.load(open(os.path.join(D, "timeline_v1.json"))); tn = json.load(open(os.path.join(D, "timeline.json"))); TOT = tn["total"]
 ANCH = [[0, 0], [2.12, 2.475], [2.84, 2.875], [3.54, 4.0], [4.22, 4.55], [5.06, 5.46], [5.64, 5.665], [11.36, 9.717], [11.94, 10.217], [14.9, 12.181], [18.66, 15.82], [19.42, 16.27], [21.38, 18.507], [22.42, 18.6], [22.92, 18.857], [23.24, 19.48], [23.96, 20.03], [27.04, 23.106], [30.76, 26.156], [31.26, 26.456], [34.32, 29.253], [35.1, 29.803], [38.38, 33.2], [39.22, 33.429], [41.74, 34.62], [43.64, 37.427], [44.0, 37.627], [45.0, 39.098], [45.38, 39.298], [47.9, 41.71], [48.48, 42.21], [51.38, 44.675], [53.94, 47.376], [54.58, 47.976], [57.04, 49.219], [57.68, 49.469], [61.62, 52.802], [63.02, 55.702]]
 def new(to):
@@ -16,25 +15,25 @@ def put(x, t, g=1.0):
     j = int(new(t) * SR); n = min(len(x), len(fx) - j)
     if n > 0: fx[j:j + n] += x[:n] * g
 def env(n, a, r): e = np.ones(n); a, r = int(a * SR), int(r * SR); e[:a] = np.linspace(0, 1, a); e[n - r:] *= np.linspace(1, 0, r); return e
-# the bend: a low drone whose pitch wobbles while the picture warps
-n = int(3.2 * SR); tt = np.arange(n) / SR; f = 55 + 9 * np.sin(2 * np.pi * .9 * tt) * np.sin(np.pi * np.clip(tt / 3.0, 0, 1))
-ph = 2 * np.pi * np.cumsum(f) / SR; drone = (np.sin(ph) + .5 * np.sin(2 * ph + .3) + .25 * np.sin(3.01 * ph)) * env(n, .25, 1.0)
-put(drone, 0.0, .5)
-def wind(d):
-    n = int(d * SR); w = np.random.default_rng(5).standard_normal(n); w = S.lowpass(w, 700); m = .6 + .4 * np.sin(2 * np.pi * .35 * np.arange(n) / SR); return w * m * env(n, .6, .8)
-put(S.reveal(), 8.0, .5)                          # the branch splits
-put(S.reveal(), L("C", 1) - .02, .9)              # "Yes."
-put(S.clock(2.6), 20.3, .45)                      # late-night scroll
-put(S.reveal(), 23.45, .6)  # reality split
-put(wind(3.6), 26.3, .35)                         # wing
-put(S.tone(3.8), 30.0, .25)                       # tree grows
-for t0, txt in [(L("G", 0) + .9, "Thriving."), (L("G", 1) + .5, "Happy."), (L("G", 2) + .7, "The one I always dreamed of.")]: put(S.typing(len(txt) * .045), t0, .5)
-nodes = 7
-for i in range(1, nodes + 1): put(S.pop(i % 4), 42.5 + 4.4 * (i + .5) / (nodes + 1), .45)
-put(S.chord(3.0), 46.7, .4)                       # the future lights up
-put(S.typing(.6), L("J", 0) + .35, .6); put(S.toggle(), L("J", 0) + 1.05, .7)
+# real recorded effects (Pixabay, sfx/), each RMS-normalised then set relative to the voice
+def snd(name, start=0.0, dur=None, fin=.05, fout=.3):
+    raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", str(start)] + (["-t", str(dur)] if dur else []) + ["-i", os.path.join(D, "sfx", name + ".mp3"), "-f", "f32le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, dtype=np.float32).astype(np.float64); n = len(x)
+    if n == 0: return x
+    e = np.ones(n); fi, fo = int(fin * SR), int(min(fout, n / SR / 2) * SR); e[:fi] = np.linspace(0, 1, fi); e[n - fo:] *= np.linspace(1, 0, fo)
+    x = x * e; r = np.sqrt(np.mean(x[np.abs(x) > 1e-4] ** 2)) if np.any(np.abs(x) > 1e-4) else 1; return x / r
+put(snd("warp", 0, 3.4, .02, 1.0), 0.15, .30)                         # the bend
+put(snd("whoosh", 0, 2.2, .02, .6), L("B", 1) - .35, .22)             # screen splits into two realities
+put(snd("chime", 0, 3.5, .02, 1.2), L("C", 1) - .05, .30)             # "Yes."
+put(snd("clock", 0, 3.0, .2, .6), 20.3, .18)                         # late-night scroll
+put(snd("whoosh", 0, 2.2, .02, .6), 23.15, .22)                        # reality diverged
+put(snd("wind", 3, 4.0, .6, 1.0), 26.3, .16)                          # wing
+put(snd("shimmer", 0, 4.6, .8, 1.2), 30.0, .12)                       # tree grows
+for t0, txt in [(L("G", 0) + .9, "Thriving."), (L("G", 1) + .5, "Happy."), (L("G", 2) + .7, "The one I always dreamed of.")]: put(snd("typing", 1.0, len(txt) * .045 + .1, .02, .08), t0, .14)
+put(snd("spell", 0, 3.0, .05, 1.0), 46.6, .22)                        # the future lights up
+put(snd("typing", 1.0, .65, .02, .08), L("J", 0) + .35, .16); put(snd("send", 0, 1.1, .01, .3), L("J", 0) + 1.05, .25)
 v, sr = sf.read(os.path.join(D, "audio.wav")); assert sr == SR
-out = np.zeros(max(len(v), len(fx))); out[:len(v)] += v; out[:len(fx)] += fx * .35
+vr = np.sqrt(np.mean(v[np.abs(v) > 1e-3] ** 2)); out = np.zeros(max(len(v), len(fx))); out[:len(v)] += v; out[:len(fx)] += fx * vr
 out = out[: int(TOT * SR)]; out /= max(1, np.abs(out).max() / .95)
 sf.write(os.path.join(D, "audio_mixed.wav"), out.astype(np.float32), SR)
 subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", os.path.join(D, "audio_mixed.wav"), "-af", "loudnorm=I=-15:TP=-1.5", "-b:a", "192k", os.path.join(D, "audio_mixed.mp3")], check=True)
