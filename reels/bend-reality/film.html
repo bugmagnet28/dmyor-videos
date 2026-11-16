@@ -24,6 +24,7 @@ function lerp(a, b, k) { return a + (b - a) * k; }
 function seg(t, a, b) { return cl((t - a) / (b - a), 0, 1); }
 function sm(t, a, b) { var k = seg(t, a, b); return k * k * (3 - 2 * k); }
 function eio(k) { return k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; }
+function zin(a, b, t, amt) { var k = seg(t, a, b); return 1 + amt * (.5 - .5 * Math.cos(Math.PI * k)); }
 function eout(k) { return 1 - Math.pow(1 - k, 3); }
 function rad(d) { return d * Math.PI / 180; }
 function hash(n) { var s = Math.sin(n * 12.9898 + 78.233) * 43758.5453; return s - Math.floor(s); }
@@ -45,8 +46,8 @@ function load(u) { if (cache[u]) return cache[u].p; var im = new Image(), e = { 
 function frameOf(name, t, s) { var u = src(name, fidx(name, t - s[1] + s[3])); return cache[u] && cache[u].im.complete ? cache[u].im : null; }
 function shot(name, t) { for (var i = SHOTS.length - 1; i >= 0; i--) { var s = SHOTS[i]; if (s[0] == name && t >= s[1] - .05 && t <= s[2] + .05) return frameOf(name, t, s); } return null; }
 // draw a frame covering rect r (crop from centre, fy = vertical focus 0..1), slow push z
-function cover(ctx, im, r, z, fy, alpha) { if (!im) return; var ra = r.w / r.h, sw = 1080, sh = 1080 / ra; if (sh > 1920) { sh = 1920; sw = 1920 * ra; }
-  sw /= z; sh /= z; var sx = (1080 - sw) / 2, sy = cl((1920 - sh) * (fy == null ? .5 : fy), 0, 1920 - sh);
+function cover(ctx, im, r, z, fy, alpha) { if (!im) return; var IW = im.naturalWidth, IH = im.naturalHeight, ra = r.w / r.h, sw = IW, sh = IW / ra; if (sh > IH) { sh = IH; sw = IH * ra; }
+  sw /= z; sh /= z; var sx = (IW - sw) / 2, sy = cl((IH - sh) * (fy == null ? .5 : fy), 0, IH - sh);
   ctx.globalAlpha = alpha == null ? 1 : alpha; ctx.drawImage(im, sx, sy, sw, sh, r.x, r.y, r.w, r.h); ctx.globalAlpha = 1; }
 var FULL = { x: 0, y: 0, w: W, h: H };
 function grade(ctx, dark, r) { r = r || FULL; ctx.fillStyle = "rgba(21,23,25," + dark + ")"; ctx.fillRect(r.x, r.y, r.w, r.h);
@@ -94,7 +95,7 @@ function routeNodes() { var o = []; TREE.forEach(function (s) { if (onRoute(s.pa
 // ---------- scenes ----------
 function hook(t) {
   // footage + title drawn offscreen, then the whole picture bends
-  O.fillStyle = BG; O.fillRect(0, 0, W, H); cover(O, shot("cosmos", t), FULL, 1.06 + .16 * t / 5, .5); grade(O, .25);
+  O.fillStyle = BG; O.fillRect(0, 0, W, H); cover(O, shot("cosmos", t), FULL, zin(0, 4.9, t, .3), .5); grade(O, .25);
   var ta = 1 - sm(t, 2.6, 3.0); if (ta > 0) { tone(O, "COULD YOU", W / 2, 760, 104, 800, ta); tone(O, "*BEND REALITY*", W / 2, 880, 118, 800, ta); tone(O, "WITH YOUR WILL?", W / 2, 1000, 104, 800, ta); }
   var fa = sm(t, L("H", 1) - .1, L("H", 1) + .3) * (1 - sm(t, 4.2, 4.7)); if (fa > 0) tone(O, "LET'S *FIND OUT.*", W / 2, 880, 92, 800, fa);
   var A = 46 * Math.sin(Math.PI * seg(t, .5, 2.8)), step = 6;
@@ -102,7 +103,7 @@ function hook(t) {
   for (var y = 0; y < H; y += step) { var env = Math.exp(-Math.pow((y - 880) / 520, 2)), dx = A * env * Math.sin(y / 110 - t * 2.2), sc = 1 + .05 * env * A / 46;
     X.drawImage(OC, 0, y, W, step, dx - (sc - 1) * W / 2, y, W * sc, step); }
 }
-function forkScene(t) { var a0 = SHOTS[1][1]; cover(X, shot("fork", t), FULL, 1.05 + .16 * eio(seg(t, a0, 10.5)), .5, sm(t, a0, a0 + .5)); grade(X, .35);
+function forkScene(t) { var a0 = SHOTS[1][1]; cover(X, shot("fork", t), FULL, zin(a0, 10.5, t, .38), .5, sm(t, a0, a0 + .5)); grade(X, .35);
   var gk = sm(t, 5.0, 8.6), ex = 540, ey = 1000, gx = sm(t, 7.0, 9.4);
   X.save(); X.lineCap = "round";
   var y1 = lerp(1700, ey, Math.min(1, gk * 1.6)); X.strokeStyle = SAGE; X.globalAlpha = .4; X.lineWidth = 34; X.beginPath(); X.moveTo(ex, 1700); X.lineTo(ex, y1); X.stroke(); X.globalAlpha = 1; X.strokeStyle = "#FFFFFF"; X.lineWidth = 9; X.stroke();
@@ -117,8 +118,8 @@ function choiceScene(t) {
   var sp = sm(t, L("B", 1) - .1, L("B", 1) + .6), half = lerp(H, H / 2, sp), C = L("C", 1), yes = sm(t, C - .05, C + .5);
   var gap = 4 + 190 * yes, top = { x: 0, y: -40 * yes, w: W, h: half - gap / 2 }, bot = { x: 0, y: half + gap / 2 + 40 * yes, w: W, h: H - half - gap / 2 };
   X.fillStyle = "#0B0C0D"; X.fillRect(0, 0, W, H);
-  cover(X, shot("phone", t), top, 1.06 + .16 * seg(t, 10, 20.4), .45, sm(t, 10.0, 10.5)); grade(X, .3, top);
-  if (sp > 0) { cover(X, shot("read", t), bot, 1.05 + .12 * seg(t, 12.3, 20.4), .45); grade(X, .25, bot); }
+  cover(X, shot("phone", t), top, zin(10, 20.4, t, .4), .45, sm(t, 10.0, 10.5)); grade(X, .3, top);
+  if (sp > 0) { cover(X, shot("read", t), bot, zin(12.3, 20.4, t, .35), .45); grade(X, .25, bot); }
   if (sp > 0) { var bt = top.y + top.h, bb = bot.y; if (yes > 0) { X.fillStyle = "#FFFFFF"; X.fillRect(0, bt, W, bb - bt); X.fillStyle = "#111111"; X.fillRect(0, bt, W, 5); X.fillRect(0, bb - 5, W, 5); } else { X.fillStyle = "#FFFFFF"; X.fillRect(0, half - 2, W, 4); } }
 
   chip("KEEP SCROLLING", W / 2, (sp > 0 ? top.y + top.h * .16 : 300), sm(t, L("B", 0) + .4, L("B", 0) + .8) * (1 - sm(t, 19.9, 20.3)));
@@ -127,7 +128,7 @@ function choiceScene(t) {
 }
 function bedScene(t) {
   var a0 = 19.8, grow = eio(seg(t, a0, a0 + .7)), r = { x: 0, y: 0, w: W, h: lerp(H / 2, H, grow) };
-  X.fillStyle = "#0B0C0D"; X.fillRect(0, 0, W, H); cover(X, shot("bed", t), r, 1.04 + .16 * seg(t, a0, 23.9), .5); grade(X, .3, r);
+  X.fillStyle = "#0B0C0D"; X.fillRect(0, 0, W, H); cover(X, shot("bed", t), r, zin(a0, 23.9, t, .38), .5); grade(X, .3, r);
   var mins = Math.floor(lerp(0, 84, seg(t, 20.4, 22.8))), h = (11 + Math.floor((48 + mins) / 60) - 1) % 12 + 1, m = (48 + mins) % 60, am = 48 + mins >= 60 ? "AM" : "PM";
   chip(h + ":" + ("0" + m).slice(-2) + " " + am, W / 2, 330, sm(t, 20.3, 20.6) * (1 - sm(t, 23.2, 23.6)), 40);
   var dk = sm(t, 22.2, 23.3); if (dk > 0) { X.save(); X.globalCompositeOperation = "saturation"; X.globalAlpha = dk; X.fillStyle = "#808080"; X.fillRect(0, 0, W, H); X.restore(); X.fillStyle = "rgba(8,9,10," + (.72 * dk) + ")"; X.fillRect(0, 0, W, H); }
@@ -135,12 +136,12 @@ function bedScene(t) {
 function readScene(t) {
   var a0 = 23.3, up = eio(seg(t, a0, a0 + .8)), r = { x: 0, y: lerp(H, 0, up), w: W, h: H };
   bedScene(Math.min(t, 23.85)); X.fillStyle = "rgba(0,0,0," + .4 * up + ")"; X.fillRect(0, 0, W, H);
-  cover(X, shot("read", t), r, 1.08 + .14 * seg(t, a0, 26.6), .45); grade(X, .2, r);
+  cover(X, shot("read", t), r, zin(a0, 26.6, t, .35), .45); grade(X, .2, r);
   X.fillStyle = "#FFFFFF"; X.fillRect(0, r.y - 2, W, 4);
   chip("REALITY SPLIT", W / 2, 330, sm(t, 24.6, 25.0) * (1 - sm(t, 26.0, 26.4)), 36);
 }
 function wingScene(t) {
-  var a0 = 26.2; cover(X, shot("wing", t), FULL, 1.05 + .16 * seg(t, a0, 30), .5, sm(t, a0, a0 + .5)); grade(X, .25);
+  var a0 = 26.2; cover(X, shot("wing", t), FULL, zin(a0, 30, t, .38), .5, sm(t, a0, a0 + .5)); grade(X, .25);
   var k = sm(t, 26.7, 27.6) * (1 - sm(t, 29.4, 29.9));
   if (k > 0) { X.save(); X.lineCap = "round";
     for (var i = 0; i < 9; i++) { var y0 = 620 + i * 62, bump = (i < 5 ? 150 - i * 22 : 30), sp = i < 5 ? 1.5 : 1;
@@ -154,14 +155,14 @@ function wingScene(t) {
 }
 function treeScene(t) {
   var a0 = 29.6, gp = eio(seg(t, 29.9, 34.2)), cz = lerp(2.2, 1, eio(seg(t, 30.0, 34.4)));
-  cover(X, shot("cosmos", t), FULL, 1.1 + .1 * seg(t, a0, 34.9), .5, sm(t, a0, a0 + .5)); grade(X, .5);
+  cover(X, shot("cosmos", t), FULL, zin(a0, 34.9, t, .22), .5, sm(t, a0, a0 + .5)); grade(X, .5);
   X.save(); X.translate(W / 2, lerp(1500, 960, eio(seg(t, 30.0, 34.4)))); X.scale(cz, cz); X.translate(-540, lerp(-1600, -960, eio(seg(t, 30.0, 34.4))));
   drawTree(gp, sm(t, a0, a0 + .5) * (1 - sm(t, 34.3, 34.8)), null); X.restore();
 }
 function futureScene(t) {
   var cards = [["cafe", 34.3, 37.8, "MY BUSINESS", "Thriving.", L("G", 0) + .9], ["family", 37.4, 39.5, "MY FAMILY", "Happy.", L("G", 1) + .5], ["summit", 39.1, 42.5, "MY LIFE", "The one I always dreamed of.", L("G", 2) + .7]];
   cards.forEach(function (c, i) { if (t < c[1] - .05 || t > c[2] + .05) return; var a = sm(t, c[1], c[1] + .45) * (i == 2 ? 1 : 1);
-    cover(X, shot(c[0], t), FULL, 1.04 + .16 * seg(t, c[1], c[2]), .45, a); grade(X, .2); });
+    cover(X, shot(c[0], t), FULL, zin(c[1], c[2], t, .35), .45, a); grade(X, .2); });
   var on = null; cards.forEach(function (c) { if (t >= c[1] + .1 && t < c[2] - .1) on = c; }); if (!on) return;
   var ca = sm(t, on[1] + .1, on[1] + .4) * (1 - sm(t, on[2] - .35, on[2] - .1)), n = Math.floor(on[4].length * seg(t, on[5], on[5] + on[4].length * .045)), y = 1180;
   glass(130, y, 820, 190, 26, ca); text(X, on[3], 180, y + 50, 30, SAGE, 800, "left", ca);
@@ -170,7 +171,7 @@ function futureScene(t) {
   chip("IMAGINE", W / 2, 330, sm(t, 34.5, 34.9) * (1 - sm(t, 41.9, 42.3)), 34);
 }
 function steerScene(t) {
-  var a0 = 42.0; cover(X, shot("cosmos", t), FULL, 1.12 + .12 * seg(t, a0, 56), .5, sm(t, a0, a0 + .5)); grade(X, .5);
+  var a0 = 42.0; cover(X, shot("cosmos", t), FULL, zin(a0, 56, t, .3), .5, sm(t, a0, a0 + .5)); grade(X, .5);
   var fade = sm(t, a0, a0 + .5) * (1 - .75 * sm(t, 47.6, 48.4)), rk = seg(t, 42.5, 46.9);
   drawTree(1, fade, rk);
   var nodes = routeNodes();

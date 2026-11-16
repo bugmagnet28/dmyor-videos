@@ -2,7 +2,7 @@
 # name src start dur speed  -> frames/<name>/0001.jpg ... (1080x1920 cover crop, 30 fps, slowed by 1/speed)
 set -e
 x() { mkdir -p frames/$1; rm -f frames/$1/*.jpg
-  ffmpeg -loglevel error -ss $3 -t $4 -i pex/v$2.mp4 -vf "setpts=PTS/$5,fps=30,scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" -q:v 4 frames/$1/%04d.jpg
+  ffmpeg -loglevel error -ss $3 -t $4 -i pex/v$2.mp4 -vf "setpts=PTS/$5,fps=30,scale=1440:2560:force_original_aspect_ratio=increase,crop=1440:2560" -q:v 4 frames/$1/%04d.jpg
   echo "$1 $(ls frames/$1 | wc -l)"; }
 x cosmos 16998437 0 9 0.5
 x fork 40433618 4 7 1
