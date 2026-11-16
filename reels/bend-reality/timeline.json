@@ -1,5 +1,5 @@
 {
- "total": 55.702,
+ "total": 65.359,
  "scenes": {
   "H": [
    0.35,
@@ -7,39 +7,39 @@
   ],
   "A": [
    4.55,
-   10.217
+   12.606
   ],
   "B": [
-   10.217,
-   16.27
+   12.606,
+   19.314
   ],
   "C": [
-   16.27,
-   20.03
+   19.314,
+   23.995
   ],
   "D": [
-   20.03,
-   23.506
+   23.995,
+   27.393
   ],
   "E": [
-   23.506,
-   29.803
+   27.393,
+   34.411
   ],
   "F": [
-   29.803,
-   34.621
+   34.411,
+   38.937
   ],
   "G": [
-   34.621,
-   42.21
+   38.937,
+   48.769
   ],
   "I": [
-   42.21,
-   47.976
+   48.769,
+   55.217
   ],
   "J": [
-   47.976,
-   55.702
+   55.217,
+   65.359
   ]
  },
  "lines": [
@@ -61,113 +61,127 @@
    "A",
    0,
    4.55,
-   9.717,
-   "Every choice you make takes you into a reality that would not exist, if you hadn't chosen it."
+   5.881,
+   "Think of it this way."
+  ],
+  [
+   "A",
+   1,
+   6.181,
+   12.106,
+   "Every choice you make takes you to a reality that would not exist, if you did not specifically choose it."
   ],
   [
    "B",
    0,
-   10.217,
-   12.181,
-   "Right now, you can keep scrolling."
+   12.606,
+   15.208,
+   "Let's say, right now, you can either keep scrolling,"
   ],
   [
    "B",
    1,
-   12.481,
-   15.82,
-   "Or you can put your phone down, and read about how planes fly."
+   15.458,
+   18.864,
+   "or you can shut down your phone, and read about how planes fly."
   ],
   [
    "C",
    0,
-   16.27,
-   18.507,
-   "Did that small choice change reality?"
+   19.314,
+   21.741,
+   "Did this simple choice alter reality?"
   ],
   [
    "C",
    1,
-   18.857,
-   19.48,
-   "Yes."
+   22.091,
+   23.445,
+   "The answer is yes."
   ],
   [
    "D",
    0,
-   20.03,
-   23.106,
-   "In one version, you scroll a little longer, and fall asleep."
+   23.995,
+   26.993,
+   "In an ideal world, you would scroll some more, and then sleep."
   ],
   [
    "E",
    0,
-   23.506,
-   26.156,
-   "But because of the choice you made, reality split."
+   27.393,
+   30.225,
+   "But because of a choice you made, reality diverged."
   ],
   [
    "E",
    1,
-   26.456,
-   29.253,
-   "And now there's a world where you know how planes fly."
+   30.525,
+   33.861,
+   "And now, there exists a world where you know how planes fly."
   ],
   [
    "F",
    0,
-   29.803,
-   32.417,
-   "So if one small choice can change reality,"
-  ],
-  [
-   "F",
-   1,
-   32.617,
-   34.071,
-   "what about the big ones?"
+   34.411,
+   38.387,
+   "This sounds like you can change reality, based on the choices you take."
   ],
   [
    "G",
    0,
-   34.621,
-   37.427,
-   "Imagine a future where your business is thriving,"
+   38.937,
+   41.8,
+   "Now let's say I imagine a reality in the future,"
   ],
   [
    "G",
    1,
-   37.627,
-   39.098,
-   "your family is happy,"
+   42.0,
+   43.887,
+   "where I run a successful business,"
   ],
   [
    "G",
    2,
-   39.298,
-   41.71,
-   "and you're living the life you always dreamed of."
+   44.087,
+   45.552,
+   "my family is happy,"
+  ],
+  [
+   "G",
+   3,
+   45.752,
+   48.269,
+   "and I am living the life I always dreamed of."
   ],
   [
    "I",
    0,
-   42.21,
-   47.376,
-   "Could you steer reality toward that version, with the choices you make, and the actions you take?"
+   48.769,
+   51.559,
+   "Would it be possible to steer reality to that version,"
+  ],
+  [
+   "I",
+   1,
+   51.759,
+   54.617,
+   "based on the choices I make, and the actions I take?"
   ],
   [
    "J",
    0,
-   47.976,
-   49.219,
-   "Comment reality,"
+   55.217,
+   57.699,
+   "To find out the answer, comment reality,"
   ],
   [
    "J",
    1,
-   49.469,
-   52.802,
-   "and we'll show you how to bend reality toward the life you want."
+   57.949,
+   62.459,
+   "and we will show you the way you can also bend reality, according to your will."
   ]
  ]
 }

@@ -2,13 +2,18 @@
 import json, os, sys, subprocess, numpy as np, soundfile as sf
 ROOT = os.getcwd(); D = os.path.join(ROOT, "reels/bend-reality"); sys.path.insert(0, os.path.join(ROOT, ".claude/skills/animated-illustration-explainer/scripts"))
 import sfx as S
-SR = 44100; tl = json.load(open(os.path.join(D, "timeline.json"))); TOT = tl["total"]
+SR = 44100; tl = json.load(open(os.path.join(D, "timeline_v1.json"))); tn = json.load(open(os.path.join(D, "timeline.json"))); TOT = tn["total"]
+ANCH = [[0, 0], [4.0, 4.0], [4.55, 4.55], [12.106, 9.717], [12.606, 10.217], [15.208, 12.181], [15.458, 12.481], [18.864, 15.82], [19.314, 16.27], [21.741, 18.507], [22.091, 18.6], [23.0, 18.857], [23.445, 19.48], [23.995, 20.03], [26.993, 23.106], [27.393, 23.506], [30.225, 26.156], [30.525, 26.456], [33.861, 29.253], [34.411, 29.803], [38.387, 33.2], [41.8, 34.62], [42.0, 34.621], [43.887, 37.427], [44.087, 37.627], [45.552, 39.098], [45.752, 39.298], [48.269, 41.71], [48.769, 42.21], [54.617, 47.376], [55.217, 47.976], [57.699, 49.219], [57.949, 49.469], [62.459, 52.802], [TOT, tl["total"]]]
+def new(to):
+    for i in range(1, len(ANCH)):
+        if to <= ANCH[i][1]: a, b = ANCH[i - 1], ANCH[i]; return a[0] + (b[0] - a[0]) * (to - a[1]) / max(1e-6, b[1] - a[1])
+    return TOT
 def L(k, i): return [l for l in tl["lines"] if l[0] == k and l[1] == i][0][2]
 fx = np.zeros(int((TOT + 1) * SR))
 def put(x, t, g=1.0):
     x = np.asarray(x, dtype=np.float64)
     if x.ndim > 1: x = x.mean(axis=1)
-    j = int(t * SR); n = min(len(x), len(fx) - j)
+    j = int(new(t) * SR); n = min(len(x), len(fx) - j)
     if n > 0: fx[j:j + n] += x[:n] * g
 def env(n, a, r): e = np.ones(n); a, r = int(a * SR), int(r * SR); e[:a] = np.linspace(0, 1, a); e[n - r:] *= np.linspace(1, 0, r); return e
 # the bend: a low drone whose pitch wobbles while the picture warps

@@ -1,6 +1,6 @@
 # Bend reality (calm cinematic reel, real footage + animation)
 
-**Length:** about 56 s. Voice: Kokoro am_eric (calm, slowed). Music: our library, mystery into resolve at "Imagine a future" (video-nomusic.mp4 kept for trending audio).
+**Length:** about 65 s. Voice: Kokoro am_eric (calm, slowed), owner's script wording kept. **No music in the file:** add an Instagram track in the app (calm / mysterious works best; keep it low under the voice). Voice and sound effects are already mixed.
 
 **Instagram caption:**
 Every choice opens a version of reality that would not exist without it.
@@ -8,7 +8,7 @@ Scroll a little longer, or learn how planes fly. Small choice, different world.
 
 Now imagine the future you actually want. Could your choices steer you there?
 
-Comment REALITY and we'll send you how to bend reality toward the life you want.
+To find out the answer, comment REALITY and we will show you how you can bend reality according to your will.
 
 #mindset #choices #selfimprovement #goals #dmyor
 

@@ -1,12 +1,12 @@
 {
  "H": [["Could you bend reality with your will?", 0.4], ["Let's find out.", 0.55]],
- "A": [["Every choice you make takes you into a reality that would not exist, if you hadn't chosen it.", 0.5]],
- "B": [["Right now, you can keep scrolling.", 0.3], ["Or you can put your phone down, and read about how planes fly.", 0.45]],
- "C": [["Did that small choice change reality?", 0.35], ["Yes.", 0.55]],
- "D": [["In one version, you scroll a little longer, and fall asleep.", 0.4]],
- "E": [["But because of the choice you made, reality split.", 0.3], ["And now there's a world where you know how planes fly.", 0.55]],
- "F": [["So if one small choice can change reality,", 0.2], ["what about the big ones?", 0.55]],
- "G": [["Imagine a future where your business is thriving,", 0.2], ["your family is happy,", 0.2], ["and you're living the life you always dreamed of.", 0.5]],
- "I": [["Could you steer reality toward that version, with the choices you make, and the actions you take?", 0.6]],
- "J": [["Comment reality,", 0.25], ["and we'll show you how to bend reality toward the life you want.", 0.3]]
+ "A": [["Think of it this way.", 0.3], ["Every choice you make takes you to a reality that would not exist, if you did not specifically choose it.", 0.5]],
+ "B": [["Let's say, right now, you can either keep scrolling,", 0.25], ["or you can shut down your phone, and read about how planes fly.", 0.45]],
+ "C": [["Did this simple choice alter reality?", 0.35], ["The answer is yes.", 0.55]],
+ "D": [["In an ideal world, you would scroll some more, and then sleep.", 0.4]],
+ "E": [["But because of a choice you made, reality diverged.", 0.3], ["And now, there exists a world where you know how planes fly.", 0.55]],
+ "F": [["This sounds like you can change reality, based on the choices you take.", 0.55]],
+ "G": [["Now let's say I imagine a reality in the future,", 0.2], ["where I run a successful business,", 0.2], ["my family is happy,", 0.2], ["and I am living the life I always dreamed of.", 0.5]],
+ "I": [["Would it be possible to steer reality to that version,", 0.2], ["based on the choices I make, and the actions I take?", 0.6]],
+ "J": [["To find out the answer, comment reality,", 0.25], ["and we will show you the way you can also bend reality, according to your will.", 0.3]]
 }

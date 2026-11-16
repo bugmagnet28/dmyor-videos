@@ -11,6 +11,7 @@ canvas{display:block;width:100vw;height:100vh;object-fit:contain}
 <canvas id="c" width="1080" height="1920"></canvas>
 <button id="playBtn">Play</button>
 <script src="timeline.js"></script>
+<script src="timeline_v1.js"></script>
 <script>
 // "Bend reality": calm cinematic reel. Real footage (Pexels, frame sequences in frames/) + canvas animation. window.__seek(t) is async (loads frames).
 (function () {
@@ -25,7 +26,11 @@ function sm(t, a, b) { var k = seg(t, a, b); return k * k * (3 - 2 * k); }
 function eio(k) { return k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; }
 function eout(k) { return 1 - Math.pow(1 - k, 3); }
 function hash(n) { var s = Math.sin(n * 12.9898 + 78.233) * 43758.5453; return s - Math.floor(s); }
-function L(k, i) { for (var j = 0; j < TL.lines.length; j++) if (TL.lines[j][0] == k && TL.lines[j][1] == i) return TL.lines[j][2]; }
+function L(k, i) { for (var j = 0; j < OLD.lines.length; j++) if (OLD.lines[j][0] == k && OLD.lines[j][1] == i) return OLD.lines[j][2]; }
+function Ln(k, i) { for (var j = 0; j < TL.lines.length; j++) if (TL.lines[j][0] == k && TL.lines[j][1] == i) return TL.lines[j][2]; }
+// picture was timed to the v1 voice; map new voice time -> v1 picture time line by line
+var ANCH = [[0, 0], [4.0, 4.0], [4.55, 4.55], [12.106, 9.717], [12.606, 10.217], [15.208, 12.181], [15.458, 12.481], [18.864, 15.82], [19.314, 16.27], [21.741, 18.507], [22.091, 18.6], [23.0, 18.857], [23.445, 19.48], [23.995, 20.03], [26.993, 23.106], [27.393, 23.506], [30.225, 26.156], [30.525, 26.456], [33.861, 29.253], [34.411, 29.803], [38.387, 33.2], [41.8, 34.62], [42.0, 34.621], [43.887, 37.427], [44.087, 37.627], [45.552, 39.098], [45.752, 39.298], [48.269, 41.71], [48.769, 42.21], [54.617, 47.376], [55.217, 47.976], [57.699, 49.219], [57.949, 49.469], [62.459, 52.802], [TL.total, OLD.total]];
+function remap(t) { for (var i = 1; i < ANCH.length; i++) if (t <= ANCH[i][0]) return lerp(ANCH[i - 1][1], ANCH[i][1], (t - ANCH[i - 1][0]) / (ANCH[i][0] - ANCH[i - 1][0])); return OLD.total; }
 function LE(k, i) { for (var j = 0; j < TL.lines.length; j++) if (TL.lines[j][0] == k && TL.lines[j][1] == i) return TL.lines[j][3]; }
 
 // ---------- footage: [name, t0, t1, clip offset (s)] ----------
@@ -58,7 +63,7 @@ function glass(x, y, w, h, r, a) { X.save(); X.globalAlpha = a; rr(X, x, y, w, h
 function chip(s, x, y, a, sz) { if (a <= 0) return; sz = Math.round((sz || 34) * 1.3); X.font = font(sz, 700); var w = X.measureText(s).width + sz * 1.4, h = sz * 1.9; glass(x - w / 2, y - h / 2, w, h, h / 2, a);
   X.save(); X.globalAlpha = a; X.beginPath(); X.arc(x - w / 2 + sz * .7, y, 6, 0, 7); X.fillStyle = SAGE; X.fill(); X.restore(); text(X, s, x + 8, y + 1, sz, "#FFFFFF", 700, "center", a); }
 function caption(t) {
-  if (t < L("A", 0) - .1 || t > L("J", 0) - .1) return;
+  if (t < Ln("A", 0) - .1 || t > Ln("J", 0) - .1) return;
   for (var i = TL.subs.length - 1; i >= 0; i--) { var s = TL.subs[i]; if (t >= s[0] && t < s[1]) {
       var a = sm(t, s[0], s[0] + .12) * (1 - sm(t, s[1] - .1, s[1])); X.font = font(50, 800); var w = X.measureText(s[2]).width;
       X.save(); X.globalAlpha = a * .55; rr(X, W / 2 - w / 2 - 26, 1452, w + 52, 84, 18); X.fillStyle = "#0E1011"; X.fill(); X.restore();
@@ -184,11 +189,12 @@ function ctaScene(t) {
   X.font = font(76, 800); if (n < word.length || Math.floor(T * 2.5) % 2 == 0) { X.globalAlpha = a; X.fillStyle = "#FFFFFF"; X.fillRect(bx + 76 + X.measureText(word.slice(0, n)).width, by + 42, 5, 66); X.globalAlpha = 1; }
   var pk = sm(t, L("J", 0) + 1.0, L("J", 0) + 1.3), pul = 1 + .06 * Math.sin(T * 5) * pk; X.save(); X.globalAlpha = a; X.translate(bx + bw - 75, by + bh / 2); X.scale(pul, pul); X.beginPath(); X.arc(0, 0, 52, 0, 7); X.fillStyle = pk > .5 ? SAGE : "rgba(157,184,163,.35)"; X.fill();
   X.fillStyle = "#151719"; X.beginPath(); X.moveTo(-18, -22); X.lineTo(26, 0); X.lineTo(-18, 22); X.lineTo(-10, 0); X.closePath(); X.fill(); X.restore();
-  var b = sm(t, L("J", 1), L("J", 1) + .5); tone(X, "AND WE'LL SHOW YOU HOW TO", W / 2, 1060, 46, 700, b); tone(X, "*BEND REALITY* TOWARD", W / 2, 1124, 46, 700, b); tone(X, "THE LIFE YOU WANT.", W / 2, 1188, 46, 700, b);
+  var b = sm(t, L("J", 1), L("J", 1) + .5); tone(X, "AND WE WILL SHOW YOU HOW YOU CAN", W / 2, 1060, 46, 700, b); tone(X, "ALSO *BEND REALITY*", W / 2, 1124, 46, 700, b); tone(X, "ACCORDING TO YOUR WILL.", W / 2, 1188, 46, 700, b);
   var d = sm(t, 52.6, 53.2); text(X, "dmyor", W / 2, 1420, 56, "#FFFFFF", 800, "center", d * .9);
 }
 
-function frame(t) {
+function frame(tn) {
+  var t = remap(tn);
   T = t; X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; X.fillStyle = BG; X.fillRect(0, 0, W, H);
   if (t < 4.9) hook(t);
   if (t >= 4.3 && t < 10.5) { X.save(); X.globalAlpha = 1; forkScene(t); X.restore(); }
@@ -200,11 +206,11 @@ function frame(t) {
   if (t >= 34.3 && t < 42.5) futureScene(t);
   if (t >= 42.0 && t < L("J", 0) - .1) steerScene(t);
   if (t >= L("J", 0) - .1) ctaScene(t);
-  caption(t); vignette(.55);
-  var fo = sm(t, DUR - .8, DUR); if (fo > 0) { X.fillStyle = "rgba(21,23,25," + fo + ")"; X.fillRect(0, 0, W, H); }
+  caption(tn); vignette(.55);
+  var fo = sm(tn, DUR - .8, DUR); if (fo > 0) { X.fillStyle = "rgba(21,23,25," + fo + ")"; X.fillRect(0, 0, W, H); }
 }
-function prep(t) { return Promise.all(need(t).map(load)); }
-function gc(t) { var keep = {}; need(t).forEach(function (u) { keep[u] = 1; }); var ks = Object.keys(cache); if (ks.length > 120) ks.forEach(function (u) { if (!keep[u]) delete cache[u]; }); }
+function prep(t) { return Promise.all(need(remap(t)).map(load)); }
+function gc(t) { var keep = {}; need(remap(t)).forEach(function (u) { keep[u] = 1; }); var ks = Object.keys(cache); if (ks.length > 120) ks.forEach(function (u) { if (!keep[u]) delete cache[u]; }); }
 window.__duration = DUR;
 Promise.all([document.fonts.load("800 60px Tight"), document.fonts.load("700 60px Tight")]).then(function () {
   window.__seek = function (t) { return prep(t).then(function () { frame(t); gc(t); }); };
