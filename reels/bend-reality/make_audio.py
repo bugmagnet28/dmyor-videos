@@ -38,6 +38,13 @@ put(snd("riser", 0.2, 3.6, .8, .2), 18.857 - 3.6, .14)              # build into
 put(snd("switch", 0, .6, .005, .1), 22.25, .26)                      # lights out
 put(snd("cafe", 2, 3.4, .5, .6), 34.4, .10); put(snd("kids", 0, 2.2, .3, .6), 37.5, .12); put(snd("mountain", 1, 3.3, .5, .8), 39.2, .12)
 for n in range(1, 8): put(snd("uiclick", 0, .4, .005, .1), 42.5 + 4.4 * (n + 1) / 8, .13)   # path lights node by node
+# every movement gets a sound (owner 2026-11-17)
+for t0 in [4.3, 10.0, 19.8, 26.2, 29.6, 34.6, 42.0]: put(snd("whoosh2", 0, 1.2, .005, .3), t0 - .2, .18)   # stage changes
+for t0 in [2.875, 4.5, 7.6, 8.4, 10.6, 14.08, 20.3, 24.6, 27.9, 34.75, 47.9, 49.47]: put(snd("pop", 0, .5, .003, .15), t0, .15)   # labels / text appear
+put(snd("risershort", 0, 2.0, .05, .4), 5.0, .14); put(snd("risershort", 0, 1.4, .05, .4), 27.3, .14)   # line climbs, lift arrow
+put(snd("swipe", 0, .9, .005, .2), 26.7, .12)                        # airflow lines
+for t0 in [37.4, 39.1]: put(snd("swipe", 0, .9, .005, .2), t0 - .1, .14); put(snd("paperdrop", 0, .52, .003, .15), t0 + .3, .22)   # polaroids land
+put(snd("chime", 0, 2.5, .02, 1.0), 52.6, .14)                       # wordmark
 v, sr = sf.read(os.path.join(D, "audio.wav")); assert sr == SR
 vr = np.sqrt(np.mean(v[np.abs(v) > 1e-3] ** 2)); out = np.zeros(max(len(v), len(fx))); out[:len(v)] += v; out[:len(fx)] += fx * vr
 out = out[: int(TOT * SR)]; out /= max(1, np.abs(out).max() / .95)

@@ -25,6 +25,7 @@ function seg(t, a, b) { return cl((t - a) / (b - a), 0, 1); }
 function sm(t, a, b) { var k = seg(t, a, b); return k * k * (3 - 2 * k); }
 function eio(k) { return k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; }
 function eout(k) { return 1 - Math.pow(1 - k, 3); }
+function rad(d) { return d * Math.PI / 180; }
 function hash(n) { var s = Math.sin(n * 12.9898 + 78.233) * 43758.5453; return s - Math.floor(s); }
 function L(k, i) { for (var j = 0; j < OLD.lines.length; j++) if (OLD.lines[j][0] == k && OLD.lines[j][1] == i) return OLD.lines[j][2]; }
 function Ln(k, i) { for (var j = 0; j < TL.lines.length; j++) if (TL.lines[j][0] == k && TL.lines[j][1] == i) return TL.lines[j][2]; }
@@ -193,19 +194,52 @@ function ctaScene(t) {
   var d = sm(t, 52.6, 53.2); text(X, "dmyor", W / 2, 1420, 56, "#FFFFFF", 800, "center", d * .9);
 }
 
-// animated frame: thin inset border, sage corner brackets, a glint travelling round the edge
-function border(tn) {
-  var m = 34, x = m, y = m, w = W - 2 * m, h = H - 2 * m, r = 30, a = sm(tn, 0, .6), P = 2 * (w + h);
-  X.save(); X.globalAlpha = a; rr(X, x, y, w, h, r); X.lineWidth = 2; X.strokeStyle = "rgba(225,238,230,.32)"; X.stroke();
-  X.setLineDash([260, P - 260]); X.lineDashOffset = -((tn * 140) % P); X.lineWidth = 3; X.strokeStyle = "rgba(235,248,240,.9)"; X.shadowColor = SAGE; X.shadowBlur = 18; rr(X, x, y, w, h, r); X.stroke();
-  X.lineDashOffset = -((tn * 140 + P / 2) % P); rr(X, x, y, w, h, r); X.stroke(); X.setLineDash([]); X.shadowBlur = 0;
-  var c = 64 + 6 * Math.sin(tn * 1.6); X.lineWidth = 5; X.strokeStyle = SAGE; X.lineCap = "round";
-  [[x, y, 1, 1], [x + w, y, -1, 1], [x, y + h, 1, -1], [x + w, y + h, -1, -1]].forEach(function (q) { X.beginPath(); X.moveTo(q[0] + q[2] * 12, q[1] + q[3] * (c + 12)); X.lineTo(q[0] + q[2] * 12, q[1] + q[3] * 12); X.lineTo(q[0] + q[2] * (c + 12), q[1] + q[3] * 12); X.stroke(); });
-  X.restore();
+// ---------- stages: designed backgrounds, footage plays inside a card ----------
+var SCV = document.createElement("canvas"); SCV.width = W; SCV.height = H; var SCX = SCV.getContext("2d"), MAIN = X;
+var GRAIN = (function () { var c = document.createElement("canvas"); c.width = c.height = 256; var g = c.getContext("2d"), d = g.createImageData(256, 256);
+  for (var i = 0; i < d.data.length; i += 4) { var v = hash(i * .37) * 255; d.data[i] = d.data[i + 1] = d.data[i + 2] = v; d.data[i + 3] = 26; } g.putImageData(d, 0, 0); return c; })();
+var STAGES = [{ t0: -9, full: 1 }, { t0: 4.3, c: "#2C3933", w: "REALITY", ink: "220,240,228", rot: -1.4, st: "card" }, { t0: 10.0, c: "#6B2620", w: "CHOICE", ink: "255,226,214", rot: 1.2, st: "card" },
+  { t0: 19.8, c: "#121A2E", w: "LATER", ink: "196,210,255", rot: -1.0, st: "card" }, { t0: 23.3, c: "#7A5A26", w: "LEARN", ink: "255,238,205", rot: 1.0, st: "card" },
+  { t0: 26.2, c: "#3A6890", w: "LIFT", ink: "232,244,255", rot: 0, st: "window" }, { t0: 29.6, full: 1 }, { t0: 34.6, c: "#CDBA94", w: "IMAGINE", ink: "70,58,40", rot: -3, st: "polaroid" }, { t0: 42.0, full: 1 }];
+var POLA = [[34.6, -3, "MY BUSINESS"], [37.4, 2.6, "MY FAMILY"], [39.1, -1.6, "MY LIFE"]];
+function geom(sg, t) { if (sg.full) return { s: 1, r: 0, rot: 0 };
+  if (sg.st == "window") return { s: .68, r: 210, rot: 0 }; if (sg.st == "polaroid") { var rot = POLA[0][1]; POLA.forEach(function (q) { if (t >= q[0]) rot = q[1]; }); return { s: .62, r: 6, rot: rot }; }
+  return { s: .74, r: 46, rot: sg.rot }; }
+function bgDraw(sg, tn) {
+  var C = MAIN; C.fillStyle = sg.c; C.fillRect(0, 0, W, H);
+  var g = C.createRadialGradient(540, 760, 60, 540, 900, 1300); g.addColorStop(0, "rgba(255,255,255,.12)"); g.addColorStop(1, "rgba(0,0,0,.28)"); C.fillStyle = g; C.fillRect(0, 0, W, H);
+  C.save(); C.font = font(300, 800); C.textBaseline = "middle"; C.textAlign = "left"; C.lineWidth = 3; C.strokeStyle = "rgba(" + sg.ink + ",.14)";
+  var ww = C.measureText(sg.w + "  ").width;
+  for (var i = 0; i < 8; i++) { var y = 110 + i * 250, off = ((tn * 38 * (i % 2 ? 1 : -1)) % ww + ww) % ww, x = -ww + off; for (; x < W; x += ww) C.strokeText(sg.w, x, y); }
+  C.restore();
+  C.save(); C.fillStyle = C.createPattern(GRAIN, "repeat"); C.fillRect(0, 0, W, H); C.restore();
+}
+function stage(t, tn) {
+  var i = 0; for (var j = 0; j < STAGES.length; j++) if (t >= STAGES[j].t0 - .15) i = j;
+  var cur = STAGES[i], prev = STAGES[Math.max(0, i - 1)], k = i == 0 ? 1 : eio(seg(t, cur.t0 - .15, cur.t0 + .45));
+  var C = MAIN; C.fillStyle = BG; C.fillRect(0, 0, W, H);
+  if (!prev.full && k < 1) bgDraw(prev, tn);
+  if (!cur.full) { if (prev.full || k >= 1) bgDraw(cur, tn); else { C.save(); C.beginPath(); C.arc(540, 900, 1400 * k, 0, 7); C.clip(); bgDraw(cur, tn); C.restore(); } }
+  else if (prev.full) { C.drawImage(SCV, 0, 0); return; }
+  var g0 = geom(prev, t), g1 = geom(cur, t), g = { s: lerp(g0.s, g1.s, k), r: lerp(g0.r, g1.r, k), rot: lerp(g0.rot, g1.rot, k) };
+  if (!prev.full && !cur.full) g.s *= 1 - .07 * Math.sin(Math.PI * k);
+  var fs = cl((1 - g.s) / .3, 0, 1), cx = 540, cy = lerp(960, 900, fs) + 7 * Math.sin(tn * .9) * fs, w = W * g.s, h = H * g.s;
+  var pol = cur.st == "polaroid" || (prev.st == "polaroid" && k < 1);
+  if (cur.st == "polaroid") { var drop = 0; POLA.forEach(function (q, n) { if (n && t >= q[0]) drop = 1 - eout(seg(t, q[0], q[0] + .4)); });
+    POLA.forEach(function (q, n) { var nx = POLA[n + 1]; if (nx && t >= nx[0]) { C.save(); C.translate(cx - 26 * (n + 1), cy + 18 * (n + 1)); C.rotate(rad(q[1])); C.shadowColor = "rgba(0,0,0,.35)"; C.shadowBlur = 30; C.shadowOffsetY = 14; C.fillStyle = "#F4F1EA"; C.fillRect(-w / 2 - 26, -h / 2 - 26, w + 52, h + 150); C.restore(); } });
+    g.s *= 1 + .14 * drop; w = W * g.s; h = H * g.s; }
+  C.save(); C.translate(cx, cy); C.rotate(rad(g.rot));
+  C.shadowColor = "rgba(0,0,0," + (.5 * fs) + ")"; C.shadowBlur = 60 * fs; C.shadowOffsetY = 24 * fs;
+  if (pol && fs > 0) { C.fillStyle = "#F7F4EE"; C.fillRect(-w / 2 - 26, -h / 2 - 26, w + 52, h + 150); C.shadowColor = "transparent"; var lab = POLA[0][2]; POLA.forEach(function (q) { if (t >= q[0]) lab = q[2]; }); text(C, lab, 0, h / 2 + 64, 40, "#3A342C", 800, "center", fs); }
+  else if (cur.st == "window" || (prev.st == "window" && k < 1)) { rr(C, -w / 2 - 30, -h / 2 - 30, w + 60, h + 60, g.r + 30); C.fillStyle = "#E4E9ED"; C.fill(); C.shadowColor = "transparent"; rr(C, -w / 2 - 12, -h / 2 - 12, w + 24, h + 24, g.r + 12); C.fillStyle = "#B9C3CB"; C.fill(); }
+  else { rr(C, -w / 2, -h / 2, w, h, g.r); C.fillStyle = "#000"; C.fill(); C.shadowColor = "transparent"; }
+  rr(C, -w / 2, -h / 2, w, h, g.r); C.save(); C.clip(); C.drawImage(SCV, -w / 2, -h / 2, w, h); C.restore();
+  if (fs > 0) { rr(C, -w / 2, -h / 2, w, h, g.r); C.lineWidth = 3; C.strokeStyle = "rgba(255,255,255," + .22 * fs + ")"; C.stroke(); }
+  C.restore();
 }
 function frame(tn) {
   var t = remap(tn);
-  T = t; X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; X.fillStyle = BG; X.fillRect(0, 0, W, H);
+  T = t; X = SCX; X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; X.fillStyle = BG; X.fillRect(0, 0, W, H);
   if (t < 4.9) hook(t);
   if (t >= 4.3 && t < 10.5) { X.save(); X.globalAlpha = 1; forkScene(t); X.restore(); }
   if (t >= 10.0 && t < 20.4) choiceScene(t);
@@ -216,7 +250,7 @@ function frame(tn) {
   if (t >= 34.3 && t < 42.5) futureScene(t);
   if (t >= 42.0 && t < L("J", 0) - .1) steerScene(t);
   if (t >= L("J", 0) - .1) ctaScene(t);
-  vignette(.55); border(tn); caption(tn);
+  vignette(.45); X = MAIN; X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; stage(t, tn); caption(tn);
   var fo = sm(tn, DUR - .8, DUR); if (fo > 0) { X.fillStyle = "rgba(21,23,25," + fo + ")"; X.fillRect(0, 0, W, H); }
 }
 function prep(t) { return Promise.all(need(remap(t)).map(load)); }

@@ -16,3 +16,8 @@
 - mountain.mp3: "Mountain Wind" by CreatorsHome
 - uiclick.mp3: "Soft UI Click" by Universfield
 - tap.mp3: "UI Tap Soft Short" by SoundShelfStudio
+- pop.mp3: "Clean Minimal Pop" by DRAGON-STUDIO
+- swipe.mp3: "Short Whoosh Swipe Sound Effect" by biww
+- whoosh2.mp3: "Whoosh Transition Effect" by biww
+- risershort.mp3: "Soft Cinematic Riser Transition" by Turning_Pages
+- paperdrop.mp3: "Drop Stack of Paper-whoomp" by freesound_community
