@@ -9,3 +9,10 @@
 - send.mp3: "Message Ping" by Universfield
 - shimmer.mp3: "Magic sparkle" by Liecio
 - spell.mp3: "Magic Spell 02" by Universfield
+- riser.mp3: "Cinematic Riser 03" by DRAGON-STUDIO
+- switch.mp3: "Light Switch" by DRAGON-STUDIO
+- cafe.mp3: "Cafe ambience" by KM007_
+- kids.mp3: "NATURAL AND SOFT GIGGLES OF CHILDREN #1" by MIGHTUSER
+- mountain.mp3: "Mountain Wind" by CreatorsHome
+- uiclick.mp3: "Soft UI Click" by Universfield
+- tap.mp3: "UI Tap Soft Short" by SoundShelfStudio

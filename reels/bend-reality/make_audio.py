@@ -32,6 +32,12 @@ put(snd("shimmer", 0, 4.6, .8, 1.2), 30.0, .12)                       # tree gro
 for t0, txt in [(L("G", 0) + .9, "Thriving."), (L("G", 1) + .5, "Happy."), (L("G", 2) + .7, "The one I always dreamed of.")]: put(snd("typing", 1.0, len(txt) * .045 + .1, .02, .08), t0, .14)
 put(snd("spell", 0, 3.0, .05, 1.0), 46.6, .22)                        # the future lights up
 put(snd("typing", 1.0, .65, .02, .08), L("J", 0) + .35, .16); put(snd("send", 0, 1.1, .01, .3), L("J", 0) + 1.05, .25)
+put(snd("warp2", 0, 2.2, .1, .8), 7.3, .12)                         # the road forks
+put(snd("tap", 0, .5, .005, .1), 10.6, .14); put(snd("tap", 0, .5, .005, .1), 11.5, .12)   # scrolling taps
+put(snd("riser", 0.2, 3.6, .8, .2), 18.857 - 3.6, .14)              # build into "yes"
+put(snd("switch", 0, .6, .005, .1), 22.25, .26)                      # lights out
+put(snd("cafe", 2, 3.4, .5, .6), 34.4, .10); put(snd("kids", 0, 2.2, .3, .6), 37.5, .12); put(snd("mountain", 1, 3.3, .5, .8), 39.2, .12)
+for n in range(1, 8): put(snd("uiclick", 0, .4, .005, .1), 42.5 + 4.4 * (n + 1) / 8, .13)   # path lights node by node
 v, sr = sf.read(os.path.join(D, "audio.wav")); assert sr == SR
 vr = np.sqrt(np.mean(v[np.abs(v) > 1e-3] ** 2)); out = np.zeros(max(len(v), len(fx))); out[:len(v)] += v; out[:len(fx)] += fx * vr
 out = out[: int(TOT * SR)]; out /= max(1, np.abs(out).max() / .95)
