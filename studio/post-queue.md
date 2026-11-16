@@ -15,6 +15,8 @@ Post the top one each day. Copy the caption from its `post.md`. Then tick `[x] p
 
 ## Combined schedule from Sun 2026-11-15 (agent run 2026-11-15): 18 reels waiting, schedule in this order
 
+- Note 2026-11-16 20:30 (publisher): Day 1 + Day 2 batch reels all live or scheduled (02-roast-all-out, 05-pixel-kabir-9, 03-roast-cramming, 01-roast-crunches live; 06-pixel-kabir-10 IG posted ~19:16, 08-pixel-straight-5 IG 22:00). Tue 17 per schedule.json: X + YT scheduled for 08:30 pixel-kabir-4, 09:30 pizza-run, 10:00 straight-1, 11:30 kabir-5, 13:00 make-first, 14:30 straight-2, 16:00 story-1, 16:30 autopilot, 19:30 story-2, 22:00 kabir-11. IG only kabir-4 (08:30) + pizza-run (09:30) so far (5-flow limit); next run: IG for the other 8 Tue items, YT cap 10/day used on 11-16.
+
 Waiting: 8 agent reels (Sun 15 to Wed 18 blocks below, all rendered, with the "Why do we stop..." series card) + 10 reels in `ready-to-post/batch-2026-11-15/` (retention-playbook batch, no series card, owner session). Interleave them so each day has both (that is the V-EXP-35 card A/B) and the agent follow-chain stays in order. 5 slots a day = one Instagram session (5-flow limit). If a day slips, shift the whole day.
 - **Day 1** (Sun 15 if still possible, else first free day): 09:30 batch 01-roast-crunches · 13:00 ill-afternoon-crash · 16:30 ill-guessed-deadline · 19:30 batch 03-roast-cramming · 22:00 batch 05-pixel-kabir-9
 - **Day 2**: 09:30 batch 02-roast-all-out · 13:00 ill-make-first · 16:30 ill-autopilot · 19:30 batch 06-pixel-kabir-10 · 22:00 batch 08-pixel-straight-5
@@ -30,16 +32,16 @@ Waiting: 8 agent reels (Sun 15 to Wed 18 blocks below, all rendered, with the "W
 
 ## Built Fri 2026-11-13 for Mon 16 + Tue 17 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 6
 
-- [ ] Mon 16 19:30 IST · **ill-autopilot** (Reason #25 "autopilot", pillar C, flat songs-per-month bars on frame 0, 51.7 s, strongest of the day; keeps make-first's "Next: why you stop improving after month one"; follow line "Next: why a great day makes you skip the next one") · `ready-to-post/2026-11-16-ill-autopilot/`
+- [ ] Tue 17 16:30 IST X + YT scheduled; **IG still to schedule** · **ill-autopilot** (Reason #25 "autopilot", pillar C, flat songs-per-month bars on frame 0, 51.7 s, strongest of the day; keeps make-first's "Next: why you stop improving after month one"; follow line "Next: why a great day makes you skip the next one") · `ready-to-post/2026-11-16-ill-autopilot/`
 - [ ] Tue 17 13:00 IST · **ill-good-day** (Reason #26 "the good day", pillar B, story B (Neha), Monday 180 min vs rest of week 0 on frame 0, 50.9 s; follow line "Next: why goals die in the middle") · `ready-to-post/2026-11-17-ill-good-day/`
 - [ ] Tue 17 19:30 IST · **ill-middle** (Reason #27 "the middle", pillar A, motivation-along-a-goal bars with the middle in clay on frame 0, 50.6 s; follow line "Next: why a new goal feels better than the old one", next run builds it) · `ready-to-post/2026-11-17-ill-middle/`
 - Order: after ill-make-first (Mon 16 13:00). autopilot must follow make-first; good-day follows autopilot; middle follows good-day. Render status: detached finisher `studio/state/finish_2026-11-13.log`; check `video.mp4` exists before scheduling.
 
 ## Built Thu 2026-11-12 for Sun 2026-11-15 + Mon 16 (auto-approved, to schedule). Instagram, X and YouTube Shorts. V-EXP-34 batch 5
 
-- [ ] Sun 15 13:00 IST · **ill-afternoon-crash** (Reason #22 "the 2 PM slot", pillar D, alertness bars with red 2:30 "Goal" bar on frame 0, 49.7 s; keeps mixed-practice's "Next: why your afternoon crash starts at lunch"; follow line "Next: why your deadline makes you quit") · `ready-to-post/2026-11-15-ill-afternoon-crash/`
-- [ ] Sun 15 19:30 IST · **ill-guessed-deadline** (Reason #23 "the guessed deadline", pillar A, story B (Arjun), bars Guessed 34 vs Took 56 days on frame 0 (Buehler et al. 1994), ~50 s, strongest; follow line "Next: why reading about it feels like doing it", next run builds it) · `ready-to-post/2026-11-15-ill-guessed-deadline/`
-- [ ] Mon 16 13:00 IST · **ill-make-first** (Reason #24 "reading about it", pillar A, structure C, bars 40 writing videos vs 0 pages on frame 0, 49.6 s; keeps guessed-deadline's promise; follow line "Next: why you stop improving after month one", next run builds it) · `ready-to-post/2026-11-16-ill-make-first/`
+- [x] Mon 16 13:00 IST IG + X + YT (posted) · **ill-afternoon-crash** (Reason #22 "the 2 PM slot", pillar D, alertness bars with red 2:30 "Goal" bar on frame 0, 49.7 s; keeps mixed-practice's "Next: why your afternoon crash starts at lunch"; follow line "Next: why your deadline makes you quit") · `ready-to-post/2026-11-15-ill-afternoon-crash/`
+- [x] Mon 16 16:30 IST X + YT; IG posted Mon 16 ~19:14 (slot missed) · **ill-guessed-deadline** (Reason #23 "the guessed deadline", pillar A, story B (Arjun), bars Guessed 34 vs Took 56 days on frame 0 (Buehler et al. 1994), ~50 s, strongest; follow line "Next: why reading about it feels like doing it", next run builds it) · `ready-to-post/2026-11-15-ill-guessed-deadline/`
+- [ ] Tue 17 13:00 IST X + YT scheduled; **IG still to schedule** · **ill-make-first** (Reason #24 "reading about it", pillar A, structure C, bars 40 writing videos vs 0 pages on frame 0, 49.6 s; keeps guessed-deadline's promise; follow line "Next: why you stop improving after month one", next run builds it) · `ready-to-post/2026-11-16-ill-make-first/`
 - Order: after the Sat 14 pair (afternoon-crash must follow mixed-practice; make-first must follow guessed-deadline). Render status: detached finisher `studio/state/finish_2026-11-15.log`; check `video.mp4` exists and look at `studio/state/frames-2026-11-15/` before scheduling.
 
 ## Built Wed 2026-11-11 for Thu 2026-11-12 (auto-approved, to schedule after the Mon + Tue batches). Instagram, X and YouTube Shorts. V-EXP-34 batch 4
