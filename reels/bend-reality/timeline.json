@@ -1,0 +1,173 @@
+{
+ "total": 55.702,
+ "scenes": {
+  "H": [
+   0.35,
+   4.55
+  ],
+  "A": [
+   4.55,
+   10.217
+  ],
+  "B": [
+   10.217,
+   16.27
+  ],
+  "C": [
+   16.27,
+   20.03
+  ],
+  "D": [
+   20.03,
+   23.506
+  ],
+  "E": [
+   23.506,
+   29.803
+  ],
+  "F": [
+   29.803,
+   34.621
+  ],
+  "G": [
+   34.621,
+   42.21
+  ],
+  "I": [
+   42.21,
+   47.976
+  ],
+  "J": [
+   47.976,
+   55.702
+  ]
+ },
+ "lines": [
+  [
+   "H",
+   0,
+   0.35,
+   2.475,
+   "Could you bend reality with your will?"
+  ],
+  [
+   "H",
+   1,
+   2.875,
+   4.0,
+   "Let's find out."
+  ],
+  [
+   "A",
+   0,
+   4.55,
+   9.717,
+   "Every choice you make takes you into a reality that would not exist, if you hadn't chosen it."
+  ],
+  [
+   "B",
+   0,
+   10.217,
+   12.181,
+   "Right now, you can keep scrolling."
+  ],
+  [
+   "B",
+   1,
+   12.481,
+   15.82,
+   "Or you can put your phone down, and read about how planes fly."
+  ],
+  [
+   "C",
+   0,
+   16.27,
+   18.507,
+   "Did that small choice change reality?"
+  ],
+  [
+   "C",
+   1,
+   18.857,
+   19.48,
+   "Yes."
+  ],
+  [
+   "D",
+   0,
+   20.03,
+   23.106,
+   "In one version, you scroll a little longer, and fall asleep."
+  ],
+  [
+   "E",
+   0,
+   23.506,
+   26.156,
+   "But because of the choice you made, reality split."
+  ],
+  [
+   "E",
+   1,
+   26.456,
+   29.253,
+   "And now there's a world where you know how planes fly."
+  ],
+  [
+   "F",
+   0,
+   29.803,
+   32.417,
+   "So if one small choice can change reality,"
+  ],
+  [
+   "F",
+   1,
+   32.617,
+   34.071,
+   "what about the big ones?"
+  ],
+  [
+   "G",
+   0,
+   34.621,
+   37.427,
+   "Imagine a future where your business is thriving,"
+  ],
+  [
+   "G",
+   1,
+   37.627,
+   39.098,
+   "your family is happy,"
+  ],
+  [
+   "G",
+   2,
+   39.298,
+   41.71,
+   "and you're living the life you always dreamed of."
+  ],
+  [
+   "I",
+   0,
+   42.21,
+   47.376,
+   "Could you steer reality toward that version, with the choices you make, and the actions you take?"
+  ],
+  [
+   "J",
+   0,
+   47.976,
+   49.219,
+   "Comment reality,"
+  ],
+  [
+   "J",
+   1,
+   49.469,
+   52.802,
+   "and we'll show you how to bend reality toward the life you want."
+  ]
+ ]
+}
