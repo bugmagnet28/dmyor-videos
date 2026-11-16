@@ -22,12 +22,10 @@ ph = 2 * np.pi * np.cumsum(f) / SR; drone = (np.sin(ph) + .5 * np.sin(2 * ph + .
 put(drone, 0.0, .5)
 def wind(d):
     n = int(d * SR); w = np.random.default_rng(5).standard_normal(n); w = S.lowpass(w, 700); m = .6 + .4 * np.sin(2 * np.pi * .35 * np.arange(n) / SR); return w * m * env(n, .6, .8)
-for t in [4.3, 10.0, 19.8, 26.2, 29.6, 34.3, 37.4, 39.1, 42.0]: put(S.swish(.5), t - .12, .7)
 put(S.reveal(), 8.0, .5)                          # the branch splits
-put(S.swish(.7), L("B", 1) - .05, .8)             # screen splits
 put(S.reveal(), L("C", 1) - .02, .9)              # "Yes."
 put(S.clock(2.6), 20.3, .45)                      # late-night scroll
-put(S.swish(.8), 23.3, .9); put(S.reveal(), 23.45, .6)  # reality split
+put(S.reveal(), 23.45, .6)  # reality split
 put(wind(3.6), 26.3, .35)                         # wing
 put(S.tone(3.8), 30.0, .25)                       # tree grows
 for t0, txt in [(L("G", 0) + .9, "Thriving."), (L("G", 1) + .5, "Happy."), (L("G", 2) + .7, "The one I always dreamed of.")]: put(S.typing(len(txt) * .045), t0, .5)
@@ -36,7 +34,7 @@ for i in range(1, nodes + 1): put(S.pop(i % 4), 42.5 + 4.4 * (i + .5) / (nodes +
 put(S.chord(3.0), 46.7, .4)                       # the future lights up
 put(S.typing(.6), L("J", 0) + .35, .6); put(S.toggle(), L("J", 0) + 1.05, .7)
 v, sr = sf.read(os.path.join(D, "audio.wav")); assert sr == SR
-out = np.zeros(max(len(v), len(fx))); out[:len(v)] += v; out[:len(fx)] += fx * .5
+out = np.zeros(max(len(v), len(fx))); out[:len(v)] += v; out[:len(fx)] += fx * .35
 out = out[: int(TOT * SR)]; out /= max(1, np.abs(out).max() / .95)
 sf.write(os.path.join(D, "audio_mixed.wav"), out.astype(np.float32), SR)
 subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", os.path.join(D, "audio_mixed.wav"), "-af", "loudnorm=I=-15:TP=-1.5", "-b:a", "192k", os.path.join(D, "audio_mixed.mp3")], check=True)
