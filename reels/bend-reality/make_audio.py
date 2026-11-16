@@ -45,6 +45,9 @@ put(snd("risershort", 0, 2.0, .05, .4), 5.0, .14); put(snd("risershort", 0, 1.4,
 put(snd("swipe", 0, .9, .005, .2), 26.7, .12)                        # airflow lines
 for t0 in [37.4, 39.1]: put(snd("swipe", 0, .9, .005, .2), t0 - .1, .14); put(snd("paperdrop", 0, .52, .003, .15), t0 + .3, .22)   # polaroids land
 put(snd("chime", 0, 2.5, .02, 1.0), 52.6, .14)                       # wordmark
+# diagrams
+put(snd("swipe", 0, .9, .005, .2), 16.2, .14); put(snd("risershort", 0, 1.4, .05, .4), 16.4, .12); put(snd("pop", 0, .5, .003, .15), 17.9, .15)
+put(snd("warp2", 0, 1.6, .05, .6), 23.9, .10); put(snd("pop", 0, .5, .003, .15), 24.6, .15)
 v, sr = sf.read(os.path.join(D, "audio.wav")); assert sr == SR
 vr = np.sqrt(np.mean(v[np.abs(v) > 1e-3] ** 2)); out = np.zeros(max(len(v), len(fx))); out[:len(v)] += v; out[:len(fx)] += fx * vr
 out = out[: int(TOT * SR)]; out /= max(1, np.abs(out).max() / .95)

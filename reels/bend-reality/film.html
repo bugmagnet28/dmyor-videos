@@ -92,6 +92,38 @@ function drawTree(gp, alpha, routeK) {
 }
 function routeNodes() { var o = []; TREE.forEach(function (s) { if (onRoute(s.path) && s.path.length <= ROUTE.length) o.push(s); }); return o.sort(function (a, b) { return a.path.length - b.path.length; }); }
 
+// ---------- plain diagram: one reality splits in two (white canvas, black ink) ----------
+function phoneIcon(x, y, a) { X.save(); X.globalAlpha = a; rr(X, x - 34, y - 58, 68, 116, 14); X.lineWidth = 6; X.strokeStyle = "#111"; X.stroke(); X.fillStyle = "#111"; X.fillRect(x - 12, y + 42, 24, 5); X.restore(); }
+function planeIcon(x, y, a) { X.save(); X.globalAlpha = a; X.translate(x, y); X.fillStyle = "#111"; X.beginPath();
+  X.moveTo(-60, 0); X.lineTo(60, -6); X.quadraticCurveTo(76, 0, 60, 6); X.lineTo(-60, 0); X.fill();
+  X.beginPath(); X.moveTo(-6, -2); X.lineTo(-30, -52); X.lineTo(-14, -52); X.lineTo(22, -3); X.closePath(); X.fill();
+  X.beginPath(); X.moveTo(-6, 2); X.lineTo(-30, 52); X.lineTo(-14, 52); X.lineTo(22, 3); X.closePath(); X.fill();
+  X.beginPath(); X.moveTo(-50, -1); X.lineTo(-64, -24); X.lineTo(-56, -24); X.lineTo(-40, -1); X.closePath(); X.fill(); X.restore(); }
+function bez(p0, p1, p2, p3, k) { var u = 1 - k; return [u * u * u * p0[0] + 3 * u * u * k * p1[0] + 3 * u * k * k * p2[0] + k * k * k * p3[0], u * u * u * p0[1] + 3 * u * u * k * p1[1] + 3 * u * k * k * p2[1] + k * k * k * p3[1]]; }
+function branch(P, k, w, col, dash) { if (k <= 0) return; X.save(); X.lineWidth = w; X.strokeStyle = col; X.lineCap = "round"; if (dash) X.setLineDash([18, 16]); X.beginPath(); X.moveTo(P[0][0], P[0][1]);
+  for (var i = 1; i <= 40; i++) { var q = bez(P[0], P[1], P[2], P[3], k * i / 40); X.lineTo(q[0], q[1]); } X.stroke(); X.restore(); }
+// mode 1: draw the split; mode 2: the scroll branch fades, "you are here" travels the planes branch
+function diverge(t, a0, a1, mode) {
+  var a = sm(t, a0, a0 + .3) * (1 - sm(t, a1 - .3, a1)); if (a <= 0) return;
+  X.save(); X.globalAlpha = a; X.fillStyle = "#F4F3EF"; X.fillRect(0, 0, W, H);
+  var z = zin(a0, a1 + .5, t, .1); X.translate(540, 960); X.scale(z, z); X.translate(-540, -960);
+  var k0 = mode == 1 ? eio(seg(t, a0 + .2, a0 + .9)) : 1, kb = mode == 1 ? eio(seg(t, a0 + .9, a0 + 1.9)) : 1;
+  var S0 = [110, 960], N = [350, 960], UP = [[350, 960], [520, 960], [580, 640], [740, 640]], DN = [[350, 960], [520, 960], [580, 1280], [740, 1280]];
+  X.lineCap = "round"; X.strokeStyle = "#111"; X.lineWidth = 9; X.beginPath(); X.moveTo(S0[0], S0[1]); X.lineTo(lerp(S0[0], N[0], k0), 960); X.stroke();
+  X.fillStyle = "#111"; X.beginPath(); X.arc(S0[0], S0[1], 16, 0, 7); X.fill(); text(X, "NOW", S0[0], 1020, 34, "#111", 800, "center", a);
+  var fade = mode == 2 ? sm(t, a0 + .5, a0 + 1.3) : 0;
+  if (fade < 1) branch(UP, kb, 9, "#111", false); if (fade > 0) { X.save(); X.globalAlpha = a * .8; branch(UP, 1, 6, "#9A9A96", true); X.restore(); }
+  branch(DN, kb, mode == 2 ? lerp(9, 14, sm(t, a0 + .5, a0 + 1.3)) : 9, "#111", false);
+  if (k0 >= 1) { X.beginPath(); X.arc(N[0], N[1], 13, 0, 7); X.fillStyle = "#111"; X.fill(); }
+  var la = mode == 2 ? 1 : sm(t, a0 + 1.7, a0 + 2.1), uc = mode == 2 ? lerp(1, .35, fade) : 1;
+  phoneIcon(800, 640, la * uc * a); text(X, "KEEP SCROLLING", 760, 745, 34, "#111", 800, "center", la * uc * a);
+  planeIcon(820, 1280, la * a); text(X, "READ HOW PLANES FLY", 760, 1370, 34, "#111", 800, "center", la * a);
+  if (mode == 2 && fade > 0) { X.save(); X.globalAlpha = a * fade; X.fillStyle = "#111"; X.fillRect(760 - 148, 743, 296 * fade, 5); X.restore(); }
+  if (mode == 2) { var mk = eio(seg(t, a0 + 1.2, a1 - .5)), q = bez(DN[0], DN[1], DN[2], DN[3], mk), ya = sm(t, a0 + 1.2, a0 + 1.5);
+    X.save(); X.globalAlpha = a * ya; X.beginPath(); X.arc(q[0], q[1], 22, 0, 7); X.fillStyle = "#111"; X.fill(); X.beginPath(); X.arc(q[0], q[1], 34 + 4 * Math.sin(T * 6), 0, 7); X.lineWidth = 4; X.strokeStyle = "#111"; X.stroke(); X.restore();
+    text(X, "YOU ARE HERE", q[0], q[1] - 70, 34, "#111", 800, "center", a * ya); }
+  X.restore();
+}
 // ---------- scenes ----------
 function hook(t) {
   // footage + title drawn offscreen, then the whole picture bends
@@ -155,7 +187,7 @@ function wingScene(t) {
 }
 function treeScene(t) {
   var a0 = 29.6, gp = eio(seg(t, 29.9, 34.2)), cz = lerp(2.2, 1, eio(seg(t, 30.0, 34.4)));
-  cover(X, shot("cosmos", t), FULL, zin(a0, 34.9, t, .22), .5, sm(t, a0, a0 + .5)); grade(X, .5);
+  cover(X, shot("cosmos", t), FULL, zin(a0, 34.9, t, .35), .5, sm(t, a0, a0 + .5)); grade(X, .5);
   X.save(); X.translate(W / 2, lerp(1500, 960, eio(seg(t, 30.0, 34.4)))); X.scale(cz, cz); X.translate(-540, lerp(-1600, -960, eio(seg(t, 30.0, 34.4))));
   drawTree(gp, sm(t, a0, a0 + .5) * (1 - sm(t, 34.3, 34.8)), null); X.restore();
 }
@@ -171,7 +203,7 @@ function futureScene(t) {
   chip("IMAGINE", W / 2, 330, sm(t, 34.5, 34.9) * (1 - sm(t, 41.9, 42.3)), 34);
 }
 function steerScene(t) {
-  var a0 = 42.0; cover(X, shot("cosmos", t), FULL, zin(a0, 56, t, .3), .5, sm(t, a0, a0 + .5)); grade(X, .5);
+  var a0 = 42.0; cover(X, shot("cosmos", t), FULL, zin(a0, 48, t, .3) * zin(48, 56, t, .22), .5, sm(t, a0, a0 + .5)); grade(X, .5);
   var fade = sm(t, a0, a0 + .5) * (1 - .75 * sm(t, 47.6, 48.4)), rk = seg(t, 42.5, 46.9);
   drawTree(1, fade, rk);
   var nodes = routeNodes();
@@ -252,7 +284,7 @@ function frame(tn) {
   if (t >= 34.3 && t < 42.5) futureScene(t);
   if (t >= 42.0 && t < L("J", 0) - .1) steerScene(t);
   if (t >= L("J", 0) - .1) ctaScene(t);
-  vignette(.45); X = MAIN; X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; X.drawImage(SCV, 0, 0); border(tn); caption(tn);
+  vignette(.45); diverge(t, 16.15, 18.75, 1); diverge(t, 23.35, 26.35, 2); X = MAIN; X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; X.drawImage(SCV, 0, 0); border(tn); caption(tn);
   var fo = sm(tn, DUR - .8, DUR); if (fo > 0) { X.fillStyle = "rgba(21,23,25," + fo + ")"; X.fillRect(0, 0, W, H); }
 }
 function prep(t) { return Promise.all(need(remap(t)).map(load)); }
