@@ -115,15 +115,15 @@ function forkScene(t) { var a0 = SHOTS[1][1]; cover(X, shot("fork", t), FULL, 1.
 }
 function choiceScene(t) {
   var sp = sm(t, L("B", 1) - .1, L("B", 1) + .6), half = lerp(H, H / 2, sp), C = L("C", 1), yes = sm(t, C - .05, C + .5);
-  var gap = 6 + 70 * yes, top = { x: 0, y: -40 * yes, w: W, h: half - gap / 2 }, bot = { x: 0, y: half + gap / 2 + 40 * yes, w: W, h: H - half - gap / 2 };
+  var gap = 4 + 190 * yes, top = { x: 0, y: -40 * yes, w: W, h: half - gap / 2 }, bot = { x: 0, y: half + gap / 2 + 40 * yes, w: W, h: H - half - gap / 2 };
   X.fillStyle = "#0B0C0D"; X.fillRect(0, 0, W, H);
   cover(X, shot("phone", t), top, 1.06 + .16 * seg(t, 10, 20.4), .45, sm(t, 10.0, 10.5)); grade(X, .3, top);
   if (sp > 0) { cover(X, shot("read", t), bot, 1.05 + .12 * seg(t, 12.3, 20.4), .45); grade(X, .25, bot); }
-  if (sp > 0) { var sy = half; X.save(); var g = X.createLinearGradient(0, sy - 60 - gap, 0, sy + 60 + gap); g.addColorStop(0, "rgba(157,184,163,0)"); g.addColorStop(.5, "rgba(220,240,228," + (.5 + .5 * yes) + ")"); g.addColorStop(1, "rgba(157,184,163,0)");
-    X.fillStyle = g; X.fillRect(0, sy - 60 - gap, W, 120 + gap * 2); X.restore(); }
+  if (sp > 0) { var bt = top.y + top.h, bb = bot.y; if (yes > 0) { X.fillStyle = "#FFFFFF"; X.fillRect(0, bt, W, bb - bt); X.fillStyle = "#111111"; X.fillRect(0, bt, W, 5); X.fillRect(0, bb - 5, W, 5); } else { X.fillStyle = "#FFFFFF"; X.fillRect(0, half - 2, W, 4); } }
+
   chip("KEEP SCROLLING", W / 2, (sp > 0 ? top.y + top.h * .16 : 300), sm(t, L("B", 0) + .4, L("B", 0) + .8) * (1 - sm(t, 19.9, 20.3)));
   chip("READ HOW PLANES FLY", W / 2, bot.y + 110, sm(t, L("B", 1) + 1.6, L("B", 1) + 2.0) * (1 - sm(t, 19.9, 20.3)));
-  if (yes > 0) { var ya = yes * (1 - sm(t, 19.9, 20.3)); X.save(); X.shadowColor = "rgba(0,0,0,.6)"; X.shadowBlur = 30; tone(X, "*YES.*", W / 2, half, 170, 800, ya); X.restore(); }
+  if (yes > 0) { var ya = sm(t, C + .1, C + .4) * (1 - sm(t, 19.9, 20.3)); text(X, "YES.", W / 2, (top.y + top.h + bot.y) / 2 + 4, 120, "#111111", 800, "center", ya); }
 }
 function bedScene(t) {
   var a0 = 19.8, grow = eio(seg(t, a0, a0 + .7)), r = { x: 0, y: 0, w: W, h: lerp(H / 2, H, grow) };
@@ -136,7 +136,7 @@ function readScene(t) {
   var a0 = 23.3, up = eio(seg(t, a0, a0 + .8)), r = { x: 0, y: lerp(H, 0, up), w: W, h: H };
   bedScene(Math.min(t, 23.85)); X.fillStyle = "rgba(0,0,0," + .4 * up + ")"; X.fillRect(0, 0, W, H);
   cover(X, shot("read", t), r, 1.08 + .14 * seg(t, a0, 26.6), .45); grade(X, .2, r);
-  var g = X.createLinearGradient(0, r.y - 80, 0, r.y + 80); g.addColorStop(0, "rgba(157,184,163,0)"); g.addColorStop(.5, "rgba(230,245,235,.85)"); g.addColorStop(1, "rgba(157,184,163,0)"); X.fillStyle = g; X.fillRect(0, r.y - 80, W, 160);
+  X.fillStyle = "#FFFFFF"; X.fillRect(0, r.y - 2, W, 4);
   chip("REALITY SPLIT", W / 2, 330, sm(t, 24.6, 25.0) * (1 - sm(t, 26.0, 26.4)), 36);
 }
 function wingScene(t) {
@@ -237,6 +237,7 @@ function stage(t, tn) {
   if (fs > 0) { rr(C, -w / 2, -h / 2, w, h, g.r); C.lineWidth = 3; C.strokeStyle = "rgba(255,255,255," + .22 * fs + ")"; C.stroke(); }
   C.restore();
 }
+function border(tn) { var m = 30; X.save(); X.globalAlpha = sm(tn, 0, .5); rr(X, m, m, W - 2 * m, H - 2 * m, 26); X.lineWidth = 3; X.strokeStyle = "rgba(255,255,255,.55)"; X.stroke(); X.restore(); }
 function frame(tn) {
   var t = remap(tn);
   T = t; X = SCX; X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; X.fillStyle = BG; X.fillRect(0, 0, W, H);
@@ -250,7 +251,7 @@ function frame(tn) {
   if (t >= 34.3 && t < 42.5) futureScene(t);
   if (t >= 42.0 && t < L("J", 0) - .1) steerScene(t);
   if (t >= L("J", 0) - .1) ctaScene(t);
-  vignette(.45); X = MAIN; X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; stage(t, tn); caption(tn);
+  vignette(.45); X = MAIN; X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; X.drawImage(SCV, 0, 0); border(tn); caption(tn);
   var fo = sm(tn, DUR - .8, DUR); if (fo > 0) { X.fillStyle = "rgba(21,23,25," + fo + ")"; X.fillRect(0, 0, W, H); }
 }
 function prep(t) { return Promise.all(need(remap(t)).map(load)); }
