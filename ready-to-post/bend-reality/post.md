@@ -1,6 +1,6 @@
 # Bend reality (calm cinematic reel, real footage + animation)
 
-**Length:** about 65 s. Voice: Kokoro am_eric (calm, slowed), owner's script wording kept. **No music in the file:** add an Instagram track in the app (calm / mysterious works best; keep it low under the voice). Voice and sound effects are already mixed.
+**Length:** about 63 s. Voice: owner's ElevenLabs take (Lucius P), picture re-timed to it. **No music in the file:** add an Instagram track in the app (calm / mysterious works best; keep it low under the voice). Voice and sound effects are already mixed.
 
 **Instagram caption:**
 Every choice opens a version of reality that would not exist without it.

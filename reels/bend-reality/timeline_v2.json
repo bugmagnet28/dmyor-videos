@@ -1,0 +1,187 @@
+{
+ "total": 65.359,
+ "scenes": {
+  "H": [
+   0.35,
+   4.55
+  ],
+  "A": [
+   4.55,
+   12.606
+  ],
+  "B": [
+   12.606,
+   19.314
+  ],
+  "C": [
+   19.314,
+   23.995
+  ],
+  "D": [
+   23.995,
+   27.393
+  ],
+  "E": [
+   27.393,
+   34.411
+  ],
+  "F": [
+   34.411,
+   38.937
+  ],
+  "G": [
+   38.937,
+   48.769
+  ],
+  "I": [
+   48.769,
+   55.217
+  ],
+  "J": [
+   55.217,
+   65.359
+  ]
+ },
+ "lines": [
+  [
+   "H",
+   0,
+   0.35,
+   2.475,
+   "Could you bend reality with your will?"
+  ],
+  [
+   "H",
+   1,
+   2.875,
+   4.0,
+   "Let's find out."
+  ],
+  [
+   "A",
+   0,
+   4.55,
+   5.881,
+   "Think of it this way."
+  ],
+  [
+   "A",
+   1,
+   6.181,
+   12.106,
+   "Every choice you make takes you to a reality that would not exist, if you did not specifically choose it."
+  ],
+  [
+   "B",
+   0,
+   12.606,
+   15.208,
+   "Let's say, right now, you can either keep scrolling,"
+  ],
+  [
+   "B",
+   1,
+   15.458,
+   18.864,
+   "or you can shut down your phone, and read about how planes fly."
+  ],
+  [
+   "C",
+   0,
+   19.314,
+   21.741,
+   "Did this simple choice alter reality?"
+  ],
+  [
+   "C",
+   1,
+   22.091,
+   23.445,
+   "The answer is yes."
+  ],
+  [
+   "D",
+   0,
+   23.995,
+   26.993,
+   "In an ideal world, you would scroll some more, and then sleep."
+  ],
+  [
+   "E",
+   0,
+   27.393,
+   30.225,
+   "But because of a choice you made, reality diverged."
+  ],
+  [
+   "E",
+   1,
+   30.525,
+   33.861,
+   "And now, there exists a world where you know how planes fly."
+  ],
+  [
+   "F",
+   0,
+   34.411,
+   38.387,
+   "This sounds like you can change reality, based on the choices you take."
+  ],
+  [
+   "G",
+   0,
+   38.937,
+   41.8,
+   "Now let's say I imagine a reality in the future,"
+  ],
+  [
+   "G",
+   1,
+   42.0,
+   43.887,
+   "where I run a successful business,"
+  ],
+  [
+   "G",
+   2,
+   44.087,
+   45.552,
+   "my family is happy,"
+  ],
+  [
+   "G",
+   3,
+   45.752,
+   48.269,
+   "and I am living the life I always dreamed of."
+  ],
+  [
+   "I",
+   0,
+   48.769,
+   51.559,
+   "Would it be possible to steer reality to that version,"
+  ],
+  [
+   "I",
+   1,
+   51.759,
+   54.617,
+   "based on the choices I make, and the actions I take?"
+  ],
+  [
+   "J",
+   0,
+   55.217,
+   57.699,
+   "To find out the answer, comment reality,"
+  ],
+  [
+   "J",
+   1,
+   57.949,
+   62.459,
+   "and we will show you the way you can also bend reality, according to your will."
+  ]
+ ]
+}
