@@ -144,3 +144,10 @@ Target quality bar: @anmoldoesmotion's OpenAI piece, `studio/analysis/2026-10-25
 - **Level (owner 2026-11-15): audible while the narrator speaks.** About 9-10 dB under the voice during speech, about 6 dB under in pauses (`music_lufs=-21`, gentle ducking). The voice must still be fully clear.
 - Every reel keeps a no-music version (`video-nomusic.mp4`) for the phone trending-audio test (1-2 reels a week posted from the phone with a trending sound).
 - No copyrighted songs baked into files. Only library tracks or Instagram's in-app music.
+
+## Idea films (owner 2026-11-15 to 11-17, from "Bend reality")
+Full rules and pipeline: `.claude/skills/idea-film/SKILL.md`. Summary:
+- **Direction:** more animation, less real video; much better hooks and visuals. Every line gets its own visual idea, and concept lines get a plain diagram.
+- **Script and voice:** keep Sanyam's own script words and connectors (grammar fixes only). Use his ElevenLabs take when he provides one.
+- **Look:** full-screen footage with a visible eased zoom on every shot and a plain thin white border. No coloured stage backgrounds, glows or gradients. Emphasis is plain: white band, black lines, black text.
+- **Sound:** no music in the file (he adds Instagram audio). Real Pixabay effects only, a sound on every movement, always below the voice.
