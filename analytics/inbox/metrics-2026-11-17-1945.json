@@ -1,0 +1,809 @@
+{
+ "taken_ist": "2026-11-17 19:45",
+ "ig_grid": [
+  {
+   "code": "Df2EMYUubUm",
+   "views": 7,
+   "slug": "05-pixel-story-1"
+  },
+  {
+   "code": "Df2D8l4Pz0i",
+   "views": 20,
+   "slug": "04-pixel-straight-2"
+  },
+  {
+   "code": "Df2Dp_nNT59",
+   "views": 2,
+   "slug": "ill-make-first"
+  },
+  {
+   "code": "Df2DZ3rtciN",
+   "views": 51,
+   "slug": "03-pixel-kabir-5"
+  },
+  {
+   "code": "Df2DKhqBijC",
+   "views": 68,
+   "slug": "02-pixel-straight-1"
+  },
+  {
+   "code": "Df1BbM2T8Hq",
+   "views": 123,
+   "slug": "04-roast-pizza-run"
+  },
+  {
+   "code": "Df06mdSzpX4",
+   "views": 126,
+   "slug": "01-pixel-kabir-4"
+  },
+  {
+   "code": "DfzyjNRzkt5",
+   "views": 151,
+   "slug": "08-pixel-straight-5"
+  },
+  {
+   "code": "DfznBeJzyuR",
+   "views": 1377,
+   "slug": null,
+   "caption_start": "Write your dreams and visions in one place, break them into small steps",
+   "note": "manual post Nov 16, not in schedule.json"
+  },
+  {
+   "code": "DfzfbFlB4la",
+   "views": 125,
+   "slug": "06-pixel-kabir-10"
+  },
+  {
+   "code": "DfzfIBpBqAq",
+   "views": 114,
+   "slug": "ill-guessed-deadline"
+  },
+  {
+   "code": "Dfy0wtuzweT",
+   "views": 119,
+   "slug": "ill-afternoon-crash"
+  },
+  {
+   "code": "DfycoLgzU7V",
+   "views": 379,
+   "slug": "02-roast-all-out"
+  },
+  {
+   "code": "DfxNr0KTJmK",
+   "views": 1199,
+   "slug": "05-pixel-kabir-9"
+  },
+  {
+   "code": "Dfw8hZAzHAc",
+   "views": 165,
+   "slug": "03-roast-cramming"
+  },
+  {
+   "code": "Dfw12PiJe_w",
+   "views": 146,
+   "slug": "01-roast-crunches"
+  },
+  {
+   "code": "DfuXuu7TG0g",
+   "views": 122,
+   "slug": null
+  },
+  {
+   "code": "DfuDLhuzyUY",
+   "views": 161,
+   "slug": null
+  },
+  {
+   "code": "DftpoDfv_HK",
+   "views": 124,
+   "slug": null
+  },
+  {
+   "code": "DfrGXCnzi1R",
+   "views": 170,
+   "slug": null
+  },
+  {
+   "code": "DfquQjiTOTq",
+   "views": 119,
+   "slug": null
+  },
+  {
+   "code": "DfpOJSCTyqT",
+   "views": 121,
+   "slug": null
+  },
+  {
+   "code": "DfohhwvzAid",
+   "views": 144,
+   "slug": null
+  },
+  {
+   "code": "DfmzTLxBhRl",
+   "views": 136,
+   "slug": null
+  },
+  {
+   "code": "DffMINjToZ8",
+   "views": 137,
+   "slug": null
+  },
+  {
+   "code": "DffByzaz_9v",
+   "views": 114,
+   "slug": null
+  },
+  {
+   "code": "Dfe8zSLRYt7",
+   "views": 460,
+   "slug": null
+  },
+  {
+   "code": "DfcWOvnvTmc",
+   "views": 1360,
+   "slug": null
+  },
+  {
+   "code": "DfbpkncPCaE",
+   "views": 276,
+   "slug": null
+  },
+  {
+   "code": "DfbRhOOvD6-",
+   "views": 129,
+   "slug": null
+  },
+  {
+   "code": "DfaCha8vCND",
+   "views": 228,
+   "slug": null
+  },
+  {
+   "code": "DfZ2GXuOpj9",
+   "views": 114,
+   "slug": null
+  },
+  {
+   "code": "DfYsth6TPLx",
+   "views": 213,
+   "slug": null
+  },
+  {
+   "code": "DfXduwlzA_S",
+   "views": 174,
+   "slug": null
+  },
+  {
+   "code": "DfXP8ZMRxh6",
+   "views": 529,
+   "slug": null
+  },
+  {
+   "code": "DfSDDWWzZOz",
+   "views": 115,
+   "slug": null
+  },
+  {
+   "code": "DfRWUhTzuis",
+   "views": 80,
+   "slug": null
+  },
+  {
+   "code": "DfQ-WYpTrUJ",
+   "views": 1364,
+   "slug": null
+  },
+  {
+   "code": "DfKUlJ6zWM7",
+   "views": 1309,
+   "slug": null
+  },
+  {
+   "code": "DfJn_4TzWOD",
+   "views": 158,
+   "slug": null
+  },
+  {
+   "code": "DfJP8AaTi07",
+   "views": 126,
+   "slug": null
+  },
+  {
+   "code": "DfHvz2UzUlL",
+   "views": 1603,
+   "slug": null
+  },
+  {
+   "code": "DfHDMJuTSff",
+   "views": 152,
+   "slug": null
+  },
+  {
+   "code": "DfGrMc3z3qf",
+   "views": 179,
+   "slug": null
+  },
+  {
+   "code": "DfFK-Z6Tgo5",
+   "views": 187,
+   "slug": null
+  },
+  {
+   "code": "DfEebmrTFQa",
+   "views": 106,
+   "slug": null
+  },
+  {
+   "code": "DfEGXdWTjQU",
+   "views": 47,
+   "slug": null
+  },
+  {
+   "code": "DfCmRVUzLOc",
+   "views": 112,
+   "slug": null
+  },
+  {
+   "code": "DfCRnNRzZk9",
+   "views": 13,
+   "slug": null
+  },
+  {
+   "code": "DfB5pMdzeck",
+   "views": 82,
+   "slug": null
+  },
+  {
+   "code": "DfBhjGEz2Cc",
+   "views": 40,
+   "slug": null
+  },
+  {
+   "code": "DfAeZ1ShVx5",
+   "views": 127,
+   "slug": null
+  },
+  {
+   "code": "De9t1upTOMJ",
+   "views": 30,
+   "slug": null
+  },
+  {
+   "code": "De9csgezqfe",
+   "views": 27,
+   "slug": null
+  },
+  {
+   "code": "De9IEdqzGDC",
+   "views": 244,
+   "slug": "ill-track-inputs"
+  },
+  {
+   "code": "De8v_dwzUDu",
+   "views": 205,
+   "slug": "ill-later-trigger"
+  },
+  {
+   "code": "De8X8KzzMBa",
+   "views": 67,
+   "slug": "ill-night-before"
+  },
+  {
+   "code": "De633j1TDG9",
+   "views": 118,
+   "slug": "ill-monday-wont-fix-it"
+  },
+  {
+   "code": "De6jQagTCom",
+   "views": 46,
+   "slug": "ill-language-plan"
+  },
+  {
+   "code": "De6LNpMTDf7",
+   "views": 132,
+   "slug": "ill-bad-day-version"
+  },
+  {
+   "code": "De5zI6YTeeV",
+   "views": 273,
+   "slug": "ill-size-problem"
+  },
+  {
+   "code": "De1uUEGzH1P",
+   "views": 39,
+   "slug": "diagram-someday-vo"
+  },
+  {
+   "code": "De0pmqQTJ3O",
+   "views": 14,
+   "slug": "diagram-howto-vo"
+  },
+  {
+   "code": "Dezk97kTy37",
+   "views": 17,
+   "slug": "tree-novel"
+  },
+  {
+   "code": "DezJblYzfye",
+   "views": 143,
+   "slug": "tree-study-abroad"
+  },
+  {
+   "code": "DexpYG0zBz4",
+   "views": 8,
+   "slug": "tree-freelance"
+  },
+  {
+   "code": "DexAG3sTNN-",
+   "views": 8,
+   "slug": "which-one-is-a-plan"
+  },
+  {
+   "code": "Dew5OYwTJZK",
+   "views": 27,
+   "slug": "too-many-goals"
+  },
+  {
+   "code": "DewyWMxzwg1",
+   "views": 30,
+   "slug": "never-miss-twice"
+  },
+  {
+   "code": "Dewkt5bTJJ1",
+   "views": 10,
+   "slug": "fill-the-blank"
+  },
+  {
+   "code": "DewW-D0TzPm",
+   "views": 21,
+   "slug": "about-to-start"
+  },
+  {
+   "code": "DewQFg0TZfs",
+   "views": 16,
+   "slug": "life-in-weeks"
+  },
+  {
+   "code": "DewCV5ATeLJ",
+   "views": 34,
+   "slug": "plan-the-bad-day"
+  },
+  {
+   "code": "Dev0ly8T2f8",
+   "views": 5,
+   "slug": "start-at-the-end"
+  },
+  {
+   "code": "Devf-yOz9AS",
+   "views": 74,
+   "slug": "someday-is-not-a-day"
+  },
+  {
+   "code": "DevZFYvz8iS",
+   "views": 19,
+   "slug": "twenty-minutes-a-day"
+  },
+  {
+   "code": "DevEkV9T33l",
+   "views": 8,
+   "slug": "three-questions-before-a-goal"
+  },
+  {
+   "code": "DeulBhStyuO",
+   "views": 22,
+   "slug": "next-step-not-motivation"
+  },
+  {
+   "code": "DZGOjlzTo2x",
+   "views": 7,
+   "slug": null
+  },
+  {
+   "code": "DY5DCBOzFsu",
+   "views": 185,
+   "slug": null
+  },
+  {
+   "code": "DYyy8QLxYzy",
+   "views": 23,
+   "slug": null
+  },
+  {
+   "code": "DYuLtYeTqXO",
+   "views": 32,
+   "slug": null
+  },
+  {
+   "code": "DYsRPHVzyfk",
+   "views": 139,
+   "slug": null
+  },
+  {
+   "code": "DYm9onkz1NJ",
+   "views": 136,
+   "slug": null
+  },
+  {
+   "code": "DYkk7kLTWaK",
+   "views": 40,
+   "slug": null
+  },
+  {
+   "code": "DYi8MGvRyCq",
+   "views": 35,
+   "slug": null
+  },
+  {
+   "code": "DYiB5D6zs75",
+   "views": 72,
+   "slug": null
+  },
+  {
+   "code": "DYNG4xuTwYr",
+   "views": 38,
+   "slug": null
+  },
+  {
+   "code": "DYL0kr_R7wN",
+   "views": 48,
+   "slug": null
+  },
+  {
+   "code": "DYJXFGKx7xU",
+   "views": 171,
+   "slug": null
+  },
+  {
+   "code": "DYFAENCzu5O",
+   "views": 43,
+   "slug": null
+  }
+ ],
+ "ig_grid_note": "All 91 reels from /reels/ grid. 8 newest publisher codes verified by caption (og:description). 5 reels shared now at ~19:05-19:25 (02-pixel-straight-1, 03-pixel-kabir-5, ill-make-first, 04-pixel-straight-2, 05-pixel-story-1), so their views are minutes old. DfznBeJzyuR (1,377 views, 63 likes) is a manual Nov 16 post not in schedule.json; caption starts 'Write your dreams and visions in one place'. Older slugs from content.csv / previous metrics file.",
+ "ig_account": {
+  "timeframe": "30d",
+  "views": 14112,
+  "viewers": 12232,
+  "views_nonfollowers_pct": 99.7,
+  "interactions": 618,
+  "interactions_nonfollowers_pct": 89.3,
+  "accounts_engaged": 465,
+  "profile_activity": 50,
+  "profile_visits": 48,
+  "external_link_taps": 2,
+  "total_followers": 31,
+  "top_content_by_views": [
+   "1.5K Oct 30",
+   "1.3K Nov 16",
+   "1.3K Nov 7",
+   "1.3K Nov 2",
+   "1.3K Oct 31"
+  ],
+  "top_content_by_interactions": [
+   "84 Nov 16",
+   "66 Oct 31",
+   "60 Oct 30",
+   "52 Nov 2",
+   "37 Nov 15"
+  ]
+ },
+ "ig_reel_insights": "not_available_on_web",
+ "yt": [
+  {
+   "id": "X7O-7Dk3mMw",
+   "title": "How to see progress when you feel stuck",
+   "date": "Nov 18, 2026",
+   "visibility": "Scheduled",
+   "views": 0
+  },
+  {
+   "id": "ChTMhulyB_8",
+   "title": "How to stop starting new goals and finish one",
+   "date": "Nov 18, 2026",
+   "visibility": "Scheduled",
+   "views": 0
+  },
+  {
+   "id": "J_Z9Ntwisko",
+   "title": "How to stay motivated in the middle of a long goal",
+   "date": "Nov 18, 2026",
+   "visibility": "Scheduled",
+   "views": 0
+  },
+  {
+   "id": "Fe87lDdiUWY",
+   "title": "Stop comparing your day 1 to someone's year 10",
+   "date": "Nov 18, 2026",
+   "visibility": "Scheduled",
+   "views": 0
+  },
+  {
+   "id": "W74Yj3miqnw",
+   "title": "Why \"that's just not me\" keeps you stuck",
+   "date": "Nov 18, 2026",
+   "visibility": "Scheduled",
+   "views": 0
+  },
+  {
+   "id": "JMNWaQf27q0",
+   "title": "How to stay consistent after a good day",
+   "date": "Nov 18, 2026",
+   "visibility": "Scheduled",
+   "views": 0
+  },
+  {
+   "id": "XQpEVEtA91U",
+   "title": "Why you never feel ready to start",
+   "date": "Nov 18, 2026",
+   "visibility": "Scheduled",
+   "views": 0
+  },
+  {
+   "id": "-Y_ot91Kcdo",
+   "title": "How to stick to your plan on bad days",
+   "date": "Nov 18, 2026",
+   "visibility": "Scheduled",
+   "views": 0
+  },
+  {
+   "id": "jZF3IuNa56o",
+   "title": "Why the scale goes up after a perfect day",
+   "date": "Nov 18, 2026",
+   "visibility": "Scheduled",
+   "views": 0
+  },
+  {
+   "id": "ysj39I-XOCk",
+   "title": "Why your New Year's resolutions fail",
+   "date": "Nov 18, 2026",
+   "visibility": "Scheduled",
+   "views": 0
+  },
+  {
+   "id": "_Hpj3dTDQec",
+   "title": "Stop practising songs from the start",
+   "date": "Nov 17, 2026",
+   "visibility": "Scheduled",
+   "views": 0
+  },
+  {
+   "id": "CFQQSjFfoSs",
+   "title": "Rereading vs testing yourself",
+   "date": "Nov 17, 2026",
+   "visibility": "Public",
+   "views": 0
+  },
+  {
+   "id": "qaPzHSs8-5U",
+   "title": "How to get past a learning plateau",
+   "date": "Nov 17, 2026",
+   "visibility": "Public",
+   "views": 1
+  },
+  {
+   "id": "_zBvu2twQ9w",
+   "title": "Same start, one small daily choice, one year later",
+   "date": "Nov 17, 2026",
+   "visibility": "Public",
+   "views": 1
+  },
+  {
+   "id": "Nj-C3DPWPdI",
+   "title": "How to actually start on a big goal",
+   "date": "Nov 17, 2026",
+   "visibility": "Public",
+   "views": 48
+  },
+  {
+   "id": "6i8mG3gdqLM",
+   "title": "How to stop procrastinating by learning too much",
+   "date": "Nov 17, 2026",
+   "visibility": "Public",
+   "views": 2
+  },
+  {
+   "id": "qKV9WI5a4Fs",
+   "title": "Why you never practise (it's not willpower)",
+   "date": "Nov 17, 2026",
+   "visibility": "Public",
+   "views": 48
+  },
+  {
+   "id": "exK8yDLM7yM",
+   "title": "Why you see no progress yet (and why you shouldn't quit)",
+   "date": "Nov 17, 2026",
+   "visibility": "Public",
+   "views": 165
+  },
+  {
+   "id": "e_lt-aMCoFA",
+   "title": "You can't out-run your fork",
+   "date": "Nov 17, 2026",
+   "visibility": "Public",
+   "views": 18
+  },
+  {
+   "id": "LzpU6DZPkrE",
+   "title": "Why one missed day makes you quit",
+   "date": "Nov 17, 2026",
+   "visibility": "Public",
+   "views": 2
+  },
+  {
+   "id": "HBQc_j8-QeI",
+   "title": "Practise slow to get fast",
+   "date": "Nov 16, 2026",
+   "visibility": "Public",
+   "views": 106
+  },
+  {
+   "id": "tfmOUc65TMM",
+   "title": "How to practise a presentation the right way",
+   "date": "Nov 16, 2026",
+   "visibility": "Public",
+   "views": 12
+  },
+  {
+   "id": "A59Gj-P7Ubk",
+   "title": "How to set a realistic deadline for your goals",
+   "date": "Nov 16, 2026",
+   "visibility": "Public",
+   "views": 16
+  },
+  {
+   "id": "MVnlBXj5NIs",
+   "title": "How to stop the afternoon slump after lunch",
+   "date": "Nov 16, 2026",
+   "visibility": "Public",
+   "views": 31
+  },
+  {
+   "id": "mReDapPqZwU",
+   "title": "How to run faster by running slower",
+   "date": "Nov 16, 2026",
+   "visibility": "Public",
+   "views": 56
+  },
+  {
+   "id": "uNzTwyqWg04",
+   "title": "Why you're getting weaker at the gym",
+   "date": "Nov 15, 2026",
+   "visibility": "Public",
+   "views": 56
+  },
+  {
+   "id": "S1PCqaWWK7E",
+   "title": "Why cramming doesn't work",
+   "date": "Nov 15, 2026",
+   "visibility": "Public",
+   "views": 1
+  },
+  {
+   "id": "s9fPk82KYlM",
+   "title": "Why 1,000 crunches won't flatten your belly",
+   "date": "Nov 15, 2026",
+   "visibility": "Public",
+   "views": 55
+  },
+  {
+   "id": "KJNCeuHZSlM",
+   "title": "How to study for exams so you remember it",
+   "date": "Nov 14, 2026",
+   "visibility": "Public",
+   "views": 60
+  },
+  {
+   "id": "0siVW6YG0SI",
+   "title": "How to stay consistent when you want to skip",
+   "date": "Nov 14, 2026",
+   "visibility": "Public",
+   "views": 24
+  },
+  {
+   "id": "QwpeI-Wub2Q",
+   "title": "Stop asking \"how was today?\" in your journal",
+   "date": "Nov 13, 2026",
+   "visibility": "Public",
+   "views": 1
+  },
+  {
+   "id": "yiiTo3Uid8M",
+   "title": "Why staying up late to work on your goals backfires",
+   "date": "Nov 13, 2026",
+   "visibility": "Public",
+   "views": 5
+  },
+  {
+   "id": "_B0siGyQiBk",
+   "title": "How to stay consistent with a workout plan",
+   "date": "Nov 13, 2026",
+   "visibility": "Public",
+   "views": 9
+  },
+  {
+   "id": "WW91qYUPKGg",
+   "title": "Why you quit the gym on day 4",
+   "date": "Nov 12, 2026",
+   "visibility": "Public",
+   "views": 0
+  },
+  {
+   "id": "dpwl_bKbGwg",
+   "title": "How to learn a skill faster with less practice",
+   "date": "Nov 12, 2026",
+   "visibility": "Public",
+   "views": 13
+  },
+  {
+   "id": "W0HksC-VURc",
+   "title": "How to stop forgetting your goals",
+   "date": "Nov 11, 2026",
+   "visibility": "Public",
+   "views": 20
+  },
+  {
+   "id": "qqW2xRJrjAk",
+   "title": "Why you never actually start on Monday",
+   "date": "Nov 11, 2026",
+   "visibility": "Public",
+   "views": 49
+  },
+  {
+   "id": "vR4RqJ8VfoA",
+   "title": "How to stay consistent with a new habit",
+   "date": "Nov 11, 2026",
+   "visibility": "Public",
+   "views": 16
+  },
+  {
+   "id": "nY2TQCE6sqU",
+   "title": "How to stop skipping your evening goals",
+   "date": "Nov 11, 2026",
+   "visibility": "Public",
+   "views": 24
+  },
+  {
+   "id": "woRmsaZFdPU",
+   "title": "How to stop lifting the same weight: double progression",
+   "date": "Nov 7, 2026",
+   "visibility": "Public",
+   "views": 71
+  },
+  {
+   "id": "5ogA4lUwxrM",
+   "title": "How to keep your room clean without a big Sunday clean",
+   "date": "Nov 7, 2026",
+   "visibility": "Public",
+   "views": 85
+  },
+  {
+   "id": "w0GwAWBN36M",
+   "title": "How to get back on track after missing a day",
+   "date": "Nov 6, 2026",
+   "visibility": "Public",
+   "views": 17
+  },
+  {
+   "id": "leiQuJJbafs",
+   "title": "How to remember what you read",
+   "date": "Nov 5, 2026",
+   "visibility": "Public",
+   "views": 39
+  },
+  {
+   "id": "7OeTpXdwAEE",
+   "title": "How to actually start speaking a new language",
+   "date": "Nov 5, 2026",
+   "visibility": "Public",
+   "views": 8
+  },
+  {
+   "id": "wG9KnZnEXzw",
+   "title": "How to wake up when it's still dark outside",
+   "date": "Nov 5, 2026",
+   "visibility": "Public",
+   "views": 32
+  }
+ ],
+ "yt_note": "YouTube Studio Shorts list, newest 45 of about 101 (page 1 full + top of page 2; titles shown without #Shorts, a few page-2 titles completed from the truncated read). 10 new Shorts scheduled for 11-18 this run. 'Stop practising songs from the start' still Scheduled for 11-17 22:00; 'Rereading vs testing yourself' went public 19:30 (0 views at read)."
+}
