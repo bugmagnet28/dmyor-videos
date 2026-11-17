@@ -266,3 +266,4 @@ Instagram locked the account ("we locked your account to protect you from a poss
   2. Tick each reel in post-queue.md (or write the day next to it) so the next run registers it in analytics.
   3. Screenshots, the one thing that unblocks learning (nothing has watch time since Nov 6): app insights (views, avg watch time, % watched, sends, saves, follows) for **ill-first-ten-minutes** (best V-EXP-34 reel, 457) and **ill-borrowed-sleep**, plus 48 h grid views for the first day of the combined schedule.
   4. I am not building any reel until fewer than 4 are waiting (owner rule 2026-11-14).
+- [open 2026-11-17] Restart the Mac (swap 15.6 GB, fseventsd 2.5 GB): renders at 0.1 fps. Emailed.

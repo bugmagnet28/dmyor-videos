@@ -365,4 +365,5 @@ Template: `## V-EXP-NN: name` / Status / Change / Reels testing it / Metric + ta
 - Metric: IG views at ~48 h (grid read), plus avg watch time and sends from app screenshots when available; daily total reach and followers (owner: at high volume judge by daily reach, not per-reel).
 - Target: card-OFF median at 48 h >= 1.5x card-ON median (e.g. 200 vs 130), at least 1 reel > 500, followers 28 -> 35 by Nov 28.
 - Expectation: Habit Roast quick-hits (15-25 s) win on completion; cramming and crunches (studying/gym, hit domains) most likely >500. Kabir roasts ~ like earlier Kabir on IG (110-170) but better on YT.
+- 2026-11-17 interim (grid read Nov 16 20:30, young ages): card OFF: pixel-kabir-9 1,199 (~22 h), roast-all-out 365 (~11 h), roast-cramming 165 (~25 h), roast-crunches 146 (~35 h); card ON: ill-afternoon-crash 119 (~7.5 h), ill-guessed-deadline 1 (minutes old). Already 1 reel > 500 (target met for that part). Followers 28 (no change). Built Habit Roast #5-#7 (snooze, highlighter, new-program) for Nov 19.
 - Result:

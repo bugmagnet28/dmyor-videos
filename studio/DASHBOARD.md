@@ -1,19 +1,19 @@
 # Video dashboard (posting on @becauseidmyor, end card @becauseidmyor)
 
-_Last updated: 2026-11-16 IST (run 2026-11-16)_
+_Last updated: 2026-11-17 IST (run 2026-11-17)_
 
 **Reports:** [analytics/reports/OVERALL.md](../analytics/reports/OVERALL.md) (are we improving? leaderboard) · [analytics/reports/WHAT_WORKED.md](../analytics/reports/WHAT_WORKED.md) (signals vs hints) · [2026-11-14 analysis](../analytics/reports/2026-11-14-analysis.md) · [retention playbook](retention-playbook.md) · [reel library](library/index.html) · weekly review 2026-11-12 in [strategy.md](strategy.md)
 
 | | |
 |---|---|
-| Instagram followers (@becauseidmyor) | **28** (2026-11-15; flat since Nov 14). 30-day views 11,879, profile visits 43, link taps 2 |
-| Are we improving? | **Reach: yes** (IG newer-half median 140 vs 21). Followers: slow. YouTube: declining (newer median 12 vs 17) |
-| New this run | **ill-same-weight = 1,359 IG views** (gym double progression, Nov 7): 7th hit, same shape (body/skill + own pattern charted + method). Others first read: ten-minute-reset 276, miss-twice 228, pickups 129 |
-| Best / worst of the last 32 read | hard-part 1,602 · bad-night 1,364 · same-weight 1,359 · wake-time 1,309 / goal-date 13 |
-| Posting | Automated (publisher, schedule.json). Stock: Nov 17 10 todo, Nov 18 10 todo = 2 days |
-| Open experiments | **V-EXP-35** (hit shape + retention playbook, card OFF vs ON; Nov 15-28). No data on its reels yet |
-| Built today | Nothing finished: Mac out of memory (swap 13.7 GB). Habit Roast #5 snooze (voiced), #6 highlighter, #7 new program scripted, waiting for render |
-| Asks | Restart the Mac |
+| Instagram followers (@becauseidmyor) | **28** (2026-11-16 20:30; flat since Nov 14). 30-day views 12,251, profile visits 47, link taps 2 |
+| Are we improving? | **Reach: yes** (IG). Followers: flat. YouTube: declining |
+| New this run | **pixel-kabir-9 = 1,199 IG views in ~22 h** (Kabir trains 7 days, rest-day roast): first pixel-series hit, 8th hit overall (gym + counterintuitive body mechanism). roast-all-out 365 at ~11 h. cramming 165, crunches 146 |
+| Best / worst (IG, all time) | hard-part 1,603 · bad-night 1,364 · same-weight 1,359 · wake-time 1,309 · kabir-9 1,199 / start-at-the-end 5 |
+| Posting | Automated (publisher, schedule.json). Stock at run start: Nov 17 8 todo left, Nov 18 10 todo (~1.5 days, under the 2-day rule). Adding Habit Roasts for Nov 19 |
+| Open experiments | **V-EXP-35** (hit shape + retention playbook, card OFF vs ON; Nov 15-28): interim, card-OFF already has a >500 reel |
+| Built today | Habit Roast #5 snooze (rendering; Mac at 0.3 fps). #6 highlighter, #7 new program scripted + captions, need voice/render |
+| Asks | **Restart the Mac** (free RAM ~70 MB, swap 15.6 GB, fseventsd 2.5 GB at 160% CPU): renders run 20x slower |
 
 ## Built today (Sat Nov 14) for Wed 18 (V-EXP-34 batch 7)
 | Slot (IST) | Reel | Reason / pillar | Length | Hook | Frame 0 | Score |
