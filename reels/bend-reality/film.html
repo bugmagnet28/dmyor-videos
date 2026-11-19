@@ -125,15 +125,40 @@ function diverge(t, a0, a1, mode) {
   X.restore();
 }
 // ---------- scenes ----------
+// hook: a line-drawn city whose far half folds up and over the camera (owner pick 2026-11-19)
+var CITY = (function () { var b = []; for (var i = 0; i < 64; i++) { var side = i % 2 ? 1 : -1; b.push([side * (3.4 + hash(i * 3) * 7), 6 + i * 1.0 + hash(i * 7) * .5, 1.4 + hash(i * 11) * 1.8, 1.4 + hash(i * 13) * 1.6, 1.6 + hash(i * 17) * 6.5]); } return b; })();
+var ZF = 24, FOC = 900, HC = 2.2, RB = 7;
+// the ground past ZF wraps round a cylinder (radius RB) by angle th, then runs on overhead as a ceiling
+function hookProj(x, y, z, th, cz, hy) { if (z > ZF && th > 0) { var sd = z - ZF, a, by, bz; if (sd < RB * th) { a = sd / RB; by = RB * (1 - Math.cos(a)); bz = ZF + RB * Math.sin(a); }
+    else { a = th; var r = sd - RB * th; by = RB * (1 - Math.cos(th)) + r * Math.sin(th); bz = ZF + RB * Math.sin(th) + r * Math.cos(th); } var h0 = y; y = by + h0 * Math.cos(a); z = bz - h0 * Math.sin(a); }
+  var zc = z - cz; if (zc < .35) return null; return [540 + FOC * x / zc, hy - FOC * (y - HC) / zc, zc]; }
+function hookLine(a, b, th, cz, hy, w, col) { X.strokeStyle = col; var pen = false; X.beginPath();
+  var nseg = Math.max(6, Math.round(Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]) * 2)); for (var i = 0; i <= nseg; i++) { var k = i / nseg, q = hookProj(lerp(a[0], b[0], k), lerp(a[1], b[1], k), lerp(a[2], b[2], k), th, cz, hy);
+    if (!q || Math.abs(q[0]) > 6000 || Math.abs(q[1]) > 8000) { pen = false; continue; } if (!pen) { X.moveTo(q[0], q[1]); pen = true; } else X.lineTo(q[0], q[1]); }
+  X.lineWidth = w; X.stroke(); }
 function hook(t) {
-  // footage + title drawn offscreen, then the whole picture bends
-  O.fillStyle = BG; O.fillRect(0, 0, W, H); cover(O, shot("cosmos", t), FULL, zin(0, 4.9, t, .3), .5); grade(O, .25);
-  var ta = 1 - sm(t, 2.6, 3.0); if (ta > 0) { tone(O, "COULD YOU", W / 2, 760, 104, 800, ta); tone(O, "*BEND REALITY*", W / 2, 880, 118, 800, ta); tone(O, "WITH YOUR WILL?", W / 2, 1000, 104, 800, ta); }
-  var fa = sm(t, L("H", 1) - .1, L("H", 1) + .3) * (1 - sm(t, 4.2, 4.7)); if (fa > 0) tone(O, "LET'S *FIND OUT.*", W / 2, 880, 92, 800, fa);
-  var A = 46 * Math.sin(Math.PI * seg(t, .5, 2.8)), step = 6;
-  X.fillStyle = BG; X.fillRect(0, 0, W, H);
-  for (var y = 0; y < H; y += step) { var env = Math.exp(-Math.pow((y - 880) / 520, 2)), dx = A * env * Math.sin(y / 110 - t * 2.2), sc = 1 + .05 * env * A / 46;
-    X.drawImage(OC, 0, y, W, step, dx - (sc - 1) * W / 2, y, W * sc, step); }
+  var th = Math.PI * eio(seg(t, .45, 2.9)), cz = -3 + .8 * t, hy = 980 + 640 * eio(seg(t, 1.2, 3.5));
+  X.fillStyle = "#F4F3EF"; X.fillRect(0, 0, W, H); X.lineCap = "round"; X.lineJoin = "round";
+  // ground: road edges, centre dashes, cross streets, sidewalk grid
+  for (var zz = 0; zz < 76; zz += 4) hookLine([-16, 0, zz], [16, 0, zz], th, cz, hy, 2, "rgba(17,17,17,.28)");
+  for (var xx = -16; xx <= 16; xx += 4) if (Math.abs(xx) > 2) hookLine([xx, 0, -4], [xx, 0, 76], th, cz, hy, 2, "rgba(17,17,17,.22)");
+  hookLine([-2.4, 0, -4], [-2.4, 0, 76], th, cz, hy, 4, "#111"); hookLine([2.4, 0, -4], [2.4, 0, 76], th, cz, hy, 4, "#111");
+  for (var zd = -4; zd < 76; zd += 2.4) hookLine([0, 0, zd], [0, 0, zd + 1.1], th, cz, hy, 4, "#111");
+  // buildings (wire boxes)
+  CITY.forEach(function (bd) { var x0 = bd[0] - bd[2] / 2, x1 = bd[0] + bd[2] / 2, z0 = bd[1] - bd[3] / 2, z1 = bd[1] + bd[3] / 2, h = bd[4], E = [];
+    [[x0, z0], [x1, z0], [x1, z1], [x0, z1]].forEach(function (c, i, arr) { var n = arr[(i + 1) % 4]; E.push([[c[0], 0, c[1]], [n[0], 0, n[1]]], [[c[0], h, c[1]], [n[0], h, n[1]]], [[c[0], 0, c[1]], [c[0], h, c[1]]]); });
+    E.forEach(function (e) { hookLine(e[0], e[1], th, cz, hy, 3, "#111"); });
+    for (var f = 1.2; f < h - .4; f += 1.3) hookLine([x0, f, z0], [x1, f, z0], th, cz, hy, 1.5, "rgba(17,17,17,.45)"); });
+  // fold seam
+  var sa = sm(t, .4, .8) * (1 - sm(t, 3.2, 3.8)); if (sa > 0) { X.save(); X.globalAlpha = sa; hookLine([-16, 0, ZF], [16, 0, ZF], th, cz, hy, 5, "#111"); X.restore(); }
+  // text (finished on frame 0)
+  var ta = 1 - sm(t, 2.6, 3.0);
+  function line(s, y, sz, a) { X.save(); X.font = font(sz, 800); X.textAlign = "center"; X.textBaseline = "middle"; X.lineJoin = "round"; X.lineWidth = 22; X.strokeStyle = "#F4F3EF"; X.globalAlpha = a;
+    var parts = s.split("*"), full = parts.join(""), cx = W / 2 - X.measureText(full).width / 2; X.textAlign = "left";
+    parts.forEach(function (p) { X.strokeText(p, cx, y); cx += X.measureText(p).width; }); cx = W / 2 - X.measureText(full).width / 2;
+    parts.forEach(function (p, i) { X.fillStyle = i % 2 ? "#3F6B55" : "#111"; X.fillText(p, cx, y); cx += X.measureText(p).width; }); X.restore(); }
+  if (ta > 0) { line("COULD YOU", 1290, 100, ta); line("*BEND REALITY*", 1405, 116, ta); line("WITH YOUR WILL?", 1520, 100, ta); }
+  var fa = sm(t, L("H", 1) - .1, L("H", 1) + .3) * (1 - sm(t, 4.2, 4.7)); if (fa > 0) line("LET'S *FIND OUT.*", 1405, 96, fa);
 }
 function forkScene(t) { var a0 = SHOTS[1][1]; cover(X, shot("fork", t), FULL, zin(a0, 10.5, t, .38), .5, sm(t, a0, a0 + .5)); grade(X, .35);
   var gk = sm(t, 5.0, 8.6), ex = 540, ey = 1000, gx = sm(t, 7.0, 9.4);
@@ -284,7 +309,7 @@ function frame(tn) {
   if (t >= 34.3 && t < 42.5) futureScene(t);
   if (t >= 42.0 && t < L("J", 0) - .1) steerScene(t);
   if (t >= L("J", 0) - .1) ctaScene(t);
-  vignette(.45); diverge(t, 16.15, 18.75, 1); diverge(t, 23.35, 26.35, 2); X = MAIN; X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; X.drawImage(SCV, 0, 0); border(tn); caption(tn);
+  vignette(t < 4.3 ? .1 : .45); diverge(t, 16.15, 18.75, 1); diverge(t, 23.35, 26.35, 2); X = MAIN; X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; X.drawImage(SCV, 0, 0); border(tn); caption(tn);
   var fo = sm(tn, DUR - .8, DUR); if (fo > 0) { X.fillStyle = "rgba(21,23,25," + fo + ")"; X.fillRect(0, 0, W, H); }
 }
 function prep(t) { return Promise.all(need(remap(t)).map(load)); }
