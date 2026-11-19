@@ -9,6 +9,23 @@ The reference build is `reels/bend-reality/` (`film.html`, `make_audio.py`, `ext
 
 Everything below is Sanyam's feedback on that film (2026-11-15 to 11-17). It overrides older style rules where they conflict.
 
+## 0. Latest (owner 2026-11-19): fully animated, no real footage
+"Bend reality" was rebuilt with **zero real video**:
+- every clip was replaced by line-art animation: black ink on off-white (`#F4F3EF`), sage-dark accent `#3F6B55`, white-filled shapes with thick black outlines;
+- something is always moving.
+The owner liked the hook (a line-drawn city whose street folds up into the sky) and asked for "these kind of animated interesting pieces in the whole video".
+- **Default from now on:** fully animated line art, no footage.
+- **Reference scenes (`reels/bend-reality/film.html`):**
+  - `hook()` (3D wire city with a quarter-pipe fold);
+  - `forkScene()` (top-down street map, a car takes one branch);
+  - `drawPhone()` (feed scrolling in a hand);
+  - `drawDesk()` (lamp, book with a plane sketch, page flip, steam);
+  - `bedScene()` (moon window, phone glow, lights out);
+  - `wingScene()` (airfoil, airflow, LIFT, plane crossing);
+  - `vShop` / `vFamily` / `vSummit` (future vignettes);
+  - the tree in black ink.
+- **Cards and chips are light:** white fill, black outline, black text. Captions stay as the dark pill.
+
 ## 1. The direction: more animation, less real video (owner 2026-11-17)
 - **At least 60% of screen time is designed canvas animation**: diagrams, branching lines, illustrated metaphors, typed cards, the tree, the CTA. Real footage is the minority, used only where a real image makes the line land, such as a person scrolling in bed or a wing above clouds.
 - Keep footage inserts to **2-4 s**, and never two footage shots in a row without an animated beat between them.

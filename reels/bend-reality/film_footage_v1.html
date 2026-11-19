@@ -1,0 +1,327 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:"Tight";font-weight:600;src:url(../../.claude/skills/prompt-animation/assets/fonts/InterTight-normal-600.woff2)}
+@font-face{font-family:"Tight";font-weight:700;src:url(../../.claude/skills/prompt-animation/assets/fonts/InterTight-normal-700.woff2)}
+@font-face{font-family:"Tight";font-weight:800;src:url(../../.claude/skills/prompt-animation/assets/fonts/InterTight-normal-800.woff2)}
+html,body{margin:0;background:#151719;overflow:hidden}
+canvas{display:block;width:100vw;height:100vh;object-fit:contain}
+#playBtn{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);font:700 22px sans-serif;padding:14px 26px;border-radius:999px;border:0;background:#9DB8A3;color:#151719;cursor:pointer}
+</style></head><body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<button id="playBtn">Play</button>
+<script src="timeline.js"></script>
+<script src="timeline_v1.js"></script>
+<script>
+// "Bend reality": calm cinematic reel. Real footage (Pexels, frame sequences in frames/) + canvas animation. window.__seek(t) is async (loads frames).
+(function () {
+var W = 1080, H = 1920, cv = document.getElementById("c"), X = cv.getContext("2d"), DUR = TL.total;
+var BG = "#151719", SAGE = "#9DB8A3", T = 0;
+var OC = document.createElement("canvas"); OC.width = W; OC.height = H; var O = OC.getContext("2d");
+var NF = { cosmos: 540, fork: 210, phone: 330, read: 424, bed: 199, wing: 180, cafe: 120, family: 148, summit: 180 };
+function cl(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function lerp(a, b, k) { return a + (b - a) * k; }
+function seg(t, a, b) { return cl((t - a) / (b - a), 0, 1); }
+function sm(t, a, b) { var k = seg(t, a, b); return k * k * (3 - 2 * k); }
+function eio(k) { return k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2; }
+function zin(a, b, t, amt) { var k = seg(t, a, b); return 1 + amt * (.5 - .5 * Math.cos(Math.PI * k)); }
+function eout(k) { return 1 - Math.pow(1 - k, 3); }
+function rad(d) { return d * Math.PI / 180; }
+function hash(n) { var s = Math.sin(n * 12.9898 + 78.233) * 43758.5453; return s - Math.floor(s); }
+function L(k, i) { for (var j = 0; j < OLD.lines.length; j++) if (OLD.lines[j][0] == k && OLD.lines[j][1] == i) return OLD.lines[j][2]; }
+function Ln(k, i) { for (var j = 0; j < TL.lines.length; j++) if (TL.lines[j][0] == k && TL.lines[j][1] == i) return TL.lines[j][2]; }
+// picture was timed to the v1 voice; map new voice time -> v1 picture time line by line
+var ANCH = [[0, 0], [2.12, 2.475], [2.84, 2.875], [3.54, 4.0], [4.22, 4.55], [5.06, 5.46], [5.64, 5.665], [11.36, 9.717], [11.94, 10.217], [14.9, 12.181], [18.66, 15.82], [19.42, 16.27], [21.38, 18.507], [22.42, 18.6], [22.92, 18.857], [23.24, 19.48], [23.96, 20.03], [27.04, 23.106], [30.76, 26.156], [31.26, 26.456], [34.32, 29.253], [35.1, 29.803], [38.38, 33.2], [39.22, 33.429], [41.74, 34.62], [43.64, 37.427], [44.0, 37.627], [45.0, 39.098], [45.38, 39.298], [47.9, 41.71], [48.48, 42.21], [51.38, 44.675], [53.94, 47.376], [54.58, 47.976], [57.04, 49.219], [57.68, 49.469], [61.62, 52.802], [63.02, OLD.total]];
+function remap(t) { for (var i = 1; i < ANCH.length; i++) if (t <= ANCH[i][0]) return lerp(ANCH[i - 1][1], ANCH[i][1], (t - ANCH[i - 1][0]) / (ANCH[i][0] - ANCH[i - 1][0])); return OLD.total; }
+function LE(k, i) { for (var j = 0; j < TL.lines.length; j++) if (TL.lines[j][0] == k && TL.lines[j][1] == i) return TL.lines[j][3]; }
+
+// ---------- footage: [name, t0, t1, clip offset (s)] ----------
+var SHOTS = [["cosmos", 0, 4.9, 0], ["fork", 4.3, 10.5, 0], ["phone", 10.0, 20.4, 0], ["read", 12.3, 20.4, 0], ["bed", 19.8, 23.9, 0], ["read", 23.3, 26.6, 9.0],
+             ["wing", 26.2, 30.0, 0], ["cosmos", 29.6, 34.9, 5.0], ["cafe", 34.3, 37.8, 0], ["family", 37.4, 39.5, .3], ["summit", 39.1, 42.5, 0], ["cosmos", 42.0, 56, 10.5]];
+var cache = {};
+function fidx(name, lt) { var n = NF[name], i = Math.floor(lt * 30); if (name == "cosmos") { var p = i % (2 * n - 2); i = p < n ? p : 2 * n - 2 - p; } return cl(i, 0, n - 1) + 1; }
+function src(name, i) { return "frames/" + name + "/" + ("000" + i).slice(-4) + ".jpg"; }
+function need(t) { var o = []; SHOTS.forEach(function (s) { if (t >= s[1] - .05 && t <= s[2] + .05) o.push(src(s[0], fidx(s[0], t - s[1] + s[3]))); }); return o; }
+function load(u) { if (cache[u]) return cache[u].p; var im = new Image(), e = { im: im, used: 0 }; e.p = new Promise(function (res) { im.onload = im.onerror = function () { res(im); }; }); im.src = u; cache[u] = e; return e.p; }
+function frameOf(name, t, s) { var u = src(name, fidx(name, t - s[1] + s[3])); return cache[u] && cache[u].im.complete ? cache[u].im : null; }
+function shot(name, t) { for (var i = SHOTS.length - 1; i >= 0; i--) { var s = SHOTS[i]; if (s[0] == name && t >= s[1] - .05 && t <= s[2] + .05) return frameOf(name, t, s); } return null; }
+// draw a frame covering rect r (crop from centre, fy = vertical focus 0..1), slow push z
+function cover(ctx, im, r, z, fy, alpha) { if (!im) return; var IW = im.naturalWidth, IH = im.naturalHeight, ra = r.w / r.h, sw = IW, sh = IW / ra; if (sh > IH) { sh = IH; sw = IH * ra; }
+  sw /= z; sh /= z; var sx = (IW - sw) / 2, sy = cl((IH - sh) * (fy == null ? .5 : fy), 0, IH - sh);
+  ctx.globalAlpha = alpha == null ? 1 : alpha; ctx.drawImage(im, sx, sy, sw, sh, r.x, r.y, r.w, r.h); ctx.globalAlpha = 1; }
+var FULL = { x: 0, y: 0, w: W, h: H };
+function grade(ctx, dark, r) { r = r || FULL; ctx.fillStyle = "rgba(21,23,25," + dark + ")"; ctx.fillRect(r.x, r.y, r.w, r.h);
+  ctx.save(); ctx.globalCompositeOperation = "soft-light"; ctx.fillStyle = "rgba(157,184,163,.35)"; ctx.fillRect(r.x, r.y, r.w, r.h); ctx.restore(); }
+function vignette(k) { var g = X.createRadialGradient(W / 2, H * .48, H * .28, W / 2, H * .5, H * .78); g.addColorStop(0, "rgba(10,11,12,0)"); g.addColorStop(1, "rgba(10,11,12," + (k == null ? .6 : k) + ")"); X.fillStyle = g; X.fillRect(0, 0, W, H); }
+
+// ---------- type ----------
+function font(sz, wt) { return (wt || 700) + " " + sz + "px Tight"; }
+function text(ctx, s, x, y, sz, col, wt, align, alpha) { ctx.font = font(sz, wt); ctx.fillStyle = col || "#FFFFFF"; ctx.textAlign = align || "center"; ctx.textBaseline = "middle"; ctx.globalAlpha = alpha == null ? 1 : alpha; ctx.fillText(s, x, y); ctx.globalAlpha = 1; }
+// two-tone line: words wrapped in * are sage
+function tone(ctx, s, x, y, sz, wt, alpha, ls) { ctx.font = font(sz, wt); var parts = s.split("*"), full = parts.join(""), w = ctx.measureText(full).width, cx = x - w / 2; ctx.textAlign = "left"; ctx.textBaseline = "middle"; ctx.globalAlpha = alpha == null ? 1 : alpha;
+  parts.forEach(function (p, i) { ctx.fillStyle = i % 2 ? SAGE : "#FFFFFF"; ctx.fillText(p, cx, y); cx += ctx.measureText(p).width; }); ctx.globalAlpha = 1; }
+function rr(ctx, x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
+function glass(x, y, w, h, r, a) { X.save(); X.globalAlpha = a; rr(X, x, y, w, h, r); X.fillStyle = "rgba(20,24,24,.55)"; X.fill(); X.lineWidth = 2; X.strokeStyle = "rgba(220,235,225,.35)"; X.stroke(); X.restore(); }
+function chip(s, x, y, a, sz) { if (a <= 0) return; sz = Math.round((sz || 34) * 1.3); X.font = font(sz, 700); var w = X.measureText(s).width + sz * 1.4, h = sz * 1.9; glass(x - w / 2, y - h / 2, w, h, h / 2, a);
+  X.save(); X.globalAlpha = a; X.beginPath(); X.arc(x - w / 2 + sz * .7, y, 6, 0, 7); X.fillStyle = SAGE; X.fill(); X.restore(); text(X, s, x + 8, y + 1, sz, "#FFFFFF", 700, "center", a); }
+function caption(t) {
+  if (t < Ln("A", 0) - .1 || t > Ln("J", 0) - .1) return;
+  for (var i = TL.subs.length - 1; i >= 0; i--) { var s = TL.subs[i]; if (t >= s[0] && t < s[1]) {
+      var a = sm(t, s[0], s[0] + .12) * (1 - sm(t, s[1] - .1, s[1])); X.font = font(50, 800); var w = X.measureText(s[2]).width;
+      X.save(); X.globalAlpha = a * .55; rr(X, W / 2 - w / 2 - 26, 1452, w + 52, 84, 18); X.fillStyle = "#0E1011"; X.fill(); X.restore();
+      text(X, s[2], W / 2, 1495, 50, "#FFFFFF", 800, "center", a); return; } }
+}
+
+// ---------- branching tree of realities ----------
+var TREE = [];
+(function grow(x, y, ang, len, d, path) { var x2 = x + Math.cos(ang) * len, y2 = y + Math.sin(ang) * len; TREE.push({ x1: x, y1: y, x2: x2, y2: y2, d: d, path: path });
+  if (d >= 7) return; var spread = .34 + .12 * hash(d * 7 + path.length + x), tw = (hash(x * .37 + y) - .5) * .12;
+  grow(x2, y2, ang - spread + tw, len * .8, d + 1, path + "0"); grow(x2, y2, ang + spread + tw, len * .8, d + 1, path + "1"); })(540, 1720, -Math.PI / 2, 250, 0, "");
+var ROUTE = "0110100";
+function onRoute(p) { return ROUTE.indexOf(p) == 0; }
+function drawTree(gp, alpha, routeK) {
+  X.save(); X.lineCap = "round";
+  TREE.forEach(function (s) { var k = cl(gp * 8 - s.d, 0, 1); if (k <= 0) return; var x2 = lerp(s.x1, s.x2, k), y2 = lerp(s.y1, s.y2, k), w = Math.max(1.5, 9 - s.d * 1.1);
+    var lit = routeK != null && onRoute(s.path) && s.path.length < ROUTE.length + 1 ? cl(routeK * (ROUTE.length + 1) - s.path.length, 0, 1) : 0, a = alpha * (routeK != null ? .35 : 1);
+    X.globalAlpha = a * .35; X.strokeStyle = SAGE; X.lineWidth = w * 3.2; X.beginPath(); X.moveTo(s.x1, s.y1); X.lineTo(x2, y2); X.stroke();
+    X.globalAlpha = a; X.strokeStyle = "#DDEBE1"; X.lineWidth = w; X.beginPath(); X.moveTo(s.x1, s.y1); X.lineTo(x2, y2); X.stroke();
+    if (lit > 0) { var lx = lerp(s.x1, s.x2, lit), ly = lerp(s.y1, s.y2, lit); X.globalAlpha = alpha * .5; X.strokeStyle = SAGE; X.lineWidth = w * 6; X.beginPath(); X.moveTo(s.x1, s.y1); X.lineTo(lx, ly); X.stroke();
+      X.globalAlpha = alpha; X.strokeStyle = "#FFFFFF"; X.lineWidth = w * 1.6; X.beginPath(); X.moveTo(s.x1, s.y1); X.lineTo(lx, ly); X.stroke(); }
+    if (s.d == 7 && k >= 1) { X.globalAlpha = a * (.5 + .5 * Math.sin(T * 3 + s.x2)); X.fillStyle = "#EAF3EC"; X.beginPath(); X.arc(s.x2, s.y2, 3, 0, 7); X.fill(); } });
+  X.restore();
+}
+function routeNodes() { var o = []; TREE.forEach(function (s) { if (onRoute(s.path) && s.path.length <= ROUTE.length) o.push(s); }); return o.sort(function (a, b) { return a.path.length - b.path.length; }); }
+
+// ---------- plain diagram: one reality splits in two (white canvas, black ink) ----------
+function phoneIcon(x, y, a) { X.save(); X.globalAlpha = a; rr(X, x - 34, y - 58, 68, 116, 14); X.lineWidth = 6; X.strokeStyle = "#111"; X.stroke(); X.fillStyle = "#111"; X.fillRect(x - 12, y + 42, 24, 5); X.restore(); }
+function planeIcon(x, y, a) { X.save(); X.globalAlpha = a; X.translate(x, y); X.fillStyle = "#111"; X.beginPath();
+  X.moveTo(-60, 0); X.lineTo(60, -6); X.quadraticCurveTo(76, 0, 60, 6); X.lineTo(-60, 0); X.fill();
+  X.beginPath(); X.moveTo(-6, -2); X.lineTo(-30, -52); X.lineTo(-14, -52); X.lineTo(22, -3); X.closePath(); X.fill();
+  X.beginPath(); X.moveTo(-6, 2); X.lineTo(-30, 52); X.lineTo(-14, 52); X.lineTo(22, 3); X.closePath(); X.fill();
+  X.beginPath(); X.moveTo(-50, -1); X.lineTo(-64, -24); X.lineTo(-56, -24); X.lineTo(-40, -1); X.closePath(); X.fill(); X.restore(); }
+function bez(p0, p1, p2, p3, k) { var u = 1 - k; return [u * u * u * p0[0] + 3 * u * u * k * p1[0] + 3 * u * k * k * p2[0] + k * k * k * p3[0], u * u * u * p0[1] + 3 * u * u * k * p1[1] + 3 * u * k * k * p2[1] + k * k * k * p3[1]]; }
+function branch(P, k, w, col, dash) { if (k <= 0) return; X.save(); X.lineWidth = w; X.strokeStyle = col; X.lineCap = "round"; if (dash) X.setLineDash([18, 16]); X.beginPath(); X.moveTo(P[0][0], P[0][1]);
+  for (var i = 1; i <= 40; i++) { var q = bez(P[0], P[1], P[2], P[3], k * i / 40); X.lineTo(q[0], q[1]); } X.stroke(); X.restore(); }
+// mode 1: draw the split; mode 2: the scroll branch fades, "you are here" travels the planes branch
+function diverge(t, a0, a1, mode) {
+  var a = sm(t, a0, a0 + .3) * (1 - sm(t, a1 - .3, a1)); if (a <= 0) return;
+  X.save(); X.globalAlpha = a; X.fillStyle = "#F4F3EF"; X.fillRect(0, 0, W, H);
+  var z = zin(a0, a1 + .5, t, .1); X.translate(540, 960); X.scale(z, z); X.translate(-540, -960);
+  var k0 = mode == 1 ? eio(seg(t, a0 + .2, a0 + .9)) : 1, kb = mode == 1 ? eio(seg(t, a0 + .9, a0 + 1.9)) : 1;
+  var S0 = [110, 960], N = [350, 960], UP = [[350, 960], [520, 960], [580, 640], [740, 640]], DN = [[350, 960], [520, 960], [580, 1280], [740, 1280]];
+  X.lineCap = "round"; X.strokeStyle = "#111"; X.lineWidth = 9; X.beginPath(); X.moveTo(S0[0], S0[1]); X.lineTo(lerp(S0[0], N[0], k0), 960); X.stroke();
+  X.fillStyle = "#111"; X.beginPath(); X.arc(S0[0], S0[1], 16, 0, 7); X.fill(); text(X, "NOW", S0[0], 1020, 34, "#111", 800, "center", a);
+  var fade = mode == 2 ? sm(t, a0 + .5, a0 + 1.3) : 0;
+  if (fade < 1) branch(UP, kb, 9, "#111", false); if (fade > 0) { X.save(); X.globalAlpha = a * .8; branch(UP, 1, 6, "#9A9A96", true); X.restore(); }
+  branch(DN, kb, mode == 2 ? lerp(9, 14, sm(t, a0 + .5, a0 + 1.3)) : 9, "#111", false);
+  if (k0 >= 1) { X.beginPath(); X.arc(N[0], N[1], 13, 0, 7); X.fillStyle = "#111"; X.fill(); }
+  var la = mode == 2 ? 1 : sm(t, a0 + 1.7, a0 + 2.1), uc = mode == 2 ? lerp(1, .35, fade) : 1;
+  phoneIcon(800, 640, la * uc * a); text(X, "KEEP SCROLLING", 760, 745, 34, "#111", 800, "center", la * uc * a);
+  planeIcon(820, 1280, la * a); text(X, "READ HOW PLANES FLY", 760, 1370, 34, "#111", 800, "center", la * a);
+  if (mode == 2 && fade > 0) { X.save(); X.globalAlpha = a * fade; X.fillStyle = "#111"; X.fillRect(760 - 148, 743, 296 * fade, 5); X.restore(); }
+  if (mode == 2) { var mk = eio(seg(t, a0 + 1.2, a1 - .5)), q = bez(DN[0], DN[1], DN[2], DN[3], mk), ya = sm(t, a0 + 1.2, a0 + 1.5);
+    X.save(); X.globalAlpha = a * ya; X.beginPath(); X.arc(q[0], q[1], 22, 0, 7); X.fillStyle = "#111"; X.fill(); X.beginPath(); X.arc(q[0], q[1], 34 + 4 * Math.sin(T * 6), 0, 7); X.lineWidth = 4; X.strokeStyle = "#111"; X.stroke(); X.restore();
+    text(X, "YOU ARE HERE", q[0], q[1] - 70, 34, "#111", 800, "center", a * ya); }
+  X.restore();
+}
+// ---------- scenes ----------
+// hook: a line-drawn city whose far half folds up and over the camera (owner pick 2026-11-19)
+var CITY = (function () { var b = []; for (var i = 0; i < 64; i++) { var side = i % 2 ? 1 : -1; b.push([side * (3.4 + hash(i * 3) * 7), 6 + i * 1.0 + hash(i * 7) * .5, 1.4 + hash(i * 11) * 1.8, 1.4 + hash(i * 13) * 1.6, 1.6 + hash(i * 17) * 6.5]); } return b; })();
+var ZF = 24, FOC = 900, HC = 2.2, RB = 7;
+// the ground past ZF wraps round a cylinder (radius RB) by angle th, then runs on overhead as a ceiling
+function hookProj(x, y, z, th, cz, hy) { if (z > ZF && th > 0) { var sd = z - ZF, a, by, bz; if (sd < RB * th) { a = sd / RB; by = RB * (1 - Math.cos(a)); bz = ZF + RB * Math.sin(a); }
+    else { a = th; var r = sd - RB * th; by = RB * (1 - Math.cos(th)) + r * Math.sin(th); bz = ZF + RB * Math.sin(th) + r * Math.cos(th); } var h0 = y; y = by + h0 * Math.cos(a); z = bz - h0 * Math.sin(a); }
+  var zc = z - cz; if (zc < .35) return null; return [540 + FOC * x / zc, hy - FOC * (y - HC) / zc, zc]; }
+function hookLine(a, b, th, cz, hy, w, col) { X.strokeStyle = col; var pen = false; X.beginPath();
+  var nseg = Math.max(6, Math.round(Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]) * 2)); for (var i = 0; i <= nseg; i++) { var k = i / nseg, q = hookProj(lerp(a[0], b[0], k), lerp(a[1], b[1], k), lerp(a[2], b[2], k), th, cz, hy);
+    if (!q || Math.abs(q[0]) > 6000 || Math.abs(q[1]) > 8000) { pen = false; continue; } if (!pen) { X.moveTo(q[0], q[1]); pen = true; } else X.lineTo(q[0], q[1]); }
+  X.lineWidth = w; X.stroke(); }
+function hook(t) {
+  var th = Math.PI * eio(seg(t, .45, 2.9)), cz = -3 + .8 * t, hy = 980 + 640 * eio(seg(t, 1.2, 3.5));
+  X.fillStyle = "#F4F3EF"; X.fillRect(0, 0, W, H); X.lineCap = "round"; X.lineJoin = "round";
+  // ground: road edges, centre dashes, cross streets, sidewalk grid
+  for (var zz = 0; zz < 76; zz += 4) hookLine([-16, 0, zz], [16, 0, zz], th, cz, hy, 2, "rgba(17,17,17,.28)");
+  for (var xx = -16; xx <= 16; xx += 4) if (Math.abs(xx) > 2) hookLine([xx, 0, -4], [xx, 0, 76], th, cz, hy, 2, "rgba(17,17,17,.22)");
+  hookLine([-2.4, 0, -4], [-2.4, 0, 76], th, cz, hy, 4, "#111"); hookLine([2.4, 0, -4], [2.4, 0, 76], th, cz, hy, 4, "#111");
+  for (var zd = -4; zd < 76; zd += 2.4) hookLine([0, 0, zd], [0, 0, zd + 1.1], th, cz, hy, 4, "#111");
+  // buildings (wire boxes)
+  CITY.forEach(function (bd) { var x0 = bd[0] - bd[2] / 2, x1 = bd[0] + bd[2] / 2, z0 = bd[1] - bd[3] / 2, z1 = bd[1] + bd[3] / 2, h = bd[4], E = [];
+    [[x0, z0], [x1, z0], [x1, z1], [x0, z1]].forEach(function (c, i, arr) { var n = arr[(i + 1) % 4]; E.push([[c[0], 0, c[1]], [n[0], 0, n[1]]], [[c[0], h, c[1]], [n[0], h, n[1]]], [[c[0], 0, c[1]], [c[0], h, c[1]]]); });
+    E.forEach(function (e) { hookLine(e[0], e[1], th, cz, hy, 3, "#111"); });
+    for (var f = 1.2; f < h - .4; f += 1.3) hookLine([x0, f, z0], [x1, f, z0], th, cz, hy, 1.5, "rgba(17,17,17,.45)"); });
+  // fold seam
+  var sa = sm(t, .4, .8) * (1 - sm(t, 3.2, 3.8)); if (sa > 0) { X.save(); X.globalAlpha = sa; hookLine([-16, 0, ZF], [16, 0, ZF], th, cz, hy, 5, "#111"); X.restore(); }
+  // text (finished on frame 0)
+  var ta = 1 - sm(t, 2.6, 3.0);
+  function line(s, y, sz, a) { X.save(); X.font = font(sz, 800); X.textAlign = "center"; X.textBaseline = "middle"; X.lineJoin = "round"; X.lineWidth = 22; X.strokeStyle = "#F4F3EF"; X.globalAlpha = a;
+    var parts = s.split("*"), full = parts.join(""), cx = W / 2 - X.measureText(full).width / 2; X.textAlign = "left";
+    parts.forEach(function (p) { X.strokeText(p, cx, y); cx += X.measureText(p).width; }); cx = W / 2 - X.measureText(full).width / 2;
+    parts.forEach(function (p, i) { X.fillStyle = i % 2 ? "#3F6B55" : "#111"; X.fillText(p, cx, y); cx += X.measureText(p).width; }); X.restore(); }
+  if (ta > 0) { line("COULD YOU", 1290, 100, ta); line("*BEND REALITY*", 1405, 116, ta); line("WITH YOUR WILL?", 1520, 100, ta); }
+  var fa = sm(t, L("H", 1) - .1, L("H", 1) + .3) * (1 - sm(t, 4.2, 4.7)); if (fa > 0) line("LET'S *FIND OUT.*", 1405, 96, fa);
+}
+function forkScene(t) { var a0 = SHOTS[1][1]; cover(X, shot("fork", t), FULL, zin(a0, 10.5, t, .38), .5, sm(t, a0, a0 + .5)); grade(X, .35);
+  var gk = sm(t, 5.0, 8.6), ex = 540, ey = 1000, gx = sm(t, 7.0, 9.4);
+  X.save(); X.lineCap = "round";
+  var y1 = lerp(1700, ey, Math.min(1, gk * 1.6)); X.strokeStyle = SAGE; X.globalAlpha = .4; X.lineWidth = 34; X.beginPath(); X.moveTo(ex, 1700); X.lineTo(ex, y1); X.stroke(); X.globalAlpha = 1; X.strokeStyle = "#FFFFFF"; X.lineWidth = 9; X.stroke();
+  if (gk > .62) { var b = seg(gk, .62, 1);
+    X.setLineDash([16, 18]); X.lineDashOffset = -T * 40; X.globalAlpha = .5 * (1 - .5 * gx); X.strokeStyle = "#B8C2BC"; X.lineWidth = 6; X.beginPath(); X.moveTo(ex, ey); X.quadraticCurveTo(ex - 60, ey - 200, ex - 330 * b, ey - 520 * b); X.stroke(); X.setLineDash([]);
+    X.globalAlpha = .45; X.strokeStyle = SAGE; X.lineWidth = 34; X.beginPath(); X.moveTo(ex, ey); X.quadraticCurveTo(ex + 60, ey - 200, ex + 330 * b, ey - 520 * b); X.stroke(); X.globalAlpha = 1; X.strokeStyle = "#FFFFFF"; X.lineWidth = 9; X.stroke(); }
+  X.restore();
+  chip("THE ONE YOU CHOSE", 760, 400, sm(t, 7.6, 8.1) * (1 - sm(t, 10.0, 10.4)), 32); chip("WOULD NOT EXIST", 300, 400, .7 * sm(t, 8.4, 8.9) * (1 - sm(t, 10.0, 10.4)), 32);
+  X.save(); X.globalAlpha = sm(t, 4.3, 4.8) * (1 - sm(t, 10.0, 10.4)); X.beginPath(); X.arc(540, 1000, 16 + 4 * Math.sin(T * 4), 0, 7); X.fillStyle = "#FFFFFF"; X.fill(); X.restore();
+}
+function choiceScene(t) {
+  var sp = sm(t, L("B", 1) - .1, L("B", 1) + .6), half = lerp(H, H / 2, sp), C = L("C", 1), yes = sm(t, C - .05, C + .5);
+  var gap = 4 + 190 * yes, top = { x: 0, y: -40 * yes, w: W, h: half - gap / 2 }, bot = { x: 0, y: half + gap / 2 + 40 * yes, w: W, h: H - half - gap / 2 };
+  X.fillStyle = "#0B0C0D"; X.fillRect(0, 0, W, H);
+  cover(X, shot("phone", t), top, zin(10, 20.4, t, .4), .45, sm(t, 10.0, 10.5)); grade(X, .3, top);
+  if (sp > 0) { cover(X, shot("read", t), bot, zin(12.3, 20.4, t, .35), .45); grade(X, .25, bot); }
+  if (sp > 0) { var bt = top.y + top.h, bb = bot.y; if (yes > 0) { X.fillStyle = "#FFFFFF"; X.fillRect(0, bt, W, bb - bt); X.fillStyle = "#111111"; X.fillRect(0, bt, W, 5); X.fillRect(0, bb - 5, W, 5); } else { X.fillStyle = "#FFFFFF"; X.fillRect(0, half - 2, W, 4); } }
+
+  chip("KEEP SCROLLING", W / 2, (sp > 0 ? top.y + top.h * .16 : 300), sm(t, L("B", 0) + .4, L("B", 0) + .8) * (1 - sm(t, 19.9, 20.3)));
+  chip("READ HOW PLANES FLY", W / 2, bot.y + 110, sm(t, L("B", 1) + 1.6, L("B", 1) + 2.0) * (1 - sm(t, 19.9, 20.3)));
+  if (yes > 0) { var ya = sm(t, C + .1, C + .4) * (1 - sm(t, 19.9, 20.3)); text(X, "YES.", W / 2, (top.y + top.h + bot.y) / 2 + 4, 120, "#111111", 800, "center", ya); }
+}
+function bedScene(t) {
+  var a0 = 19.8, grow = eio(seg(t, a0, a0 + .7)), r = { x: 0, y: 0, w: W, h: lerp(H / 2, H, grow) };
+  X.fillStyle = "#0B0C0D"; X.fillRect(0, 0, W, H); cover(X, shot("bed", t), r, zin(a0, 23.9, t, .38), .5); grade(X, .3, r);
+  var mins = Math.floor(lerp(0, 84, seg(t, 20.4, 22.8))), h = (11 + Math.floor((48 + mins) / 60) - 1) % 12 + 1, m = (48 + mins) % 60, am = 48 + mins >= 60 ? "AM" : "PM";
+  chip(h + ":" + ("0" + m).slice(-2) + " " + am, W / 2, 330, sm(t, 20.3, 20.6) * (1 - sm(t, 23.2, 23.6)), 40);
+  var dk = sm(t, 22.2, 23.3); if (dk > 0) { X.save(); X.globalCompositeOperation = "saturation"; X.globalAlpha = dk; X.fillStyle = "#808080"; X.fillRect(0, 0, W, H); X.restore(); X.fillStyle = "rgba(8,9,10," + (.72 * dk) + ")"; X.fillRect(0, 0, W, H); }
+}
+function readScene(t) {
+  var a0 = 23.3, up = eio(seg(t, a0, a0 + .8)), r = { x: 0, y: lerp(H, 0, up), w: W, h: H };
+  bedScene(Math.min(t, 23.85)); X.fillStyle = "rgba(0,0,0," + .4 * up + ")"; X.fillRect(0, 0, W, H);
+  cover(X, shot("read", t), r, zin(a0, 26.6, t, .35), .45); grade(X, .2, r);
+  X.fillStyle = "#FFFFFF"; X.fillRect(0, r.y - 2, W, 4);
+  chip("REALITY SPLIT", W / 2, 330, sm(t, 24.6, 25.0) * (1 - sm(t, 26.0, 26.4)), 36);
+}
+function wingScene(t) {
+  var a0 = 26.2; cover(X, shot("wing", t), FULL, zin(a0, 30, t, .38), .5, sm(t, a0, a0 + .5)); grade(X, .25);
+  var k = sm(t, 26.7, 27.6) * (1 - sm(t, 29.4, 29.9));
+  if (k > 0) { X.save(); X.lineCap = "round";
+    for (var i = 0; i < 9; i++) { var y0 = 620 + i * 62, bump = (i < 5 ? 150 - i * 22 : 30), sp = i < 5 ? 1.5 : 1;
+      X.setLineDash([60, 30]); X.lineDashOffset = -T * 420 * sp; X.globalAlpha = k * (.35 + .4 * (i < 5)); X.strokeStyle = i < 5 ? "#E6F2EA" : SAGE; X.lineWidth = 4; X.beginPath();
+      for (var x = -40; x <= 1120; x += 20) { var yy = y0 - bump * Math.exp(-Math.pow((x - 540) / 260, 2)); x == -40 ? X.moveTo(x, yy) : X.lineTo(x, yy); } X.stroke(); }
+    X.setLineDash([]); X.globalAlpha = k; var ak = eout(seg(t, 27.4, 28.2)), ay = lerp(1240, 880, ak);
+    X.strokeStyle = "#FFFFFF"; X.lineWidth = 12; X.beginPath(); X.moveTo(540, 1240); X.lineTo(540, ay); X.stroke();
+    X.fillStyle = "#FFFFFF"; X.beginPath(); X.moveTo(540, ay - 44); X.lineTo(510, ay + 6); X.lineTo(570, ay + 6); X.closePath(); X.fill(); X.restore();
+    text(X, "LIFT", 610, lerp(1100, 920, ak), 64, "#FFFFFF", 800, "left", k * ak);
+    chip("FASTER AIR ABOVE, LOWER PRESSURE", W / 2, 400, k * sm(t, 27.9, 28.3), 30); }
+}
+function treeScene(t) {
+  var a0 = 29.6, gp = eio(seg(t, 29.9, 34.2)), cz = lerp(2.2, 1, eio(seg(t, 30.0, 34.4)));
+  cover(X, shot("cosmos", t), FULL, zin(a0, 34.9, t, .35), .5, sm(t, a0, a0 + .5)); grade(X, .5);
+  X.save(); X.translate(W / 2, lerp(1500, 960, eio(seg(t, 30.0, 34.4)))); X.scale(cz, cz); X.translate(-540, lerp(-1600, -960, eio(seg(t, 30.0, 34.4))));
+  drawTree(gp, sm(t, a0, a0 + .5) * (1 - sm(t, 34.3, 34.8)), null); X.restore();
+}
+function futureScene(t) {
+  var cards = [["cafe", 34.3, 37.8, "MY BUSINESS", "Thriving.", L("G", 0) + .9], ["family", 37.4, 39.5, "MY FAMILY", "Happy.", L("G", 1) + .5], ["summit", 39.1, 42.5, "MY LIFE", "The one I always dreamed of.", L("G", 2) + .7]];
+  cards.forEach(function (c, i) { if (t < c[1] - .05 || t > c[2] + .05) return; var a = sm(t, c[1], c[1] + .45) * (i == 2 ? 1 : 1);
+    cover(X, shot(c[0], t), FULL, zin(c[1], c[2], t, .35), .45, a); grade(X, .2); });
+  var on = null; cards.forEach(function (c) { if (t >= c[1] + .1 && t < c[2] - .1) on = c; }); if (!on) return;
+  var ca = sm(t, on[1] + .1, on[1] + .4) * (1 - sm(t, on[2] - .35, on[2] - .1)), n = Math.floor(on[4].length * seg(t, on[5], on[5] + on[4].length * .045)), y = 1180;
+  glass(130, y, 820, 190, 26, ca); text(X, on[3], 180, y + 50, 30, SAGE, 800, "left", ca);
+  var typed = on[4].slice(0, n); text(X, typed, 180, y + 122, typed.length > 12 ? 50 : 64, "#FFFFFF", 700, "left", ca);
+  X.font = font(typed.length > 12 ? 50 : 64, 700); if (Math.floor(T * 2.5) % 2 == 0 || n < on[4].length) { X.globalAlpha = ca; X.fillStyle = SAGE; X.fillRect(186 + X.measureText(typed).width, y + 96, 5, 54); X.globalAlpha = 1; }
+  chip("IMAGINE", W / 2, 330, sm(t, 34.5, 34.9) * (1 - sm(t, 41.9, 42.3)), 34);
+}
+function steerScene(t) {
+  var a0 = 42.0; cover(X, shot("cosmos", t), FULL, zin(a0, 48, t, .3) * zin(48, 56, t, .22), .5, sm(t, a0, a0 + .5)); grade(X, .5);
+  var fade = sm(t, a0, a0 + .5) * (1 - .75 * sm(t, 47.6, 48.4)), rk = seg(t, 42.5, 46.9);
+  drawTree(1, fade, rk);
+  var nodes = routeNodes();
+  nodes.forEach(function (s, i) { if (i == 0) return; var lit = rk * (ROUTE.length + 1) - s.path.length; if (lit < 1) return; var a = fade * sm(lit, 1, 1.4);
+    X.save(); X.globalAlpha = a; X.beginPath(); X.arc(s.x1, s.y1, 10, 0, 7); X.fillStyle = "#FFFFFF"; X.fill(); X.restore();
+    text(X, i % 2 ? "CHOICE" : "ACTION", s.x1 + (s.x2 > s.x1 ? -24 : 24), s.y1 + 2, 34, "#E6F2EA", 800, s.x2 > s.x1 ? "right" : "left", a * .9); });
+  var end = nodes[nodes.length - 1], ek = sm(t, 46.6, 47.3) * fade;
+  if (ek > 0) { var g = X.createRadialGradient(end.x2, end.y2, 0, end.x2, end.y2, 120); g.addColorStop(0, "rgba(255,255,255," + ek + ")"); g.addColorStop(.25, "rgba(220,240,228," + .8 * ek + ")"); g.addColorStop(1, "rgba(157,184,163,0)");
+    X.fillStyle = g; X.beginPath(); X.arc(end.x2, end.y2, 120 + 8 * Math.sin(T * 3), 0, 7); X.fill(); chip("THE FUTURE YOU IMAGINED", W / 2, 400, ek, 32); }
+}
+function ctaScene(t) {
+  steerScene(t);
+  var a = sm(t, L("J", 0) - .1, L("J", 0) + .4); X.fillStyle = "rgba(15,17,18," + .55 * a + ")"; X.fillRect(0, 0, W, H);
+  tone(X, "COMMENT", W / 2, 690, 110, 800, a);
+  var bx = 150, by = 780, bw = 780, bh = 150; glass(bx, by, bw, bh, 75, a);
+  var word = "REALITY", n = Math.floor(word.length * seg(t, L("J", 0) + .35, L("J", 0) + .95)); text(X, word.slice(0, n), bx + 70, by + bh / 2 + 3, 76, SAGE, 800, "left", a);
+  X.font = font(76, 800); if (n < word.length || Math.floor(T * 2.5) % 2 == 0) { X.globalAlpha = a; X.fillStyle = "#FFFFFF"; X.fillRect(bx + 76 + X.measureText(word.slice(0, n)).width, by + 42, 5, 66); X.globalAlpha = 1; }
+  var pk = sm(t, L("J", 0) + 1.0, L("J", 0) + 1.3), pul = 1 + .06 * Math.sin(T * 5) * pk; X.save(); X.globalAlpha = a; X.translate(bx + bw - 75, by + bh / 2); X.scale(pul, pul); X.beginPath(); X.arc(0, 0, 52, 0, 7); X.fillStyle = pk > .5 ? SAGE : "rgba(157,184,163,.35)"; X.fill();
+  X.fillStyle = "#151719"; X.beginPath(); X.moveTo(-18, -22); X.lineTo(26, 0); X.lineTo(-18, 22); X.lineTo(-10, 0); X.closePath(); X.fill(); X.restore();
+  var b = sm(t, L("J", 1), L("J", 1) + .5); tone(X, "AND WE WILL SHOW YOU HOW YOU CAN", W / 2, 1060, 46, 700, b); tone(X, "ALSO *BEND REALITY*", W / 2, 1124, 46, 700, b); tone(X, "ACCORDING TO YOUR WILL.", W / 2, 1188, 46, 700, b);
+  var d = sm(t, 52.6, 53.2); text(X, "dmyor", W / 2, 1420, 56, "#FFFFFF", 800, "center", d * .9);
+}
+
+// ---------- stages: designed backgrounds, footage plays inside a card ----------
+var SCV = document.createElement("canvas"); SCV.width = W; SCV.height = H; var SCX = SCV.getContext("2d"), MAIN = X;
+var GRAIN = (function () { var c = document.createElement("canvas"); c.width = c.height = 256; var g = c.getContext("2d"), d = g.createImageData(256, 256);
+  for (var i = 0; i < d.data.length; i += 4) { var v = hash(i * .37) * 255; d.data[i] = d.data[i + 1] = d.data[i + 2] = v; d.data[i + 3] = 26; } g.putImageData(d, 0, 0); return c; })();
+var STAGES = [{ t0: -9, full: 1 }, { t0: 4.3, c: "#2C3933", w: "REALITY", ink: "220,240,228", rot: -1.4, st: "card" }, { t0: 10.0, c: "#6B2620", w: "CHOICE", ink: "255,226,214", rot: 1.2, st: "card" },
+  { t0: 19.8, c: "#121A2E", w: "LATER", ink: "196,210,255", rot: -1.0, st: "card" }, { t0: 23.3, c: "#7A5A26", w: "LEARN", ink: "255,238,205", rot: 1.0, st: "card" },
+  { t0: 26.2, c: "#3A6890", w: "LIFT", ink: "232,244,255", rot: 0, st: "window" }, { t0: 29.6, full: 1 }, { t0: 34.6, c: "#CDBA94", w: "IMAGINE", ink: "70,58,40", rot: -3, st: "polaroid" }, { t0: 42.0, full: 1 }];
+var POLA = [[34.6, -3, "MY BUSINESS"], [37.4, 2.6, "MY FAMILY"], [39.1, -1.6, "MY LIFE"]];
+function geom(sg, t) { if (sg.full) return { s: 1, r: 0, rot: 0 };
+  if (sg.st == "window") return { s: .68, r: 210, rot: 0 }; if (sg.st == "polaroid") { var rot = POLA[0][1]; POLA.forEach(function (q) { if (t >= q[0]) rot = q[1]; }); return { s: .62, r: 6, rot: rot }; }
+  return { s: .74, r: 46, rot: sg.rot }; }
+function bgDraw(sg, tn) {
+  var C = MAIN; C.fillStyle = sg.c; C.fillRect(0, 0, W, H);
+  var g = C.createRadialGradient(540, 760, 60, 540, 900, 1300); g.addColorStop(0, "rgba(255,255,255,.12)"); g.addColorStop(1, "rgba(0,0,0,.28)"); C.fillStyle = g; C.fillRect(0, 0, W, H);
+  C.save(); C.font = font(300, 800); C.textBaseline = "middle"; C.textAlign = "left"; C.lineWidth = 3; C.strokeStyle = "rgba(" + sg.ink + ",.14)";
+  var ww = C.measureText(sg.w + "  ").width;
+  for (var i = 0; i < 8; i++) { var y = 110 + i * 250, off = ((tn * 38 * (i % 2 ? 1 : -1)) % ww + ww) % ww, x = -ww + off; for (; x < W; x += ww) C.strokeText(sg.w, x, y); }
+  C.restore();
+  C.save(); C.fillStyle = C.createPattern(GRAIN, "repeat"); C.fillRect(0, 0, W, H); C.restore();
+}
+function stage(t, tn) {
+  var i = 0; for (var j = 0; j < STAGES.length; j++) if (t >= STAGES[j].t0 - .15) i = j;
+  var cur = STAGES[i], prev = STAGES[Math.max(0, i - 1)], k = i == 0 ? 1 : eio(seg(t, cur.t0 - .15, cur.t0 + .45));
+  var C = MAIN; C.fillStyle = BG; C.fillRect(0, 0, W, H);
+  if (!prev.full && k < 1) bgDraw(prev, tn);
+  if (!cur.full) { if (prev.full || k >= 1) bgDraw(cur, tn); else { C.save(); C.beginPath(); C.arc(540, 900, 1400 * k, 0, 7); C.clip(); bgDraw(cur, tn); C.restore(); } }
+  else if (prev.full) { C.drawImage(SCV, 0, 0); return; }
+  var g0 = geom(prev, t), g1 = geom(cur, t), g = { s: lerp(g0.s, g1.s, k), r: lerp(g0.r, g1.r, k), rot: lerp(g0.rot, g1.rot, k) };
+  if (!prev.full && !cur.full) g.s *= 1 - .07 * Math.sin(Math.PI * k);
+  var fs = cl((1 - g.s) / .3, 0, 1), cx = 540, cy = lerp(960, 900, fs) + 7 * Math.sin(tn * .9) * fs, w = W * g.s, h = H * g.s;
+  var pol = cur.st == "polaroid" || (prev.st == "polaroid" && k < 1);
+  if (cur.st == "polaroid") { var drop = 0; POLA.forEach(function (q, n) { if (n && t >= q[0]) drop = 1 - eout(seg(t, q[0], q[0] + .4)); });
+    POLA.forEach(function (q, n) { var nx = POLA[n + 1]; if (nx && t >= nx[0]) { C.save(); C.translate(cx - 26 * (n + 1), cy + 18 * (n + 1)); C.rotate(rad(q[1])); C.shadowColor = "rgba(0,0,0,.35)"; C.shadowBlur = 30; C.shadowOffsetY = 14; C.fillStyle = "#F4F1EA"; C.fillRect(-w / 2 - 26, -h / 2 - 26, w + 52, h + 150); C.restore(); } });
+    g.s *= 1 + .14 * drop; w = W * g.s; h = H * g.s; }
+  C.save(); C.translate(cx, cy); C.rotate(rad(g.rot));
+  C.shadowColor = "rgba(0,0,0," + (.5 * fs) + ")"; C.shadowBlur = 60 * fs; C.shadowOffsetY = 24 * fs;
+  if (pol && fs > 0) { C.fillStyle = "#F7F4EE"; C.fillRect(-w / 2 - 26, -h / 2 - 26, w + 52, h + 150); C.shadowColor = "transparent"; var lab = POLA[0][2]; POLA.forEach(function (q) { if (t >= q[0]) lab = q[2]; }); text(C, lab, 0, h / 2 + 64, 40, "#3A342C", 800, "center", fs); }
+  else if (cur.st == "window" || (prev.st == "window" && k < 1)) { rr(C, -w / 2 - 30, -h / 2 - 30, w + 60, h + 60, g.r + 30); C.fillStyle = "#E4E9ED"; C.fill(); C.shadowColor = "transparent"; rr(C, -w / 2 - 12, -h / 2 - 12, w + 24, h + 24, g.r + 12); C.fillStyle = "#B9C3CB"; C.fill(); }
+  else { rr(C, -w / 2, -h / 2, w, h, g.r); C.fillStyle = "#000"; C.fill(); C.shadowColor = "transparent"; }
+  rr(C, -w / 2, -h / 2, w, h, g.r); C.save(); C.clip(); C.drawImage(SCV, -w / 2, -h / 2, w, h); C.restore();
+  if (fs > 0) { rr(C, -w / 2, -h / 2, w, h, g.r); C.lineWidth = 3; C.strokeStyle = "rgba(255,255,255," + .22 * fs + ")"; C.stroke(); }
+  C.restore();
+}
+function border(tn) { var m = 30; X.save(); X.globalAlpha = sm(tn, 0, .5); rr(X, m, m, W - 2 * m, H - 2 * m, 26); X.lineWidth = 3; X.strokeStyle = "rgba(255,255,255,.55)"; X.stroke(); X.restore(); }
+function frame(tn) {
+  var t = remap(tn);
+  T = t; X = SCX; X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; X.fillStyle = BG; X.fillRect(0, 0, W, H);
+  if (t < 4.9) hook(t);
+  if (t >= 4.3 && t < 10.5) { X.save(); X.globalAlpha = 1; forkScene(t); X.restore(); }
+  if (t >= 10.0 && t < 20.4) choiceScene(t);
+  if (t >= 19.8 && t < 23.3) bedScene(t);
+  if (t >= 23.3 && t < 26.6) readScene(t);
+  if (t >= 26.2 && t < 30.0) wingScene(t);
+  if (t >= 29.6 && t < 34.9) treeScene(t);
+  if (t >= 34.3 && t < 42.5) futureScene(t);
+  if (t >= 42.0 && t < L("J", 0) - .1) steerScene(t);
+  if (t >= L("J", 0) - .1) ctaScene(t);
+  vignette(t < 4.3 ? .1 : .45); diverge(t, 16.15, 18.75, 1); diverge(t, 23.35, 26.35, 2); X = MAIN; X.setTransform(1, 0, 0, 1, 0, 0); X.globalAlpha = 1; X.drawImage(SCV, 0, 0); border(tn); caption(tn);
+  var fo = sm(tn, DUR - .8, DUR); if (fo > 0) { X.fillStyle = "rgba(21,23,25," + fo + ")"; X.fillRect(0, 0, W, H); }
+}
+function prep(t) { return Promise.all(need(remap(t)).map(load)); }
+function gc(t) { var keep = {}; need(remap(t)).forEach(function (u) { keep[u] = 1; }); var ks = Object.keys(cache); if (ks.length > 120) ks.forEach(function (u) { if (!keep[u]) delete cache[u]; }); }
+window.__duration = DUR;
+Promise.all([document.fonts.load("800 60px Tight"), document.fonts.load("700 60px Tight")]).then(function () {
+  window.__seek = function (t) { return prep(t).then(function () { frame(t); gc(t); }); };
+  window.__seek(0);
+  var btn = document.getElementById("playBtn");
+  btn.onclick = function () { btn.style.display = "none"; var a = new Audio("audio.mp3"); a.play(); var t0 = performance.now();
+    (function loop() { var t = (performance.now() - t0) / 1000; if (t > DUR) return; prep(t).then(function () { frame(t); }); requestAnimationFrame(loop); })(); };
+});
+})();
+</script>
+</body></html>
